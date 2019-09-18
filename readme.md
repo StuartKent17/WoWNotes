@@ -46,4 +46,4 @@ Kaldorei
 
 # Project Setup
 
-The idea is to create a bunch of different ways of dealing with the content, so trying HTML, only the notes, a mix of headings and notes. This will be achieved with NodeJS and Gulp just because of the variety of HTML processing tools available. 
+I wanted to have a bunch of different options of dealing with the content, so trying HTML. HTML seems to jam it up, but I use Gulp/NodeJS to combine the files and strip the HTML, which instead could convert to markdown. It handles markdown lists ok, so might try later.
