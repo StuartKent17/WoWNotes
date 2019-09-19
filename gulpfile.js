@@ -19,3 +19,6 @@ gulp.task('default', function() {
     .pipe(replace(/([a-zA-Z0-9]{1})\[/g, '$1 ['))
     .pipe(gulp.dest('./concat/'));
 });
+
+
+// add a function that combines the files but prefaces it with Patch [Filename], I hope I don't have to go back through and add patch names

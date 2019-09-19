@@ -1,6 +1,6 @@
 # Wownotes
 
-Just playing around trying to get some neat generated patch notes.
+Just playing around trying to get some neat generated patch notes. Content is sourced from [WowGamepedia](https://wow.gamepedia.com). Their license is CC by SA. No claim is placed on this content, generated or otherwise.
 
 # Generated Text 
 
