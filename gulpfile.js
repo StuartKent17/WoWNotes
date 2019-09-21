@@ -5,6 +5,7 @@ var html2txt = require('gulp-html2txt');
 
 var html2TextOpts = {
     ignoreHref :true,
+    wordwrap :false,
     ignoreImage  :true,
 }
 
@@ -31,8 +32,8 @@ var builds = {
 var defaultTasks = Object.keys(builds);
 defaultTasks.forEach(function(taskName) {
    gulp.task(taskName, function() {
-       return gulp.src(jsFiles[taskName])
-       .pipe(concat('merged.html'))
+       return gulp.src(builds[taskName])
+       .pipe(concat(taskName + '.html'))
        .pipe(replace("&nbsp;", " "))
        .pipe(replace("<p>", "<br/><p>"))
        .pipe(replace("<ul>", "<br/><ul>"))
@@ -42,6 +43,12 @@ defaultTasks.forEach(function(taskName) {
        .pipe(gulp.dest('./concat/'));
    });
 });
+
+gulp.task( 'default',
+   gulp.parallel(
+      defaultTasks.map(function(name) { return name; })
+   )
+);
 
 
 // add a function that combines the files but prefaces it with Patch [Filename], I hope I don't have to go back through and add patch names
