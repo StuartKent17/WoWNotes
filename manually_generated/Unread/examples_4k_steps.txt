@@ -1,0 +1,291 @@
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/gpt_2_simple/src/sample.py:17: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+Loading checkpoint checkpoint/355m_everything/model-3714
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+INFO:tensorflow:Restoring parameters from checkpoint/355m_everything/model-3714
+  0%|          | 0/1 [00:00<?, ?it/s]Loading dataset...
+100%|¦¦¦¦¦¦¦¦¦¦| 1/1 [00:04<00:00,  4.39s/it]
+dataset has 754030 tokens
+Training...
+Saving checkpoint/355m_everything/model-3714
+[3720 | 31.14] loss=0.20 avg=0.20
+[3730 | 61.25] loss=2.13 avg=1.17
+[3740 | 91.42] loss=0.41 avg=0.91
+[3750 | 121.63] loss=0.26 avg=0.75
+[3760 | 151.80] loss=1.60 avg=0.92
+[3770 | 182.00] loss=0.14 avg=0.79
+[3780 | 212.09] loss=1.00 avg=0.82
+[3790 | 242.23] loss=0.67 avg=0.80
+[3800 | 272.46] loss=0.60 avg=0.78
+======== SAMPLE 1 ========
+ kills and is no longer considered a Magic effect.
+    *  [Might of the Frozen Wastes] - Fixed a bug where Might of the Frozen Wastes would not cause damage when the Illidari deck was heavily outnumbered.
+    *  [Rage of the Horde] - Reduced rage cost to 10 rage (was 14 rage).
+    *  [Rend] - Rend's movement speed bonus and crit bonus have been increased to 35% (was 30%).
+    *  [Savage Defense] - Reduced rage cost to 10 rage (was 14 rage).
+    *  [Surefooted] - Sneaky strikes generate additional Rage now.
+    *  [Stun Spikes] - Your Taunt successful attacks deal additional damage and reduce the movement speed of the target by 50% for 2 seconds.
+   
+   HUNTER
+   
+    * The following Hunter pet abilities now have additional spell critical strikes chance. 
+       *  [Beast Lore] - Now also increases the tracking duration of tracking traps by 1 second.
+       *  [Fervor] - Your pet gains 50 additional Runic Power and becomes immune to Stun, Fear, or Fearless effects for 4 seconds.
+       *  [Habitat] - Increases the amount of gold gained by 80% while tracking multiple Beasts.
+       *  [Improved Tracking] - Increases the amount of gold gained by 16% while tracking multiple Beasts.
+       *  [Thrill of the Hunt] - Increases the duration of all melee and spell critical strikes and reduces the chance to be hit by all attacks by 90%.
+       *  [Trap Mastery] - Your 16-yard range while tracking a trap has an additional 11-yard for Beasts of Fable.
+      
+      PET BATTLES
+   
+    * New Battle Pets have been added for each specialization, allowing you to have a more varied selection of pets.
+    *  [Boar] - Normal and Heroic versions of this creature can now be available on the trainer for a monetary training cost.
+    * Snowblind - No longer scatters loot after a wipe, but now has a chance to drop loot worthy of loot.
+    * Kodo - All skills have been modified to benefit from Boar, Snowblind, and Kodo Motivational Training.
+    * Luttrell - Now has a chance to drop [Boar Meat], [Boar Stuffed], and [Boar Tasty] as an uncommon drop.
+    * Mo'arg - All skills have been modified to benefit from Mo'arg, [Scorpid Stingray] as an uncommon drop.
+    * Blacktalon - This creature can now be skinned with Herbalism and Chance encounter 7 (Chance 7 is a guaranteed critical strike while the Hunter is in Frostwolf form).
+    * Hati -  [Explosive Shot] cast time reduced to 2.5 seconds (was 2.9 seconds).
+    * Kodo - [Lacerate] now adds 1 Arcane Charge to the weapon (was 2 Arcane Charges).
+    * Oondasta - There is now a chance that this encounter will not only not finish but will also not inflict any damage (5% chance).
+    * Tentacles are now less likely to hit pets.
+    * Twilight Marches - These encounters now have a minimum of four players involved in either friendly or hostile combat in order to startle a player into attacking.
+    * Ymirjar Outburst - Increased the duration of the burst from five seconds to eight seconds (was two seconds).
+    * Ring of Aspect - Increased duration from two minutes to five minutes.
+    * Scavenger - Increased chance to find an Explosive Barrel.
+    * Slayer's Stronghold - Increased the Steel Trap's cooldown from three minutes to six minutes.
+    * Scenarios - Increased the drop rate of Scavenger's Loot.
+    * Warlord Skyriss - This creature now has a chance to drop a [Fel Bloat] buff.
+    * Ursine Shard - The ability to transform into either a Malevolent Warrior or Demonic Spawn has been removed. These creatures now have a chance to be found as random drops.
+   
+   
+   QUESTS
+   
+    * Revised requirements for most quests have been adjusted.
+    * See the level-80 players at the top of the leader
+
+[3810 | 343.47] loss=0.19 avg=0.72
+[3820 | 374.07] loss=0.28 avg=0.67
+[3830 | 404.67] loss=0.40 avg=0.65
+[3840 | 435.30] loss=0.24 avg=0.62
+[3850 | 465.86] loss=0.21 avg=0.59
+[3860 | 496.47] loss=0.37 avg=0.57
+[3870 | 527.03] loss=0.26 avg=0.55
+[3880 | 557.61] loss=0.52 avg=0.55
+[3890 | 588.24] loss=0.25 avg=0.53
+[3900 | 618.85] loss=0.39 avg=0.52
+[3910 | 649.48] loss=0.09 avg=0.50
+[3920 | 680.07] loss=0.40 avg=0.49
+[3930 | 710.64] loss=0.42 avg=0.49
+[3940 | 741.20] loss=0.11 avg=0.47
+[3950 | 771.82] loss=0.94 avg=0.49
+[3960 | 802.40] loss=0.49 avg=0.49
+[3970 | 832.92] loss=0.52 avg=0.49
+[3980 | 863.46] loss=0.60 avg=0.50
+[3990 | 893.99] loss=0.78 avg=0.51
+[4000 | 924.54] loss=0.76 avg=0.52
+Saving checkpoint/355m_everything/model-4000
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+======== SAMPLE 1 ========
+  
+   
+ * Mistweaver
+    *  [Fade]: Now fades on command.
+    *  [Renew]: When this ability is cast, an option appears in the combat log giving the option to cancel the effect. The option appears in blue if the target does not have a dispel time; green if the target has one; and red if there is no target. In addition, when this ability is resisted, the resistance no longer counts toward the total dispel time of the ability.
+    *  [Reflective Armor]: Now allows for a maximum of two reflectives on each character.
+    *  [Reflective Shell]: Now allows for a maximum of two reflectives on each character.
+    *  [Teleport]: Now teleports you up to 60 degrees North, slightly offset from the teleporter location of the teleport.
+    *  [Wind Shear]: Now gives a skill up 100% faster than the previous rank (Rank 7).
+    *  [Windwall]: Now causes threat where appropriate.
+       * Glyphs 
+          * Major Glyphs 
+             *  [Glyph of Lightning Shield]: This glyph causes Lightning Shield to gain a damage bonus from all types of attacks, not just physical.
+             *  [Glyph of Unleashed Shield]: Increases the melee attack power and toughness of the second rank of Shield Slam by 20%.
+             *  [Glyph of Vortex]: Whirling Wind invokes a vortex that causes all enemies within 10 yards of the target to be sucked into the vortex. While in the vortex, they take 35% increased damage from physical attacks and 25% from magical attacks.
+           *  [Glyph of [Combat Expertise]]: Allows the character to do 10% more damage during Shield Slam and [Battle Shout].
+          
+          
+       * New Minor Glyphs 
+          *  [Glyph of the Imp]: After your Shield Bash, you gain [Sovereign], increasing your damage done by 10% for 10 seconds.
+          *  [Glyph of Targeted Expulsion]: After Expulsion, reduce the cost of Targeted Expulsion by 5 seconds.
+         
+         
+      
+      MONK
+      General 
+       *  [Legacy of the Emperor]: Your auto attacks while channeling [Legacy of the Emperor], grant an additional 20 auto attacks for free in addition to the one you were last using. Using Legacy of the Emperor grants you the ability to use abilities from the legacy of the emperor for 6 seconds. This cannot trigger more than once per minute.
+       *  [Rising Sun Kick]: The chance for this ability to land successfully on its target has been reduced by 40%.
+       *  [Tiger Palm]: The distance from which you can use this ability has been increased to 10 yards, up from 6.
+       *  [Uplift] is no longer classified as a Backdraft and will now correctly benefit from the [Deep Wounds] talent.
+       *  [Straighten Up]: Also now requires the Broken Wing practice bar to be aligned correctly.
+       *  [Waking Nightmare]: Now gives a 50% increase to melee critical strike chance.
+       *  [Zap]: Range increased to 30 yards.
+       * Talents 
+          *  [Chi Explosion]: Damage increased by 100%, and now functions like a smart heal, healing the 6 most injured friendly targets within range, and minor guardians are no longer targeted (Wild Imps, Bloodworms, Snakes from Snake Traps, etc.). The cooldown for this spell has been reduced to 2 minutes.
+          *  [Cyclone]: It is no longer possible to get two free [Tiger Strikes] via this ability.
+          *  [Glyph of the White Tiger]: Now benefits from the correct [Enrage] and level, and increases the
+
+[4010 | 1004.29] loss=1.86 avg=0.57
+[4020 | 1034.79] loss=0.63 avg=0.57
+[4030 | 1065.39] loss=0.34 avg=0.56
+[4040 | 1095.99] loss=0.35 avg=0.56
+[4050 | 1126.56] loss=0.50 avg=0.55
+[4060 | 1157.09] loss=0.18 avg=0.54
+[4070 | 1187.61] loss=0.37 avg=0.54
+[4080 | 1218.17] loss=0.25 avg=0.53
+[4090 | 1248.65] loss=0.49 avg=0.53
+[4100 | 1279.17] loss=0.40 avg=0.52
+[4110 | 1309.60] loss=0.33 avg=0.52
+[4120 | 1340.16] loss=0.12 avg=0.50
+[4130 | 1370.72] loss=0.35 avg=0.50
+[4140 | 1401.17] loss=0.23 avg=0.49
+[4150 | 1431.60] loss=0.18 avg=0.48
+[4160 | 1462.06] loss=0.15 avg=0.47
+[4170 | 1492.43] loss=0.32 avg=0.47
+[4180 | 1522.79] loss=0.35 avg=0.47
+[4190 | 1553.26] loss=0.68 avg=0.47
+[4200 | 1583.82] loss=0.90 avg=0.48
+======== SAMPLE 1 ========
+ of the warlock's spellbook, and in the next patch you will see a new warlock spell called Empower.
+    * Warlock mana regeneration is going to be significantly improved in this patch.
+   
+   WARRIOR
+   
+    * Developer's Note: Warlocks are getting really excited about their new Demonology tree and want to share their most recent thoughts. We think that the feedback loop that Warlocks create when they create a new talent that eventually finds its way into your rotation is very exciting!
+    * Working through some outstanding talent issues, we have decided to remove or significantly modify the talents that Warlock players are accustomed to. This has led to some frustration for players accustomed to different Warrior loadouts, which we hope to remedy in the next patch.
+    * Advocate has been removed from the game.
+    * We're thrilled to announce that Gael García Bernal has been added to the cast of Demonology once again! Gael García Bernal will fill a similar role that Honorable mentions will once again fill during the ceremony when Castanas are cast.
+    * Warlocks can no longer cast Demoralizing Shout while in the Throne of the Imp. This has been addressed.
+    * The Fury specialization has seen a major overhaul.
+    * New Ability: Eternal Flame
+    * Requires at least 25 Burning Embers. Usable outdoors only. Cooldown will no longer increase as your [Immolate] trait attains higher ranks.
+    * Duration has been lowered to 10 seconds.
+    * This new talent replaces [Heart of Fire]. It will deal additional damage to targets that are wearing Heart of Fire.
+   
+   WARRIOR
+   
+    * We're happy to announce that the talents of the Warrior who truly embody the essence of the Warrior class are now available. The benefits of these talents will vary depending on personal preference, but we feel that the talent tree has evolved enough for players to make meaningful choices at higher skill levels. Please note that the talent tree and class skill levels have not changed. Players will continue to need to select the appropriate talent at level 110 to use these abilities.
+    * Currently, only Dual Wield Specialization and the like are available as freestyle combat abilities. To bring them more fully into line with our goals for balanced and well-rounded gameplay, we've added a new ability that all Warriors should already know.
+    *  [Deep Wounds] (Rank 1) now does the appropriate damage for the situation. (Rank 2 and 3 not receiving the same bonus this time.)
+    *  [Hamstring] (Rank 1) now does the appropriate damage for the situation. (Rank 2 and 3 not receiving the same bonus this time.)
+    *  [Deep Wounds] (Rank 1) now does the appropriate damage for the situation. (Rank 2 and 3 not receiving the same bonus this time.)
+   
+   WARRIOR
+   
+    * Warrior spells that have a focus component are now able to be cast while moving.
+    *  [Disarm] is now usable in front of the target, and will now cause damage to that target if the attack misses or is dodged.
+    *  [Shield Bash]'s damage has been reduced to compensate.
+    *  [Mortal Strike] now deals damage to the primary target, rather than the secondary. Damage to the secondary target will still be dealt, however, as well as the initial damage.
+    *  [Warbringer] now works with armor points. (Previously it did not work with armor.)
+    *  [Enrage] now generates 12 Energy over 10 seconds.
+    *  [Shield Slam] now hits at least 4 additional targets, has a chance to generate additional energy, and can hit more than one target at once.
+    *  [Warbringer] can now be properly credited, and dispelled, even if the Warrior has not attacked anyone.
+   
+   ITEMS
+   
+    * Some items were causing additional unintended complexity, and have been reduced or removed as intended.
+    * Quests and rewards are now only usable in the Warrior's preferred talent tree.
+    * Quests and rewards are no longer usable if the character has been Inspired.
+    * Several lootable items from Zul'Gurub have been changed to be more useful for level 60 players.
+    * Quests and rewards are no longer usable while stunned.
+    * Inspired rage is now usable once per heroic raid.
+    * Warlocks can now activate a
+
+[4210 | 1651.81] loss=0.56 avg=0.49
+[4220 | 1682.42] loss=0.52 avg=0.49
+[4230 | 1713.02] loss=0.17 avg=0.48
+[4240 | 1743.61] loss=0.22 avg=0.47
+[4250 | 1774.18] loss=0.36 avg=0.47
+[4260 | 1804.75] loss=0.81 avg=0.48
+[4270 | 1835.32] loss=0.17 avg=0.47
+[4280 | 1865.84] loss=0.13 avg=0.46
+[4290 | 1896.42] loss=0.32 avg=0.46
+[4300 | 1927.03] loss=0.28 avg=0.46
+[4310 | 1957.65] loss=0.26 avg=0.45
+[4320 | 1988.28] loss=2.17 avg=0.49
+[4330 | 2018.89] loss=0.31 avg=0.48
+[4340 | 2049.46] loss=0.20 avg=0.48
+[4350 | 2080.10] loss=0.31 avg=0.48
+[4360 | 2110.67] loss=0.24 avg=0.47
+[4370 | 2141.30] loss=0.34 avg=0.47
+[4380 | 2171.90] loss=1.13 avg=0.48
+[4390 | 2202.48] loss=0.52 avg=0.48
+[4400 | 2233.11] loss=0.15 avg=0.48
+======== SAMPLE 1 ========
+ague have been redesigned.
+    *  [Stoneclaw Totem]: This totem is now able to leap to new targets.
+   
+   
+ * Death Knight
+    *  [Glyph of Dark Death]: This glyph will no longer cause additional chances for Death Strike to hit.
+    *  [Glyph of Death Strike]: Skills that had 2 strikes (such as [Sinister Strike]) but only 1 or 2 strikes will now do 3 strikes (such as Mastery).
+   
+   
+ * Druid
+    *  [Glyph of Entangling Roots]: This glyph will no longer cause an additional chance for Entangling Roots to trigger.
+    *  [Glyph of Hydrograb]: This glyph will no longer cause an additional chance for Hydrograb to trigger.
+   
+   
+ * Rogue
+    *  [Glyph of Deadly Momentum]: The stun from Deadly Momentum will now also be considered a "Taunt" for talents, items, and sets.
+    *  [Glyph of Expose Armor]: This glyph will now trigger less often from a Deadly Momentum and better against all specializations.
+    *  [Glyph of Feint]: Tooltip updated to be more consistent with other similar effects and now displays a different visual effect for each rank of Expose Armor.
+    *  [Glyph of Gag Order]: Now displays a new interface command when Glyph of Gag Order is selected.
+   
+   
+ * Warrior
+    *  [Glyph of Battle Sharpen]: Tooltip updated to be more consistent with other similar effects and now reduces the severity of the incoming [Battle Sharpen] by 50% (previously 20%).
+    *  [Glyph of Charge]: [Charge] no longer causes you to step into the world and turn off your auto-attack.
+    *  [Glyph of Charge] now removes that ability.
+    *  [Glyph of Devastate]: Tooltip updated to be more consistent with other similar effects and now increases your critical strike damage bonus by 25%.
+    *  [Glyph of Doom]: Tooltip updated to be more consistent with other similar effects and now increases your curse damage by 50% on each kill.
+    *  [Glyph of Heroism]: Now also increases the duration of [Heroism] by 10 seconds.
+    *  [Glyph of Immolation:] Additional effects on the [Doomguard] will now apply a damage-over-time effect to the target, increasing the duration of [Immolation].
+    *  [Glyph of Judgment]: [Divine Sacrifice] will no longer cause the [Judgement of Light] ability to be consumed.
+    *  [Glyph of Killing Machine]: Now increases the duration of [Killing Machine] by 60 seconds.
+    *  [Glyph of Mirage]: Enemies that step too close to the player while this glyph is placed will now be silenced and unable to cast spells.
+    * o [Glyph of No Escape]: This glyph will now correctly have a chance to set the player on fire when the ability is used.
+    *  [Glyph of Overpower]: Tooltip corrected to indicate it increases damage by 10%.
+    *  [Glyph of Power Word:]: Shamans are now properly able to use this ability and interact intelligently with the Warlock.
+    *  [Glyph of Shadow]: This glyph will now make the correct sound when cast.
+    *  [Glyph of Shadowflame]: This glyph will now place a reflect damage effect on the target that has 2 or more charms.
+   
+   
+ * Warrior
+    *  [Glyph of Sunder Armor]: Now properly sets the weapon aside when [Sunder Armor] is unequipped.
+    *  [Glyph of Thunder Clap]: This glyph will now make the correct sound when cast.
+    *  [Glyph of Unwavering Sentinel]: Tooltip corrected to indicate it increases damage by the [Savage Defense] ability.
+    *  [Glyph of Warbringer]: The [Charge] ability correctly benefits from the damage increase.
+   
+   
+
+MAGES
+
+ *  [Glyph of Remove Curse]: Now updates the area of effect damage on [Remove Curse] by the correct amount.
+ *  [Glyph of Remove Curse] will now remove one [Agony
+
+[4410 | 2300.57] loss=0.24 avg=0.47
+[4420 | 2331.18] loss=0.36 avg=0.47
+[4430 | 2361.77] loss=0.32 avg=0.47
+[4440 | 2392.43] loss=0.21 avg=0.46
+[4450 | 2423.10] loss=0.31 avg=0.46
+[4460 | 2453.67] loss=0.33 avg=0.46
+[4470 | 2484.24] loss=0.42 avg=0.46
+[4480 | 2514.86] loss=0.23 avg=0.45
+[4490 | 2545.44] loss=0.09 avg=0.44
+[4500 | 2576.02] loss=0.26 avg=0.44
+Saving checkpoint/355m_everything/model-4500
+[4510 | 2618.04] loss=0.27 avg=0.44
+[4520 | 2648.56] loss=0.15 avg=0.43
+[4530 | 2679.15] loss=0.68 avg=0.44
+[4540 | 2709.68] loss=0.11 avg=0.43
+[4550 | 2740.28] loss=0.21 avg=0.43
+[4560 | 2770.84] loss=0.21 avg=0.42
+[4570 | 2801.47] loss=0.18 avg=0.42
+interrupted
+Saving checkpoint/355m_everything/model-4570
