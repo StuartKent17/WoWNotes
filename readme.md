@@ -1,8 +1,30 @@
 # Wownotes
 
-Just playing around trying to get some neat generated patch notes. Content is sourced from [WowGamepedia](https://wow.gamepedia.com). Their license is CC by SA. No claim is placed on this content, generated or otherwise.
+Just playing around trying to get some neat generated patch notes. 
+
+Patch content is sourced from [WowGamepedia](https://wow.gamepedia.com). Their license is CC by SA. 
+
+Additional content has been sourced from [Wowhead](https://wowhead.com) and the leaks found online on reddit, and [MMO-Champion](https://MMO-Champion.com).
+
+Attribution for items sourced from news websites, or a single attributable source for 'expansion leaks' will include a link in the HTML source file as a comment. Additional links can be added on request or content can be removed from this repository.
+
+While no claim is placed on any content, generated or otherwise, original licenses and copyright from the original rights holders still apply. Please contact any and all that you believe may have contributed to any output you plan to use or distribute for a commercial endeavour.
+
 
 # Generated Text 
+
+## Third Update
+I've made some progress and started posting it about places. This was generated with a "Patch 8.2.5 Will Contain\n" prompt and was trained for 2000 steps on the 355m model. I've just added a bunch of new training files for use. In the output folder. These are now all regenerated at the same time, and allow for rapid updating of subsets of the data. Next update will be using some combination of these for expansion speculation. 
+
+There's now an archive of the april fools patch notes, and the expansion leak/rumor patch notes. I'm hoping a combination of these will have some good results. 
+
+The manually_generated folder has a bunch of generated text. Most of it has been read now, and turned into the below. But it's inevitable some stuff has been missed as there's a lot to process. 
+
+Here's what's been posted so far. 
+ * [First Generation](https://www.reddit.com/r/wow/comments/d5sfcf/ai_generated_patch_notes_early_version_very_rough/)
+ * [I asked my robot about 8.2.5](https://www.reddit.com/r/wow/comments/d778cm/i_asked_my_robot_about_patch_825_generated_patch/)
+ * [Botpatch Twitter](https://twitter.com/BotPatch) 4x A day tweets of random stuff I found funny
+
 
 ## Second Attempt
 
@@ -47,3 +69,7 @@ Kaldorei
 # Project Setup
 
 I wanted to have a bunch of different options of dealing with the content, so trying HTML. HTML seems to jam it up, but I use Gulp/NodeJS to combine the files and strip the HTML, which instead could convert to markdown. It handles markdown lists ok, so might try later.
+
+GPT2 is a text generation model created by OpenAI, which someone built an easy to use version called simple_gpt_2, to make things easier, google have an online programming tool called "Collab" which lets you easily use this massive stack of tools for 'research'.
+
+If you want to try, open this notebook & save to your google drive. https://colab.research.google.com/drive/1VLG8e7YSEwypxU-noRNhsv5dW4NfTGce#scrollTo=puq4iC6vUAHc
