@@ -2,24 +2,24 @@ chaud2015-02-12, 06:06 PMPatch 6.1 - Engineer’s Workshop: Anti-Aliasing & Ligh
 We’ve been toiling away on a number of new graphical features that are coming with Patch 6.1, and we’re excited to provide a glimpse at how they’re shaping up. A quick reminder that the Engineer’s Workshop tends to be pretty tech savvy in the terms we’re using, but certainly these features will provide benefits to all players regardless of if they can tell their display port from a hole in the ground. Nyuk, nyuk, nerd jokes.
 
 
-http://media.mmo-champion.com/images/news/2015/february/thumb/ssao.jpg http://media.mmo-champion.com/images/news/2015/february/ssao.jpg http://media.mmo-champion.com/images/news/2015/february/thumb/ssao2.jpg http://media.mmo-champion.com/images/news/2015/february/ssao2.jpg http://media.mmo-champion.com/images/news/2015/february/thumb/ssao3.jpg http://media.mmo-champion.com/images/news/2015/february/ssao3.jpg 
+      
 
 First up we’re going to be providing a new screen space ambient occlusion SSAO method from NVIDIA known as HBAO+, targeted at higher end video cards. It provides a high quality ambient occlusion solution that should be available to most users running recommended spec machines. Here we’re showing comparisons of using no SSAO, our current SSAO High setting, and the new NVIDIA HBAO+. The HBAO+ setting uses our geometry buffer to access the screen space normals of all objects being drawn. It more accurately darkens surfaces that are near the same depth but with opposing normals, and does so with fewer artifacts than the SSAO depth-only solution. HBAO+ will work on any DirectX 11-capable video card.
 
 
-http://media.mmo-champion.com/images/news/2015/february/thumb/ao01.jpg http://media.mmo-champion.com/images/news/2015/february/ao01.jpg http://media.mmo-champion.com/images/news/2015/february/thumb/ao02.jpg http://media.mmo-champion.com/images/news/2015/february/ao02.jpg http://media.mmo-champion.com/images/news/2015/february/thumb/ao03.jpg http://media.mmo-champion.com/images/news/2015/february/ao03.jpg http://media.mmo-champion.com/images/news/2015/february/thumb/ao04.jpg http://media.mmo-champion.com/images/news/2015/february/ao04.jpg 
+        
 
 We know many of you have been looking forward to the return of MSAA, and we’ve also heard your requests for support of SSAA. We’re pleased to say that both of these options will be available for DirectX 11 users in Patch 6.1. They can be accessed from the anti-aliasing settings in the graphics option screen, and are intended for users with high performance video cards. For people running near the recommended spec, Intel’s CMAA is still the preferable option, and will help you balance graphic fidelity with performance. Below are some comparisons between CMAA, MSAA 8x, and SSAA 2x + CMAA. With Patch 6.1 we’ll be providing the widest variety of anti-aliasing options we’ve ever had available, ranging from performance-optimal to performance-crushing.
 
 
-http://media.mmo-champion.com/images/news/2015/february/thumb/aa01.jpg http://media.mmo-champion.com/images/news/2015/february/aa01.jpg http://media.mmo-champion.com/images/news/2015/february/thumb/aa02.jpg http://media.mmo-champion.com/images/news/2015/february/aa02.jpg http://media.mmo-champion.com/images/news/2015/february/thumb/aa03.jpg http://media.mmo-champion.com/images/news/2015/february/aa03.jpg http://media.mmo-champion.com/images/news/2015/february/thumb/aa04.jpg http://media.mmo-champion.com/images/news/2015/february/aa04.jpg 
+        
 
 Also in Patch 6.1 we’re implementing a lighting makeover with the introduction of per-pixel deferred point lights. This allows for accurate point lights that can affect all of the objects in the game world. This creates realistic lighting from sources like camp fires and torches, and illuminates the world in a more realistic way than ever before. The number of point lights supported varies by hardware, with high end video cards allowing for the best quality lighting. Below are several examples of a scene lit in the current game 6.0.3, and what you can expect that same scene to look like in Patch 6.1.
 
 
-http://media.mmo-champion.com/images/news/2015/february/thumb/prettyLight01.jpg http://media.mmo-champion.com/images/news/2015/february/prettyLight01.jpg http://media.mmo-champion.com/images/news/2015/february/thumb/prettyLight02.jpg http://media.mmo-champion.com/images/news/2015/february/prettyLight02.jpg 
-http://media.mmo-champion.com/images/news/2015/february/thumb/prettyLight03.jpg http://media.mmo-champion.com/images/news/2015/february/prettyLight03.jpg http://media.mmo-champion.com/images/news/2015/february/thumb/prettyLight04.jpg http://media.mmo-champion.com/images/news/2015/february/prettyLight04.jpg 
-http://media.mmo-champion.com/images/news/2015/february/thumb/prettyLight05.jpg http://media.mmo-champion.com/images/news/2015/february/prettyLight05.jpg http://media.mmo-champion.com/images/news/2015/february/thumb/prettyLight06.jpg http://media.mmo-champion.com/images/news/2015/february/prettyLight06.jpg 
+    
+    
+    
 
 
 All of this technology is available to check out on the 6.1 PTR right now, so go try them out and see how these options work on your rig, and let us know your results.

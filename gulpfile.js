@@ -75,7 +75,7 @@ gulp.task('news', function () {
     .pipe(replace("<ul>", "<br/><ul>"))
     .pipe(html2txt(html2TextOpts))
     .pipe(replace(/\]([a-zA-Z0-9]{1})/g, '] $1'))
-    .pipe(replace(/^([^:]+):\/\/([-\w._]+)(\/[-\w._]\?(.+)?)?$/ig))
+    .pipe(replace(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/g, ""))
     .pipe(replace(/([a-zA-Z0-9]{1})\[/g, '$1 ['))    
     .pipe(replace('(', ''))
     .pipe(replace(')', ''))

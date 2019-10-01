@@ -1,10 +1,10 @@
-chaud2016-11-11, 03:17 PM<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Fact or Faction - Mean Streets of Gadgetzan, Faction Themed Card Design Competition http://www.hearthpwn.com/news/1932-fact-or-faction-mean-streets-of-gadgetzan-faction
+chaud2016-11-11, 03:17 PM<img src="" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Fact or Faction - Mean Streets of Gadgetzan, Faction Themed Card Design Competition 
 
 BlizzCon 2016 - World of Warcraft Engineer's Workshop
 Blizzard had an engineering panel for WoW this year that wasn't on the stream.
 
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/W1y2fdDeSbU?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="900" height="506" src="" frameborder="0" allowfullscreen></iframe>
 
 
 Legion doubled or in some cases on high end machines tripled the draw distance. 
@@ -14,7 +14,7 @@ The team tries to spend some time dealing with technical debt right after each e
 When WoW initially shipped, most users had a single core CPU and graphics cards didn't run a lot of pixel shaders. 
 When the team wanted to do new character models, they realized that they would triple or quadruple the bone count across the races. The animation system was written back when most players only had a single core CPU and it wasn't built to handle what they needed to do. The minimum requirements could handle multi-threading now, so they wrote a jobs system to be able to send each model off to a thread to be animated. The team then realized they could animate even more models, so paying off technical debt advanced the capabilities of the engine. In some of the Warlords cinematics you would see hundreds of Orcs running up the steps in the background, which was something the team was able to do thanks to the system changes. 
 Invisible Stalkers are invisible units that do something. The engineering team has been relatively small until recently, so a lot of the content built by designers utilizes the invisible stalkers. This can cause server performance issues and make it hard to reproduce bugs with non-deterministic behavior. The team can go back and look at where these are being used and figure out what tools they can build to help designers build content. 
-The Al'akir http://wow.gamepedia.com/Al%27Akir_tactics fight had thousands of invisible stalkers swirling around it. These were used to move the player around the vortex, attaching to the nearest one when you jump in. 
+The Al'akir  fight had thousands of invisible stalkers swirling around it. These were used to move the player around the vortex, attaching to the nearest one when you jump in. 
 The engineering team reviews new dungeon and raid encounters and one of the things that they look for is how many invisible stalkers were used. It is a warning sign if too many are used, but there are many reasonable situations where they are valid to use.
 Big crowds in a game are hard, as you client needs to know where everyone is and what they are doing. This is why the team limits the size of crowds in game, it helps with server performance, client performance, and bandwidth used. 
 The client sends spell casts to the server and assumes it will succeed. Occasionally you will cast a spell, the cooldown will start, and then it says you are actually silenced and stops. Casting animations are another thing that start right away, which is why you end up with glowing hands before casting with high latency. It makes feedback from your actions feel immediate. 
@@ -68,10 +68,10 @@ I'll share any updates I hear on this. Until then, thanks for your patience.
 
 
 Addon - Hide Quick Join
-If you want to hide the new Quick Join toasts, give the Hide Quick Join https://mods.curse.com/addons/wow/hide-quick-join addon a try. You can toggle them on and off with the "/qj" command. 
+If you want to hide the new Quick Join toasts, give the Hide Quick Join  addon a try. You can toggle them on and off with the "/qj" command. 
 
 
-http://media.mmo-champion.com/images/news/2016/november/qjHide.png https://mods.curse.com/addons/wow/hide-quick-join 
+  
 
 
 Post-BlizzCon Q&A Time Change
@@ -85,4 +85,4 @@ We’re committed to providing an equal and fair playing field for everyone in W
 
 
 Blue Tweets
-List your PvP Brawl idea here: holinka https://twitter.com/holinka/status/794669491200225280
+List your PvP Brawl idea here: holinka 

@@ -8,10 +8,10 @@ Classes
 
 
 Rage is limited to a maximum of 25 at the start of a raid encounter.
-https://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue Forums http://www.mmo-champion.com/forums/275-Rogue / Skills http://www.wowdb.com/spells/class-abilities/rogue / Talent Calculator http://www.wowdb.com/talent-calculator#Q
+ Rogue Forums  / Skills  / Talent Calculator 
 
-Resolved an issue that prevented Sap https://www.wowdb.com/spells/6770-sap from breaking when specific spells were cast on affected targets such as Concentrated Flame Essence https://www.wowdb.com/spells/302564-concentrated-flame.
-The debuff from Crucible of Flame Essence https://www.wowdb.com/spells/298605-the-crucible-of-flame no longer removes Rogues from stealth.
+Resolved an issue that prevented Sap  from breaking when specific spells were cast on affected targets such as Concentrated Flame Essence 
+The debuff from Crucible of Flame Essence  no longer removes Rogues from stealth.
 
 
 
@@ -33,7 +33,7 @@ Developers’ note: With this change more players will have a chance to engage t
 Vengeful Highborne’s fear ability channel reduced to 3 seconds was 4 seconds and its duration reduced to 4 seconds was 5 seconds.
 Flight Master Gizzik Kelpears now defends against hostile creatures.
 Reduced the spawn chance for Enforcer KX-T57.
-The Dopple Gang now spawns when players use the item Pressure Relief Valve https://www.wowdb.com/items/169470-pressure-relief-valve.
+The Dopple Gang now spawns when players use the item Pressure Relief Valve 
 Shirakess Overseer no longer spawns inside rocks.
 Rolly Gulper is no longer immune to area-of-effect abilities.
 Lord Hydraxis is now more powerful.
@@ -56,30 +56,30 @@ Items
 Heart of Azeroth
 
 
-Resolved an issue that caused Memory of Lucid Dreams Essence https://www.wowdb.com/spells/303412-memory-of-lucid-dreams to break the user’s stealth when refunding resources.
-Memory of Lucid Dreams’ Essence https://www.wowdb.com/spells/303412-memory-of-lucid-dreams Major Power now correctly lasts the full duration for Fire Mages, Frost Mages, and Protection Paladins.
+Resolved an issue that caused Memory of Lucid Dreams Essence  to break the user’s stealth when refunding resources.
+Memory of Lucid Dreams’ Essence  Major Power now correctly lasts the full duration for Fire Mages, Frost Mages, and Protection Paladins.
 
 Developers’ note: The Minor Power on Memory of Lucid Dreams has a custom implementation for Fire Mages and how it interacts with Fire Blast charges. However, this wound up being too strong relative to other Essences’ Minor Powers. As such we’re reducing its proc rate by 33% for Fire Mages, which should keep this as a very strong option to use in the Minor Slot, but much closer to the potency of other Minor Powers.
 
 
-Crucible of Flames’ Essence https://www.wowdb.com/spells/298605-the-crucible-of-flame Minor Power no longer procs when casting abilities that apply crowd control to a target.
-Fixed a bug preventing Purification Protocol's Essence https://www.wowdb.com/spells/299343-purification-protocol Minor Power from correctly generating threat when damaging enemies.
-The damage and healing granted from Omnipotence Azerite Trait https://www.wowdb.com/spells/303212-omnipotence now resets at the beginning of encounters and Arena matches.
+Crucible of Flames’ Essence  Minor Power no longer procs when casting abilities that apply crowd control to a target.
+Fixed a bug preventing Purification Protocol's Essence  Minor Power from correctly generating threat when damaging enemies.
+The damage and healing granted from Omnipotence Azerite Trait  now resets at the beginning of encounters and Arena matches.
 
 
-Fixed a bug that caused the Highborne Compendium of Sundering’s https://www.wowdb.com/items/169321-highborne-compendium-of-sundering proc chance to increase if an allied player also had the trinket equipped.
-Prismatic Crystals https://www.wowdb.com/items/167893-prismatic-crystal[ now stack to 200.
-Shaman can now activate Anti-Gravity Packs https://www.wowdb.com/items/169868-anti-gravity-pack in Ghost Wolf https://www.wowdb.com/spells/2645-ghost-wolf form.
+Fixed a bug that caused the Highborne Compendium of Sundering’s  proc chance to increase if an allied player also had the trinket equipped.
+Prismatic Crystals [ now stack to 200.
+Shaman can now activate Anti-Gravity Packs  in Ghost Wolf  form.
 Benthic gear now displays the correct amount of Prismatic Manapearls needed for upgrades.
-The Volatile Blaster https://www.wowdb.com/spells/300892-volatile-blaster now can be used by Druids in Cat or Bear form.
-Harbinger’s Inscrutable Will https://www.wowdb.com/items/167867-harbingers-inscrutable-will now pacifies enemies struck by its projectile effect was a silence.
-Druids can use Anti-Gravity Packs https://www.wowdb.com/items/169868-anti-gravity-pack in all shapeshift forms, except Travel Form. Flap those wings, Moonkin!
+The Volatile Blaster  now can be used by Druids in Cat or Bear form.
+Harbinger’s Inscrutable Will  now pacifies enemies struck by its projectile effect was a silence.
+Druids can use Anti-Gravity Packs  in all shapeshift forms, except Travel Form. Flap those wings, Moonkin!
 
 
 Player versus Player
 
 
-The "Battle for Nazjatar" https://www.wowdb.com/achievements/13568-for-nazjatar event is now active when there are similar numbers of players from both factions with War Mode activated in Nazjatar. When that is not the case, "Azshara's Elite Commanders" —a new event—becomes active and also rewards Battle for Nazjatar Commendations.
+The "Battle for Nazjatar"  event is now active when there are similar numbers of players from both factions with War Mode activated in Nazjatar. When that is not the case, "Azshara's Elite Commanders" —a new event—becomes active and also rewards Battle for Nazjatar Commendations.
 The "Battle for Nazjatar" no longer ends prematurely.
 Fixed an issue that prevented Horde players who participated in Battle for Nazjatar from receiving rewards if they died when it ended.
 Kronus’ and Fangraal's health and damage have been increased in the Ashran Epic Battleground.
@@ -108,8 +108,8 @@ World Quest targets in Nazjatar no longer display a silver dragon portrait, but 
 Toys
 
 
-The Pearl of Abyss https://www.wowdb.com/items/166782-pearl-of-the-abyss can now be obtained.
-Flopping Fish https://www.wowdb.com/items/170203-flopping-fish is now much more kickable.
+The Pearl of Abyss  can now be obtained.
+Flopping Fish  is now much more kickable.
 
 
 Warfronts

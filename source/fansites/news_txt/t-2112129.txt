@@ -1,10 +1,10 @@
-chaud2016-11-14, 01:06 AM<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> New Card Reveal: Madam Goya http://www.hearthpwn.com/news/1941-new-card-reveal-madam-goya
+chaud2016-11-14, 01:06 AM<img src="" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> New Card Reveal: Madam Goya 
 
 BlizzCon Developer Interview
-Vanion http://www.vanion.eu/news/blizzcon-2016-unser-interview-mit-lead-game-designer-matt-goss-15973 had the chance to talk to Matt Goss, a Lead Game Designer on WoW.
+Vanion  had the chance to talk to Matt Goss, a Lead Game Designer on WoW.
 
 
-<iframe width="900" height="150" src="https://www.youtube.com/embed/mAEkS7Ee7yQ?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="900" height="150" src="" frameborder="0" allowfullscreen></iframe>
 
 
 
@@ -27,10 +27,10 @@ The team wanted to try the new Karazhan experience before they added a version y
 
 
 BlizzCon 2016 - Blizzard Engineering Panel
-Along with the WoW Engineering panel http://www.mmo-champion.com/content/6108-BlizzCon-2016-Engineering-Panel-WoW-Account-Actions-Quick-Join-Toasts-Q-A-Time, there was also a Blizzard Engineering panel not on the stream on Day 1.
+Along with the WoW Engineering panel , there was also a Blizzard Engineering panel not on the stream on Day 1.
 
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/7TncmMfGxfU?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="900" height="506" src="" frameborder="0" allowfullscreen></iframe>
 
 
 Heroes is a fun game to work on because the team likes to do the impossible. The team was working on Cho'gall and someone came up with the idea for him to carry his horse. Mounting assumes that you have a horse under you that is playing a running animation and the character model plays an animation in sync with that. This was very hard to change, especially with a week left before the BlizzCon build had to be finalized. He ended up riding an invisible horse, playing a running animation, and had an added horse on his shoulder. The team eventually went back and improved the mount code. You can see this with Ragnaros, his trails are a custom special mount. 
@@ -46,48 +46,48 @@ The team then took all of the instance servers and put them into a pool. This al
 The Overwatch has a QA team that sits on the same floor as the developers and all of the different engineering disciplines leverage that team. The QA team will attend all of the meetings and design discussions so that they are aware of all of the changes coming. When the team is implementing features, ideally the QA team is already ready with a test plan to make sure the feature is pretty close to bug free. Occasionally there are some larger features that are too big for the internal QA team to test, so the team will ask if there are any QA people on other game teams that want to spend some time testing the new feature. One example of when this was done is the Halloween event. 
 Originally there was a mobile team at Blizzard, separate from the Hearthstone team. They were working on things like the mobile armory. The Hearthstone team borrowed people to help get Hearthstone shippable and then kept them. Eventually the mobile team got absorbed into Team 5. 
 The Legion Companion app was developed by some engineers on the WoW team using Unity. They consulted with the Hearthstone team a lot. They abstracted out Battle.Net management code for Hearthstone so that it can be reused across multiple projects that are being worked on. 
-Blizzard makes use of hundreds of open source projects. They don't contribute as much as they probably could and that is something they are looking into. You can find some things on their Github https://github.com/Blizzard.
+Blizzard makes use of hundreds of open source projects. They don't contribute as much as they probably could and that is something they are looking into. You can find some things on their Github 
 Hearthstone sends what happened in the game to the client, but it doesn't actually save this data anywhere, so the server can't replay what happened when you temporarily lose your network connection. They could also do a better job of chunking up assets. The team has spent time optimizing things on mobile, such as loading of XML files or the art assets. The server side doesn't do a great job of saving state. There is just a current state that gets sent to the client when you reconnect. 
 The team pushed hard from the beginning of Overwatch to have automation be a big part of testing. The team wanted to be able to reliably do things like stress testing things before they go live. What happens when half a million players suddenly start playing? What happens when the servers are overloaded? What happens to game stability when new features are added? It is hard to keep track of things that break that no one really tests. Automation was seen as the solution to many of these problems. It has been really successful so far, allowing the team to stress test servers before they went live and test every single build. The team uses headless clients to automate gameplay and ensure that a build is okay. 
-For WoW, the team has functional testing. People do black box testing https://en.wikipedia.org/wiki/Black-box_testing that catches problems without automation. WoW does have build verification testing. If the client has performance problems, having a bot teleport around to measure framerate and find hot spots is helpful. The team also did a full scale test for Legion launch, having lots of clients connecting to test things for launch. 
+For WoW, the team has functional testing. People do black box testing  that catches problems without automation. WoW does have build verification testing. If the client has performance problems, having a bot teleport around to measure framerate and find hot spots is helpful. The team also did a full scale test for Legion launch, having lots of clients connecting to test things for launch. 
 
 
 
 Blue Tweets
-PSA: Underwater-only mounts should now move faster! Muffinus https://twitter.com/Muffinus/status/796434974953979904
+PSA: Underwater-only mounts should now move faster! Muffinus 
 As fast as Azure Water Striders? Because right now thats pretty much all anyone who isnt a DK is using. No alternatives. =/
-they're not meant to be used as surface mounts Muffinus https://twitter.com/Muffinus/status/796442804519989249
+they're not meant to be used as surface mounts Muffinus 
 I bought water walking potions just so I could not use my water strider
-The idea that the water strider is so good that you can't use anything else is noted, no update tho. Muffinus https://twitter.com/Muffinus/status/796443482726404097
+The idea that the water strider is so good that you can't use anything else is noted, no update tho. Muffinus 
 
 
 Curse is Hiring!
 Are you interested in working on some of the most popular gaming websites in the world? Check out our open positions and see if Curse is the right fit for you!
 
 <div style="width:900px"><div style="width:115px;float:left;margin-right:30px">
-http://media-titanium.cursecdn.com/attachments/39/891/help-wanted.png https://www.curseinc.com/careers/all
+ 
 </div>
 <div style="width:750px;float:right">Huntsville, AL
 
-.NET Web Developer https://www.curseinc.com/careers/493549 - Plan, design, develop, debug, implement and support .NET-based web applications with an emphasis on quality and performance.
-Python Developer https://www.curseinc.com/careers/493581 - In this role you'll be developing cutting edge web properties using Python, Django, Redis, Varnish and MySQL. 
-QA Analyst https://www.curseinc.com/careers/493541 - Help us grow and develop our sites and ensure the highest quality user experience.
-Business Development Manager https://www.curseinc.com/careers/493532 - Help oversee our ad partnerships, publisher partnerships and business relationships.
+.NET Web Developer  - Plan, design, develop, debug, implement and support .NET-based web applications with an emphasis on quality and performance.
+Python Developer  - In this role you'll be developing cutting edge web properties using Python, Django, Redis, Varnish and MySQL. 
+QA Analyst  - Help us grow and develop our sites and ensure the highest quality user experience.
+Business Development Manager  - Help oversee our ad partnerships, publisher partnerships and business relationships.
 
 </div></div>
 <div style="clear:both;"></div>
-For more information on working at Curse, please head to our Careers page https://www.curseinc.com/careers.
+For more information on working at Curse, please head to our Careers page 
 
 
 BlizzCon Cosplay - Ragnaros
-There was lots of great cosplay at BlizzCon, including this Ragnaros by Danielle Beaulieu https://twitter.com/DanielleCosplay/status/796815977166073857. Ragnaros is coming to Heroes of the Storm http://www.heroesnexus.com/news/1809-heroes-at-blizzcon-varian-ragnaros-heroes-new along with Varian! 
+There was lots of great cosplay at BlizzCon, including this Ragnaros by Danielle Beaulieu  Ragnaros is coming to Heroes of the Storm  along with Varian! 
 
 
-http://media.mmo-champion.com/images/news/2016/november/ragnarosCosplay.jpg https://twitter.com/DanielleCosplay/status/796815977166073857 
+  
 
 
 Dark Legacy Comics #559
-DLC #559 http://darklegacycomics.com/559 has been released! 
+DLC #559  has been released! 
 
 
-http://media.mmo-champion.com/images/news/2016/november/dlc559.jpg http://darklegacycomics.com/559
+ 

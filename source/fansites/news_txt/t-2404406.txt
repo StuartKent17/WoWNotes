@@ -35,13 +35,13 @@ One challenge we face is that all the classic data is in the original format use
 For example, spells could originally only perform three actions on the spell’s target. In table form, that looked something like this:
 
 
-https://media.mmo-champion.com/images/news/2018/june/classicchart1.jpg https://media.mmo-champion.com/images/news/2018/june/classicchart1.jpg
+ 
 
 As you can see, there is a lot of space taken up by ‘Nothing’. Over the course of WoW’s lifetime, we’ve improved our data design and normalized much of our database data. Today, that same data would be separated out like this:
 
 
-https://media.mmo-champion.com/images/news/2018/june/classicchart2.jpg https://media.mmo-champion.com/images/news/2018/june/classicchart2.jpg 
-https://media.mmo-champion.com/images/news/2018/june/classicchart3.jpg https://media.mmo-champion.com/images/news/2018/june/classicchart3.jpg
+  
+ 
 
 In this form, there is much less wasted space and spells are no longer limited to three effects. But before we can load any database data, we need to transform the old data layout into the new one. This is not limited to spells, as almost every game system including items, creatures, player characters, spawning, AI, and more has had its database layout altered over the years.
 

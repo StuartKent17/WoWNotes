@@ -4,28 +4,28 @@ We're very close to the release of Patch 4.0.1, at this point the only question 
 As far as I can tell, you can probably expect the patch on October 5th or October 12th. Ghostcrawler already suggested that the patch would be deployed right before the end of the arena season and added that "they shouldn't have a lasting impact on ratings, titles, and the like". 
 Since the current PvP season will end when these changes go live, they shouldn't have a lasting impact on ratings, titles and the like. We are prepared to just drop a temporary player damage nerf on all BGs and Arenas if necessary just so things don't feel too silly until everyone can level up to 85. 
 
-Additionally, the World of Warcraft Trial Website https://us.battle.net/account/creation/wow/signup/ has been updated and now announces that the new streaming client will be available on October 5th, which is exactly what we've been testing on 4.0.1 PTRs. 
+Additionally, the World of Warcraft Trial Website  has been updated and now announces that the new streaming client will be available on October 5th, which is exactly what we've been testing on 4.0.1 PTRs. 
 
 As usual, nothing is official, but it's probably close enough. 
 
 
-http://media.mmo-champion.com/images/news/2010/september/streamingtrial.jpg https://us.battle.net/account/creation/wow/signup/
+ 
 
 
 Heroic Deadmines Video
 TotalBiscuit released a nice video preview of the Heroic version of the Deadmines, one of the two revamped classic dungeon of Cataclysm. 
 
 
-<object width="700" height="465"><param name="movie" value="http://www.youtube.com/v/8eWPQgz432w?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/8eWPQgz432w?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="700" height="465"></embed></object>
+<object width="700" height="465"><param name="movie" value=";hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src=";hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="700" height="465"></embed></object>
 
-<object width="700" height="465"><param name="movie" value="http://www.youtube.com/v/5JuLT_qkGRg?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/5JuLT_qkGRg?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="700" height="465"></embed></object>
+<object width="700" height="465"><param name="movie" value=";hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src=";hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="700" height="465"></embed></object>
 
 
 Currency Conversion - Calculator Update
 The Cataclysm Currency and Honor Calculator has been updated with the latest values of Justice Points.
 We’ve revised the Justice Points conversion rate for Emblems of Triumph and Emblems of Frost. When the upcoming 4.0.1 patch goes live, these emblems will be converted into 11.58 Justice Points up from the previously planned 2.75 Justice Points per emblem. Justice Points accrued above the soft cap of 4,000 will be converted to gold at a rate of 47.5 silver per point down from 2 gold per point when patch 4.0.3 goes live.
 
-The original explanation thread http://forums.worldofwarcraft.com/thread.html?topicId=26850245012 and the subsequent conversion math update http://forums.worldofwarcraft.com/thread.html?topicId=26850245012&sid=1&pageNo=10#184 have been updated to reflect these changes.
+The original explanation thread  and the subsequent conversion math update  have been updated to reflect these changes.
 
 [...] The previous conversion rate was intended to devalue Frost and Triumph a bit to discourage some amount of farming and hoarding of points before the conversion, but then we came to the conclusion that no matter what we do people would be farming well above the softcap, and we shouldn't try to make it more difficult for them to do so. 
 
@@ -40,32 +40,32 @@ The original explanation thread http://forums.worldofwarcraft.com/thread.html?to
 CUR_CALC_CURRENCIES = Array
 {
 name: 'Badges of Justice',
-link: 'http://db.mmo-champion.com/i/29434/badge-of-justice/',
-img: 'http://db.mmo-champion.com/static/img/icons/spell_holy_championsbond.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 18330;
 }
 },
 {
 name: 'Emblems of Heroism',
-link: 'http://db.mmo-champion.com/i/40752/emblem-of-heroism/',
-img: 'http://db.mmo-champion.com/static/img/icons/spell_holy_proclaimchampion.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 55000;
 }
 },
 {
 name: 'Emblems of Valor',
-link: 'http://db.mmo-champion.com/i/40753/emblem-of-valor/',
-img: 'http://db.mmo-champion.com/static/img/icons/spell_holy_proclaimchampion_02.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 55000;
 }
 },
 {
 name: 'Emblems of Conquest',
-link: 'http://db.mmo-champion.com/i/45624/emblem-of-conquest/',
-img: 'http://db.mmo-champion.com/static/img/icons/spell_holy_championsgrace.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 55000;
 }
@@ -74,16 +74,16 @@ return value * 55000;
 CUR_CALC_JUSTICE = Array
 {
 name: 'Emblems of Frost',
-link: 'http://db.mmo-champion.com/i/49426/emblem-of-frost/',
-img: 'http://db.mmo-champion.com/static/img/icons/inv_misc_frostemblem_01.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 11.58;
 }
 },
 {
 name: 'Emblems of Triumph',
-link: 'http://db.mmo-champion.com/i/47241/emblem-of-triumph/',
-img: 'http://db.mmo-champion.com/static/img/icons/spell_holy_summonchampion.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 11.58;
 }
@@ -92,116 +92,116 @@ return value * 11.58;
 CUR_CALC_HONORS = Array
 {
 name: 'Honor Points',
-link: 'http://db.mmo-champion.com/i/43308/honor-points/',
-img: 'http://db.mmo-champion.com/static/img/icons/achievement_arena_2v2_1.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 0.024;
 }
 },
 {
 name: 'Arena Points',
-link: 'http://db.mmo-champion.com/i/43307/arena-points/',
-img: 'http://db.mmo-champion.com/static/img/icons/achievement_arena_2v2_7.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 0.85;
 }
 },
 {
 name: 'Wintergrasp Marks of Honor',
-link: 'http://db.mmo-champion.com/i/43589/wintergrasp-mark-of-honor/',
-img: 'http://db.mmo-champion.com/static/img/icons/inv_jewelry_ring_66.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 19.08;
 }
 },
 {
 name: 'Alterac Valley Marks of Honor',
-link: 'http://db.mmo-champion.com/i/20560/alterac-valley-mark-of-honor/',
-img: 'http://db.mmo-champion.com/static/img/icons/inv_jewelry_necklace_21.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 2.976;
 }
 },
 {
 name: 'Arathi Basin Marks of Honor',
-link: 'http://db.mmo-champion.com/i/20559/arathi-basin-mark-of-honor/',
-img: 'http://db.mmo-champion.com/static/img/icons/inv_jewelry_amulet_07.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 2.976;
 }
 },
 {
 name: 'Eye of the Storm Marks of Honor',
-link: 'http://db.mmo-champion.com/i/29024/eye-of-the-storm-mark-of-honor/',
-img: 'http://db.mmo-champion.com/static/img/icons/spell_nature_eyeofthestorm.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 2.976;
 }
 },
 {
 name: 'Isle of Conquest Marks of Honor',
-link: 'http://db.mmo-champion.com/i/47395/isle-of-conquest-mark-of-honor/',
-img: 'http://db.mmo-champion.com/static/img/icons/inv_jewelry_necklace_27.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 2.976;
 }
 },
 {
 name: 'Strand of the Ancients Marks of Honor',
-link: 'http://db.mmo-champion.com/i/42425/strand-of-the-ancients-mark-of-honor/',
-img: 'http://db.mmo-champion.com/static/img/icons/inv_jewelry_amulet_01.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 2.976;
 }
 },
 {
 name: 'Warsong Gulch Marks of Honor',
-link: 'http://db.mmo-champion.com/i/20558/warsong-gulch-mark-of-honor/',
-img: 'http://db.mmo-champion.com/static/img/icons/inv_misc_rune_07.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 2.976;
 }
 },
 {
 name: 'Stone Keeper\'s Shards',
-link: 'http://db.mmo-champion.com/i/43228/stone-keepers-shard/',
-img: 'http://db.mmo-champion.com/static/img/icons/inv_misc_platnumdisks.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 1.6;
 }
 },
 {
 name: 'Venture Coins',
-link: 'http://db.mmo-champion.com/i/37836/venture-coin/',
-img: 'http://db.mmo-champion.com/static/img/icons/inv_misc_coin_16.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value * 3;
 }
 },
 {
 name: 'Spirit Shards',
-link: 'http://db.mmo-champion.com/i/28558/spirit-shard/',
-img: 'http://db.mmo-champion.com/static/img/icons/inv_jewelry_frostwolftrinket_04.png',
+link: '',
+img: '',
 calculator: functionvalue {
 return value;
 }
 }
 ;
 </script>
-<script type="text/javascript" src="http://static.mmo-champion.com/js/bibicalc.js"></script>
+<script type="text/javascript" src=""></script>
 
 
 Blue Posts
 
 No Worgens and Goblins before Cataclysm
-Worgen and goblins require the activation of a Cataclysm key and will not be available in patch 4.0.3 until Cataclysm launches. Source http://blue.mmo-champion.com/t/27026373706/so-worgen-goblin-in-4-03-or-not/
+Worgen and goblins require the activation of a Cataclysm key and will not be available in patch 4.0.3 until Cataclysm launches. Source 
 
 Patch 4.0.1 and 4.0.3
 I'm not sure I understand what you're saying. These aren't filler patches we developed to tide players over. Patch 4.0.1 will implement nearly all systems changes necessary for Cataclysm including class and UI changes. We've done this before every expansion to lay down the framework. Patch 4.0.3 brings about the Cataclysm, forever changing Azeroth.
 
 This has always been the plan for Cataclysm, as we've never released an expansion quite like this one before. On the one hand, this expansion offers another increased level cap with all-new leveling and end-game content. On the other hand, this expansion is virtually rebuilding the content of the entire original game from the ground up.
 
-Again, patches 4.0.1 and 4.0.3 are not offering filler content. These patches are to implement all of the new content and systems which do not require the purchase of Cataclysm. Source http://blue.mmo-champion.com/t/27026473210/4-0-1-and-4-0-3-the-long-wait/
+Again, patches 4.0.1 and 4.0.3 are not offering filler content. These patches are to implement all of the new content and systems which do not require the purchase of Cataclysm. Source 
 
 Tanking
 Why was threat decay scrapped?
@@ -209,7 +209,7 @@ We still like the idea and it might return someday.
 
 We scrapped it because we didn't think it was necessary and we wanted to focus on things we thought were necessary. We ended up changing threat modifiers quite a bit and getting rid of a lot of the threat management talents. Furthermore, Vengeance is keeping tank dps up pretty well in beta tests -- often 75% or higher of dps. Finally, it was causing a lot of concern among tanks. The intent was to make threat generation more engaging, ultimately to make tanking more fun. But I think we ended up changing so many aspects of tanking large health pools so avoidance matters more, less AE tanking, mana mattering more, Vengeance, etc. that changing threat on top of all of that just seemed to some* tanks to be that final straw that made Cataclysm tanking feel totally unfamiliar to them.
 
-* -- This kind of thing is always subjective. We didn't poll every tank; nor would we put a lot of weight on that anyway. Instead, we read a lot of forums and talked to a lot of tanks we knew to gauge whether this was something they were excited about or not. We know there are tanks that hated the idea and those that will be sad to see it go, as is the case with almost any design change. I offer all of that footnote just to try and stave off some of the inevitable threads that will launch from this one. "Healers don't like running out of mana -- remove that. Warriors don't like rage normalization -- remove that." We welcome your opinions on all of those things, but encourage you not to search for the magic switch that will get us to change out minds in areas where we disagree. Source http://blue.mmo-champion.com/t/27026472493/why-was-threat-decay-scrapped/
+* -- This kind of thing is always subjective. We didn't poll every tank; nor would we put a lot of weight on that anyway. Instead, we read a lot of forums and talked to a lot of tanks we knew to gauge whether this was something they were excited about or not. We know there are tanks that hated the idea and those that will be sad to see it go, as is the case with almost any design change. I offer all of that footnote just to try and stave off some of the inevitable threads that will launch from this one. "Healers don't like running out of mana -- remove that. Warriors don't like rage normalization -- remove that." We welcome your opinions on all of those things, but encourage you not to search for the magic switch that will get us to change out minds in areas where we disagree. Source 
 
 Paladin/Warrior mastery undertuned?
 
@@ -217,11 +217,11 @@ Increasing the value per point of mastery for paladins or warriors is not hard t
 
 I'm also not sure we're that worried about paladins or anyone blocking, dodging or parrying every hit. That isn't the game breaking scenario that it used to be. If in later tiers of gear you manage to do it, probably by giving up on other stats, I'm not sure it's a huge danger. Sixty percent of damage is still a lot and none of those stats help with magic damage. In a world where two back to back normal hits could kill you, it would be a lot more valuable. In Cataclysm, it might just translate to healer mana savings. We'll keep an eye on it of course.
 
-We did change parry to scale from Strength. Source http://blue.mmo-champion.com/t/27026323179/paladin-warrior-mastery-undertuned/[/blizzquote]
+We did change parry to scale from Strength. Source [/blizzquote]
 
 
 Fan Art
-The Official Fan Art Gallery http://eu.blizzard.com/en-gb/community/fanart/index.html has been updated with a piece entitled: Pally Tank!
+The Official Fan Art Gallery  has been updated with a piece entitled: Pally Tank!
 
 
-http://media.mmo-champion.com/images/news/2010/september/ss194_small.jpg http://media.mmo-champion.com/images/news/2010/september/ss194.jpg
+ 
