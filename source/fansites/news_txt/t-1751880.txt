@@ -1,0 +1,121 @@
+chaud2015-04-06, 12:23 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Era 3 Has Started NA, Crusader Summary for 2.2 http://www.diablofans.com/news/48385-era-3-has-started-na-crusader-summary-for-2-2
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Top Constructed Decks of the Week & March, Mekkatorque's Workshop - Zul'Gurub Wing 2 http://www.hearthpwn.com/news/863-top-constructed-decks-of-the-week-march
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Heroes of the Dorm Fantasy Portrait, Epic Plays #24, Into the Nexus #45 www.heroesnexus.com/news/1337-heroes-of-the-dorm-fantasy-portrait-epic-plays-24
+
+Darkmoon Faire Races
+This month brings some more races to the Darkmoon Faire, in addition to the other Patch 6.1 changes http://www.mmo-champion.com/content/4748-Darkmoon-Faire-Race-and-Changes-Archaeology-Fix-Blue-Tweets-Method-Interview-DLC. The first race uses the same course as last month, allowing you to earn Rocketeer: Gold http://www.wowdb.com/achievements/9764-rocketeer-gold and the Everlasting Darkmoon Firework http://www.wowdb.com/items/122119-everlasting-darkmoon-firework fairly easily.
+
+The other two races use a new course that is more challenging. These reward Big Rocketeer: Gold http://www.wowdb.com/achievements/9805-big-rocketeer-gold Race MiniZep Controller http://www.wowdb.com/items/122125-race-minizep-controller and Big Race Roadhog http://www.wowdb.com/achievements/9799-big-race-roadhog Checkered Flag http://www.wowdb.com/items/122128-checkered-flag. Keep in mind that the Checkered Flag http://www.wowdb.com/items/122128-checkered-flag only has 50 charges and that is the more difficult of the two achievements to complete. This can be done solo https://www.youtube.com/watch?v=tnuuNVr9K2U if RNG lines up just right or with the help of a friend https://www.youtube.com/watch?v=wCQXSjxs4v4.
+
+The new course has new powerups as well. Everything other than the speed boots and coins rotates through the buffs, so they are constantly changing. There are two new buffs, one being a rocket that shoots you up in the air and the other being a small blue portal that rushes you ahead like Disengage. You can collect coins to power your final ability. There is also a new obstacle on this course, mini-zeppelins. These will shoot you and slow you down if you get too close to them.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/-eAgKjILAYQ?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/SqZahEPcDkY?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+Armory Stats - Darkmoon Faire
+This month's Darkmoon Faire has just started, but we can take a look at how people did during the last Faire. Today's sample is of 3.2 million players and 6.4 million characters.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#ADADAD', '#949494', '#727272', '#595959', '#6B8E23', '#426F42']
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'dmfAch',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Complete Race', 'Racing Strider - 25', 'Racing Strider - 20', 'Racing Strider - 15', 'Racing Strider - 11', 'Tonk Commander', 'Ring Toss'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Earned Darkmoon Faire Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 9.16, color: '#AD3EAC', name:'Complete Race'}, {y: 7.70, color: '#AD3EAC', name:'Racing Strider - 25'}, {y: 7.65, color: '#AD3EAC', name:'Racing Strider - 20'}, {y: 6.55, color: '#AD3EAC', name:'Racing Strider - 15'}, {y: 2.09, color: '#AD3EAC', name:'Racing Strider - 11'}, {y: 1.27, color: '#AD3EAC', name:'Tonk Commander'}, {y: 2.29, color: '#AD3EAC', name:'Ring Toss'}],
+
+name: '<b>Percent</b>'
+}]
+};
+
+};
+</script> 
+<div id="dmfAch" width="50%">
+Don't see a chart? Enable javascript!
+</div>Blue Tweets
+Character / Items
+any plans to make the challenge mode gear from MoP account wide?
+No plans at this time. WarcraftDevs https://twitter.com/WarcraftDevs/status/582657956115668992
+
+hi guys, love your game. wondering why there is no heirloom mount that works for new Pandaren characters, is that intended?
+This is a side-effect of the chauffeured mount being affiliated w/ Alliance or Horde. It’ll work once you choose a faction. WarcraftDevs https://twitter.com/WarcraftDevs/status/582660200751984640
+
+with Heirlooms now going up to lvl 100, can we have them drop from Garrosh again? Main draw of those was look/90-100 scaling.
+Those were a reward for doing the content when it was relevant, and there are no plans to bring them back at this time. WarcraftDevs https://twitter.com/WarcraftDevs/status/582660791792373760
+
+Could the Polished Helm of Valor possibly get a change? Both it and the Might have Haste, which the Valor set is Crit-based.
+Thank you for the feedback. This and other Heirloom stat changes are being addressed in an upcoming patch. WarcraftDevs https://twitter.com/WarcraftDevs/status/582662432574689280
+
+Can the Follower Trait and Follower Ability Retraining items stack please? 
+Items that don't have a high stack amount are our gentle way of encouraging their frequent use. WarcraftDevs https://twitter.com/WarcraftDevs/status/582663609395728384
+
+
+WoW Sale
+The Battlechest is 50% off and Warlords is 25% off.
+
+
+http://media.mmo-champion.com/images/news/2015/april/wowSale.jpg https://us.battle.net/shop/en/product/game/wow 
+
+
+Dark Legacy Comics #484
+DLC #484 http://www.darklegacycomics.com/484 has been released!
+
+
+http://media.mmo-champion.com/images/news/2015/april/dlc484.jpg http://www.darklegacycomics.com/484

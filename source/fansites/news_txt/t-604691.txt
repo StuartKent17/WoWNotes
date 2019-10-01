@@ -1,0 +1,126 @@
+Boubouille2008-02-06, 08:58 AMUpdate 10:45 CET - Added a post about the legendary bow
+
+Today we've got blue posts, blue posts, and blue posts, including a few updates to yesterday's posts interface and cooking. Nothing said about the release date of the 2.4 patch on PTR, but it's probably a matter of days now hours ?
+
+Legendary bow !
+Even if it wasn't a huge secret, the legendary bow is confirmed and will drop from a boss probably Kil'jaeden. 
+A few more details on this legendary weapon : it will be a loot like the Warglaives of Azzinoth, not a reward from a quest like Thunderfury.
+
+
+Archdruid hero class ?
+computerandvideogames.com http://www.computerandvideogames.com/article.php?id=181521 released the 2nd part of their interview with Tigole, well it's not really a second part because it looks a lot like the first one, however there is a very interesting comment about heroic classes.
+What's more, with any luck, we'll see more Hero classes some time after release, the hot Zitron tip being some kind of Archdruid quest directly connected to Malfurion Stormrage and the much-anticipated Emerald Dream.
+
+
+[Patch 2.4] Cooking recipes
+I already posted the stats of the new cooking recipes, but this time we're back with the full description of each item directly from a blue post.
+We have added two new cooking recipes for Patch 2.4: Charred Bear Kabobs and Juicy Bear Burgers. Both new recipes can be purchased from either Bale Horde or Malygen Alliance in Felwood. The recipes require 250 skill to learn, and use meat added to level 48-56 bears. This means it will no longer require fish to skill up your cooking to 300.
+
+Juicy Bear Burger
+Requires Level 45. Use: Restores 1933 health over 27 sec. Must remain seated while eating. If you eat for 10 seconds will also increase your damage and healing from magical spells and effects by up to 14 for 15 min.
+
+Charred Bear Kabobs
+Requires Level 45. Use: Restores 1933 health over27 sec. Must remain seated while eating. If you eat for 10 seconds will also increase your attack power by 24 for 15 min.
+
+
+[Patch 2.4] Combat log changes
+I'm not posting the full post because it's ridiculously long, but Vaneras confirmed that the new combat log will have tons of formatting and coloring options. There are a lot more details for UI developers on the original post http://forums.wow-europe.com/thread.html?topicId=2405449147&postId=27455791692&sid=1#0
+The whole combat log also supports a new coloring model, based on context. While by default, entire lines are a single color, highlighting the most important details. The combat log also supports coloring just unit names, spells, actions and damage numbers. Spells and damage can also be colored by school. However, there are several features not exposed in the base UI that AddOns can use right away. These are event-specific coloring, unit coloring with greater granularity and the ability to customize the list of highlighted events.
+
+There are several other formatting related features. You can enable timestamps which show the time that spell or attack happened. You can show or hide square braces, change formatting without refreshing the combat log and disable the display of raid icons. These features were too niche to go into the base UI, but can be easily exposed for power users. By now you’ve already thought of some features of your own and are ready to get to coding. So let’s jump straight to some examples.
+
+Formatting & Coloring
+One of the major combat log formats we considered while redoing the combat log was the Nurfed Combat Log format. This combat log format was very concise, made heavy use of color-coding and was one of the final candidates for the combat log. We eventually axed it on the basis of being too overwhelming for new users. However, we left in all of the options to convert the current combat log into the Nurfed combat log.
+
+Here’s how:
+
+Combat Log Settings -> Colors
+Unit Colors:
+Me -> Green
+My Pet -> Dark Green
+Friends -> Blue
+Enemies -> Red
+Neutral -> Yellow
+
+Colorize:
+Unit Names -> Checked
+Spell Names -> Checked
+Spell Color-by-School -> Checked
+Damage Number -> Checked
+Damage Color-by-School -> Checked
+Damage School -> Checked
+Entire Line -> Unchecked
+All Highlighting Options-> Unchecked
+
+Formatting:
+Verbose -> Unchecked
+Braces -> Checked
+Timestamps -> Checked
+
+However, some people may want it even more terse than that. For this, we present:
+
+Hyper Condensed Mode
+To get rid of the word “Fire” and “Frost” type:
+
+/script TEXT_MODE_A_STRING_VALUE_SCHOOL = “”;
+
+That will remove the Fire from “55 Fire”. However, let’s go even farther:
+
+Critical Crushing Blocked Resisted
+
+All of these are really long. Let’s compress them:
+
+TEXT_MODE_A_STRING_RESULT_RESISTED = "R";
+TEXT_MODE_A_STRING_RESULT_BLOCKED = "B";
+TEXT_MODE_A_STRING_RESULT_ABSORBED = "A";
+TEXT_MODE_A_STRING_RESULT_CRITICAL = "C";
+TEXT_MODE_A_STRING_RESULT_GLANCING = "G";
+TEXT_MODE_A_STRING_RESULT_CRUSHING = "Cr";
+
+Now we get
+
+[You] [Fireball] Hit [Spider] 64. C 5 R
+
+
+Other blue posts
+40 Players dungeons
+We have no plans at this time to reintroduce 40 person raid dungeons, we plan to continue with our current models of 10 and 25 person raid dungeons and make them better than ever. Source http://forums.worldofwarcraft.com/thread.html?topicId=4311169082&postId=44201353394&sid=1#10
+
+Lunar festival
+It seems that players who completed Lunar Festival quests a year or two ago can't get them again.
+This is not something that will be changed for this year, but we're mindful of it and Lunar Festival is on our list to be reworked so people can engage in the seasonal content. Source http://forums.worldofwarcraft.com/thread.html?topicId=4311227984&postId=44224549773&sid=1#5
+
+
+Account security reminders
+Eyonix posted two reminders about account security and thing you definitely shouldn't do with your account password. Just don't give it to anyone :/
+We wanted to provide the community with a few friendly security reminders. It is very important that players take caution when being directed to outside websites and update the security on their computers accordingly. To secure your computer, we suggest adding some Internet security to your system for example: a firewall and anti-virus scanner. If you are unsure what security measures to take, discuss the issue of system security with your ISP or a trained Network Administrator for the solution that is right for you.
+
+We also strongly recommend that all players use the Blizzard Launcher to start World of Warcraft. In addition to serving as a portal to the game, the Blizzard Launcher provides greater security for our players against harmful software such as the type discussed here. To learn more about this utility, please visit the Blizzard Launcher Page and check out the Blizzard Launcher FAQ.
+
+Also, please be sure that you have the most secure operating system environment on your computer by running Windows Update if you own a Windows-based PC or Software Update if you own a Mac and installing all of the updates marked “High Priority”. Note: you may have to run the updater more than once to ensure you have all the high priority updates; many of the patches require a system restart, and then additional patch installations to complete the process.
+
+http://www.blizzard.com/support/wow/?id=aww01907p1 http://www.blizzard.com/support/wow/?id=aww01907p1
+
+If you come across a suspicious link or program, please report it here -- http://www.blizzard.com/support/?id=eHacks000 http://www.blizzard.com/support/?id=eHacks000
+
+For more information on keeping your account secure and what to do if you feel your account has been compromised, please visit the Account Security page.
+
+http://www.blizzard.com/support/wowbilling/?id=abl01897p http://www.blizzard.com/support/wowbilling/?id=abl01897p
+
+Also a few words about people sending fake mails to users about a WotLK beta account.
+Please be aware, there is currently no Beta or beta sign-ups going on for the next World of Warcraft Expansion, Wrath of the Lich King. Should a Beta phase begin, we will post a notice on the official website.
+
+As always, please be careful about giving out account information or passwords.
+
+
+New TCG wallpaper : Rexxar
+We just added a new wallpaper to our World of Warcraft wallpapers section: http://www.wow-europe.com/en/downloads/tcg-wallpapers.html http://www.wow-europe.com/en/downloads/tcg-wallpapers.html
+
+
+http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_small.jpg http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1280x.jpg 800x600 http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_800x.jpg
+1024x768 http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1024x.jpg
+1152x864 http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1152x.jpg
+1290x960 http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1280x.jpg
+1600x1200 http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1600x.jpg
+1680x1050 http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1680xwide.jpg
+1920x1200 http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1920xwide.jpg

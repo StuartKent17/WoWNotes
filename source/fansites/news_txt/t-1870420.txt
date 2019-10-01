@@ -1,0 +1,233 @@
+chaud2015-09-26, 08:18 PM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Disabled Bounties Hotfix, Cache Farming Builds, Bounties DH Guide http://www.diablofans.com/news/48530-disabled-bounties-hotfix-cache-farming-builds
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Deck Spotlight: The Silver Hand, House of Discards Card Design Competition, TwitchCon http://www.hearthpwn.com/news/1041-deck-spotlight-the-silver-hand-house-of-discards
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Heroes of the Storm Medic & Artanis PTR Patch - Hero Changes & More http://www.heroesnexus.com/news/1494-heroes-of-the-storm-medic-artanis-ptr-patch-hero
+
+Armory Stats - Pet Battles
+It's Pet Battle Bonus Weekend, and we are continuing the pet battle related posts by taking a look at the pet battle achievement completion rate of players. Today's data is from 2.1 million players not characters that were active after August 1st.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2015/july/highcharts.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#D4A190']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'pvePetBattle',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ '10 Battles', '50 Battles', '250 Battles', '1000 Battles', '5000 Battles', '10 Consecutive Battles', '25 Consecutive Battles', '150 Draenor Battles', 'Tiny Terrors in Tanaan'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+max: 100,
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed PvE Pet Battles',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 84.61, name:'10 Battles'},{y: 70.36, name:'50 Battles'},{y: 39.52, name:'250 Battles'},{y: 14.41, name:'1000 Battles'},{y: 1.26, name:'5000 Battles'},{y: 81.46, name:'10 Consecutive Battles'},{y: 75.10, name:'25 Consecutive Battles'},{y: 12.83, name:'150 Draenor Battles'},{y: 2.56, name:'Tiny Terrors in Tanaan'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'PVPPetBattle',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ '10 PvP Battles', '50 PvP Battles', '250 PvP Battles', '1000 PvP Battles', '5000 PvP Battles', 'Merciless Pet Brawler', 'Vengeful Pet Brawler', 'Brutal Pet Brawler', 'Deadly Pet Brawler'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed PvP Pet Battles',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 15.21, name:'10 PvP Battles'},{y: 4.87, name:'50 PvP Battles'},{y: 1.14, name:'250 PvP Battles'},{y: 0.29, name:'1000 PvP Battles'},{y: 0.04, name:'5000 PvP Battles'},{y: 7.15, name:'Merciless Pet Brawler'},{y: 1.94, name:'Vengeful Pet Brawler'},{y: 0.66, name:'Brutal Pet Brawler'},{y: 0.18, name:'Deadly Pet Brawler'}],
+
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'petBattleMisc',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Defeat 1 Master Pet Tamer', 'Defeat 15 Master Pet Tamers', 'Defeat 40 Master Pet Tamers', 'Earn 500 Pet Charms', 'Taming Azeroth', 'Taming Outland', 'Taming Northrend', 'Taming Cataclysm', 'Taming Pandaria', 'Taming Draenor', 'The Celestial Tournament', 'Master of the Masters'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+max: 80,
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Misc Pet Battle Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 80.08, name:'Defeat 1 Master Pet Tamer'}, {y: 33.04, name:'Defeat 15 Master Pet Tamers'}, {y: 13.94, name:'Defeat 40 Master Pet Tamers'}, {y: 7.86, name:'Earn 500 Pet Charms'}, {y: 16.53, name:'Taming Azeroth'}, {y: 26.79, name:'Taming Outland'}, {y: 20.15, name:'Taming Northrend'}, {y: 17.84, name:'Taming Cataclysm'}, {y: 16.57, name:'Taming Pandaria'}, {y: 8.11, name:'Taming Draenor'},{y: 4.62, name:'The Celestial Tournament'},{y: 3.57, name:'Master of the Masters'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+};
+</script> 
+<div id="pvePetBattle" width="50%">
+Don't see a chart? Enable javascript!
+</div> 
+<br />
+<div id="PVPPetBattle" width="50%">
+Don't see a chart? Enable javascript!
+</div> 
+<br />
+<div id="petBattleMisc" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+Poll - PvP Pet Battles
+It seems that PvP pet battles aren't very popular among the general population. Do you take part in them? If not, why?
+
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/9097406.js"></script><noscript><a href="http://polldaddy.com/poll/9097406/">Do you do PvP Pet Battles?</a></noscript>
+
+Final Boss #97 - Strength Melee
+This week Final Boss covered Retribution Paladin, Warrior and Death Knight specs!
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/Lr8GkeGaeR8?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Heroes of the Storm PTR Build - Medic, Artanis, and More!
+A new build went on the Heroes PTR server, adding two new heroes and other changes. You can find all of the details at HeroesNexus.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/ozAnM0n2UGg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+http://media.mmo-champion.com/images/news/2015/september/hotsPTR.png http://www.heroesnexus.com/news/1494-heroes-of-the-storm-medic-artanis-ptr-patch-hero

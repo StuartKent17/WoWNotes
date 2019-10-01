@@ -1,0 +1,44 @@
+chaud2017-04-28, 01:43 AM<img src="http://media.mmo-champion.com/images/news/2012/july/wowmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Developer Q&A - Ion Hazzikostas, Si'vash, Nether Disruptor http://www.mmo-champion.com/content/6577-Developer-Q-A-Ion-Hazzikostas-Si-vash-Nether-Disruptor
+
+Group Finder Addons Changed
+Since the release of Patch 7.2, we’ve been working to resolve issues with realm performance that were causing players to experience heavy latency and/or disconnects on the Broken Isles. As our investigation has continued, we’ve discovered that many of these issues were being inadvertently caused by addons intended to automate the creation and joining of groups via the Group Finder, even for players who were not using those addons.
+
+Today, we’ve changed what addons can do when interacting with Group Finder, in order to address major performance issues with the game service for players— not just for those using these addons, but for others as well.
+
+In order to alleviate those issues, we’ve recently applied a hotfix that changes how addons interact with the Group Finder. Players will now need to give a manual confirmation when an addon attempts to:
+- List and delist a Group Finder group.
+- Search for and request an invite to a Group Finder group.
+
+Addons that are affected by these changes will need to be updated to comply with this new restriction. We understand that this is a relatively sudden change, but it was important to resolve the performance issues as quickly as possible.
+
+Note: If you are not using an addon that modifies the Group Finder feature, you should not encounter any issues resulting from this change.
+
+
+Blue Posts
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk Forums http://www.mmo-champion.com/forums/341-Monk / Skills http://www.wowdb.com/spells/class-abilities/monk / Talent Calculator http://www.wowdb.com/talent-calculator#o / Artifact Calculator http://www.wowdb.com/artifact-calculator#p / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#o
+Brewmaster Feedback in Patch 7.2.5
+Lots of great feedback here on the latest build so far. Thanks.
+
+Latest thoughts:
+Spitfire - It's a fun playstyle option for people, but having both defensive even without it being an increase to Hot Blooded, it's still more Elusive Brawler stacks and offensive value more Breath of Fires for damage, it's hard to fit it anywhere in the talent tree, and it complicates artifact trait values. We're going to just cut if for now may return at some point in the future when it fits in better. Niuzao will return, and will simply deal more damage to make him competitive with the row.
+
+Blackout Combo - Yeah, the 2sec rotation is problematic. Some people like the frantic gameplay, but we think other talent combinations deliver on that better anyway. The main problems with it are that it invalidates a ton of other talent choices, actually *reduces* rotational choice because you just combo everything instead of having to choose what you combo, causes energy capping issues, is a massive buff to the talent potentially upsetting talent balance, and is too fast-paced without any other contribution. We're going to return it to 3sec, where you can pair it with other GCD-filling talents to create the frantic playstyle if you prefer, without causing the above issues.
+
+Hot Blooded and Dragonfire Brew - Baseline, Hot Blooded is very strong. 1% DR per bronze trait is already on the extremely strong side. The Legendary chest was created with Hot Blooded in mind as its defensive benefit. But that gets a little out of hand when we added 4th points to Bronzes, and you min/max relics, increasing it to the massively-OP level of 7% DR for a legendary. Then the 7.2.5 changes also add more Elusive Brawler stacks to that. We're going to adjust these two traits in order to better balance trait and legendary values: Dragonfire Brew will also increase the duration of Breath of Fire's DoT by 100%, giving it defensive value. Hot Blooded will now be active the whole time, instead of ~half the time without the Chest, and so is changing to 1% DR per point to compensate.
+
+EDIT: Overall Tuning - As always, overall tuning happens late in the process. Don't worry about overall power level of Brewmasters when giving feedback on these changes.
+
+Thanks all!
+
+I have a feeling theres a disconnect between how much the monk community value those elusive brawler stack and how the Developpers value them.
+
+First off, as said many times, dodge doesn't do anything VS magic damage or VS any kind of boss threatening ability as they are undodgeable even if physical ex: spellblade annihilate.
+
+From a mythic raider point of view, those dodge stacks hardly do anything, as bosses auto-attack the only thing that's dodgeable are the least threatening form of damage we have to face.
+
+From a M+ dungeon point of view, those stack comes and go so fast nobody will notice the buff... having 100% dodge chance for 1 auto-attack out of the 5+ weak mob training you hardly change anything... 
+
+It's also one of the reason people hardly, if ever, use blackout combo to empower purify.
+We value it based upon its actual real world value, not a theoretical worst case that doesn't actually exist. You should too.
+
+Yes, Elusive Brawler does nothing against Magic/undodgeable damage. However, apart from some extremely niche situations like Star Auger, it's not that piercing damage alone that kills you; it's the combination of those and other damage that is dodgeable. Nowhere is this more true than on Brewmasters, where there is no spike damage, only smoothed total damage which is mostly auto attack damage. Mastery drastically reduces the total damage you take, which is the only thing scary to a Brewmaster anyway. Blue Tracker http://blue.mmo-champion.com/topic/1058004-of-brews-and-blackouts-725/ / Official Forums http://us.battle.net/forums/en/wow/topic/20754025679?page=22#426

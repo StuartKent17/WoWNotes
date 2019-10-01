@@ -1,0 +1,248 @@
+chaud2014-01-16, 05:30 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> New Beta Patch - Class Changes, Difficulty Changes, New Gear Models http://www.diablofans.com/news/47910-new-beta-patch-class-changes-difficulty-changes
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> NA Maintenance Postponed, Blue Tweets, Blue Posts - Balance & Bugs http://www.hearthpwn.com/news/260-na-maintenance-postponed-blue-tweets-blue-posts
+
+Armory Stats - Battleground Popularity
+Today we are taking a look at the number of battles for each battleground that took place in the last month. To find these numbers, we compared the number of battles a character had in a December snapshot of data to the number of battles they had in a January snapshot of data. 
+
+These numbers come from a character's statistics pane, so any bugs with character statistics will have skewed the results. This means that there isn't any way for us to verify how accurate these numbers are, so do not take them as fact. 
+
+The data used today is a sample made up of ~6.9 million level 90 characters. The sample is slightly biased, as players who are not in a guild are less likely to appear in our sample. 
+
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#81CCAA']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'bgCounts',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Alterac Valley' , 'Arathi Basin' , 'Battle for Gilneas' , 'Deepwind Gorge' , 'Eye of the Storm' , 'Isle of Conquest' , 'Silvershard Mines' , 'Strand of the Ancients' , 'Temple of Kotmogu' , 'Twin Peaks' , 'Warsong Gulch'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Battles',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+
+title: {
+text: 'Number of Battlegrounds Completed By Players in the Last Month',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'Count',
+data: [1324712, 1456394, 1470825, 1358300, 1180802, 1157189, 1745853, 1092219, 1800424, 1339585, 1717370 ]
+
+}]
+
+};
+
+};
+</script> 
+<div id="bgCounts" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+http://blue.mmo-champion.com/public/style_images/master/tracker/flags/gb-en.png Connected Realms Update - 15/01
+The following connection will need a little more time, and has been re-scheduled:
+
+English Realms
+
+PvP Bloodfeather and Kor’gall/Burning Steppes/Executus
+
+
+The following realms are scheduled to be connected next:
+
+English Realms
+
+PvP Balnazzar and Shattered Halls/Ahn'Qiraj/Trollbane/Talnivarr/Chromaggus/Boulderfist/Daggerspine
+RP PvP Ravenholdt and Scarshield Legion/The Venture Co/Sporeggar
+
+
+German Realms
+
+PvE Shattrath and Garrosh/Nozdormu
+
+
+I've updated the original post, all realm connections went through except Bloodfeather and Kor’gall/Burning Steppes/Executus, which needs a little more time. We'll let you know when that's back on the schedule
+
+If you are on a full realm, and not getting connected, will you receive more char slots then? Or will Blizzard sort this in another way, like merging a dead and a full realm? Seeing as, if you are on a realm getting connected you would be able to play with 22 chars at least in cases with only two realms being connected, having them all in the same guild etc. 
+There aren't any plans to give a bunch of extra character slots to folks on non-connected realms to my knowledge, no. In the situation you mentioned with connected realms, the limit per realm is still the same, it's just those characters have a bit more freedom with how they interact with guilds or characters on a different realm the one they're connected to. 
+
+Full realms will not be connected with any other realms, that would just make queues worse.
+
+
+Blue Posts
+PvP Gear in WoD
+What matters is that the gear takes the same amount of time mean, median, and mode, and therefore effort, to acquire regardless of what you do to get it; an instance is an instance is an instance, and what you do in that instance doesn't mean a god-damned thing. Using strict Item Level parity as the benchmark is how you get from here to there.
+Of course it matters what you do.
+
+How do you reconcile time investment in the two tasks when they don't require the same of you to complete? How are small group sports analogous to large-team puzzle solving? How is spending a week or weeks wiping on a boss comparable to a matchmade PvP game where you're going against human opponents of similar skill?
+
+Both require mastery of your class and coordination, but you can't cross out the type and manner of gameplay as common denominators and say it doesn't matter. Of course it does. Blue Tracker http://blue.mmo-champion.com/topic/289032-remove-baseline-resilience/ / Official Forums http://us.battle.net/wow/en/forum/topic/11222392591?page=11#218
+
+Login Screen Music
+So I was listening to the login music from the past expansions and it seems to me that Blizz uses it as a overture to all the music to the current and the last expansion. Anybody else notice this or am I just nerd raging for no point 
+In interviews in the past, Russell Brower has discussed how he likes to keep the original idea of the login music the theming and key elements and build on it with each new expansion. There's an expectation of hearing a certain style of music that says to people that they're logging in to World of Warcraft. It evokes emotions in many people and so he's said he doesn't want to take that away but instead, enhance and add to it with each of the expansions. If you sit and listen to the whole thing, you'll find that you've ended up on a journey of sorts through World of Warcraft history. It tells you about where you've been and where you are now or are going to depending on where you are in your gameplay. Blue Tracker http://blue.mmo-champion.com/topic/289254-login-music/ / Official Forums http://us.battle.net/wow/en/forum/topic/11224123022?page=1#5
+
+A Day in the Life of Blizzard
+Would a fly-on-the-wall developer meeting series be possible? Let us see one of the fabled sit downs, if it is very clearly stated that what is being discussed is just ideas maybe the community could handle it. 
+I can see how something like that would be cool. In reality though experiments like the recent "WoW Source" interviews would be closer to the final product than our weekly CM meetings with the developers. There's a certain production value and level of professionalism we want to achieve with any official Blizzard video, and not only are our meetings very informal, they're meant to accomplish something a little different than any public-facing interview. It's not really in anyone's best interest for us to repurpose those meetings for public consumption.
+
+Nah. I've seen people throw darts to make important decisions before. At least, that's what I hope they're doing. If they're actually thinking about it, we're all in big trouble with the major rework going into WOD. 
+
+It's funny to hear blizzard a multi-billion dollar company talking about resources. But then again they are so stingy they can't hire a few programmers to fix bugs that have been around since vanilla, and they just recycle content over and over see hearthstone, diablo 3 etc. 
+
+Aka - We only NET about 95 Million dollars per month...Clearly we don't have enough resources for ANYTHING like this... 
+Reality is often quite a bit more complicated than these clever little narratives devoid of facts people like to conjure up. I wish we could get together and chat about that in greater detail some day. I'm sure the three of you would exercise patience and understanding should the opportunity arise.
+
+Would be awesome to get a real glimpse of what it's like behind the scenes, but I wouldn't believe it. 
+Sadly, there's quite a bit that can't be shared and/or you would find terribly boring. I've been neck deep in spreadsheets and planning documents as are many others. "Behind the scenes" would involve a lot of photos of people staring at computer screens, sounds of frantic typing, email notifications flickering across the screen, instant messages, and meetings involving spreadsheets and planning documents. There's a lot of work that goes on and not as much shenanigans as some would like to hope for, but as Zarhym said, we do try to give more glimpses into individuals and what they do at Blizzard when we can. We'll keep working toward that end as much as possible for you. Blue Tracker http://blue.mmo-champion.com/topic/289161-some-kinda-inside-blizzard-series/ / Official Forums http://us.battle.net/wow/en/forum/topic/11223562725?page=2#35
+
+
+Blue Tweets
+Classes
+Was the Elemental Focus buff not actually added? The tool-tip in game still shows 15% instead of 20%
+The Elemental and Death Knight buffs won't show up in tooltips until the next patch, unfortunately. It is live though. Source https://twitter.com/Celestalon/status/420677996886777856
+Weird question: Why does it show up in the Aspect of the Hawk-Tooltip? Normally it needs a patch to update it!
+Difference in how they're built under the hood, whether they're built to be extensible by other spells or not. Source https://twitter.com/Celestalon/status/420709137165479936
+
+With the "ability bloat" being removed. Can we expect major / minor rotation changes for classes in WOD?
+Some specs may see no rotation changes, others may see significant rotation changes. I wouldn't expect any 'overhauls' though. Source https://twitter.com/Celestalon/status/420622256557924353
+"mages will no longer be able to assign anything to the 3 key as they no longer need that many bindings."
+Perhaps I'm odd, but if I were limited to two keybinds, they'd be 2 and 3. Button 1 is always some utility/movement button. Source https://twitter.com/Celestalon/status/420623574152396800
+
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight Forums http://www.mmo-champion.com/forums/269-Death-Knight / Skills http://www.wowdb.com/spells/class-abilities/death-knight / Talent Calculator http://www.wowdb.com/talent-calculator#Y
+Am I wrong in thinking those dk buffs favor unholy over frost?
+Slightly, which helps balance them better. Source https://twitter.com/Celestalon/status/420457008295206912
+
+Many DKs don't seem to enjoy the awkwardness of Plague Leech. Is it here to stay? many seem to want it to go the way of the dodo
+We recognize that some people find it awkward to use, and some don't. That's fine for an optional talent. Source https://twitter.com/Celestalon/status/420438971613581313
+
+To confirm: Icy Talons was buffed because Frost AoE is in a good place and to keep parity b/w DW & 2h?
+That's a decent summary; yeah. It was a knob that affects both DW and 2H fairly evenly, and results in them being closer. Source https://twitter.com/Celestalon/status/420368307984666624
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid / Skills http://www.wowdb.com/spells/class-abilities/druid / Talent Calculator http://www.wowdb.com/talent-calculator#s
+Wheres the moonkin buffs? Aren't we underperforming?
+No, Moonkins are performing pretty well right now. Not amazing single target, but still quite good in most situations. Source https://twitter.com/Celestalon/status/420370559944245248
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter Forums http://www.mmo-champion.com/forums/271-Hunter / Skills http://www.wowdb.com/spells/class-abilities/hunter / Talent Calculator http://www.wowdb.com/talent-calculator#M
+Aye, the hunter buff is just across the board for all hunters. Source https://twitter.com/Celestalon/status/420360900529250304
+So, five out of six tiers in a row for Hawk buffs. Think there might be a bit bigger of an underlying problem, perhaps?
+We use Hawk as a buff knob because it's a safe, consistent way to do it, without any unintended sideeffects on rotations. Source https://twitter.com/Celestalon/status/420372643699630080
+I think you mean you use Hawk because hunters do not, dare I say it?, scale well with gear and fall behind as each tier goes on.
+Buffing Hawk is a buff to Hunter scaling rate. Source https://twitter.com/Celestalon/status/420427637513654272
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk Forums http://www.mmo-champion.com/forums/341-Monk / Skills http://www.wowdb.com/spells/class-abilities/monk / Talent Calculator http://www.wowdb.com/talent-calculator#o
+Any plan to give MW a ranged damage dealing chi dump for using with lightning?
+Unlikely. CJL is meant primarily to be used in tandem with healing chi spenders. Source https://twitter.com/Celestalon/status/420036119942541312
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin Forums http://www.mmo-champion.com/forums/273-Paladin / Skills http://www.wowdb.com/spells/class-abilities/paladin / Talent Calculator http://www.wowdb.com/talent-calculator#I
+Not retribution? 
+No, Retribution is doing fairly well. Source https://twitter.com/Celestalon/status/420360244410068992
+
+ret still need cast time for rep and TE, does this really balance in PVP for a melee class?
+In WoD we're going to alter talents per spec a lot more, but not sure either of those as instant cast with short cooldown is good. Source https://twitter.com/holinka/status/420054789527846913
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest Forums http://www.mmo-champion.com/forums/274-Priest / Skills http://www.wowdb.com/spells/class-abilities/priest / Talent Calculator http://www.wowdb.com/talent-calculator#U
+I like all these dps buffsbut can you nerf disc priests while you're at it?
+We discussed this heavily. We prefer not to make nerfs that aren't bugfixes this far into a tier; bad for guilds close to a kill. Source https://twitter.com/Celestalon/status/420365175804293120
+Can we take this to mean that, at SOME point we will get a disc rebalancing? Even if it's not now?
+Yes. Source https://twitter.com/Celestalon/status/420435645253681153
+
+did you forget shadow priest on that list?
+Didn't forget Shadow; they're not underperforming. Their performance varies significantly between fights, but overall good. Source https://twitter.com/Celestalon/status/420360606294630401
+hrm, do you think a single target buff would make them too strong on some fights?
+Yes, Shadow's pure single target is lower than others, but they still end up doing quite well on average. Source https://twitter.com/Celestalon/status/420363254221656064
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock Forums http://www.mmo-champion.com/forums/277-Warlock / Skills http://www.wowdb.com/spells/class-abilities/warlock / Talent Calculator http://www.wowdb.com/talent-calculator#k
+Do you feel that warlock pets movement speed is too slow? Seems like a DPS loss to use pets in a target switching fight.
+No; how good they are at target switching is a pro/con of different warlock pets. Source https://twitter.com/Celestalon/status/420311343917309952
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior Forums http://www.mmo-champion.com/forums/278-Warrior / Skills http://www.wowdb.com/spells/class-abilities/warrior / Talent Calculator http://www.wowdb.com/talent-calculator#E
+Warrior Haste: Perhaps we could have it reduce all CDs above 30sec? Original Fury Mastery did something similar.
+That's basically what Readiness does. May not be exactly "all CDs above 30sec", but something like that. Source https://twitter.com/Celestalon/status/420069006381289472
+
+
+http://blue.mmo-champion.com/public/style_images/master/tracker/flags/us-en.png Free Character Migrations Available
+Update - While Free Character Migrations opened this morning as planned, the page to initiate a transfer is currently and inexplicably inoperable, displaying a maintenance message. We're continuing to investigate the cause, but don't have a current estimate for when the FCMs will be available. We'll provide an update and re-post the announcement on the front page of the site once they are, though.
+
+If you're on one of the source realms listed below, you can move your characters to one of the designated destination realms and avoid the queues -- for free!
+
+By initiating one of these transfers, you will be moving your character to a new realm and home. This is a one-time, one-way move. If you wish to move your character elsewhere, you will need to use the paid transfer service.
+
+
+Area 52 => Turalyon
+Stormrage => Turalyon
+Tichondrius => Blackrock
+Illidan => Blackrock
+Bleeding Hollow => Korgath
+Darkspear => Korgath
+
+
+Please be aware that, due to the unpredictable nature of free transfers, we may close down any Free Character Migrations at any time and without warning if the target realm becomes full. If you plan to move with friends or your guild, we suggest that you coordinate the effort to reduce the chance of any stragglers being left behind.
+
+Early closures aside, this set of Free Character Migrations will end on Wednesday, January 22.
+
+Begin a Free Character Migration now https://www.worldofwarcraft.com/account/character-move-eligible-realms.html! We recommend reviewing the FAQ https://us.battle.net/support/en/article/free-character-migration, as it details what is or isn't allowed for transferred characters. 
+
+
+http://blue.mmo-champion.com/public/style_images/master/tracker/flags/gb-en.png Free Character Migrations Available
+If you're on one of the source realms listed below, you can move your characters to one of the designated destination realms and avoid the queues—for free!
+
+By initiating one of these transfers, you will be moving your character to a new realm and home. This is a one-time, one-way move. If you wish to move your character elsewhere, you will need to use the paid transfer service.
+
+
+Draenor => Magtheridon
+Silvermoon => Wildhammer / Kilrogg
+Kazzak => The Maelstrom
+Outland => Grim Batol
+Ragnaros => Grim Batol
+Stormscale => Grim Batol
+Sylvanas => Grim Batol
+Twisting Nether => Grim Batol
+
+
+Please be aware that, due to the unpredictable nature of free transfers, we may close down any Free Character Migrations at any time and without warning if the target realm becomes full. If you plan to move with friends or your guild, we suggest that you coordinate the effort to reduce the chance of any stragglers being left behind.
+
+Early closures aside, this set of Free Character Migrations will end on Tuesday, January 21.
+
+Begin a Free Character Migration now https://eu.battle.net/account/management/wow/fcm/character-list.html?r=EU&l=WoW1! We recommend reviewing the FAQ https://eu.battle.net/support/en/article/free-character-migration, as it details what is or isn't allowed for transferred characters. 
+
+
+Poll: What is Your Favorite Battleground?
+Which battleground is your favorite? Be sure to let us know what you like about it in the comments! For reasons other than how often you seem to win in it 
+
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7719515.js"></script>
+<noscript><a href="http://polldaddy.com/poll/7719515/">What is your favorite battleground?</a></noscript>

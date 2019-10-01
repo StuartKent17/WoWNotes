@@ -1,0 +1,85 @@
+chaud2017-01-31, 11:03 PMPatch 7.1.5 Hotfixes - January 31
+Classes
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage Forums http://www.mmo-champion.com/forums/272-Mage / Skills http://www.wowdb.com/spells/class-abilities/mage / Talent Calculator http://www.wowdb.com/talent-calculator#g / Artifact Calculator http://www.wowdb.com/artifact-calculator#hAAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#g
+
+Frost
+Brain Freeze http://www.wowdb.com/spells/190447 procs gained while you already have a Brain Freeze active and unused will now be delayed slightly.
+
+Developers’ notes: The delay on the second Brain Freeze will give the Mage time to use the first Brain Freeze proc. For example, the Mage might cast Frostbolt proc Brain Freeze, then Frostbolt proc Brain Freeze again, then instant Flurry, then Ice Lance, then Instant Flurry again, then Ice Lance.
+
+Ebonbolt now travels slightly slower.
+
+Developers’ notes: This allows the guaranteed Brain Freeze proc/instant Flurry cast immediately following it to land first, providing the Winter's Chill buff to that Ebonbolt. For example, the Mage might cast Frostbolt proc Brain Freeze, then Ebonbolt, and fully use both Brain Freeze procs.
+
+The first missile from a Flurry cast should now hit sooner.
+
+Developers’ notes: This allows a Frostbolt or Ebonbolt cast immediately before a Brain Freeze Flurry to more consistently benefit from that Flurry's Winter's Chill effect, even if the mage isn’t standing at long range. This allows the Frost Mage who has an active Brain Freeze to cast Frostbolt/Ebonbolt, then an Instant Flurry, then Ice Lance while standing 15+ yards from the target. Previously, the Mage had to be about twice as far away.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest Forums http://www.mmo-champion.com/forums/274-Priest / Skills http://www.wowdb.com/spells/class-abilities/priest / Talent Calculator http://www.wowdb.com/talent-calculator#U / Artifact Calculator http://www.wowdb.com/artifact-calculator#VAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#U
+
+Atonement http://www.wowdb.com/spells/81749 will now heal players who are out of line of sight of the Priest.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue Forums http://www.mmo-champion.com/forums/275-Rogue / Skills http://www.wowdb.com/spells/class-abilities/rogue / Talent Calculator http://www.wowdb.com/talent-calculator#Q / Artifact Calculator http://www.wowdb.com/artifact-calculator#RAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#Q
+
+Agonizing Poison http://www.wowdb.com/spells/200802 application no longer increases Kingsbane damage by twice the listed amount.
+
+
+
+Dungeons and Raids
+
+The Nighthold
+
+Gul’dan
+
+Resolved an issue that could cause Empowered Bonds of Fel to instantly detonate.
+
+
+
+
+Events
+
+The mages of the Kirin Tor made some arcane miscalculations when planning their Tavern Crawl. The Tavern Crawl is cancelled. Khadgar sends his apologies!
+
+
+Items
+
+Cache of Nightborne Treasures now correctly displays the difficulty it is associated with for non-Normal difficulties.
+Kil'jaeden's Burning Wish should no longer be castable while Mounted or under the effect of crowd control.
+
+
+Player versus Player
+
+http://static.mmo-champion.com/mmoc/images/icons/idemonhunters.gif Demon Hunter Forums http://www.mmo-champion.com/forums/358-Demon-Hunter / Skills http://www.wowdb.com/spells/class-abilities/demon-hunter / Talent Calculator http://www.wowdb.com/talent-calculator#w / Artifact Calculator http://www.wowdb.com/artifact-calculator#xAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#w
+
+Rain from Above http://www.wowdb.com/spells/206803 now provides a brief immunity to stun effects upon activation, rather than removing them.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid / Skills http://www.wowdb.com/spells/class-abilities/druid / Talent Calculator http://www.wowdb.com/talent-calculator#s / Artifact Calculator http://www.wowdb.com/artifact-calculator#tAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#s
+
+Infected Wounds http://www.wowdb.com/spells/48484 now reduces the movement of targets by 30% in PvP situations.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter Forums http://www.mmo-champion.com/forums/271-Hunter / Skills http://www.wowdb.com/spells/class-abilities/hunter / Talent Calculator http://www.wowdb.com/talent-calculator#M / Artifact Calculator http://www.wowdb.com/artifact-calculator#NAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#M
+
+Mending Bandage http://www.wowdb.com/spells/212640 will now remove bleed effects on targets other than the Hunter.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk Forums http://www.mmo-champion.com/forums/341-Monk / Skills http://www.wowdb.com/spells/class-abilities/monk / Talent Calculator http://www.wowdb.com/talent-calculator#o / Artifact Calculator http://www.wowdb.com/artifact-calculator#p / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#o
+
+Xuen summoned by Invoke Xuen, the White Tiger now deals 40% less damage in PvP situations.
+Hit Combo http://www.wowdb.com/spells/196740 now grants 1% damage per stack in PvP situations was 2% per stack.
+Heavy-Handed Strikes http://www.wowdb.com/spells/205003 now stuns the target for 3 seconds was 4 seconds.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest Forums http://www.mmo-champion.com/forums/274-Priest / Skills http://www.wowdb.com/spells/class-abilities/priest / Talent Calculator http://www.wowdb.com/talent-calculator#U / Artifact Calculator http://www.wowdb.com/artifact-calculator#VAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#U
+
+Holy Ward http://www.wowdb.com/spells/213610 no longer triggers its cooldown when a crowd control effect is prevented, and instead triggers a cooldown when Holy Ward is cast.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue Forums http://www.mmo-champion.com/forums/275-Rogue / Skills http://www.wowdb.com/spells/class-abilities/rogue / Talent Calculator http://www.wowdb.com/talent-calculator#Q / Artifact Calculator http://www.wowdb.com/artifact-calculator#RAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#Q
+
+Crippling Poison http://www.wowdb.com/spells/3408, Pistol Shot, and Nightblade/Night Terrors now reduce the movement of targets by 30% in PvP situations.

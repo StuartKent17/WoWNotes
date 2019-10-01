@@ -1,0 +1,234 @@
+chaud2016-05-23, 03:08 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Grotesque Hotfix Live, Printable Kanai's Cube Checklist & Other Tools http://www.diablofans.com/news/48734-grotesque-hotfix-live-printable-kanais-cube
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Hearthstone Championship Tour: Americas - Spring Prelims Day 1 - Stream & Decklists http://www.hearthpwn.com/news/1465-hearthstone-championship-tour-americas-spring
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Blue Posts Round-Up - More Batlegrounds, Unranked Draft & More, Widowmaker Nova http://www.heroesnexus.com/news/1704-blue-posts-round-up-more-batlegrounds-unranked
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Open Beta Stats Infographic, Pharah Comic now Available, Overwatch on Conan, Free BattleTag Name Change Now Live! http://www.overpwn.com/news/179-open-beta-stats-infographic-pharah-comic-now
+
+Armory Stats - Proving Grounds
+With the news that Proving Grounds will no longer be a requirement for Heroic Dungeons in Legion, we are taking one last look at the completion rate in Warlords. The data used today is a sample of characters from 1.9 million accounts. We also did this earlier in Warlords of Draenor, which you can see here http://www.mmo-champion.com/content/4794-Armory-Stats-Proving-Grounds-Blue-Posts-Blue-Tweets-Wildstar-Update. 
+
+You can see scoreboards on WoWProgress for DPS http://www.wowprogress.com/char_statistics/field.pg_damage, Healing http://www.wowprogress.com/char_statistics/field.pg_healer, and Tank http://www.wowprogress.com/char_statistics/field.pg_tank endless.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart; 
+
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#8C7853', '#545454', '#DBDB70', '#55C949', '#6B8E23', '#426F42']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'provingGroundsAbs',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Bronze', 'Silver', 'Gold', 'Endless 10', 'Endless 20', 'Endless 30'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+colorByPoint: true
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.series.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Proving Grounds Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'At least one role',
+data: [95.1, 86.9, 21.3, 5.01, 2.85, 2.02],
+
+}, {
+name: 'At least two roles',
+data: [58.4, 50.5, 4.97, 1.08, 0.67, 0.52]
+
+}, {
+name: 'At least three roles',
+data: [26.3, 21.8, 1.23, 0.36, 0.26, 0.22]
+
+}
+]
+
+};
+
+
+
+Highcharts.setOptions{
+colors: []
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'provingGroundsSingle',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Bronze', 'Silver', 'Gold', 'Endless 10', 'Endless 20', 'Endless 30'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+}
+},
+
+tooltip: {
+formatter: function  {
+return '<b>' + this.series.name + '</b> - ' + this.y + '%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Proving Grounds Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'DPS',
+data: [92.3, 82.4, 14.8, 2.48, 1.35, 0.99],
+color: '#851919'
+
+}, {
+name: 'Healer',
+data: [44.1, 40.4, 8.16, 2.38, 1.28, 0.84],
+color: '#4cad52'
+
+}, {
+name: 'Tank',
+data: [43.5, 36.3, 4.5, 1.6, 1.14, 0.92],
+color: '#183069'
+
+}]
+
+};
+
+};
+</script> 
+<div id="provingGroundsAbs" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div><br>
+
+
+<div id="provingGroundsSingle" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div>
+
+
+
+Robert Kazinsky Interview Questions
+We will have the chance to ask Robert Kazinsky https://www.youtube.com/watch?v=X2FXuFAXWP4 some questions soon and wanted to get in questions from the community as well. Feel free to submit questions below!
+
+
+<iframe frameborder="0" style="overflow:hidden" width="900px" height="250px" scrolling="auto" allowtransparency="true" src="//chaud.polldaddy.com/s/mmockazinskyinterview?iframe=1"><a href="//chaud.polldaddy.com/s/mmockazinskyinterview">View Survey</a></iframe>
+
+
+Blue Tweets
+Classes
+will gnome hunter be released before or after legions launch?
+Gnome Hunters will be available on day-one of the #Legion pre-expansion patch. https://t.co/uXUNZy12km WarcraftDevs https://twitter.com/WarcraftDevs/status/732348739734511617
+
+Items
+With Legion having alot of legendaries will we be able to transmog them. If not, can we atleast hide Helm/Cloak legendaries?
+You will be able to transmog #Legion legendaries to other appearances and vice versa. WarcraftDevs https://twitter.com/WarcraftDevs/status/732340400795459585
+
+Artifact Weapons
+artifact trait cost seems to double after 12 ranks, ~575 to 1260 for rank 13? intended?
+Yes; after 12 traits you are transitioning past the level-up experience. Around that time, you will accrue 1/2 https://t.co/OsNZDGDyv3 WarcraftDevs https://twitter.com/WarcraftDevs/status/732341043799035904
+Artifact Knowledge which will increase the rate at which you gain Artifact Power overall. 2/2 WarcraftDevs https://twitter.com/WarcraftDevs/status/732341270438252544
+
+
+Ghostcrawler Tweets
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.
+There is a pervasive myth that making content hard will induce players to rise to the occasion. We find the opposite. 2013 OccupyGStreet https://twitter.com/OccupyGStreet/status/340939865858396162
+Is it really a myth though? Maybe those rising aren't complaining, a silent majority? This btw is why people play Vanilla.
+Our data suggested it was a myth. Note that "not everyone should be able to do this" is a fine answer too. OccupyGStreet https://twitter.com/OccupyGStreet/status/724602889646141440
+How do you feel about it now? Was the data right? Did the myth have some truth?
+I think "hard" is just a difference audience. You have to choose. But you can't make hard stuff intended for easy players. OccupyGStreet https://twitter.com/OccupyGStreet/status/724605165777473537
+I love Dark Souls. But that's because it is targeted at gamers like me, not ALL gamers. OccupyGStreet https://twitter.com/OccupyGStreet/status/724605311500210177
+hard is what people want. It's human psychological. You feel more accomplished when finishing something hard.
+*If* you finish. If you quit because it's too hard or you don't want hard then the developer lost a player. OccupyGStreet https://twitter.com/OccupyGStreet/status/724660389124825088
+if you don't want hard then why play. We are already wasting time on a game, why not make it rewarding?
+There are a lot of easy games that are popular. I think that's fine. OccupyGStreet https://twitter.com/OccupyGStreet/status/724703285542703104
+My caution for developers is decide who your audience is and don't try to be all things to all players. OccupyGStreet https://twitter.com/OccupyGStreet/status/724703361291833344
+
+looking at that. I am wondering was cata bad move? Players seems more acceptance to this model rather than WOD simple pruning
+It depends if your intended audience is engaged players who want more or returning / lapsed players who might be overwhelmed. OccupyGStreet https://twitter.com/OccupyGStreet/status/724604383682424837
+
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Overwatch Short - Solider 76: Hero
+The final animated short for this season has been released! It tells some more of Solider 76's http://overwatch.gamepedia.com/Soldier:_76 story.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/cPRRupAM4DI?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Overwatch - Will You Play?
+Overwatch is almost here! Now that everyone has had a chance to try the game, will you be playing at launch?
+
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/9425327.js"></script><noscript><a href="http://polldaddy.com/poll/9425327/">Will you be playing Overwatch?</a></noscript>
+
+
+Making of Warcraft In-Game Trailer
+A video has been released that shows a little bit of the editing process to make the fan created Warcraft trailer that used in game assets http://www.mmo-champion.com/content/5685-Warcraft-Movie-Trailer-in-WoW-Movie-Music-Blue-Tweets-Build-of-the-Month-DLC-536. 
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/df4zAQLm8OE?rel=0" frameborder="0" allowfullscreen></iframe>

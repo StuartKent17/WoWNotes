@@ -1,0 +1,18 @@
+Boubouille2007-05-29, 10:33 PMArena point gain is intentionally different, and this is in-fact not a bug. A typical team will see a small change in their points, but players with very high or very low ratings will see a much larger change. Below is the new formula.
+
+If rating<=1500 then
+Points=0.38*rating-194
+note: this calculation can go negative, but will be floored at 0
+
+If rating>1500 then
+Points=1426.79/1+918.836*Power2.71828, -0.00386405*rating
+
+So ... What does it mean ? High-rating Arena teams will loose points, a lot of points. http://forums.worldofwarcraft.com/thread.html?topicId=106864957&pageNo=2&sid=1#33 And you can check how many here http://www.frals.net/wow/calc.php
+
+The first graphic shows a comparison of how much points you get every week before and after the nerf. The graphic was stolen from Curse-gaming.com http://www-en.curse-gaming.com/articles/details/1998/ without even asking for their authorization
+
+http://static.mmo-champion.com/mmoc/siteImages/images/news/2007/may/arenerf1.jpg
+
+This one shows how much points you lose compared to the last version. Posted on the official post by Zaleiria http://armory.worldofwarcraft.com/character-sheet.xml?r=Bonechewer&n=Zaleiria
+
+http://static.mmo-champion.com/mmoc/siteImages/images/news/2007/may/arenerf2.jpg

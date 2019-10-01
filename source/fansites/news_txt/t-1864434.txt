@@ -1,0 +1,236 @@
+chaud2015-09-15, 04:09 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Malthael Cosplay from LBCC 2015, Thrill Conquest Builds, Jaetch's DB Farming Wizard http://www.diablofans.com/news/48520-malthael-cosplay-from-lbcc-2015-thrill-conquest
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Deck Spotlight: Kibler's ATLC Dragon Priest, EU Road to BlizzCon Trailer http://www.hearthpwn.com/news/1032-deck-spotlight-kiblers-atlc-dragon-priest-eu-road
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Ranked Play Leaderboards, Rotation for Sept. 15, 2015, Shop Sales, Into the Nexus #66 http://www.heroesnexus.com/news/1483-ranked-play-leaderboards-rotation-for-sept-15-2015
+
+Armory Stats - Flying Achievements
+With flying finally here, we are checking back in to see how players are doing on unlocking flight. You can see the numbers from last month here http://www.mmo-champion.com/content/5089-Armory-Stats-Flying-Achievements-August-14-Hotfixes-Blue-Tweets-HS-TGT-Cards.
+
+The sample used today is 1.8 million players not characters that have logged in since August 15th. Only level 100 characters are included in the data. Characters are grouped by player, so no matter how many characters a player has, they only count once.
+
+We included the 200 Treasures achievement just for comparison purposes, only 100 is required for Master Treasure Hunter http://www.wowdb.com/achievements/10348-master-treasure-hunter, which is required for Draenor Pathfinder http://www.wowdb.com/achievements/10018-draenor-pathfinder.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#4768C4', '#949494', '#727272', '#595959', '#6B8E23', '#426F42']
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'flyingAch',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ '50 Treasures', '100 Treasures', '200 Treasures', 'Loremaster of Draenor', 'Explore Draenor', 'Securing Draenor', 'Tanaan Diplomat', 'Draenor Pathfinder'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Earned Flight Related Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [ {y: 59.49, color: '#AD5D3E', name:'50 Treasures'}, {y: 44.15, color: '#AD5D3E', name:'100 Treasures'}, {y: 10.32, color: '#AD5D3E', name:'200 Treasures'}, {y: 57.61, color: '#AD5D3E', name:'Loremaster of Draenor'}, {y: 45.50, color: '#AD5D3E', name:'Explore Draenor'}, {y: 34.98, color: '#AD5D3E', name:'Securing Draenor'},{y: 31.99, color: '#AD5D3E', name:'Tanaan Diplomat'}, {y: 28.67, color: '#AD5D3E', name:'Draenor Pathfinder'}],
+
+name: '<b>Percent</b>'
+}]
+};
+
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'nonrollingchart',
+zoomType: 'x',
+spacingRight: 20,
+backgroundColor: '#efeedc'
+},
+title: {
+text: 'Number of New Players Earning Draenor Pathfinder Per Week',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+subtitle: {
+text: document.ontouchstart === undefined ?
+'Click and drag in the plot area to zoom in' :
+'Drag your finger over the plot to zoom in'
+},
+xAxis: {
+type: 'datetime',
+maxZoom: 14 * 24 * 3600000, // fourteen days
+title: {
+text: null
+},
+startOnTick: false,
+showFirstLabel: false
+},
+yAxis: {
+title: {
+text: 'Number of Players',
+style: {
+fontSize: '16px',
+color: '#000',
+fontWeight: 'bold'
+}
+},
+startOnTick: true,
+showFirstLabel: false
+
+},
+tooltip: {
+shared: true 
+},
+legend: {
+enabled: false
+},
+plotOptions: {
+
+areaspline: {
+animation: false,
+lineWidth: 3,
+marker: {
+enabled: true,
+states: {
+hover: {
+enabled: true,
+radius: 5
+}
+}
+},
+shadow: false,
+states: {
+hover: {
+lineWidth: 3 
+}
+}
+}
+},
+
+series: [{
+type: 'areaspline',
+name: 'New Draenor Pathfinder Players',
+pointInterval: 7 * 24 * 3600 * 1000,
+pointStart: Date.UTC2015, 5, 23,
+data: [
+1843 , 56360 , 72071 , 54629 , 45601 , 31540 , 28600 , 34791 , 41422 , 48633 , 86884 ]
+}]
+};
+
+};
+</script> 
+<div id="flyingAch" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+
+<br/>
+<div id="nonrollingchart" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+<table class="listing sortable news-table achievement-table listing-achievements mmoc-listing b-table b-table-a" data-viewstate="" data-ajax-set-window-state="true" id="achievements" data-row-selector=">tbody>tr" data-default-sort-slug="name" data-default-sort-order="asc"> <thead class="b-table-header j-listing-table-header"> 
+<tr> <th>Name</th> <th>Points</th> <th>Percent</th> <th>Category</th> </tr> </thead> <tbody class="filtered"> 
+
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9727-expert-treasure-hunter" class="listing-icon " href="http://www.wowdb.com/achievements/9727-expert-treasure-hunter"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20173/medium/icon_treasuremap.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9727-expert-treasure-hunter" class="t" href="http://www.wowdb.com/achievements/9727-expert-treasure-hunter">Expert Treasure Hunter</a> <span class="subtext">Discover 50 treasures of Draenor excluding Tanaan Jungle.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td><div class="rewards">59.49%</div></td><td class="c">Draenor</td></tr> 
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/10348-master-treasure-hunter" class="listing-icon " href="http://www.wowdb.com/achievements/10348-master-treasure-hunter"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20173/medium/icon_treasuremap.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/10348-master-treasure-hunter" class="t" href="http://www.wowdb.com/achievements/10348-master-treasure-hunter">Master Treasure Hunter</a> <span class="subtext">Discover 100 treasures of Draenor excluding Tanaan Jungle.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td><div class="rewards">44.15%</div></td><td class="c">Draenor</td></tr> 
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9728-grand-treasure-hunter" class="listing-icon " href="http://www.wowdb.com/achievements/9728-grand-treasure-hunter"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20173/medium/icon_treasuremap.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9728-grand-treasure-hunter" class="t" href="http://www.wowdb.com/achievements/9728-grand-treasure-hunter">Grand Treasure Hunter</a> <span class="subtext">Discover 200 treasures of Draenor excluding Tanaan Jungle.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td><div class="rewards">10.32%</div></td><td class="c">Draenor</td></tr> 
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9833-loremaster-of-draenor" class="listing-icon " href="http://www.wowdb.com/achievements/9833-loremaster-of-draenor"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20173/medium/achievement_zone_draenor_01.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9833-loremaster-of-draenor" class="t" href="http://www.wowdb.com/achievements/9833-loremaster-of-draenor">Loremaster of Draenor</a> <span class="subtext">Complete the Draenor quest achievements listed below.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td><div class="rewards">57.61%</div></td><td class="c">Draenor</td></tr>
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/8935-explore-draenor" class="listing-icon " href="http://www.wowdb.com/achievements/8935-explore-draenor"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20173/medium/achievement_zone_draenor_01.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/8935-explore-draenor" class="t" href="http://www.wowdb.com/achievements/8935-explore-draenor">Explore Draenor</a> <span class="subtext">Explore the regions of Draenor.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 25</span></td><td><div class="rewards">45.50%</div></td><td class="c">Exploration</td></tr> 
+
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9562-securing-draenor" class="listing-icon " href="http://www.wowdb.com/achievements/9562-securing-draenor"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20173/medium/inv_misc_map08.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9562-securing-draenor" class="t" href="http://www.wowdb.com/achievements/9562-securing-draenor">Securing Draenor</a> <span class="subtext">Complete the Draenor bonus objectives listed below.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td><div class="rewards">34.98%</div></td><td class="c">Draenor</td></tr>
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/10349-tanaan-diplomat" class="listing-icon " href="http://www.wowdb.com/achievements/10349-tanaan-diplomat"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20444/medium/achievement_zone_tanaanjungle.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/10349-tanaan-diplomat" class="t" href="http://www.wowdb.com/achievements/10349-tanaan-diplomat">Tanaan Diplomat</a> <span class="subtext">Earn Revered reputation with all three factions in Tanaan Jungle.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td>31.99%</td><td class="c">Draenor</td></tr> 
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/10018-draenor-pathfinder" class="listing-icon " href="http://www.wowdb.com/achievements/10018-draenor-pathfinder"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20173/medium/achievement_zone_draenor_01.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/10018-draenor-pathfinder" class="t" href="http://www.wowdb.com/achievements/10018-draenor-pathfinder">Draenor Pathfinder</a> <span class="subtext">Complete the Draenor achievements listed below:</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 25</span></td><td>28.67%</td><td class="c">Draenor</td></tr> 
+
+
+</tbody></table>
+
+Arena Queue Length Issue Update
+The long arena queue problem may be solved soon!
+
+
+http://media.mmo-champion.com/images/news/2015/september/arenaQueues.png https://twitter.com/WarcraftDevs/status/643594655360262144 
+
+
+Blue Tweets
+Funny how and are ignoring #RavenholdtOrRiot Almost as if they know they're wrong but are too stubborn to change.
+Appreciate feedback, and hear you, please try to keep your comments positive, and wait until full reveals. Muffinus https://twitter.com/Muffinus/status/641115537309720576
+
+Why was the drop rate of Val'anyr fragments lowered so much?
+It hasn’t been touched in years if ever – sounds like bad luck. WarcraftDevs https://twitter.com/WarcraftDevs/status/641358283001884674
+
+Last LK Timewalking cache for me was Heroic, this time it was Normal. What gives? I've only done more H kills since then?
+Maybe you’re thinking of the Draenor dungeon holiday? Timewalking gives a Normal cache; Draenor Mythics a Heroic one. WarcraftDevs https://twitter.com/WarcraftDevs/status/641358151611125760
+
+
+Poll - Flying Unlock Knowdlege
+If you are reading this news post, it is likely that you knew how to unlock flying. We are curious if you had any players in your guild that didn't know how to unlock flying.
+
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/9077641.js"></script>
+<noscript><a href="http://polldaddy.com/poll/9077641/">Were there players in your guild that didn't know how to unlock flying?</a></noscript>
+
+DLC #504 - Heir
+DLC #504 http://darklegacycomics.com/504 has been released.
+
+
+http://media.mmo-champion.com/images/news/2015/september/dlc504.jpg http://darklegacycomics.com/504

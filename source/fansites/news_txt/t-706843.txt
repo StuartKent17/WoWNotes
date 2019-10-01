@@ -1,0 +1,29 @@
+Boubouille2010-04-05, 04:45 PMRage Normalization in Cataclysm
+We are going to take the opportunity in Cataclysm to try and fix some of the problems with the Rage mechanic for both warriors and druids. Some of these problems include:
+
+Warriors/druids in the lowest levels of gear can be Rage-starved.
+Warriors/druids in the highest levels of gear no longer have to manage their Rage when it becomes infinite.
+Warrior/druid tanks lose Rage income as they improve their gear and take less damage.
+The gameplay of warrior and druid tanks loses a lot of depth when massive boss hits means never having to manage Rage.
+Heroic Strike and Maul are effective, but tedious abilities for using up extra Rage.
+In general, warriors and druids don’t have enough control over their Rage.
+
+To resolve these issues, Rage will be normalized in Cataclysm. This will make the Rage gained by characters more consistent and avoid drastic differences between low-end and high-end gear.
+
+The concept of normalized Rage may leave a negative impression on some veteran players, as we tried it once before in The Burning Crusade and it wasn't successful, resulting in them feeling weakened. However, we think that the concept is still sound -- it was just that the previous implementation didn't balance the values correctly, leading to players being Rage-starved. That is not the goal. As part of the change, we want to give warriors and druids a lot of ways to control their rage, so even in the worst-case scenarios they won’t feel like they lack the resource to do their job.
+
+Here are some of the ways the Rage mechanic will change in Cataclysm:
+
+1 Rage is no longer generated based on damage done by auto-attacks. Instead, each auto-attack provides a set amount of Rage, and off-hand weapons will generate 50% of the Rage main hands do. This amount is based on a constant formula which factors in the base swing speed of the weapon. This means the Rage gained should be averaged out between fast and slow weapons. The constant formula also gives us the ability to easily increase the rage gained if it feels too low or reduce it if is too high. We are also implementing the following mechanics, which will still allow rage to improve to some extent as you improve gear:
+
+If the attack is a critical strike, it will generate 200% Rage.
+Haste will accelerate swing times to generate Rage faster.
+
+2 Rage from damage taken will no longer be based on a standard creature of the character’s level, but instead will based on the health of the warrior or druid. Again, there is a constant that is multiplied by the rage generated in order to allow for fine-tuning. This calculation ignores all damage reduction from armor, absorption, avoidance, block, or similar mechanics, so improving your gear will not reduce Rage gained.
+
+3 We will provide warriors and druids with more instant sources of rage. For example, the warrior shouts are changing to work more like the death knight ability Horn of Winter. Instead of Battle Shout consuming Rage, it will generate Rage but have a short cooldown. Both classes will have additional methods to generate Rage in an emergency or bleed off Rage when they have too much.
+
+4 All “on next swing” attacks in Cataclysm are being removed. Heroic Strike and Maul will be instant swings that cost a variable amount of Rage. For example, imagine Heroic Strike costs between 10 and 30 Rage. You must have at least 10 Rage to use the attack, but it will consume all available Rage up to a maximum of 30. Any Rage consumed above the minimum will cause the ability to hit harder, and in some cases much harder. We will tune the ability so that it’s generally not a good idea to hit it when you have low Rage unless everything else is somehow on cooldown but becomes a more attractive button the higher your Rage.
+
+
+We understand this change may be scary for many players, but keep in mind that the constants in the formulas for gaining Rage will give us the ability to make quick adjustments if we feel Rage generation is too low. Our goal is for each character's Rage to not be always high or always low, but rather a resource that needs to be managed properly by the player.

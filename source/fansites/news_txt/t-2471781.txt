@@ -1,0 +1,26 @@
+chaud2019-03-12, 09:43 PMPatch 8.1.5 - Jaina Encounter Hotfixes
+It appears that the Jaina encounter has had health reduced by 5% and Mythic Chilling Touch damage reduced by 10%. 
+
+
+https://media.mmo-champion.com/images/news/2019/march/thumb/chillingTouch815.jpg https://media.mmo-champion.com/images/news/2019/march/usChillingTouch.jpg https://media.mmo-champion.com/images/news/2019/march/thumb/euChillingTouch3.jpg https://media.mmo-champion.com/images/news/2019/march/euChillingTouch2.jpg 
+
+
+New Graphics APIs in 8.1.5
+In 8.1.5, we are making some improvements to how World of Warcraft uses DirectX. In essence, our old DirectX 11 is now called DirectX 11 Legacy, and our new DirectX 11 is multi-threaded. More details on each DirectX version is below:
+
+DirectX 11 Legacy
+A single-threaded rendering backend. This is provided to be the most compatible with older hardware, operating systems, and drivers. This is also the least performant. This is very similar to the functionality of DirectX 11 in 8.0.1.
+
+DirectX 11
+A new multi-threaded rendering backend using DirectX 11. This should improve performance for older GPUs or operating systems that don’t support DirectX 12. This is new for 8.1.5.
+
+DirectX 12
+A multi-threaded rendering backend using DirectX 12 for hardware, drivers, and operating systems that support it. There are some performance improvements in 8.1.5, but it is mainly the same as the 8.1.0 release.1 Reply1
+
+
+World of Warcraft Supports DirectX 12 on Windows 7
+After we saw the performance gains of using multi-threaded rendering in DirectX 12 for the initial Tides of Vengeance update, we worked together with Microsoft and our hardware vendors to bring similar performance gains to our Windows 7 users. We are pleased to announce that with today’s content update, World of Warcraft will now support DirectX 12 on Windows 7. This allows our Windows 7 users to take advantage of the performance benefit of using DirectX 12, which was previously only available to our Windows 10 users.
+
+Windows 7 users will need to make sure they have the latest graphics drivers to use DirectX 12. If your GPU supports DirectX 12 on Windows 7, you may enable it by selecting it in the Advanced System settings, under "Graphics API".
+
+DirectX Developer Blog https://blogs.msdn.microsoft.com/directx/2019/03/12/world-of-warcraft-uses-directx-12-running-on-windows-7/

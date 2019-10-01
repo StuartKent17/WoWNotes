@@ -1,0 +1,308 @@
+chaud2014-01-06, 01:36 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Battle.net Parental Control Changes, Feedback on Density is Needed, MannerCookie's Torment 6 Freeze Barb http://www.diablofans.com/news/47901-battle-net-parental-control-changes-feedback-on
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Weekly News Recap, Community Spotlight - Soulstone, FanArt; ESGN Fight Nights Trailer http://www.hearthpwn.com/news/250-weekly-news-recap-community-spotlight-soulstone
+
+Armory Stats - Proving Grounds
+Today we are looking at data from proving grounds achievements, with a sample of 6.3 million characters and 2.3 million players that were active after November 19th. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. You can leave suggestions for future stat posts in the comments!
+
+Our first chart shows the percentage of players that earned proving grounds achievements, for at least one role, at least two roles, or at least three roles. The second chart shows the same data, but scales the percentages so that they consider only the participating players. A participating player is a player that earned at least Bronze in one role.
+
+Unfortunately we are unable to look at achievements by class, as achievements are earned account wide, and there is no way to know which character they were earned on.
+
+There are three data points for every difficulty level, but you may need to click the names in the legend to hide taller bars and mouse over close to the X axis in order to see them.
+
+A total of ~20,000 players have completed the You're Doing it Wrong http://www.wowdb.com/achievements/8697-youre-doing-it-wrong, or ~3% of the players that earned at least one Silver role achievement. 
+
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#8C7853', '#545454', '#DBDB70', '#55C949', '#6B8E23', '#426F42']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'provingGroundsAbs',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Bronze', 'Silver', 'Gold', 'Endless 10', 'Endless 20', 'Endless 30'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+colorByPoint: true
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.series.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Proving Grounds Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'At least one role',
+data: [46.4, 26.8, 7.6, 2.0, 1.1, 0.8],
+
+}, {
+name: 'At least two roles',
+data: [11.6, 5.2, 1.03, 0.23, 0.13, 0.09]
+
+}, {
+name: 'At least three roles',
+data: [2.28, 1.01, 0.20, 0.06, 0.03, 0.03]
+
+}
+]
+
+};
+
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'provingGroundsScaled',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Bronze', 'Silver', 'Gold', 'Endless 10', 'Endless 20', 'Endless 30'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+endOnTick: false,
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+colorByPoint: true
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.series.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Participating Players that Completed Proving Grounds Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'At least one role',
+data: [100, 57.7, 16.4, 4.4, 2.4, 1.7]
+
+}, {
+name: 'At least two roles',
+data: [25, 11.3, 2.2, 0.5, 0.3, 0.2]
+
+}, {
+name: 'At least three roles',
+data: [4.9, 2.2, 0.4, 0.12, 0.07, 0.06]
+
+}
+]
+
+};
+
+};
+</script> 
+
+
+
+<div id="provingGroundsAbs" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+
+<div id="provingGroundsScaled" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+Upcoming Battle.net Parental Control Changes
+On January 7, 2014 or shortly afterwards, we’re making a change to Battle.net® Parental Controls: a new default setting will prevent in-game purchases for accounts that have Parental Controls turned on. The account will not be able to:
+
+
+Make purchases in the World of Warcraft® in-game Shop
+Make real-money purchases in Hearthstone™: Heroes of Warcraft™
+Make purchases in the Diablo® III real-money auction house note: the auction house will be permanently closed on March 18, 2014
+
+
+We’re making this change to ensure that Parental Controls users will have more control over real-money purchases in Blizzard games. No action is needed to keep this default setting and prevent in-game purchases.
+To enable in-game purchases for this account:
+1. Log in to Battle.net and visit the Retrieve Parental Controls page https://battle.net/account/parental-controls/retrieve.html.
+2. Enter your Parental Controls email address.
+3. Click the Send Parental Controls Email button.
+4. Check your Parental Controls email for a message from Blizzard Entertainment.
+5. Click the link under the account user’s name. This will take you to the Parental Controls setup page.
+6. Under the Purchase Settings section, check Allow in-game purchases, and click the Save Settings button.
+
+If you’d like to remove Parental Controls from this Battle.net account, visit our Adding and Removing Battle.net Parental Controls https://battle.net/support/article/300680 support article for detailed instructions.
+
+
+
+Blue Tweets
+Art
+What overall feel are you guys going for for armor in WoD? Something light/nomadic/less bulky?
+overall theme is primal/barbarian . We're also tapping into iron horde theme strategically. Source https://twitter.com/artofcgrobinson/status/415515445504917504
+
+Any chance of allowing white/statless items as transmog models? Some very nice models among those going to waste!
+Doubtful as it's currently the #1 lock-out mechanism. More likely that we'll try to reinclude such assets as future rewards! Source https://twitter.com/Dave_Maldo/status/414928788011503616
+Consider their models for re-inclusion I mean!
+Oh yes, that's what I meant! Just a matter of the item/reward peeps finding the right time & place for all that stuff. Source https://twitter.com/Dave_Maldo/status/414933395718696960
+
+I mean, they don't start holding the bow like a gun suddenly. I just wonder why it's such a problem with fist/1Hand weapons.
+Bow/gun was hard-coded in from the very beginning, built into the system. And again, for *both* philosophical & technical reasons. Source https://twitter.com/Dave_Maldo/status/417015792794746880
+
+Character / Items
+Probably too much for twitter, but what plans for trinkets in WoD? RPPM/ICD/On-use/<insert new thing here>
+Variety. All of the above, along with some more ideas. Source https://twitter.com/Celestalon/status/409912902208872448
+
+Just FYI, Tauren could need an offensive racial wow that sounds weird So many of my druid pal racechanged to Troll...
+Yes, adding a throughput benefit to races that had don't have one currently is part of balancing the racials. Source https://twitter.com/Celestalon/status/416685577774178304
+
+Warlords of Draenor Stats
+Will low level gear only have haste and crit or will amplify, readiness and multi-strikelol be low level too?
+Unsure. Since most low level gear only has 1 secondary stat on it, it could be OK. Still deciding. Source https://twitter.com/Celestalon/status/409903833586737152
+
+Will Multistrike interact with some class mechanics like, say, crit for fire mages & how is it meaningfully different from crit?
+Just there are some class abilities that trigger from crits, there may be some that trigger from Multistrikes. Source https://twitter.com/Celestalon/status/412888346147303424
+"Just as there are...", rather. Yes, Flameglow would work better against Multistrikes and still worse against crits. Source https://twitter.com/Celestalon/status/412889709111562240
+
+Isnt multistrike just crit with the chance of hitting somthing you dont want to plus only 1/3 the power? I am guessing: No 
+No... Multistrike doesn't hit a different target. Can trigger 1 or 2 times per attack. Source https://twitter.com/Celestalon/status/412679443606294529
+Which means if it strikes twice and both crits it's +120% otherwise it's +90% or less. How will this ever be better than crit?
+It has an appropriate coefficient so that it's competitive. Is that what you mean? Source https://twitter.com/Celestalon/status/414137086740922368
+Does that mean Multistrike is affected by our Crit rating?
+No... Multistrike and Crit are separate mechanics. Source https://twitter.com/Celestalon/status/412749259339882496
+
+Double multistrike, all three hits crit! <- This is the only thing will hear about in WoD PvP.
+We recognize that problem and are preemptively working on potential solutions. Source https://twitter.com/Celestalon/status/414879986005204992
+
+Right, what's wrong with that? Also I imagine some specs getting procs off multistrike hits
+Yeah, 1% Multistrike will be way cheaper than 1% crit. That's fine, happens all the time. Source https://twitter.com/Celestalon/status/414223646018641920
+critrat is near 100% right now. Multistrike capped around 6.1 then? Or lower critchances in general?
+And half that crit is from Agi, not crit rating. Source https://twitter.com/Celestalon/status/414540496514449408
+wait, I missed something... no more agi->crit? Same for int-crit? Agi-dodge and str-parry?
+I'm saying that you can't say that "I capped crit in X tiers, so I'll cap multistrike in X/2 tiers". Crit came from Agi too. Source https://twitter.com/Celestalon/status/414611030845566977
+
+is the only way to get multi strike through gear? Toons have base mastery and crit...
+We may have the occasional buff, or class ability, or consumable. Characters don't have base haste, yet you get it from all over. Source https://twitter.com/Celestalon/status/414226931156934656
+
+Lot of tick mechanics were changed to less frequent but more powerful to decrease server load. Any worry for multistrike?
+We learned a lot from those changes. We're designing Multistrike and handling some similar challenges with that in mind. So, I see where the concern is coming from and we're making sure that it won't cause problems like that again. Source https://twitter.com/Celestalon/status/414221767318573056
+
+PvE
+Keep that crap out of my visual clusterfuck melee pile. 
+We 110% recognize the problem that is visual clutter, especially in raids, and want to make it better, not worse. Source https://twitter.com/Celestalon/status/409914478726098944
+We've started toning up your own visuals, and toning down others' visuals. Much more of that to come in WoD. Source https://twitter.com/Celestalon/status/409914531796619264
+
+I want to always have something to work for in WoD gear, but I don't want to rely on it for damage + competitive raid spot.
+Those desires are competing with each other though, you see? Source https://twitter.com/Celestalon/status/409905201118584832
+
+PvP
+Is ONE DR or something like it a system you'd consider for WoW PvP? It would dramatically cut down on CC and make it strategic
+Prefer to reduce the number of CC spells. Players seeing "Immune" more isn't going to be fun. Source https://twitter.com/holinka/status/412658000252256256
+Is that actually going to happen though? You guys say that an awful lot yet Hunters have been the only ones to lose any.
+It's the plan for WoD. Source https://twitter.com/holinka/status/413011853044772864
+Simpler solution is removing so much CC that DR isn't needed to such a large extent anyway.
+DR categories help prevent class stacking, which is good, but the number of categories has grown too high. Source https://twitter.com/holinka/status/412657768827342848
+
+Since 72% resil makes healing very efficent atm im interested to see how healers will will be adjusted for low resil PVP.
+We're exploring 150% crits for PvP damage/healing which makes a big difference for both base resil and battle fatigue. Source https://twitter.com/holinka/status/411656873142517760
+Bringing back resi providing crit % reduction is something people I have been suggesting for over a year...
+Sure but that's not what we're talking about here Source https://twitter.com/holinka/status/412389880036331520
+
+I hope it can be reduced, and I would love to see it removed as a stat and just be a background effect like battle fatigue.
+Base resil will be reduced as low as possible. Like PvP dmg reduction as set bonus trinkets. Don't like resil gems. Source https://twitter.com/holinka/status/411651164384403456
+
+What about making base resilience only active in instanced pvp? Pve players still stand a chance but pvp gear good in world pvp.
+This would just mean the game is way more bursty out in the world. Not something we want. Source https://twitter.com/holinka/status/411014814568181760
+I didn't think of that. I just hope you guys find a way to make world pvp work. I'm stoked about Ashran #WoD
+I think we have good plans here to make ilevels much closer in WoD than MoP. Source https://twitter.com/holinka/status/411016910981967872
+
+a lot of problems with battle fatigue in duel...not applied .Is Battle fatigue removed in wod?
+A goal for WoD is for Battle Fatigue & Base Resilience to be as low as possible. This has broad implications. Source https://twitter.com/holinka/status/410985909962563584
+
+One quick question as someone asked. RBG was TotG too, yes? I'm sure I heard H. say so.
+Yes, RBGs will have TotG too. Source https://twitter.com/holinka/status/411265400936996864
+
+Horde towers are much easier to defend; gives a large advantage to the Alliance UNLESS can wipe on Galv.
+We're looking at what we can do on the map, but it will take a long time to change community opinion Source https://twitter.com/holinka/status/411016178392252416
+
+will there be LoS objects around the central fighting points in Ashran?
+Yes we're designing the contested areas with LoS in mind Source https://twitter.com/holinka/status/414512606481633280
+Will hunters still have quad damage stampede, and various other things that only apply in arena fixed to be v. player?
+Our design for the area is a PvP playground with an emphasis on atmosphere, exploration & participation. Source https://twitter.com/holinka/status/414632770690748417
+A lot of things are going to feel "crazy" and OP out there. Be forewarned. Source https://twitter.com/holinka/status/414633493365141504
+
+Holiday Events
+More world events please. More server wide events. More quests like "Only one may rise"!
+I'd love to do more stuff like that, totally. Source https://twitter.com/Dave_Maldo/status/417349277199790080
+
+Dave, if you work on holiday events in WoW, could you guys raise ilevel of the holiday drops? To Timeless Isle at least.
+The item peeps generally bump the player power drops once per expansion, in tune w/ the level/ability bump the encounter peeps do. Source https://twitter.com/Dave_Maldo/status/417018011149561856
+but by adding Timeless Isle you've allowed people to skip catch-up content, making holiday drops sort of useless. It's a shame.
+I understand what you're saying! Still, if people are killing Ahune only for his cloaks, I have failed horribly. T_T Source https://twitter.com/Dave_Maldo/status/417349698093977600
+no, for his scythe! Lol. Wow is a "loot-porn" game. Heard the term before? We want lootz. No worthy lootz? We don't run content.
+That's what I was saying: I'm more about snowing scythes and funky gas masks and flying hell-horses than magical ring item levels. Source https://twitter.com/Dave_Maldo/status/417440817297387520
+fair enough, you're my kind of guy then! More snowing scythes and glowing horses please! Increase drop rate on Love Rocket!
+OG Love Rocket was like Broom i.e. everyone during LiitA but so funky and loved by team I had to make it a VERY rare permanent. Source https://twitter.com/Dave_Maldo/status/417442733003767808
+
+
+Fan Art
+Another nice piece of Hearthstone art today from breathing2004.
+
+
+http://media.mmo-champion.com/images/news/2014/january/thumb/hsBreathing.jpg http://breathing2004.deviantart.com/art/hearthstone-title-art-397834834

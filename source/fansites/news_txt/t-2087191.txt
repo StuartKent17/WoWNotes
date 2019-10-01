@@ -1,0 +1,208 @@
+chaud2016-10-08, 04:10 PM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> BlizzCon: Diablo's 20th Anniversary Party, David Brevik & Bill Roper at Blizz HQ http://www.diablofans.com/news/48829-blizzcon-diablos-20th-anniversary-party-david
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> HCT 2016 European Last Call Begins Saturday - Decks, Brackets, & Info! http://www.hearthpwn.com/news/1761-hct-2016-european-last-call-begins-saturday-decks
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Samuro the Blademaster is the Next Hero to Enter the Nexus http://www.heroesnexus.com/news/1803-samuro-the-blademaster-is-the-next-hero-to-enter
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Overwatch Halloween Event is Coming, Developer Update with Jeff Kaplan: New Maps, New Heroes, Symmetra http://www.overpwn.com/news/230-overwatch-halloween-event-is-coming-developer
+
+Legion - Character Leveling Stats
+Today we are taking a look at the percentage of characters of each class that made it from being Level 100 a few months before Legion to Level 110 as of this week.
+
+
+Some characters were lost to name changes, realm transfers, faction changes, and database issues.
+The absolute percentages here have little meaning because of those issues, so they should only be used for comparing one class to another.
+Demon Hunters were not included, as the set of characters being checked was from a few months before the pre-expansion patch.
+We did the same thing during Mists of Pandaria http://www.mmo-champion.com/content/3383-Character-Leveling-Stats-New-Video-Game-and-WoW-Forums-Blue-Tweets-Blizzard-Art and Cataclysm http://www.mmo-champion.com/content/2413-Character-Activity-Stats-Poll-Trip-to-Blizzcon-Contest-MMO-Report. Keep in mind that both of those were later into the expansion. 
+
+
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2015/august/highcharts-4.1.8.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#E34F10', '#0FA1A3']
+};
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'stillalivechart1',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Death Knight','Druid','Hunter','Mage','Monk','Paladin','Priest','Rogue','Shaman','Warlock','Warr ior'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return this.point.name + ' - '+ this.y +'%';
+}
+},
+
+title: {
+text: 'Characters that Reached Level 110 from Level 100',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 11.0, color: '#C41E3A', name:'Death Knight'},{y: 13.8, color: '#FF7D0A', name:'Druid'},{y: 12.3, color: '#ABD473', name:'Hunter'},{y: 11.6, color: '#69CCF0', name:'Mage'},{y: 8.3, color: '#00c77b', name:'Monk'},{y: 14.0, color: '#F58CBA', name:'Paladin'},{y: 10.9, color: '#FFFFFF', name:'Priest'},{y: 10.3, color: '#FFF569', name:'Rogue'},{y: 11.9, color: '#2459FF', name:'Shaman'},{y: 10.0, color: '#9482CA', name:'Warlock'},{y: 12.7, color: '#C79C6E', name:'Warrior'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+
+
+
+};
+</script> 
+<div id="stillalivechart1" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+
+<table class="news-table" style="width:80%;max-width:400px">
+<thead>
+<tr>
+<th>Class</th>
+<th>Leveled to 110 in Legion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight</td>
+<td align="center">11.0%</td>
+</tr>
+<tr>
+<td align="center">http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid</td>
+<td align="center">13.8%</td>
+</tr>
+<tr>
+<td align="center">http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter</td>
+<td align="center">12.3%</td>
+</tr>
+<tr>
+<td align="center">http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage</td>
+<td align="center">11.6%</td>
+</tr>
+<tr>
+<td align="center">http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk</td>
+<td align="center">8.3%</td>
+</tr>
+<tr>
+<td align="center">http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin</td>
+<td align="center">14.0%</td>
+</tr>
+<tr>
+<td align="center">http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest</td>
+<td align="center">10.9%</td>
+</tr>
+<tr>
+<td align="center">http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue</td>
+<td align="center">10.3%</td>
+</tr>
+<tr>
+<td align="center">http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman</td>
+<td align="center">11.9%</td>
+</tr>
+<tr>
+<td align="center">http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock</td>
+<td align="center">10.0%</td>
+</tr>
+<tr>
+<td align="center">http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior</td>
+<td align="center">12.7%</td>
+</tr>
+</tbody>
+</table>
+
+
+Blue Tweets
+BlizzCon
+One of the cool things about a content-heavy patch cycle is that there is always fun stuff to talk about at Blizzcon Muffinus https://twitter.com/Muffinus/status/782964181028921345
+
+Future Content
+At this point in your Legion progression, what sort of content would you most like to see added? Muffinus https://twitter.com/Muffinus/status/782962079707729920
+Brawlers guild with new bosses, legion spaceship I can use to explore the universe and planets to conquer with my followers
+you sound EXACTLY like Sargeras right now Muffinus https://twitter.com/Muffinus/status/782964331122036736
+
+
+Ghostcrawler Tweets
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.
+Seeing the post on reddit in which you basically say that LFR is the worst design decision you've ever made, I'm wondering what was the idea/mindset behind making it? To allow people who aren't that good at the game to experience raiding?
+Yeah I expanded a little in that answer. I said that the goal of getting players with less time or willingness to wipe for 3 hours into raiding was a noble goal. Raiding is fun. It's the most epic part of the game IMHO. A lot of storytelling happens in raids and you get to see some great art and interact with famous characters. We definitely spent a lot of dev time on raiding, so getting it accessible to a larger population made sense.
+
+The problem with Raid Finder was that when the content was too tough meaning easier than normal raiding, but not a cake walk then people would tend to drop the raid after a wipe or two. You'd get these revolving doors where the raid itself was stuck on a boss but the individuals in the raid had cycled through maybe 100s of players after a few hours. There was no "Okay, boys and girls, let's call it a night," moment that you get from a raid leader in an organized guild. For that matter, there was no leader who could kick problem players, dictate strategy or explain the fights. For most players, Raid Finder was a weirdly silent and anonymous affair.
+
+The altenative was to make the difficulty level so easy that you'd probably steamroll every boss and that's sort of where we ended up, but it meant you weren't really doing a rotation, lots of people were AFK and these famous bosses hit like kittens.
+
+Daelo Scott Mercer was the other designer who worked with me on Raid Finder, and if I had to do it all over again, I think I would advocate we try something more like a group builder where a leader would invite and be able to kick people. I did a lot of pug raiding over the years, and some of them worked fine, which leads me to believe that model has promise. I *think* WoW has something like that now? Not sure.
+
+I have a lot of faith in those guys. They will eventually figure out a good solution if they haven't already. The original question and answer were both targeting my career as a designer, not an attempt to take a shot at WoW.
+
+
+Blizzard 25th Anniversary and Diablo 20th Anniversary Party at BlizzCon 2016
+25 years ago, a small group of gamers set out to create the kinds of game experiences they loved playing—and Blizzard Entertainment was born. Since then, the team at Blizzard has transported millions of people around the world to fantastic worlds of fantasy and science fiction—including Diablo’s Sanctuary, which first invited players to descend into the terrifying labyrinth beneath the Tristram Cathedral 20 years ago in 1996!
+
+Please join us in celebrating these anniversaries on Friday, November 4 from 8 p.m. until 10 p.m. in the Grand Plaza outside the Anaheim Convention Center during BlizzCon 2016. This event is open to everyone, whether you’re attending the convention or just happen to be in the neighborhood, and admission is free. We’ll also have some great food, special anniversary-themed drinks, entertainment—and even a surprise or two.
+
+An Epic Night of Live Music
+The main stage at the celebration will feature BlizzCon Talent Contest winners Songhammer performing live—so grab some armor from your closet and get ready for an epic rock show.
+
+When:
+Friday, November 4, 2016 from 8 p.m. through 10 p.m. PT
+
+Where:
+
+Anaheim Convention Center Grand Plaza
+Open space between Marriott and Hilton outside BlizzCon—no BlizzCon ticket required!
+
+
+What:
+
+Performance by Songhammer
+Specialty beverages celebrating Blizzard’s 25th and Diablo’s 20th anniversaries
+Food Trucks
+Epic Fun
+
+
+You’ll be celebrating the occasion alongside a fun-filled crowd of game developers, staff, and a swarm of fellow Blizzard gamers. You won’t want to miss a moment of this special event—we can’t wait to see you there!
+
+
+Legion VFX Reel
+Terrie Denman https://twitter.com/TerrieDenman shared some of the art she worked on for Legion. 
+
+
+<iframe src="https://player.vimeo.com/video/183760661?color=c9ff23&title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

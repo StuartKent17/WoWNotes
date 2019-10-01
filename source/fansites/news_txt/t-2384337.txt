@@ -1,0 +1,146 @@
+chaud2018-03-16, 11:14 PMArmory Stats - Prestige Level
+Today we are taking a look the Prestige level of 2.3 million active US and EU players in our database. 
+
+<script src="https://media.mmo-champion.com/images/news/2017/march/highcharts.js"></script><div id="wv2016" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+
+<script>new MutationObserverfunction {
+var resizeEvent = window.document.createEvent'UIEvents'; 
+resizeEvent.initUIEvent'resize', true, false, window, 0; 
+window.dispatchEventresizeEvent;
+}.observedocument.body, {
+attributes: true
+};
+Highcharts.chart'wv2016', {
+chart: {
+type: 'column',
+backgroundColor: '#efeedc',
+},
+title: {
+text: 'Prestige Level of Active Players',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+legend: {
+enabled: false,
+},
+xAxis: {
+categories: ['Prestige 1', 'Prestige 2', 'Prestige 3', 'Prestige 4', 'Prestige 5', 'Prestige 6', 'Prestige 7', 'Prestige 8', 'Prestige 9', 'Prestige 10', 'Prestige 11', 'Prestige 12', 'Prestige 13', 'Prestige 14', 'Prestige 15', 'Prestige 16', 'Prestige 17', 'Prestige 18', 'Prestige 19', 'Prestige 20', 'Prestige 21', 'Prestige 22', 'Prestige 23', 'Prestige 24', 'Prestige 25'],
+tickmarkPlacement: 'on',
+title: {
+text: 'Prestige Level',
+style: {
+color: '#000',
+fontSize: '13px',
+fontWeight: 'bold'
+}
+}
+},
+yAxis: {
+title: {
+text: 'Percent of Players',
+style: {
+fontSize: '16px',
+color: '#000',
+fontWeight: 'bold'
+}
+},
+max: 45,
+gridLineColor: '#C9C9C9'
+},
+tooltip: {
+formatter: function {
+return '<b>' + this.x + '</b> - ' + this.y + '%';
+}
+},
+
+plotOptions: {
+column: {
+lineColor: '#666666',
+lineWidth: 1,
+marker: {
+enabled: false
+},
+animation: false
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+data: [44.39, 21.64, 12.75, 8.86, 6.47, 5.00, 3.93, 3.18, 2.64, 2.22, 1.89, 1.62, 1.40, 1.21, 1.07, 0.91, 0.80, 0.71, 0.62, 0.55, 0.48, 0.43, 0.37, 0.32, 0.28]
+}]
+};
+
+</script> 
+Kotaku Warcraft Chronicle Preview
+Kotaku https://kotaku.com/the-final-volume-of-blizzard-s-world-of-warcraft-chroni-1823825952 previewed Warcraft Chronicle Volume 3 https://amzn.to/2FsgbTA with some new information not seen in previous coverage https://www.mmo-champion.com/content/7429-World-of-Warcraft-Chronicle-Volume-3-Preview-Blue-Posts-Allcraft-Curse-Hiring.
+
+
+https://media.mmo-champion.com/images/news/2018/march/thumb/kotchron.jpg https://kotaku.com/the-final-volume-of-blizzard-s-world-of-warcraft-chroni-1823825952 
+
+
+This Week in WoW History
+We're taking a look back at old MMO-Champion posts and World of Warcraft news that occurred during this time in previous years.
+
+Winged Guardian
+One of the later 4.1 PTR builds added a Winged Lion mount model. This was a new and unique model, but not much else was known about it. About a week later, Blizzard announced that this would be a Store mount, called the Winged Guardian. Like all store mounts, once purchased it was usable on any character above level 20 and it scaled to the flying speed your character had learned.
+
+
+https://media.mmo-champion.com/images/news/2018/march/thumb/winlion.jpg https://www.mmo-champion.com/content/2211-Winged-Lion-Mount-Patch-4-1-PTR-Notes-March-15-Update-Blue-Posts 
+
+
+Hearthsteed
+This promotional mount was added as an incentive for players to download and play Blizzard’s newest game, Hearthstone. After winning three matches, the mount was automatically applied to the account. Later, a red model was found, initially believed that would be the Horde version, but the model never got used in game.
+
+
+https://media.mmo-champion.com/images/news/2018/march/thumb/heartsteed.jpg https://www.mmo-champion.com/content/3829-Ride-Into-Action-on-Your-Hearthsteed 
+
+
+Songs of Azeroth - The Final Act
+Mentioned in previous posts, AFK PL@AYERS made a series of WoW music videos to celebrate the 10th Anniversary of Taiwan WoW. In this final act, they celebrate all the past villains of the Warcraft universe, because without villains there are no heroes. 
+
+
+https://media.mmo-champion.com/images/news/2018/march/thumb/songs5.jpg https://www.mmo-champion.com/content/5536-Warcraft-Movie-Weapons-Mana-Cost-Indicator-Tweets-Hogger-HS-Card-Songs-of-Azeroth 
+
+
+Frost Mage Animations
+In the first round of animation update mages saw new spell effects for Ray of Frost, Glacial Spike, Ebonbolt, Frozen Touch, Icy Veins with Chilled to the Core, Ice Form, and temporal Shield. Some of these were new abilities introduced in Legion, but mages got a later spell update during patch 7.2 to most of their toolkit.
+
+
+https://media.mmo-champion.com/images/news/2018/march/thumb/forstmage1.jpg https://www.mmo-champion.com/content/5533-Frost-Mage-Spell-Animations-Legion-PvP-Update-Whispers-of-the-Old-Gods-Wildstar 
+
+
+Blizzard Voice
+Early on in WoW an attempt was made to make it easier for players to talk in game without having to use third party programs. The initial version of the in-game chat didn’t turn out as they wanted, so this second iteration of Blizzard Voice is integrated into the Blizzard Launcher, rather than the game. This would allow players to use the chat system even when they are not playing games. Many features were promised, which players were used to from other apps.
+
+
+https://media.mmo-champion.com/images/news/2018/march/thumb/voicechat.jpg https://www.mmo-champion.com/content/5543-Blizzard-Voice-Chat 
+
+
+Warcraft TV Spot 2
+With the Warcraft movie approaching, TV spots started airing in the U.S. and online. This second version showed a few new scenes that we haven’t seen before to generate hype for the new movie. The sword and shield from the first scene were also later added as transmog items for the promotional event of the movie.
+
+
+https://media.mmo-champion.com/images/news/2018/march/thumb/warcraftteaser.jpg https://www.mmo-champion.com/content/5547-Warcraft-Movie-TV-Spot 
+
+
+Chris Metzen Statue
+Shortly after the news that Chris Metzen would be leaving Blizzard, pictures of his statue at the Blizzard Headquarters were shared online. A one hour interview is also available, where he talks about his time at the company, and shares some insight. For those who might not who he is, Chris Metzen started working at Blizzard in 1993 when it was still known as Chaos Studios. He was a game designer, artist, author, and voice actor for many of our favorite titles to be released by Blizzard.
+
+
+https://media.mmo-champion.com/images/news/2018/march/thumb/metstat.jpg https://www.mmo-champion.com/content/6405-Armory-Stats-Equipped-Legendary-Items-Metzen-Statue-7-2-Notes-Update-DLC-575 
+
+
+
+FinalBossTV 1st Impressions of Paladins in Battle for Azeroth
+FinalBossTV https://www.youtube.com/channel/UCh8jtU3reaHOJ4aqbGxgNrQ made a few videos recently on his first impressions for Paladins in Battle for Azeroth!
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/RWDsuGg61sg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe width="450" height="253" src="https://www.youtube.com/embed/xX_A0VbF_Cs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <iframe width="450" height="253" src="https://www.youtube.com/embed/foPBD_Hyzws" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

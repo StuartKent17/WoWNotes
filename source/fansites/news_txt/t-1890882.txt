@@ -1,0 +1,211 @@
+chaud2015-11-03, 03:57 AMWoW Down to 5.5 Million Subscribers
+Blizzard has their Q3 2015 earnings call tomorrow, announcing that WoW is down to 5.5 million subscribers at the end of Q3 2015. This is down 100k from the Q2 2015 call http://www.mmo-champion.com/content/5063-WoW-Down-to-5-6-Million-Subscribers that listed WoW at 5.6 million subscribers.
+
+
+Activision Blizzard agreed to buy King Digital Entertainment for $5.9 billion. They are best known for Candy Crush Saga.
+Hearthstone key engagement metrics grew 77% year-over-year and set a new quarterly revenue record for the franchise. 
+Diablo III continued to bring in new players in Q3, and in China, the game passed the 2-million-unit milestone. 
+Overwatch beta has over 7 million players signed-up to participate, not including China.
+
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart;
+setTimeoutfunction{ height = subchart.height
+width = $"#subCounts".width
+subchart.setSizewidth, height, doAnimation = true;},2500
+
+
+setTimeoutfunction{ height = subchart.height
+width = $"#subCounts".width
+subchart.setSizewidth, height, doAnimation = true;},1500
+
+setTimeoutfunction{ height = subchart.height
+width = $"#subCounts".width
+subchart.setSizewidth, height, doAnimation = true;},4500
+
+
+
+$document.readyfunction  {
+Highcharts.setOptions{
+colors: ['#A86060']
+};
+subchart = new Highcharts.Chart{
+chart: {
+renderTo: 'subCounts',
+defaultSeriesType: 'line',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+type: 'datetime',
+labels: {
+maxStaggerLines: 0
+},
+
+plotBands: [{
+color: '#DEDEDE',
+from: Date.UTC2004, 8, 1,
+to: Date.UTC2007, 0, 15,
+label: {
+text: 'Vanilla'
+} 
+},
+{
+color: '#B6DBBC',
+from: Date.UTC2007, 0, 15,
+to: Date.UTC2008, 10, 13,
+label: {
+text: 'Burning Crusade'
+} 
+},
+{
+color: '#C5DBE3',
+from: Date.UTC2008, 10, 13,
+to: Date.UTC2010, 11, 6,
+label: {
+text: 'Wrath of the Lich King'
+} 
+},
+{
+color: '#E3D4C5',
+from: Date.UTC2010, 11, 6,
+to: Date.UTC2012, 8, 24,
+label: {
+text: 'Cataclysm'
+} 
+},
+{
+color: '#C5E3CA',
+from: Date.UTC2012, 8, 24,
+to: Date.UTC2014, 10, 13,
+label: {
+text: 'Mists of Pandaria'
+} 
+},
+{
+color: '#D4BBA3',
+from: Date.UTC2014, 10, 13,
+to: Date.UTC2015, 10, 13,
+label: {
+text: 'WoD'
+} 
+}]
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+min: 0,
+title: {
+text: 'Subscribers',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+line: {
+animation: false
+}
+},
+
+
+title: {
+text: 'World of Warcraft Subscriptions',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+data: [
+[Date.UTC2004, 9, 1, 0],
+[Date.UTC2004, 10, 1, 250000],
+[Date.UTC2004, 11, 1, 400000],
+[Date.UTC2005, 0, 1, 750000],
+[Date.UTC2005, 1, 1, 1250000],
+[Date.UTC2005, 2, 1, 1500000],
+[Date.UTC2005, 3, 1, 1800000],
+[Date.UTC2005, 4, 1, 2000000],
+[Date.UTC2005, 5, 1, 3250000],
+[Date.UTC2005, 6, 1, 3500000],
+[Date.UTC2005, 7, 1, 4000000],
+[Date.UTC2005, 8, 1, 4250000],
+[Date.UTC2005, 9, 1, 4500000],
+[Date.UTC2005, 10, 1, 5000000],
+[Date.UTC2005, 11, 1, 5600000],
+[Date.UTC2006, 0, 1, 6000000],
+[Date.UTC2006, 2, 1, 6400000],
+[Date.UTC2006, 4, 1, 6500000],
+[Date.UTC2006, 5, 1, 6600000],
+[Date.UTC2006, 8, 1, 7000000],
+[Date.UTC2006, 10, 1, 7500000],
+[Date.UTC2007, 0, 1, 8000000],
+[Date.UTC2007, 2, 1, 8500000],
+[Date.UTC2007, 4, 1, 8600000],
+[Date.UTC2007, 5, 1, 8800000],
+[Date.UTC2007, 6, 1, 9000000],
+[Date.UTC2007, 10, 1, 9300000],
+[Date.UTC2007, 11, 1, 9750000],
+[Date.UTC2008, 0, 1, 10000000],
+[Date.UTC2008, 1, 1, 10200000],
+[Date.UTC2008, 9, 1, 11000000],
+[Date.UTC2008, 8, 30, 11000000],
+[Date.UTC2008, 11, 1, 11500000],
+[Date.UTC2008, 11, 31, 11500000],
+[Date.UTC2009, 2, 1, 11500000],
+[Date.UTC2009, 2, 31, 11500000],
+[Date.UTC2010, 0, 1, 11500000],
+[Date.UTC2009, 11, 31, 11500000],
+[Date.UTC2010, 9, 1, 12000000],
+[Date.UTC2010, 8, 30, 12000000],
+[Date.UTC2011, 1, 1, 12000000],
+[Date.UTC2011, 2, 31, 11400000],
+[Date.UTC2011, 5, 30, 11100000],
+[Date.UTC2011, 8, 30, 10300000],
+[Date.UTC2011, 11, 31, 10200000],
+[Date.UTC2012, 6, 1, 9100000],
+[Date.UTC2012, 8, 30, 10000000],
+[Date.UTC2012, 11, 31, 9600000],
+[Date.UTC2013, 2, 31, 8300000],
+[Date.UTC2013, 5, 30, 7700000],
+[Date.UTC2013, 8, 30, 7600000],
+[Date.UTC2013, 11, 31, 7800000],
+[Date.UTC2014, 2, 31, 7600000],
+[Date.UTC2014, 5, 30, 6800000],
+[Date.UTC2014, 8, 30, 7400000],
+[Date.UTC2014, 11, 31, 10000000],
+[Date.UTC2015, 2, 31, 7100000],
+[Date.UTC2015, 5, 30, 5600000], 
+[Date.UTC2015, 8, 30, 5500000], ],
+name: 'Global subscribers'
+}]
+
+};
+
+};
+</script> 
+<div id="subCounts" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+
+
+Warcraft Movie Trailer to Premiere at Blizzcon
+Everyone will be able to see the Warcraft Movie Trailer on Friday, as it will be part of the Opening Ceremony, which is streamed for free!
+
+
+http://media.mmo-champion.com/images/news/2015/november/thumb/wcMoviePoster.jpg http://media.mmo-champion.com/images/news/2015/november/wcMoviePoster.jpg 
+
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Overwatch Sprays
+Overpwn has posted http://www.overpwn.com/news/89-never-before-seen-datamined-hero-sprays-potential the hero sprays which may be part of the unlocks system.
+
+
+http://media.mmo-champion.com/images/news/2015/november/owSpray.jpg http://www.overpwn.com/news/89-never-before-seen-datamined-hero-sprays-potential

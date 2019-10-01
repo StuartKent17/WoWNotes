@@ -1,0 +1,138 @@
+chaud2013-03-14, 06:45 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Blizzard at PAX East, D3 Boss Mechanics, Legendary Item Drop Rates, Monster Affixes, Poll: What's Your Preferred Format for Dev Interviews http://www.diablofans.com/news/1610-blizzard-at-pax-east-diablo-3-boss-mechanics-legendary-item-drop-rates-monster-affixes-poll-whats-your-preferred-format-for-developer-interviews/
+
+<img src="http://media.mmo-champion.com/images/news/2012/july/wowmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> http://blue.mmo-champion.com/public/style_images/master/tracker/flags/us-en.png Isle of Thunder US - Stage 2 Unlocked http://www.mmo-champion.com/threads/1273939-Isle-of-Thunder-Stage-2-Completion
+
+Patch 5.2 Dev Interviews
+Let's take a look at one of the dev interviews today, Ghostcrawler speaking with the Call To Auction http://stormspire.net/general-discussion/10090-blizzard-talks-about-economy-auction-house-professions.html.
+
+
+There are so many professions that it is hard to give all of them attention that they deserve. Some ideas that were thrown around are making it easier to switch professions, keeping old recipes if you drop and learn a profession again, and allowing characters to learn more than two professions. 
+Managing the WoW economy is not a trivial task, as it needs to be relatively easy for players to keep up with basic necessities like repair bills, but at the same time still adding cool things to spend gold on like the Grand Expedition Yak or BMAH items that remove gold from the game. 
+Patch 5.3 or 5.4 may add catch up mechanisms to Herbalism and Mining, allowing characters to farm nodes in Pandaria for yields that depend on your skill level. 
+Cross-realm Auction Houses are being explored, especially merging the auction house or player trading between groups of lower population and faction imbalanced realms. This would not be region wide, but balanced like cross-realm zones are. 
+There aren't any current plans to add more tradable pets from the Blizzard Store.
+Sunsong Ranch may not see any more significant updates, but similar features will be explored in the future. 
+Buy orders for more expensive items may be a possibility in the future. 
+Items that players always buy and never bid on, like flasks, could have longer listing times in the future. 
+A longer term feature would be to separate the auction house system from the mail, as it doesn't fit the fantasy of the game as well as it could. 
+Another long term feature would be a UI to allow bulk milling or prospecting.
+
+
+
+Throne of Thunder Heroic Progression
+Another day of Heroic difficulty raids and Blood Legion http://www.wowprogress.com/guild/us/illidan/Blood+Legion/rating.tier15_25 is on top with 6 bosses down, followed by Exodus http://www.wowprogress.com/guild/us/mal-ganis/Exodus, Method http://www.wowprogress.com/guild/eu/twisting-nether/Method, and Envy http://www.wowprogress.com/guild/eu/auchindoun/Envy. The 10 player guilds aren't having as much luck, with DREAM Paragon http://www.wowprogress.com/guild/eu/lightning-s-blade/Paragon/rating.tier15_10 and Moonz http://www.wowprogress.com/guild/eu/destromath/Moonz/rating.tier15_10 having four bosses down, followed by Gag Reflex http://www.wowprogress.com/guild/us/dark-iron/Gag+Reflex/rating.tier15_10 with three down.
+
+You can keep up with the kills on Manaflask http://manaflask.com/en/article/2315/throne-of-thunder-heroic-progess-wf-horridon-by-blood-legion-10-man-1-13, our forum thread http://www.mmo-champion.com/threads/1273737-Throne-of-Thunder-World-First-Heroic-Thread!, and WowProgress http://www.wowprogress.com/.
+
+
+http://media.mmo-champion.com/images/news/2013/march/ToTDay2.png http://www.wowprogress.com/ 
+
+
+Oondasta and Nalak Hotfixes
+It seems lower population realms may have a chance to kill Oondasta after all! Keep in mind that this is just a possibility and not an announcement. 
+
+
+http://media.mmo-champion.com/images/news/2013/march/worldBossesReturn.png https://twitter.com/Ghostcrawler/status/311946242819256321 
+
+
+Scenario and Brawler's Guild Updates
+Dave Kosak shared some more possibilities of what we might see in the future with the Brawler's Guild and scenarios. 
+
+
+http://media.mmo-champion.com/images/news/2013/march/brawlScenarios.png https://twitter.com/DaveKosak/status/311536119000989696 
+
+
+PvP Season 13 Begins
+PvP Season 13 for World of Warcraft: Mists of Pandaria has begun! Team and Personal Ratings have been reset and players can once again take to the Arenas and Rated Battlegrounds to test their mettle.
+
+The bid for PvP supremacy continues. Do you have what it takes to climb to the top of the leaderboards http://us.battle.net/wow/en/pvp/?
+
+
+http://media.mmo-champion.com/images/news/2013/march/season13ArmorSets.jpg http://www.mmo-champion.com/content/972-Season-13-Armor-Sets 
+
+
+Real Proc Per Minute RPPM Trinket Changes
+Summary: 
+We added a bit of cheating in the player’s favor to avoid long streaks of bad luck. This change is now live.
+
+Longer explanation:
+Traditionally, trinkets and similar proc effects in the game had high proc chances with an internal cooldown ICD. This made the procs random in theory, but really pretty predictable. You would know that a trinket would proc on the pull and then reliably every 45 sec or whatever the ICD was.
+
+For 5.2, we made a change to trinkets to make them less predictable and less boring with the RPPM system. Sometimes you can get lucky and get several back to back procs. This feels cool. Sometimes you can also be unlucky, and get long streaks when the trinket just refuses to proc. A trinket that is intended to proc every 1 minute could in theory go 8 minutes or more without activating.
+
+Last night we hotfixed in a change for trinkets that use the RPPM system. Every time your trinket fails to proc, it increases the chance it will proc. Unlucky streaks will be more rare and extremely unlucky streaks should never happen. In addition, we increased the chance for these trinkets to proc on the pull. To top it off, we increased the proc rates of the Agility and Strength trinkets in Throne of Thunder by 10% and the Intellect and Spirit trinkets by 5%.
+
+Painfully detailed explanation for theorycrafting:
+As usual, you absolutely do not need to know or understand the following in order to use or best take advantage of these procs. This info is just for theorycrafters who want to understand the exact details of the system, so that they can model and simulate it better. 
+
+Calculate the proc frequency as normal. Based on that, you can figure out the expected average proc interval. We also now keep track of time since the last successful proc this is different from the time since last chance to proc, capped at 1000 sec. Multiply the proc chance by MAX1, 1+TimeSinceLastSuccessfulProc/AverageProcInterval-1.5*3. For example, if a proc has an average proc interval of 45 sec, and it’s been 72 sec since your last successful proc, you’ll get a 1.3x multiplier to your proc chance. If you’ve been out of combat for a few min, and it’s been 5 min since your last successful proc, you’ll get a whopping 16.5x multiplier to your proc chance.
+
+<style type="text/css">
+#leftcolumn { width: 440px; float: left}
+#rightcolumn { width: 440px; float: right}
+</style>
+<div style="width:900px;margin-left:auto;margin-right:auto;"><div id="leftcolumn">
+We increased the proc rate of the following trinkets by 10%:
+
+Renataki’s Soul Charm http://www.wowdb.com/items/96369-renatakis-soul-charm
+Talisman of Bloodlust http://ptr.wowdb.com/items/94522
+Bad Juju http://ptr.wowdb.com/items/94523
+Rune of Re-Origination http://ptr.wowdb.com/items/94532
+Fabled Feather of Ji-Kun http://ptr.wowdb.com/items/94515
+Primordius' Talisman of Rage http://www.wowdb.com/items/96501-primordius-talisman-of-rage
+Spark of Zandalar http://ptr.wowdb.com/items/96398
+Gaze of the Twins http://ptr.wowdb.com/items/96543
+
+</div><div id="rightcolumn">
+We increased the proc rate of the following trinkets by 5%:
+
+Wushoolay’s Final Choice http://www.wowdb.com/items/96413-wushoolays-final-choice
+Breath of the Hydra http://ptr.wowdb.com/items/94521
+Unerring Vision of Lei-Shen http://ptr.wowdb.com/items/96558
+Cha-Ye's Essence of Brilliance http://ptr.wowdb.com/items/94531
+Horridon's Last Gasp http://ptr.wowdb.com/items/96385
+Inscribed Bag of Hydra-Spawn http://ptr.wowdb.com/items/94520
+Stolen Relic of Zuldazar http://ptr.wowdb.com/items/96507
+Lightning-Imbued Chalice http://ptr.wowdb.com/items/96561
+
+</div><div style="clear:both;"></div></div><div style="clear:both;"></div>
+Unerring Vision of Lei-Shen http://www.wowdb.com/items/96558-unerring-vision-of-lei-shen now has 65% of the normal proc rate for Balance Druids, up from 50%.
+
+
+Blue Posts
+Troves of the Thunder King Scenario Confusing
+I know all the elite players here have figured it out, but I just ran the treasure room for the second time. This time I headed toward the door at the other end much quicker only to find it locked. How do I open it? No idea, so I run around looking. I even looted the big box in the middle that looked different than the others and it is still locked.
+I spent my entire first run in the first room and came out with over 400g, ~24 parchments, around 15 motes of harmony, 3 Shan'ze stones, 15 Elder Charms, and a few greens.
+
+Potentially not the most lucrative strategy, but really cleaning up that first room and then of course finding keys to open the chests at the end after time runs out worked pretty well.
+
+I think a week lockout for a five minute run is excessive. 
+There's no lockout. You can run it for as many keys as you have, and you can find more than one key per week, although it is suitably rare.
+
+Considering the whole idea is you're heading into a treasure room, and we want it to feel exciting that you're able to come out with a bunch of treasure, yeah of course we're not going to let you chain-run it and just get tons and tons of gold and tons and tons of items. We'd have to reduce the amount of treasure you can find considerably, which really undermines the entire fantasy of being in a treasure room.
+
+The change in drop rate functions as an effective lockout. It's not exactly like other lockout mechanics, and there is a possibility of exception, but I think it's reasonable to consider it just like other lockouts. Once you've gotten one key, you would probably waste tremendous amounts of time if you set your sights on getting a second key each week.
+
+Also, when you said you're not going to let people chain run it to get tons and tons and tons of items, you make it sound like that was what I suggested. My feeling is that the scenario is punishingly short to become familiar with on what is effectively a once a week basis FIVE MINUTE event. 
+For sure, and that's all reasonable. You can say "once a week" and be mostly correct, my intent was to correct a common misconception that it's literally 1 key per week. You can argue it's close enough, but my goal is accuracy in information.
+
+What I would have done is allow a person to zone into the scenario, but then be able to take a "practice" option where you get no rewards. When Blizzard's people did internal testing on this stuff, I'm sure it felt like a lot more fun. They probably did not wait a week between each time they tested it out. I think it's extremely easy to forget how SHORT five minutes is and how LONG a week is in real time. 
+I think it's reasonable to expect a tutorial or practice run on everything in the game, because in general we're fairly experience-focused with everything we do. We tend to go away from punishing mechanics, we try to make things clear and concise, and we want the experience to be fun at every moment. That said, this is running into a room of free stuff to pick up, and even if you only open three of four chests, that's three or four chests of free stuff for 5 minutes of just running around. Obviously at the end of that you may be frustrated that you didn't do better, but I don't think that means we need to rush out and make a tutorial. It's ok that you didn't do well your first time. Next time you'll do better. It's free stuff. It's supposed to be high-tension, and everyone that goes in thinks they can do better next time. Letting people discover how something works is OK sometimes, not everything needs a tutorial, especially when it's a piece of content for level-capped characters that's essentially for fun and doesn't directly increase the power of your character.
+
+The fun thing about soloing old instances is that you get to take your time and take in the atmosphere and the artwork. You notice a lot of things that you miss out when you were doing it with a group because in a group it's "gogogogo".
+
+So what did you guys do with the game's very first "solo scenario"? You added a timer ... 
+But ... it's not supposed to be like soloing old instances. Blue Tracker http://blue.mmo-champion.com/topic/256850-treasure-room-is-far-too-confusing/ / Official Forums http://us.battle.net/wow/en/forum/topic/8197181044?page=6#116
+
+Challenge Mode Accessibility
+What about bring them to LFD where you can get valor points on full completion. Even without Bronze completion, you will get loads Valor Points for that. 
+The developers don't have currently any plans to bring Challenge Modes to the Dungeon Finder tool. Also, the difficulty was specifically designed without PuGs in mind. It's very rare you'll be able to meet the level of coordination required on a random group since it's likely you've never played with anyone else before.
+
+Also, even if you only complete the daily quest for that Challenge Dungeon of the day, it remains as one of the best methods to cap your Valor Points for the week, even if you get just bronze. So it might be a good idea to keep visiting them if you manage to get a stable group going, even if at first it looks like you aren't improving much. Blue Tracker http://blue.mmo-champion.com/topic/256792-time-to-make-challenge-mode-more-accessible/ / Official Forums http://eu.battle.net/wow/en/forum/topic/6892819830?page=1#7
+
+
+Poll: What is your Brawler's Guild Rank?
+How far have you made it through the challenges in the Brawler's Guild? With new gear in 5.2, now might be a good time to take a look at the Brawler's Guild guide http://www.icy-veins.com/brawlers-guild-guide-wow and give it another shot if you didn't finish! 
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/6961917.js"></script>
+<noscript><a href="http://polldaddy.com/poll/6961917/">What is your Brawler's Guild Rank?</a></noscript>

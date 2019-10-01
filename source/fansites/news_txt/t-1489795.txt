@@ -1,0 +1,1339 @@
+Boubouille2014-04-04, 12:36 AMPatch 6.0 Patch Notes - Warlords of Draenor
+Blizzard just released the patch notes for the upcoming expansion, Warlords of Draenor!
+
+Introduction
+
+
+Welcome to an early look at patch notes for the upcoming World of Warcraft expansion: Warlords of Draenor. The new expansion introduces a wealth of new content and changes. There's also a new patch note format, which we hope will help better convey the reasoning for many of the changes being made and what they mean for you, while providing more background into issues we're trying to solve.
+
+Please be aware that the patch notes are preliminary and not final. Details may change before retail release and new information will be added for additional features as development continues on the Warlords of Draenor expansion.
+
+For more information about Alpha testing and how you can opt in for a chance to participate in the Warlords of Draenor beta test later down the line, check out Warlords of Draenor™ Alpha Testing Begins.
+
+Looking for a TL;DR summary of all of the changes? Here you go!
+
+
+Character stats have been squished into smaller numbers that are easier to understand. It's important to understand that this is not a nerf as enemies have been squished as well.
+A new row of talents has been added for level 100, and new Draenor Perks from levels 91 to 99.
+The Garrison is a new feature available in Draenor, where you can build a base, recruit followers, and send them on missions.
+We've balanced the functionality of Agility, Strength and Intellect.
+Hit and Expertise have been removed; they're no longer needed in order to reliably land attacks!
+The pace of healing have been adjusted to allow for more tactical decisionmaking regarding efficiency and throughput, on both single-target and multi-target heals. Passive and auto-targeted healing have been reduced in effectiveness in order to emphasize the actions and choices of healers.
+Racial traits have been rebalanced so that all races have similar combat performance.
+All classes have had several abilities pruned, with a focus on redundant and less-used abilities, to cut down on button and keybind bloat.
+The amount of crowd control in the game primarily PvP has been drastically reduced. Many crowd-control abilities have been removed, and many diminishing returns categories are now merged together.
+Several common buffs and debuffs have been merged, or removed, where they were redundant.
+All characters now learn a few important Major Glyphs automatically as they level up.
+The amount of instant healing in the game has been toned down by giving cast times to several instant cast heals.
+Vengeance has been redesigned and renamed Resolve. Resolve does not increase outgoing damage, but does now increase tank self-healing and absorption based on damage taken.
+Facing requirements character position on some prominent abilities have been loosened or removed.
+The mana cost of Resurrection spells has been reduced to make it a little easier to recover from a wipe.
+Professions no longer have combat benefit perks tied to them.
+There are a multitude of class-specific changes, including things like improved distinction between different Talent specializations, and new Masteries. Consult the class-specific sections below for more information.
+
+
+
+
+New Content
+
+
+Level-100 Talents and Draenor Perks
+A new row of talents has been added for level 100. For testing purposes, these are currently accessible at level 90.
+
+Draenor Perks is a new feature that adds rewards for leveling. Over levels 91 to 99, you will earn these 9 new Draenor Perk in a random order. Each class and specialization has a different set of 9 Draenor Perks.
+
+
+Level-100 talents have been added for all classes!
+Draenor Perks have been added for all classes, earned from levels 91 to 99.
+
+
+
+Garrisons
+The Iron Horde army is massive and reinforcements from Azeroth are few. In order to stand a chance, you will need to build an army of your own.
+
+Undertake an epic quest to build a permanent base of operations on Draenor.
+Find blueprints and materials to expand and customize your Garrison.
+Recruit followers with unique skills and abilities to your cause.
+Send followers on missions to level them up and acquire bonus loot.
+Begin the quest for your Garrison in Shadowmoon Valley or Frostfire Ridge.
+
+
+
+
+Game System Changes
+
+
+Stat Squish
+Character progression is one of the defining characteristics of a role-playing game. Naturally, that means that we're continuously adding more power to the game for players to acquire. After 4 expansions and over 9 years of this growth, we've gotten to a point where the numbers involved are no longer easy to grasp. And worse, much of the granularity that's available is tied up in tiers of older content from Molten Core to Dragon Soul, none of which are really relevant anymore. It's no longer necessary for Borean Tundra quest gear to be nearly twice as powerful as Netherstorm quest gear, even though the two zones are only a couple of levels apart.
+
+
+http://media.mmo-champion.com/images/news/2014/april/itemsquish1_small.jpg http://media.mmo-champion.com/images/news/2014/april/itemsquish1.jpg
+
+In order to bring things down to an understandable level, we've reduced the scale of stats throughout the game, back to as if they continued scaling linearly through questing content from levels 1 to 90. This applies to creatures, spells, abilities, consumables, gear, other items... everything. Your stats and damage have been reduced by a huge amount, but so have creatures' health. For example, your Fireball that previously hit a creature for 450,000 out of its 3,000,000 health 15% of its health, may now hit that same creature for 30,000 out of its 200,000 health still 15% of its health. In effect, you will still be just as powerful, but the numbers that appear will be more easily parsed.
+
+
+http://media.mmo-champion.com/images/news/2014/april/itemsquish2_small.jpg http://media.mmo-champion.com/images/news/2014/april/itemsquish2.jpg
+
+It's important to understand that this isn't a nerf, and we have special handling in place to preserve players’ existing ability to solo old content. Players will deal bonus damage against lower-level creatures from past expansions, and will take reduced damage from them.
+
+We've also removed all base damage on player spells and abilities, and adjusted Attack Power or Spell Power scaling as needed, so that all specializations will scale at the same rate.
+
+
+The amount of stats on items has been reduced to be much lower than before.
+Creature stats have been reduced to compensate.
+
+
+
+Primary Character Stats and Attack Power
+The "primary" stats, Agility, Strength, and Intellect, are foundations of a character’s power. But they have not been created equally, making it difficult to properly balance them against secondary stats. The leading reason for this is that Agility and Intellect also provide Critical chance, in addition to Attack Power or Spell Power, whereas Strength does not. In order to achieve better balance, we've removed the Critical chance increase from Agility and Intellect. Still, it felt like Agility-based characters should critically strike more often, so we've raised those classes’ baseline Critical Strike chance to compensate.
+
+
+Agility no longer provides an increased chance to critically strike with melee and ranged attacks or abilities.
+Intellect no longer provides an increased chance to critically strike with spells.
+The base chance to critically strike is now 5% for all classes. There are no longer different chances to critically strike with melee, ranged, and spells.
+There is a new passive, named Critical Strikes, which increases chance to critically strike by 10%.
+
+It is learned by all Rogues, all Hunters, Feral and Guardian Druids, Brewmaster and Windwalker Monks, and Enhancement Shamans.
+
+
+
+We've consolidated the way that Attack Power and Spell Power function and scale, to make those values clearer and correct some scaling issues regarding caster weapons relative to physical weapons.
+
+
+Each point of Agility or Strength now grants 1 Attack Power down from 2. All other sources of Attack Power now grant half as much as before.
+Weapon Damage values on all weapons have been reduced by 20%.
+Attack Power now increases Weapon Damage at a rate of 1 DPS per 3.5 Attack Power up from 1 DPS per 14 Attack Power.
+Attack Power, Spell Power, or Weapon Damage now affect the entire healing or damage throughput of player spells.
+
+
+Active mitigation has worked very well as a tanking model. So, moving forward we want to keep the amount of Dodge and Parry on tanks on the low side. This helps prevent encounters from causing very spiky damage on tanks, which generally isn't much fun. Dodge and Parry gains from Strength and Agility are being reduced to help accomplish this. Additionally, items in Warlords of Draenor will not have Dodge or Parry on them as a stat. Some Dodge and Parry can still be gained through class-specific effects.
+
+
+The amount of Dodge gained per point of Agility has been reduced by 25%.
+The amount of Parry gained per point of Strength has been reduced by 25%.
+
+
+
+Hit and Expertise Removal
+Hit and Expertise were not fun stats. They acted to remove a penalty, instead of making you stronger. Most players treated Hit/Expertise caps as mandatory rightfully so, with failure to reach those caps as a trap of sorts. After adjusting, gemming, and reforging gear to meet that cap, players could then go after the actual damage-increasing stats. We decided to remove Hit and Expertise, and make it so you don't need them. We still want melee specializations to attack creatures from behind when possible, so non-tanking specializations will have a 3% chance to be parried that cannot be eliminated.
+
+General
+
+All players now have a 100% chance to hit, 0% chance to be dodged, 3% chance to be parried, and 0% chance to glance, when fighting creatures up to 3 levels higher bosses included.
+Tank specializations receive an additional 3% reduction in chance to be parried, so tank attacks have a 0% chance to be parried vs. creatures up to 3 levels higher.
+Creatures 4+ levels higher than you still have a chance to avoid your attacks in various ways, so as to discourage you from attempting to fight enemies that are much stronger than you.
+Dual Wielding still imposes a 17% chance to miss, so as to balance it with two-handed weapon use.
+Hit and Expertise bonuses on all items and item enhancements gems, enchants, etc. have been converted into Critical Strike, Haste, or Mastery.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight
+
+Veteran of the Third War now also reduces the chance for attacks to be parried by 3%.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid 
+
+Balance of Power has been removed.
+Nature’s Focus no longer increases the chance to hit with Moonfire and Wrath.
+Thick Hide now also reduces the chance for attacks to be parried by 3%.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk
+
+Stance of the Wise Serpent no longer increases Hit or Expertise.
+Stance of the Sturdy Ox now also reduces the chance for attacks to be parried by 3%.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest 
+
+Divine Fury has been removed.
+Spiritual Precision has been removed.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin 
+
+Holy Insight no longer increases the chance to hit with spells.
+Sanctuary now also reduces the chance for attacks to be parried by 3%. 
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman 
+
+Elemental Precision has been removed.
+Spiritual Insight no longer increases the chance to hit with Lightning Bolt, Lava Burst, Hex, or Flame Shock.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior 
+
+Unwavering Sentinel now also reduces the chance for attacks to be parried by 3%.
+
+
+
+Player Health and Resilience
+We’re planning several interconnected changes designed to provide better-tuned gameplay for healers and improve the healing dynamic in PvP.
+
+The high amount of base Resilience and Battle Fatigue in Mists of Pandaria caused characters to feel much weaker in PvP than they did in PvE. To address this disparity, we’re approaching Warlords of Draenor with the goal of shrinking that gap as much as possible. To reduce dependence on Resilience, we needed to increase player survivability against other players, and we chose to do this by essentially doubling post-squish player health.
+
+On its own, that increase in health would make players more survivable in the world at large, so we’re also increasing creature damage and the effectiveness of healing spells to balance things out. The net result of these changes is that individual attacks will knock a smaller chunk off of a player’s health pool in PvP, but your survivability in PvE remains unaffected.
+
+Doubling player health gave us room to reduce Resilience and Battle Fatigue, but our goal was to be able to remove them entirely. In order to achieve that, we’re also reducing PvP spike damage across the board by lowering Critical Damage and Critical Heals against players in PvP to 150% of their normal effect down from 200%. Our hope is that these changes allow us to reduce Base Resilience and Battle Fatigue to 0%. It’s possible that we’ll still find a need for some minor amount of Base Resilience and/or Battle Fatigue, and we’ll be testing these changes extensively and adjusting as needed.
+
+
+Base Resilience has been reduced to 0%.
+Battle Fatigue has been removed. PvP combat no longer reduces the amount of healing received by PvP participants.
+Critical Damage and Critical Heals in PvP combat now deal 150% of the normal spell/ability effects down from 200%.
+The amount of health per Stamina has approximately doubled. The curve on this calculation has been smoothed out as well, so the exact amount varies slightly by level.
+Maximum mana has been approximately doubled at all levels to keep pace with the expected health from new Stamina values.
+All consumables have had their healing and mana regeneration values approximately doubled.
+All creatures have had their melee damage doubled. Most creature spells and abilities have had their damage doubled as well.
+All player-cast healing and absorption effects have been increased by approximately 50% in effectiveness. If they heal or absorb a percentage of maximum health, they are instead reduced by 25%. All other noted changes are in terms relative to that.
+
+For example, if another noted change is that "Mega Heal now heals for 40% more," that means that Mega Heal now heals for a total of 210% of what it used to, which is relatively 40% higher, compared to other heals.
+
+
+
+
+Retuning Healing Spells
+One of our goals for healing is to tone down the raw throughput of healers relative to the size of player health pools. Currently, as healers and their allies acquire better and better gear, the percentage of a player’s health that any given heal restores increases significantly. As a result, healers are able to refill health bars so fast that we have to make damage more and more “bursty” in order to challenge them. Ideally, we want players to spend some time below full health without having healers feel like their groupmates are in danger of dying at any moment. We also think that healer gameplay would be more varied, interesting, and skillful if your allies spent more time between 0% and 100%, rather than just getting damaged quickly to low health, forcing the healer to then scramble to get them back to 100% as quickly as possible.
+
+To that end, we’re buffing heals less than we’re increasing player health. Heals will be deliberately less potent compared to health pools than before the item squish. Additionally, as gear improves, the scaling rates of health and healing will now be very similar, so the relative power of any given healing spell shouldn’t climb so much over the course of this expansion. For those concerned about what this means for raiding, don’t worry—we’re taking all of these changes into account when designing Raid content for Warlords of Draenor.
+
+It’s also important to note that spells that heal based on a percentage of maximum health are being effectively buffed by the massive increase to player health pools, so we’re lowering those percentages to offset the effect. That may make them appear to have been nerfed—however, the net result is that those percentage-based heals stay about the same as before relative to other heals.
+
+All of these changes apply to damage-absorption shields as well. Additionally, we're toning down the power of damage absorption in general. When they get too strong, absorption effects are often used in place of direct healing, instead of as a way to supplement it. We will, of course, take these changes into account when tuning specializations that rely heavily on absorbs, such as Discipline Priests.
+
+We also took a look at healing spells that were passive or auto-targeted so-called "smart" heals. We want healers to care about who they're targeting and which heals they're using,so that their decisions matter more. To that end, we're reducing the healing of many passive and auto-targeted heals, and making smart heals a little less smart. Smart heals will now randomly pick any injured target within range instead of always picking the most injured target. Priority will still be given to players over pets, of course.
+
+Another of our goals for healing in this expansion is to strike a better balance between single-target and multi-target healing spells. We've taken a close look at the mana efficiency of our multi-target heals, and in many cases, we're reducing their efficiency, usually by reducing the amount they heal. Sometimes, but more rarely, raising their mana cost was a better decision. We want players to use multi-target heals, but they should only be better than their single-target equivalents when they heal more than two players without any overhealing. This way, players will face a meaningful choice between whether to use a single-target heal or a multi-target heal based on the situation.
+
+Finally, we're removing the low-throughput, low-mana-cost heals like Nourish, Holy Light, Heal, and Healing Wave, because we think that while they do add complexity, they don’t truly add depth to healing gameplay. We’re also renaming some spells to re-use those names. For example, Greater Healing Wave is being redubbed Healing Wave. However, we still want healers to think about their mana when deciding which heal to cast, and so the mana costs and throughputs of many spells are being altered to give players a choice between spells with lower throughput and lower cost versus spells with higher throughput and higher costs. Here are some examples from each healer class.
+
+
+Druid Higher Efficiency: Healing Touch, Rejuvenation, Efflorescence
+Druid Higher Throughput: Regrowth, Wild Growth
+
+
+
+Monk Higher Efficiency: Soothing Mist, Renewing Mist
+Monk Higher Throughput: Surging Mist, Spinning Crane Kick
+
+
+
+Paladin Higher Efficiency: Holy Light, Holy Shock, Word of Glory, Light of Dawn
+Paladin Higher Throughput: Flash of Light, Holy Radiance
+
+
+
+Priest Higher Efficiency: Greater Heal, Circle of Healing, Prayer of Mending, Holy Nova new Discipline-only version, Penance
+Priest Higher Throughput: Flash Heal, Prayer of Healing
+
+
+
+Shaman Higher Efficiency: Healing Wave, Riptide, Healing Rain
+Shaman Higher Throughput: Healing Surge, Chain Heal
+
+
+All of this discussion of efficiency may cause most healers to start worrying about mana regeneration and their mana pool. To allay those concerns, we’ve increased base mana regeneration a great deal at early gear levels, while having it scale up less at later gear levels. This will make all of these changes play well even in early content such as Heroic Dungeons and the first tier of Raid content, and also play well in the final Raid tier without mana and efficiency becoming irrelevant due to extremely high regeneration values.
+
+That’s a lot of big changes for healers: reduced throughput, a more deliberate pace, less powerful “smart” heals, weaker absorbs, fewer spells, and a new focus on efficiency decisions. We’re confident that we can apply lessons learned from previous expansions to make this the best healer experience yet: more dynamic, less punishing, and frankly a lot more fun.
+
+General Changes:
+
+Smart heals will now randomly pick any injured target within range, instead of always picking the most injured target. Priority will still be given to players over pets.
+Long-cast-time single-target heals, such as Greater Heal and Healing Touch, now cost roughly half as much as fast-cast-time single-target heals, such as Flash of Light or Healing Surge, and heal for roughly the same amount. 
+Every class has multiple area healing spells available, some low throughput and efficient, others high throughput and inefficient.
+Area healing spells are tuned to be less efficient than single-target healing spells when they heal 2 or fewer targets, and more efficient when they heal 3 or more targets,
+Spells with cooldowns or limitations may have higher efficiency than the no-cooldown equivalents.
+
+
+
+Racial Traits
+We want races to have fun and interesting perks, but if those traits are too powerful, players may feel compelled to play a specific race even if it doesn't suit their aesthetic preference. For example, Trolls' Berserking ability was extremely powerful, and their Beast Slaying passive was often irrelevant, but occasionally tremendously powerful compared to other racial passives. On the other end of the spectrum, many races had few or no performance affecting perks. We also needed to replace or update a number of racials that previously granted Hit or Expertise, since those stats have been removed.
+
+We decided to bring down the couple high outliers, then establish a fair baseline and bring everyone else up to that. We achieved that by improving old passives, replacing obsolete ones, and occasionally adding new ones where needed. Our goal with these changes is to reach parity amongst races.
+
+Blood Elf
+
+Arcane Acuity is a new racial passive ability that increases Critical Strike chance by 1%.
+Arcane Torrent now restores 20 Runic Power for Death Knights up from 15 Runic Power, 1 Holy Power for Paladins, or 3% of mana for Mages, Priests, and Warlocks up from 2% of Mana. Other parts of the ability remain unchanged. 
+
+
+Draenei
+
+Heroic Presence has been redesigned. It no longer increases Hit by 1%, and instead increases Strength, Agility, and Intellect, scaling with character level.
+Gift of the Naaru now heals for the same amount over 5 seconds down from 15 seconds.
+
+
+Dwarf
+
+Crack Shot has been removed was 1% Expertise with ranged weapons.
+Mace Specialization was 1% Expertise with maces has been replaced with Might of the Mountain.
+Might of the Mountain is a new racial passive ability that increases Critical Strike bonus damage and healing dealt by 2%.
+Stoneform now also removes magic and curse effects in addition to poison, disease, and bleed effects, along with reducing damage taken by 10% for 8 seconds. It remains unusable while the Dwarf is under the effects of crowd control.
+
+
+Gnome
+
+Expansive Mind now increases maximum mana, energy, rage, and Runic Power by 5% instead of only increasing maximum mana.
+Escape Artist’s cooldown has been reduced to 1 minute down from 1.5 minutes.
+Shortblade Specialization was 1% Expertise with one-handed swords and daggers has been replaced with Nimble Fingers.
+Nimble Fingers is a new racial passive ability that increases Haste by 1%.
+
+
+Goblin
+
+Time is Money now grants a 1% increase to Haste up from only attack speed and spell haste.
+
+
+Human
+
+Mace Specialization has been removed was 1% Expertise with maces.
+Sword Specialization has been removed was 1% Expertise with swords.
+The Human Spirit has been redesigned. It no longer increases Spirit by 3%, and instead now increases 2 secondary stats by an amount scaling with character level. You can choose which 2 secondary stats it increases. This has not yet been implemented.
+
+
+Night Elf
+
+Quickness now also increases movement speed by 2% in addition to increasing Dodge chance by 2%.
+Touch of Elune is a new passive ability which increases Haste by 1% at night, and Critical Strike chance by 1% during the day.
+
+
+Orc
+
+Axe Specialization has been removed was 1% Expertise with axes.
+Command now increases pet damage by 1% down from 2%.
+Hardiness now reduces the duration of Stun effects by 10% down from 15%.
+
+
+Tauren
+
+Brawn is a new racial passive ability that increases Critical Strike bonus damage and healing done by 2%.
+Endurance now increases Stamina by an amount scaling with character level, instead of increasing Base Health by 5%.
+
+
+Troll
+
+Berserking now increases Haste by 15% down from 20%.
+Beast Slaying now increases XP earned from killing Beasts by 20%, instead of increasing damage dealt versus Beasts by 5%.
+Dead Eye has been removed was 1% Expertise with ranged weapons.
+
+
+Undead
+
+Will of the Forsaken’s cooldown has been increased to 3 minutes up from 2 minutes.
+Undead can no breath underwater indefinitely. 
+
+
+
+Ability Pruning
+Over the years, we've added significantly more new spells and abilities to the game than we've removed. This has led to the complexity of the game increasing steadily over time, to the point we're at now, where players feel like they need dozens of keybinds. There are many niche abilities which could theoretically be useful in some rare case, but usually are not. There are many abilities that we'd be better off not having. We decided that we needed to make a strong push for paring down the number of abilities each class/spec has. That means making some abilities restricted to certain specs that really need them instead of being class-wide, and outright removing some other abilities. It also includes removing some Spellbook clutter, such as passives that could be merged with others, or with base abilities.
+
+However, this doesn't mean that we want to reduce the depth of gameplay, or "dumb it down.” We still want there to be interesting decisions during combat, and for skill to matter. But, that doesn't require complexity; we can remove some needless complexity and still retain the depth and skill variance.
+
+One type of ability that we focused on is temporary power buffs "cooldowns". Removing those also helps achieve one of our other goals, which is to reduce the amount of cooldown stacking in the game. In cases where a class/spec had multiple cooldowns that typically ended up getting used together, often in a single macro, we merged them, or removed some of them.
+
+What abilities and spells got cut is a very, very difficult question to answer. Every ability is vital to someone, so we don't take this process lightly. We hope that even if we cut your favorite ability, you can see it in the context of our larger goals. It's important to remember that the point of these changes is to increase players' ability to understand the game, not to reduce depth of gameplay.
+
+General
+
+The levels at which you learn class abilities have been revised to provide a smoother leveling flow.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight
+
+Army of the Dead now deals 75% less damage and is only available to Blood Death Knights.
+Dual Wield is now only available to Frost Death Knights.
+Horn of Winter no longer generates Runic Power, has no cooldown, and lasts 1 hour.
+Necrotic Strike is now learned only by Frost and Unholy Death Knights.
+Raise Dead is now only available to Unholy Death Knights, summons a ghoul as a permanent pet, and has a 1-minute cooldown.
+Master of Ghouls has been removed.
+Rune Strike now replaces Death Coil for Blood Death Knights.
+Frost Strike now replaces Death Coil for Frost Death Knights.
+Obliterate now replaces Blood Strike for Frost Death Knights.
+Unholy Frenzy has been removed.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid 
+
+Enrage has been removed.
+Innervate has been removed. Mana costs for Druids have been adjusted accordingly.
+Mangle Cat Form has been removed. Mangle Bear Form remains unchanged.
+Nourish has been removed.
+Shred is now available to all Druids.
+Swipe Bear Form has been removed. Swipe Cat Form remains unchanged.
+Symbiosis has been removed.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter 
+
+Arcane Shot is no longer available to Marksmanship Hunters.
+Thrill of the Hunt now also reduces the cost of Aimed Shot when active, to preserve its value to Marksmanship Hunters.
+Aspect of the Hawk has been removed.
+Aspect of the Iron Hawk has been renamed to Iron Hawk, and now passively provides 10% damage reduction.
+Cower has been removed as a pet ability.
+Distracting Shot has been removed.
+Hunter’s Mark has been removed.
+Kill Shot is no longer available to Survival Hunters.
+Lock and Load has been removed.
+Black Arrow now naturally has a chance to cause the Lock and Load effect.
+Stampede is now a level-75 talent, replacing Lynx Rush.
+Lynx Rush has been removed.
+Rabid has been removed as a pet ability.
+Rapid Fire has been removed.
+Rapid Recuperation has been removed.
+Serpent Sting and Improved Serpent Sting have been removed.
+Serpent Spread has been renamed Serpent Sting, and remains a passive for Survival Hunters. It causes Multi-Shot and Arcane Shot to also apply the Serpent Sting poison, which does instant and periodic damage.
+Widow Venom has been removed.
+Revive Pet and Mend Pet now share one button, which toggles based on whether you have a live pet.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage
+
+Arcane Barrage now replaces Fire Blast for Arcane Mages.
+Arcane Blast now replaces Frostfire Bolt for Arcane Mages.
+Arcane Explosion is now available only to Arcane Mages.
+Blizzard is now available only to Frost Mages.
+Combustion now replaces Deep Freeze for Fire Mages.
+Deep Freeze is now available only to Frost Mages.
+Dragon’s Breath now replaces Cone of Cold for Fire Mages.
+Evocation is now available only to Arcane Mages.
+Flamestrike is now available only to Fire Mages.
+Pyromaniac has been removed.
+Frost Armor is now available only to Frost Mages and is now a passive effect.
+Ice Lance now replaces Fire Blast and is only available to Frost Mages.
+Mage Armor is now available only to Arcane Mages and is now a passive effect.
+Mana Gem has been removed.
+Molten Armor is now available only to Fire Mages and is now a passive effect.
+Shatter is now available only to Frost Mages.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk
+
+Avert Harm has been removed.
+Clash has been removed.
+Adaptation has been removed.
+Power Guard has been removed.
+Disable is now available only to Windwalker Monks.
+Healing Sphere the spell, not any other sources of healing spheres has been removed. Mistweavers' Gift of the Serpent, Brewmasters' Gift of the Ox, and Windwalkers' Afterlife still summon healing spheres.
+Surging Mist is now available to all Monk specializations. It costs 30 Energy in Ox or Tiger Stance, and continues to cost mana in Serpent Stance and Crane Stance. However, it only generates Chi for Mistweaver Monks.
+Stance of the Spirited Crane now replaces Stance of the Fierce Tiger for Mistweaver Monks see Monks below for details.
+Stance of the Sturdy Ox now replaces Stance of the Fierce Tiger for Brewmaster Monks.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin 
+
+Avenging Wrath is now only available to Retribution Paladins.
+Devotion Aura is no longer available to Protection Paladins.
+Divine Light has been renamed Holy Light.
+Divine Plea has been removed. Mana costs for Paladins have been adjusted accordingly.
+Guardian of Ancient Kings is now only available to Protection Paladins.
+Hand of Salvation has been removed.
+Holy Light has been removed.
+Inquisition has been removed.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest 
+
+Binding Heal is no longer available to Shadow Priests.
+Hymn of Hope has been removed.
+Heal has been removed.
+Greater Heal has been renamed Heal.
+Inner Focus no longer provides any mana cost reduction.
+Rapture has been removed.
+Renew is now available only to Holy Priests.
+Shadow Word: Death is now available only to Shadow Priests.
+Void Shift has been removed.
+Inner Fire has been removed.
+Inner Will has been removed.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue
+
+Disarm Trap has been removed.
+Rupture is no longer available to Combat Rogues.
+Shadow Blades has been removed.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman 
+
+Ancestral Awakening has been removed.
+Feral Spirit no longer has the Spirit Bite ability.
+Flametongue Weapon is no longer available to Restoration Shaman.
+Frostbrand Weapon is now available only to Enhancement Shaman.
+Greater Healing Wave has been renamed to Healing Wave.
+Healing Tide Totem is now available only to Restoration Shaman.
+Healing Wave has been removed.
+Lava Burst now replaces Primal Strike for Elemental and Restoration Shaman.
+Magma Totem is now available only to Enhancement Shaman.
+Rockbiter Weapon has been removed.
+Static Shock has been removed.
+Stormstrike and Stormblast now deal 30% more damage when Lightning Shield is active. 
+Stormlash Totem has been removed.
+Searing Flames has been removed.
+Flametongue Weapon damage has been increased by 40%, and Lava Lash damage has been increased to 280% weapon damage up from 140% to compensate.
+Water Shield is now available only to Restoration Shaman and replaces Lightning Shield.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock 
+
+All of the various Soulburn effects are learned together with Soulburn, instead of at different levels.
+Curse of Exhaustion and Curse of the Elements now affect all enemies within 10 yards of the target.
+Metamorphosis: Cursed Auras has been removed.
+Curse of Exhaustion and Curse of the Elements no longer gain a benefit from Soulburn.
+Fire and Brimstone no longer applies to Curses.
+Drain Life no longer gains a benefit from Soul Burn.
+Drain Soul has been removed.
+Fel Flame has been removed.
+Health Funnel no longer gains a benefit from Soul Burn.
+Metamorphosis: Void Ray has been removed.
+Metamorphosis: Carrion Swarm has been removed.
+Pyroclasm has been removed. The altered behavior it granted for Chaos Bolt is now baseline to Backdraft.
+Seed of Corruption now replaces Rain of Fire for Affliction Warlocks.
+Soulshatter has been removed.
+Unending Breath no longer gains a benefit from Soul Burn.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior 
+
+Battle Shout now lasts 1 hour and no longer generates Rage.
+Berserker Rage no longer generates Rage or increases Physical damage dealt.
+Berserker Stance has been removed.
+Cleave has been removed.
+Commanding Shout now lasts 1 hour and no longer generates Rage.
+Demoralizing Banner has been removed.
+Hamstring is now a passive ability that causes Mortal Strike, Bloodthirst, Revenge, and Raging Blow to also reduce the target’s movement speed by 50% for 15 seconds.
+Rallying Cry is no longer available to Protection Warriors.
+Recklessness is now available only to Fury and Arms Warriors.
+Skull Banner has been removed.
+Throw has been removed.
+Thunder Clap is no longer available to Fury Warriors.
+Whirlwind is now available only to Fury Warriors.
+
+
+
+Crowd Control and Diminishing Returns
+Another big takeaway from Mists of Pandaria is that there was simply too much crowd control CC in the game. To solve that, we knew that we needed an across-the-board disarmament. Here's a summary of the player-cast CC changes:
+
+
+Removed Silence effects from Interrupts. Silences still exist, but are never attached to an Interrupt.
+Removed all Disarms.
+Reduced the number of Diminishing Returns DR categories.
+
+All Roots now share the same DR category.
+
+Exception: Roots on 'Charge' types of abilities have no DR category, but have a very short duration instead.
+
+All Stuns now share the same DR category.
+All Incapacitate "Mesmerize" effects now share the same DR category, and have been merged with the Horror DR category.
+
+Removed the ability to make cast-time CC spells instant with a cooldown.
+Removed many CC spells entirely, and increased the cooldowns and restrictions on others.
+
+Pet-cast CC is more limited and often removed.
+Cyclone can now be dispelled by Immunities and Mass Dispel.
+PvP trinkets now grant immunity to reapplication of an effect from the same spell cast, when they break abilities with persistent effects like Solar Beam.
+Long fears are now shorter in PvP, to account for the target also needing to run back afterward.
+
+
+
+Additionally, we've significantly reduced the number of throughput-increasing cooldowns and procs, in order to further reduce burst damage. Please keep in mind when reading the specifics of the patch notes that some classes may have lost abilities, or had the power of select abilities reduced. These changes were made in the context of the above goals. Other classes have a reduced crowd-control ability overall. We believe that this entire package of changes will make PvP a more enjoyable experience for everyone.
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid 
+
+Cyclone can now be canceled by immunity effects i.e. Divine Shield, Ice Block, etc., and can be dispelled by Mass Dispel.
+Disorienting Roar’s effect now shares Diminishing Returns with other Mesmerize effects.
+Nature’s Swiftness can no longer turn Cyclone into an instant-cast spell.
+Solar Beam no longer Silences a target again more than once per cast. Additionally, the Silence effect from this spell now shares Diminishing Returns with other Silences.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter 
+
+Hunter pets no longer have crowd-control abilities.
+Basilisk: Petrifying Gaze; Bat: Sonic Blast; Bird of Prey: Snatch; Crab: Pin; Crane: Lullaby; Crocolisk: Ankle Crack; Dog: Lock Jaw; Gorilla: Pummel; Monkey: Bad Manners; Moth: Serenity Dust; Nether Ray: Nether Shock; Porcupine: Paralyzing Quill; Rhino: Horn Toss; Scorpid: Clench; Shale Spider: Web Wrap; Silithid: Venom Web Spray; Spider: Web; and Wasp: Sting have been removed as pet abilities.
+Entrapment’s Root effect now shares Diminishing Returns with all other Root effects.
+Scatter Shot has been removed.
+Silencing Shot has been removed.
+Traps and trap launchers no longer have an arming time and can instantly trigger.
+Traps can no longer be disarmed.
+Scare Beast now has a 6 sec duration in PvP down from 8 sec.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage
+
+Dragon’s Breath’s Disoriented effect now shares Diminishing Returns with all other Mesmerize effects.
+Ice Ward’s Frozen effect now shares Diminishing Returns with all other Root effects.
+Improved Counterspell has been removed.
+Presence of Mind can no longer turn Polymorph into an instant-cast spell.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk
+
+Fists of Fury no longer stuns a target more than once per cast.
+Glyph of Breath of Fire’s Disoriented effect now shares Diminishing Returns with all other Mesmerize effects.
+Grapple Weapon has been removed.
+Ring of Peace no longer Silences or Disarms enemies. It now incapacitates targets in the area for 3 seconds, or until the target takes damage. The ability now shares Diminishing Returns with all other Mesmerize effects.
+Spear Hand Strike no longer Silences the target if they’re facing the Monk.
+Spinning Fire Blossom’s Root effect now shares Diminishing Returns with all other Root effects.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin 
+
+Blinding Light has been removed.
+Repentance's cast time has been increased to 1.8 seconds.
+Turn Evil's cast time has been increased to 1.8 seconds and now has a 6 second duration in PvP down from 8 seconds.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest 
+
+Dominate Mind now shares Diminishing Returns with all other Mesmerize effects.
+Holy Word: Chastise now shares Diminishing Returns with all other Mesmerize effects.
+Psychic Horror now shares Diminishing Returns with all other Mesmerize effects.
+Psychic Scream is now a level-15 talent, replacing Psyfiend, and has a 45-second cooldown up from 30 seconds.
+Rapture no longer has any effect beyond removing the cooldown of Power Word: Shield.
+Void Tendrils’ Root effect now has a chance to break if the target takes sufficient damage.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue
+
+Dismantle has been removed.
+Paralytic Poison has been removed and replaced by Internal Bleeding.
+Internal Bleeding: Causes successful Kidney Shots to also apply a periodic Bleed effect for 12 seconds, with damage increasing per combo point used.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman 
+
+Ancestral Swiftness can no longer turn Hex into an instant-cast spell.
+Earthgrab Totem now shares Diminishing Returns with all other root effects.
+Maelstrom Weapon can no longer reduce the cast time of Hex.
+Bug Fix: Glyph of Shamanistic Rage should no longer cause Shamanistic Rage to incorrectly dispel Unstable Affliction or Vampiric Touch that has been modified by the PvP 4-piece set bonus.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock 
+
+Blood Horror’s cooldown has been increased to 60 seconds up from 30 seconds and now shares Diminishing Returns with all other Mesmerize effects.
+Felhunter: Spell Lock now only interrupts spell casting and no longer Silences the enemy.
+Mortal Coil now shares Diminishing Returns with all other Mesmerize effects.
+Observer: Optic Blast now only deals damage and interrupts spell casting. The ability no longer Silences the enemy.
+Sear Magic’s cooldown has been increased to 30 seconds up from 20 seconds.
+Succubus: Seduction and Shivarra: Mesmerize now have a 30-second cooldown.
+Terrorguard no longer casts Terrifying Roar when it dies.
+Unbound Will’s cooldown has been increased to 2 minutes up from 1 minute.
+Voidwalker: Disarm and Voidlord: Disarm have been removed.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior 
+
+Charge now Roots the target instead of stunning. The Root effect does not share a Diminishing Return with other Roots.
+Warbringer now causes Charge to stun the target for 1.5 sec instead of rooting it.
+Disarm has been removed.
+Intimidating Shout now has a 6 sec duration in PvP down from 8 sec.
+
+
+
+Buffs and Debuffs
+All specializations provide some common buffs and debuffs. These are important to the game because they encourage cooperation, make you stronger when you work together with others, and promote Raid composition diversity. However, we saw room to revise these buffs and debuffs. We also spread around some of the harder-to-find Raid buffs/debuffs, especially for specializations that brought relatively few.
+
+Weakened Armor and Physical Vulnerability were effectively redundant, both filling the role of increasing Physical damage taken by the target. So, we removed Weakened Armor and widened the availability of Physical Vulnerability a bit.
+
+Weakened Armor
+
+The following abilities no longer apply the Weakened Blows effect.
+
+Druid: Faerie Fire now applies Physical Vulnerability, increasing Physical damage taken by 4% for 30 seconds.
+Warrior Protection: Devastate
+
+The following abilities have been removed.
+
+Hunter Pets: Tallstrider: Dust Cloud, Raptor: Tear Armor
+Rogue: Expose Armor
+Warrior: Sunder Armor
+
+
+
+Weakened Blows was a debuff that mattered almost exclusively to tanks, and that every tank automatically applied. We removed the debuff and reduced creature damage to compensate.
+
+Weakened Blows
+
+
+The following abilities no longer apply the Weakened Blows effect.
+Death Knight Blood: Scarlet Fever
+Druid: Thrash
+Monk: Keg Smash
+Paladin: Crusader Strike; Hammer of the Righteous
+Shaman: Earth Shock
+Warrior: Thunder Clap
+
+The following abilities have been removed.
+
+Hunter Pets, Bear: Demoralizing Roar; Carrion Bird: Demoralizing Screech
+
+
+
+The Cast Speed Slow was a debuff type that mattered almost exclusively to PvP, and made combat much less fun for casters in addition to encouraging the use of instant-cast spells. We decided that it was best to remove casting speed debuffs. 
+
+Cast Speed Slows
+
+
+The following abilities no longer slow the target’s casting speed by 50%.
+Death Knight: Necrotic Strike
+Mage Arcane: Slow
+Additionally, Slow can now affect more than one target at a time.
+
+The following abilities have been removed.
+
+Hunter Pets, Core Hound: Lava Breath; Fox: Tailspin; Goat: Trample; Sporebat: Spore Cloud
+Rogue: Mind-numbing Poison
+Warlock: Curse of Enfeeblement
+
+
+
+As part of a push to combine the different types of Haste in the game as much as possible, we merged Spell Haste and Attack Speed into just Haste, which benefits everyone.
+
+Spell Haste and Attack Speed
+
+
+The following abilities now provide a 5% increase to melee, ranged, and spell Haste to all Party and Raid members previously they only increased spell Haste.
+Druid Balance: Moonkin Form
+Hunter Pet Sporebat: Energizing Spores
+Priest Shadow: Mind Quickening
+Shaman Elemental: Elemental Oath
+
+The following abilities now provide a 5% increase to melee, ranged, and spell Haste to all Party and Raid members instead of a 10% increase to only melee and ranged attack speed.
+
+Death Knight Frost, Unholy: Unholy Aura
+Shaman Enhancement: Unleashed Rage
+Rogue: Swiftblade’s Cunning
+The following Hunter pet abilities have been removed.
+Hyena: Cackling Howl; Serpent: Serpent's Swiftness
+
+
+
+Other
+
+
+Blood Death Knights receive a new passive ability at level 80 called Power of the Grave.
+Power of the Grave grants a bonus to Mastery to all Party and Raid members.
+Brewmaster Monks now also learn Legacy of the White Tiger, granting 5% increased Critical Strike chance to all Party and Raid members.
+
+The following abilities now also increase magic damage taken by the target by 5% for 15 seconds.
+
+Monk Windwalker: Rising Sun Kick
+Priest Shadow: Mind Blast
+
+
+
+
+Instant Cast Heals
+Over time, healers have gained a bigger and bigger arsenal of heals that they can cast while on the move, which removes the inherent cost that movement is intended to have for them, while also limiting players’ ability to counter healing in PvP. This left Silences and crowd control which we’re trying to curb—see "Pruning the Garden of War" as the only ways to actually limit an enemy player's healing output. We're still preserving the option to instantly heal, but are reducing the number of instant-cast healing abilities overall. Raid and dungeon encounter damage during high-movement phases will be adjusted accordingly. Here are some examples:
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid 
+
+Wild Growth Restoration now has a 1.5-second cast time up from instant cast.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk
+
+Uplift Mistweaver now has a 1.5-second cast time up from instant cast.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin 
+
+Eternal Flame now has a 1.5-second cast time up from instant cast for Holy Paladins.
+Light of Dawn now has a 1.5-second cast time up from instant cast.
+Word of Glory now has a 1.5-second cast time up from instant cast.
+Guarded by the Light Protection now also makes Word of Glory and Eternal Flame instant cast.
+Sword of Light Retribution now also makes Word of Glory and Eternal Flame instant cast.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest 
+
+Prayer of Mending now has a 1.5-second cast time up from instant cast.
+Cascade now has a 1.5-second cast time up from instant cast.
+Divine Star now has a 1.5-second cast time up from instant cast.
+Halo now has a 1.5-second cast time up from instant cast.
+
+
+
+Tank Vengeance and Resolve
+The changes to tanking made in Mists of Pandaria turned out quite well, overall. But there were a few rough parts that we're going to smooth over. The biggest one is the offensive capabilities of Vengeance. We like that tanks can provide meaningful DPS to their group, however, it swung wildly based on the fight, even surpassing the dedicated damage dealers occasionally. To solve this, we're going to remove the offensive value of Vengeance, but preserve the defensive value, by making it increase the effect of your active mitigation buttons, instead of Attack Power.
+
+General
+
+Vengeance has been removed and replaced with a new passive ability, Resolve. 
+Resolve: Increases your healing and absorption done to yourself, based on Stamina and damage taken before avoidance and mitigation in the last 10 seconds.
+
+
+Then, to keep tank DPS meaningful, we'll be raising their damage, since it would be meager with no Vengeance Attack Power Vengeance accounted for 70-90% of a tank's damage on high-tank-damage fights in Mists. To do that, we're increasing the damage of several prominent tank abilities, as well as having tanks also gain increased Attack Power from Mastery, in addition to the stat’s existing benefits. That also helps keep secondary stats balanced in offensive value for them.
+
+Death Knight
+
+Mastery: Blood Shield now also passively increases Attack Power by 12% percentage increased by Mastery, in addition to its current effects.
+
+Druid
+
+Mastery: Primal Tenacity now also passively increases Attack Power by 12% percentage increased by Mastery, in addition to its current effects.
+
+Monk
+
+Mastery: Elusive Brawler now also passively increases Attack Power by 12% percentage increased by Mastery, in addition to its current effects.
+Brewmasters no longer deal 15% less damage.
+
+Paladin
+
+Mastery: Divine Bulwark now also passively increases Attack Power by 12% percentage increased by Mastery, in addition to its current effects.
+
+Warrior
+
+Mastery: Critical Block now also passively increases Attack Power by 12% percentage increased by Mastery, in addition to its current effects.
+
+
+
+
+Quality of Life Improvements
+
+
+Facing Requirements
+Strict facing requirements can be frustrating to deal with, especially in hectic Raid combat or PvP environments. In order to ease this frustration, we decided to remove or significantly loosen the facing requirements of all attacks that required the player to be behind their target.
+
+Druid: Shred no longer requires the Druid to be behind the target.
+Rogue: Ambush no longer requires the Rogue to be behind the target.
+Rogue Subtlety: Backstab can now be used on either side of the target, in addition to behind the target.
+
+
+
+Resurrection Mana Costs
+We reduced the mana cost of all resurrection spells to 4% of base mana, so that mana isn't an inhibitor on the Raid or Party's ability to recover from a wipe. Cast time already functions as the primary cost of these spells. Note that Priests' Resurrection spell was already at 4% of base mana, so it remains unchanged.
+
+Druid: Revive, Monk: Resuscitate, Paladin: Redemption, and Shaman: Ancestral Spirit now cost 4% of base mana down from between 10% and 50%.
+
+
+
+Automatically Learned Glyphs
+While leveling, characters unlock Glyph slots at several specific levels. However, in order to get glyphs, characters need to visit an Auction House and potentially pay way more gold than an average character of that level has yet, or know a Scribe from which to request them. To solve this, we've made characters learn some Glyphs automatically as they level.
+
+All classes now learn some of their Major Glyphs as they level. Recipes for these Glyphs have been removed.
+
+At level 25, the following Glyphs are automatically learned by characters of the appropriate class:
+
+Entangling Roots, Fae Silence, Ferocious Bite, Maul, Omens, Cat Form, Liberation, Pathfinding, Frost Nova, Blink, Fortuitous Spheres, Rapid Rolling, Afterlife, Harsh Words, Flash of Light, Alabaster Shield, Dazing Shield, Avenging Wrath, Templar's Verdict, Levitate, Holy Fire, Fade, Deadly Momentum, Stealth, Flame Shock, Thunder, Healing Storm, Healing Wave, Spiritwalker's Grace, Siphon Life, Drain Life, Demon Training, Ember Tap, Long Charge, Victory Rush, Bloodthirst, Gag Order
+
+At level 50, the following Glyphs are automatically learned by characters of the appropriate class:
+
+Might of Ursoc, Nature's Grasp, Rebirth, Rejuvenation, Savagery, Mending, Chimera Shot, Black Ice, Polymorph, Spinning Crane Kick, Denounce, Divine Storm, Word of Glory, Reflective Shield, Smite, Mind Blast, Recuperate, Totemic Recall, Fear, Executor
+
+At level 60, the following Glyphs are automatically learned by characters of the appropriate class:
+
+Dark Succor, Unholy Command, Death Grip
+
+At level 75, the following Glyphs are automatically learned by characters of the appropriate class:
+
+Death and Decay, Dash, Faerie Fire, Healing Touch, Master Shapeshifter, Misdirection, Slow, Frostfire Bolt, Water Elemental, Breath of Fire, Mana Tea, Fists of Fury, Light of Dawn, Final Wrath, Double Jeopardy, Penance, Renew, Dispersion, Ambush, Cheap Shot, Lightning Shield, Eternal Earth, Healthstone, Bull Rush, Enraged Speed, Shield Wall
+
+
+
+
+
+Professions
+Some of our goals with Professions in Warlords of Draenor are to make them more of a personal choice, and less of a mandatory “min/max” selection. To that end, we're removing the direct combat benefits of Professions. Additionally, we've made it easier to level Mining and Herbalism. Healing Potions have gone mostly unused lately, compared to combat stat potions. We chose to solve that problem, along with a problem with Warlock utility, by having Healing Potions and Healthstones share cooldowns.
+
+Herbalists can now harvest herbs throughout the game world without hard skill requirements. The yield an Herbalist will be able to harvest from each node is now determined by skill level.
+Miners can now harvest mineral nodes in outdoor areas of the game world without hard skill requirements. The yield a Miner will be able to harvest from each node is now determined by skill level.
+Healing Potions no longer share a cooldown with other potions, but instead share a 60-second cooldown with Healthstones. The cooldown will not reset until the player leaves combat.
+
+
+
+
+Class Changes
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight
+A few things have happened for Death Knights. As described above in Ability Pruning, several cooldowns were made spec-specific. Rotations remain unchanged for the most part. One thing we did polish up is the effect of Diseases on the damage of other abilities. Diseases now do enough damage on their own to warrant using them, so having them act as multipliers on the damage of other abilities was extraneous, and just cluttered up the tooltips of those abilities. We removed those multipliers, and just baked in their benefit to the corresponding base spell. This slightly reduces ramp-up time.
+
+
+Blood Boil damage has been increased by 50%, but no longer deals additional damage to targets affected by Blood Plague or Frost Fever.
+Heart Strike damage has been increased by 30%, but no longer deals additional damage for each disease present on the target.
+Obliterate now deals 25% more damage on both main- and off-hand weapons, but no longer deals additional damage for each disease present on the target.
+Scourge Strike no longer deals additional damage for each disease present on the target. The ability now deals 50% of the Physical damage dealt as additional Shadow damage; this effect can critically hit and no longer ignores modifiers.
+
+
+In order to better balance the scaling rates and value of secondary stats for Unholy Death Knights, we reduced the power of their passive Unholy Might ability.
+
+
+Unholy Might Unholy bonus changed from +35% to +10%.
+
+
+Active Mitigation was a very successful design that was inspired by Death Knights' tanking style. However, it went beyond that, and Death Knights themselves were somewhat left behind in that regard. We made several changes to bring up the interactivity of Blood combat. This includes making Death Strike cause healing based on attack power, but be affected by the new Resolve passive see Tank Vengeance and Resolve, above, which gives it the traditional increase from recent damage. Plus, Rune Tap is being significantly improved, to become a strong Active Mitigation button. To tie those together, Blood's Mastery is being changed to affect both the size of the Blood Shield absorb, and the new Rune Shield absorb. Additionally, we removed Dodge and Parry from gear, and expect Blood Death Knights to value Haste and Crit as important secondary stats. In order to achieve that, we made Riposte give defensive value to auto attack and Rune Strike crits. Finally, we tweaked the targeting AI of Dancing Rune Weapon, and fixed it up to use most Talents that you know.
+
+
+Heart Strike now only cleaves 1 additional target down from 2.
+Death Strike now causes healing that scales in effectiveness with attack power, instead of based on damage taken in the last 5 sec. This healing is affected by Resolve.
+Blood Rites now causes Death Strike to also cause an absorb for 50% of the amount healed.
+Rune Tap now grants an absorption shield that scales in effectiveness with Attack Power, instead of a heal based on a % of maximum health. It also now has 2 charges, with a 30-second recharge time. 
+
+Will of the Necropolis now grants an immediate charge, and makes your next Rune Tap free. However, its damage reduction buff now only lasts 4 sec down from 8sec.
+
+Mastery: Bloody Shields now increases the effectiveness of Blood Shield and Rune Shield by 16% percentage increased by mastery, instead of adding the Blood Shield effect.
+Riposte has been redesigned.
+
+Riposte: After getting a Critical Strike with an Auto Attack or Rune Strike, you gain +100% Parry chance until you Parry an attack. This can stack up to 2 times.
+
+Dancing Rune Weapon’s summoned Rune Weapon now remains fixated on the Death Knight’s target at the time of summoning, and copies the effects of Talents that are tied to the Death Knight, such as Blood Boil, Frost Fever, or Asphyxiate. Should the original target be dead or otherwise unavailable, the Rune Weapon will switch to assist with the Death Knight’s current target.
+
+
+Since the Ghoul pet is now Unholy only, that presents a problem for Death Pact. We revised Death Pact to not require an undead minion, but work a little differently. We left it at 50% heal, which is effectively a 33% buff to it from before see Healing and Player Health above, and added a heal absorb for half the amount healed, instead. It should now be a relatively more effective heal for staying alive immediately, but with the downside of needing to heal through the heal absorb before you can be healed any further.
+
+
+Death Pact no longer requires an undead minion, and instead places a heal absorb on you for 50% of the amount healed.
+
+
+There were also a few other miscellaneous changes. The Runic Power generation of Anti-Magic Shell was standardized, to make it more understandable, and balanced.
+
+
+Anti-Magic Shell now restores 2 Runic Power per 1% of max health absorbed.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid 
+Druids have seen a few significant changes. The loss of Symbiosis see Ability Pruning above will primarily impact druids’ survival, as many of the abilities received through Symbiosis were defensive cooldowns. To compensate for that change, we buffed Survival Instincts significantly and the ability is now available for all specializations.
+
+
+Survival Instincts is now available to all Druid specializations. Survival Instincts now reduces damage taken by 70% up from 50% with a 2-minute cooldown down from 3, and for Feral and Guardian specializations can have up to 2 charges up from 1.
+
+
+Guardian Druids have had increased Armor as their Mastery for a while now. However, one of the new secondary stats available to all tanks is Bonus Armor. We didn't feel that the difference of being additive vs. being a multiplier was significant enough to warrant keeping their Mastery around. Additionally, active mitigation hasn't played out as well for Guardians as it has for some other tanks. We decided to redesign the Mastery for Guardian Druids to something that compliments the Avoidance-heavy nature of Savage Defense, and also to improve the usability of Tooth and Claw for more consistent damage reduction. Note that Primal Tenacity's calculation uses the damage before any other absorbs you have, and before Tooth and Claw's effects, so that it isn’t negatively affected by any of those. We also slightly reduced the power of Primal Fury, in order to better balance secondary stats for Guardians.
+
+
+Guardian Druids' Mastery Nature’s Guardian has been replaced with a new Mastery: Primal Tenacity. 
+
+Mastery: Primal Tenacity causes the Druid to gain a Physical absorb shield equal to 16% of the attack’s damage when they are hit by a Physical attack. Attacks which this effect fully or partially absorbs cannot trigger Primal Tenacity.
+
+
+
+Rage for Guardian Druids has been problematic throughout Mists of Pandaria. Most of their rage generation was extremely passive, and most of their button presses either didn't affect their survivability, or only trivially did so. We made changes to Haste and Crit, to try to solve these rage generation problems, and improve their rotation. Most
+
+
+Auto-attacks now generate 5 Rage down from 10.9 Rage.
+Lacerate now generates 10 Rage, has no cooldown down from a 3-second cooldown, but no longer has a chance to reset Mangle's cooldown.
+Thrash now generates 2 Rage every time it deals direct or periodic damage, has no cooldown down from a 6-second cooldown, but no longer has a chance to reset Mangle's cooldown.
+Faerie Fire no longer has a chance to reset Mangle's cooldown.
+Primal Fury now generates 5 Rage down from 15 Rage when you dodge or non-periodically critically strike up from only Auto Attacks and Mangle.
+Mangle now generates 30 Rage, and its cooldown is reduced by Haste.
+Bear Form no longer increases Haste and Crit from items by 50%, but instead causes Haste to reduce the global cooldown.
+
+
+Feral Druids received a few tweaks beyond what's been mentioned above in Ability Pruning and Facing Requirements. Pounce was buffed significantly, in order to bring it up to par with Ravage. Primal Fury was changed to let it affect area attacks as well. Glyph of Savagery was reworked to better achieve its intended effect.
+
+
+Pounce's damage has been increased by 100%.
+Primal Fury now also grants a combo point for area attacks that critically strike the Druid's primary target.
+Glyph of Savagery now grants a free 5 combo point Savage Roar when leaving Prowl, instead of allowing Savage Roar to be used with 0 combo points.
+
+
+Tranquility has an amazingly strong effect pour a ton of healing into the whole Raid/Party, but had excessive complexity for a relatively simple task 5 different targets per tick, a short HoT, stacking, varied strength by raid size. So, we simplified it significantly. It still will be used just as it always has been.
+
+
+Tranquility now heals every Party and Raid member within range every 2 seconds for 8 seconds. It no longer places a periodic effect on each target. The total amount of healing it generates in Raids should be approximately the same as before this change.
+
+
+Restoration Druids got a few changes as well. In Patch 5.4, a Glyph was introduced where you could choose to attach your Efflorescence to Wild Mushroom, instead of to Swiftmend. That was a rousing success, taken by nearly all Restoration Druids, and felt like a much better situation to us, so we decided to remove the glyph choice, and bake it in permanently. Secondly, while we are fine with the playstyle where a Restoration Druid blankets their Raid in Rejuvenations, the Swift Rejuvenation passive made that too strong, and also limited their scaling with Haste. We removed that passive, to encourage using other spells more, but still allow Rejuvenation blanketing as a playstyle choice.
+
+
+Swift Rejuvenation has been removed.
+Swiftmend no longer causes Efflorescence. Instead, Wild Mushroom Restoration now causes Efflorescence to appear at the mushroom’s location.
+
+
+The level 90-Talent row for Druids was designed to encourage hybrid gameplay. We decided that, while you shouldn't have to give up a significant amount of your primary role throughput in order to gain the off-role benefit, you also don't need to gain an actual benefit to your primary role throughput benefit either. We've reduced the power of their primary role benefit, making them roughly neutral in their effect on your primary role. Note that the increase to off-role healing from Nature's Vigil is not actually a buff see Healing and Player Health above.
+
+
+Heart of the Wild no longer provides an increase to Hit chance or Expertise while active, and no longer increases Stamina, Agility, and Intellect.
+Dream of Cenarius
+
+Balance: Casting Healing Touch no longer increases the damage bonus of the Druid’s next Eclipse. Eclipse now causes the Druid’s next Healing Touch to become instant cast and reset the cooldown on Starsurge.
+Feral: Casting Healing Touch no longer increases the damage of the Druid’s next 2 melee abilities, or increases the healing of Rejuvenation.
+Guardian: No longer increases the critical strike chance of Mangle.
+
+Nature’s Vigil, while active, increases single-target damage and healing caused by healing spells by 16% down from 25%, and all single-target damage spells also heal a nearby friendly target for 35% of the damage done up from 25%.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter
+Hunters have lacked a strong distinction between the different specializations. What we mean by that is that the Hunter specializations all had rotations that felt similar, with Marksmanship and Survival having the most blurred identities Beast Mastery felt well rooted in the pet. Hunters were also some of the most afflicted by button bloat. To address these problems, we opted to make changes to each specialization's rotation, primarily through removing abilities, and making some of them unique to each spec. This means things like Aimed Shot being the primary Focus dump for Marksmanship, instead of Arcane Shot or Serpent Sting being available only to Survival. Hunters also had a large number of cooldown abilities, which we've also cut down some of which we moved to the talent tree, competing with other active buttons. For a full list of what was removed, please see Ability Pruning and PvP - Crowd Control and Diminishing Returns.
+
+One of the most difficult abilities to decide to cut was Aspect of the Hawk. It began to feel fairly meaningless, since it was used virtually all of the time in combat, so might as well have just been passive. We decided to cut Aspect of the Hawk, and bake in its benefit to the other abilities. The remaining aspect abilities are all utility only, and are being moved off the stance bar and made toggles.
+
+Overall, Hunters should see a drastic reduction in the number of active buttons, and have a clearer distinction between the different specializations. With some of these changes, you may find yourself favoring a different specialization. Keep in mind that Draenor Perks, earned from levels 91 to 99, will serve to further distinguish the different specializations. 
+
+
+Aspect of the Pack no longer appears on the stance bar and is now on the global cooldown.
+Aspect of the Cheetah no longer appears on the stance bar and is now on the global cooldown.
+Glyph of Aspect of the Beast: The ability taught by this Glyph no longer appears on the stance bar and is now on the global cooldown.
+Glyph of Aspect of the Cheetah: No longer triggers any cooldown on Aspects.
+
+
+There were also a few other changes, primarily for quality of life and rotational consistency.
+
+
+Aimed Shot now deals 20% more damage and no longer interrupts Auto Attacks.
+Dismiss Pet now ignores line of sight.
+Hunter Pets now have a 1 second global cooldown.
+Black Arrow’s periodic effect now has a chance each time it deals damage to cause the next 2 Explosive Shots to cost no Focus and not trigger a cooldown. This effect is guaranteed to activate at least once.
+Explosive Trap now places a periodic-damage effect on each target within the radius of the explosion, rather than a persistent effect on the ground.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage
+The Mage class has good specialization distinction when it comes to their single-target rotations, but utility and area-of-effect spells were heavily shared between specializations. Commonly, these spells were redundant as well. We made many of their spells specialization-specific as described in Ability Pruning above. And probably most significant, we made changes to several existing Talents.
+
+Presence of Mind was extremely strong for instant CC, which we wanted to curtail. Rather than completely remove Presence of Mind or make it not affect CC abilities, we made it a base Arcane spell, where we don't expect that it will be a problem, since Arcane has less CC than the other Mage specs already. In its place, we've added a new talent, Evanesce.
+
+
+Presence of Mind is no longer a Talent, and is instead learned by Arcane Mages.
+Evanesce is a new Talent available at level 15. 
+
+Evanesce: Fade into the nether, avoiding all attacks against you for 3 seconds. This spell may be cast while a cast-time spell is in progress and is not on the global cooldown. Replaces Ice Block. 45-second cooldown.
+
+
+
+Going along with our goals to reduce cooldown stacking across all of the classes, we decided to remove Alter Time's DPS contribution. Alter Time has a number of clever movement and utility uses, but in practice it was mostly being used for additional uptime of offensive cooldowns. Mages also had many redundant forms of survival utility, so we moved a utility-only version of Alter Time into the Talent tree, replacing Temporal Shield.
+
+
+Temporal Shield has been removed.
+Alter Time is now a level-30 Talent, replacing Temporal Shield. 
+
+Alter Time now lasts for 15 seconds up from 6 seconds, has a 90 second cooldown down from 3 minutes, and no longer affects the casting Mage’s mana, buffs, or debuffs.
+
+
+
+A few of the abilities reset by Cold Snap were made spec-specific, or could be overridden with Talents, so we expanded what it can affect to compensate.
+
+
+Cold Snap now also resets the cooldown of Presence of Mind, Dragon's Breath, and Evanesce.
+
+
+The Mage Bomb level-75 Talent row, the Bomb row, was also problematic. We chose to add the Bombs to all Mages' rotations in order to spice them up a bit, to provide rotational variety. That succeeded, and we're overall happy with how they interact with your rotation in a single-target situation, but they also came with the prospect of multi-dotting applying your damage-over-time spell to many enemies, individually, which we don't feel is an appropriate fit for Mages. Additionally, in order to make all 3 Bombs useful to all specializations, we had to lose some of their spec-specific perks. And, even more importantly, many Mages did not like DoT gameplay at all.
+
+In order to solve all of these problems, we decided to merge the 3 current Bomb Talents into one that changes based on spec. That allows us to reintroduce spec-specific perks to each Bomb, and makes room for some non-DoT alternatives.
+
+
+Nether Tempest, Living Bomb, and Frost Bomb are now available to their corresponding specialization only, and share the left Talent slot.
+
+Nether Tempest can now only be on 1 target at a time down from unlimited, but its secondary damage now hits all targets in range up from only 1, and deals 100% of the primary damage up from 50%.
+Living Bomb can once again be applied to multiple targets, can be spread by Inferno Blast, and has a normal 1.5 second cooldown. More of its damage has been moved into its explosion.
+Frost Bomb has been redesigned. It now lasts 12 seconds, has no cooldown, and explodes every time the target is critically hit by the Mage's Ice Lance. The damage per explosion has been reduced by 75% to compensate.
+
+Unstable Magic is a new Talent available at level 75, in the middle Talent slot.
+
+Unstable Magic: Arcane Blast, Fireball, and Frostbolt have a 25% chance to explode on impact, dealing an additional 50% damage to the target, and all other enemies within 8 yards.
+
+The right level-75 Talent slot is now filled by a new Talent that varies by specialization. 
+
+Supernova: Cause a pulse of Arcane energy around the target enemy or ally, dealing Arcane damage to all enemies within 8 yards, and knocking them up. If the primary target is an enemy, they take 100% increased damage. Replaces Frost Nova. 25-second cooldown. Instant cast.
+Blast Wave: Cause an explosion of fiery force around the target enemy or ally, dealing Fire damage to all enemies within 8 yards, and dazing them, reducing their movement speed by 70% for 4 seconds. If the primary target is an enemy, they take 100% increased damage. Replaces Frost Nova. 25-second cooldown. Instant cast.
+Ice Nova: Cause a whirl of icy wind around the target enemy or ally, dealing Frost damage to all enemies within 8 yards, and freezing them for 4 sec. If the primary target is an enemy, they take 100% increased damage. Replaces Frost Nova. 20-second cooldown. Instant cast.
+
+
+
+One of the most problematic Talent rows in the game has been the Mage level-90 row. The primary theme of the row was mana, which only Arcane Mages actually cared about. Bonus damage was added in, making it functional for all Mages, but muddled in its goals. Additionally, some of them just weren't fun to play with. We've revised the row to be purely about damage, and made them have less maintenance cost. Arcane Mages will have enough mana regeneration without these Talents to perform well.
+
+
+Invocation has been removed.
+Mirror Image is now a level-90 Talent, replacing Invocation.
+
+Mirror Images now inherit 50% of the Mage’s Spell Power up from 5%.
+
+Rune of Power no longer replaces Evocation, no longer increases mana regeneration, and now lasts 3 minutes up from 1 minute.
+Incanter's Ward has been removed.
+Incanter's Flow is a new level-90 Talent, replacing Incanter's Ward.
+
+Incanter's Flow: Magical energy flows through you, increasing all spell damage done by 5% per stack. While in combat, the magical energy builds up to 5 stacks over 5 seconds and then diminishes down to 1 stack over 5 seconds. This cycle repeats every 10 seconds.
+
+
+
+Frost Mages enjoyed newfound PvE viability in Mists of Pandaria, and we intend to continue that into the future. However, we do want to clean up some rough spots, especially around their valuing of secondary stats, and the amount of instant-cast spells in their rotation. The Frost Armor and Shatter changes increase the amount of Haste/Critical chance that they can acquire on gear before they start hitting soft caps. The Shatter change also lowers the value of Critical Strike for a bit. The changes to the level-75 Talent row meant that having a Bomb spell is no longer guaranteed, so we changed the way that Brain Freeze is triggered. We also changed Brain Freeze's effect, in order to give Frost mages another cast-time spell in their rotation.
+
+
+Frost Armor now grants 15% chance to Multistrike instead of 7% Haste.
+Glyph of Icy Veins now causes Icy Veins to provide 75% chance to Multistrike, instead of 20% Haste.
+Shatter now multiplies Critical Strike chance by 1.5 down from 2.
+The Brain Freeze effect no longer makes Frostfire Bolt instant, but it can now stack to 2. It also no longer triggers from the Bomb Talents, and instead has a 10% chance to trigger from Frostbolt casts. Each Multistrike of Frostbolt increases that cast's chance by an additional 45%. Total of 100% on double-Multistrikes.
+
+
+In order to make room for more Haste effects to apply to Arcane Blast, we raised its cast time and damage slightly. We also made Arcane Charges last longer, to aid in questing and encounters.
+
+
+Arcane Blast's cast time has been increased to 2.25 seconds up from 2 seconds, and its damage has been increased by 12.5% to compensate.
+Arcane Charges now last 15 seconds up from 10 seconds.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk
+The brand-new class for Mists of Pandaria, Monks, turned out to be a ton of fun. Brewmasters stayed fairly solid all expansion long. Windwalkers needed a few tweaks here and there, especially to their Mastery, and still have a few shortcomings that we hope to improve, but overall worked quite well. Mistweavers had a bit of a rollercoaster ride, veering between weak and strong over the course of the expansion. Most of our changes to Monks will focus on Mistweavers, to try to get them just right.
+
+About midway through the expansion, it became clear that mana was not valuable for Mistweavers. We tried some adjustments to solve that, but it proved too large of a change to make at the time. We chose to just live with that problem for the time being, and tune them around not really caring much about Spirit or mana once they reached epic gear.
+
+Now that we have the time to tweak things, and for Mistweavers to acquire new gear, we're going to make changes to get them in the right spot. Initially, we experimented with giving Mistwavers a 1-second GCD akin to that of the Rogue to give them a faster combat feel. However, it's proven difficult to balance. Haste is attractive to healers because it lowers not just cast time but GCD as well. Therefore, Monks valued Haste much less than other healers. We explored a few options, but ultimately landed on changing the core GCD for Mistweavers from 1 second to the standard 1.5 seconds, which you will be able to reduce with Haste. This will feel jarring at first, but we're confident that it's for the best, long-term.
+
+
+All abilities available to Mistweavers now have a 1.5 second global cooldown up from 1 second.
+Stance of the Sturdy Ox and Stance of the Fierce Tiger now reduce the global cooldown of the Monk’s abilities by 0.5 seconds.
+
+Stance of the Wise Serpent no longer increases Haste from items by 50%.
+
+Focus and Harmony is a new passive ability for Mistweaver Monks. 
+
+Focus and Harmony: Haste effects lower the global cooldown of your spells and abilities.
+
+Crackling Jade Lightning no longer generates Chi for Mistweaver Monks.
+Soothing Mist no longer generates Chi for Mistweaver Monks.
+Thunder Focus Tea now causes the next Renewing Mist to jump up to 4 times used to cause the next Uplift to refresh the duration of Renewing Mists on all targets.
+Healing Spheres now heal an ally within 12yd up from 6yd for 100% up from 50% of their normal healing, when they expire.
+Detonate Chi is a new spell available to Mistweavers:
+
+Detonate Chi: Instantly detonate all of your Healing Spheres, causing each of them to heal a nearby ally within 12 yards of the sphere. 15 sec cooldown.
+
+
+
+Another issue with Mistweavers is that of Eminence, which has never really played out how we had hoped. The intent with Eminence was to create an alternate play style to fulfill the fantasy of healing through dealing damage, since we knew a lot of players had that fantasy, and a new class was the perfect opportunity to satisfy that.
+
+Having two play styles in one spec Eminence, and traditional Mistweaving, healing primarily through casting heals proved challenging to balance, because we don't want players to take the best parts of both and stack them into an unintended superior spec. The most notorious of these cases was "Jab-Jab-Uplift". In order to solve this problem, we're giving Mistweavers two stances. Stance of the Wise Serpent will continue to be the stance from which to do traditional Mistweaving. The new Stance of the Spirited Crane will be the stance to use for Eminence. You can swap stances at will, with only the cost of a GCD and any current Chi that you've accrued. The intention is that Crane Stance allows Mistweavers to trade healing for damage; it should fall somewhere in the middle between being a full healer, and being a full damage dealer. 
+
+
+Stance of the Spirited Crane is a new ability for Mistweaver Monks, which replaces Stance of the Fierce Tiger.
+
+The Spell-Power-to-Attack-Power conversion effect has been moved from Stance of the Wise Serpent to Stance of the Spirited Crane.
+The Eminence effect has been moved from Stance of the Wise Serpent to Stance of the Spirited Crane.
+
+Teachings of the Monastery now makes Spinning Crane Kick heal friends instead of damaging enemies, while in Stance of the Wise Crane previously, it would heal allies in addition to damaging enemies.
+Mastery: Gift of the Serpent’s Healing Spheres now scale with Spell Power instead of Attack Power.
+Serpent's Zeal has been removed. Eminence now always includes Auto Attacks.
+Muscle Memory and Vital Mists have been merged. Muscle Memory now requires Stance of the Spirited Crane, and passively increases the damage of Crackling Jade Lightning by 100%, causes Tiger Palm to trigger the Vital Mists effect, and causes Blackout Kick to hit 4 additional nearby targets for 50% damage.
+The following abilities now require Stance of the Wise Serpent for Mistweavers:
+
+Enveloping Mist, Renewing Mist, Soothing Mist, Uplift
+
+The following abilities now require Stance of the Spirited Crane for Mistweavers:
+
+Blackout Kick, Jab, Tiger Palm
+
+
+
+We also improved all Monk Healing Spheres. You'll no longer waste them when running over multiple at once when you only need a little healing. And we significantly improved the effect when Mistweavers' Healing Spheres expire. We also made Afterlife Healing Spheres consistent with the rest of the class.
+
+
+When a player runs through multiple Healing Spheres at once, only as many as needed to heal the player to full health will be consumed instead of all of them if the player is injured at all.
+Healing Spheres from Gift of the Serpent now heal an injured ally within 12 yards up from 6 yards for 100% up from 50% of their normal effect, when they expire.
+Afterlife’s Healing Sphere now heals for the same amount as other Healing Spheres instead of healing for 15% of maximum health.
+
+
+We also did some polishing on Brewmasters and Windwalkers. We made Storm, Earth, and Fire, Transcendence, and Touch of Death easier to use.
+
+
+Transcendence: Transfer no longer has an energy or mana cost.
+Storm, Earth, and Fire no longer has an energy cost, and is off the GCD.
+Touch of Death is now usable on targets that have 10% or less health remaining, or have less current health than your maximum health. The rules against players remain unchanged.
+Fists of Fury now always deal full damage to your primary target; additional targets are still affected by the damage split.
+Glyph of Leer of the Ox now also causes Black Ox Statue to passively pulse a minor amount of threat to all enemies within 30 yards.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin 
+For Paladins, we have a few tweaks in store. To compensate for the removal of Guardian of Ancient Kings from Holy, we merged its benefit into Divine Favor. We also raised the range of Denounce to be consistent with other spells. And for Hammer of the Righteous, we revised its functionality a bit, such that its performance is about the same, but its tooltip is much clearer.
+
+
+Divine Favor now also increases all of the Paladin’s healing by 100% for its duration.
+Denounce's range has increased to 40 yards up from 30 yards.
+Hammer of the Righteous now deals 50% Physical weapon damage up from 15% to the primary target, but the primary target is no longer hit with the Holy damage.
+Seals no longer cost any mana.
+Stay of Execution the Holy version of Execution Sentence now deals its healing in a large burst at first, and then decreasing over time reversed from before.
+Eternal Flame now deals 100% of the direct healing of Word of Glory up from 70%, but only 50% as much periodic healing as before. Additionally, Bastion of Glory no longer affects the periodic healing.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest 
+We've made a few significant changes to Priests as well, focused mostly on reining in Discipline absorbs, improving quality of life for both healing Priest specializations, and solving single-target damage issues for Shadow.
+
+Atonement was the original damage-to-healing conversion ability, but grew out of control during Mists of Pandaria. We decided to reduce its effectiveness, to bring it more in line with our goal of it being an option to trade significant healing for significant damage ending up somewhere between a full healer and a full damage dealer. Another place where Discipline's absorbs were too strong was in their interaction with the level-90 Talents, especially in large Raids. Near the end of Mists of Pandaria, we uncapped the AoE healing of that Talent row; that has proven to be a mistake in Discipline's case, not because it caused the level-90 Talents themselves to heal for too much, but rather because the gigantic overhealing that that produced translated into gigantic Divine Aegis absorbs. To get back to a balanced place, we've reapplied the AoE caps to the level-90 Talents, making them consistent with all other AoE heals.
+
+
+Atonement now heals for 25% less than before.
+Halo and Divine Star now follow standard AoE capping rules.
+
+
+For Holy Priests, our biggest concern is with the Chakras. We think that Chakras are the defining abilities of Holy Priests, but that they haven't lived up to their potential. We decided to move more of their effectiveness from their raw throughput buff which felt like a penalty for being in the wrong chakra, rather than a bonus for being in the right Chakra into the Holy Word spells that they grant. We also returned Renew to a normal 1.5-second global cooldown GCD, so that Renew blanketing is still possible, but less ideal without Haste.
+
+
+Chakra: Serenity now increases healing of single-target spells by 10% down from 25%.
+Holy Word: Serenity now heals for 40% more than before.
+Chakra: Sanctuary now increases healing of area-of-effect spells by 10% down from 25%.
+Holy Word: Sanctuary now heals for 60% more than before.
+Rapid Renewal no longer reduces the global cooldown of Renew.
+
+
+Shadow Priests had one large problem toward the end of Mists of Pandaria: single-target damage. Their AoE and multi-DoT damage was some of the best around, so they still ended up competitive on most fights. But, in any fight that was mostly single-target, they felt lacking. Additionally, one of the new stats we're adding in Warlords of Draenor, Multistrike, is almost exactly what their current Mastery, Shadowy Recall, does for DoTs. So, we took these two problems and came up with a change that we think will solve both of them. The result is a new Mastery, which primarily increases single-target damage. Shadow Priests who want to focus on single-target damage can aim for Mastery in their gearing; or, when multi-dotting is more valuable, prefer other secondary stats over Mastery. 
+
+
+Shadow Priest’s Mastery Shadowy Recall has been replaced with a new Mastery: Mental Anguish.
+
+Mastery: Mental Anguish: Increases the damage of Mind Blast, Mind Spike, Mind Flay, and Mind Sear by 20%.
+
+
+
+There are a few other miscellaneous changes. One is a quality-of-life change for healing Priests. The other is a fix for a problem with Void Tendrils, where it lasts its full duration against creatures that had no way to attack it such as in certain Raid encounters. Note that the health reduction is to keep it where it was in health, compared to player health doubling. The third is an efficient AoE healing spell for Discipline Priests.
+
+
+Prayer of Mending from multiple Priests can now be on the same target, and can be on multiple targets from the same Priest.
+Void Tendrils now have 10% of the Priest’s health down from 20%, and damage dealt to the rooted target is now also dealt to the Void Tendril itself.
+Angelic Feathers, if cast on players, will always prefer the casting priest over others, then pick the player closest to the targeted location. If there are no players where it is targeted, it will still create a feather that can be picked up, as before. Additionally, when collecting multiple feathers, the duration will be extended, instead of replaced.
+Holy Nova is no longer available via a Major Glyph, and is instead a Discipline specialization spell. Its mana cost has been lowered and its healing increased. It is intended as the efficient area-of-effect AoE healing spell for Discipline Priests.
+Cascade, Divine Star, and Halo no longer heal allies but are instant cast for Shadow Priests, or damage enemies for Discipline or Holy Priests.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue
+In our efforts to reduce cooldown stacking across the game, we chose to remove the damage increase from Tricks of the Trade. And second, we decided to loosen the weapon requirements on Assassination. It's important to note that we still intend for daggers to be the optimal choice for Assassination Rogues, but this change will help Rogues who want to try out Assassination but don't have two daggers.
+
+
+Tricks of the Trade now has no energy cost and no longer increases damage caused by the target by 15%.
+Assassin’s Resolve no longer requires daggers to function.
+Dispatch can now be used with fist weapons or one-handed swords, dealing 331% weapon damage instead of 480% when used with those weapons instead of a dagger.
+Mutilate can now be used with fist weapons or one-handed swords, dealing 137% weapon damage instead of 200% when used with those weapons instead of a dagger.
+Sinister Strike now deals 188% weapon damage when used with a dagger instead of 130%.
+
+
+Bandit's Guile is an interesting mechanic that is important to Combat gameplay, but wasn't working out quite as well as we think that it could. In particular, there's basically no way to adjust when you're going to be in Deep Insight, other than stopping your rotation and thus wasting energy, combo points, temporary effects, cooldown time, etc.. So, we're making an adjustment to Revealing Strike and Bandit's Guile. The intention here is that you can use Revealing Strike in place of Sinister Strike when you want to delay Deep Insight such as to line it up with a specific upcoming fight mechanic, and have little lost damage besides the overall Deep Insight uptime. We don't expect this nuanced rotation adjustment to be used by all Combat Rogues, but having a little more control over the pace of your rotation will be useful to some.
+
+
+Revealing Strike now deals 20% more damage, but no longer advances Bandit's Guile.
+
+
+Among some other changes to Rogue AoE damage, we wanted to make sure that Fan of Knives benefitted from Seal Fate.
+
+
+Seal Fate now also grants a combo point for area attacks that critically strike the Rogue's primary target.
+
+
+Honor Among Thieves is an extremely powerful ability, but has the downside that it adds significant disparity between character power while soloing and while in a group. We made this change to bring up the soloing Subtlety Rogue, without having a significant impact on their performance while in a group.
+
+
+Honor Among Thieves can now also be triggered by critical hits from the Rogue's melee Auto Attacks.
+
+
+A couple of Rogue abilities do periodic damage, but don't have an intended alternative if that periodic is already on the target. We made these abilities roll remaining damage from their previous effect into the new effect, so that it's still ideal to use them again in these cases.
+
+
+Crimson Tempest's periodic damage now has rolling periodic behavior, meaning that remaining damage from the previous application is added into the newly-applied periodic-damage effect.
+Hemorrhage's periodic damage now has rolling periodic behavior, meaning that remaining damage from the previous application is added into the newly-applied periodic-damage effect.
+
+
+Subterfuge has proved too powerful, and frustrating to play against in PvP, so we decided to reduce its defensive capabilities, while preserving its offensive power. We changed the Subterfuge period to allow the use of stealth abilities without actually stealthing you, similar to Shadow Dance.
+
+
+Subterfuge now allows you to use abilities that require stealth for 3 sec after leaving Stealth, instead of actually staying stealthed for 3 sec.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman 
+Shaman has received a variety of changes, most of which are specialization-specific.
+
+For Elemental and Enhancement, we had a few problems to solve. Enhancement suffers from having their damage split among so many damage sources that none of it feels impressive. We changed the damage of several abilities to try to reorganize their damage into fewer, more impactful abilities, while keeping the net total the same. For a long time Elemental Shaman were one of the specs most impacted by movement, at a time where other casters were increasingly able to cast while moving.
+
+For Warlords of Draenor, we're pulling back on the ability for many casters to deal damage while moving, and that includes Elemental. They will still have some ability to deal damage while moving, through Shocks, Unleash Weapon, and instant Lava Bursts. For Chain Lightning, we wanted to reduce the impact of Haste soft capping, and so changed Shamanism to increase damage instead of reduce cast time. Additionally, we simplified Wind Shear by removing its impact on threat, which no longer matters.
+
+
+Searing Totem: Searing Bolt damage increased by 65%.
+Earth Elemental deals 90% less Auto Attack damage.
+Primal Earth Elemental's Pulverize ability no longer deals damage.
+Unleash Flame no longer deals direct damage, but now increases the damage of the Shaman’s next Fire spell by 40% up from 30%.
+Unleash Frost no longer deals direct damage, but now always snares the target by 70% rather than only when the target is already snared by a Frost spell.
+Unleash Wind no longer deals direct damage, but now increases attack speed by 60% up from 50%.
+Lightning Bolt is no longer castable while moving by default. Effects like Spiritwalker’s Grace can still make the spell castable while moving.
+Shamanism no longer reduces the cast time of Chain Lightning, but instead now increases the damage of Chain Lightning by 100% up from 70%.
+Wind Shear no longer affects threat.
+Windfury Weapon no longer has a 3-second internal cooldown.
+
+
+Restoration Shaman had the most passive and smart healing of any healer, and so received some reductions in that area, along with buffs elsewhere to keep them competitive. One particular change is to Mana Tide Totem, which we made less effective for other players, but still just as effective for the Shaman. We like that Shaman could help other healers out on mana, but it was just too strong, significantly impacting how those other healers gear themselves.
+
+
+Chain Heal now heals each chain target for 15% less than the previous target.
+Unleash Life no longer increases the healing from Healing Rain.
+Earthliving Weapon now increases healing done by 5% instead of increasing healing Spell Power by a flat amount.
+Healing Stream Totem’s mana cost has been reduced to 10% of base mana down from 23.5%, and its healing has been reduced by 50%.
+Glyph of Totemic Recall now only increases the mana returned from recalling your totems by 25% down from 75%.
+Mana Tide Totem now increases the Spirit of allies by 50% down from 200% of the Shaman's Spirit. It remains unchanged 200% for the Shaman activating the totem, and it still ignores temporary Spirit buffs.
+Conductivity is no longer triggered by damaging spells for Restoration Shaman, or by healing spells for non-Restoration Shaman.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock 
+Warlocks received a number of cut abilities see Ability Pruning above, but remain relatively unchanged. They saw the most change of any class in Mists of Pandaria, and so were in need of less revision this time around.
+
+We did feel that Warlocks brought too much unique Raid utility, so decided to tone down Healthstones and Demonic Gateway. We moved Healing Potions and Healthstones into a cooldown of their own, and made them usable once per combat. For Drain Life, we reduced the base healing somewhat, but massively increased the effectiveness of the Glyph which increases its healing, so as to help open up more potential Drain Life use in ideal situations. And lastly, we simplified Shadowburn a bit.
+
+
+Healthstone's cooldown will now not reset until the player leaves combat. Healing from this ability can no longer be a Critical Effect.
+Demonic Gateways no longer have charges up from being limited to 5 charges. Every Party or Raid member can use them once every 90 seconds up from 45 seconds. The maximum distance apart they can be placed is now 40 yards down from 70 yards.
+Drain Life now heals for 30% less than before.
+Glyph of Drain Life now increases the healing of Drain Life by 100% up from 30%.
+Shadowburn no longer generates any mana.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif [size=3] Warrior 
+We wanted to fix a few problems with Warriors. First, we still weren't happy with Arms' rotation and neither were many players, so we've made some more changes, primarily through cutting abilities see Ability Pruning above.
+
+As with other classes, we wanted to reduce cooldown stacking. Cutting Skull Banner did a ton to help that across the whole game. But for Warriors specifically, we needed to make further changes, including merging some of the personal benefit of Skull Banner back into Recklessness. Also, to make up for Throw being removed, we modified Heroic Throw to be more frequently usable.
+
+
+Recklessness now increases Critical Strike chance by 15% down from 30% and increases Critical Strike damage by 10% up from 0%.
+Shattering Throw no longer reduces the armor of the target; it only does damage and breaks immunities.
+It also is no longer learned via any specialization, but instead through a new Major Glyph, Glyph of Shattering Throw.
+Heroic Throw now has a 6-second cooldown down from 30 seconds, but now has a 15 yard minimum range.
+
+
+Haste has long been a problematic stat for Warriors, usually being of little value. As part of our commitment to ensuring all secondary stats are valuable except Bonus Armor for non-tanks and Spirit for non-healers, of course, we're making a significant change to Warriors, to ensure that Haste has strong, competitive value. We're giving all Warriors a new passive, which lets haste affect their global cooldown, and the cooldowns of their very-short-cooldown rotational abilities.
+
+
+Headlong Rush is a new passive ability for Warriors:
+
+Headlong Rush: Haste reduces global cooldown and the cooldowns of Mortal Strike, Bloodthirst, Shield Slam, and Thunder Clap.
+
+
+
+Protection Warriors have received a few notable changes. First, we removed Dodge and Parry from gear, and expect Protection Warriors to value Haste and Crit as important secondary stats. In order to achieve that, we made Riposte give defensive value to Crits. The aforementioned Headlong Rush also helps for valuing Haste.
+
+
+Riposte has been redesigned.
+
+Riposte gives the Warrior +100% to Parry chance until they Parry an attack after getting a critical strike with an Auto Attack. 
+
+
+
+A few Warrior Talents also were in need of revision. First, Second Wind was problematic; it was sometimes too weak, and sometimes too strong. We chose to change it from a passive health regeneration effect to the new Leech effect, so that low-health Warriors have to maintain combat in order to benefit, instead of kiting, hiding, or otherwise playing defensively. For the level-60 and level-90 Talent rows, certain combinations were proving problematic. We decided that Stormbolt would better compete with Shockwave and Dragon Roar, and that Bladestorm would better compete with Avatar and Bloodbath, so swapped Stormbolt and Bladestorm's positions.
+
+
+Second Wind no longer directly heals the Warrior while active. Instead, Second Wind grants the Warrior 10% Leech while active, which causes the Warrior to heal for 10% of all damage and healing done by the Warrior while active.
+Bladestorm is now a level-90 Talent, swapping places with Stormbolt. 
+
+Bladestorm no longer allows use of Shouts while active. It does still allow the use of Taunt, Enraged Regeneration, Shield Wall, and Last Stand.
+
+Stormbolt is now a level-60 Talent, swapping places with Bladestorm.
+
+
+Fury Warriors are receiving updates to spell alerts to improve usability.
+
+
+Bloodsurge’s spell alert has moved to the top slot instead of the left/right slots.
+Raging Blow now has a spell alert on the left and right slots.
+
+
+With the introduction of one of the level-100 Warrior Talents, which deals Fire damage, we also expanded Enrage to affect all damage, not just Physical damage.
+
+
+Enrage now increases all damage up from only Physical damage.
+Mastery: Unshackled Fury Fury now increases all damage up from only Physical damage.
+
+
+We're also making a change to the design of Deep Wounds, to try to limit is effectiveness in PvP, without hurting its effectiveness in PvE. 
+
+
+Deep Wounds now lasts 15 seconds, or until the target is healed to full health.

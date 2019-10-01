@@ -1,0 +1,401 @@
+chaud2015-08-25, 06:29 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Reddit Q&A on September 1st, Quin's 2.3 Shenlong Monk http://www.diablofans.com/news/48500-reddit-q-a-on-september-1st-quins-2-3-shenlong
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> No Free Packs on TGT Launch, Fel Reaver Bug Fixed, This Weekend in Hearthstone ESports http://www.hearthpwn.com/news/1015-no-free-packs-on-tgt-launch-fel-reaver-bug-fixed
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> NA Road to Blizzcon August Open, GeForce GTX 950 Giveaway, Into the Nexus #63 http://www.heroesnexus.com/news/1464-na-road-to-blizzcon-august-open-geforce-gtx-950
+
+Armory Stats - Races and Genders
+Today we are taking a look at character races and genders. The last time we looked at this data was in 2011 http://www.mmo-champion.com/content/2407-Character-Gender-Ratios-Blue-Posts-Fan-Wallpaper-TCG-Artworks and things have changed since then. New character models were added and every race now has a higher percentage of female characters. Tauren, Dwarves, and Undead had the smallest increase, while Draenei, Night Elves, and Blood Elves had the largest. Night Elves and Blood Elves went from being a majority of male to a majority of female characters.
+
+The data today is based on 6.1 million characters that have been active since June 1, 2015. The first chart shows character genders for each race, only within that race. This means that each race will add up to 100%. You can click on the titles in the legend to turn on and off different data series.
+
+The second chart shows character genders for each race, but weighted to their overall proportion. This allows you to see that even with the new character models, Female Dwarves are still the least popular. 
+
+The final chart shows the races without gender specific information. 
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2015/august/highcharts-4.1.8.js"></script>
+<script> var chart;
+$document.readyfunction  {
+Highcharts.setOptions{
+colors: ['#18A9D9', '#ABCCD6', '#D91888', '#EBB9D6']
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'charGenRat',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Human', 'Orc', 'Dwarf', 'Night Elf', 'Undead', 'Tauren', 'Gnome', 'Troll', 'Goblin', 'Blood Elf', 'Draenei', 'Worgen', 'Pandaren A', 'Pandaren H'],
+labels: {
+maxStaggerLines: 0,
+autoRotationLimit: 10
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+tooltip: {
+headerFormat: '<span style="font-size:12px;font-weight:bold">{point.key}</span><br/>',
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: ' +
+'<span style="padding:0"><b>{point.y:.1f} %</b></span><br/>',
+shared: true
+},
+
+title: {
+text: 'Character Gender by Race',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'Male',
+data: [56.12, 81.35, 85.82, 42.94, 76.44, 85.58, 56.10, 67.35, 63.55, 42.35, 34.55, 72.33, 51.35, 50.30]
+
+}, {
+name: 'Male 2011',
+data: [66.48, 89.34, 86.72, 56.20, 77.40, 85.82, 69.43, 74.24, 72.44, 55.05, 47.73, 80.00, 0, 0],
+visible: false
+
+}, {
+name: 'Female',
+data: [43.88, 18.65, 14.18, 57.06, 23.56, 14.42, 43.90, 32.65, 36.45, 57.65, 65.45, 27.67, 48.65, 49.70]
+
+}, {
+name: 'Female 2011',
+data: [33.52, 10.66, 13.28, 43.80, 22.60, 14.18, 30.57, 25.76, 27.56, 44.95, 52.27, 20.00, 0, 0],
+visible: false
+}]
+};
+
+
+Highcharts.setOptions{
+colors: ['#18A9D9', '#D91888', '#EBB9D6']
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'charGenRatNW',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Human', 'Orc', 'Dwarf', 'Night Elf', 'Undead', 'Tauren', 'Gnome', 'Troll', 'Goblin', 'Blood Elf', 'Draenei', 'Worgen', 'Pandaren A', 'Pandaren H'],
+labels: {
+maxStaggerLines: 0,
+autoRotationLimit: 10
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+tooltip: {
+headerFormat: '<span style="font-size:12px;font-weight:bold">{point.key}</span><br/>',
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: ' +
+'<span style="padding:0"><b>{point.y:.1f} %</b></span><br/>',
+shared: true
+},
+
+title: {
+text: 'Character Gender by Race Weighted',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'Male',
+data: [10.86, 6.86, 3.72, 4.94, 5.02, 5.72, 1.99, 4.01, 1.62, 5.95, 2.45, 3.47, 1.36, 1.25 ]
+
+}, {
+name: 'Female',
+data: [8.49, 1.57, 0.61, 6.56, 1.55, 0.96, 1.55, 1.95, 0.93, 8.11, 4.64, 1.33, 1.29, 1.23]
+
+}]
+};
+
+
+
+Highcharts.setOptions{
+colors: [ '#AC63B0']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'charRaceW',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Human', 'Orc', 'Dwarf', 'Night Elf', 'Undead', 'Tauren', 'Gnome', 'Troll', 'Goblin', 'Blood Elf', 'Draenei', 'Worgen', 'Pandaren A', 'Pandaren H'],
+labels: {
+maxStaggerLines: 0,
+autoRotationLimit: 10
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+max: 20,
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+tooltip: {
+headerFormat: '<span style="font-size:12px;font-weight:bold">{point.key}</span><br/>',
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: ' +
+'<span style="padding:0"><b>{point.y:.1f} %</b></span><br/>',
+shared: true
+},
+
+title: {
+text: 'Character Gender by Race',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'Total',
+data: [19.35, 8.44, 4.34, 11.50, 6.57, 6.69, 3.54, 5.96, 2.54, 14.06, 7.09, 4.80, 2.65, 2.48]
+}]
+};
+
+};
+</script> 
+<div id="charGenRat" width="50%">Don't see a chart? Enable javascript!</div>
+<br />
+<div id="charGenRatNW" width="50%">Don't see a chart? Enable javascript!</div>
+<br />
+<div id="charRaceW" width="50%">Don't see a chart? Enable javascript!</div>
+
+<table class="news-table" style="width:80% !important;">
+<thead>
+<tr>
+<th width="20%">Race</th>
+<th width="16%">Total</th>
+<th width="16%">Male</th>
+<th width="16%">Male 2011</th>
+<th width="16%">Female</th>
+<th width="16%">Female 2011</th>
+</tr>
+</thead>
+<tbody> <tr>
+<td>Human</td>
+<td>19.35%</td>
+<td>56.12%</td>
+<td>66.48%</td>
+<td>43.88%</td>
+<td>33.52%</td>
+</tr>
+<tr>
+<td>Orc</td>
+<td>8.44%</td>
+<td>81.35%</td>
+<td>89.34%</td>
+<td>18.65%</td>
+<td>10.66%</td>
+</tr>
+<tr>
+<td>Dwarf</td>
+<td>4.34%</td>
+<td>85.82%</td>
+<td>86.72%</td>
+<td>14.18%</td>
+<td>13.28%</td>
+</tr>
+<tr>
+<td>Night Elf</td>
+<td>11.50%</td>
+<td>42.94%</td>
+<td>56.20%</td>
+<td>57.06%</td>
+<td>43.80%</td>
+</tr>
+<tr>
+<td>Undead</td>
+<td>6.57%</td>
+<td>76.44%</td>
+<td>77.40%</td>
+<td>23.56%</td>
+<td>22.60%</td>
+</tr>
+<tr>
+<td>Tauren</td>
+<td>6.69%</td>
+<td>85.58%</td>
+<td>85.82%</td>
+<td>14.42%</td>
+<td>14.18%</td>
+</tr>
+<tr>
+<td>Gnome</td>
+<td>3.54%</td>
+<td>56.10%</td>
+<td>69.43%</td>
+<td>43.90%</td>
+<td>30.57%</td>
+</tr>
+<tr>
+<td>Troll</td>
+<td>5.96%</td>
+<td>67.35%</td>
+<td>74.24%</td>
+<td>32.65%</td>
+<td>25.76%</td>
+</tr>
+<tr>
+<td>Goblin</td>
+<td>2.54%</td>
+<td>63.55%</td>
+<td>72.44%</td>
+<td>36.45%</td>
+<td>27.56%</td>
+</tr>
+<tr>
+<td>Blood Elf</td>
+<td>14.06%</td>
+<td>42.35%</td>
+<td>55.05%</td>
+<td>57.65%</td>
+<td>44.95%</td>
+</tr>
+<tr>
+<td>Draenei</td>
+<td>7.09%</td>
+<td>34.55%</td>
+<td>47.73%</td>
+<td>65.45%</td>
+<td>52.27%</td>
+</tr>
+<tr>
+<td>Worgen</td>
+<td>4.80%</td>
+<td>72.33%</td>
+<td>80.00%</td>
+<td>27.67%</td>
+<td>20.00%</td>
+</tr>
+<tr>
+<td>Pandaren A</td>
+<td>2.65%</td>
+<td>51.35%</td>
+<td>0.00%</td>
+<td>48.65%</td>
+<td>0.00%</td>
+</tr>
+<tr>
+<td>Pandaren H</td>
+<td>2.48%</td>
+<td>50.30%</td>
+<td>0.00%</td>
+<td>49.70%</td>
+<td>0.00%</td>
+</tr>
+</tbody>
+</table>
+Blue Tweets
+Items
+Crystallized Fel loot from Archimonde resets together with weekly LFR Reset OR with norm/heroic/mythic reset ?
+This resets with weekly quest tracking, as do all other Legendary quest steps. WarcraftDevs https://twitter.com/WarcraftDevs/status/634851503799296000
+
+UI
+Any hope to fix Tab-Targetting? Been broken since 6.x: https://gfycat.com/NeighboringUnimportantEchidna
+Appreciate the report. We're currently investigating this. WarcraftDevs https://twitter.com/WarcraftDevs/status/634861199851581440
+
+
+Ghostcrawler Tweets
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.
+How much of an impactif any do you think Activision has had on the creative process of Blizzard?
+None. OccupyGStreet https://twitter.com/OccupyGStreet/status/632386047503003648
+
+Love hard dungeons, but hard as in coordinating CC, using interrupts, stuns, ect. One shot death mechanics = not fun.
+Agree, but they often go together. If it's is just "lots of damage" the healer gets blamed. OccupyGStreet https://twitter.com/OccupyGStreet/status/632937347517050881
+
+Do you think convenience is a double edged sword? at what point does clicking menus/teleports jeopardize the RPG in MMORPG?
+Fast travel is a risk in a lot of games. The Witcher 3, a great game, risks losing its sense of world from click to teleport. OccupyGStreet https://twitter.com/OccupyGStreet/status/632936972827291648
+I get why players like it. I like it. But I don't think we always recognize what we are giving up for convenience. OccupyGStreet https://twitter.com/OccupyGStreet/status/632937105635676160
+
+I'm curious... if he'll answer... what community has worse personal attacks on its designers? WoW or LoL?
+WoW in my experience. I think it has something to do with long term investment in a character which feels like higher stakes. OccupyGStreet https://twitter.com/OccupyGStreet/status/633050270495191040
+Also I guess with LoL you know exactly what you're getting into, but people play WoW for many reasons. OccupyGStreet https://twitter.com/OccupyGStreet/status/633050461860331520
+However it's also possible I'm just more experienced communicating now and may fewer flubs. OccupyGStreet https://twitter.com/OccupyGStreet/status/633050758741495808
+Riot and Blizzard also have very different communication styles. Blizzard practices polish so players expect that. OccupyGStreet https://twitter.com/OccupyGStreet/status/633050899334586368
+
+
+Diablo III - Patch 2.3 Recap
+Diablofans http://www.diablofans.com/news/48504-patch-2-3-roundup-2-3-releasing-tomorrow has all of the details about the new features coming in Patch 2.3!
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/qzXew-Gl2AQ?rel=0" frameborder="0" allowfullscreen></iframe>
+
+http://media.mmo-champion.com/images/news/2015/august/23DF.png http://www.diablofans.com/news/48504-patch-2-3-roundup-2-3-releasing-tomorrow 
+
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> HeroStorm #4 - Nazeebro
+Carbot released another episode of HeroStorm this weekend!
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/oEf156Aih0Q?rel=0" frameborder="0" allowfullscreen></iframe>

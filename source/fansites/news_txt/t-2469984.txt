@@ -1,0 +1,26 @@
+Stoy2019-03-01, 05:38 PMWoW Classic Update
+Hello Classic enthusiasts! We’ve been following the discussions about Classic closely here on the forums and elsewhere throughout the winter, and wanted to give you an update on a few things that the Classic development team has worked through since BlizzCon and the Classic demo.
+
+The feedback we got from the demo was fantastic. Thank you to everyone who gave us so much feedback to work with, especially the community members who compiled lists of issues that people found with the demo. We’ve looked at everything that was reported, and want to share a few anecdotes with you so you can see how we’re tackling these issues.
+
+One thing many players noticed was the incorrect health regeneration and the spell critical hit multiplier. Good catch! Going into the demo, we thought we’d fixed that and were surprised to see the issue crop up. Before BlizzCon, we specifically checked health and mana regeneration, and fixed the critical hit cases. We also did combat and regeneration tests to make sure we had those accurate.
+
+It turns out that there was a discrepancy between how Classic was configured on our environment at the office correct! and the environment serving the demo to you not correct…. Tracking that down taught us how to best check our environment configuration as we prepare it for launch.
+
+Another issue players reported was that Warlock demon summoning was broken – lots of players said that you shouldn’t lose your current demon until the new one appears. We double-checked and in the original 1.12 WoW, and there, as soon as you started summoning a new demon, your existing demon disappeared. So the demo actually matched how the game played originally. There were a few other reports – such as “rare mobs do way less damage” and “Kobolds at Jangolode Mine run faster than walking speed when running away” – where we were able to confirm that the gameplay was the same in the demo as in the original 1.12 WoW.
+
+It’s important to point out that there are some bugs we’re going to fix before launch, and there are some bugs that we don’t intend to address. As we mentioned in our BlizzCon presentation, some differences aren’t worth fixing, like differences in how the mail works. Nonetheless, we’ve fixed some fairly high-priority issues:
+
+
+Critical Strike rating: Each item now “Improves your chance to get a critical strike by X%.”
+Rogue Energy didn’t work right: it was both benefiting from melee haste and re-calculating more often than it was supposed to. Both issues were fixed.
+Slow Fall no longer applies to your jumps.
+You again get pushback when hit by ranged attacks and wands.
+Dodge, Parry, and Miss were all not happening often enough.
+
+
+That’s not all we’ve done, of course, but we want to give you an idea of what we’re prioritizing: core game systems, combat, and content. We’ve spent time on other things such as user interface and making sure graphics “feel” like they used to, but our primary focus is on gameplay.
+
+Again, we’re following all of your discussions and loving your enthusiasm – and we’re going to get more information for you posted here soon not soon™.
+
+Thank you, and get ready for a Classic Summer!

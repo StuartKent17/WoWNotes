@@ -1,0 +1,111 @@
+chaud2017-03-03, 05:05 AM<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> The Positively Awesome Dragon Paladin Card Design Competition http://www.hearthpwn.com/news/2286-the-positively-awesome-dragon-paladin-card-design
+
+Patch 7.2 - Hunter Class Mounts
+Today we are taking a look at the Hunter class mount http://www.mmo-champion.com/content/6265-Patch-7-2-PTR-Build-23436-Class-Mount-Models.
+
+
+<iframe src="https://player.twitch.tv/?video=v122572666&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no" height="506" width="900"></iframe>
+
+<a href="http://media.mmo-champion.com/images/news/2017/january/HunterMount01.jpg" target="_blank"><img src="http://media.mmo-champion.com/images/news/2017/january/thumb/HunterMount01.jpg" alt="Hunter Class Mount Blue" /></a> <a href="http://media.mmo-champion.com/images/news/2017/january/HunterMount02.jpg" target="_blank"><img src="http://media.mmo-champion.com/images/news/2017/january/thumb/HunterMount02.jpg" alt="Hunter Class Mount Green" /></a> <a href="http://media.mmo-champion.com/images/news/2017/january/HunterMount03.jpg" target="_blank"><img src="http://media.mmo-champion.com/images/news/2017/january/thumb/HunterMount03.jpg" alt="Hunter Class Mount Red" /></a>
+http://media.mmo-champion.com/images/news/2017/january/mvbar300.png http://media.mmo-champion.com/images/news/2017/january/mvbar300.png http://media.mmo-champion.com/images/news/2017/january/mvbar300.png 
+
+
+Addons & Friendly Nameplates in Patch 7.2
+With Patch 7.2, we’re disabling the ability for addons to modify the appearance of friendly nameplates while inside dungeon and raid instances.
+
+While, for the most part, we’re impressed with -- and encourage -- the creativity that addon authors bring to the game using the addon API, occasionally an addon goes too far in terms of automating or trivializing elements of gameplay that are meant to be highly challenging. Recently, we’ve become aware of a couple addons that were using visual adjustments to friendly nameplates as a method to automatically coordinate complex positioning requirements. This caused what was intended to be a difficult test of a group’s ability to identify positioning requirements on the fly to instead become a simple matter of following a visual marker.
+
+In order to prevent this from continuing, we’ve had to disable the ability for addons to modify how friendly nameplates appear while inside of dungeon and raid instances. Nothing has changed outside of dungeons and raids – addons will still be able to customize the appearance of friendly nameplates everywhere else most notably in PvP, where they’re most commonly used in ways we don’t consider problematic. 
+
+We also don’t anticipate that addon authors will need to update their code to accommodate this change; customizations should simply stop working once a player zones into a raid, and start working again once they’ve left. However, if you’d like to double-check, this change should now be active in the current 7.2 PTR environment.
+
+Just to reiterate since I'm seeing some confusion:
+
+
+Nothing whatsoever is changed while you are outside of a raid or dungeon When you zone into a raid or dungeon, only your friendly nameplates if enabled will be forced to use the standard Blizzard appearance Enemy nameplates can still be modified and customized by addons while in a raid or dungeon Once you zone out of the raid or dungeon, any changes made by an addon will once again apply
+
+
+Blue Posts
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight Forums http://www.mmo-champion.com/forums/269-Death-Knight / Skills http://www.wowdb.com/spells/class-abilities/death-knight / Talent Calculator http://www.wowdb.com/talent-calculator#Y / Artifact Calculator http://www.wowdb.com/artifact-calculator#ZAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#Y
+New Death Grip Animation
+Thank you for creating a discussion around Death Grip; it has helped steer our final implementation for 7.2 immensely. Legion has seen many improvements to the feel and style of combat for WoW, and it is an initiative that we are continuing to pursue.
+
+The goal for all of these improvements is to maintain as much of the mechanical feel of abilities as possible as they have existed for many years while delivering an intuitive, consistent, and modern visual experience. For example, a hammer should deal damage when it slams into a murloc, not before. In some cases, we can bend the rules to allow clutch mechanical interactions to win, such as Death Strike providing its heal instantly while the damage occurs when your weapon connects.
+
+We will be following similar rules for our final implementation of Death Grip, which will stop the target’s spellcast instantly but start the pull a fraction of a second later when the spell connects with its target even faster than it was for much of 7.2 PTR. This should feel consistent with all of the other attacks Death Knights currently have. We are also adding a few more elements to the visual of Death Grip to bring the vibe closer to the original. The overarching goal of harmonizing mechanics and aesthetics is a very fine needle to thread, but it is one worth fighting for.
+
+Thank you again for your feedback. See you in Acherus. Official Forums http://us.battle.net/forums/en/wow/topic/20753201107?page=7#134
+
+7.2 Death Knight / Monk Pets and their Acquisition
+Hi everyone! Thanks for your feedback, wanted to drop in a few updates/notes.
+
+In the next build, you'll see that the required currency for each bonus item has dropped from 10000 to 1000 Order Hall Resources. We agree that the "hard part" of getting the bonus items should be maxing out your artifact, not the grind afterwards.
+
+In 7.2, we want these bonuses to feel like a badge of honor for players that have unlocked the final ability on their empowered artifact. For some time they'll be pretty exclusive, and this is intentional. It makes sense for the Blood Death Knight, with their bloody mount, to also have the Bloodbrood Whelpling, showing off their dedication to their specialization.
+
+It's also important to note that we also have no plans to remove these items in the future, and we will re-evaluate their acquisition in a post-artifact world. If you don't want to go for them right now, don't worry, you won't be permanently missing out on anything.
+
+I hope this assuages some of your concerns. As always, we're looking forward to your continued feedback! Blue Tracker http://blue.mmo-champion.com/topic/802215-72-dk-monk-pets-and-their-acquisition/ / Official Forums http://us.battle.net/forums/en/wow/topic/20753098752?page=6#120
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid / Skills http://www.wowdb.com/spells/class-abilities/druid / Talent Calculator http://www.wowdb.com/talent-calculator#s / Artifact Calculator http://www.wowdb.com/artifact-calculator#tAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#s
+Guardian Threat
+There are two things going on here:
+1 Guardian damage is a little low on the primary target particularly in a burst context. As people have probably seen on PTR, we're shifting some damage into Mangle in 7.2. However, this isn't enough to account for the "other tank pulled off me immediately after Growl" anecdotes.
+2 We're looking into potential bugs that explain that; there may be something inconsistent about the Growl debuff and its threat bonus. Official Forums http://us.battle.net/forums/en/wow/topic/20753525184?page=1#4
+
+Feral Druid Feedback
+Thanks for the constructive feedback here!
+
+We don't want to make Feral overpowered in single-target just because the priority rotation is more complex. However, we are looking into Feral's singe-target DPS right now, as it is intended to be where Feral is strong. Blue Tracker http://blue.mmo-champion.com/topic/801526-feral-druid-in-legion/ / Official Forums http://eu.battle.net/forums/en/wow/topic/17615082466?page=1#3
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk Forums http://www.mmo-champion.com/forums/341-Monk / Skills http://www.wowdb.com/spells/class-abilities/monk / Talent Calculator http://www.wowdb.com/talent-calculator#o / Artifact Calculator http://www.wowdb.com/artifact-calculator#p / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#o
+Mistweaver Talents
+In the next PTR build not today's, Mistweavers will learn Fortifying Brew at level 55. The Windwalker version of this spell is renamed to Fortifying Brew to match, and will continue to be an option at Honor level 22.
+
+Removing mistwalk because mws are too strong in bgs. Okayyy...But this change destroys mws completely in arenas, when they are not even top performing healers; and giving a 7 min cd fortifying brew instead? are you joking? i get it, you want us all to become your favorite child - druids.
+
+I doubt it'll be 7 min. The only reason why it's 7min for BrMs is because its CD is reduced with KS/TP. It'll most likely be 2m CD like the WW's.
+Currently 90 second cooldown, 15 second duration to match the Windwalker version. Blue Tracker http://blue.mmo-champion.com/topic/800832-mistweaver-talents/ / Official Forums http://us.battle.net/forums/en/wow/topic/20753190146?page=12#233
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin Forums http://www.mmo-champion.com/forums/273-Paladin / Skills http://www.wowdb.com/spells/class-abilities/paladin / Talent Calculator http://www.wowdb.com/talent-calculator#I / Artifact Calculator http://www.wowdb.com/artifact-calculator#JAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#I
+Protection Paladin Feedback
+This is excellent feedback. Concise, actionable, clear, non-hyperbolic. Thank you.
+
+You mentioned a couple of bugs in here; these are both fixed in current/upcoming 7.2 PTR builds:
+
+Procs reset the swing timer. This might be a bug but this is the biggest issue with the talent. On paper, the talent should be free damage. However in practice, its actually a DPS loss. The damage lost from the swing timer resets is far more than the damage gained from the damage reflection.
+
+Judgment of Light
+With all three Paladin specs having access to this talent, it no longer makes sense for it not to stack between multiple Paladins. It would be a nice quality of life change if it did. Blue Tracker http://blue.mmo-champion.com/topic/801897-protection-paladin-feedback/ / Official Forums http://us.battle.net/forums/en/wow/topic/20753545250?page=1#3
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior Forums http://www.mmo-champion.com/forums/278-Warrior / Skills http://www.wowdb.com/spells/class-abilities/warrior / Talent Calculator http://www.wowdb.com/talent-calculator#E / Artifact Calculator http://www.wowdb.com/artifact-calculator#F / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#E
+Protection Warrior Feedback
+Agreed that clear and concise are best. However, this might be a bit too concise.
+
+We're quite interested in Protection Warrior feedback. Feel free to expand on talent choices, rotation, legendaries, artifact traits, etc. Blue Tracker http://blue.mmo-champion.com/topic/802002-concise-prot-warrior-feedback/ / Official Forums http://us.battle.net/forums/en/wow/topic/20753515694?page=1#3
+
+
+Blue Tweets
+Legendary Items
+which is no different than live. So it’s not worse, just not better for those legendaries, but better for the others
+Yep. If you have Norgannon's and Prydaz on a mage of any spec, you have two functional legendaries for that spec. WatcherDev https://twitter.com/WatcherDev/status/834937206586257408
+
+The question "Why are Brewmasters the only spec in the game with 2 legendaries in ame armor slot Belt, Cinidaria & Gai Plin?
+Honestly, because we screwed up, but there's no real fix at this point now that both items have been out there for all this time. WatcherDev https://twitter.com/WatcherDev/status/834967323219906560
+
+PvE
+Design raid bosses around 54 traits and expect raiders not to farm it? flawed philosophy.. don't do that for ToS please.
+Completely agreed though, and Tomb will be different. WatcherDev https://twitter.com/WatcherDev/status/834934266991542273
+
+While I agree somewhat about guild expectations being a problem, Krosus and back part of NH feels tuned around 54 traits
+Star Augur onwards were indeed tuned for 54, but that's because we looked at the audience and the audience was already at 54. WatcherDev https://twitter.com/WatcherDev/status/835156538650066945
+The damage had been done. And folks who are in mid-tier Mythic guilds would have several weeks before they get there. WatcherDev https://twitter.com/WatcherDev/status/835156758435811328
+
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchMini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Overwatch - New Tank Hero: Orisa
+Overwatch added a new tank hero https://playoverwatch.com/en-us/blog/20594520 today, Orisa! 
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/Lvm0of3iDUU?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/DWqhXWRaMmU?rel=0" frameborder="0" allowfullscreen></iframe>

@@ -1,0 +1,67 @@
+Boubouille2009-02-19, 01:21 PMRecent In-Game Fixes
+Listed below are recent fixes we have applied to the game.
+
+2/18/09:
+Icy Prisms are now unique, they cannot be mailed but can still be traded.
+The Rogue ability Mutilate now does its appropriate damage based on talents.
+Raise Dead now properly detects the presence of Corpse Dust in your inventory.
+The Glyph of Windfury Weapon will not apply additional attack power.
+A Grounding Totem is now properly destroyed even if the grounded spell did not do damage.
+Tremor Totem now properly pulses every 3 sec.
+Crippling Poison now has a PvP duration of 10 seconds.
+Wound Poison now has a PvP duration of 10 seconds. 
+
+
+Tweaks to mana regeneration in 3.1
+The goal is to have mana last about the same for all healers. We don't think many players would be that interested in a style where you heal crazy good for a short period and then run OOM. How classes manage their mana varies a lot, and we are making tweaks to it for 3.1 to try and keep them in line. For example, the shadow fiend needs to be more reliable.
+
+I am still not following the logic that Int now trumps Spirit by even more. It may have been a better stat already, but these changes shouldn't affect it that much unless you A skip Meditation and Intensity, or B relied a whole lot more on OOFSR regen than the average raid healer of reasonable skill.
+
+I will break from our normal practice and go ahead and provide the numbers, just to make sure nobody is guessing about the details when doing their estimates:
+
+The amount of base mana regen granted has been reduced 40%. We called this "Spirit" in the notes, since most players associate OOFSR regen with Spirit, but in reality Int factors into the equation as well and we only lowered the constant, not the relative contributions of Int or Spirit. In retrospect, this probably caused more confusion than it alleviated, but mana regeneration is a fairly technical concept.
+
+The effects of talents that provide mana regen while casting have been increased by 67%. This includes: Arcane Meditation, Improved Spirit Tap, Intensity, Mage Armor, Meditation, Pyromaniac, and Spirit Tap. For example, Intensity and Meditation are now 17/33/50% mana regen while casting up from 10/20/30%. For most dps classes who never got much mana from OOFSR in the first place, the results should not be noticeable. Boomkin may be a possible exception because of Innervate, and we'll take a look at that.
+
+This should leave mana regeneration while casting even the contribution of Spirit relatively unchanged, but reduce mana regeneration while not casting by 40%. If you don't understand our logic, I suggest you re-read the excellent post I quoted above.
+
+Since paladins don't rely on any of those abilities for mana regeneration, we lowered the healing penalty of Divine Plea to -50%. We are also likely to make Spiritual Attunement provide less mana for non-tanking paladins. We are not touching Illumination for the moment. Nor are we lowering the effects of Replenishment though as I have suggested, it would be our likely next target if we aren't happy with the results of these changes. 
+
+
+Blue posts
+Ulduar - No attunement
+I don't believe there is any attunement currently planned for Ulduar. Instead you can head straight into the dungeon and enjoy it instead of running around somewhere and getting ready only to find that two of your main healers didn't do the attunement yet. Source http://blue.mmo-champion.com/1/15211002714-attunements-for-ulduar.html
+
+Healing classes disparities in Arenas
+We think Holy paladins are dominating healing in Arenas too much, but some of these changes should help that. Plus, paladin defenses just tend to help them survive when burst is high. This is a trend that happened even in previous seasons. We don't think the success of Resto shamans in Arena is necessarily a mana sustainability issue, but has a lot more to do with what other classes can do to priests and druids. Which is also not an ideal situation. 
+
+I thought I mentioned this at one point, but we were pretty happy with Resto shaman mana regen. They were our target and we wanted to bring priest and druid regen by making non-casting regen lower and paladin regen through DP and SA closer to that point. Source http://blue.mmo-champion.com/27/14990765234-i-dont-get-the-regen-nerfs.html
+
+Healing - Mana Regeneration in 3.1
+To those players who feel like they already have trouble managing mana now, it's hard for me to evaluate each case to know what is going on. My only suggestion is you need to treat mana regeneration as a real mechanic and not just go for throughput in all of your gear and talent choices. We are going to get all of this on the PTR so that we and the community can run additional tests to make sure that all four healing classes feel valuable and effective. Ulduar is definitely going to shine a harsher light on PvE balance in all forms and we're just going to have to deal with problems real or imagined as they come up. Source http://blue.mmo-champion.com/27/14990765234-i-dont-get-the-regen-nerfs.html
+
+Short Arena Tournament Q&A
+Will shards be buyable? Yes.
+Will professions be carried over and if not, will they be instantly 450? No.
+Will PVE gear be available? Yes.
+Will the wintergrasp helmets be available? No. Please check the full list of available items at: http://www.worldofwarcraft.com/pvp/tournament/items.xml http://www.worldofwarcraft.com/pvp/tournament/items.xml
+Will the Armored Murloc Pet bind on pickup? The pet will be account bound, so a character does not need to be designated. The account that was used to register will receive the pet if eligibility requirements are met. Source http://blue.mmo-champion.com/11/15207811942-2009-arena-tournament--registration-open.html
+
+Paid Realm Transfers activation
+Paid transfers are enabled/disabled automatically. If the realm hits a certain maximum population and queue consistently over a given period of time, transfers to that realm will automatically be disabled. They will be re-enabled once the maximum population drops to an acceptable level for a given period of time.
+
+The automated thresholds are tried and true to prevent destination realms consistently experiencing queues from receiving paid transfers. Source http://blue.mmo-champion.com/1/15234884365--why-allow-transfers-to-realms-w-queues.html
+
+
+World of Warcraft Comic #16 Preview
+In the latest issue of the World of Warcraft comic, Broll receives a mysterious summons away from Theramore on the eve of the summit between King Varian and Thrall. Garona is taken captive by the Forsaken, but to what end? Plus, the return of Rehgar Earthfury! Check out the preview pages http://www.worldofwarcraft.com/misc/wccomic/issue-16-sneakpeek.html for yourself. 
+
+
+http://static.mmo-champion.com/mmoc/images/news/2009/february/comic16preview.jpg http://www.worldofwarcraft.com/misc/wccomic/issue-16-sneakpeek.html
+
+
+New Fan Art: Ragnaros
+A new fan art has been added to the official site http://eu.blizzard.com/screenshots/thumbnail.html.
+
+
+http://static.mmo-champion.com/mmoc/images/news/2009/february/ss122_small.jpg http://static.mmo-champion.com/mmoc/images/news/2009/february/ss122.jpg

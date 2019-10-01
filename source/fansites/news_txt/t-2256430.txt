@@ -1,0 +1,76 @@
+chaud2017-07-16, 02:57 AM<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> DreamHack Valencia 2017 Results, Decks, and VODs http://www.hearthpwn.com/news/2998-dreamhack-valencia-2017-results-top-16-decks-and
+
+Upcoming Patch 7.3 Frost Death Knight Changes
+The next PTR build should have a round of changes aimed at addressing various concerns with Frost. The major issues we're focused on are:
+
+
+The spec is too dominated by Breath of Sindragosa which has knock-on effects on talent choice throughout the tree.
+Breath of Sindragosa http://www.wowdb.com/spells/152279, when you do use it, can be maintained for far too long. In addition to causing the talent/legendary lock-in around it, it means the demand for continuous time on target is very strict for extended periods of time.
+The spec has many talents/legendaries that individually or taken together flood it with resources. Breath contributes to this by encouraging you to take all of them, but it's also a problem on its own.
+Talent balance generally has to be reviewed, especially after addressing all of the time.
+We're trying to limit the scope of the changes in the patch, to address the above without opening up the core rotation for changes.
+
+
+All damage abilities increased by 27%
+Hungering Rune Weapon http://www.wowdb.com/spells/207127 L58 and Glacial Advance L100 swapped positions
+Breath of Sindragosa http://www.wowdb.com/spells/152279 damage increased by 10% 
+
+We want to preserve the identity of Breath of Sindragosa, including the steady resource drain being the main limiting factor, and the expression of skill in optimizing around that. So in trying to avoid less natural solutions like capping the duration or redesigning how it works, we're trying to limit the talent/legendary synergies that cause huge variance in how long Breath can be maintained. And breaking the Breath of Sindragosa/Hungering Rune Weapon interaction, on its own, goes a very long way toward making Breath's duration more reasonable again. DPS adjustment for the change is being put mostly into the baseline spec rather than into the power of Breath, because it's currently so far ahead of other setups.
+
+
+Murderous Efficiency http://www.wowdb.com/spells/207061 L56->L57, Frozen Pulse L57->L90, and Runic Attenuation L90->L56 swapped positions
+Hungering Rune Weapon http://www.wowdb.com/spells/207127 duration 12s from 15s and additionally grants 20% haste
+Bugfix: Hungering Rune Weapon correctly generates a Rune every 1.5s instead of every 1s
+Murderous Efficiency http://www.wowdb.com/spells/207061 chance 50% from 65%
+Horn of Winter http://www.wowdb.com/spells/57330 cooldown 45s from 30s
+Koltira’s Newfound Will generates 1 Rune from 2 and now causes Obliterate to deal 10% extra damage
+
+Using even a small subset of all of the above effects causes the rotation to be quite flooded. They are all being either weakened in power with compensation to the baseline spec, or given non-resource-granting effects for part of their value. In addition, the two most egregious offenders Murderous Efficiency and Horn of Winter can no longer be taken together.
+
+Overall, there should now be a much broader set of talent combinations that produce a good-feeling rotation in which there are resources to do something on most GCDs, but you're still able to spend them down. Including, for example, during Hungering Rune Weapon, which is overly hectic or frustrating right now when you can't spend all of its resources.
+
+In addition, the talent rearrangement puts Frozen Pulse on a row with two predominantly AoE talents, which is a better home for it. The Frozen Pulse/Icy Talons "machinegun" synergy is preserved, but can no longer be taken alongside Runic Attenuation as well.
+
+NB: The Hungering Rune Weapon bug may be fixed on live shortly as well, after we test the fix and analyze the impact.
+
+
+Icy Talons http://www.wowdb.com/spells/194878 bonus 15% from 10%
+Shattering Strikes http://www.wowdb.com/spells/207057 bonus 60% from 40%
+Freezing Fog http://www.wowdb.com/spells/207060 effect 20% from 30%
+Obliteration http://www.wowdb.com/spells/207256 duration 10s from 8s
+Frozen Pulse http://www.wowdb.com/spells/194909 damage reduced by 39%
+
+Minor talent rebalancing to match the above rearrangements and talent changes; numbers are likely to be updated as the rest of the changes settle into place.
+
+EDIT: Added Frozen Pulse change which was missed when I copied changes into the post earlier. As with the other changes, this is meant to make Frozen Pulse balanced within its new row, and meant to be accounted for in the overall DPS increase above.
+
+Breath can retain its role as a talent that encourages building around it to some degree and its synergies with things like Runic Attenuation, Koltira's Newfound Will, and Seal of Necrofantasia are preserved. But without the overpowering Hungering Rune Weapon interaction, there is a lot more room for other builds to compete, and we've buffed the spec's baseline damage a great deal to shift the landscape towards all talents being closer together in DPS. As always, we'll continue to examine all of these changes based after people can start to test them on PTR.
+
+
+Blizzard App Beta Update
+The Blizzard App has been updated to add a collapsible sidebar with smaller game icons.
+
+
+http://media.mmo-champion.com/images/news/2017/july/thumb/bnetBeta1.jpg http://media.mmo-champion.com/images/news/2017/july/bnetBeta1.jpg http://media.mmo-champion.com/images/news/2017/july/thumb/bnetBeta2.jpg http://media.mmo-champion.com/images/news/2017/july/bnetBeta2.jpg 
+
+
+Blue Tweets
+ToS mechanic scaling for 10 man groups still doesnt feel right. Been a problem in ToV and NH too. Please re-evaluate this.
+Hello! We do analyze results and watch for things like this. Can you point to any specific encounters or situations where it feels notable? WarcraftDevs https://twitter.com/WarcraftDevs/status/884552423099867136
+
+
+Ghostcrawler Tweets
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.
+Can you explain what the anti-combo anti-pattern is?
+It’s when something the game is asking you to do interferes with another thing the game is asking you to do in a way that is really frustrating. Games are always asking you to make trade-offs do you want more offense or more defense?, and those can be hard decisions, but that’s not really what the anti-combo issue is. 
+
+Zileas called it “anti-combo” because it feels like you are being asked to take steps which actively move you away from your desired result. Imagine a fighting game combo, ABC, where A adds 10% damage, and C adds 20% damage, but B removes 10% damage. Sad trombone sound.
+
+An example we talk about all the time is the vanilla WoW rage model for tanks. You need to take damage to earn rage to do stuff. One of your core rotational buttons was Revenge, which stuns the target. A stunned target isn’t attacking and so isn’t giving you rage. Likewise, warrior tanks stacked dodge and parry, which meant you weren’t taking hits and generating rage. The better you got as a tank by improving your avoidance, the worse you became as a tank by decreasing your rage. Source https://askghostcrawler.tumblr.com/post/159508456788/can-you-explain-what-the-anti-combo-anti-pattern
+
+
+StarCrafts - Season 5 Ep22: The Duel
+Another episode of StarCrafts has been released!
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/ydgIeopqmE4?rel=0" frameborder="0" allowfullscreen></iframe>

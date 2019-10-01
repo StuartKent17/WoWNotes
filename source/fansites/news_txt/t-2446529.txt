@@ -1,0 +1,105 @@
+Stoy2018-11-03, 09:36 PM<img src="http://media.mmo-champion.com/images/news/2012/july/wowmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Restoring History: Creating WoW Classic Panel https://www.mmo-champion.com/content/8136-Restoring-History-Creating-WoW-Classic-Panel
+
+<img src="https://media.mmo-champion.com/images/news/2018/november/WC3Reforged.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Warcraft 3: Reforged was announced! Submit your questions now for the developer Q & A! https://www.mmo-champion.com/threads/2446287-Warcraft-3-Reforged-Submit-Questions-for-the-Developers?p=50417439#post50417439
+
+
+
+<div style="max-width:905px;margin-left:auto;margin-right:auto;">
+<div style="float:left;">
+<iframe src="https://player.twitch.tv/?channel=warcraft&!autoplay" frameborder="0" scrolling="no" height="378" width="620" allowfullscreen></iframe>
+</div>
+<a href="http://twitch.tv/warcraft/chat?popout" target="twitchChat1" onclick="this.style.visibility='hidden'" style="font-weight:bold;"> <div style="width:280px;height:378px;float:left;background-color:#333333; background-image: url'//media.mmo-champion.com/images/news/2014/june/chatbg.png'; cursor: pointer;" onClick='document.getElementById"twitchChat1".src="somepage.html";'>
+<iframe frameborder="0" scrolling="no" height="378" width="280" id="twitchChat1" name="twitchChat1" style="postion:absolute"></iframe>
+</div></a>
+</div>
+<br>
+<div style="clear:both;"></div><a href="http://twitch.tv/embed/warcraft/chat?popout" target="twitchChat1" onclick="this.style.visibility='hidden'" style="font-weight:bold;">Click to load chat</a>
+
+
+Restoring History: Creating WoW Classic Panel Recap
+At BlizzCon 2018, the WoW community got their first chance to experience World of Warcraft Classic for themselves. To help players understand what goes into bringing a Blizzard-quality experience like this to life, software engineers Brian Birmingham and Omar Gonzalez along with Game Director Ion Hazzikostas took the stage Saturday afternoon to share their insights.
+
+Finding the Pieces
+Before we could begin our journey to faithfully recreate the original WoW experience, the WoW Classic team first had to take a close look at which elements of the original game we had to work with. Ultimately, it boiled down to three main pieces: database data, art assets, and source code.
+
+The database data includes aspects of the game like the hit points a creature has, the amount of stamina an item has, spawn locations around the word, and millions of other data points.
+Art assets include everything from how a night elf looks when it Shadowmelds, to the sounds a Pyroblast makes, to the motion of an orc swinging an axe.
+The source code contains the instructions on how to display the game, process input, and connect people.
+To start out, we had to find out how far back our source code archive went. We discovered the first piece of code that could be connected to WoW went as far back as 1997—well before World of Warcraft development even began.
+
+This was a good start, but there were issues with how the developers used to handle updates to the database data. Unlike the source code, for which Blizzard had archives for multiple branches of the game that could be worked on and developed as separate pieces, early database data was overwritten with each commensurate update. Thankfully, that problem was fixed very quickly after launch, and when we looked, we found data going back to version 1.12—and even earlier.
+
+Finally, we found art assets on old tape backups, which matched all the database data that had been preserved.
+
+With all three components coming together, we were able to do a test and log in to the game, create new characters, kill boars, and complete some quests.
+
+Classic Gameplay in the Modern World
+While we had a working version of the game, there were many more challenges to overcome. The technology supporting the game has come a long way since when it first launched, including cloud support, Blizzard Battle.net desktop app integration, customer support features, and a lot of fixes for bugs and exploits.
+
+To get past these hurdles, the team looked at what we liked art and data of what we had and what we didn’t like the code. We wanted to see if we could utilize classic art assets and data within our modern code and get things to play nicely together. Things didn’t quite work right out of the gate, but with some trial and error, we were able to pull together a proof of concept of how to get things to work together and have something playable. This built our confidence that we could deliver a Blizzard-quality experience with the modern platform.
+
+From Prototype to Demo
+The building blocks of database data, source code, and art assets interplay with each other to create player-facing features like terrain, gameplay, animations and lighting. Different features require the building blocks to relate to each other in multiple ways.
+
+To fully understand the interplay, consider terrain. This includes the placement of hills and valleys, trees, buildings, and more. When hooking up the old terrain data files to the new modern game system we realized that the way the system looked at the shape of data was different. This resulted in the updated system and classic data not aligning, resulting in weird issues like Kolkar campfires underwater or burnt-out trees from the Cataclysm era appearing in the original world.
+
+
+https://media.mmo-champion.com/images/news/2018/november/thumb/wowclassicchart.jpg https://media.mmo-champion.com/images/news/2018/november/wowclassicchart.jpg 
+
+
+Fortunately, WoW’s modern editor is able to perform some of these data conversions, and for the terrain data we could convert it with the same editor we used on Battle for Azeroth. The modern editor “knows” how to load the old terrain format and how to transform it into the new terrain format and export it to the modern engine. This corrected the issues of campfire placements and the appearance of trees, among other things.
+
+Another hurdle we had to overcome was how to store and merge our data. World of Warcraft has multiple updates or patches in development at any one time, each in a different stage of development. If an art asset or terrain file is added to one patch, the system is designed so that it also automatically shows up in later patches. This meant that If we had simply inserted a new patch for WoW Classic into the current development environment, we would have overwritten things like the current broken dam in Loch Modan with the previous intact version—and as you can imagine, this would have caused issues for Battle for Azeroth.
+
+To avoid this, the team “taught” our tools some new tricks so that we could update WoW Classic without affecting the current version of the game. We copied the 1.12 data into a new project, taught the tools to distinguish between them, and now as the WoW Classic team makes patches, any changes stay within the Classic chain without ever interacting with the current game’s data. This might seem simple—like copying a directory—but the tricky part is teaching all our tools how to understand this so that they can make edits automatically. Being able to use our internal tools is a huge benefit, and we wanted to make sure Classic had access to all of WoW’s infrastructure and data.
+
+Classic Models and Animations
+We’ve also fully restored the models’ classic appearance, but as we worked to restore these, we found some models were broken. In some cases, textures were missing and we had to do some research to find out just how those items should appear and correct them within the system.
+
+The original animations have also been restored, but WoW’s animation system is tightly coupled with its gameplay code. We had to make changes to both data and code to get the animations back to the 1.12 look. We ran into a few bugs along the way, such as models that should appear prone instead appearing upright, but we were able to correct these with a few fixes.
+
+Restoring Class Systems
+Some class systems from the original game simply don’t have a modern equivalent. The class probably most affected by this is the hunter. The pet happiness and loyalty systems were removed a long time ago, as well as pet training and the ability to use both a ranged weapon and a melee weapon. In these cases, converting the old data to the new system wouldn’t work, simply because there is no new system to match. In this instance, we had to bring back the old code—and we did. Fortunately, the restoration went smoothly, though the reality of having to buy arrows or feed their pets again took a few people in our internal tests by surprise.
+
+Rogue combo points posed another challenge, because the game’s modern resource system knows how to gain and spend combo points, but not how to lose them when changing targets. There are also the older combat formulas to consider, so we had to bring back the code for the prior combat formulas including critical hits and crushing blows. Their chance to occur is also modified by the difference between the defender’s defense and the attacker’s weapon skill. Yes—weapon skill is back. We had the data for this aspect of the classic game, but we also needed to restore the code that increased your skills when you used them and made your skill level affect your chance to hit or get a glancing blow.
+
+User Interface and Lighting
+The character screen is a great example of an iconic user interface that we clearly needed to restore, and we put effort into bringing it back—even down to the screen effects and lighting behind the character. While we can’t promise perfection, we can promise that we’re doing our best to create an authentic experience in every way we can.
+
+For another example of lighting, we looked at Elwynn Forest. We had a period in Warcraft’s history where we changed all the lighting equations and as a result, our environment artists had to take a pass over all of the zones to improve the lighting and take advantage of the new equations. To recreate the original experience, we had to rewind those changes. The first thing we did was restore the old lighting data. This brought us much closer to the original lighting—and with a few more changes to the distance formula, fog formulas, and some changes to shadows, we were able to bring things even closer to the original lighting.
+
+Are We Done Yet?
+With all this work, we’re sure you’re wondering if we’re done yet, or if it wouldn’t have just been easier to update the reference client.
+
+After this past year of working on this project and forging our way through the various bugs and challenges, one consistent theme that’s emerged is that the difference between what we have and what we want is clearly visible. When we look at today’s World of Warcraft, we can see the differences between the modern game and the classic one. If we tried to update the reference client, we would have instead been tracking down a lot of “invisible” changes such as exploits waiting to be abused, crashes that don’t show up until you have millions of players online at once, and more. We chose to approach the problem in a way that makes our job clear and obvious instead of difficult and hard to see. 
+
+So even though you can play a WoW Classic demo today, we’re not done quite yet. We have lots of capital city features to look at, such as banks and auction houses. We need to test our dungeons and raids to make sure the bosses’ abilities all still work correctly. We need to examine all of our PvP systems. But we’re committed to taking a close look at all of these and more as continue bring the classic game back to life.
+
+Philosophy and Future Plans
+In restoring World of Warcraft Classic, our guiding principle has been to provide an authentic experience. Things might run a bit smoother and the hardware is better, but the game should still look and feel like you’re playing World of Warcraft from 2006. Things like combat equations, original models, and hunter skills are certainly part of that—but things like social dynamics are a part of that too. The reliance on others, the effort it took to assemble a group, and how that impacted your journey into a dungeon—these were all part of the classic experience that we wanted to preserve.
+
+Many decisions we made were fairly clear cut. Things like Dungeon Finder were clearly a “no.” So were things like cross-realm grouping, the achievement system, unified auction houses, and flying. 
+
+Other decisions were slightly less clear cut. At one point in WoW’s history, there was an 8 debuff limit on any one target. This was later raised to 16, and today there is no debuff limit. Thes change radically changed the balance of classes and strategies players could employ when using these debuffs to overcome content. To preserve that balance—and to avoid the slippery slope of retuning patch 1.12 data to compensate for such modern-era changes—we’re looking at setting a debuff limit of 16 for WoW Classic.
+
+In-game mail between guildmates now is instant, but in the past, it had a 1-hour delay, just like mail between strangers. The change to instant mail made things more convenient, but removed the social interaction of having to meet up with someone to make a transaction if you wanted something sooner. So we’ve reintroduced that delay for that reason. Other conveniences such as auto-completion of names or quickly clearing a mailbox have been left in. This seemed an easy enough call given that someone could create an add-on to do the very same thing, and we felt those sorts of conveniences didn’t impact the fundamental “classic” experience.
+
+In the past, if someone accidentally looted something they didn’t mean to in a group, players would have to contact customer support to trade it. In the modern system, players are given a period of time in which they can still exchange loot with others. This is a convenience we felt was worth retaining for Classic rather than making people go through customer support. Sorry ninja looters!
+
+For classes who rely on energy regeneration such as Rogues, things have also changed significantly since the classic era. Regeneration used to occur in chunks based on the server “heartbeat.” So, to gain 20 energy, it would take a full two seconds. Today, the system is smoothed out so that that 1 energy regenerates every tenth of a second. This difference changed the timing of being able to use certain abilities. What seems like a minor convenience today actually changes the very flow of combat rotations and burst capabilities in classic gameplay. We felt this was important to restore to provide this authentic experience.
+
+What add-ons can do has changed over the years and have become much more sophisticated as authors have gained years of experience and savvy. We’re not 100% on a concrete solution to what this means for WoW Classic yet, but one thing we know is that we’re not going to roll all the way back to the 1.12 add-on API. Doing so would open the way for nearly complete automation of combat decision making allowing for “bot” behavior that is counter to the core WoW gameplay experience. This is one thing we know we don’t want. On the other end of the spectrum, the modern API offers some additional functionality for creating social features that could also undermine the authentic classic experience. We’re still figuring out the details and looking for a good middle ground. We’ll be keeping a close eye on feedback from the community and add-on authors on where we should be setting those boundaries.
+
+Content Release Plan
+While we’re using patch 1.12 as our foundation, we also want to make sure we’re providing the journey players will expect. To provide the roadmap for this journey, we have four stages that we plan to integrate into the experience over time:
+
+
+Stage 1: Molten Core, Onyxia, Dire Maul, Kazzak, Azurgos
+Stage 2: Blackwing Lair, Battlegrounds and PvP rewards, Zul’Gurub
+Stage 3: Ahn’Qiraj including opening event, Tier 0.5, Silithus content, Green Dragons
+Stage 4: Naxxramas Raid, Scourge Invasion
+
+
+These plans are subject to change, but we wanted to provide an inside look at future plans. We look forward to continuing to hear your thoughts as we continue to bring WoW Classic to life.
+
+BlizzCon attendees and those with the BlizzCon 2018 Virtual Ticket https://shop.battle.net/product/blizzcon-virtual-ticket?blzcmp=blizzcon_shop_nav can try the WoW Classic demo today! For more information, read or recent Developer Watercooler https://worldofwarcraft.com/en-us/news/22548005/dev-watercooler-inside-the-world-of-warcraft-classic-blizzcon-demo and demo restrictions forum post https://us.battle.net/forums/en/wow/topic/20769628564#1. Then, join us to discuss the demo in the forums https://us.forums.blizzard.com/en/blizzcon/t/world-of-warcraft-classic-demo-forum-category/565.

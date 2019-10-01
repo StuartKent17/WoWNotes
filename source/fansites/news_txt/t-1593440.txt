@@ -1,0 +1,20 @@
+chaud2014-09-17, 05:03 PMEngineer’s Workshop: Engine Evolution in Warlords of Draenor
+Welcome to the first in an ongoing series of programming- and engineering-focused articles that, over time, will cover some of the technical nuts and bolts that go into creating and running World of Warcraft.
+
+Before we kick this first one off, a quick warning: What follows is a fairly technical explanation for a graphical-setting change related to anti-aliasing. Most of you probably won’t notice any difference at all—this is primarily for those who tend to tinker with their hardware and graphical settings.
+
+In short, we’re taking strides to improve the performance of World of Warcraft, while also ensuring there’s plenty of potential to further increase graphical fidelity and enhance our support of high-end CPUs and graphics hardware.
+
+For Warlords of Draenor, we made a decision to remove Multisample Anti-Aliasing MSAA and instead include a new anti-aliasing technology called Conservative Morphological Anti-Aliasing CMAA. This change is going to allow us to bring some overdue technological advancements to World of Warcraft over the course of the next few years—we’re thinking long-term with this change.
+
+One reason MSAA remained viable for WoW over the past decade was that the GPU had the time and resources to handle it. WoW has been a CPU-bound game for much of its lifetime, but during the Warlords development cycle, we endeavored to change that. A lot of that work involved analyzing the flow of data through our code and making sure we work on only what we need to for any given frame. One example is we now variably reduce the number of bones that need to be animated based on proximity and view sometimes called level of detail, or LOD, a primary consumer of CPU time. We’ve also added a job system that the engine uses to task out animation and scene management in ways we had prototyped in Patch 5.4, but are expanding in Warlords.
+
+The outcome of all of this is that more than ever before, World of Warcraft relies heavily on a GPU that previously was largely free to handle things like MSAA. We explored a number of options to reconcile this increased GPU demand with the game’s anti-aliasing needs, and ultimately decided to embrace CMAA as our anti-aliasing technology for Warlords of Draenor. As with anything that can potentially change the look of the game, we vetted removing MSAA through our engineering and art teams before coming to the conclusion to swap it for CMAA. CMAA provides solid anti-aliasing at a fraction of the cost in memory and performance. It also integrates well with technologies we have planned for the future, and helps us bring those to the game sooner. We also support FXAA Fast Approximate Anti-Aliasing, an even lighter-weight solution, as an option for our players using DirectX 9.
+
+CMAA fulfills our goals of providing high-quality anti-aliasing at reduced performance cost, while giving us the extra headroom we need to further improve the graphical fidelity of the game. We don’t have to make any architectural concessions within the engine for CMAA to work, and for Warlords of Draenor we’ve already been able to implement new graphical features like target outlining, soft particles, a new shadowing technique, and refraction—and more graphical features are on the horizon for future patches and expansions.
+
+For the launch of Warlords of Draenor, CMAA is the top-tier graphical setting available, but after release we’ll be exploring more options for players with high-performance graphics cards—and if they provide quality while still fitting into our future technology plans, we’ll take a serious look at adding them to the game.
+
+The graphical future of World of Warcraft is a bright one, and the changes we’ve made during the development of Warlords of Draenor have laid the groundwork for us to continue making the game look better and better far into the future.
+
+Thanks for reading!

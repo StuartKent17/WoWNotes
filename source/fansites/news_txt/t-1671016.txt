@@ -1,0 +1,237 @@
+chaud2015-01-03, 09:57 AM<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Upcoming EU Currency Adjustments, Shop Discounts Coming in Beta, Skin Spotlight: Great-father Winter Rehgar http://www.heroesnexus.com/news/1273-upcoming-eu-currency-adjustments-shop-discounts
+
+Armory Stats - Player Achievement Points Distribution
+The holidays continue, so today we are taking a look at the achievement points distribution of Level 90 end of Mists of Pandaria and Level 100 players. There are 3.7 million characters and 2.6 million accounts that make up this sample. Keep in mind data collection started recently, so there may be some characters that we haven't come across yet.
+
+The number of characters in Mists of Pandaria was scaled down to make the comparison between the two easier. The number of EU characters was also scaled down to make the comparison between the two easier.
+
+<div id="achptDist" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div>
+<br>
+<div id="achptDistRegional" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div>
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart; 
+
+setTimeoutfunction{ height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;},2500
+
+
+setTimeoutfunction{ height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;},1500
+
+setTimeoutfunction{ height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;},4500
+
+$document.readyfunction {
+$'#achptDist'.highcharts{
+chart: {
+type: 'line',
+zoomType: 'x',
+backgroundColor: '#efeedc'
+},
+title: {
+text: 'Player Achievement Points', 
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+xAxis: {
+tickInterval: 1000,
+title: {
+text: 'Achievement Points',
+style: {
+color: '#000',
+fontWeight: 'bold'
+}
+},
+startOnTick: false
+},
+yAxis: {
+min: 0,
+tickPixelInterval: 50,
+endOnTick: false,
+title: {
+text: 'Players',
+style: {
+fontSize: '16px',
+color: '#000',
+fontWeight: 'bold'
+}
+},
+labels: {
+formatter: function {
+return Highcharts.numberFormatthis.value,0;
+}
+}
+},
+tooltip: {
+formatter: function {
+var max = this.x + 99;
+var s = '<b>Achievement Points: '+ this.x +' - ' + max + '</b>';
+
+$.eachthis.points, functioni, point {
+s += '<br/><span style="color:'+ point.series.color + '">'+ point.series.name +'</span>: '+
+Highcharts.numberFormatpoint.y,0;
+};
+
+return s;
+},
+
+shared: true
+},
+plotOptions: {
+line: {
+animation: false,
+pointStart: 200,
+pointInterval: 100,
+lineWidth: 3,
+shadow: false,
+marker: {
+enabled: false,
+symbol: 'circle',
+radius: 3,
+states: {
+hover: {
+enabled: true
+}
+}
+}
+}
+},
+legend: {
+enabled: false
+},
+series: [{
+name: 'Mists of Pandaria',
+data: [792, 1101, 1421, 2658, 5050, 4995, 5894, 6898, 8072, 8903, 9981, 10645, 11468, 12330, 12842, 13411, 14100, 14459, 14892, 15403, 15646, 16000, 16215, 16462, 16760, 17254, 17352, 17599, 17927, 18033, 18266, 18420, 18860, 18954, 19201, 19572, 19701, 19911, 20388, 20687, 20885, 21167, 21482, 21789, 22000, 22258, 22322, 22697, 22859, 23132, 23237, 23534, 23623, 23982, 23889, 24327, 24544, 24561, 24524, 24697, 24738, 24670, 24712, 24786, 24797, 25082, 24723, 24909, 24796, 24617, 24686, 24692, 24655, 24342, 24213, 24031, 24010, 23691, 23589, 23517, 23180, 23084, 22915, 22466, 22652, 22145, 22083, 21484, 21208, 21148, 20898, 20685, 20377, 20074, 19523, 19503, 18935, 18613, 18675, 18355, 18148, 17974, 17606, 17157, 16969, 16624, 16217, 15970, 15711, 15362, 15080, 14654, 14432, 14169, 13799, 13500, 13198, 12802, 12626, 12596, 12146, 11872, 11607, 11380, 11034, 10800, 10412, 10123, 9922, 9675, 9535, 9291, 8957, 8760, 8551, 8232, 8063, 7724, 7689, 7396, 7081, 7149, 6841, 6671, 6442, 6201, 5976, 5858, 5766, 5523, 5441, 5170, 5032, 4966, 4767, 4621, 4490, 4315, 4162, 4063, 3849, 3765, 3723, 3478, 3329, 3291, 3175, 2958, 2932, 2846, 2780, 2625, 2495, 2410, 2357, 2258, 2201, 2016, 2030, 1916, 1878, 1789, 1644, 1609, 1523, 1433, 1298, 1298, 1262, 1149, 1154, 1028, 966, 961, 877, 843, 748, 669, 693, 647, 573, 540, 464, 434, 397, 365, 321, 289, 309, 277, 260, 247, 215, 196, 156, 123, 74, 57, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+color: '#6CC479'
+},
+{
+name: 'Warlords of Draenor',
+data: [58, 786, 2271, 3025, 3591, 4474, 4948, 5364, 5733, 6298, 6435, 6788, 7102, 7397, 7629, 7839, 8047, 8329, 8679, 8606, 9095, 9211, 9714, 9938, 10163, 10412, 10962, 11178, 11440, 11784, 12275, 12475, 12846, 13202, 13546, 13694, 14041, 14450, 14873, 15365, 15859, 16203, 16419, 16493, 16940, 17147, 17753, 17915, 18530, 18930, 19113, 19295, 20012, 20040, 20490, 20701, 20892, 21611, 21919, 21927, 22194, 22242, 22662, 22872, 23051, 23558, 23349, 23442, 23775, 23857, 23713, 24211, 24196, 24376, 24259, 24262, 24343, 24350, 24204, 24490, 24559, 24124, 24261, 24032, 23909, 23855, 23731, 23667, 23781, 23382, 23253, 23329, 22912, 23115, 22489, 22551, 22250, 22022, 21563, 21366, 21333, 21105, 20709, 20630, 20320, 20184, 19863, 19629, 19270, 19075, 18666, 18455, 18357, 17844, 17446, 17047, 16932, 16675, 16268, 16040, 15780, 15319, 15144, 14855, 14494, 14405, 13648, 13451, 13392, 13240, 12850, 12447, 12292, 11838, 11541, 11415, 11061, 10827, 10739, 10291, 10195, 9718, 9427, 9185, 9017, 8766, 8641, 8442, 8017, 8036, 7763, 7524, 7416, 7023, 7037, 6595, 6495, 6278, 6048, 5920, 5650, 5651, 5459, 5295, 5187, 4831, 4706, 4464, 4542, 4347, 4060, 4040, 3796, 3743, 3602, 3471, 3410, 3187, 3099, 2967, 2883, 2737, 2605, 2479, 2468, 2389, 2315, 2108, 2095, 2023, 1878, 1765, 1688, 1615, 1507, 1448, 1354, 1278, 1186, 1112, 1061, 1021, 988, 940, 864, 828, 737, 715, 688, 614, 572, 510, 437, 478, 442, 413, 384, 325, 296, 268, 249, 211, 206, 189, 154, 121, 103, 71, 66, 41, 43, 27, 24, 13, 10, 8, 5, 3],
+color: '#AB6448'
+}]
+};
+
+
+$'#achptDistRegional'.highcharts{
+chart: {
+type: 'line',
+zoomType: 'x',
+backgroundColor: '#efeedc'
+},
+title: {
+text: 'Player Achievement Points by Region', 
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+xAxis: {
+tickInterval: 1000,
+title: {
+text: 'Achievement Points',
+style: {
+color: '#000',
+fontWeight: 'bold'
+}
+},
+startOnTick: false
+},
+yAxis: {
+min: 0,
+tickPixelInterval: 50,
+endOnTick: false,
+title: {
+text: 'Players',
+style: {
+fontSize: '16px',
+color: '#000',
+fontWeight: 'bold'
+}
+},
+labels: {
+formatter: function {
+return Highcharts.numberFormatthis.value,0;
+}
+}
+},
+tooltip: {
+formatter: function {
+var max = this.x + 99;
+var s = '<b>Achievement Points: '+ this.x +' - ' + max + '</b>';
+
+$.eachthis.points, functioni, point {
+s += '<br/><span style="color:'+ point.series.color + '">'+ point.series.name +'</span>: '+
+Highcharts.numberFormatpoint.y,0;
+};
+
+return s;
+},
+
+shared: true
+},
+plotOptions: {
+line: {
+animation: false,
+pointStart: 200,
+pointInterval: 100,
+lineWidth: 3,
+shadow: false,
+marker: {
+enabled: false,
+symbol: 'circle',
+radius: 3,
+states: {
+hover: {
+enabled: true
+}
+}
+}
+}
+},
+legend: {
+enabled: false
+},
+series: [{
+name: 'US',
+data: [19, 329, 944, 1306, 1516, 1986, 2166, 2329, 2456, 2765, 2741, 2850, 3024, 3170, 3249, 3421, 3474, 3633, 3783, 3757, 4050, 3993, 4295, 4429, 4528, 4690, 4998, 5071, 5101, 5305, 5675, 5727, 5905, 6172, 6386, 6413, 6561, 6854, 7024, 7180, 7485, 7779, 7880, 7954, 7997, 8356, 8591, 8584, 9084, 9300, 9358, 9436, 9857, 9778, 10028, 10093, 10244, 10525, 10705, 10749, 10948, 10956, 11045, 11212, 10980, 11475, 11430, 11456, 11508, 11701, 11489, 11602, 11997, 11983, 11811, 11893, 11876, 11819, 11716, 11898, 11808, 11798, 11742, 11598, 11383, 11469, 11457, 11256, 11379, 11172, 10924, 11157, 10715, 10831, 10578, 10685, 10337, 10371, 9939, 9824, 9923, 9731, 9489, 9525, 9366, 9228, 9034, 8899, 8710, 8687, 8449, 8310, 8274, 7975, 7807, 7503, 7432, 7395, 7202, 7039, 6771, 6783, 6408, 6471, 6327, 6219, 5906, 5700, 5673, 5596, 5366, 5144, 5194, 5021, 4753, 4686, 4624, 4465, 4473, 4115, 4143, 3920, 3748, 3638, 3504, 3448, 3450, 3327, 3067, 3148, 2967, 2955, 2838, 2619, 2612, 2459, 2414, 2380, 2244, 2211, 2026, 2057, 1951, 1884, 1892, 1682, 1645, 1533, 1584, 1468, 1383, 1380, 1267, 1239, 1184, 1166, 1147, 1021, 994, 960, 920, 841, 794, 756, 761, 723, 740, 615, 652, 568, 555, 501, 475, 484, 418, 392, 388, 334, 325, 298, 280, 278, 242, 242, 189, 211, 182, 190, 174, 163, 150, 120, 107, 129, 106, 95, 84, 73, 68, 61, 46, 49, 44, 41, 37, 36, 25, 14, 18, 7, 7, 12, 6, 5, 2, 0, 1, 1 ],
+color: '#DE2A2A'
+},
+{
+name: 'EU',
+data: [32, 379, 1101, 1428, 1722, 2066, 2310, 2519, 2720, 2932, 3066, 3269, 3384, 3508, 3635, 3667, 3795, 3897, 4063, 4024, 4187, 4331, 4497, 4572, 4677, 4749, 4950, 5068, 5261, 5377, 5478, 5600, 5761, 5834, 5942, 6043, 6208, 6304, 6514, 6793, 6950, 6991, 7087, 7087, 7422, 7296, 7604, 7744, 7839, 7992, 8096, 8182, 8428, 8517, 8683, 8804, 8837, 9201, 9307, 9277, 9333, 9367, 9641, 9677, 10018, 10028, 9892, 9947, 10181, 10089, 10145, 10465, 10124, 10285, 10331, 10265, 10347, 10400, 10364, 10450, 10582, 10230, 10390, 10319, 10396, 10279, 10186, 10300, 10293, 10133, 10232, 10102, 10123, 10195, 9885, 9848, 9887, 9669, 9647, 9579, 9469, 9440, 9312, 9216, 9091, 9093, 8987, 8905, 8764, 8621, 8479, 8420, 8368, 8191, 8000, 7921, 7884, 7702, 7524, 7470, 7477, 7084, 7250, 6958, 6778, 6794, 6425, 6433, 6406, 6344, 6211, 6061, 5891, 5658, 5634, 5585, 5342, 5280, 5200, 5126, 5023, 4812, 4713, 4604, 4575, 4414, 4308, 4245, 4108, 4057, 3980, 3792, 3799, 3655, 3672, 3433, 3387, 3235, 3157, 3078, 3008, 2983, 2911, 2831, 2735, 2613, 2540, 2433, 2455, 2389, 2222, 2208, 2099, 2078, 2007, 1913, 1878, 1798, 1747, 1666, 1629, 1574, 1503, 1430, 1417, 1383, 1307, 1239, 1198, 1208, 1098, 1049, 1007, 939, 904, 876, 802, 783, 715, 676, 648, 617, 619, 579, 560, 512, 461, 436, 427, 374, 350, 324, 274, 290, 279, 264, 249, 209, 189, 172, 168, 134, 134, 123, 97, 71, 65, 47, 40, 28, 30, 12, 15, 7, 7, 7, 3, 2],
+color: '#2A54C7'
+}]
+};
+};</script>CurrencySorter Addon
+One small annoyance in Warlords of Draenor is the default currency window ordering. The CurrencySorter addon http://www.curse.com/addons/wow/currencysorter allows you to sort categories so that you can finally have the Warlords of Draenor category on top. 
+
+
+<div class="gallery" id="gallery-cs">http://media.mmo-champion.com/images/news/2015/january/thumb/currencySorter.jpg http://media.mmo-champion.com/images/news/2015/january/currencySorter.jpg </div>
+
+
+3D Printed Frostmourne
+Kirby Downey recently shared http://imgur.com/gallery/R9c8i a 3D printed version of Frostmourne along with some in progress shots and construction / design details. You can even download http://myminifactory.com/object/frostmourne-from-warcraft-4156 and print your own Frostmourne! 
+
+The sword can be assembled without any glue and has joints that are visible so you can see how it fits together. 
+
+
+<div class="gallery" id="gallery-3dfrostmourne">http://media.mmo-champion.com/images/news/2015/january/thumb/frostmourne3d01.jpg http://media.mmo-champion.com/images/news/2015/january/frostmourne3d01.jpg http://media.mmo-champion.com/images/news/2015/january/thumb/frostmourne3d02.jpg http://media.mmo-champion.com/images/news/2015/january/frostmourne3d02.jpg http://media.mmo-champion.com/images/news/2015/january/thumb/frostmourne3d03.jpg http://media.mmo-champion.com/images/news/2015/january/frostmourne3d03.jpg http://media.mmo-champion.com/images/news/2015/january/thumb/frostmourne3d04.jpg http://media.mmo-champion.com/images/news/2015/january/frostmourne3d04.jpg http://media.mmo-champion.com/images/news/2015/january/thumb/frostmourne3d05.jpg http://media.mmo-champion.com/images/news/2015/january/frostmourne3d05.jpg 
+http://media.mmo-champion.com/images/news/2015/january/thumb/frostmourne3d06.jpg http://media.mmo-champion.com/images/news/2015/january/frostmourne3d06.jpg http://media.mmo-champion.com/images/news/2015/january/thumb/frostmourne3d07.jpg http://media.mmo-champion.com/images/news/2015/january/frostmourne3d07.jpg http://media.mmo-champion.com/images/news/2015/january/thumb/frostmourne3d08.jpg http://media.mmo-champion.com/images/news/2015/january/frostmourne3d08.jpg http://media.mmo-champion.com/images/news/2015/january/thumb/frostmourne3d09.jpg http://media.mmo-champion.com/images/news/2015/january/frostmourne3d09.jpg http://media.mmo-champion.com/images/news/2015/january/thumb/frostmourne3d10.jpg http://media.mmo-champion.com/images/news/2015/january/frostmourne3d10.jpg </div>

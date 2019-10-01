@@ -1,0 +1,141 @@
+chaud2015-06-08, 02:22 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Heroes of the Storm - Diablo 3 Maps, The Butcher, and More!, HeroStorm Episode 1 http://www.diablofans.com/news/48437-heroes-of-the-storm-diablo-3-maps-the-butcher-and
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Popular Decks of the Week, Versus Series - Rarest vs Raven, Heroes Diablo Event http://www.hearthpwn.com/news/913-popular-decks-of-the-week-versus-series-rarest-vs
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Eternal Conflict - New Diablo 3 Maps, Heroes The Butcher, and More! PTR June 23rd http://www.heroesnexus.com/news/1392-eternal-conflict-new-diablo-3-maps-heroes-the
+
+Patch 6.2 - Infernal Direwolf
+Patch 6.2 adds the Infernal Direwolf http://ptr.wowdb.com/items/127140-infernal-direwolf mount, which is earned by completing the Glory of the Hellfire Raider http://ptr.wowdb.com/achievements/10149-glory-of-the-hellfire-raider achievement. 
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/J78GYK_3p80" frameborder="0" allowfullscreen></iframe>
+
+<div class="gallery" id="gallery-InfernalDirewolf">http://media.mmo-champion.com/images/news/2015/june/thumb/infDire.jpg http://media.mmo-champion.com/images/news/2015/june/infDire.jpg </div>
+
+
+Darkmoon Faire Races
+The Darkmoon Faire is back again, bringing us the final race, in addition to the other Patch 6.1 changes http://www.mmo-champion.com/content/4748-Darkmoon-Faire-Race-and-Changes-Archaeology-Fix-Blue-Tweets-Method-Interview-DLC. The Powermonger is the new mount this time around.
+
+The first race uses the smaller course, allowing you to earn Powermonger: Gold http://www.wowdb.com/achievements/9785-powermonger-gold and the Gaze of the Darkmoon http://www.wowdb.com/items/122120-gaze-of-the-darkmoon.
+
+The second race uses the big course, allowing you to earn Big Powermonger: Gold http://www.wowdb.com/achievements/9817-big-powermonger-gold and the Darkmoon Cannon http://www.wowdb.com/items/122124-darkmoon-cannon. The Cannon is not a toy, so it will take up an additional inventory slot. 
+
+The Powermonger mount jumps to powerups http://www.wowdb.com/spells/152725-jump-to-powerup. It also has a Battery http://www.wowdb.com/spells/153026-battery ability that absorbs the next powerup you hit in the next 4 seconds. This powerup can then be used later by using the Battery ability again. The Overwrite http://www.wowdb.com/spells/152985-overwrite ability allows you to overwrite a nearby powerup with the stored one, but requires the currency powerup. It isn't necessary to earn the achievements. The final ability, Summon Aggrobots http://www.wowdb.com/spells/153503-summon-aggrobots, will taunt the mini-zeppelins, allowing you to pass by without getting stunned. 
+
+The trick this month is to jump to springs and use the battery to absorb the spring right before you land on it. This allows you to use the spring to jump twice, once when you hit it and once again with the stored jump. You also can store a rocket before the big race to jump up the cliff to the first checkpoint. This can be accomplished by starting a race, storing your rocket, running back, abandoning the quest, and starting again. 
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/tZVRxkJwSFo" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/dCHZHBaSgiE" frameborder="0" allowfullscreen></iframe>
+
+
+Armory Stats - Darkmoon Faire
+This month's Darkmoon Faire has just started, but we can take a look at how people did during the last Faire. Today's sample is of 1.8 million players that have logged in since May 1.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#ADADAD', '#949494', '#727272', '#595959', '#6B8E23', '#426F42']
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'dmfAch',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Roadhog', 'Rocketeer: Gold', 'Wanderluster: Gold', 'Big Race Roadhog', 'Big Rocketeer: Gold', 'Big Wanderluster: Gold', 'Tonk Commander', 'Ring Toss'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Earned Darkmoon Faire Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 3.89, color: '#AD3EAC', name:'Roadhog'}, {y: 2.42, color: '#AD3EAC', name:'Rocketeer: Gold'}, {y: 1.22, color: '#AD3EAC', name:'Wanderluster: Gold'}, {y: 1.03, color: '#AD3EAC', name:'Big Race Roadhog'}, {y: 1.85, color: '#AD3EAC', name:'Big Rocketeer: Gold'}, {y: 0.91, color: '#AD3EAC', name:'Big Wanderluster: Gold'}, {y: 2.92, color: '#AD3EAC', name:'Tonk Commander'}, {y: 5.06, color: '#AD3EAC', name:'Ring Toss'}],
+
+name: '<b>Percent</b>'
+}]
+};
+
+};
+</script> 
+<div id="dmfAch" width="50%">
+Don't see a chart? Enable javascript!
+</div>Blue Tweets
+PvP
+In addition, Ashran should not put entire raids into 1 instance. People are getting rofl-stomped by premades. @holinka
+You won't be able to enter Ashran while in a raid. holinka https://twitter.com/holinka/status/605476541225525248
+
+this problem was adressed in several forum posts during alpha and beta.but some forums feel like a dead end especially non-US.
+Based on feedback from players during beta, we gave all players passive expertise. The issue at hand is to increase it. holinka https://twitter.com/holinka/status/605549904040042496
+that change felt like motivated by pve bosses turning around into parry etc. at least the way it was communitcated.
+The passive expertise I mentioned is associated with Battle Fatigue, a PvP only buff, so it's probably a different issue. holinka https://twitter.com/holinka/status/605550855106920449
+
+
+Ghostcrawler Tweets
+While the developers have been pretty quiet since @WarcraftDevs https://twitter.com/WarcraftDevs/with_replies appeared, Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.
+Flying
+What's your stand on the "no more flying in WoW" stance the devs have taken?
+Even if you don't like a particular change, you should want people unafraid to make bold decisions running your game. OccupyGStreet https://twitter.com/OccupyGStreet/status/602159297296928768
+Not everyone wants a taxi driver bold enough to risk getting both of you killed trying to get to the airport though.
+I'm not looking for a taxi ride to keep me engaged though. I very much ask that of a game. OccupyGStreet https://twitter.com/OccupyGStreet/status/602997137899560960
+
+These have all been successfully countered in previous expansions by creative design.
+I can understand the argument that it's tough to live without flying once you are used to it genie in a bottle analogy. OccupyGStreet https://twitter.com/OccupyGStreet/status/602995311598915585
+OTOH I don't put much stock into the argument that clever quest and level design can make flight as challenging as ground. OccupyGStreet https://twitter.com/OccupyGStreet/status/602995537546055680
+The combat wasn't designed with 3d space in mind. They could build all that, or they could focus all that attention elsewhere. OccupyGStreet https://twitter.com/OccupyGStreet/status/602995083068121088
+I kinda think orcs firing nets constantly and every quest objective inside a cave would get tiring quickly. OccupyGStreet https://twitter.com/OccupyGStreet/status/602994875684892672
+Much more interested in the difference in flight speed. Allowing flight at a low speed and gaining speed in xpac = prog
+We messed with that some. It always felt very forced and awkward. Not saying it isn't theoretically possible. OccupyGStreet https://twitter.com/OccupyGStreet/status/602998137582583808
+I think if you want aerial combat, you build a game about aerial combat. Adding it in later is challenging and we tried in Lk. OccupyGStreet https://twitter.com/OccupyGStreet/status/602998271653466112
+
+Grounding while leveling is a begrudgingly accepted pathway. However, 6 months to a year into an xpac, flight wouldn't harm.
+Maybe. I'm not informed enough to have an opinion on the current content. OccupyGStreet https://twitter.com/OccupyGStreet/status/602998479128952832
+
+
+Dark Legacy Comics #492
+DLC #492 http://www.darklegacycomics.com/492 features WoW related Heathstone cards.
+
+
+http://media.mmo-champion.com/images/news/2015/june/dlc492.jpg http://www.darklegacycomics.com/492

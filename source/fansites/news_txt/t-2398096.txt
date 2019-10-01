@@ -1,0 +1,94 @@
+chaud2018-05-18, 05:11 PM<img src="http://media.mmo-champion.com/images/news/2012/july/wowmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Battle for Azeroth Beta Key Giveaway - Week 1: We Weren't Prepared! https://www.mmo-champion.com/content/7603-Battle-for-Azeroth-Beta-Key-Giveaway-Week-1-We-Weren-t-Prepared!
+
+<img src="https://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Call of Duty: Black Ops 4 Coming To Battle.net https://www.diablofans.com/news/49014-call-of-duty-black-ops-4-coming-to-battle-net
+
+<img src="https://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Hearthstone's Next Balance Update Goes Live on May 22 https://www.hearthpwn.com/news/5553-hearthstones-next-balance-update-goes-live-on-may
+
+<img src="https://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> May 16th Developer Reddit AMA Recap https://www.mmo-champion.com/content/7611-May-16th-Developer-Reddit-AMA-Recap
+
+<img src="https://media.mmo-champion.com/images/news/2015/february/overwatchMini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Overwatch Anniversary Event Dev Update and Reveals, Hanzo Nerf, and BCRF Update https://www.mmo-champion.com/content/7610-Overwatch-Anniversary-Event-Dev-Update-and-Reveals-Hanzo-Nerf-and-BCRF-Update
+
+Balance Druid Beta Feedback - Rotation & Talents
+Solar Empowerment and Lunar Empowerment do not provide rewarding gameplay.
+Single-target rotation can be optimized by a CastSequence macro.
+This is two-parts and our two most important goals for the spec’s changelist going into BfA and they tie in with each other:
+
+First is to add something interesting to the base rotation. As many have pointed out, Balance Druid’s baseline rotation is pretty predictable, and doesn’t offer much in the way of procs or reactionary gameplay. New baseline passive: Solar Wrath has a 20% chance to grant Lunar Empowerment. Lunar Strike has a 20% chance to grant Solar Empowerment. The goal here is to break up the monotony of chain-casting of only one generator with procs that incentivize you to use the other generator.
+
+Second is to make Solar/Lunar Empowerments more meaningful. The damage bonus they provide on live isn’t negligible, but they don’t provide anything interesting other than damage. It’s hard to make a damage bonus with no created gameplay feel like a bonus psychologically, when you know in the back of your mind that everyone’s damage is tuned to be similar at the end of the day. We’re trying two changes here:
+
+
+Solar Empowerment is changing into: Causes your next Solar Wrath to explode for an additional X% of its damage to all nearby enemies also hits the primary target. This helps to differentiate the two Empowerments a bit mechanically and visually. It also gives Solar Empowerments, which are now granted by Lunar Strike, an AOE component so that when it procs while you’re AOEing with Lunar Strike, you feel good about getting and using the Solar Empowerment proc. Currently the Solar Empowerment bonus is half the value of Lunar Empowerment’s damage bonus, and scales by Mastery at the same half rate. Starlord talent is becoming baseline, making Lunar and Solar Empowerment always reduce the cast time of their affected spells by 15%. This is a simple and direct way for Empowerments to be felt and desired. Starlord is being redesigned into: Starsurge grants you 3% Haste for 15 sec. Stacks up to 3 times. Gaining a stack does not refresh the duration. Tier 20 4-pc bonus
+
+This doesn't instantly make Empowerments the most interesting class mechanic in the game, but it should be a step forward.
+
+Fury of Elune, Sunfire, and Lunar Strike do not share the same splash radius.
+We’ve increased/standardized the splash radius of Lunar Strike, Fury of Elune, Full Moon, and Sunfire to 8 yds. Many of the 3-5 yd radius AOEs in the game started off as: Let’s make this spell effect that looks explosion-y, but won’t impact AOE damage too much, so let’s make it a small 3 yd radius. In practice, having AOE capability means players want to make use of it, and when it’s 3-5 yds it’s very difficult to and thus can be frustrating. 8 yds means you can more easily hit a basic clump of enemies on you or the tank.
+
+Lunar Strike is insignificant in AOE despite having a splash mechanic.
+Lunar Strike’s radius increasing from 5 to 8 yds should be noticeable, but we can probably safely nudge up the splash damage a bit 25->33% and see how it plays. Note that next week you’ll see a 10% reduction to Lunar Strike’s base damage – that’s to mirror a new 10% reduction to its base cast time 2.5->2.25 sec. This makes Lunar Strike’s cast time and Astral Power generation to be each exactly 50% higher than Solar Wrath, and makes it no longer slower resource generation/ramp with Lunar Strike than Solar Wrath.
+
+Stellar Flare suffers from a very heavy cost. A Starfall that costs 60, plus the Stellar Flare 10, plus the fact we aren't casting a filler 8, means Stellar Flare costs a bit too much.
+Stellar Flare requiring a Starfall to be down to get a large portion of its damage felt bad – it’s a kind of weird negative synergy with both being Astral Power spenders. We’ve removed the Stellar Empowerment portion of it, and instead its damage is increased by Balance mastery the portion that increases Astral Power spender damage, and kept its 10 Astral Power for now.
+
+One use case for Stellar Flare was that it can be a spender for targets that can’t all be covered by a single Starfall even though Stellar Drift covers the entire world and pulls the floor above, and this use case pointed even more toward removing the Stellar Empowerment requirement portion of it. I think Stellar Flare is still looking for its place on the spec - we’ll continue to look for opportunities to improve/change it.
+
+AOE gameplay is too reliant on Shooting Stars. Other talents do not come close to the performance of Shooting Stars.
+Shooting Stars looks/feels cool, but provided just a little too much Astral Power. Especially considering that the talent row it’s now on with Stellar Drift and Stellar Flare provides no other resources generation, reducing its Astral power proc makes sense.
+
+Force of Nature suffers from scaling issues. The other talents have a notable effect on Astral Power generation.
+Agree that summoning some Treants on a long cooldown doesn’t bring much in terms of mechanical interaction. It now generates some Astral Power over its duration.
+
+The current rate of Astral Power generation is pretty low.
+Starsurge’s cost hasn’t been changed, but some amount of Astral Power generation has been added to a few places – Warrior of Elune, Force of Nature, Fury of Elune now a generator instead of spender, Nature’s Balance new design. Additionally, the average cast speed of your two generators has been meaningfully sped up, with Starlord’s 15% cast time reduction becoming baseline. Definitely will be keeping an eye on pacing feedback.
+
+And for the love of god remove Nature's Balance, I have never seen a talent that makes me more depressed. I dread the day I have to pick it because it's the best, it is horribly unexciting and makes the rotation even more wrath spam. Don't make it baseline, don't buff it, just delete it.
+Agree here. The bonus it provided ended up making the single-target rotation less engaging, even if it was sometimes nice to have in multitarget situations.
+
+The new/redesigned version of Nature's Balance is: While in combat, you generate 2 Astral Power every 3 sec. While out of combat, your Astral Power rebalances to 50 instead of depleting to empty. It's a combination of the live Blessing of An'she talent which has been removed and one half folded into this one and the new effect which removes out-of-combat Astral Power degeneration while below half, allowing you to enter combat with up to 50 Astral Power, which allows a Starsurge or Starfall on the opener.
+
+Welp the new build came out today and another nerf in the form of Soul of the Forest only reduces the cost of starfall by 10 down from 20. Thats the nail in the coffin right there, destroyed the rest of our niche. This was the build we were looking forward to. 
+Starfall’s base Astral Power cost has been reduced to 50. We probably should have waited to make that change to Soul of the Forest along with the rest of the changes to the spec. Overall, that reduction to Soul of the Forest is still the right thing I think many of you agree - 1/3 off the cost of Starfall for a talent is pretty overboard – but without the context of the rest of the changes it’s understandable that it doesn’t look right.
+
+Please give us a way to spread Moonfire on multiple targets.
+Twin Moons is a new talent that causes Moonfire to deal additional damage and also hit a second nearby enemy within 20 yds of that target. a.k.a legendary shoulders This was useful functionality that helped with ramp in multitarget situations and was also visually satisfying.
+
+One other change is to Celestial Alignment/Incarnation. Instead of providing +50% Astral Power generation on Lunar Strike/Solar Wrath, they now provide 15% Haste and their damage bonus has been tuned down slightly for now. The spec’s resource is a bit of a not-super-stable balance of Astral Power and Lunar/Solar Empowerment generation/consumption, and Celestial Alignment/Incarnation sometimes caused resource/Empowerments overflow, a problem that a Haste bonus doesn’t have.
+
+Thanks for all the well-written and constructive feedback, especially from the original poster.
+
+
+Bounty System Changes
+In Battle for Azeroth, a new Bounty system https://www.mmo-champion.com/content/7565-Warmode-and-the-Future-of-World-PvP-Bounties-and-Incentives has been added as part of War Mode.
+
+
+Killing enough players of the opposite faction can give you an Assassin https://beta.wowdb.com/spells/264314-horde-assassin buff that increases your damage and healing. 
+A bounty will eventually be placed upon your head, showing your position on the zone map: Bounty Hunted https://beta.wowdb.com/spells/272295-bounty-hunted
+If you can get 10 more kills https://beta.wowdb.com/quests/52786-the-alliance-slayer with the buff before you die, you will be rewarded with the Horde Slayer https://beta.wowdb.com/titles/625-the-horde-slayer / the Allliance Slayer https://beta.wowdb.com/titles/626-the-allliance-slayer title.
+
+
+<table class="listing sortable news-table achievement-table listing-achievements mmoc-listing b-table b-table-a" data-viewstate="" data-ajax-set-window-state="true" id="achievements" data-row-selector=">tbody>tr" data-default-sort-slug="name" data-default-sort-order="asc"> <thead class="b-table-header j-listing-table-header"> 
+<tr> <th>Name</th> <th>Side</th> <th>Points</th> <th>Category</th> </tr> </thead> <tbody> 
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody>
+<tr><td> <a class="listing-icon " href="https://beta.wowdb.com/achievements/12571-bounty-hunting" data-tooltip-href="https://beta.wowdb.com/achievements/12571-bounty-hunting"> <img class="icon-36 " src="https://media-azeroth.cursecdn.com/wow/icons/medium/ability_blackhand_marked4death.1299e4e25f9cc54fa67ea9c2daaee8fce1080da1.jpg" alt="" width="36" height="36"> </a></td><td> <a class="t" href="https://beta.wowdb.com/achievements/12571-bounty-hunting" data-tooltip-href="https://beta.wowdb.com/achievements/12571-bounty-hunting">Bounty Hunting</a> <span class="subtext">Loot 10 bounties from slain players while within War Mode.</span> </td></tr></tbody></table></td><td></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td class="c">World</td></tr>
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody>
+<tr><td> <a class="listing-icon " href="https://beta.wowdb.com/achievements/12569-bounty-on-my-head" data-tooltip-href="https://beta.wowdb.com/achievements/12569-bounty-on-my-head"> <img class="icon-36 " src="https://media-azeroth.cursecdn.com/wow/icons/medium/trade_engineering.699aff53c99e46d703090933b3840d102d65be0f.jpg" alt="" width="36" height="36"> </a></td><td> <a class="t" href="https://beta.wowdb.com/achievements/12569-bounty-on-my-head" data-tooltip-href="https://beta.wowdb.com/achievements/12569-bounty-on-my-head">Bounty On My Head</a> <span class="subtext">Earn a bounty for your death by the Horde while within War Mode.</span> </td></tr></tbody></table></td><td> <span class="alliance-32"> Alliance </span></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td class="c">World</td></tr>
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody>
+<tr><td> <a class="listing-icon " href="https://beta.wowdb.com/achievements/12570-bounty-on-my-head" data-tooltip-href="https://beta.wowdb.com/achievements/12570-bounty-on-my-head"> <img class="icon-36 " src="https://media-azeroth.cursecdn.com/wow/icons/medium/trade_engineering.699aff53c99e46d703090933b3840d102d65be0f.jpg" alt="" width="36" height="36"> </a></td><td> <a class="t" href="https://beta.wowdb.com/achievements/12570-bounty-on-my-head" data-tooltip-href="https://beta.wowdb.com/achievements/12570-bounty-on-my-head">Bounty On My Head</a> <span class="subtext">Earn a bounty for your death by the Alliance while within War Mode.</span> </td></tr></tbody></table></td><td> <span class="horde-32"> Horde </span></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td class="c">World</td></tr>
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody>
+<tr><td> <a class="listing-icon " href="https://beta.wowdb.com/achievements/12568-the-alliance-slayer" data-tooltip-href="https://beta.wowdb.com/achievements/12568-the-alliance-slayer"> <img class="icon-36 " src="https://media-azeroth.cursecdn.com/wow/icons/medium/trade_engineering.699aff53c99e46d703090933b3840d102d65be0f.jpg" alt="" width="36" height="36"> </a></td><td> <a class="t" href="https://beta.wowdb.com/achievements/12568-the-alliance-slayer" data-tooltip-href="https://beta.wowdb.com/achievements/12568-the-alliance-slayer">The Alliance Slayer</a> <span class="subtext">With a bounty on your head while within War Mode, get 10 honorable kills without dying.</span> </td></tr></tbody></table></td><td> <span class="horde-32"> Horde </span></td><td class="c"></td><td class="c">Player vs. Player</td></tr>
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody>
+<tr><td> <a class="listing-icon " href="https://beta.wowdb.com/achievements/12567-the-horde-slayer" data-tooltip-href="https://beta.wowdb.com/achievements/12567-the-horde-slayer"> <img class="icon-36 " src="https://media-azeroth.cursecdn.com/wow/icons/medium/trade_engineering.699aff53c99e46d703090933b3840d102d65be0f.jpg" alt="" width="36" height="36"> </a></td><td> <a class="t" href="https://beta.wowdb.com/achievements/12567-the-horde-slayer" data-tooltip-href="https://beta.wowdb.com/achievements/12567-the-horde-slayer">The Horde Slayer</a> <span class="subtext">With a bounty on your head while within War Mode, get 10 honorable kills without dying.</span> </td></tr></tbody></table></td><td> <span class="alliance-32"> Alliance </span></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td class="c">Player vs. Player</td></tr> </tbody></table>
+
+Good feedback.
+
+We're going to make some changes so that the 'Assassin' and 'Bounty Hunted' retain as you go from zone to zone. Our concerns with retaining the buffs is that we can't guarantee players who pursue each other going from zone to zone stay within the same shard though we're doing some work to try to make that happen. If you happen to leave the outdoor world i.e. join a dungeon or raid, it will clear the buffs. 
+
+Our philosophy here is that you should want the Assassin and Bounty Hunted buffs on you. To remove them is to want to opt-out of the gameplay session, not to circumvent some sort of penalty.
+
+
+WoW Extinction Visual Effects
+Ivan Kuzkin released a video that shows the amount of effects work that went into the World of Warcraft Extinction video https://www.mmo-champion.com/content/7596-Fan-Art-World-of-Warcraft-Extinction-BlizzCon-2018-Tickets-on-Sale-Saturday.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/WXOcl8AmZm4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

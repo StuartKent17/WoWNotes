@@ -1,0 +1,115 @@
+chaud2013-12-17, 10:16 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> 2.0.1 PTR Known Issues, Lack of a Rare/Legendary Drop From Bosses Is Not a Bug, Load Testing Update http://www.diablofans.com/news/47887-2-0-1-ptr-known-issues-lack-of-a-rare-legendary
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Weekend Tournament Decklists, EU Technical Difficulties Resolved, Blue Tweets http://www.hearthpwn.com/news/231-weekend-tournament-decklists-eu-technical
+
+Winter Veil 2013
+The Feast of Winter Veil http://www.wowdb.com/world-events/141-feast-of-winter-veil is here and brings new gifts this year! When you unwrap your present this year, you will find a Crashin' Thrashin' Flyer Controller http://www.wowdb.com/items/104318-crashin-thrashin-flyer-controller inside. You will need it for The Danger Zone http://www.wowdb.com/achievements/8699-the-danger-zone achievement. 
+
+Don't forget to grab the Battle Pets http://www.wowdb.com/world-events/141-feast-of-winter-veil#related:battle-pets as well, including the new Rotten Little Helper http://www.wowdb.com/npcs/73741-rotten-little-helper. The Foot Ball http://www.wowdb.com/items/104324-foot-ball and The Pigskin http://www.wowdb.com/items/104323-the-pigskin are on vendors this year.
+
+
+http://media.mmo-champion.com/images/news/2012/december/WinterVeilGuide.jpg http://www.icy-veins.com/feast-of-winter-veil-2013-wow 
+
+
+Patch 5.4.2 Hotfixes: December 16
+Classes
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest Forums http://www.mmo-champion.com/forums/274-Priest / Skills http://www.wowdb.com/spells/class-abilities/priest / Talent Calculator http://www.wowdb.com/talent-calculator#U
+
+Talents
+
+Resolved an issue where From Darkness Comes Light was not activating correctly from Smite.
+
+
+
+
+Creatures
+
+[Requires a realm restart.] Resolved an issue that caused Dragonmaw and Wildhammer NPCs in Twilight Highlands to be non-attackable.
+
+
+Raids, Dungeons, and Scenarios
+
+To help smooth difficulty scaling as players are added or removed from a Flexible raid, several raid boss abilities that target additional players as the size of a Flexible raid increases will use weighted randomization rather than strict breakpoints. For more information on the change, check out this thread http://us.battle.net/wow/en/forum/topic/10585638963?page=4#77 on the Dungeons, Raids and Scenarios forum.
+Siege of Orgrimmar
+
+Cross-Realm raid browser located in the Social Pane under Other Raids on the Raid tab now has a minimum item level requirement for players attempting to list for Siege of Orgrimmar on Flexible raid difficulty.
+
+Vale of Eternal Sorrows requires a minimum item level of 510.
+Gates of Retribution requires a minimum item level of 517.
+The Underhold requires a minimum item level of 524.
+Downfall requires a minimum item level of 531.
+
+Paragons of the Klaxxi
+
+These hotfixes are upcoming https://twitter.com/Rygarius/status/412774364581752833, but NYI as of today.
+Melee damage from the Paragons should now be more consistent and less likely to spike.
+Ka'roz the Locust's Hurl Amber should no longer target players that have mutated into an Amber Scorpion.
+Resolved an issue where Xaril the Poisoned Mind was not using Toxic Injection on the raid as soon as he joins the fight.
+
+
+
+
+Battlegrounds and Arenas
+
+Legendary Metagem effects Capacitive Primal Diamond, Courageous Primal Diamond, Indomitable Primal Diamond, and Sinister Primal Diamond should no longer have a chance to activate while in an Arena, Battleground, or Rated Battleground.
+
+
+Timeless Isle
+
+Resolved an issue where rocks from a cave-in blocking the entrance to the Mysterious Den did not have proper collision detection.
+
+
+
+
+Flex Mechanic Scaling Hotfix
+Fun fact: The hotfix has actually been active since just before the weekend, but it didn't get caught in the prior round of hotfix notes. It's no surprise that it went largely unnoticed, since most all of the abilities with actual breakpoints going from 14->15 are things with very minor impact Protectors' Shadow Word: Bane, Nazgrim's Bonecracker, Hisek's Multi-Shot, etc.. There are indeed a couple of more impactful breakpoints on Garrosh's Touch of Y'Shaarj and Sha of Pride's Imprison, but those both occur at raid sizes well above 14, and randomization isn't the correct solution to either.
+
+The 14-player "magic number" is actually a fairly interesting social dynamic, since there never was anything particularly special about the number, and now there really is objectively no advantage. As we've said in the past, there's certainly nothing wrong with wanting to form a 14-player raid, but if you're turning away strong players or friends because you're convinced that your raid as a whole will have a harder time, you're making a mistake.
+
+
+Changes to Flex Mechanic Scaling
+The previously discussed changes to scaling are now live! 
+At BlizzCon, we'd discussed some improvements to our Flexible scaling system that would minimize the existence and impact of any real or perceived "breakpoints." Our design goal has always been for the system to be neutral with respect to group size. Specifically, you should never feel encouraged to turn away interested players whose skill/gear level matches the rest of the group's, basic role composition constraints notwithstanding. But at the same time, you shouldn't feel like you need to go out and grab warm bodies if you have a perfectly serviceable raid already assembled. Clearly we have not yet fully realized those goals.
+
+In general, the existing healing/damage scaling slightly favors larger groups, since boss health and damage scale up more slowly than does raid throughput. To use a specific example, an 18-player raid with 12 damage-dealers will kill a boss slightly faster than a 10-player raid with 6 damage-dealers assuming equal skill/gear between the two groups. But it is true that currently some specific abilities exhibit breakpoints, where adding an extra player causes an extra add to spawn, or an ability to strike an additional target.
+
+To help smooth out difficulty scaling as you add or remove players from your Flexible raid, we will be implementing one of our planned Warlords changes to the scaling system ahead of schedule. In the near future, several boss abilities that target more players as the size of a Flex raid increases will use weighted randomization rather than strict breakpoints. 
+
+An example to illustrate what I mean:
+
+Today, Sun Tenderheart's Shadow Word: Bane ability afflicts 2 targets if your raid size is between 10 and 14, but begins to hit a third target at 15. 
+
+Once our upcoming change is in place, if you have a 13-player raid, there will be a 60% chance for each cast of the ability to hit 3 targets, and a 40% chance for it to hit 2. If you add an extra player, and thus have 14, there will now be an 80% chance for 3 debuffs to go out, and a 20% chance for only 2. 
+
+In short, with respect to this particular ability, adding an extra player will always give you an average of 0.2 extra Bane debuffs. No more breakpoints!
+
+There will be a handful of exceptions where breakpoints remain necessary. Imprison on Sha of Pride is probably the most notable such example, where you really want to pre-plan who will cover which prisons, and having a random number of targets each cast would cause frustrating unpredictability.
+
+There's nothing wrong with 14-player groups -- 14 players is a great size for a raid. But so is 15. And 19. And 12. And 22. We just want to help make sure that good players aren't being turned away from groups because of the notion that their presence will make things harder for everyone. 
+
+
+Blue Posts
+Mounts Blocking Holiday Questgivers
+Grr! Yeah, some people can be jerks. Some people are just oblivious though, too. If you think someone is specifically and intentionally blocking an NPC in a malicious way, that is behavior specifically mentioned in our harassment policy, and something you can report that player for and we'll take a look.
+
+An easy workaround though is enabling nameplates for friendly characters default Shift+V and then right click on the nameplate of the NPC you're wanting to interact with.
+
+For me, it's the fact there's a group of around 40 horde, give or take, literally camping the greench and AoE spamming the treats and metzen preventing any alliance from completing their daily. I don't mind some PvP action on a PvP server, but this is ridiculous.
+Holiday events tend to be quite active the first couple days, but this one lasts for 2 1/2 weeks, and you can certainly complete most of these things throughout the event and have plenty of time to grab all the achievements/complete all the quests without needing to do everything the first day. Blue Tracker http://blue.mmo-champion.com/topic/285696-mounts-blocking-holiday-questgivers/ / Official Forums http://us.battle.net/wow/en/forum/topic/10894850091?page=3#42
+
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Live Q+A with the Heroes Development Team
+We revealed all kinds of great details about Heroes of the Storm at BlizzCon last month and thousands of you who managed to attend sank your teeth into the Nexus for the first time. Whether you got the chance to swing by BlizzCon in-person, or followed along with panel discussion on the live stream, we’re sure you’ve still got a ton of questions about the game -- and we’ve got answers.
+
+Join us at Twitch.tv/BlizzHeroes http://www.twitch.tv/blizzheroes for our first live Heroes of the Storm Q&A panel on Tuesday, December 17 to get your questions answered. The panel will kick off at 11:00 a.m. PST and features the following members of the Heroes development team:
+
+
+Dustin Browder, Game Director
+Phill Gonzalez, Senior 3D Artist
+Kevin Johnson, Senior Manager, Community Development
+
+
+We’d love to hear all of your most burning questions about Heroes, so be sure to tweet them to @BlizzHeroes https://twitter.com/blizzheroes now using #HeroesQA and we’ll get to as many as possible during the hour-long live stream.
+
+Thanks, and we’ll see you on Twitch!

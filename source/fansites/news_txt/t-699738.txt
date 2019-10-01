@@ -1,0 +1,53 @@
+Boubouille2010-03-05, 05:19 AMRecent In-Game Fixes - March 2010 - 3/4
+Some of these changes have been around for a while apparently, during the latest PTR update I saw Blood Nova http://db.mmo-champion.com/s/72378/ getting a 16 sec cooldown and the duration of Emerald Vigor http://db.mmo-champion.com/s/70873/ was increased from 35 to 40 seconds. Instability http://db.mmo-champion.com/s/69766/'s duration has been reduced from 8 to 5 seconds.
+Listed below are recent fixes we have applied to the game. Keep in mind that some of these changes may not be active until after the realm has been restarted.
+
+To review previous in-game fixes, please visit:
+
+3/4
+In the Lord Marrowgar encounters, the boss will no longer reset threat after a bone storm and will now wait a small amount of time before attacking at the end of a bone storm.
+In the Deathbringer Saurfang encounters, the boss is now less likely to cast Blood Nova on targets affected by Mark of the Fallen Champion.
+In both normal and heroic versions of the 10 player Rotface encounter, the mutated infection ability will not be cast as quickly while the fight progresses.
+In the 10- and 25-player heroic Festergut encounters, the malleable goo ability should no longer target pets.
+In the Valithria Dreamwalker encounters, the duration of Emerald Vigor and Twisted Nightmares were slightly increased.
+In the Sindragosa encounters, the duration of the instability debuff was slightly reduced.
+
+
+Blue posts
+Tank Threat Generation
+I'm talking philosophy here, because I assume that's usually more interesting to a wider audience. Philosophically, tank threat generation is working correctly i.e. as we intend with perhaps 4-5 exceptions that we would like to fix:
+
+1 Paladins can do a little too much AE tanking "splash" damage, often without even setting out to do so.
+2 Tricks and MD take too much of a burden off of the tank / hide issue #3.
+3 Damage and therefore threat generation aren't scaling well at very high levels of gear. <-- this is the big one.
+4 There is too much incentive to AE every pull, which puts a burden on the tank to AE tank every pull.
+5 You could probably add that bears need a button to hit besides Swipe. Source http://blue.mmo-champion.com/26/23425588028-do-warriors-really-need-another-cleave.html
+
+Overgearing instances
+Yeah, overgearing the content is fine. Being able to zerg an instance is one of the fun parts of overgearing. We're not worried about that. But on content at appropriate level, it wouldn't be so bad if *some* of the pulls required more crowd control and single-target damage. Source http://blue.mmo-champion.com/26/23425588028-do-warriors-really-need-another-cleave.html
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior Forums http://www.mmo-champion.com/class-warrior/ / Talent Calculator http://talent.mmo-champion.com/?warrior
+Warriors AE Threat
+I don't think warriors need more sustained AE threat. You have Incite + Deep Wounds for Thunderclap and also Shockwave. Maintaining threat is supposed to take some effort. I don't think tanking would be any more fun if you hit Tclap and never had to hit a button again.
+
+The actual problem, in our minds, is threat scaling. Warriors and all tanks could AE tank just fine in Naxxramas.* It only became a problem over time when the dps of the dps classes grew so much more quickly than the tanks, largely because the dps classes have so many dps stats on their gear while plate tanks have Strength. Tank damage was pretty close to 50% of dps damage in the first tier of content, which was our goal, but has slipped to 25 to 30% of dps your mileage may vary in Icecrown.
+
+We need a system that keeps tank damage scaling at the same rate as dps damage. However, that system can't be dependent on gear stats unless you're willing to see tank gear go away and can't be as ridiculous as deep talents that say "You get 5 AP per point of Strength."
+
+I think you just notice threat issues more on AE pulls because things like Tricks and Misdirect mask any problems on single target pulls. Separate problem.
+
+And yes Paladin tank AE damage and threat generation is still too high, largely because of Seals and HoR, but long-term we're going to nerf that instead of making all tanks able to trivially maintain threat in all situations. Referencing the other thread on threat a little, why as a tank would you even care what buttons you push if maintaining threat is a foregone conclusion?
+
+* - AE tanking was fine in Naxxramas. AE damage was, and has remained, over the top. We prefer a model where the risk of tanking too many mobs is that the tank dies, not that you can't maintain threat on them all within reasonable limits of course. We also prefer a model where the dps do AE damage on some pulls and switch to single target dps on others. Source http://blue.mmo-champion.com/26/23425588028-do-warriors-really-need-another-cleave.html
+
+Low FPS - NVIDIA 196.75 drivers
+We're getting reports where users are getting intermittent low FPS after installing these drivers. It seems that it is related to the fan control included in these drivers not working correctly and is causing the video card to overheat on 3D applications. This will affect Warcraft 3, World of Warcraft and StarCraft 2 Beta. Please uninstall the drivers and revert back to the older ones.
+
+Windows XP: http://www.nvidia.com/object/winxp_196.21_whql.html
+Windows XP 64-bit: http://www.nvidia.com/object/winxp64_196.21_whql.html
+Windows Vista/7 32-bit: http://www.nvidia.com/object/win7_winvista_32bit_196.21_whql.html
+Windows Vista/7 64-bit: http://www.nvidia.com/object/win7_winvista_64bit_196.21_whql.html
+
+More information can be found on threads such as these:
+http://forums.nvidia.com/index.php?showtopic=161525
+http://forums.nvidia.com/index.php?showtopic=161503

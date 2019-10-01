@@ -1,0 +1,23 @@
+Boubouille2007-08-18, 06:11 PMIt seems that the haste effect has been changed on the current version of the PTR. Keep in mind that it could be a test and it's not anywhere in the patch notes for the moment
+
+Melee haste rating has been nerfed, and it now requires 15.76 points of haste to get 1% increased attack speed. Instead of 10.51 on the live servers
+
+Ranged haste rating calculation is the same as Melee.
+
+Spell haste rating has been upgraded, and it now requires 15.76 points of haste to get 1% increased cast speed. Instead of 21 on the live servers
+
+If you want to check your haste rating on both PTR and Live servers, you can use the two following commands :
+
+Melee haste rating
+/script DEFAULT_CHAT_FRAME:AddMessageGetCombatRatingBonus18
+
+Ranged haste rating
+/script DEFAULT_CHAT_FRAME:AddMessageGetCombatRatingBonus19
+
+Spell haste rating
+/script DEFAULT_CHAT_FRAME:AddMessageGetCombatRatingBonus20
+
+You should get a % value in your chatbox like in the following examples. 
+
+
+http://static.mmo-champion.com/mmoc/siteImages/images/news/2007/july/haste22.jpg http://www.mmo-champion.com/images/news/2007/july/haste22.jpg

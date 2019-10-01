@@ -1,0 +1,28 @@
+chaud2016-06-03, 09:08 PMEngineer's Workshop: Extended Draw Distance
+It’s been a while since we’ve delved into some of the nuts and bolts of World of Warcraft, but today we wanted to talk about an exciting visual update we’re working on for Legion—extended draw distance.
+
+For the new expansion, we’re making some under-the-hood changes that will make it possible players to see more of the world than before. This new perspective on World of Warcraft won’t be limited to the Broken Isles. Players who return to the Eastern Kingdoms and Kalimdor will also be able to see distant terrain and buildings from farther away than previously possible.
+
+You can see the dramatic difference for yourself between the old and new draw distance in the following screenshots.
+
+This first image is taken from vantage point in Shadowmoon Valley looking toward Karabor from midway through the zone—first on the current Ultra setting and then on the new Graphics Level 8 setting.
+
+
+http://media.mmo-champion.com/images/news/2016/june/thumb/EW0.jpg http://media.mmo-champion.com/images/news/2016/june/EW0.jpg 
+
+In this screenshot, Karabor isn’t even visible as a silhouette on our highest graphics draw distance for Warlords of Draenor Ultra. The equivalent setting in Legion will result in the next screenshot once this change goes into the game.
+
+
+http://media.mmo-champion.com/images/news/2016/june/thumb/EW1.jpg http://media.mmo-champion.com/images/news/2016/june/EW1.jpg 
+
+Now that we’ve shown you what to expect, let’s dig further into what’s going on behind the scenes.
+
+There are two numbers that contribute to how far the player can see terrain and structures in World of Warcraft. These numbers are the “fog distance”—a depth from the camera at which point any object’s pixels are fully converted to the fog color—and an overall draw distance, after which we clip all object geometry, preventing anything past that point from drawing. On lower settings, you can see the second value as terrain and buildings seem to melt into existence, fully fogged, before slowly getting colored as you get closer to them.
+
+In Warlords, the highest-end hardware that can reliably run the Ultra setting manages to push the fully fogged distance to about 1,300 “game units” yards. After that point, all objects would be drawn filled in with the fog color until the clipping distance. The same setting in Legion will draw out to 2,600 game units. Those who currently play at High settings in Warlords and see out to 1,000 units will see 2,200 units in Legion. Graphics Level 10 is currently set at 3,500 game units, which you can see in that last screenshot. It’s important to note that due to memory considerations, all of these new draw distances are only available in the 64-bit client.
+
+If you’re interested in the “how,” a bulk of the effort to achieve this went into changing the way we draw terrain and water in WoW to render fewer vertices at a distance. But it also necessitated the implementation of Level of Detail LOD for game models, like trees, and buildings as well. A model with LOD can swap to a lower polygon count model at a distance without negatively impacting the visual quality of the scene. We prototyped aspects of these systems in both Warlords of Draenor and Mists of Pandaria and learned enough from those two expansions to feel confident about making this change in Legion.
+
+Another important change related to performance and quality will be the number of graphics options. We are retiring the concept of Low, Fair, Good, High, and Ultra in favor of a numerical scale. In Legion you’ll play the game on options 1 through 10, with 1 being the lowest we support and 10 being the highest. The old graphics settings land around 3 being comparable to the old Low and 7 being a match for the old High. This gives us even more room around the minimum spec and the recommended spec to either ease burdens on low end hardware or push titanic configurations.
+
+Please note that as we progress through the beta, we may make additional changes to draw distances in order to deliver the best gameplay experience and performance. These changes are currently available to check out in the Legion beta test.

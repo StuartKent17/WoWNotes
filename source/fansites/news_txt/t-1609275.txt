@@ -1,0 +1,382 @@
+chaud2014-10-14, 11:09 PMUpdate: Added hotfixes and a few new blue posts.
+
+WoW Up to 7.4 Million Subscribers
+Blizzard released http://blizzard.gamespress.com/THE-INVASION-OF-THE-IRON-HORDE-HAS-BEGUN-WARLORDS-OF-DRAENOR-PRELAUNCH the subscribers count ahead of next month's earning call. This is up 600k from the Q2 2014 call http://www.mmo-champion.com/content/4219-WoW-Down-to-6-8-Million-Subscribers that listed WoW at 6.8 million subscribers.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+<script> var chart;
+$document.readyfunction  {
+Highcharts.setOptions{
+colors: ['#60A887']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'subCounts',
+defaultSeriesType: 'line',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+type: 'datetime',
+labels: {
+maxStaggerLines: 0
+},
+
+plotBands: [{
+color: '#DEDEDE',
+from: Date.UTC2004, 8, 1,
+to: Date.UTC2007, 0, 15,
+label: {
+text: 'Vanilla'
+} 
+},
+{
+color: '#B6DBBC',
+from: Date.UTC2007, 0, 15,
+to: Date.UTC2008, 10, 13,
+label: {
+text: 'Burning Crusade'
+} 
+},
+{
+color: '#C5DBE3',
+from: Date.UTC2008, 10, 13,
+to: Date.UTC2010, 11, 6,
+label: {
+text: 'Wrath of the Lich King'
+} 
+},
+{
+color: '#E3D4C5',
+from: Date.UTC2010, 11, 6,
+to: Date.UTC2012, 8, 24,
+label: {
+text: 'Cataclysm'
+} 
+},
+{
+color: '#C5E3CA',
+from: Date.UTC2012, 8, 24,
+to: Date.UTC2014, 10, 13,
+label: {
+text: 'Mists of Pandaria'
+} 
+}]
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+min: 0,
+title: {
+text: 'Subscribers',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+line: {
+animation: false
+}
+},
+
+
+title: {
+text: 'World of Warcraft Subscriptions',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+data: [
+[Date.UTC2004, 9, 1, 0],
+[Date.UTC2004, 10, 1, 250000],
+[Date.UTC2004, 11, 1, 400000],
+[Date.UTC2005, 0, 1, 750000],
+[Date.UTC2005, 1, 1, 1250000],
+[Date.UTC2005, 2, 1, 1500000],
+[Date.UTC2005, 3, 1, 1800000],
+[Date.UTC2005, 4, 1, 2000000],
+[Date.UTC2005, 5, 1, 3250000],
+[Date.UTC2005, 6, 1, 3500000],
+[Date.UTC2005, 7, 1, 4000000],
+[Date.UTC2005, 8, 1, 4250000],
+[Date.UTC2005, 9, 1, 4500000],
+[Date.UTC2005, 10, 1, 5000000],
+[Date.UTC2005, 11, 1, 5600000],
+[Date.UTC2006, 0, 1, 6000000],
+[Date.UTC2006, 2, 1, 6400000],
+[Date.UTC2006, 4, 1, 6500000],
+[Date.UTC2006, 5, 1, 6600000],
+[Date.UTC2006, 8, 1, 7000000],
+[Date.UTC2006, 10, 1, 7500000],
+[Date.UTC2007, 0, 1, 8000000],
+[Date.UTC2007, 2, 1, 8500000],
+[Date.UTC2007, 4, 1, 8600000],
+[Date.UTC2007, 5, 1, 8800000],
+[Date.UTC2007, 6, 1, 9000000],
+[Date.UTC2007, 10, 1, 9300000],
+[Date.UTC2007, 11, 1, 9750000],
+[Date.UTC2008, 0, 1, 10000000],
+[Date.UTC2008, 1, 1, 10200000],
+[Date.UTC2008, 9, 1, 11000000],
+[Date.UTC2008, 8, 30, 11000000],
+[Date.UTC2008, 11, 1, 11500000],
+[Date.UTC2008, 11, 31, 11500000],
+[Date.UTC2009, 2, 1, 11500000],
+[Date.UTC2009, 2, 31, 11500000],
+[Date.UTC2010, 0, 1, 11500000],
+[Date.UTC2009, 11, 31, 11500000],
+[Date.UTC2010, 9, 1, 12000000],
+[Date.UTC2010, 8, 30, 12000000],
+[Date.UTC2011, 1, 1, 12000000],
+[Date.UTC2011, 2, 31, 11400000],
+[Date.UTC2011, 5, 30, 11100000],
+[Date.UTC2011, 8, 30, 10300000],
+[Date.UTC2011, 11, 31, 10200000],
+[Date.UTC2012, 6, 1, 9100000],
+[Date.UTC2012, 8, 30, 10000000],
+[Date.UTC2012, 11, 31, 9600000],
+[Date.UTC2013, 2, 31, 8300000],
+[Date.UTC2013, 5, 30, 7700000],
+[Date.UTC2013, 8, 30, 7600000],
+[Date.UTC2013, 11, 31, 7800000],
+[Date.UTC2014, 2, 31, 7600000],
+[Date.UTC2014, 5, 30, 6800000],
+[Date.UTC2014, 8, 30, 7400000], ],
+name: 'Global subscribers'
+}]
+
+};
+
+};
+</script> 
+<div id="subCounts" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+
+
+
+Patch 6.0.2 Hotfixes - Oct 14
+World Event: Iron Horde Incursion
+
+All quest boss NPCs in the Blasted Lands now have scaling health pools based on the number of players engaging them.
+Spawn rates for mobs and NPCs in the Blasted Lands have been adjusted.
+[Requires a realm restart.] Quest items for Mementos of the Fallen and Ransacking Nethergarde should now be tracked properly on the mini map.
+The title, "of the Iron Vanguard" received from completing The Iron Invasion achievement is now account-wide.
+
+
+Toy Box
+
+Resolved an issue where the toy collection count was incorrectly increasing each time the character logs in.
+
+
+Classes
+
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight Forums http://www.mmo-champion.com/forums/269-Death-Knight / Skills http://beta.wowdb.com/spells/class-abilities/death-knight / WoD Talent Calculator http://beta.wowdb.com/talent-calculator#Y
+
+General
+
+Death Coil should now correctly have a range of 40 yards.
+
+Talents
+
+Blood Tap, Runic Corruption, and Runic Empowerment should no longer incorrectly trigger when attempting to cast Death Coil against an invalid target.
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid / Skills http://beta.wowdb.com/spells/class-abilities/druid / WoD Talent Calculator http://beta.wowdb.com/talent-calculator#s
+
+Restoration
+
+Lifebloom's Bloom effect should no longer incorrectly heal the casting Druid instead of their target.
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter Forums http://www.mmo-champion.com/forums/271-Hunter / Skills http://beta.wowdb.com/spells/class-abilities/hunter / WoD Talent Calculator http://beta.wowdb.com/talent-calculator#M
+
+General
+
+Resolved an issue where Deterrence modified by Glyph of Mirrored Blades was not reflecting spells back at the target.
+Resolved an issue where Explosive Trap's effects could be dodged.
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage Forums http://www.mmo-champion.com/forums/272-Mage / Skills http://beta.wowdb.com/spells/class-abilities/mage / WoD Talent Calculator http://beta.wowdb.com/talent-calculator#g
+
+Arcane
+
+Resolved a script error with Arcane Barrage.
+
+Talents
+
+Supernova now deals 30% less damage against player targets.
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior Forums http://www.mmo-champion.com/forums/278-Warrior / Skills http://beta.wowdb.com/spells/class-abilities/warrior / WoD Talent Calculator http://beta.wowdb.com/talent-calculator#E
+
+Arms
+
+Resolved an issue where Execute could incorrectly cause the Warrior to receive 100 Rage.
+
+
+Creatures
+
+[Requires a realm restart.] Reduced the health and damage of high level creatures and NPCs in Pandaria to more closely match their relative difficulty before the stat squish.
+Incarnation of Despair's Last Gasp now deals damage that is more reasonable level in a post stat squish environment.
+
+
+Quests
+
+Legendary Cloak Quest Line
+
+Celestial Blessings: Adjusted the damage received by both the player and Wrathion during the challenges for Chi-ji healer and Niuzao tanking to a reasonable level.
+
+
+Raids, Dungeons, and Scenarios
+Raids
+
+Resolved an issue in Personal Loot mode where multiple players were unable to loot a boss or chest at the same time.
+Siege of Orgrimmar
+
+Auction house NPCs in Siege of Orgrimmar's should no longer be level 100.
+Garrosh Hellscream's Iron Star explosion damage has been reduced to a more reasonable level in a post stat squish environment.
+
+Throne of Thunder
+
+Jin'rokh the Breaker's Static Wound damage has been reduced to a more reasonable level in a post stat squish environment.
+Shadow Nova damage for Dark Ritualist and Ritual Guard has been reduced to a more reasonable level in a post stat squish environment.
+
+
+Dungeons
+
+Upper Blackrock Spire
+
+Commander Tharbek received a tuning pass on their damage and ability cooldowns.
+Awbee should no longer spam their introduction after Commander Tharbek is defeated.
+Resolved an issue where items were incorrectly disenchanting into Warlords of Draenor enchanting materials.
+
+Shadow-Pan Monastery
+
+Gu Cloudstrike's Magnetic Shroud healing absorption has been reduced to a more reasonable amount in a post stat squish environment.
+
+
+Proving Grounds
+
+Tank Trial NPCs now hit harder and have slightly more health.
+
+
+Battlegrounds and Arenas
+
+Deepwind Gorge
+
+Resolved an issue where players were not receiving points for capturing a mine cart.
+
+
+Items
+
+Resolved an issue where Tier tokens obtained from Mists of Pandaria Raids could not be exchanged for gear.
+Resolved an issue where Dame Evniki Kapsalis was incorrectly selling Heirloom items for gold instead of Champion's Seals.
+Resolved an issue where Nat Pagle was incorrectly selling Draenic or Savage Fishing Poles.
+
+
+
+Smash ‘n Grab—Bonus Chance to Get Your Heirloom from Garrosh
+Garrosh got an iron-tight grip on your heirloom? It’s time to Smash 'n Grab http://www.wowdb.com/spells/174983-smash-n-grab! Beginning Tuesday, October 14 and lasting until the launch of Warlords of Draenor on November 13, we’ll be giving players a bonus 100% chance to get their first Garrosh heirloom weapon in each difficulty* of Siege of Orgrimmar. If you have yet to claim an heirloom for your collection, here’s your chance. Once Warlords of Draenor goes live, these heirlooms will no longer be available, so get involved in the siege before it’s too late.
+
+*Not available in Raid Finder. Note that the bonus only applies in raid difficulties in which you have not received an Heirloom already. If you have already received an Heirloom from a specific difficulty, the bonus will not have any effect. 
+
+
+Pandaria Awaits – World of Warcraft Now Includes Mists of Pandaria
+Unlock the mysteries of Pandaria. Beginning today, October 14, 2014, players are now able to get the original World of Warcraft, The Burning Crusade, Wrath of the Lich King, Cataclysm, and Mists of Pandaria together for only $19.99, available digitally now in the Battle.net Shop https://us.battle.net/shop/en/product/world-of-warcraft. In addition, all World of Warcraft subscribers will now automatically have access to all of the content and features of Mists of Pandaria, even if they never purchased the expansion, at no additional cost.
+
+It’s time to part the mists, adventurer — Pandaria awaits!
+
+
+Blue Posts
+Stat Squish*
+If any particular creatures aren't properly squished, be sure to report them by name in the Bug Report forum so we can hotfix these as quickly as possible.
+
+As an aside, Patch 6.0.2 is the biggest change World of Warcraft has ever seen, particularly on the technical side with file structure and coding, as well as on the mechanical side with things like the stat squish, ability pruning, etc. There are bound to be some unforeseen bugs or other issues, which is why we have all hands on deck ready to pounce on these as we find them. With your help and patience we'll get things sorted even faster.
+
+And this wasn't done in the PTR why? Just get rid of the PTR since you all at Blizzard seem to think that it's better to piss off the players with buggy, nonfunctional patches instead of fine-tuning them first!
+You seem to presume that thousands of players were anxious to hop on the PTR and jump into Terrace of Endless Spring LFR, or run countless other pieces of older content in order to find that one mob that hits too hard. Like I said, this is a huge patch and a ton of very core mechanics of the game have been altered in ways that impact every player and NPC in the world. We're bound to have missed a few things and will address them as quickly as we can.
+
+The PTR process is still immensely useful for catching bugs, particularly client-crashing, game-breaking bugs which we prioritize over smaller things. It's not a black-or-white, all-or-nothing situation as you implied with your "get rid of the PTR" comment. Unfortunately or maybe fortunately?, it's more complicated. Blue Tracker http://blue.mmo-champion.com/topic/344580-you-completely-messed-up-the-stat-squish/ / Official Forums http://us.battle.net/wow/en/forum/topic/14882118236?page=1#15
+
+Worgen Skin Customization Fix*
+Welcome to 6.0.2! We’re in the process of tracking a couple dozen or so hotfixes we’ve implemented, or are in the process of implementing, and we’ll be updating the 6.0.2 Hotfixes blog as they come in.
+
+In the meantime, we wanted to bring up an issue we’re looking into with Worgen skin options. Worgen or Gilnean, if you prefer characters are pretty unique in that their customization options are linked between each form Human and Worgen. As work progressed on updated character models for 6.0.2, there was an error in how we numbered the texture files used to set which skin tones are linked between them. Some Worgen players out there are seeing a pretty stark mismatch, which is due to the game simply pointing at the wrong texture file. While it’s a simple error, it does require a client-side change to correct. We’re in the process of working on a client side patch to address this and a few other issues, and we’re working to get that out tomorrow if possible.
+
+We’re excited to take this first giant step toward Warlords of Draenor with you, we’re continuing to read your feedback, and hope you’re enjoying fighting off this first wave of the Iron Horde invasion. As always, thanks for playing, and we’ll see you in-game! Blue Tracker http://blue.mmo-champion.com/topic/344586-worgen-skin-customization-fix/ / Official Forums http://us.battle.net/wow/en/forum/topic/14881248215?page=1#1
+
+Proving Grounds Titles
+We're aware of the issue with missing Proving Ground titles and are working on a hotfix to address this. Blue Tracker http://blue.mmo-champion.com/topic/344493-proving-grounds-title-gone/ / Official Forums http://us.battle.net/wow/en/forum/topic/14882338135?page=1#3
+
+Ordos and Legendary Cloak Requirement
+Edit: Spoke too soon. The change below has been reverted. Eligibility for loot from defeating Ordos has not changed. It still requires one of the characters on an account license to have obtained the Legendary Cloak.
+
+
+Access to Ordon Sanctuary or eligibility for loot from Ordos no longer requires players to have completed the Legendary Cloak questline.
+Blue Tracker http://blue.mmo-champion.com/topic/344487-still-cant-do-ordos-w-no-cloak/ / Official Forums http://us.battle.net/wow/en/forum/topic/14881658078?page=1#13
+
+Archeology Toys
+Name says it all. Farmed up a metric ton of them a long time ago. Achievements are in my book but I don't have the items anymore. Ran out of bag space. Any chance there's a way to recover these with 6.0.2 with the inclusion of the Toys UI?
+You may be pleasantly surprised on login. My characters automatically pre-learned toy items that my characters have obtained via Archeology without having to learn them. Blue Tracker http://blue.mmo-champion.com/topic/344484-can-we-get-our-archeology-toys-back/ / Official Forums http://us.battle.net/wow/en/forum/topic/14872337160?page=2#22
+
+New Character Models
+Sorry to hear you're not enjoying your updated character! As others have mentioned, we've added facial customization options to the in-game barbershop, which will allow you to change additional appearance options for an in-game gold cost.
+
+With the old models looking as... old, as they did, there's always been some amount of interpretation that's going to happen from person to person as they fill in the quality-gaps, and add their own story and character to any of the looks. Where a squiggly blurry line might look like a scar to you, it might look like freckles to someone else. A furled brow is grease smudge, a wince is a grimace, or a smile is a pout. We went into the archives, back to the source material and textures, and spent a lot of time trying to ensure we were interpreting all those squiggles and smudges in a way that is as true to the originals as possible, while also updating them to much higher resolutions and levels of fidelity. No easy task, I assure you. We expect that some will have had different interpretations of those old blurry textures than the ones we arrived at, and that's why we brought some of the recustomization features in-game for "free" small gold cost like other barbershop features, and with that you can hopefully find new combinations and options that do appeal to you. Blue Tracker http://blue.mmo-champion.com/topic/344478-blizzard-what-did-you-do-to-my-toon/ / Official Forums http://us.battle.net/wow/en/forum/topic/14881968093?page=3#53
+
+Professions and Gold in Warlords of Draenor
+Unless you have a huge stockpile, gold is going to be an important asset in Warlords. But, beyond that, professions are still poised as they always have been, as a way to create high end items and special rewards for you and your friends, as well as to sell or trade your masterful experience as goods and services. Beyond items that will help fill itemization gaps as you'll get into raiding, there's the standard cadre of bonus items, toys, mounts, etc. that specific professions can create. There's also a lot of interplay between which professions you have/don't have, and how your building selections in the Garrison will benefit or offset your skills. Blue Tracker http://blue.mmo-champion.com/topic/344445-so-what-is-the-point-of-professions-now/ / Official Forums http://us.battle.net/wow/en/forum/topic/14872737176?page=2#26
+
+Gaze of the Black Prince Buff Ended Early
+It was our understanding that the Gaze of the Black Prince buff would be removed when the realms were brought down to apply Patch 6.0.2. In reality, the buff was set to expire at 12:00 a.m. this morning. At this point it's not likely that we'll be able to reactivate the buff so that it's available for these waning hours prior to patch launch. We apologize for the discrepancy between our messaging and the actual timing of the buff's removal. It wasn't our intent to mislead or confuse anyone. Blue Tracker http://blue.mmo-champion.com/topic/344283-gaze-of-the-black-prince-buff-gone/ / Official Forums http://us.battle.net/wow/en/forum/topic/14730114289?page=3#56
+
+Heirloom Vendor Change in Patch 6.0.2
+theres this situation where people probably have just started playing WoW again or are new to wow and they like to catch up on things during the game, i bet you dont take too many breaks from wow seing how far you went into that post of yours.
+If they're new to the game they wouldn't be able to purchase heirlooms until they're already leveled. If they're returning, again, they may be lvl 80 or 85 and they're probably not going to be buying any especially because they won't provide them much if any benefit at that level unless they do have 90's but are returning to just level alts--which seems super specific. I'm still unsure of in what scenario new players or people returning to the game are specifically and unfairly being affected by this.
+
+Which is of course not bringing up, again, heirlooms will still be available from other vendors for different currencies. Or that, if you want to right now, you could pretty easily grind out the JP needed to buy any heirlooms you want in the next couple days before 6.0.2.
+
+How long have you guys been working on WoD already? How long have you known all of this was going to change? How bad do you think it looks that a month prior to the release you STILL haven't figured this out.
+An account wide heirloom system wasn't as high a priority as other changes and content. Features and content are routinely delayed or cut from expansions as we work on them and priorities and design ideas and philosophies change. It's how we've always worked. Making a game is more of an art than a science, and we think it works better when there can be a personal touch and influence on the game design and direction, and not a rigid schedule to adhere to.
+
+Anyway, to answer your question, we were in the process of changing the heirlooms to cost gold and thought "wait a minute, this is going to maybe suck if the new system changes the valuation considerably". So, specifically, maybe a day before the original post?
+
+But again, help me understand. Why did this not come across during meetings about it when you had them? Maybe we're not privy to the knowledge, but the, "Well, we didn't realize it would be all screwy until just a short time ago!" thing...honestly, it puts a REALLY bad taste in my mouth, personally speaking.
+
+Don't get me wrong.
+
+I understand more than most prioritizing things. However, if a change is coming down the pike, do you not first examine ALL options thoroughly before deciding on what will work best? This reeks of throwing stuff at a wall and seeing what sticks, man.
+Mmmm, not sure if I can answer satisfactorily as this seems to be a judgment of our working processes, which I'm not sure necessarily can or should be justified. If we do something you don't like, tell us why, I don't know that trying to ensure our producers are using "Agile" is super helpful. But anyway, things change, and they can change at any step. Obviously in meetings where designs are discussed, things change thousands or times in little or substantial ways. They can also change during testing, or as we approach a milestone, or at 2am when a designer wakes up in a cold sweat screaming "OH NO!", or during implementation, or a billion other small ways. You're perceiving change as a weakness, when in reality our ability to change and adapt to new conditions or thoughts or ideas, is a major strength.
+
+It seems like you're wanting to shame us for not being able to see the future, or for prioritizing tasks properly in the scheme of a new expansion, what old heirlooms will sell for is not super high up there, which seems odd and unfair.
+
+I'm starting to agree with all the claims about pushing the paid 90 boost. That's the only thing that makes sense.
+*grumble* Except everyone gets a boost included with Warlords and also heirlooms are still purchasable with other currencies. If the intent is to propose what-if scenarios as real problems, I'll discuss them all day, but please don't bring conspiracy theories in. There's no logic to what you're proposing.
+
+Why is this even a concern? You've placed a monetary value on Justice Points. You've placed a gold value on the guild heirlooms. This is just repeating a bad excuse for a last minute change. One that doesn't even influence the gameplay in the new expansion. It's a convenience item for "veteran" players. 
+There's no monetary value on JP. We're offering a payout for time spent as the currency is being removed so people aren't sad for having JP they didn't spend. It's a nice thing to do. It is not a literal valuation of time spent. And there just isn't a parity with the guild heirlooms. Just because both items are heirlooms doesn't mean they should both suddenly be obtainable the same way through the same systems.
+
+I do indeed understand some people would love for heirlooms to be purchasable with gold.
+
+Again, maybe you did this. I don't know. But it surely seems to me that you Blizzard just took the path of least resistance and hoped for the best without really THINKING about it and have inconvenienced MANY players with nothing more than, "Oopsie daisy!".
+I think it was more along the lines of, ok we're removing Valor and Justice Points, this is a change that affects dozens of systems, thousands of items, millions of players, let's discuss the key impacts, but it's going to take months for designers to work through how each should be resolved in each system, for each player, let alone implement, test, bug fix, reimplement, test, bug fix, etc. etc. and it would be nonsensical for us to sit and discuss each minutiae of the change for old currencies instead of doing work to make an awesome expansion. Blue Tracker http://blue.mmo-champion.com/topic/339492-heirloom-vendor-change-in-patch-602/ / Official Forums http://us.battle.net/wow/en/forum/topic/14420192331?page=26#502
+
+
+Patch 6.0.2 - Alliance and Horde Choppers
+Today's patch added the Horde chopper mount, but it looks like Alliance players will have to wait https://twitter.com/TheCrafticus/status/522130504686899202 a little longer to buy their mount.
+
+
+<object width="900" height="506"><param name="movie" value="//www.youtube.com/v/D-GvXO-S9Lo?hl=en_US&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/D-GvXO-S9Lo?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="900" height="506" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+<object width="900" height="506"><param name="movie" value="//www.youtube.com/v/BjhLhvJQKo8?hl=en_US&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/BjhLhvJQKo8?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="900" height="506" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+http://media.mmo-champion.com/images/news/2014/august/thumb/allianceChopper2.jpg http://media.mmo-champion.com/images/news/2014/august/allianceChopper.jpg http://media.mmo-champion.com/images/news/2014/august/thumb/hordeChopper2.jpg http://media.mmo-champion.com/images/news/2014/august/hordeChopper.jpg 
+http://media.mmo-champion.com/images/news/2014/june/mvbar450.png http://media.mmo-champion.com/images/news/2014/june/mvbar450.png

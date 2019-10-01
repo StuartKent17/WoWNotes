@@ -1,0 +1,138 @@
+chaud2013-10-17, 09:52 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> The Future of MF & GF in Paragon 2.0, Diablo 2 Battle Chest for $4.99, Patch 1.0.2 is Now Live on Xbox 360 As Well http://www.diablofans.com/news/2100-the-future-of-mf-gf-in-paragon-20-diablo-2-battle-chest-for-499-patch-102-is-now-live-on-xbox-360-as-well/
+
+New Connected Realms Coming
+Realms https://docs.google.com/spreadsheet/ccc?key=0AlhGFxXGEsQadHQ0YjJZX2J0eml0RC1fUDJEbFdJWFE&usp=sharing are being connected faster now! Keep in mind that Bloodscalp, Maiev, and Boulderfist will make the first group of three realms.
+As a part of our ongoing Connected Realms implementation, we will be connecting additional pairs of realms as listed below. We don’t have a specific date yet on when these connections will occur, but we’ll provide another update once we do. Please be aware that as a part of the connection process realm times may change to match each other.
+
+Next Realm Connection Pairs:
+Balnazzar and Warsong
+Gurubashi and Aegwynn
+Dalvengyr and Dark Iron
+Garithos and Chromaggus
+Onyxia and Burning Blade
+Maiev and Bloodscalp
+
+
+We're currently evaluating further realm connections and will provide updates as they're available.
+
+For more information on Connected Realms, please read the preview blog post here.
+
+Maiev, and...Bloodscalp?
+You MIGHT want to clarify that it is US Bloodscalp, and Not the EU one. Might confuse some people. 
+All of the connections announced on the North American forums are for North American realms.
+
+
+Patch 5.4 Hotfixes: October 16
+Classes
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage Forums http://www.mmo-champion.com/forums/272-Mage / Skills http://www.wowdb.com/spells/class-abilities/mage / Talent Calculator http://www.wowdb.com/talent-calculator#g
+
+Class Armor
+
+Resolved an issue that could cause the Tier-16 2-piece set bonus Frozen Thoughts to be consumed without effect.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest Forums http://www.mmo-champion.com/forums/274-Priest / Skills http://www.wowdb.com/spells/class-abilities/priest / Talent Calculator http://www.wowdb.com/talent-calculator#U
+
+Holy
+
+Mastery: Echo of Light's healing has been increased by 4%. 
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock Forums http://www.mmo-champion.com/forums/277-Warlock / Skills http://www.wowdb.com/spells/class-abilities/warlock / Talent Calculator http://www.wowdb.com/talent-calculator#k
+
+Talents
+
+Archimonde's Darkness' effect should now be correctly removed when the Warlock switches talents or glyphs.
+
+
+
+
+Quests
+
+Timeless Treasures: Weekly treasure chests on the Timeless Isle can now grant credit towards completing this quest.
+
+
+Raids, Dungeons, and Scenarios
+
+Siege of Orgrimmar
+
+Galakras
+
+Reduced the health of ranking officials and foot soldiers in Phase 1 of the encounter on 10-player Normal difficulty.
+
+Kor'kron Dark Shaman
+
+Ashen Wall, Toxic Storm, Toxic Mist, Foul Stream, and Foul Geyser now deal less damage on Raid Finder difficulty.
+
+Spoils of Pandaria
+
+Reduced the health of most of the creatures during the Spoils of Pandaria encounter on Raid Finder difficulty.
+Having multiple players start the encounter should no longer incorrectly cause the timer to count down rapidly.
+
+Thok the Bloodthirsty
+
+Captive Cave Bats on Raid Finder difficulty will no longer incorrectly drop Normal difficulty loot.
+
+Garrosh Hellscream
+
+Garrosh Hellscream should now use his abilities more predictably when starting Stage Three: MY WORLD.
+
+
+Mogu'shan Vaults
+
+Resolved an issue that prevented players from completing the Straight Six achievement.
+
+
+
+Battlegrounds and Arenas
+
+[Requires a realm restart.] Silvershard Mines: The eastern mine cart now doesn't spawn in until shortly after the gates open.
+
+
+Professions
+
+Cooking
+
+Noodle cart chefs will now receive a well-fed buff while serving other players bowls of noodle soup.
+
+
+
+Items
+
+Nazgrim's Burnished Insignia http://www.wowdb.com/items/102294-nazgrims-burnished-insignia should no longer be incorrectly activating from actions that aren't helpful spells.
+Ticking Ebon Detonator http://www.wowdb.com/items/102311-ticking-ebon-detonator should no longer be incorrectly activating from actions that aren't attacks.
+
+
+
+
+Flex Mechanics Scaling
+Thanks for some excellent feedback so far. Boss mechanics inevitably involve some breakpoints alas, there's no way for Malkorok to create precisely 3.7 Implosions, and they do need to scale in some form, or abilities only targeting maybe 2 players out of a 25-player Flex raid would make some of those mechanics feel completely trivial and detract from the intended experience and tuning. In general, we try to err on the side of rounding down, and making sure that the ratios are never worse for any group size than they would be for a normal 10- or 25-player raid. Norushen orbs are a great example of a place where that logic doesn't quite work, though, since you actually want more orbs, and not fewer. That's something we can adjust.
+
+Personally we have found 11 to be just about the hardest number. The difference in scaling between 10 to 11 is about 11mill HP. Now for a boss like the Iron Juggernaut, that’s fine. You pew pew the boss the whole fight. 11 mill over 5-6 mins is do-able. But, for a fight like Galakras where the boss is a burn at the end. That 11 mill is pretty tuff to make. Especially being flex so the extra members are not exceptional.
+
+TL;DR the boss HP Scaling is a bit over tuned for 1-2 extra players. on some fights
+A bit of clarification here: Boss health and damage scaling are both completely linear and proportional to group size, but scale up more slowly than raid size does. So, all else being equal, if you add players who are roughly on par with the average gear/skill of your current group, you'll have a slightly easier time as a result. 
+
+Thok, for example, has 355 million health with a 10-player Flexible raid. If you add an 11th player, his health will go up to 390 million. I.e., you've increased your raid's damage output by somewhere between 14 and 20% depending on how many healers you were running, but the boss's health only went up by 10%. Adding that 11th player will also make Thok melee for about 3% more damage, which will barely be noticeable.
+
+Wait, what? He has like 440 million on 10 normal.
+Whoops, sorry about that. I was looking at the LFR numbers. He has 355 million with 10-player Flex, and 390 million with 11 players. Same general point holds, but I goofed on the exact values.
+
+
+33% Off Winged Guardian Mount—This Week Only
+For a limited time, the Winged Guardian mount can be claimed and added to your personal collection for 33% off the normal price. You’ll be the talk of Azeroth as you soar through the clouds with this fiery golden-maned lion—but don’t delay . . . this sale ends October 22, 2013 at 11:59 p.m. PDT.
+
+
+http://media.mmo-champion.com/images/news/2013/october/wgMV.jpg
+Winged Guardian http://www.wowdb.com/items/69846-winged-guardian
+
+Get yours now! US http://blizzard.com/store/details.xml?id=1100001495 / EU http://eu.blizzard.com/store/details.xml?id=221004697
+
+
+Blizzard Art Update
+Blizzard has added more pieces to the World of Warcraft: Mists of Pandaria Art gallery http://us.battle.net/wow/en/media/artwork/wow-mop.
+
+
+<div class="gallery" id="wowx4artgal">http://media.mmo-champion.com/images/news/2013/october/thumb/wowx4-artwork-115-full.jpg http://media.mmo-champion.com/images/news/2013/october/wowx4-artwork-115-full.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/wowx4-artwork-116-full.jpg http://media.mmo-champion.com/images/news/2013/october/wowx4-artwork-116-full.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/wowx4-artwork-117-full.jpg http://media.mmo-champion.com/images/news/2013/october/wowx4-artwork-117-full.jpg 
+http://media.mmo-champion.com/images/news/2013/october/thumb/wowx4-artwork-118-full.jpg http://media.mmo-champion.com/images/news/2013/october/wowx4-artwork-118-full.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/wowx4-artwork-119-full.jpg http://media.mmo-champion.com/images/news/2013/october/wowx4-artwork-119-full.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/wowx4-artwork-120-full.jpg http://media.mmo-champion.com/images/news/2013/october/wowx4-artwork-120-full.jpg </div>

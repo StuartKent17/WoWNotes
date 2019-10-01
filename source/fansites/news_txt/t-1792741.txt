@@ -1,0 +1,393 @@
+chaud2015-05-31, 10:57 PM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Solo vs. Group Play, PYWT: “Stone Age” Barbarian http://www.diablofans.com/news/48431-solo-vs-group-play-pywt-stone-age-barbarian
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Popular Decks of the Week, Viagame House Cup Finals + Decklists http://www.hearthpwn.com/news/907-popular-decks-of-the-week-viagame-house-cup-finals
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Dustin Browder Tweets Round-Up, Madeon at the Launch Event, Plays of the Week Wombo Combo http://www.heroesnexus.com/news/1381-dustin-browder-tweets-round-up-madeon-at-the
+
+Armory Stats - Blackrock Foundry Progression
+Today we are taking a look at the Blackrock Foundry progression of players in each difficulty. Now that achievements are account wide, we can group characters by account and get an idea of what percentage of players not characters have defeated a boss on each difficulty at least once, based on progression data.
+
+The data used today is a sample made up of 2.1 million accounts, with at least one character active after April 1. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. 
+
+The second chart uses the number of players that killed Gruul in each difficulty except Mythic, which uses Beastlord as the base of participating players for that difficulty. Each difficulty can be toggled on and off by clicking the name in the legend.
+
+We looked at Siege of Orgrimmar stats in January 2014 http://www.mmo-champion.com/content/3689-Armory-Stats-Siege-of-Orgrimmar-Progression-Blue-Tweets-DLC-423 and May 2014 http://www.mmo-champion.com/content/3984-armory-stats-siege-of-orgrimmar-progression-blue-tweets-dlc-439. You can leave suggestions for future stat posts in the comments!
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#ADADAD', '#949494', '#727272', '#595959', '#6B8E23', '#426F42']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'brfAbs',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Gruul', 'Oregorger', 'Blast Furnace', 'Hans and Franz', 'Flamebender', 'Kromog', 'Beastlord', 'Thogar', 'Maidens', 'Blackhand'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+groupPadding: 0.15,
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.series.name + ' ' + this.x + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Defeated Blackrock Foundry Bosses',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'LFR',
+data: [{y: 55.9, color: '#bee4d3'},{y: 55.7, color: '#bee4d3'},{y: 56.1, color: '#bee4d3'},{y: 51.7, color: '#d6e1ee'},{y: 51.6, color: '#d6e1ee'},{y: 51.4, color: '#d6e1ee'},{y: 46.2, color: '#f3e5cc'},{y: 46.2, color: '#f3e5cc'},{y: 46.1, color: '#f3e5cc'},{y: 47.0, color: '#ebc5c5'}],
+
+},{
+name: 'Normal',
+data: [{y: 32.5, color: '#81CCAA'},{y: 29.2, color: '#81CCAA'},{y: 18.7, color: '#81CCAA'},{y: 31.0, color: '#81A4CC'},{y: 28.0, color: '#81A4CC'},{y: 25.9, color: '#81A4CC'},{y: 30.5, color: '#E0BB79'},{y: 25.9, color: '#E0BB79'},{y: 20.3, color: '#E0BB79'},{y: 12.5, color: '#D48787'}],
+
+}, {
+name: 'Heroic',
+data: [{y: 24.4, color: '#3e986f'},{y: 21.3, color: '#3e986f'},{y: 14.2, color: '#3e986f'},{y: 23.8, color: '#4779b1'},{y: 21.4, color: '#4779b1'},{y: 19.7, color: '#4779b1'},{y: 23.3, color: '#c58f2e'},{y: 20.5, color: '#c58f2e'},{y: 16.7, color: '#c58f2e'},{y: 9.8, color: '#be4848'}]
+
+}, {
+name: 'Mythic',
+data: [{y: 3.99, color: '#255c43'},{y: 4.6, color: '#255c43'},{y: 0.8, color: '#255c43'},{y: 3.47, color: '#253f5c'},{y: 3.27, color: '#253f5c'},{y: 2.48, color: '#253f5c'},{y: 5.15, color: '#72531b'},{y: 1.95, color: '#72531b'},{y: 1.23, color: '#72531b'},{y: 0.4, color: '#762a2a'}]
+
+}
+]
+
+};
+
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'brfScaled',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Gruul', 'Oregorger', 'Blast Furnace', 'Hans and Franz', 'Flamebender', 'Kromog', 'Beastlord', 'Thogar', 'Maidens', 'Blackhand'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+endOnTick: false,
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+groupPadding: 0.15,
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.series.name + ' ' + this.x + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Participating Players that Defeated Blackrock Foundry Bosses',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'LFR',
+data: [{y: 100, color: '#bee4d3'},{y: 99.6, color: '#bee4d3'},{y: 100.4, color: '#bee4d3'},{y: 92.4, color: '#d6e1ee'},{y: 92.4, color: '#d6e1ee'},{y: 92.0, color: '#d6e1ee'},{y: 82.7, color: '#f3e5cc'},{y: 82.7, color: '#f3e5cc'},{y: 82.4, color: '#f3e5cc'},{y: 84.1, color: '#ebc5c5'}],
+
+},{
+name: 'Normal',
+data: [{y: 100, color: '#81CCAA'},{y: 89.9, color: '#81CCAA'},{y: 57.6, color: '#81CCAA'},{y: 95.4, color: '#81A4CC'},{y: 86.3, color: '#81A4CC'},{y: 79.9, color: '#81A4CC'},{y: 93.9, color: '#E0BB79'},{y: 79.9, color: '#E0BB79'},{y: 62.6, color: '#E0BB79'},{y: 38.4, color: '#D48787'}],
+
+}, {
+name: 'Heroic',
+data: [{y: 100, color: '#3e986f'},{y: 87.3, color: '#3e986f'},{y: 58.0, color: '#3e986f'},{y: 97.6, color: '#4779b1'},{y: 87.8, color: '#4779b1'},{y: 80.8, color: '#4779b1'},{y: 95.3, color: '#c58f2e'},{y: 84.1, color: '#c58f2e'},{y: 68.2, color: '#c58f2e'},{y: 40.2, color: '#be4848'}]
+
+}, {
+name: 'Mythic',
+data: [{y: 77.4, color: '#255c43'},{y: 89.3, color: '#255c43'},{y: 15.5, color: '#255c43'},{y: 67.3, color: '#253f5c'},{y: 63.5, color: '#253f5c'},{y: 48.2, color: '#253f5c'},{y: 100, color: '#72531b'},{y: 37.8, color: '#72531b'},{y: 23.9, color: '#72531b'},{y: 7.8, color: '#762a2a'}]
+
+}
+]
+
+};
+
+
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'stillalivechart',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'BRF Wing 1', 'BRF Wing 2', 'BRF Wing 3', 'BRF Wing 4', 'Glory of the Draenor Raider'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Blackrock Foundry on Any Difficulty',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 60.26, color: '#E0BB79', name:'Blackrock Foundry Wing 1'},{y: 58.34, color: '#E0BB79', name:'Blackrock Foundry Wing 2'},{y: 53.65, color: '#E0BB79', name:'Blackrock Foundry Wing 3'},{y: 53.32, color: '#E0BB79', name:'Blackrock Foundry Wing 4'},{y: 0.21, color: '#E0BB79', name:'Glory of the Draenor Raider'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+};
+</script> 
+
+
+
+<div id="brfAbs" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+
+<div id="brfScaled" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+
+<div id="stillalivechart" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+Blue Tweets
+Flying
+Not posting on your site, and only having one response to a player made thread about it was a bad move
+Yeah, it's obviously caused a lot of friction that we hadn't anticipated. Clearly a mistake on our part. CM_Lore https://twitter.com/CM_Lore/status/603689859342061568
+
+Q&A
+By "legitimate" you mean the ones you are willing to field, probably not the onese most find important.
+We will definitely be talking about flight in the Q&A. CM_Zarhym https://twitter.com/CM_Zarhym/status/603687502357143553
+
+Will you please confirm that flight IS something that will be addressed in this Q and A? Thanks.
+We will definitely be talking about flight in the Q&A. CM_Lore https://twitter.com/CM_Lore/status/603782916183695360
+
+Classes
+Are there any considerations to lower passive Parry and Dodge again in 6.2?
+Certainly if needed. Will look into it. holinka https://twitter.com/holinka/status/602293194127118336
+
+Art
+Indeed Zarhym. Wouldn't want those poor underpaid artist to actually do a good job I guess? Really miss the old Blizzard Quality.
+It's not at all realistic to design ALL armor to fit ALL char models just in case. But look for any reason to take issue w/ us. CM_Zarhym https://twitter.com/CM_Zarhym/status/604952754004443137
+
+Misc
+Apparently selfie cams were an appropriate use of dev time. Not farahlon though.
+So you admit you only count additions to the game YOU care about. This is helpful. CM_Zarhym https://twitter.com/CM_Zarhym/status/604954170538356736
+
+
+Ghostcrawler Tweets
+While the developers have been pretty quiet since @WarcraftDevs https://twitter.com/WarcraftDevs/with_replies appeared, Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.
+Developer Communication
+What's your view on how silent the WoW devs have been on classes changes since you left?
+I'm obviously not privy to their thought process. Do remember there is a difference between individual intent and company policy. OccupyGStreet https://twitter.com/OccupyGStreet/status/605135596919480321
+
+Yeah Just seems like a lot of "we want feedback" *gets feedback* "lol jk we wont do that"
+That is something I have worked on articulating my whole career. We want your feedback but we still design the game. OccupyGStreet https://twitter.com/OccupyGStreet/status/603000939524411392
+
+Understand and respect your customers/players should be important to devs.
+I think it almost always is. Players sometime mistake disagreement for neglect. OccupyGStreet https://twitter.com/OccupyGStreet/status/604816216776056832
+
+Greg, always wandered if Activision and Cata where the breaking points when the Buddy GC had to stop to chat in the boards.
+It became Blizzard policy, but it wasn't from Activision. Not sure what the policy is now of course. OccupyGStreet https://twitter.com/OccupyGStreet/status/604339544251465728
+
+Reputations
+Hey greg what do you think about reputations in wow being as dumbed down as it is now with little to no useful rewards
+I'm afraid I'm not familiar enough with the content. Reps were always challenging to strike a balance between fun & mandatory OccupyGStreet https://twitter.com/OccupyGStreet/status/604376426519789568
+As I like to say, it's really hard to make fun and rewarding content feel optional. OccupyGStreet https://twitter.com/OccupyGStreet/status/604376491338530816
+
+
+Computers - Setup of the Month
+Each month or so we will post a couple of hardware setups for those of you who are thinking of upgrading their computer!
+
+This month
+The current SSD prices http://media.mmo-champion.com/images/news/2015/may/ssdgraph.gif are trending slightly downward again over the past few months, with most SSDs under $0.50 per gigabyte when on sale. 
+
+New GPUs from AMD may be coming in the second half of this year, but no official announcements have been made. 
+
+Depending on how much you want to overclock, you may need to spend a bit more for a better CPU cooler like the NH-D14 http://www.amazon.com/gp/product/B002VKVZ1A?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002VKVZ1A. 
+
+Unless you are doing a lot of video rendering or streaming, you do not need the 4790K and should spend that money elsewhere.
+
+Make sure to keep your AMD http://sites.amd.com/us/game/downloads/Pages/downloads.aspx and Nvidia http://www.nvidia.com/Download/index.aspx?lang=en-us drivers up to date.
+
+Don't hesitate to post any feedback in the comments of that news post, and don't forget to visit the Computer Forum http://www.mmo-champion.com/forums/290-Computer for any extra questions!
+
+
+
+Peripherals/Monitors
+
+<table class="listing sortable news-table" style="margin: auto;"> <thead> <tr class="mmoc-listing-row"> <th width="130">Component</th><th width="400">Puppy</th> <th width="400">Dolphin</th> </tr></thead> <tbody> 
+
+<tr class="mmoc-listing-row"><td>Monitor</td><td>ASUS VS228H-P 22-Inch Monitor http://www.amazon.com/gp/product/B005BZNDOO?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005BZNDOO - $117</td><td>ASUS VS248H-P 24-Inch Monitor http://www.amazon.com/gp/product/B0058UUR6E?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0058UUR6E - $155</td></tr>
+
+<tr class="mmoc-listing-row"><td>Keyboard</td><td>Kensington Pro Fit Media Keyboard http://www.amazon.com/gp/product/B006TRANEQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B006TRANEQ - $22</td><td>Cyborg V.5 http://www.amazon.com/gp/product/B002SAJCYU?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002SAJCYU - $45</td></tr>
+
+<tr class="mmoc-listing-row"><td>Mouse</td><td>Logitech G402 http://www.amazon.com/gp/product/B00LZVNWIA?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00LZVNWIA - $41</td><td>Razer DeathAdder http://www.amazon.com/gp/product/B00AAS888S?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00AAS888S - $55</td></tr>
+
+<tr class="mmoc-listing-row"><td>Speakers</td><td>Creative A250 2.1 Speaker System http://www.amazon.com/gp/product/B00CDJJZV6?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00CDJJZV6 - $27</td><td>Logitech Z313 Speaker System http://www.amazon.com/gp/product/B002HWRZ2K?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002HWRZ2K - $35</td></tr></tbody>
+<thead> <tr class="mmoc-listing-row"> <th width="130">Component</th><th width="400">Narwhal</th> <th width="400">Unicorn</th> </tr></thead> <tbody> 
+<tr class="mmoc-listing-row"><td>Monitor</td><td>Dell P2414H Monitor http://www.amazon.com/gp/product/B00EMB4KVI?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00EMB4KVI - $235</td><td>Dell U2412M http://www.amazon.com/gp/product/B005JN9310?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005JN9310 - $250</td></tr>
+
+<tr class="mmoc-listing-row"><td>Keyboard</td><td>Logitech G510s http://www.amazon.com/gp/product/B00BCEK2LU?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00BCEK2LU - $85</td><td>Corsair Vengeance K70 http://www.amazon.com/gp/product/B00IYJD5CY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00IYJD5CY - $120
+</td></tr>
+
+<tr class="mmoc-listing-row"><td>Mouse</td><td>Logitech G502 http://www.amazon.com/gp/product/B00IRHE892?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00IRHE892 - $61</td><td>Razer Naga 2014 http://www.amazon.com/gp/product/B00E8CF268?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00E8CF268 - $62</td></tr>
+
+<tr class="mmoc-listing-row"><td>Speakers</td><td>Logitech Z323 2.1 Speaker System http://www.amazon.com/gp/product/B002FU5QM0?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002FU5QM0 - $55</td><td>Logitech Speaker System Z523 http://www.amazon.com/gp/product/B002FU5QMK?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002FU5QMK - $85</td></tr></tbody></table>
+
+
+
+Puppy and Dolphin
+All of these parts can be mixed and matched to create a build between Puppy and Dolphin.
+
+<table class="sortable news-table" style="margin: auto;"> <thead> <tr class="mmoc-listing-row"> <th width="130">Component</th><th width="400">Puppy</th> <th width="400">Dolphin</th> </tr></thead> <tbody> 
+
+<tr class="mmoc-listing-row"><td>Case</td><td>NZXT Source 210 http://www.amazon.com/gp/product/B005869IUY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005869IUY - $48</td><td>NZXT Source 210 http://www.amazon.com/gp/product/B005869IUY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005869IUY - $48</td></tr>
+
+<tr class="mmoc-listing-row"><td>Power Supply</td><td>EVGA 600B http://www.amazon.com/gp/product/B00EON40CS?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00EON40CS - $60</td><td>EVGA 600B http://www.amazon.com/gp/product/B00EON40CS?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00EON40CS - $60</td></tr>
+
+<tr class="mmoc-listing-row"><td>CPU</td><td>AMD FX-6300 http://www.amazon.com/gp/product/B009O7YORK?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B009O7YORK - $97</td><td>AMD FX-8320 http://www.amazon.com/gp/product/B009O7YU56?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B009O7YU56 - $136</td></tr>
+
+<tr class="mmoc-listing-row"><td>Heatsink</td><td>Cooler Master Hyper 212 EVO http://www.amazon.com/gp/product/B005O65JXI?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005O65JXI - $31</td><td>Cooler Master Hyper 212 EVO http://www.amazon.com/gp/product/B005O65JXI?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005O65JXI - $31</td></tr>
+
+<tr class="mmoc-listing-row"><td>Motherboard</td><td>ASUS M5A97 R2.0 http://www.amazon.com/gp/product/B008V9959O?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B008V9959O - $68</td><td>ASUS M5A99FX PRO http://www.amazon.com/gp/product/B008B6ONXK?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B008B6ONXK - $103</td></tr>
+
+<tr class="mmoc-listing-row"><td>Memory</td><td>Kingston HyperX Blue 4GB 1600 http://www.amazon.com/gp/product/B00J8E92R6?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00J8E92R6 - $31</td><td>8GB G.Skill DDR3 1600 http://www.amazon.com/gp/product/B00339X1EM?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00339X1EM - $66</td></tr>
+
+<tr class="mmoc-listing-row"><td>Graphics Card</td><td>MSI R7 260X http://www.amazon.com/gp/product/B00FR6XOQO?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00FR6XOQO - $110</td><td>ASUS R9 270X http://www.amazon.com/gp/product/B00FW4A5YU?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00FW4A5YU / GTX 960 http://www.amazon.com/gp/product/B00S9SGMZM?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00S9SGMZM - $160 / $190</td></tr>
+
+<tr class="mmoc-listing-row"><td>Hard Drive</td><td>Western Digital Caviar Blue 500GB http://www.amazon.com/gp/product/B00461G3MS?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00461G3MS - $57</td><td>Western Digital Caviar Black 1TB http://www.amazon.com/gp/product/B00FJRS6FU?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00FJRS6FU - $70</td></tr>
+
+<tr class="mmoc-listing-row"><td>DVD</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0033Z2BAQ - $21</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0033Z2BAQ - $21</td></tr>
+
+<tr style="text-align: center; font-weight: bold;" class="mmoc-listing-row"><td>Total</td><td>$523</td><td>$695 - 725</td></tr></tbody></table>
+
+
+
+Narwhal and Unicorn
+All of these parts can be mixed and matched to create a build between Narwhal and Unicorn. 
+
+<table class="sortable news-table" style="margin: auto;"> <thead> <tr class="mmoc-listing-row"> <th width="130">Component</th><th width="400">Narwhal</th> <th width="400">Unicorn</th> 
+</tr></thead> <tbody> 
+
+<tr class="mmoc-listing-row"><td>Case</td><td>Cooler Master HAF 912 http://www.amazon.com/gp/product/B003ZM7YTA?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003ZM7YTA - $70</td><td>Corsair Air 540 http://www.amazon.com/gp/product/B00D6GINF4?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00D6GINF4 - $120</td></tr>
+
+<tr class="mmoc-listing-row"><td>Power Supply</td><td>XFX PRO 750W http://www.amazon.com/gp/product/B00B88Z314?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00B88Z314 - $114</td><td>XFX PRO 750W http://www.amazon.com/gp/product/B00B88Z314?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00B88Z314 - $114</td></tr>
+
+<tr class="mmoc-listing-row"><td><b>CPU</b></td><td>Intel 4690K http://www.amazon.com/gp/product/B00KPRWB9G?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00KPRWB9G - $236</td><td>Intel 4690K http://www.amazon.com/gp/product/B00KPRWB9G?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00KPRWB9G - $236</td></tr>
+
+<tr class="mmoc-listing-row"><td>Heatsink</td><td>Scythe Mugen 4 http://www.amazon.com/gp/product/B00G9YBHEY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00G9YBHEY - $52</td><td>Noctua 6 NH-D14 http://www.amazon.com/gp/product/B002VKVZ1A?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002VKVZ1A - $78</td></tr>
+
+<tr class="mmoc-listing-row"><td><b>Motherboard</b></td><td>ASUS Z97-A http://www.amazon.com/gp/product/B00K2MAU5Q?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00K2MAU5Q - $153</td><td>ASUS Z97-A http://www.amazon.com/gp/product/B00K2MAU5Q?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00K2MAU5Q - $153</td></tr>
+
+<tr class="mmoc-listing-row"><td>Memory</td><td>8GB G.Skill DDR3 1600 http://www.amazon.com/gp/product/B00339X1EM?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00339X1EM - $66</td><td>16GB G.Skill DDR3 1600 http://www.amazon.com/gp/product/B006T0CHLA?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B006T0CHLA - $110</td></tr>
+
+<tr class="mmoc-listing-row"><td>Graphics Card</td><td>XFX R9 280X http://www.amazon.com/gp/product/B00FSC5N66?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00FSC5N66 - $260</td><td>XFX R9 290X http://www.amazon.com/gp/product/B00HHIPN5A?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00HHIPN5A OR ASUS GTX 970 http://www.amazon.com/gp/product/B00NJ9BJ8G?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00NJ9BJ8G - $330</td></tr>
+
+<tr class="mmoc-listing-row"><td>Hard Drive</td><td>Western Digital 1TB Caviar Black http://www.amazon.com/gp/product/B00FJRS6FU?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00FJRS6FU - $70</td><td>Western Digital 2TB Caviar Black http://www.amazon.com/gp/product/B00FJRS628?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00FJRS628 - $125</td></tr>
+
+<tr class="mmoc-listing-row"><td>SSD</td><td>Crucial BX100 250GB http://www.amazon.com/gp/product/B00RQA6TEI?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00RQA6TEI Review http://anandtech.com/show/9144/crucial-bx100-120gb-250gb-500gb-1tb-ssd-review - $97<br /><b>OR</b><br />SAMSUNG 850 EVO 250GB http://www.amazon.com/gp/product/B00OAJ412U?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00OAJ412U Review http://anandtech.com/show/8747/samsung-ssd-850-evo-review - $100</td><td>SanDisk Extreme PRO 240GB http://www.amazon.com/gp/product/B00KHRYRNM?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00KHRYRNM Review http://anandtech.com/show/8170/sandisk-extreme-pro-240gb-480gb-960gb-review - $140<br /><b>OR</b><br />
+SAMSUNG 850 Pro 256GB http://www.amazon.com/gp/product/B00LMXBOP4?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00LMXBOP4 Review http://www.anandtech.com/show/8216/samsung-ssd-850-pro-128gb-256gb-1tb-review-enter-the-3d-era - $143</td></tr>
+
+<tr class="mmoc-listing-row"><td>DVD</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0033Z2BAQ - $21</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0033Z2BAQ - $21</td></tr><tr style="text-align: center; font-weight: bold;" class="mmoc-listing-row"><td>Total</td><td>$1139 - 1185</td><td>$1384 - 1430</td></tr></tbody></table>
+
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Overwatch - Symmetra Gameplay
+We got another look at Overwatch gameplay with the release of some Symmetra http://www.overpwn.com/heroes/9-symmetra footage. 
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/Eko_DhY8oTo?rel=0" frameborder="0" allowfullscreen></iframe>

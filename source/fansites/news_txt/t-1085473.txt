@@ -1,0 +1,222 @@
+chaud2012-02-22, 04:27 AMStatistics: Dragonwrath, Tarecgosa's Rest
+Today we take a look at which classes ended up with Dragonwrath, Tarecgosa's Rest http://db.mmo-champion.com/i/71086/dragonwrath-tarecgosas-rest/ and how quickly they got it. The sample size is ~5.6 million level 85 characters, with ~15,000 Dragonwrath owners.
+
+You can see that mages are obtaining the staff at an even faster rate now that Firelands is less difficult, while the other classes are maintaining roughly the same rate of acquisition. 
+
+
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js?v2.2"></script>
+<script> var chart;
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#69CCF0', '#9482CA', '#808080', '#FF7D0A', '#2459FF']
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'dwrathTime',
+zoomType: 'x',
+spacingRight: 20,
+backgroundColor: '#efeedc'
+},
+title: {
+text: 'Total Dragonwrath Acquisitions by Class',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+subtitle: {
+text: document.ontouchstart === undefined ?
+'Click and drag in the plot area to zoom in' :
+'Drag your finger over the plot to zoom in'
+},
+xAxis: {
+type: 'datetime',
+maxZoom: 14 * 24 * 3600000, // fourteen days
+title: {
+text: null
+},
+startOnTick: false,
+showFirstLabel: false
+},
+yAxis: {
+title: {
+text: 'Number of Characters',
+style: {
+fontSize: '16px',
+color: '#000',
+fontWeight: 'bold'
+}
+},
+startOnTick: true,
+showFirstLabel: false
+
+},
+tooltip: {
+shared: true 
+},
+legend: {
+enabled: false
+},
+plotOptions: {
+series: {
+fillOpacity: 0.1
+},
+areaspline: {
+
+animation: false,
+lineWidth: 3,
+marker: {
+enabled: true,
+states: {
+hover: {
+enabled: true,
+radius: 5
+}
+}
+},
+shadow: false,
+states: {
+hover: {
+lineWidth: 3 
+}
+}
+}
+},
+
+series: [
+
+{
+type: 'areaspline',
+name: 'Mage',
+pointInterval: 7 * 24 * 3600 * 1000,
+pointStart: Date.UTC2011, 7, 09,
+data: [
+1 , 13 , 41 , 72 , 122 , 165 , 234 , 295 , 380 , 464 , 584 , 774 , 1021 , 1307 , 1641 , 1988 , 2264 , 2567 , 2851 , 3096 , 3358 , 3608 , 3897 , 4204 , 4489 , 4827 , 5162 , 5350 ]
+},
+
+{
+type: 'areaspline',
+name: 'Warlock',
+pointInterval: 7 * 24 * 3600 * 1000,
+pointStart: Date.UTC2011, 7, 16,
+data: [
+11 , 28 , 61 , 87 , 125 , 167 , 196 , 258 , 334 , 432 , 565 , 729 , 926 , 1124 , 1348 , 1547 , 1738 , 1924 , 2072 , 2215 , 2374 , 2544 , 2721 , 2899 , 3090 , 3272 , 3365 ]
+}
+,
+
+{
+type: 'areaspline',
+name: 'Priest',
+pointInterval: 7 * 24 * 3600 * 1000,
+pointStart: Date.UTC2011, 7, 16,
+data: [
+5 , 16 , 45 , 64 , 91 , 120 , 154 , 203 , 264 , 321 , 438 , 587 , 750 , 904 , 1102 , 1256 , 1406 , 1585 , 1733 , 1900 , 2060 , 2214 , 2384 , 2555 , 2754 , 2934 , 3057 ]
+},
+{
+type: 'areaspline',
+name: 'Druid',
+pointInterval: 7 * 24 * 3600 * 1000,
+pointStart: Date.UTC2011, 7, 16,
+data: [
+4 , 12 , 24 , 36 , 48 , 68 , 91 , 119 , 152 , 187 , 244 , 317 , 410 , 533 , 629 , 745 , 829 , 930 , 1011 , 1103 , 1199 , 1288 , 1373 , 1473 , 1597 , 1708 , 1766 ]
+},
+
+{
+type: 'areaspline',
+name: 'Shaman',
+pointInterval: 7 * 24 * 3600 * 1000,
+pointStart: Date.UTC2011, 7, 16,
+data: [
+2 , 4 , 9 , 15 , 20 , 23 , 30 , 35 , 56 , 70 , 95 , 129 , 162 , 209 , 253 , 308 , 353 , 399 , 450 , 484 , 540 , 594 , 639 , 693 , 754 , 806 , 843 ]
+}]
+};
+
+
+};
+</script> 
+<div id="dwrathTime" style="style="width:900px;margin-left: auto;margin-right: auto;"">
+Don't see a chart? Enable javascript!
+</div>
+<div style="clear:both;"></div>
+
+
+
+Blue Posts
+Warlock Ember System
+How does Destruction’s Ember system work?
+Basically, you build embers with some spells, and then spend those embers with Soul Fire, Ember Tap, or Fire and Brimstone. 
+
+Internally, this is how it works:
+
+Immolate – DD + DoT on the target
+Incinerate – generates 1/10th ember, or 2/10ths if it crits an immolated target.
+Fel Flame – generates 1/10th ember, or 2/10ths if it crits an immolated target.
+Conflagrate – triggers Backdraft and has a 12 second cooldown.
+
+Soul Fire – consumes one ember instead of mana.
+Fire and Brimstone – costs 1 ember and has no cooldown.
+Ember Tap – costs 1 embers.
+
+Each full ember costs 0.33% of your maximum health per second. If you stay below 1 ember, you take no damage. 
+
+How does chaotic energy work?
+We are experimenting with a resource-driven, rather than time-limited, caster model on the Destruction warlock.
+
+In a nutshell, Destruction warlocks are not GCD locked. In fact, chain-casting spells as a Destruction warlock is less important than spending all of your resources.
+
+Keep in mind this is all subject to change, but here is how Destruction flows at the moment:
+
+Start of Fight: Full mana bar, Empty Ember bar
+
+1. Immolate the target
+2. Conflagrate to trigger emberstorm
+3. Incinerate to generate embers
+4. Continue until you are low on mana
+
+Middle of Fight: Empty mana bar, ~2 Embers
+
+1. Soul Fire
+2. Soul Fire
+3. Mana bar is mostly full Soul Fire costs embers, so your mana refills during the Soul Fires
+
+In addition to increasing your base mana regen, Chaotic Energy increases mana regen even more with Haste. This means the ability to cast spells scales smoothly with gear.
+
+As long as the warlock never lets her mana bar fill up and burn her embers, she's maximizing damage. This is very different from the standard caster model where priority is placed on casting at all times and ordering spells based on cooldown.
+
+Our hope is that the Destruction Warlock will attract players who are interested in a playstyle that rewards spending resources at the right time, rather than constantly casting.
+
+How does Destruction’s Mastery work?
+Emberstorm increases the effectiveness of all Ember consuming spells. Soul Fire deals more damage. Fire & Brimstone deals a higher % of the base spell’s damage. Ember Tap heals for more. Blue Tracker http://blue.mmo-champion.com/topic/217569-february-15-update-to-mists-talent-calculator/ / Official Forums http://us.battle.net/wow/en/forum/topic/4063167954?page=62#1237
+
+Development Time Cutbacks
+Blizzard severaly reduced the number of people on WoW development teams in last few months, which explains the simplifying of various aspects of the game. They don´t want to spend too much time tuning bosses, so they simplify the player, for example.
+I have no idea where you got this information from, but it's wrong. We're not simplifying various aspects of the game, we're constantly reviewing them to ensure they're fun, which can actually sometimes mean making them more involved. Also, we spend however long is necessary to tune bosses to make them engaging and challenging, we're not cutting back on that at all. Blue Tracker http://blue.mmo-champion.com/topic/217767-5-months/ / Official Forums http://eu.battle.net/wow/en/forum/topic/3388890173?page=1#7 
+
+
+Play Diablo III and Win Beta Keys with Blizzard at CeBIT 2012!
+CeBIT is a unique exhibition of digital technology, games and much more which takes place every year in Hannover, Germany. At the 2012 show, which starts on March 6, Blizzard Entertainment will be showcasing the Diablo III beta in the free gaming area, in partnership with ESL.
+
+Members of our Community and eSports teams are looking forward to meeting you there! So if you’re going to CeBIT make sure you drop by to see us, especially as you’ll have the chance to win some nice prizes — including Diablo III beta keys — in the various contests and activities we’ll be organizing.
+
+CeBIT is also hosting the final of the Intel Extreme Masters Season VI, where 24 of the best StarCraft II players will fight for the title of IEM World Champion and an impressive prize pool of $75,000! The roster so far contains famous names like Greg “IdrA” Fields, Giacomo “Socke” Thüs, Moon “MMA” Sung Won and Kim “viOLet” Dong Hwan – so make sure to follow the matches live or tune in on ESL TV http://www.esl.tv/.
+
+We’re looking forward to seeing you there!
+
+Event: CeBIT 2012 / Intel Extreme Masters Season VI World Championship
+Location: Messe Hannover / Exhibition Grounds 30521 Hannover Germany
+When: March 6 to 10, 2012
+Stream: ESL TV http://www.esl.tv/
+More details: ESL news http://www.esl-world.net/masters/#/masters/season6/hanover/ / CeBIT website http://www.cebit.de/home
+
+
+Curse Weekly Roundup
+Pico is back to tell us about the things you might have missed in Diablo 3, Guild Wars 2, World of Warcraft, Minecraft, Rift and Nitronic Rush news recently. 
+
+
+http://media.mmo-champion.com/images/news/2012/february/cwr221.jpg http://www.youtube.com/watch?v=zOZJk-c0qJU&list=UUs1JJL6EDOOExrueuDscBJA&index=1&feature=plcp

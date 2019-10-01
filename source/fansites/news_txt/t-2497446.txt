@@ -1,0 +1,127 @@
+MagicFind2019-07-16, 06:49 PMPatch 8.2 Hotfixes - July 16, 2019
+Achievements
+
+Players can again earn Fun Run after completing the requirements.
+Fixed a bug that prevented players from earning If It Please the Court.
+
+
+Characters
+
+Undead
+
+Touch of the Grave racial ability no longer causes the user to enter combat when it procs from periodic effects.
+
+
+
+Classes
+
+https://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight Forums http://www.mmo-champion.com/forums/269-Death-Knight / Skills http://www.wowdb.com/spells/class-abilities/death-knight / Talent Calculator http://www.wowdb.com/talent-calculator#Y
+
+Death Gate no longer occasionally strands players in Acherus after being used, and it should always return them to the entry point where it was originally placed.
+
+https://static.mmo-champion.com/mmoc/images/icons/images.gif Mage Forums http://www.mmo-champion.com/forums/272-Mage / Skills http://www.wowdb.com/spells/class-abilities/mage / Talent Calculator http://www.wowdb.com/talent-calculator#g
+
+Arcane
+
+Damage for all spells and abilities increased by 6%.
+
+
+
+
+Dungeons and Raids
+
+Azshara’s Eternal Palace
+
+Orgozoa
+
+Orgozoa now transitions to phase two at 40% health was 3.5 minutes.
+
+Developers’ note: This change is meant to be neutral with regard to difficulty of the encounter, and aims to ensure that as player damage output continues to increase in the coming weeks, the overall pacing of the encounter doesn’t become skewed.
+
+
+Radiance of Azshara
+
+Fixed a bug causing Radiance of Azshara's Stormwraith Gale Buffet to increase its damage by 10% per stack, rather than the intended 25% on Normal and Heroic difficulties.
+
+Za’Qul, Harbinger of Ny’alotha
+
+Shattered Psyche now has a unique icon.
+
+Queen Azshara
+
+Players with the Beckoned debuff can no longer be afflicted with Charged Spear.
+Players broken out of Devotion should not be prevented from using their abilities.
+
+
+Atal'Dazar
+
+Fixed a bug that caused Yazma to repeat her voice lines three times each time a boss was defeated during Mythic Keystone Dungeons.
+
+
+
+Items
+
+Fixed an issue that resulted in fewer than intended Aqueous Reliquary drops from Radiance of Azshara, The Queen’s Court, and Queen Azshara.
+Fixed a bug that caused end-of-run chests earned for completing a Mythic Keystone at +7 difficulty to incorrectly reward item-level 415 gear; now rewards ilvl 420 ilvl gear. 
+Benthic gear’s damaging spells and heals e.g. Poen's Deepsea Gloves https://www.wowdb.com/items/170333-poens-deepsea-gloves no longer remove the caster from stealth.
+The time required to charge an Energy Cell at the Charging Station has been reduced to 1.5 seconds was 3 seconds.
+
+Heart of Azeroth
+
+Vision of Perfection Essence no longer activates for Arms Warriors if they are under the effects of crowd control that prevents them from controlling their character e.g. Polymorph or stuns.
+Vision of Perfection Essence no longer grants Unholy Death Knights with the Minor Power’s Rank 2 healing effect at Rank 1.
+Vision of Perfection no longer forcibly shapeshifts Druids out of Flight Form if they are flying when it activates.
+Vision of Perfection Essence Rank 2 now grants Guardian Druids the correct amount of healing when Incarnation: Guardian of Ursoc activates.
+Vision of Perfection Essence no longer grants Guardian Druids twice the intended amount of cooldown reduction for Survival Instincts when placed in the Minor Slot.
+Vision of Perfection Essence Rank 2 now grants Brewmaster Monks the correct amount of healing when Invoke Niuzao, the Black Ox activates.
+Vision of Perfection Essence no longer grants Protection Warriors twice the intended amount of cooldown reduction for Avatar when placed in the Minor Slot.
+Fixed a bug where the critical strike chance for Blood of the Enemy Essence would not apply to a player’s pets or guardians.
+Essence of the Focusing Iris Essence Major Power damage has been lowered by 15%.
+
+Developers’ note: Essence of the Focusing Iris is a very strong tool for area burst damage, but is overshadowing the other available area damage Essences that are available. This change should still keep it very strong when dealing with packs of high priority targets. 
+
+
+
+
+Player versus Player
+
+https://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid / Skills http://www.wowdb.com/spells/class-abilities/druid / Talent Calculator http://www.wowdb.com/talent-calculator#s
+
+Restoration
+
+Healing reduced by 10% in PvP situations.
+
+Developers’ notes: Throughout Season 2, Restoration Druid’s raw healing throughput paired very well with their crowd control, defensive abilities, and ability to sneak away and regain mana through drinking. This is intended to bring their healing throughput more in line with other healer specializations in PvP.
+
+
+
+Items
+
+Trident of Deep Ocean https://www.wowdb.com/items/167864-trident-of-deep-ocean absorption effect is now reduced by 80% in PvP was 75%.
+Mindthief's Eldritch Clasp https://www.wowdb.com/items/167840-mindthiefs-eldritch-clasp healing and self-damage effect is now reduced by 60% in PvP was 50%.
+Void Stone effect is reduced in PvP by 45% for healers was 30% and 70% for non-healers was 60%.
+
+Developers’ notes: Due to the scaling increase that some trinkets received with the release Rise of Azshara, the PvP-specific reductions put in place for Season 3 did not have the impact we were going for. These are items that we previously noted were intended to be scaled out this season.
+
+Resolved an issue that caused the PvP reduction to Ward of Envelopment and Mirror of Entwined Fate to affect non-PvP situations.
+Oceanic Restoration’s weapon enchant mana granted is reduced by 50% in PvP situations.
+
+Developers’ notes: At the start of Battle for Azeroth Season 2, we made changes to mana regeneration in PvP to increase the impact mana management has on long engagements. Similarly, Rise of Azshara introduced new methods of mana regeneration in the forms of a weapon enchant and Essences below that need to be reduced in the same fashion. 
+
+Heart of Azeroth
+
+Lucid Dreams Essence now refunds 50% less mana in PvP situations, now heals for 50% less in PvP situations when it refunds resources, and now provides 50% less Leech when activated in PvP situations. The Mana generation rate provided by activating its Major Power is unchanged.
+Vision of Perfection Essence heals for 50% less in PvP situations.
+Purification Protocol Essence heals for 50% less in PvP situations.
+The Ever Rising Tide Essence grants 50% less mana in PvP situations.
+
+Developers’ notes: These Essences provide additional passive self-healing that we feel should be reduced to the same degree as tier 3 Azerite traits.
+
+
+
+
+Quests
+
+The mining nodes in the introductory version of the “Brinestone Shards” are no longer viewable by other players.
+Lor’themar Theoron and First Arcanist Thalyssra now saddle up with flying mounts during "Up Against It".
+Construction Projects for Flame Turrets and Rustbolt Armories now respawn more quickly after either running out of power being destroyed.

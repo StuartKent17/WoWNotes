@@ -1,0 +1,107 @@
+Boubouille2011-03-17, 02:27 AMPTR 4.1 Build 13750 Strings - Weekly Daily Quest Reset
+A couple of nice strings have been added to the client, I'll emphasize on the first one because I'm sure a lot of people will be happy with the change...
+
+LFD_RANDOM_REWARD_EXPLANATION1 = "The first seven random dungeons of this tier that you complete each week will earn you:"; 
+
+Apparently, Blizzard is going to change the daily dungeon quest to a 7 daily quests/week cap instead of 1 quest/day. Obviously this change will make the life of players considerably easier, especially for those of you who have a lot of rerolls or only play on week ends. Of course, nothing confirmed yet, etc etc etc ...
+
+
+The other changes are:
+Random Dungeons
+
+INCLUDED_DUNGEONS = "Included Dungeons";
+INCLUDED_DUNGEONS_SUBTEXT = "The following dungeons are included in your level range when queueing for a Random Dungeon:"; 
+
+
+Interface
+
+BUFFS_ON_TOP = "Buffs On Top"; 
+
+
+Graphics
+
+GXAPI = "Graphics API|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t";
+GXAPI_D3D11 = "DirectX 11";
+GXAPI_D3D9 = "DirectX 9";
+GXAPI_GLL = "GLL";
+GXAPI_OPENGL = "OpenGL"; 
+OPTION_TOOLTIP_GXAPI = "Select the graphics API."; 
+
+
+Network Including the lag optimization deployed in 4.0.6 and disabled shortly after
+
+OPTIMIZE_NETWORK_SPEED = "Optimize Network for Speed"; 
+OPTION_TOOLTIP_OPTIMIZE_NETWORK_SPEED = "Enable this option to optimize network usage for speed in order to decrease lag.\nThis will increase your bandwidth usage, and may cause problems in some environments. Disabling this option may help resolve certain disconnection issues."; 
+OPTION_TOOLTIP_USEIPV6 = "Enables the use of IPv6, the technology behind the next-generation Internet.\nRequires IPv6 connectivity to the internet. Checking this box without IPv6 connectivity may prevent you from playing WoW."; 
+USEIPV6 = "Enable IPv6 when available"; 
+
+
+
+Patch 4.0.6 Hotfixes - March 16
+A new wave of hotfixes has been deployed on live servers. Well, that's actually an update of the past 2 weeks apparently
+March 2 - March 16
+
+General
+
+Using macros no longer halts or delays transports.
+
+
+Classes
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest Forums http://www.mmo-champion.com/forums/274-Priest / Cataclysm Talent Calculator http://www.wowtal.com/#k=..priest / Skills/Talents http://www.mmo-champion.com/content/1123-Priest-Cataclysm
+
+Casting Holy Word: Chastise against bosses will cause damage, but no longer disorient them when they are immune to such effects.
+
+
+Dungeons & Raids
+Bastion of Twilight
+
+Valiona and Theralion overall damage and health has been reduced by roughly 10% on Heroic difficulty. In addition, Twilight Zone no longer increases damage taken from Rift Blast.
+
+
+Blackwing Descent
+
+Atramedes will no longer sometimes snap back to his starting location as he finishes casting Sonic Breath.
+Magmaw overall damage and health was a little too high on all difficulties and has been reduced slightly. In addition, on Heroic difficulty, Nefarian will now prefer ranged targets when spawning Blazing Bone Constructs.
+Maloriak’s Scorching Breath should no longer incorrectly share its damage among pets. To offset what would be increased damage per player as a result of this fix, the damage dealt by the ability has been reduced on Heroic difficulty.
+Players will move at the same speed, even when setting their normal speed to "walk" using the keybind, when Nefarian casts Dominion.
+The Omnotron Defense System encounter has had its health reduced by 15% on Heroic difficulty, and the damage of Incineration Security Measure has been reduced.
+
+
+Items
+
+The Sands of Time is now a blue superior-quality item. This item can still be used to craft Vial of the Sands when combined with other required materials. The vendor price is unchanged.
+Players are no longer able to activate Synapse Springs in conjunction with Fury of Angerforge, or vice versa, with or without a macro.
+
+
+Professions
+Engineering
+
+Flexweave Underlay, Parachute Cloak, and various rocket boot effects can no longer be used in rated Battlegrounds.
+Players are no longer able to activate Synapse Springs in conjunction with Fury of Angerforge, or vice versa, with or without a macro.
+
+
+PvP
+Battlegrounds
+
+Players can no longer carry enemy flags while on the elevated graveyard in Twin Peaks. An aura will cause the flag to reset as intended if taken to the graveyard via Demonic Circle or Leap of Faith.
+
+
+Quests & Creatures
+Feralas
+
+Shandris Feathermoon can no longer be pulled too far from her default location before resetting i.e. she won’t be waging war from the Orgrimmar Auction House anymore.
+
+
+Uldum
+
+The Beserking buff obtained by killing Schnottz Supply Choppers will now be removed when a player leaves Uldum.
+
+
+
+Blue Posts
+Optional Bosses/Heroic Halls of Origination
+We'll need to weigh the value of optional dungeon and raid bosses further before we make any changes. There's good arguments on both sides. On the one hand, optional bosses can be great for keeping dungeons and raids from feeling too linear or formulaic -- and, when done right, they can also give groups a meaningful choice between getting extra loot and completing a run faster. On the other, optional bosses can sometimes create social tension, especially in Dungeon Finder groups, if players disagree whether they should invest the time to fight them.
+
+We know there’s room for improvement, though. For example, we understand that it's probably not the best idea to have optional bosses dropping loot that's BiS. Giving those bosses side-grades rather than strict upgrades or similar items could make the "extra loot" vs. "quicker run" decision less stressful. We also feel that optional bosses in general might work better in raids than in dungeons because raids tend to be made up of players who know each other and/or have a strong leader who's empowered to make calls about which bosses to kill.
+
+Heroic Halls of Origination is a good example of where optional bosses can cause conflicts. In retrospect, we feel that it may have been better to require players to kill all four of the "top" bosses -- Isiset, Ammunae, Setesh, and Rajh -- to get credit for their random Heroic dungeon rewards instead of just Rajh. While we don't yet know if retrofitting the dungeon or the random dungeon reward requirements is the best course of action, we've learned a lot from watching groups, reading your feedback, and just playing ourselves. We’re definitely keeping those lessons in mind as we develop future content and if we do make any changes, we'll be sure to let you know. Source http://blue.mmo-champion.com/topic/164064/heroic-halls-of-origination

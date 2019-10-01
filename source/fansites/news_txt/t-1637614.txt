@@ -1,0 +1,320 @@
+chaud2014-11-19, 10:12 PMWoW Up to 10 Million Subscribers
+This afternoon Blizzard released http://blizzard.gamespress.com/WORLD-OF-WARCRAFT-SURPASSES-10-MILLION-SUBSCRIBERS-AS-WARLORDS-OF-DRAE the subscribers count as of November 13, 2014. This is up 2.6 million from the Q3 2014 call http://www.mmo-champion.com/content/4417-WoW-Up-to-7-4-Million-Subscribers-Garrosh-Heirlooms-MoP-in-Base-Game-Chopper-Mount-WoW-Up-to-7-4-Million-Subscribers-Garrosh-Heirlooms-MoP-in-Base-Game-Chopper-Mount that listed WoW at 7.4 million subscribers.
+
+Warlords of Draenor has sold over 3.3 million copies so far, up from 1.5 million pre-ordered in August http://www.mmo-champion.com/content/4219-WoW-Down-to-6-8-Million-Subscribers. 
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart;
+setTimeoutfunction{ height = subchart.height
+width = $"#subCounts".width
+subchart.setSizewidth, height, doAnimation = true;},2500
+
+
+setTimeoutfunction{ height = subchart.height
+width = $"#subCounts".width
+subchart.setSizewidth, height, doAnimation = true;},1500
+
+setTimeoutfunction{ height = subchart.height
+width = $"#subCounts".width
+subchart.setSizewidth, height, doAnimation = true;},4500
+
+
+
+$document.readyfunction  {
+Highcharts.setOptions{
+colors: ['#60A887']
+};
+subchart = new Highcharts.Chart{
+chart: {
+renderTo: 'subCounts',
+defaultSeriesType: 'line',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+type: 'datetime',
+labels: {
+maxStaggerLines: 0
+},
+
+plotBands: [{
+color: '#DEDEDE',
+from: Date.UTC2004, 8, 1,
+to: Date.UTC2007, 0, 15,
+label: {
+text: 'Vanilla'
+} 
+},
+{
+color: '#B6DBBC',
+from: Date.UTC2007, 0, 15,
+to: Date.UTC2008, 10, 13,
+label: {
+text: 'Burning Crusade'
+} 
+},
+{
+color: '#C5DBE3',
+from: Date.UTC2008, 10, 13,
+to: Date.UTC2010, 11, 6,
+label: {
+text: 'Wrath of the Lich King'
+} 
+},
+{
+color: '#E3D4C5',
+from: Date.UTC2010, 11, 6,
+to: Date.UTC2012, 8, 24,
+label: {
+text: 'Cataclysm'
+} 
+},
+{
+color: '#C5E3CA',
+from: Date.UTC2012, 8, 24,
+to: Date.UTC2014, 10, 13,
+label: {
+text: 'Mists of Pandaria'
+} 
+},
+{
+color: '#D4BBA3',
+from: Date.UTC2014, 10, 13,
+to: Date.UTC2015, 10, 13,
+label: {
+text: 'WoD'
+} 
+}]
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+min: 0,
+title: {
+text: 'Subscribers',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+line: {
+animation: false
+}
+},
+
+
+title: {
+text: 'World of Warcraft Subscriptions',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+data: [
+[Date.UTC2004, 9, 1, 0],
+[Date.UTC2004, 10, 1, 250000],
+[Date.UTC2004, 11, 1, 400000],
+[Date.UTC2005, 0, 1, 750000],
+[Date.UTC2005, 1, 1, 1250000],
+[Date.UTC2005, 2, 1, 1500000],
+[Date.UTC2005, 3, 1, 1800000],
+[Date.UTC2005, 4, 1, 2000000],
+[Date.UTC2005, 5, 1, 3250000],
+[Date.UTC2005, 6, 1, 3500000],
+[Date.UTC2005, 7, 1, 4000000],
+[Date.UTC2005, 8, 1, 4250000],
+[Date.UTC2005, 9, 1, 4500000],
+[Date.UTC2005, 10, 1, 5000000],
+[Date.UTC2005, 11, 1, 5600000],
+[Date.UTC2006, 0, 1, 6000000],
+[Date.UTC2006, 2, 1, 6400000],
+[Date.UTC2006, 4, 1, 6500000],
+[Date.UTC2006, 5, 1, 6600000],
+[Date.UTC2006, 8, 1, 7000000],
+[Date.UTC2006, 10, 1, 7500000],
+[Date.UTC2007, 0, 1, 8000000],
+[Date.UTC2007, 2, 1, 8500000],
+[Date.UTC2007, 4, 1, 8600000],
+[Date.UTC2007, 5, 1, 8800000],
+[Date.UTC2007, 6, 1, 9000000],
+[Date.UTC2007, 10, 1, 9300000],
+[Date.UTC2007, 11, 1, 9750000],
+[Date.UTC2008, 0, 1, 10000000],
+[Date.UTC2008, 1, 1, 10200000],
+[Date.UTC2008, 9, 1, 11000000],
+[Date.UTC2008, 8, 30, 11000000],
+[Date.UTC2008, 11, 1, 11500000],
+[Date.UTC2008, 11, 31, 11500000],
+[Date.UTC2009, 2, 1, 11500000],
+[Date.UTC2009, 2, 31, 11500000],
+[Date.UTC2010, 0, 1, 11500000],
+[Date.UTC2009, 11, 31, 11500000],
+[Date.UTC2010, 9, 1, 12000000],
+[Date.UTC2010, 8, 30, 12000000],
+[Date.UTC2011, 1, 1, 12000000],
+[Date.UTC2011, 2, 31, 11400000],
+[Date.UTC2011, 5, 30, 11100000],
+[Date.UTC2011, 8, 30, 10300000],
+[Date.UTC2011, 11, 31, 10200000],
+[Date.UTC2012, 6, 1, 9100000],
+[Date.UTC2012, 8, 30, 10000000],
+[Date.UTC2012, 11, 31, 9600000],
+[Date.UTC2013, 2, 31, 8300000],
+[Date.UTC2013, 5, 30, 7700000],
+[Date.UTC2013, 8, 30, 7600000],
+[Date.UTC2013, 11, 31, 7800000],
+[Date.UTC2014, 2, 31, 7600000],
+[Date.UTC2014, 5, 30, 6800000],
+[Date.UTC2014, 8, 30, 7400000],
+[Date.UTC2014, 11, 31, 10000000], ],
+name: 'Global subscribers'
+}]
+
+};
+
+};
+</script> 
+<div id="subCounts" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+
+
+Garrison Campaign Quests Active
+Garrison Campaign quests are now active and the one you get each week appears to be random. 
+
+One option you may get is from Khadgar's Servant http://www.wowdb.com/npcs/83858-khadgars-servant in your garrison, which sends you to Shadowmoon Valley http://www.wowdb.com/quests/35187-infiltrating-the-sargerei for a short quest chain http://www.wowdb.com/quests/35189-the-word-of-socrethar that rewards Sargerei Disguise http://www.wowdb.com/items/119134-sargerei-disguise which is not a Toy.
+
+
+http://media.mmo-champion.com/images/news/2014/november/thumb/khadgar.jpg http://media.mmo-champion.com/images/news/2014/november/khadgar.jpg http://media.mmo-champion.com/images/news/2014/november/thumb/toyThatIsntAToy.jpg http://media.mmo-champion.com/images/news/2014/november/toyThatIsntAToy.jpg 
+
+
+Patch 6.0.3 Hotfixes - November 19
+
+Garrisons, Followers, and Outposts
+
+Stables Level 2: Characters should now be immune to being dazed while riding their mounts.
+The Forge Level 2: Solace of the Forge should now correctly only be usable while outdoors in Draenor.
+Trading Post Level 2: Players should now be able to gain reputation with the Sha'tari Defense or Laughing Skull Orcs.
+Outposts
+
+Nagrand Tankworks: Wor'var Demolisher and Telaari Siege Engine now deals less damage against other players.
+
+
+Classes
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter Forums http://www.mmo-champion.com/forums/271-Hunter / Skills http://www.wowdb.com/spells/class-abilities/hunter / Talent Calculator http://www.wowdb.com/talent-calculator#M
+
+General
+
+Camouflage's stealth effect should now be reapplying correctly when the Hunter and their pet are stationary.
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage Forums http://www.mmo-champion.com/forums/272-Mage / Skills http://www.wowdb.com/spells/class-abilities/mage / Talent Calculator http://www.wowdb.com/talent-calculator#g
+
+Talents
+
+Prismatic Crystal when conjured, should now correctly last for its full duration.
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman Forums http://www.mmo-champion.com/forums/276-Shaman / Skills http://www.wowdb.com/spells/class-abilities/shaman / Talent Calculator http://www.wowdb.com/talent-calculator#c
+
+General
+
+Totemic Recall should now correctly refund the mana cost back when used.
+
+Elemental
+
+Earthquake can now only Stun a target once per cast.
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock Forums http://www.mmo-champion.com/forums/277-Warlock / Skills http://www.wowdb.com/spells/class-abilities/warlock / Talent Calculator http://www.wowdb.com/talent-calculator#k
+
+General
+
+Resolved an issue where Glyph of Eye of Kilrogg was incorrectly allowing Eye of Kilrogg to fly while on Draenor.
+
+
+Quests
+
+Frostfire Ridge
+
+[Requires a realm restart.] Tricks of the Trade: Characters that have undergone a faction change can now complete this quest if they had already completed it on the opposite faction.
+
+
+Spires of Arak
+
+Assault on Skettis: Increased the drop rates for Talon Key. Additionally, Apexis Sol-Mender, Glowing Energizer and, Stalwart Warden should no longer be getting stuck in evade mode.
+[Requires a realm restart.] Bonus Objective: Bladefist Hold: Increased the spawn rates for Brood Mother Xylax, Bagdoth Goredrinker, and Val'dune Fleshcrafter.
+Sol Sisters: Sol-Shaper Veoryx should no longer be getting stuck in evade mode.
+
+
+Garrisons
+
+Characters visiting someone else's Garrison should no longer be incorrectly seeing another player's daily quests.
+Gladiator's Sanctum: Nemesis quests should no longer be incorrectly removed from the player's quest log if they log out while the building is under construction.
+Goren Invasion!: Adjusted a number of spawn points so the invaders should no longer get stuck in Garrison buildings.
+Scraps of Iron Dwarven Bunker/War Mill: Completing the quest should no longer remove more Iron Horde Scraps than needed.
+
+
+World Environment
+
+Increased the number of situations where items and abilities slowing the player's falling speed could be used while in outdoor environments.
+
+
+Creatures and NPCs
+
+Graveltooth should now be using their inside voice to shout at players in the area instead of shouting at the entirety of Nagrand.
+
+
+Dungeons, Raids, and Scenarios
+
+Reduced the item level requirement to queue for Normal difficulty Grimrail Depot, Shadowmoon Burial Grounds, The Everbloom, and Upper Blackrock Spire to 595 down from 600.
+Upper Blackrock Spire
+
+Orebender Gor'ashan: Mobs from other parts of the Dungeon should no longer be joining the fight during the encounter.
+
+
+Challenge Mode
+
+Aviana's Feather should no longer be usable while in a Challenge Mode dungeon.
+
+
+Proving Grounds
+
+Statistics for Basic Healer Endless should no longer be incorrectly displaying under Basic Tank Endless.
+
+
+PvP
+
+Increased the amount of players that can be in Ashran to 150.
+[Requires a realm restart.] Primal Combatant PvP trinkets awarded from Gold Strongboxes should now contain stats that are more appropriate for the character's specialization.
+Primal PvP trinkets http://www.wowdb.com/items?filter-green-text=24&filter-quality=8&filter-source=256&filter-slot=4096 should now be eligible to grant players the Gladiator's Distinction set bonus.
+Primal Honor PvP gear http://www.wowdb.com/items?filter-green-text=24&filter-quality=8&filter-source=256 should now correctly have a set bonus.
+
+
+Items
+
+Gnomish Net Launcher now has a level 91 requirement to equip and provides a more appropriate bonus to Versatility.
+Invisibility Field's effect is now on a shared cooldown with other invisibility effects.
+
+
+Bug Fixes
+
+Resolved an issue where Draenor Perks for characters may sometimes not be saving correctly.
+
+
+
+Overpwn - Overwatch Heroes, News, and Forums
+We've launched a site for Blizzard's newest game, Overwatch, which was revealed at this year's BlizzCon. Overpwn features a database with all the announced Heroes http://www.overpwn.com/heroes, community forums http://www.overpwn.com/forums to discuss the game, and news http://www.overpwn.com/ to keep you up to date with all the Overwatch announcements as we wait for beta.
+
+Overwatch Beta starts next year, and you can opt-in to the test via Battle.net account management http://us.battle.net/account/management/settings/beta-opt-in.html.
+
+
+http://media.mmo-champion.com/images/news/2014/november/overpwn.jpg http://www.overpwn.com

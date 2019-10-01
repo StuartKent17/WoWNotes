@@ -1,0 +1,88 @@
+Boubouille2011-02-25, 11:16 AMToday we'll take a look at the client strings of Patch 4.1. Assuming that everything goes as planned today new patches take time!, things should get interesting soon starting today with fun models! 
+
+"Salamander Hunter" and Crimson Fire Hawk
+The new model of Ragnaros was very popular yesterday, let's kick it up a notch with the model of Crimson Fire Hawk http://db.mmo-champion.com/s/97493/crimson-fire-hawk/ and a new monster, the "Salamander Hunter" who looks a lot like Majordomo Executus http://www.wowpedia.org/Majordomo_Executus.
+
+More to come soon. 
+
+
+http://media.mmo-champion.com/images/news/2011/february/firehawk_small.jpg http://media.mmo-champion.com/images/news/2011/february/firehawk.jpg http://media.mmo-champion.com/images/news/2011/february/salamanderhunter_small.jpg http://media.mmo-champion.com/images/news/2011/february/salamanderhunter.jpg
+
+
+Bind on Battle.net account items?
+The first hint of bound to Battle.net account items appeared in this patch. 
+
+
+ITEM_BIND_TO_BNETACCOUNT = "Binds to Battle.net account";
+ITEM_BNETACCOUNTBOUND = "Battle.net Account Bound";
+
+
+
+Cast on key down
+This patch finally gives the possibility to cast spells on key down instead of key up, making you more awesome in raids and battlegrounds! 
+
+
+ACTION_BUTTON_USE_KEY_DOWN = "Cast action keybinds on key down";
+OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = "Action button keybinds will respond on key down, rather than on key up.";
+
+
+
+Extra regeneration stats in character sheet
+More information seems to be available on your character sheet if you're a rogue, a hunter, or a Death Knight! 
+
+
+STAT_ENERGY_REGEN = "Energy Regen";
+STAT_ENERGY_REGEN_TOOLTIP = "Energy regenerated every second.";
+STAT_FOCUS_REGEN = "Focus Regen";
+STAT_FOCUS_REGEN_TOOLTIP = "Focus regenerated every second.";
+STAT_RUNE_REGEN = "Rune Speed";
+STAT_RUNE_REGEN_FORMAT = "%.2fs";
+STAT_RUNE_REGEN_TOOLTIP = "The recharge time for each of your Runes.";
+
+
+
+Guild Recruitment
+Patch 4.1 will apparently introduce the in-game guild recruitment system promised during Blizzcon! So far we don't have a lot of details on how it will work but the interface can be accessed on PTRs, we'll probably see more of it in later phases of testing. 
+
+
+LOOKINGFORGUILD = "Looking for Guild";
+NEWBIE_TOOLTIP_LOOKINGFORGUILDTAB = "Allows you to find a guild.";
+BROWSE_GUILDS_BUTTON = "Browse Guilds";
+BROWSE_GUILDS_NUM_MEMBERS = "%d members";
+BROWSE_GUILDS_TAB = "Browse Guilds";
+GUILDBANK_AWARD_MONEY_SUMMARY_FORMAT = "A total of %s was deposited last week from Guild Perk: Cash Flow ";
+GUILDINFOTAB_APPLICANTS = "Requests %d";
+GUILDINFOTAB_APPLICANTS_NONE = "Requests";
+GUILDINFOTAB_INFO = "Info";
+GUILDINFOTAB_RECRUITMENT = "Recruitment";
+GUILD_AVAILABILITY = "Availability";
+GUILD_AVAILABILITY_WEEKDAYS = "Weekdays";
+GUILD_AVAILABILITY_WEEKENDS = "Weekends";
+GUILD_CLOSE_RECRUITMENT = "Unlist My Guild";
+GUILD_MEMBERSHIP_REQUEST_SENT = "Guild Request Sent";
+GUILD_OPEN_RECRUITMENT = "List My Guild";
+GUILD_PLAYSTYLE = "Guild Playstyle";
+GUILD_PLAYSTYLE_CASUAL = "Casual";
+GUILD_PLAYSTYLE_HARDCORE = "Hardcore";
+GUILD_PLAYSTYLE_MODERATE = "Moderate";
+GUILD_RANK_UNAVAILABLE = "Rank unavailable";
+GUILD_RANK_UNAVAILABLE_AUTHENTICATOR = "Only characters with an Authenticator attached to their account can obtain this rank.";
+GUILD_RECRUITMENT_ANYLEVEL = "Any Level";
+GUILD_RECRUITMENT_LEVEL = "Level";
+GUILD_RECRUITMENT_MAXLEVEL = "Max Level";
+-- Looking for Guild Parameters
+LFGUILD_PARAM_CASUAL = 1;
+LFGUILD_PARAM_MODERATE = 2;
+LFGUILD_PARAM_HARDCORE = 3;
+LFGUILD_PARAM_WEEKDAYS = 4;
+LFGUILD_PARAM_WEEKENDS = 5;
+LFGUILD_PARAM_TANK = 6;
+LFGUILD_PARAM_HEALER = 7;
+LFGUILD_PARAM_DAMAGE = 8;
+LFGUILD_PARAM_ANY_LEVEL = 9;
+LFGUILD_PARAM_MAX_LEVEL = 10;
+LFGUILD_PARAM_LOOKING = 11;
+
+
+
+http://media.mmo-champion.com/images/news/2011/february/lfguilds.jpg http://media.mmo-champion.com/images/news/2011/february/lfguilds.jpg

@@ -1,0 +1,197 @@
+Boubouille2007-11-20, 08:01 AMForum registration bugs fixed
+It seems that there was a small bug during the last month preventing a few *coughs* over 1000 forum accounts to be activated because they couldn't get the mail. It should be fixed and you can now activate all accounts by :
+Trying to login and clicking the "Need another activation email?" link
+Waiting a few days, I'll send a mail to people who didn't activate yet but I'd like to minimize the spamming that's why I won't do it now. 
+Log on 
+#mmo-champion on irc.quakenet.org irc://irc.quakenet.org/mmo-champion and ask me Bibi to get your account activated.
+Of course, you can just register a new account.
+
+
+
+This also means that registrations on PvPScene.com forums http://www.pvpscene.com/index.php?action=forum was affected by the same bug, and was fixed as well. 
+
+
+2.4 Interface changes
+It's been confirmed that the combat log API will be totally changed in 2.4, what does it mean ? Basically it will be much easier to write and add features to fight analysis like combat logs parsers, damage meters, and probably a few other things that I can't think of.
+The combat logging mechanism is completely overhauled with explicit data instead of text strings delivered to the UI. See slouken's post below for a sneak-peak at some of the current details. Highlights include detailed flags indicating relationship of involved units to player, unique identifiers for units with the same name within the combat log -- great for log analysis.
+
+
+Other blue posts
+Armory
+There is currently a database issue preventing talents from properly updating, it's being worked on. Source http://forums.worldofwarcraft.com/thread.html?topicId=2971963238&postId=30553507704&sid=1#2
+
+Arena : Season 4
+The season 3 won't last forever, a season 4 is scheduled. Items from season 3 with personal rating will possibly lose their rating requirements when it starts but nothing is confirmed yet. Source http://forums.worldofwarcraft.com/thread.html?topicId=2968233261&postId=30548406219&sid=1#9
+
+Dwarves
+There is no plan to make Stoneform dispell blind again like it did before the 2.3 patch. Source http://forums.worldofwarcraft.com/thread.html?topicId=2968233257&postId=30548405899&sid=1#18
+
+Items
+The tanking gear in Zul'aman is here to provides more options for players, this is why some pieces are missing defense rating at the expense of other useful stats like hit rating or stamina. Source http://forums.worldofwarcraft.com/thread.html?topicId=2968233267&postId=30548406566&sid=1#11
+
+
+2.3 Bug Fixes
+2.3.1 or 2.3.2 ? patch will probably be available on live servers or on the PTR soon, Hortus posted a looooooooooong list of known issues that are being fixed in upcoming patches consider this as a patch note preview. This is not a complete list of all reported issues. Issues that are still being researched are not included in this list.
+
+General
+Dwarven racial Find Treasure is deactivated on death.
+Undead Males main hand weapon is appearing larger than previous builds.
+Equipping a thrown weapon while in the middle of an Auto-Shot will cause animation issues.
+
+
+
+Environment
+Inappropriate tooltip is displaying when a player hovers over Shartuul's Transporter on a flying mount.
+Relogging on the flight path from Southshore, Hillsbrad Foothills to Ironforge, Dun Morogh in the entrance to Ironforge causes players to fly through a wall.
+The flight path from Stormwind to Rebel Camp, Stranglethorn Vale clips through a tree outside of Stormwind.
+Alliance flight path between Booty Bay and Stormwind goes through a tree.
+There is a Feralfen Idol that is sunk into the floor in Feralfen Village, Zangarmarsh.
+There is a tin vein in Hillsbrad Foothills that is unreachable.
+There is a section of water that is clipping oddly into one of the waterfalls in Hatchet Hills outside of Zul'Aman.
+The message "Zul'Aman Exterior InvisMan gains Cosmetic - Flame Patch X.X" appears in the combat log whenever a troll hut is burning in Hatchet Hills.
+There is a leanto in Agama'gor, The Barrens that has no tooltip appearing but will be highlighted when moused over it.
+Players can wall jump a portion of the hallway to Gruul in Gruul's Lair to reach a overhanging log beam where they can evade the mobs.
+
+
+
+Quests
+There is a typo in the Quest Description Text of the Dustwallow Marsh quest "Thresher Oil".
+There is a punctuation error in the acceptance text for the quest "Inspecting the Ruins" .
+The quest description of "Super Hot Stew" does not state exactly how many ingredients are needed to create a Demon Broiled Surprise .
+Splintertree Raiders do not respawn with Toerk if Duriel Moonfire and her guards are killed while the Raiders are still alive.
+The quest descrip [tion text for "The Corpulent One" refers to it being a group quest.
+The quest "Bark For Drohn's Distillery" is unattainable if the player has certain quests in his/her quest log.
+Quest Items are not lootable from chest objects when their tap list is issued on creation, and the object is summoned in via a pet.
+
+
+
+NPCs
+Hammer of Justice from Gathios the Shatterer is able to be reflected.
+Commander Springvale in Shadowfang Keep does not always drop superior quality loot.
+Nazan will melee players while in the air.
+It is possible for Zul'jin to perform Claw Rage improperly.
+When mousing over Darnall a hearthstone icon appears instead of a coin bag.
+Boulderfist Warrior is displaying inconsistent combat animations.
+Learning certain spells via a class trainer will cause the yellow spell effect to appear on the trainer rather than the player.
+The buff Phasing Invisibility on the Warp Stalker does not have a tooltip.
+Anchorite Ayuri has a male draenei voiceset.
+Goreclaw the Ravenous cannot be skinned.
+Cursed Lost One has an inappropriate buff for the zone in which it is located.
+There is an error in Sky-Captain Bomblast's dialogue text on the Orgrimmar to Grom'gol zeppelin.
+Shattered Hand Heathen ability Bloodthirst has no tooltip description.
+Ogri'la Peacekeeper's weapons are scaled too small.
+Exarch Orelis and Anchorite Karja can be attacked in Area 52.
+There is a warp chaser stuck in a pinnacle located at the vortex fields, netherstorm.
+There is a Tortured Earth Spirit that can path onto a bone fence doodad and get stuck in nagrand.
+A Xavian Hellcaller in Ashenvale is pathing right over nearby doodads.
+A Shadethicket Bark Ripper in northern Ashenvale is pathing through broken pieces of temple.
+There is a Razorfang Hatchling that has popped up onto it's thorn branch.
+A Warp Chaser in Netherstorm is stuck in a building.
+There is a Stegodon in Terror Run, UnGoro Crater that paths too close to a stone pillar and clips into it.
+At least two Bonechewer Evokers are no longer pathing and are now stuck on an object.
+Several Stonewing Slayers in Windrunner Village, Ghostlands are experiencing collision problems with a building.
+There are elementals that have broken water pathing animations.
+Flying units are sometimes not pathing in formation
+There is a Cliff Stormer that paths directly up, down and across a hill in Grimtotem Post, Stonetalon Mountains.
+
+
+
+Classes
+Hunter
+Rank 2 of Volley has no visual particle effect.
+When a Tauren Hunter melees at a range above 5yards their bow/gun abilities on the action bar are not turning red indicating to the Hunter that he is to close to use them.
+The tooltip for the Hunter Snake Trap spell has inappropriate text in it.
+
+
+
+Paladin
+Righteous Fury is costing twice as much mana as is indicated in its tooltip.
+Righteous Fury sometimes counts as two spells for purposes of dispel effects.
+
+
+
+Priest
+Pain Suppression can be cast while silenced.
+Prayer of Mending does not overwrite properly when the healing strength is the same between targets.
+Several priest spells and talents are not affected by Silent Resolve.
+Casting Vampiric Embrace does not consume Relentlessness which is the two-piece set bonus of the Avatar.
+Inner focus consumes Starshards even though it costs no mana.
+There is a word missing in the tooltip of priest discipline talent "Focused Will".
+
+
+
+Rogue
+When Cheat Death absorbs an attack the combat log does not indicate which attack was absorbed.
+Rogue's Cheat Death buff tooltip has a typo.
+
+
+
+Shaman
+There is a typo in the tooltip for Shaman's Clearcasting effect from elemental talent Elemental Focus.
+The Shaman Talent Call of Thunder Rank 5 is giving 2% extra crit, while ranks 1-4 only give 1% crit.
+Rockbiter Weapon's tooltip and Action Bar icon are inconsistent with the other Shaman Weapon Enhancements' tooltips and icons.
+
+
+
+Warlock
+The buff from Warlock talent Demonic Knowledge remains on enslaved demons after the enslavement is broken.
+The health cost taken from the Warlock after using Health Funnel is inconsistent between uses.
+Imp spell Blood Pact affects certain trinkets upon zoning into a Battleground.
+
+
+
+Warrior
+The stunning effect from Landslide's Summon Shardling spell is not triggering a Warrior's Second Wind ability.
+Warriors can shift into a stance they are already in with macros.
+
+
+
+Items
+Druid relic Idol of the Unseen Moon's chance to proc is unaffected by the rank of Moonfire used.
+Dog Whistle is an uncommon quality.
+The Robe of the Moccasin has a Use effect instead of an Equip effect.
+Batwing Mantle have a Use effect instead of an Equip effect.
+Serpent Gloves have a Use effect instead of an Equip effect.
+Item name of Torquoise Brooch is spelled incorrectly.
+Tooltip of Whipper Root Tuber does not mention its 2-minute cooldown.
+There is no effect when using the Medallion of the Alliance during Landslide's Summon Shardling ability.
+Nimbus Boots have a Use effect instead of an Equip effect.
+Scroll of Strength V does not appear in the proper Auction House subcategory.
+Goblin Jumper Cables and Goblin Jumper Cables XL have no cooldown information in their tooltips.
+The Netherscale Ammo Pouch is a Unique item, this is inconsistent with other ammo pouches.
+The quest item Battered Steam Tonk Controller procs the warrior talent Second Wind when controlled out of range.
+Thornspike has stats inconsistent with items within the same level range.
+Mobs gain health during the stun effect from the Goblin Rocket Launcher.
+Gift of Arthas only stacks to 5.
+The Druid Gladiator PVP Helmet is not using the right texture for the set
+Baelog's Shortbow is a common quality item.
+Snakeskin Bag is a common quality item.
+Vengeful Gladiator's Rifle is using a inconsistent sound.
+After you use Field Repair Bot 110G you cannot use it again.
+There is a typo in Plans: Adamantite Weapon Chain.
+Trading or linking an unlocked lockbox to another player shows the box as locked.
+Vengeful Gladiator's Mooncloth Hood and Vengeful Gladiator's Satin Hood do not display Troll Tusks.
+There is a typo in the tooltip of item "Amani Charm of the Medicine Man".
+
+
+
+Tradeskills
+The Icy Chill enchant is causing the debuffed target to attack faster, and is not snaring the target.
+In the cooking UI, Hot Apple Cider appears in an incorrect section.
+The Formula: Large Prismatic Shard has a inconsistent icon.
+Shadow Oil does not fit into Leatherworking Bags.
+
+
+
+UI
+The sound effect heard when mouse-clicking on several options menus and options checkboxes do not always play.
+Cancelling the use of a Steam Tonk Controller will cause the tonk's abilities to momentarily appear as a pet bar.
+Unit names do not appear in Alt-Z view.
+When a unique item drops that a player already has the automatically passing message is incorrectly telling the player he cannot use the item.
+The Guild Log window has several resizing issues.
+The Guild Bank Repair button does not display how much the repair will cost.
+Targeting Circles still appear in Alt-Z view.
+No sound effects are heard when right-clicking on items to place them in the trade window or to remove them from it.
+No sound effect is heard when right-clicking on items to place them in mail.
+Control-clicking on inventory items that teach recipes does not display you wearing the item made by the recipe in the dressing room UI.
+You can cause interface menus to be drawn partially off-screen.

@@ -1,0 +1,89 @@
+Boubouille2009-09-09, 10:54 PMPatch 3.2 PTR Build 10433
+A new build has been deployed on test realms, below are the list of the changes. This post will be updated multiple times.
+
+Battlegrounds
+According to the interface files, you can only be queued for 2 battlegrounds at once, down from 3. Update - Confirmed in-game.
++ERR_BATTLEGROUND_TOO_MANY_QUEUES = "You can only be queued for 2 battles at once";
++MAX_BATTLEFIELD_QUEUES = 2;
+
+
+Lil' K.T.
+Lil' K.T. http://db.mmo-champion.com/s/69677/lil-k-t/ got a new model in this build, however I doubt this is the fully textured version. More to come in the next build ?
+
+
+http://static.mmo-champion.com/mmoc/images/news/2009/september/babykt_small.jpg http://static.mmo-champion.com/mmoc/images/news/2009/september/babykt.jpg
+
+
+Talent Calculator
+The Talent Calculator http://talent.mmo-champion.com/ has been updated to the latest build.
+
+
+http://static.mmo-champion.com/mmoc/images/news/2009/september/talentcalc10433.jpg http://talent.mmo-champion.com/
+
+
+Spell Comparison
+
+Items
+Reign of the Dead http://db.mmo-champion.com/i/47477/reign-of-the-dead/ / Reign of the Unliving http://db.mmo-champion.com/i/47188/reign-of-the-unliving/ now only procs from non-periodic spell critical strike.
+Reign of the Dead http://db.mmo-champion.com/i/47316/reign-of-the-dead/ / Reign of the Unliving http://db.mmo-champion.com/i/47182/reign-of-the-unliving/ now only procs from non-periodic spell critical strike.
+
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight
+Blood
+Heart Strike http://db.mmo-champion.com/s/55262/ now has its total damage increased by 10% for each of your diseases on the target to the primary target, and half that to the secondary target.
+Vampiric Blood http://db.mmo-champion.com/s/55233/ now lasts 10 sec. Down from 20 sec.
+Subversion http://db.mmo-champion.com/s/49491/ now also affects Scourge Strike.
+
+Frost
+Frost Presence http://db.mmo-champion.com/s/48263/ now reduces damage taken by 8%. Up from 5%
+Threat of Thassarian http://db.mmo-champion.com/s/66192/ now also affects Rune Strike.
+Unbreakable Armor http://db.mmo-champion.com/s/51271/ now increases your armor by 25% and increasing your Strength by 10% for 20 sec.
+
+Unholy
+Bone Shield http://db.mmo-champion.com/s/49222/ cooldown has been lowered from 2 min to 1 min.
+Dirge http://db.mmo-champion.com/s/49599/ no longer affects Obliterate.
+
+Tier 9
+Item - Death Knight T9 Tank 4P Bonus http://db.mmo-champion.com/s/67120/ - Decreases the cooldown on your Unbreakable Armor, Vampiric Blood, and Bone Shield abilities by 10 sec. Down from 20 sec
+
+Glyphs
+Glyph of Scourge Strike http://db.mmo-champion.com/s/58642/ - Your Scourge Strike increases the duration of your Blood Plague and Frost Fever on the target by 3 sec, up to a maximum of 9 additional seconds. Old - Your Scourge Strike has a 25% chance to cause Blood Plague and Frost Fever.
+Glyph of Unbreakable Armor http://db.mmo-champion.com/s/58635/ - Increases the armor granted by Unbreakable Armor by 20%. Old - Increases the amount of damage absorbed by Unbreakable Armor by 20%.
+Glyph of Vampiric Blood http://db.mmo-champion.com/s/58726/ - Increases the duration of your Vampiric Blood by 5 sec. Down from 10 sec
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid 3.1 Skills List http://www.mmo-champion.com/index.php?page=700 / 3.1 Talent + Glyph Calc. http://talent.mmo-champion.com/?druid
+Glyphs
+Glyph of Typhoon http://db.mmo-champion.com/s/62135/ - Reduces the cost of your Typhoon spell by 8% and increases its radius by 10 yards, but it no longer knocks enemies back. Down from 20 yards
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter 
+Beast Mastery
+The Beast Within http://db.mmo-champion.com/s/34471/ now lasts 10 sec Down from 18 sec but now also increases all damage you deal by 10% at all time.
+Bestial Wrath http://db.mmo-champion.com/s/19574/ now lasts 10 sec. Down from 18 sec
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage 
+Fire
+Combustion http://db.mmo-champion.com/s/11129/ now also increases your critical strike damage bonus with Fire damage spells by 50% when activated, now lasts until you have caused 3 non-periodic critical strikes with Fire spells.
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest
+Shadow
+Twisted Faith http://db.mmo-champion.com/s/51167/ now increases your spell power by 4/6/8/12/16/20%. Up from 2/4/6/8/10%
+Improved Spirit Tap http://db.mmo-champion.com/s/15338/ effect changed to : Your Mind Blast and Shadow Word: Death critical strikes have a 100% chance and your Mind Flay critical strikes have a 50% chance to increase your total Spirit by 10%. Mana regeneration effect remains unchanged.
+
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue
+Assassination
+Envenom http://db.mmo-champion.com/s/57993/ now benefits from Attack Power a little more.
+1 dose: [ 9% of AP + 215 ] damage Up from [ 7% of AP + 216 ] damage
+2 doses: [ 18% of AP + 430 ] damage Up from [ 14% of AP + 432 ] damage
+3 doses: [ 27% of AP + 645 ] damage Up from [ 21% of AP + 648 ] damage
+4 doses: [ 36% of AP + 860 ] damage Up from [ 28% of AP + 864 ] damage
+5 doses: [ 45% of AP + 1075 ] damage Up from [ 35% of AP + 1080 ] damage
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman
+Elemental
+Flame Shock http://db.mmo-champion.com/s/49233/ now deals 834 Fire damage over 18 sec at max rank. Up from 556 fire damage over 12 sec Lower ranks increased accordingly.
+Lava Burst http://db.mmo-champion.com/s/60043/ no longer consumes Flame Shock. 
+
+Enhancement
+Earthen Power http://db.mmo-champion.com/s/51524/ changed to : Your Earthbind Totem's pulses have a 50/100% chance to also remove all snare effects from you and nearby friendly targets, and your Earth Shock reduces enemy attack speed by additional 5/10%.
+
+Glyphs
+Glyph of Flame Shock http://db.mmo-champion.com/s/55447/ - The periodic damage dealt by your Flame Shock can now be critical strikes. Old - Increases the duration of your Flame Shock ability by 6 sec and it is not consumed by casting Lava Burst.

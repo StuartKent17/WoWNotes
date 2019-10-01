@@ -1,0 +1,137 @@
+chaud2011-09-06, 04:14 AMStats: Character Leveling Speed in Cataclysm
+There were no blue posts today because of the Labor Day holiday, Blizzard posters will probably be back tomorrow with more news!
+
+It has been too long since we posted some stats and this time we took a look at how many characters reached Level 85 each day since Cataclysm was released. This only includes data from the US Realms to keep the dates simpler. This does not include all of the level 85 characters in the US, only a sample of 1.1 million. Interested in seeing some other statistics? Let us know in the comments!
+
+
+
+You can see that a very large number of people reached Level 85 in the first week after release, thousands even the first day. 
+It seems that people enjoy leveling during the weekend with a spike on Saturday and an even larger spike on Sunday. 
+You can see where Patch 4.1 and Patch 4.2 came out, decreasing the amount of leveling briefly.
+
+
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+<script> var chart;
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#4768C4', '#E01B6A']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'levelingspeedchart',
+zoomType: 'x',
+spacingRight: 20,
+backgroundColor: '#efeedc'
+},
+title: {
+text: 'Number of New Level 85 Characters Per Day',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+subtitle: {
+text: document.ontouchstart === undefined ?
+'Click and drag in the plot area to zoom in' :
+'Drag your finger over the plot to zoom in'
+},
+xAxis: {
+type: 'datetime',
+maxZoom: 14 * 24 * 3600000, // fourteen days
+title: {
+text: null
+},
+startOnTick: false,
+showFirstLabel: false
+},
+yAxis: {
+title: {
+text: 'Number of Characters',
+style: {
+fontSize: '16px',
+color: '#000',
+fontWeight: 'bold'
+}
+},
+startOnTick: true,
+showFirstLabel: false,
+
+},
+tooltip: {
+shared: true 
+},
+legend: {
+enabled: false
+},
+plotOptions: {
+
+area: {
+animation: false,
+lineWidth: 1,
+marker: {
+enabled: false,
+states: {
+hover: {
+enabled: true,
+radius: 5
+}
+}
+},
+shadow: false,
+states: {
+hover: {
+lineWidth: 1 
+}
+}
+}
+},
+
+series: [{
+type: 'area',
+name: 'Level 85 Characters',
+pointInterval: 24 * 3600 * 1000,
+pointStart: Date.UTC2010, 11, 7,
+data: [
+2881,15981,27064,28708,32420,33820,24383,19210,19297
+,17493,15808,17965,18417,14121,12898,11402,12353,11201,9765,12323,11885,11039,11082,10955, 10435,10801,11683,
+9603,8439,7919,7719,7793,10069,10490,7874,5899,7190,
+6627,6750,8426,8968,7899,5476,5782,5827,6033,7476,7809,5565,4439,5025,5012,4991,6342,6815, 4954,4843,5225,4576,
+4662,5909,5633,4225,3119,4133,4209,4114,5555,5750,3999,
+3245,3810,3863,3999,5125,5537,4806,3769,3642,3632,3830,4873,5244,3596,2843,3323,3172,3240, 4262,4665,3440,
+3055,3018,3134,2962,3904,4053,3285,2385,2771,2748,2885,
+3612,3992,2961,2258,2784,2617,2867,3587,3946,2914,2582,2671,2587,2562,3336,3570,2675,2488, 2336,2249,2545,
+3201,3548,2577,1851,2278,2322,2338,3047,3321,2451,1974,
+2293,2247,2604,2976,3027,2521,1296,1716,1802,1806,2294,2675,2103,1534,1907,1833,1968,2548, 2752,2197,1791,
+2140,2090,2210,2689,2958,2366,2106,2147,2109,2111,2613,
+2903,2424,2162,2150,2089,2206,2522,2905,2828,2175,2118,2127,2087,2671,2741,2179,1745,2122, 2172,2087,2464,
+2912,2235,2005,2145,2087,2129,2463,2718,2278,2165,2186,
+2278,2304,2506,2861,2446,1402,1823,1836,1819,2135,2281,2326,1589,1917,1991,1854,2124,2369, 2035,1382,1847,
+1844,1902,2102,2330,2071,1589,1769,1897,1876,2171,2406,
+1996,1620,1808,1982,1812,2226,2412
+]
+}]
+};
+
+
+};
+</script> 
+<div id="levelingspeedchart" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+
+Poll: How many characters have you leveled to 85?
+While we were working on these stats, we figured it was a good time to ask how many characters you have leveled to 85. Let us know in the poll below!
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/5479750.js"></script>
+<noscript><a href="http://polldaddy.com/poll/5479750/">Are you still playing WoW?</a></noscript><div style="clear:both;"></div>
+
+
+Comics
+Dark Legacy Comics #303 http://www.darklegacycomics.com/303.html and Teh Gladiators #268 + #269 http://www.tehgladiators.com/?p=268 are available!
+
+
+http://media.mmo-champion.com/images/news/2011/september/dlc303.jpg http://www.darklegacycomics.com/303.html http://media.mmo-champion.com/images/news/2011/september/tg268.jpg http://www.tehgladiators.com/?p=268

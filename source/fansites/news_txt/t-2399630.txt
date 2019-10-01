@@ -1,0 +1,64 @@
+chaud2018-05-25, 04:03 AM<img src="https://media.mmo-champion.com/images/news/2012/july/wowmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Battle for Azeroth Beta - Build 26707 https://www.mmo-champion.com/content/7628-Battle-for-Azeroth-Beta-Build-26707
+
+Battle for Azeroth - Upcoming Fury Warrior Changes
+This week's beta build caught the Fury Warrior changes mid-flight, and is an incomplete picture of the overall changes. Work is still underway – the spec is currently being iterated on. To give some more information on the overall direction of the spec, here are some points we are looking to address:
+
+
+More tightly adjust/control Enrage uptime and Rage income both of which heavily impact pacing, flow, and the feel of the spec throughout the expansion, rather than letting both scale up dramatically as gearing happens. Reduce the amount of stacking damage bonuses on the spec that are available simultaneously, which reduces the desire/need to stack multiple at once, which now feels much worse to do now that virtually all of them are on the global cooldown. Figure out Furious Slash’s place on the spec.
+
+Enrage
+Getting mad and being better and stronger is definitely still the fantasy of Fury, and Enrage is staying as the spec’s core base mechanic and Mastery. However, Enrage is changing a bit into 25% Haste still being adjusted and 10% Movement speed. It’s currently 100% melee attack speed on live, and was 50% melee attack speed previously on Beta. Haste is something that’s much more felt in terms of pacing button presses, cooldowns compressing compared to auto attack speed, which mostly gets covered up by ability animations anyways.
+
+The 20% increased damage taken during Enrage is being removed. Along with this, the 15% passive increased maximum health the spec had is also going away – this was largely added to counteract the increased damage drawback that Enrage had. Now, Fury will simply have the bonus of ~8% more health than other non-tanks in the same gear level, due to being able to dual-wield a pair of 2-handed weapons.
+
+In terms of Enrage uptime, our current thought is we’d like to try targeting Enrage uptime to around ~60%, and not growing wildly throughout the expansion as gear improves. I think there exists a sweet spot for Enrage uptime where it’s not up so often that it’s taken for granted and you don’t have to think at all about playing around it, but also not so rare that it feels bad.
+
+Because Enrage uptime is a function of Enrage duration and Rage generation which is directly proportional to the time in between Rampages, Enrage duration going up means uptime can get too high, which means time in between Rampages can get too high, which then feels bad. Currently, Enrage duration is back to 4 sec, but Rage generation has increased significantly since this round of Fury changes, so the spec should feel much faster now and the uptime on Enrage shouldn’t feel low.
+
+Raging Blow
+Raging Blow now Generates 12 Rage, has 2 charges, 7.5 sec recharge reduced by Haste, has a 20% chance to instantly reset its own cooldown, and no longer requires being Enraged to be usable. It’s more similar to the Inner Rage version than the live baseline version, where it has no cooldown but requires Enrage to be usable. Raging Blow is doing a lot of things for the spec here:
+
+Raging Blow was changed to fit together into Rampage and Bloodthirst, both of which we thought were good and didn’t need any notable changes. Being usable only while Enraged, meant you very frequently pushed it multiple times in a row for 5 Rage each time, which didn’t feel super engaging. Having 2 charges baseline felt better, as a version with either a 6 or 7.5 sec cooldown but no charges meant it collided with Bloodthirst’s cooldown very frequently, which did not feel good. Additionally, charges on Raging Blow is sort of the only actual resource you manage on the spec, since Rage is technically a resource but only spent on Rampage and nothing else. Having a 20% chance to reset itself is the random proc on the baseline spec that adds an amount of unpredictability to the rotation.
+
+Furious Slash
+Furious Slash didn’t really found its place on the spec. it’s a no-cooldown free filler that didn’t feel great to press, largely as a direct result of being the lowest priority/impact ability by design. The version of Furious Slash you’re seeing this week is a first iteration, where we tried giving it more tie-ins to your core rotation/mechanics: Generates 3 Rage, has 10% chance to trigger Enrage.
+
+Playing this version some more internally, we thought the button felt better, but still didn’t feel great to press. Additionally, it overlaps some with Whirlwind, which is also a baseline no-cooldown free filler. So we’re going to try removing Furious Slash baseline and making Whirlwind the baseline filler in single-target. Whirlwind has the benefit of having better audio/visual feedback, and generally feeling better to press. It also just fits the fantasy of a whirling blademaster/berserker pretty well. It will generate 3 Rage + 1 additional per target hit, up to a maximum of 8 Rage this is intended to also speed up the AOE rotation. Furious Slash is being merged together with Frenzy talent and becoming a talent in that slot, without the new experimental 10% chance to trigger Enrage mechanic.
+
+Whirlwind's Meat Cleaver effect
+Whirlwind will now cause your next 2 single-target attacks to gain the effect of striking up to 4 additional targets for 40% damage. With the changes to Raging Blow, it made sense to add Raging Blow to this effect, but at that point the only thing not included was Execute and Furious Slash, so we've added them too.
+
+Execute
+Execute being a Rage spender caused it replace Rampage entirely during execute range against enemies below 20% health. We are trying a version of Execute where it has a short 6-sec cooldown, and generates 20 Rage instead of spending it, so that it adds to your rotation and helps fuel your Rampages, rather than replacing one of your core buttons. In the current design of the spec, it feels more correct for Rampage to remain the almighty and only Rage spender, and Execute to be a more support role rather than the spammed Rage spender, even if it deals similar damage to Rampage on paper because Execute is available less frequently and Rampage Enrages you.
+
+Recklessness
+With Enrage no longer coming from Bloodthirst critical strikes and instead coming from Bloodthirst at a consistent 30% rate, the spec no longer has a core critical strike mechanic, and it made less sense to have 100% critical strike chance as Fury’s baseline cooldown. Thinking about it more, 100% critical strike chance would make more sense as Arm’s cooldown, because that spec is slower-paced and more about setting up for fewer, larger hits. Fury is currently much more about flurries of many smaller hits, speed/haste, and Rage generation. To that end, Fury’s cooldown turning into double Rage generation from all sources and some critical strike chance for flavor made more sense, both in terms of feel, theme, and gameplay.
+
+As a side note, one of the upsides of Fury’s resource model is that it can support a huge amount of burst/temporarily increased resource income in a way that feels great something many other specs can’t do as well, because Rampage spends 85% of the Rage bar – we’re consciously leaning into this more with the Recklessness mechanics changes.
+
+As always, thanks for all of the feedback.
+
+
+Battle for Azeroth - Discipline Priest Update
+Quick clarifications all still subject to ongoing change, since this build was in a slightly intermediate state.
+
+--Sins isn't correctly working in this build. The buff appears, but isn't increasing damage or Atonement.
+--Tuning is pretty preliminary, but for context on the 75 row, Contrition is likely too strong, because it skews the choice between the modes of Penance too much. Contrition's heal should be weaker than a Penance Atonement, so that it's still a choice about doing more group healing vs. focusing on one target.
+--Also on the 75 row--we're currently planning to replace Orison with Shadow Covenant.
+--Luminous Barrier is still intended to replace PW:Barrier, as before.
+--Current plan is to buff Shadow Mend a bit, as mentioned yesterday. Less sure about PW:S after reviewing more. Shadow Mend was more strongly propped up by Grace.
+
+We're seeing all the feedback on relative balance of talents within a row, but I don't want to make any claims or promises on which talents might eventually land higher/lower. We just rearranged a lot, and whatever I say will probably be proven wrong once we give a more thorough look and heavier testing happens on beta.
+
+
+Pet Battle Updates in Beta
+You'll notice in today's new Beta update that battle pet currency has changed. Here are the main changes:
+
+Pet Charms will be named Shiny Pet Charms https://beta.wowdb.com/items/116415-shiny-pet-charm. Shiny Pet Charms continue to be acquired by doing pre-BFA battle pet content.
+A new currency has been added -- Polished Pet Charms https://beta.wowdb.com/items/163036-polished-pet-charm. These are acquired by doing BFA content, such as Pet Battle World Quests. 
+Vendors that sell battle pet items that are always useful have had their wares changed to require new Polished Pet Charms as currency. For example, the vendor Serr’ah in Dalaran now wants the new Polished Pet Charms. Similar vendors who sell such items have had their costs adjusted as well.
+Vendors that sell things like unique pets or toys that have always required Shiny Pet Charms will still require Shiny Pet Charms. For example, Giada Goldleash in Dalaran will still sell all of her pets and toys for Shiny Pet Charms.
+The Pocket Pet Portal item, which was an achievement reward for completing 30 of the Pet Battle World Quests on the Broken Isles, will be added to a vendor with a Polished Pet Charm cost. This is to avoid players feeling obligated to farm previous expansion’s world quests. You can do current content to catch yourself up. This is coming in a future Beta build.
+Ultimate Battle-Training Stone https://beta.wowdb.com/items/122457-ultimate-battle-training-stone are going to have their cost increased from 45 to 60 Pet Charms.
+
+There will not be a conversion, nor will you lose them.

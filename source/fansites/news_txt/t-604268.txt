@@ -1,0 +1,77 @@
+Boubouille2008-01-14, 07:03 AMGear "reset" with WotLK
+During the last weeks/months, it's been pretty clear that WotLK will reset the gear once again by making items like quest rewards nearly as powerful as the "old" raiding gear. Bornakk gave a few words of explanation about this. 
+We did that for about 2 years, then The Burning Crusade came out, and we've been doing it again for about a year so far, seems it's about time for a change of pace and a real big update again.
+
+Also "resetting" the gear helps even out the playing field which can especially be helpful for new characters Ex. Deathknights or people who want to get into raiding. Those who want to be on the bleeding edge will get back to it, but I don't think it hurts anything to do this. No items you get make you permanently great, you need to keep playing to maintain awesomeness.
+
+I won't get into another one of these conversations too much, but the bonus that high-end raiders get is the items they have right now that allow them to be awesome. The gear gets "reset" from time to time, but if they still want to dish out the damage or heals or tanking as appropriate, they know how to get back to the top and they might even pick up some new players in the process to help their progression. Source http://forums.worldofwarcraft.com/thread.html?topicId=3773464155&postId=37728870129&sid=1#33
+
+I could almost link a Comic http://wow.mmolecule.com/news/news.mmo?id=bd30ff82-f1ce-4986-ac11-1447df561c9b after this post.
+
+
+http://static.mmo-champion.com/mmoc/images/news/2008/january/gg03.jpg http://wow.mmolecule.com/news/news.mmo?id=bd30ff82-f1ce-4986-ac11-1447df561c9b
+
+
+-----------------
+
+Housing - A good addition to the game ?
+Drysc posted a short message about housing, if you're really interested in it you can always talk about it on the official forums but it really looks like Blizzard doesn't want to add it to the game now. It's fairly understandable because it would probably hurt the social part of the game, you'd have to give a fair amount of advantages to people for buying a house if you want them to actually spend money for it, and it would probably be a teleporter, a bank, a forge, or anything else you find in capitals. Also, we know what happens when people needs a lot of gold to get something better than the others players. ^^
+Heh, well skimming through it seems not everyone wants player housing at the moment. Not that we use the forums as a barometer for popular opinion, but anyway... Player housing is still something that intrigues us. If the place and time are right, and we can add player housing and make it a meaningful addition to the game, make it cool, we'll do so.
+
+Instead of making demands of what you want to see, why not discuss different features? The pros and cons of player housing, what it could add or detract from the game. It's far more pleasant to read.
+
+
+-----------------
+
+Lag fix - Repost
+I hesitated a lot before reposting it, but I didn't have any hate mail saying "omg you broke my computer !" the first time, so I'll assume it's fairly safe. It's not like you'll be able to send a mail to complain if your computer isn't working anyway, right ? 
+
+A few weeks ago I posted this fix from the ElitistJerks forums and it worked well for most of the people but it's not really safe and it was supposed to be fixed in 2.3.2, however it seems that the Nagle Algorythm fix in the 2.3.2 patch isn't as effective as expected for most of the players, and if you're in desperate need of a lower ping this is still the best way to go. 
+
+<><><> Read this first <><><>
+1 - It might have side effects, like slowing down your download speed or affecting your performance on other softwares. In most case, it doesn't change anything, but you've been warned
+2 - If you're not sure about what you're doing, just don't do it. I don't want to be responsible because you crashed your computer in some way because you made a huge error when editing the registry. 
+2.1 - Seriously, if you don't know what you're doing, don't do it. 
+3 - If you don't have the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSMQ\ directory, you can download and apply this file http://rapidshare.com/files/77255080/msmq.reg.html to your registry. 
+4 - Windows Vista users might want to check this post http://forums.worldofwarcraft.com/thread.html?topicId=3271071466&postId=33532161447&sid=1#190 too. 
+
+Source - Elitistjerks.com http://elitistjerks.com/f15/t17761-server_locations_latency_australia/p8/
+
+1 - TcpAckFrequency - NOTE if you are running Windows Vista this setting may not have any effect - a hotfix is needed which i'm tracking down. This works fine under Windows XP
+
+Type "regedit" in windows "run.." dialog to bring up registry menu
+
+Then find:
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\
+
+There will be multiple NIC interfaces listed in there, find the one you use to connect to the internet, there will be several interfaces listed they have long names like {7DBA6DCA-FFE8-4002-A28F-4D2B57AE8383}. Click each one, the right one will have lots of settings in it and you will see your machines IP address listed there somewhere. Right-click in the right hand pane and add a new DWORD value, name it TcpAckFrequency, then right click the entry and click Modify and assign a value of 1.
+
+You can change it back to 2 default at a later stage if it affects your other TCP application performance. it tells windows how many TCP packets to wait before sending ACK. if the value is 1, windows will send ACK every time it receives a TCP package.
+
+2 - TCPNoDelay
+This one is pretty simple Discussed here http://technet2.microsoft.com/windowsserver/en/library/e6491291-872e-4260-8ced-77525b0d79a51033.mspx?mfr=true
+
+Type "regedit" in windows "run.." dialog to bring up registry menu
+
+Then find:
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSMQ\Parameters
+
+Right-click in the right hand pane and add a new DWORD value, name it TCPNoDelay, then right click the entry and click Modify and assign a value of 1.
+
+Click Ok and close the registry editor, then reboot your PC.
+
+Once you're done with the technical stuff it probably won't take more than 1 minute if you're not too bad at it, you can finally get your reward.
+
+
+http://www.mmo-champion.com/images/news/2007/november/lagfix.jpg http://www.mmo-champion.com/images/news/2007/november/lagfix.jpg
+
+Even if in this case, the fix was used to decrease a very high ping, it seems to work very well on low ~100ms ping for some people lowered to ~20 or ~30ms.
+
+
+-----------------
+
+Dark Legacy Comics #125
+Monday ! Just in time for your weekly dose of Dark Legacy http://www.darklegacycomics.com/125.html.
+
+
+http://static.mmo-champion.com/mmoc/images/news/2008/january/dl125.jpg http://www.darklegacycomics.com/125.html

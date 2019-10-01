@@ -1,0 +1,33 @@
+chaud2016-03-02, 11:35 PMLegion Alpha - Build 21215
+Another build is going out to the beta realm. 
+
+
+http://media.mmo-champion.com/images/news/2016/march/thumb/newBuildBanner.jpg?v2 http://media.mmo-champion.com/images/news/2016/march/newBuildBanner.jpg 
+
+In the upcoming Patch 6.2.4, we're moving to a new Battle.net infrastructure. There are changes to many of the Battle.net-related Lua APIs, including Battle.net friends and Battle.net chat. If you maintain an AddOn that makes use of those features, you may want to log in to the PTR and test that your AddOn still functions correctly. To help AddOn authors troubleshoot potential compatibility issues, we’ve highlighted a few of the big changes to help direct you to areas that may need your attention.
+
+Conversations
+Support for conversations has been removed. This includes all C-functions BNCreateConversation, BNGetConversationInfo, etc. as well as all Lua/XML references to conversations.
+
+Toons
+The new Battle.net architecture doesn’t have the concept of “Toons”. Instead, we refer to “GameAccounts”. As a result, many functions with “Toon” in the name now refer to “GameAccount”
+Examples:
+BNGetToonInfo -> BNGetGameAccountInfo
+BNGetFriendToonInfo -> BNGetFriendGameAccountInfo
+BNGetNumFriendToons -> BNGetNumFriendGameAccounts
+
+Presence IDs
+Previously, “Presence IDs” could refer to either Battle.net accounts or individual toons. Most functions were able to accept either type of presence ID and, when passed the wrong type, tried to guess at what you were trying to do.
+
+Presence IDs have been replaced with bnetIDAccount and bnetIDGameAccount. With this change, we’ve made all functions strict about whether they accept Account IDs or Game Account IDs. In order to make this easier, all Lua variables have been updated to specify which type of ID they are.
+
+You can translate from a bnetIDGameAccount to a bnetIDAccount as follows:
+bnetIDAccount = select17, BNGetGameAccountInfobnetIDGameAccount;
+You can find a player’s active bnetIDGameAccount from a bnetIDAccount as follows:
+bnetIDGameAccount = select6, BNGetFriendInfoByIDbnetIDAccount;
+
+Current Realm Name
+The “realmName” CVar no longer exists. You can get the name of the current realm using GetRealmName.
+
+Do you mean GetRealmName, the already-existing function? Or is this a new function that can or must? replace GetRealmName?
+The "realmName" CVar is no longer there, but the function to get the name of the current realm is still GetRealmName. Correction made to the post, thanks for asking.

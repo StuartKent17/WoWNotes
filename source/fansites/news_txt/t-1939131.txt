@@ -1,0 +1,67 @@
+chaud2016-01-22, 04:18 PM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Patch Soon for Consoles, Updated Monster Progression List for Rifts http://www.diablofans.com/news/48632-patch-soon-for-consoles-updated-monster
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Deck Spotlight: Meta-Destroying Dreadsteed Warlock, Deck Spotlight: Reno Midrange Druid, Stay Classy, HearthPwn http://www.hearthpwn.com/news/1170-deck-spotlight-meta-destroying-dreadsteed-warlock
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> New Diablo Heroes Revealed - Wizard Li-Ming & Necromancer Xul http://www.heroesnexus.com/news/1599-new-diablo-heroes-revealed-wizard-li-ming
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Overwatch Beta Returns in February - New Gamemode, New Maps http://www.overpwn.com/news/123-overwatch-beta-returns-in-february-new-gamemode
+
+Legion - Spec Swapping
+Yesterday we talked about the 100g placeholder cost for swapping specs http://www.mmo-champion.com/content/5433-Legion-Spec-Swapping-Poll-Jan-20-Hotfixes-Blue-Posts-Tweets-Beyond-the-Worlds in Legion. Celestalon pointed out https://twitter.com/Celestalon/status/690307720646430720 that there are costs other than gold that could be used. 
+
+
+http://media.mmo-champion.com/images/news/2016/january/specSwapCelestalon.png https://twitter.com/Celestalon/status/690307720646430720 
+
+
+Legion - Vault of the Wardens Dungeon
+Vault of the Wardens is a dungeon that uses the same area as part of the Demon Hunter intro experience. There are some interesting mechanics and features in this dungeon, so be sure to watch the video.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/YrhnYI_2mLs?rel=0" frameborder="0" allowfullscreen></iframe>
+
+http://media.mmo-champion.com/images/news/2016/january/VotWDJ.png http://www.mmo-champion.com/content/225-Legion-Vault-of-the-Wardens 
+
+
+Blue Posts
+Mistweaver Bugs
+We plan to make sure that an interrupt on Soothing Mist will not lock out your Nature spells.
+
+In the next build, Renewing Mist should not jump unless there is an injured target who does not have your Renewing Mists. Blue Tracker http://blue.mmo-champion.com/topic/399045-mistweaver-bugs/ / Official Forums http://us.battle.net/wow/en/forum/topic/20420603182?page=1#3
+
+Discipline Bugs
+A few more bugfixes that should be in for next build:
+
+Purge the Wicked spreading to targets that aren't in combat
+Focused Will not proccing on absorbs
+Dispel Magic and Mass Dispel occasionally becoming uncastable
+Resurrection not working at all all healer specs
+
+
+Light's Wrath is intended to Atone, but will likely be tweaked to remain balanced on a large number of targets.
+
+The trait Share in the Light gives you 15% of PW:S when you PW:S an ally is proccing the Shield Discpline talent refund 1% mana when PW:S is consumed. 
+
+I'm assuming this is a bug because it's ridiculously easy for the self-shield to get consumed.
+Thanks, this should be fixed next build. Blue Tracker http://blue.mmo-champion.com/topic/398481-discipline-bug-thread/ / Official Forums http://us.battle.net/wow/en/forum/topic/20419912912?page=2#31
+
+
+Ghostcrawler Tweets
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.
+How exactly does a system of HoTs and DoTs work, and why in WoW is there a theme of 3 seconds
+They work similarly in every game I have worked on. You assign a damage or healing amount, a coefficient to scale with stats, a duration, some rules about what happens when you overwrite them, and then a period -- the duration in between each tick.
+
+There are technical and design considerations for the duration of the tick. The faster the ticks, the less distinction there is between a dot and a direct damage ability. Part of the gameplay is supposed to be that you have to invest a long time in the dot paying out, and the target in PvP anyway has a chance to respond or remove it. Technically, you don't want to make too many calls every millisecond, so even though it's possible to have anything update constantly, you want to save those frequent updates for really sensitive things like position and movement.
+
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Heroes of the Storm - Li-Ming and Necromancer Xul
+Two new heroes from the Diablo universe are coming to Heroes of the Storm! Check out all of the details on HeroesNexus http://www.heroesnexus.com/news/1599-new-diablo-heroes-revealed-wizard-li-ming. 
+
+
+http://media.mmo-champion.com/images/news/2016/january/HNDiabloHeroes.png http://www.heroesnexus.com/news/1599-new-diablo-heroes-revealed-wizard-li-ming 
+
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Overwatch Beta Returns in February - New Gamemode and Maps
+We also got an update on Overwatch yesterday, with the announcement of a delay until February to add a new game mode and maps.
+
+
+http://media.mmo-champion.com/images/news/2016/january/OWBetaDelay.png http://www.overpwn.com/news/123-overwatch-beta-returns-in-february-new-gamemode

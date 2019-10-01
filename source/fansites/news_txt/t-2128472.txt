@@ -1,0 +1,143 @@
+chaud2016-12-06, 06:26 PM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> 2.4.3 PTR Upcoming Item Changes http://www.diablofans.com/news/48849-2-4-3-ptr-upcoming-item-changes
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> The Gadgetzan Deck Recipes - They're Actually Preeetty Gooood http://www.hearthpwn.com/news/2085-the-gadgetzan-deck-recipes-theyre-actually
+
+World Boss - Levantus
+Levantus http://www.wowdb.com/npcs/108829-levantus is up this week! He drops item level 860 gear and a Blood Relic http://beta.wowdb.com/items/141523-fel-scented-bait. Shaman can also get the The Warmace of Shirvallah http://www.wowdb.com/items/139573-the-warmace-of-shirvallah hidden artifact appearance for Doomhammer. 
+
+
+http://media.mmo-champion.com/images/news/2016/december/levBanner.jpg http://www.mmo-champion.com/content/595-Legion-World-Bosses#Levantus 
+
+http://media.mmo-champion.com/images/news/2016/december/enhanceHidden.jpg http://media.mmo-champion.com/images/news/2016/april/enhanceShamanArtifactWep06.jpg 
+http://media.mmo-champion.com/images/news/2014/june/mvbar900.jpg 
+
+
+World Boss - Na'zak the Fiend
+Na'zak the Fiend http://www.wowdb.com/npcs/110321-nazak-the-fiend is also up for a little longer, so be sure to kill him as well! He drops item level 860 gear and an Arcane Relic http://beta.wowdb.com/items/141515-leystone-nugget. 
+
+
+http://media.mmo-champion.com/images/news/2016/december/nazFiend.jpg http://www.mmo-champion.com/content/595-Legion-World-Bosses#nazak 
+
+
+Patch 7.1.5 - Shadow Priest Feedback
+Thanks for this. Some great feedback here.
+
+Overall, our goal in 7.1.5 is not to nerf Shadow's damage across-the-board, just the extreme cases that can occur with Surrender to Madness. Some of the mechanical changes will likely mean you're weaker or stronger in certain situations, but our intent is not to make Shadow "worse."
+
+To speak more directly to your points:
+
+Since Legion launched, most of the changes we’ve seen to Shadow have revolved around the balance of Surrender to Madness S2M. The main issue with S2M is the amount of damage happening at high stacks of Void Form VF. This gives Shadow a significant damage lead over other classes when played in the top 10 or so percentiles. This is illustrated in the WarcraftLogs analysis I made the week after the Mythic Emerald Nightmare opened: http://imgur.com/a/B84cl The top percentile players are able to extend their S2M the most, allowing them to spend a significant period of the fight at 100 stacks of VF, which wasn’t the intention when designing the spell.
+
+S2M DPS definitely needs to be addressed. However, the methods being utilized right now are not only affecting top end players but also those at the lower ends of the spectrum. The drain formula change in the 7.1 hotfix 8+0.55 per stack and the proposed change on the 7.1.5 PTR 6+2/3 per stack "fix" the issue of the top end damage of S2M but also make S2M more difficult to play. This means that players who were struggling before may now find it impossible to reach decent S2M uptimes and as a result the gap between top performers and the rest will widen.
+
+A different approach, to address the exponential growth of damage between the two groups without negatively affecting gameplay, would be to limit the stacks from Mass Hysteria MH. Consider Mythic Emerald Nightmare gearing over a 300s fight, using the 7.0 drain formula 9 + 0.5 per stack. A change to MH’s cap from 100 to 50 stacks would reduce overall S2M single target damage by around 5% while reducing the peak DPS 100 stacks of VF and PI by around 16%. The PTR proposed drain, and leaving MH capped at 100 stacks, reduces the overall damage by around 16% but only reduces the peak DPS by around 4%. This happens because, while they won’t be able to maintain 100 stacks of VF and MH for very long, high percentile players will still be able to reach that point and, combined with PI, they'll reach a similar peak DPS.
+
+Bottom line, increasing the drain rate has a larger negative impact on VF as a whole than it helps to curb the extraordinarily high DPS achieved at high stacks of VF.
+
+1 Not sure we agree that capping Mass Hysteria is the right approach. It would feel pretty artificial, and while we'll make those sorts of changes when absolutely necessary, we don't think that's the case here. Also, we don't agree that the change to Insanity drain makes Surrender to Madness more difficult for lower-end players; keep in mind that Insanity drain is actually lower for the first 18 seconds than it used to be.
+
+The changes to Void Bolt VB, having it interact with an area rather than only one target, are long overdue but they hurt Voidform's gameplay more than help in the current state. The main issue here is that by making it possible for DoTs to fall off during VF, you're stealth nerfing VF's average duration. When they fall off, we have to replace GCDs that would be used by Void Bolt, Mind Blast, or Mind Flay with Vampiric Touch or Shadow Word: Pain, both of which are poor insanity generators.
+
+DoTs will fall off during VF with the current design because VB is only extending all DoTs in the area by 2 seconds. In order to keep a DoT duration the same, VB would need to have a 2s cooldown, which only happens at 125% haste [ 4.5 / 2  - 1 ], a value virtually unreachable at low stacks of VF.
+
+For spread targets, Council-style fights the ever famous niche of Shadow, the situation only gets worse; now we're having to refresh many different sets of DoTs, making the whole idea of VF being a "burn" phase a fallacy because we’re spending most of time inside VF refreshing DoTs instead of using nukes.
+
+A possible solution would be for Void Bolt to refresh the duration of DoTs on the main target while increasing the duration of DoTs on nearby targets by a flat amount. That way we would have an improved version of today's multidotting for Dungeons and stacked groups, but wouldn't be punished on single or spread targets.
+
+2 We had several issues with the way Void Bolt fully refreshing DoTs was working out. In multi-target encounters, it required you to constantly switch between targets to refresh which gets highly APM-intensive during Voidform, and there was a high penalty for accidentally letting DoTs drop off before you could Void Bolt. Changing it to add duration to all nearby DoTs helps resolve both of those issues.
+
+Conversely, in single-target situations, you were able to extend your DoTs pretty much infinitely. We want to move away from that. As a DoT-based class, you should have to re-cast them from time to time.
+
+However, we do agree that you're probably having to re-cast them more than is necessary in the current build. We've increased the duration of Shadow's DoTs for the next build, to reduce how much time you actually have to spend maintaining them.
+
+Right now Legacy of the Void LotV has no feeling around it. It’s just the talent that you pick when you don't want to S2M; it offers nothing special and gives an almost negligible benefit. As a lvl 100 talent it needs to be spiced up and should offer the player something noticeable. In addition, prior to the 7.1 drain change, LotV was more of a trap than a benefit because if you entered at 70 insanity in a non-execute or multitarget situation you would likely never reach 100 insanity, effectively reducing your VF duration.
+
+3 We think it works well as a passive option in that row, and expect its DPS value to go up as a result of some of the other changes in 7.1.5. Depending on how much that is, we can buff it further if necessary.
+
+The recent rework of Mind Spike is something interesting. It opens up the talent for an option that the player can pick when they want passive cleave Dungeons and some raid encounters akin to what Mages and Warlocks have with Ignite and Fire and Brimstone. The version pushed to PTR Build 23109 has the same issue as another talent you’ve tried in the past, Shadow Word: Insanity - The removal of DoTs in a base rotation.
+
+Shadow is a DoT based spec. It has been centered around DoTs and so far that play style has been a success in most situations in Legion. Having a spell that "requires" you to apply both DoTs to a target just to remove them feels really wrong and runs counter to the core mechanics of the class.
+
+Mind Spike has great potential in this new form. With the changes to Mind Flay, having it become Mind Sear when used against a target with Shadow Word: Pain, Mind Spike has the potential to be an upgraded version of that. The talent could replace Mind Flay, not remove DoTs, and give us a strong specialized filler AoE spell, while still preserving the multidotting aspect of Shadow.
+
+4 The new Mind Spike is an experimental change that we're not entirely certain is going to work out. We put it out for testing with the knowledge that, worst case, we can pretty easily revert it to how it is in 7.1. We'd ultimately like to rework Mind Spike in some fashion, but the version currently on the PTR might not be it.
+
+Right now, one of the main balancing issues with Shadow is multidotting. When there are many high health targets Shadow is able to DoT them and melt them with Power Infusion and Surrender to Madness. While it creates a good gameplay to players, it becomes hard to balance when there are too many targets 3-4. A way to counter that effect would be to swap some of the damage today present on dots into Void Bolt or maybe into Mind Blast, but not too much because multidotting should feel strong.
+
+5 It's true that multidotting presents some challenges for balancing Shadow, but we don't see that inherently as an issue. We want you to be strong in certain areas for example, Shadow excels on multiple spread-out targets, such as the majority of the Odyn encounter, which in turn means you'll be weaker in others. As long as the variance between those areas doesn't get too large, we see that as a good thing.
+
+Lingering Insanity LI delivered an odd situation for Shadow because our highest haste moment could be outside of VF. The new Lingering Insanity talent makes a nice middle ground, having you gradually lose haste while outside of VF. However, not having LI without the talent will create an even worse situation because you'll get to your peak haste and then drop straight to the bottom, making the rotation feel slow and a huge climb, like it is today at start of the fights. Even with the buffs to the insanity generators it hurts the flow the rotation had before.
+
+A nice middle ground would be having the current PTR Lingering Insanity implementation baseline and having Void Lord back, but now it would allow Lingering Insanity to stay during Voidform, maybe now losing only 1 or 1.5 2 stack per second, which would reward getting back quicker to Voidform and make the haste change in the rotation smoother.
+
+6 We think that hard “drop” is a good thing – it provides a stark contrast between how the spec feels inside and outside of Voidform. When dropping out of Voidform has such a noticeable impact, you get a much more direct sense of just how much you were getting out of it before. That said, we did recognize that some players might disagree, which is why we reworked Lingering Insanity into a talent.
+
+Having its effect tied to our filler spell creates two undesirable scenarios: either we underuse its effects, wasting it by using Mind Flay normally; or we’re forced to not use our filler spell in order to save the effect for future add spawns. Neither of these are fun gameplay scenarios and make an interesting Legendary a pain to utilize.
+
+The advantage that the ring had before, having the DoT spread tied to Mind Sear, was that it allowed you to control when to spread them, promoting smart gameplay. Since that isn't an option anymore, a possible fix would be to have the ring modify the next SWP and VT casts, giving them a Sunfire-like effect where they spread to up to 3 nearby targets. This would allow us to use our filler spell normally and also maintain the controlled nature of the effect that we have on live. Furthermore, this would also allow us to recast our dots during periods of high drain as the extra applications would also generate insanity, an indirect effect of the ring on live.
+
+7 This is an interesting suggestion. It should still be pretty effective as-is, but we’ll talk about this idea some more.
+
+
+FEEDBACK: Upper Nighthold Heroic
+We're moving on with Nighthold raid testing, with five raid bosses on the higher levels of Nighthold accessible: Spellblade Aluriel, Krosus, Tichondrius, Star-Augur Etraeus, and High Botalist Tel'arn. We'll be leaving these bosses up for a couple of days. Please use this thread for feedback or bug reports on any of the encounters. When providing tuning feedback, please note the nature of your raid group e.g. Mythic guild group, PUG, etc..
+
+Links to parsed logs are tremendously helpful.
+
+And yes, the team is aware of concerns with 7.1.5 class changes - the next build should have a new set of responsive changes, and we're working on communication on other fronts. But while the class team handles that, any feedback for the encounter design team would be much appreciated in pursuit of the goal of a fun and polished raid tier.
+
+
+Blue Posts
+Developer Communication
+It's going to take us more than 1 weekend to make the internal changes to our processes and flow of information necessary to show a notable increase in communication. I'd love to be able to respond to every question on here right now, but I just don't have those answers yet.
+
+This is a real problem. Why don't any of you have answers to problems you have been informed about for months? What is going on behind the scenes where you do not have a clear solution to fixable issues?
+I'm just speaking about myself here. I'm not a designer, and as such, haven't been involved in those discussions. That, in turn, makes it difficult for me to give any meaningful responses here beyond "Thanks for the feedback!" That's the issue we're working to resolve.
+
+I don't think anyone's faulting you for that but I think even more "thanks for the feedback!" or "I'll pass this along to the devs" goes waaaaaaay further than radio silence for months.
+I agree with this, I just think "here's what the developers think" is even better, and I as well as the other CMs am trying to do that as much as possible. Official Forums http://us.battle.net/forums/en/wow/topic/20752388572?page=2#24
+
+Tanks in PvP and PvP Stat Templates
+Our goal with tank design in Legion PvP has been for them to fill more of a "bruiser"-style role: tougher than a typical DPS, but not so much tougher that they're always the wrong target. Similarly, they should deal less overall damage than a pure DPS spec, but not so much less that you can ignore them.
+
+That said, we've somewhat missed the mark in certain areas. Protection Paladins, for example, were able to put out a lot more healing than they probably should have. We've made a few adjustments already, and will continue to do so.
+
+Would you look into getting PVP templates working in world PVP?
+This is something we could theoretically do, we just disagree that it's the correct choice for world PvP. Inherent imbalances are part of what makes world PvP fun. Speaking personally, some of my best memories of world PvP have come from getting a bunch of friends together to take down 1 or 2 enemy players that significantly outgear us, or getting my revenge on someone that ganked me earlier by catching them off-guard in the middle of a world quest.
+
+There's obviously going to be some gray area there - there's a point where it stops being world PvP and instead just becomes griefing, and not everyone is going to agree on exactly where that point is. Generally speaking, however, unfairness - both taking advantage of it, as well as overcoming it - is part of the appeal of world PvP. Official Forums http://us.battle.net/forums/en/wow/topic/20752215393?page=5#93
+
+Extra World Boss
+Just to confirm, It's intended that a 2nd world boss spawned this week. There are two Suramar world bosses that activate independently of the main weekly World Boss rotation. You shouldn't expect to see a Suramar boss every week, but from time to time, one will spawn. Official Forums http://eu.battle.net/forums/en/wow/topic/17614455656?page=2#21
+
+Sephuz's Secret Changes
+The intent is not for Sephuz's Secret to be 100% useful in all situations. If it was, as many of you in this thread have pointed out, there's several straightforward and easy ways to accomplish that.
+
+However, with that design, it's important that where it's good, it's REALLY good. The 7.1 version wasn't quite there, which is why we made the 7.1.5 changes to increase its effectiveness when you can activate it. We also added a couple more ways for it to activate interrupts and dispels to allow more specs some better methods of activating it. Blue Tracker http://blue.mmo-champion.com/topic/787725-ptr-sephuzs-secret-is-still-aweful/ / Official Forums http://us.battle.net/forums/en/wow/topic/20752367404?page=3#47
+
+
+PTR Micro-Holiday Testing
+Beginning tomorrow, December 6, we plan to begin testing of the new Micro-Holiday events being added in Patch 7.1.5. One event will be tested each day for the next few weeks, and we’d love to hear your feedback on them.
+
+The testing schedule is as follows:
+
+Tuesday, December 06: Call of the Scarab
+Wednesday, December 07: Kirin Tor Tavern Crawl
+Thursday, December 08: Love is in the Air
+Friday, December 09: Hatching of the Hippogryphs
+Saturday, December 10: March of the Tadpoles
+Sunday, December 11: Volunteer Guard Day
+Monday, December 12: Spring Balloon Festival
+Tuesday, December 13: Glowcap Festival
+Wednesday, December 14: Un'goro Madness
+Thursday, December 15: Call of the Scarab
+Friday, December 16: Kirin Tor Tavern Crawl
+Saturday, December 17: Love is in the Air
+Sunday, December 18: Hatching of the Hippogryphs
+Monday, December 19: March of the Tadpoles
+Tuesday, December 20: Volunteer Guard Day
+Wednesday, December 21: Spring Balloon Festival
+Thursday, December 22: Glowcap Festival
+Friday, December 23: Un'goro Madness
+
+As these events open, we’ll be starting up new threads to gather feedback on them. Please share any of your thoughts there. Thanks!

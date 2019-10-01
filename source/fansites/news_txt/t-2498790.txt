@@ -1,0 +1,22 @@
+Stoy2019-07-23, 01:43 PMArcane Heart Azerite Trait Change
+We’re working on a change to the Arcane Heart https://www.wowdb.com/spells/303006-arcane-heart Azerite Trait that was introduced in Rise of Azshara. How it works today is:
+
+Arcane Heart https://www.wowdb.com/spells/303006-arcane-heart gives you a buff for every 1.5 million damage or healing you do. However, damage or healing that comes from something other than you casting a spell is not counted. For example, a Blood Death Knight doing healing from Death Strike isn’t benefitting from that healing counting to the next proc of Arcane Heart.
+
+So we’re developing a fix for that. Currently, the change looks like this:
+
+Items
+
+Heart of Azeroth
+
+Arcane Heart https://www.wowdb.com/spells/303006-arcane-heart
+
+Fixed a bug that caused some damage and healing effects to go uncounted by this Azerite Trait.
+Damage and healing counted to activate Omnipotence is no longer counted while Omnipotence is active.
+
+
+
+
+The second change there is needed to keep this from being a big buff for a Trait that we feel is fairly well-balanced before we make the bugfix.
+
+If all goes well, we expect to bring this fix to the game with maintenance this week tomorrow for Americas realms, and thereafter for EU and Asian realms.

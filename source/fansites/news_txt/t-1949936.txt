@@ -1,0 +1,90 @@
+chaud2016-02-15, 01:08 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Witch Doctor Builds Highlight http://www.diablofans.com/news/48652-witch-doctor-builds-highlight
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Popular Constructed Decks of the Week, Love is in the Air Winner - Congratulations Hejiahua! http://www.hearthpwn.com/news/1191-popular-constructed-decks-of-the-week-love-is-in
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Heroes Homescreen Backgrounds, Squadron's Mini WTF Moments #16 http://www.heroesnexus.com/news/1618-heroes-homescreen-backgrounds-squadrons-mini-wtf
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Unreleased Pharah Skin - Raptorion http://www.overpwn.com/news/130-unreleased-pharah-skin-raptorion
+
+Legion Beta - Demonology Warlock Artifact Intro
+Demonology Warlocks have a somewhat unique artifact weapon, rather than a regular weapon, it is a skull that floats near you. You can see the latest variation in this video https://www.youtube.com/watch?v=8vck_oIcaoE&feature=youtu.be&t=95.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/5hzyHSKMqgg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+RPPM Bug and Legion Changes
+Aye, thanks to you and a few other community members for helping identify that bug. Indeed, we're going to wait until 7.0 to fix it.
+
+But we're going to go a step further, as well. Warning, the following is super techy. You do not need to understand it, it's just for the theorycrafters.
+
+Conceptually, the intended difference between random chance procs and On-Use effects should be that the chance ones are unreliable, whereas the On-Use ones are active when you want them to. This extra proc chance on the pull which you identified is actually stronger than intended goes against that rather significantly, ensuring that the random chance ones are active when you most want them to, on the pull.
+
+As such, we're going to change the functionality of RPPM procs in Legion. The TimeSinceLastProcSuccess and TimeSinceLastProcAttempt will both be set to 0 on the start of boss encounters, instead of the 120 and 10 respectively that it currently is. This will significantly affect the overall DPS value of these trinkets, and we'll adjust tuning on all trinkets to account for this change.
+
+I think the issue behind why the current system was originally implemented is that there are two brands of "random" trinket currently - RPPM and % chance to proc + ICD. The issue is the % chance to proc + ICD variety is actually incredibly consistent pretty much get a proc upon expiration of each ICD window - and these trinkets also start boss encounters with their ICD window cooled down, so you can reliably get a proc on the pull with these trinkets, especially as a dual-wielder.
+
+Are there any changes to this flavor of trinket being planned, or "tuning will fix it?"
+Yes. ICD trinkets are relatively rare these days, but are a different flavor that we'll still use from time to time. As others have pointed out the extra proc chance on the pull for RPPM trinkets was significantly related to trying to compete with those ICD trinkets, which were the vast majority of trinkets at the time. Nowadays, they aren't the norm, so we don't need to make RPPM ones overpowered to compete with them. ICD trinkets will likely be a little less consistent, but still more consistent than RPPM. We don't want to have too much difference between ICD and RPPM, because it's a distinction that the vast majority of the playerbase shouldn't need to understand.
+
+If you want consistency, On-Use trinkets will be attractive to you. If you don't mind randomness, chance to trigger ones may be up your alley.
+
+Overall, we're attempting to cut down the on-the-pull cooldown stacking, and this is just one angle that we're attacking that problem from.
+
+
+Legion - Class Feedback and Changes
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid / Skills http://beta.wowdb.com/spells/class-abilities/druid / Talent Calculator http://beta.wowdb.com/talent-calculator#s / Artifact Calculator http://beta.wowdb.com/artifact-calculator#tAAAAAAAA / PvP Talent Calculator http://beta.wowdb.com/pvp-talent-calculator#s
+[Feedback] Guardian
+We'll fix the extension cheese on Frenzied Regen, don't worry. For better testing, just don't use that.
+
+On the topic of Bear AoE, we'd like to hear more fair discussion about it. There's obviously a significant amount of transition shock, going from 100% spammable AoE to just 6sec Thrash and Berserk.
+
+How much of the concern is that shock, and how much is actual ineffectiveness in gameplay? Thrash seems to certainly be enough to hold onto mobs once you've hit them with it, so the only weakness would be in mobs that stream in more often than its cooldown. How often does that actually happen, and when do your other single-target abilities including Moonfire which is ranged not suffice?
+
+Tanks have different strengths and weaknesses, and this is certainly a weakness of Bears. But is it weak enough to make you unable to perform your role in a dungeon? Or unable to be brought to raid? Since there are 2 tanks in raids, things tend to work out fine as long as each tank can do at least 1 of the jobs on each fight.. Blue Tracker http://blue.mmo-champion.com/topic/401781-feedback-guardian/ / Official Forums http://us.battle.net/wow/en/forum/topic/20419283872?page=3#43
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter Forums http://www.mmo-champion.com/forums/271-Hunter / Skills http://beta.wowdb.com/spells/class-abilities/hunter / Talent Calculator http://beta.wowdb.com/talent-calculator#M / Artifact Calculator http://beta.wowdb.com/artifact-calculator#NAAAAAAAA / PvP Talent Calculator http://beta.wowdb.com/pvp-talent-calculator#M
+[Feedback] Marksman Hunter
+Hey Marksmanship Hunters. You've given tons of constructive feedback, which we appreciate, and are using to continue iterating on things. Please keep it coming, and know that we are listening.
+
+The next build will include several significant changes based on testing, and your valuable feedback. This includes highlights such as Multi-Shot becoming a Focus-generator for Marksmanship, and applying Hunter's Mark to either all or none of its targets instead of randomly rolling against each target individually, Marked Shot hitting all marked targets, a much longer Vulnerable duration, and a few talent revisions.
+
+We look forward to you all getting to try out that build, and hearing your feedback based on it! Thanks!
+
+Random side note, any news on fixing the bug where Vulnerability, Marked for Death artifact trait, and True Aim are attributed to only one hunter? There's also a bug where you can only cast Marked Shot 6s after Hunter's Mark is triggered, even though the Hunter's Mark debuff lasts 12s. Admittedly #1 isn't a huge deal for testing gameplay though it feels bad to do so much less DPS when you're not the only hunter, but #2 affects how you play quite a bit. Fixing these would be the cherry-on-top.
+I believe every one of those is fixed for the next build. Also, you'll probably appreciate that Hunter's Mark is now applied on cast of Arcane/Multi, rather than on land. Blue Tracker http://blue.mmo-champion.com/topic/401751-feedback-marksman-hunter/ / Official Forums http://us.battle.net/wow/en/forum/topic/20418912809?page=4#76
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior Forums http://www.mmo-champion.com/forums/278-Warrior / Skills http://beta.wowdb.com/spells/class-abilities/warrior / Talent Calculator http://beta.wowdb.com/talent-calculator#E / Artifact Calculator http://beta.wowdb.com/artifact-calculator#F / PvP Talent Calculator http://beta.wowdb.com/pvp-talent-calculator#E
+[Feedback] Fury Warrior
+Thanks to all of those contributing useful, constructive feedback.
+
+As we've been saying lately, this is an alpha. And an alpha is the perfect time to experiment with a variety of potential designs, and get feedback on them. So when we make changes and you dislike them, that's not a failure, that's an opportunity for successful use of the testing process. Share your feedback, and do it in a constructive way. We're listening. And please share your feedback when you do like things as well!
+
+We're iterated many times on Fury so far this expansion, based on testing and feedback, and will continue to do so. Capturing the essence of a raging berserker, with fantasy-fulfilling, engaging, and enjoyable combat is a very delicate process.
+
+The next build will include a multitude of further revisions to Fury, including things like Rampage triggering instead of requiring Enrage, and Furious Slash being free. We look forward to more constructive feedback once you've had a chance to try that build.
+
+Thanks!
+
+Also, if you can squeeze it into the next build could you fix the bug with haste reducing the length of enrage? It makes it very hard to test the specs functionality correctly.
+This is not a bug. It looks weird, but it's important that it works that way so that haste doesn't change how many abilities fit into an Enrage, thus creating a gigantic haste breakpoint. Haste acts to compress the entire rotation, reducing GCDs, short cooldowns, and Enrage duration. Blue Tracker http://blue.mmo-champion.com/topic/401745-feedback-fury-warrior/ / Official Forums http://us.battle.net/wow/en/forum/topic/20043424942?page=12#231
+
+
+Blue Tweets
+Random thought: Why do NPC's call you "Shaman" in the Maelstrom into quests? cc @craig_amai
+Presumably as an honorific, rather than being initiate, acolyte, etc. But the feedback of it coming of weird is fair. Thanks! craig_amai https://twitter.com/craig_amai/status/696631877617086464
+
+
+Ghostcrawler Tweets
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.
+I blame you for Looking For Retards feature. Other then that you did rly good job.I liked tbc progression best
+I did work on LFR and I do have some regrets about how it turned out. OccupyGStreet https://twitter.com/OccupyGStreet/status/691998359410728960
+I welcome LFR - it allows people to raid and progress upward instead of having nothing if not in the best guild
+I think all players need the chance to progress. Maybe an anonymous, toothless raid isn't the only option though. OccupyGStreet https://twitter.com/OccupyGStreet/status/692019262928453632
+
+
+Warcraft Armies of Azeroth
+An alpha version of the Warcraft Armies of Azeroth has been released http://www.moddb.com/mods/waa-mod/news/warcraft-armies-of-azeroth-alpha-arcade-launch to the Starcraft 2 Arcade. Only the Turtle Rock map is available in the current release. 
+
+
+<iframe width="900" height="506" src="http://www.moddb.com/media/iframe/1493815" frameborder="0" scrolling="no" allowfullscreen></iframe>

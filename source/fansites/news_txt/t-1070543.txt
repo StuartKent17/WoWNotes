@@ -1,0 +1,121 @@
+Boubouille2012-01-25, 05:47 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Diablo 3 - Simple Spell Tooltips Live, Blue on Patch 10,Beta Level Cap, Vote for D3, Weekly Roundup http://www.diablofans.com/news/1064-simple-spell-tooltips-live-blue-on-patch-10beta-level-cap-vote-for-d3-weekly-roundup/
+
+Patch 4.3.2 Release Date Update
+The status of the patch is still unsure, the whole situation is most likely the reason why the US Maintenance got cancelled http://us.battle.net/wow/en/forum/topic/3941316015 and then moved to Wednesday http://us.battle.net/wow/en/forum/topic/3941417517. 
+
+The patch files are available on the download servers and things look somewhat ready but at this point it seems that the patch will only go live next week. The EU maintenance wasn't moved to Thursday and I don't think Blizzard plans to deploy a patch on both continents on the same day, even if it's a small one. 
+
+
+Statistics: Heroic Madness of Deathwing Class Representation
+Continuing our ongoing statistics posts, today we look at class representation for characters that have completed Heroic Madness of Deathwing. As always with this type of post, the sample size is fairly small; less than 100 guilds have completed the encounter so far. 
+
+
+<div id="HeroicMadnessClassBal" style="style="width:900px;margin-left: auto;margin-right: auto;""> Don't see a chart? Enable javascript! </div>
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+<script> var chart;
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#4768C4', '#E01B6A']
+};
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'HeroicMadnessClassBal',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Death Knight','Druid','Hunter','Mage','Paladin','Priest','Rogue','Shaman','Warlock','Warrior'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+
+},
+
+yAxis: {
+title: {
+text: 'Percent of Total',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+},
+max: 15
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return this.series.name + '<br />' + this.point.name + ' - '+ this.y +'%' ;
+}
+},
+
+title: {
+text: 'Heroic Madness of Deathwing Class Representation',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+
+
+series: [
+{
+data: [{y: 6.89, color: '#C41E3A', name:'Death Knight'},{y: 12.25, color: '#FF7D0A', name:'Druid'},{y: 4.44, color: '#ABD473', name:'Hunter'},{y: 9.80, color: '#69CCF0', name:'Mage'},{y: 12.40, color: '#F58CBA', name:'Paladin'},{y: 14.70, color: '#FFFFFF', name:'Priest'},{y: 10.57, color: '#FFF569', name:'Rogue'},{y: 13.17, color: '#2459FF', name:'Shaman'},{y: 7.81, color: '#9482CA', name:'Warlock'},{y: 7.96, color: '#C79C6E', name:'Warrior'}]
+,
+name: 'Percent of total characters'
+}
+]
+
+};
+
+
+};
+</script> 
+Blue Posts
+Blue Post Replies
+We read them. We also allow conversations to take place without our influence when it seems that it's the better course of action. Sometimes our intervention can actually skew a conversation off track if we're not careful. Then again, sometimes skewing a conversation is something we need to do too, to get people "on track" or even away from non-constructive discussion.
+
+Sometimes we just don't have anything we could effectively add to the conversation, but it may spark some discussion internally that we can have amongst ourselves or take to the developers and producers. If and when we do have something we can bring back, we generally try to. Some may be under the false belief that it was the constant posts about a topic that made us come back to the topic, when in fact we may just need some time to discuss and come up with an answer that works and sometimes, we may have an answer that we just can't share at the time. Timing in our roles is often everything and as many know, "promising" something too soon, can be upsetting or worrisome to some people, while others don't mind being "in the know" even if plans do change. It's a balancing act.
+
+We don't have elaborate schemes. That would mean we have a lot more time on our hands than we actually do to sit, plot and plan. In most cases, when we reply to something on the forums, we're tightrope walking while keeping an eye on the ever so dangerous ps and qs. That's not to say there isn't a method to the madness see above paragraph. It just means, we have to be quick on developing our thoughts and typing them out in a way that hopefully makes some semblance of sense.
+
+If we see some really good feedback or ideas, we will often take it with us when we meet with the developers which is generally a weekly face to face meeting. We don't want to give the wrong impression that feedback given equals a guaranteed change based on that feedback. 
+
+We are just as likely to notice a smaller thread as we are to notice the larger ones. Sometimes, the best conversations are on the first few pages not to say we don't read through the entire thread. The reason being, that often, the conversation is more focused on the topic at hand and as the thread lengthens, we either see repeat discussions/arguments, or it begins to expand to other topics that may not be as relevant to the main topic of the original post.
+
+BTW, contrary to popular belief and not to start a moderation discussion. We do not delete threads solely on the idea that it's saying it dislikes something we've designed or done to the game. We generally delete non-constructive threads or repeat threads since they often don't lead to good discussion or split conversation which makes it more difficult for us to sift through them for the constructive bits. Blue Tracker http://blue.mmo-champion.com/topic/216197-posts/ / Official Forums http://us.battle.net/wow/en/forum/topic/3941317284#12
+
+64-bit Live Client
+We'll be disabling the PTR forums shortly. Going forward you will be able to find the latest 64-bit client on the Tech Support forums http://us.battle.net/wow/en/forum/topic/3941417051#11. Blue Tracker http://blue.mmo-champion.com/topic/215861-64-bit-ptr-client/ / Official Forums http://us.battle.net/wow/en/forum/topic/3881708285#3
+
+Mists of Pandaria Information Plan
+There does and there is. There's not anything specific I can share on a time frame as of yet, but things are moving along well with Mists of Pandaria and we'll be getting you all more information on "what's next" as soon as possible. For those that were able to see the next expansion at BlizzCon, you'll have seen that we were relatively far along in development. As we've said before, we're working diligently to put out expansions a little bit quicker than we have in the past. But, as always, we want to make sure we release "when it's ready" as well. Blue Tracker http://blue.mmo-champion.com/topic/216149-whats-next/ / Official Forums http://us.battle.net/wow/en/forum/topic/3941894261#9 
+
+
+Trading Card Game Art Gallery Update
+The Trading Card game art gallery http://us.battle.net/wow/en/media/artwork/trading-card-game/series2 has been updated with ten new pieces.
+
+
+http://media.mmo-champion.com/images/news/2012/january/thumb/tcg-series2-141-full.jpg http://media.mmo-champion.com/images/news/2012/january/tcg-series2-141-full.jpg http://media.mmo-champion.com/images/news/2012/january/thumb/tcg-series2-142-full.jpg http://media.mmo-champion.com/images/news/2012/january/tcg-series2-142-full.jpg http://media.mmo-champion.com/images/news/2012/january/thumb/tcg-series2-143-full.jpg http://media.mmo-champion.com/images/news/2012/january/tcg-series2-143-full.jpg http://media.mmo-champion.com/images/news/2012/january/thumb/tcg-series2-144-full.jpg http://media.mmo-champion.com/images/news/2012/january/tcg-series2-144-full.jpg http://media.mmo-champion.com/images/news/2012/january/thumb/tcg-series2-145-full.jpg http://media.mmo-champion.com/images/news/2012/january/tcg-series2-145-full.jpg 
+http://media.mmo-champion.com/images/news/2012/january/thumb/tcg-series2-146-full.jpg http://media.mmo-champion.com/images/news/2012/january/tcg-series2-146-full.jpg http://media.mmo-champion.com/images/news/2012/january/thumb/tcg-series2-147-full.jpg http://media.mmo-champion.com/images/news/2012/january/tcg-series2-147-full.jpg http://media.mmo-champion.com/images/news/2012/january/thumb/tcg-series2-148-full.jpg http://media.mmo-champion.com/images/news/2012/january/tcg-series2-148-full.jpg http://media.mmo-champion.com/images/news/2012/january/thumb/tcg-series2-149-full.jpg http://media.mmo-champion.com/images/news/2012/january/tcg-series2-149-full.jpg http://media.mmo-champion.com/images/news/2012/january/thumb/tcg-series2-150-full.jpg http://media.mmo-champion.com/images/news/2012/january/tcg-series2-150-full.jpg 
+
+
+
+Curse Weekly Roundup
+Pico is back to tell us about the things you might have missed recently in Diablo 3, Minecraft, Resident Evil 6, and more. 
+
+
+http://media.mmo-champion.com/images/news/2012/january/CWR0124.jpg http://www.youtube.com/watch?v=9sWANZqUfDw

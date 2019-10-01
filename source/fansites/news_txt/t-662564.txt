@@ -1,0 +1,82 @@
+Boubouille2009-08-17, 09:00 AMCataclysm Leak Follow-up
+The week-end has been .... interesting and I guess it's time to clarify a few facts :
+
+You're so wrong!
+Tons of people out there won't trust everything they read on the interweb, and I'm totally fine with that. But if you want to discuss about how wrong I am please do it in a nice way, you don't have to be aggressive and a lot of people got banned for that. I will probably clean up the bans from the last days after the Blizzcon but we can't really afford to let the forums get out of control with insults and spams. If you feel that you didn't deserve your ban at all just mail me and I'll try to have a look at it. 
+
+Something Awful isn't reliable!
+I didn't want to hide the source of the quote posted a few minutes after my news post but I think a lot of people misunderstood that. After I posted the original information, a post appeared on Something Awful with a few extra details and I eventually merged it when it turned out to be ... reliable. The only details added from this post were :
+
+The "big" changes to the existing lore I don't want to spoil it again, you know what I'm talking about
+Gnomeregan possibly retaken by gnomes
+Blackrock Spire eruption.
+
+And I think that's it, everything else was from my own personal work and is data gathered from multiple sources over the last month. 
+
+Just lay down the pitchforks for the moment, the Blizzcon is only in 4 days and you'll have the rest of the year to laugh at me if what I posted is indeed wrong, there are enough french jokes in the world to do that. For the moment it's just a pre-Blizzcon leak, we have them each year and you should be used to it by now.
+
+Of course, each year, a lot of sites are wrong and I could be one of them. Nothing of what I posted was confirmed or commented by Blizzard.
+
+
+Blue posts
+No reason to freeze the site until the Blizzcon, we're back to blue posts.
+Changes to /castrandom macros
+The way we changed "broke" castrandom was that if it fails, it continues to try and cast the same spell again. This means it will still work as you intend for randomly casting mounts or using different versions of Polymorph since those won't generally fail. We have no objection to using castrandom in that fashion, which was honestly more of the original intent for the macro.
+
+Where we don't like castrandom is when players wanted to use the macro instead of having to pay attention to procs and cooldowns. That's just not the way we really want players playing WoW. There are some great games were part of the challenge is trying to automate your character as much as possible to respond to whatever happens. We just don't want WoW to be one of them.
+
+In those situations where you feel utterly dependent on a macro because our default UI isn't cutting it, please help us to identify them though don't feel obligated to turn the rest of this thread into that discussion. We'd rather make the class or UI work better rather than balance around the assumption that everyone castrandom macros the ability.
+
+The legendary DK one-button macro is an interesting beast. It tended to work because it defaulted to Icy Touch a lot since most other abilities require melee. At the time, Icy Touch hit really, really hard. Source http://blue.mmo-champion.com/28/19109959321-castrandom-whats-up.html
+
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight
+Stoneskin Gargoyle on Dual-Wielding DK Tanks
+Keep in mind that quote was before we decided that Frost could be focused towards dual-wield. We have no problems with Frost DKs tanking with two weapons.
+
+The original logic behind Stoneskin Gargoyle remains though -- there generally are not two-handed tanking weapons, so hitting say the defense cap can be harder. A DW Frost DK can use two tanking swords. Grab one of them Quel things. Source http://blue.mmo-champion.com/26/19378297749-stoneskin-gargoyle-for-dual-wielding-dk-tanks.html
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid 
+Druid survavibility
+We don't necessarily want druids to be very tanky in all forms. You already get passive defenses in bear, moonkin, tree and to a lesser extent, cat. We want shifting to caster / travel to be a slight risk. It should be a decision you make based on the situation and not an automatic response. More below. 
+
+Saris's idea was to move Improved Barkskin to shallow Balance instead of deep resto.
+It’s an interesting idea, but we didn’t want to rearrange talent trees especially for a mid-tier patch like this. However, you can see based on my previous response too that Imp Barskin might be a problematic talent in general. On the one hand, we want to get druids of all trees shifting more. That should just be a druid thing. On the other hand, we want it to be some kind of decision, and that is generally that caster form gives you more tools but at a hefty survivability cost. Imp Barskin tried to make that cost a little cheaper, but maybe that’s not the right way to go. We need to think some more at a high-level about what we really want the druid strategy in PvP to be. 
+
+I'm not so sure that "druid out of form = death" is actually a strong design. 
+Yeah. But I’m not sure that druid forms are just an extra button* you have to use before you use another button is a great design either. To be a little self-critical, I don’t think we have nailed the right balance of shifting for warriors, Shadow priests or DKs either.
+
+* - In before "GC don't know druids." I realize using a spell from caster form will pop you out, but the fact remains that either shifting is a no-brainer or it isn't. We have been sending some mixed messages on that of late I fear. Source http://blue.mmo-champion.com/28/19110416931-balance-druid-moonkin-pvp-is-not-there-yet.html
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin
+Nerfing threat in 3.2.2
+We don't think "high threat tanks" is a fun niche for the game. We don't mind some variation depending on the specific situation, but paladin OTs were accidentally pulling off of MTs an awful lot. That isn't a L2P issue. That's just the numbers being off and frustrating everyone.
+
+We didn't want to nerf threat until community perception had turned around that paladins could survive while tanking hard modes.
+
+Try out the hard Coliseum fights once available or the tougher ones in Ulduar and let us know how it feels. Source http://blue.mmo-champion.com/26/19110239984-why-are-you-nerfing-threat.html
+
+Seal of Command changes in 3.2.2
+The idea was always that Seals were a choice. We have just iterated on them so much this patch that one of them kept coming up as the only real Seal. Hopefully this latest design will work out. 
+
+If an attack procs a seal of command then that seal of command can chain onto up to two different targets.
+That is correct, with one clarification. It must be a single-target attack. If the attack is already multi-target like DS, then only the damage procs, not the cleave. Source http://blue.mmo-champion.com/28/19110299733-gc--you-got-it-right--322-soc-paladin.html
+
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue
+Fan of Knives nerf in 3.2.2
+We sat on a change for awhile because we hoped FoK spam was a flavor-of-the-month thing. We thought there was a chance the community would come up with a way to counter it, and since it's pretty much a one-trick pony, there would be no reason to keep trying it. The community absolutely comes up with counters on its own -- the answer to every new strategy should not immediately be for us to nerf it. We also hoped the resilience changes would chill out the damage enough that rogues would stop pursuing FoK spam. That doesn't seem to be happening.
+
+It is a nerf in PvE, but honestly it's probably a nerf that was also needed. We wanted to give rogues some AE damage, and we were okay with the big numbers for a long time because they were big when fights were short, but not as good over longer AE fights. Protip: AE doesn't just equal trash these days. Few people would argue that rogue single-target dps on most fights isn't amazing "jaw-dropping"? ; . As long as rogues can still contribute meaningfully to AE fights, which they will be able to do, they shouldn't be in any danger of being sidelined.
+
+It's possible some select fights, notably Yogg 0, may be too difficult without the interrupt, but the encounter designers are prepared to make changes accordingly, and everyone will have access to better gear in the new raid tier anyway.
+
+I asked a rogue in our guild if she thought Blizzard would nerf Fan. She said "They probably need to, but it was fun while it lasted."
+
+The greatest casualty is probably the loss of so many FoKing puns. Source http://blue.mmo-champion.com/28/19110159897-can-rogues-get-some-reasoning.html
+
+
+Comics
+Dark Legacy Comic #201 http://www.darklegacycomics.com/201.html and Teh Gladiators #87 http://www.tehgladiators.com/?p=87 are out. Also added one more comic this week, Foxtrot http://www.foxtrot.com/ did a Blizzcon-special. 
+
+
+http://static.mmo-champion.com/mmoc/images/news/2009/august/dl201.jpg http://www.darklegacycomics.com/201.html http://static.mmo-champion.com/mmoc/images/news/2009/august/tehglad87.jpg http://www.tehgladiators.com/?p=87
+http://static.mmo-champion.com/mmoc/images/news/2009/august/foxtrotblizzcon.jpg http://www.foxtrot.com

@@ -1,0 +1,236 @@
+chaud2015-03-27, 08:37 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> New Sets Montage, Compreensive WD 2.2 Rundown, D3 and RoS Sale http://www.diablofans.com/news/48376-new-sets-montage-compreensive-wd-2-2-rundown-d3
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Blackrock Mountain Releases April 2nd http://www.hearthpwn.com/news/824-blackrock-mountain-releases-april-2nd
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Tomb of the Spider Queen Overview, Town Hall Heroes #56, Lag/Stall Fixes http://www.heroesnexus.com/news/1333-tomb-of-the-spider-queen-overview-town-hall-heroes
+
+Armory Stats - Highmaul and Blackrock Foundry
+Today we are taking a look at the Highmaul and Blackrock Foundry achievement completion rate of players. The data used today is a sample of 6.1 million characters from 3.1 million accounts. We also did this for Siege of Orgrimmar during of Mists of Pandaria, which you can see here http://www.mmo-champion.com/content/3984-armory-stats-siege-of-orgrimmar-progression-blue-tweets-dlc-439. 
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#ADADAD', '#949494', '#727272', '#595959', '#6B8E23', '#426F42']
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'mythicBRF',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Ka\'graz', 'Darmac', 'Gruul', 'Oregorger', 'Hans & Franz', 'Thogar', 'Blast Furnace', 'Kromog', 'Maidens', 'Blackhand'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Defeated Mythic Blackrock Foundry Bosses',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 0.77, color: '#E0BB79', name:'Ka\'graz'}, {y: 1.4, color: '#E0BB79', name:'Darmac'}, {y: 0.81, color: '#E0BB79', name:'Gruul'}, {y: 1.19, color: '#E0BB79', name:'Oregorger'}, {y: 0.86, color: '#E0BB79', name:'Hans & Franz'}, {y: 0.33, color: '#E0BB79', name:'Thogar'}, {y: 0.08, color: '#E0BB79', name:'Blast Furnace'}, {y: 0.47, color: '#E0BB79', name:'Kromog'}, {y: 0.19, color: '#E0BB79', name:'Maidens'}, {y: 0.02, color: '#E0BB79', name:'Blackhand'}],
+
+name: '<b>Percent</b>'
+}]
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'mythicHM',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Kargath', 'Butcher', 'Tectus', 'Brackenspore', 'Twin Ogron', 'Ko\'ragh', 'Mar\'gok'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Defeated Mythic Highmaul Bosses',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 9.1, color: '#E0BB79', name:'Kargath'}, {y: 2.4, color: '#E0BB79', name:'Butcher'}, {y: 1.7, color: '#E0BB79', name:'Tectus'}, {y: 2.3, color: '#E0BB79', name:'Brackenspore'}, {y: 5.0, color: '#E0BB79', name:'Twin Ogron'}, {y: 1.1, color: '#E0BB79', name:'Ko\'ragh'}, {y: 0.4, color: '#E0BB79', name:'Mar\'gok'}],
+
+name: '<b>Percent</b>'
+}]
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'allWings',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Highmaul Wing 1', 'Highmaul Wing 2', 'Imperator Mar\'gok', 'Blackrock Foundry Wing 1', 'Blackrock Foundry Wing 2', 'Blackrock Foundry Wing 3', 'Blackhand'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Raids on Any Difficulty',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 70.11, color: '#E0BB79', name:'Highmaul Wing 1'}, {y: 66.36, color: '#E0BB79', name:'Highmaul Wing 2'}, {y: 59.32, color: '#E0BB79', name:'Imperator Mar\'gok'}, {y: 35.68, color: '#E0BB79', name:'Blackrock Foundry Wing 1'}, {y: 33.05, color: '#E0BB79', name:'Blackrock Foundry Wing 2'}, {y: 24.22, color: '#E0BB79', name:'Blackrock Foundry Wing 3'}, {y: 8.12, color: '#E0BB79', name:'Blackhand'}],
+
+name: '<b>Percent</b>'
+}]
+
+};
+};
+</script> 
+<div id="allWings" width="50%">
+Don't see a chart? Enable javascript!
+</div> <br> 
+<div id="mythicHM" width="50%">
+Don't see a chart? Enable javascript!
+</div> <br> 
+<div id="mythicBRF" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+Blue Tweets
+PvP
+Time pressure and sports i.e. the clock ticking down. Some video games have it, some don't e.g. WSG vs. AB. What do you think about it? holinka https://twitter.com/holinka/status/579496314771271680
+It makes more sense in 1v1 sport like tennis. Otherwise turtling. Think football during the final 2 minutes of a gamespiking
+yeah or basketball where they pass the ball around for 20 seconds. holinka https://twitter.com/holinka/status/579499647334400001
+
+It does have a timer, 15 min, which I personally think is way too short, I'd like longer games.
+20 in RBGs though. holinka https://twitter.com/holinka/status/579498410115371009
+it's also 15 in wargame tournament rules unfortunately. Slightly skews rbg tournaments
+Sounds like a bug. holinka https://twitter.com/holinka/status/579515290612080640
+
+Misc
+Besides WoW PvP do you watch any other E-Sports?
+I have enjoyed watching Smash, League, Counter-Strike and Heroes. Only scene I follow besides WoW is Heroes. holinka https://twitter.com/holinka/status/579515146445393920
+
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Heroes of the Storm - Tomb of the Spider Queen
+Blizzard released an overview video of the Tomb of the Spider queen map added in the latest patch.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/bubXzaO9hl0?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+Rift - Wardrobe Update
+Rift is also getting a Wardrobe feature in Patch 3.2 http://community.riftgame.com/en/2015/03/26/3-2-wardrobe-update/. 
+
+
+When any armor or weapon is added to your inventory, its appearance is automatically unlocked for you across your entire account.
+You can create and save wardrobe sets to allow easy switching of your appearance.
+You can use dyes to color the armor in any slot.
+A future patch will also add Wardrobe sets you can collect, with the UI showing your progress towards collecting the full set. 
+
+
+
+<div class="gallery" id="gallery-wowclosing">http://media.mmo-champion.com/images/news/2015/march/thumb/riftTransmog01.jpg http://media.mmo-champion.com/images/news/2015/march/riftTransmog01.jpg http://media.mmo-champion.com/images/news/2015/march/thumb/riftTransmog02.jpg http://media.mmo-champion.com/images/news/2015/march/riftTransmog02.jpg http://media.mmo-champion.com/images/news/2015/march/thumb/riftTransmog03.jpg http://media.mmo-champion.com/images/news/2015/march/riftTransmog03.jpg </div>

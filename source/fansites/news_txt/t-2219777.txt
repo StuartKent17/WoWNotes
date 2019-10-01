@@ -1,0 +1,202 @@
+chaud2017-05-15, 03:40 AM<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Top Standard and Wild Decks of the Week for May 14 http://www.hearthpwn.com/news/2843-top-standard-and-wild-decks-of-the-week-for-may-14
+
+Armory Stats - Artifact Challenge Appearances
+Today we are taking a look at the number of characters that have the Artifact Challenge appearance equipped. 
+
+
+This data set includes 4.5 million Level 110 characters active in the last month, across the US and EU. 
+We only considered what artifact appearance a character had equipped when they logged out. 
+The percentage shown is the percentage of characters that logged out with the listed spec that have the challenge appearance equipped. 
+We don't have a good way to know if a character has the challenge appearance unlocked unless they have it equipped. 
+This means that player preference for spec and appearances plays a role in the numbers below and that they don't represent a true comparison of difficulty between the specs. 
+For example, in terms of absolute numbers, more Havoc Demon Hunter have their challenge appearance equipped than Assassination rogues, but there are many more Havoc Demon Hunter characters than Assassination Rogue characters, making the percentage of characters logged out as that spec lower. 
+
+
+<script src="http://media.mmo-champion.com/images/news/2017/march/highcharts.js"></script><div id="classes" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+
+<script>Highcharts.chart'classes', {
+chart: {
+type: 'column',
+backgroundColor: '#efeedc',
+},
+title: {
+text: 'Percent of Characters with Artifact Challenge Appearance Equipped',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+legend: {
+enabled: false,
+},
+xAxis: {
+categories: ['Blood', 'Frost', 'Unholy', 'Havoc', 'Vengeance', 'Balance', 'Feral', 'Guardian', 'Restoration', 'Beast Mastery', 'Marksmanship', 'Survival', 'Arcane', 'Fire', 'Frost', 'Brewmaster', 'Mistweaver', 'Windwalker', 'Holy', 'Protection', 'Retribution', 'Discipline', 'Holy', 'Shadow', 'Assassination', 'Outlaw', 'Subtlety', 'Elemental', 'Enhancement', 'Restoration', 'Affliction', 'Demonology', 'Destruction', 'Arms', 'Fury', 'Protection'],
+tickmarkPlacement: 'on',
+title: {
+text: 'Spec',
+style: {
+color: '#000',
+fontSize: '13px',
+fontWeight: 'bold'
+}
+}
+},
+yAxis: {
+title: {
+text: 'Percent of Characters',
+style: {
+fontSize: '16px',
+color: '#000',
+fontWeight: 'bold'
+}
+},
+max: 7,
+endOnTick: false,
+tickInterval: 1,
+gridLineColor: '#C9C9C9'
+},
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - ' + this.y + '%';
+}
+},
+
+plotOptions: {
+column: {
+lineColor: '#666666',
+lineWidth: 1,
+marker: {
+enabled: false
+},
+animation: false
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+data: [{y: 0.69, color: '#C41E3A', name:'Blood Death Knight'},{y: 1.34, color: '#C41E3A', name:'Frost Death Knight'},{y: 2.5, color: '#C41E3A', name:'Unholy Death Knight'},{y: 2.6, color: '#A330C9', name:'Havoc Demon Hunter'},{y: 0.66, color: '#A330C9', name:'Vengeance Demon Hunter'},{y: 4.21, color: '#FF7D0A', name:'Balance Druid'},{y: 1.83, color: '#FF7D0A', name:'Feral Druid'},{y: 2.2, color: '#FF7D0A', name:'Guardian Druid'},{y: 2.52, color: '#FF7D0A', name:'Resto Druid'},{y: 2.5, color: '#ABD473', name:'Beast Mastery Hunter'},{y: 1.62, color: '#ABD473', name:'Marksmanship Hunter'},{y: 1.59, color: '#ABD473', name:'Survival Hunter'},{y: 0.79, color: '#69CCF0', name:'Arcane Mage'},{y: 1.31, color: '#69CCF0', name:'Fire Mage'},{y: 2.88, color: '#69CCF0', name:'Frost Mage'},{y: 1.10, color: '#00c77b', name:'Brewmaster Monk'},{y: 1.0, color: '#00c77b', name:'Mistweaver Monk'},{y: 4.03, color: '#00c77b', name:'Windwalker Monk'},{y: 2.89, color: '#F58CBA', name:'Holy Paladin'},{y: 0.48, color: '#F58CBA', name:'Protection Paladin'},{y: 2.70, color: '#F58CBA', name:'Retribution Paladin'},{y: 1.66, color: '#FFFFFF', name:'Discipline Priest'},{y: 1.12, color: '#FFFFFF', name:'Holy Priest'},{y: 2.03, color: '#FFFFFF', name:'Shadow Priest'},{y: 6.08, color: '#FFF569', name:'Assassination Rogue'},{y: 0.38, color: '#FFF569', name:'Outlaw Rogue'},{y: 0.92, color: '#FFF569', name:'Subtlety Rogue'},{y: 1.28, color: '#2459FF', name:'Elemental Shaman'},{y: 2.98, color: '#2459FF', name:'Enhancement Shaman'},{y: 1.35, color: '#2459FF', name:'Restoration Shaman'},{y: 3.93, color: '#9482CA', name:'Affliction Warlock'},{y: 3.25, color: '#9482CA', name:'Demonology Warlock'},{y: 1.58, color: '#9482CA', name:'Destruction Warlock'},{y: 0.59, color: '#C79C6E', name:'Arms Warrior'},{y: 1.89, color: '#C79C6E', name:'Fury Warrior'},{y: 0.70, color: '#C79C6E', name:'Protection Warrior'}]
+}]
+};
+
+</script> 
+
+Average Item Level With Appearance
+We also looked at the average item level of characters with a challenge appearance vs the average item level of all characters of that spec. 
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight Forums http://www.mmo-champion.com/forums/269-Death-Knight / Skills http://www.wowdb.com/spells/class-abilities/death-knight / Talent Calculator http://www.wowdb.com/talent-calculator#Y / Artifact Calculator http://www.wowdb.com/artifact-calculator#ZAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#Y
+
+Blood - 911.8 +43.4 from the average of 868.4
+Frost - 912.0 +42.6 from the average of 869.4
+Unholy - 908.5 +43.1 from the average of 865.4
+
+
+http://static.mmo-champion.com/mmoc/images/icons/idemonhunters.gif Demon Hunter Forums http://www.mmo-champion.com/forums/358-Demon-Hunter / Skills http://www.wowdb.com/spells/class-abilities/demon-hunter / Talent Calculator http://www.wowdb.com/talent-calculator#w / Artifact Calculator http://www.wowdb.com/artifact-calculator#xAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#w
+
+Havoc - 910.2 +44.0 from the average of 866.2
+Vengeance - 911.0 +50.3 from the average of 860.7
+
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid / Skills http://www.wowdb.com/spells/class-abilities/druid / Talent Calculator http://www.wowdb.com/talent-calculator#s / Artifact Calculator http://www.wowdb.com/artifact-calculator#tAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#s
+
+Balance - 910.1 +38.8 from the average of 871.3
+Feral - 910.0 +50.6 from the average of 859.4
+Guardian - 911.7 +36.5 from the average of 875.2
+Restoration - 911.0 +33.0 from the average of 878.0
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter Forums http://www.mmo-champion.com/forums/271-Hunter / Skills http://www.wowdb.com/spells/class-abilities/hunter / Talent Calculator http://www.wowdb.com/talent-calculator#M / Artifact Calculator http://www.wowdb.com/artifact-calculator#NAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#M
+
+Beast mastery - 908.1 +42.1 from the average of 866.0
+Marksmanship - 910.3 +42.0 from the average of 868.3
+Survival - 909.3 +47.2 from the average of 862.1
+
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage Forums http://www.mmo-champion.com/forums/272-Mage / Skills http://www.wowdb.com/spells/class-abilities/mage / Talent Calculator http://www.wowdb.com/talent-calculator#g / Artifact Calculator http://www.wowdb.com/artifact-calculator#hAAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#g
+
+Arcane - 910.0 +44.4 from the average of 865.7
+Fire - 911.4 +44.6 from the average of 866.7
+Frost - 911.3 +43.4 from the average of 867.9
+
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk Forums http://www.mmo-champion.com/forums/341-Monk / Skills http://www.wowdb.com/spells/class-abilities/monk / Talent Calculator http://www.wowdb.com/talent-calculator#o / Artifact Calculator http://www.wowdb.com/artifact-calculator#p / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#o
+
+Brewmaster - 913.0 +40.4 from the average of 872.6
+Mistweaver - 910.7 +34.6 from the average of 876.2
+Windwalker - 906.9 +42.3 from the average of 864.6
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin Forums http://www.mmo-champion.com/forums/273-Paladin / Skills http://www.wowdb.com/spells/class-abilities/paladin / Talent Calculator http://www.wowdb.com/talent-calculator#I / Artifact Calculator http://www.wowdb.com/artifact-calculator#JAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#I
+
+Holy - 911.0 +33.0 from the average of 878.0
+Protection - 913.0 +41.8 from the average of 871.2
+Retribution - 908.9 +41.0 from the average of 867.9
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest Forums http://www.mmo-champion.com/forums/274-Priest / Skills http://www.wowdb.com/spells/class-abilities/priest / Talent Calculator http://www.wowdb.com/talent-calculator#U / Artifact Calculator http://www.wowdb.com/artifact-calculator#VAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#U
+
+Discipline - 909.7 +46.3 from the average of 863.4
+Holy - 911.9 +36.4 from the average of 875.5
+Shadow - 911.7 +43.9 from the average of 867.8
+
+
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue Forums http://www.mmo-champion.com/forums/275-Rogue / Skills http://www.wowdb.com/spells/class-abilities/rogue / Talent Calculator http://www.wowdb.com/talent-calculator#Q / Artifact Calculator http://www.wowdb.com/artifact-calculator#RAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#Q
+
+Assassination - 907.7 +38.4 from the average of 869.3
+Outlaw - 911.4 +53.6 from the average of 857.9
+Subtlety - 910.7 +49.3 from the average of 861.4
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman Forums http://www.mmo-champion.com/forums/276-Shaman / Skills http://www.wowdb.com/spells/class-abilities/shaman / Talent Calculator http://www.wowdb.com/talent-calculator#c / Artifact Calculator http://www.wowdb.com/artifact-calculator#dAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#c
+
+Elemental - 911.7 +40.9 from the average of 870.8
+Enhancement - 908.4 +42.1 from the average of 866.3
+Restoration - 911.6 +34.5 from the average of 877.0
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock Forums http://www.mmo-champion.com/forums/277-Warlock / Skills http://www.wowdb.com/spells/class-abilities/warlock / Talent Calculator http://www.wowdb.com/talent-calculator#k / Artifact Calculator http://www.wowdb.com/artifact-calculator#lAAAAAAAA / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#k
+
+Affliction - 909.7 +38.8 from the average of 870.9
+Demonology - 907.9 +46.0 from the average of 861.9
+Destruction - 906.7 +46.4 from the average of 860.2
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior Forums http://www.mmo-champion.com/forums/278-Warrior / Skills http://www.wowdb.com/spells/class-abilities/warrior / Talent Calculator http://www.wowdb.com/talent-calculator#E / Artifact Calculator http://www.wowdb.com/artifact-calculator#F / PvP Talent Calculator http://www.wowdb.com/pvp-talent-calculator#E
+
+Arms - 910.1 +49.3 from the average of 860.8
+Fury - 910.6 +40.8 from the average of 869.8
+Protection - 911.8 +43.3 from the average of 868.5
+
+
+
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/9747072.js"></script>
+<noscript><a href="http://polldaddy.com/poll/9747072/">Have you unlocked your Artifact Challenge appearance?</a></noscript>
+Blue Tweets
+PvP
+Will Affli be getting a new PvP talent to replace Death's Embrace becoming a regular talent?
+Yes holinka https://twitter.com/holinka/status/862040577201676288
+
+if i drop below 2k during s3,will i be able to buy elite gear when s3 elite vendor comes out,or i need to be 2k+ when seasone ends?
+You just need the "Cruel Elite" achievement. holinka https://twitter.com/holinka/status/862419567427018753
+
+
+Ghostcrawler Tweets
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.
+How do you approach the risk that comes with taking away an interaction that players have grew fond of versus the potential gain in game health?
+At the end of the day, it’s a cost benefit analysis. How bad is the current state of game health and how likely are you to improve it by taking away the interaction you mention? If you’re going to improve health by 1% but losing the interaction makes players like the game 10% less, then that’s not a trade I would take.
+
+A really typical situation where this manifests is when the interaction is fun for some players, but part of the reason why it’s fun is because it’s overpowered, hard to counter, or maybe really easy to execute. For the player having fun it feels like you are squashing their fun and they don’t understand what the big deal is. But for other players, the interaction feels like bullshit. 
+
+I don’t mean to imply that players are so shallow that they only enjoy unbalanced things. However, we used to have a saying that anything overpowered is fun. It’s sometimes hard to distinguish whether players are enjoying the cause the interaction or the effect being overpowered.
+
+All that said, I also try to preach that developers should not stomp on an interaction just because it is unintended. As a developer, it can be easy to reflexively nerf or change something just because players aren’t doing something the way you imagined. But if it’s not actually hurting anything, I’d let them keep doing it. Source https://askghostcrawler.tumblr.com/post/160201166408/how-do-you-approach-the-risk-that-comes-with
+
+
+DLC #584 - Outhouse
+DLC #584 http://darklegacycomics.com/584 has been released.
+
+
+http://media.mmo-champion.com/images/news/2017/may/dlc584.jpg http://darklegacycomics.com/584

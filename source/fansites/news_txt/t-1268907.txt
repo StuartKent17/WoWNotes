@@ -1,0 +1,125 @@
+chaud2013-02-27, 07:14 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Ask the Devs on Itemization Likely Coming in March, Blizzard on Consoles, Blue Posts http://www.diablofans.com/news/1577-ask-the-devs-on-itemization-likely-coming-in-march-blizzard-on-consoles-blue-posts/
+
+Isle of Thunder - Final Stage
+The last stage of Isle of Thunder unlocked recently, bringing with it the final solo scenario. This unlocks Nalak http://www.mmo-champion.com/content/839-Nalak-The-Storm-Lord-Pandaria and the final set of quest rewards. This set of rewards offers another Sunreaver Bounty http://ptr.wowdb.com/items/94220-sunreaver-bounty#related:contains-item, more Lesser Charms, and more reputation than the earlier stages did http://media.mmo-champion.com/images/news/2013/february/PvPOrPvE.jpg.
+
+
+http://media.mmo-champion.com/images/news/2013/february/thumb/PvPOrPvE.jpg http://media.mmo-champion.com/images/news/2013/february/newQuest.jpg 
+
+<object width="853" height="480"><param name="movie" value="http://www.youtube.com/v/O7RXE7S22ZY?hl=en_US&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/O7RXE7S22ZY?hl=en_US&amp;version=3" type="application/x-shockwave-flash" width="853" height="480" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+
+Throne of Thunder Preview
+Blizzard made a nice post about the fights in Throne of Thunder, along with a little bit about each fight from Ion Hazzikostas.
+
+
+http://media.mmo-champion.com/images/news/2013/february/ToTPreview.jpg http://blue.mmo-champion.com/topic/255224-patch-52-raid-preview-throne-of-thunder/#post1 
+
+
+NPC Sharing and Griefing
+There was some worry about griefing with the upcoming Rare / Quest NPC sharing being implemented in Patch 5.2 http://www.mmo-champion.com/content/3139-Isle-of-Thunder-Rare-Spawns-5-2-Rare-and-Quest-NPC-Sharing-Blue-Tweets-TCG-Art, and Ghostcrawler briefly addressed it today. It has been a popular topic on the forum! You can join in the discussion here http://www.mmo-champion.com/threads/1267943-NPC-sharing-will-be-griefed-to-high-hell. 
+
+
+http://media.mmo-champion.com/images/news/2013/february/GCOnSharing.png https://twitter.com/Ghostcrawler/status/306578130091520000 
+
+
+PTR Class and Set Bonus Issues
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk Forums http://www.mmo-champion.com/forums/341-Monk / Skills http://www.wowdb.com/spells/class-abilities/monk / Talent Calculator http://www.wowdb.com/talent-calculator#o
+
+We'd rather you try out Soothing Mist in a combat situation rather than try to predict how it will feel, but the chi proc chance is 15% plus 15% for each tick that it doesn't proc. The chance to generate chi increases with each tick that doesn't proc and resets when it does.
+
+
+Could we get some clarification on how the "time since last chance to proc" variable in the RPPM equation interacts with ICDs?
+For RPPM procs with ICDs, none of the attacks during the ICD are considered chances to proc. So if I have a 22 sec ICD, the first attack after the ICD ends will have the full capped 10 sec ICD. In other words, option “A”, as you have it working already.
+
+Jabx2 - BOK costs 6% more mana 100% increase, requiring BOK to be preceded by jab to proc muscle memory. The cleave change is a nice mechanic change and will make BOK circumstantially less unviable.
+Against a single target, you should pretty much never be using 2 Jabs in a row at least when efficiency is a concern. To Blackout Kick, you’ll use a Jab plus the chi from Renewing Mist. In a 3+ target situation, you’ll likely want to use Spinning Crane Kick instead of Jab, which is considerably more efficient, and does more damage. 
+
+Surging Mist now costs 8.8% of base mana, up from 8%.
+It already did cost 8.8% mana by default. The glyphed version was mistakenly still at 8%.
+
+Water Jet is back on the Frostbolt tooltip. As much as I would dearly like this to indicate a return for Water Jet in some form, am I right in assuming this is just a result of a rollback to the tooltip of the version that buffed Frostbolt's damage? Or, of course, just a datamining error.
+Unfortunately, that is just a persistent tooltip bug. We still are interested in the concept, but are not introducing Water Jet for now.
+
+I would really like to know why Monk healers were given a dps increase and healing decrease?
+Assuming you’re talking about fistweaving, that’s always been the intention and always been the case. Fistweaving is an alternative that provides less HPS in exchange for very significant DPS.
+
+Think about it like this:
+
+Holy priest / Mistweaving monk: 100% healing
+Combat rogue / Windwalker monk: 100% DPS
+Atonement priest / Fistweaving monk: 50% DPS AND 50% healing at the same time
+
+DPS Tuning
+
+Standard, yes, this is a roller coaster. Our process is to try things out and iterate if we don't like them. If the churn offends you, just hang on for another week or two.
+Undid the buff to Vitality http://ptr.wowdb.com/spells/61329 for Combat. It's back to 30% AP.
+Partially reverted the -25% nerf to Execute http://ptr.wowdb.com/spells/5308. It's now -15%. As mentioned previously, we adjust the meta-gem.
+Rising Sun Kick http://ptr.wowdb.com/spells/107428 now increases your damage to the target by +10%, down from +15%.
+Sword of Light http://ptr.wowdb.com/spells/53503 now increases damage by 15% up from 10%.
+Haunt http://ptr.wowdb.com/spells/48181 now increases damage to the target by 30% up from 25%. This is partially in compensation because we also nerfed Sacrifice for Affliction because it was looking too mandatory.
+Partially reverted the buffs to Conflag and Immolate http://ptr.wowdb.com/spells/348. They were +20%, and are now +15%.
+We are concerned that fully geared Subtlety, Enhancement and Windwalker DPS are still too high. None of these are particularly easy specs to play, so it might be okay that given that players won't realistically be able to hit their theoretical maxima. Just wanted to let you know they are on our radar.
+
+
+What I'm wondering, is how long it'll take you to notice/nerf/fix fistweaver monks using agility 2h weapons while fistweaving. Is that going to be intended game play?
+Do you have some evidence or numbers of this? We've heard it a few times from the community, but we don't see how it would work.
+
+
+Raid Testing Schedule - February 27 - March 1
+On Wednesday, February 27, through Friday, March 1, we will be testing the 25-player Heroic raid encounters in the Throne of Thunder. 
+
+Each encounter should be available at approximately the listed times below for all Public Test Realms.
+
+Wednesday, February 27
+
+Jin'rokh the Breaker - 25 Player Heroic - 11:00 PST 14:00 EST, 20:00 CET
+Tortos - 25 Player Heroic - 13:30 PST 16:30 EST, 22:30 CET
+Ji-Kun - 25 Player Heroic - 15:00 PST 18:00 EST, 00:00 CET
+Durumu the Forgotten - 25 Player Heroic - 16:30 PST 19:30 EST, 01:30 CET
+
+
+Thursday, February 28
+
+Council of Elders - 25 Player Heroic - 11:00 PST 14:00 EST, 20:00 CET
+Megaera - 25 Player Heroic - 13:30 PST 16:30 EST, 22:30 CET
+Primordius - 25 Player Heroic - 15:00 PST 18:00 EST, 00:00 CET
+Dark Animus - 25 Player Heroic - 16:30 PST 19:30 EST, 01:30 CET
+
+
+Friday, March 1
+
+Horridon - 25 Player Heroic - 10:30 PST 13:30 EST, 19:30 CET
+Iron Qon - 25 Player Heroic - 13:30 PST 16:30 EST, 22:30 CET
+Twin Consorts - 25 Player Heroic - 16:00 PST 19:00 EST, 01:00 CET
+
+
+As always, this testing schedule is very fluid and subject to the realities of a beta environment. We might have to change the time of a testing session, change the boss being tested, or cancel a test entirely, due to bugs, server hardware issues, etc. Keep an eye on this forum for the latest information, and thank you in advance for testing and providing feedback. 
+
+
+Blue Tweets
+PvP
+I think its about time to remove 2v2 from the game. Too much player feedback is based off of it.
+We have been tempted for sure. But in the end, a lot of people enjoy it even if they do demand balance changes because of it. Source https://twitter.com/Ghostcrawler/status/301078495931555840
+
+Would Blizzard ever consider making Arenas cross-realm? Battlegroups seem a little outdated with x-realm RBGs and all that. 
+We would in fact consider it. Also debating if teams are cool or a hindrance. Source https://twitter.com/Ghostcrawler/status/301561311639240704
+
+Dear Ghostcrawler, do you think that the add-on "Healers Have To Die" gives an unfair advantage in PVP, or is it reasonable?
+It just marks healers, right? That's something you could do yourself manually in like one additional second. Source https://twitter.com/Ghostcrawler/status/301554648555331585
+
+I would like to share a frustration; leveling through BGs, so frustrating to be 82 and get 1-shot by an 84.
+Have you experienced the new mechanics where low levels are bumped per bracket? Source https://twitter.com/Ghostcrawler/status/302871013685858304
+
+Which 1 is you guys' design concept: the players want world PVP or you THINK the players want world PVP.
+A lot of players do want world PvP. Some don't. How to offer both aside from the obvious: different realms? Source https://twitter.com/Ghostcrawler/status/302528807154380800
+
+PVE trinkets looking better than PvP trinks in 5.2, are you gonna make this mistake for the third time?
+Many PvE trinket effects are dispellable and have lower proc chances vs. players. Source https://twitter.com/Ghostcrawler/status/305405956945215488
+
+
+Starcraft II: Heart of the Swarm Vengeance Trailer
+A new trailer was released today, with this description: Sarah Kerrigan embarks on a path of great vengeance and furious anger. While pursuing her revenge, the Queen of Blades also seeks to reclaim her living empire.
+
+
+<object width="853" height="480"><param name="movie" value="http://www.youtube.com/v/vCsGTP3-Jlw?hl=en_US&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/vCsGTP3-Jlw?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="853" height="480" allowscriptaccess="always" allowfullscreen="true"></embed></object>

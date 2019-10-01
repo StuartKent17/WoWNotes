@@ -1,0 +1,398 @@
+chaud2015-11-19, 01:31 PM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> A Primer on Snapshotting, PTR Hack Bug, Monk's Set Dungeons http://www.diablofans.com/news/48582-a-primer-on-snapshotting-ptr-hack-bug-monks-set
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> League of Explorers Wing 2 Launches Tomorrow - Boss Info & Cards, Season 2 CDC Finalist Voting http://www.hearthpwn.com/news/1115-league-of-explorers-wing-2-launches-tomorrow-boss
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Cho'Gall Q&A Summary, Upcoming Gazlowe Changes, DotA 2 and Heroes Model Comparison http://www.heroesnexus.com/news/1544-chogall-q-a-summary-upcoming-gazlowe-changes-dota
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Genji Datamined Sprays, Developer Update - Matchmaking & Hero Balance http://www.overpwn.com/news/108-genji-datamined-sprays-developer-update
+
+Patch 6.2.3 - Fel Reaver Noises
+If you want to hear the Fel Reaver sound people are talking about http://www.mmo-champion.com/threads/1902202-Fel-Reaver-noises, just fly into Ashran and it will play when you are dismounted.
+
+
+http://media.mmo-champion.com/images/news/2015/november/frNoise.png https://twitter.com/Muffinus/status/667088619308515328 
+
+
+Patch 6.2.3 Hotfixes - November 18
+Racials
+Undead
+
+Touch of the Grave http://www.wowdb.com/spells/5227-touch-of-the-grave damage has been increased by 100%.
+
+
+Class
+Paladin
+
+Talents
+
+Final Verdict http://www.wowdb.com/spells/157048-final-verdict Retribution damage has been increased by 8% to match a class tuning change to Templar's Verdict in Patch 6.2.3.
+
+
+Raids and Dungeons
+Dungeons
+
+Auchindoun
+
+[Hotfix in testing] Valor is now awarded automatically after defeating Teron'gor on Mythic difficulty.
+
+
+Items
+
+[Hotfix in testing] Warlords Season 3 Combatant’s equipment http://www.wowdb.com/items?filter-green-text=34&filter-search=Combatant now has the same item level as Warlords Season 2 Gladiator’s equipment in both PvE and PvP.
+Some Season 3 Warmongering Insignia trinkets should no longer incorrectly trigger its effect immediately when equipped.
+Infallible Tracking Charm http://www.wowdb.com/items/133597-infallible-tracking-charm now has a massively increased damage and chance to trigger, but now only increases damage against demons for 5 seconds down from 10 seconds.
+Purified Shard of the Third Moon http://www.wowdb.com/items/133598-purified-shard-of-the-third-moon now creates a damage shield that absorbs 100% more damage on use.
+
+
+
+Armory Stats - Challenge Modes
+Today we are taking a look at the Challenge Mode achievement completion rate of players. The data used today is a sample of 2.1 million characters active in the last two months. We also did this earlier this year, which you can see here http://www.mmo-champion.com/content/4803-Five-Player-Blast-Furnace-Normal-Armory-Stats-Challenge-Modes-Blue-Tweets-DLC. 
+
+The first chart looks at the overall percentage of players that have each challenge mode achievement. The second chart defines a participating player as one with the completion achievement for that challenge mode. 
+
+You can click the titles in the legend to turn off and on different data types.
+
+
+Challenge Warlord http://www.wowdb.com/achievements/8895-challenge-warlord - 3.03% of players
+Challenge Warlord: Bronze http://www.wowdb.com/achievements/8897-challenge-warlord-bronze - 2.87% of players / 94.52% of participating players
+Challenge Warlord: Silver http://www.wowdb.com/achievements/8898-challenge-warlord-silver - 2.72% of players / 89.8% of participating players
+Challenge Warlord: Gold http://www.wowdb.com/achievements/8899-challenge-warlord-gold - 2.49% of players / 81.92% of participating players
+
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2015/july/highcharts.js"></script>
+<script> var chart;
+
+setTimeoutfunction  {
+height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;
+}, 1500
+
+setTimeoutfunction  {
+height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;
+}, 2500
+
+setTimeoutfunction  {
+height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;
+}, 4500
+
+$document.readyfunction  {
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'challengeModes',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Skyreach', 'Bloodmaul Slag Mines', 'Auchindoun', 'Shadowmoon Burial Grounds', 'Grimrail Depot', 'Upper Blackrock Spire', 'Iron Docks', 'Everbloom'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+title: {
+text: 'Percent of Players',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+}
+},
+
+tooltip: {
+formatter: function  {
+return '<b>' + this.series.name + '</b> - ' + this.y + '%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Challenge Modes',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'Completion',
+data: [5.75, 4.85, 8.14, 5.84, 7.88, 6.43, 5.23, 7.18],
+color: '#717EAB'
+
+},{
+name: 'Bronze',
+data: [4.39, 4.15, 6.53, 4.73, 6.66, 5.09, 4.68, 5.47],
+color: '#8C7853'
+
+}, {
+name: 'Silver',
+data: [3.24, 3.32, 4.58, 3.45, 3.88, 3.25, 3.74, 3.51],
+color: '#545454'
+
+}, {
+name: 'Gold',
+data: [2.81, 2.86, 3.23, 2.88, 2.86, 2.63, 3.07, 2.77],
+color: '#DBDB70'
+
+}]
+
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'challengeModesP',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Skyreach', 'Bloodmaul Slag Mines', 'Auchindoun', 'Shadowmoon Burial Grounds', 'Grimrail Depot', 'Upper Blackrock Spire', 'Iron Docks', 'Everbloom'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+title: {
+text: 'Percent of Players',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+}
+},
+
+tooltip: {
+formatter: function  {
+return '<b>' + this.series.name + '</b> - ' + this.y + '%';
+}
+},
+title: {
+text: 'Percentage of Participating Players that Completed Challenge Modes',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'Bronze',
+data: [76.33, 85.63, 80.26, 80.95, 84.52, 79.14, 89.55, 76.22],
+color: '#8C7853'
+
+}, {
+name: 'Silver',
+data: [56.38, 68.59, 56.25, 59.05, 49.27, 50.58, 71.64, 48.81],
+color: '#545454'
+
+}, {
+name: 'Gold',
+data: [48.81, 59.08, 39.68, 49.29, 36.35, 40.80, 58.70, 38.51],
+color: '#DBDB70'
+
+}]
+
+};
+
+};
+</script> 
+<div id="challengeModes" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div><br>
+
+<div id="challengeModesP" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div>
+<iframe width="900" height="506" src="https://www.youtube.com/embed/0Ci8nry3934?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+Poll - Challenge Modes
+What is the highest level of challenge modes you have completed some of in Warlords of Draenor? 
+
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/9186955.js"></script><noscript><a href="http://polldaddy.com/poll/9186955/">What is the highest level of challenge modes you have completed some of in Warlords?</a></noscript>
+
+Blue Tweets
+Classes
+In Legion, are we still going to fill our bags with "Tome of the Clear Mind" in order to change our talents?
+Nope! No reagents are needed to swap talents in Legion. WarcraftDevs https://twitter.com/WarcraftDevs/status/667064453842604032
+
+with the inclusion of gnome hunters, does this mean we can expect other new race/class combos?
+We have no other additional race/class combos planned for Legion at this time. WarcraftDevs https://twitter.com/WarcraftDevs/status/666710588974723074
+
+If base spells change for all classes, will learning order and speed we learn them change too?
+Yes, the levels at which you learn each ability will be adjusted. WarcraftDevs https://twitter.com/WarcraftDevs/status/666692148780122112
+
+Is leveling to110 as restore shaman going to be just using lightning bolt since we have no maelstrom power?
+Nope! We're adding more engaging damage-dealing rotations for all healers in Legion. WarcraftDevs https://twitter.com/WarcraftDevs/status/666691889047842817
+
+any plans on HP changes for Legion?
+HP pools turned out fairly well in Warlords. No wide-scale changes for Legion. Couple specs may go up or down. WarcraftDevs https://twitter.com/WarcraftDevs/status/666692647709339648
+How is it acceptable to have one level 100 player with barely 200k hp, and another with well over 500k?
+What issue do you see there? There are different forms of content targeting those players. Celestalon https://twitter.com/Celestalon/status/666702060319059969
+
+Do Moonkins and Spriests keep their in-form healing in Legion? Clarification due to the "no mana".
+They will have some healing. We're still determining exactly what. Moonkin still have mana, it just isn't used for damage. WarcraftDevs https://twitter.com/WarcraftDevs/status/666704648930127872
+
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight Forums http://www.mmo-champion.com/forums/269-Death-Knight / Skills http://www.wowdb.com/spells/class-abilities/death-knight / Talent Calculator http://www.wowdb.com/talent-calculator#Y
+this makes me sad. The presences aren't "just clutter" they have utility with movement speed and BP has saved many wipes.
+There will still be ways to save wipes, and a variety of utility. WarcraftDevs https://twitter.com/WarcraftDevs/status/666692275989147648
+
+Hey, could u explain Marrowrend? Does it automatically activate Bone Shield working like SotR or can we manually use stacks?
+Using Marrowrend gives you 3 stacks of Bone Shield, which work as they do now. Bone Shield isn't an active button of its own. WarcraftDevs https://twitter.com/WarcraftDevs/status/667065604902285312
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid / Skills http://www.wowdb.com/spells/class-abilities/druid / Talent Calculator http://www.wowdb.com/talent-calculator#s
+What will happen to Bloodtalons for Ferals? Will it remain a talent or something else?
+Bloodtalons works well as a high-risk, high-reward talent, and is remaining. WarcraftDevs https://twitter.com/WarcraftDevs/status/666700288573640706
+
+So rejuvenate cant be used in feral.. Does this applies to all specs besides Resto & as a feral what will be the way to heal?
+Still determining what heals can be used in forms. Ferals do still have the very strong Predatory Swiftness + Healing Touch. WarcraftDevs https://twitter.com/WarcraftDevs/status/666702844628631552
+
+will the feral druid legendary overwrite the saberon appearance from the talent or will saberon appearance be customized too?
+We've opted to remove the Saberon form, for now. Artifacts provide a huge amount of customizability for forms. WarcraftDevs https://twitter.com/WarcraftDevs/status/666711461947813888
+
+If feral or guardian druids transmog their artifacts, will their bear and cat form go back to basic, or be the form selected?
+It will remain as the artifact-based form. WarcraftDevs https://twitter.com/WarcraftDevs/status/667065954631704576
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage Forums http://www.mmo-champion.com/forums/272-Mage / Skills http://www.wowdb.com/spells/class-abilities/mage / Talent Calculator http://www.wowdb.com/talent-calculator#g
+Run of Power & Incanter's Flow. Can we please go into #Legion without these? Would mean an awful lot to many mages if removed.
+Rune of Power isn't for everyone, but pretty flexible nowadays. Incanter's Flow is a passive option for those who prefer it. WarcraftDevs https://twitter.com/WarcraftDevs/status/666705882546212864
+
+will Ice Barrier be stronger in Legion for mages?
+It's hard to measure exactly, since so much changes between expansions, but in general terms, yes. WarcraftDevs https://twitter.com/WarcraftDevs/status/666706559594926080
+
+Every other class can self heal, how does it appropriately fit with every other class fantasy except mages?
+Absorbs such as Ice Barrier fill the same role instead. WarcraftDevs https://twitter.com/WarcraftDevs/status/666709255760678912
+Can do harder content with worse gear on classes that I don't know as well vs mage with absorb. Any plans to improve absorbs?
+Not every class is designed to be a master of sustainability. Mages are somewhere in the middle. Ice Barrier will be quite strong. WarcraftDevs https://twitter.com/WarcraftDevs/status/667064697707888640
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk Forums http://www.mmo-champion.com/forums/341-Monk / Skills http://www.wowdb.com/spells/class-abilities/monk / Talent Calculator http://www.wowdb.com/talent-calculator#o
+SCK having a chi req.. so it's no longer spammable and can't be used without first selecting a target and generating a chi?
+We chose to turn SCK into a spender, so that its damage could be strong. It will not require a target. WarcraftDevs https://twitter.com/WarcraftDevs/status/666703255917846528
+
+is Touch of Death staying around? it's pretty iconic to monks.
+Touch of Death is remaining, but it works rather differently. It's more of a cooldown than an execute. WarcraftDevs https://twitter.com/WarcraftDevs/status/666703945721483264
+
+I need clarification on storm-earth-fire,Will us the main character deal 100% of the damage while both clone deal 50% damage?
+No. All three, including you, will deal 50% damage. It's not for use on one or two targets. WarcraftDevs https://twitter.com/WarcraftDevs/status/666706812251455488
+
+will we see Chi Explosion in Legion in a new form now that chi is gone? It's one of my favorite spells!
+Chi Explosion disagreed with the fantasy quite a bit, and was extremely complex. Instead, we're adding other alternatives. WarcraftDevs https://twitter.com/WarcraftDevs/status/666706986348613632
+
+With fistweaving gone how will mistweavers do damage?
+Mistweavers still have a few melee combat abilities for dealing damage. They just won't also cause healing. WarcraftDevs https://twitter.com/WarcraftDevs/status/666709092019236864
+
+With their mastery changing, will Mistweaver monks still create healing spheres?
+There will be no more Healing Spheres as a baseline. We may add them as a PvP talent, however. WarcraftDevs https://twitter.com/WarcraftDevs/status/666709472971091971
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin Forums http://www.mmo-champion.com/forums/273-Paladin / Skills http://www.wowdb.com/spells/class-abilities/paladin / Talent Calculator http://www.wowdb.com/talent-calculator#I
+Will paladins still have seals in Legion or are they a thing in the past?
+While they've been around forever, they haven't delivered on gameplay, so Seals will be a thing of the past. WarcraftDevs https://twitter.com/WarcraftDevs/status/666701090843312128
+
+the changes to hammer of the righteous and consecration interaction effect single target damage whether consecration is down?
+Yes, they do. Consecration is still worth using, even on a single target. WarcraftDevs https://twitter.com/WarcraftDevs/status/666703800078495745
+
+With holy gone for tankadins. What's replacing it? Mana?
+Gameplay-wise, Protection Paladins will treat uses of Shield of the Righteous similar to how they treated Holy Power. WarcraftDevs https://twitter.com/WarcraftDevs/status/667063414091444224
+They'll still have a mana bar, which is only used for healing others and utility. WarcraftDevs https://twitter.com/WarcraftDevs/status/667063464058224640
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest Forums http://www.mmo-champion.com/forums/274-Priest / Skills http://www.wowdb.com/spells/class-abilities/priest / Talent Calculator http://www.wowdb.com/talent-calculator#U
+Do Void- and Mind Blast share CD? Or can i enter Voidform with MB, and then cast VB immediately?
+We're still iterating on the Shadow rotation, and looking to further differentiate gameplay in/out of Voidform. Stay tuned. WarcraftDevs https://twitter.com/WarcraftDevs/status/666702577791209472
+
+is shadow word: death gone for spreists? it was so important for pvp tbh, will be really sad if it is gone.
+Currently, it remains, as the only true execute ability other than Execute. WarcraftDevs https://twitter.com/WarcraftDevs/status/666703447463366657
+
+With the Shadow Priest changes in Legion, will the way Clarity of Power be changing?
+The new rotation is significantly different, so most talents have to be rethought. WarcraftDevs https://twitter.com/WarcraftDevs/status/667064883008045056
+
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue Forums http://www.mmo-champion.com/forums/275-Rogue / Skills http://www.wowdb.com/spells/class-abilities/rogue / Talent Calculator http://www.wowdb.com/talent-calculator#Q
+The positioning window stuff will be interesting. Is "behind" a 90 or 180 degree arc?
+Backstab is very generous. Anywhere in the rear 270 degrees counts back and sides. WarcraftDevs https://twitter.com/WarcraftDevs/status/666785842380181505
+
+Shadowstrike... merging Ambush & Shadowstep... Is Shadowstep gone in Legion? Favourite sub ability next to SDance.
+Shadowstrike is a merge between Ambush and Shadowstep, and replaces both. WarcraftDevs https://twitter.com/WarcraftDevs/status/667056657063522305
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock Forums http://www.mmo-champion.com/forums/277-Warlock / Skills http://www.wowdb.com/spells/class-abilities/warlock / Talent Calculator http://www.wowdb.com/talent-calculator#k
+is Charred Remains gone for Destruction warlocks? Please let it be gone!!And is there any hope for fel flame? Pls answer both
+Definitely gone. It turned out very un-fun. Many Warlock talents are changing, and we're looking forward to feedback on them! WarcraftDevs https://twitter.com/WarcraftDevs/status/666700685593833472
+
+is anything being done to address affliction warlocks aoe dps issues?
+Yes. Multidotting will be strong again, and Seed will be strong, especially with a talent that allows AoE application of Seed. WarcraftDevs https://twitter.com/WarcraftDevs/status/666703640283901952
+
+How will Soul Swap work in Legion, it's really bad in WoD. Perhaps no cost with a CD ??
+Soul Swap will not be returning. However, there's a new talent, Soul Effigy, that may interest you... WarcraftDevs https://twitter.com/WarcraftDevs/status/666701366870433792
+
+I noticed Rain of Fire isn't listed as an ability in the Destruction preview. Will it still exist in Legion?
+RoF and FnB overlapped too much in Warlords, which is why we hotfixed RoF out of the picture until we could revise. WarcraftDevs https://twitter.com/WarcraftDevs/status/666704973263040512
+In Legion, RoF is the primary AoE, and FnB is a talent which doesn't obsolete RoF. WarcraftDevs https://twitter.com/WarcraftDevs/status/666705047644848128
+
+What weapon-type is the demo warlock artifact?
+It's a very unique artifact. We're still determining exactly how it will work for e.g. transmogrification. WarcraftDevs https://twitter.com/WarcraftDevs/status/667067733566074880
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior Forums http://www.mmo-champion.com/forums/278-Warrior / Skills http://www.wowdb.com/spells/class-abilities/warrior / Talent Calculator http://www.wowdb.com/talent-calculator#E
+Do y'all know if Fury's new rage dump, Rampage, will have its duration scale with Haste like Fists of Fury?
+Haste will reduce the GCD of Rampage, along with other rotational abilities. WarcraftDevs https://twitter.com/WarcraftDevs/status/666701213589594112
+
+In Legion, if I DS Fury & Arms, will I be able to equip Arms Artifact as Fury & Vice Versa or will the artifact itself change?
+Artifacts do not swap with your spec, and are only equippable by the appropriate spec. WarcraftDevs https://twitter.com/WarcraftDevs/status/666710816486350848
+
+Character / Items
+is supreme lord Kazzak gear able to be upgraded with the new valor system?
+Yep! Enjoy those item level 715 Marks of Supreme Dooooooom! WarcraftDevs https://twitter.com/WarcraftDevs/status/666711075576877056
+
+items containing multistrike will changes with Legion?Do we have to look for new equipment if we're multistrikebased spec?
+Multistrike will be replaced with other useful stats. WarcraftDevs https://twitter.com/WarcraftDevs/status/667067870916968448
+
+PvE
+the unhotfix of the 2nd boss of grimrail intentional or getting rehotfixed for Cms?
+Unintended. We'll restore the pre-patch behavior. WarcraftDevs https://twitter.com/WarcraftDevs/status/666804469984694272
+
+PvP
+and then bigger rewards like mounts/titles could be at the end of every 6-8 months or whatever of mini seasons
+Glad to hear people like the idea of shorter seasons. Hopefully we'll have more to share about Legion PvP soon. holinka https://twitter.com/holinka/status/666839396331552769
+
+With the new PvP scaling system in #Legion will managing multiple characters finally be doable? @WarcraftDevs
+The fact that some players want to play many characters while others only want to play one is a very challenging design problem. holinka https://twitter.com/holinka/status/667007905841831936
+
+Pets and Pet Battles
+Will we hear about Pet Battle news for #Legion at some point ?? I know there aren't a lot of us, but we're loyal!
+Not quite ready to talk about that yet, stay tuned Muffinus https://twitter.com/Muffinus/status/666828552235450368
+
+
+Dark Legacy Comics #513 - Class Preview
+DLC #513 http://darklegacycomics.com/513 takes a look at the Rogue class preview this week!
+
+
+http://media.mmo-champion.com/images/news/2015/november/dlc513.jpg http://darklegacycomics.com/513

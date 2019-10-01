@@ -1,0 +1,107 @@
+Boubouille2012-03-27, 04:36 PMDev Watercooler - Mists of Pandaria Looting Explained
+Hey, how about that landslide of Mists of Pandaria information? It has taken a few days, and will probably take a few more, for the nuance of everything to really sink in. One of the topics we've been getting lots of questions about is the crazy new loot model we're introducing in Mists. We've answered several related questions in the forums, but thought it might be prudent to just put all the information in one place.
+
+I should clarify that the systems we're introducing are actually pretty simple in practice. I'm only going into a fair amount of detail because those are the kinds of questions we are getting. You don't have to understand all the particulars to participate, and we're certain that it will just all make sense once you are experiencing it in-game instead of hearing it described that whole "show, don't tell" thing. Let's begin:
+
+Personal Loot
+
+Here is how looting works in today's Raid Finder groups:
+
+
+
+The boss dies.
+The game randomly decides which items off of the boss's loot table drop.
+The group rolls Need, Greed, or Pass on each item.
+If you were raiding with a group of friends, you might discuss who should get each item. Even if you ultimately lost, hopefully you are happy that a friend got an upgrade and that your group as a whole is now a little bit stronger.
+But if you're in Raid Finder, you are quite possibly alone with a bunch of strangers.
+So, if you can Need, you probably do, because there's no time for discussion, some of the rollers may be AFK, and even if you piss someone off, you aren't likely to have to pay the social cost of doing so since you'll never see them again.
+The highest roll wins.
+Drama ensues.
+
+
+Here's how the new Raid Finder system will work in Mists of Pandaria:
+
+
+
+The boss dies.
+The game automatically decides who won some loot, and gives those players a spec-appropriate item.
+Some players may still get mad, but hopefully they are mad at the laws of probability and not at the rest of the raid.
+
+
+So, realistically, that's really all you need to know to understand how it'll play out in-game. For those looking for more detail, here's what's happening behind the scenes:
+
+
+
+The boss dies.
+Each player has a chance to win loot, independent of the other players.
+For each player who wins loot, the game randomly assigns them a spec-appropriate item from that boss's loot table. This subset contains only items that the game meaning the designers in this case thinks are appropriate for your class and current spec.
+Notice that you aren't rolling Need or Greed. You don't have an option to Pass. The game just says "Take this."
+You can't trade this item, or that would defeat the purpose of removing the social pressure on groups of strangers. If you don't want the item, you are free to vendor, delete, or disenchant it.
+
+
+The big difference here is that instead of kill -> loot -> roll, the new system uses kill -> roll -> loot. The loot is not determined until the winners are determined. It's all automatic, and you're under no obligation to pass or roll — these choices no longer exist. The game decides who gets loot, not the players. The end. Nobody is going to be a callous jerk and take the item that you rightfully deserve. Nobody is going to try to talk you into trading an item to them because they are down on their luck and can't ever win a weapon. No DPS dude is going to ninja the tanking shield that you need for your guild to progress.
+
+We understand some players are interested in off-spec or transmogrification loot, and we will consider future changes to the system to accommodate those desires. However, we're not sure fundamentally that Raid Finder is the best avenue for acquiring that loot. You would either need to take it from another player who actually desires it for their main spec, or a conversation would have to take place to make sure nobody else needed it more than you do. In other words, you would have to stop people from just rolling Need whenever they could. I've seen some suggestions that we allow an option for essentially "I'm happy to get loot beyond just what my main spec can use," and maybe that's the kind of approach we could take, but let's make sure the basic design works first. For now, there are other avenues, such as dungeons, faction gear, normal raids or older content to provide off-spec or cosmetic gear.
+
+Here is a model I've seen some people say they want:
+
+
+
+The boss dies.
+I get the exact item or items I want.
+I never have to come back and kill this boss again.
+I politely ask Blizzard when there will be new content for me to run.
+
+
+I added that, somewhat tongue in cheek, to point out that the intent of the new system is not to make killing bosses or getting loot more efficient, or to let you choose buffet-style which items you get. We like random loot being random, as long as it isn't so frustratingly random that you stop enjoying the experience. The intent of the new loot system is really to relieve social pressure on a group of random and anonymous strangers. We think it is reasonable for groups of friends, such as the typical raiding guild, to have a discussion about how to divvy up loot. That discussion is a tried and true RPG tradition going back to D&D or earlier. We don't think that is a reasonable expectation for Raid Finder, though.
+
+The personal loot system will initially be used for Raid Finder and for world bosses. We want to use it for world bosses because we want it to be fairly easy to form PUGs to take down these bosses when they're up. If my raiding guild is about to take on a world boss, and some lonely hunter is asking to join the group it's always a lonely hunter, isn't it?, it would be nice to be able to bring him on without worrying about that jerk taking loot away from me or my friends. We want to foster a "the more the merrier" attitude with world bosses.
+
+This is why it's so important to us that the size of the group shouldn't matter. We don't want guilds to try to kill a world boss with the smallest number of players necessary in order to maximize loot per player. When everyone has their own chance at loot, why not make the group as large as you can? Note that you still have to be a member of the group that taps and kills the boss. We want to have a little bit of competition for world boss kills, especially between the Horde and the Alliance. We think that is part of the fun of world bosses; otherwise, why not just stick the gronn in a cave? That sounds dirtier than I intended. We don't want everyone in the zone to get credit just by lurking around. We want you to cooperate with other players, and we're trying to remove barriers to cooperation by eliminating loot drama.
+
+Bonus Roll
+
+We have one other new system that will use part of the personal loot model. This is what we're calling the bonus roll.
+
+Once upon a time, raiders had to invest a lot of time and effort every week preparing for a raid. This felt kind of cool in the abstract because it built anticipation, rewarded players who prepared for raid night, and otherwise just added a little more ceremony to the act of entering the dragon's lair to seek glory and treasure. The reality is that you spent your time killing mobs to farm flask materials or gathering Whipper Root Tubers. The reality didn't match the fantasy and we eventually greatly minimized the need to farm consumables altogether. Of course, that led to another problem, as raiders would log on for raid nights, finish, and then have nothing to do the rest of the week. The bonus roll is intended to give those players something to do that is hopefully more enjoyable than grinding elementals or Blasted Lands boars. We want to see players out in the world doing stuff, and we want that stuff to be a little more interesting if not downright fun than farming mats.
+
+The way it works is like this: We have two major Pandaren factions, the Elders and the Craftsmen. Completing daily quests and scenarios for each group earns you one of two currencies. The Craftsmen tokens are spent mostly on cosmetic items. The Elder tokens are spent mostly on power items. The intent here is to let players who want some optional content to be able to devote time to both Craftsmen and Elders, while more min-max focused players or players who don't want such a time commitment can stick to Elders. The Elder tokens can be used to purchase head enchants, some nice purple items, and the kind of gear you've come to expect from factions. However, they also sell an item called a Charm of Good Fortune. Imagine you can complete a quest once a week to buy one Charm for 25 Elder Tokens. You also might be able to save up a few charms, but you won't be able to hoard them until the next tier of content.
+
+If you have one or more Charms of Good Fortune, then whenever you kill a raid boss in Raid Finder, normal or heroic then a new UI window will pop up asking if you want to spend your Charm on a bonus roll. If you click yes, then you'll instantly get another shot at that boss's loot table! You will always win something from the bonus roll, such as a pile of gold, gems, or flasks. However, you also have a small but not miniscule chance of receiving a piece of epic loot. As with the personal loot system, the item will always be something designed for your current spec. Also, just as with personal loot, the game doesn't analyze if you already have the item, if the item would be an upgrade for you, or if you prefer axes to swords or anything like that.
+
+Most importantly, winning a bonus roll has no effect on what other players win on their bonus rolls or what the boss drops normally. If you have saved up several Charms this will probably happen when you play but don't raid every week then you can use one per boss, but you can't cash in multiples on a single boss kill. If you want to save up all of your Charms for the final boss because he or she in the case of the mantid raid drops weapons or whatever, that is your prerogative, but you'll only be able to spend one per kill. If you want to save up your Charms for heroic bosses, go for it.
+
+Here is an example of per-person loot and the bonus roll in action:
+
+
+
+Stan is a death knight.
+Jim Bob is a warrior.
+Naomi is a hunter.
+The three friends run Raid Finder together and tackle Mogu'shan Vaults. They get matched with a bunch of random folks from across their region. On the fourth boss, the Council of Kings, the game decides that Jim Bob wins an item. Jim Bob is a Fury warrior, so the game is either going to give him a two-handed Strength axe or a Strength bracer, because those are the two Fury-appropriate items on the Council of Kings loot table in this theoretical example. Regardless of what Jim Bob wins, Stan might also win the same items. Naomi won't ever be offered those items, because they aren't appropriate hunter loot. If she had gotten lucky and earned loot for the kill, it would have been hunter appropriate.
+Let's say Naomi is frustrated because Bob and Stan both won loot and because the trinket she wants won't ever drop. So, she decides to use a Charm of Good Fortune. Let's say she gets lucky and the game decides that she won an item instead of gold, flasks, etc. Thanks, game! She might get the trinket she wants, or she might get an Agility neckpiece that is also on the Council of Kings loot table. Her winning an item doesn't affect Stan or Jim Bob or anyone else, even if they use their Charms as well.
+
+
+Okay, we're almost done here, but I did want to mention two other relevant changes.
+
+Area of Effect Looting
+
+Yes, we are doing area looting. After killing a group of enemies, you may have a bunch of corpses lying around perhaps because you went all Bladestorm on a bunch of hozen. If you loot one of the corpses, the loot window will include items from all of the nearby corpses for which you have loot rights. Some recent games have incorporated a similar feature, and it's one of those things that players just want in their MMO these days. It's already in and it works fine.
+
+The Future of Valor
+
+The second change I want to mention is that we plan to adjust the role of Valor points. Valor or the various other names that the currency has had over the years was originally added to WoW for two reasons: it helped to mitigate really bad luck, for those times when the boss just refused to drop the item you wanted, and it helped encourage players to stay with the group even if they didn't need anything off the next boss.
+
+Over time, we have felt like Valor has taken on too prominent a role, to the point that it risks becoming more important than actual boss loot. This is particularly the case when the tier sets are available on the Valor vendors. We think killing dragons and ransacking their hoard is more epic than shopping at the magic armor store, so we want to shift back toward boss kills being the primary source of epic PvE gear.
+
+In Mists of Pandaria, Valor will be used to power a new feature that allows you to increase the item level of your existing epic items. This means that each week, you can become a little more powerful, hopefully allowing you to kill that boss that has eluded you thus far. There will be a bit of a game in trying to decide when to upgrade your gear versus hoping for a new piece to drop from a raid boss, but our plan is that even heroic gear can be upgraded slightly in this way.
+
+We won't allow you to upgrade Raid Finder gear so much that it becomes better than normal gear, but imagine if you can increase your item level by around eight points. At this time, we're thinking there won't be gear on the Valor vendors at all, but we'll see how that shakes out. Valor will come primarily from dungeons including challenge modes and scenarios. You might earn a little from daily quests and raiding as well, but that won't be as efficient.
+
+Final Thoughts
+
+That's a lot of information to absorb all at once I know, and I'm sure it will lead to dozens of questions. It'd be more helpful to us if you were to focus your discussion on how things will feel, and the basic rules of the system, instead of immediately leaping to the conclusion that you've figured out some exploit and ergo the whole thing is doomed to failure. We've stitched up a lot of the egregious loopholes already and the system is a little more complicated behind the scenes than I figured was worth getting into here.
+
+Check it out in beta if you get the chance. Let us know how it feels. We have time to iterate and refine this stuff. Good luck on getting the loot you want, too... but not too quickly.
+
+Greg "Ghostcrawler" Street is the lead systems designer of World of Warcraft. The first epic item he can recall getting was the Drillborer Disk.

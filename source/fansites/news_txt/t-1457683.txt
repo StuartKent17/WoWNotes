@@ -1,0 +1,2405 @@
+Simca2014-02-13, 04:16 PMUPDATES:<br>
+3:11 PM PST - Added values to skills and talents!<br>
+1:55 PM PST - Changed layout and added avatar pics and Talents!<br>
+11:40 AM PST - Added more abilities.<br>
+10:20 AM PST - Added very basic tooltips. A lot of values are missing and some skills are still missing.<br>
+10:15 AM PST - Added loading screens.<br>
+9:45 AM PST - Added more stats such as Melee, Difficulty and energy per level.<br>
+<br>
+Heroes of the Storm Alpha Client<br>
+The Heroes of the Storm Alpha client appeared on the web and our teams have been poking at it to see what kind of info we can find about Blizzard's upcoming Moba game.<br>
+<br>
+As far as I can tell, this is a Friends and Family Alpha client but the availability of the client could indicate a change very soon!<br>
+<br>
+We're still working on a lot of these things and you can probably expect a decent amount of updates in the next few hours<br>
+<br>
+
+Login Screen<br>
+
+http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha1.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha1.jpg http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha2.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha2.jpg
+<br>
+
+Options<br>
+
+http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha3.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha3.jpg http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha4.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha4.jpg http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha5.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha5.jpg
+http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha6.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha6.jpg http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha7.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha7.jpg http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha8.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha8.jpg http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha9.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha9.jpg
+<br>
+
+Loading Screens / Map Instructions<br>
+
+http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha_BlackheartsBay.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha_BlackheartsBay.jpg http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha_DragonShire.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha_DragonShire.jpg http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha_TheCursedHorrow.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha_TheCursedHorrow.jpg http://media.mmo-champion.com/images/news/2014/february/thumb/HeroesAlpha_TheHauntedMines.jpg http://media.mmo-champion.com/images/news/2014/february/HeroesAlpha_TheHauntedMines.jpg
+<br>
+<hr>
+<br>
+<h2> Heroes!</h2>
+Click the avatars to get information on each hero!<br><br>
+
+
+<script type="text/javascript">
+function scrollTohash {
+location.hash = ""
+location.hash = "#" + hash;
+}
+$document.readyfunction {
+heros = ["abathur", "raynor", "gazlowe", "etc", "witchdoctor", "tassadar", "tyrande", "uther", "tychus", "illidan", "falstad", "kerrigan", "barbarian", "nova", "demonhunter", "malfurion", "sgthammer", "zeratul", "tyrael", "diablo", "muradin", "stitches", "arthas"]
+for h in heros {
+$"#tab-" + heros [h].clickfunctione {
+var hero = $e.target.data"hero";
+$".hero-holder".hide;
+$"#holder-" + hero.show;
+$"td.selected".removeClass"selected";
+$e.target.parent.addClass"selected";
+
+
+};
+}
+$".hero-holder".hide;
+$"#holder-abathur".show;
+}
+</script>
+
+<style>
+.hero-table thead td{
+height:15px !important;
+background-color:#5F5A59;
+}
+.hero-table td {
+padding:8px;
+}
+.hero-table td.selected {
+background-color: #000066;
+color: white;
+}
+.hero-table td img { cursor: pointer; }
+.hero-table thead {
+text-align:center;
+background-color:#5F5A59;
+color:white;
+height:15px !important;
+}
+.hero-holder h3 {
+margin:0px;
+line-height:10px;
+}
+
+.temp-div {
+width:966px;
+padding:10px;
+margin-left:35px;
+margin-right:100px;
+border:1px solid black;
+}
+.hero-table tr{
+background-color: #FFFFFF;
+}
+
+.hero-table tr:nth-childeven{
+background-color: #f1f1f1;
+}
+.hero-table{
+border-collapse: collapse; 
+width:100%;
+text-align:center;
+}
+.hero-table td {
+border:1px solid #CBCBCB;
+height:20px;
+}
+.hero-holder{
+border:1px solid #CBCBCB;
+background-color:white;
+}
+.hero-content-holder {
+padding:10px;
+}
+.hero-header {
+background-color:#000066;
+border-bottom:1px solid black;
+height:30px;
+width:100%;
+color:white;
+padding-left:10px;
+}
+.hero-header h2 {
+display:inline;
+}
+.stat-table {
+width:100%;
+text-align:center;
+border-collapse: collapse; 
+}
+.stat-table td {
+border:1px solid black;
+}
+
+.ability-table {
+border:1px solid black;
+
+width: 100%;
+margin-top:10px;
+}
+.ability-table tr{
+
+}
+.ability-table-header {
+font-weight:bold;
+}
+.ability-title {
+
+}
+
+
+.talent-table {
+border-collapse: collapse; 
+width:100%;
+margin-top:10px;
+
+}
+
+.talent-table td {
+
+border:1px solid black;
+height:30px;
+padding:5px;
+}
+.talent-table td:first-child {
+border:1px solid black;
+text-align:center;
+}
+</style>
+
+
+
+
+
+<table id="thetop" name="thetop" class="hero-table"><tr><td class="selected"> <img id="tab-abathur" data-hero="abathur" src="http://media.mmo-champion.com/images/misc/heroes_avatars/abathur.png"><br><b>Abathur</b></td><td > <img id="tab-raynor" data-hero="raynor" src="http://media.mmo-champion.com/images/misc/heroes_avatars/raynor.png"><br><b>Raynor</b></td><td > <img id="tab-witchdoctor" data-hero="witchdoctor" src="http://media.mmo-champion.com/images/misc/heroes_avatars/witchdoctor.png"><br><b>Witch Doctor</b></td><td > <img id="tab-gazlowe" data-hero="gazlowe" src="http://media.mmo-champion.com/images/misc/heroes_avatars/gazlowe.png"><br><b>Gazlowe</b></td><td > <img id="tab-tassadar" data-hero="tassadar" src="http://media.mmo-champion.com/images/misc/heroes_avatars/tassadar.png"><br><b>Tassadar</b></td></tr><tr><td > <img id="tab-tyrande" data-hero="tyrande" src="http://media.mmo-champion.com/images/misc/heroes_avatars/tyrande.png"><br><b>Tyrande</b></td><td > <img id="tab-uther" data-hero="uther" src="http://media.mmo-champion.com/images/misc/heroes_avatars/uther.png"><br><b>Uther</b></td><td > <img id="tab-tychus" data-hero="tychus" src="http://media.mmo-champion.com/images/misc/heroes_avatars/tychus.png"><br><b>Tychus</b></td><td > <img id="tab-illidan" data-hero="illidan" src="http://media.mmo-champion.com/images/misc/heroes_avatars/illidan.png"><br><b>Illidan</b></td><td > <img id="tab-falstad" data-hero="falstad" src="http://media.mmo-champion.com/images/misc/heroes_avatars/falstad.png"><br><b>Falstad</b></td></tr><tr><td > <img id="tab-kerrigan" data-hero="kerrigan" src="http://media.mmo-champion.com/images/misc/heroes_avatars/kerrigan.png"><br><b>Kerrigan</b></td><td > <img id="tab-barbarian" data-hero="barbarian" src="http://media.mmo-champion.com/images/misc/heroes_avatars/barbarian.png"><br><b>Barbarian</b></td><td > <img id="tab-nova" data-hero="nova" src="http://media.mmo-champion.com/images/misc/heroes_avatars/nova.png"><br><b>Nova</b></td><td > <img id="tab-demonhunter" data-hero="demonhunter" src="http://media.mmo-champion.com/images/misc/heroes_avatars/demonhunter.png"><br><b>Demon Hunter</b></td><td > <img id="tab-malfurion" data-hero="malfurion" src="http://media.mmo-champion.com/images/misc/heroes_avatars/malfurion.png"><br><b>Malfurion</b></td></tr><tr><td > <img id="tab-sgthammer" data-hero="sgthammer" src="http://media.mmo-champion.com/images/misc/heroes_avatars/sgthammer.png"><br><b>Sgt. Hammer</b></td><td > <img id="tab-zeratul" data-hero="zeratul" src="http://media.mmo-champion.com/images/misc/heroes_avatars/zeratul.png"><br><b>Zeratul</b></td><td > <img id="tab-tyrael" data-hero="tyrael" src="http://media.mmo-champion.com/images/misc/heroes_avatars/tyrael.png"><br><b>Tyrael</b></td><td > <img id="tab-etc" data-hero="etc" src="http://media.mmo-champion.com/images/misc/heroes_avatars/etc.png"><br><b>E.T.C.</b></td><td > <img id="tab-diablo" data-hero="diablo" src="http://media.mmo-champion.com/images/misc/heroes_avatars/diablo.png"><br><b>Diablo</b></td></tr>
+<tr>
+
+<td></td><td > <img id="tab-muradin" data-hero="muradin" src="http://media.mmo-champion.com/images/misc/heroes_avatars/muradin.png"><br><b>Muradin</b></td><td > <img id="tab-stitches" data-hero="stitches" src="http://media.mmo-champion.com/images/misc/heroes_avatars/stitches.png"><br><b>Stitches</b></td><td > <img id="tab-arthas" data-hero="arthas" src="http://media.mmo-champion.com/images/misc/heroes_avatars/arthas.png"><br><b>Arthas</b></td><td></td>
+</tr> 
+
+</table>
+<div id="herenow" name="herenow"></div>
+
+
+
+
+
+
+
+
+
+
+<div class="hero-holder" data-hero="abathur" id="holder-abathur">
+<table name="0" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Abathur"><h2>Abathur</h2></a> - Evolution Master</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Abathur"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Does not directly engage in combat, but rather can act through his allied Heroes and minions and place Toxic Nests to defend important locations.</p>
+
+<p style="margin:8px;">Abathur, the Evolution Master of Kerrigan's Swarm, works ceaselessly to improve the zerg from the genetic level up. His hate for chaos and imperfection almost rivals his hatred of pronouns.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Siege</td>
+<td>VeryHard</td> 
+<td>550 +50</td>
+<td>1.1445 +0.1015</td>
+<td>0 +</td>
+<td>0 +</td>
+<td>True</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>1 +0.057</td>
+<td>1</td>
+<td>31</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Symbiote</td><td><span>Cooldown: 4 seconds</br></br><span>Assists the target allied Hero, minion, mercenary, tower, or Fort allowing Abathur to shield them, and use new abilities from the host. Lasts for 45 seconds.</br></br>Cannot be used on self, the Palace, or Grave Golems.</td></tr>
+<tr><td>W</td><td>Toxic Nest</td><td><span>Charge Cooldown: 12 seconds</br></br><span>Spawns a mine-like nest at a location that becomes active after a short arming time. Deals <span>40</span> damage to enemies that contact it, slows them by <span>25%</span> for <span>2</span> seconds, and reveals the enemy for <span>4</span> seconds. Nests last for <span>90</span> seconds.</td></tr>
+<tr><td>R</td><td>Ultimate Evolution</td><td><span>Heroic Ability</span></br><span>Cooldown: 180 seconds</br></br><span>Abathur creates a copy of the target ally Hero and takes control of it. The Evolution's attributes are based on Abathur's current level and talents. Lasts for 60 seconds.</br></br>Cannot be used on self.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>Rapid Mitosis</td><td><span>Rapid Mitosis</span></br><span>+10% <span>Cooldown Reduction</span></td></tr>
+<tr><td>1</td><td>Combat Adaptation</td><td><span>Combat Adaptation Trait</span><span></br></br><span>Locusts gain <span>20%</span> increased health and attack speed.</td></tr>
+<tr><td>2</td><td>Pressurized Glands</td><td><span>Pressurized Glands Q</span></br><span></br>Increases the AoE of your Symbiote's Spike Burst by <span>40%</span>.</td></tr>
+<tr><td>2</td><td>Assault Strain</td><td><span>Assault Strain Trait</span><span></br><span></br>Abathur's Locusts do more damage, have more health, gain a cleave attack and explode on death for <span>60</span> damage.</td></tr>
+<tr><td>2</td><td>Bombard Strain</td><td><span>Bombard Strain Trait</span><span></br><span></br>Abathur's Locusts do increased damage, gain a long-range siege attack that slows damaged units' attack speeds by <span>25%</span> for <span>5</span> seconds, but have reduced health.</td></tr>
+<tr><td>3</td><td>Grooved Spines</td><td><span>Grooved Spines Q</span></br><span></br>Increases the range of your Symbiote's Stab by <span>33%</span>.</td></tr>
+<tr><td>3</td><td>Regenerative Microbes</td><td><span>Regenerative Microbes Q</span></br><span></br>Your Symbiote's Carapace also heals the target for <span>7</span> health a second.</td></tr>
+<tr><td>3</td><td>Ballistospores</td><td><span>Ballistospores W</span></br><span></br>Toxic Nests can now be placed from unlimited range.</td></tr>
+<tr><td>4</td><td>Ultimate Evolution</td><td><span>Ultimate Evolution R</span></br><span>Abathur builds a copy of target ally Hero and can control it for a limited amount of time.</td></tr>
+<tr><td>5</td><td>Spatial Efficiency</td><td><span>Spatial Efficiency Q</span></br><span></br>Your Symbiote's Stab gains <span>1</span> charge, to a max of <span>3</span>.</td></tr>
+<tr><td>5</td><td>Prolific Dispersal</td><td><span>Prolific Dispersal W</span></br><span></br>Toxic Nest gains <span>2</span> charges, to a max of <span>5</span>.</td></tr>
+<tr><td>5</td><td>Swarm Tunnel</td><td><span>Swarm Tunnel Z</span></br><span></br>Deep Tunnel also spawns <span>3</span> locust at the destination.</td></tr>
+<tr><td>6</td><td>Envenomed Spikes</td><td><span>Envenomed Spikes Q</span></br><span></br>Your Symbiote's Spike Burst also slows enemies by <span>40%</span> for <span>2</span> seconds.</td></tr>
+<tr><td>6</td><td>Adrenaline Boost</td><td><span>Adrenaline Boost Q</span></br><span></br>Your Symbiote's Carapace also increases the movement speed of the target by <span>40%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Abathur Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Reduces the cooldown of your Heroic Ability by <span>30%</span>.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="raynor" id="holder-raynor">
+<table name="1" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Raynor"><h2>Raynor</h2></a> - Renegade Commander</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Raynor"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">A resilient hero that knocks back enemies and buffs allies. Able to regenerate health quickly when in trouble.</p>
+
+<p style="margin:8px;">Ex-Confederate Marshall James Raynor has stood against whatever the universe can throw at him and survived. He stands as a bright beacon of hope among enigmatic aliens and monsters, still fighting for justice in a cold uncaring universe.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Damage</td>
+<td>N/A</td> 
+<td>725 +140</td>
+<td>1.5117 +0.289</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>False</td>
+<td>4</td>
+<td>12</td>
+<td>12</td>
+<td>1.25 +0.0295</td>
+<td>5.5</td>
+<td>63</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Penetrating Round</td><td><span>Skillshot</span></br><span>Cooldown: 12 seconds</br></br><span>Fires a high powered round that deals <span>85</span> damage and knocks away all enemies.</td></tr>
+<tr><td>W</td><td>Inspire</td><td><span>Cooldown: 12 seconds</br></br><span>Raynor buffs himself for <span>20%</span> bonus move and attack speed for <span>8</span> seconds. Nearby allies gain half of this bonus while near Raynor.</td></tr>
+<tr><td>R</td><td>Hyperion</td><td><span>Heroic Ability</span></br><span>Cooldown: 120 seconds</br></br><span>The Hyperion slowly travels forward, dealing <span>100</span> damage per second to a random enemy target in its path.</td></tr>
+<tr><td>R</td><td>Raynor's Raiders</td><td><span>Heroic Ability</span></br><span>Cooldown: 100 seconds</br><span></br>Summons two cloaked Banshees that follow Raynor for a short time and attack what he attacks. The Banshees attack for <span>12</span> damage.</td></tr>
+<tr><td>E</td><td>Adrenaline Rush</td><td><span>Passive</span></br></br><span>Automatically activates to heal Raynor for <span>160</span> when he is below <span>30%</span> health. Can only occur once every <span>45</span> seconds.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>Advanced Optics</td><td><span>Advanced Optics</span></br><span></br>Raynor gains <span>+1</span> Basic Attack range and <span>+1</span> vision radius.</td></tr>
+<tr><td>2</td><td>Focused Attack</td><td><span>Focused Attack</span></br><span></br>Every <span>5</span> seconds, your next Basic Attack deals <span>30%</span> additional damage.</td></tr>
+<tr><td>2</td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>2</td><td>Quick Fingers</td><td><span>Quick Fingers Trait</span></br><span></br>Doubles the cooldown reduction of Lead From the Front.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Inspire</td><td><span>Great Leader W</span></br><span></br>Raynor gains an additional <span>2%</span> Move and Attack Speed for each ally Inspired.</td></tr>
+<tr><td>3</td><td>Adrenaline Rush</td><td><span>Fight or Flight E</span></br><span></br>Adrenaline Rush cleanses all movement impairing effects, and can now be cast.</span></td></tr>
+<tr><td>3</td><td>Berserk</td><td><span>Berserk</span></br><span></br>Activate to increase your Attack Speed by <span>40%</span> and Movement Speed by <span>10%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>4</td><td>Hyperion</td><td><span>Hyperion R</span></br><span>Cooldown: 120 seconds</br></br><span>Calls down the Hyperion which slowly travels across the battleground dealing <span>100</span> damage per second to a random enemy target in its path.</td></tr>
+<tr><td>4</td><td>Raynor's Banshee</td><td><span>Raynor's Raiders R</span></br><span><span>Cooldown: 100 seconds</br><span></br>Summons two cloaked Banshees that follow Raynor for a short time and attack what he attacks. The Banshees attack for <span>12</span> damage.</td></tr>
+<tr><td>5</td><td>Penetrating Round</td><td><span>Heavy Ammo Q</span></br><span></br>Penentrating Round knocks back further, and deals <span>50% </span>extra damage to structures.</td></tr>
+<tr><td>5</td><td>Battle Fury</td><td><span>Battle Fury</span></br></br><span>Your Basic Attacks increase your Attack Speed by <span>5%</span> and Attack Damage by <span>8</span>. This effect stacks up to <span>5</span> times.</td></tr>
+<tr><td>5</td><td>Giant Killer</td><td><span>Giant Killer</span></br><span></br>Basic Attacks against enemy Heroes deal an additional <span>1.5%</span> of the target's max Health in damage.</td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Sprint</td><td><span>Sprint</span></br><span></br>Activate to increase Movement Speed by <span>75%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Executioner</td><td><span>Executioner</span></br><span></br>Basic Attacks deal <span>???%</span> more damage against slowed, snared, stunned or silenced targets.</td></tr>
+<tr><td>6</td><td>Blood For Blood</td><td><span>Blood for Blood</span></br><span></br>Activate to drain <span>15%</span> of target enemy's max Health and slow its Movement Speed by <span>30%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="witchdoctor" id="holder-witchdoctor">
+<table name="2" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Witch Doctor"><h2>Witch Doctor</h2></a> - Umbaru Heretic</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Witch Doctor"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Effective against groups of enemies, summoning Spiders, Zombies, and Frogs. Siphons health and mana from dying foes.</p>
+
+<p style="margin:8px;">With cabalistic incantations and vestments of feather and bone, the Witch Doctors call upon spirits from the Unformed Land to aid them in battle. Few outlanders have ever encountered a Witch Doctor in the flesh, without losing their own.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Siege</td>
+<td>Medium</td> 
+<td>740 +150</td>
+<td>1.539 +0.3125</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>False</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>1.25 +0.0295</td>
+<td>5.5</td>
+<td>57</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Corpse Spiders</td><td><span>Area of Effect</span></br><span>Cooldown: 10 seconds</span></br></br><span>Deals <span>40</span> damage on impact and creates <span>3 </span>Corpse Spiders that deal <span>10</span> damage. Spiders last for <span>4</span> seconds.</td></tr>
+<tr><td>W</td><td>Zombie Wall</td><td><span>Area of Effect</span></br><span>Cooldown: 14 seconds</br><span></br>After a short delay, creates a ring of Zombies surrounding the target area that deal <span>18 </span>damage and lasts for <span>3</span> seconds.</td></tr>
+<tr><td>E</td><td>Plague of Toads</td><td><span>Cone</span></br><span>Cooldown: 10 seconds</br></br><span>Creates <span>5</span> Toads that each deal <span>30</span> damage upon contact. Toads last for <span>2.75</span> seconds.</td></tr>
+<tr><td>R</td><td>Gargantuan</td><td><span>Heroic Ability</span></br><span>Cooldown: 90 seconds</br></br><span>Creates a Gargantuan that deals <span>35</span> damage. Throws enemy minions at targets, dealing <span>100</span> splash damage. Lasts for <span>20</span> seconds.</td></tr>
+<tr><td>R</td><td>Ravenous Spirit</td><td><span>Heroic Ability</span></br><span>Cooldown: 80 seconds</br></br><span>Summons a Ravenous Spirit. Deals <span>50</span> damage per second. The Witch Doctor cannot move while chaneling.</br></br>Channeled ability.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>Death Ritual</td><td><span>Death Ritual Trait</span></br><span></br>Permanently gain <span>2</span> Health and <span>1</span> Mana when a unit dies under Voodoo Ritual.</td></tr>
+<tr><td>1</td><td>Bribe</td><td><span>Bribe</span></br></br><span>Kill enemy minions to gain stacks of Bribe. At <span>50</span> stacks, activate to capture target Mercenary Camp. Does not work on Golems.</span></td></tr>
+<tr><td>2</td><td>Superiority</td><td><span>Superiority</span></br><span></br>Reduce damage taken from non-heroic enemies by <span>50%</span>.</td></tr>
+<tr><td>2</td><td>Plague Toads Mastery 2</td><td><span>Toads of Hugeness E</span></br><span></br>Toads increase in size and damage by <span>10%</span> every time they hop.</td></tr>
+<tr><td>2</td><td>Corpse Spiders Mastery 2</td><td><span>Leaping Spiders Q</span></br><span></br>Corpse Spiders now leap at enemies when attacking.</td></tr>
+<tr><td>2</td><td>Invigorate</td><td><span>Invigorate</span></br><span></br>Dealing damage with Abilities heals you for <span>45</span> Health over <span>3</span> seconds.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Cleanse</td><td><span>Cleanse</span></br><span></br>Removes all stuns, roots, and slows from the target and makes them unstoppable for <span>1</span> second.</td></tr>
+<tr><td>3</td><td>Gidbinn</td><td><span>Gidbinn</span></br><span></br>Increases the area of Plague Toads and duration of your other abilities by <span>25%</span>.</td></tr>
+<tr><td>4</td><td>Ravenous Spirit</td><td><span>Ravenous Spirit R</span></br><span>Cooldown: 80 seconds</br>Duration: 8 seconds</span></br></br><span>Summons a Ravenous Spirit. Deals <span>25</span> damage per second. The Witch Doctor cannot move while chaneling.</br></br>Channeled ability.</td></tr>
+<tr><td>4</td><td>Gargantuan</td><td><span>Gargantuan R</span></br><span>Cooldown: 90 seconds</br>Duration: 20 seconds</br></span></br><span>Creates a Gargantuan that deals <span>35</span> damage. Throws enemy minions at targets, dealing <span>100</span> splash damage. Lasts for <span>20</span> seconds.</td></tr>
+<tr><td>5</td><td>Block</td><td><span>Block</span></br><span></br>Periodically reduces the damage received from Hero Basic Attacks by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Ice Block</td><td><span>Ice Block</span></br><span></br>Activate to place yourself in stasis and gain invulnerability for <span>3</span> seconds.</td></tr>
+<tr><td>5</td><td>Shrink Ray</td><td><span>Shrink Ray</span></br><span></br>Activate to reduce an enemy Hero's damage by <span>50%</span> and Movement Speed by <span>50%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>5</td><td>Sprint</td><td><span>Sprint</span></br><span></br>Activate to increase Movement Speed by <span>75%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Zombie Wall Mastery 1</td><td><span>Dead Rush W</span></br><span></br>After use, remaining Zombies attack nearby enemies for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Rewind</td><td><span>Rewind</span></br><span></br>Activate to reduce the cooldown of your Basic Abilities by <span>10</span> seconds.</td></tr>
+<tr><td>6</td><td>Stoneskin</td><td><span>Stoneskin</span></br><span></br>Activate to gain <span>800</span> Shields for <span>5</span> seconds.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="gazlowe" id="holder-gazlowe">
+<table name="3" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Gazlowe"><h2>Gazlowe</h2></a> - Boss of Ratchet</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Gazlowe"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Specializes in zoning out his enemies and securing areas with Turrets and XPlodium Charges. Can supercharge his Deth Lazor for increased area of effect damage.</p>
+
+<p style="margin:8px;">Few would consider the diminutive goblin tinkers fighters, but what they lack in height, they more than make up in mechanical cunning. Gazlowe's mechanical exoskeleton is an especially effective war machine - whenever it's working.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Siege</td>
+<td>Medium</td> 
+<td>770 +170</td>
+<td>1.6054 +0.3554</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>True</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>1.25 +0.057</td>
+<td>1.25</td>
+<td>58</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Rock-It! Turret</td><td><span>Charge Cooldown: 15 seconds</br></br><span>Creates a turret that deals <span>30 </span>damage. Attacks slow movement speed by <span>25%</span>. Lasts for <span>30</span> seconds.</td></tr>
+<tr><td>W</td><td>Deth Lazor</td><td><span>Skillshot</span></br><span>Cooldown: 15 seconds</br></br><span>Charged attack that deals <span>60</span> to <span>120</span> damage to enemies in path. Damage and range increase the longer the ability is charged up.</td></tr>
+<tr><td>E</td><td>Xplodium Charge</td><td><span><span>Area of Effect</span></br><span>Cooldown: 12 seconds</br></br><span>Places a bomb that deals <span>65</span> damage to enemies within target area after <span>4</span> seconds, stunning them for <span>2</span> seconds.</td></tr>
+<tr><td>R</td><td>Robo-Goblin</td><td><span>Heroic Ability</span></br><span>Cooldown: 100 seconds</br></br><span>Transforms in to an unstoppable Robo-Goblin. Basic Attacks deal <span>+???</span> damage to minions and structures. Also charges Deth Lazor and explodes Xplodium Bombs twice as fast. Lasts for 16 seconds.</td></tr>
+<tr><td>R</td><td>Grav-o-bomb 3000</td><td><span>Heroic Ability</br><span><span>Area of Effect</br>Cooldown: 75 seconds</br></br><span>Pulls enemies towards the center of the target area after a <span>1.5</span> second delay and deals <span>150</span> damage.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>Bribe</td><td><span>Bribe</span></br></br><span>Kill enemy minions to gain stacks of Bribe. At <span>50</span> stacks, activate to capture target Mercenary Camp. Does not work on Golems.</span></td></tr>
+<tr><td>1</td><td>Demolitionist</td><td><span>Demolitionist</span></br><span></br>Basic Attacks against enemy towers destroy <span>2</span> ammo.</td></tr>
+<tr><td>1</td><td>Tinker Passive Buff Weapon</td><td><span>Scrap-o-Matic Smelter Trait</span></br><span></br>Increases mana restored by <span>???</span> and cooldown reduced by an additional <span>3</span> seconds from Salvage.</td></tr>
+<tr><td>2</td><td>Superiority</td><td><span>Superiority</span></br><span></br>Reduce damage taken from non-heroic enemies by <span>50%</span>.</td></tr>
+<tr><td>2</td><td>Invigorate</td><td><span>Invigorate</span></br><span></br>Dealing damage with Abilities heals you for <span>45</span> Health over <span>3</span> seconds.</td></tr>
+<tr><td>2</td><td>Deth Lazor Mastery 1</td><td><span>EZ-PZ Dimensional Ripper W</span></br><span></br>Deth Lazor slows Heroes and freezes minions or structures for <span>3</span> seconds.</td></tr>
+<tr><td>2</td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>3</td><td>Relentless</td><td><span>Relentless</span></br><span></br>Reduces the duration of stuns, slows, and roots against your Hero by <span>???%</span>.</span></td></tr>
+<tr><td>3</td><td>Cleanse</td><td><span>Cleanse</span></br><span></br>Removes all stuns, roots, and slows from the target and makes them unstoppable for <span>1</span> second.</td></tr>
+<tr><td>3</td><td>Tinker Clockwerk Steam Fists</td><td><span>Clockwerk Steam Fists</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>.5</span> seconds, and increase the duration of Rock-It! Turrets and Robo-Goblin.</td></tr>
+<tr><td>4</td><td>Grav-o-bomb 3000</td><td><span>Gravity Bomb R</span></br><span>Cooldown: 75 seconds</br></br></span><span>Pulls enemies towards its center. Deals <span>150</span> damage.</td></tr>
+<tr><td>4</td><td>Robo-Goblin</td><td><span>Robo-Goblin R</br><span>Cooldown: 100 seconds</br>Duration: 16 seconds</br></br><span>Becomes unstoppable and Basic Attacks deal <span>+???</span> damage to minions and structures. Also charges Deth Lazor and explodes Xplodium Bombs twice as fast.</td></tr>
+<tr><td>5</td><td>Burning Rage</td><td><span>Burning Rage</span></br><span></br>Deals <span>40</span> damage to nearby enemies.</td></tr>
+<tr><td>5</td><td>Block</td><td><span>Block</span></br><span></br>Periodically reduces the damage received from Hero Basic Attacks by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Xplodium Charge Mastery 1</td><td><span>Kwik Release Charge E</span></br><span></br>Xplodium Charge can now be cast twice in rapid succession.</td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Battle Fury</td><td><span>Battle Fury</span></br></br><span>Your Basic Attacks increase your Attack Speed by <span>5%</span> and Attack Damage by <span>8</span>. This effect stacks up to <span>5</span> times.</td></tr>
+<tr><td>5</td><td>Sprint</td><td><span>Sprint</span></br><span></br>Activate to increase Movement Speed by <span>75%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>5</td><td>Shrink Ray</td><td><span>Shrink Ray</span></br><span></br>Activate to reduce an enemy Hero's damage by <span>50%</span> and Movement Speed by <span>50%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>6</td><td>Imposing Presence</td><td><span>Imposing Presence</span></br><span></br>Enemies that attack you have their Attack Speed slowed by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Rock It Turret Mastery 1</td><td><span>Rock-It! Turret XL Q</span></br><span></br>Turrets can hit up to <span>2</span> additonal targets for <span>33.33%</span> of normal Turret damage.</td></tr>
+<tr><td>6</td><td>Blood For Blood</td><td><span>Blood for Blood</span></br><span></br>Activate to drain <span>15%</span> of target enemy's max Health and slow its Movement Speed by <span>30%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Stoneskin</td><td><span>Stoneskin</span></br><span></br>Activate to gain <span>800</span> Shields for <span>5</span> seconds.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Resurgence of the Storm</td><td><span>Resurgence of the Storm</span></br><span></br>Upon dying, revive back at your Altar after 5 seconds. This can occur once every <span>120</span> seconds.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="tassadar" id="holder-tassadar">
+<table name="4" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Tassadar"><h2>Tassadar</h2></a> - Savior of the Templar</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Tassadar"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Can grant a temporary shield to allies, detect nearby enemy Heroes, and manipulate the battleground for his team.</p>
+
+<p style="margin:8px;">An executor without equal, Tassadar fought valiantly to save Aiur from the zerg. Channeling the Khala and the Void, he destroyed the Overmind at the cost of his life. In the glory of combat protoss warriors forever invoke his name: "En Taro, Tassadar!"</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Support</td>
+<td>VeryHard</td> 
+<td>870 +170</td>
+<td>1.8125 +0.3554</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>False</td>
+<td>4</td>
+<td>7</td>
+<td>7</td>
+<td>1.25 +0.0131</td>
+<td>5.5</td>
+<td>47</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Protective Shield</td><td><span>Cooldown: 9 seconds</br></br><span>Shields target ally, absorbing <span>200</span> damage before breaking. Lasts for <span>8</span> seconds</span>.</td></tr>
+<tr><td>Q</td><td>Mass Shielding</td><td><span>Cooldown: ??? seconds</br>Duration: 8 seconds</span></br></br><span>Shields Units or Structures. Absorbs <span>???</span> damage.</td></tr>
+<tr><td>E</td><td>Phase Shift</td><td><span>Cooldown: 24 seconds</br></br><span>Tassadar becomes invulnerable and invisible to enemies. Lasts for 2 seconds.</td></tr>
+<tr><td>E</td><td>Void Walk</td><td><span>Cooldown: ??? seconds</br></br><span>Teleports to location. </td></tr>
+<tr><td>R</td><td>Phase Shift</td><td><span>Heroic Ability</br><span>Cooldown: 90 seconds</br></br><span>Tassadar gains a <span>300</span> point Shield and his Basic Attacks splash for <span>47</span> additional damage. Lasts for <span>15</span> seconds.</td></tr>
+<tr><td>R</td><td>Force Wall</td><td><span>Heroic Ability</br><span>Cooldown: 15 seconds</br></br><span>Creates a force wall that blocks all units from pathing through it. Lasts for 3 seconds.</td></tr>
+<tr><td>W</td><td>Time Warp</td><td><span>Cooldown: 14 seconds</span></br></br><span>Deals <span>26</span> damage per second and slows attack and movement speeds by <span>35%</span>. Grows larger over time and lasts <span>3.75</span> seconds.</br></br>When expiring, enemies within are pulled to the center.</td></tr>
+<tr><td>W</td><td>Time Warp</td><td><span>Area of Effect</span></br><span>Cooldown: 14 seconds</span></br></br><span>Deals <span>26</span> damage per second to enemies in target area and slows attack and movement speeds by <span>35%</span>. Lasts <span>3.75</span> seconds.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>Bribe</td><td><span>Bribe</span></br></br><span>Kill enemy minions to gain stacks of Bribe. At <span>50</span> stacks, activate to capture target Mercenary Camp. Does not work on Golems.</span></td></tr>
+<tr><td>2</td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>2</td><td>Invigorate</td><td><span>Invigorate</span></br><span></br>Dealing damage with Abilities heals you for <span>45</span> Health over <span>3</span> seconds.</td></tr>
+<tr><td>2</td><td>Passive Buff Weapon</td><td><span>Scryer Trait</span></br><span></br>Oracle lasts <span>???</span> seconds longer and grants <span>15%</span> increased movement speed.</td></tr>
+<tr><td>3</td><td>Cleanse</td><td><span>Cleanse</span></br><span></br>Removes all stuns, roots, and slows from the target and makes them unstoppable for <span>1</span> second.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Protective Shield Mastery 1</td><td><span>Khala's Embrace Q</span></br><span></br>If Protective Shield expires, <span>50%</span> of the shield remains indefinitely.</td></tr>
+<tr><td>4</td><td>Phase Shift</td><td><span>Twilight Messiah R</span></br><span>Cooldown: 90 seconds</br>Duration: 15 seconds </span></br></br><span>Tassadar gains a <span>300</span> point Shield and his Basic Attacks splash for <span>47</span> additional damage. Lasts for <span>15</span> seconds.</td></tr>
+<tr><td>4</td><td>Force Wall</td><td><span>Force Wall R</span></br><span>Cooldown: 15 seconds</br>Duration: 3 seconds</span></br></br><span>Creates a force wall that blocks pathing.</td></tr>
+<tr><td>5</td><td>Healing Ward</td><td><span>Healing Ward</span></br><span></br>Place on the ground to heal allies in an area for <span>1%</span> of their max HP every second for <span>10</span> seconds</td></tr>
+<tr><td>5</td><td>Phase Shift Mastery 1</td><td><span>Dimensional Shift E</span></br><span></br>Move <span>50%</span> faster and heal for <span>40</span> while Phase Shifted.</td></tr>
+<tr><td>5</td><td>Time Warp Mastery 1</td><td><span>Spacetime Warp W</span></br><span></br>Time Warp grows over time, and pulls enemies in upon ending.</td></tr>
+<tr><td>6</td><td>Distortion Beam</td><td><span>Distortion Beam</span></br><span></br>Basic Attacks slow enemies by <span>25%</span> for <span>1.5</span> seconds.</td></tr>
+<tr><td>6</td><td>Rewind</td><td><span>Rewind</span></br><span></br>Activate to reduce the cooldown of your Basic Abilities by <span>10</span> seconds.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="tyrande" id="holder-tyrande">
+<table name="5" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Tyrande"><h2>Tyrande</h2></a> - High Priestess of Elune</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Tyrande"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Marks enemy targets by attacking and heals allies that attack them. Summons owls to scout out enemy positions. </p>
+
+<p style="margin:8px;">Tyrande Whisperwind strikes fear into all who wish ill of the Kaldorei. As the highest ranking Sentinel and High Priestess of Elune, she is not only the Night Elves' most deadly warrior, but also their most cunning leader.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Support</td>
+<td>Medium</td> 
+<td>635 +150</td>
+<td>1.3242 +0.3125</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>False</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>1.25 +0.057</td>
+<td>5.5</td>
+<td>50</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Light of Elune</td><td><span>Cooldown: 6 seconds</span></br></br><span>Heals an ally for <span>90</span>, automatically healing Tyrande for <span>45</span>.</td></tr>
+<tr><td>E</td><td>Lunar Flare</td><td><span>AoE</br>Cooldown: 12 seconds</span></br></br><span>After a short delay, deals <span>90</span> damage and stuns enemies in the target area for <span>1.25 </span>seconds.</td></tr>
+<tr><td>W</td><td>Sentinel</td><td><span>Skillshot</br>Cooldown: 18 seconds</br></br><span>Travels across the battleground revealing its path. Deals <span>60 </span>damage and reveals Heroes for <span>8 </span>seconds.</td></tr>
+<tr><td>R</td><td>Shadowstalk</td><td><span>Cooldown: 80 seconds</span></br></br><span>Cloaks Tyrande and all allies on the map for <span>8</span> seconds, and grants them a <span>30%</span> move speed bonus for 3 seconds. </br></td></tr>
+<tr><td>R</td><td>Starfall</td><td><span>Heroic Ability</span></br><span>Cooldown: 100 seconds</br>Duration: 8 seconds</span></br></br><span>Deals <span>20</span> damage per second. Slows enemies by <span>-30%</span> for <span>2</span> seconds.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>Tyrande - Passive Buff Weapon</td><td><span>Mark of the Priestess Trait</span><span></br></br>Hunter's Mark duration increased by <span>2</span> seconds. Healing effect increased to <span>1.5%</span> of maximum health.</td></tr>
+<tr><td>2</td><td>Focused Attack</td><td><span>Focused Attack</span></br><span></br>Every <span>5</span> seconds, your next Basic Attack deals <span>30%</span> additional damage.</td></tr>
+<tr><td>2</td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>2</td><td>Lunar Flare Mastery 1</td><td><span>Lunar Blaze E</span><span></br></br>Increases the cast range by <span>10</span>. Increases the AOE radius by <span>0.5</span>.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Cleanse</td><td><span>Cleanse</span></br><span></br>Removes all stuns, roots, and slows from the target and makes them unstoppable for <span>1</span> second.</td></tr>
+<tr><td>3</td><td>Sentinel Shot Mastery 1</td><td><span>Ranger W</span><span></br></br>Increases width by <span>100%</span>. Increases damage dealt based on distance traveled, up to a maximum of <span>+200%</span> damage.</span></td></tr>
+<tr><td>3</td><td>Berserk</td><td><span>Berserk</span></br><span></br>Activate to increase your Attack Speed by <span>40%</span> and Movement Speed by <span>10%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>4</td><td>Shadowstalk</td><td><span>Shadowstalk R</span></br><span>Cooldown: 80 seconds</span></br></br><span>Cloaks Tyrande and all allies on the map for <span>8</span> seconds, and grants them a <span>30%</span> move speed bonus for 3 seconds. </td></tr>
+<tr><td>4</td><td>Starfall</td><td><span>Starfall R</span></br><span>Cooldown: 100 seconds</br>Duration: 8 seconds</span></br></br><span>Deals <span>20</span> damage per second. Slows enemies by <span>-30%</span> for <span>2</span> seconds.</td></tr>
+<tr><td>5</td><td>Battle Fury</td><td><span>Battle Fury</span></br></br><span>Your Basic Attacks increase your Attack Speed by <span>5%</span> and Attack Damage by <span>8</span>. This effect stacks up to <span>5</span> times.</td></tr>
+<tr><td>5</td><td>Light Of Elune Mastery 1</td><td><span>Grace of Elune Q</span><span></br></br>Also cloaks target and increases movement speed by <span>20%</span> for <span>2</span> seconds.</td></tr>
+<tr><td>5</td><td>Giant Killer</td><td><span>Giant Killer</span></br><span></br>Basic Attacks against enemy Heroes deal an additional <span>1.5%</span> of the target's max Health in damage.</td></tr>
+<tr><td>5</td><td>Shrink Ray</td><td><span>Shrink Ray</span></br><span></br>Activate to reduce an enemy Hero's damage by <span>50%</span> and Movement Speed by <span>50%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>5</td><td>Ice Block</td><td><span>Ice Block</span></br><span></br>Activate to place yourself in stasis and gain invulnerability for <span>3</span> seconds.</td></tr>
+<tr><td>5</td><td>Healing Ward</td><td><span>Healing Ward</span></br><span></br>Place on the ground to heal allies in an area for <span>1%</span> of their max HP every second for <span>10</span> seconds</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Executioner</td><td><span>Executioner</span></br><span></br>Basic Attacks deal <span>???%</span> more damage against slowed, snared, stunned or silenced targets.</td></tr>
+<tr><td>6</td><td>Overdrive</td><td><span>Overdrive</span></br><span></br>Activate to raise Ability Power by <span>25%</span> and Mana costs by <span>40%</span> for <span>5</span> seconds.</td></tr>
+<tr><td>6</td><td>Rewind</td><td><span>Rewind</span></br><span></br>Activate to reduce the cooldown of your Basic Abilities by <span>10</span> seconds.</td></tr>
+<tr><td>6</td><td>Blood For Blood</td><td><span>Blood for Blood</span></br><span></br>Activate to drain <span>15%</span> of target enemy's max Health and slow its Movement Speed by <span>30%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="uther" id="holder-uther">
+<table name="6" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Uther"><h2>Uther</h2></a> - The Lightbringer</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Uther"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Heals allies, stuns enemies, and returns as a Spirit to heal after dying.</p>
+
+<p style="margin:8px;">The first paladin and founder of the Order of the Silver Hand, Uther the Lightbringer is a faithful servant of the Light. Dispensing justice with the swing of his hammer, Uther is a bastion of truth and an unflinching symbol of the Alliance.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Support</td>
+<td>N/A</td> 
+<td>890 +190</td>
+<td>1.8554 +0.3945</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>True</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>1.25 +0.0295</td>
+<td>1</td>
+<td>47</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Holy Light</td><td><span>Cooldown: 12 seconds</br></br><span>Heals an allied target for <span>150</span> health.</td></tr>
+<tr><td>Q</td><td>Holy Light</td><td><span>Cooldown: 10 seconds</br></br><span>Heals an allied taget for <span>150</span> health, or deals <span>75</span> damage to an enemy.</td></tr>
+<tr><td>W</td><td>Holy Radiance</td><td><span>Cooldown: 12 seconds</br></br><span>Deals <span>50</span> damage to enemies in a line, and heals any ally it touches for <span>80</span> health.</td></tr>
+<tr><td>E</td><td>Hammer of Justice</td><td><span>Cooldown: 8 seconds</br></br><span>Deals <span>50</span> damage and stuns the target for <span>1</span> second.</td></tr>
+<tr><td>R</td><td>Divine Shield</td><td><span>Heroic Ability</span></br><span>Cooldown: 120 seconds</br></br><span>Makes the target ally invulnerable and increases their movement speed by <span>20%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>R</td><td>Divine Storm</td><td><span>Heroic Ability</span></br><span>Cooldown: 45 seconds</br></br><span>Deals <span>100</span> damage and stuns nearby enemies for <span>1.5</span> seconds. Uther heals himself for <span>15</span> health for each enemy hit by Divine Storm.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>TalentBucketT1_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>1</td><td>Uther Hammer of the Lightbringer</td><td><span>Hammer of the Lightbringer</span></br><span></br>Basic Attacks also restore <span>5</span> mana to Uther.</td></tr>
+<tr><td>2</td><td>TalentBucketT2_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>2</td><td>Invigorate</td><td><span>Invigorate</span></br><span></br>Dealing damage with Abilities heals you for <span>45</span> Health over <span>3</span> seconds.</td></tr>
+<tr><td>2</td><td>Superiority</td><td><span>Superiority</span></br><span></br>Reduce damage taken from non-heroic enemies by <span>50%</span>.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Holy Radiance Mastery 1</td><td><span>Gathering Radiance W</span></br><span></br>Increases damage and healing by <span>???%</span> for each target hit, up to <span>???%</span>.</td></tr>
+<tr><td>3</td><td>Hammer Of Justice Mastery 1</td><td><span>Fist of Justice E</span></br><span></br>Basic Attacks reduce the cooldown of Hammer of Justice by <span>1</span> second.</td></tr>
+<tr><td>3</td><td>Cleanse</td><td><span>Cleanse</span></br><span></br>Removes all stuns, roots, and slows from the target and makes them unstoppable for <span>1</span> second.</td></tr>
+<tr><td>4</td><td>Divine Shield</td><td><span>Divine Shield R</br><span>Cooldown: 120 seconds</br></br><span>Makes ally invulnerable for <span>3</span> seconds. Increases movement speed by <span>20%</span>.</td></tr>
+<tr><td>4</td><td>Divine Storm</td><td><span>Divine Storm R</span></br><span>Cooldown: 45 seconds</br></br><span>Deals <span>100</span> damage and heals Uther for <span>15</span> health for each target hit. Stuns for <span>1.5</span> seconds.</td></tr>
+<tr><td>5</td><td>Might And Magic</td><td><span>Might and Magic</span></br></br><span>Your Basic Attacks increase your Abilities' effectiveness by <span>10%.</span> This effect stacks up to <span>4</span> times.</td></tr>
+<tr><td>5</td><td>Shrink Ray</td><td><span>Shrink Ray</span></br><span></br>Activate to reduce an enemy Hero's damage by <span>50%</span> and Movement Speed by <span>50%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>5</td><td>Uther Passive Buff Weapon</td><td><span>Holy Devotion Trait</span></br><span></br>Eternal Devotion's spirit no longer has reduced Ability Power and Attack Damage, and lasts <span>100%</span> longer.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Imposing Presence</td><td><span>Imposing Presence</span></br><span></br>Enemies that attack you have their Attack Speed slowed by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Holy Light Mastery 1</td><td><span>Holy Shock Q</span></br><span></br>Holy Light can be cast on an enemy to do <span>50%</span> of its healing amount as damage.</td></tr>
+<tr><td>6</td><td>Rewind</td><td><span>Rewind</span></br><span></br>Activate to reduce the cooldown of your Basic Abilities by <span>10</span> seconds.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Resurgence of the Storm</td><td><span>Resurgence of the Storm</span></br><span></br>Upon dying, revive back at your Altar after 5 seconds. This can occur once every <span>120</span> seconds.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="tychus" id="holder-tychus">
+<table name="7" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Tychus"><h2>Tychus</h2></a> - Notorious Outlaw</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Tychus"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Fights enemies up close and personal, and then shoots them as they run away.</p>
+
+<p style="margin:8px;">Tychus Findlay is a big man with a big ego and even bigger gun. Fortunately enough, his loyalty is easily won. Buy him a whiskey or three and promise him enough credits, and there's no job in the whole universe too dangerous for this outlaw.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Damage</td>
+<td>Hard</td> 
+<td>725 +140</td>
+<td>1.5117 +0.289</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>False</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>1.5 +0.0131</td>
+<td>4.5</td>
+<td>24</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Short Range Missiles</td><td><span>Skillshot</br>Cooldown: 2.5 seconds</br></br><span>Launches rockets to a short distance in front of the Odin, dealing <span>60</span> damage to enemies in an area. This ability shares a cooldown with the other rockets the Odin can use.</td></tr>
+<tr><td>Q</td><td>Frag Grenade</td><td><span>Cooldown: 10 seconds</span></br></br><span>Tychus lobs a grenade that explodes for <span>60 </span>damage. Enemies hit are pushed away from the explosion's epicenter. </td></tr>
+<tr><td>W</td><td>Medium Range Missiles</td><td><span>Skillshot</br>Cooldown: 2.5 seconds</br></br><span>Launches rockets to a medium distance in front of the Odin, dealing <span>60</span> damage to enemies in an area. This ability shares a cooldown with the other rockets the Odin can use.</td></tr>
+<tr><td>W</td><td>Run and Gun</td><td><span>Cooldown: 8 seconds</span></br></br><span>Charge forward and instantly wind up Tychus' minigun.</td></tr>
+<tr><td>E</td><td>Long Range Missiles</td><td><span>Skillshot</br>Cooldown: 2.5 seconds</br></br><span>Launches rockets to a long distance in front of the Odin, dealing <span>60</span> damage to enemies in an area. This ability shares a cooldown with the other rockets the Odin can use.</td></tr>
+<tr><td>E</td><td>Overkill</td><td><span>Focuses your overkill on a different target</span></td></tr>
+<tr><td>E</td><td>Overkill</td><td><span>Cooldown: 15 seconds</span></br></br><span>Focus Tychus' minigun on the target, dealing <span></span> damage in a cone over <span>5</span> seconds. Can retarget while casting.</br></br><span>This ability gets stronger with more Attack Damage.</span></td></tr>
+<tr><td>R</td><td>Laser Drill Issue Order</td><td>Order the Laser Drill to attack.</td></tr>
+<tr><td>R</td><td>Commandeer Odin</td><td><span>Heroic Ability</br><span>Cooldown: 120 seconds</br>Duration: 22.5 seconds</span></br></br><span>Tychus pilots the Odin, gaining a second health pool and becoming unstoppable. Basic Attacks in the Odin do splash damage and no longer require a windup. Tychus gains the ability to fire Ragnarok Missiles to devastate a large area.</td></tr>
+<tr><td>R</td><td>Drakken Laser Drill</td><td><span>Heroic Ability</br><span>Cooldown: 100 seconds</br>Duration: 22.5 seconds</span></br></br><span>Summons a Laser Drill that deals <span>30</span> per second.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>TalentBucketT1_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>1</td><td>Lock and Load</td><td><span>Lock and Load Trait</span><span></br></br>While the minigun is wound up, Tychus gets <span>10%</span> increased move speed.</td></tr>
+<tr><td>2</td><td>TalentBucketT2_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>2</td><td>Rapid Fire</td><td><span>Rapid Fire</span><span></br></br>After attacking for <span>3</span> seconds, Tychus gains <span>50%</span> increased Attack Speed.</td></tr>
+<tr><td>2</td><td>Vampiric Assault Tychus</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>10</span> Health.</td></tr>
+<tr><td>3</td><td>Frag Grenade Mastery 1</td><td><span>Armchair Quarterback Q</span><span></br></br>Increases the range of Grenade by <span>50%</span></td></tr>
+<tr><td>3</td><td>Relentless</td><td><span>Relentless</span></br><span></br>Reduces the duration of stuns, slows, and roots against your Hero by <span>???%</span>.</span></td></tr>
+<tr><td>3</td><td>First Aid</td><td><span>First Aid</span></br><span></br>Activate to heal <span>???%</span> of your max Health over <span>4</span> seconds.</span></td></tr>
+<tr><td>4</td><td>Commandeer Odin</td><td><span>Commandeer Odin</span></br><span>Cooldown: 120 seconds</br>Duration: 22.5 seconds</span></br></br><span>Tychus pilots the Odin, gaining a second health pool and becoming unstoppable. Basic Attacks in the Odin do splash damage and no longer require a windup. Tychus gains the ability to fire Ragnarok Missiles to devastate a large area.</td></tr>
+<tr><td>4</td><td>Drakken Laser Drill</td><td><span>Drakken Laser Drill</br></span><span>Cooldown: 100 seconds</br>Duration: 22.5 seconds</span></br></br><span>Summons a Laser Drill that deals <span>30</span> per second.</td></tr>
+<tr><td>5</td><td>Giant Killer</td><td><span>Giant Killer</span></br><span></br>Basic Attacks against enemy Heroes deal an additional <span>0.5%</span> of the target's max Health in damage.</td></tr>
+<tr><td>5</td><td>Battle Fury</td><td><span>Battle Fury</span></br></br><span>Your Basic Attacks increase your Attack Speed by <span>4%</span> and Attack Damage by <span>3</span>. This effect stacks up to <span>5</span> times.</td></tr>
+<tr><td>5</td><td>Run and Gun Mastery 1</td><td><span>From the Hip W</span><span></br></br>Run and Gun also increases Tychus' range by <span>2</span> for as long as his minigun is wound up.</td></tr>
+<tr><td>6</td><td>Overkill Mastery 1</td><td><span>Lead Rain E</span></br><span></br>Overkill applies a stacking slow onto damaged enemies, slowing by up to <span>-40%</span>.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Imposing Presence</td><td><span>Imposing Presence</span></br><span></br>Enemies that attack you have their Attack Speed slowed by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Blood For Blood</td><td><span>Blood for Blood</span></br><span></br>Activate to drain <span>15%</span> of target enemy's max Health and slow its Movement Speed by <span>30%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Resurgence of the Storm</td><td><span>Resurgence of the Storm</span></br><span></br>Upon dying, revive back at your Altar after 5 seconds. This can occur once every <span>120</span> seconds.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="illidan" id="holder-illidan">
+<table name="8" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Illidan"><h2>Illidan</h2></a> - The Betrayer</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Illidan"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Marks his targets by using his abilities. Attacks against marked targets reduce his cooldowns. Moves quickly to pursue his foes.</p>
+
+<p style="margin:8px;">Illidan Stormrage, the first Demon Hunter, betrayed his people by creating a new well of eternity after the demonic invasion of Azeroth. Now Illidan lords over the realm of Outland slaughtering unsuitably prepared Heroes who venture in to his domain.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Damage</td>
+<td>VeryHard</td> 
+<td>830 +145</td>
+<td>1.7304 +0.3007</td>
+<td>0 +</td>
+<td>3 +</td>
+<td>True</td>
+<td>4</td>
+<td>15</td>
+<td>15</td>
+<td>1.25 +0.0205</td>
+<td>1.25</td>
+<td>65</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Betrayer's Strike</td><td><span>Cooldown: 9 seconds</br></br><span>Illidan's next Basic Attack does <span></span> damage and applies Mark of Azzinoth to the target.</br></br><span>This ability gets stronger with more Attack Damage.</span></td></tr>
+<tr><td>W</td><td>Crescent Sweep</td><td><span>Cone</span></br><span>Cooldown: 10 seconds</span></br></br><span>Deals <span>56 </span>damage to enemies in target area.</br></br>Enemies with the Mark of Azzinoth take an extra <span>25%</span> damage and are silenced for <span>1.5</span> seconds.</td></tr>
+<tr><td>W</td><td>Crescent Sweep</td><td><span>Cooldown: 8 seconds</span></br></br><span>Deals <span>56 </span>damage to nearby enemies.</br></br>Enemies with the Mark of Azzinoth take an extra <span>25%</span> damage and are silenced for <span>1.5</span> seconds.</td></tr>
+<tr><td>R</td><td>The Hunt</td><td><span>Heroic Ability</span></br><span>Cooldown: 60 seconds</span></br></br><span>Illidan launches himself at the target enemy. Deals <span>75 </span>damage, stuns target for <span>1</span> second and applies Mark of Azzinoth. Has a very long range.</td></tr>
+<tr><td>R</td><td>Metamorphosis</td><td><span>Combat Trait</span></br><span>Area of Effect</span></br><span>Cooldown: 100 seconds</br></br><span>Transforms into demon form at the target location. Upon impact, deals <span>200</span> damage in a small area and applies Mark of Azzinoth to targets in a larger area. For each Hero struck, gain <span>150</span> temporary max health. Also grants <span>30%</span> increased attack speed. Lasts for 18 seconds.</td></tr>
+<tr><td>E</td><td>Lunge</td><td><span>Skillshot</span></br><span>Cooldown: 8 seconds</span></br></br><span>Lunges towards the target location, dealing <span>50 </span>damage to the first enemy Hero in his path.</br></br>Lunging into an enemy with the Mark of Azzinoth reduces its cooldown by <span>50%</span> and roots them as Illidan flips behind them.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>TalentBucketT1_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>1</td><td>Thrill of the Chase</td><td><span>Thrill of the Chase Trait</span></br><span></br>Each nearby enemy with Mark of Azzinoth gives Illidan <span>10%</span> Movement Speed. This effect stacks up to <span>3</span> times.</td></tr>
+<tr><td>2</td><td>Focused Attack</td><td><span>Focused Attack</span></br><span></br>Every <span>5</span> seconds, your next Basic Attack deals <span>30%</span> additional damage.</td></tr>
+<tr><td>2td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>2</td><td>Amplified Healing</td><td><span>Amplified Healing</span></br><span></br>Increases healing taken and regeneration effects by <span>40%</span>.</span></td></tr>
+<tr><td>3</td><td>Betrayer's Strike</td><td><span>Betrayer's Fury Q</span></br><span></br>Betrayer's Strike also increases Illidan's Attack Speed by <span>30%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>3</td><td>Crescent Sweep</td><td><span>Immolation W</span></br><span></br>Crescent Strike spouts flames, dealing damage all around Illidan. Its cooldown is also reduced by <span>2</span> seconds.</td></tr>
+<tr><td>3</td><td>Relentless</td><td><span>Relentless</span></br><span></br>Reduces the duration of stuns, slows, and roots against your Hero by <span>???%</span>.</span></td></tr>
+<tr><td>3</td><td>First Aid</td><td><span>First Aid</span></br><span></br>Activate to heal <span>???%</span> of your max Health over <span>4</span> seconds.</span></td></tr>
+<tr><td>4</td><td>The Hunt</td><td><span>The Hunt R</span></br><span>Cooldown: 60 seconds</span></br></br><span>Become unstoppable and after 1 second, launch yourself at the enemy. Deals <span>75 </span>damage, stuns target for <span>1</span> second and applies Mark of Azzinoth.</td></tr>
+<tr><td>4</td><td>Metamorphosis</td><td><span>Metamorphosis R</br><span>Cooldown: 100 seconds</br>Duration: 18 seconds</br></br><span>Transforms into demon form and leaps to target location. Upon impact, deals <span>200</span> damage in a small area and applies Mark of Azzinoth to targets in a larger area. For each Hero struck, gain <span>150</span> temporary max health. Also grants <span>30%</span> increased attack speed.</td></tr>
+<tr><td>5</td><td>Burning Rage</td><td><span>Burning Rage</span></br><span></br>Deals <span>40</span> damage to nearby enemies.</td></tr>
+<tr><td>5</td><td>Illidan Skull of Guldan</td><td><span>Skull of Gul'dan</span></br></br><span><span>2%</span> of damage dealt is returned as Health.</td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Battle Fury</td><td><span>Battle Fury</span></br></br><span>Your Basic Attacks increase your Attack Speed by <span>5%</span> and Attack Damage by <span>8</span>. This effect stacks up to <span>5</span> times.</td></tr>
+<tr><td>6</td><td>Lunge</td><td><span>Evading Lunge E</span></br><span></br>After lunging, dodge up to <span>2</span> Basic Attacks in the next <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Executioner</td><td><span>Executioner</span></br><span></br>Basic Attacks deal <span>???%</span> more damage against slowed, snared, stunned or silenced targets.</td></tr>
+<tr><td>6</td><td>Stoneskin</td><td><span>Stoneskin</span></br><span></br>Activate to gain <span>800</span> Shields for <span>5</span> seconds.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Resurgence of the Storm</td><td><span>Resurgence of the Storm</span></br><span></br>Upon dying, revive back at your Altar after 5 seconds. This can occur once every <span>120</span> seconds.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="falstad" id="holder-falstad">
+<table name="9" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Falstad"><h2>Falstad</h2></a> - Wildhammer Thane</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Falstad"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Able to strike enemies from afar and fly over any terrain. Uses abilities to avoid damage or destroys his enemies.</p>
+
+<p style="margin:8px;">Falstad Wildhammer is the High Thane of the Wildhammer Clan and a founding member of the Council of Three Hammers that now presides over Ironforge. Despite wild speculation, Falstad has never been dead and anyone who claims such is a liar.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Damage</td>
+<td>Hard</td> 
+<td>710 +120</td>
+<td>1.4804 +0.25</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>False</td>
+<td>4</td>
+<td>10</td>
+<td>10</td>
+<td>1.25 +0.0295</td>
+<td>5.5</td>
+<td>61</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Hammerang</td><td><span>Skillshot</span></br><span>Cooldown: 10 seconds</span></br></br><span>Deals <span>50</span> damage to enemies in a line, slowing them by <span>25%</span> for <span>2</span> seconds. Returns after thrown.</td></tr>
+<tr><td>Q</td><td>BOOMerang</td><td></br><span>Deals <span>25</span> damage in a small area around your BOOMerang.</span></td></tr>
+<tr><td>W</td><td>Thunderstorm</td><td><span>Cooldown: 15 seconds</span></br></br><span>Passive: <span>Deals <span>40 </span>damage to a random nearby enemy every <span>8</span> seconds.</br></br><span>Activate:</span> <span>Deals <span>40</span> damage to up to 4 nearby enemies. Hitting the same enemy multiple times causes the damage to be reduced by <span>25%</span> each hit.</td></tr>
+<tr><td>E</td><td>Barrel Roll</td><td><span>Cooldown: 16 seconds</span></br></br><span>Dashes to area. Grants <span>75</span> shield for <span>2 </span>seconds.</td></tr>
+<tr><td>R</td><td>Aerial Blitzkrieg</td><td><span>Cooldown: 90 seconds</span></br></br><span>Deals <span>150</span> damage to all enemies near Falstad, stunning non-structure targets for <span>1.5</span> seconds.</td></tr>
+<tr><td>R</td><td>Shock And Awe</td><td><span>Heroic Ability</span></br><span>Skillshot</span></br><span>Cooldown: 90 seconds</span></br></br><span>Deals <span>280</span> damage to enemies within the targeted area.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>Stormhammer</td>td><span>Stormhammer</span></br><span></br>Attacks deal <span>50%</span> damage against an additional target.</td></tr>
+<tr><td>2</td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>2</td><td>Hammerang</td><td><span>BOOMerang Q</span></br><span></br>Can reactivate to deal additional damage around the Hammerang.</td></tr>
+<tr><td>2</td><td>Focused Attack</td><td><span>Focused Attack</span></br><span></br>Every <span>5</span> seconds, your next Basic Attack deals <span>30%</span> additional damage.</td></tr>
+<tr><td>2</td><td>Invigorate</td><td><span>Invigorate</span></br><span></br>Dealing damage with Abilities heals you for <span>45</span> Health over <span>3</span> seconds.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Thunderstorm</td><td><span>Cloudburst W</span></br><span></br>Gain <span>8%</span> additional Attack Speed every time Thunderstorm hits a target. Lasts for <span>5</span> seconds and stacks <span>5</span> times.</td></tr>
+<tr><td>3</td><td>Berserk</td><td><span>Berserk</span></br><span></br>Activate to increase your Attack Speed by <span>40%</span> and Movement Speed by <span>10%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>4</td><td>Aerial Blitzkrieg</td><td><span>Aerial Blitzkrieg R</span></br><span>Cooldown: 90 seconds</span></br></br><span>Deals <span>150</span> damage to all enemies around Falstad. Stuns non-structure targets for <span>1.5</span> seconds.</td></tr>
+<tr><td>4</td><td>Shock And Awe</td><td><span>Shock and Awe R</span></br><span>Cooldown: 90 seconds</span></br></br><span>Deals <span>280</span> damage in long beam.</td></tr>
+<tr><td>5</td><td>Barrel Roll</td><td><span>Afterburner E</span></br><span></br>After using Barrel Roll, gain <span>99.9%</span> Movement Speed for <span>3</span> seconds.</td></tr>
+<tr><td>5</td><td>Battle Fury</td><td><span>Battle Fury</span></br></br><span>Your Basic Attacks increase your Attack Speed by <span>5%</span> and Attack Damage by <span>8</span>. This effect stacks up to <span>5</span> times.</td></tr>
+<tr><td>5</td><td>Giant Killer</td><td><span>Giant Killer</span></br><span></br>Basic Attacks against enemy Heroes deal an additional <span>1.5%</span> of the target's max Health in damage.</td></tr>
+<tr><td>5</td><td>Might And Magic</td><td><span>Might and Magic</span></br></br><span>Your Basic Attacks increase your Abilities' effectiveness by <span>10%.</span> This effect stacks up to <span>4</span> times.</td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Executioner</td><td><span>Executioner</span></br><span></br>Basic Attacks deal <span>???%</span> more damage against slowed, snared, stunned or silenced targets.</td></tr>
+<tr><td>6</td><td>Arcane Teachings</td><td><span>Arcane Teachings</span></br><span></br>Your Ability damage also slows the Move Speed of its target by <span>30%</span> for <span>2</span> seconds.</td></tr>
+<tr><td>6</td><td>Overdrive</td><td><span>Overdrive</span></br><span></br>Activate to raise Ability Power by <span>25%</span> and Mana costs by <span>40%</span> for <span>5</span> seconds.</td></tr>
+<tr><td>6</td><td>Blood For Blood</td><td><span>Blood for Blood</span></br><span></br>Activate to drain <span>15%</span> of target enemy's max Health and slow its Movement Speed by <span>30%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="kerrigan" id="holder-kerrigan">
+<table name="10" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Kerrigan"><h2>Kerrigan</h2></a> - Queen of Blades</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Kerrigan"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">An aggressive hero that gains temporary shielding by attacking enemies and using her abilities. Able to stun enemies and pull them towards her.</p>
+
+<p style="margin:8px;">Once a terran ghost with formidable psionic abilities, Sarah Kerrigan was betrayed by her allies and transformed by the zerg into the Queen of Blades. Now freed of the dark one's corruption, Kerrigan faces a threat that could destroy the galaxy itself.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Damage</td>
+<td>Medium</td> 
+<td>800 +145</td>
+<td>1.664 +0.3007</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>True</td>
+<td>4</td>
+<td>10</td>
+<td>10</td>
+<td>1.25 +0.0295</td>
+<td>2</td>
+<td>62</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Ravage</td><td><span>Cooldown: 8 seconds</span></br></br><span>Leaps to a target, dealing <span>50</span> damage. If Ravage kills the enemy, its cooldown is immediately reset and <span>85%</span> of its Mana cost is returned.</td></tr>
+<tr><td>W</td><td>Impaling Blades</td><td><span>Area of Effect</span></br><span>Cooldown: 12 seconds</span></br></br><span>Deals <span>125</span> damage to enemies within the target area, stunning them for <span>1</span> second.</td></tr>
+<tr><td>E</td><td>Primal Grasp</td><td><span>Cone</span></br><span>Cooldown: 8 seconds</span></br></br><span>Pulls enemies within the target area towards Kerrigan, dealing <span>50</span> damage.</td></tr>
+<tr><td>R</td><td>Summon Ultralisk</td><td><span>Heroic Ability</span></br><span>Cooldown: 80 seconds</span></br></br><span>Summons an Ultralisk that deals <span>40</span> damage. Attacks splash to nearby enemies for <span>20</span> damage. Lasts for <span>20</span> seconds.</td></tr>
+<tr><td>R</td><td>Maelstrom</td><td><span>Heroic Ability</span></br><span>Cooldown: 120 seconds</br><span></br><span>Deals <span>50</span> damage per second to enemies nearby. Lasts for 12 seconds</span>.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>Kerrigan Double Strike</td><td><span>Double Strike</span></br><span></br>When your non-Heroic Abilities damage an enemy, your next Basic Attack hits an additional time for <span>50%</span> damage.</td></tr>
+<tr><td>2</td><td>Focused Attack</td><td><span>Focused Attack</span></br><span></br>Every <span>5</span> seconds, your next Basic Attack deals <span>30%</span> additional damage.</td></tr>
+<tr><td>2</td><td>Invigorate</td><td><span>Invigorate</span></br><span></br>Dealing damage with Abilities heals you for <span>45</span> Health over <span>3</span> seconds.</td></tr>
+<tr><td>2</td><td>Amplified Healing</td><td><span>Amplified Healing</span></br><span></br>Increases healing taken and regeneration effects by <span>40%</span>.</span></td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Impaling Blades</td><td><span>Crushing Swarm W</span></br><span></br>Impaling Blades also spawns <span>2</span> zerglings at the target location.</td></tr>
+<tr><td>3</td><td>Primal Grasp</td><td><span>Primal Blast E</span></br><span></br>After a <span>3</span> second delay, deals <span>30</span> damage to nearby enemies.</td></tr>
+<tr><td>3</td><td>Berserk</td><td><span>Berserk</span></br><span></br>Activate to increase your Attack Speed by <span>40%</span> and Movement Speed by <span>10%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>4</td><td>Maelstrom</td><td><span>Maelstrom R</span></br><span>Cooldown: 120 seconds</br>Duration: 12 seconds</span></br></br><span>Deals <span>50</span> damage per second.</td></tr>
+<tr><td>4</td><td>Summon Ultralisk</td><td><span>Summon Ultralisk R</span></br><span>Cooldown: 80 seconds</span></br></br><span>Summons an Ultralisk that deals <span>40</span> damage. Attacks splash to nearby enemies for <span>20</span> damage. Lasts for <span>20</span> seconds.</td></tr>
+<tr><td>5</td><td>Ravage</td><td><span>Eviscerate Q</span></br><span></br>Increases the range of Ravage by <span>2</span>.</td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Might And Magic</td><td><span>Might and Magic</span></br></br><span>Your Basic Attacks increase your Abilities' effectiveness by <span>10%.</span> This effect stacks up to <span>4</span> times.</td></tr>
+<tr><td>5</td><td>Block</td><td><span>Block</span></br><span></br>Periodically reduces the damage received from Hero Basic Attacks by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Battle Fury</td><td><span>Battle Fury</span></br></br><span>Your Basic Attacks increase your Attack Speed by <span>5%</span> and Attack Damage by <span>8</span>. This effect stacks up to <span>5</span> times.</td></tr>
+<tr><td>5</td><td>Giant Killer</td><td><span>Giant Killer</span></br><span></br>Basic Attacks against enemy Heroes deal an additional <span>1.5%</span> of the target's max Health in damage.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Fury of the Swarm</td><td><span>Fury of the Swarm</span></br><span></br>Basic Attacks splash for <span>50%</span> damage around Kerrigan.</td></tr>
+<tr><td>6</td><td>Arcane Teachings</td><td><span>Arcane Teachings</span></br><span></br>Your Ability damage also slows the Move Speed of its target by <span>30%</span> for <span>2</span> seconds.</td></tr>
+<tr><td>6</td><td>Imposing Presence</td><td><span>Imposing Presence</span></br><span></br>Enemies that attack you have their Attack Speed slowed by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Executioner</td><td><span>Executioner</span></br><span></br>Basic Attacks deal <span>???%</span> more damage against slowed, snared, stunned or silenced targets.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="barbarian" id="holder-barbarian">
+<table name="11" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Barbarian"><h2>Barbarian</h2></a> - Wanderer of the North</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Barbarian"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">A direct fighter who uses Fury instead of mana. Leeches life from enemies by attacking and using abilities.</p>
+
+<p style="margin:8px;">From the frozen Dreadlands of the north comes the mighty Barbarian warriors. After surviving of the destruction of her home and death of her tribe, Sonya wanders Sanctuary in search of battle and a better life for her people.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td></td>
+<td>Medium</td> 
+<td>1040 +240</td>
+<td>2.168 +0.5</td>
+<td>100 +</td>
+<td>0 +</td>
+<td>True</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>1.25 +0.0295</td>
+<td>1.5</td>
+<td>59</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Ancient Spear</td><td><span>Cooldown: 15 seconds</br></br><span>Throws out a chained spear that pulls Sonya to the first enemy unit it hits, dealing <span>70</span> damage and briefly stunning them. If Ancient Spear connects, Sonya generates span>20</span> Fury.</td></tr>
+<tr><td>W</td><td>Hammer of the Ancients</td><td><span>Cooldown: 1 second</br></br><span>Deals <span></span> to the target enemy.</br></br><span>This ability gets stronger with more Attack Damage.</span></td></tr>
+<tr><td>E</td><td>Whirlwind</td><td><span>Cooldown: ??? second</br></br><span>Deals <span></span> to nearby enemies over <span>4</span> seconds.</br></br><span>This ability gets stronger with more Attack Damage.</span></td></tr>
+<tr><td>R</td><td>Leap</td><td><span>Heroic Ability</span></br><span>Cooldown: 40 seconds</br></br><span>Leap into the air, dealing <span>50</span> damage to nearby enemies, and stunning them for <span>1.5</span> seconds.</td></tr>
+<tr><td>R</td><td>Wrath of the Berserker</td><td><span>Heroic Ability</span></br><span><span>Cooldown: 100 seconds</br><span><span>Duration: 12 seconds</br></br><span>Gains <span>+50%</span> bonus Attack Speed, <span>+25%</span> bonus Move Speed, <span>+10%</span> additional Lifesteal and becomes Unstoppable.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>Bribe</td><td><span>Bribe</span></br></br><span>Kill enemy minions to gain stacks of Bribe. At <span>50</span> stacks, activate to capture target Mercenary Camp. Does not work on Golems.</span></td></tr>
+<tr><td>2</td><td>Superiority</td><td><span>Superiority</span></br><span></br>Reduce damage taken from non-heroic enemies by <span>50%</span>.</td></tr>
+<tr><td>2</td><td>Whirlwind</td><td><span>Wind Shear E</span></br><span></br>Casting Whirlwind removes all movement impairing effects.</td></tr>
+<tr><td>2</td><td>Focused Attack</td><td><span>Focused Attack</span></br><span></br>Every <span>5</span> seconds, your next Basic Attack deals <span>30%</span> additional damage.</td></tr>
+<tr><td>2</td><td>Amplified Healing</td><td><span>Amplified Healing</span></br><span></br>Increases healing taken and regeneration effects by <span>40%</span>.</span></td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Relentless</td><td><span>Relentless</span></br><span></br>Reduces the duration of stuns, slows, and roots against your Hero by <span>???%</span>.</span></td></tr>
+<tr><td>3</td><td>Hammer of the Ancients</td><td><span>Cleave W</span></br><span></br>Hammer of the Ancients now cleaves nearby targets for <span>100%</span> of the original damage.</td></tr>
+<tr><td>3</td><td>First Aid</td><td><span>First Aid</span></br><span></br>Activate to heal <span>???%</span> of your max Health over <span>4</span> seconds.</span></td></tr>
+<tr><td>4</td><td>Leap</td><td><span>Leap R</span></br><span>Cooldown: 40 seconds</br></br><span>Leap into the air, dealing <span>50</span> damage to nearby enemies, stunning them for <span>1.5</span> seconds.</td></tr>
+<tr><td>4</td><td>Wrath of the Berserker</td><td><span>Wrath of the Berserker R</span></br><span>Cooldown: 100 seconds</br>Duration: 12 seconds</span></br></br><span><span>Gains <span>+50%</span> bonus Attack Speed, <span>+25%</span> bonus Move Speed, <span>+10%</span> additional Lifesteal and becomes Unstoppable.</td></tr>
+<tr><td>5</td><td>Battle Fury</td><td><span>Battle Fury</span></br></br><span>Your Basic Attacks increase your Attack Speed by <span>5%</span> and Attack Damage by <span>8</span>. This effect stacks up to <span>5</span> times.</td></tr>
+<tr><td>5</td><td>Burning Rage</td><td><span>Burning Rage</span></br><span></br>Deals <span>40</span> damage to nearby enemies.</td></tr>
+<tr><td>5</td><td>Block</td><td><span>Block</span></br><span></br>Periodically reduces the damage received from Hero Basic Attacks by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Giant Killer</td><td><span>Giant Killer</span></br><span></br>Basic Attacks against enemy Heroes deal an additional <span>1.5%</span> of the target's max Health in damage.</td></tr>
+<tr><td>6</td><td>Executioner</td><td><span>Executioner</span></br><span></br>Basic Attacks deal <span>???%</span> more damage against slowed, snared, stunned or silenced targets.</td></tr>
+<tr><td>6</td><td>Imposing Presence</td><td><span>Imposing Presence</span></br><span></br>Enemies that attack you have their Attack Speed slowed by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Blood For Blood</td><td><span>Blood for Blood</span></br><span></br>Activate to drain <span>15%</span> of target enemy's max Health and slow its Movement Speed by <span>30%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Stoneskin</td><td><span>Stoneskin</span></br><span></br>Activate to gain <span>800</span> Shields for <span>5</span> seconds.</td></tr>
+<tr><td>7</td><td>Resurgence of the Storm</td><td><span>Resurgence of the Storm</span></br><span></br>Upon dying, revive back at your Altar after 5 seconds. This can occur once every <span>120</span> seconds.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="nova" id="holder-nova">
+<table name="12" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Nova"><h2>Nova</h2></a> - Dominion Ghost</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Nova"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Automatically cloaks while out of combat. Snipes enemies from afar, and creates Decoys of herself to fool enemies.</p>
+
+<p style="margin:8px;">November "Nova" Terra is a ghost of the Terran Dominion and one of the most powerful psionic soldiers ever known. Nova is highly focused, determined, and extremely deadly. Even Jim Raynor wouldn't want to be caught within her crosshairs.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Damage</td>
+<td>Medium</td> 
+<td>700 +100</td>
+<td>1.457 +0.207</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>False</td>
+<td>4</td>
+<td>9</td>
+<td>9</td>
+<td>1.25 +0.057</td>
+<td>6.5</td>
+<td>60</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Snipe</td><td><span>Skillshot</span></br><span>Cooldown: 12 seconds</span></br></br><span>Deals <span>100</span> damage to the first target it contacts.</td></tr>
+<tr><td>W</td><td>Pinning Shot</td><td><span>Cooldown: 15 seconds</span></br></br><span>Deals <span>50</span> damage to an enemy and slows it by <span>30%</span> for <span>2.5</span> seconds.</td></tr>
+<tr><td>R</td><td>Triple Tap</td><td><span>Heroic Ability</span></br><span>Cooldown: 100 seconds</br></br><span>Reveals the target Hero and after <span>1</span> second, fires <span>3</span> shots that strike the first Hero or Structure they come in contact with. Each shot deals <span>80</span> damage.</td></tr>
+<tr><td>R</td><td>Precision Strike</td><td><span>Heroic Ability</span></br><span>Cooldown: 60 seconds</br></br><span>After a short delay, deals <span>300</span> damage to enemies within target area. Unlimited range.</td></tr>
+<tr><td>E</td><td>Holo Decoy</td><td><span>Cooldown: 15 seconds</br></br><span>Spawns a cloaked decoy for <span>3 </span>seconds that attacks enemies but deals no damage. When it expires the decoy explodes, dealing <span>50</span> damage to nearby enemies.</br></br>Using this ability does not break cloak.</td></tr>
+<tr><td>E</td><td>Sic Holo Drone</td><td>Orders your Holo Drone to attack a target until it is killed or until another sic order is issued.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>Nova FN92 Sniper Rifle</td><td><span>FN92 Sniper Rifle</span></br><span></br>Nova gains <span>+1</span> Attack and Vision range.</td></tr>
+<tr><td>2</td><td>Focused Attack</td><td><span>Focused Attack</span></br><span></br>Every <span>5</span> seconds, your next Basic Attack deals <span>30%</span> additional damage.</td></tr>
+<tr><td>2</td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>2</td><td>Snipe</td><td><span>Explosive Round Q</span></br><span></br>Snipe also deals <span>50%</span> damage in a <span>2.5</span> radius around the primary target.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Holo Decoy</td><td><span>Holo Drone E</span></br><span></br>You can control your Decoy and it now does damage when attacking.</td></tr>
+<tr><td>3</td><td>Berserk</td><td><span>Berserk</span></br><span></br>Activate to increase your Attack Speed by <span>40%</span> and Movement Speed by <span>10%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>4</td><td>Triple Tap</td><td><span>Triple Tap R</span></br><span>Cooldown: 100 seconds</br></br><span>Reveals target and after <span>1</span> second, fires <span>3</span> shots dealing <span>80</span> damage each.</td></tr>
+<tr><td>4</td><td>Precision Strike</td><td><span>Precision Strike R</br><span>Cooldown: 60 seconds</br></br><span>After a <span>3</span> second delay, deals <span>300</span> damage in a <span>4</span> radius. Unlimited range.</td></tr>
+<tr><td>5</td><td>Nova Passive Buff Weapon</td><td><span>Advanced Cloaking Suit Trait</span></br><span></br>While Cloaked, move <span>25%</span> faster and regenerate an additional <span>1.17%</span> Health every <span>2</span> seconds.</td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Giant Killer</td><td><span>Giant Killer</span></br><span></br>Basic Attacks against enemy Heroes deal an additional <span>1.5%</span> of the target's max Health in damage.</td></tr>
+<tr><td>5</td><td>Battle Fury</td><td><span>Battle Fury</span></br></br><span>Your Basic Attacks increase your Attack Speed by <span>5%</span> and Attack Damage by <span>8</span>. This effect stacks up to <span>5</span> times.</td></tr>
+<tr><td>6</td><td>Pinning Shot</td><td><span>Crippling Shot W</span></br><span></br>The target also takes <span>30%</span> increased damage for <span>2</span> seconds.</td></tr>
+<tr><td>6</td><td>Executioner</td><td><span>Executioner</span></br><span></br>Basic Attacks deal <span>???%</span> more damage against slowed, snared, stunned or silenced targets.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Overdrive</td><td><span>Overdrive</span></br><span></br>Activate to raise Ability Power by <span>25%</span> and Mana costs by <span>40%</span> for <span>5</span> seconds.</td></tr>
+<tr><td>6</td><td>Rewind</td><td><span>Rewind</span></br><span></br>Activate to reduce the cooldown of your Basic Abilities by <span>10</span> seconds.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="demonhunter" id="holder-demonhunter">
+<table name="13" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Demon Hunter"><h2>Demon Hunter</h2></a> - Vengeance Incarnate</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Demon Hunter"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Strikes at the enemy from afar and gains Hatred, increasing her attack speed. Can Vault away if enemies get too close.</p>
+
+<p style="margin:8px;">Valla witnessed the ferocity of hellspawn firsthand as the demons ravaged her village and left her for dead. Now, with no people to call her own, her only allegiance is to her cause: to rid Sanctuary of the demonic filth corrupting its lands.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Damage</td>
+<td>N/A</td> 
+<td>700 +110</td>
+<td>1.461 +0.2265</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>False</td>
+<td>4</td>
+<td>8</td>
+<td>8</td>
+<td>1.25 +0.057</td>
+<td>5.5</td>
+<td>64</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Hungering Arrow</td><td><span>Skillshot</span></br><span>Cooldown: 14 seconds</br></br><span>Deals <span>66</span> damage to the first target it contacts, then seeks out up to <span>2</span> additional enemies dealing <span>33</span> damage. Can hit an enemy multiple times.</td></tr>
+<tr><td>W</td><td>Multishot</td><td><span>Cone</span></br><span>Cooldown: 8 seconds</br></br><span>Deals <span>60</span> damage to enemies within the target area.</td></tr>
+<tr><td>E</td><td>Vault</td><td><span>Cooldown: 10 seconds</br></br><span>Dashes to the target area.</td></tr>
+<tr><td>R</td><td>Strafe</td><td><span>Heroic Ability</span></br><span>Cooldown: 80 seconds</br></br><span>Attacks up to <span>3</span> enemies for <span></span> damage every <span>1.25</span> seconds. She is able to move and use her Vault ability while strafing. Lasts for <span>4.5</span> seconds</span>.</br></br><span>This ability gets stronger with more Attack Damage.</span></td></tr>
+<tr><td>R</td><td>Rain of Vengeance</td><td><span>Heroic Ability</span></br><span>Cooldown: 100 seconds</br></br><span>Launches <span>2</span> waves of Shadow Beasts that deal <span>100</span> damage to enemies within the target area, stunning them for <span>0.5</span> seconds per wave.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>Demolitionist</td><td><span>Demolitionist</span></br><span></br>Basic Attacks against enemy towers destroy <span>2</span> ammo.</td></tr>
+<tr><td>2</td><td>Rancor</td><td><span>Rancor Trait</span></br><span><span>+3%</span> Ability Power per Hatred stack</br></br>Increases Hatred stack limit from <span>5</span> to <span>10</span>.</td></tr>
+<tr><td>2</td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>2</td><td>Hungering Arrow</td><td><span>Puncturing Arrow Q</span></br><span></br>Increases the number of enemies hit to <span>4</span> and range by <span>2</span>.</td></tr>
+<tr><td>2</td><td>Focused Attack</td><td><span>Focused Attack</span></br><span></br>Every <span>5</span> seconds, your next Basic Attack deals <span>30%</span> additional damage.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Manticore</td><td><span>Manticore</span></br><span></br>Every <span>3rd</span> Basic Attack against the same target deals <span>50%</span> additonal damage.</td></tr>
+<tr><td>3</td><td>Multishot</td><td><span>Arsenal W</span></br><span></br>Multishot also launches <span>3</span> rockets, each dealing <span>35</span> damage.</td></tr>
+<tr><td>3</td><td>Berserk</td><td><span>Berserk</span></br><span></br>Activate to increase your Attack Speed by <span>40%</span> and Movement Speed by <span>10%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>4</td><td>Strafe</td><td><span>Strafe R</span></br><span>Cooldown: 80 seconds</br>Duration: 4.5 seconds</span></br><span></span></br><span>The Demon Hunter attacks up to <span>3</span> enemies for <span></span> damage every <span>1.25</span> seconds. She is able to move and use her Vault ability while strafing. Lasts for <span>4.5</span> seconds</span>.</br></br><span>This ability gets stronger with more Attack Damage.</span></td></tr>
+<tr><td>4</td><td>Rain of Vengeance</td><td><span>Rain of Vengeance R</br></span><span>Cooldown: 100 seconds</br></br><span>Launches 2 waves that deal <span>100</span> damage. Enemies hit are stunned for <span>0.5</span> seconds.</td></tr>
+<tr><td>5</td><td>Vault</td><td><span>Repeating Arrow E</span></br><span></br>Casting Vault refreshes the cooldown of Hungering Arrow.</td></tr>
+<tr><td>5</td><td>Giant Killer</td><td><span>Giant Killer</span></br><span></br>Basic Attacks against enemy Heroes deal an additional <span>1.5%</span> of the target's max Health in damage.</td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>6</td><td>Executioner</td><td><span>Executioner</span></br><span></br>Basic Attacks deal <span>???%</span> more damage against slowed, snared, stunned or silenced targets.</td></tr>
+<tr><td>6</td><td>Arcane Teachings</td><td><span>Arcane Teachings</span></br><span></br>Your Ability damage also slows the Move Speed of its target by <span>30%</span> for <span>2</span> seconds.</td></tr>
+<tr><td>6</td><td>Vault</td><td><span>Tumble E</span></br><span></br>Stores up to <span>2</span> charges of Vault, and drops a Caltrop that slows enemies by <span>60%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Overdrive</td><td><span>Overdrive</span></br><span></br>Activate to raise Ability Power by <span>25%</span> and Mana costs by <span>40%</span> for <span>5</span> seconds.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="malfurion" id="holder-malfurion">
+<table name="14" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Malfurion"><h2>Malfurion</h2></a> - Archdruid</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Malfurion"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Heals allies and restores their mana. Able to reveal and root groups of enemies from a distance.</p>
+
+<p style="margin:8px;">Malfurion Stormrage is the greatest druid on Azeroth, and a student of the demi-god Cenarius. Communing with nature and Cenarius through the Emerald dream, Malfurion protects the wilds from both demonic influences and the savage Horde.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Support</td>
+<td>N/A</td> 
+<td>835 +150</td>
+<td>1.7382 +0.3125</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>False</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>1.25 +0.057</td>
+<td>5.5</td>
+<td>52</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Regrowth</td><td><span>Cooldown: 7 seconds</br></br><span>Heals the targeted ally for <span>40 </span>health instantly and an additional <span>??? </span>health over the next <span>10</span> seconds.</td></tr>
+<tr><td>W</td><td>Moonfire</td><td><span>Area of Effect</span></br><span>Cooldown: 3 seconds</br></br><span>Deals <span>30</span> damage to enemies within target area and reveals them for <span>2</span> seconds.</td></tr>
+<tr><td>E</td><td>Entangling Roots</td><td><span>Area of Effect</span></br><span>Cooldown: 12 seconds</br></br><span>Roots enemies within the target area for <span>1.5</span> seconds, and deals <span>10</span> damage per second. Area affected grows larger over <span>3</span> seconds.</td></tr>
+<tr><td>R</td><td>Tranquility</td><td><span>Heroic Ability</br><span>Cooldown: 100 seconds</br></br><span>Heals <span>40</span> health per second to nearby allies over <span>10</span> seconds.</td></tr>
+<tr><td>R</td><td>Twilight Dream</td><td><span>Heroic Ability</br><span>Cooldown: 90 seconds</br></br><span>After a short delay, deals <span>100</span> damage in a large area surrounding Malfurion. Enemies hit are silenced and slowed by <span>-50%</span> for <span>4</span> seconds.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>Malfurion Elune's Grace</td><td><span>Elune's Grace</span></br><span></br>Increases the range of Regrowth, Moonfire, and Entangling Roots by <span>2</span>.</td></tr>
+<tr><td>1</td><td>Malfurion Passive Buff Weapon</td><td><span>Shan'do's Clarity Trait</span></br><span>Innervation's Cooldown is <span>10</span> seconds faster and grants mana twice as fast.</td></tr>
+<tr><td>2</td><td>Regrowth</td><td><span>Overgrowth Q</span></br><span></br>The heal over time effect also heals allies nearby for <span>???%</span>.</td></tr>
+<tr><td>2</td><td>Entangling Roots</td><td><span>Vengeful Roots E</span></br><span></br>Using Entangling Roots also summons two Treants that deal <span>10</span> damage and last for <span>12</span> seconds.</td></tr>
+<tr><td>2</td><td>Invigorate</td><td><span>Invigorate</span></br><span></br>Dealing damage with Abilities heals you for <span>45</span> Health over <span>3</span> seconds.</td></tr>
+<tr><td>3</td><td>Moonfire</td><td><span>Lunar Shower W</span></br><span></br>Using Moonfire causes the next Moonfire to deal <span>???%</span> more damage and reduces the cooldown by <span>0.5</span> seconds. Stacks up to <span>3</span> times.</td></tr>
+<tr><td>3</td><td>Cleanse</td><td><span>Cleanse</span></br><span></br>Removes all stuns, roots, and slows from the target and makes them unstoppable for <span>1</span> second.</td></tr>
+<tr><td>3</td><td>Relentless</td><td><span>Relentless</span></br><span></br>Reduces the duration of stuns, slows, and roots against your Hero by <span>???%</span>.</span></td></tr>
+<tr><td>4</td><td>Tranquility</td><td><span>Tranquility R</span></br><span>Cooldown: 100 seconds</br>Duration: 10 seconds</span></br></br><span>Heals <span>40</span> health per second to nearby allies over <span>10</span> seconds.</td></tr>
+<tr><td>4</td><td>Twilight Dream</td><td><span>Twilight Dream R</span></br><span>Cooldown: 90 seconds</br></br><span>After a short delay, deals <span>100</span> damage in a large AoE. Targets are silenced and slowed by <span>-50%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>5</td><td>Healing Ward</td><td><span>Healing Ward</span></br><span></br>Place on the ground to heal allies in an area for <span>1%</span> of their max HP every second for <span>10</span> seconds</td></tr>
+<tr><td>5</td><td>Sprint</td><td><span>Sprint</span></br><span></br>Activate to increase Movement Speed by <span>75%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>5</td><td>Ice Block</td><td><span>Ice Block</span></br><span></br>Activate to place yourself in stasis and gain invulnerability for <span>3</span> seconds.</td></tr>
+<tr><td>5</td><td>Shrink Ray</td><td><span>Shrink Ray</span></br><span></br>Activate to reduce an enemy Hero's damage by <span>50%</span> and Movement Speed by <span>50%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Rewind</td><td><span>Rewind</span></br><span></br>Activate to reduce the cooldown of your Basic Abilities by <span>10</span> seconds.</td></tr>
+<tr><td>6</td><td>Stoneskin</td><td><span>Stoneskin</span></br><span></br>Activate to gain <span>800</span> Shields for <span>5</span> seconds.</td></tr>
+<tr><td>6</td><td>Overdrive</td><td><span>Overdrive</span></br><span></br>Activate to raise Ability Power by <span>25%</span> and Mana costs by <span>40%</span> for <span>5</span> seconds.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="sgthammer" id="holder-sgthammer">
+<table name="15" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Sgt. Hammer"><h2>Sgt. Hammer</h2></a> - Siege Tank Operator</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Sgt. Hammer"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Sieges up gaining increased ranged, adding splash damage, and dealing more damage to distant targets.</p>
+
+<p style="margin:8px;">Sergeant Bama "the Hammer" Kowalski has served some of the toughest tours around the Koprulu sector. The thunderous roar of her siege tank's shock cannon strikes fear right into the heart of the toughest of warriors... including some of her allies.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Siege</td>
+<td>Hard</td> 
+<td>770 +170</td>
+<td>1.6054 +0.3554</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>False</td>
+<td>4</td>
+<td>10</td>
+<td>10</td>
+<td>1.25 +0.0131</td>
+<td>5.5</td>
+<td>50</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Tank Mode</td><td><span></br>Return to Tank Mode.</td></tr>
+<tr><td>Q</td><td>Siege Mode</td><td><span>Cooldown: 5 seconds</br></br><span><span>Increases weapon damage by <span>5</span>, attack range by <span>4</span>, and Basic Attacks splash for <span>???</span> damage. Cannot move in Siege Mode.</td></tr>
+<tr><td>W</td><td>100 Caliber Blast</td><td><span>Cooldown: 12 seconds</br></br><span>Deals <span>50</span> damage. Knocks back enemies.</td></tr>
+<tr><td>E</td><td>Spider Mines</td><td><span>Cooldown: 10 seconds</br>Duration: 45 seconds</br></br><span>Creates <span>3</span> mines that deal <span>50</span> damage and slow enemies by <span>25%</span> for <span>1.5</span> seconds.</td></tr>
+<tr><td>R</td><td>Napalm Strike</td><td><span>Cooldown: 6 seconds</br>Duration: 4 seconds</br></br><span>Deals <span>40</span> damage on impact. Additionally deals <span>30</span> damage per second.</td></tr>
+<tr><td>R</td><td>Blunt Force Gun</td><td><span>Cooldown: 100 seconds</br></br><span>Deals <span>150 </span>damage to enemies in path. Reveals as it travels. </td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>TalentBucketT1_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>1</td><td>Bribe</td><td><span>Bribe</span></br></br><span>Kill enemy minions to gain stacks of Bribe. At <span>50</span> stacks, activate to capture target Mercenary Camp. Does not work on Golems.</span></td></tr>
+<tr><td>2</td><td>Focused Attack</td><td><span>Focused Attack</span></br><span></br>Every <span>5</span> seconds, your next Basic Attack deals <span>30%</span> additional damage.</td></tr>
+<tr><td>2</td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>2</td><td>Spider Mines Mastery 1</td><td><span>Mine Field E</span></br><span></br><span>Increases the number of mines spawned by <span>2</span>.</td></tr>
+<tr><td>3</td><td>SgtHammer Passive Buff Weapon Talent</td><td><span>Maelstrom Rounds Trait</span></br><span></br>Increase damage to enemies over <span>4.5</span> range away to <span>+25%</span> damage</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>100 Caliber Blast Mastery 1</td><td><span>101 Caliber Blast W</span></br><span></br>Also creates a wall of debris that blocks pathing for <span>4</span> seconds.</td></tr>
+<tr><td>3</td><td>Berserk</td><td><span>Berserk</span></br><span></br>Activate to increase your Attack Speed by <span>40%</span> and Movement Speed by <span>10%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>4</td><td>Blunt Force Gun</td><td><span>Blunt Force Gun R</span></br><span>Cooldown: 100 seconds</br></br><span>Deals <span>150 </span>damage to enemies in path. Reveals as it travels. </td></tr>
+<tr><td>4</td><td>Napalm Strike</td><td><span>Napalm Strike R</span></br><span>Cooldown: 6 seconds</br>Duration: 4 seconds</br></br><span>Deals <span>40</span> damage on impact. Additionally deals <span>30</span> damage per second.</td></tr>
+<tr><td>5</td><td>Battle Fury</td><td><span>Battle Fury</span></br></br><span>Your Basic Attacks increase your Attack Speed by <span>5%</span> and Attack Damage by <span>8</span>. This effect stacks up to <span>5</span> times.</td></tr>
+<tr><td>5</td><td>SgtHammer Crucio X-2 Cannon Talent</td><td><span>Crucio X-2 Cannon</span></br><span></br>Sgt. Hammer gains <span>+2</span> Basic Attack range and <span>+2</span> vision radius.</td></tr>
+<tr><td>5</td><td>Giant Killer</td><td><span>Giant Killer</span></br><span></br>Basic Attacks against enemy Heroes deal an additional <span>1.5%</span> of the target's max Health in damage.</td></tr>
+<tr><td>5</td><td>Ice Block</td><td><span>Ice Block</span></br><span></br>Activate to place yourself in stasis and gain invulnerability for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Siege Mode Mastery 1</td><td><span>Hover Siege Mode Q</span></br><span></br>Siege Mode allows slow movement.</span></td></tr>
+<tr><td>6</td><td>Executioner</td><td><span>Executioner</span></br><span></br>Basic Attacks deal <span>???%</span> more damage against slowed, snared, stunned or silenced targets.</td></tr>
+<tr><td>6</td><td>Blood For Blood</td><td><span>Blood for Blood</span></br><span></br>Activate to drain <span>15%</span> of target enemy's max Health and slow its Movement Speed by <span>30%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="zeratul" id="holder-zeratul">
+<table name="16" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Zeratul"><h2>Zeratul</h2></a> - Dark Prelate</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Zeratul"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Automatically cloaks while out of combat. Can Blink in and out of combat and harass with Singularity Bomb.</p>
+
+<p style="margin:8px;">The enigmatic Dark Templar Zeratul faithfully serves the Xel'Naga. While he expertly wields the powers of the Void, it is his wisdom that earns him the respect of the Koprulu sector's greatest leaders - despite his penchant for dramatic entrances.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Leveltd>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td>Damage</td>
+<td>Hard</td> 
+<td>820 +135</td>
+<td>1.707 +0.2812</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>True</td>
+<td>4</td>
+<td>15</td>
+<td>15</td>
+<td>1.25 +0.0205</td>
+<td>0.75</td>
+<td>65</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Cleave</td><td><span>Cooldown: 6 seconds</span></br></br><span>Deals <span>75 </span>damage to nearby enemies.</td></tr>
+<tr><td>W</td><td>Singularity Spike</td><td><span>Cooldown: 12 seconds</br></br><span>Flings a Singularity spike towards the target that sticks to the first enemy it contacts. Deals <span>50 </span>damage after <span>1</span> second and slows the enemy by <span>40%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>E</td><td>Blink</td><td><span>Cooldown: 10 seconds</br></br><span>Teleports to the target location.</br></br>Using this ability does not break cloak.</td></tr>
+<tr><td>R</td><td>Shadow Assault</td><td><span>Heroic Ability</span></br><span>Cooldown: 100 seconds</br>Duration: 10 seconds</br></br><span>Gains <span>+25%</span> Attack Speed, <span>10</span> health on hit, and charges enemies.</td></tr>
+<tr><td>R</td><td>Void Prison</td><td><span>Heroic Ability</span></br></br><span>Cooldown: 100 seconds</br></br><span>Traps targets for <span>5</span> seconds. Heroes, Minions, and Structures trapped become invulnerable.</br></br>Caster is immune.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>TalentBucketT1_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>1</td><td>Assassin's Blade</td><td><span>Assassin's Blade Trait</span></br></br><span>Gain <span>25%</span> Attack Damage for <span>5</span> seconds when breaking cloak. <span>10%</span> increased movement speed while cloaked.</td></tr>
+<tr><td>2</td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>2</td><td>Focused Attack</td><td><span>Focused Attack</span></br><span></br>Every <span>5</span> seconds, your next Basic Attack deals <span>30%</span> additional damage.</td></tr>
+<tr><td>2</td><td>Amplified Healing</td><td><span>Amplified Healing</span></br><span></br>Increases healing taken and regeneration effects by <span>40%</span>.</span></td></tr>
+<tr><td>3</td><td>Relentless</td><td><span>Relentless</span></br><span></br>Reduces the duration of stuns, slows, and roots against your Hero by <span>???%</span>.</span></td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Singularity Bomb Mastery 1</td><td><span>Singularity Bomb W</span></br><span></br>Bomb now explodes for AoE damage and slow, regardless if it hits a target or not.</td></tr>
+<tr><td>3</td><td>Berserk</td><td><span>Berserk</span></br><span></br>Activate to increase your Attack Speed by <span>40%</span> and Movement Speed by <span>10%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>4</td><td>Shadow Assault</td><td><span>Shadow Assault R</span></br><span>Cooldown: 100 seconds</br>Duration: 10 seconds</br></br><span>Gains <span>+25%</span> Attack Speed, <span>10</span> health on hit, and Basic Attacks charge enemies.</td></tr>
+<tr><td>4</td><td>Void Prison</td><td><span>Void Prison R</span></br><span>Cooldown: 100 seconds</br></br><span>Traps targets for <span>5</span> seconds. Heroes, Minions, and Structures trapped become invulnerable.</br></br>Caster is immune.</td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Giant Killer</td><td><span>Giant Killer</span></br><span></br>Basic Attacks against enemy Heroes deal an additional <span>1.5%</span> of the target's max Health in damage.</td></tr>
+<tr><td>5</td><td>Cleave Mastery 1</td><td><span>Rending Cleave Q</span><span></br></br>Deals an additional <span>50%</span> damage over <span>5</span> seconds.</span></td></tr>
+<tr><td>5</td><td>Burning Rage</td><td><span>Burning Rage</span></br><span></br>Deals <span>40</span> damage to nearby enemies.</td></tr>
+<tr><td>5</td><td>Block</td><td><span>Block</span></br><span></br>Periodically reduces the damage received from Hero Basic Attacks by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>6</td><td>Vorpal Blade</td><td><span>Vorpal Blade Trait</span></br><span></br>Activate to teleport to the last target you attacked within <span>3</span> seconds. <span>15</span> second cooldown.</td></tr>
+<tr><td>6</td><td>Imposing Presence</td><td><span>Imposing Presence</span></br><span></br>Enemies that attack you have their Attack Speed slowed by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Blink Mastery 1</td><td><span>Wormhole E</span><span></br></br>For <span>3</span> seconds, Zeratul can activate Blink again to instantly return to the point where it was cast from.</td></tr>
+<tr><td>6</td><td>Executioner</td><td><span>Executioner</span></br><span></br>Basic Attacks deal <span>???%</span> more damage against slowed, snared, stunned or silenced targets.</td></tr>
+<tr><td>6</td><td>Blood For Blood</td><td><span>Blood for Blood</span></br><span></br>Activate to drain <span>15%</span> of target enemy's max Health and slow its Movement Speed by <span>30%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Resurgence of the Storm</td><td><span>Resurgence of the Storm</span></br><span></br>Upon dying, revive back at your Altar after 5 seconds. This can occur once every <span>120</span> seconds.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="tyrael" id="holder-tyrael">
+<table name="17" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Tyrael"><h2>Tyrael</h2></a> - Archangel of Justice</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Tyrael"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Protects his allies by transferring damage from them and can absorb a lot of damage. Explodes when he dies damaging nearby enemies.</p>
+
+<p style="margin:8px;">Among the angels it is the Archangel of Justice Tyrael who is humanity's greatest defender. Wielding his sword El'druin against the Burning Hells, the Prime Evils would have enslaved Sanctuary and all of humanity long ago if Tyrael had not intervened.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td></td>
+<td>Medium</td> 
+<td>1020 +210</td>
+<td>2.125 +0.4375</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>True</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>1.25 +0.0295</td>
+<td>1.5</td>
+<td>49</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Angelic Flash</td><td></br><span>Teleports Tyrael to El'druin, dealing <span><span>35</span> damage to enemies near the sword, and creating a field of holy energy that blocks enemy pathing for <span>4</span> seconds.</td></tr>
+<tr><td>Q</td><td>Angelic Flash</td><td></br><span>Teleports Tyrael to El'druin, dealing <span><span>35</span> damage to enemies near the sword, and slowing them by <span>25%</span>.</td></tr>
+<tr><td>Q</td><td>Punishing Blade</td><td><span>Area of Effect</span></br><span>Cooldown: 12 seconds</span></br></br><span>Deals <span>35</span> damage to enemies within target area, slowing them by <span>25%</span>.</br></br>Reactivating while the blade is present will teleport to it.</td></tr>
+<tr><td>W</td><td>Righteousness</td><td><span>Cooldown: 12 seconds</span></br></br><span>Shields Tyrael, absorbing <span>250</span> damage for <span>4</span> seconds. When the shield expires it explodes dealing <span>75</span> damage to nearby enemies.</td></tr>
+<tr><td>E</td><td>Hand of Sacrifice</td><td><span>Cooldown: 13 seconds</span></br></br><span>Redirects the next <span>200</span> damage dealt to target ally to Tyrael instead. This damage is reduced by <span>???%</span>.</br></br>Lasts <span>10</span> seconds or until Tyrael and his ally are too far from each other.</br></br>Cannot be used on self.</td></tr>
+<tr><td>R</td><td>Judgment</td><td><span>Heroic Ability</span></br><span>Cooldown: 100 seconds</span></br></br><span>Charges the target, dealing <span>125</span> damage and stunning them for <span>2</span> seconds. While charging, nearby enemies are knocked back and take <span>50</span> damage.</td></tr>
+<tr><td>R</td><td>Sanctification</td><td><span>Heroic Ability</span></br><span>Cooldown: 50 seconds</span></br></br><span>While channeling, Tyrael makes all nearby allied Heroes invulnerable and unstoppable. Lasts <span>3</span> seconds.</br></br>Does not affect Tyrael.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>Tyrael Atonement Weapon</td><td><span>Atonement Trait</span></br><span></br>On dying, resurrect <span>5</span> seconds faster for every Hero hit with Might of El'druin.</td></tr>
+<tr><td>2</td><td>Punishing Blade Mastery 1</td><td><span>Angelic Fury Q</span></br><span></br>A <span>3</span> radius pathing blocker is created after Tyrael teleports to his blade.</td></tr>
+<tr><td>2</td><td>Amplified Healing</td><td><span>Amplified Healing</span></br><span></br>Increases healing taken and regeneration effects by <span>40%</span>.</span></td></tr>
+<tr><td>2</td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Relentless</td><td><span>Relentless</span></br><span></br>Reduces the duration of stuns, slows, and roots against your Hero by <span>???%</span>.</span></td></tr>
+<tr><td>3</td><td>Hand of Sacrifice Mastery 1</td><td><span>Hand of Providence E</span></br><span></br>Enemies caught in the beam take <span>???</span> damage every second.</td></tr>
+<tr><td>3</td><td>Berserk</td><td><span>Berserk</span></br><span></br>Activate to increase your Attack Speed by <span>40%</span> and Movement Speed by <span>10%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>4</td><td>Sanctification</td><td><span>Sanctification R</span></br><span>While channeling, Tyrael makes all nearby allied Heroes invulnerable and unstoppable. Lasts <span>3</span> seconds.</br></br>Does not affect Tyrael.</td></tr>
+<tr><td>4</td><td>Judgment</td><td><span>Judgment R</br></span><span><span>Charges target, dealing <span>125</span> damage and stunning them for <span>2</span> seconds. While charging, nearby enemies are knocked back and take <span>50</span> damage.</td></tr>
+<tr><td>5</td><td>Righteousness Mastery 1</td><td><span>Zealotry W</span></br><span></br>Tyrael becomes unstoppable while Righteousness is active.</td></tr>
+<tr><td>5</td><td>Burning Rage</td><td><span>Burning Rage</span></br><span></br>Deals <span>40</span> damage to nearby enemies.</td></tr>
+<tr><td>5</td><td>Block</td><td><span>Block</span></br><span></br>Periodically reduces the damage received from Hero Basic Attacks by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Giant Killer</td><td><span>Giant Killer</span></br><span></br>Basic Attacks against enemy Heroes deal an additional <span>1.5%</span> of the target's max Health in damage.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Imposing Presence</td><td><span>Imposing Presence</span></br><span></br>Enemies that attack you have their Attack Speed slowed by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Tyrael Worldstone Shard Weapon</td><td><span>Worldstone Shard</span></br><span></br>Basic Attacks deal <span>50%</span> of Attack Damage as splash damage.</td></tr>
+<tr><td>6</td><td>Executioner</td><td><span>Executioner</span></br><span></br>Basic Attacks deal <span>???%</span> more damage against slowed, snared, stunned or silenced targets.</td></tr>
+<tr><td>6</td><td>Stoneskin</td><td><span>Stoneskin</span></br><span></br>Activate to gain <span>800</span> Shields for <span>5</span> seconds.</td></tr>
+<tr><td>7</td><td>Resurgence of the Storm</td><td><span>Resurgence of the Storm</span></br><span></br>Upon dying, revive back at your Altar after 5 seconds. This can occur once every <span>120</span> seconds.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="etc" id="holder-etc">
+<table name="18" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/E.T.C."><h2>E.T.C.</h2></a> - Rock God</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/E.T.C."> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">A heavy front-line hero that knocks around and stuns his foes while buffing his allies. Able to leap anywhere on the battleground.</p>
+
+<p style="margin:8px;">The Power of the Horde incarnated by brutal rhythms and blistering guitar riffs into the form of the most elite tauren chieftain to ever headbang across the surface of Azeroth. Don't bother putting on socks. He's just going to rock them off anyways.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td></td>
+<td>Medium</td> 
+<td>1040 +240</td>
+<td>2.168 +0.5</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>True</td>
+<td>4</td>
+<td>8</td>
+<td>8</td>
+<td>1.25 +0.0131</td>
+<td>1.5</td>
+<td>59</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Powerslide</td><td><span><span>Skillshot</span></br><span>Cooldown: 12 seconds</br></br><span>Slides to a location dealing <span>60</span> damage to enemies in his path and stunning them for <span>1</span> second.</td></tr>
+<tr><td>W</td><td>Face Melt</td><td><span>Cooldown: 12 seconds</br></br><span>Deals <span>50</span> damage to nearby enemies, knocking them back and stunning them briefly.</td></tr>
+<tr><td>E</td><td>Guitar Solo</td><td><span>Cooldown: 8 seconds</br></br><span>E.T.C. regenerates <span>25</span> health per second for <span>4</span> seconds.</td></tr>
+<tr><td>R</td><td>Mosh Pit</td><td><span>Heroic Ability</span></br><span>Cooldown: 100 seconds</br></br><span>Stuns for <span>4</span> seconds. Forces enemies to dance.</td></tr>
+<tr><td>R</td><td>Stage Dive</td><td><span>Heroic Ability</span></br><span>Cooldown: 100 seconds</br></br><span>Leaps to any location. Deals <span>100 </span>damage to enemies in the target area, slowing them for <span>3</span> seconds.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>Echo Pedal</td><td><span>Echo Pedal</span></br><span></br>After using any ability, E.T.C. pulses twice for <span>10</span> damage.</td></tr>
+<tr><td>2</td><td>Amplified Healing</td><td><span>Amplified Healing</span></br><span></br>Increases healing taken and regeneration effects by <span>40%</span>.</span></td></tr>
+<tr><td>2</td><td>Guitar Solo</td><td><span>Guitar Hero E</span></br><span></br>Your next Basic Attack deals double damage and heals E.T.C. for <span>50%</span> of the damage dealt.</td></tr>
+<tr><td>2</td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Face Melt</td><td><span>Face Smelt W</span></br><span></br>Enemies hit by Face Smelt are also slowed by up to <span>???%</span> for <span>2</span> seconds.</td></tr>
+<tr><td>3</td><td>Relentless</td><td><span>Relentless</span></br><span></br>Reduces the duration of stuns, slows, and roots against your Hero by <span>???%</span>.</span></td></tr>
+<tr><td>3</td><td>First Aid</td><td><span>First Aid</span></br><span></br>Activate to heal <span>???%</span> of your max Health over <span>4</span> seconds.</span></td></tr>
+<tr><td>3</td><td>Berserk</td><td><span>Berserk</span></br><span></br>Activate to increase your Attack Speed by <span>40%</span> and Movement Speed by <span>10%</span> for <span>4</span> seconds.</td></tr>
+<tr><td>4</td><td>Mosh Pit</td><td><span>Mosh Pit R</br></span><span>Cooldown: 100 seconds</br></br><span>Forces enemies around you to dance, stunning them for <span>4</span> seconds.</td></tr>
+<tr><td>4</td><td>Stage Dive</td><td><span>Stage Dive R</span></br><span>Cooldown: 100 seconds</br></br><span>Leaps to any location. Deals <span>100 </span>damage. Slows for <span>3</span> seconds.</td></tr>
+<tr><td>5</td><td>Burning Rage</td><td><span>Burning Rage</span></br><span></br>Deals <span>40</span> damage to nearby enemies.</td></tr>
+<tr><td>5</td><td>Block</td><td><span>Block</span></br><span></br>Periodically reduces the damage received from Hero Basic Attacks by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Powerslide</td><td><span>Monster Slide Q</span></br><span></br>Increases width by <span>???%</span>.</td></tr>
+<tr><td>5</td><td>Giant Killer</td><td><span>Giant Killer</span></br><span></br>Basic Attacks against enemy Heroes deal an additional <span>1.5%</span> of the target's max Health in damage.</td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>6</td><td>Uber Rockstar</td><td><span>Uber Rockstar Trait</span></br><span></br>The Rockstar aura also adds <span>25%</span> bonus Movement Speed.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Executioner</td><td><span>Executioner</span></br><span></br>Basic Attacks deal <span>???%</span> more damage against slowed, snared, stunned or silenced targets.</td></tr>
+<tr><td>6</td><td>Imposing Presence</td><td><span>Imposing Presence</span></br><span></br>Enemies that attack you have their Attack Speed slowed by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Stoneskin</td><td><span>Stoneskin</span></br><span></br>Activate to gain <span>800</span> Shields for <span>5</span> seconds.</td></tr>
+<tr><td>7</td><td>Resurgence of the Storm</td><td><span>Resurgence of the Storm</span></br><span></br>Upon dying, revive back at your Altar after 5 seconds. This can occur once every <span>120</span> seconds.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="diablo" id="holder-diablo">
+<table name="19" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Diablo"><h2>Diablo</h2></a> - Lord of Terror</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Diablo"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">An aggressive ability driven hero that charges his enemies and uses flame and lightning to burn them down. Reveals critically damaged Heroes.</p>
+
+<p style="margin:8px;">Known in the ancient tongue as Al'Diabolos, the Prime Evil of Terror, the Demon Lord Diablo seeks to claim the world of Sanctuary for the Burning Hells. His victims are innumerable, his schemes unknowable, and his gender... malleable.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td></td>
+<td>Medium</td> 
+<td>1060 +260</td>
+<td>2.207 +0.543</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>True</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>1.25 +0.0131</td>
+<td>1.25</td>
+<td>56</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Shadow Charge</td><td><span>Cooldown: 10 seconds</br></br><span>Charges an enemy, dealing <span>66</span> damage and stunning them for <span>0.5</span> seconds. If the enemy is knocked into an unpathable location, they are stunned for an additional <span>0.5</span> seconds.</td></tr>
+<tr><td>W</td><td>Fire Stomp</td><td><span>Cooldown: 6 seconds</span></br></br><span>Unleashes fireballs in all directions that deal <span>30</span> damage each.</td></tr>
+<tr><td>E</td><td>Overpower</td><td><span>Cooldown: 12 seconds</span></br></br><span>Grabs the target and slams it behind Diablo, dealing <span>60</span> damage and stunning for <span>0.25</span> seconds.</td></tr>
+<tr><td>R</td><td>Apocalypse</td><td><span>Heroic Ability</span></br><span>Cooldown: 100 seconds</span></br></br><span>Creates a demonic rune under each enemy Hero no matter where they are on the battleground. After a short period the rune explodes dealing <span>160</span> damage and stunning for <span>2</span> seconds.</td></tr>
+<tr><td>R</td><td>Lightning Breath</td><td><span>Cooldown: 60 seconds</span></br></br><span>Diablo becomes unstoppable and channels a cone of lightning that deals <span>360</span> damage over <span>???</span> seconds. The area affected by this spell changes based on your mouse cursor's position.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>Merciless</td><td><span>Merciless Trait</span></br><span></br>Diablo gains <span>20%</span> Movement Speed when near a revealed injured Hero.</td></tr>
+<tr><td>2</td><td>TalentBucketT2_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>2</td><td>Amplified Healing</td><td><span>Amplified Healing</span></br><span></br>Increases healing taken and regeneration effects by <span>40%</span>.</span></td></tr>
+<tr><td>2</td><td>Superiority</td><td><span>Superiority</span></br><span></br>Reduce damage taken from non-heroic enemies by <span>50%</span>.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Relentless</td><td><span>Relentless</span></br><span></br>Reduces the duration of stuns, slows, and roots against your Hero by <span>???%</span>.</span></td></tr>
+<tr><td>3</td><td>Fire Stomp</td><td><span>Firestorm W</span></br><span></br>Fireballs that don't hit a target return to Diablo, dealing <span>50%</span> damage.</td></tr>
+<tr><td>3</td><td>First Aid</td><td><span>First Aid</span></br><span></br>Activate to heal <span>???%</span> of your max Health over <span>4</span> seconds.</span></td></tr>
+<tr><td>4</td><td>Apocalypse</td><td><span>Apocalypse R</span></br><span></br>Creates an effect under enemy Heroes. After <span>1.5</span> seconds it explodes, dealing <span>160</span> damage and stunning for <span>2</span> seconds.</td></tr>
+<tr><td>4</td><td>Lightning Breath</td><td><span>Lightning Breath R</span></br><span></br>Diablo becomes unstoppable and channels a cone of lightning that deals <span>80</span> damage per second. The area affected by this spell changes based on your mouse cursor's position.</td></tr>
+<tr><td>5</td><td>Burning Rage</td><td><span>Burning Rage</span></br><span></br>Deals <span>40</span> damage to nearby enemies.</td></tr>
+<tr><td>5</td><td>Block</td><td><span>Block</span></br><span></br>Periodically reduces the damage received from Hero Basic Attacks by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Might And Magic</td><td><span>Might and Magic</span></br></br><span>Your Basic Attacks increase your Abilities' effectiveness by <span>10%.</span> This effect stacks up to <span>4</span> times.</td></tr>
+<tr><td>6</td><td>Imposing Presence</td><td><span>Imposing Presence</span></br><span></br>Enemies that attack you have their Attack Speed slowed by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Arcane Teachings</td><td><span>Arcane Teachings</span></br><span></br>Your Ability damage also slows the Move Speed of its target by <span>30%</span> for <span>2</span> seconds.</td></tr>
+<tr><td>6</td><td>Overdrive</td><td><span>Overdrive</span></br><span></br>Activate to raise Ability Power by <span>25%</span> and Mana costs by <span>40%</span> for <span>5</span> seconds.</td></tr>
+<tr><td>6</td><td>Blood For Blood</td><td><span>Blood for Blood</span></br><span></br>Activate to drain <span>15%</span> of target enemy's max Health and slow its Movement Speed by <span>30%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>7</td><td>Resurgence of the Storm</td><td><span>Resurgence of the Storm</span></br><span></br>Upon dying, revive back at your Altar after 5 seconds. This can occur once every <span>120</span> seconds.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="muradin" id="holder-muradin">
+<table name="20" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Muradin"><h2>Muradin</h2></a> - Mountain King</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Muradin"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Jumps around the battleground and stuns Heroes. Rapidly regenerates health as he nears death.</p>
+
+<p style="margin:8px;">Once a mentor to Prince Arthas, Muradin was unable to prevent him from becoming the Lich King. After recovering from a mild case of amnesia, he is now the leader of the Bronzebeard clan post the "diamond-ization" of his brother the King Magni.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td></td>
+<td>Medium</td> 
+<td>1040 +240</td>
+<td>2.168 +0.5</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>True</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>1.25 +0.0295</td>
+<td>1</td>
+<td>59</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Stormhammer</td><td><span>Skillshot</span></br><span>Cooldown: 10 seconds</span></br></br><span>Deals <span>75</span> damage to the first enemy it contacts, stunning it for <span>1.75 </span>seconds.</td></tr>
+<tr><td>W</td><td>Thunderclap</td><td><span>Cooldown: 8 seconds</span></br></br><span>Deals <span>50 </span>damage and slows enemies by <span>25%</span> for <span>2.5</span> seconds.</td></tr>
+<tr><td>E</td><td>Dwarf Toss</td><td><span>Cooldown: 12 seconds</br></br><span>Leaps to a location, dealing <span>50</span> damage to enemies within the target area.</td></tr>
+<tr><td>R</td><td>Avatar</td><td><span>Cooldown: 100 seconds</br>Duration: 20 seconds</span></br></br><span>Muradin gains <span>500</span> health and his weapon attacks stun enemies. Stun, root, and slow durations are reduced by <span>50%</span>.</td></tr>
+<tr><td>R</td><td>Haymaker</td><td><span>Cooldown: 80 seconds</br></br><span>Deals <span>200</span> damage. Knocks the target back, hitting enemies in the way for <span>50</span> damage and knocking them back slightly.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AD</td><td><span>Attack Damage</span></br><span><span>+10%</span> Attack Damage</td></tr>
+<tr><td>1</td><td>Skullcracker</td><td><span>Skullcracker</span></br><span></br>Every <span>4th</span> attack against the same target will stun them for <span>0.5</span> seconds.</td></tr>
+<tr><td>2</td><td>Vampiric Assault</td><td><span>Vampiric Assault</span></br><span></br>Basic Attacks heal you for <span>25</span> Health.</td></tr>
+<tr><td>2</td><td>Amplified Healing</td><td><span>Amplified Healing</span></br><span></br>Increases healing taken and regeneration effects by <span>40%</span>.</span></td></tr>
+<tr><td>2</td><td>Focused Attack</td><td><span>Focused Attack</span></br><span></br>Every <span>5</span> seconds, your next Basic Attack deals <span>30%</span> additional damage.</td></tr>
+<tr><td>2</td><td>Invigorate</td><td><span>Invigorate</span></br><span></br>Dealing damage with Abilities heals you for <span>45</span> Health over <span>3</span> seconds.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Third Wind</td><td><span>Third Wind Trait</span></br><span></br>Increases Second Wind's health regeneration rates. Activates at <span>40%</span> health.</td></tr>
+<tr><td>3</td><td>Thunderclap Mastery 1</td><td><span>Thunderburn W</span></br><span></br>Leaves a zone on the ground that explodes after <span>1.5</span> seconds dealing <span>25</span> damage and applying a <span>-25%</span> slow for <span>2</span> seconds.</td></tr>
+<tr><td>3</td><td>Relentless</td><td><span>Relentless</span></br><span></br>Reduces the duration of stuns, slows, and roots against your Hero by <span>???%</span>.</span></td></tr>
+<tr><td>3</td><td>First Aid</td><td><span>First Aid</span></br><span></br>Activate to heal <span>???%</span> of your max Health over <span>4</span> seconds.</span></td></tr>
+<tr><td>4</td><td>Avatar</td><td><span>Avatar R</br><span>Cooldown: 100 seconds</br>Duration: 20 seconds</span></br></br><span>Gains <span>500</span> health. Attacks stun enemies. <span>50%</span> reduced stun, slow and root durations.</td></tr>
+<tr><td>4</td><td>Haymaker</td><td><span>Haymaker R</br><span>Cooldown: 80 seconds</br></br><span>Deals <span>200</span> damage. Knocks the target back, hitting enemies in the way for <span>50</span> damage and knocking them back slightly.</td></tr>
+<tr><td>5</td><td>Burning Rage</td><td><span>Burning Rage</span></br><span></br>Deals <span>40</span> damage to nearby enemies.</td></tr>
+<tr><td>5</td><td>Stormhammer Mastery 1</td><td><span>Stormbolt Q</span></br><span></br>Stormhammer pierces, hitting <span>1</span> additional target.</td></tr>
+<tr><td>5</td><td>Battle Fury</td><td><span>Battle Fury</span></br></br><span>Your Basic Attacks increase your Attack Speed by <span>5%</span> and Attack Damage by <span>8</span>. This effect stacks up to <span>5</span> times.</td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Block</td><td><span>Block</span></br><span></br>Periodically reduces the damage received from Hero Basic Attacks by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>6</td><td>Imposing Presence</td><td><span>Imposing Presence</span></br><span></br>Enemies that attack you have their Attack Speed slowed by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Dwarf Toss Mastery 1</td><td><span>Dwarf Launch E</span></br><span></br>Increases the range and impact area of Dwarf Toss by <span>50%</span>.</td></tr>
+<tr><td>6</td><td>Arcane Teachings</td><td><span>Arcane Teachings</span></br><span></br>Your Ability damage also slows the Move Speed of its target by <span>30%</span> for <span>2</span> seconds.</td></tr>
+<tr><td>6</td><td>Blood For Blood</td><td><span>Blood for Blood</span></br><span></br>Activate to drain <span>15%</span> of target enemy's max Health and slow its Movement Speed by <span>30%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Rewind</td><td><span>Rewind</span></br><span></br>Activate to reduce the cooldown of your Basic Abilities by <span>10</span> seconds.</td></tr>
+<tr><td>7</td><td>Resurgence of the Storm</td><td><span>Resurgence of the Storm</span></br><span></br>Upon dying, revive back at your Altar after 5 seconds. This can occur once every <span>120</span> seconds.</td></tr>
+<tr><td>7</td><td>Fury Of The Storm</td><td><span>Fury of the Storm</span></br><span></br>Basic Attacks bounce twice to nearby enemies, doing <span>25%</span> less damage each bounce.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="stitches" id="holder-stitches">
+<table name="21" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Stitches"><h2>Stitches</h2></a> - Terror of Darkshire</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Stitches"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">A heavy front-line fighter that can use Hook to drag enemies to him. Emits a damaging gas cloud when he takes damage.</p>
+
+<p style="margin:8px;">Take care when traversing the shadowed trails of Duskwood...<n/>Ever since Abercrombie the Embalmer unleashed his abomination upon Darkshire, Stitches has wandered the road aimlessly, hungering for the flesh of low level Alliance players.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td></td>
+<td>Medium</td> 
+<td>1060 +260</td>
+<td>2.207 +0.543</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>True</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>1.25 +0.0131</td>
+<td>1.5</td>
+<td>55</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Hook</td><td><span>Skillshot</span></br><span>Cooldown: 14 seconds</br></br><span>Pulls the first enemy it contacts towards Stitches, dealing <span>40</span> damage and stunning them for <span>0.5</span> seconds.</td></tr>
+<tr><td>W</td><td>Slam</td><td><span>Cone</span></br><span>Cooldown: 8 seconds</br></br><span>Deals <span>55</span> damage to enemies within the target area.</td></tr>
+<tr><td>E</td><td>Devour</td><td><span>Cooldown: 30 seconds</br></br><span>Deals <span>300</span> damage to Minions or <span>50</span> damage to Heroes. Restores <span>20%</span> of Stitches's maximum health.</td></tr>
+<tr><td>R</td><td>Putrid Bile</td><td><span>Heroic Ability</span></br><span>Cooldown: 60 seconds</br></br><span>Emits bile that deals <span>20 </span>damage per second to enemies within, slowing them by <span>35%</span>. Lasts <span>8</span> seconds.</td></tr>
+<tr><td>R</td><td>Gorge</td><td><span>Heroic Ability</span></br><span>Cooldown: 80 seconds</br></br><span>Completely consume target enemy Hero, trapping them in Stitches' stomach for <span>3</span> seconds and dealing <span>25</span> damage per second. The trapped Hero cannot move or act and doesn't take damage from other sources.</br></br>Cannot be used on massive Heroes.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>Stitches Tenderizer</td><td><span>Tenderizer</span></br><span></br>Basic Attacks slow enemies by <span>25%</span> for <span>1.5</span> seconds.</td></tr>
+<tr><td>2</td><td>Devour Mastery 2</td><td><span>Chew Your Food E</span></br><span></br>Using Devour also heals Stitches for <span>???%</span> of his max Health over <span>3.06</span> seconds.</td></tr>
+<tr><td>2</td><td>Amplified Healing</td><td><span>Amplified Healing</span></br><span></br>Increases healing taken and regeneration effects by <span>40%</span>.</span></td></tr>
+<tr><td>2</td><td>Invigorate</td><td><span>Invigorate</span></br><span></br>Dealing damage with Abilities heals you for <span>45</span> Health over <span>3</span> seconds.</td></tr>
+<tr><td>3</td><td>First Aid</td><td><span>First Aid</span></br><span></br>Activate to heal <span>???%</span> of your max Health over <span>4</span> seconds.</span></td></tr>
+<tr><td>3</td><td>Stitches Passive Buff Weapon</td><td><span>Toxic Gas Trait</span><span></br></br>Increases Vile Gas radius by <span>???%</span> and the duration of its damage over time effect to <span>4</span> seconds.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Relentless</td><td><span>Relentless</span></br><span></br>Reduces the duration of stuns, slows, and roots against your Hero by <span>???%</span>.</span></td></tr>
+<tr><td>4</td><td>Putrid Bile</td><td><span>Putrid Bile R</span></br><span>Cooldown: 60 seconds</br></br><span>Emits damaging bile that deals <span>20 </span>damage per second. Slows enemies by <span>35%</span> and lasts <span>8</span> seconds.</td></tr>
+<tr><td>4</td><td>Gorge</td><td><span>Gorge R</span></br><span>Cooldown: 80 seconds</br></br><span>Completely swallow target enemy Hero, trapping them in Stitches' stomach for <span>3</span> seconds and dealing <span>25</span> damage per second. The trapped Hero cannot move or act and doesn't take damage from other sources.</br></br>Cannot be used on massive Heroes.</td></tr>
+<tr><td>5</td><td>Burning Rage</td><td><span>Burning Rage</span></br><span></br>Deals <span>40</span> damage to nearby enemies.</td></tr>
+<tr><td>5</td><td>Block</td><td><span>Block</span></br><span></br>Periodically reduces the damage received from Hero Basic Attacks by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Slam Mastery 1</td><td><span>Smash W</span></br><span></br>Arc and range of Slam increased by <span>28.57%</span>.</td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Sprint</td><td><span>Sprint</span></br><span></br>Activate to increase Movement Speed by <span>75%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Hook Mastery 2</td><td><span>Fishing Hook Q</span><span></br>Hook has an additional <span>5</span> range.</td></tr>
+<tr><td>6</td><td>Imposing Presence</td><td><span>Imposing Presence</span></br><span></br>Enemies that attack you have their Attack Speed slowed by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Arcane Teachings</td><td><span>Arcane Teachings</span></br><span></br>Your Ability damage also slows the Move Speed of its target by <span>30%</span> for <span>2</span> seconds.</td></tr>
+<tr><td>6</td><td>Blood For Blood</td><td><span>Blood for Blood</span></br><span></br>Activate to drain <span>15%</span> of target enemy's max Health and slow its Movement Speed by <span>30%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>7</td><td>Resurgence of the Storm</td><td><span>Resurgence of the Storm</span></br><span></br>Upon dying, revive back at your Altar after 5 seconds. This can occur once every <span>120</span> seconds.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>
+<div class="hero-holder" data-hero="arthas" id="holder-arthas">
+<table name="22" class="hero-header"><tr><td><a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Arthas"><h2>Arthas</h2></a> - The Lich King</td><td style="text-align:right">
+
+<a style="text-decoration:none; color:white;" href="http://heroesofthestorm.gamepedia.com/Arthas"> [View on Wiki]</a> 
+
+</td></tr></table>
+
+
+
+<div class="hero-content-holder"> 
+<h3 >Description</h3>
+<p style="margin:8px;">Engages with his enemies directly, freezing and slowing them. Summons undead spirits of enemy Heroes he kills to fight for him.</p>
+
+<p style="margin:8px;">Once the crown prince of Lordaeron, and the protege of Uther the Lightbringer. In a desperate bid to save his people he was corrupted by the cursed blade Frostmourne. Now he serves the Lich King as a death knight, ever bound to his terrible destiny.</p>
+<br>
+<h3>Stats</h3><br>
+
+
+<table class="hero-table">
+<tbody>
+<thead>
+<td>Role</td>
+<td>Difficulty</td>
+<td>Life</td>
+<td>Life Regen</td>
+<td>Energy</td>
+<td>Energy Regen</td>
+<td>Melee</td>
+<td>Speed</td>
+<td>Ranged Dmg per level</td>
+<td>Splash Dmg Per Level</td>
+<td>Attack Speed</td>
+
+<td>Atk Range</td>
+<td>Atk Dmg</td>
+
+</thead>
+<tr>
+<td></td>
+<td>Medium</td> 
+<td>1040 +220</td>
+<td>2.168 +0.457</td>
+<td>500 +10</td>
+<td>3 +0.0976</td>
+<td>True</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>1.25 +0.0295</td>
+<td>2</td>
+<td>55</td>
+
+
+
+</tr>
+</tbody>
+</table>
+<br><h3>Abilities</h3><br>
+<table class="hero-table">
+<thead><td>Slot</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>Q</td><td>Frost Strike</td><td><span>Cooldown: 7 seconds</span></br></br><span>Charges at target, dealing <span>80 </span>damage and slows by <span>-75%</span> for <span>1.5</span> seconds. If Frost Charge kills the target it deals <span>20</span> damage to nearby enemies, slowing by <span>-30%</span> for <span>1.5 </span> seconds.</td></tr>
+<tr><td>Q</td><td>Frost Strike</td><td><span>Cooldown: 7 seconds</span></br></br><span>Deals <span>80 </span>damage and slows by <span>-75%</span> for <span>1.5</span> seconds. If Frost Strike kills the target it deals <span>20</span> damage to nearby enemies, slowing by <span>-30%</span> for <span>1.5 </span> seconds.</td></tr>
+<tr><td>W</td><td>Howling Blast</td><td><span>Area of Effect</span></br><span>Cooldown: 10 seconds</span></br></br><span>Roots enemies within the target area in place for <span>1.5</span> seconds and deals <span>30</span> damage.</td></tr>
+<tr><td>E</td><td>Frozen Tempest</td><td></br><span><span>Deals <span>20</span> damage per second to nearby enemies. Drains 4 mana per second. Lasts until canceled or Arthas runs out of mana.</td></tr>
+<tr><td>R</td><td>Sacrifice</td><td><span>Cooldown: 80 seconds</br></br><span>Sacrifices a Ghoul to heal Arthas for <span>150</span> health.</td></tr>
+<tr><td>R</td><td>Army Of The Dead</td><td><span>Heroic Ability</span></br><span>Cooldown: 80 seconds</br></br><span>Summons Ghouls for <span>15</span> seconds. Sacrifice Ghouls to heal for <span>150</span> health.</td></tr>
+<tr><td>R</td><td>Summon Sindragosa</td><td><span>Heroic Ability</span></br><span>Cooldown: 100 seconds</span></br></br><span>Deals <span>150</span> damage and slows enemy Heroes or freezes Minions for <span>10</span> seconds and Structures for <span>20</span> seconds.</td></tr>
+</table><br>
+<h3>Talents</h3><br>
+<table class="hero-table">
+<thead><td>Tier</td><td>Name</td><td>tooltip</td></thead>
+<tr><td>1</td><td>TalentBucketT1_HP</td><td><span>Health</span></br><span><span>+10%</span> Health</td></tr>
+<tr><td>1</td><td>TalentBucketT1_AP</td><td><span>Ability Power</span></br><span><span>+10%</span> Ability Power</td></tr>
+<tr><td>1</td><td>Rune Tap</td><td><span>Rune Tap</span></br><span></br>Every <span>5th</span> Basic Attack heals Arthas for <span>10.15%</span> of his max Health.</td></tr>
+<tr><td>2</td><td>Superiority</td><td><span>Superiority</span></br><span></br>Reduce damage taken from non-heroic enemies by <span>50%</span>.</td></tr>
+<tr><td>2</td><td>Amplified Healing</td><td><span>Amplified Healing</span></br><span></br>Increases healing taken and regeneration effects by <span>40%</span>.</span></td></tr>
+<tr><td>2</td><td>Invigorate</td><td><span>Invigorate</span></br><span></br>Dealing damage with Abilities heals you for <span>45</span> Health over <span>3</span> seconds.</td></tr>
+<tr><td>3</td><td>Battle Momentum</td><td><span>Battle Momentum</span></br><span></br>Basic Attacks reduce your Ability cooldowns by <span>0.5</span> seconds.</td></tr>
+<tr><td>3</td><td>Relentless</td><td><span>Relentless</span></br><span></br>Reduces the duration of stuns, slows, and roots against your Hero by <span>???%</span>.</span></td></tr>
+<tr><td>3</td><td>Howling Blast</td><td><span>Trail of Frost W</span></br><span></br>Enemies caught in the trail of Howling Blast are rooted and hit for <span>50%</span> of the damage.</td></tr>
+<tr><td>3</td><td>First Aid</td><td><span>First Aid</span></br><span></br>Activate to heal <span>???%</span> of your max Health over <span>4</span> seconds.</span></td></tr>
+<tr><td>4</td><td>Army Of The Dead</td><td><span>Army of the Dead R</span></br><span>Cooldown: 80 seconds</br></br><span>Summons Ghouls for <span>15</span> seconds. Sacrifice Ghouls to heal for <span>150</span> health.</td></tr>
+<tr><td>4</td><td>Summon Sindragosa</td><td><span>Summon Sindragosa R</span></br><span>Cooldown: 100 seconds</span></br></br><span>Deals <span>150</span> damage. Slows enemy Heroes by <span>60%</span> for <span>3</span> seconds. Freezes minions for <span>10</span> seconds and structures for <span>20</span> seconds.</td></tr>
+<tr><td>5</td><td>Might And Magic</td><td><span>Might and Magic</span></br></br><span>Your Basic Attacks increase your Abilities' effectiveness by <span>10%.</span> This effect stacks up to <span>4</span> times.</td></tr>
+<tr><td>5</td><td>Block</td><td><span>Block</span></br><span></br>Periodically reduces the damage received from Hero Basic Attacks by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>5</td><td>Spell Shield</td><td><span>Spell Shield</span></br><span></br>Periodically reduces the damage received from Hero Abilities by <span>50%</span>. Stores up to <span>2</span> charges.</span></td></tr>
+<tr><td>6</td><td>Frozen Tempest</td><td><span>Remorseless Winter E</span></br><span></br>Damage slows targets Movement and Attack Speeds by <span>5%</span> for <span>1.5</span> seconds. This can stack up to <span>5</span> times.</td></tr>
+<tr><td>6</td><td>Imposing Presence</td><td><span>Imposing Presence</span></br><span></br>Enemies that attack you have their Attack Speed slowed by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Constant Heroism</td><td><span>Constant Heroism</span></br><span></br>Your Heroic Ability's cooldown is reduced by <span>30%</span>.</td></tr>
+<tr><td>6</td><td>Stoneskin</td><td><span>Stoneskin</span></br><span></br>Activate to gain <span>800</span> Shields for <span>5</span> seconds.</td></tr>
+<tr><td>6</td><td>Blood For Blood</td><td><span>Blood for Blood</span></br><span></br>Activate to drain <span>15%</span> of target enemy's max Health and slow its Movement Speed by <span>30%</span> for <span>3</span> seconds.</td></tr>
+<tr><td>7</td><td>Resurgence of the Storm</td><td><span>Resurgence of the Storm</span></br><span></br>Upon dying, revive back at your Altar after 5 seconds. This can occur once every <span>120</span> seconds.</td></tr>
+<tr><td>7</td><td>Onslaught of the Storm</td><td><span>Onslaught of the Storm</span></br><span></br>Enemies killed by Abilities explode for <span>500</span> damage in a small area.</td></tr>
+<tr><td>7</td><td>Bolt of the Storm</td><td><span>Bolt of the Storm</span><span></br></br>Activate to teleport to the target location.</td></tr>
+</table><br>
+
+</div><div style="text-align:right; margin-right:10px; width:97%; padding:10px; padding-right:15px;"><a style="cursor: pointer;" onclick='scrollTo"thetop"'>Back to Top</a></div></div>

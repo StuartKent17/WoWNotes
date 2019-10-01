@@ -1,0 +1,83 @@
+Boubouille2014-04-07, 05:09 PMArtcraft — Running of the Bulls
+
+Hey there everyone, I’m Steve Aguilar, lead animator for the World of Warcraft animation team. Today we’re showing off the male Tauren, and with some help from the rest of the animation team, we’re going to give you a look at the animation processes we use to bring this big guy to life. 
+
+Before we even started animating him, we already knew the Tauren was going to be a blast to work on based on all of the detail the character art team added.
+
+As we begin applying animations, we’re extra careful not to stray too far from the original. It’s important to us to retain the essence of the original animations, because how a characters walk, move, and carry themselves help to define their personality. We use all of the original animations as a starting point, and then go through the process of cleaning them up and adding additional articulation. Let’s delve into what that process looks like.
+
+The Re-Animator Steve Aguilar
+The normal “stand” animation is one of the most important animations because this is what you, the player, see the majority of the time. When you stop moving or walk up to an NPC, the stand is the key pose that is being used. A huge chunk of animations also rely on this pose so they can easily transition into and out of it.
+
+When we import the original stand animation onto the new model, we then look to see if there are any weight shifts, odd rotations, or hitches that we need to fix. After we’ve cleaned up the pose, it goes through another sanity check to see if other animations will still be able to transition into and out of this new stand pose. If we happen to change the pose too much, it can cause a domino effect and possibly harm all the existing animations.
+
+After touching up the pose, we move on to re-animating the standard idle motion. Slight changes on how muscles move, limbs are carried, or feet hit the ground can get across a better sense of weight for whatever creature it is we’re animating. Tweaking the male Tauren was a lot of fun because we were able to add a lot more weight than the previous model had and make the Tauren feel bigger and beefier. Another thing that stood out was the lack of motion on the nose ring, braids, and especially the face. With the addition of a facial rig, we were able to get his brows, nostrils, ears, and cheeks to react with his breathing motion. Getting these subtle motions to work added so much to the simple standing pose, I imagined the Tauren looking up at me and saying "thank you."
+
+Here’s a side-by-side comparison of the old and new models.
+
+
+<iframe width="853" height="480" src="//www.youtube.com/embed/h_sRrI7SOwA" frameborder="0" allowfullscreen></iframe>
+
+Next up is Kevin to talk about the face rig and what that process entails.
+
+
+Face Off Kevin “Snap ‘n’ Point” Rucker
+Since the facial animation system worked so well with the Pandaren in Mists of Pandaria, with the updated models we wanted to add the same life and emotion they deserved. In the past the character models only had a jaw bone that could be animated, but now we’re able to add movement to the brows, eyes, cheeks and mouth. We’re able to properly make them smile, look angry, and talk.
+
+We start with a base mesh and add joints to specific spots that will allow us to mold the face. We then add influence, or “skin” the mesh to those joints and shape them into poses: jaw open, eyebrows down or furrowed, for example. We hook up those poses to main controls to make the process of animating the face faster and more cohesive between several animators. For instance, instead of having to move 9 individual joints to shape the eyebrows, we just need to touch 2 controls which include a sub-set of attributes for more detailed shaping. After that if we still need to tweak the poses, we can always go back to the original sub controls for additive fine tuning.
+
+
+<iframe width="853" height="480" src="//www.youtube.com/embed/spPFNwK8Sb4" frameborder="0" allowfullscreen></iframe>
+
+We also create a “face file” with several preset expressions the animators can use while working. It’s a lot faster than creating a new pose from scratch. If they need a sad or angry face, they can start from the preset ones, and then adjust from there to make it more unique.
+
+We also create several mouth shapes, or phonemes, for use in talking animations. Again, posing the face is time consuming, so having a jump start is extremely helpful. It also makes the character feel like it was animated by one person, when there’s actually a big group of us working on them at one time.
+
+
+<iframe width="853" height="480" src="//www.youtube.com/embed/Cnhuib5Sz38" frameborder="0" allowfullscreen></iframe>
+
+
+Body Movin’ Jeremy “Goonies never say die” Collins
+On a certain level, how you move in the game is one of the most important things you experience as a player. It’s your main interaction with the world around you. For Warlords of Draenor, we wanted to improve the locomotion of WoW’s player characters with brand new rigs. These new rigs are capable of doing so much more in terms of fidelity of motion for our characters, and we wanted to showcase that as much as possible.DwarfMale_Run.jpg 
+
+Everyone who plays WoW is familiar with their character’s idle and run animations—those are the two you see the most. We wanted to really take a look at what made the old player model animations successful, and what made them so iconic. Our job was to then retain the spirit of the old animations, but clean them up so they would look epic on the new rigs. That proved to be a really fun task. Part of the joy of cleaning up an animation like the Dwarf male’s run is going back and seeing what the original animators were thinking about when they first worked on these characters. Some of these runs and walks were animated over 10 years ago!
+
+The first thing we did when we cleaned up an animation was ask ourselves a series of questions. What are some of the areas that could use touching up? Does the center of gravity on the character feel skewed? Is the character leaning appropriately when moving in a direction? How can we shift the timing to give this animation a greater sense of weight?
+
+All of our rigs are manipulated with the use of controllers. Controllers are curves that drive the joints the tech artists have placed that ultimately deform deform the model you see. When we open an older animation, we’re manipulating what is called "baked data." Baked animations have keys on every attribute on every frame. In some cases, it’s necessary for us to delete some keys to make the animation curves easier to manipulate. Here’s what we see inside of Maya. Every one of those colored curves represents rotation or translation of that foot controller.
+
+Once we had identified what needed polishing we went straight into Maya and got to work. A popular method of cleaning up locomotion animations would be saving the contact poses, major breakdowns, deleting the in-betweens, and smoothing out the motion from there.
+
+
+<iframe width="853" height="480" src="//www.youtube.com/embed/ptc7GnkYoWA" frameborder="0" allowfullscreen></iframe>
+
+Emotes were also super fun to work on. We would often times shoot video footage of ourselves acting out emote animations for reference—and no you don’t get to see them. We’d then use that reference as a jumping off point for setting key frames in Maya.
+
+
+<iframe width="853" height="480" src="//www.youtube.com/embed/gl2YQ4vUl3c" frameborder="0" allowfullscreen></iframe>
+
+
+Glass Case of Emotion: Part I Carman“Boba Muscles” Cheung
+For the majority of the character cleanup phase, the team focuses on three main things: cloth, hair and the face. Cloth includes a front and back tabard and a cape. Hair can be anything from a back ponytail, a front ponytail, pig tails, beards of varying sizes and shapes, or a combination of all of these. We also add facial animation, which adds a lot of character and life to the model. Occasionally, we will also fix minor posing issues or any errors, like jittering.
+
+
+All of our character animations are hand keyed, and not dynamically simulated within the game engine or created through motion capture. This allows us to have complete control in shaping the movement and style for each character, and it adds a unique life to the characters you can’t really get any other way.
+
+
+
+<iframe width="853" height="480" src="//www.youtube.com/embed/43FPKPN9e0c" frameborder="0" allowfullscreen></iframe>
+
+
+Glass Case of Emotion: Part II David “Coffee Corn” Edwards
+My favorite part of the entire process is adding the facial expressions, or fixing up the timing or posing of a character. It is astounding how adding a simple facial expression can instantly bring a character to life. It’s always incredibly rewarding to take an old animation and see what even small changes can do to vastly improve it.
+
+As a contrast, the most difficult part of the process, at least for me, is having to hold myself back from wanting to fix or adjust every little thing for every single animation. Due to the sheer volume of animations that exist for player characters, our goal of having updated models in time for Warlords of Draenor, and the need to animate all the new creatures and objects going into the expansion, we have to prioritize our time. We’ve broken the cleanup passes on character revamp animations up into phases. Phase 1 has all of the locomotion animations walk, run, etc. as well as all the emotes and spell casts. Phase 2 deals with the combat animations attacks, stuns, etc., and phase 3 is a catch-all for the remaining animations swimming, fishing, etc.. Regardless of the phase, every animation is touched in some form or fashion, but phase 1 gets the most love since those are the animations are seen the most.
+
+At the start of each animation we always focus on cleaning up the body first, since this motion drives all of the secondary animation. Below is a video showing the finished product after it has gone through the cleanup process.
+
+
+<iframe width="853" height="480" src="//www.youtube.com/embed/jHQHEHLPXIg" frameborder="0" allowfullscreen></iframe>
+
+
+That’s All For Now Steve Aguilar
+Thanks for reading and letting the animation team share this part of their process with you. I hope we’re doing justice to one of your beloved characters, and that you can see the amount of love we’re applying to not only the male Tauren, but the animations for all of the characters in the game. Have a great day, and you stay classy WoW players!

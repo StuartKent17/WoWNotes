@@ -1,0 +1,197 @@
+chaud2014-11-17, 05:33 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Clarifications from Twitter, The Waypoint http://www.diablofans.com/news/48256-clarifications-from-twitter-the-waypoint
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Goblins vs Gnome Card Reveal: Foe Reaper 4000 http://www.hearthpwn.com/news/688-goblins-vs-gnome-card-reveal-foe-reaper-4000
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Valla Hero Spotlight & Guide, Into the Nexus #28 http://www.heroesnexus.com/news/1244-valla-hero-spotlight-guide-into-the-nexus-28
+
+Warlords of Draenor - All Gold Challenge Modes Complete
+A group has already completed all of the gold challenge modes http://www.wowdb.com/achievements/8899-challenge-warlord-gold in Warlords of Draenor, rewarding them with challenge mode weapons https://www.youtube.com/watch?v=bYvvB1CB7GQ and a nice yeti mount http://www.wowdb.com/achievements/8898-challenge-warlord-silver. Congratulations to them! You can see rankings on WoWProgress http://www.wowprogress.com/challenge_score/, but they combine both Mists of Pandaria and Warlords of Draenor times.
+
+
+http://media.mmo-champion.com/images/news/2014/november/thumb/goldCMComplete.jpg http://media.mmo-champion.com/images/news/2014/november/goldCMComplete.jpg 
+
+http://media.mmo-champion.com/images/news/2014/november/thumb/goldCMMount.jpg http://media.mmo-champion.com/images/news/2014/november/goldCMMount.jpg
+http://media.mmo-champion.com/images/news/2014/june/mvbar900.jpg 
+
+
+Armory Stats - Siege of Orgrimmar Progression
+Before we get too far into Warlords of Draenor, there are a few outstanding requests for some final armory stats. This sample was updated right up until Patch 6.0.2 went live and looks at accounts active from September 1st onwards, which was 2.3 million accounts and 6.8 million characters. We looked at more detailed stats back in May 2014 http://www.mmo-champion.com/content/3984-Armory-Stats-Siege-of-Orgrimmar-Progression-Blue-Tweets-DLC-439.
+
+If there are any other final requests that use pre-6.0.2 Mists of Pandaria data please let us know in the comments, as the data will be wiped when new data collection begins in December.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#ADADAD', '#949494', '#727272', '#595959', '#6B8E23', '#426F42']
+};
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'stillalivechart',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'SoO Wing 1', 'SoO Wing 2', 'SoO Wing 3', 'SoO Wing 4', 'SoO Glory'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Siege of Orgrimmar on Any Difficulty',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 80.8, color: '#E0BB79', name:'Siege of Orgrimmar Wing 1'},{y: 76.2, color: '#E0BB79', name:'Siege of Orgrimmar Wing 2'},{y: 72.6, color: '#E0BB79', name:'Siege of Orgrimmar Wing 3'},{y: 65.7, color: '#E0BB79', name:'Siege of Orgrimmar Wing 4'},{y: 6.1, color: '#E0BB79', name:'Glory of the Orgrimmar Raider'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+};
+</script> 
+
+<div id="stillalivechart" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+Warlords Launch Update
+Since the launch of Warlords of Draenor we’ve seen a large amount of positive reaction to the new content available in the expansion. Players have been enjoying building and managing their own Garrisons and exploring the new world. With many of the new changes that have been implemented over the past couple of days, we’ve seen a marked improvement in realm performance and stability. Thank you again to everyone for your patience while we have worked around the clock to address these issues. 
+
+As we previously posted the realms in Europe, the Americas, and Oceania had rolling restarts to pick up hotfixes to address some gameplay issues. During this time we also further extended the raised maximum realm population in these regions. While the increase in realm population has allowed more players access to the game, we continue to also see realm queues on heavily populated realms.
+
+To address the queues for these realms we are currently working on expanding the instancing tech we deployed earlier which allowed for additional copies of Draenor. We are currently testing these improvements with the goal of deploying this tech more widely. To ensure the best possible in-game experience for players this implementation will require additional oversight and testing. We will be carefully scrutinizing and adjusting these modifications throughout the day to ensure that we don’t introduce additional stability and performance issues.
+
+Hourly updates will resume when we have more information on the progress of these changes to share with you. If you use Twitter, we recommend following @BlizzardCS https://twitter.com/BlizzardCS and @Warcraft https://twitter.com/Warcraft for updates as well.
+
+
+Blue Posts
+Challenge Mode Daily Quest and Seals of Fate
+There is no garrison prerequisite. There was a logic error with the Challenge mode quests that could cause the daily randomizer to select an invalid value and thus leave no quest available for the day, and we have a hotfix in flight to address that issue.
+
+Also, since I've seen this come up a few times, the currency turn-in quests for the Tempered Seals of Fate that are used for Draenor bonus rolls are not available until the first raid zone, Highmaul, unlocks during the week of December 2. Take your time and enjoy Draenor; no need to worry about having to stockpile bonus rolls ahead of time. Blue Tracker http://blue.mmo-champion.com/topic/350166-daily-challenge-mode-need-inn/ / Official Forums http://us.battle.net/wow/en/forum/topic/15269758283?page=1#3
+
+Queues and Character Transfers
+Just to answer some of the people who are unhappy with the queues, I don't have any specific answers I can give on Free Character Moves as of yet. I'll repeat what I said in the US forums that we are working to make sure realms are stable and performing well before we do further evaluations on what FCMs would look like should we do them. i.e. Which realms would need them and where would the moves be too, etc. I don't want to promise anything at this time, but we're not unaware of the concerns and frustrations people are experiencing with queues.
+
+We've seen an increase in performance overall and have many more people playing and able to play than the past couple of days. We realize there are still queues to contend with, but we haven't walked away or called things "done" as of yet. 
+
+Neth, you guys really are not doing much to alleviate any issues. It would be nice if at least one of you would come out and admit your too cheap to pay for the proper hardware to handle the work load and feel like it wont be needed in the long run. Our short term discomfort until subscriptions fall off after launch is an acceptable trade off for blizz. Seriously, someone from blizz just come out and admit you guys messed up and this issues will subside once the player base decreases. I bet you would have a lot less upset players if you just told the truth. Being lied to and screwed over is worse than just being screwed over.
+There are no lies being perpetrated in regard to the efforts being made on our end to alleviate issues. I know people like to think this is a truth and it seems really odd to cling to that. There is a very high demand by people to play the game. We are making efforts to support that demand in a variety of ways and we've been making great progress. We're still very early in the day today, so we will continue to be watching the effect of these changes once we get into the more populous times for the realms. Seriously. The efforts or the teams on this end are constant and ongoing at all levels. They are incredibly dedicated to doing what they can to get everyone into the game and playing the great content we have waiting for them.
+
+I'm sorry you are frustrated. I want nothing more than for you to not be frustrated. Hopefully today will go better for you and many others. High population realms may be problematic when it comes to queue times, but we are making efforts to get more people in than hanging in the queues. Our efforts aren't stopping any time soon. No one is sitting on their laurels I'm not sure why you'd want to really. People will accuse us of many many things I'm sure. Conspiracies arise that just aren't true and there isn't much we can do to counter them than to keep working toward improving the experiences of the community that is here to play. We are very seriously continuing to monitor all of the changes we've made and their impact. Things have improved a great deal and we will continue to make improvements where we can. That's all I can really say. Some will believe and others won't. That isn't going to make us throw up our hands and give up. We wouldn't do that. Blue Tracker http://blue.mmo-champion.com/topic/350175-warlords-launch-updatesunday-904-pm-cet/ / Official Forums http://eu.battle.net/wow/en/forum/topic/12617766293?page=7#130
+
+
+Blue Tweets
+Server Stability
+And as no one knows, CRZ saved the launch. SeTec9 https://twitter.com/SeTec9/status/534112738050453505
+
+We just added new hardware with this maintenance in attempts of coping with demand. Realms are looking pretty stable. Bashiok https://twitter.com/Bashiok/status/533673286391959552
+Stable, yes. Sufficient, no. It's a simple matter of Blizzard blindly putting it's pocketbook ahead of its customers. Money > Rep
+There is no problem I've had in the last 72 hours I could fix with money. If there was I'd do it. Actually not true: there was one, and we had more blades next restart -- problem not as simple kurtismcc https://twitter.com/kurtismcc/status/533764522788413442
+One cant fix problemshappening now with money, but better preparations could have been made. 2 hour queue time still.
+Some servers are very high pop. We know this is a problem, but problem can't be solved with more hardware. We are still working on other solutions. kurtismcc https://twitter.com/kurtismcc/status/534054450588291072
+The calibre of those solving problems now doesn't absolve Blizzard's lack of preparation.
+You choose your perspective on such matters. Mistakes were made, but there's no grand money conspiracy. kurtismcc https://twitter.com/kurtismcc/status/534074078525542400
+Blizzard had a good idea on the amount of people returning from expansion sales
+Sales does not equal engagement, and engagement drives concurrency. We have a very engaging expansion, and I'm happy to have worked on it.
+but your network should be able to handle enough users to equal your subscriber # and then some for growth
+load isn't linear - clumps are the issue like the forum post says - it's an n-squared problem kurtismcc https://twitter.com/kurtismcc/status/534074264811360256
+Since it was known that high pop realms would be a problem; there should have been free migrations prior to launch.
+even if we'd predicted it, wouldn't have helped; most people wouldn't have seen the need to move prior to launch kurtismcc https://twitter.com/kurtismcc/status/534074955919400960
+
+Classes
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage Forums http://www.mmo-champion.com/forums/272-Mage / Skills http://www.wowdb.com/spells/class-abilities/mage / Talent Calculator http://www.wowdb.com/talent-calculator#g
+As much as I hate to report it, you can mount up while moving with Ice Floes. I assume that's not intended.
+We're going to allow it for now. If it becomes a problem, we'll change it back. Celestalon https://twitter.com/Celestalon/status/532624446670913536
+
+Art
+Not even a single mention of Blood Elf models through the whole Blizzcon? If you're not doing them, tell us please.
+We're doing them. Nothing else to announce until we have previews to show. WatcherDev https://twitter.com/WatcherDev/status/531248921880698882
+
+Character / Items
+Who should I tweet about profession-type stuff? Looking at the cap on Apexis Crystals currently
+What's the concern with the cap? That's more an item issue than professions per se. CC: @olandgren WatcherDev https://twitter.com/WatcherDev/status/532262251177467904
+If you could instead save up 37k or w/e then choose a slot to fill, I might actually do it
+Very reasonable point - we'll discuss. We usually have at least some slush room on currency caps. WatcherDev https://twitter.com/WatcherDev/status/532271338518364160
+
+Where is our Champions Treadblade? My living mounts legs hurt.
+Paulie in Old Town, Stormwind Cost: 100 000 Gold TerranGregory https://twitter.com/TerranGregory/status/533867318942511105
+
+PvP
+Are there any plans to make 5v5 skirmishes?
+No. Skirmishes is meant to be an introduction to the arena experience. Considered only doing 2v2 but know people would want 3s. holinka https://twitter.com/holinka/status/530226047992619008
+
+combat log event "encounter_start" happens in pve any chance of having this in pvp, to enable accurate arena/bg combat logging?
+yes we have it on our todo list holinka https://twitter.com/holinka/status/531817102232272896
+
+Does MMR get Zero'ed at the beginning of each season along with the Character rating?
+Your MMR gets reset when you gain a level but not between seasons. holinka https://twitter.com/holinka/status/531817234478661632
+is there a design reason for this? Starting season on 1500 MMR win 100 lose 30 would you have the same final CR as 2k MMR start?
+We don't think resetting MMR each season is good for the game. High rated will stomp over low rated. No value in that. holinka https://twitter.com/holinka/status/531864995244408833
+
+Hey Holinka, will PvP Items have sockets? And what about tertiar stats?
+Not at launch. Perhaps down the road. holinka https://twitter.com/holinka/status/531933081259606016
+Ah thank you^^. I don't know what that means"down the road". Do you mean at the start of WoD Season 1 on 2nd of december?
+It means, we haven't decided if or when. holinka https://twitter.com/holinka/status/531934210584350720
+
+Ever thought of a battleground dota/smite style, 5vs5 3way?
+Yes but it's a very odd fit for WoW and there are a lot of other games including Heroes doing it. Doesn't feel natural. holinka https://twitter.com/holinka/status/532190847694274561
+
+Lore
+Unfortunately Jaina is too far gone. Corrupted just like everyone else in the alliance.
+Not at all, man. Jaina doesn't trust the Horde to self-govern... Can you blame her? DaveKosak https://twitter.com/DaveKosak/status/531233921069879296
+
+In WoD timeline: Gul'dan the only one with fel energy/green skin? Possible exposure changes rest? Or staying brown?
+Gul'dan won't stay down for long - he'll find other fools. I mean, followers. DaveKosak https://twitter.com/DaveKosak/status/532052882733137920
+
+I said that the Kirin Tor's ability to assert control over how the alliance uses magic has waned over time. craig_amai https://twitter.com/craig_amai/status/532062405581611008
+That doesn't mean it's gone entirely. We haven't seen it come to a head in a while amidst other crises. craig_amai https://twitter.com/craig_amai/status/532062653620166656
+Thank you for the clarity. Could you take more questions on this? Are you able to say more on the topic?
+I keep up with lore, but my focus is more on gameplay and world. Mr. Copeland will typically be a bit stronger with the lore-fu. craig_amai https://twitter.com/craig_amai/status/532613306138112001
+
+Any chance Blood Elf Paladins can get a red casting animation, or anything other than the yellow hands? Blood Knight love?
+Part of your lore is giving up the blood aspect/draining the Naaru and embracing the light, no? Muffinus https://twitter.com/Muffinus/status/532449374820110336
+
+
+DLC #465 - Right on Queue
+DLC #465 http://www.darklegacycomics.com/465 has been released.
+
+
+http://media.mmo-champion.com/images/news/2014/november/dlc465.jpg http://www.darklegacycomics.com/465

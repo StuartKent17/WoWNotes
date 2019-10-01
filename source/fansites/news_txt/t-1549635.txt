@@ -1,0 +1,187 @@
+chaud2014-07-09, 08:13 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Redesigned Firebird's, New PTR Build Tomorrow, Demon Hunter Feedback, INVIS vs Greater Rift 100 http://www.diablofans.com/news/48134-redesigned-firebirds-new-ptr-build-tomorrow-demon
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Curse of Naxxramas: Pricing Structure, Heroic Mode, Golden Cards, Music & Sound Info http://www.hearthpwn.com/news/534-curse-of-naxxramas-pricing-structure-heroic-mode
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> This Week's Hero Rotation, Spectre Illidan & Kandy King Muradin Added to the Shop http://www.heroesnexus.com/news/1147-this-weeks-hero-rotation-spectre-illidan-kandy
+
+Warlords of Draenor - Tier 17 Hunter Armor Sets
+Today we are taking a look at the Tier 17 Hunter armor sets.
+
+Warlords of Draenor changes things up slightly by using one set of art for Raid Finder, one set of art for Normal and Heroic, and one set of art for Mythic difficulty. You can find the Raid Finder armor sets in our Raid Finder armor sets preview http://www.mmo-champion.com/content/3940-Warlords-of-Draenor-Raid-Finder-Armor-Sets-Draenei-Guard-Armor-Set-Blue-Tweets-Art. 
+
+
+<object width="900" height="506"><param name="movie" value="//www.youtube.com/v/HDSbVbP-Wyg?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/HDSbVbP-Wyg?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="900" height="506" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+http://media.mmo-champion.com/images/news/2014/july/thumb/hunterTier17HD.jpg http://media.mmo-champion.com/images/news/2014/july/hunterTier17HD.jpg 
+
+
+Warlords of Draenor - Nighttime Changes
+Mumper confirmed https://twitter.com/mumper/status/486775059978010624 that Shadowmoon Valley operates on an accelerated day/night cycle today.
+
+
+http://media.mmo-champion.com/images/news/2014/july/darkerNightCycle.png https://twitter.com/mumper/status/486775059978010624 
+
+
+Warlords of Draenor Theorycraft Discussion
+Thanks for your answers. Sorry to lay the blood craze questions on thick, but...
+
+Should an auto attack that causes two multistrikes result in a double application of blood craze and thus heal for twice as much? It seems to be doing that now. I'm not saying the behavior is wrong, just wondering if it's intended and thus probably won't change.
+
+Also, I'm still seeing instances where a single multistrike event causes either 4 ticks or 5 ticks of healing. To clarify, this is without refreshes of the buff during its progress. The "lucky" 5-tick version heals for about 4.2% of max HP, the 4-tick version, about 3.3%. My main concern is with the variability in number of ticks. Perhaps some sort of timing/latency issue? Hard to model value of multistrike if the result can vary by 25%, with unclear rules governing the duration you actually get.
+An auto attack that causes two multistrikes should indeed result in a double application of blood craze, and thus heal for twice as much. If you started with no Blood Craze, that'd result in a total of 6% pre-resolve, spread out over 4 ticks, aka 1.5% per tick.
+
+I'm not sure how a single multistrike could result in 4, let alone 5 ticks. I'll investigate that tomorrow.
+
+Will you be adding a multistrike bit to all of the _MISSED combat log events for the cases where multistrikes are fully absorbed/immuned/evaded?
+Yes.
+
+I do have one question in regard to Multistrike. I noticed this with Chi Explosion but I just now tested before the servers went down; but are any of the ticks from the DoT from Blackout Kick supposed to Multistrike? Currently the DoT will not Multistriking. The initial hit from Blackout Kick can Multistrike and the damage from the base hit plus the multistrike will go towards forming the DoT:
+
+Base hits for 50k
+Multistrike hits for 15k
+Ticks from DoT hits for 3.9k = 50k + 15k * .3 / 5
+That's working as intended. It doesn't double-dip.
+
+Primal Tenacity and Resolve. You mentioned on Twitter that Resolve would affect PT, but it doesn't right now in Beta. Based on simming it definitely shouldn't, and PT might even need a nerf on top of that. I'm assuming that you changed your mind on Resolve affecting PT.
+Correct on all counts.
+
+Thrash impact crits are proccing Primal Fury i.e. generating 5 additional Rage per target hit. Intended? Note that this does not affect ticks.
+We're going to change that. We had erred in the player's favor on that, but it's looking simply too strong to balance.
+When you say change, I assume you mean make it so it can only proc off the primary target?
+Yes.
+
+So, I'm hoping to get a better understanding of how diseases Necrotic Plague especially and the new Pestilence will fit into all DPS DK rotations. It's fairly straightforward for Blood, but I'd greatly appreciate if you could comment on some of the following cases:
+
+Frost AoE without Necrotic Plague: Howling Blast will continue to cause Frost Fever. Blood Plague will be worth utilising on Single-Target for both specs, but what about AoE?
+On Live, it's currently not worth spreading BP with Pestilence unless 10+ targets will survive all 30s of the diseases- will WoD feel similar?
+
+Frost AoE with Necrotic Plague: Howling Blast will stack Necrotic Plague very quickly for AoE purposes; Pestilence shouldn't see any use in most circumstances.
+
+Unholy AoE without Necrotic Plague: Since Pestilence is a central part of the AoE rotation, we'll be cloning diseases constantly. This will mean that, assuming long term sustained AoE without Festering Strike use, we'll need to eventually reapply diseases with Outbreak/PS and then restart the cycle. Since DoT snapshotting is gone though, this won't be a problem.
+
+Unholy AoE with Necrotic Plague: Since Pestilence clones Necrotic Plague stacks as well, this means that longer duration NPs are preferred- even if they're at lower stacks. This has the potential to be incredibly powerful when spreading 15-stack NPs to new adds. 
+But what will this mean in cases where we lack an existing 15-stack of NP to spread i.e. no boss to spread or let it jump off? Will tick rates even out to the point where, even with its resetting mechanic, NP will still gain stacks fairly quickly? Or will it be optimal to wait till NP has "jumped" and stacked a little before Pestilencing? I know Mendenbarr's initial numbers suggested that waiting might be better in some cases, but just curious what the numbers look like on your end.
+
+Also, completely separate question: Will Breath of Sindragosa interact with the Plaguebearer talent in any way? By this I mean will it add stacks of NP or extend disease duration?
+I don't know the breakpoints that different rotations are worth using on, but in general terms...
+
+Frost AoE without Necrotic Plague: Yes, you'll want to Pestilence once every ~30s to spread Blood Plague, but not spam Pestilence, since HB>Pest for AoE damage. Rest of your runes would goto HB, DnD, and PS.
+
+Frost AoE with Necrotic Plague: Same, except without Pestilence.
+
+Unholy AoE without Necrotic Plague: Correct.
+
+Unholy AoE with Necrotic Plague: Finding the exactly optimal nuanced rotation for each specific starting case and target count is up to you, but generally... Your unholy runes going into PSs will help stack NP up faster, if you're spending BD/FD runes on Pestilence so NP is falling off. However, also worth considering is to mix FS and P at a rate such that NP never falls off. I suspect that that'll be optimal on some range of targets.
+
+How is rune of cinderglacier intended to interact with diseases? Does it snapshot the benefit? Does it use charges to apply diseases?
+Cinderglacier in general is still somewhat up in the air about how exactly it'll work. Ask again when you see changes to it.
+
+Clarification: does this mean that Sacred Shield will eventually use the new HoT mechanics getting one partial tick at the end that varies in size based on haste? Because right now it's using the old ones, where it always grants an integer number of full ticks, and the tick time and overall duration change as you change haste.
+Yes.
+
+Unrelated: Uther's Insight the buff from Empowered Seals + Seal of Insight seems to be double-dipping on Versatility.
+All HoTs are. Bug. We'll fix it.
+
+Is the current Haste rating-->% conversion set to where you want it to be?
+No, I believe the next build will raise it to 100rating/%.
+
+Is it intended that both the Tiger Strikes mechanic and the ReM/RSK reset mechanics with Multistrike can proc from themselves?
+We're changing it so that it can't trigger back to back.
+
+Will fight specific or quest abilities be able to multistrike? IE Scorpion or AIM from Paragons and similar things that give extra action buttons. What about damage procs like trinkets or weapon enchants or on use trinkets like the Mini Iron Star?
+Technically, it depends upon the effect, but a guideline that we usually expect to follow is "If it can crit, it can multistrike" for these cases.
+
+Could you explain the mechanics of Necrotic Plague in regards to its stacks? I noticed once I get it to 15 stacks, nothing seems to be able to refresh it or add any more stacks. Is that the intended mechanic of the ability or some sort of bug?
+Yes. It has a 15 stack cap, and nothing can refresh it. Reapplications add a stack but do not refresh it.
+
+Festering Strike is special in that it can extend it.
+
+
+Beta Realm Maintenance - July 8th and 9th
+Unfortunately, it appears as though we'll have to extend this maintenance first thing overnight and into the morning, as we encountered some last minute issues preventing us from going live tonight.
+
+Apologies for the extended downtime folks, I'll resume updating tomorrow morning once I know more.
+
+
+Blue Tweets
+Classes
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid / Skills http://beta.wowdb.com/spells/class-abilities/druid / WoD Talent Calculator http://beta.wowdb.com/talent-calculator#s
+Hey do you think you could look at Starfall and Rejuv? They could use a little graphical update.
+They actually both have gotten tweaks since live. Don't intend to change them significantly. Celestalon https://twitter.com/Celestalon/status/483809868625620992
+yeah, was just running some CMs and noticed rejuv ends abruptly and starfall could use a little polish. Nothing big.
+Yep, Rejuv's ending is fixed now, and Starfall got a bit of polish. Celestalon https://twitter.com/Celestalon/status/483810191394078720
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter Forums http://www.mmo-champion.com/forums/271-Hunter / Skills http://beta.wowdb.com/spells/class-abilities/hunter / WoD Talent Calculator http://beta.wowdb.com/talent-calculator#M
+Thank you Jon! I know it seems like a silly ability. But I think its a true staple of being a hunter. Exploring.
+I looked into this recently. The tech involved in bringing Eyes of the Beast back would require extensive work. Celestalon https://twitter.com/Celestalon/status/483804529427632128
+
+How exactly does LnL interact with BA Multistrikes again? I'm getting conflicting information from everywhere.
+Each Multistrike grants 1 stack of LnL, which can stack up to 5. Celestalon https://twitter.com/Celestalon/status/484092192198123520
+Okay, so it will *only* proc off multistrike then?
+Yes. Celestalon https://twitter.com/Celestalon/status/484092536038772736
+How long will charges last if not used right away?
+15sec, currently. Celestalon https://twitter.com/Celestalon/status/484093797286961152
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage Forums http://www.mmo-champion.com/forums/272-Mage / Skills http://beta.wowdb.com/spells/class-abilities/mage / WoD Talent Calculator http://beta.wowdb.com/talent-calculator#g
+Is the mirror image talent a placeholder? Are the rest too? Does anyone expect a mage not to take rune of power?
+Are you saying they're imbalanced vs. rune currently, numbers-wise? Or there's something inherently wrong? Muffinus https://twitter.com/Muffinus/status/483830237198045184
+rune > mirror image currently. Unless you're making every raid boss "everyone is moving and walking all the time 420 garalon"
+Like > or like >> or >>> I need quantification here man. Science. Graduated cylinder. Muffinus https://twitter.com/Muffinus/status/483831161542955009
+They scale with your Haste, Crit, Multistrike, Versatility, Spellpower. We haven't done tuning yet, to balance the row. Celestalon https://twitter.com/Celestalon/status/483838194111086593
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk Forums http://www.mmo-champion.com/forums/341-Monk / Skills http://beta.wowdb.com/spells/class-abilities/monk / WoD Talent Calculator http://beta.wowdb.com/talent-calculator#o
+Any ETA on the Serpent Stance scaling issues? BotS ticks for 1k in serpent and 10k in crane.
+Breath of the Serpent was accidentally set to scale with AP, not SP. Fixed that for the next next build. Celestalon https://twitter.com/Celestalon/status/483811957409996801
+
+Is Chi Explosion replacing BoK intentional, in that case, is not having the BoK crit buff intentional w/ Chi Explosion?
+Yes, no. And if you were hitting for 500k, it was probably against a low level target, where you get a damage multiplier. Celestalon https://twitter.com/Celestalon/status/483802060526084096
+Is this the buff to help us solo old raid content?
+Yes. Celestalon https://twitter.com/Celestalon/status/483813486795816960
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin Forums http://www.mmo-champion.com/forums/273-Paladin / Skills http://beta.wowdb.com/spells/class-abilities/paladin / WoD Talent Calculator http://beta.wowdb.com/talent-calculator#I
+I recently noticed Holy Avenger no longer uses the Ashbringer model for your weapon. Bug or intended? I always loved the model.
+Intended, for lore reasons. Celestalon https://twitter.com/Celestalon/status/484103012848136192
+However, Seraphim does give you a really sweet-looking custom 2H hammer, or 1H hammer and shield. Celestalon https://twitter.com/Celestalon/status/484103211372908546
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman Forums http://www.mmo-champion.com/forums/276-Shaman / Skills http://beta.wowdb.com/spells/class-abilities/shaman / WoD Talent Calculator http://beta.wowdb.com/talent-calculator#c
+Would it be possible for the shaman to talent into a permanent pet EarthTank / FireDps ?
+No, Shamans are not a pet class. Doesn't fit. Celestalon https://twitter.com/Celestalon/status/483902920102928384
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock Forums http://www.mmo-champion.com/forums/277-Warlock / Skills http://beta.wowdb.com/spells/class-abilities/warlock / WoD Talent Calculator http://beta.wowdb.com/talent-calculator#k
+Yup, that is also gone strangely. I might be able to understand Twilight Ward, but CoE and Command Demon are important
+Command Demon is coming back. CoE is gone because that whole raid debuff is gone replaced with a Multistrike buff. Celestalon https://twitter.com/Celestalon/status/483766351232659456
+
+PvP
+Is it possible to make offensive heal play viable again? Like when priests used to deal dmg from time to time to score a kill
+In general I think healer damage is going to be higher relative to MoP. PvP Power reigned it in a bit. holinka https://twitter.com/holinka/status/483845743715692546
+
+thoughts on changing gladiator gear to warlord gear? And start over with the names. Warlords Mutilator etc then Deadly and so on..
+We have some plans in this regard holinka https://twitter.com/holinka/status/484014538602213376
+
+Reputation / Questing
+Sorry not a pvp Question, but does not answer me. Is WoD mob dmg tuned? Seems very low, no challenge at all atm. Thanks
+Early quest content is tuned to be easy. Additionally, if you copied your character over, you'll be very overgeared. Celestalon https://twitter.com/Celestalon/status/483845586005671936
+
+World
+After playing The beta. Any chance could see some more npcs? It's feeling a bit underpopulated. Like guards and labourers
+Lots of work being done on this now. Muffinus https://twitter.com/Muffinus/status/483830369826136064
+
+Garrisons
+Hey, I love how many followers I could get from exploring the world. Quite fun. I loved the choice of 1 out of 3 followers one too
+Cool! Glad you had fun Muffinus https://twitter.com/Muffinus/status/483826115388395520
+Would of loved to know their abilities before I made my choice.
+Considering options, e.g. collect them all at max level. Regardless, you'll have a solid slew of abils/traits no matter what. Muffinus https://twitter.com/Muffinus/status/483829993311834113
+
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Hearthstone Expansion Pricing Revealed
+Blizzard revealed the price for the Naxxramas Hearthstone Expansion today! It will cost $20 2800 gold for the entire thing if you play Naxxramas during the first month, as the first wing is free, or $25 if you play after that.
+
+
+http://media.mmo-champion.com/images/news/2014/july/curseOfNaxx.jpg http://www.hearthpwn.com/news/534-curse-of-naxxramas-pricing-structure-heroic-mode 
+
+
+Monk Solo Kill - Horridon
+Wannoob http://www.mmo-champion.com/members/914501-Wannoob managed to kill Horridon on his own after 140 attempts. You can find more details in the video's description.
+
+
+<object width="853" height="480"><param name="movie" value="//www.youtube.com/v/MB7Q6aTrbHc?hl=en_US&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/MB7Q6aTrbHc?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="853" height="480" allowscriptaccess="always" allowfullscreen="true"></embed></object>

@@ -1,0 +1,214 @@
+chaud2015-11-10, 06:53 PM<img src="http://media.mmo-champion.com/images/news/2012/july/wowmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Patch 6.2.3 PTR - Build 20716 - Baby Winston! http://www.mmo-champion.com/content/3692-Warlords-of-Draenor-PvP-Stats-Blue-Posts-Blue-Tweets-Hearthstone-Beta-Patch
+
+Legion Class Preview Series: Death Knight
+Welcome to our World of Warcraft: Legion class preview series. In this entry, we’re exploring the Death Knight—to find out what’s in store for a different class, check out the overview. 
+
+We continue our early look at class and specialization design with the Death Knight. In these blogs, we’ll be exploring class identity, discussing Legion’s new designs, and presenting core combat abilities for each specialization—laying out the foundation upon which talents and Artifacts will build further. With that in mind, let’s delve into what it means to be a Death Knight in World of Warcraft.
+
+The first new class introduced to World of Warcraft after its launch, Death Knights came into the fray with an identity unmistakably tied to the Wrath of the Lich King story. The Death Knights of Acherus, their cold bodies lifted from the grave in the Scarlet Enclave, were commanded by the Lich King and Highlord Darion Mograine to slaughter every villager in Tyr’s Hand, New Avalon, and Havenshire, and to sack Light’s Hope Chapel, decimating both the Scarlet Crusade and the Argent Dawn.
+
+Ultimately, as a result of such uncompromising ambition, the Lich King was betrayed by Highlord Mograine in an act that freed the Death Knights from their servitude. Under Mograine’s leadership they formed the Knights of the Ebon Blade and began joining the ranks of the Horde and Alliance forces bound for Icecrown Citadel to end the reign of Arthas, the Lich King. Though now free from the Lich King’s grasp, these once virtuous champions remain knights of darkness, wielding runeblades of death and destruction and mercilessly stealing the very life essence of their enemies.
+
+We always want to reflect the Death Knight origin story and identity in how they play. The biggest area where we see room for improvement is in their resource system. Runes are a very iconic resource, but their functionality has always been convoluted. In Legion, we’re making Runes more straightforward by removing their division into separate Blood, Frost, and Unholy types. Death Knights now have six unified Runes to spend, with a maximum of three recharging at any one time.
+
+With this change, it’s also important that we preserve the existing gameplay familiarity of Death Knights by making mostly minor changes to core ability functionality and cost—we don’t want the Rune change to create a situation where the best Frost rotation is just Obliterate, Obliterate, Obliterate. Finally, we’re reducing ability overlap between specializations, giving each a single disease with a unique trait and creating a talent tree that’s largely populated with spec-specific talents to better distinguish them.
+
+Blood [/b][/size][/center]
+In undeath, some death knights find a special affinity for the blood and bone of the living. They carve into their enemies, sustaining themselves with deadly sanguine strikes, while using the bloody, shattered remains of the dead to fortify their own defenses. These crimson-soaked knights bend the very rules of mortality to control the frontlines of the battlefield. 
+
+"These crimson-soaked knights bend the very rules of mortality to control the frontlines of the battlefield"
+
+Gameplay
+The core abilities for Blood should be familiar, though we’ve touched them up to bring added clarity to the specialization. Each core ability now better leverages that sinister command of blood and bone to fuel your survivability. In particular, we’ve changed Death Strike to cost Runic Power instead of Runes. This results in a more clear choice of resource expenditure; you can’t lock yourself out of being able to heal if you spend a Rune at the wrong time, and also gives Runic Power generation a bigger impact.
+
+Instead of Rune Tap, we’re positioning Bone Shield to be the primary complement to Death Strike for active defenses to better tie into the fantasy and provide more flexibility. Marrowrend is a new attack which allows you to rotationally generate Bone Shields. To provide gameplay contention between Runes of a single type, Blood Strike now generates additional Runic Power on top of the standard amount gained for spending a Rune.
+
+Here’s a basic look at the core defensive and offensive combat abilities for Blood Death Knights:
+
+Blood Strike
+
+1 Rune, Melee Range, Instant
+Instantly strike the enemy, causing moderate Physical damage and infecting the victim with Blood Plague.
+Generates 10 bonus Runic Power.
+Blood Plague
+
+A disease that deals minor Shadow damage and heals the caster for 1% of their maximum health every 3 sec for 30 sec.
+
+
+Marrowrend
+
+2 Runes, Melee Range, Instant
+Smash the target, dealing strong Physical damage and generating 3 charges of Bone Shield.
+Bone Shield
+
+Surrounds you with a barrier of whirling bones that reduces all damage you take by 25%. Each damaging attack consumes a charge. Lasts for 30 sec or until all charges are consumed.
+
+
+Death Strike
+
+40 Runic Power, Melee Range, Instant
+Focuses dark power into a strike that deals strong Physical damage and heals you for 50% of all damage taken in the last 6 sec minimum 7% of maximum health.
+If you are below 35% health when this is cast, all Runic Power is consumed, increasing the potency of the healing effect.
+
+
+Mastery: Blood Shield
+
+Each time you heal yourself with Death Strike, you gain 40% with Mastery from typical gear of the base amount healed as a Physical damage absorption shield.
+Also increases your Attack Power by 20% with Mastery from typical gear.
+
+
+Death and Decay
+
+1 Rune, 30 yd range, Instant, 30 sec cooldown
+Corrupts the ground targeted by the Death Knight, causing moderate Shadow damage over 10 sec to targets within the area. While you remain within the targeted area, your Blood Strike will hit all nearby enemies.
+
+
+Crimson Scourge
+
+Passive
+Your successful autoattacks on targets infected with your Blood Plague have a 25% chance to reset the cooldown on Death and Decay.
+
+
+To give you an idea of how some talents may build upon this core rotation, here’s an example of a Blood-specific talent:
+
+Bonestorm
+
+15 Runic Power per sec, Instant, 1 min cooldown
+A whirl of bone and gore batters nearby enemies 3 times per second to deal minor Shadow damage, healing you for 1% of your maximum health per strike.
+
+
+Frost [/b][/size][/center]
+Combining martial prowess with supernatural cold, frost death knights leave their enemies chilled to the bone—and broken of the will to fight. Unlike mages who learn to harness frost magic to great effect, these death knights are born of it, rime gripping their decaying hearts. These frozen undead warriors wield dual blades to strike with ferocity and inflict deathly cold upon anyone who would stand against them. 
+
+"These death knights are born of frost magic, rime gripping their decaying hearts"
+
+Gameplay
+The mechanics of the Frost Death Knight are quite solid and we don’t want to do too much to change that. You’ll notice that the core combat abilities listed below are largely familiar. One small area where we found room for improvement, however, is in Killing Machine’s passive interaction with the core rotation. While the automatic critical strikes it provides feel good, it’s often better to ignore its proc in favor of spending resources as fast as you can, as your damage output suffers if you wait for the different resources required for using Obliterate and Frost Strike to become available. Killing Machine now only affects Obliterate, and making wise use of its effect should feel more meaningful.
+
+Here’s a basic look at the core combat abilities for Frost Death Knights:
+
+Howling Blast
+
+1 Rune, 30 yd range, Instant
+Blast a target with a frigid wind, dealing minor Frost damage to that target, and minor Frost damage to all other enemies within 10 yds, infecting all targets with Frost Fever
+Frost Fever
+
+A disease that deals minor Frost damage and has a chance to grant the Death Knight 5 Runic Power every 3 sec for 30sec.
+
+
+Obliterate
+
+2 Runes, Melee Range, Instant
+A brutal attack with both weapons that deals massive Physical damage.
+
+
+Frost Strike
+
+20 Runic Power, Melee Range, Instant
+Chill your weapons with icy power, and quickly strike the enemy with both weapons, dealing massive Frost damage.
+
+
+Rime
+
+Passive
+Your Obliterate has a 45% chance to cause your next Howling Blast to consume no Runes, generate no Runic Power, and deal 300% additional damage.
+
+
+Killing Machine
+
+Passive
+Your autoattacks have a chance to make your next Obliterate automatically critically strike.
+
+
+Remorseless Winter
+
+1 Rune, Instant, 30 sec cooldown
+Radiate extreme cold, dealing moderate Frost damage to all enemies within 10 yards of you over 10 sec.
+
+
+Mastery: Frozen Heart
+
+Increases all Frost damage done by 40% with Mastery from typical gear.
+
+
+To give you an idea of how some talents may build upon this core rotation, here’s an example of a Frost-specific talent:
+
+Glacial Advance
+
+1 Rune, Instant, 12 sec cooldown
+Summon glacial spikes from the ground that advance forward, each dealing moderate Frost damage to enemies near their eruption point.
+
+
+Unholy [/b][/size][/center]
+While free from the Lich King’s grasp, some death knights still embody the ever-corrupting nature of the Scourge plague that once threatened to consume Azeroth. No matter their allegiance or cause, they remain defilers of life; and nowhere is their callousness more on display than when threatened. Inflictors of the most aggressive of diseases—and masters of raising unhallowed minions from the ground—these unholy death knights are vicious melee combatants, capable of striking with the force of an undead legion and unleashing pestilence that would bring their foes to ruin. 
+
+"Unholy death knights are vicious melee combatants, capable of unleashing pestilence that would bring their foes to ruin"
+
+Gameplay
+Unholy is receiving slightly more mechanical changes than Blood and Frost, to better realign with their unique identity. We want to ensure that Unholy continues to be the spec with the most active use of diseases. In this regard, we recognize that Festering Strike lost its luster over time and have developed a new mechanic to ensure the ability remains integral in the Unholy rotation.
+
+Here’s a basic look at the core combat abilities for Unholy Death Knights:
+
+Outbreak
+
+1 Rune, 30 yd range, Instant, 6 sec cooldown
+Deals minor Shadow damage and surrounds the target in a miasma lasting for 6 sec that causes the target and all nearby enemies to be infected with Virulent Plague
+Virulent Plague
+
+A disease that deals moderate Shadow damage every 3 sec for 21 sec. It erupts when the infected target dies, dealing moderate Shadow damage, split evenly between nearby enemies.
+The disease also has a 30% chance to erupt each time it deals damage.
+
+
+Festering Strike
+
+2 Runes, Melee Range, Instant
+Deals massive Physical damage and infects the target with 1 to 3 Festering Wounds.
+Festering Wound
+
+A pustule-ridden lesion that may be burst by Scourge Strike, dealing moderate Shadow damage and generating 3 Runic Power.
+
+
+Scourge Strike
+
+1 Rune, Melee Range, Instant
+An unholy strike that deals strong Physical damage and strong Shadow damage. Triggers a single stack of Festering Wound, if it is present on the target.
+
+
+Death Coil
+
+30 Runic Power, 40 yd range, Instant
+Fires a blast of unholy energy at the target, causing strong Shadow damage to an enemy, and restoring 10 Energy to your Ghoul.
+
+
+Sudden Doom
+
+Passive
+Your autoattacks have a chance to make your next Death Coil cost no Runic Power.
+
+
+Dark Transformation
+
+Instant, 1 min cooldown
+Transform your Ghoul into a powerful undead monstrosity for 20 sec. The Ghoul’s abilities are empowered and take on new functions while the transformation is active.
+
+
+Death and Decay
+
+1 Rune, 30 yd range, Instant, 30 sec cooldown
+Corrupts the ground targeted by the Death Knight, causing moderate Shadow damage over 10 sec to targets within the area. While you remain within the targeted area, your Scourge Strike will hit all nearby enemies.
+
+
+Mastery: Dreadblade
+
+Increases all Shadow damage done by 50% with Mastery from typical gear.
+
+
+To give you an idea of how some talents may build upon this core rotation, here’s an example of an Unholy-specific talent:
+
+All Will Serve
+
+Passive
+Your Raise Dead spell summons an additional skeletal minion, and its cooldown is removed.
+
+
+We hope you’ve enjoyed this early preview of our approach to class and specialization design in World of Warcraft: Legion. We’ll continue our review later today with a look at Shaman.

@@ -1,0 +1,242 @@
+chaud2015-09-25, 06:32 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Bountiful Bounties Event, UEE Bonuses and Hotfix http://www.diablofans.com/news/48529-bountiful-bounties-event-uee-bonuses-and-hotfix
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Deck Spotlight: The Silver Hand, House of Discards Card Design Competition, TwitchCon http://www.hearthpwn.com/news/1041-deck-spotlight-the-silver-hand-house-of-discards
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Introducing the Medic - Lt. Morales, PTR Not Starting Today http://www.heroesnexus.com/news/1493-introducing-the-medic-lt-morales-ptr-not-starting
+
+Armory Stats - Battle Pet Collection
+It Pet Battle Bonus Weekend, so we are starting by taking a look at the battle pet ownership achievement completion rate of players. Today's data is from 2.1 million players not characters that were active after August 1st.
+
+You can see some of the same data to compare to last time we looked at pet battle stats, two years ago http://www.mmo-champion.com/content/3654-Armory-Stats-Battle-Pet-Collection-Blue-Tweets-Winter-s-Veil-Fan-Art.
+
+Keep in mind that the Safari achievements http://www.wowdb.com/achievements?filter-search=Safari require you to collect every pet on that continent. The Raiding with Leashes achievements http://www.wowdb.com/achievements?filter-search=Raiding+with+Leashes require collection of every pet that drops from different raid bosses. Crazy for Cats http://www.wowdb.com/achievements/8397-crazy-for-cats and Celestial Family http://www.wowdb.com/achievements/8519-celestial-family require collecting specific pets.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2015/july/highcharts.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#D4A190']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'petBattleCollect',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ '1 pet', '15 pets', '25 pets', '50 pets', '75 pets', '100 pets', '125 pets', '150 pets', '250 pets', '400 pets', '600 pets'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+max: 100,
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + ' unique pets collected</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Collected Unique Pets',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 99.98, name:'1'},{y: 95.00, name:'15'},{y: 89.44, name:'25'},{y: 73.84, name:'50'},{y: 60.52, name:'75'},{y: 49.97, name:'100'},{y: 41.63, name:'125'},{y: 35.35, name:'150'},{y: 20.01, name:'250'},{y: 10.76, name:'400'},{y: 2.78, name:'600'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'petBattleCapture',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ '10 pets', '25 pets', '50 pets', '100 pets', '200 pets', '1 Rare pet', '10 Rare pets', '50 Rare pets'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+max: 75,
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + ' captured</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Captured Pets',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 65.80, name:'10 pets'},{y: 50.59, name:'25 pets'},{y: 37.40, name:'50 pets'},{y: 25.36, name:'100 pets'},{y: 15.61, name:'200 pets'},{y: 66.84, name:'1 Rare pet'},{y: 34.16, name:'10 Rare pets'},{y: 14.17, name:'50 Rare pets'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'petBattleCollect2',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Kalimdor Safari', 'Eastern Kingdoms Safari', 'Outland Safari', 'Northrend Safari', 'Pandaria Safari', 'Draenor Safari', 'World Safari', 'Raiding with Leashes', 'Raiding with Leashes II', 'Raiding with Leashes III', 'Crazy for Cats', 'Celestial Family'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+max: 15,
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Misc Pet Collection Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 6.14, name:'Kalimdor Safari'}, {y: 7.33, name:'Eastern Kingdoms Safari'}, {y: 10.81, name:'Outland Safari'}, {y: 8.90, name:'Northrend Safari'}, {y: 8.96, name:'Pandaria Safari'}, {y: 5.23, name:'Draenor Safari'}, {y: 5.73, name:'World Safari'}, {y: 14.85, name:'Raiding with Leashes'}, {y: 9.29, name:'Raiding with Leashes II'}, {y: 4.97, name:'Raiding with Leashes III'},{y: 6.96, name:'Crazy for Cats'},{y: 2.42, name:'Celestial Family'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+};
+</script> 
+<div id="petBattleCollect" width="50%">
+Don't see a chart? Enable javascript!
+</div> 
+<br />
+<div id="petBattleCapture" width="50%">
+Don't see a chart? Enable javascript!
+</div> 
+<br />
+<div id="petBattleCollect2" width="50%">
+Don't see a chart? Enable javascript!
+</div>Blue Tweets
+Mythic Dungeons don't count as dungeons for guild challenges while in a guild group? Intended?
+Not ideal, but a consequence of how the system was originally built. Challenges require queued dungeon activities LFG only. WarcraftDevs https://twitter.com/WarcraftDevs/status/645013934160809984
+
+
+Ghostcrawler Tweets
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.
+Except the "alternative" is always substantially less rewarding, so it will never be cared about. You can't just offer easy vs hard with the same rewards. Nobody will opt into hard "just because". 
+
+How can you be so sure? I always choose the hardest difficulty without knowing if I'll get better rewards
+The comment was specifically about group PvE content. If you offer 5 difficulty levels, all with the same rewards, and don't provide easy ways for other players to see others' accomplishments, then my experience is most players will see no point in suffering through the harder difficulties. Some will, but my expectation is that group will be small. In general, if players do more challenging content, they expect rewards appropriate for their accomplishment. Those rewards could be power based rewards, or they could just be recognition from other players.
+
+This doesn't mean players don't like difficult content. I like difficult content. But generally in multiplayer games, players want some recognition or outright rewards that they did it the hard way. I think the mindset is just different in single player games. I play Dark Souls because I gain satisfaction over beating it. It's harder to lean on personal satisfaction in a multiplayer game where players spend a lot of brain space comparing their accomplishments to others. In multiplayer games, the social element is typically pretty massive or it wouldn't be a multiplayer game. Recognition, in my experience, is an important part of that social element. 
+
+
+Poll - How Many Battle Pets Do You Have?
+Please vote with the number of unique pets you have. You can get a fairly accurate count by checking the pets section of your armory profile http://eu.battle.net/wow/en/character/thrall/Avadakedavra/pet#status=is-collected.
+
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/9095973.js"></script><noscript><a href="http://polldaddy.com/poll/9095973/">How many unique pets do you have?</a></noscript>
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Overwatch - Gameplay Footage
+Some more Overwatch gameplay video has been released, this time by a player that was able to visit Blizzard and play.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/RRQyH0H1kgg?rel=0" frameborder="0" allowfullscreen></iframe>

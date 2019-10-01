@@ -1,0 +1,191 @@
+chaud2016-05-02, 07:01 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Desolacer's Starter Builds for S6, Tips to Farming Cosmic & Falcon Wings http://www.diablofans.com/news/48717-desolacers-starter-builds-for-s6-tips-to-farming
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Popular Decks of the Week, Sigma's Top 10 Old Gods Standard Card Analysis, Old Gods New Tricks, The Angry Chicken #148 http://www.hearthpwn.com/news/1450-popular-decks-of-the-week-sigmas-top-10-old-gods
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Blue Post Round-Up, Heroes WTF Moments #48 http://www.heroesnexus.com/news/1686-blue-post-round-up-heroes-wtf-moments-48
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Exploring Overwatch - Easter Eggs, AngryJoe's Overwatch Lambo Adventure in 360 http://www.overpwn.com/news/166-exploring-overwatch-easter-eggs-angryjoes
+
+Legion - Artifact Respec Cost
+In Legion, you can go back and change the tree you are filling out for your Artifact weapon if you change your mind. While you eventually may be able to fill out the entire tree, doing so will take some time. 
+
+The current cost to respec your artifact is however much the next trait or rank would cost you. If your next trait costs 525 Artifact Power, you will need to earn 525 Artifact Power to unlearn and regain the Artifact Power you previously spent. 
+
+
+<div class="gallery" id="gallery-AtrifactRespec">http://media.mmo-champion.com/images/news/2016/april/thumb/ArtifactRespec01.jpg http://media.mmo-champion.com/images/news/2016/april/ArtifactRespec01.jpg http://media.mmo-champion.com/images/news/2016/april/thumb/ArtifactRespec02.jpg http://media.mmo-champion.com/images/news/2016/april/ArtifactRespec02.jpg http://media.mmo-champion.com/images/news/2016/april/thumb/ArtifactRespec03.jpg http://media.mmo-champion.com/images/news/2016/april/ArtifactRespec03.jpg </div>
+
+
+Legion - Artifact Trait Costs
+In Legion, each artifact has a tree of traits you can unlock with multiple ranks per trait for some of the traits. The chart below shows the Artifact Power cost for each rank. Keep in mind that this isn't finalized and values can be placeholders.
+
+The Artifact power cost increases per total ranks you have purchased. For example, if you fill out 3 Artifact powers with a total of 3 ranks each, the next rank or trait will cost you 525 Artifact Power. The same applies if you just filled out 9 Artifact powers with 1 rank each. 
+
+Right now the second through 11th ranks have an increase in cost of 25 Artifact Power per rank, but after that it becomes exponentially more expensive. 
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2015/july/highcharts.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#4768C4', '#949494', '#727272', '#595959', '#6B8E23', '#426F42']
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'apCosts',
+zoomType: 'x',
+spacingRight: 20,
+backgroundColor: '#efeedc'
+},
+title: {
+text: 'Artifact Power Cost Per Total Number of Ranks',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+subtitle: {
+text: document.ontouchstart === undefined ?
+'Click and drag in the plot area to zoom in' :
+'Drag your finger over the plot to zoom in'
+},
+xAxis: {
+categories: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34],
+title: {
+text: 'Number of Artifact Power Ranks' 
+},
+startOnTick: true,
+showFirstLabel: true
+},
+yAxis: {
+title: {
+text: 'Artifact Power',
+style: {
+fontSize: '16px',
+color: '#000',
+fontWeight: 'bold'
+}
+},
+startOnTick: true,
+showFirstLabel: false
+
+},
+
+legend: {
+enabled: false
+},
+plotOptions: {
+
+areaspline: {
+animation: false,
+lineWidth: 3,
+marker: {
+enabled: true,
+states: {
+hover: {
+enabled: true,
+radius: 5
+}
+}
+},
+shadow: false,
+states: {
+hover: {
+lineWidth: 3 
+}
+}
+}
+},
+tooltip: {
+formatter: function {
+return '<b>Total Ranks:' + this.x + '</b><br>'+ Highcharts.numberFormatthis.y, 0, '.' , ',' +' Artifact Power for this rank';
+}
+},
+series: [{
+type: 'areaspline',
+name: 'Artifact Power Cost',
+data: [
+100, 325, 350, 375, 400, 425, 450, 475, 500, 525, 550, 635, 1260, 1610, 2070, 2640, 3430, 4500, 5865, 7540, 9540, 12150, 15400, 19600, 25850, 33965, 44680, 58480, 77220, 102000, 133875, 175430, 231420, 302950, 383000 ]
+}]
+};
+
+};
+</script> 
+<div id="apCosts" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+Legion - Empowered Ring of the Kirin Tor
+The Kirin Tor rings http://wow.gamepedia.com/Kirin_Tor_rings may be returning in Legion! Sminx Glasseye http://beta.wowdb.com/npcs/93543-sminx-glasseye sells the Empowered Ring of the Kirin Tor http://beta.wowdb.com/items/139599-empowered-ring-of-the-kirin-tor for <span class="money-gold" alt="g">50,000</span>. The vendor currently belongs to the old Kirin Tor faction, so it is possible there will be reputation discounts. 
+
+Currently the ring has Intellect, unlike all of the other Legion rings and neck items. It is possible that this is just an oversight and the final ring will have Stamina instead.
+
+
+http://media.mmo-champion.com/images/news/2016/april/thumb/EmpoweredRingoftheKirinTor.jpg http://media.mmo-champion.com/images/news/2016/april/EmpoweredRingoftheKirinTor.jpg 
+
+
+Blue Tweets
+Classes
+Has anyone heard of an official announcement, that gnome hunters will be playable in Legion pre-patch? Google was giving me no answers.
+Yep! Muffinus https://twitter.com/Muffinus/status/722610964621754368
+
+Art
+Draenei male's weapons are not scaling properly in Legion alpha. Id post an ingame screenshot, but...
+We're on it. Should look better in a coming build. WarcraftDevs https://twitter.com/WarcraftDevs/status/722492836138975232
+
+World Quests
+Re;World Quests. Are there a cap on how many world quests can be up in a zone at any given time in Legion?
+If yes, does that mean a profession quest could potentially bump out a non-professional quest?
+Prof. quests are deemed lower priority, if one tries to spawn in an occupied spot, it will try to spawn elsewhere Muffinus https://twitter.com/Muffinus/status/721768393297104896
+
+PvE
+mythic + dungeons will the be available at launch or delayed like raids? 
+Current thinking: Mythic dungeons available right away; scaling keystone system unlocks alongside raiding. WarcraftDevs https://twitter.com/WarcraftDevs/status/722229931069943808
+
+Will Mythic Dungeons and the scaling have matchmaking or must you put groups together yourself?
+Just as on live today, players must form groups for Legion Mythics. The Premade Group Finder is great for this. WarcraftDevs https://twitter.com/WarcraftDevs/status/722911145451859970
+
+Lore
+Hello sir. Do you know if Sargeras is technically dead? I believe he is, since his spirit was attached to an avatar that was
+As of now, we don't know. Muffinus https://twitter.com/Muffinus/status/722643862741741568
+
+Reputation / Questing
+Do these new tapping rules apply just to Legion content, or also to pre-Legion content?
+The entire world Muffinus https://twitter.com/Muffinus/status/722875030032388096
+
+Wait so up to 5 non grouped people can tag 1 mob and get individual exp and loot?
+Yes Muffinus https://twitter.com/Muffinus/status/722878317280382976
+
+I can't post on the forums but wht happens to the grey loot that drops? Will a random be able to steal it from you? -
+Everything is personal loot, even the old world. No fighting for greys. Muffinus https://twitter.com/Muffinus/status/722877460769968128
+I assume old-world doesn't have any fancy mob scaling like in Legion though? Just the open tag/personal loot feature?
+Correct Muffinus https://twitter.com/Muffinus/status/722878383491649536
+
+Why don't rares have this HP scaling mechanic anymore? Devs seem to drop it in WOD rares comp to MOP rares.
+They should, if they're missing a scaling record, it's a bug Muffinus https://twitter.com/Muffinus/status/722887951651241986
+
+
+Ghostcrawler Tweets
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.
+Hey Greg, you don't work at Blizzard anymore but you surely have thoughts about Nostalrius and the whole debate?
+I've been asked this a lot. I'm not going to pick a side about who is right or wrong because it's probably not that simple OccupyGStreet https://twitter.com/OccupyGStreet/status/723623809522143232
+I definitely feel for the players who lost something. OccupyGStreet https://twitter.com/OccupyGStreet/status/723623884851814400
+But I'm sure Blizzard had good reasons. Maybe they had to protect their IP, because you can lose it if you do not. IDK. OccupyGStreet https://twitter.com/OccupyGStreet/status/723624069149552641
+I think most of you know that one thing Blizzard and I do disagree on is how much you should communicate with players. OccupyGStreet https://twitter.com/OccupyGStreet/status/723624235076190208
+What is your stance if I can ask?
+I try to be as transparent with players as I possibly can be. OccupyGStreet https://twitter.com/OccupyGStreet/status/723624896253693952
+Blizzard had a different philosophy, which is fine. I don't begrudge them that. OccupyGStreet https://twitter.com/OccupyGStreet/status/723624993104355328
+
+Since the Nostalrius thing came up, what is your stance on bringing back vanilla servers officially. Sorry if asked before.
+Philosophically, if it was my game, I would think it was cool to try. But that still doesn't make it easy. OccupyGStreet https://twitter.com/OccupyGStreet/status/723627191418773504
+Technical challenges are massive. Players won't accept "We aren't going to fix bugs on some servers." It's always "Just this one?" OccupyGStreet https://twitter.com/OccupyGStreet/status/723627004210241536
+
+
+Final Boss - Blood Death Knight Spec Preview
+Final Boss is back with a second round of spec previews.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/BVuWEnKn56o?rel=0" frameborder="0" allowfullscreen></iframe>

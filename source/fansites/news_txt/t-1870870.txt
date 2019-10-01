@@ -1,0 +1,280 @@
+chaud2015-09-27, 10:04 PM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Fan Creation - Necromancer http://www.diablofans.com/news/48531-fan-creation-necromancer
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Popular Constructed Decks of the Week, The Worst Arena Cards Ever http://www.hearthpwn.com/news/1042-popular-constructed-decks-of-the-week-the-worst
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Heroes of the Storm Medic & Artanis PTR Patch - Hero Changes & More http://www.heroesnexus.com/news/1496-new-skin-and-mount-previews-buccaneer-falstad
+
+Armory Stats - Battle Pet Leveling and Achievement Points
+It's still Pet Battle Bonus Weekend, and we are concluding the pet battle related posts by taking a look at the remaining battle pet achievements. Today's data is from 2.1 million players not characters that were active after August 1st.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2015/july/highcharts.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#D4A190']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'petLeveling',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ '1 Pet to Level 3', '1 Pet to Level 5', '1 Pet to Level 10', '1 Pet to Level 15', '1 Pet to Level 20', '1 Pet to Level 25', '15 Pets to Level 10', '30 Pets to Level 10', '75 Pets to Level 10', '15 Pets to Level 25', '30 Pets to Level 25', '75 Pets to Level 25', 'Pet of every family to Level 10', 'Pet of every family to Level 25'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+max: 100,
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Pet Leveling Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 87.19, name:'1 Pet to Level 3'},{y: 85.14, name:'1 Pet to Level 5'},{y: 71.28, name:'1 Pet to Level 10'},{y: 65.67, name:'1 Pet to Level 15'},{y: 64.07, name:'1 Pet to Level 20'},{y: 63.32, name:'1 Pet to Level 25'},{y: 18.14, name:'15 Pets to Level 10'},{y: 10.90, name:'30 Pets to Level 10'},{y: 4.73, name:'75 Pets to Level 10'} ,{y: 20.94, name:'15 Pets to Level 25'},{y: 13.87, name:'30 Pets to Level 25'},{y: 6.74, name:'75 Pets to Level 25'} ,{y: 14.69, name:'Pet of every family to Level 10'},{y: 16.43, name:'Pet of every family to Level 25'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'PBAchPts',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Earn 100 Pet Battle Achievement Points', 'Earn 200 Pet Battle Achievement Points', 'Earn 300 Pet Battle Achievement Points', 'Earn 400 Pet Battle Achievement Points'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Earned Pet Battle Achievement Points',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 70.12, name:'Earn 100 Pet Battle Achievement Points'},{y: 34.59, name:'Earn 200 Pet Battle Achievement Points'},{y: 19.07, name:'Earn 300 Pet Battle Achievement Points'},{y: 11.79, name:'Earn 400 Pet Battle Achievement Points'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+
+};
+</script> 
+<div id="petLeveling" width="50%">
+Don't see a chart? Enable javascript!
+</div> 
+<br />
+<div id="PBAchPts" width="50%">
+Don't see a chart? Enable javascript!
+</div> 
+
+Blue Tweets - Developer Communication
+How many game designers have been fired via online petition? Asking for a friend.holinka https://twitter.com/holinka/status/646069946284290048
+Hmm maybe you know @OccupyGStreet? holinka https://twitter.com/holinka/status/646074724833882112
+#AndThatsHowRumourStarts
+Ha ha, no I just mean he had many of these silly petitions in his time. Just pointing out we've seen this before. holinka https://twitter.com/holinka/status/646077214195191808
+The more likely outcome is your boss says "Keep doing what you're doing, but stop talking to players because it's controversial." OccupyGStreet https://twitter.com/OccupyGStreet/status/646125150400737280
+Yep, ties into that "why game devs don't communicate with players" article you linked previously. Celestalon https://twitter.com/Celestalon/status/646129925037031424
+I don't think this particular group cares about communication. They are unhappy and want corrective action. holinka https://twitter.com/holinka/status/646130515100065793
+They are operating under the false belief that I am standing in the way of them getting what they want. holinka https://twitter.com/holinka/status/646130627956178944
+
+Can't punish communication to all players due to a horrible few.
+Our team's strategy is to communicate through @WarcraftDevs & not our personal accounts. That's fine. holinka https://twitter.com/holinka/status/646132394399920128
+
+Jay Wilson
+Ha! I know for a fact that isn't true. holinka https://twitter.com/holinka/status/646073475140943872
+I know, but I still think he was majorly unfairly crucified in the community. They also seem to take 'credit' for him leaving.
+Yes certainly unfortunate. He is like a design buddha. Kind and helpful to everyone he meets. holinka https://twitter.com/holinka/status/646075352977047552
+
+
+Ghostcrawler Tweets
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.
+With an MMO, not necessarily WoW mind, how important should micro vs macro customization be? Are big choices more fun?
+Typically you don't get to make the big choices very often so having the "tweaky" little ones can feel satisfying IMO. OccupyGStreet https://twitter.com/OccupyGStreet/status/645952947294072832
+
+is it a lost cause to try to get players to express right feedback versus the wrong type of feedback?
+I find it cumbersome to give players too many rule about how they can provide feedback. OccupyGStreet https://twitter.com/OccupyGStreet/status/645954433214386177
+If you can get them to consider how their feedback will be viewed oh this guy is just ranting that can focus their point. OccupyGStreet https://twitter.com/OccupyGStreet/status/645954798261436416
+
+
+Computers - Setup of the Month
+Each month or so we will post a couple of hardware setups for those of you who are thinking of upgrading their computer!
+
+This month
+The current SSD prices http://media.mmo-champion.com/images/news/2015/september/ssdgraph.gif are fairly flat right now, with most SSDs under $0.50 per gigabyte when on sale. 
+
+New CPUs from Intel and GPUs from AMD are here, but they aren't huge improvements over the previous generation. 
+
+Depending on how much you want to overclock, you may need to spend a bit more for a better CPU cooler like the NH-D14 http://www.amazon.com/gp/product/B002VKVZ1A?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002VKVZ1A. 
+
+Unless you are doing a lot of video rendering or streaming, you do not need the 6700K and should spend that money elsewhere.
+
+Make sure to keep your AMD http://sites.amd.com/us/game/downloads/Pages/downloads.aspx and Nvidia http://www.nvidia.com/Download/index.aspx?lang=en-us drivers up to date.
+
+Don't forget to visit the Computer Forum http://www.mmo-champion.com/forums/290-Computer for any extra questions!
+
+
+
+Peripherals/Monitors
+
+<table class="listing sortable news-table" style="margin: auto;"> <thead> <tr class="mmoc-listing-row"> <th width="130">Component</th><th width="400">Puppy</th> <th width="400">Dolphin</th> </tr></thead> <tbody> 
+
+<tr class="mmoc-listing-row"><td>Monitor</td><td>ASUS VS228H-P 22-Inch Monitor http://www.amazon.com/gp/product/B005BZNDOO?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005BZNDOO - $115</td><td>ASUS VS248H-P 24-Inch Monitor http://www.amazon.com/gp/product/B0058UUR6E?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0058UUR6E - $140</td></tr>
+
+<tr class="mmoc-listing-row"><td>Keyboard</td><td>Kensington Pro Fit Media Keyboard http://www.amazon.com/gp/product/B006TRANEQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B006TRANEQ - $22</td><td>Cyborg V.5 http://www.amazon.com/gp/product/B002SAJCYU?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002SAJCYU - $58</td></tr>
+
+<tr class="mmoc-listing-row"><td>Mouse</td><td>Logitech G402 http://www.amazon.com/gp/product/B00LZVNWIA?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00LZVNWIA - $50</td><td>Razer DeathAdder http://www.amazon.com/gp/product/B00AAS888S?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00AAS888S - $53</td></tr>
+
+<tr class="mmoc-listing-row"><td>Speakers</td><td>Creative A250 2.1 Speaker System http://www.amazon.com/gp/product/B00CDJJZV6?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00CDJJZV6 - $30</td><td>Logitech Z313 Speaker System http://www.amazon.com/gp/product/B002HWRZ2K?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002HWRZ2K - $32</td></tr></tbody>
+<thead> <tr class="mmoc-listing-row"> <th width="130">Component</th><th width="400">Narwhal</th> <th width="400">Unicorn</th> </tr></thead> <tbody> 
+<tr class="mmoc-listing-row"><td>Monitor</td><td>Dell P2414H Monitor http://www.amazon.com/gp/product/B00EMB4KVI?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00EMB4KVI - $200</td><td>Dell U2412M http://www.amazon.com/gp/product/B005JN9310?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005JN9310 - $263</td></tr>
+
+<tr class="mmoc-listing-row"><td>Keyboard</td><td>Logitech G510s http://www.amazon.com/gp/product/B00BCEK2LU?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00BCEK2LU - $77</td><td>Corsair Vengeance K70 http://www.amazon.com/gp/product/B00IYJD5CY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00IYJD5CY - $123
+</td></tr>
+
+<tr class="mmoc-listing-row"><td>Mouse</td><td>Logitech G502 http://www.amazon.com/gp/product/B00IRHE892?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00IRHE892 - $58</td><td>Razer Naga 2014 http://www.amazon.com/gp/product/B00E8CF268?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00E8CF268 - $70</td></tr>
+
+<tr class="mmoc-listing-row"><td>Speakers</td><td>Logitech Z323 2.1 Speaker System http://www.amazon.com/gp/product/B002FU5QM0?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002FU5QM0 - $50</td><td>Logitech Speaker System Z523 http://www.amazon.com/gp/product/B002FU5QMK?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002FU5QMK - $86</td></tr></tbody></table>
+
+
+
+Puppy and Dolphin
+All of these parts can be mixed and matched to create a build between Puppy and Dolphin.
+
+<table class="sortable news-table" style="margin: auto;"> <thead> <tr class="mmoc-listing-row"> <th width="130">Component</th><th width="400">Puppy</th> <th width="400">Dolphin</th> </tr></thead> <tbody> 
+
+<tr class="mmoc-listing-row"><td>Case</td><td>NZXT Source 210 http://www.amazon.com/gp/product/B005869IUY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005869IUY - $48</td><td>NZXT Source 210 http://www.amazon.com/gp/product/B005869IUY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005869IUY - $48</td></tr>
+
+<tr class="mmoc-listing-row"><td>Power Supply</td><td>EVGA 600B http://www.amazon.com/gp/product/B00EON40CS?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00EON40CS - $63</td><td>EVGA 600B http://www.amazon.com/gp/product/B00EON40CS?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00EON40CS - $63</td></tr>
+
+<tr class="mmoc-listing-row"><td>CPU</td><td>AMD FX-6300 http://www.amazon.com/gp/product/B009O7YORK?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B009O7YORK - $100</td><td>AMD FX-8320 http://www.amazon.com/gp/product/B009O7YU56?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B009O7YU56 - $140</td></tr>
+
+<tr class="mmoc-listing-row"><td>Heatsink</td><td>Cooler Master Hyper 212 EVO http://www.amazon.com/gp/product/B005O65JXI?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005O65JXI - $31</td><td>Cooler Master Hyper 212 EVO http://www.amazon.com/gp/product/B005O65JXI?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005O65JXI - $31</td></tr>
+
+<tr class="mmoc-listing-row"><td>Motherboard</td><td>ASUS M5A97 R2.0 http://www.amazon.com/gp/product/B008V9959O?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B008V9959O - $94</td><td>ASUS M5A99FX PRO http://www.amazon.com/gp/product/B008B6ONXK?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B008B6ONXK - $104</td></tr>
+
+<tr class="mmoc-listing-row"><td>Memory</td><td>Kingston HyperX FURY 8GB 1866 http://www.amazon.com/gp/product/B00J8E91UO?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00J8E91UO - $44</td><td>8GB G.Skill DDR3 1600 http://www.amazon.com/gp/product/B00339X1EM?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00339X1EM - $54</td></tr>
+
+<tr class="mmoc-listing-row"><td>Graphics Card</td><td>MSI R7 260X http://www.amazon.com/gp/product/B00FR6XOQO?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00FR6XOQO - $130</td><td>R9 270X http://www.amazon.com/gp/product/B00GN1Y42A?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00GN1Y42A / GTX 960 http://www.amazon.com/gp/product/B00S9SGMZM?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00S9SGMZM - $200 / $171</td></tr>
+
+<tr class="mmoc-listing-row"><td>Hard Drive</td><td>Western Digital Caviar Blue 500GB http://www.amazon.com/gp/product/B00461G3MS?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00461G3MS - $36</td><td>Western Digital Caviar Black 1TB http://www.amazon.com/gp/product/B00FJRS6FU?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00FJRS6FU - $82</td></tr>
+
+<tr class="mmoc-listing-row"><td>DVD</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0033Z2BAQ - $21</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0033Z2BAQ - $21</td></tr>
+
+<tr style="text-align: center; font-weight: bold;" class="mmoc-listing-row"><td>Total</td><td>$567</td><td>$714 - 743</td></tr></tbody></table>
+
+
+
+Narwhal and Unicorn
+All of these parts can be mixed and matched to create a build between Narwhal and Unicorn. 
+
+<table class="sortable news-table" style="margin: auto;"> <thead> <tr class="mmoc-listing-row"> <th width="130">Component</th><th width="400">Narwhal</th> <th width="400">Unicorn</th> 
+</tr></thead> <tbody> 
+
+<tr class="mmoc-listing-row"><td>Case</td><td>Cooler Master HAF 912 http://www.amazon.com/gp/product/B003ZM7YTA?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003ZM7YTA - $66</td><td>Corsair Air 540 http://www.amazon.com/gp/product/B00D6GINF4?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00D6GINF4 - $137</td></tr>
+
+<tr class="mmoc-listing-row"><td>Power Supply</td><td>EVGA G2 650W http://www.amazon.com/gp/product/B0106RDIN2?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0106RDIN2 - $100</td><td>EVGA G2 650W http://www.amazon.com/gp/product/B0106RDIN2?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0106RDIN2 - $100</td></tr>
+
+<tr class="mmoc-listing-row"><td><b>CPU</b></td><td>Intel 6600K http://www.amazon.com/gp/product/B012M8M7TY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B012M8M7TY - $275</td><td>Intel 6600K http://www.amazon.com/gp/product/B012M8M7TY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B012M8M7TY - $275</td></tr>
+
+<tr class="mmoc-listing-row"><td>Heatsink</td><td>Scythe Mugen 4 http://www.amazon.com/gp/product/B00G9YBHEY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00G9YBHEY - $52</td><td>Noctua 6 NH-D14 http://www.amazon.com/gp/product/B002VKVZ1A?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002VKVZ1A - $76</td></tr>
+
+<tr class="mmoc-listing-row"><td><b>Motherboard</b></td><td>ASUS Z170-A http://www.amazon.com/gp/product/B012NH05UW?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B012NH05UW - $164</td><td>ASUS Z170-A http://www.amazon.com/gp/product/B012NH05UW?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B012NH05UW - $164</td></tr>
+
+<tr class="mmoc-listing-row"><td>Memory</td><td>8GB Crucial Ballistix Sport DDR4 2400 http://www.amazon.com/gp/product/B00MTSWEQE?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00MTSWEQE - $50</td><td>16GB Kingston HyperX FURY DDR4 2133 http://www.amazon.com/gp/product/B00TY6A1LY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00TY6A1LY - $116</td></tr>
+
+<tr class="mmoc-listing-row"><td>Graphics Card</td><td>Gigabyte R9 380 http://www.amazon.com/gp/product/B00ZGF3TUC?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00ZGF3TUC - $230</td><td>Gigabyte R9 390 http://www.amazon.com/gp/product/B00ZGF3UAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00ZGF3UAQ OR ASUS GTX 970 http://www.amazon.com/gp/product/B00NJ9BJ8G?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00NJ9BJ8G - $310 / $320</td></tr>
+
+<tr class="mmoc-listing-row"><td>Hard Drive</td><td>Western Digital 2TB Caviar Black http://www.amazon.com/gp/product/B00FJRS628?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00FJRS628 - $116</td><td>Western Digital 2TB Caviar Black http://www.amazon.com/gp/product/B00FJRS628?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00FJRS628 - $116</td></tr>
+
+<tr class="mmoc-listing-row"><td>SSD</td><td>Crucial BX100 250GB http://www.amazon.com/gp/product/B00RQA6TEI?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00RQA6TEI Review http://anandtech.com/show/9144/crucial-bx100-120gb-250gb-500gb-1tb-ssd-review - $85<br /><b>OR</b><br />SAMSUNG 850 EVO 250GB http://www.amazon.com/gp/product/B00OAJ412U?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00OAJ412U Review http://anandtech.com/show/8747/samsung-ssd-850-evo-review - $89</td><td>SanDisk Extreme PRO 240GB http://www.amazon.com/gp/product/B00KHRYRNM?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00KHRYRNM Review http://anandtech.com/show/8170/sandisk-extreme-pro-240gb-480gb-960gb-review - $120<br /><b>OR</b><br />
+SAMSUNG 850 Pro 256GB http://www.amazon.com/gp/product/B00LMXBOP4?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00LMXBOP4 Review http://www.anandtech.com/show/8216/samsung-ssd-850-pro-128gb-256gb-1tb-review-enter-the-3d-era - $133</td></tr>
+
+<tr class="mmoc-listing-row"><td>DVD</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0033Z2BAQ - $21</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0033Z2BAQ - $21</td></tr><tr style="text-align: center; font-weight: bold;" class="mmoc-listing-row"><td>Total</td><td>$1159 - 1207</td><td>$1400 - 1458</td></tr></tbody></table>
+
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Heroes of the Storm PTR - New Skins, Mounts, and Animations
+More goodies http://www.heroesnexus.com/news/1496-new-skin-and-mount-previews-buccaneer-falstad from the PTR today, with new skins and mounts previewed, along with the new and upgraded animations.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/SvdvkqBuwdU?rel=0" frameborder="0" allowfullscreen></iframe>
+
+http://media.mmo-champion.com/images/news/2015/september/hotsPTRSkins.jpg http://www.heroesnexus.com/news/1496-new-skin-and-mount-previews-buccaneer-falstad

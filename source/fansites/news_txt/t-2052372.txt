@@ -1,0 +1,183 @@
+chaud2016-08-20, 09:08 PMGamescom Developer Interview
+Sloot https://twitter.com/Slootbag was back today with another WatcherDev https://twitter.com/WatcherDev/with_replies interview!
+
+
+<iframe src="https://player.twitch.tv/?video=v84678318&!autoplay&t=1h55m" frameborder="0" scrolling="no" height="506" width="900"></iframe>
+
+Raid Addon Utility and Changes
+
+Addons that do things like tracking boss timers and better visibility on who is being targeted by what are fine, it is all informational. 
+Some of the things that addons do that interact with the 3D world such as radars or sending people to specific spots on Mythic Kormrok and Kromog are not great. 
+You could have much more scripted movement with the current state of addons, micromanaging your raid's movement and telling players exactly where to move in the 3D world. 
+In Patch 7.1, addons will not be able to access unit position in raids, dungeons, and competitive instances. 
+The team wanted to get this in Patch 7.0.3, but they didn't want to break some mods that are harmless in the outdoor world, such as the ones that help with gathering or collecting treasures. 
+Anything that projects an arrow on your screen that interacts with the 3D world or giving you your position relative to others will be broken. 
+The team didn't want to announce this until they were sure it was doable, but that work has now been done internally. 
+
+
+Dungeons and Raids
+
+There will be spots throughout dungeons where Demon Hunters can take some shortcuts, but your healer can't be a Demon Hunter.
+Part of why the team never fixed some of the terrain in Everbloom is the challenge mode leaderboard. Fixing it would make the top times unbeatable. 
+With Mythic keystones, every week is its own leaderboard, so there is more flexibility to fix any issues with the dungeon.
+There is some tuning left to do on the enemy forces meters so that you can't skip too much of the dungeon. 
+You should have to fight most of the things in your path, dodging patrols and maybe some other groups. 
+Stealth or invisibility potions should allow you to change which groups you have to fight, maybe skipping some tougher ones to do easier ones.
+Having new and different mechanics in higher raid difficulties gives the team more tuning knobs and players something to look forward to other than bigger numbers.
+Rare mobs in dungeons that are part of the world quest system should be rewarding even if you are a player that is still leveling and doesn't have access to the world quest yet. This way going to kill the mob is still rewarding for the entire group. 
+
+
+Camera Zoom
+
+The team wants something to feel epic, even at a larger zoom distance, so they scale things up. Things have been huge throughout WoW's history. 
+Threats that are off screen that you need to pay attention to are trivialized if you can just zoom out to see them. 
+The team has to tune those kind of threats around a certain camera zoom distance. 
+If zooming out even more by setting the cvar gives you an advantage, does that make it required? 
+In a world where you can zoom the camera out and the mechanic is tuned around people doing that, not doing so penalizes you significantly. 
+Motion sickness and other issues that caused discomfort while playing led to the team trying to find a compromise that let everyone play comfortably. 
+The team strongly feels that the game looks and feels better at the maximum zoom allowed by the UI. 
+The new max zoom distance wasn't added to the slider because it will increase the number of people that are experiencing the game in a sub-optimal way.
+
+
+Loot Rules
+
+With new personal loot rules, you can trade an item to another person in the raid if you have an equivalent or higher item level. You can't do this for bonus rolled loot. 
+The cooperative nature of group and guild gameplay leads to you wanting to pass an item you don't need to a friend. Personal loot denied you this opportunity until this change.
+
+
+Mythic+ Dungeons
+
+The best loot from Mythic+ dungeons comes from the weekly chest. 
+The loot that you are getting out of Mythic+ dungeons per clear will need a fair bit of luck to compete with the very best loot in the game. 
+Most players are not going to farm alts and source multiple fresh keystones on a regular basis to play a ton of Mythic+ dungeons. 
+The Mythic+ dungeon shouldn't be worse for the average player in order to safeguard against exploits or abuse of the system at the high end by a minority of players. 
+The team didn't want to be overly stingy with a new system, instead allowing players to have freedom, finding the abuse cases, and solving them with targeted fixes. 
+A weekly lockout is an easy solution, but everyone would complete their mythic dungeons at the start of the week and then everyone else would have trouble finding a group. 
+There is a possibility that chests at the end of each Mythic+ dungeon run are a little bit too rewarding right now in terms of a guaranteed item for everyone in the group. It should be a complement to raiding, not the best way to gear up early on. 
+The number of items that come out of the chest might change before it goes live. Maybe there are always a couple of items in the chest for the group rather than one for everyone. 
+Mythic+ dungeons are cross-realm. The realm first achievement http://beta.wowdb.com/achievements/11224-realm-first-keystone-master will be awarded to each player in a five player group that is made up of players from different realms, but this could change to something like 3/5 people being from the same realm to get it. 
+If a player hasn't unlocked Arcway and Court of Starts they won't get a keystone sending them there. 
+
+
+Dungeon Design
+
+Most dungeons should have 3-5 bosses and take around 15-20 minutes to run on the low end to 35-40 minutes on a larger and epic dungeon. Anything past that isn't great for random matchmaking content, as the likelihood that someone is going to drop out along the way increases. 
+In raids, the bosses are the main content, with the trash there for pacing and to make it feel more like a real place.
+With dungeons, the team values the non-boss content as well as the bosses. 
+In dungeons you are only spending 7-8 minutes of a 30 minute dungeon fighting the actual bosses, while spending the rest fighting the trash. There is a lot more thought that goes into the composition of the trash packs, their abilities, and mechanics. 
+You used to quest through a zone and get sent into a dungeon to wrap up the zone. 
+The team got away from doing that for a little while, as it increasingly felt bad when you were doing a solo quest line and then had to stop what you were doing to finish the line with a dungeon quest. 
+With random matchmaking and LFG, it is almost still a solo experience if you want it to be. You can jump right into the dungeon and finish the storyline at the end of the zone. 
+
+
+Tier Tokens
+
+There is no change to how tier set tokens work from Warlords. 
+Personal loot gives you the set piece directly while group loot and master loot drop tokens. 
+It feels better to loot a piece of gear rather than a token, but in a group loot situation the tokens function better.
+
+
+Dungeon Design
+
+The team has an internal checklist when they think about encounters, similar to the role tips in the dungeon journal. 
+Sometimes they get to the dungeon journal phase, look at creating a tip for DPS, and find that there isn't anything they can think of to write there. 
+If that is the case, they probably need an additional mechanic. 
+The dungeon is an entire encounter, so as a whole it should have things that are interesting and engaging for all of the different roles. 
+
+
+Content Rewards
+
+Rather than items being a fixed power point, they are a spectrum. There is a floor on the stats and then a tapering pyramid of item level with a lower and lower chance to get that item the higher item level it is. This allows content to stay relevant for longer. 
+Before, dungeons had a fixed place in gearing up. As soon as you moved on to any form of raiding, there was very little reason to go back and do dungeons. The team would come up with excuses to send you back so that people could enjoy dungeons, such as Badges or Valor Points, but the gear was still irrelevant. 
+Even if you have progressed into raids in Legion, there is a chance that something cool could drop from it that will be useful for your character. 
+It always will be best to do the hardest content available to you in terms of reward for time spent. 
+You could still get something great from a world quest or Mythic dungeon, which is nice because that possibility didn't exist before. 
+The person who does raid finder over the course a patch might end up with a piece of high item level gear, but it is just one piece of gear. No one is going to mistake them for a Mythic raider. For the person that got that amazing drop, that probably made their day. 
+The team wanted to get back to a place where anything could happen rather than knowing nothing exciting would happen. 
+
+
+Augment Runes
+
+Augment runes and the higher stat food are there for min-maxers that want to squeeze every bit of potential out of the system. 
+There is also an economic side to this, with raiders selling BoE items from raids and using the profit to finance consumables and repairs. 
+Augment runes allows the team to have a baseline solid reward from Raid Finder when you don't win an item. 
+Past expansions gave you 28 gold, which didn't make anyone feel good. 
+The augment runes can actually sell for a decent amount early on in the expansion, which is a better solution than dropping hundreds of gold and causing inflation. 
+The intent is for augment runes to be a nice bonus to players in Raid Finder, not for Mythic raiders to feel that it is necessary to run Raid Finder.
+Guilds that are using augment runes generally use the guild bank to fund them or rich players in that guild. 
+
+
+Scaling Dungeons
+
+As soon as the team starting working on the tech to scale the outdoor zones to the player level, they knew that they wanted to do it in dungeons as well. 
+If you can do any zone while leveling it would be strange to not be able to do certain dungeons, especially when they are integrated into the zone story. 
+This will also help with queue times, as the entire leveling pool of players can match with each other.
+
+
+Raid Tiers
+
+When the team released Warlords, they thought of Highmaul and Foundry as the same tier. 
+They intended for Foundry to pick up where Highmaul left off, with early Foundry bosses tuned to expect a good amount of Highmaul gear. 
+Even with the time between the two raids, guilds coming in were not feeling rewarded by the 10 item level increase from Highmaul to Foundry. 
+It was common for a guild to clear normal Highmaul, do the first few bosses of Heroic Highmaul, and then go into normal Foundry, which was as hard as early Heroic Highmaul. 
+The team hotfixed the item level of loot from Foundry to make it a full tier apart. 
+In Legion, there is the sliding scale on item level so the team wanted to make sure that if you have been running Normal Nightmare for a while that when you go into Normal Nighthold the gear will feel like an upgrade. 
+Going into a brand new raid, killing the first few bosses, and disenchanting everything that drops does not feel great. 
+
+
+Legendary Items
+
+There has been some thought about a legendary item token that you could turn it, but it is premature at this stage in the system. 
+There aren't that many legendary items yet, so you don't feel completely unable to get the one you want. 
+If there were 20 legendary items for every spec, you might play the entire expansion and never see the one you wanted. That would feel pretty rough. 
+If you gave players a token, there would be a specific legendary they would spend that token on and feel like a very narrow and deterministic system. 
+The team is looking for ways to make items more interesting and exciting in a world where it feels like items are very formulaic. Legendary items can change your preferred talent build, stat ratings, or how you play your class. 
+There is something that would be lost by giving you a token, having you pick the legendary that is best for your existing talent build, and min-max that way. 
+Initially the team looked at having the legendary items disabled during the World First race, but you can only have one legendary item equipped, making them powerful but not overly so. 
+There is still some tuning to be done on tank and healer legendary items, as they can have more of an impact than one DPS having one. 
+There has always been some element of randomness in gearing up for progression. If you got Warforged Mythic Soul Capactiors on your first clear, that was a really big deal, bigger than a legendary item. 
+There hasn't been a situation where the outcome of the World First race was decided by someone's luck while gearing up. 
+Legendary items are tough to balance, which is why you can buy them from the NPC on beta. 
+
+
+Wrathion
+
+Wrathion is still around. 
+In alpha he made an appearance in Neltharion, as it is the home of his father, but the way he did it was a little confusing. 
+One of the members of the Highmountain Tauren that had been assisting you was revealed to be Wrathion in disguise. 
+This didn't make sense for the lore. 
+We definitely haven't seen the last of him. 
+
+
+Order Hall Story
+
+There are plans to continue the story of the Order Hall campaigns. The Alliance and Horde went to the Broken Shore, tried to stop the Legion, and failed miserably. 
+A lot of the story here is you working with your Order, building up your artifact, recruiting champions, and the Orders are our hope for success against the Legion in the long run. 
+As the story advances, Orders will be important. 
+
+
+Class Changes and Bugfixes
+
+The Exsanguinate nerf hotfix wasn't handled well. 
+Since then, the team has tried to post about upcoming class changes a couple of days before they go live, even holding back the hotfix if messaging hasn't gone out. 
+Players shouldn't have to worry about abilities silently changing in the middle of the raid.
+The team fixed a couple hundred bugs a week after the patch went live and a couple thousand a week during late beta. 
+
+
+Class Balance and Artifacts
+
+The team draws the line at changing the relative order of specs in the short term, via hotfix. 
+If Fire is way too good, rather than bringing them down to a point where they are tied with or worse than Frost and Arcane, they will take them to slightly too good still. 
+You shouldn't regret what you spent your Artifact Power on. 
+As the team looks ahead to Patch 7.1 and later in the expansion, there is more flexibility to how Artifact Power can work. 
+They won't keep the game imbalanced for a long period of time, but in the short term there is a lot of disruption that comes from players feeling like the time they spent powering up their artifact was a mistake.
+
+
+Treasure Goblins
+
+Treasure Goblins have been removed, they might come back later. 
+
+
+Karazhan
+
+The new Karazhan is definitely not just updating the old boss numbers. There will be some cool stuff that will blow people's minds, genuinely getting hyped!

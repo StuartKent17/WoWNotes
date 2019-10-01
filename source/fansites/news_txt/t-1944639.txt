@@ -1,0 +1,75 @@
+chaud2016-02-03, 07:30 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Feb 2nd Minor Patch, Frost Marauder DH Guide http://www.diablofans.com/news/48642-feb-2nd-minor-patch-frost-marauder-dh-guide
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Hearthstone Season 23 Begins, Popular January 2016 Constructed Decks - Budget Friendly, Firebat Leaves Team Archon http://www.hearthpwn.com/news/1180-a-new-way-to-play-hearthstone-more-deck-slots-new
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Li Ming Now Available & Feb 2th Patch Notes http://www.heroesnexus.com/news/1609-li-ming-now-available-feb-2th-patch-notes
+
+Legion - Restoration Shaman Artifact Intro
+The Restoration Shaman intro rewards you with the Caduceus of Azshara http://beta.wowdb.com/items/128911-caduceus-of-azshara. You can see the the trail the effect leaves in the last few minutes of the video. The start of this intro is the same as the other Shaman intros, so skip to 4:10 to see the Restoration specific part.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/HF2XEWNO6HE?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+Patch 6.2.3 Hotfixes - February 2
+Class
+Monk
+
+Windwalker
+
+Fixed an issue where elemental spirits summoned by Storm, Earth, and Fire mirroring Rising Sun Kick in PvP combat dealt less damage than intended.
+
+
+
+Legion - Subtlety Rogue Changes
+The point of alpha testing has always been to test and get feedback. That's especially valuable and needed on ideas that are hard to test internally, and ones that need to be experienced to judge.
+
+As such, we sometimes will go forward with testing something that people respond negatively to on paper, to see if that response remains the same once it's actually been tried. That can be concerning, and feel like we're not listening or caring about your feedback, but it couldn't be any further from the truth. We hear you, loud and clear.
+
+The idea of a Rogue that got to do the full Opener-Builder-Finisher-Vanish cycle repeatedly was an extremely compelling fantasy to us. But it also was a scary one, from a balance point of view. Because of that, we were quite timid about it, reducing the stealth to not be actual stealth, taking away more CC to compensate for the potential of many Cheap Shots, initially taking away Shadowstep to compensate for incredible mobility potential of Shadowstrike, and felt tentatively OK with the reduced flexibility of the new Shadow Dance due to its sheer uptime. Additionally, there were some bugs and tuning issues in the currently live alpha build that make Subtlety seem worse than it is, such as Nightblade doing less damage than Eviscerate, which we'll get fixed.
+
+Feedback has been clear. The core issue is that the Opener-Builder-Finisher-Vanish cycle doesn't feel distinct or special; Shadowstrike feels remarkably like Backstab and it's easy to not even feel a difference. The upside isn't there, and the downsides are many and strong. And, the gameplay is not engaging enough overall.
+
+So, a future alpha build not sure yet if it'll be the next one, or the one after that will have significant changes to Subtlety. It'll include things like Shadow Dance returning to being an active ability, the addition of a new opener, and the return of some more CC. Stay tuned for full details when the build is ready.
+
+Thanks for all your constructive feedback, and we look forward to reading more of it when you are able to try the next version.
+
+Yeah. Angsty moments aside, this feels like a pretty nice victory for the alpha testing process as a whole. This was the right time to test a major spec-gameplay change like this, and the quality of player feedback in this forum as well as a couple of threads in other public venues was high. Personally I much prefer having had a chance to playtest a different Sub design in this sandbox over only seeing and reacting theoretical changes on paper. And I think it's helpful that everybody, both playtesters and onlookers alike, got to see that testing and feedback play out.
+I think this is a great sentiment, and I hope it spreads. Pre-release alpha/beta/PTR is the perfect place for us to experiment with uncertain changes, and it works best when players trust in that process. This should be seen as an example of a successful testing process, not a 'victory of rogues over designers'. We *all* win by trying out new things, even if those tests produce less than favorable results. If we never try out wild or scary changes, the game never evolves into something much greater or more exciting. I hope this helps players see that there is wisdom in responding to concerning-sounding changes, not with vitriol and doomsaying, but rather with testing, evaluating, and giving constructive feedback. Thanks to all who have done so.
+
+
+Multistrike in PvP
+So, we’ve been looking into this issue, and there appears to be some confusion. Here’s some clarification:
+
+First off, Multistrike grants two entirely separate chances in PvE, and only one chance in PvP. It sounds like you understand that already, but it’s important to keep in mind when you’re working out the math. Two separate 68% chances could result in 0 Multistrikes. If you simply multiply that 68% by 2, you get one single 136% chance, which is not how the system works. Obviously, this doesn’t apply in PvP where you would only have that single 68% chance, but it seemed worth clarifying.
+
+Secondly, the extra Multistrike effect on Lava Burst is a third, additional roll based on your Crit chance, NOT an additive increase to your other Multistrike chances. So, if you have 68% Multistrike and 13% Crit, casting Lava Burst at a target dummy would give you two 68% chances, and one 13% chance. It would not give you two 81% chances. Similarly, in PvP, you would have one 68% chance and one 13% chance.
+
+All that said, we still figured it was worth investigating to make sure there wasn’t anything screwy going on. So, we set up an Orc Elemental Shaman with 100% Multistrike and 12% Crit, and had him cast 3221 Lava Bursts at a Dwarf Monk. Those casts resulted in 3589 Multistrikes, which is extremely close only about half a percent off the projected mathematical average of 3608. 
+
+Based on that, as well as a few other cursory spot checks, it looks like Multistrike is working properly in PvP. I suspect that what you’re seeing is just due to the small sample size – it’s certainly well within the expected variance for that number of casts with that level of Multistrike. Hopefully this helps clear things up.
+
+Whatever did the poor dwarf do to deserve so many lava bursts...
+He knows what he did.
+
+
+Blue Tweets
+Please say removal of knockback on Thunderstorm for Ele is a tooltip error.
+It is just a tooltip bug! Knockback is still there. Celestalon https://twitter.com/Celestalon/status/692869038553214978
+
+Do you plan to keep Timewalking in Legion? ie. can we still obtain those cool mounts in Legion?
+Timewalking is a permanent addition to the game, and we look forward to continuing to expand it going forward. WarcraftDevs https://twitter.com/WarcraftDevs/status/692890547921391617
+
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Hearthstone - A New Way to Play
+Big changes are coming to Hearthstone! Card changes, more deck slots, new game modes, and more! 
+
+
+http://media.mmo-champion.com/images/news/2016/february/HSUpdates.png http://www.hearthpwn.com/news/1180-a-new-way-to-play-hearthstone-more-deck-slots-new 
+
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Heroes of the Storm - Lunar Festival
+Blizzard released a nice video for Lunar Festival in Heroes of the Storm.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/ft8lRq3sF3Q?rel=0" frameborder="0" allowfullscreen></iframe>

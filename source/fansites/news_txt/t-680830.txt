@@ -1,0 +1,76 @@
+Boubouille2009-11-27, 11:18 AMThere isn't a lot of official news to report this week because of Thanksgiving but hopefully I should have enough things to keep you entertained for a while. Also, 3.3 menu should appear on the site tomorrow, you can stop mailing me about that. 
+
+Player "beats the game" on Taiwanese Servers
+There was a few posts about it on the forums during the past week and I'll assume it's worth a front page news. On taiwanese servers, 小灰 http://tw.wowarmory.com/character-achievements.xml?r=Wrathbringer&cn=%E5%B0%8F%E7%81%B0&gn=%E7%A5%9E%E6%A8%A3 from the guild 神樣 http://tw.wowarmory.com/guild-info.xml?r=Wrathbringer&gn=%E7%A5%9E%E6%A8%A3 TW-Wrathbringer succesfully completed all achievements in the game and is the first player to reach 986/986 achievements completed on the armory. 
+
+Technically he's still missing BB King http://db.mmo-champion.com/a/4437/bb-king/ added with Patch 3.2.2 and his World Events achievements are down to 138/139 because of that, luckily a bug with an old PvP achievement gives him 165/164, that's how he got 986/986. The achievement count obviously doesn't take Feats of Strength into account because it's technically impossible to get all of them. Well I guess you could race change to compete for the first level 80 undead/tauren/troll/orc/blood elf on the same character but I don't think you'll get all of them
+
+I could have waited until he gets his last achievement to report it but Patch 3.3 will probably =99% chance be deployed on live servers before he has a chance to do it. It would be a shame to not talk about it just because of that, and if you ever wondered if it's possible to complete all the achievements in the game you have your answer now: yes you can, it's just going to take a lot of dedication. 
+
+
+http://static.mmo-champion.com/mmoc/images/news/2009/november/allachievements.jpg http://tw.wowarmory.com/character-achievements.xml?r=Wrathbringer&cn=%E5%B0%8F%E7%81%B0&gn=%E7%A5%9E%E6%A8%A3
+
+
+Regarding Purchasing WoW from Resellers
+We are beginning a special three-day sale of World of Warcraft on November 27 – 29, where the price of the original game will be only $5.00! Digital copies of the game, including an authentication key, will be available for purchase through our online store at this low rate as well. For more details on this special sale, please visit: http://us.blizzard.com/store/
+
+It’s possible that in some locations copies of the game which were purchased during this sale could be returned and be resold at full normal price. These resold copies may have already been used which would result in an invalidated authentication key unable to be used to create a World of Warcraft account. While we will try to prevent these situations, we recommend you purchase the game through the official Blizzard Online Store, or by ensuring you’re only purchasing an unused copy from a reputable brick-and-mortar retail location. 
+
+
+Addon - Shadowed Unit Frames
+The last time I mentioned an add-on was ... a long time ago Assuming that Quick Auctions http://www.mmo-champion.com/news-2/auction-house-guide-inscription/ doesn't count. I usually spend some time writing a small review of the addon but Shadowed has a nice description on WoWInterface http://www.wowinterface.com/downloads/info13494-ShadowedUnitFrames.html and I'll assume he knows his addon better than I do, I'll just steal it. 
+
+Shadowed Unit Frames on WoWInterface http://www.wowinterface.com/downloads/info13494-ShadowedUnitFrames.html
+
+
+http://static.mmo-champion.com/mmoc/images/news/2009/november/suf1.jpg http://www.wowinterface.com/downloads/info13494-ShadowedUnitFrames.html http://static.mmo-champion.com/mmoc/images/news/2009/november/suf2.jpg http://www.wowinterface.com/downloads/info13494-ShadowedUnitFrames.html http://static.mmo-champion.com/mmoc/images/news/2009/november/suf3.jpg http://www.wowinterface.com/downloads/info13494-ShadowedUnitFrames.html
+
+Description
+The main focus of SUF is having a simplistic configuration, while maintaining flexibility that the vast majority of users care about, this prevents unnecessary bloat that sacrifices performance. While you aren't going to be able to set that you want the health bar to be exactly 3.14 pixels outside of the health bar, you can change options that you actually care about such as bar height, ordering, frame height and so on. All configuration can be done on multiple units at the same time through the global configuration, meaning if you want to set the height of Player and Target frames to 50, but then you want to set the height of Target's Target and Target's Target of Target to 30 you can easily do that with changing only two options, instead of having to do it four times for each unit.
+
+Should you be one of those people who needs a little bit of extra configuration then do not despair! An advanced configuration option is included that will enable more unit and general settings giving you better control over everything
+
+Slash commands: /shadoweduf /suf
+
+Anchoring
+For those who are driven crazy because their frames look to be half a pixel off center of your player frames, you can simply anchor the frame to the player frames and solve the hassle of aligning everything. For example, the target frames are anchored to the right of the player frame, and the Target of Target frames are anchored to the top of the player frames In the screenshots.
+
+If you tried to drag player, all the other frames will follow it in the same anchoring. Each frame can still be manually positioned and put wherever you want, but this gives you a way of easily anchoring everything and keeping frames nice and aligned without having to use a ruler.
+
+Visibility
+Entire units and modules can be enabled or disabled based on zone type; for example, say you want to enable party targets while in arenas but not in a raid instance, or maybe you want to see your targets cast bar in arenas but not in raid instances you can easily change the module to only be enabled in arena zone types. You don't have to swap any profiles or do anything manually.
+
+Units
+Supports unit frames are as follows:
+
+Player: Player, pet, pet target
+General: Target, Target of Target, Target of Target of Target, Focus, Focus Target
+Party: Party, Party pets, Party targets
+Raid: Raid, Main tank, Main tank target, Main assist, Main assist target
+Arenas: With the arena frame http://www.wowinterface.com/downloads/info13696-ShadowedUFArenas.html module you can add Arena, Arena target, Arena pet units
+
+Features
+Tags: Includes a simple tagging system that can be customized in virtually any way using Lua, so even if something isn't included by default odds are you can make the tags
+Incoming heals: Supports LibHealComm-4.0 for incoming heal data which gives you more accurate information including heal over times and channels like Tranquility and Penance
+Auras: Can be set to only show auras you casted, or can cast on others. Can enlarge auras that you casted, and hide the cooldown ring on the timers of auras you didn't cast as well to make it more obvious which ones you casted and which ones you didn't
+Aura timers: You will need a mod such as OmniCC to show timers on buffs and debuffs
+Fader: Fades frames when out of combat and inactive 100% mana/no target
+Druid power/rune/totem bars: Supports simple rune and totem bars as well as Druid mana bars for the player frame
+Highlighting: Can highlight frames off of mouseover, debuffs you can cure, aggro, target and focus
+Range checking: Fades frames out that are out of range of you
+Exportable layouts: If you have a layout, or your friend has a layout you want to try out you can export/import SUF layouts by going to /suf -> Layout Manager
+Profiles: You can change from any profile to another one without reloading your UI, should you want to use a completely different layout based on zone you can easily switch profiles without hassle
+
+Pretty much all the general unit frame settings are in, health bars, cast bars, power bars, portraits, indicators and so on.
+
+Modules
+Basic module support is included, should you be interested in building a module see the documentation on github http://wiki.github.com/Shadowed/ShadowedUnitFrames for more information.
+
+Currently released modules are:
+Arena frames http://www.wowinterface.com/downloads/info13696-ShadowedUFArenas.html by Shadowed
+ShadowedUF Grid - Raid Frames http://www.wowinterface.com/downloads/info13758.html by Shadowed
+CC Timers http://wow.curse.com/downloads/wow-addons/details/suf_auratracker.aspx on portraits by Proditor.
+Five second rule http://wow.curse.com/downloads/wow-addons/details/shadowuf-five.aspx by Kemayo
+Power bar colored by class http://wowinterface.com/downloads/info13656-ShadowedUFClassPower.html by moniker
+Aura indicators for raid frames http://www.wowinterface.com/downloads/info13758-ShadowedUFGrid.html by Shadowed
+Bar growth/empty bars http://www.wowinterface.com/downloads/info13955-ShadowedUFBars.html by Shadowed

@@ -1,0 +1,117 @@
+chaud2016-10-14, 04:06 PMLegion Developer Q&A - Ion Hazzikostas
+WatcherDev https://twitter.com/WatcherDev/with_replies is back for another Q&A, this time as Game Director http://www.mmo-champion.com/content/6035-Tom-Chilton-Switching-Projects-Ion-Hazzikostas-now-Game-Director for World of Warcraft! 
+
+
+
+<div style="width:905px;margin-left:auto;margin-right:auto;">
+<div style="float:left;">
+<iframe src="https://player.twitch.tv/?channel=warcraft&!autoplay" frameborder="0" scrolling="no" height="378" width="620" allowfullscreen></iframe>
+</div>
+<a href="http://twitch.tv/warcraft/chat?popout" target="twitchChat1" onclick="this.style.visibility='hidden'" style="font-weight:bold;"> <div style="width:280px;height:378px;float:left;background-color:#333333; background-image: url'http://media.mmo-champion.com/images/news/2014/june/chatbg.png'; cursor: pointer;" onClick='document.getElementById"twitchChat1".src="somepage.html";'>
+<iframe frameborder="0" scrolling="no" height="378" width="280" id="twitchChat1" name="twitchChat1" style="postion:absolute"></iframe>
+</div></a>
+</div>
+<br>
+<div style="clear:both;"></div><a href="http://twitch.tv/warcraft/chat?popout" target="twitchChat1" onclick="this.style.visibility='hidden'" style="font-weight:bold;">Click to load chat</a>
+
+Patch 7.0.3 Hotfixes - October 13
+Bonus Events
+
+Entering a Timewalking Dungeon will no longer clear any planted plants from the Druid Evergreen upgrade.
+The fireballs from the cooking buff "Pepper Breath" should now scale properly in Timewalking.
+Class Hall Set 6-piece and 8-piece bonuses should now scale properly in Timewalking.
+
+
+Classes
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid / Skills http://beta.wowdb.com/spells/class-abilities/druid / Talent Calculator http://beta.wowdb.com/talent-calculator#s / Artifact Calculator http://beta.wowdb.com/artifact-calculator#tAAAAAAAA / PvP Talent Calculator http://beta.wowdb.com/pvp-talent-calculator#s
+
+Ironfur no longer incorrectly multiplies Bonus Armor effects from temporary buffs.
+Balance New Moon, Half Moon, and Full Moon are now in the Arcane spell school.
+
+
+Items
+
+Spirit Cauldrons no longer have collision.
+
+
+Player versus Player
+Reminder: These changes are only active while in PvP combat situations and do not affect PvE. Many more Honor Talent changes are coming with Patch 7.1, including changes to Destruction Warlocks, Windwalker Monks, Death Knights, Balance Druids, and Restoration Druids.
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage Forums http://www.mmo-champion.com/forums/272-Mage / Skills http://beta.wowdb.com/spells/class-abilities/mage / Talent Calculator http://beta.wowdb.com/talent-calculator#g / Artifact Calculator http://beta.wowdb.com/artifact-calculator#hAAAAAAAAA / PvP Talent Calculator http://beta.wowdb.com/pvp-talent-calculator#g
+Frost
+
+Ice Form http://www.wowdb.com/spells/198144 now has a 60 second cooldown was 45 seconds.
+Ice Form http://www.wowdb.com/spells/198144 can no longer be cast while stunned.
+Ice Form http://www.wowdb.com/spells/198144 will now cause the Mage to be immune to only stuns, instead of other unintended crowd-control effects, such as Paralysis.
+Frostbolt no longer deals increased damage in PvP was a multiplier of +10%.
+
+Developers’ Notes: Frost Mages are intended to create burst windows with Shatter and Glacial Spike, but have been reaching unintended levels of damage. By reducing Frostbolt damage, we’re reducing the potential size of Icicles and Glacial Spike burst. The Ice Form fixes should reduce its uptime, which was too high.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter Forums http://www.mmo-champion.com/forums/271-Hunter / Skills http://beta.wowdb.com/spells/class-abilities/hunter / Talent Calculator http://beta.wowdb.com/talent-calculator#M / Artifact Calculator http://beta.wowdb.com/artifact-calculator#NAAAAAAAA / PvP Talent Calculator http://beta.wowdb.com/pvp-talent-calculator#M
+Beast Mastery
+
+Beast Mastery Agility reduced by 10% in PvP.
+
+Developers’ Notes: We’ve found Beast Mastery damage to be too high, but we don’t feel that it’s due to any specific ability or mechanic, so we’re reducing the overall PvP template.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk Forums http://www.mmo-champion.com/forums/341-Monk / Skills http://beta.wowdb.com/spells/class-abilities/monk / Talent Calculator http://beta.wowdb.com/talent-calculator#o / Artifact Calculator http://beta.wowdb.com/artifact-calculator#p / PvP Talent Calculator http://beta.wowdb.com/pvp-talent-calculator#o
+Mistweaver
+
+Mistwalk can no longer be cast while silenced.
+
+
+Soothing Mist healing reduced by 10% in PvP. Soothing Mist version of Ancient Mistweaver Arts is unaffected.
+Soothing Mist healing cast by Summon Jade Serpent Statue reduced by 10% in PvP.
+
+Developers’ Notes: Mistweavers been one of our strongest healers. We feel Soothing Mist is doing too much healing per second on its own, making it so that the Mistweaver doesn’t have to use cast-time healing spells as much as other healers, even when their target is taking high amounts of damage. We’re reducing Soothing Mist slightly to address this. Mistwalk was never intended to be used while the Mistweaver was silenced or locked out of Nature, so we’ve fixed that as a bug.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin Forums http://www.mmo-champion.com/forums/273-Paladin / Skills http://beta.wowdb.com/spells/class-abilities/paladin / Talent Calculator http://beta.wowdb.com/talent-calculator#I / Artifact Calculator http://beta.wowdb.com/artifact-calculator#JAAAAAAAA / PvP Talent Calculator http://beta.wowdb.com/pvp-talent-calculator#I
+
+Pure of Heart http://www.wowdb.com/spells/199424 no longer causes Cleanse to incur a cooldown when it removes poisons and diseases.
+Pure of Heart http://www.wowdb.com/spells/199424 no longer triggers when healed by a periodic heal effect, but will trigger when a spell such as Rejuvenation is initially cast.
+
+Developers’ Notes: Retribution Paladins are designed to be a formidable damage dealer and also have a protective, counter-control kit for their allies. Pure of Heart is intended to “soft-counter” poisons and diseases, but we feel it’s too strong currently when the Paladin is paired with a healing-over-time healer. Pure of Heart will now only trigger when a healing spell is applied, but not periodically during the spell.
+
+
+
+Retribution
+
+Blessing of Sanctuary http://www.wowdb.com/spells/210256 now has a 30 second cooldown, up from 25 seconds.
+
+Developers’ Notes: Blessing of Sanctuary has proven to be a strong, signature Honor Talent, but we feel its cooldown is too short.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue Forums http://www.mmo-champion.com/forums/275-Rogue / Skills http://beta.wowdb.com/spells/class-abilities/rogue / Talent Calculator http://beta.wowdb.com/talent-calculator#Q / Artifact Calculator http://beta.wowdb.com/artifact-calculator#RAAAAAAAA / PvP Talent Calculator http://beta.wowdb.com/pvp-talent-calculator#Q
+Assassination
+
+System Shock http://www.wowdb.com/spells/198145 now properly requires an Envenom cast with 5 or more combo points.
+System Shock http://www.wowdb.com/spells/198145’s damage has been reduced by 20%.
+Assassination’s Agility has been reduced by 5% in PvP.
+
+Developers’ Notes: The Assassination Rogue is intended to be a strong, persistent damage dealer that pressures targets but lacks the utility that Outlaw excels in or the mobility that Subtlety provides. We’ve been monitoring their damage and feel its higher than intended, and we’ve found some bugs with System Shock contributed to this. We’ve also altered their PvP template to effectively reduce their damage. 
+
+
+
+Outlaw
+
+Control is King http://www.wowdb.com/spells/212217 will no longer stack Adrenaline Rush above a 3 second duration.
+
+Developers’ Notes: Control is King is intended to be an attractive choice for the Outlaw Rogue when within a control oriented team composition. This has worked out a bit too well. Now, subsequent procs of Control of King will no longer add to the duration, and instead will just refresh itself.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman Forums http://www.mmo-champion.com/forums/276-Shaman / Skills http://beta.wowdb.com/spells/class-abilities/shaman / Talent Calculator http://beta.wowdb.com/talent-calculator#c / Artifact Calculator http://beta.wowdb.com/artifact-calculator#dAAAAAAAA / PvP Talent Calculator http://beta.wowdb.com/pvp-talent-calculator#c
+Enhancement
+
+Stormstrike http://www.wowdb.com/spells/32175’s damage is reduced by 15% in PvP.
+Heroism http://www.wowdb.com/spells/32182 and Bloodlust now have a 60 second cooldown when modified by Shamanism was 45 seconds.
+
+Developers’ Notes: The Enhancement Shaman is intended to be a formidable damage dealer who also provides offensive group utility through totems and buffs. Shamanism has been a popular choice for the Enhancement Shaman, allowing them to use Bloodlust/Heroism frequently and also in Arena combat. We like the utility this gives the Shaman, but feel its uptime is too high. Further, we feel the Enhancement Shaman’s burst damage with Stormstrike has been reaching unintended levels.

@@ -1,0 +1,186 @@
+chaud2014-01-21, 05:15 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> The Purpose of BoA, The Recent Changes to Witch Doctors, MannerCookie's HeisenBarb Beta Build http://www.diablofans.com/news/47915-the-purpose-of-boa-the-recent-changes-to-witch
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Weekly News Recap, Quest Cancellations Temporarily Disabled, Top 5 Plays of the Week http://www.hearthpwn.com/news/266-weekly-news-recap-quest-cancellations-temporarily
+
+Armory Stats - Heroic Siege of Orgrimmar Class Representation
+Today we are taking a look at class representation for characters that have killed a Heroic Siege of Orgrimmar boss at least once. There is no date restriction this time, so the sample comes from ~8.8 million characters and ~3.2 million accounts. Keep in mind that the sample size for Heroic Garrosh is less than 10,000 characters, so it is going to vary more than the larger samples. 
+
+We looked at the same kind of thing back in Catacylsm for Heroic Madness of Deathwing http://www.mmo-champion.com/content/2629-Patch-4-3-2-Release-Date-Update-Heroic-Madness-Class-Stats-Blue-Posts if you are interested in seeing how things changed.
+
+When there is time, we can also look a this data by item level, Normal Siege of Orgrimmar kills, or several other factors. You can leave suggestions for future stat posts in the comments!
+
+
+<div id="HeroicGarroshClassBal" style="style="width:900px;margin-left: auto;margin-right: auto;"> Don't see a chart? Enable javascript! </div>
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+<script> var chart;
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#7A7A7A', '#7A7A7A', '#7A7A7A', '#7A7A7A', '#6B8E23', '#426F42']
+};
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'HeroicGarroshClassBal',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Death Knight','Druid','Hunter','Mage','Monk','Paladin','Priest','Rogue','Shaman','Warlock','Warr ior'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+
+},
+
+yAxis: {
+title: {
+text: 'Percent of Total',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+},
+max: 15
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return this.series.name + '<br /><b>' + this.point.name + '</b> - '+ this.y +'%' ;
+}
+},
+
+title: {
+text: 'Heroic Siege of Orgrimmar Class Representation',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+legend: {
+enabled: true,
+},
+
+series: [
+{
+data: [{y: 7.6, color: '#C41E3A', name:'Death Knight'},{y: 12.4, color: '#FF7D0A', name:'Druid'},{y: 9.1, color: '#ABD473', name:'Hunter'},{y: 8.0, color: '#69CCF0', name:'Mage'},{y: 6.4, color: '#00c77b', name:'Monk'},{y: 11.6, color: '#F58CBA', name:'Paladin'},{y: 11.5, color: '#FFFFFF', name:'Priest'},{y: 5.5, color: '#FFF569', name:'Rogue'},{y: 11.7, color: '#2459FF', name:'Shaman'},{y: 9, color: '#9482CA', name:'Warlock'},{y: 7.2, color: '#C79C6E', name:'Warrior'}]
+,
+name: 'Immerseus'
+},
+{
+data: [{y: 7.3, color: '#C41E3A', name:'Death Knight'},{y: 12.6, color: '#FF7D0A', name:'Druid'},{y: 8.8, color: '#ABD473', name:'Hunter'},{y: 7.8, color: '#69CCF0', name:'Mage'},{y: 6.6, color: '#00c77b', name:'Monk'},{y: 11.8, color: '#F58CBA', name:'Paladin'},{y: 11.5, color: '#FFFFFF', name:'Priest'},{y: 5.8, color: '#FFF569', name:'Rogue'},{y: 11.5, color: '#2459FF', name:'Shaman'},{y: 9.1, color: '#9482CA', name:'Warlock'},{y: 7.2, color: '#C79C6E', name:'Warrior'}]
+,
+name: 'Dark Shaman'
+},
+{
+data: [{y: 6.2, color: '#C41E3A', name:'Death Knight'},{y: 12.2, color: '#FF7D0A', name:'Druid'},{y: 8.4, color: '#ABD473', name:'Hunter'},{y: 7.9, color: '#69CCF0', name:'Mage'},{y: 6.6, color: '#00c77b', name:'Monk'},{y: 10, color: '#F58CBA', name:'Paladin'},{y: 11.8, color: '#FFFFFF', name:'Priest'},{y: 7.7, color: '#FFF569', name:'Rogue'},{y: 10.4, color: '#2459FF', name:'Shaman'},{y: 11, color: '#9482CA', name:'Warlock'},{y: 7.9, color: '#C79C6E', name:'Warrior'}]
+,
+name: 'Garrosh'
+}
+]
+
+};
+
+
+};
+</script> 
+Blue Tweets
+Classes
+hardest thing I do as a RL is helping healers know theyre doing a good job / how to improve. New tool to help eval in #warlords?
+We agree that healer performance is difficult to evaluate. Do you have any suggestions for what would help? Celestalon https://twitter.com/Celestalon/status/421154918930464768
+
+The data! Malk: http://t.co/G4iPvoEKZG, Jugg: http://t.co/XLpkWwuQfv, Sha: http://t.co/rkYaZz8veE, Thok: http://t.co/MJFtXssXlR
+Compare All Parses to Top 100. Shadow is deceptively hard to play optimally. Single target is low average, but high potential. Source https://twitter.com/Celestalon/status/421732036756271104
+You must have some very hidden numbers, hunters were beating Spriest on many fights before 6%? buff ask most raiders 1/2
+We balance around more than just single target DPS. Source https://twitter.com/Celestalon/status/421782296446775296
+I think that's the summary of this conversation. Many Shadow priests value ST damage above all else. Considering changes for WoD. Source https://twitter.com/Celestalon/status/421784335251804161
+That's just preposterous. Shadow playing perfection with miraculous RNG does not have the potencial of mage/lock
+I agree. That's an Arcane/Warlock problem. Source https://twitter.com/Celestalon/status/421778578544414720
+No it's not. It's a rogue/hunter/mage/warlock/shaman/druid problem. Shadow is simply not playable on e.g. H malkorok.
+And we disagree. Your damage is lower than average, but not crippling so, and your utility is higher on that fight. Source https://twitter.com/Celestalon/status/421779993673211904
+Not the case for any other spec. They all have good and bad fights, sure, but shadow has 2 good, 10 bad and 2 unplayable ones.
+Total hyperbole. They have 3 great, 2 bad, 9 average, damage-wise. Most of those they have very high utility. Source https://twitter.com/Celestalon/status/421781046800052224
+
+So the solution for Spriest single target is to remove dots from single target...but thats why I play Spriest, to use dots.
+The talent you're referring to is not a "solution for Spriest single target". It's an optional different rotation. Celestalon https://twitter.com/Celestalon/status/421720337718325248
+
+Hi, is there anything still happening with the ability bloat? A good thread on about this- http://t.co/VdfhFUHaKG
+Yes. We haven't given specifics, but we're definitely going to be making big strides in combating ability bloat. Celestalon https://twitter.com/Celestalon/status/421045192884363264
+Thanks. Big strides is what lots of specs need desperately. If you had to guess - before WoD or not?
+Not. That sort of thing requires significant change, which we save for expansions. Celestalon https://twitter.com/Celestalon/status/421046125622087680
+
+past comments have said that dps are balanced around that fact. Not sure about tanks.
+Str and Agi are balanced once Agi/Int no longer give crit. Celestalon https://twitter.com/Celestalon/status/421044546034622466
+
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight Forums http://www.mmo-champion.com/forums/269-Death-Knight / Skills http://www.wowdb.com/spells/class-abilities/death-knight / Talent Calculator http://www.wowdb.com/talent-calculator#Y
+could u please fix the deathgrip bug in tolvir and tigers peak finally which is in the game since the start of mop? please 
+Yes we're working on a fix but it won't be available until our next patch. It is not hotfixable. Source https://twitter.com/holinka/status/421797098581790721
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage Forums http://www.mmo-champion.com/forums/272-Mage / Skills http://www.wowdb.com/spells/class-abilities/mage / Talent Calculator http://www.wowdb.com/talent-calculator#g
+did mages ice lance get -20% nerf? Can you clarify for us in the pvp community?
+I've heard reports but we are not aware of any change to ice lance. Source https://twitter.com/holinka/status/421781533746143232
+
+Art
+Also, hear desire for Garrison update - not sure when that will happen but it's on my radar. artofcgrobinson https://twitter.com/artofcgrobinson/status/421365765107765248
+
+Quick question, are druids getting a new aquatic form model in WoD? YES or NO?
+MAYBE Dave_Maldo https://twitter.com/Dave_Maldo/status/421514097323028481
+
+Then why were Undead allowed to be hunters? That makes no sense at all.
+At least pick one w/o tons of in-game precedence! P.S. I once tried arguing for undead paladins because SIR ZELIEK. Dave_Maldo https://twitter.com/Dave_Maldo/status/421513720678723584
+
+must Cloud Serpents shrink character models? Not sure if bug or intended. Would prefer if it didn't. Thanks for reading 
+Intended. Last-minute solution to realizing they were even more absurdly huge than intended, w/no time to remake saddles. T_T Dave_Maldo https://twitter.com/Dave_Maldo/status/421513089339490304
+
+PvP
+could we see faction specificity removed from random BG's as it has been for RBG? ie Horde vs Horde. Would this improve que times?
+It would but one of the high level fantasies of WoW is red versus blue. We're exploring a lot of options now. holinka https://twitter.com/holinka/status/421093593403510784
+
+said new PvP season would last aroun 20-25 weeks. I'd say, around that.
+I definitely did NOT say the new PvP season would last around 20-25 weeks. I'd say that's the max length I'd want it. holinka https://twitter.com/holinka/status/420989396176101377
+out of curiosity? What is min length of a pvp season that you want.
+Ha ha. This is a fun game of release date we're playing. holinka https://twitter.com/holinka/status/421029957528477696
+what season will it be in Australia when wod arrives?
+Season 16 holinka https://twitter.com/holinka/status/421058329142497280
+
+To add some more detail to the DR category conversations, you won't see things like Silence, Stun, Fear or Mez combined into one category. Source https://twitter.com/holinka/status/421719580810022912
+Can you tell us what we might see? Am very excited for streamlining of DR categories
+I know everyone wants to know what we're doing, but I was mostly concerned with putting some fears to rest. Source https://twitter.com/holinka/status/421720800224231425
+Only hint: Despite his declaration we can't get it right isn't far off with what we're thinking. Source https://twitter.com/holinka/status/421721186096017408
+Also we hate the single DR idea. That will not happen. Source https://twitter.com/holinka/status/421721411372085249
+
+Necrotic strike and aura of enfeeble and arcane slow is nerfed without second thought
+They weren't nerfed by accident. Source https://twitter.com/holinka/status/421765275474599937
+sad about enfeeblement nerf. It's fundamentally different from passively applied effects. Should be treated differently.
+If it the argument is it's bad gameplay, I don't think warlocks should be exempt from the change. Source https://twitter.com/holinka/status/421746574390079488
+
+Warriors can use shield wall without equip shield. May we remove the physical punishment of Divine Shield and Hand of Protection?
+I don't normally like to compare specs but I hope you can see what a profound difference there is between those spells. holinka https://twitter.com/holinka/status/421448324231593984
+
+so dks lose runic power going blood pres. Warrs lose?
+Rage generation holinka https://twitter.com/holinka/status/421398911207501824
+
+
+Poll: What Class is Your Main Character?
+Defining main however you want best gear, most time spent playing that character lately, or something else, what class are you playing? 
+
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7732310.js"></script><noscript><a href="http://polldaddy.com/poll/7732310/">What class is your current main character?</a></noscript>
+
+Fan Art Update
+The World of Warcraft Fan Art Section http://us.battle.net/wow/en/media/fanart/#/1 has been updated with new fan artwork.
+
+
+http://media.mmo-champion.com/images/news/2014/january/thumb/fanart-1350-full.jpg http://media.mmo-champion.com/images/news/2014/january/fanart-1350-full.jpg http://media.mmo-champion.com/images/news/2014/january/thumb/fanart-1351-full.jpg http://media.mmo-champion.com/images/news/2014/january/fanart-1351-full.jpg

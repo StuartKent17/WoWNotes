@@ -1,0 +1,151 @@
+chaud2015-10-12, 02:40 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Blizzcon Schedule Released http://www.diablofans.com/news/48542-blizzcon-schedule-released
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> BlizzCon Hearthstone Schedule - "Hear a tale of Adventures Yet to Come" http://www.hearthpwn.com/news/1055-blizzcon-hearthstone-schedule-hear-a-tale-of
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> BlizzCon Heroes Schedule - New Heroes, New Battlegrounds, Talents, Hero Design http://www.heroesnexus.com/news/1506-blizzcon-heroes-schedule-new-heroes-new
+
+Armory Stats - Garrison Monuments
+Today we are taking a look at the garrison monument achievement completion rate of players. The data used today is a sample of 2.1 million players active since August 1. 
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2015/july/highcharts.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#9E6C36']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'monuments',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Master of Apexis', 'Master Draenor Crafter', 'Legendary Ring', 'Archimonde Normal or Higher Kill', 'Defender of Draenor', 'Mythic Draenor Raider', 'Draenor Pet Brawler'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Garrison Monument Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 47.52, name:'Master of Apexis'},{y: 25.11, name:'Master Draenor Crafter'},{y: 17.37, name:'Legendary Ring'},{y: 12.29, name:'Archimonde Normal or Higher Kill'},{y: 7.18, name:'Defender of Draenor'},{y: 0.63, name:'Mythic Draenor Raider'},{y: 0.24, name:'Draenor Pet Brawler'}],
+
+name: '<b>Percent</b>'
+}
+]
+
+};
+};
+</script> 
+<div id="monuments" width="50%">
+Don't see a chart? Enable javascript!
+</div> 
+
+<table class="listing sortable news-table achievement-table listing-achievements mmoc-listing b-table b-table-a" data-viewstate="" data-ajax-set-window-state="true" id="achievements" data-row-selector=">tbody>tr" data-default-sort-slug="name" data-default-sort-order="asc"> <thead class="b-table-header j-listing-table-header"> 
+<tr> <th>Name</th> <th>Side</th> <th>Points</th> </tr> </thead> <tbody class="filtered"> 
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9265-master-of-apexis" class="listing-icon " href="http://www.wowdb.com/achievements/9265-master-of-apexis"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20444/medium/achievement_garrison_horde_pve.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9265-master-of-apexis" class="t" href="http://www.wowdb.com/achievements/9265-master-of-apexis">Master of Apexis</a> <span class="subtext">Collect 100,000 Apexis Crystals.</span> </td></tr></tbody></table></td><td>47.52%</td><td class="c"><span class="achievement-points-icon"> 10</span></td></tr>
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9246-master-draenor-crafter" class="listing-icon " href="http://www.wowdb.com/achievements/9246-master-draenor-crafter"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20444/medium/achievement_garrison_monument_horde_profession.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9246-master-draenor-crafter" class="t" href="http://www.wowdb.com/achievements/9246-master-draenor-crafter">Master Draenor Crafter</a> <span class="subtext">Craft 50 Epic items with an item level of at least 600.</span> </td></tr></tbody></table></td><td>25.11%</td><td class="c"><span class="achievement-points-icon"> 10</span></td></tr>
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/10148-chapter-iv-darkness-incarnate" class="listing-icon " href="http://www.wowdb.com/achievements/10148-chapter-iv-darkness-incarnate"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20444/medium/quest_khadgar.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/10148-chapter-iv-darkness-incarnate" class="t" href="http://www.wowdb.com/achievements/10148-chapter-iv-darkness-incarnate">Chapter IV: Darkness Incarnate</a> <span class="subtext">Acquire your legendary ring by completing Khadgar's quests.</span> </td></tr></tbody></table></td><td>17.37%</td><td class="c"><span class="achievement-points-icon"> 25</span></td></tr> 
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9680-time-is-a-flat-circle" class="listing-icon " href="http://www.wowdb.com/achievements/9680-time-is-a-flat-circle"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20444/medium/spell_holy_borrowedtime.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9680-time-is-a-flat-circle" class="t" href="http://www.wowdb.com/achievements/9680-time-is-a-flat-circle">Time is a Flat Circle</a> <span class="subtext">Defeat Archimonde on Normal difficulty or higher, prior to the release of the next tier of content."Everything we have ever done or will do, we...</span> </td></tr></tbody></table></td><td>12.29%</td><td class="c"></td></tr> 
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9248-defender-of-draenor" class="listing-icon " href="http://www.wowdb.com/achievements/9248-defender-of-draenor"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20444/medium/achievement_garrison_monument_horde_pvp.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9248-defender-of-draenor" class="t" href="http://www.wowdb.com/achievements/9248-defender-of-draenor">Defender of Draenor</a> <span class="subtext">Get 5000 honorable kills in Draenor.</span> </td></tr></tbody></table></td><td>7.18%</td><td class="c"><span class="achievement-points-icon"> 10</span></td></tr>
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9631-mythic-draenor-raider" class="listing-icon " href="http://www.wowdb.com/achievements/9631-mythic-draenor-raider"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20444/medium/achievement_garrison_monument_horde_raid.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9631-mythic-draenor-raider" class="t" href="http://www.wowdb.com/achievements/9631-mythic-draenor-raider">Mythic Draenor Raider</a> <span class="subtext">Complete the Mythic raiding achievements listed below.</span> </td></tr></tbody></table></td><td>0.63%</td><td class="c"><span class="achievement-points-icon"> 10</span></td></tr> 
+
+
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9264-draenor-pet-brawler" class="listing-icon " href="http://www.wowdb.com/achievements/9264-draenor-pet-brawler"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/20444/medium/achievement_garrison_monument_alliance_pets.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://www.wowdb.com/achievements/9264-draenor-pet-brawler" class="t" href="http://www.wowdb.com/achievements/9264-draenor-pet-brawler">Draenor Pet Brawler</a> <span class="subtext">Win 2000 pet battles in Draenor.</span> </td></tr></tbody></table></td><td>0.24%</td><td class="c"><span class="achievement-points-icon"> 10</span></td></tr>
+
+</tbody></table>
+
+
+Rob Pardo Interview
+Rob Pardo was at Unite this year and gave an interview to gamesindustry.biz http://www.gamesindustry.biz/articles/2015-10-08-games-arent-really-supposed-to-be-easy-at-all-times, with a little bit of World of Warcraft talk.
+
+
+Adding obstacles that have the right amount of frustration and challenge is important so that when the player overcomes them, it feels like a huge accomplishment or achievement.
+In the quest to make World of Warcraft more accessible, understandable, and intuitive, some of the sharp edges were shaved away. 
+Those sharp edges were sometimes part of what made the game compelling, as games aren't really supposed to be easy at all times.
+Everything in game design is about trade-offs. You can't make a game that everyone will love.
+The initial design for WoW was trying to get players that enjoyed Blizzard games to try a MMO.
+There was debate about putting awesome content, encounters, and stories in dungeons, as there were players that enjoyed playing by themselves and didn't want to group up for dungeons. 
+The choice not to make a single player version of dungeons was intentional, as making it more accessible would cause players that love dungeons to love them less. 
+Hearthstone was an experiment that looked at making a Blizzard quality game with a smaller team and it worked out well.
+Pardo is closer towards the end of his sabbatical than the beginning.
+
+
+
+Blue Tweets
+PvE
+Is the Berserk for Mythic Iskar 8 minutes or 9 or trigger? Getting conflicting reports.
+Should be 8 minutes. WarcraftDevs https://twitter.com/WarcraftDevs/status/651163603249160194
+
+Any plans to make [Only the Penitent...] for Firelands meta soloable?
+Player power trivializes some old raid achievements, but for others, coordinating multiple players is the entire point. WarcraftDevs https://twitter.com/WarcraftDevs/status/651163810607161345
+
+Why aren't the ICC 5 man in the timewalking rotation?
+It’s definitely a popular request. Timewalking is a feature we want to continue to update and expand in the future. WarcraftDevs https://twitter.com/WarcraftDevs/status/651164031005294592
+
+PvP
+the lesser rings in the leg. quest can be used in pvp why cant the legendary ring be used in pvp? Doesnt say it cant in quests
+The item’s proc does not trigger while in PvP combat and the ring is scaled down to item level like other non-PvP gear. WarcraftDevs https://twitter.com/WarcraftDevs/status/651164712772612098
+
+Hey, would it be possible to make vendors sell old Elite Gladiator gear to players with 2000+ current rating? #Warcraft
+No plans for this. Elite gear sets are only available during that particular season. WarcraftDevs https://twitter.com/WarcraftDevs/status/651165100468912129
+
+Lore
+a little bird told me: arakkoas are androgynous. Is it canon?
+They are male/female and can tell each other apart just fine. Adventurer's untrained eye would be unable to see difference. WarcraftDevs https://twitter.com/WarcraftDevs/status/651096234313121792
+
+
+Rift - Patch 3.4: Into the Wilds
+Rift released a new patch http://forums.riftgame.com/general-discussions/patch-notes/471554-rift-3-4-into-wilds.html last week, along with a new calling: The Primalist http://www.trionworlds.com/rift/en/2015/09/09/rift-3-4-spotlight-into-the-primalist/. They also released a guide for returning players http://www.trionworlds.com/rift/en/2015/10/07/returning-to-rift/ covering what has changed.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/J38qhKLthZs?rel=0" frameborder="0" allowfullscreen></iframe>

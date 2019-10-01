@@ -1,0 +1,437 @@
+Boubouille2010-07-17, 12:03 AM#BlizzChat Developer Chat on Twitter -- 7.16
+General
+Q. Will there be account-wide Achievements? If so, can we expect to see things like vanity gifts for having multiple characters?
+A. It’s an idea we definitely want to do, but it’s pretty challenging technically, so it’s not on the immediate horizon. We can’t promise anything obviously, but I wouldn’t feel the need to get difficult Achievements on more than one character on the same account. 
+
+Q: What about some class specific quests for Cataclysm? I enjoyed them in the early levels of WoW!
+A: It’s very expensive to create class-specific raids given the literally thousands of new quests we are already adding for Cataclysm; however, we are going to have class-specific dungeon quests for everyone at levels 20 and 50. These won’t be as involved as, say, the old Benediction quest line, but they will give you a way to get some blue loot that isn’t otherwise available.
+
+Q: What are your thoughts on there being guild housing as a possible guild leveling reward?
+A. Our design dilemma with guild housing relates to what players might do in a guild house. If you generally hang out there, and have vendors and banks and Auction House access, then you stay there all the time and it makes the cities feel pretty dead. In a game with instanced dungeons and now phases, we are reluctant to provide more reasons for players to not see other players. It’s a social game! If we can come up with a good role for guild houses then we’ll definitely do them in the future.
+
+Q: Will WoW ever get a new weapon type?
+A. Doubtful.
+A #2. Tauren will be able to dual-wield gnomes on a stick. 
+
+
+Raids & Dungeons
+Q. With each expansion boss mechanics become more and more complex. Don't you think that bosses will be overcomplicated soon?
+A. We have a lot of players who have been killing bosses for six years now. We think we need to keep it fresh for them. Having normal vs. Hard modes is our way of making sure the complexity doesn’t make those fights inaccessible for some players.
+
+
+Player vs. Player
+Q. Are all characters getting 5% stun/fear reduction baseline since they are no longer talents?
+A. We would rather adjust the crowd control durations to appropriate levels. Currently some crowd-control effects are so easy to get out of that only really layered using crowd control effects of different diminishing returns really matters. We don’t want all of PvP to be kiting each other around with instant nukes and heals. Knowing what average durations are rather than having some classes with duration reducers and some without will let us judge the baseline better. We think players are individually just looking at their own trees now and thinking that they were made less powerful without realizing how across-the-board all the changes are. 
+
+Q. Is your goal to not having to use a talent specialization solely for PvP? If so, please elaborate on how you plan to accomplish that?
+A. This is almost impossible to “fix.” With the nature of talents min/max will always be possible. That said, we’re trying to move away from having purely PvP or purely PvE talents as much as possible, which will make the pure PvP specializations less painful to play in PvE and vice versa.
+A #2. We are removing many of the PvP talents, as well as trying to make some of the PvP talents a little more useful for PvE for example, a talent that currently procs on taking critical damage could instead proc on taking any damage, including AoE damage, as well. While we recognize that very competitive players might still want unique talent builds for PvP vs. PvE, the hope is that more players might be able to use the same specialization more often for multiple aspects of the game.
+
+Q: I PvP a lot in the level 10-19 bracket. What are some cool new abilities we'll see at level 10 in Warsong Gulch?
+A. Since all players will be getting a signature ability like Mortal Strike, Summon Water Elemental, or Mangle when choosing a specialization at level 10, we think players will see a lot of new abilities in the level 10-19 Warsong Gulch bracket that have never been seen before. 
+A #2. Since all players will be getting a signature ability, such as Mortal Strike, Summon Water Elemental, and Mangle for picking a talent tree at level 10, I think there will be a lot of new abilities seen in the 10-19 Warsong Gulch that we never saw before. 
+
+
+Classes - Damage Dealing
+Q. Will the ability to run while shooting effect PvP or PvE battles more? What was the initial intention of the new ability?
+A. With how encounters are today, damage-dealing while on the move is increasingly becoming important. You’ll see in a lot of classes we specifically are giving new ways for players to still do damage while on the move. That said, your damage while standing still casting or on a target in melee range should always be optimal.
+
+Classes - Healing
+Q. Some of the new talent trees for healers seem to emphasize a style of "mana regeneration by dealing damage." Is that intentional? If so, why?
+A. Yes. In almost any situation, there are periods where heals are not urgently needed 100% of the time. Today, you probably just cast heals anyway in case someone takes damage, since mana doesn’t matter much. But if mana did matter, the “right” thing to do would be to do nothing. Talents such as Telluric Currents provide an active way to recharge mana while contributing damage.
+
+Q: Do you expect anyone, alts or new players, to level as a healer specialization? Do you think locking them to Holy or Restoration early is bad?
+A. We expect leveling with as DPS will probably always be more efficient, just because killing things is faster than surviving longer while you kill things. Furthermore, we don’t want the healing specializations to be as good at killing things or the DPS specialization not to have a role. We do, however, think we can make leveling as a healer more enjoyable than it is today. Also, it will be a lot easier to use Dungeon Finder to level as a healer.
+
+Classes - Tanking
+Q: Any plan to make "Crit Immunity" passive from choosing a tank tree instead of spending talents on it?
+A. No, and you can blame the druids. We want a tanking specialization in Bear Form to feel different from a DPS specialization in Cat Form, otherwise it doesn’t feel fair to other classes when the Feral druid can do everything with the same talent specialization. We try to put crit immunity in talents you would normally take.
+
+
+Classes - 31-Point Talent Trees and Masteries
+Q. With the 31-point tree, many talents still cost two or three points. Is this going to be changed, as it basically increases their cost?
+A. For the most part, yes. There are some overpowered talents that don’t need the boost, but many of the others will have their effects increased.
+
+Q. How do the mastery bonuses work now that they don't show up on the talent interface anymore?
+A. The mastery bonuses will be trainable passive bonuses somewhere around level 75. Each talent specialization will have a different Mastery available on the trainer with a base potency with 0 Mastery Rating. The character sheet interface will have additional information on the additional potency gained from Mastery Rating. 
+
+Q. If every specialization is intended to take their 31-point talent, why is it not baseline at the level you could acquire it?
+A. Those talents are a good “brass ring” to work towards. They often change your character pretty dramatically when you get them, so it’s a fun moment. There is definitely an interesting philosophical discussion about talent trees and how many talents should be mandatory vs. optional. Some players would like a model where everything is on equal footing with everything else. Others want to make sure there are some safe decisions so that they don’t have to do tons of theory-crafting research every time they talent their character. We are trying to shoot for something in the middle where we have some expectation for how a particular spec will play for example, we don’t want to have to develop and support the non-Chaos Bolt Destruction rotation but players can still decide if say Blitz is something their Arms warrior will use or not.
+
+Q: How will pets scale with Mastery their masters' Mastery?
+A. The talent specializations that rely heavily on pets Beast Mastery and Demonology, for example have a Mastery that makes Mastery rating also increase pet damage. Other specializations that have pets, but whose pets do not benefit from Mastery, will have their Masteries balanced accordingly, taking into account that pets will not benefit from them. 
+
+Q: Will there be a "hard cap" for Mastery rating to avoid having 101% chance of getting a critical block, for example?
+A, In the course of finalizing all of the Masteries for the various talent specializations, we will make sure that, in the expected gear a player can acquire from the final Cataclysm raid tiers, the player will not crash into a "hard cap" unless they go out of their way to stack Mastery more than is reasonable. This may require redesigning some of the Masteries as the rest of the class designs are finalized.
+
+Q: Ever thought of changing tiers to unlock with 3 Points instead of 5, now that 5 tier talents are gone?
+A. We considered this idea, but ultimately decided against it.
+
+Q: Are we going to be able to view the Mastery talent previews for Cataclysm soon as we can currently?
+A. With the talent tree redesign, all the Masteries need to be re-implemented, and, in some cases, redesigned. This will require at least a couple of weeks before they will be available on beta. 
+
+Q: Can you provide some clarity on the 3rd Mastery that is affected item stats?
+A. We recognized the earlier implementation of Mastery in the beta was confusing. Mastery is no longer directly associated with a talent tree, but is instead a passive effect learned from a trainer at a later level. That passive effect will now grant the third Mastery bonus you formerly saw in the talent tree pane. The passive effect will have a base value, and then Mastery rating will increase that effect further. The other two Mastery bonuses previously listed at the top of the talent tree pane have been removed, but, in some cases, have been reimplemented as passive specialization bonuses. Currently, in the beta, you cannot see any of the Masteries, as they need to be reimplemented after the talent tree redesign.
+
+Q. Why not make each tier a 3-point system instead of 5 to advance?
+A. We considered this and decided against it. 
+
+Q. Will we see these talent changes in Wrath of the Lich King, before the release of Cataclysm, like we did with the last expansion?
+A. Yes.
+
+Q: It was said that players would be allowed to choose based on their play style. Do you believe fewer talents will accomplish this?
+A. The talents that we are pruning are typically things like extra strength or coefficient boosts to spells. It’s hard to have a different play style based on talents like that. We are trying to keep the talents that really change gameplay. A Retribution paladin that feels like he can help out healing on 5-player dungeon runs might take the two-point talent to improve healing. A Protection warrior who tanks a lot of 5-player dungeons might want talents that help with AoE pulls, while one that is a raid off-tank might want, say, Safeguard and Vigilance instead.
+
+Q: With the new 31-point tree system, how will players use dual-specialization? Do we get to choose a new tree when we first use our secondary specialization off-spec?
+A. You can use dual-specialization for a different specialization in beta, if you choose, much as you can today. We are going to lower the level at which you can use dual-specialization, as well as the cost for purchasing it, because we recognize that using Dungeon Finder while leveling is likely to be popular.
+
+
+Classes - General
+Q. Have some of the old talents been made into new glyphs?
+A. Usually when we cut a talent it’s because we thought it was a bad talent, but we might bring some talents that were so situational to fit in the new model back as glyphs. We are still designing glyphs. Players shouldn’t necessarily assume that any of their current glyphs are going to still be around. Some will, but many are changing.
+
+Q: How much of an impact will the new medium glyphs have on the fun factor of choices in the new 31-point talent trees?
+A. We hope it adds a lot. Part of the problem is that if there is, say, a Glyph of Mutilate, you feel like you have to take that as an Assassination rogue over anything else. The Medium glyphs are designed to let you customize your character a little more. They are the glyphs you would take if Mutilate didn’t exist.
+
+Incidentally, the new tiers are called Prime, Major, and Minor. Majors are the new Mediums. Glyph of Mutilate would be a Prime.
+
+Q. In general, do you expect mana-saving talents to be something all players take, or are they designed to be optional utility?
+A. For healers, we expect players will take most of these talents maybe not the ones related to taking damage or dealing damage though. For non-healers, we make sure all of them have reasonably reliable ways to restore mana, but these often come with the potential for damage-dealing loss. In that vein, the mana-saving talents can be thought of as damage-dealing talents, and nukers can take them if they think they impact their bottom line. After all, we all know that the only thing that matters at the end of the day is who won the meters. :
+
+Q: What class are you currently most happy with how the talents are currently set up? Is there one you feel needs more work?
+A. They all need more work! 
+
+Q: Are there plans to give more procs to some classes to make the rotations a little more interesting?
+A. Yea, for classes or specializations that need them. Paladins are getting a few.
+A #2. Sure, we want all specializations to have interesting rotations. There is a point though when you can be overwhelmed by the amount of procs going on and the gameplay becomes erratic and not very fun. So it’s a constant balance between the two.
+
+Q. Will we be seeing more talents that reward use of rarely used spells i.e. Destruction now opens with Soul Fire, barely used before?
+A. Talents like this are intended to be used as openers for PvE, or for target-swapping in PvE and PvP. There are a lot of encounters where you have to kill newly spawned monsters as soon as possible, which these talents are great for. Or, when you need to change targets in PvP on a high health mob, boom instant critical with Improved Feral Charge, Careful Aim, or haste with Improved Soul Fire. 
+A #2. Given the scarcity of action bar space, rarely used abilities are generally becoming more appealing or being cut from the game entirely.
+
+Q. Can we expect more fun talents and maybe even shiny new abilities in further iterations of the new talent trees?
+A. Yes, the current beta trees are still very much works in progress. As paladins in particular will see shortly, that ongoing work certainly can include fun talents and shiny new abilities.
+
+Q: What is the conversion rate for intellect to spell power for Cataclysm? Will it differ with each class?
+A. Each point of intellect grants one point of spell power, excepting the first 10 points. This is vaguely similar to attack power, where each point of strength or agility gives two attack power, excepting the first 10 points.
+
+We realize this slightly reduces the spell power per budget on items, so we also increased the amount of spell power granted by caster weapons, and that increase entirely makes up for the deficit. Those weapons will continue to have spell power as well as intellect, and the amount of spell power will be significantly larger than in 3.3.5.
+
+Q. How will brand new players know what a good leveling specialization is? Are they expected to know what site to visit and read up?
+A. We believe that the new talent tree design will make it much easier for a neophyte player to pick a talent specialization and navigate its talent tree successfully with a viable specialization.
+A #2. We hope that most talent builds are decent for leveling. Giving players a good ability at level 10 definitely helps with this. We are trying to avoid the traps of bad talents by just removing them altogether Unbridled Wrath, RIP.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight Forums http://www.mmo-champion.com/forums/269-Death-Knight / 3.3.5 Talent Calculator http://talent.mmo-champion.com/?deathknight / Cataclysm Talent Calculator http://www.wowtal.com/#k=.9mn.deathknight / Beta Skills/Talents http://www.mmo-champion.com/content/1116-Death-Knight-Cataclysm
+Q. Is there any intent to bring back the On A Pale Horse talent for Death Knights, possibly in a different tree?
+A. Yes, On a Pale Horse is back as a sub-specialization-accessible Frost talent in our latest internal build.
+
+Q. What is the intent and thoughts on changing the rune cost of Scourge Strike?
+A. In Wrath of the Lich King, it is closer to being a clone of Obliterate with a slightly different feel than we’d like. We want to change that. We’re also very aware of the rotational problems inherent in decoupling the Unholy and Frost runes. Rest assured, our solution will not be expecting you to Icy Touch alongside each Scourge Strike.
+
+Q. Death knight tanks in Cataclysm seem to be gaining a lot of defensive buttons. As a death knight I love it, but will those numbers be changing soon?
+A. It’s possible that some of it may need to be scaled back, but we like the cooldown aspect of death knight tanking and would like to preserve it.
+
+Q. Since implementing and receiving feedback on the new death knight rune system, have you made any changes to it you can reveal to us?
+A. It still needs a lot of iteration. We don’t want there to be significant “dead time” in death knight rotations. Also, the Runic Empowerment ability has some bugs with displaying the current state of available runes, which complicate the situation. Look for more death knight changes in the near future.
+
+Q. Do you plan to give the Unholy tree a more centralized focus, instead of split between Scourge Strike, diseases, ghoul, auto-attack, Anti-Magic Shell?
+A. In a sense, that IS a centralized focus. Unholy death knights are about diseases and Unholy pets. Frost is about icy attacks and runic power. Blood is about tanking and self-healing.
+
+Q. Dark Simulacrum for death knight has a pretty long cooldown. What's the reasoning behind that exactly? just curious
+A. It’s been reduced to 1 minute in the latest build, but it’s also an extremely powerful ability with which we expect players to pull off fun and scary things. 
+
+Q. Is there a plan to support dual-wield tanking for death knights something like Threat of Thassarian versus Might of Frozen Wastes?
+A. It will be technically possible to dual wield and tank, but it will not be optimal threat-wise.
+
+Q. Death knights are the only tanks without a stun, which is pretty key for a few things, like adds on Heroic Lich King. Any plans to give them one?
+A. There’s a video of a death knight solo-tanking 10-player Heroic Lich King. Impressive stuff. But just like stuns are incredibly good on Lich King, there are a number of fights where mechanics like Death Grip, or the ability to pre-drop a Death and Decay to pick up spawning adds, are incredibly useful. That’s part of class and encounter diversity.
+
+Q. It seems that our DPS with Runic Empowerment is very random, will that be changed?
+A. Runic Empowerment is being changed to a trained ability so that all specializations can access it without feeling forced to, since we see it as a core part of death knight gameplay in Cataclysm. The way the talent is engineered, it should never disrupt your rotation, but rather give you bonus resources layered on top of your rotation. The proc rate is high enough that the actual variability in procs over time shouldn’t be excessive. 
+
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid / 3.3.5 Talent Calculator http://talent.mmo-champion.com/?druid / Cataclysm Talent Calculator http://www.wowtal.com/#k=.9mn.druid / Beta Skills/Talents http://www.mmo-champion.com/content/1117-Druid-Cataclysm
+Q. Will druids finally get shapeshifting on a separate global cooldown like hunter aspects & warrior stances?
+A. We have no plans to remove shapeshifting from the global cooldown. Shapeshifting can be used to escape Root and Polymorph mechanics, and so cannot have no global cooldown.
+
+Q. Is Moonfire designed to be a damage-over-time spell with an instant cast nuke, or the other way around?
+A. Both. We want the instant nuke to be more meaningful in Cataclysm, especially on the move.
+
+Q: Cat and Bear builds are only off by about 3 talent points. Why not just consolidate fully at that point?
+A. This is definitely one of our concerns. We don’t want a player to be able to have an optimal DPS specialization in Cat Form and be able to tank. We will definitely engineer the Feral tree such that being a viable tank, or even off-tank, will have some cost in terms of lost DPS while in Cat Form. The druid talent trees currently in beta are very rough and need more polish. 
+
+Q: Will Arcane spells do more damage with higher Lunar power on the scale? And will more Mastery increase that bonus damage?
+A. Currently, the plan is for Mastery to increase the damage bonus of Eclipse both Lunar and Solar.
+
+Q. Last time I checked the Feral druid tree, there were only 5 points in the first tier which means NO choices. Is that getting fixed?
+A. Still working on early Feral.
+
+Q: Last time I checked feral druid tree, there were only 5 points in the first tier which means NO choices. Is that getting fixed?
+A. Yes.
+
+Q. What's the deal with Typhoon? Is it going back into talents or will it be a standard druid spell?
+A. Typhoon is now back in the tree. Sorry about that. :
+
+Q. Druids now get Swiftmend at level 10 for being Restoration, but it is a talent in the tree. What is the plan there?
+A. This was a data error and has been corrected.
+
+Q: Any word on that cosmetic Tree of Life Form glyph? Some players are sad to lose Tree of Life Form completely.
+A. The only new glyph we are ready to announce right now is the Glyph of Divine Shield, which reduces the cast time of your Hearthstone whenever Divine Shield is active. ;
+
+Q. Druids were always a "jack of all trades, but master of none" and usually mocked when specializing. Will new talents change this?
+A. In my own raids, I find druids of all 3 specializations that excel at their chosen specialization. So, I don’t understand your question.
+
+Q. Why was the Feral druid's mana reduction cost removed from King of the Jungle? And what happened to two combo points on critical strikes?
+A. These are data errors that will be corrected. Neither is intended to be cut. 
+
+Q: Moonkin: What are your plans for Eclipse, and why does it infect so many of our talents? What are your plans to make Moonkin fun?
+A. The model we are trying now lets Solar and Lunar Eclipse procs last for about 45 seconds, and each spell of the appropriate type that you cast moves the bar back closer to the middle again. The buff is canceled by reaching the middle. This should let Moonkin "hold" the buff for short periods of time when they need to move or get out of the fire.
+
+Q: Moonkin: What are your plans for Eclipse, and why does it infect so many of our talents? What are your plans to make Moonkin fun?
+A. The model we are trying now lets Solar and Lunar Eclipse procs last for about 45 seconds, and each spell of the appropriate type that you cast moves the bar back closer to the middle again. The buff is canceled by reaching the middle. This should let Moonkin "hold" the buff for short periods of time when they need to move or get out of the fire.
+
+Q. Skull Bash has a 1-minute cooldown. Is it supposed to be that way, or can we expect it to be lowered to the likes of Shield Bash?
+A. The base cooldown is 60 seconds to keep the ability from being used by Balance and Restoration druids to layer too much crowd control. A Feral tree talent reduces the cooldown to 10 seconds, putting it in line with Kick and other similar interrupt abilities. 
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter Forums http://www.mmo-champion.com/forums/271-Hunter / 3.3.5 Talent Calculator http://talent.mmo-champion.com/?hunter / Cataclysm Talent Calculator http://www.wowtal.com/#k=.9mn.hunter / Beta Skills/Talents http://www.mmo-champion.com/content/1118-Hunter-Cataclysm
+Q. What is the design choice behind the focus recharge in Aspect of Fox, is it meant to replace Viper?
+A. Aspect of the Fox is intended to be used for mobile damage or kiting. There is still some tuning to be done on Focus and this aspect, but that is the design goal.
+
+Q. Will Hunters be able to pet-tank through cata even if just beast masters?
+A. What, you didn’t see that video where some guy tanked Marowgar with his Gorilla? 
+
+Q. How are you trying to separate the play styles of the hunter specializations? What makes Cobra Shot feel different from Steady Shot?
+A. Cobra Shot is ideal for Beast Mastery and Survival hunters because they don’t really have any other way of keeping Serpent Sting up Cobra Shot extends Serpent Sting’s duration, and also for Survival because it is “Elemental” damage. It's also useful in PvP or in some other niche situations, say, when a creature is immune to physical damage. Now you have a solution.
+
+Q. Concerning Marksmanship hunters, why is the PvP talent Resistance is Futile a prerequisite for PvE talent Marked for Death?
+A. In an upcoming build it won’t be a prerequisite, and we want to change it to proc a free Kill Command instead of an instant critical.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage Forums http://www.mmo-champion.com/forums/272-Mage / 3.3.5 Talent Calculator http://talent.mmo-champion.com/?mage / Cataclysm Talent Calculator http://www.wowtal.com/#k=.9mn.mage / Beta Skills/Talents http://www.mmo-champion.com/content/1669-Mage-Cataclysm
+Q. Will each Mage talent tree be on a level PvE and PvP footing, or do you plan to make them bias to specific modes?
+A. The idea is to make them have equal footing. If that doesn’t work out, then we would prefer for one specialization to not be completely dead. But we want, for example, for players to choose Frost because they like Frost. 
+
+Q. Will mages get pets for Arcane and Fire specializations at any time?
+A. No.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin Forums http://www.mmo-champion.com/forums/273-Paladin / 3.3.5 Talent Calculator http://talent.mmo-champion.com/?paladin / Cataclysm Talent Calculator http://www.wowtal.com/#k=.9mn.paladin / Beta Skills/Talents http://www.mmo-champion.com/content/1670-Paladin-Cataclysm
+Q. Any thought to having Retribution paladins use spell power plate to help put Holy paladins on equal footing as other healers?
+A. We think Retribution paladins needs to use strength plate. Changing this would require a lot of funky solutions, such as how we handle Crusader Strike damage, and trying to control Retribution from being too powerful a healer. We realize it’s odd to itemize spell power plate for one specialization, but we think all of the solutions to this issue are worse than just living with it. 
+
+Q: What is the goal when re-designing the paladin class? How do you plan to change rotations, talents, etc?
+A. All of the paladin specializations will make use of a new resource called Holy Power. Holy Power accumulates from using Crusader Strike, Holy Shock, and some other talents. Holy Power can be consumed to augment a variety of abilities, including:
+
+An instant mana-free heal: Word of Glory
+A buff to increase holy damage done: Inquisition
+A massive physical melee attack for Retribution paladins: Templar’s Verdict
+Holy Shield’s duration is now extended by Holy Power
+Divine Storm’s damage is now increased by Holy Power
+
+
+We also introduced several new heals for Holy Paladins including Healing Hands an AoE heal-over-time that is applied to all players standing near the paladin, Light of Dawn a cone heal with a 30-yard range, as well as a new heal called Divine Light, which is similar to a priest's Greater Heal, and the new instant heal mentioned above, Word of Glory.
+
+Q: Are Protection paladins still going to refresh Divine Plea on melee hit via a talent or trained ability?
+A. Yes.
+
+Q: Can you give us a sneak peek at one or two of the new Retribution abilities or talents?
+A. Templar’s Verdict: An instant weapon attack that causes a percentage of weapon damage. Consumes all applications of Holy Power to increase damage dealt:
+
+1 Holy Power: 55% Weapon Damage
+2 Holy Power: 125% Weapon Damage
+3 Holy Power: 225% Weapon Damage
+
+
+Word of Glory: Consumes all Holy Power to heal a friendly target for a specific amount per application of Holy Power 0 mana cost, 0 cooldown, instant cast.
+
+Q: If Judgement of Wisdom is being removed from the game, are paladins getting a new Judgement so we don't all have to use Judgement of Light?
+A. There will only be one Judgement spell. This spell places a single debuff on the target with the effects currently associated with Judgement of Light and Judgement of Justice. The Judgement of Wisdom effect has been retired completely.
+
+Q: Are the improved aura talents going away? They were still present in beta.
+A. If you mean talents like Improved Devotion Aura, then those are gone. We still have talents that, say, increase healing on targets of your auras. Improved Concentration Aura still exists. In genera, though, you shouldn’t have to worry about having raid buffs of different power competing with each other. 
+
+Q. Are Protection Paladins still going to refresh Divine Plea on melee hit via a talent or trained ability?
+A. Yes.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest Forums http://www.mmo-champion.com/forums/274-Priest / 3.3.5 Talent Calculator http://talent.mmo-champion.com/?priest / Cataclysm Talent Calculator http://www.wowtal.com/#k=.9mn.priest / Beta Skills/Talents http://www.mmo-champion.com/content/1123-Priest-Cataclysm
+Q. Why is Vampiric Touch being changed back after the 3.0 Replenishment revamp?
+A. Talents like these are still in development flux. Players should expect most abilities to stay generally the same as they are today. For example, when revamping the trees we changed some ranks of talents down from five points to three, and didn’t re-balance the talent for three points. Most five-pointers that become three-pointers will be as strong as they were when they were five-pointers.
+
+Q. I'm excited about the Smite mechanic in Disc. Are you going to do anything about hit so that mechanic can be effective?
+A. We had a talent to give you a bunch of spell hit in a beta build, but spell hit on your offensive spells is a hard sell in the new talent model. But yes, we want to do something about spell hit for the Discipline Archangel specialization, possibly move up Twisting Faith to a tier that Discipline can obtain it in Shadow so your spirit would convert to hit as Discipline/Shadow sub-specialization.
+
+Q. Please talk about Lightwell. There has been much wailing about it on priest forums. Are you intent on keeping it in?
+A. Lightwell is complicated because it deals very much with the healing philosophy we’re trying to resurrect in Cataclysm. Remember when your raid would make a conscious effort to survive before doing damage, would bring stacks of bandages and use them throughout the fight to save their healers mana? Lightwell is very strong – if not overpowered – in that environment. 
+
+Q. Will Holy priests get some fun talents, like Evangelism and Archangel in the Discipline tree? At the moment it will be expensive for Holy to take those.
+A. While we still have a ways to go in design on the talents, we want Holy to be able to also do an Archangel sub-specialization if they wish. In some ways it may be stronger than the Discipline main specialization version. 
+
+Q. Where do you see priests fitting in the healing world? They seem very 'jack of all, master of none' with the new trees.
+A. It’s difficult to judge healer strength right now, as all spells are still going to be tweaked with good mana cost/healing amounts. We will say we want both priest healing specializations to be unique, powerful and fun.
+
+Q: Will Leap of Faith get some sort of secondary buff? Pulling a high aggro target to a clothie healer seems dangerous
+A. This ability is intended to save party and raid members from imminent danger,such as pulling someone out of a fire that would otherwise kill them. It does not need a secondary buff.
+
+Q. A lot of Shadow priests' talents seem mandatory. Any chance for a trimmed down tree? We feel like we need to pick all of them.
+A. Some changes are underway for Shadow priest trees.
+
+Q. Still "un-fun" talents in the 3-point trees like Spirit Tap. Are damage-dealing specialization mana regeneration talents that may feel mandatory staying in game?
+A. Spirit Tap and other purely “leveling talents” are being re-evaluated.
+
+Q. Power Infusion: not in beta talents. Coming back, or gone for good?
+A. If it’s not in your build, that’s a bug! It’ll be back.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue Forums http://www.mmo-champion.com/forums/275-Rogue / 3.3.5 Talent Calculator http://talent.mmo-champion.com/?rogue / Cataclysm Talent Calculator http://www.wowtal.com/#k=.9mn.rogue / Beta Skills/Talents http://www.mmo-champion.com/content/1122-Rogue-Cataclysm
+Q. How does Smoke Bomb help me take on a Frost mage? Isn't Blizzard a pretty trivial counter to keep me in combat?
+A. Keep you in combat, perhaps. But Frostbolt you? Polymorph you to stop you from killing the stunned healer that you just shrouded in smoke? Nope!
+
+Q. What's the plan to give Subtlety some pressure versus plate? A slow-ticking Rupture isn't going to cut it. Shadow damage during Dance?
+A. That’s an interesting idea. Subtlety is probably going to end up as the lowest-damage of the three rogue specializations to make up for its superior mobility, but that doesn’t mean it's harmless, either. And no, Rupture isn’t intended to be the PvP solution to that situation. 
+
+Q. The Combat tree seems really lackluster; i was taking talents like +armor and Recuperate to fill up my tree. Any plans to buff it?
+A. If you were able to spend all 41 points on nothing but increasing your damage, we’d consider that a failure in our current design, because those would be the only choices. But with “utility”; talents there’s no clear answer -- some rogues, even serious raiding min/max types, might have preferred to be able to use Sprint more often rather than taking Reinforced Leather, for example. In the end, we’ll make sure you’re able to do the damage you need to do, in order to have fun and feel competitive in all aspects of the game.
+
+Q. Recuperate makes me feel like a tiny unkillable god of death. ...you aren't going to nerf this are you?
+A. Wait, but it doesn’t make you hit harder, so how can it be overpowered? 
+
+Q. How do you optimize the sub-specialization choices for an Assassination rogue? Some needed talents are not reachable in the current trees.
+A. Right now you have to spend too many talent points to get all the “essential” Assassination talents. You end up taking pretty much the entire bottom half of the tree. In the next build, things have been streamlined a little so that you should be able to credibly take spend 31 points there.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman Forums http://www.mmo-champion.com/forums/276-Shaman / 3.3.5 Talent Calculator http://talent.mmo-champion.com/?shaman / Cataclysm Talent Calculator http://www.wowtal.com/#k=.9mn.shaman / Beta Skills/Talents http://www.mmo-champion.com/content/1124-Shaman-Cataclysm
+Q. Do you consider Primal Wisdom or Shamanistic Rage "required" so Enhancement shaman won't run out of mana? Is running out of mana intended to be a danger?
+A. Yes, once high-level Enhancement shaman have all their abilities and are using them in sequence, Primal Wisdom will be required to sustain a rotation. We’d like to let shaman use Shamanistic Rage for survival or emergency situations, rather than assuming rotational use for mana. 
+
+Q. With the new implemented Lava Surge, will Chain Lightning become useful for multiple mobs only?
+A. It always has had, and will continue to have, some niche use as a gap-filler against single targets when Lava Burst has around a second left on its cooldown. Lava Surge won’t always proc, but it’s likely to be more of a multi-target ability, yes.
+
+Q. Will Spirit Link make a return after all? Ghostcrawler mentioned he'd like to bring it back, but no sighting of it yet.
+A. Anything’s possible, but at this point it isn’t looking good for our beloved talent…. If we changed it to be an absorb or a different sort of mechanic, then it wouldn’t be the iconic Spirit Link that we all remember from Warcraft III. But that core damage-sharing mechanic poses major design and balance challenges e.g. does a rogue really want to start taking damage suddenly because the shaman in his group decided to link him to the tank?. 
+
+Q. With Elemental Fury becoming a passive for Elemental shaman, will Enhancement be seeing more physical based damage?
+A. Spells like Lava Burst and shocks will always be a big part of Enhancement’s damage, but yes, we’d like weapon attacks like Stormstrike and Lava Lash to be a larger part of Enhancement Shamans’ damage in Cataclysm. N.B.: Mental Quickness is getting a boost to help compensate for the loss of Elemental Fury.
+
+Q. Are there any plans of making totems utility only e.g. Earthbind, Grounding and turning buff totems into auras or cast buffs?
+A. Not at this time. We’re aware of the concerns regarding the use of buff totems among some shaman, but the positional aspect is something that we consider inherent to the nature of totems. By increasing totem durations, consolidating some buff totems, and introducing the multi-drop totem spells in Wrath of the Lich King, we’ve attempted to mitigate as much of the inconvenience as possible, while preserving the core gameplay of paying attention to where totems are being dropped. 
+
+Q. How does Deep Healing work? Will it heal severely less at high health that it is difficult to keep a target at a safe level of health?
+A. No, view it as a perk that boosts your heals when that extra healing is most needed. It’s a class-specific bonus, so healing overall won’t be balanced around the expectation that Deep Healing applies.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock Forums http://www.mmo-champion.com/forums/277-Warlock / 3.3.5 Talent Calculator http://talent.mmo-champion.com/?warlock / Cataclysm Talent Calculator http://www.wowtal.com/#k=.9mn.warlock / Beta Skills/Talents http://www.mmo-champion.com/content/1125-Warlock-Cataclysm
+Q. How will the Demon Soul talent work? Is it like a replacement for Demonology's Metamorphosis, another cooldown to pop, or...?
+A. While Demonology has potentially two with Metamorphosis and Demonic Empowerment, warlocks in general usually don’t have a power-up ability they can cast for burst damage in PvP or PvE. This is what it is intended to be.
+
+Q. Can we finally have Soul Link baseline, or at least give each tree its own defense mechanic so that we aren't forced into Demonology for PvP?
+A. It is a possibility, we’re still talking about it.
+
+Q. Can Master Summoner become default for all warlocks? 6-second cast time is long enough for a pet.
+A. But how often are you summoning a pet? You can also use a shard to summon one instantly. We want killing a warlock's pet in PvP to be a meaningful investment of time and effort, and likewise we want summoning/resurrecting your pet to be a meaningful investment of time and effort. 
+
+Q. You've stated warlock trees have a way to go. Any plans you'd like to share? Early Demonology in specific seems really boring.
+A. The first two tiers of all specializations are intended to be what we call “scaling talents,” or general percentage modifiers on abilities. Consider them entry-level talents -- easy to understand for newer players and good sub-specialization candidates. That said, a lot of early Demonology talents have changed in an upcoming build.
+
+Q. Any plans to alleviate Affliction's target-switching woes? Bane of Havoc used to be in reach of all specializations. Now it's only for Destruction.
+A. Maaaybe. 
+
+Q. What are you planning for Doomguard and Infernal? That Demonology talent is quite... strange.
+A. Look now, they are now… Diamonds. I mean, guardians. The Doomguard does strong ranged damage and the Infernal is good for area-of-effect damage. They're shared cooldowns, so it's your choice which you want to use. 10-minute cooldown. No more stones or figurines! 
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior Forums http://www.mmo-champion.com/forums/278-Warrior / 3.3.5 Talent Calculator http://talent.mmo-champion.com/?warrior / Cataclysm Talent Calculator http://www.wowtal.com/#k=.9mn.warrior / Beta Skills/Talents http://www.mmo-champion.com/content/1676-Warrior-Cataclysm
+Q. Will rend sigh be refreshed by Thunderclap on all targets used with Blood and Thunder?
+A. Yes. The idea is that you Rend once and then Thunder Clap from then on. We still hope it’s an optional talent, not the only way warriors can AoE tank.
+
+Q. Slam's design is pretty archaic and not very fun. Is there any chance of Slam becoming an instant-attack baseline ability?
+A. We think it makes the ability feel different. Slam as an instant attack isn’t very different from some of the other attacks. As it’s designed though, Fury shouldn’t use Slam at all without procs and Arms should only use it with the Improved Slam talent. We tried briefly making Slam a low-level ability, but weren’t happy with it.
+
+Q: Are Fury Warriors still going to see a new attack to fill the loss of Whirlwind? Any insight?
+A. Yes! It’s called Raging Blow at least for the moment, because we wanted to distance is a little from the old Enraged Assault. It's Fury-only and can only be used when Enraged, but does not consume the Enrage. It does indeed strike with both weapons including the animation.
+
+Q: Will Whirlwind still be a part of a Fury warrior's rotation on single mobs or will it be multi-mobs only?
+A. Multiple mobs only.
+
+Q: Concussion Blow is rarely used these days outside of PvP. Any plans for it? Will you unlink it from Vigilance?
+A. It’s pretty useful on Mr. Lich King….
+
+Q: How is Heroic Leap working so far? Is it progressing better than your last attempt at putting it in-game?
+A. We’re pretty happy with it so far. The version we have right now lets the warrior target where they want to leap, so they can use it as an escape tool as well. We all know paladins would never retreat from a battle, but warriors have been known to do so.
+
+Q. Why does fury have two 31-point talents? Wouldn't it be simpler to merge them so one doesn't have to re-specialize when new weapons drop?
+A. We feel the decision on which of these two talents to choose is based on play style two fast weapons, or two slow two-handed weapons, not based on which weapons most recently dropped like the former Arms weapon specialization talents which have been cut.
+
+We expect the player to decide which type of dual wielder they are and collect weapons and gear that fit that type.
+
+Q: What do you think warriors will be more unique for in PvP now that Mortal Strike is available to other classes and reduced to 20%?
+A. We don’t think warriors need a unique ability that is so awesome that you just have to have a warrior on your Arena team. That is bad mojo for all the other classes. We do want warriors to be useful in PvP, however. One ability we are trying out for Arms is "Throwdown," which lets them knock an opponent to the ground for five seconds. Since it’s usable in Battle Stance, they can also use it as a Pummel in a pinch.
+
+Q: You mentioned Disarming Glare isn't likely to make it. Could you expand on this a bit?
+A. We cut it in exchange for the Throwdown talent above.
+
+Q: Why does Fury have two 31-point talents? Wouldn't it be simpler to merge them so one doesn't have to re-specialize when new weapons drop?
+A. We view swapping from two-handed to one-handed weapons as more of a play style choice than swapping from mace to axe because the axe has more DPS. You are rarely going to be in a situation where a boss drops two one-handed weapons that are superior to your two-handed weapon.
+
+Q: Hi, it's me Rend! I'm sort of terrible, but if tanks are having to use me in Cataclysm, may I be a good ability now?!
+A. Get back to the back of the bus, Rend.
+
+In all seriousness, though, we don’t want Rend to be the answer to Protection warrior threat. It isn’t going to keep mobs glued to you. We do think we have room to boost its damage though, even for warriors with a DPS specialization. One change we’ve made is letting it do a tick of damage immediately, so that you see and feel damage right on the application instead of waiting for the first tick.
+
+
+Miscellaneous
+Q: Are there any plans to add Ghostcrawler in-game as a critter or elite crab?
+A. Ghostcrawler would be very emo were he to gaze down from his Throne of Lies and behold the mass crustacean slaughter that would result in having more manifestations of his persona in the game. 
+
+Q: I don't care about Real ID, new talent points, or ponies, but I must have a double rainbow in a city so all can bask in its glory!
+A. Due to company policy, I’m afraid we must reserve all rainbows for our friends working on Diablo III.
+
+Q: Let's talk fashion. Any chance we could get a tophat AND monocle to display at the same time?
+A. Why, yes. Indubitably. Tut-tut, my good chap and cheerio! 
+
+Q: So, Worgen get top hats, and that's awesome. Are there any plans to give Goblins something cool? Maybe those sunglasses?
+A. Quadruple pigtails maybe? 
+
+Q: What size shoes does Ghostcrawler wear?
+A. I generally go barefoot on the yacht. Around on the office, I am often carried on gnome palanquin, so shoes are not required. 
+
+
+
+Answers to Common Community Questions Real ID
+Answers to Common Community Questions About Real ID™
+
+Since the launch of the Real ID™ system in World of Warcraft®, we’ve received a number of questions from the community about our plans for the service, features like StarCraft® II’s Facebook® integration, and how we see Real ID evolving in the future. We've been keeping tabs on the conversations on our forums, social media sites, and fansites, and have compiled some of the most common questions to answer for you here. We hope you find this information helpful, and we look forward to hearing your feedback and continuing the conversation in the thread below.
+
+Q: Do you have any plans to allow players to not show their real name to friends of friends while using the Real ID system?
+A: As with any new feature we add to our games, we've been evaluating how Real ID has been used since its release to identify new functionality that would help improve our players’ experience. The in-game Real ID “friends of friends” list is designed to give players a convenient way to populate their Real ID friends list with other players they know and trust in real life, allowing them to quickly and easily send Real ID friend requests to these people without having to enter their Battle.net® account names. However, we recognize that some players would prefer not to be displayed on friends lists in this fashion, so we plan to include an option that will allow players to opt out of appearing on their Real ID friends’ “friends of friends” lists. We're anticipating this feature to be available for StarCraft II shortly after release of the game, and World of Warcraft at around the same time -- we’ll have more information for you in the coming weeks.
+
+Q: What are your plans for Facebook integration?
+A: With regard to Facebook, our goal is to help Blizzard gamers on Battle.net more easily connect to their real-life friends and family. For the launch of StarCraft II, we are introducing an optional Facebook friend finder feature to help achieve this goal. The friend finder enables players who decide to use it to easily populate their Battle.net friends list by sending Real ID friend requests to the people on their Facebook friends list who have Battle.net accounts. We hope players will find this feature convenient, but it's completely optional. In the long term, we hope to give players who use Facebook some fun, and also optional, ways to share what they're doing in Blizzard games with their friends, similar to the optional World of Warcraft Armory integration now available, but we don’t have any specific plans to share at present.
+
+Q: How does the friend finder in StarCraft II work? What's sent to Facebook?
+A: When you use the Add a Friend feature in StarCraft II, one of the options you’ll see is to search your Facebook friends list for people who also have Battle.net accounts in order to quickly send them Real ID friend requests. When you click this button, you'll be asked to enter your Facebook login information, and you’ll then see a list of your Facebook friends who also have Battle.net accounts. You’ll then have the option to send any of these Facebook friends a Real ID friend request in-game. Keep in mind that for someone to appear on the list, their Battle.net account email address must match their Facebook email address. In addition, you’ll see the names of any Facebook friends who have registered Battle.net accounts, regardless of whether they have Blizzard games attached to their account or just, for example, created the Battle.net account to make a purchase on the online Blizzard Store.
+
+It’s important to note that Blizzard Entertainment does not share any personal information with Facebook as part of this process. Keep in mind that as with other Real ID features such as the “friends of friends” list, our goal with the friend finder feature is to create convenient options to help players easily find people they know in real life on Battle.net without having to remember email addresses or account names. We hope players will find the feature easy to use and convenient.
+
+Q: How can I prevent World of Warcraft add-ons from accessing Real ID first and last names without my knowledge?
+A: As always, we recommend that you get your UI add-ons through reliable sources. It’s important to note that without installing a UI add-on specifically designed to retrieve that information, there’s no risk of it being accessed. On our end, we’re looking into the issue and are at work on some changes that we can make to help protect against these types of add-ons. We’ll provide further details as soon as we have more information to share.
+
+Q: Are you secretly trying to build a social gaming platform with the new Battle.net?
+A: It’s no secret -- as we’ve discussed openly since we first started sharing our plans about the new Battle.net, one of our goals is for it to serve as a social gaming service for Blizzard gamers. This was a deliberate and open design decision, driven 100% by the desire to create an even better online experience for our players by giving them powerful tools to compete with and stay connected to their real-life friends and family.
+
+Q: If my account was compromised, what information about my Real ID friends would a hacker have access to?
+A: We take account security very seriously, and we offer a number of ways to help players keep their account secure, including the Battle.net Authenticator and the free Battle.net Mobile Authenticator app, available for a wide range of mobile devices. Aside from your friends’ first and last names, no other personal information is shared through the in-game Real ID system.
+
+Q: What’s a StarCraft II "character code"?
+A: When you first log in to StarCraft II, you’re prompted to choose a single character name. This is the only name you’ll use on Battle.net, and it’s tied to your StarCraft II license. In order to allow players to select any name they wish regardless of whether another player is already using the same name, we then generate and assign a three-digit character code that uniquely identifies the player. When posting on the forums of the new StarCraft II community site, players will be posting using their StarCraft II character name and character code.
+
+Q: Will the new StarCraft II forum posting name format character name + character code carry over into the forum communities of other Blizzard games?
+A: Following our recent decision to no longer use real first and last names on Blizzard forums, we’re still evaluating how we’ll move forward with our other forums. Our ultimate goal is still to promote constructive conversations and improve the overall forum experience for our players, and we think increasing accountability is an important part of achieving that. StarCraft II already uses a character name and character code combo in-game, which serves as a unique player identifier and fits well with our goal for the forums. World of Warcraft handles player identification differently, so we still need to determine whether adding a character code system like in StarCraft II is the best solution. Ultimately, we want to come up with a system that makes sense for each community and fits our long-term vision for the forums.
+
+Q: Are there any plans to change the in-game Real ID system so that players will have the option to display an assigned user name instead of their real names?
+A: The Real ID system is designed to help real-life friends and family who decide to use it keep in touch with each other across Blizzard games, and our goal in using real names is to ensure that players will be able to maintain long-term, meaningful relationships on the service for years to come. One way it helps make that happen is by eliminating the need to remember who, for example, "Thrall123" really is when you see him or her pop up on your friends list again after months -- or years -- of being offline. Ultimately, we think this is the best way to ensure players who use Real ID are able stay connected with the people they enjoy playing with most in the long-term, and we don’t currently have any plans to change the system so it can be used with character names or alternate handles instead. That said, Battle.net is a living, breathing service that we will continue to evolve over time as we evaluate how players are using it and identify new ways to improve the experience.
+
+Q: What plans are there to improve moderation since the use of real names on the forums has been changed?
+A: Our new community sites’ forums, beginning with the StarCraft II site, will have an improved moderation system as well as a post-rating system which will help our players promote the conversations they find the most constructive, as well as help forum moderators identify quality discussions. This, coupled with the unique StarCraft II character name and code, will help us to create a more positive atmosphere based on community interaction and accountability.

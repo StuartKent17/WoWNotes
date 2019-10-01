@@ -1,0 +1,19 @@
+chaud2016-07-28, 05:12 PMHarbingers - Khadgar
+The second video in the Harbingers series has been released. 
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/UW5IYrgOgYU?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+Upcoming Camera Changes
+Thanks for everyone’s reports so far. We’ve been able to use them to isolate a few more potential sources of motion sickness, and are currently working on sending out a small hotfix patch that will hopefully address at least some of them. We wanted to give a quick heads up on what we’re changing.
+
+For starters, we were able to identify some potential issues with how flying mounts are behaving differently https://www.youtube.com/watch?v=YcJKjB0VZo0 in patch 7.0.3 compared to 6.2.4 that we believe will help some players. Once this hotfix is live, flying mounts will no longer bank/lean to the sides when rotating in place, and the extent to which they lean when turning while in motion will be lowered back to how it was in patch 6.2.4. Additionally, we’re fixing an issue that was causing the camera to “pop” when landing or taking off on a flying mount.
+
+We also identified and fixed some bugs that were causing some fairly extreme issues with the camera while the player is considered by the game to be in a “vehicle.” Because of how that tech is used, this includes several situations that might not obviously seem like you’re in a vehicle, such as the later parts of the Al’Akir encounter.
+
+Finally, we received a surprising number of reports from players that indicated they had somehow unknowingly activated “Action Cam https://www.youtube.com/watch?v=0QXA3revYpk.” For those who are unfamiliar, Action Cam is an experimental alternate form of camera control that is currently unfinished and not quite ready for the general public. It had become available through a console command in the Legion beta, but since it doesn’t give any unfair gameplay advantages and so we thought had to be expressly activated by the player, we’d left it accessible through that command.
+
+However, it has become clear that more than a few players have somehow turned it on without knowing, and it’s a major cause of motion sickness for those players. So, we’re going to disable it entirely for now, and plan to bring it back in a future patch once we’ve sorted out all the motion sickness issues and given it a little bit more polish.
+
+These fixes will be active on the PTR and Beta realms for testing as soon as possible, and if all goes well, we plan to apply them to live realms on Monday, August 1. Once they’re live, please do continue to report areas of the game or activities in which you’re finding yourself feeling unwell. Videos in particular are extremely helpful, as they allow us to see exactly what the camera is doing at the time. We’re continuing to put our highest priority on resolving these issues and getting you back in the game without having to worry about motion sickness.

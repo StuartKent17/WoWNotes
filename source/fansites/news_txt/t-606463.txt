@@ -1,0 +1,221 @@
+Boubouille2008-04-07, 10:21 AMKeyboard issues with Avast 4.8
+If you're using Avast 4.8 as an antivirus and a lot of players probably do, the latest update might cause keyboard problems while playing World of Warcraft. Most of the time you will experience a "keyboard lag", after pushing a key the game will only react 2 or 3 seconds later. 
+There was some mention on the French forums about Avast 4.8, there was an update released this week that for some seems to be causing problems.
+
+
+WoWHead updated with new features
+During the last week, Wowhead has been updated with a bunch of new features.
+
+The Wowhead model viewer http://www.wowhead.com/?help=modelviewer has now been updated! You can now view 3d models for armor pieces http://www.wowhead.com/?item=940, item sets http://www.wowhead.com/?itemset=217 and humanoid NPCs http://www.wowhead.com/?npc=4949! You can even change the race and gender you want them displayed on, and the model viewer will remember what you selected.
+
+In addition to the added support for character models, the following improvements have been made to the model viewer:
+
+Both Versions
+Added model bones to support placement of weapons/armor.
+Moved from COLLADA format to a custom binary model format for faster loading times.
+NPC models set to an animated, cooler-looking pose.
+Added anti-aliasing.
+
+
+
+Flash
+Motion blur effect when spinning models
+Texture softening
+
+
+
+Java
+Viewport sized to fit
+Sprite tinting
+
+
+
+Any bugs related to the model viewer should be reported here.
+
+Next up, Wowhead now supports quest tooltips http://www.wowhead.com/?quest=9123! All sites that are Powered by Wowhead http://www.wowhead.com/?powered will automatically have this same feature added.
+
+Also, Wowhead is very excited to announce the addition of a brand new feature--NPC Ability Listings http://www.wowhead.com/?npc=24976#abilities. The Wowhead Client http://www.wowhead.com/?client now automatically gathers data on the abilities that NPCs use, and automatically uploads it to Wowhead. Finally a use for all of those Uncategorized Spells!
+
+
+4 New artworks
+Sonsofthestorm.com http://www.sonsofthestorm.com/index.html has been updated with 4 new warcraft-related artworks : the Warcraft Comic Cover #7 by Samwise http://www.sonsofthestorm.com/gallery.php?artist=samwise and 3 other arts by Raneman http://www.sonsofthestorm.com/gallery.php?artist=raneman.
+
+
+http://static.mmo-champion.com/mmoc/images/news/2008/march/WarCraft_Samwise111c.jpg http://www.sonsofthestorm.com/viewer.php?artist=samwise&cat=warcraft&art=111 http://static.mmo-champion.com/mmoc/images/news/2008/march/WarCraft_Raneman057c.jpg http://www.sonsofthestorm.com/viewer.php?artist=raneman&cat=warcraft&art=57
+http://static.mmo-champion.com/mmoc/images/news/2008/march/WarCraft_Raneman058c.jpg http://www.sonsofthestorm.com/viewer.php?artist=raneman&cat=warcraft&art=58 http://static.mmo-champion.com/mmoc/images/news/2008/march/WarCraft_Raneman059c.jpg http://www.sonsofthestorm.com/viewer.php?artist=raneman&cat=warcraft&art=59
+
+
+Comics
+Today we've got a new Dark Legacy comic directly taken from their forums http://forums.darklegacycomics.com/viewtopic.php?t=656 and ... kittens http://www.actiontrip.com/comics/at_comic270.phtml ! 
+
+
+http://static.mmo-champion.com/mmoc/images/news/2008/march/dl137.jpg http://static.mmo-champion.com/mmoc/images/news/2008/march/137.jpg http://static.mmo-champion.com/mmoc/images/news/2008/march/at_comic270.jpg http://www.actiontrip.com/comics/at_comic270.phtml
+
+
+2.4.1 Known issues list
+Hortus updated the post listing all the known issues with the game, and I know you love reading long lists of annoying bugs on Monday. 
+
+General
+Spells that create a buff that chains damage to a secondary target can chain to a critter
+Players are able to have pets out while mounted by logging out.
+Zoning after a pet has died or has been dismissed can cause an "Internal Pet Error".
+Abilities and spells that chain to secondary targets do not calculate combat reach for each potential unique target.
+Swimming while in Wisp Form produces an odd animation.
+Male Blood Elves do not place both hands on polearm-type weapons when swinging them.
+The /clap emote is not emitting sound if performed more than once.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid
+Mangle's talent link tooltip indicates a 100 yard range.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter
+Initial trigger or activation sounds for Immolation Trap rank 6 and Explosive Trap rank 4 cannot be heard by Classic WoW players.
+Swapping your current pet for a stabled pet while mounting will cause you to receive an error "You do not have a pet to summon" when you use Call Pet.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage
+Molten Armor will not deal damage to an attacker if the mage is protected by a damage absorbtion shield.
+Noxious Breath will cause Arcane Missiles to only deal damage during the first volley.
+Seal of Wrath applies to non damaging attacks causing it to break Polymorph. 
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin
+Crusader Strike is adversely affected by Seal of the Crusader.
+The Bladestorm effect from the Ravager item proc has its channeling broken by refreshing paladin judgments.
+The Paladin talent Precision displays Daggers and Staves as a weapon class in the link tooltip.
+There is a discrepancy in the combat log when casting Paladin healing spells.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest
+The Priest Talent Power Infusion consumes an inconsistent amount of mana when cast on yourself.
+Touch of Weakness doesn't reduce the melee damage of attacker.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue
+Cloak of Shadows do not remove the curse Shrink.
+Mutilate is being written to the combat log multiple times when used.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman
+Frostbrand rank 5 and Frostbrand rank 6 do the same damage at level 66.
+
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior
+Whirlwind has a new sound. 
+
+
+
+NPCs
+Disorient effects are being inconsistently applied to Black Blood of Draenor mobs.
+Pig pets are not making footprints.
+Kalecgos' Human form is incorrectly casting his Revitalize spell on targets without mana.
+Zul'jin will occasionally land a melee swing on the victim of his Claw Rage or Lynx Rush target.
+Internal messages will occasionally be displayed in the Vazruden the Herald encounter of Hellfire Ramparts.
+Shared Bonds cast by Sister of Pain is applied inconsistently and is not able to be dispelled.
+Sunblade Imps in Magisters' Terrace are sometimes not resetting properly.
+High Astromancer Solarian no longer calls for help from the trash in her room when engaged.
+Nightbane's Charred Earth ability is dealing physical damage.
+Internal messages are displayed in the combat log when Sinister Reflections spawn during the Kil'jaeden encounter.
+The tooltip from Mennu The Betrayer's Tainted Stoneskin Totem is incorrect.
+Internal messages are displayed in the combat log after Gruul the Dragonkiller casts Ground Slam.
+Hunter's Mark does not appear above Shield Orbs .
+It is possible for pets to get stuck in place after exiting the Spectral Realm in the Kalecgos encounter.
+Shield Orbs are missing portraits.
+The death emote voice-over for Kael'thas Sunstrider in the Magister's Terrace continues after he has already died.
+Felblood Initiates will occasionally change sex if reset after being transformed into an Emaciated Felblood.
+Wretched mobs in the Magisters' Terrace are not resetting properly near Selin Fireheart's room.
+The Sunfury Nethermancer's channeling animation doesn't stop when they're melee attacking.
+The selection circle for the Spider critter is huge.
+Mage Blink cannot be cast while stunned by the Sunblade Mage Guard Glaive Throw ability.
+
+
+
+UI
+If you are saved to 10+ instances, the Raid Infos are overlapping at the second row.
+Paladin healing spells used in castsequence macro's are not completing the cast sequence when a rank is not specified.
+The hunter's spell Dismiss Pet "fades" from player 1 minute after dismissing pet.
+If Scrolling Combat Text is activated and Auras is selected, some spells that do not give auras will show up in green in the scrolling combat text.
+Casting some spells with Auras selected for Scrolling Combat text, will show the notification twice.
+Casting Mass Dispel when Auras on Scrolling Combat Text is enabled will show <Mass Dispel> multiple times depending on how many targets are affected.
+When updating to 2.4.0 Interface Options are not all updated correctly.
+Calling a filter where "Unknown" checkboxes are the only options enabled under Message Sources generates a Lua error.
+Debuff sizes are not scaling properly in size based on who cast the debuff.
+The Okay and Cancel buttons in the General Log window do not have sound.
+The guild log scroll bar does not always properly display what it's supposed to.
+The school of magic in the combat log concerning buffs that "reflect" damage onto the attacker is repeated.
+Changes to some Interface Options are not undone when clicking Cancel.
+Toggling <Party Members' Pets> in the Party & Raid, Interface Option already in a party does not change the state of the party UI.
+The Combat Log displays all events after logging in until a filter is selected.
+There's a typo in exhausted damage message.
+Find Minerals and Find Treasure are not showing when activated or fading in floating combat text.
+Instant and channeled abilities that do not have a target are generating a past tense line in the combat log.
+Some of Interface dropdown changes are not discarded when canceled.
+Pet skill damage appears on the screen while Pet damage option is disabled.
+The World PvP Objectives display is not updating changes made in the interface menu until you relog.
+The visual for the checkbox for the Camera interface options are not saving on logout.
+Unchecking default checked settings in the General and Combat Log Config menus will not save properly after logging out.
+The name of Temporary Weapon Enchant buffs do not show up in the combat log when they are dismissed.
+Dying and disconnecting causes you to be unable to release.
+
+
+
+Quests
+There is a typo in Harbinger Inuuro's gossip text after the Sun's Reach Armory is captured.
+There are typos in the quest "Maintaining the Sunwell Portal".
+Abilities/trinkets that trigger after killing an opponent that gives experience or honor are being activated after killing mobs during bombing quests.
+Completing the quest "Arcane Refreshment" does not teach the spell Conjure Water.
+Completing the quest "The Journey Has Just Begun" does not teach players how to make an Onyxia Scale Cloak.
+
+
+
+Items
+Several procs from items are breaking crowd control effects such as Scatter Shot.
+Using a Papa Hummel's Old-Fashioned Pet Biscuit does not initiate a global item cooldown.
+Vengeful Gladiator's Rifle 34530 is using a inconsistent sound.
+The Nexus Key staff is giving an inconsistant amount of bonus healing.
+The name "Swift War Elekk" is shown in the casting bar when summoning the Black War Elekk.
+Bow strings are not being lit in 2.4.0.
+The Arcane Strike proc from Shattered Sun Pendant of Might is breaking crowd control effects such as Scatter Shot.
+It is possible to dodge, block, and parry the proc Arcane Strike from the Shattered Sun Pendant of Might
+The Brutal Gladiator's Rifle is emitting a Bow sound effect upon use, despite the item being a Gun.
+Certain socket bonus modifiers do not display the healing that they provide.
+Draenei female horns will not protrude correctly through certain helms.
+The tooltip for Skyshatter Helmet's gem socket bonus +9 healing does not include the additional spell damage.
+Arcane Charges used in the quests "The Air Strikes Must Continue" and "Distraction at the Dead Scar" deals fire damage despite the name "Arcane".
+Shifting Naaru Sliver summons a Power Circle for a duration inconsistent with its tooltip.
+The tooltip for the 4 piece bonus of the Dragonhide Battlegear states that the movement speed increase affects travel form even though it does not.
+The pushback resistance part of the Battlecast Garb set bonus does not seem to be functioning.
+The reduced cooldown of Shaman Nature's Swiftness provided by the 4 piece set bonus from the "Seer's Ringmail Battlegear" PvP armor is not applying.
+The Cloak of Swift Mending , dropped from Selin Fireheart in the Magister's Terrace on normal difficulty, does not have a level requirement.
+Brann Bronzebeard's Lost Letter is displaying a damage range in its tooltip even though this item is not a weapon.
+The set bonus for the Crusader's Ornamented Battle Gear and Crusader's Scaled Battle Gear have a typo in their tooltip. Environment
+In Silithus, there is a Tornado that needs sounds.
+In Heroic Magister's Terrace, the door in Selin Fireheart's room will respawn with no boss to kill to open it, leaving players unable to proceed.
+Attempting to enter the Caverns of Time: Hyjal Summit raid instance without being in a raid group, without the expansion installed, or below level 65 will return the the old Hyjal error message stating that a play must have "...friendly or better reputation"
+
+
+
+Battlegrounds
+The Berserking power-up found in Battlegrounds makes no sound when acquired.
+
+
+
+PC
+There is a slight popping noise that occurs when running while using the Creative X-FI sound card.
+
+
+
+Mac
+On Macs with nVidia 8800 cards, when a full-screen effect is active, the top row of pixels is black or garbage.
+
+
+<script src="http://www.wowhead.com/widgets/power.js?3"></script> <script>$WowheadPower.set{showlogo:1,applyto:2};</script>

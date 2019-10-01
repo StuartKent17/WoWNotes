@@ -1,0 +1,286 @@
+chaud2015-04-11, 05:57 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Official Game Guide Updated, Fire Roland's Crusader Build, Rhykker's Leveling Tips http://www.diablofans.com/news/48388-official-game-guide-updated-fire-rolands-crusader
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Molten Core Heroic Boss Guides - Garr, Baron Geddon, Majordomo http://www.hearthpwn.com/news/867-molten-core-heroic-boss-guides-garr-baron-geddon
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Faster Hero Release Schedule, Town Hall Heroes #58 http://www.heroesnexus.com/news/1341-faster-hero-release-schedule-town-hall-heroes-58
+
+Patch 6.1.2 Hotfixes - April 10
+Raids and Dungeons
+Blackrock Foundry
+
+Blackhand's Marked for Death ability should no longer have a preference to target players that are already stunned during Stage Two.
+
+
+PvP
+Conquest Catch-Up Cap Changes
+
+Conquest catch-up cap received a change to how it's calculated that should result in a roughly 50% increase to the catch-up portion of the cap.
+The formula used to calculate a player’s catch-up cap is now: Number of weeks passed in the season × 1500 - Total amount of Conquest earned this season
+Further information on this change could be found in the forum thread titled: Changes to Conquest Catch-Up Cap http://us.battle.net/wow/en/forum/topic/16952585152.
+
+
+Bug Fixes
+
+Players can no longer delete WoW Token letters in the mailbox if it still has gold attached.
+Fixed an issue where whispers were not working correctly from the Mobile Armory chat client.
+
+
+
+WoW Token Prices
+WoW Tokens have<span title="Just like the amount of news from Blizzard for the past several months"> been on a decline for most of Friday.</span>
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> setTimeoutfunction  {
+height = chart.height
+width = $".pgcharts".width
+chart.setSizewidth, height, doAnimation = true;
+}, 1500
+
+setTimeoutfunction  {
+height = chart.height
+width = $".pgcharts".width
+chart.setSizewidth, height, doAnimation = true;
+}, 2500
+
+setTimeoutfunction  {
+height = chart.height
+width = $".pgcharts".width
+chart.setSizewidth, height, doAnimation = true;
+}, 4500
+
+$document.readyfunction  {
+Highcharts.setOptions{
+lang: {
+thousandsSep: ','
+}
+};
+chart = new Highcharts.Chart{
+colors: [
+'#DE2A2A',
+'#2A54C7'],
+chart: {
+renderTo: 'wowtokend4',
+defaultSeriesType: 'spline',
+backgroundColor: '#efeedc',
+zoomType: 'x',
+},
+
+xAxis: {
+type: 'datetime',
+dateTimeLabelFormats: { // don't display the dummy year
+day: '%e. %b',
+month: '%e. %b',
+year: '%b'
+},
+title: {
+text: 'Time',
+style: {
+color: '#000',
+fontWeight: 'bold'
+}
+},
+startOnTick: false
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+endOnTick: true,
+title: {
+text: 'Cost Gold',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+spline: {
+animation: false,
+shadow: false,
+marker: {
+enabled: false,
+symbol: 'circle',
+radius: 3,
+states: {
+hover: {
+enabled: true
+}
+}
+}
+}
+},
+
+tooltip: {
+headerFormat: '<b>'+ '{point.x:%b %e, %Y %I:%M %p}'
++'</b>',
+pointFormat: '<br/><span style="color:' + '{point.series.color}' + '">' + '{point.series.name}' + '</span>: ' + '{point.y:,.0f}g',
+valueDecimals: 0,
+shared: true
+},
+title: {
+text: 'WoW Token Price',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'US',
+data: [
+[Date.UTC2015, 3, 7, 14, 00, 30300 ],
+[Date.UTC2015, 3, 7, 15, 00, 30603 ],
+[Date.UTC2015, 3, 7, 16, 00, 30909 ],
+[Date.UTC2015, 3, 7, 17, 00, 31218 ],
+[Date.UTC2015, 3, 7, 18, 00, 30909 ],
+[Date.UTC2015, 3, 7, 19, 00, 31218 ],
+[Date.UTC2015, 3, 7, 20, 00, 30603 ],
+[Date.UTC2015, 3, 7, 20, 30, 30300 ],
+[Date.UTC2015, 3, 7, 21, 00, 29700 ],
+[Date.UTC2015, 3, 7, 21, 15, 29403 ],
+[Date.UTC2015, 3, 7, 21, 30, 29108 ],
+[Date.UTC2015, 3, 7, 21, 45, 28817 ],
+[Date.UTC2015, 3, 7, 22, 00, 28529 ],
+[Date.UTC2015, 3, 7, 22, 15, 28244 ],
+[Date.UTC2015, 3, 7, 22, 30, 27948 ],
+[Date.UTC2015, 3, 7, 22, 45, 27669 ],
+[Date.UTC2015, 3, 7, 23, 00, 27392 ],
+[Date.UTC2015, 3, 7, 23, 15, 27118 ],
+[Date.UTC2015, 3, 7, 23, 30, 26847 ],
+[Date.UTC2015, 3, 7, 23, 45, 26579 ],
+[Date.UTC2015, 3, 8, 00, 00, 26313 ],
+[Date.UTC2015, 3, 8, 00, 15, 26050 ],
+[Date.UTC2015, 3, 8, 00, 30, 25790 ],
+[Date.UTC2015, 3, 8, 00, 45, 25532 ],
+[Date.UTC2015, 3, 8, 1, 00, 25277 ],
+[Date.UTC2015, 3, 8, 1, 15, 25024 ],
+[Date.UTC2015, 3, 8, 1, 30, 25024 ],
+[Date.UTC2015, 3, 8, 1, 45, 25024 ],
+[Date.UTC2015, 3, 8, 2, 00, 25024 ],
+[Date.UTC2015, 3, 8, 2, 15, 24774 ],
+[Date.UTC2015, 3, 8, 2, 30, 24774 ],
+[Date.UTC2015, 3, 8, 2, 45, 24774 ],
+[Date.UTC2015, 3, 8, 5, 15, 24030 ],
+[Date.UTC2015, 3, 8, 9, 00, 23324 ],
+[Date.UTC2015, 3, 8, 13, 00, 22405 ],
+[Date.UTC2015, 3, 8, 14, 15, 21959 ],
+[Date.UTC2015, 3, 8, 15, 15, 21739 ],
+[Date.UTC2015, 3, 8, 16, 15, 21522 ],
+[Date.UTC2015, 3, 8, 17, 15, 21307 ],
+[Date.UTC2015, 3, 8, 18, 15, 21094 ],
+[Date.UTC2015, 3, 8, 19, 15, 20833 ],
+[Date.UTC2015, 3, 8, 20, 15, 20674 ],
+[Date.UTC2015, 3, 8, 21, 15, 20467 ],
+[Date.UTC2015, 3, 8, 22, 15, 20370 ],
+[Date.UTC2015, 3, 8, 23, 15, 20574 ],
+[Date.UTC2015, 3, 9, 00, 15, 20780 ],
+[Date.UTC2015, 3, 9, 1, 15, 20988 ],
+[Date.UTC2015, 3, 9, 2, 15, 21198 ],
+[Date.UTC2015, 3, 9, 3, 15, 21410 ],
+[Date.UTC2015, 3, 9, 4, 15, 21624 ],
+[Date.UTC2015, 3, 9, 8, 15, 22502 ],
+[Date.UTC2015, 3, 9, 9, 15, 22727 ],
+[Date.UTC2015, 3, 9, 10, 15, 22954 ],
+[Date.UTC2015, 3, 9, 12, 15, 23416 ],
+[Date.UTC2015, 3, 9, 13, 15, 23650 ],
+[Date.UTC2015, 3, 9, 15, 15, 24126 ],
+[Date.UTC2015, 3, 9, 16, 15, 24367 ],
+[Date.UTC2015, 3, 9, 17, 15, 24611 ],
+[Date.UTC2015, 3, 9, 22, 15, 25867 ],
+[Date.UTC2015, 3, 9, 23, 15, 26126 ],
+[Date.UTC2015, 3, 10, 00, 15, 26387 ],
+[Date.UTC2015, 3, 10, 1, 15, 26651 ],
+[Date.UTC2015, 3, 10, 2, 15, 26918 ],
+[Date.UTC2015, 3, 10, 10, 15, 25187 ],
+[Date.UTC2015, 3, 10, 12, 15, 24686 ],
+[Date.UTC2015, 3, 10, 13, 15, 24439 ],
+[Date.UTC2015, 3, 10, 16, 15, 23713 ],
+[Date.UTC2015, 3, 10, 18, 15, 23241 ],
+[Date.UTC2015, 3, 10, 19, 15, 23009 ],
+[Date.UTC2015, 3, 10, 21, 15, 22551 ],
+[Date.UTC2015, 3, 11, 00, 15, 21881 ],
+[Date.UTC2015, 3, 11, 1, 15, 21662 ],
+[Date.UTC2015, 3, 11, 2, 15, 21445 ],
+]
+}]
+};
+};
+</script> 
+<div id="wowtokend4" width="50%" class="pgcharts">Don't see a chart? Enable javascript!</div>Cheating in Arenas
+Flyhacks: We added some new functionality in 6.0 that lets us catch these much easier, by keeping track of areas that players should not be able to reach via normal means. If you do see someone who's gotten themselves to a location they shouldn't be, that just means we missed that particular spot. Let us know where it is screenshots are super helpful! and we can look into getting it fixed.
+
+Kick bots: We've done a lot to try to detect these more accurately, and are still working on improving those algorithms. Every report we get helps, and I'll take the opportunity to mention hacks@blizzard.com again -- if you can get video either on YouTube or even a clip from a Twitch stream, that's enormously useful to the hacks team.
+
+That said, I also think that a lot of players get accused of kickbotting when they're actually just good at kicking or maybe just lucky. A highly-skilled player will know when to watch for a cast based on what they're opponent is doing. To use an extremely basic example: when a healer is being chased around a pillar by a Rogue, and suddenly stops moving but isn't CC'd, that's a strong indication that they're about to start casting. The Rogue can recognize this, anticipate the cast, and be prepared to kick.
+
+In those cases, the Rogue might even use Kick before they even see the cast bar -- not because they're using a hack, but because it's just so obvious that the cast is coming, especially in high-pressure situations where the healer would have already used any instant-cast abilities they had available. Server latency and reaction times being what they are, it's highly likely in that scenario that the healer gets kicked instantly.
+
+I'm not at all saying that kick cheats don't exist -- and as I mentioned above, we're still working on better ways to detect and combat them. I'm just saying that "I got kicked instantly" isn't automatic evidence of shenanigans. A lot of perfectly legit players get accused of cheating, and it makes me sad to see extremely smart and highly-skilled play shrugged off as "he must be using a bot."
+
+As to players entering arenas late, that's kind of a weird one. I'll look into it some more.
+
+Does reporting someone in-game automatically generate a ticket that is automatically sent to hacks@blizzard ?
+It's not sent to that email address, but it is sent to the team that checks it. The big difference is that an in-game report doesn't include visual evidence. That means the hacks team has to investigate the player manually, and while they do catch a lot of cheaters that way, there's a decent chance that by the time someone gets to that individual report, the reported player has stopped queuing.
+
+Also, what are your thoughts about the bots changing the mentality of this game? People who are getting beaten think they are being beaten by bots. And now we have multi R1 Gladiators who are admitting to using bots to get their multi R1 titles, thus totally invaliding the entire Gladiator title.
+This is pretty much what I was talking about above regarding kickbots. The mentality of "If I win, it's because I'm awesome, and if I lose, they were obviously hacking." It's important to remember that the goal of the MMR system is to put you in matches against equally-skilled players. That means, once the system has a decent handle on where you and your teammates should be, you should be losing roughly 50% of your matches. It's easy to fall into the mentality of "we're so much better than them, so they must be cheating" when in reality, you just hit a really good team.
+
+I also think that -- and you might want to sit down for this one, it's a shocker -- there are a lot of trolls on the internet. In the PvP community, there are several that love to make the bot problem which is definitely a problem, so don't read this as me trying to deflect that sound worse than it is.
+
+Just the other day I was reading a thread where people were claiming that a kickbotter had gotten his ban overturned via some sort of IP-related tomfoolery. I checked with the hacks team, and the guy's account was and is still permanently closed, but the rumor was persisting and a lot of fingers were being pointed at Blizzard for "believing his lies."
+
+Where I'm going with this is that I don't believe a multi-R1 player claiming they've botted their way to the top "totally invalidates" the Gladiator title. Heck, even if it's true and if it is, I'd like to know more, so we can investigate those players, the vast majority of Gladiators very much earned their titles.
+
+Are you going to strip away any achievements the cheaters received?
+Heh. I've been burned in the past for over-promising on what we're going to do about the "filthy cheaters," so I'm a bit hesitant to say that we'll catch every single one. Fact is, catching them with hard evidence is tricky. But I can say that we do our best, and are actively working on methods to make our best better.
+
+I Still want to know how they manage to kick a dragons breath from my mage.
+I'd be interested to hear more about this, because from what I understand, there should be no possible way to interrupt an instant cast, regardless of latency.
+
+You should have a team that is dedicated to viewing the enemy's boards.
+We do, I'm just not on that team, which means I'm often not immediately aware of stuff going on there.
+
+
+Blue Posts
+Being a Commander
+I don't want to be a "commander", I'm an adventurer, I don't command people, people command ME and give ME quests.
+
+I want to see our faction leaders scraping it out. Khadgar is near useless
+It's always interesting hearing different perspectives. An ongoing complaint since... Burning Crusade I think, if not earlier, has been that player characters don't really feel powerful or in-charge despite their efforts. Our characters are these veterans of war--champions of Azeroth! We've killed dragons and demons and etc. and yet constantly the faction leaders or lead characters jump in to save the day or do the heavy lifting.
+
+So, it's interesting to me that you actually want that, and to just be a minor figure in a game of bigger characters. That's not traditionally been the request of other players.
+
+If I'm the commander, why the hell am I still doing all this nitpicky labor? If I'm the commander, why the hell am I off killing or gathering x of y, while Khadgar is standing around waving his hands or whatever?
+You're a very hands-on leader. It's why you make the big bucks. Blue Tracker http://blue.mmo-champion.com/topic/368169-no-more-commander-crap/ / Official Forums http://us.battle.net/wow/en/forum/topic/16952045653?page=2#34
+
+WoW Token Clarifications
+Yeah we made it really easy to use, there’s no need to suspend your subscription or resubscribe. Your recurring subscription will automatically pause once your currently paid for period is done, and then your WoW Token game time is automatically used next at a higher priority than the recurring subscription. You can redeem multiple WoW Tokens, andonce any accumulated WoW Token game time expires your recurring subscription will automatically pick up where it left off. Obviously you can keep redeeming WoW Tokens and your recurring sub will never kick in, but you don't have to cancel it for WoW Tokens to automatically be used. Blue Tracker http://blue.mmo-champion.com/topic/368166-wow-tokens/ / Official Forums http://us.battle.net/wow/en/forum/topic/16953845718?page=1#12
+
+
+Community Spotlight - Lich King by Jorcerca
+For this week’s Community Spotlight, we recently came across an outstanding piece of fan art, and reached out to learn more about it and the artist, Jorcerca.
+Q: What would you say was the impetus for this piece?
+A: Most importantly, the design of World of Warcraft. WoW is one of the most awesome, innovative and creative games in the world.
+
+Q: How long does a work like this take you to complete?
+A: I usually allow one week to make an illustration like this one. I don’t spend the whole week on it, but it actually takes a total of five to seven hours.
+
+Q: From where do you take your inspiration?
+A: I was inspired by several works, and I like to make concept art for games. I look a lot at Blizzard art for Warcraft, Diablo, and StarCraft, and I also like a lot of the art and design in other games, and particularly console games. Additionally, I have a list of several artists that I follow, and their works inspire me to create.
+
+Q: What’s your gameplay history?
+A: Warcraft… well, actually I think a little of everything. I started out playing Warcraft II, and then I played Warcraft III, and then I entered the World of Warcraft and it was love at first sight!
+
+Q: What would you add to WoW, if you could?
+A: This question is so difficult! I think I’d want add something that could go on to be a new race of characters. I think it would be very cool if they were a race of aquatic characters … but that’s all I’ve got so far on the concept!
+
+
+<div class="gallery" id="gallery-fanArtLK">http://media.mmo-champion.com/images/news/2015/april/thumb/fanArtLichKingBestXpac.jpg http://media.mmo-champion.com/images/news/2015/april/fanArtLichKingBestXpac.jpg </div>
+
+A big thanks to Jorcera from all of us at Blizzard for sharing his talents with us. If you’ve seen a great piece of fan art lately, e-mail us at fanart@blizzard.com and tell us all about it.

@@ -1,0 +1,177 @@
+chaud2011-11-22, 06:02 AMDiablo 3 - Even more info on bosses after yesterday's preview, and a blue post to explain the new Auction House stackable items buying/selling And it would probably be awesome to see that on WoW - Diablo 3 Boss Artwork Information Update, Stackable Items at the Auction House http://www.diablofans.com/news/995-boss-info-artwork-update-stackable-items-ah/
+
+Patch 4.3: Dragon Soul Encounters
+Start getting ready for the new raids now by brushing up with our encounter pages! All values are from Heroic 25 Man mode.
+
+
+http://media.mmo-champion.com/images/news/2011/november/th_morchok.jpg http://www.mmo-champion.com/threads/1026781-Morchok-Strategy-Loot-Discussions?p=14315771 http://media.mmo-champion.com/images/news/2011/november/th_zonozz.jpg http://www.mmo-champion.com/threads/1026782-Warlord-Zon-ozz-Strategy-Loot-Discussions?p=14315780 http://media.mmo-champion.com/images/news/2011/november/th_yorsahj.jpg http://www.mmo-champion.com/threads/1026783-Yor-sahj-the-Unsleeping-Strategy-Loot-Discussions?p=14315784 http://media.mmo-champion.com/images/news/2011/november/th_hagara.jpg http://www.mmo-champion.com/threads/1026784-Hagara-the-Stormbinder-Strategy-Loot-Discussions?p=14315789 
+
+http://media.mmo-champion.com/images/news/2011/november/th_ultraxion.jpg http://www.mmo-champion.com/threads/1026785-Ultraxion-Strategy-Loot-Discussions?p=14315816 http://media.mmo-champion.com/images/news/2011/november/th_blackhorn.jpg http://www.mmo-champion.com/threads/1026787-Warmaster-Blackhorn-Strategy-Loot-Discussions http://media.mmo-champion.com/images/news/2011/november/th_deathwing.jpg http://www.mmo-champion.com/threads/1026788-Spine-of-Deathwing-Strategy-Loot-Discussions?p=14315833 http://media.mmo-champion.com/images/news/2011/november/th_madnessdeathwing.jpg http://www.mmo-champion.com/threads/1026789-Madness-of-Deathwing-Strategy-Loot-Discussions?p=14315841 
+
+
+Statistics: Class Balance Follow Up
+You asked for it, so here is the class balance at each of the different Valor Points achievement levels. Keep in mind that the higher we raise the bar, the smaller and nosier the sample becomes. The data from 50,000 Valor Points is unlikely to provide any statistically useful insight. Let me know if there are other things you would like to see in the future.
+
+Sample Sizes
+
+Any: 6,200,000
+5k: 1,800,000
+25k: 254,000
+50k: 1,200
+
+
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+<script> var chart;
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#4768C4', '#E01B6A']
+};
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'ach5536',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Death Knight','Druid','Hunter','Mage','Paladin','Priest','Rogue','Shaman','Warlock','Warrior'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return this.series.name + '<br />' + this.point.name + ' - '+ this.y +'%' ;
+}
+},
+
+title: {
+text: 'Class Balance at Any, 5k, 25k, and 50k Valor Point Levels',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+
+
+series: [
+{
+data: [{y: 11.1, color: '#C41E3A', name:'Death Knight'},{y: 12.0, color: '#FF7D0A', name:'Druid'},{y: 10.5, color: '#ABD473', name:'Hunter'},{y: 10.9, color: '#69CCF0', name:'Mage'},{y: 13.4, color: '#F58CBA', name:'Paladin'},{y: 9.8, color: '#FFFFFF', name:'Priest'},{y: 7.1, color: '#FFF569', name:'Rogue'},{y: 9.0, color: '#2459FF', name:'Shaman'},{y: 6.7, color: '#9482CA', name:'Warlock'},{y: 9.5, color: '#C79C6E', name:'Warrior'}],
+name: 'Any amount of Valor Points'
+}
+
+,{
+name: '5k Valor Points',
+data: [{y: 9.8, color: '#C41E3A', name:'Death Knight'},{y: 13.9, color: '#FF7D0A', name:'Druid'},{y: 9.8, color: '#ABD473', name:'Hunter'},{y: 9.7, color: '#69CCF0', name:'Mage'},{y: 15.4, color: '#F58CBA', name:'Paladin'},{y: 10.6, color: '#FFFFFF', name:'Priest'},{y: 4.9, color: '#FFF569', name:'Rogue'},{y: 10.4, color: '#2459FF', name:'Shaman'},{y: 5.6, color: '#9482CA', name:'Warlock'},{y: 9.9, color: '#C79C6E', name:'Warrior'}]
+}, {
+name: '25k Valor Points',
+data: [{y: 8.2, color: '#C41E3A', name:'Death Knight'},{y: 15.1, color: '#FF7D0A', name:'Druid'},{y: 7.9, color: '#ABD473', name:'Hunter'},{y: 8.7, color: '#69CCF0', name:'Mage'},{y: 17.0, color: '#F58CBA', name:'Paladin'},{y: 12.1, color: '#FFFFFF', name:'Priest'},{y: 4.1, color: '#FFF569', name:'Rogue'},{y: 10.5, color: '#2459FF', name:'Shaman'},{y: 6.0, color: '#9482CA', name:'Warlock'},{y: 10.3, color: '#C79C6E', name:'Warrior'}]
+}
+, {
+name: '50k Valor Points',
+data: [{y: 7.5, color: '#C41E3A', name:'Death Knight'},{y: 16.7, color: '#FF7D0A', name:'Druid'},{y: 3.7, color: '#ABD473', name:'Hunter'},{y: 8.5, color: '#69CCF0', name:'Mage'},{y: 21.1, color: '#F58CBA', name:'Paladin'},{y: 14.2, color: '#FFFFFF', name:'Priest'},{y: 3.1, color: '#FFF569', name:'Rogue'},{y: 8.5, color: '#2459FF', name:'Shaman'},{y: 4.1, color: '#9482CA', name:'Warlock'},{y: 12.6, color: '#C79C6E', name:'Warrior'}]
+}]
+
+
+};
+};
+</script> 
+
+<div id="ach5536" style="style="width:900px;margin-left: auto;margin-right: auto;"">
+Don't see a chart? Enable javascript!
+</div>
+<br />
+
+
+
+Poll: How many Valor Points have you earned?
+Speaking of Valor Points, how many have you earned on your main character?
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/5692049.js"></script>
+<noscript><a href="http://polldaddy.com/poll/5692049/">How many Valor Points have you earned?</a></noscript>
+
+
+Computers - Setup of the Month by chaud http://www.mmo-champion.com/members/523085-chaud
+Each month or every 2 months, depending on the hardware evolutions, the lovely chaud http://www.mmo-champion.com/members/523085-chaud will work on a couple of hardware setups for those of you who are thinking of upgrading their computer!
+
+Check back later this week for a list of Black Friday sales! 
+
+If you have been looking to purchase a new hard drive recently, you might have noticed that prices have tripled from what they were just a month or two ago. This is due to the recent floods http://www.bloomberg.com/news/2011-11-21/thailand-cuts-2011-growth-forecast-to-1-5-from-4-5-after-record-floods.html in Thailand, which affected all of the major hard drive manufacturers and their suppliers. It is going to be 6-12 months before prices come back down closer to their previous levels, as some of the factories still have several feet of water inside.
+
+Now is a good time to buy a SSD, as the next generation is a good while away and the current prices are fairly flat http://media.mmo-champion.com/images/news/2011/november/ssdgraph.gif. AMD's Bulldozer arrived to universally negative reviews http://www.anandtech.com/show/4955/the-bulldozer-review-amd-fx8150-tested, citing excessive power usage and heat output and very poor single threaded performance. They are working on another stepping which may help the problem slightly, but don't expect any significantly improvements on the design until the middle of 2012 with the arrival of Piledriver. New AMD GPUs are rumored to be coming in Q1 2012 if you are thinking about upgrading.
+
+Make sure to keep your AMD http://sites.amd.com/us/game/downloads/Pages/downloads.aspx and Nvidia http://www.nvidia.com/Download/index.aspx?lang=en-us drivers up to date.
+
+Don't hesitate to post any feedback in the comments of that news post, and don't forget to visit the Computer Forum http://www.mmo-champion.com/forums/290-Computer for any extra questions! 
+
+
+Peripherals/Monitors
+
+<table class="sortable news-table" style="margin: auto;"> <thead> <tr> <th width="130">Component</th><th width="400">Puppy</th> <th width="400">Dolphin</th> </tr></thead> <tbody> <tr><td>Monitor</td><td>ASUS VW224U 22-Inch Widescreen http://www.amazon.com/gp/product/B002I9JACU?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002I9JACU - $150</td><td>ASUS VW246H 24-Inch Widescreen http://www.amazon.com/gp/product/B001LYWBOM?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B001LYWBOM - $200</td></tr>
+<tr><td>Keyboard</td><td>Microsoft Digital Media Keyboard 3000 http://www.amazon.com/gp/product/B0013ITQA8?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0013ITQA8 - $20</td><td>Cyborg V.5 http://www.amazon.com/gp/product/B002SAJCYU?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002SAJCYU - $47</td></tr>
+<tr><td>Mouse</td><td>Logitech G400 http://www.amazon.com/gp/product/B0055QZ216?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0055QZ216 - $35</td><td>Logitech G500 http://www.amazon.com/gp/product/B002J9GDXI?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002J9GDXI - $61</td></tr>
+<tr><td>Speakers</td><td>Logitech S220 2.1 Speaker System http://www.amazon.com/gp/product/B000RQSGYO?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B000RQSGYO - $23</td><td>Logitech Z313 Speaker System http://www.amazon.com/gp/product/B002HWRZ2K?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002HWRZ2K - $40</td></tr></tbody>
+<thead> <tr> <th width="130">Component</th><th width="400">Narwhal</th> <th width="400">Unicorn</th> </tr></thead> <tbody> 
+<tr><td>Monitor</td><td>ASUS VE276Q 27-Inch http://www.amazon.com/gp/product/B003UT2C4U?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003UT2C4U - $314</td><td>HP ZR24w 24-inch http://www.amazon.com/gp/product/B003D1ADUU?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003D1ADUU IPS Panel - $398</td></tr>
+<tr><td>Keyboard</td><td>Logitech G110 http://www.amazon.com/gp/product/B002RRLQIO?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002RRLQIO - $73</td><td>Razer BlackWidow http://www.amazon.com/gp/product/B003ZJ1VD8?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003ZJ1VD8 Backlit http://www.amazon.com/gp/product/B003ZJ5B4I?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003ZJ5B4I- $72 $123
+</td></tr><tr><td>Mouse</td><td>Razer Deathadder http://www.amazon.com/gp/product/B002Q4U5DK?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002Q4U5DK - $45</td><td>Razer Naga http://www.amazon.com/gp/product/B002MPPRPO?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002MPPRPO Buttons on the Side - $68</td></tr><tr><td>Speakers</td><td>Creative Inspire T3130 2.1 Speaker System http://www.amazon.com/gp/product/B002DWQU48?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002DWQU48 - $45</td><td>Logitech Speaker System Z523 http://www.amazon.com/gp/product/B002FU5QMK?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002FU5QMK - $70</td></tr></tbody></table>
+
+
+
+Puppy and Dolphin
+Overclocked Puppy will outperform Dolphin when multiple threads are in use Not WoW and come close in most other cases. 
+Mix and match anything but the CPU/Motherboard combo between Puppy and Dolphin. Mix and match anything between Dolphin and Narwhal.
+
+<table class="sortable news-table" style="margin: auto;"> <thead> <tr> <th width="130">Component</th><th width="400">Puppy</th> <th width="400">Dolphin</th> </tr></thead> <tbody> 
+<tr><td>Case</td><td>NZXT GAMMA Classic http://www.amazon.com/gp/product/B002UDK9U6?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002UDK9U6 - $36</td><td>NZXT GAMMA Classic http://www.amazon.com/gp/product/B002UDK9U6?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002UDK9U6 - $36</td></tr>
+<tr><td>Power Supply</td><td>Corsair CX500 V2 http://www.amazon.com/gp/product/B004W2T2U6?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004W2T2U6 - $48</td><td>Corsair CX600 V2 http://www.amazon.com/gp/product/B004W2T2UQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004W2T2UQ - $60</td></tr>
+<tr><td>CPU</td><td>AMD Phenom II X4 955 Black Edition http://www.amazon.com/gp/product/B002TQYUAE?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002TQYUAE - $112</td><td>Intel i3-2100 http://www.amazon.com/gp/product/B004JEVGMO?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004JEVGMO - $122</td>
+</tr><tr><td>Heatsink</td><td>Corsair Air Series A70 http://www.amazon.com/gp/product/B003IT6RE8?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003IT6RE8 - $22</td><td>Cooler Master Hyper 212 Plus http://www.amazon.com/gp/product/B002G1YPH0?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002G1YPH0 - $26</td></tr>
+<tr><td>Motherboard</td><td>ASUS M5A97 AM3+ 970 http://www.amazon.com/gp/product/B0058G65UU?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0058G65UU - $100</td><td>Gigabyte GA-Z68A-D3H-B3 http://www.amazon.com/gp/product/B00518M77U?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00518M77U - $114</td></tr>
+<tr><td>Memory</td><td>4GB PNY Optima DDR3 10600 http://www.amazon.com/gp/product/B0026ZPTR6?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0026ZPTR6 - $27</td><td>4GB G.Skill Ripjaws F3 4GB 12800 DDR3 http://www.amazon.com/gp/product/B002RPCLH6?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002RPCLH6 - $47</td></tr>
+<tr><td>Graphics Card</td><td>XFX 6770 http://www.amazon.com/gp/product/B004Z5GRVW?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004Z5GRVW - $90</td><td>MSI 6850 http://www.amazon.com/gp/product/B004U9K3Z4?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004U9K3Z4 or EVGA GTX 560 http://www.amazon.com/gp/product/B0050I1PHO?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0050I1PHO - $168 / $195</td></tr>
+<tr><td>Hard Drive</td><td>Western Digital Caviar Black 750GB http://www.amazon.com/gp/product/B004CSIFFS?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004CSIFFS - $125</td><td>Western Digital Caviar Black 750GB http://www.amazon.com/gp/product/B004CSIFFS?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004CSIFFS - $125</td></tr>
+<tr><td>DVD</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0033Z2BAQ - $20</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0033Z2BAQ - $20</td></tr><tr style="text-align: center; font-weight: bold;"><td>Total</td><td>$580</td><td>$718 / $745</td></tr></tbody></table>
+
+
+
+Narwhal and Unicorn
+All of these parts can be mixed and matched to create a build between Narwhal and Unicorn. SSDs are always optional.
+
+<table class="sortable news-table" style="margin: auto;"> <thead> <tr> <th width="130">Component</th><th width="400">Narwhal</th> <th width="400">Unicorn</th> 
+</tr></thead> <tbody> <tr><td>Case</td><td>Cooler Master HAF 912 http://www.amazon.com/gp/product/B003ZM7YTA?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003ZM7YTA - $60</td><td>Cooler Master HAF932 http://www.amazon.com/gp/product/B001EPUQAE?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B001EPUQAE - $150</td></tr>
+<tr><td>Power Supply</td><td>Corsair 650TX V2 http://www.amazon.com/gp/product/B004LB5AZY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004LB5AZY - $90</td><td>Corsair 750HX http://www.amazon.com/gp/product/B0029F21LK?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0029F21LK 7 Year Warranty - $134</td></tr>
+<tr><td><b>CPU</b></td><td>Intel i5-2500k http://www.amazon.com/gp/product/B004EBUXHQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004EBUXHQ - $225</td><td>Intel i7-2600k http://www.amazon.com/gp/product/B004EBUXSA?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004EBUXSA - $315</td></tr>
+<tr><td>Heatsink</td><td>Thermaltake Frio http://www.amazon.com/gp/product/B003DW0GO2?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003DW0GO2 - $60</td><td>Noctua 6 NH-D14 http://www.amazon.com/gp/product/B002VKVZ1A?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002VKVZ1A - $85</td></tr>
+<tr><td><b>Motherboard</b></td><td>Gigabyte GA-Z68X-UD3H-B3 http://www.amazon.com/gp/product/B00518M74I?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00518M74I - $160</td><td>ASUS Z68 P8Z68-V PRO http://www.amazon.com/gp/product/B00503EA80?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00503EA80 - $210</td></tr>
+<tr><td>Memory</td><td>4GB G.Skill Ripjaws F3 4GB 12800 DDR3 http://www.amazon.com/gp/product/B002RPCLH6?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002RPCLH6 - $47</td><td>8GB G.Skill DDR3 12800 http://www.amazon.com/gp/product/B00339X1EM?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00339X1EM - $69</td></tr>
+<tr><td>Graphics Card</td><td>XFX 6950 1GB http://www.amazon.com/gp/product/B004LB5AT0?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004LB5AT0 OR EVGA GTX 560 Ti http://www.amazon.com/gp/product/B004KZHRAM?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004JLNZXU- $200 / $250</td><td>XFX 6970 2GB http://www.amazon.com/gp/product/B004GCIZ5A?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004GCIZ5A OR EVGA GTX 570 http://www.amazon.com/gp/product/B004EYSMGW?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004EYSMGW - $330 / $370</td></tr>
+<tr><td>Hard Drive</td><td>Western Digital 1TB Caviar Black http://www.amazon.com/gp/product/B0036Q7MV0?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0036Q7MV0 - $162</td><td>Western Digital 1TB Caviar Black http://www.amazon.com/gp/product/B0036Q7MV0?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0036Q7MV0 - $162</td></tr>
+<tr><td>SSD</td><td>Crucial 128 GB m4 http://www.amazon.com/gp/product/B004W2JKZI?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004W2JKZI Review http://www.anandtech.com/show/4253/the-crucial-m4-micron-c400-ssd-review - $210<br /><b>OR</b><br />
+Corsair Force Series GT 120 GB http://www.amazon.com/gp/product/B0057QETGS?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0057QETGS - $195 </td><td>Intel 510 Series 120 GB http://www.amazon.com/gp/product/B004OR0GRC?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004OR0GRC Review http://www.anandtech.com/show/4202/the-intel-ssd-510-review - $280<br /><b>OR</b><br /> OCZ 120 GB Vertex 3 http://www.amazon.com/gp/product/B004Q81CKY?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004Q81CKY Review http://www.anandtech.com/show/4256/the-ocz-vertex-3-review-120gb - $190</td></tr>
+<tr><td>DVD</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0033Z2BAQ - $20</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0033Z2BAQ - $20</td></tr><tr style="text-align: center; font-weight: bold;"><td>Total</td><td>$1024 - $1234</td><td>$1665 - $1795</td></tr></tbody></table>

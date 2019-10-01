@@ -1,0 +1,246 @@
+chaud2012-01-17, 04:52 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Diablo 3 - 10 Character Limit, Runed Way of the Hundred Fists, Poll, Screenshots http://www.diablofans.com/news/1054-10-character-limit-runed-way-of-the-hundred-fists-poll-screenshots/
+
+Statistics: Rated Battleground Class Balance
+Continuing our ongoing statistics posts, today we look at class balance in rated battlegrounds at different levels of gear. The item level is taken from the gear the character is wearing on armory, not their maximum item level. Keep in mind that there are some characters that may not do rated battlegrounds as well as some characters that do not log out in their higher item level PvP gear. 
+
+The graphs used here are not scaled starting at 0 to allow you to visualize the difference in win percentages more easily. Keep in mind the actual differences are much smaller than they appear. 
+
+Sample Size
+
+Item Level 370+: 2.6 million sample size
+Item Level 385+: 600k sample size
+Item Level 395+: 25k sample size
+
+
+Participation Rate
+
+Item Level 370+: 17% of the eligible characters participated in Rated Battlegrounds
+Item Level 385+: 28% of the eligible characters participated in Rated Battlegrounds
+Item Level 395+: 39% of the eligible characters participated in Rated Battlegrounds
+
+
+
+
+<div id="rbgClassPerform" style="style="width:900px;margin-left: auto;margin-right: auto;"">
+Don't see a chart? Enable javascript!
+</div>
+<div id="rbgClassPerform2" style="style="width:900px;margin-left: auto;margin-right: auto;"">
+Don't see a chart? Enable javascript!
+</div>
+<div id="rbgClassPerform3" style="style="width:900px;margin-left: auto;margin-right: auto;"">
+Don't see a chart? Enable javascript!
+</div>
+
+
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+<script> var chart;
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#4768C4', '#E01B6A']
+};
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'rbgClassPerform',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Death Knight','Druid','Hunter','Mage','Paladin','Priest','Rogue','Shaman','Warlock','Warrior'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+
+},
+
+yAxis: {
+title: {
+text: 'Win Percentage',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+},
+min: 48,
+max: 60
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return this.series.name + '<br />' + this.point.name + ' - '+ this.y +'%' ;
+}
+},
+
+title: {
+text: 'Rated Battleground Class Balance for Item Level Equipped 370+',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+
+
+series: [
+{
+data: [{y: 57.18, color: '#C41E3A', name:'Death Knight'},{y: 55.14, color: '#FF7D0A', name:'Druid'},{y: 53.30, color: '#ABD473', name:'Hunter'},{y: 57.55, color: '#69CCF0', name:'Mage'},{y: 56.14, color: '#F58CBA', name:'Paladin'},{y: 56.77, color: '#FFFFFF', name:'Priest'},{y: 57.01, color: '#FFF569', name:'Rogue'},{y: 57.43, color: '#2459FF', name:'Shaman'},{y: 57.04, color: '#9482CA', name:'Warlock'},{y: 57.31, color: '#C79C6E', name:'Warrior'}]
+,
+name: 'Win Percentage'
+}
+]
+
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'rbgClassPerform2',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Death Knight','Druid','Hunter','Mage','Paladin','Priest','Rogue','Shaman','Warlock','Warrior'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+
+},
+
+yAxis: {
+title: {
+text: 'Win Percentage',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+},
+min: 45,
+max: 60
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return this.series.name + '<br />' + this.point.name + ' - '+ this.y +'%' ;
+}
+},
+
+title: {
+text: 'Rated Battleground Class Balance for Item Level Equipped 385+',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+
+
+series: [
+{
+data: [{y: 58.23, color: '#C41E3A', name:'Death Knight'},{y: 56.21, color: '#FF7D0A', name:'Druid'},{y: 54.44, color: '#ABD473', name:'Hunter'},{y: 58.47, color: '#69CCF0', name:'Mage'},{y: 57.14, color: '#F58CBA', name:'Paladin'},{y: 57.65, color: '#FFFFFF', name:'Priest'},{y: 58.15, color: '#FFF569', name:'Rogue'},{y: 58.62, color: '#2459FF', name:'Shaman'},{y: 58.33, color: '#9482CA', name:'Warlock'},{y: 58.51, color: '#C79C6E', name:'Warrior'}]
+,
+name: 'Win Percentage'
+}
+]
+
+};
+
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'rbgClassPerform3',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Death Knight','Druid','Hunter','Mage','Paladin','Priest','Rogue','Shaman','Warlock','Warrior'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+
+},
+
+yAxis: {
+title: {
+text: 'Win Percentage',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+},
+min: 45,
+max: 70
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return this.series.name + '<br />' + this.point.name + ' - '+ this.y +'%' ;
+}
+},
+
+title: {
+text: 'Rated Battleground Class Balance for Item Level Equipped 395+',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+
+
+series: [
+{
+data: [{y: 65.36, color: '#C41E3A', name:'Death Knight'},{y: 63.03, color: '#FF7D0A', name:'Druid'},{y: 61.22, color: '#ABD473', name:'Hunter'},{y: 67.08, color: '#69CCF0', name:'Mage'},{y: 63.79, color: '#F58CBA', name:'Paladin'},{y: 63.65, color: '#FFFFFF', name:'Priest'},{y: 63.94, color: '#FFF569', name:'Rogue'},{y: 65.16, color: '#2459FF', name:'Shaman'},{y: 68.43, color: '#9482CA', name:'Warlock'},{y: 63.64, color: '#C79C6E', name:'Warrior'}]
+,
+name: 'Win Percentage'
+}
+]
+
+};
+};
+</script> Poll: Have you participated in Rated Battlegrounds?
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/5848644.js"></script>
+<noscript><a href="http://polldaddy.com/poll/5848644/">Have you participated in Rated Battlegrounds?</a></noscript>
+
+Comics
+Dark Legacy Comics #322 http://www.darklegacycomics.com/322.html and Teh Gladiators #306 + #307 http://www.tehgladiators.com/knock-knock-306 are available!
+
+
+http://media.mmo-champion.com/images/news/2012/january/322.jpg http://www.darklegacycomics.com/322.html http://media.mmo-champion.com/images/news/2012/january/306.jpg http://www.tehgladiators.com/?p=306

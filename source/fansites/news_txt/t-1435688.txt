@@ -1,0 +1,199 @@
+chaud2014-01-09, 05:52 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Announcing Callback Support, Diablo III: Storm of Light Excerpt, Blue Posts http://www.diablofans.com/news/47904-announcing-callback-support-diablo-iii-storm-of
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Season 2 Begins on January 9, Hearthstone Beta Opt-In Account Access, Blue Tweets http://www.hearthpwn.com/news/253-season-2-begins-on-january-9-hearthstone-beta-opt
+
+Armory Stats - Heroic Siege of Orgrimmar Progression
+Today we are taking a look at the Heroic Siege of Orgrimmar progression of players. Now that achievements are account wide, we can group characters by account and get an idea of what percentage of players not characters have defeated a boss on Heroic difficulty at least once, based on earning the achievement.
+
+The data used today is a sample made up of 6.2 million characters from 2.2 million accounts, with at least one character active after November 26. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. You can leave suggestions for future stat posts in the comments!
+
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#55C949']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'likeSoOHeroicOMG',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Immerseus', 'Protectors', 'Norushen', 'Sha of Pride', 'Galakras', 'Iron Juggernaut', 'Dark Shaman', 'Nazgrim', 'Malkorok', 'Spoils', 'Thok', 'Siegecrafter', 'Paragons', 'Garrosh'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Defeated Heroic Siege of Orgrimmar Bosses',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 6.89, color: '#81CCAA', name:'Immerseus'},{y: 5.69, color: '#81CCAA', name:'Fallen Protectors'},{y: 6.31, color: '#81CCAA', name:'Norushen'},{y: 4.55, color: '#81CCAA', name:'Sha of Pride'},{y: 4.75, color: '#81A4CC', name:'Galakras'},{y: 4.03, color: '#81A4CC', name:'Iron Juggernaut'},{y: 3.36, color: '#81A4CC', name:'Kor\'kron Dark Shaman'},{y: 3.56, color: '#81A4CC', name:'General Nazgrim'},{y: 2.37, color: '#E0BB79', name:'Malkorok'},{y: 1.89, color: '#E0BB79', name:'Spoils of Pandaria'},{y: 1.24, color: '#E0BB79', name:'Thok the Bloodthirsty'},{y: 0.60, color: '#D48787', name:'Siegecrafter Blackfuse'},{y: 0.41, color: '#D48787', name:'Paragons of the Klaxxi'},{y: 0.23, color: '#D48787', name:'Garrosh Hellscream'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+};
+</script> 
+<div id="likeSoOHeroicOMG" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+Blizzard CS - Callback Support
+On Thursday, January 9, Blizzard is launching a new callback-based system for players who need phone support. This is a big change from our traditional phone support, so we wanted to provide some details about this service.
+
+How will the callback system work?
+Instead of calling a number and potentially waiting on hold for support, you’ll use the support site on Battle.net to set up a callback. Just enter information about your issue, along with your phone number, and a Game Master will give you a call back!
+
+How will the callback system benefit me as a player?
+You won’t have to navigate a phone menu or spend time on hold. Since the support site collects critical details in advance like the answer to your security question, you’ll jump directly into problem solving.
+
+What will happen to Blizzard Customer Support’s existing phone numbers after this change?
+Our phone lines will no longer present their current menu system, and will instead play a brief message directing users to the support site.
+
+We hope you enjoy using the new service to get help when you need it!
+
+
+Blue Tweets
+Classes
+I like the current tank system. Gathering resources and use them wisely for defense. Would tank also keep this system in WOD?
+Yep, you're describing the Active Mitigation concept, which we think was quite successful, and want to continue and improve upon. Source https://twitter.com/Celestalon/status/418586026076930048
+
+Safeguard, Hand of Sac, etc. are neat tricks that let me save lives even when I'm not in front of the dragon.
+Tools like that are fun, agreed. We also hope to significantly reduce the amount of time that tanks spend not-tanking. Source https://twitter.com/Celestalon/status/418567379518369793
+
+Would help if fights weren't just "taunt at X debuffs" so the second tank didn't feel like a vestigial organ.
+We 100% agree. Source https://twitter.com/Celestalon/status/417726956650500096
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter Forums http://www.mmo-champion.com/forums/271-Hunter / Skills http://www.wowdb.com/spells/class-abilities/hunter / Talent Calculator http://www.wowdb.com/talent-calculator#M
+any chance hunters will be getting new skin or species for spell haste? Asked for sporebat all the time & it creeps me out
+Maybe, in a new family. There are almost dupe fams already so precedence!, and with new beasts showing up all the time... Source https://twitter.com/Dave_Maldo/status/419188774304616449
+
+Oh and gyreworms! Elemental sure, but clearly bestial in spirit! They'd fit easy in the worm family!
+They would. That said, I'm unhappy with the obviously-Elemental stuff that has already been classified as Beast. But that's just me! Source https://twitter.com/Dave_Maldo/status/418529531201200128
+Well since survival is already pretty heavily elemental, maybe make the bestial elementals short term summons for that spec?
+I'm all for special pet groups undead, mechanical, elemental etc. w/ appropriate conditions. But shale spider = beast?! OH COME ON Source https://twitter.com/Dave_Maldo/status/418533376383913984
+Let me ask from a different angle. Why does it "have" to make sense as a beast for a hunter to befriend it?
+For the same reason priests can't use swords: BECAUSE REASONS. But seriously, it's a flavor/fantasy thing. Less logic, more feels. Source https://twitter.com/Dave_Maldo/status/418626624536338432
+I don't think it's quite on par with priests with swords. Hunters tame wild creatures as companions to fight alongside them.
+Both are 100% shenanigans; arbitrary rules made to create a certain feel/fantasy/design. There's no reasoning them out beyond that. Source https://twitter.com/Dave_Maldo/status/418814450238373888
+Arbitrary means there was no thought put into it. I give you guys more credit than that.
+The "reasoning" is arbitrary: Because they were never trained/their religion forbids it/the monarchy outlawed an armed church/etc. Source https://twitter.com/Dave_Maldo/status/418816159241097217
+The original design/fantasy is intentional, but can't be debated on the basis of its later made-up rules; it's working backwards! Source https://twitter.com/Dave_Maldo/status/418816716336947200
+
+Talbuks NEED to be tameable! Especially in WoD! The fact that they aren't, but goats are, makes me sad
+Been years of talks/jokes about an Ungulate or? family including rams, goats, talbuks etc. Maybe! Source https://twitter.com/Dave_Maldo/status/418452009033793537
+
+With or Without You seems like a playstyle choice for MM/Surv hunters rather than a perk. Chance to see it below level 100?
+I hope so, but that's me personally. I've always been VERY against game-changers end-game e.g. original Arcane Blast. Source https://twitter.com/Dave_Maldo/status/418455106586034176
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk Forums http://www.mmo-champion.com/forums/341-Monk / Skills http://www.wowdb.com/spells/class-abilities/monk / Talent Calculator http://www.wowdb.com/talent-calculator#o
+Quick Monk Question, do MW monks count as Melee right now, or will that only be in WoD?
+Yes, they do. Source https://twitter.com/Celestalon/status/418580591471120384
+Any chance of that being extended to other healing specs to avoid an unfair advantage? All healers benefit from being in melee
+Unlikely. It's a perk we give to specs intended to be in melee, not an unfair advantage. Source https://twitter.com/Celestalon/status/418584429892608001
+It just feels like something that should be either all healers or none rather than allowing some to ignore mechanics.
+There are mechanics that they would have to handle that you don't; a tradeoff for Fistweavers. Just a perk for MW, which is fine. Source https://twitter.com/Celestalon/status/418588768942039040
+But MW aren't required to be in melee to be effective. They could stand at ranged and ignore both melee and ranged mechanics
+That's why I said "Just a perk for MW, which is fine." Every difference between classes isn't an "unfair advantage". Source https://twitter.com/Celestalon/status/418593310903529473
+
+The more I think about it, the less it seems like Statue of the Jade Serpent adds any real gameplay value. Thoughts?
+It does a bit for Fistweaving, but is fairly passive otherwise. Doesn't necessarily need to be involved gameplay. Source https://twitter.com/Celestalon/status/418577160194912257
+Do you think it would be more interesting with a shorter radius?
+I think many Mistweavers would say that its radius is already short feeling. But, as a gameplay element to be handled, possibly. Source https://twitter.com/Celestalon/status/418581360945532928
+
+is it possible that maybe we can see fistweavers being able to dual wield in WoD? It would be really awesome imo 
+Cool look / feel, but that would necessitate all Mistweavers that want to even dabble in Fistweaving to get a second weapon. Source https://twitter.com/Celestalon/status/418566323279388672
+Use "way of the monk"? Doable but possibly not worth the effort; WotM never properly balanced for WW, who all DW.
+Another community misconception. Way of the Monk does balance DW vs 2H for Brewmaster and Windwalker, extremely closely. Source https://twitter.com/Celestalon/status/418580377565790208
+
+MW relies too much on smart heals. MW would be even better if players would have more direct control.
+We agree, and think that statement applies to all healers, not just MW. Source https://twitter.com/Celestalon/status/418108744963080194
+
+I woulf never use AoC on my monk. It onle affects 1 dps ability for us that most monks use sparsely. I use haromms and
+WW currently have a couple viable gearing methods. If you are haste stacking, AoC won't likely be optimal for you. That's OK. Source https://twitter.com/Celestalon/status/417605553808896000
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior Forums http://www.mmo-champion.com/forums/278-Warrior / Skills http://www.wowdb.com/spells/class-abilities/warrior / Talent Calculator http://www.wowdb.com/talent-calculator#E
+Will Gladiator be a potential tank stance, or will it have some component to make it purely for dps e.g., no crit protection?
+We may have a defensive benefit if you take the talent but don't use the stance, so that tanks still have 3 talent choices. Source https://twitter.com/Celestalon/status/418592899178057729
+But if you're using the stancing, getting the DPS benefit, you will not be able to be a full tank. Source https://twitter.com/Celestalon/status/418593007697272832
+So a Prot Warrior can potentially behave like an old Bear-Cat?
+No. You can't switch in and out of Gladiator Stance in combat. It's a commitment. Source https://twitter.com/Celestalon/status/418599316475764736
+
+So Extreme Measures would give Glad Stance to prot who want to DPS, and a stance for DPS wars who want to tank w/2h weps?
+Tanks need relatively little in order to function as DPS. But DPS need a lot in order to function as Tanks. Source https://twitter.com/Celestalon/status/418585665912074241
+
+Any chance we can remove the two stacks of Shield Block and make Shield block 6 sec CD? Would be no different than right now...
+That would be extremely different from how it is now, and remove most of the skill involved. Source https://twitter.com/Celestalon/status/418125427819806720
+
+Arms warriors already have multistrike. It's called mastery. Mimicking other classes is uninspired design.
+Similar, but some difference: [100% WD] vs [30% of the triggering attack]. Source https://twitter.com/Celestalon/status/417513875248906240
+Wow, when did mastery get its effectiveness literally doubled and why did nobody tell me?
+Oh, apologies. Was out to dinner and forgot that its damage had gone down. Yeah, still 55% WD, not 100%. Point is it's static. Source https://twitter.com/Celestalon/status/417602251377483777
+
+Art
+Are darker nights still on the table? lighting changes everything.
+It's ultimately an art call, with input from design if they feel gameplay is negatively impacted. Personally, I liked it dark. Source https://twitter.com/Dave_Maldo/status/417735097769394176
+Maybe a dumb question, but wouldn't it be possibly to just add is an option? Whether you want dark or not?
+With new tech, IF they wanted to. Lighting isn't on-the-fly; it's data built into the maps like terrain & skyboxes. Source https://twitter.com/Dave_Maldo/status/417774238649430016
+
+Are Blood Elves and Draenei being updated? I only see vanilla races on that page 
+the plan is currently to update them as well, original plan of "vanilla only" changed, need to update page to reflect Source https://twitter.com/artofcgrobinson/status/419549029077241857
+
+Any chance the Belf models look like Nozdormu's model in Dragon Soul and in the cinematic at the end of the raid??!
+Facial hair and tats like that might come later if we're able to make another customization pass. Norz = good place to start Source https://twitter.com/artofcgrobinson/status/419218103071809536
+
+Character / Items
+can older Eng. Trinkets be added? id like to use the Gnomish ShrinkRay or older stuff without swapping Trinks?
+I wished those got updated too. Possibly gameplay issues. Lots of cool old items effects are "never do again plz." Source https://twitter.com/Dave_Maldo/status/419539964938838016
+didn't think shrinking a target and losing a very tiny bit of AP would be that much of an issue for an item a level 1 can wear
+I meant all of them, and "updated" as in new versions that were viable trinkets, which I think could be cooler than simple toys. Source https://twitter.com/Dave_Maldo/status/419647477411627008
+
+What will happen to legendary meta in wod? 30% haste still sounds better than regular meta's imo
+Yeah, legendary meta unusable at level 100. Source https://twitter.com/Celestalon/status/418138223685017600
+
+
+Fan Art
+Today we have some audio that comes in two versions, one with the violin and one with vocals. 
+
+
+<object width="438" height="247"><param name="movie" value="//www.youtube.com/v/i2g4mjwWvXk?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/i2g4mjwWvXk?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="438" height="247" allowscriptaccess="always" allowfullscreen="true"></embed></object> <object width="438" height="247"><param name="movie" value="//www.youtube.com/v/oXquxaHT2V8?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/oXquxaHT2V8?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="438" height="247" allowscriptaccess="always" allowfullscreen="true"></embed></object>

@@ -1,0 +1,128 @@
+chaud2012-03-04, 11:10 PM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Diablo 3 - Diablo 3 - Release Date Rumor http://www.diablofans.com/news/1106-diablo-3-release-date-rumor/
+
+Reminder - Mists of Pandaria Press Tour Next Week
+We are getting closer to the March 13-15 Mists of Pandaria Press Tour which will bring even more new Mists of Pandaria information! The NDA on the info revealed during the tour lifts on March 19 and will hopefully followed by the Alpha/Beta test shortly after. You can still discuss the new expansion in our Mists of Pandaria General Discussions Forum http://www.mmo-champion.com/forums/340-Mists-of-Pandaria-General-Discussions and check out the Mists of Pandaria Blizzcon 2011 Summary http://www.mmo-champion.com/threads/1007250-Mists-of-Pandaria-Blizzcon-2011-Summary for a recap of what we already know.
+
+In any case, it's only 2 weeks before things get interesting again, stay tuned! 
+
+
+Statistics: Thori'dal, the Stars' Fury
+Today we take a look at the rate at which people are acquiring Thori'dal, the Stars' Fury http://db.mmo-champion.com/i/34334/thoridal-the-stars-fury/! The sample size was ~5.8 million level 85 characters with a total of ~8,400 that have the achievement. You can find an alternative form of the graph in the comments http://www.mmo-champion.com/threads/1091409-Mists-of-Pandaria-Press-Tour-Soon-Thori-dal-Statistics-War-College-The-Daily-Blink?p=15761730&viewfull=1#post15761730, broken down by class. 
+
+It's very interesting to see that even if you can't transmogrify legendary items, the announcement of Transmogrification at the end of August considerably increased the amount of people farming old raid instances such as Sunwell for gear. 
+
+
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+<script> var chart;
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#4768C4', '#E01B6A']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'Thoridal',
+zoomType: 'x',
+spacingRight: 20,
+backgroundColor: '#efeedc'
+},
+title: {
+text: 'Number of Total Thori\'dal, the Stars\' Fury Acquisitions',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+subtitle: {
+text: document.ontouchstart === undefined ?
+'Click and drag in the plot area to zoom in' :
+'Drag your finger over the plot to zoom in'
+},
+xAxis: {
+type: 'datetime',
+maxZoom: 14 * 24 * 3600000, // fourteen days
+title: {
+text: null
+},
+startOnTick: false,
+showFirstLabel: false
+},
+yAxis: {
+title: {
+text: 'Number of Characters',
+style: {
+fontSize: '16px',
+color: '#000',
+fontWeight: 'bold'
+}
+},
+startOnTick: true,
+showFirstLabel: false
+
+},
+tooltip: {
+shared: true 
+},
+legend: {
+enabled: false
+},
+plotOptions: {
+
+areaspline: {
+animation: false,
+lineWidth: 3,
+marker: {
+enabled: true,
+states: {
+hover: {
+enabled: true,
+radius: 5
+}
+}
+},
+shadow: false,
+states: {
+hover: {
+lineWidth: 3 
+}
+}
+}
+},
+
+series: [{
+type: 'areaspline',
+name: 'Thori\'dal, the Stars\' Fury Achievements',
+pointInterval: 7 * 24 * 3600 * 1000,
+pointStart: Date.UTC2008, 9, 14,
+data: [
+45 , 64 , 87 , 132 , 139 , 139 , 140 , 141 , 142 , 146 , 146 , 150 , 157 , 161 , 165 , 175 , 187 , 196 , 209 , 220 , 230 , 233 , 237 , 244 , 250 , 256 , 260 , 260 , 263 , 264 , 266 , 271 , 274 , 280 , 285 , 287 , 291 , 293 , 296 , 299 , 303 , 309 , 309 , 310 , 311 , 315 , 320 , 327 , 330 , 340 , 347 , 364 , 377 , 389 , 401 , 420 , 427 , 436 , 448 , 465 , 467 , 473 , 479 , 492 , 499 , 506 , 514 , 534 , 538 , 547 , 555 , 564 , 572 , 583 , 595 , 604 , 620 , 627 , 638 , 653 , 661 , 671 , 689 , 702 , 725 , 739 , 751 , 764 , 779 , 793 , 805 , 827 , 850 , 865 , 878 , 890 , 911 , 946 , 977 , 1023 , 1061 , 1098 , 1146 , 1201 , 1227 , 1269 , 1323 , 1391 , 1455 , 1507 , 1541 , 1594 , 1597 , 1608 , 1614 , 1633 , 1672 , 1707 , 1737 , 1771 , 1812 , 1851 , 1898 , 1957 , 2004 , 2057 , 2106 , 2148 , 2196 , 2257 , 2312 , 2375 , 2410 , 2446 , 2497 , 2546 , 2600 , 2671 , 2730 , 2804 , 2872 , 2918 , 2949 , 2993 , 3032 , 3080 , 3129 , 3199 , 3407 , 3627 , 3856 , 4052 , 4249 , 4444 , 4603 , 4790 , 4972 , 5141 , 5299 , 5506 , 5672 , 5827 , 5989 , 6205 , 6389 , 6532 , 6670 , 6852 , 7047 , 7227 , 7411 , 7582 , 7766 , 7968 , 8157 , 8338 ]
+}]
+};
+};
+</script> 
+
+<div id="Thoridal" style="style="width:900px;margin-left: auto;margin-right: auto;"">
+Don't see a chart? Enable javascript!
+</div>
+
+
+
+War College - Isle of Conquest
+The battlefields of World of Warcraft are littered with the bones of those who have become casualties in the ongoing conflict between the Horde and the Alliance. You do not need to become one of them. One of the keys to victory is knowledge, and that is where the World of Warcraft War College enters the picture. In these discussions between players, you can learn and share strategies with other players to improve your tactics and improve your odds of emerging victorious from the field of battle.
+
+Are you a veteran Gladiator with countless victories tallied? Are you new to World of Warcraft and striving to improve your PvP skills? In this weekly feature, we invite players of all skill levels to ask questions, share tips and tactics, and join a conversation dedicated to surviving and thriving in World of Warcraft PvP.
+
+This week, the topic of discussion is:
+Isle of Conquest - Which strategies are most effective in Isle of Conquest for your faction? Which locations are most important? What tips, tricks and tactics have you discovered? What common mistakes have you witnessed?
+
+Join the War College forum thread here http://us.battle.net/wow/en/forum/topic/4079627815.
+
+
+The Daily Blink - World of Warcraft is Saving the World!
+The Daily Blink http://www.thedailyblink.com/2012/02/world-of-warcraft-is-saving-the-world/ explains why the recent subscriber losses are for the greater good.
+
+
+http://media.mmo-champion.com/images/news/2012/february/2012-02-24-274.jpg http://www.thedailyblink.com/2012/02/world-of-warcraft-is-saving-the-world/

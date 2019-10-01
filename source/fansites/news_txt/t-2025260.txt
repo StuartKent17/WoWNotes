@@ -1,0 +1,377 @@
+chaud2016-07-10, 09:06 PMMouse Sale: Amazon has the G502 mouse on sale https://www.amazon.com/gp/product/B019OB663A/ref=as_li_tl?ie=UTF8&tag=mmochamp-20
+
+<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Double Blood Shard Weekend, Season 6 Ending Soon http://www.diablofans.com/news/48776-double-blood-shard-weekend-season-6-ending-soon
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Popular Decks of the Week for July 10 http://www.hearthpwn.com/news/1511-popular-decks-of-the-week-for-july-10
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Heroes WTF Moments #57, Heroes Funny & WP Moments #74 http://www.heroesnexus.com/news/1744-heroes-wtf-moments-57-heroes-funny-wp-moments-74
+
+<img src="http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Behind the Scenes with Sombra - July 21st at Comic-Con, Leaver Skill Rating Calculation Change http://www.overpwn.com/news/198-behind-the-scenes-with-sombra-july-21st-at-comic
+
+Legion - Vengeance Demon Hunter Spell Animations
+With the pre-expansion patch approaching and new spell animations mostly finalized, we are going back and finishing up our series of previews.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/bGpL28ZcN18?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+Warcraft Movie Update
+Warcraft has now been released for at least a week in all markets. There is a nice interview about the work ILM did on the movie here http://www.artofvfx.com/warcraft-jeff-white-vfx-supervisor-industrial-light-magic/. 
+
+
+The movie is up to $430M worldwide now.
+When doing motion capture, up to nine orcs could be displayed in real time, superimposed over the actors on the monitors and through the lens for the camera operators.
+Baby Thrall was one of the hardest characters to get right, designed for maximum cuteness with the right amount of Orc.
+ILM worked on the movie in some capacity from Comic-Con 2013 to April 2016.
+Over 1,000 people were working on the movie effects at one point.
+
+
+
+Grove Warden Mount Availability
+Hopefully not too off-topic... While this testing is going on - anyone know if the moose is still dropping at 100% in heroic on the PTR? Never was any confirmation that I could find if it was going away in the pre-patch like the SoO wolf or going away at Legion launch. Important for guild planning. Thanks in advance.
+The Remnant of Chaos that awards the Grove Warden should be available until Legion launches on August 30 along with the guaranteed Mythic mounts becoming rare drops. We'll have a blog in the very near future with details about what's changing when.
+
+
+Shop Helm Transmogrification Updates
+With the upcoming Transmogrification system updates coming in Legion, the purchasable helms from the Shop— Crown of Eternal Winter, Hood of Hungering Darkness, and Jewel of the Firelord —will automatically be added to your Collection within the Appearances tab.
+
+
+Blue Posts
+On PTR & Beta Stability
+We're aware of the surge of reports in the last 24 hours, no updates but we're working on it. Blue Tracker http://blue.mmo-champion.com/topic/415803-on-ptr-beta-stability/ / Official Forums http://us.battle.net/wow/en/forum/topic/20745705655?page=3#47
+
+FEEDBACK: Xavius Normal
+The Emerald Nightmare raid zone is now accessible in Normal difficulty, with Xavius active. Normal difficulty scales from 10 players up to 30, and players must manually form groups to enter the zone. Player level and item level will be scaled accordingly. Please use this thread for feedback. We plan on keeping Xavius available over the weekend. Blue Tracker http://blue.mmo-champion.com/topic/416568-feedback-xavius-normal/ / Official Forums http://us.battle.net/wow/en/forum/topic/20745746795?page=1#1
+
+FEEDBACK: Hellfire Citadel
+In case any groups are feeling curious/generous and want to try out new class mechanics in an all-too-familiar raiding environment, Hellfire Citadel is open on all difficulties on the PTR.
+
+Please use this thread for any bug reports or tuning feedback. With a global nerf aura active now, and taking into account changes like the loss of passive stat raid buffs, the goal is for the zone to feel somewhat easier across the board in 7.0.3 than it does in live 6.2.4. Logs are especially appreciated. Blue Tracker http://blue.mmo-champion.com/topic/416379-feedback-hellfire-citadel/ / Official Forums http://us.battle.net/wow/en/forum/topic/20745586779?page=1#1
+
+
+Armory Stats - I Choose You
+Today we are taking a look at the "I Choose You" achievements http://beta.wowdb.com/achievements?filter-search=Choose. The data used today is a sample of 2.6 million US and EU accounts that have been active since April 2016. While you wait for your phone to recharge before playing some more Pokemon Go, you could probably go earn one or two!
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2015/july/highcharts.js"></script> <style type="text/css"> .highcharts-container{width:100% !important; height:100% !important;} </style> 
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2016/june/watch-element-resize.min.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#D91C1C']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'ichooseyou',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['I Choose You', 'Molgeim 10', 'Molgeim 25', 'Brundir 10', 'Brundir 25', 'Steelbreaker 10', 'Steelbreaker 25' ],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that completed "I Choose You" Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 16.6, name:'I Choose You'},{y: 20.6, name:'Molgeim 10'},{y: 27.8, name:'Molgeim 25'},{y: 41.7, name:'Brundir 10'},{y: 45.0, name:'Brundir 25'},{y: 47.8, name:'Steelbreaker 10'},{y: 50.1, name:'Steelbreaker 25'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+};
+</script> 
+<div id="ichooseyou" class="site-mmo-champion" width="100%">
+Don't see a chart? Enable javascript!
+</div> 
+<table class="listing sortable news-table achievement-table listing-achievements mmoc-listing b-table b-table-a" data-viewstate="" data-ajax-set-window-state="true" id="achievements" data-row-selector=">tbody>tr" data-default-sort-slug="name" data-default-sort-order="asc"> <thead class="b-table-header j-listing-table-header"> 
+<tr> <th>Name</th> <th>Points</th> <th>Reward</th> </tr> </thead> <tbody class="filtered"> 
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/7908-i-choose-you" class="listing-icon " href="http://beta.wowdb.com/achievements/7908-i-choose-you"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/22133/medium/petjournalportrait.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/7908-i-choose-you" class="t" href="http://beta.wowdb.com/achievements/7908-i-choose-you">I Choose You</a> <span class="subtext">Complete the Grand Master Aki quest.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 5</span></td><td><div class="rewards"> Reward: <a data-tooltip-href="http://beta.wowdb.com/items/92744-heavy-sack-of-gold" href="http://beta.wowdb.com/items/92744-heavy-sack-of-gold" class="q1">Heavy Sack of Gold</a></div></td></tr>
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/2939-i-choose-you-runemaster-molgeim-10-player" class="listing-icon " href="http://beta.wowdb.com/achievements/2939-i-choose-you-runemaster-molgeim-10-player"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/22133/medium/achievement_boss_theironcouncil_01.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/2939-i-choose-you-runemaster-molgeim-10-player" class="t" href="http://beta.wowdb.com/achievements/2939-i-choose-you-runemaster-molgeim-10-player">I Choose You, Runemaster Molgeim 10 player</a> <span class="subtext">Defeat the Assembly of Iron with Runemaster Molgeim as the last member alive in 10-player mode.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td><div class="rewards"> </div></td></tr>
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/2942-i-choose-you-runemaster-molgeim-25-player" class="listing-icon " href="http://beta.wowdb.com/achievements/2942-i-choose-you-runemaster-molgeim-25-player"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/22133/medium/achievement_boss_theironcouncil_01.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/2942-i-choose-you-runemaster-molgeim-25-player" class="t" href="http://beta.wowdb.com/achievements/2942-i-choose-you-runemaster-molgeim-25-player">I Choose You, Runemaster Molgeim 25 player</a> <span class="subtext">Defeat the Assembly of Iron with Runemaster Molgeim as the last member alive in 25-player mode.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td><div class="rewards"> </div></td></tr>
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/2941-i-choose-you-steelbreaker-10-player" class="listing-icon " href="http://beta.wowdb.com/achievements/2941-i-choose-you-steelbreaker-10-player"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/22133/medium/achievement_boss_theironcouncil_01.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/2941-i-choose-you-steelbreaker-10-player" class="t" href="http://beta.wowdb.com/achievements/2941-i-choose-you-steelbreaker-10-player">I Choose You, Steelbreaker 10 player</a> <span class="subtext">Defeat the Assembly of Iron with Steelbreaker as the last member alive in 10-player mode.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td><div class="rewards"> </div></td></tr>
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/2944-i-choose-you-steelbreaker-25-player" class="listing-icon " href="http://beta.wowdb.com/achievements/2944-i-choose-you-steelbreaker-25-player"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/22133/medium/achievement_boss_theironcouncil_01.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/2944-i-choose-you-steelbreaker-25-player" class="t" href="http://beta.wowdb.com/achievements/2944-i-choose-you-steelbreaker-25-player">I Choose You, Steelbreaker 25 player</a> <span class="subtext">Defeat the Assembly of Iron with Steelbreaker as the last member alive in 25-player mode.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td><div class="rewards"> </div></td></tr>
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/2940-i-choose-you-stormcaller-brundir-10-player" class="listing-icon " href="http://beta.wowdb.com/achievements/2940-i-choose-you-stormcaller-brundir-10-player"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/22133/medium/achievement_boss_theironcouncil_01.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/2940-i-choose-you-stormcaller-brundir-10-player" class="t" href="http://beta.wowdb.com/achievements/2940-i-choose-you-stormcaller-brundir-10-player">I Choose You, Stormcaller Brundir 10 player</a> <span class="subtext">Defeat the Assembly of Iron with Stormcaller Brundir as the last member alive in 10-player mode.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td><div class="rewards"> </div></td></tr>
+<tr class="mmoc-listing-row"><td class="col-name"><table><tbody class="filtered">
+<tr><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/2943-i-choose-you-stormcaller-brundir-25-player" class="listing-icon " href="http://beta.wowdb.com/achievements/2943-i-choose-you-stormcaller-brundir-25-player"> <img class="icon-36 " src="//media-azeroth.cursecdn.com/wow/icons/22133/medium/achievement_boss_theironcouncil_01.jpg" alt="" height="36" width="36"> </a></td><td> <a data-tooltip-href="http://beta.wowdb.com/achievements/2943-i-choose-you-stormcaller-brundir-25-player" class="t" href="http://beta.wowdb.com/achievements/2943-i-choose-you-stormcaller-brundir-25-player">I Choose You, Stormcaller Brundir 25 player</a> <span class="subtext">Defeat the Assembly of Iron with Stormcaller Brundir as the last member alive in 25-player mode.</span> </td></tr></tbody></table></td><td class="c"><span class="achievement-points-icon"> 10</span></td><td><div class="rewards"> </div></td></tr> </tbody></table>
+
+Poll - Pokemon Go
+Are you playing Pokemon Go http://www.pokemongo.com/en-us/?
+
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/9466872.js"></script>
+<noscript><a href="http://polldaddy.com/poll/9466872/">Are you playing Pokemon Go?</a></noscript>
+
+Build of the Month - July 2016
+Each month or so we will post a couple of hardware setups for those of you who are thinking of upgrading their computer!
+
+All of the parts on this page are Amazon affiliate links. When you purchase your parts through them it helps support the site!
+
+This month
+Important: The GTX 1080 $700 http://www.amazon.com/gp/product/B01FWI7J7G?ie=UTF8&tag=mmochamp-20 and GTX 1070 $450 http://www.amazon.com/gp/product/B01H0WU884?ie=UTF8&tag=mmochamp-20 are here. Unfortunately stock is very limited, resulting in expensive cards. Differnet versions with nicer coolers are starting to come in stock. New cards from AMD are also on the way. 
+
+
+http://media.mmo-champion.com/images/news/2016/june/nvidiaBenchmarks.png?v2 https://www.techpowerup.com/reviews/NVIDIA/GeForce_GTX_1070/21.html 
+
+The current SSD prices http://media.mmo-champion.com/images/news/2016/june/ssdgraph.gif are fairly flat right now, with most SSDs under $0.50 per gigabyte when on sale.
+
+Depending on how much you want to overclock, you may need to spend a bit more for a better CPU cooler like the NH-D15 http://www.amazon.com/gp/product/B00L7UZMAK?ie=UTF8&tag=mmochamp-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00L7UZMAK. 
+
+Unless you are doing a lot of video rendering or streaming, you do not need the 6700K and should spend that money elsewhere.
+
+Make sure to keep your AMD http://sites.amd.com/us/game/downloads/Pages/downloads.aspx and Nvidia http://www.nvidia.com/Download/index.aspx?lang=en-us drivers up to date.
+
+Don't forget to visit the Computer Forum http://www.mmo-champion.com/forums/290-Computer for any extra questions!
+
+
+<link rel="stylesheet" type="text/css" href="//media.mmo-champion.com/images/news/2016/may/botm.css"/>
+
+Peripherals
+
+<div class="botmContainerParent">
+<div class="botmContainer">
+<div class="botmHeader">
+<h3>Puppy</h3></div>
+<table class="botmTable" style="margin: auto;"> 
+<tbody> 
+
+<tr class="botm-listing-row"><td>Monitor</td><td>ASUS VS228H-P 22-Inch Monitor http://www.amazon.com/gp/product/B005BZNDOO?ie=UTF8&tag=mmochamp-20</td><td>$100</td></tr>
+
+<tr class="botm-listing-row"><td>Keyboard</td><td>Kensington Pro Fit Media http://www.amazon.com/gp/product/B006TRANEQ?ie=UTF8&tag=mmochamp-20</td><td>$23</td></tr>
+
+<tr class="botm-listing-row"><td>Mouse</td><td>Logitech G402 http://www.amazon.com/gp/product/B00LZVNWIA?ie=UTF8&tag=mmochamp-20</td><td>$43</td></tr>
+
+<tr class="botm-listing-row"><td>Speakers</td><td>Creative A250 2.1 http://www.amazon.com/gp/product/B00CDJJZV6?ie=UTF8&tag=mmochamp-20</td><td>$28</td></tr>
+</tbody></table>
+</div>
+
+<div class="botmContainer">
+<div class="botmHeader">
+<h3>Dolphin</h3></div>
+<table class="botmTable" style="margin: auto;">
+<tbody> 
+
+<tr class="botm-listing-row"><td>Monitor</td><td>ASUS VS248H-P 24-Inch Monitor http://www.amazon.com/gp/product/B0058UUR6E?ie=UTF8&tag=mmochamp-20</td><td>$129</td></tr>
+
+<tr class="botm-listing-row"><td>Keyboard</td><td>Logitech G105 http://www.amazon.com/gp/product/B00BBUCCKO?ie=UTF8&tag=mmochamp-20</td><td>$55</td></tr>
+
+<tr class="botm-listing-row"><td>Mouse</td><td>Razer DeathAdder Chroma http://www.amazon.com/gp/product/B00MYTSDU4?ie=UTF8&tag=mmochamp-20</td><td>$57</td></tr>
+
+<tr class="botm-listing-row"><td>Speakers</td><td>Logitech Z313 http://www.amazon.com/gp/product/B002HWRZ2K?ie=UTF8&tag=mmochamp-20</td><td>$35</td></tr>
+</tbody></table>
+</div>
+</div>
+<div class="botmContainerParent">
+<div class="botmContainer">
+<div class="botmHeader">
+<h3>Narwhal</h3></div>
+<table class="botmTable" style="margin: auto;"> 
+<tbody> 
+
+<tr class="botm-listing-row"><td>Monitor</td><td>Dell U2414H Monitor http://www.amazon.com/gp/product/B00GTV05XG?ie=UTF8&tag=mmochamp-20</td><td>$222</td></tr>
+
+<tr class="botm-listing-row"><td>Keyboard</td><td>Logitech G710+ http://www.amazon.com/gp/product/B009C98NPY?ie=UTF8&tag=mmochamp-20</td><td>$138</td></tr>
+
+<tr class="botm-listing-row"><td>Mouse</td><td>Logitech G502 http://www.amazon.com/gp/product/B019OB663A?ie=UTF8&tag=mmochamp-20</td><td>$60</td></tr>
+
+<tr class="botm-listing-row"><td>Speakers</td><td>Logitech Z323 2.1 http://www.amazon.com/gp/product/B002FU5QM0?ie=UTF8&tag=mmochamp-20</td><td>$50</td></tr>
+</tbody></table>
+</div>
+
+<div class="botmContainer">
+<div class="botmHeader">
+<h3>Unicorn</h3></div>
+<table class="botmTable" style="margin: auto;">
+<tbody> 
+
+<tr class="botm-listing-row"><td>Monitor</td><td>Dell U2715H http://www.amazon.com/gp/product/B00P0EQD1Q?ie=UTF8&tag=mmochamp-20</td><td>$475</td></tr>
+
+<tr class="botm-listing-row"><td>Keyboard</td><td>Corsair K70 http://www.amazon.com/gp/product/B014W1YRRY?ie=UTF8&tag=mmochamp-20</td><td>$110</td></tr>
+
+<tr class="botm-listing-row"><td>Mouse</td><td>Razer Naga 2014 http://www.amazon.com/gp/product/B00E8CF268?ie=UTF8&tag=mmochamp-20</td><td>$62</td></tr>
+
+<tr class="botm-listing-row"><td>Speakers</td><td>Logitech Z523 http://www.amazon.com/gp/product/B002FU5QMK?ie=UTF8&tag=mmochamp-20</td><td>$81</td></tr>
+</tbody></table>
+</div>
+</div>
+
+
+Puppy and Dolphin
+All of these parts can be mixed and matched to create a build between Puppy and Dolphin.
+
+<div class="botmContainerParent">
+<div class="botmContainer botmPuppy">
+<div class="botmHeader">
+<h3>Puppy</h3><span class="botmUpdated">Updated July 10, 2016</span>
+<div class="botmPrice">$555</div>
+</div>
+<table class="botmTable" style="margin: auto;"> 
+<tbody> 
+
+<tr class="botm-listing-row"><td>Case</td><td>NZXT Source 210 http://www.amazon.com/gp/product/B005869J4O?ie=UTF8&tag=mmochamp-20</td><td>$47</td></tr>
+
+<tr class="botm-listing-row"><td>Power Supply</td><td>EVGA 600B http://www.amazon.com/gp/product/B00EON40CS?ie=UTF8&tag=mmochamp-20</td><td>$40</td></tr>
+
+<tr class="botm-listing-row"><td>CPU</td><td>AMD FX-6300 http://www.amazon.com/gp/product/B009O7YORK?ie=UTF8&tag=mmochamp-20</td><td>$99</td></tr>
+
+<tr class="botm-listing-row"><td>Heatsink</td><td>Cooler Master Hyper 212 EVO http://www.amazon.com/gp/product/B005O65JXI?ie=UTF8&tag=mmochamp-20</td><td>$25</td></tr>
+
+<tr class="botm-listing-row"><td>Motherboard</td><td>ASUS M5A97 R2.0 http://www.amazon.com/gp/product/B008V9959O?ie=UTF8&tag=mmochamp-20</td><td>$105</td></tr>
+
+<tr class="botm-listing-row"><td>Memory</td><td>8GB Crucial Ballistix DDR3 1600 http://www.amazon.com/gp/product/B006WAGGUK?ie=UTF8&tag=mmochamp-20</td><td>$37</td></tr>
+
+<tr class="botm-listing-row"><td>Graphics Card</td><td>Gigabyte R7 370 http://www.amazon.com/gp/product/B00ZGF40QO?ie=UTF8&tag=mmochamp-20</td><td>$110</td></tr>
+
+<tr class="botm-listing-row"><td>Hard Drive</td><td>Western Digital Black 1TB http://www.amazon.com/gp/product/B00FJRS6FU?ie=UTF8&tag=mmochamp-20</td><td>$70</td></tr>
+
+<tr class="botm-listing-row"><td>DVD</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20</td><td>$22</td></tr>
+</tbody></table>
+</div>
+
+<div class="botmContainer botmDolphin">
+<div class="botmHeader">
+<h3>Dolphin</h3><span class="botmUpdated">Updated July 10, 2016</span>
+<div class="botmPrice">$671</div>
+</div>
+<table class="botmTable" style="margin: auto;">
+<tbody> 
+
+<tr class="botm-listing-row"><td>Case</td><td>NZXT Source 210 http://www.amazon.com/gp/product/B005869J4O?ie=UTF8&tag=mmochamp-20</td><td>$47</td></tr>
+
+<tr class="botm-listing-row"><td>Power Supply</td><td>EVGA 600B http://www.amazon.com/gp/product/B00EON40CS?ie=UTF8&tag=mmochamp-20</td><td>$40</td></tr>
+
+<tr class="botm-listing-row"><td>CPU</td><td>AMD FX-8350 http://www.amazon.com/gp/product/B009O7YUF6?ie=UTF8&tag=mmochamp-20</td><td>$160</td></tr>
+
+<tr class="botm-listing-row"><td>Heatsink</td><td>Cooler Master Hyper 212 EVO http://www.amazon.com/gp/product/B005O65JXI?ie=UTF8&tag=mmochamp-20</td><td>$25</td></tr>
+
+<tr class="botm-listing-row"><td>Motherboard</td><td>ASUS M5A99FX PRO http://www.amazon.com/gp/product/B008B6ONXK?ie=UTF8&tag=mmochamp-20</td><td>$115</td></tr>
+
+<tr class="botm-listing-row"><td>Memory</td><td>8GB G.Skill DDR3 1600 http://www.amazon.com/gp/product/B00339X1EM?ie=UTF8&tag=mmochamp-20</td><td>$42</td></tr>
+
+<tr class="botm-listing-row"><td>Graphics Card</td><td>R9 380 http://www.amazon.com/gp/product/B00ZQ3QVS6?ie=UTF8&tag=mmochamp-20 / GTX 960 http://www.amazon.com/gp/product/B013LDXPFO?ie=UTF8&tag=mmochamp-20</td><td>$150 / $180</td></tr>
+
+<tr class="botm-listing-row"><td>Hard Drive</td><td>Western Digital Black 1TB http://www.amazon.com/gp/product/B00FJRS6FU?ie=UTF8&tag=mmochamp-20</td><td>$70</td></tr>
+
+<tr class="botm-listing-row"><td>DVD</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20</td><td>$22</td></tr>
+</tbody></table>
+</div>
+</div>
+
+
+Narwhal and Unicorn
+All of these parts can be mixed and matched to create a build between Narwhal and Unicorn. 
+
+<div class="botmContainerParent">
+<div class="botmContainer botmNarwhal">
+<div class="botmHeader">
+<h3>Narwhal</h3><span class="botmUpdated">Updated July 10, 2016</span>
+<div class="botmPrice">$1047</div>
+</div>
+<table class="botmTable" style="margin: auto;"> 
+<tbody> 
+
+<tr class="botm-listing-row"><td>Case</td><td>Cooler Master HAF 912 http://www.amazon.com/gp/product/B003ZM7YTA?ie=UTF8&tag=mmochamp-20</td><td>$63</td></tr>
+
+<tr class="botm-listing-row"><td>Power Supply</td><td>EVGA G2 650W http://www.amazon.com/gp/product/B0106RDIN2?ie=UTF8&tag=mmochamp-20</td><td>$90</td></tr>
+
+<tr class="botm-listing-row"><td>CPU</td><td>Intel 6600K http://www.amazon.com/gp/product/B012M8M7TY?ie=UTF8&tag=mmochamp-20</td><td>$240</td></tr>
+
+<tr class="botm-listing-row"><td>Heatsink</td><td>Scythe Mugen 4 http://www.amazon.com/gp/product/B00G9YBHEY?ie=UTF8&tag=mmochamp-20</td><td>$55</td></tr>
+
+<tr class="botm-listing-row"><td>Motherboard</td><td>ASUS Z170-A http://www.amazon.com/gp/product/B012NH05UW?ie=UTF8&tag=mmochamp-20</td><td>$155</td></tr>
+
+<tr class="botm-listing-row"><td>Memory</td><td>16GB Kingston HyperX FURY DDR4 http://www.amazon.com/gp/product/B00TY6A1LY?ie=UTF8&tag=mmochamp-20</td><td>$79</td></tr>
+
+<tr class="botm-listing-row"><td>Graphics Card</td><td>R9 380 http://www.amazon.com/gp/product/B00ZQ3QVS6?ie=UTF8&tag=mmochamp-20 / GTX 960 http://www.amazon.com/gp/product/B013LDXPFO?ie=UTF8&tag=mmochamp-20</td><td>$150 / $180</td></tr>
+
+<tr class="botm-listing-row"><td>Hard Drive</td><td>Western Digital Black 2TB http://www.amazon.com/gp/product/B00FJRS628?ie=UTF8&tag=mmochamp-20</td><td>$123</td></tr>
+
+<tr class="botm-listing-row"><td>SSD</td><td>Crucial BX200 250GB http://www.amazon.com/gp/product/B016JREGAC?ie=UTF8&tag=mmochamp-20 OR <br/>Samsung Evo 850 250GB http://www.amazon.com/gp/product/B00OAJ412U?ie=UTF8&tag=mmochamp-20</td><td>$70<br>$92</td></tr>
+
+<tr class="botm-listing-row"><td>DVD</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20</td><td>$22</td></tr>
+</tbody></table>
+</div>
+
+<div class="botmContainer botmUnicorn">
+<div class="botmHeader">
+<h3>Unicorn</h3><span class="botmUpdated">Updated July 10, 2016</span>
+<div class="botmPrice">$1282</div>
+</div>
+<table class="botmTable" style="margin: auto;">
+<tbody> 
+
+<tr class="botm-listing-row"><td>Case</td><td>Corsair Air 540 http://www.amazon.com/gp/product/B00D6GINF4?ie=UTF8&tag=mmochamp-20</td><td>$130</td></tr>
+
+<tr class="botm-listing-row"><td>Power Supply</td><td>EVGA G2 650W http://www.amazon.com/gp/product/B0106RDIN2?ie=UTF8&tag=mmochamp-20</td><td>$90</td></tr>
+
+<tr class="botm-listing-row"><td>CPU</td><td>Intel 6600K http://www.amazon.com/gp/product/B012M8M7TY?ie=UTF8&tag=mmochamp-20</td><td>$240</td></tr>
+
+<tr class="botm-listing-row"><td>Heatsink</td><td>Noctua 6 NH-D15 http://www.amazon.com/gp/product/B00L7UZMAK?ie=UTF8&tag=mmochamp-20</td><td>$88</td></tr>
+
+<tr class="botm-listing-row"><td>Motherboard</td><td>ASUS Z170-A http://www.amazon.com/gp/product/B012NH05UW?ie=UTF8&tag=mmochamp-20</td><td>$155</td></tr>
+
+<tr class="botm-listing-row"><td>Memory</td><td>16GB Kingston HyperX FURY DDR4 http://www.amazon.com/gp/product/B00TY6A1LY?ie=UTF8&tag=mmochamp-20</td><td>$79</td></tr>
+
+<tr class="botm-listing-row"><td>Graphics Card</td><td>GTX 970 http://www.amazon.com/gp/product/B00NJ9BJ8G?ie=UTF8&tag=mmochamp-20 OR<br />GTX 1070 http://www.amazon.com/gp/product/B01GX5YWAO?ie=UTF8&tag=mmochamp-20 </td><td>$250<br />$504</td></tr>
+
+<tr class="botm-listing-row"><td>Hard Drive</td><td>Western Digital Black 2TB http://www.amazon.com/gp/product/B00FJRS628?ie=UTF8&tag=mmochamp-20</td><td>$123</td></tr>
+
+<tr class="botm-listing-row"><td>SSD</td><td>SanDisk Extreme PRO 240GB http://www.amazon.com/gp/product/B00KHRYRNM?ie=UTF8&tag=mmochamp-20 OR <br/>SAMSUNG 850 Pro 256GB http://www.amazon.com/gp/product/B00LMXBOP4?ie=UTF8&tag=mmochamp-20</td><td>$105<br>$127</td></tr>
+
+<tr class="botm-listing-row"><td>DVD</td><td>Asus 24X SATA DVD+/-RW http://www.amazon.com/gp/product/B0033Z2BAQ?ie=UTF8&tag=mmochamp-20</td><td>$22</td></tr>
+</tbody></table>
+</div>
+</div>
+
+
+Final Boss - Elemental Shaman Spec Preview
+Final Boss is back with a second round of spec previews.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/AkNqny1KmqU" frameborder="0" allowfullscreen></iframe>

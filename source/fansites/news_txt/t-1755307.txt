@@ -1,0 +1,221 @@
+chaud2015-04-10, 06:22 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Season 3 Duration, ZiggyD Interviews Wyatt Cheng, Wacom Tablet Workaround http://www.diablofans.com/news/48387-season-3-duration-ziggyd-interviews-wyatt-cheng
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Molten Core Heroic Boss Guides - Garr, Baron Geddon, Majordomo http://www.hearthpwn.com/news/867-molten-core-heroic-boss-guides-garr-baron-geddon
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Faster Hero Release Schedule, Town Hall Heroes #58 http://www.heroesnexus.com/news/1341-faster-hero-release-schedule-town-hall-heroes-58
+
+Five Player Normal Blackhand and Heroic Gruul
+Kief http://eu.battle.net/wow/en/character/frostmane/Kief/advanced and friends are back and have managed to kill Normal Blackhand and Heroic Gruul with only five players.
+
+
+<iframe width="900" height="504" src="https://www.youtube.com/embed/oDpP3QdBQ3E?rel=0" frameborder="0" allowfullscreen></iframe> 
+
+<iframe width="900" height="504" src="https://www.youtube.com/embed/GHMBNWtNMvw?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+WoW Token Prices - Day 3
+WoW Tokens continued to climb in price today. At the current rate, the price will be back over 30k on Friday afternoon.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> setTimeoutfunction  {
+height = chart.height
+width = $".pgcharts".width
+chart.setSizewidth, height, doAnimation = true;
+}, 1500
+
+setTimeoutfunction  {
+height = chart.height
+width = $".pgcharts".width
+chart.setSizewidth, height, doAnimation = true;
+}, 2500
+
+setTimeoutfunction  {
+height = chart.height
+width = $".pgcharts".width
+chart.setSizewidth, height, doAnimation = true;
+}, 4500
+
+$document.readyfunction  {
+Highcharts.setOptions{
+lang: {
+thousandsSep: ','
+}
+};
+chart = new Highcharts.Chart{
+colors: [
+'#DE2A2A',
+'#2A54C7'],
+chart: {
+renderTo: 'wowtokend3',
+defaultSeriesType: 'spline',
+backgroundColor: '#efeedc',
+zoomType: 'x',
+},
+
+xAxis: {
+type: 'datetime',
+dateTimeLabelFormats: { // don't display the dummy year
+day: '%e. %b',
+month: '%e. %b',
+year: '%b'
+},
+title: {
+text: 'Time',
+style: {
+color: '#000',
+fontWeight: 'bold'
+}
+},
+startOnTick: false
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+endOnTick: true,
+title: {
+text: 'Cost Gold',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+spline: {
+animation: false,
+shadow: false,
+marker: {
+enabled: false,
+symbol: 'circle',
+radius: 3,
+states: {
+hover: {
+enabled: true
+}
+}
+}
+}
+},
+
+tooltip: {
+headerFormat: '<b>'+ '{point.x:%b %e, %Y %I:%M %p}'
++'</b>',
+pointFormat: '<br/><span style="color:' + '{point.series.color}' + '">' + '{point.series.name}' + '</span>: ' + '{point.y:,.0f}g',
+valueDecimals: 0,
+shared: true
+},
+title: {
+text: 'WoW Token Price',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'US',
+data: [
+[Date.UTC2015, 3, 7, 14, 00, 30300 ],
+[Date.UTC2015, 3, 7, 15, 00, 30603 ],
+[Date.UTC2015, 3, 7, 16, 00, 30909 ],
+[Date.UTC2015, 3, 7, 17, 00, 31218 ],
+[Date.UTC2015, 3, 7, 18, 00, 30909 ],
+[Date.UTC2015, 3, 7, 19, 00, 31218 ],
+[Date.UTC2015, 3, 7, 20, 00, 30603 ],
+[Date.UTC2015, 3, 7, 20, 30, 30300 ],
+[Date.UTC2015, 3, 7, 21, 00, 29700 ],
+[Date.UTC2015, 3, 7, 21, 15, 29403 ],
+[Date.UTC2015, 3, 7, 21, 30, 29108 ],
+[Date.UTC2015, 3, 7, 21, 45, 28817 ],
+[Date.UTC2015, 3, 7, 22, 00, 28529 ],
+[Date.UTC2015, 3, 7, 22, 15, 28244 ],
+[Date.UTC2015, 3, 7, 22, 30, 27948 ],
+[Date.UTC2015, 3, 7, 22, 45, 27669 ],
+[Date.UTC2015, 3, 7, 23, 00, 27392 ],
+[Date.UTC2015, 3, 7, 23, 15, 27118 ],
+[Date.UTC2015, 3, 7, 23, 30, 26847 ],
+[Date.UTC2015, 3, 7, 23, 45, 26579 ],
+[Date.UTC2015, 3, 8, 00, 00, 26313 ],
+[Date.UTC2015, 3, 8, 00, 15, 26050 ],
+[Date.UTC2015, 3, 8, 00, 30, 25790 ],
+[Date.UTC2015, 3, 8, 00, 45, 25532 ],
+[Date.UTC2015, 3, 8, 1, 00, 25277 ],
+[Date.UTC2015, 3, 8, 1, 15, 25024 ],
+[Date.UTC2015, 3, 8, 1, 30, 25024 ],
+[Date.UTC2015, 3, 8, 1, 45, 25024 ],
+[Date.UTC2015, 3, 8, 2, 00, 25024 ],
+[Date.UTC2015, 3, 8, 2, 15, 24774 ],
+[Date.UTC2015, 3, 8, 2, 30, 24774 ],
+[Date.UTC2015, 3, 8, 2, 45, 24774 ],
+[Date.UTC2015, 3, 8, 5, 15, 24030 ],
+[Date.UTC2015, 3, 8, 9, 00, 23324 ],
+[Date.UTC2015, 3, 8, 13, 00, 22405 ],
+[Date.UTC2015, 3, 8, 14, 15, 21959 ],
+[Date.UTC2015, 3, 8, 15, 15, 21739 ],
+[Date.UTC2015, 3, 8, 16, 15, 21522 ],
+[Date.UTC2015, 3, 8, 17, 15, 21307 ],
+[Date.UTC2015, 3, 8, 18, 15, 21094 ],
+[Date.UTC2015, 3, 8, 19, 15, 20833 ],
+[Date.UTC2015, 3, 8, 20, 15, 20674 ],
+[Date.UTC2015, 3, 8, 21, 15, 20467 ],
+[Date.UTC2015, 3, 8, 22, 15, 20370 ],
+[Date.UTC2015, 3, 8, 23, 15, 20574 ],
+[Date.UTC2015, 3, 9, 00, 15, 20780 ],
+[Date.UTC2015, 3, 9, 1, 15, 20988 ],
+[Date.UTC2015, 3, 9, 2, 15, 21198 ],
+[Date.UTC2015, 3, 9, 3, 15, 21410 ],
+[Date.UTC2015, 3, 9, 4, 15, 21624 ],
+[Date.UTC2015, 3, 9, 8, 15, 22502 ],
+[Date.UTC2015, 3, 9, 9, 15, 22727 ],
+[Date.UTC2015, 3, 9, 10, 15, 22954 ],
+[Date.UTC2015, 3, 9, 12, 15, 23416 ],
+[Date.UTC2015, 3, 9, 13, 15, 23650 ],
+[Date.UTC2015, 3, 9, 15, 15, 24126 ],
+[Date.UTC2015, 3, 9, 16, 15, 24367 ],
+[Date.UTC2015, 3, 9, 17, 15, 24611 ],
+[Date.UTC2015, 3, 9, 22, 15, 25867 ],
+[Date.UTC2015, 3, 9, 23, 15, 26126 ],
+[Date.UTC2015, 3, 10, 00, 15, 26387 ],
+[Date.UTC2015, 3, 10, 1, 15, 26651 ],
+[Date.UTC2015, 3, 10, 2, 15, 26918 ],
+]
+}]
+};
+};
+</script> 
+<div id="wowtokend3" width="50%" class="pgcharts">Don't see a chart? Enable javascript!</div>Blue Posts
+Token Price Limits
+There are what would more accurately be referred to as fail safes in-place, which are technically "caps", but are at such extremes they're not intended to be guard bumpers as much to avoid potential errors or issues.
+
+Well I wouldn't buy a token for money if I wasn't guaranteed a minimum amount of gold when I sell it on the AH. I don't care about a high cap but there needs to be a set floor price.
+You are always guaranteed to receive the gold amount quoted to you at the time you place it for sale regardless of the price it actually sells at, whether that's more or less than the current market value.
+
+This is stated in the newer "New Details" blog:
+
+As a reminder, to help make sure players can trade WoW Tokens confidently, once a Token sells, the seller will receive the amount of gold they were quoted at the time they listed their Token.
+As well as the original announcement and FAQ:
+
+When you put a WoW Token up for sale, you’ll be quoted the amount of gold you’ll receive once someone buys it—you’re guaranteed to get that amount no matter how the market moves.
+
+I understand that but I'm asking if market values crashes really hard, is there a hard floor limit? Like treasury bonds that guarantee a minimum return? I know people are speculating some but could the sell price go *that* low?
+Like I said there are limits, but they're to catch errors or issues and not as a "We think this is a reasonable minimum/maximum sell value." But this doesn't really have a lot of variables. It's not like a long winter is going to freeze the orange crops and decimate the market on concentrated frozen orange juice, or anything like that. Blue Tracker http://blue.mmo-champion.com/topic/368106-is-there-a-cap-for-tokens-blizz/ / Official Forums http://us.battle.net/wow/en/forum/topic/16952355264?page=2#21
+
+
+Poll - WoW Token
+Did you end up buying or selling the token for gold yet?
+
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8791340.js"></script><noscript><a href="http://polldaddy.com/poll/8791340/">Did you buy or sell the WoW Token for gold?</a></noscript>
+
+
+OpenRaid Event Matcher
+OpenRaid recently added a nice tool to make it easier for you to find raid groups and raid groups to find you!
+
+
+http://media.mmo-champion.com/images/news/2015/april/orMatch.jpg https://openraid.org/main/news/170

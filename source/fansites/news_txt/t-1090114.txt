@@ -1,0 +1,72 @@
+chaud2012-03-02, 02:08 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Diablo 3 - EU Beta Wave, Diablo 3 Weekly Maintenance, Blue Posts, Sword of Justice Cover Art, Fan Art http://www.diablofans.com/news/1104-eu-beta-wave-diablo-3-weekly-maintenance-blue-posts-sword-of-justice-cover-art-fan-art/
+
+Dev Watercooler – Mists of Pandaria Stat Changes
+Our recent talent calculator changes led to some players asking questions about how character and item stats were changing, because some spell and talent tooltips suggest that changes are coming. We compiled this list to attempt to explain more of what’s coming in Mists of Pandaria. First of all, please note that we actually aren’t making many stat changes compared to the ones we made in Cataclysm “armor penetration -- gone!”. Second, the stuff below can get a little technical. If you’re not into the subtle nuance of gear itemization, then don’t worry about it -- you don’t need to be to enjoy the expansion -- but we know there are plenty of you who enjoy some nuts and bolts talk, so here we go.
+
+Spell Resistance
+
+Spell resistance is gone. There are no buffs that improve it and there shouldn’t be much, if any, spell resist gear left. We always thought the system was hard to understand and we weren’t getting much gameplay out of it. Now taking a step back, we can imagine how to develop a game where you’d want various forms of resist gear for certain situations and opponents. Resist gear could potentially be interesting, but it isn’t currently in World of Warcraft -- the game has just been moving away from that sort of thing for years.
+In the absence of spell resistance, there is no need for spell penetration on gear, so we’ll remove it as well.
+
+
+Hit and Expertise
+
+We still think having stats that can be capped is a good game design. Rather than focusing solely on stacking your best stat, you have to decide how valuable it is to hit your target before you go back to stacking your best stat. However, we are making some changes.
+Hit and spell hit will no longer be separate stats. The hit stat negates melee miss and spell miss.
+Expertise will negate dodge and spell miss, then parry.
+Expertise will be listed as a percentage, just like hit, instead of having an intermediary stat. 
+We are normalizing hit with expertise, so that 1% of each stat will require the same amount of rating.
+We are normalizing melee and spell hit, so that spell hit is equal to miss plus dodge.
+
+Against an equal level creature: 6% spell miss, 3% melee miss, 3% dodge, 3% parry from the front only, 3% block from the front only.
+Against a +1 level creature: 9% spell miss, 4.5% melee miss, 4.5% dodge, 4.5% parry from the front only, 4.5% Block from the front only.
+Against a +2 level creature: 12% spell miss, 6% melee miss, 6% dodge, 6% parry from the front only, 6% Block from the front only.
+Against a +3/boss level creature: 15% spell miss, 7.5% melee miss, 7.5% dodge, 7.5% parry from the front only, 7.5% block from the front only.
+Ranged attacks will be able to be dodged. Hunters will benefit from expertise and will have it on their gear, which will also allow hunters and Enhancement shaman to share gear more easily.
+
+
+
+
+Block
+
+
+The chance to block will be handled by a separate combat roll for each attack that is not avoided. In other words, we first determine if an attack misses, or is dodged or parried. If it is not, then the attack has a chance to be blocked.
+This gives block a consistent value, regardless of avoidance. Currently block becomes more valuable the more you have.
+Block will also have diminishing returns, much like dodge and parry. This doesn’t mean that the value of block will go down as you get more block. It means that it won’t go up by as much when you get more block.
+We don’t expect Protection warriors or paladins to get “block capped” other than during temporary effects, such as mastery procs on trinkets. Block tanks will be balanced around this change. Our intent is to make playing block tanks more fun, not to nerf them.
+Also notice how Shield Block and Shield of the Righteous have changed in Mists.
+
+
+Criticals
+
+
+All spells and abilities will crit for double damage, baseline. There are a few exceptions where crits can get larger, but the default is x 2.0 for everyone.
+This means that Enhancement shaman spells and rogue poisons will crit for double damage. Rogue poisons will also use the melee hit chance.
+
+
+Resilience
+
+We are renaming this stat to “Defense PvP” or possibly “PvP Defense.” All players will have 30% base Defense, the same way all characters have some base Stamina.
+PvP gear will have Defense on it, as well as a new stat, “Power PvP.” Power increases the damage you do to other players as well as the healing you do to other players in PvP situations.
+If you have a lot of Power, you’ll do more damage to other players, but they likely have Defense as well. If you fight players in lots of PvE gear, they’ll take more damage. Likewise, a player in PvE gear won’t have enough Power to effectively penetrate your Defense.
+The names PvP Power and PvP Defense may not be final, but we’re leaning towards going with stat names that are obviously PvP-related, rather than “fluffier” names that might not be as easy to grasp. We want it to be clear to players that neither Power nor Defense have any relevance when fighting creatures, such as in dungeons or raids.
+PvP gear will be lower in item level than PvE gear of an equivalent tier, however the Power and Defense stats will make sure that PvP gear is more powerful in PvP both offensively and defensively than PvE gear. In our budgeting system, the PvP stats will be free rather than causing other stats, such as Strength or haste, to be smaller as a result of including Power or Defense.
+The goal of this change is to make it easier for a PvP player to participate in PvE, or for a PvE player to get started in PvP. Currently, we feel it is too large a barrier to go from one to the other, and the result has been that we see more and more players choosing to focus exclusively on only PvP or PvE. In earlier expansions, it was more feasible to use PvE gear in Arenas or Battlegrounds until you acquired the more useful PvP gear. The same was true of being able to use your PvP gear in a dungeon or raid until you acquired something better. In Cataclysm, stepping into PvP with no PvP gear would result in a player being so ineffective that it was difficult to even make progress towards acquiring PvP gear.
+For the higher-end of PvP or PvE say Gladiators or heroic raiders, we believe those players will still gravitate towards the dedicated PvP or PvE gear. It is the players who are working towards those two end games that will benefit more from some cross over.
+
+
+That’s a lot of information, and it probably sounds more set-in-stone than it really is. We’ll continue to iterate as players poke holes in our ideas, tell us what is working out and what isn’t, and finally get to experience it first hand in beta.
+
+
+First European Wave of Diablo III Beta Invites Under Way
+Brave heroes, the time has come to arise and answer the summons: the Diablo III beta is upon us here in Europe!
+
+The first wave of invitations to the European Diablo III beta test is now being delivered. The client is available in English, with German and French becoming available at a later date. In addition to selecting players from those who have opted in https://eu.battle.net/account/management/beta-profile.html via their Battle.net accounts, we’ll also be providing keys through beta promotions and giveaways http://eu.battle.net/d3/en/forum/topic/3389170450?page=1. We welcome those invited to provide feedback http://eu.battle.net/d3/en/forum/2939883/ on the official forums.
+
+If you have a beta license, you are free to show, share, or talk about any portion of the beta content to which you have access, as this beta test is not confidential.
+
+As always, we’d like to remind those hoping for an invite to be wary of phishing attempts http://eu.battle.net/en/security/theft#phishing. If you believe you’ve received an invite to the Diablo III beta test, it’s best to refrain from clicking on any links in the email, and instead log in to your Battle.net account http://eu.battle.net/account/management/ to see if a Diablo III beta game account has indeed been granted. Or, if you were sent a key, you should attempt to add it manually by going to the Add or Upgrade a Game http://eu.battle.net/account/management/add-game.html section of the Battle.net account management page.
+
+For those who have received an invite to the beta test, we thank you for helping us test out our server stability and hardware. For those of you still hoping for an invite, we wish you the best of luck and hope you’ll keep an eye out for some of the beta-key giveaways and promotions we’ll have right here on the European Diablo III community site.
+
+For more information, please see the beta opt-in announcement and FAQ http://eu.battle.net/d3/en/blog/2889057.

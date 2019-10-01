@@ -1,0 +1,44 @@
+Boubouille2009-09-21, 01:05 PMDance Studio Mini Preview
+Every now and then, people mail me to ask if there is any information on the Dance Studio promised in the early days of Wrath of the Lich King and the answer is simple: no. Of course it doesn't mean that I can't dig through the files to see if there is anything interesting here. 
+
+Reminder - This information isn't official. 
+
+Dance Moves
+A few dance moves were added to the game files a few months ago and have been here since then. 
+
+
+http://static.mmo-champion.com/mmoc/images/news/2009/august/dancemoves_small.jpg http://static.mmo-champion.com/mmoc/images/news/2009/august/dancemoves.jpg
+
+According to this file, players should be able to customize their dance with a few options :
+
+Race / Gender specific moves - in this case we can see 10 variations for the Blood Elf Female's dance.
+Special Effects - The "ALL - FX - Frost Nova" effect is called "Icy Finale", we can assume that players will be able to include shiny visual effects to their dances. 
+Modifiers - A few options like "Hold for four seconds" or "Repeat for ten seconds" are here
+Emotes - Apparently you will have the option to include some of the in-game emotes to your dance. 
+
+By digging a little more in the game files, we can also find a few command / error messages related to the dance studio. 
+
+ERR_DANCE_CREATE_DUPLICATE
+ERR_DANCE_SAVE_FAILED
+ERR_DANCE_DELETE_FAILED
+PlayDance
+WARNING! Cannot start a new dance while one is in progress
+Unknown dance move ID: %u!
+Dance Loaded:
+Dance no longer exists
+You haven't created a dance with that name
+Usage: PlayDance"dance name"
+dancecache.wdb
+ERROR! danceMovesDB does not have record id %d
+DBFilesClient\DanceMoves.dbc
+
+Again, keep in mind that this isn't official for the moment but if I had to draw conclusions based on what we have in the game files, I'd say that the Dance Studio will let players create custom dances by combining different moves, effects, and modifiers. Once they are happy with their dance, it looks like they will be able to name it and share it with other players it would explain the dancecache.wdb to store them clientside. The PlayDance"dance name" command most likely means that players will be able to save multiple dances on a character and pick one depending on their mood. 
+
+That's it, I know it's not much but I thought it might be interesting to share what I already know about this even if some of this info could already be outdated. Blizzard doesn't update these files regularly and we will only know how it works when we see if on the official site or the test server. 
+
+
+Comics
+Dark Legacy Comic #206 http://www.darklegacycomics.com/206.html and Teh Gladiators #92 http://www.tehgladiators.com/?p=92 are out. 
+
+
+http://static.mmo-champion.com/mmoc/images/news/2009/september/dl206.jpg http://www.darklegacycomics.com/206.html http://static.mmo-champion.com/mmoc/images/news/2009/september/tehglad92.jpg http://www.tehgladiators.com/?p=92

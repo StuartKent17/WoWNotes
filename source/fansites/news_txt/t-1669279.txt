@@ -1,0 +1,186 @@
+chaud2014-12-31, 11:48 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Season 1 Ending Date http://www.diablofans.com/news/48294-season-1-ending-date
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Firebat's The Pinnacle Winning Deck Lists, Goblins vs Gnomes Comics http://www.hearthpwn.com/news/742-firebats-the-pinnacle-winning-deck-lists-goblins
+
+Armory Stats - Professions
+It is another quiet holiday week, so today we are taking a look at the professions of Level 90 characters at the end of Mists of Pandaria and Level 100 characters today. There are 3.7 million characters and 2.5 million accounts that make up this sample. Keep in mind data collection started recently, so there may be some characters that we haven't come across yet.
+
+Warlords of Draenor also changed how professions work, significantly reducing the incentive to cap your profession right away by not gating items with a required high skill level. In Mists of Pandaria, 95% or more of players capped most professions, but this has significantly changed.
+
+If you have any requests for other stats be sure to let us know in the comments, as a quiet week is a good time to fulfill requests! 
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart; 
+
+setTimeoutfunction{ height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;},2500
+
+
+setTimeoutfunction{ height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;},1500
+
+setTimeoutfunction{ height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;},4500
+
+$document.readyfunction {
+
+Highcharts.setOptions{
+colors: []
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'professionComparison',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Inscription', 'Leatherworking', 'Blacksmithing', 'Tailoring', 'Skinning', 'Alchemy', 'Herbalism', 'Jewelcrafting', 'Engineering', 'Enchanting', 'Mining'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+tickPixelInterval: 50,
+endOnTick: false,
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+}
+},
+tooltip: {
+formatter: function  {
+return this.x + '<br>' + '<b>' + this.series.name + '</b> - ' + this.y + '%';
+}
+},
+
+title: {
+text: 'Percentage of Primary Professions per Character',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'Mists of Pandaria',
+data: [6.28, 7.08, 7.41, 9.62, 8.34, 9.53, 8.89, 9.17, 7.96, 9.61, 16.10],
+color: '#6CC479'
+
+}, {
+name: 'Warlords of Draenor',
+data: [4.58, 6.51, 8, 8.29, 8.49, 8.57, 8.92, 9.46, 10.04, 11.34, 15.81],
+color: '#AB6448'
+
+}]
+
+};
+
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'professionKappa',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Inscription', 'Leatherworking', 'Tailoring', 'Blacksmithing', 'Engineering', 'Enchanting', 'Jewelcrafting', 'Alchemy', 'Skinning', 'Mining', 'Herbalism'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+tickPixelInterval: 50,
+endOnTick: false,
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+}
+},
+tooltip: {
+formatter: function  {
+return this.x + '<br>' + '<b>' + this.series.name + '</b> - ' + this.y + '%';
+}
+},
+
+title: {
+text: 'Percentage of Players With Capped Profession',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'Capped',
+data: [13.15, 15.16, 15.44, 21.68, 22.79, 28.07, 33.09, 57.93, 62.67, 77.26, 87.46],
+color: '#44C43D'
+
+}, {
+name: 'Not Capped',
+data: [86.85, 84.84, 84.56, 78.32, 77.21, 71.93, 66.91, 42.07, 37.33, 22.74, 12.54],
+color: '#C7483A'
+
+}]
+
+};
+};
+</script> 
+
+<div id="professionComparison" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div><br> 
+
+<div id="professionKappa" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div>
+Poll - Professions
+What professions are you using in Warlords of Draenor? If you have any thoughts about the Warlords of Draenor profession changes, be sure to leave them in the comments.
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8553603.js"></script>
+<noscript><a href="http://polldaddy.com/poll/8553603/">What professions are you using?</a></noscript>
+
+Warlords of Draenor Cinematic Reveal Event
+Our friends over at FinalBoss http://finalboss.tv/ put together a video that shows a little more of what went on at the Warlords of Draenor cinematic reveal event. Celestalon https://twitter.com/Celestalon/with_replies even makes a short appearance. 
+
+
+<iframe width="900" height="506" src="//www.youtube.com/embed/WjoXEFuzI-Y?rel=0" frameborder="0" allowfullscreen></iframe>

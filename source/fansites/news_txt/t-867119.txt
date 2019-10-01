@@ -1,0 +1,69 @@
+Boubouille2011-03-12, 07:26 AMPAX East is this week! If you're interested in previews and announcements, check out the PAX East 2011 Coverage on Curse.com http://www.curse.com/content/PAXEast2011.aspx!
+
+Cataclysm - Heroic Zul'Gurub Dungeon and Boss Guide
+Jesse Cox from OMFGcata http://www.youtube.com/user/OMFGcata released a nice video of the updated version of Zul'gurub. If you didn't have time to visit the new instance on PTRs, you should probably spend 15 minutes watching it, you will probably end up thinking "hey, the new ZG is better than I thought!". 
+
+
+<object width="700" height="455"><param name="movie" value="http://www.youtube.com/v/1GC9x9eKIYM?fs=1&hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/1GC9x9eKIYM?fs=1&hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="700" height="455"></embed></object>
+
+
+Patch 4.1: Addon Messages Will Be Filtered
+Boring stuff you will probably not understand unless you're an addon developer, but it seems important! 
+Addon authors that use chat messages should check that their addons still work in 4.1
+
+Authors will need to add calls to RegisterAddonMessagePrefix in order to receive addon messages of a particular prefix, presumably during PLAYER_ENTERING_WORLD for the majority of addons. Note that this system errs on the side of sending too much; it is possible for addon messages to make it to the CHAT_MSG_ADDON handlers when no addon has registered it.
+
+
+
+RegisterAddonMessagePrefix &lt;string&gt; 
+
+Returns a boolean if successful could fail if it hits the client side limit of 512 prefixes.
+
+
+
+IsAddonMessagePrefixRegistered &lt;string&gt; 
+
+Returns a Boolean if the prefix has been registered.
+
+
+
+&lt;table&gt; GetRegisteredAddonMessagePrefixes &lt;table&gt; 
+
+Returns a table or you can pass in a table, that will be filled in with all prefixes that were registered.
+
+
+
+Prefixes are limited to 16 characters now, and they no longer take up a portion of the 256 character chat message limit. The server has a 64 prefix limit. If you exceed this limit your client will not filter any messages.
+
+Also: SendAddonMessage is now allowed for the OFFICER channel.
+
+
+Blue Posts
+Winged Raids and Firelands
+A developer working on a particularly awesome Firelands boss encounter today took me on a tour of the dungeon. I think you'll find the layout to be a pleasant change of pace from winged dungeons. Many of the mechanics being worked on that I was shown were quite nifty as well. I'm really excited for this one. ; Source http://blue.mmo-champion.com/topic/163408/can-we-have-less-winged-raids
+
+Quest Phasing
+This is the sort of philosophy we're going for with phasing, as we do feel it's an important tool for storytelling. We do recognize issues where we've "over-phased" zones in the past though, and we generally tried to take a more minimal approach to phasing in Cataclysm. While there is still a good deal of phasing involved in many of the zones, we tried to make each phase a little more intricate and less intrusive on group gameplay. We want to make sure that, in times when a group is required, phasing doesn't hold you back from grouping with friends. Source http://blue.mmo-champion.com/topic/163327/phasing-a-huge-mistake
+
+Phased Ore/Herbs
+It is an issue we're aware of and having been looking into. We've applied a number of hotfixes to phased gathering nodes since the release of Cataclysm, but this one is still there and is certainly a bugger. Source http://blue.mmo-champion.com/topic/163327/phasing-a-huge-mistake
+
+Appearance Tab - Using other items visuals while keeping your real gear
+We have discussed these types of ideas with the developers several times in recent history. We're not entirely opposed to some of the ideas, though the feature would probably be more limited than the functionality many players are asking for.
+
+This is still largely a contested concept though, as we'd want to make sure it's done well and doesn't have unforeseen negative impacts on gameplay/art style. When we have more information to share with you regarding our decision whether or not to move forward, and how, we'll be sure to let you know. Source http://blue.mmo-champion.com/topic/163386/the-appearance-tab-2
+
+
+Blizzard Art Gallery Update
+The World of Warcraft: Wrath of the Lich King Art Gallery http://us.battle.net/wow/en/media/artwork/wow-wrath has been updated with four pieces representing the Warcraft universe.
+
+
+http://media.mmo-champion.com/images/news/2011/march/classes-deathknight-male-full_small.jpg http://us.media.blizzard.com/wow/media/artwork/wow-wrath/classes-deathknight-male-full.jpg http://media.mmo-champion.com/images/news/2011/march/classes-deathknight-female-full_small.jpg http://us.media.blizzard.com/wow/media/artwork/wow-wrath/classes-deathknight-female-full.jpg http://media.mmo-champion.com/images/news/2011/march/bosses-arthas01-full_small.jpg http://us.media.blizzard.com/wow/media/artwork/wow-wrath/bosses-arthas01-full.jpg http://media.mmo-champion.com/images/news/2011/march/bosses-arthas02-full_small.jpg http://us.media.blizzard.com/wow/media/artwork/wow-wrath/bosses-arthas02-full.jpg
+
+
+New Warcraft Fan Art
+The Blizzard Fan Art Section http://us.blizzard.com/community/fanart/?ip=warcraft has been updated with ten new pieces of fan artwork set within the Warcraft universe.
+
+
+http://media.mmo-champion.com/images/news/2011/march/ss1275_small2.jpg http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1275.jpg http://media.mmo-champion.com/images/news/2011/march/ss1276_small.jpg http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1276.jpg http://media.mmo-champion.com/images/news/2011/march/ss1277_small.jpg http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1277.jpg http://media.mmo-champion.com/images/news/2011/march/ss1278_small.jpg http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1278.jpg http://media.mmo-champion.com/images/news/2011/march/ss1279_small.jpg http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1279.jpg
+http://media.mmo-champion.com/images/news/2011/march/ss1280_small.jpg http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1280.jpg http://media.mmo-champion.com/images/news/2011/march/ss1281_small.jpg http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1281.jpg http://media.mmo-champion.com/images/news/2011/march/ss1282_small.jpg http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1282.jpg http://media.mmo-champion.com/images/news/2011/march/ss1283_small.jpg http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1283.jpg http://media.mmo-champion.com/images/news/2011/march/ss1284_small.jpg http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1284.jpg

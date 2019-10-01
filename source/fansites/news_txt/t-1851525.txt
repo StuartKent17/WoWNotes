@@ -1,0 +1,270 @@
+chaud2015-08-24, 08:21 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> ZiggyD Dev Interview, 3D Kanai's Cube Fanart http://www.diablofans.com/news/48501-ziggyd-dev-interview-3d-kanais-cube-fanart
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> TGT Launches Tomorrow, Top Decks of the Week, 10 Best Cards in TGT http://www.hearthpwn.com/news/1016-tgt-launches-tomorrow-top-decks-of-the-week-10
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Shop Update Reminder, Battlefield of Eternity Update, Carbot Ep. 4 Nazeebro and More http://www.heroesnexus.com/news/1465-shop-update-reminder-battlefield-of-eternity
+
+Armory Stats - Patch 6.2 Class Representation
+It is time to look at Class Representation once again, before everyone becomes a Demon Hunter in Legion! This time we are only including characters that have been active since June 1, 2015. We last looked at this data during Patch 6.1 http://www.mmo-champion.com/content/4773-BRF-Item-Level-Increase-Effects-Class-Representation-by-Ilvl-Blue-Tweets-DLC-481, but did not only include recently active characters then, so the data isn't directly comparable. 
+
+This sample includes 5.9 million characters for all item levels, 3.4 million for 655+, 2.4 million for 665+, 1.7 million for 675+, 677k for 690+, 205k for 700+, and 51k for 710+. Keep in mind that the higher the item level, the smaller the sample size, which means a less than perfect reflection of the actual class balance at that item level range.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart; 
+
+setTimeoutfunction{ height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;},2500
+
+
+setTimeoutfunction{ height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;},1500
+
+setTimeoutfunction{ height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;},4500
+
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#9d9d9d', '#ffffff', '#e6cc80', '#1eff00', '#0070dd', '#a335ee', '#ff8000']
+};
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'ClassRepresentation',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Death Knight','Druid','Hunter','Mage','Monk','Paladin','Priest','Rogue','Shaman','Warlock','Warr ior'],
+labels: {
+}
+
+},
+yAxis: {
+endOnTick: false,
+max: 16,
+title: {
+text: 'Percent of Total Characters',
+style: {
+fontSize: '16px',
+color: '#000',
+} 
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return 'Item level ' + this.series.name + '<br /><b>' + this.point.name + '</b> - '+ this.y +'%' ;
+}
+},
+
+title: {
+text: 'Patch 6.2 Class Representation by Item Level',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+legend: {
+enabled: true,
+},
+
+series: [
+{
+data: [{y: 9.23, color: '#C41E3A', name:'Death Knight'},{y: 10.81, color: '#FF7D0A', name:'Druid'},{y: 13.61, color: '#ABD473', name:'Hunter'},{y: 8.39, color: '#69CCF0', name:'Mage'},{y: 5.74, color: '#00c77b', name:'Monk'},{y: 11.00, color: '#F58CBA', name:'Paladin'},{y: 8.15, color: '#FFFFFF', name:'Priest'},{y: 7.13, color: '#FFF569', name:'Rogue'},{y: 7.79, color: '#2459FF', name:'Shaman'},{y: 7.88, color: '#9482CA', name:'Warlock'},{y: 10.28, color: '#C79C6E', name:'Warrior'}]
+,
+name: 'All'
+},
+{
+data: [{y: 9.23, color: '#C41E3A', name:'Death Knight'},{y: 11.02, color: '#FF7D0A', name:'Druid'},{y: 14.29, color: '#ABD473', name:'Hunter'},{y: 8.45, color: '#69CCF0', name:'Mage'},{y: 5.24, color: '#00c77b', name:'Monk'},{y: 11.05, color: '#F58CBA', name:'Paladin'},{y: 8.15, color: '#FFFFFF', name:'Priest'},{y: 6.86, color: '#FFF569', name:'Rogue'},{y: 7.83, color: '#2459FF', name:'Shaman'},{y: 7.48, color: '#9482CA', name:'Warlock'},{y: 10.2, color: '#C79C6E', name:'Warrior'}]
+,
+name: '655+'
+},
+{
+data: [{y: 8.99, color: '#C41E3A', name:'Death Knight'},{y: 11.11, color: '#FF7D0A', name:'Druid'},{y: 14.57, color: '#ABD473', name:'Hunter'},{y: 8.53, color: '#69CCF0', name:'Mage'},{y: 5.05, color: '#00c77b', name:'Monk'},{y: 11.02, color: '#F58CBA', name:'Paladin'},{y: 8.53, color: '#FFFFFF', name:'Priest'},{y: 6.81, color: '#FFF569', name:'Rogue'},{y: 7.86, color: '#2459FF', name:'Shaman'},{y: 7.43, color: '#9482CA', name:'Warlock'},{y: 10.10, color: '#C79C6E', name:'Warrior'}]
+,
+name: '665+'
+},
+{
+data: [{y: 8.89, color: '#C41E3A', name:'Death Knight'},{y: 11.33, color: '#FF7D0A', name:'Druid'},{y: 14.81, color: '#ABD473', name:'Hunter'},{y: 8.65, color: '#69CCF0', name:'Mage'},{y: 4.87, color: '#00c77b', name:'Monk'},{y: 11.00, color: '#F58CBA', name:'Paladin'},{y: 8.68, color: '#FFFFFF', name:'Priest'},{y: 6.59, color: '#FFF569', name:'Rogue'},{y: 7.89, color: '#2459FF', name:'Shaman'},{y: 7.31, color: '#9482CA', name:'Warlock'},{y: 9.99, color: '#C79C6E', name:'Warrior'}]
+,
+name: '675+'
+},
+{
+data: [{y: 8.83, color: '#C41E3A', name:'Death Knight'},{y: 11.20, color: '#FF7D0A', name:'Druid'},{y: 15.78, color: '#ABD473', name:'Hunter'},{y: 8.81, color: '#69CCF0', name:'Mage'},{y: 4.86, color: '#00c77b', name:'Monk'},{y: 10.91, color: '#F58CBA', name:'Paladin'},{y: 8.9, color: '#FFFFFF', name:'Priest'},{y: 5.58, color: '#FFF569', name:'Rogue'},{y: 8.30, color: '#2459FF', name:'Shaman'},{y: 7.29, color: '#9482CA', name:'Warlock'},{y: 9.55, color: '#C79C6E', name:'Warrior'}]
+,
+name: '690+'
+},
+{
+data: [{y: 8.34, color: '#C41E3A', name:'Death Knight'},{y: 12.03, color: '#FF7D0A', name:'Druid'},{y: 14.58, color: '#ABD473', name:'Hunter'},{y: 9.26, color: '#69CCF0', name:'Mage'},{y: 5.12, color: '#00c77b', name:'Monk'},{y: 10.72, color: '#F58CBA', name:'Paladin'},{y: 9.16, color: '#FFFFFF', name:'Priest'},{y: 5.80, color: '#FFF569', name:'Rogue'},{y: 8.53, color: '#2459FF', name:'Shaman'},{y: 6.87, color: '#9482CA', name:'Warlock'},{y: 9.60, color: '#C79C6E', name:'Warrior'}]
+,
+name: '700+'
+},
+{
+data: [{y: 8.03, color: '#C41E3A', name:'Death Knight'},{y: 12.67, color: '#FF7D0A', name:'Druid'},{y: 12.91, color: '#ABD473', name:'Hunter'},{y: 9.51, color: '#69CCF0', name:'Mage'},{y: 5.34, color: '#00c77b', name:'Monk'},{y: 10.32, color: '#F58CBA', name:'Paladin'},{y: 8.33, color: '#FFFFFF', name:'Priest'},{y: 6.66, color: '#FFF569', name:'Rogue'},{y: 8.86, color: '#2459FF', name:'Shaman'},{y: 6.64, color: '#9482CA', name:'Warlock'},{y: 10.72, color: '#C79C6E', name:'Warrior'}]
+,
+name: '710+'
+}
+]
+
+};
+
+chart = new Highcharts.Chart{
+colors: [
+'#234ACC', 
+'#050B21'
+],
+chart: {
+renderTo: 'ilvl',
+defaultSeriesType: 'line',
+backgroundColor: '#efeedc',
+zoomType: 'x',
+},
+
+xAxis: {
+tickInterval: 10,
+title: {
+text: 'Item Level',
+style: {
+color: '#000',
+fontWeight: 'bold'
+}
+},
+startOnTick: false
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+min: 0,
+tickPixelInterval: 50,
+endOnTick: false,
+title: {
+text: 'Percent of Characters / Players',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+line: {
+animation: false,
+pointStart: 581,
+shadow: false,
+marker: {
+enabled: false,
+symbol: 'circle',
+radius: 3,
+states: {
+hover: {
+enabled: true
+}
+}
+}
+}
+},
+
+tooltip: {
+formatter: function {
+var s = '<b>Item level: '+ this.x +'</b>';
+
+$.eachthis.points, functioni, point {
+s += '<br/><span style="color:'+ point.series.color + '">'+ point.series.name +'</span>: '+
+Highcharts.numberFormatpoint.y,3 + '%';
+};
+
+return s;
+},
+
+shared: true
+},
+title: {
+text: 'Character and Player Item Level',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'Players',
+data: [0.028580682, 0.032131875, 0.036667133, 0.040475038, 0.046678929, 0.051513685, 0.060156347, 0.062423976, 0.072435772, 0.076628746, 0.086084331, 0.094598636, 0.099390607, 0.107519843, 0.122537537, 0.139266649, 0.153770917, 0.169387608, 0.186031149, 0.202118479, 0.216579962, 0.227960892, 0.238913968, 0.247471059, 0.25846692, 0.261034047, 0.265269807, 0.270275705, 0.269847851, 0.277934301, 0.265440949, 0.270532418, 0.260520622, 0.25517244, 0.261889756, 0.27399804, 0.291925144, 0.305145849, 0.307884118, 0.336208088, 0.339545353, 0.347802946, 0.360424654, 0.354605833, 0.380533817, 0.394952515, 0.400728551, 0.425544113, 0.418570084, 0.437096186, 0.453868083, 0.481207987, 0.48240598, 0.479710497, 0.481079631, 0.533021171, 0.542519541, 0.564425693, 0.57828818, 0.606269866, 0.637503246, 0.634593836, 0.63172721, 0.66052182, 0.679090706, 0.702194851, 0.708355956, 0.702066495, 0.701296356, 0.76825559, 0.77155007, 0.816603152, 0.83016614, 0.851601652, 0.909533155, 0.944745583, 0.981412716, 0.983081348, 0.974909327, 1.58798208, 1.288269983, 1.229354415, 1.185328184, 1.171679624, 1.186355035, 1.185884395, 1.160341479, 1.144767574, 1.121278361, 1.277145765, 1.1943987, 1.274022427, 1.178696438, 1.327846527, 1.217802342, 1.426338639, 1.237954291, 1.455518318, 1.270128951, 1.552213441, 1.41363136, 1.597052596, 1.48071895, 1.584815956, 1.523162119, 1.713600169, 1.353860082, 1.587383083, 1.341965726, 1.63709978, 1.460524216, 1.69430393, 1.560684961, 1.708209202, 1.607877315, 1.679842447, 1.569156481, 1.577713571, 1.433997235, 1.500229116, 1.327974883, 1.159100701, 0.989156883, 0.844542052, 0.745365373, 0.666083929, 0.60520023, 0.542006116, 0.489893434, 0.45596457, 0.421179997, 0.404835954, 0.38079053, 0.34681888, 0.314772576, 0.26693844, 0.212001918, 0.174051222, 0.137212947, 0.107904912, 0.088138033, 0.068328368, 0.053481816, 0.0444113, 0.037308915, 0.03067717, 0.022590719, 0.014589839, 0.008343163, 0.003850691, 0.00141192, 0.000213927 ]
+},
+{
+name: 'Characters',
+data: [0.053830478, 0.058447387, 0.067380102, 0.077065573, 0.087386706, 0.093960782, 0.105017944, 0.113147718, 0.130410942, 0.143458727, 0.157560372, 0.170290327, 0.186867705, 0.20056788, 0.228419883, 0.253127036, 0.272899449, 0.299346306, 0.326110994, 0.349965022, 0.373183389, 0.388773819, 0.404933, 0.410871415, 0.42480578, 0.43442434, 0.444176723, 0.447104111, 0.44484584, 0.455819362, 0.450282418, 0.449245286, 0.444762201, 0.432701363, 0.452825063, 0.46456807, 0.474688467, 0.49931198, 0.506237343, 0.553510473, 0.549913968, 0.570238403, 0.588639126, 0.590746845, 0.632733949, 0.638772732, 0.632851045, 0.682884283, 0.663814443, 0.696534274, 0.712827278, 0.738671929, 0.740813105, 0.731043993, 0.739976708, 0.794325752, 0.799327403, 0.820136948, 0.834522968, 0.872896839, 0.904512627, 0.904311892, 0.895211898, 0.935660032, 0.952153771, 0.982983346, 0.978383165, 0.962140345, 0.971106516, 1.057489546, 1.057640097, 1.115953661, 1.10618455, 1.144458054, 1.20646849, 1.241061849, 1.285006121, 1.284069357, 1.268612749, 2.000560051, 1.597232933, 1.497484287, 1.450211157, 1.419147391, 1.39790292, 1.362807723, 1.294741776, 1.256250809, 1.207907092, 1.341128326, 1.225170315, 1.279050978, 1.152320181, 1.266839589, 1.157121096, 1.319800215, 1.115987117, 1.288920456, 1.083735668, 1.310733677, 1.154979921, 1.287632406, 1.141798313, 1.215635395, 1.129218909, 1.242015341, 0.943655983, 1.103574993, 0.892234326, 1.063143586, 0.922478423, 1.039440109, 0.927145516, 0.999410173, 0.932749372, 0.951501382, 0.869133055, 0.843840425, 0.747939203, 0.750615671, 0.647337432, 0.551335842, 0.46254399, 0.388974554, 0.337770361, 0.296552742, 0.266860666, 0.236917671, 0.211056292, 0.194863656, 0.179039034, 0.170457606, 0.158848423, 0.143040529, 0.128520686, 0.107778052, 0.085479722, 0.069437637, 0.05446614, 0.042890412, 0.035028285, 0.027199614, 0.021027008, 0.017664694, 0.014653667, 0.012127749, 0.008849075, 0.005720952, 0.003261946, 0.001505514, 0.000552022, 0.000083640]
+}]
+
+};
+
+
+};
+</script> 
+<div id="ClassRepresentation" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div><br>
+<div id="ilvl" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div>
+Ghostcrawler Tweets
+Ghostcrawler still occasionally talks about WoW and game design. Remember that he no longer works for or speaks for Blizzard.
+Player Feedback
+What is your process at Riot for reviewing feedback? Sometimes I feel we can't get rito attention without a huge post on reddit with a bunch of stupid memes, but every once in a while, someone will post a real discussion to no avail. It is frustrating that we feel like our feedback never matters.
+There isn't a formalized process because as you can imagine the discussion itself is nuanced. We need to evaluate sentiment in all regions, evaluate potential changes against work already in flight, and try and understand if we are hearing from a vocal minority or someone being the spokesperson for a whole bunch of players.
+
+We don't think the long red post on Reddit really scales well. We are trying to figure out some other options to get our feedback to your feedback out there. A suggestion we hear a lot is some kind of regular state of the game blog.
+
+I have been talking to players on social media for nearly two decades now and I have experienced this sentiment a lot: that you guys don't feel heard. It's a challenging problem to solve in the absence of an announcement from us that says "we are making the change you suggested in the next patch." To be clear, sometimes that is going to happen. But there are many reasons that may not happen. If you're asking for a new feature and we are going to announce that feature in a big way in a few weeks, we aren't going to answer on social media and you may feel ignored. As I said we are exploring options for how to make sure you guys understand better what it is we value. We have gotten that message loud and clear. 
+
+Game Design
+now i know you don't work for blizzard anymore but can you explain why they seem so threatened by new mmos or expansions for current mmos releasing?
+I'm not sure if you are refering to a specific incident or something, but when I was there, there wasn't an excessive focus on what competitors did. It's actually pretty challenging in the game industry, and especially in the MMO space, to tactically respond to competitors. If they announce a new feature, you're probably 4 months away from being able to ship a competiting feature. If they want to launch on a certain day, you have very limited ability to pivot, because you probably locked into your own launch day 6 months ago. 
+
+So you are saying that Blizzard and Valve are reckless for implementing features that LoL doesn't have like voice chat?
+I'm not qualified to talk about how Valve makes decisions. I would just be guessing. Blizzard is generally a very deliberate, almost cautious decision-maker, or at least they were two years ago. I would point to their voice chat as a rare misstep though they would be the first to acknowledge that it isn't very good compared to third party alternatives, and isn't frequently used so maybe that's not the strongest example to make your point.
+
+This also doesn't mean adding voice is always a reckless idea. I just mean you need to be really careful about how you roll out some features that risk having more problems than benefits. 
+
+Misc
+Do you feel like you're currently making the exact same design mistakes that you previously made at Blizzard? Specifically regarding caring more about new players than old?
+Almost everything we do on League is for existing players. In fact, our new player experience is in pretty desperate need of being updated. We will get to it someday.
+
+On WoW we did focus more on new players. They are just different companies with different priorities. I try to align my priorities to the company I'm at. But I will point out that I annoyed some players by focusing on more challenging dungeons on WoW. 
+
+How does it feel to have completely screwed up WoW, only to get hired at Riot and do the same thing again?
+In both cases, I'm just one person on a large team. I have no problem if you want to hold me accountable for design decisions you don't like on either game, but it's pretty unfair to hundreds of people at Blizzard and Riot to imagine that any one person could steer the direction of either game so dramatically. 
+
+
+<img src="http://media.mmo-champion.com/images/news/2015/june/wildstarMini.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Wildstar - Cosmic Tiers
+The Wildstar team announced http://www.wildstar-online.com/en/news/2015-08-19-level-up-with-cosmic-rewards/ the system that will unlock game features and cosmetic rewards once the game goes free to play. Players will unlock tiers by purchasing things in the in-game store. The more they spend, the more tiers will be unlocked. Players that don't want to spend any money on the game can still unlock things by using C.R.E.D.D. Wildstar equivalent of the WoW Token.
+
+
+http://media.mmo-champion.com/images/news/2015/august/wstarCR.jpg http://www.wildstar-online.com/en/news/2015-08-19-level-up-with-cosmic-rewards/ 
+
+<div class="gallery" id="gallery-wstarRE">http://media.mmo-champion.com/images/news/2015/august/thumb/wstar01.jpg http://media.mmo-champion.com/images/news/2015/august/wstar01.jpg http://media.mmo-champion.com/images/news/2015/august/thumb/wstar02.jpg http://media.mmo-champion.com/images/news/2015/august/wstar02.jpg http://media.mmo-champion.com/images/news/2015/august/thumb/wstar03.jpg http://media.mmo-champion.com/images/news/2015/august/wstar03.jpg http://media.mmo-champion.com/images/news/2015/august/thumb/wstar04.jpg http://media.mmo-champion.com/images/news/2015/august/wstar04.jpg
+http://media.mmo-champion.com/images/news/2015/august/thumb/wstar05.jpg http://media.mmo-champion.com/images/news/2015/august/wstar05.jpg http://media.mmo-champion.com/images/news/2015/august/thumb/wstar06.jpg http://media.mmo-champion.com/images/news/2015/august/wstar06.jpg http://media.mmo-champion.com/images/news/2015/august/thumb/wstar07.jpg http://media.mmo-champion.com/images/news/2015/august/wstar07.jpg http://media.mmo-champion.com/images/news/2015/august/thumb/wstar08.jpg http://media.mmo-champion.com/images/news/2015/august/wstar08.jpg </div>
+
+
+WowCraft #24 - ShipRekt
+WoWCraft takes a look at Shipyards in this episode.
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/foAtGELqBls?rel=0" frameborder="0" allowfullscreen></iframe>

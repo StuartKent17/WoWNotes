@@ -1,0 +1,43 @@
+Boubouille2008-03-18, 10:50 AMUpdate 18:00 CET - If you were wondering if the patch is today ...
+The patch is not today.
+
+
+Blizzard WWI08 Tickets on sale 20th March
+
+http://static.mmo-champion.com/mmoc/images/news/2008/february/wwi08.gif http://eu.blizzard.com/wwi08
+
+PARIS, France. -- Tickets for the 2008 Blizzard Entertainment® Worldwide Invitational convention and tournament gaming event will be available from Thursday, 20th of March on the Worldwide Invitational website at http://eu.blizzard.com/wwi08 http://eu.blizzard.com/wwi08.
+
+This year's Blizzard Worldwide Invitational will take place in Paris, France, at the Porte de Versailles Exposition Centre on the 28th and 29th of June. Tickets are priced at €70 / £55 for the two-day event, which will feature hands-on play with the latest versions of World of Warcraft®: Wrath of the Lich King™ and StarCraft® II. Blizzard Entertainment developers and executives will be present to share all the latest news, meet attendees and participate in public discussion panels.
+
+"The previous Blizzard Worldwide Invitationals have provided great opportunities for us to meet with players and share some incredible gaming experiences with them," said Mike Morhaime, CEO and cofounder of Blizzard Entertainment. "We're looking forward to bringing this event to Paris for the first time and offering an exciting show for everyone attending."
+
+In addition to invitational tournaments featuring top eSports competitors playing for a total of $100,000 in prizes, the Blizzard Entertainment Worldwide Invitational will also host casual tournaments for attendees, costume and dance contests, live musical performances, and more. All attendees will also receive a goody bag of Blizzard Entertainment items including a beta key for an upcoming Blizzard Entertainment game and an exclusive World of Warcraft in-game pet.
+
+The Worldwide Invitational is open to attendees of 16 years or above, as well as younger individuals accompanied by a consenting parent, guardian or responsible adult of 18 years or above.
+
+Additional plans and content for the Blizzard Worldwide Invitational will be revealed on the official website in the weeks leading up to the event. 
+
+
+2.4 getting closer and closer
+Another interesting post by Tigerclaw, it's definitely too late to fix anything that isn't urgent in the 2.4 patch. We probably won't see it this week but we're definitely very close to a release.
+It might be easier all around if we just fixed the bug, which is being worked on right now. However I should point out that due to the stage of 2.4.0 development that we are in, this is more likely to get the nod for fixing in 2.4.2 instead of 2.4.0. If this had come up a couple weeks sooner we would be in a better position to address this in 2.4.0.
+
+
+TTR Connection Issues
+If you can't connect to Tournament Test Realms because it's not available in the realm list, you might want to do that.
+We are aware of the problems with selecting a realm type, and the issue is being looked at. Until it is fixed you can work around this by going into your wowtest/WTF folder and editing your config.wtf file to contain the line:
+
+SET realmName "Arena Tournament"
+
+
+2v2 queue times and 2.4
+A few changes are being made to Arenas to let servers run more 2v2 arena instances and decrease the queue time for them. The good thing is, Blizzard is considering further changes if it's not enough to reduce it effectively.
+There is a change in 2.4.0 that will allow the servers to kick up more arena instances in a shorter amount of time, generally lowering the amount of time it will take to get into a game with an equal amount of people queuing. We want to avoid calling this a one time "queue cure" as we're still not entirely certain how the changes will affect queue times under full load. Especially considering the increase in activity we see with any major patch release.
+
+I think they're guaranteed to have some effect, but if it isn't an adequate impact we'll need to make further adjustments.
+
+
+Cogent connections issues
+If your internet provider is routing traffic through Cogent, you might have some problems to connect to World of Warcraft servers. Well it's not going to be fixed anytime soon, because Blizzard can't really do anything about it, it's a problem between TeliaSonera http://en.wikipedia.org/wiki/TeliaSonera and Cogent http://en.wikipedia.org/wiki/Cogent_Communications and users will probably have to wait until it's solved. 
+Cogent has decided not to exchange traffic directly with TeliaSonera’s AS 1299 or indirectly with AS 1299 through a third-party provider. As a result, Cogent has partitioned the Internet and disrupted the flow of traffic between Cogent and TeliaSonera customers. While this has a negative impact on some users of the Internet, this effect is the result of Cogent’s decision and is unfortunately beyond TeliaSonera’s control.

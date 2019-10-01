@@ -1,0 +1,52 @@
+Boubouille2008-02-05, 08:15 AMThe end of yesterday was fairly interesting with an update of the Underdev page and an insight on AV changes in 2.4. If you feel that you missed something during the last few days you can always check :
+Under development page update and Alterac Valley improvements [Link http://www.mmo-champion.com/index.php?topic=4068.0]
+The full list of known changes from the patch 2.4 [Link http://www.mmo-champion.com/index.php?topic=3199.0]
+
+
+
+[Patch 2.4] Not so many classes changes ?
+It seems that after all, the patch 2.4 won't change tons of things about class balancing, at least at the beginning, we'll probably see more classes modifications during the different updates of the test version.
+I'm going to be a bit cautious in what I say in this regard. Will there be some changes to classes? Yes, there will be some. We're not rushing into a bunch of class changes for this patch at this point. Consider the patch to be a bit more progressive in nature. As we go along, the developers are going to be keeping a close eye on the results of any changes and additions and then making changes as they feel they are necessary. How many changes occur are going to be based on testing over time. This is why it's important for players to get in and test it as much as possible.
+
+We want to make sure that the changes we are making are viable and practical for continued balance of the classes and don't want to put in too many changes at once and essentially skew the results too much one way or another.
+
+
+[Patch 2.4] Caverns of Time teleporter
+You won't need an awfully high reputation to get teleported in the Caverns of Time, it's just a way to make the life of a lot of players easier. 
+It will be available for anyone with the appropriate reputation. We plan to make it as easily accessible to everyone as possible, but you will still need to get a sufficient amount of reputation easily gained  before being able to use it.
+
+
+[Patch 2.4] New cooking recipes
+As mentioned in the 2.4 compilation http://www.mmo-champion.com/index.php?topic=4062.0, cooking leveling will be made easier in 2.4, Bornakk posted one of the new recipe available in the patch.
+
+It seems that the Juicy Bear Burgers will give +14 Spell Damage/Healing and Charred Bear Kabobs will give +24 Attack Power
+It sounds like you need either some Charred Bear Kabobs or Juicy Bear Burgers! oh so yummy mmmm...
+
+Oh, right, details, they'll be purchasable from either Bale http://www.wowhead.com/?npc=2806 Horde or Malygen http://www.wowhead.com/?npc=2803 Alliance in Felwood in patch 2.4, they'll use meat added to level 48-56 bears, and they will require 250 skill to learn so you won't require fishing to get to 300 cooking.
+
+
+Other blue posts
+Stealth / Prowl
+I don't know how many times I have to state that this is not a bug. Stealth and Prowl as opposed to Vanish and Feign Death are not combat escape mechanisms. They will not remove you from an NPCs target list. This is an intentional design decision on the part of the developers of the game. No matter how much you may disagree, this means it is not a bug. Source http://forums.worldofwarcraft.com/thread.html?topicId=4311224443&postId=43106823365&sid=1#21
+
+Can't get the Keystone from the Botanica in Heroic Mode
+This is a bug and the quest will be completable in heroic mode in an upcoming patch. Source http://forums.worldofwarcraft.com/thread.html?topicId=4311227289&postId=43106823754&sid=1#1
+
+WotLK and 10/25 players dungeons
+As expected, we do have ideas to improve how the 10 person and 25 person dungeons coincide in Wrath of the Lich King, but nothing concrete we can discuss at this point. We plan to continue with and improve our current model of 5, 10, 25 person dungeons in Wrath of the Lich King. Source http://forums.worldofwarcraft.com/thread.html?topicId=4311117964&postId=43106523155&sid=1#10
+
+
+[Patch 2.4] Combat log changes
+I'm aware that some of you won't understand this post, but it's still fairly interesting it you take the time to read it entirely.
+With the release of patch 2.4.0, we’ve made some enormous changes to the existing combat log. While this will result in some hard work now, it should be easier to maintain your AddOns in the future.
+
+The feature we’re most proud of is the ability to filter your combat log. The combat log stores the last five minutes worth of raw combat events. Filters can be setup on multiple criteria, affiliation, ownership, etc. Any events that match the current filter are passed through the client via the COMBAT_LOG_EVENT message. The combat log filter is global. However, AddOns which want to parse all events the moment they happen can register for the COMBAT_LOG_EVENT_UNFILTERED message. This should allow all existing AddOns to still respond to combat events without a complicated middle-manager AddOn.
+While the default combat log will only be setting 1-2 filters at a time, the WoW client supports many simultaneous filters. It’s possible to setup multiple filters to filter very specific source-target-event combinations. If a combat log event passes any of the filters, the COMBAT_LOG_EVENT event fires. This allows AddOns to define extremely specific settings we chose not expose in the base UI.
+
+The new combat log will be coming with two text formats. One is the familiar, grammatically correct sentences with substitutions. The other is a terse format, containing the source, target, spell, action and result. There will be a number of ways to manipulate the formatting, from unit name coloring to coloring the damage numbers by their magic school. The settings used for these formats are stored in the Blizzard_CombatLog_Filters variable.
+
+The result of the new terse format is that it’s very easy to write AddOns to modify or extend the format which ships with 2.4.0. In the formatting section, you can read up on a quick demonstration of how to convert the combat log to a “Nurfed” style combat log. While you can do a lot by just adjusting the settings within WoW, it’s also possible to provide an AddOn that changes the strings used to generate the Combat Log messages. This allows for more extensive formatting changes without re-writing the entire parsing engine. See the Formatting Section for an example.
+
+The whole combat log also supports a new coloring model, based on context. While by default, entire lines are a single color, highlighting the most important details. The combat log also supports coloring just unit names, spells, actions and damage numbers. Spells and damage can also be colored by school. However, there are several features not exposed in the base UI that AddOns can use right away. These are event-specific coloring, unit coloring with greater granularity and the ability to customize the list of highlighted events.
+
+There are several other formatting related features. You can enable timestamps which show the time that spell or attack happened. You can show or hide square braces, change formatting without refreshing the combat log and disable the display of raid icons. These features were too niche to go into the base UI, but can be easily exposed for power users. By now you’ve already thought of some features of your own and are ready to get to coding. So let’s jump straight to some examples.

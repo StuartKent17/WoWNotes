@@ -1,0 +1,621 @@
+chaud2014-11-29, 12:22 PM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> VegaPrime's "Axe-Nado" Barbarian, Lightning Monk on PTR 2.1.2, UEE Amazon Lightning Sale http://www.diablofans.com/news/48267-vegaprimes-axe-nado-barbarian-lightning-monk-on
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> GvG Card Reveal: Crackle, Steamwheedle Sniper http://www.hearthpwn.com/news/707-gvg-card-reveal-crackle-steamwheedle-sniper
+
+<img src="http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Heroes Developer Reddit AMA on December 4th, Town Hall Heroes #41 http://www.heroesnexus.com/news/1252-heroes-developer-reddit-ama-on-december-4th-town
+
+Armory Stats - Mists of Pandaria Proving Grounds
+Before we get too far into Warlords of Draenor, there are a few outstanding requests for some final armory stats. This sample was updated right up until Patch 6.0.2 went live and looks at accounts active from September 1st onwards, which was 2.3 million accounts and 6.8 million characters. We looked at more detailed stats back in May 2014 http://www.mmo-champion.com/content/3984-Armory-Stats-Siege-of-Orgrimmar-Progression-Blue-Tweets-DLC-439.
+
+There are a few Hunters http://www.wowprogress.com/char_statistics/field.pg_tank/class.hunter and Warlocks http://www.wowprogress.com/char_statistics/field.pg_tank/class.warlock that don't show up well on the chart, but they managed to do some Tank Endless waves.
+
+If there are any other final requests that use pre-6.0.2 Mists of Pandaria data please let us know in the comments, as the data will be wiped when new data collection begins in December.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart; 
+
+setTimeoutfunction{ height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;},2500
+
+
+setTimeoutfunction{ height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;},1500
+
+setTimeoutfunction{ height = subchart.height
+width = $".pgcharts".width
+subchart.setSizewidth, height, doAnimation = true;},4500
+
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#8C7853', '#545454', '#DBDB70', '#55C949', '#6B8E23', '#426F42']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'provingGroundsAbs',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Bronze', 'Silver', 'Gold', 'Endless 10', 'Endless 20', 'Endless 30'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+colorByPoint: true
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.series.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Proving Grounds Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'At least one role',
+data: [53.6, 33.6, 11.7, 3.9, 2.4, 1.9],
+
+}, {
+name: 'At least two roles',
+data: [18.0, 9.5, 2.5, 0.85, 0.60, 0.50]
+
+}, {
+name: 'At least three roles',
+data: [4.95, 2.59, 0.74, 0.34, 0.26, 0.23]
+
+}
+]
+
+};
+
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'provingGroundsScaled',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Bronze', 'Silver', 'Gold', 'Endless 10', 'Endless 20', 'Endless 30'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+endOnTick: false,
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+colorByPoint: true
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.series.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Proving Grounds Achievements Role',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'At least one role',
+data: [100, 62.7, 21.9, 7.3, 4.6, 3.7]
+
+}, {
+name: 'At least two roles',
+data: [33.6, 17.7, 4.7, 1.6, 1.1, 0.9]
+
+}, {
+name: 'At least three roles',
+data: [9.2, 4.8, 1.4, 0.62, 0.49, 0.43]
+
+}
+]
+
+};
+
+
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'provingGroundsEndlessDPS',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Death Knight','Druid','Hunter','Mage','Monk','Paladin','Priest','Rogue','Shaman','Warlock','Warr ior'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+
+},
+
+yAxis: {
+max: 25,
+title: {
+text: 'Percent of Total',
+style: {
+fontSize: '16px',
+color: '#000',
+} 
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return this.series.name + '<br /><b>' + this.point.name + '</b> - '+ this.y +'%' ;
+}
+},
+
+title: {
+text: 'DPS Endless Proving Grounds Class Representation',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+legend: {
+enabled: true,
+},
+
+series: [
+{
+data: [{y: 11.9, color: '#C41E3A', name:'Death Knight'},{y: 2.2, color: '#FF7D0A', name:'Druid'},{y: 22.9, color: '#ABD473', name:'Hunter'},{y: 11.6, color: '#69CCF0', name:'Mage'},{y: 5.9, color: '#00c77b', name:'Monk'},{y: 6.9, color: '#F58CBA', name:'Paladin'},{y: 3.3, color: '#FFFFFF', name:'Priest'},{y: 5.6, color: '#FFF569', name:'Rogue'},{y: 5.2, color: '#2459FF', name:'Shaman'},{y: 14, color: '#9482CA', name:'Warlock'},{y: 10.3, color: '#C79C6E', name:'Warrior'}]
+,
+name: 'Any Endless Waves'
+},
+{
+data: [{y: 11.9, color: '#C41E3A', name:'Death Knight'},{y: 1.5, color: '#FF7D0A', name:'Druid'},{y: 23.9, color: '#ABD473', name:'Hunter'},{y: 15.6, color: '#69CCF0', name:'Mage'},{y: 7.8, color: '#00c77b', name:'Monk'},{y: 4.8, color: '#F58CBA', name:'Paladin'},{y: 3.4, color: '#FFFFFF', name:'Priest'},{y: 5.1, color: '#FFF569', name:'Rogue'},{y: 2.5, color: '#2459FF', name:'Shaman'},{y: 15.0, color: '#9482CA', name:'Warlock'},{y: 8.4, color: '#C79C6E', name:'Warrior'}]
+,
+name: '10+ Endless Waves'
+},
+{
+data: [{y: 11.5, color: '#C41E3A', name:'Death Knight'},{y: 1.3, color: '#FF7D0A', name:'Druid'},{y: 24.5, color: '#ABD473', name:'Hunter'},{y:16.1, color: '#69CCF0', name:'Mage'},{y: 8.2, color: '#00c77b', name:'Monk'},{y: 4.6, color: '#F58CBA', name:'Paladin'},{y: 3.3, color: '#FFFFFF', name:'Priest'},{y: 5.5, color: '#FFF569', name:'Rogue'},{y: 2.1, color: '#2459FF', name:'Shaman'},{y: 14.6, color: '#9482CA', name:'Warlock'},{y: 8.3, color: '#C79C6E', name:'Warrior'}]
+,
+name: '20+ Endless Waves'
+}
+]
+
+};
+
+
+
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'provingGroundsEndlessHealer',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Druid','Monk','Paladin','Priest','Shaman'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+
+},
+
+yAxis: {
+max: 45,
+title: {
+text: 'Percent of Total',
+style: {
+fontSize: '16px',
+color: '#000',
+} 
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return this.series.name + '<br /><b>' + this.point.name + '</b> - '+ this.y +'%' ;
+}
+},
+
+title: {
+text: 'Healer Endless Proving Grounds Class Representation',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+legend: {
+enabled: true,
+},
+
+series: [
+{
+data: [{y: 35.3, color: '#FF7D0A', name:'Druid'},{y: 6.5, color: '#00c77b', name:'Monk'},{y: 15.9, color: '#F58CBA', name:'Paladin'},{y: 17.9, color: '#FFFFFF', name:'Priest'},{y: 24.2, color: '#2459FF', name:'Shaman'}]
+,
+name: 'Any Endless Waves'
+},
+{
+data: [{y: 37.8, color: '#FF7D0A', name:'Druid'},{y: 6.5, color: '#00c77b', name:'Monk'},{y: 16.2, color: '#F58CBA', name:'Paladin'},{y: 13.2, color: '#FFFFFF', name:'Priest'},{y: 26.0, color: '#2459FF', name:'Shaman'}]
+,
+name: '10+ Endless Waves'
+},
+{
+data: [{y: 40.6, color: '#FF7D0A', name:'Druid'},{y: 7.4, color: '#00c77b', name:'Monk'},{y: 14.4, color: '#F58CBA', name:'Paladin'},{y: 12.6, color: '#FFFFFF', name:'Priest'},{y: 25, color: '#2459FF', name:'Shaman'}]
+,
+name: '20+ Endless Waves'
+}
+]
+
+};
+
+
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'provingGroundsEndlessTank',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Death Knight','Druid','Hunter','Monk','Paladin','Warlock','Warrior'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+
+},
+
+yAxis: {
+max: 36,
+title: {
+text: 'Percent of Total',
+style: {
+fontSize: '16px',
+color: '#000',
+} 
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return this.series.name + '<br /><b>' + this.point.name + '</b> - '+ this.y +'%' ;
+}
+},
+
+title: {
+text: 'Tank Endless Proving Grounds Class Representation',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+legend: {
+enabled: true,
+},
+
+series: [
+{
+data: [{y: 30.6, color: '#C41E3A', name:'Death Knight'},{y: 17.1, color: '#FF7D0A', name:'Druid'},{y: 0.07, color: '#ABD473', name:'Hunter'},{y: 14.6, color: '#00c77b', name:'Monk'},{y: 16.1, color: '#F58CBA', name:'Paladin'},{y: 0.34, color: '#9482CA', name:'Warlock'},{y: 21.1, color: '#C79C6E', name:'Warrior'}]
+,
+name: 'Any Endless Waves'
+},
+{
+data: [{y: 33.3, color: '#C41E3A', name:'Death Knight'},{y: 12.6, color: '#FF7D0A', name:'Druid'},{y: 0.001, color: '#ABD473', name:'Hunter'},{y: 17.9, color: '#00c77b', name:'Monk'},{y: 12.4, color: '#F58CBA', name:'Paladin'},{y: 0.1, color: '#9482CA', name:'Warlock'},{y: 23.7, color: '#C79C6E', name:'Warrior'}]
+,
+name: '10+ Endless Waves'
+},
+{
+data: [{y: 35.3, color: '#C41E3A', name:'Death Knight'},{y: 11.0, color: '#FF7D0A', name:'Druid'},{y: 0.01, color: '#ABD473', name:'Hunter'},{y: 19.2, color: '#00c77b', name:'Monk'},{y: 10.8, color: '#F58CBA', name:'Paladin'},{y: 0.07, color: '#9482CA', name:'Warlock'},{y: 23.6, color: '#C79C6E', name:'Warrior'}]
+,
+name: '20+ Endless Waves'
+}
+]
+
+};
+
+
+
+
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'ClassRepresentation',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Death Knight','Druid','Hunter','Mage','Monk','Paladin','Priest','Rogue','Shaman','Warlock','Warr ior'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+
+},
+
+yAxis: {
+max: 15,
+title: {
+text: 'Percent of Total',
+style: {
+fontSize: '16px',
+color: '#000',
+} 
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return this.series.name + '<br /><b>' + this.point.name + '</b> - '+ this.y +'%' ;
+}
+},
+
+title: {
+text: 'Patch 6.0.2 Class Representation',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+legend: {
+enabled: false,
+},
+
+series: [
+{
+data: [{y: 9.2, color: '#C41E3A', name:'Death Knight'},{y: 10.1, color: '#FF7D0A', name:'Druid'},{y: 11.7, color: '#ABD473', name:'Hunter'},{y: 8.9, color: '#69CCF0', name:'Mage'},{y: 6.7, color: '#00c77b', name:'Monk'},{y: 9.9, color: '#F58CBA', name:'Paladin'},{y: 9.0, color: '#FFFFFF', name:'Priest'},{y: 7.1, color: '#FFF569', name:'Rogue'},{y: 8.9, color: '#2459FF', name:'Shaman'},{y: 9.1, color: '#9482CA', name:'Warlock'},{y: 9.2, color: '#C79C6E', name:'Warrior'}]
+,
+name: 'Class Representation'
+}
+]
+
+};
+
+
+
+Highcharts.setOptions{
+colors: []
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'provingGroundsSingle',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Bronze', 'Silver', 'Gold', 'Endless 10', 'Endless 20', 'Endless 30'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: true,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false,
+}
+},
+
+tooltip: {
+formatter: function  {
+return '<b>' + this.series.name + '</b> - ' + this.y + '%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Proving Grounds Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+shared: true,
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'DPS',
+data: [46.6, 27.3, 8.3, 2.1, 1.4, 1.2],
+color: '#851919'
+
+}, {
+name: 'Healer',
+data: [16.0, 11.0, 4.6, 2.1, 1.3, 1.0],
+color: '#4cad52'
+
+}, {
+name: 'Tank',
+data: [14.0, 7.5, 2.1, 0.87, 0.60, 0.50],
+color: '#183069'
+
+}]
+
+};
+
+};
+</script> 
+<div id="provingGroundsAbs" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div><br>
+
+
+<div id="provingGroundsScaled" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div><br>
+
+
+<div id="provingGroundsSingle" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div><br>
+
+
+<div id="provingGroundsEndlessDPS" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div><br>
+
+
+<div id="provingGroundsEndlessHealer" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div><br>
+
+
+<div id="provingGroundsEndlessTank" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div><br>
+
+
+<div id="ClassRepresentation" width="50%" class="pgcharts">
+Don't see a chart? Enable javascript!
+</div>
+Blue Tweets
+PvP
+Thanks for screwing us Black Marketers over as well for buying PvP gear for 40k+ before you announce the Epic->Blue change.
+Contact @BlizzardCS. We'll sort you out. Sorry for the inconvenience. holinka https://twitter.com/holinka/status/537491019839729665
+
+Friend told me the Engineering Works Garrison spell, which does 500k AOE, works in Ashran. Seems silly, b/c it is silly. :O
+it has a PvP nerf holinka https://twitter.com/holinka/status/537637632797589504
+
+why is the 620 gear showing as 705 for pvp gear in bgs vs the stated 675? is it just a tooltip bug or what?
+.It's a tooltip bug holinka https://twitter.com/holinka/status/537663268500688896
+
+Just wondering if we can get a quick update on Ashran in terms of balancing and bug fixing, because honestly its a massive waste.
+we continue to fix bugs and balance it holinka https://twitter.com/holinka/status/537664750281175040
+
+Don't think the general idea of Ashran is just to get gear. It's to enjoy having an epic battle that lasts all day
+We may increase the honor once we feel better about faction balance. It was being abused. holinka https://twitter.com/holinka/status/537662986282745857
+
+I'm on Eonar. There are literally 3 other people in Ashran every time I've gone there. Cross server soon please?
+We re-paired during restarts last night. Let us know if your experience improves. holinka https://twitter.com/holinka/status/537667125595234304
+
+Lore
+... Or if they are simply a convenience thing. Please answer! Us roleplayers would love to know!
+In lore those portals probably aren't running 24/7. But a garrison commander could certainly order them opened. DaveKosak https://twitter.com/DaveKosak/status/537448299851042816
+
+Garrisons
+Extremely disappointed in lack of information on garrison invasions. Have not had a single one yet.
+We hear you, thanks to everyone for all of the info, it's been a big help. Muffinus https://twitter.com/Muffinus/status/537446827218317313
+
+
+
+Blizzard Art Update
+Blizzard has added another piece to the World of Warcraft: Warlords of Draenor Art gallery http://us.battle.net/wow/en/media/artwork/wow-warlords-of-draenor.
+
+
+http://media.mmo-champion.com/images/news/2014/november/thumb/wowx5-artwork-046-full.jpg http://media.mmo-champion.com/images/news/2014/november/wowx5-artwork-046-full.jpg

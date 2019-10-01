@@ -1,0 +1,105 @@
+chaud2013-10-05, 08:02 AM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> New Diablo III Console Avatar Outfits, The Orchestral Compositions of Aural Axiom, Wizard 3D Fan Art http://www.diablofans.com/news/2070-new-diablo-iii-console-avatar-outfits-the-orchestral-compositions-of-aural-axiom-wizard-3d-fan-art/
+
+<img src="http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Blue Posts, HS Highlights: Harrison Jones, Weekend NA & EU Tournament http://www.hearthpwn.com/news/161-blue-posts-hs-highlights-harrison-jones-weekend-na
+
+Heroic Paragons of the Klaxxi Videos
+Method http://www.wowprogress.com/guild/eu/twisting-nether/Method and Blood Legion http://www.wowprogress.com/guild/us/illidan/Blood+Legion have released their videos for Paragons of the Klaxxi.
+
+
+<object width="853" height="480"><param name="movie" value="//www.youtube.com/v/ejyuy9PI8Kc?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/ejyuy9PI8Kc?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="853" height="480" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+<object width="853" height="480"><param name="movie" value="//www.youtube.com/v/FVzeDGp9Gag?hl=en_US&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/FVzeDGp9Gag?hl=en_US&amp;version=3" type="application/x-shockwave-flash" width="853" height="480" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+
+Patch 5.4 Hotfixes: October 2
+Classes
+
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight Forums http://www.mmo-champion.com/forums/269-Death-Knight / Skills http://www.wowdb.com/spells/class-abilities/death-knight / Talent Calculator http://www.wowdb.com/talent-calculator#Y
+
+General
+
+Resolved a visual issue caused by Death Knights using a Glyphed version of Horn of Winter http://ptr.wowdb.com/spells/57330 while transformed by the Rime http://ptr.wowdb.com/spells/59057 of the Time-Lost Mariner.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid / Skills http://www.wowdb.com/spells/class-abilities/druid / Talent Calculator http://www.wowdb.com/talent-calculator#s
+
+Class Armor
+
+Resolved certain situations that could cause the Tier-16 Guardian 4-piece heal-over-time effect to heal for less than intended.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman Forums http://www.mmo-champion.com/forums/276-Shaman / Skills http://www.wowdb.com/spells/class-abilities/shaman / Talent Calculator http://www.wowdb.com/talent-calculator#c
+
+General
+
+To help address issues with input lag, Stormlash Totem http://ptr.wowdb.com/spells/120668 Stormlash effect now has a 20% to activate but deals 5 times more damage down from a 100% chance to activate. Overall damage output should remain unchanged.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock Forums http://www.mmo-champion.com/forums/277-Warlock / Skills http://www.wowdb.com/spells/class-abilities/warlock / Talent Calculator http://www.wowdb.com/talent-calculator#k
+
+Affliction
+
+Haunt http://ptr.wowdb.com/spells/48181 should no longer incorrectly increase the damage of non-periodic spells.
+
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior Forums http://www.mmo-champion.com/forums/278-Warrior / Skills http://www.wowdb.com/spells/class-abilities/warrior / Talent Calculator http://www.wowdb.com/talent-calculator#E
+
+General
+
+Resolved an issue with Whirlwind http://ptr.wowdb.com/spells/1680 where polearms equipped in the off-hand slot were not hitting enemies.
+
+
+
+
+Raids, Dungeons, and Scenarios
+
+Siege of Orgrimmar
+
+Malkorok
+
+Resolved an issue where Malkorok may sometimes fail to respawn after a soft reset of the raid instance on Heroic difficulty.
+
+Thok the Bloodthirsty
+
+Creatures leading up to the encounter with Thok the Bloodthirsty are now skinnable.
+
+
+
+
+
+
+Debugging Raid Lag in 25s
+This is an issue that I personally care about tremendously, and it’s no exaggeration to say it’s discussed nearly daily in some capacity, among members of the design team and with our gameplay and server engineers. We made a number of changes to spells in patch 5.4, tweaking periodic and area-of-effect heals like Healing Rain to massively reduce the number of discrete healing events yielded by each spellcast while keeping overall throughput largely similar. Since 5.4 has released, we’ve continued to make performance improvements to effects like Soul Link batching up multiple damage events into a single heal to you and your pet rather than triggering a dozen tiny heals when you AoE a group of creatures, and our investigation continues. We know that it doesn’t matter how well-designed or fun a boss encounter is in the abstract if you have to struggle with basic control elements while facing it.
+
+Continued feedback and data from players who experience the specific type of input delays described in the excellent original post of this thread would be helpful and appreciated. But while I am no technical expert, it is important to note that “lag” can be a potentially misleading catch-all term that is used to describe a variety of different types of problems. The hallmark of the input delay issue described at the outset of this thread is that it occurs despite having consistently high FPS and low ping to the server. Some of the more recent reports of sharp FPS dips almost certainly have other causes. For example, for players reporting massive framerate drops when entering Norushen’s trials, the most likely cause lies with a UI mod that needs to be updated or replaced likely a unitframe mod in particular. Other cases of poor framerate in the outdoor areas of the raid are more likely a video card or graphics settings issue. Those are valid concerns for feedback and discussion, but would better be directed to the Technical Support forums for discussion there. 
+
+If you’d like to discuss the specific type of performance issue outlined at the start of this thread, including updated examples of Siege of Orgrimmar fights where the problem is most apparent, or whether there has been noticeable improvement since 5.4, that would be very welcome.
+
+
+Virtual Realms and High Population Realms
+Sorry to burst the bubble, but Connected Realms are only targeted for low populated servers, and Kazzak is high/full server... so it won't be connected. At least not in the near future. 
+The primary purpose of the connected realms feature is indeed to improve the situation on low population realms, to reinvigorate said realms. Currently that means that some of the highest population realms will not be connected with other realms, but it is a possibility that this may change in the future.
+
+We are very much aware that we have some high population realms that have a less than optimal faction balance, but the situation on those particular realms is a harder one to resolve exactly because the population is already ator close to capacity there. The Connected Realms technology implemented with the latest patch will allow us to do some great things to improve the population on many realms, but there are still technical limitations on how high a population the system can manage, and this means that it is very hard to improve things like faction balance on realms that have a very high population. Perhaps we will be able to expand or evolve the connected realms technology in the future so that it can help improve faction balance on all realms, but although this is something we can look into for sure, it is not certain that this will be possible. 
+
+Saying this doesn't mean that we are just going to ignore the situation on those high population realms, it just means that it may be a while longer before we have a proper solution that can resolve that particular issue... it is not an option to make players change faction or transfer to another realm against their will, and that means a proper solution will have to be one that doesn't involve forcing people. 
+
+Once realms have been connected and the populations on currently low and medium realms are healthy again, then perhaps things like FCMs from current very high population realms to the connected realms will become more attractive.
+
+
+Blue Posts
+Cross Realm Heirlooms
+We've talked a bit more about our plans in recent interviews. We're working on some ideas to get things like tabards and heirlooms out of inventory slots, as well as "toy-like" items, in a way that's similar to pets and mounts. Soooooo, yup! Blue Tracker http://blue.mmo-champion.com/topic/273642-cross-realm-heirlooms-still-planned/ / Official Forums http://us.battle.net/wow/en/forum/topic/10160426120?page=1#6
+
+Raid Finder
+I remember when people were begging blizzard to change the loot system and implement a working LFR. Why are the same people who are using flex Crying about LFR when You can separate yourself from the horrors of the pug? 
+One cause is a cognitive bias called projection bias. Essentially living inside your own head your entire life makes it exceedingly difficult to understand how others do not also live your same life, think your same thoughts, and hold your same beliefs. In many cases it's quite frustrating to try to empathize and understand why you yourself may not be the center of the universe, which generally results in one 'acting out' in various ways. We're all guilty of this behavior. There are also brain-chemical reasons that exist to help us form tighter bonds with those like us safety in numbers, but be antagonistic against those not like us self preservation. We all do this to some degree every day.
+
+So, in short: the internet. Blue Tracker http://blue.mmo-champion.com/topic/273654-lfr-why-the-hate/ / Official Forums http://us.battle.net/wow/en/forum/topic/10161146150?page=1#10
+
+
+Fan Art
+Today we are looking at some nice fan art by Bayard Wu http://bayardwu.cghub.com/.
+
+
+<div class="gallery" id="bayardwuart">http://media.mmo-champion.com/images/news/2013/october/thumb/015_max.jpg http://media.mmo-champion.com/images/news/2013/october/015_max.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/283_max.jpg http://media.mmo-champion.com/images/news/2013/october/283_max.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/437_max.jpg http://media.mmo-champion.com/images/news/2013/october/437_max.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/736_max.jpg http://media.mmo-champion.com/images/news/2013/october/736_max.jpg </div>

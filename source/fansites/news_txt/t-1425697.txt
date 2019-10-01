@@ -1,0 +1,256 @@
+chaud2013-12-22, 10:02 PM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> 50 More Legendary Items Gallery http://www.diablofans.com/news/47893-50-more-legendary-items-gallery-jaetchs-torrent
+
+Armory Stats - Legendary Quest Line Achievements
+Today we are taking a look at the legendary quest achievement completion rate of players. Now that achievements are account wide, we can group characters by account and get an idea of what percentage of players not characters have completed an achievement.
+
+In this case, the final achievement requires you to obtain a legendary cloak, kill Garrosh, and finally complete a quest. This means that the number of players who have the legendary cloak is slightly higher than the number who have the final achievement, as some players have killed Garrosh, have the cloak, but never did the quest. 
+
+The data used today is a sample of 5.7 million characters from 2 million accounts, with at least one character on the account that was active after Nov 15. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. You can leave suggestions for future stat posts in the comments!
+
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#55C949']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'legendaryCloakMainChart',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Chapter I', 'Chapter II', 'Chapter III', 'Chapter IV', 'Chapter V'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed Legendary Quest Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 55.1, color: '#81CCAA', name:'Chapter I'},{y: 39.1, color: '#81CCAA', name:'Chapter II'},{y: 25.6, color: '#81CCAA', name:'Chapter III'},{y: 25.4, color: '#81CCAA', name:'Chapter IV'},{y: 19.4, color: '#81CCAA', name:'Chapter V'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+};
+</script> 
+<div id="legendaryCloakMainChart" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+
+Armory Stats - Legendary Weapon Feat of Strength Achievements
+Someone in the comments asked about the number of people with legendary weapons, so here is some bonus data from the same sample as above. Keep in mind this is just a snapshot of who has the Feat of Strength Achievements and was active on at least one character after Nov 15.
+
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#FF8000']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'legendaryWeps',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Thunderfury, Blessed Blade of the Windseeker', 'Sulfuras, Hand of Ragnaros', 'Thori\'dal, the Stars\' Fury', 'Warglaives of Azzinoth', 'Dragonwrath, Tarecgosa\'s Rest', 'Fangs of the Father', 'Shadowmourne', 'Val\'anyr, Hammer of Ancient Kings', 'Atiesh, Greatstaff of the Guardian'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Count',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+
+title: {
+text: 'Number of Players that Have Legendary Weapon Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [{
+name: 'Count',
+data: [110943, 96569, 65657, 46327, 39380, 33786, 31264, 12517, 419]
+
+}]
+
+};
+
+};
+</script> 
+<div id="legendaryWeps" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+Blue Tweets
+We have finally gone through all of the tweets made by Ghostcrawler https://twitter.com/OccupyGStreet/ while he was still a developer. Now he is off on a beach somewhere https://twitter.com/OccupyGStreet/status/412692088895983616/photo/1/large, but still offering his opinion https://twitter.com/OccupyGStreet/status/414819543597334528 on Twitter. 
+
+
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7666760.js"></script>
+<noscript><a href="http://polldaddy.com/poll/7666760/">Would you like to see Ghostcrawler tweets? Not mixed in with the Blue Tweets, but in their own section</a></noscript>
+
+If you want to follow or contact the developers on Twitter, take a look at Celestalon https://twitter.com/Celestalon PvE, Holinka https://twitter.com/holinka PvP, Chris Robinson https://twitter.com/artofcgrobinson Art, Dave Kosak https://twitter.com/davekosak Story, Dave Maldonado https://twitter.com/Dave_Maldo Game Design.
+
+Classes 
+Base damage/healing on spells is removed too. All from scaling. Equal scaling for all! Source https://twitter.com/Celestalon/status/407642737664483328
+Curious, naked casters have 0 spellpower now; will base intellect give spellpower in 6.0?
+Likely, yes. Source https://twitter.com/Celestalon/status/407985649023582208
+
+How do you decide which spells to remove from classes? Consecration and auras were core features to paladins. Totems to shamans
+It's tough; every ability is special to somebody. Generally, cut what takes up keybinds, but isn't needed to make it fun. Source https://twitter.com/Celestalon/status/407973492550688768
+I realize that's rather vague. It's a very subjective question. Preserving and improving gameplay is the primary goal here. Source https://twitter.com/Celestalon/status/407973701498322944
+
+Would you gentleman be willing to touch on what abilities, or types of abilities you've looking at removing in WoD?
+We're currently exploring removing CC abilities and redundant DPS/healing cooldowns. Source https://twitter.com/holinka/status/407588872864808960
+if you remove cc abilities it's gonna take 95% of coordination out of the game.. just run in and do dmg..
+He didn't mean *all* CC abilities. Source https://twitter.com/Celestalon/status/407593422715764736
+Yeah "some CC abilities" Source https://twitter.com/holinka/status/407595446740074496
+Care to give one example you guys are discussing?
+Not really :-D This is a case where if you only see one class's changes, that class will freak. Whole picture needed Source https://twitter.com/holinka/status/407655696268681217
+Can you give us the whole picture? 
+Soon™. Source https://twitter.com/Celestalon/status/407656872594784256
+Really looking forward to what you come up with nevertheless.
+It will be iterative and obviously balance won't be perfect from the start. Source https://twitter.com/holinka/status/407659455258456064
+Hoping for an agile beta testing phase! 
+It will be important for us to get a lot of testing & feedback during beta. Want to encourage alot of participation Source https://twitter.com/holinka/status/407690134969020417
+
+removing any CC is a design shift away from strategic dungeon gameplay. Warlords of Faceroll
+I think you misunderstood what Holinka was saying. See further tweets with clarification. Source https://twitter.com/Celestalon/status/407632059180388353
+how else can 'removing some CC abilities' be interpreted? Are there just too many?
+Yes, most definitely. Source https://twitter.com/Celestalon/status/407632870929219584
+Jumping from [Removing some of the tons of CC] to [Dungeons no longer require strategy] is a humongous incorrect leap. Source https://twitter.com/Celestalon/status/407634070944743424
+this would impact both pve and pvp, yes? Will dungeons require CC? Strategy?
+There will still be CC, and it will still be just as strategically valuable in dungeons. Source https://twitter.com/Celestalon/status/407634289765797889
+as a prot warrior feeling marginalized in my role, removing CC only exacerbates those feelings. Like tanks only matter 4 raiding
+Not at all the case. Tanks are definitely needed for dungeons. Not sure how this affects that at all. Source https://twitter.com/Celestalon/status/407635301029273601
+tanks in 5 mans are only relevant in the beginning, gear overtakes and healing and dps survivability reign.
+A I'd disagree with that until there's an absolutely massive gear difference. B What does removing some CC have to do with that? Source https://twitter.com/Celestalon/status/407636103093444608
+
+What do you think about squishing mana to a solid 1000? Huge numbers make no sense when it's static anyway!
+It'll be squished to something comparable to health. Source https://twitter.com/Celestalon/status/407608379981299712
+
+Note that rogues don't have redundant dps cooldowns, that is all!
+We actually like DPS cooldowns that have gameplay changes e.g. Shadowdance than "Moar damage" Source https://twitter.com/holinka/status/407656752532836352
+
+Absolutely, we saw that in Mists but I'm just cautioning that I'm afraid of where it may lead. I really like AM.
+We really like Active Mitigation as well; it's turned out quite well. Source https://twitter.com/Celestalon/status/407603572029665280
+
+a while back mr said hunters / rogues would get an overhaul next x-pac, just wondering if still happening? Thanks!
+"Overhaul", no. We want to better distinguish their different specs. That's not an "overhaul" at all, though. Source https://twitter.com/Celestalon/status/407602399398752256
+
+Why does encounter design come first, rather than class balance?Encounters don't require insane dmg> players don't need insane dmg
+They are pretty interwoven and there's a lot of back and forth between the two teams. The class team has a lot of customers. Source https://twitter.com/holinka/status/407589134400634880
+
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk Forums http://www.mmo-champion.com/forums/341-Monk / Skills http://www.wowdb.com/spells/class-abilities/monk / Talent Calculator http://www.wowdb.com/talent-calculator#o
+I never want to go back to Jab Jab Uplift, I just like how the two styles integrate easily.
+The problem is cherrypicking. Don't want to allow you to pick the best parts of both. Source https://twitter.com/Celestalon/status/407609885275078656
+Thus, we need to have some cost to switching modes. Doesn't take much; 1 GCD may suffice. Source https://twitter.com/Celestalon/status/407610171888660480
+Would FW still maintain the "DPS healer" model that we were sold on? Will it be "viable?"
+Yes. Separate stance allows us to balance it separately. Source https://twitter.com/Celestalon/status/407610884203114496
+Is this going to make mistweaving gimped w/o stance swapping to fist?
+Gimped? At what? Maximum HPS is purely Mistweaving, no Fistweaving. Source https://twitter.com/Celestalon/status/407611435053613056
+
+So to clarify... If I want to heal I have to channel?
+If you want to do maximum HPS, yes, Mistweavers gameplay involves channeling. Source https://twitter.com/Celestalon/status/407610571354165248
+
+Just to add to this, what do you plan on doing with fistweaving?
+Both are large concerns that we intend to address. Preserving Fistweaving, but it'll be a separate stance. Source https://twitter.com/Celestalon/status/407606761344868353
+Wait wait wait, by seperate stance do you mean SotFT? Will FW be energy based?
+No, new stance. No, still mana. No, not at all like Chakra. Source https://twitter.com/Celestalon/status/407608081556582400
+Are you aiming to keep the same seamless fusion between DPS and healing. I miss 5.0 fw. 
+What do you mean by 'seamless fusion'? If you mean Jab-Jab-Uplift, no. No cherrypicking. Source https://twitter.com/Celestalon/status/407608846828326912
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin Forums http://www.mmo-champion.com/forums/273-Paladin / Skills http://www.wowdb.com/spells/class-abilities/paladin / Talent Calculator http://www.wowdb.com/talent-calculator#I
+Hiya! Quick Question, so you have fistweaving, and atonement. Any plans for a paladin seems a natch or druid version in WoD?
+Druids already have it in Dream of Cenarius. Seal of Faith is doing that for Paladins, though in a different way. Source https://twitter.com/Celestalon/status/407985137645666304
+Seal of Faith=terrible talent, scrap it
+I suppose that's better feedback than none at all, but reasoning and thoughts would be even better. Source https://twitter.com/Celestalon/status/408005167259217920
+Unless you give holy a reliable baseline dps HP generator. /4
+Assume you have access to all of the spec's builders/finishers that you want. Source https://twitter.com/Celestalon/status/408009266130190336
+Holy does not have a reliable dps builder.We have to spec SH for Judgment to grant HP&crusader strike is not reliable
+How is Crusader Strike not reliable? Source https://twitter.com/Celestalon/status/408010230014816256
+We don't have melee mechanics immunity for one.
+OK, what if you did, with Seal of Faith? Source https://twitter.com/Celestalon/status/408010898716901377
+I'd spec the talent to gain said immunity and use Insight anyway.
+I sincerely doubt that you'd give up your other lvl 100 talents for that. Could make it only work while active. Source https://twitter.com/Celestalon/status/408011760776400896
+Can seal swap dance if required on dangerous mechanic. Besides lvl 100 talents for H Pala = bad/situational
+Let's try to back up a step. Don't get stuck in 'how' nitpicking. Feedback on the general intent of the talent? Source https://twitter.com/Celestalon/status/408015942384234496
+The biggest issue is that, as a paladin, DPS-based healing doesn't feeling natural.
+How so? It'd be new functionality that you're not used to, but that could be said for anything. Source https://twitter.com/Celestalon/status/408012379369115648
+Talenting into Stance Dancing just sounds horrible period in both feel and power.
+The intent is no dancing. It's a committed thing. Source https://twitter.com/Celestalon/status/408018020800270336
+You can't really expect a healer not to dance, too many variables in a fight
+You can expect them not to dance if they aren't able to. Source https://twitter.com/Celestalon/status/408018252023885824
+
+
+Icy Veins Christmas Contest Voting
+The 20 finalists in the Icy Veins Christmas Contest http://www.icy-veins.com/forums/topic/4141-christmas-contest-final-voting/ have been selected and are now being voted on!
+
+
+<div class="gallery" id="ivCCGal">http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest01.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest01.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest02.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest02.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest03.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest03.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest04.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest04.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest05.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest05.jpg 
+http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest06.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest06.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest07.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest07.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest08.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest08.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest09.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest09.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest10.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest10.jpg 
+http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest11.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest11.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest12.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest12.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest13.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest13.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest14.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest14.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest15.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest15.jpg 
+http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest16.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest16.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest17.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest17.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest18.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest18.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest19.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest19.jpg http://media.mmo-champion.com/images/news/2013/december/thumb/ivContest20.jpg http://media.mmo-champion.com/images/news/2013/december/ivContest20.jpg</div>

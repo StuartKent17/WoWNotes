@@ -1,0 +1,194 @@
+chaud2011-11-19, 07:58 AMDiablo 3 - Today we have Beta 6 Screenshots and a Blue Post on Monster Affixes http://www.diablofans.com/news/992-diablo-3-beta-patch-6-screenshots-monster-affixes/! I will be newsing D3 news regularly in one short line since more than half of the readers bought the annual pass anyway. 
+
+PTR Back to Release Build
+Another Release flagged PTR build 15005 was pushed recently with no significant changes. Don't forget that Season 10 is ending http://blue.mmo-champion.com/topic/205701/pvp-season-10-ending-soonon November 29, just around the time that 4.3 should go live.
+
+
+http://media.mmo-champion.com/images/news/2011/november/ptrReleaseAgain.jpg http://media.mmo-champion.com/images/news/2011/november/ptrReleaseAgain.jpg
+
+
+Statistics: Class Balance and Dragonwrath
+One of the more popular requests for a Statistics post has been a class balance type of post. For the first graph we simply took the class balance for characters that have earned more than 5k Valor points, resulting in a sample size of roughly 1.8 million characters from the US and EU. This helps to remove the massive amount of alts http://www.mmo-champion.com/content/2552-PTR-Test-Build-Achievements-and-Honor-Kills-Steam-Compromise-Annual-Pass we saw last time. Nothing too unexpected here, warlocks and rogues are still coming in last place. 
+
+The second graph shows you how many new Dragonwrath, Tarecgosa's Rest http://db.mmo-champion.com/i/71086/dragonwrath-tarecgosas-rest/ were created each week. The slight decrease in the last displayed week may be due to the frequency of our data updates, so regard it with some skepticism.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+
+<script> var chart;
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#4768C4', '#E01B6A']
+};
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'charBalanceOver5k',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: ['Death Knight','Druid','Hunter','Mage','Paladin','Priest','Rogue','Shaman','Warlock','Warrior'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return this.point.name + ' - '+ this.y +'%';
+}
+},
+
+title: {
+text: 'Class Balance of Characters with 5000+ Valor Points Earned',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 9.8, color: '#C41E3A', name:'Death Knight'},{y: 13.9, color: '#FF7D0A', name:'Druid'},{y: 9.8, color: '#ABD473', name:'Hunter'},{y: 9.7, color: '#69CCF0', name:'Mage'},{y: 15.4, color: '#F58CBA', name:'Paladin'},{y: 10.6, color: '#FFFFFF', name:'Priest'},{y: 4.9, color: '#FFF569', name:'Rogue'},{y: 10.4, color: '#2459FF', name:'Shaman'},{y: 5.6, color: '#9482CA', name:'Warlock'},{y: 9.9, color: '#C79C6E', name:'Warrior'}],
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'legendaryStaff',
+zoomType: 'x',
+spacingRight: 20,
+backgroundColor: '#efeedc'
+},
+title: {
+text: 'Number of New Dragonwrath Staves Per Week',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+subtitle: {
+text: document.ontouchstart === undefined ?
+'Click and drag in the plot area to zoom in' :
+'Drag your finger over the plot to zoom in'
+},
+xAxis: {
+type: 'datetime',
+maxZoom: 14 * 24 * 3600000, // fourteen days
+title: {
+text: null
+},
+startOnTick: false,
+showFirstLabel: false
+},
+yAxis: {
+title: {
+text: 'Number of Characters',
+style: {
+fontSize: '16px',
+color: '#000',
+fontWeight: 'bold'
+}
+},
+startOnTick: true,
+showFirstLabel: false
+
+},
+tooltip: {
+shared: true 
+},
+legend: {
+enabled: false
+},
+plotOptions: {
+
+areaspline: {
+animation: false,
+lineWidth: 3,
+marker: {
+enabled: true,
+states: {
+hover: {
+enabled: true,
+radius: 5
+}
+}
+},
+shadow: false,
+states: {
+hover: {
+lineWidth: 3 
+}
+}
+}
+},
+
+series: [{
+type: 'areaspline',
+name: 'Achievement ID 5839 Characters',
+pointInterval: 7 * 24 * 3600 * 1000,
+pointStart: Date.UTC2011, 7, 09,
+data: [
+2 , 24 , 107 , 173 , 229 , 226 , 290 , 298 , 383 , 513 , 575 , 888 , 1121 , 1062 ]
+}]
+};
+
+
+};
+</script> 
+
+
+<div id="charBalanceOver5k" style="style="width:900px;margin-left: auto;margin-right: auto;"">
+Don't see a chart? Enable javascript!
+</div>
+<br />
+
+<div id="legendaryStaff" style="style="width:900px;margin-left: auto;margin-right: auto;"">
+Don't see a chart? Enable javascript!
+</div>
+
+
+Blizzard Art Gallery Update
+The World of Warcraft: Wrath of the Lich King Art gallery http://us.battle.net/wow/en/media/artwork/wow-wrathhas been updated with five pieces representing the Warcraft universe.
+
+
+http://media.mmo-champion.com/images/news/2011/november/thumb/dungeon-nexus04-full.jpg http://media.mmo-champion.com/images/news/2011/november/dungeon-nexus04-full.jpg http://media.mmo-champion.com/images/news/2011/november/thumb/env-ice-crown-glacier-full.jpg http://media.mmo-champion.com/images/news/2011/november/env-ice-crown-glacier-full.jpg http://media.mmo-champion.com/images/news/2011/november/thumb/env-zuldrak-full.jpg http://media.mmo-champion.com/images/news/2011/november/env-zuldrak-full.jpg 
+http://media.mmo-champion.com/images/news/2011/november/thumb/region-coldarra-full.jpg http://media.mmo-champion.com/images/news/2011/november/region-coldarra-full.jpg http://media.mmo-champion.com/images/news/2011/november/thumb/region-storm-peaks04-full.jpg http://media.mmo-champion.com/images/news/2011/november/region-storm-peaks04-full.jpg 
+
+
+The Daily Blink - When Skyrim Meets WoW
+The Daily Blink http://www.thedailyblink.com/2011/11/when-skyrim-meets-wow/ hopped on the Skyrim http://www.mmo-champion.com/threads/916418-Megathread-Skyrim-Discussion bandwagon this week!
+
+
+http://media.mmo-champion.com/images/news/2011/november/2011-11-16-231.jpg http://www.thedailyblink.com/2011/11/when-skyrim-meets-wow/

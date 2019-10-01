@@ -1,0 +1,52 @@
+Stoy2018-06-15, 07:27 PMDev Watercooler: World of Warcraft Classic
+Blizzard just released a blog post to discuss updates on Classic WoW.
+Greetings! Development of World of Warcraft Classic is underway, and we’re very excited to share some of the challenges and solutions we’re working on. As we mentioned last BlizzCon, the process of restoring the classic game is not straightforward, and it’s important to us to take the time and effort to get it right—this includes poring over numerous game versions, data, and code; meticulously scrutinizing all the changes we’ve made over the years. Rest assured: The WoW Classic team is hard at work making it a reality, and we’re at a point in development where we’re ready to share some of the things we’ve been working on.
+
+WoW Classic: First Prototype
+
+The first—and among the most important—decision we had to make was which version of the game to focus on. As many of you have noted, the classic period was two years long and full of changes. Core features like Battlegrounds were introduced in patches after WoW’s original launch, and class design similarly changed over time. After careful consideration, we decided on Patch 1.12: Drums of War as our foundation, because it represents the most complete version of the classic experience.
+
+Once we had our starting point, we began taking stock of what we had in the source code and what we could make available, which included restoring the original development database from archival backups. After stitching various key pieces together, we had a locally rebuilt version of Patch 1.12 running internally. The team could create characters and do basic questing and leveling—and dying, which we did many times. For testing purposes. Obviously.
+
+Our initial runs exposed a few expected issues: the game sometimes crashed, didn’t recognize our modern video cards, and was incompatible with our current login system. That first pass also couldn’t support any of our modern security and anti-cheating capabilities. Clearly we had a lot of work to do to make WoW Classic live up to the Blizzard standard of quality, and deliver the experience players want.
+
+The Path Forward: Second Prototype
+
+Speaking of engineering, World of Warcraft is a very data-driven game, which means the basic code is flexible and the specific way it behaves is controlled by information contained in databases. Things like quests, monsters, items, and the rules for how these all interact are defined by the designers and artists in data.
+
+So we asked ourselves, would it still be possible to deliver an authentic classic experience if we took our modern code, with all its back-end improvements and changes, and used it to process the Patch 1.12 game data? While that might seem counterintuitive, this would inherently include classic systems like skill ranks, old quests and terrain, talents, and so on, while later features like Transmog and Achievements would effectively not exist because they were entirely absent from the data. After weeks of R&D, experimentation, and prototyping, we were confident we could deliver the classic WoW content and gameplay without sacrificing the literally millions of hours put in to back-end development over the past 13 years.
+
+While our initial effort helped us determine the experience we wanted to provide, this second prototype really defined how we’d get there. Starting from a modern architecture—with all its security and stability changes—means the team’s efforts can be focused on pursuing an authentic classic experience. Any differences in behavior between our development builds and the patch 1.12 reference can be systematically cataloged and corrected, while still operating from a foundation that’s stable and secure.
+
+Digging In
+
+So what does it take to recreate an authentic classic experience with modern engineering? Let’s start by categorizing the different types of game data that make up WoW:
+
+
+Table data: This kind of information is almost always represented as numbers. How many hit points a creature has, the amount of Strength an item grants, or where and when certain creatures spawn, are all examples of the numerical data we store in our databases. We can also store and enforce relationships between different pieces of data.
+File data: This is often very dense data like 3D models, textures, animations and terrain. Our user interface is built up from XML and Lua files. Many of the art files do not use the same file formats that commercial art tools spit out. Our build pipeline takes these raw art files and translates them into something optimized for our game to read and process.
+Lua scripts: Some features are driven by Lua scripts written by designers, allowing them to easily define custom behaviors for server-side logic without requiring deep engineering knowledge.
+
+
+How Engineering Has Changed
+
+One challenge we face is that all the classic data is in the original format used at launch, but that format has changed substantially in the intervening years. Major work needs to be done in this area to make the modern client compatible with the classic data.
+
+For example, spells could originally only perform three actions on the spell’s target. In table form, that looked something like this:
+
+
+https://media.mmo-champion.com/images/news/2018/june/classicchart1.jpg https://media.mmo-champion.com/images/news/2018/june/classicchart1.jpg
+
+As you can see, there is a lot of space taken up by ‘Nothing’. Over the course of WoW’s lifetime, we’ve improved our data design and normalized much of our database data. Today, that same data would be separated out like this:
+
+
+https://media.mmo-champion.com/images/news/2018/june/classicchart2.jpg https://media.mmo-champion.com/images/news/2018/june/classicchart2.jpg 
+https://media.mmo-champion.com/images/news/2018/june/classicchart3.jpg https://media.mmo-champion.com/images/news/2018/june/classicchart3.jpg
+
+In this form, there is much less wasted space and spells are no longer limited to three effects. But before we can load any database data, we need to transform the old data layout into the new one. This is not limited to spells, as almost every game system including items, creatures, player characters, spawning, AI, and more has had its database layout altered over the years.
+
+Looking Ahead
+
+All the work we’re doing will ultimately allow us to recreate an authentic classic experience on a platform that is much more optimized and stable, helping us avoid latency and stability issues. Additional modern improvements will include modern anti-cheat/botting detection, customer service and Battle.net integration, and similar conveniences that do not affect the core gameplay experience.
+
+We are looking forward to the challenges ahead and share your passion for the classic game; every code check-in data conversion we make brings WoW Classic closer to providing that authentic experience you—and we—want. Thanks for joining us on this journey.

@@ -1,0 +1,143 @@
+chaud2013-10-20, 10:33 PM<img src="http://media.mmo-champion.com/images/news/2011/november/d3.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> More Paragon 2.0 Clarifications, More on "Create a Legendary", Community Commentary: Quality of Life, Curse Weekly Roundup http://www.diablofans.com/news/2109-more-paragon-20-clarifications-more-on-create-a-legendary-community-commentary-quality-of-life-curse-weekly-roundup/
+
+Armory Stats - Player Raid Completion Rates
+Today we are taking a look at the overall raid completion rate of players. Now that achievements are account wide, we can group characters by account and get an idea of what percentage of players not characters have completed a raid at least once, based on earning the achievement for the final wing. 
+
+The data used today is a sample from 6.3 million characters from 2.5 million accounts. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. You can leave suggestions for future stat posts in the comments!
+
+<script type="text/javascript" src="http://media.mmo-champion.com/js/highcharts.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: ['#55C949']
+};
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'stillalivechart',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Galleon', 'Sha of Anger', 'Mogu\'shan Vaults', 'Heart of Fear', 'Terrace of Endless Spring', 'Nalak', 'Ooondasta', 'Throne of Thunder', 'Ordos', 'Siege of Orgrimmar Wing 1', 'Siege of Orgrimmar Wing 4'],
+labels: {
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Completed a Raid on Any Difficulty',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 60, color: '#81CCAA', name:'Galleon'},{y: 75, color: '#81CCAA', name:'Sha of Anger'},{y: 76, color: '#81CCAA', name:'Mogu\'shan Vaults'},{y: 69, color: '#81CCAA', name:'Heart of Fear'},{y: 65, color: '#81CCAA', name:'Terrace of Endless Spring'},{y: 60, color: '#81A4CC', name:'Nalak'},{y: 50, color: '#81A4CC', name:'Ooondasta'},{y: 54, color: '#81A4CC', name:'Throne of Thunder'},{y: 10, color: '#E0BB79', name:'Ordos'},{y: 36, color: '#E0BB79', name:'Siege of Orgrimmar Wing 1'},{y: 2, color: '#E0BB79', name:'Siege of Orgrimmar Wing 4'}],
+
+name: '<b>Percent</b>'
+}
+
+]
+
+};
+
+};
+</script> 
+<div id="stillalivechart" width="50%">
+Don't see a chart? Enable javascript!
+</div>
+Blue Tweets
+Raid Finder
+GC, lack of tanks has to be one of the main problems you guys need to work on - 45+ min LFR queue as DPS, is just not cool. 
+It seems to have gotten worse with 5.4. We're looking at the data to try to understand what's going on. Source https://twitter.com/Ghostcrawler/status/389858726368145409
+If you want to know why there is less tanks. Please tank a lfr and you will have your answers.
+If that was the only issue, it would likely be a gradual decline not a sudden drop at 5.4. That implies it's flex or a bug. Source https://twitter.com/Ghostcrawler/status/390986088149286912
+
+then take a look at it before you say it doesnt guarantee everything.
+There are guys in LFR doing 10K dps because they don't realize that e.g. you should use abilities as fast as you can. Source https://twitter.com/Ghostcrawler/status/388719648419487744
+In that environment, being able to do any kind of PG will help teach that player how WoW combat should really be played. Source https://twitter.com/Ghostcrawler/status/388719876665126912
+And yet the enrage timers in SoO LFR are tuned as though this was not the case.
+Hitting enrage timers in LFR is nearly always a lack of understanding the mechanics rather than just low DPS. Source https://twitter.com/Ghostcrawler/status/388836780968906752
+That's still on us to fix, but we'd rather not just dial down all the mechanics until you can just ignore them. Source https://twitter.com/Ghostcrawler/status/388836864125202433
+My concern and experience is that SoO LFR seems to be tuned for a level of skill and gear that the mode no longer attracts.
+The feedback was very similar for ToT LFR until players knew the fights better. Source https://twitter.com/Ghostcrawler/status/389108952371171328
+
+No PG experience can be a substitute for the 10 years of raiding that many of us have, but it can serve as an introduction. Source https://twitter.com/Ghostcrawler/status/388720061407432704
+Did i get you wrong that it should be an additional prerequisite? Or would it either be ilevel or pgs?
+Yeah, we would never require PGs for LFR. It would just be a way to demonstrate that you didn't need the ilevel. Source https://twitter.com/Ghostcrawler/status/388839274788831232
+
+Just heard the best description of LFR "If someone tells me to eat a pile of crap for $10 million, I'll eat the pile of crap"
+I get that, but there are also heroic raiders who get bored once the loot stops rolling it. Source https://twitter.com/Ghostcrawler/status/388720423463944192
+So you can't just argue that every activity must be so fun that the rewards don't play into someone's desire to do it. Source https://twitter.com/Ghostcrawler/status/388720578632232960
+
+Please don't remove the ability to enter LFR purely on iLevel. Forcing PG medal would effectively shut off LFR for too many.
+The idea I floated, and Olivia even referenced, was PG letting you enter with a lower ilevel because you know what you're doing. Source https://twitter.com/Ghostcrawler/status/388435203690991616
+
+what is the future for lfr now you have split its community in two with flex raiding. it seems from in game play lfr is done.
+LFR is still more popular than flex. However we think flex will be more fun for many of our players so we don't mind some transition Source https://twitter.com/Ghostcrawler/status/387970442624892928
+
+Why is kick protection a thing? having people do nothing and be toxic intentionally is rather frustrating
+It was originally to protect folks in 5-player content from e.g. being kicked so they couldn't roll on loot. Source https://twitter.com/Ghostcrawler/status/391326436029505536
+We are considering that kick rules might be too strict on 25-player LFR, where one toxic player can affect a bunch of others. Source https://twitter.com/Ghostcrawler/status/391326607974998017
+
+I dont understand why people get so hyped about LFD being unsocial. It isnt.Without it, only a few would see content
+It's pretty unsocial but it still serves a valuable purpose. Source https://twitter.com/Ghostcrawler/status/390983634145923072
+
+Class Balance Discussion
+there are dozens of fan sites for that. The entire point of having an official forum is to talk to the devs directly.
+Just to be clear, that is not our goal for the official forums. Source https://twitter.com/Ghostcrawler/status/388726401563521024
+question and run stats on the collected data. Allows massive and robust sample.
+Agreed, but it has one massive downside, in that there is no back and forth discussion among players, which I really value. Source https://twitter.com/Ghostcrawler/status/388836093690269697
+Regardless, the forums serve two purposes: people complaining to Blizzard; people trolling those people.
+While that exists, I find that view a little cynical. There are good discussions with a lot of back and forth as well. Source https://twitter.com/Ghostcrawler/status/389109872668577792
+We learn a lot when there is back and forth between two sides, especially if we can ascertain why they feel a certain way. Source https://twitter.com/Ghostcrawler/status/389111565359656960
+
+I always see the same people trolling for nerfs and crusading against certain classes. Everyone Is OP except me
+As a team, we're a lot more interested in fun than balance. It's just for some players they are tightly connected. Source https://twitter.com/Ghostcrawler/status/388834025302810624
+And of course fun is subjective, so one can't just play the "X isn't fun for me - change it" card. Source https://twitter.com/Ghostcrawler/status/388834182954102784
+That there is too much content that requires balance and not enough content that encourages variety?
+It's concern, but we're a lot better at making the "balance" content than we are the "variety" content. Source https://twitter.com/Ghostcrawler/status/391326138498158592
+
+
+<img src="http://media.mmo-champion.com/images/news/2012/june/gw2g.png" style="margin-bottom:-2px; margin-right:0px; vertical-align:bottom" /> Guild Wars 2 Sale
+It looks like Guild Wars 2 is on sale today, but only until Sunday night at 11:59 PM PDT. This is the lowest sale price so far, so now is a decent time to pick up a copy if you wanted to give it a try. You can find regular GW2 news updates over at GW2Guru http://www.guildwars2guru.com/.
+
+
+http://media.mmo-champion.com/images/news/2013/october/gw2sale.jpg https://buy.guildwars2.com/en/ 
+
+
+Fan Art Update
+Blizzard has updated the art gallery http://us.battle.net/wow/en/media/artwork/trading-card-game/series8#/1 to feature ten new pieces.
+
+
+<div class="gallery" id="tcg061">http://media.mmo-champion.com/images/news/2013/october/thumb/tcg-series8-061-full.jpg http://media.mmo-champion.com/images/news/2013/october/tcg-series8-061-full.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/tcg-series8-062-full.jpg http://media.mmo-champion.com/images/news/2013/october/tcg-series8-062-full.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/tcg-series8-063-full.jpg http://media.mmo-champion.com/images/news/2013/october/tcg-series8-063-full.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/tcg-series8-064-full.jpg http://media.mmo-champion.com/images/news/2013/october/tcg-series8-064-full.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/tcg-series8-065-full.jpg http://media.mmo-champion.com/images/news/2013/october/tcg-series8-065-full.jpg 
+http://media.mmo-champion.com/images/news/2013/october/thumb/tcg-series8-066-full.jpg http://media.mmo-champion.com/images/news/2013/october/tcg-series8-066-full.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/tcg-series8-067-full.jpg http://media.mmo-champion.com/images/news/2013/october/tcg-series8-067-full.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/tcg-series8-068-full.jpg http://media.mmo-champion.com/images/news/2013/october/tcg-series8-068-full.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/tcg-series8-069-full.jpg http://media.mmo-champion.com/images/news/2013/october/tcg-series8-069-full.jpg http://media.mmo-champion.com/images/news/2013/october/thumb/tcg-series8-070-full.jpg http://media.mmo-champion.com/images/news/2013/october/tcg-series8-070-full.jpg </div>

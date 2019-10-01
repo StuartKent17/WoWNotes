@@ -33,7 +33,8 @@ var builds = {
     // Yeah I could just move it, fite me
     everything: [
       "source/**/*.html", 
-      "!" + news_path
+      "!" + news_path, 
+      "!" + news_path_txt, 
     ]
     // idk maybe a speculation variant 
 }
@@ -68,7 +69,24 @@ gulp.task('news', function () {
       
       done();
     }))
+    
+    .pipe(replace("&nbsp;", " "))
+    .pipe(replace("<p>", "<br/><p>"))
+    .pipe(replace("<ul>", "<br/><ul>"))
+    .pipe(html2txt(html2TextOpts))
+    .pipe(replace(/\]([a-zA-Z0-9]{1})/g, '] $1'))
+    .pipe(replace(/^([^:]+):\/\/([-\w._]+)(\/[-\w._]\?(.+)?)?$/ig))
+    .pipe(replace(/([a-zA-Z0-9]{1})\[/g, '$1 ['))    
+    .pipe(replace('(', ''))
+    .pipe(replace(')', ''))
     .pipe(gulp.dest(news_path_txt));
+});
+ 
+gulp.task('news2textfull', function () {
+  return gulp
+    .src([news_path_txt+"*.txt",'./concat/everything.txt'])
+    .pipe(concat('news2textfull.txt')) 
+    .pipe(gulp.dest('./concat/'));
 });
 
 

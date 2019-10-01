@@ -1,0 +1,101 @@
+chaud2015-06-10, 05:06 PMUpdate 9:30 PM EDT: Blizzard posted a Shipyard overview http://blue.mmo-champion.com/topic/376517-patch-62-preview-to-the-shipyard/#post1.
+
+Dev Watercooler – Flying in Draenor
+It looks like flight is finally coming to Draenor in Patch 6.2.x. You will earn flying by exploring the world from the ground first and completing:
+
+
+Explore Draenor http://ptr.wowdb.com/achievements/8935-explore-draenor - Explore the regions of Draenor.
+??? Treasure Hunter http://ptr.wowdb.com/achievements/9727-master-treasure-hunter - Discover 100 treasures of Draenor. Get this out of the way now with the HandyNotes DraenorTreasures http://www.curse.com/addons/wow/handynotes_draenortreasures addon
+Loremaster of Draenor http://ptr.wowdb.com/achievements/9923-loremaster-of-draenor - Complete the Draenor quest achievements.
+Securing Draenor http://ptr.wowdb.com/achievements/9562-securing-draenor - Complete the Draenor bonus objectives.
+Earn Revered with The Saberstalkers http://ptr.wowdb.com/factions/1850-the-saberstalkers, Order of the Awakened http://ptr.wowdb.com/factions/1849-order-of-the-awakened, and Hand of the Prophet http://ptr.wowdb.com/factions/1847-hand-of-the-prophet A / Vol'jin's Headhunters http://ptr.wowdb.com/factions/1848-voljins-headhunters H.
+
+
+We appreciate the spirited discussion on the topic of flying. The subject has brought out passionate viewpoints and sparked insightful conversations on our official forums and blogs, on community sites, and in chat channels. Your feedback has been a valuable part of the ongoing conversations within Blizzard as well, and today, we’d like to share some updated plans for how we’ll handle flight going forward.
+
+The Thrill of Discovery
+At the heart of the initial plan to restrict flight in Draenor even after players reach level 100 lies the design goal of providing the best moment-to-moment gameplay possible in the outdoor world. From navigating the lava flows of the Molten Front in Patch 4.2, to breaching the Thunder King’s stronghold in Patch 5.2, to reaching the heights of the Ordon Sanctuary on Timeless Isle in Patch 5.4, to uncovering secrets deep within Gorgrond’s jungles on Draenor, World of Warcraft is full of memorable moments that are only possible when players explore the world by ground. And as we’ve continued to develop content over the years, we’ve focused more and more on providing players with these kinds of experiences.
+
+However, while we firmly believe that keeping your feet on the ground is a key part of discovery in WoW, we also recognize that breaking free from those restrictions can be fun and rewarding as well, especially for those who’ve already fully experienced the game’s world content. With that in mind, we’re planning some changes in the near future that will allow players to enjoy their hard-earned flying mounts in Draenor—in a way that doesn’t compromise the excitement of ground-based exploration.
+
+Mastering the Outdoor World
+In an upcoming Public Test Realm build, we will be introducing a new meta-achievement called Draenor Pathfinder. You’ll earn this achievement in Patch 6.2 by mastering the outdoor environment of Draenor—exploring Draenor’s zones http://ptr.wowdb.com/achievements/8935-explore-draenor, collecting 100 treasures in Draenor http://ptr.wowdb.com/achievements/9728-grand-treasure-hunter, completing the Draenor Loremaster http://ptr.wowdb.com/achievements/9923-loremaster-of-draenor and Securing Draenor http://ptr.wowdb.com/achievements/9562-securing-draenor achievements, and raising the three new Tanaan Jungle reputations to Revered. Initially, this achievement will award a rylak mount: the Soaring Skyterror, one of the native beasts that roam Draenor’s skies. Players will remain ground-bound on Draenor until a small follow-up patch 6.2.x, when all players who have earned Draenor Pathfinder on at least one character will unlock the ability to fly in Draenor on all their level 90+ characters.
+
+We believe this strikes the right balance between ensuring ground-based content lives up to its full potential, while providing players who’ve already fully experienced Draenor’s outdoor world extra freedom to “break the rules.” This also provides a general blueprint going forward for content to come. Players will explore new and undiscovered lands from the ground, and then once they’ve fully mastered those environments—a notion that continues to evolve with each new expansion—they can take to the skies and experience the world from a new vantage point.
+
+Thank you for your heartfelt feedback. We’ll see you in and soon, above Tanaan Jungle.
+
+
+Armory Stats - Flying Achievements
+While not all of the flying related achievements are in, we can take a look at how people are doing on each achievement before everyone knew they would be required to fly. The used sample is 1.8 million players that have logged in since May 1.
+
+<script type="text/javascript" src="http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js"></script>
+<script> var chart; 
+$document.readyfunction {
+Highcharts.setOptions{
+colors: [ '#ADADAD', '#949494', '#727272', '#595959', '#6B8E23', '#426F42']
+};
+
+
+chart = new Highcharts.Chart{
+chart: {
+renderTo: 'flyingAch',
+defaultSeriesType: 'column',
+backgroundColor: '#efeedc'
+},
+
+xAxis: {
+categories: [ 'Explore Draenor', '50 Treasures', '200 Treasures', 'Loremaster of Draenor', 'Securing Draenor'],
+labels: {
+maxStaggerLines: 0
+}
+
+},
+legend: {
+enabled: false,
+},
+
+yAxis: {
+title: {
+text: 'Percent',
+style: {
+fontSize: '16px',
+color: '#000',
+}
+}
+},
+plotOptions: {
+column: {
+animation: false
+}
+},
+
+tooltip: {
+formatter: function {
+return '<b>' + this.point.name + '</b> - '+ this.y +'%';
+}
+},
+title: {
+text: 'Percentage of Players that Earned Flight Related Achievements',
+style: {
+color: '#000',
+fontSize: '18px',
+fontWeight: 'bold'
+}
+},
+credits: {
+enabled: false
+},
+series: [
+{
+data: [{y: 15.43, color: '#AD5D3E', name:'Explore Draenor'}, {y: 43.56, color: '#AD5D3E', name:'50 Treasures'}, {y: 5.94, color: '#AD5D3E', name:'200 Treasures'}, {y: 22.16, color: '#AD5D3E', name:'Loremaster of Draenor'}, {y: 3.72, color: '#AD5D3E', name:'Securing Draenor'}],
+
+name: '<b>Percent</b>'
+}]
+};
+
+};
+</script> 
+<div id="flyingAch" width="50%">
+Don't see a chart? Enable javascript!
+</div>

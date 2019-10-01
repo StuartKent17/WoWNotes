@@ -1,0 +1,222 @@
+chaud2012-07-15, 06:08 PMVale Faction Capital Portals
+Each faction's capital city in Vale of the Eternal Blossoms no longer has an Auction House. This room is now dedicated to portals! There are portals to the Horde and Alliance cities, as well as portals to Dalaran and Shattrath. 
+
+
+http://media.mmo-champion.com/images/news/2012/july/thumb/valePortals01.jpg http://media.mmo-champion.com/images/news/2012/july/valePortals01.jpg http://media.mmo-champion.com/images/news/2012/july/thumb/valePortals02.jpg http://media.mmo-champion.com/images/news/2012/july/valePortals02.jpg 
+
+
+Female Pandaren Face Options
+Are the female Pandaren done? I hope not. Scars or choice of base hair color would be welcomed. Please let us know something 
+The request for more facial options has been provided to the team, but as far as I'm aware, there are no plans to add.
+
+So far the only options are if you choose red skin you get red hair, black skin black hair ect. and you cant choose streakless.
+There should be an option for "solid" color hair already. It had been slated to be corrected in character creation.
+
+
+Beta Class Balance Analysis
+Is it still intended for block to have diminishing returns? I'm looking at some data this evening, and as far as I can tell we're getting exactly 1% block for every 1% mastery all the way up to around 38% block which is as high as my data set goes. If there were any meaningful DR on block i.e., a cap lower than 1000 or so, I should have seen some nonlinearity by that point. But it's perfectly linear.
+
+The data set is gathered from the character sheet, so it's possible though unlikely, in my mind that the character sheet block percentage just isn't updating properly. 
+Nope, Block chance does not DR.
+
+I haven't tested this myself, but I had read somewhere that the new weapon chain Living Steel Weapon Chain is designed to also be applied to ranged weapons. The spell description says "Requires One-Handed Axes, Two-Handed Axes, Bows, Guns, One-Handed Maces, Two-Handed Maces, Polearms, One-Handed Swords, Two-Handed Swords, Staves, Fist Weapons, Daggers, Crossbows"
+That is the intent, yes.
+
+Do we still need to wait another build before testing pet scaling, or can we get started once we drag ourselves away from pet battles?
+Yes, please go nuts. Warlock pet energy regen is something we are still futzing with so that may still be a little squirrely.
+
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight Forums http://www.mmo-champion.com/forums/269-Death-Knight
+So the question is, was blood tap meant to have a gcd and what was the thought process in adding one to the ability if it was meant to be added?
+We didn't want DKs to feel the need to macro it into every ability, which is how it was trending. DKs have a 1 sec GCD now and free globals so we don't think it's too much of a hardship.
+
+I just tested the new Army of the Dead with pet scaling fixes. At level 90 in full 483 PvP gear it dealt 297k damage. AoTD lasts 40s, so that's 7.43k DPS. It does not seem to be scaling any better than before.
+Just for comparison, how does an Army of the Dead compare to, say, a Scourge Strike, a Festering Strike, and 2 auto attacks? I don’t have numbers in front of me on that, but it seems like 297k would significantly outweigh that, which is what you’re giving up to Army well, plus 6sec of disease time, to be fair.
+
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid Forums http://www.mmo-champion.com/forums/270-Druid
+How are the devs feeling about Fae Empowerment?
+We’d definitely still like more feedback on Fae Empowerment. I don’t want to taint feedback too much with what we think about it, but I think it’s safe to say that it’s gotten a bit on the complex site, now that it provides the DPS boost we’re looking for. How it breaks up the rotation, and how it feels to use Faerie Fire rotationally, how that contributes to the feeling of repetitiveness, etc, are all things we’d love more feedback on.
+
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter Forums http://www.mmo-champion.com/forums/271-Hunter
+Is this intentional or has aimed shot just not been tweaked yet to use a more straightforward formula?
+We can give it a more sane formula. The damage it does is about in the right place.
+
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin Forums http://www.mmo-champion.com/forums/273-Paladin
+Hey GC, sorry to ask/bother you again -- but is Divine Purpose supposed to have synergy with Hammer of Wrath, that the tooltips are not telling us? Also asking because it also affects how valuable the talent is with this extra synergy -- since it affects gameplay in an execute phase.
+Just a bug left over from the Cataclysm version. Divine Purpose should proc from Word of Glory, Templar's Verdict, Inquisition, Eternal Flame, Shield of the Righteous, Light of Dawn and Divine Storm.
+
+As it stands now there are no useful glyphs for Holy PvE since Ascetic was removed, Blessed Life nerfed and, while Battle Healer was buffed, it's still weak.
+Every Holy paladin was taking those glyphs, which removed the choice about which glyph to use. Battle Healer is tricky to balance for Holy, because it wouldn't take much for every paladin to feel forced into melee, which isn't the intent. It should be an option.
+
+Is Sacred Shield limited to one target still? The talent would be tremendously better if it had a small target cap. Also just to confirm EF does not longer have a target cap? It's still pretty limited without one but just wanting to confirm.
+Sacred Shield is limit one. We could consider removing the target cap, but I suspect since it is free now you might see paladins trying to blanket a group and ignore their other spells, which would have gameplay and balance ramifications.
+
+Eternal Flame does not have a target limit. It is in nearly every way a Word of Glory that also has a hot component. One exception is that Eternal Flame does not work with Harsh Words.
+
+Is it intended for Eternal Flame not to consume Bastion of Glory because its not consuming it while WoG still is?
+Unintended. Fixed for next build.
+
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman Forums http://www.mmo-champion.com/forums/276-Shaman
+I am also wondering if we will see any Compensation for this nerf to our mana and our throughput as from what I seen we are not the top of the pile in healing or mana for beta. And like you pointed out it cuts out about 8% of our total healing and a big chunk of mana
+As I said before, Resurgence and Water Shield are where we would add back Resto shaman regen if needed. It felt a little low last week so we might do that. Determining whether healer mana is sufficient is a slow process for us because it takes lots of testing theoretical and in game under a variety of situations. It's impractical to "target dummy" healing.
+
+1. Lightning Shield does not appear to be able to proc Echo of the Elements. Intended?
+Intended.
+
+2. With Unleashed Fury, it appears that synchronized weapon swings might be suffering from a hidden cooldown on Static Shock.
+Another good catch. Fixed for next build.
+
+Can you tell us a bit about the changes to Stormlash Totem? Pre-patch i was getting 1mil dmg single target from two Stormlashes on a 10min test, Post-patch I got 220k on the same test. 
+The build you just got includes our latest pass at tuning Stormlash Totem. It is not intended to be on the same scale as Bloodlust in value to a raid. Some specs will get more benefit from it than others, but everyone should get at least something out of it. In particular, Stormlash will favor class abilities and passives that increase all damage, or that increase nature damage. But, in the grand scheme of things, Stormlash shouldn’t be a major impact on class/spec balance, even if one spec gets double the damage from it another spec does, since its total damage contribution isn’t a significant percent of a player’s total damage.
+
+Fundamentally, there’s a base Stormlash damage, which is currently but may be too strong 30% of SP or 20% of AP. Then, various attacks deal a percentage of that base damage. Auto attacks deal 40% of base for main-hands, and 20% for off-hands, and are normalized to a 2.6 weapon speed. Spells and abilities generally deal 100%, and are normalized to a 1.5 sec cast time. It generally only procs from direct non-periodic damage, but there are exceptions for Mind Flay, Malefic Grasp, and in the next build Drain Soul. Finally, we do customize these formulae for certain spells which we want to tune to be stronger or weaker, to make up for significant deficiencies or proficiencies.
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock Forums http://www.mmo-champion.com/forums/277-Warlock
+I thought it would have been fixed in this build, but Drain Soul is doing too much damage out of Execute. 
+There’s a bug in the current build you have, where Drain Soul is doing significantly more damage than it should triple, I believe, all the time. That should be fixed for the next build.
+
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior Forums http://www.mmo-champion.com/forums/278-Warrior
+I did some extensive mathematics on warrior tanking, more precisely, Shield Block vs. Shield Barrier. 
+Short Version: There is currently nearly no reason for any warrior to use Shield Block. The amount of physical damage done by a boss melee swing to be high enough that the 30%/60% block outshines the absorb puts it out of reach of the vast majority of the playerbase. Obviously, this is even more true with non-blockable or magic damage, but even with the kind of attacks that can be blocked, Shield Barrier is just plain better for everything other than non-nerfed 25H bosses who use debuffs on the tank.
+Thanks for the great analysis.
+
+The scaling we chose for Shield Barrier was to keep it competitive with Shield Block with very high end gear beyond even the gear available in the first tier. The problem is this is one of those situations where linear AP scaling can't really fit the curve nicely. Shield Barrier and by extension Frenzied Regen will either be too good at low gear levels or too weak at high gear levels. We could use a more complex curve, such as squaring attack power as long as that doesn't prove confusing. For sake of argument, imagine that Shield Barrier and Frenzied Regen is roughly half as strong as it is on beta when you're in greens, but scales up in strength about 50% faster than it currently does.
+
+Hey GC, I'm fairly positive there's some crunching or something weird going on with Bloodbath for both Arms and Fury and likely Prot as well. I noticed its damage seemed a bit low when I was testing it, but never really got around to seeing if it was truly bugged or something until today.
+We’re not able to reproduce any discrepancy. Maybe you’re seeing some because you’re using Bloodbath in the middle of doing your rotation, making it difficult to clearly identify which attacks were made with Bloodbath active and which weren’t combat log timestamps aren’t necessarily 100% reliable for this. Can you reproduce this if you hit Bloodbath, wait a second, then start attacking, and then stop using any specials at least a second before Bloodbath ends? This shouldn’t be an issue in practice, but the exact timing of the buff going up and fading make analysis of it difficult. It’s possible that there’s a bug with some damage being munched, and we want to solve that if so.
+
+Hey GC, did you all do something intentional to rage generation? It was 5 rage per second for MH strikes and 2.5 rage for OH strikes full report here: http://us.battle.net/wow/en/forum/topic/5978458015?page=7#129. Now it seems to have been reduced to 2.5 rage per second for MH strikes and 1.25 rage per second for OH strikes. Is this intentional or a bug of some kind?
+We lowered it. Fury had an abundance of Rage for sure. For Arms, we need to balance the number of free attacks CS, MS and OP vs. the spenders HS and Slam. There is some incentive to sit on Heroic Strikes to build up the stack rather than use them whenever possible, but if you sit on them too long, then you will overflow with Rage. We are trying to engineer a decision about when to Heroic Strike and when to Slam instead, but that decision is dependent on not having too much Rage especially before everyone is geared in epics in the very first tier. 
+
+I acknowledge that this is different feedback than we have received from some players, so there may be something else going on. The feedback is never clear cut because we know that there are warriors out there who never want to feel rage limited and want to essentially be a cooldown-driven class and it's hard to separate that feedback from the players who understand the design intent.
+
+The intended design is that we never fill all our GCDs, except maybe while Avatar and/or Bloodlust are up. So we'll never get close to where we were. Slam is the rage dump, which only works if you have the ability to use Slam when you need to dump rage. This means you need empty GCDs. Always. At every gear level.
+I'd say that when you use cooldowns even things like Battle Shout and Storm Bolt, it's fine to use every GCD, but that means there are times when you don't fill every GCD either.
+
+We also don't have a problem with warriors eventually filling every GCD when they have the maximum amounts of haste and crit possible in the final tier of gear. But that needs to be an eventual destination, not where everyone starts in quest blues.
+
+We don't want Arms to stand around waiting for 2-3 Mortal Strikes before being able to afford a Slam, even in quest blues. We also don't think that's happening. Once you have enough Rage to Slam regularly, then the only thing to spend Rage on is Heroic Strikes. Once you're able to hit Heroic Strike almost on cooldown, then there is no little room for warriors to scale with haste and crit you'll get the extra damage of course, which is always nice, but you won't have the rage. We don't want to reach that point anytime soon.
+
+
+PvP with the Blues Mon. July 16 at 4:30PM PDT
+On Monday, July 16, at 4:30 p.m. PDT 1:30 a.m. CEST, 9:30 a.m. AEST you can join the World of Warcraft Encounter, Level Design, Class Design, and QA teams in the Mists of Pandaria beta for a few rounds of random battlegrounds. The blues will be testing Temple of Kotmogu and Silvershard Mine, and we hope you’ll join us.
+
+Keep an eye on this thread in our forums for the latest information, as we’ll be updating it with details, and answering general questions you may have about the test.
+
+As always, we ask that you post your feedback and questions about the specifics of the beta battlegrounds and PvP in our Beta Battlegrounds, Arenas, and PvP forum http://us.battle.net/wow/en/forum/5671341/.
+
+
+Blue Posts
+Challenge Mode Valor Point Rewards
+But I'd like to see them reward more VP for a clear than heroic mode, such that for a skilled group they'll always be the most efficient way to grind valor.
+Challenge modes do award Valor, and there will also be a questgiver that offers what is effectively a "random daily Challenge mode" quest for bonus Valor. If you have a group of friends with whom you enjoy running dungeons, Challenge modes will offer among the most lucrative sources of weekly Valor, even if you fail to medal. And if you have a skilled group, as you suggest, I suspect your wish is already a reality. Blue Tracker http://blue.mmo-champion.com/topic/229827-why-cant-challenge-mode-drop-better-items/ / Official Forums http://us.battle.net/wow/en/forum/topic/6079788824?page=1#12
+
+Pet Battle Training Cost
+So do Pet Battles still require you to be Level 90 to do them?
+To take part in the system you have to be level 5 and pay up 100g.
+
+On another note, 100g seems like it may be a bit restricting to new players. I wonder if this is the intent. I can see new players wanting to try out Pet Battles, although they probably already have a lot on their plate as it is with all the other features currently in the game.
+That's the current thinking. It's essentially a low, but notable barrier to entry to try to avoid distracting new players who may not know it's a mini-game that's very much auxiliary to the leveling experience.
+
+None of this is completely final though, so everyone is welcome to provide feedback on any part of the system including the cost of training on the new forum. Blue Tracker http://blue.mmo-champion.com/topic/229766-major-patch-for-mop-beta/ / Official Forums http://us.battle.net/wow/en/forum/topic/6079790002?page=3#58
+
+PvPers Slapped With Unnecessary Restriction
+I ask Blizz why are PvPers smacked with this restriction but PvErs are not? While they are getting all of their fancy mounts on their mains to use on alts, we PvPers don't have this option. This means more RBGs on more toons, and more honor farming.
+
+I say we should have the same rights as PvErs. The whole point of everything being account wide now was to have it be about the player, not the toon. By restricting us PvPers of this feature you contradict yourselves. We, the players, earned the PvP mounts just like the PvErs. So please, allow us to take advantage of this as well.
+No one is being "slapped" or "smacked" with anything here. The current feeling though is that if you earned a PvP mount on a specific character class it was a symbol of your PvP prowess with that particular class. I'm sure you could say that this should or could apply to PvE, but I don't think people quite associate these the same. 
+
+Feel free to discuss this constructively further if you wish, but just know this is not an attempt on our end to treat PvPers badly or to "slap" anyone "in the face". This is more of a nod to your ability with a specific class in PvP.
+
+*Just a quick amendment, I'm reading through the thread and we'll be sure to pass on feedback. I'm not just tossing in an off the cuff statement then running away.
+
+Yes it may be a pain in the butt to get all over again on another toon, but you still feel SOME accomplishment for getting it again on a whole new toon/class, right?
+I've seen others in this thread say they would want the Gladiator Mount to be account-wide, so that contradicts your sentiments here. I'm just curious as to how many agree with them being restricted vs. being account-wide. 
+
+Again, I'm following along the discussion and can carry on feedback, just be aware that doesn't guarantee a change. Blue Tracker http://blue.mmo-champion.com/topic/229697-pvpers-slapped-with-unnecessary-restriction/ / Official Forums http://us.battle.net/wow/en/forum/topic/5978118076?page=28#546
+
+Content Difficulty and Consumption Speed
+1% had good reason to stand around looking good while people stood there gasping at there achievements. It was the desire to be
+I'm yet to see someone that actually gasped at another player. Don't confuse this with players being surprised with what top guilds were accomplishing in their realms or even as world firsts, is not the same. It's one of those things that's kinda always been there as some kind of justification about why things were better back then.
+
+Most of the whispers I was getting back then where "where did you get that from?" from players that were new to the game or even the whole genre and hadn't seen those things. And perhaps, questions from less progressed raiders about how were defeating a given boss.
+
+Back in earlier expansions you had to progress for a long time to reach another raid content and that felt so damn amazing.
+What was so amazing about knowing that you weren't going to make it into the next tier of content? I mean, the journey you mention has always been there. 
+
+If you were around when raiding began in Wrath of the Lich King, by the end of the expansion you had visited Naxxramas, Obsidian Sanctum, Eye of Eternity, Ulduar, Trial of the Crusader and Icecrown Citadel.
+
+If you were around when raiding began in Cataclysm, you've gone through Blackwing Descent, Throne of the Four Winds, Bastion of Twilight, Firelands and Dragon Soul. 
+
+The only difference with TBC and Vanilla in that regard, is that now there are alternative means to allow players to catch up with the newest content.
+
+You have worked so hard to allow everyone to see the final raid of an expansion, that you've forgotten what would become of the first tier of raids. If there was progression involved between tiers, we I would have the chance of doing them.
+The first tier of raids were seen by many as well. If you weren't around then, sure, you missed that content when it was current and that sucks. 
+
+If there was this requirement of starting from the first tier of the expansion, and then progressing from there all the way to Deathwing. Wouldn't you feel frustrated and perhaps, even feel unfairly treated if at some point in your progression, the new expansion comes out, everyone moves on, and you are just forced to not see raids that were actually current content at the moment you were playing? 
+
+Would it really be satisfying to leave Deathwing behind, untouched, simply because you were away from the game and joined too late? for whatever reason, be it because you chose to, or because you had to, it doesn't matter.
+
+The current approach still lets you experience these "old raids", at your own pace, when and if you want to, while experiencing the newest content in the game.
+
+If this is your view of loot, why the hell do you even bother making legendary items? Only a small handful of players will see them, and according to you, only arrogance makes someone want to obtain an item not many players will see.
+I'd hope people that go after legendaries go because they find them awesome for what they are, what they bring to the table, etc. Not because they are thinking "Oh lord, how much I'm going to brag about this!". It's not that bragging is bad, come on. If you're proud of something go and show it, by all means. 
+
+But don't try to use the "we should be able to brag about something" as the argument to justify excluding other players of content. 
+
+Why is it fine that someone can brag about a legendary, but the casual player that wants to brag about how hard was for him/her getting the Molten Front mount gets laughed at? As I've said in the past, everything has as much value as you want to place on it, not more, not less. 
+
+almost everyone had content to do at any one time that was challenging.
+Unless you have an 8/8 Heroic character, you obviously still have content that is challenging to complete not saying you don't have one.
+
+why is it better in your eyes that I should kill Deathwing but not Ragnaros or Sinestra? due to another break in the game, I never killed them either; yet general concensus is that actually they were far better encounters than Deathwing and his Dragon Soul cronies
+You should kill them all. The difference is that if you are in the point where you can kill Deathwing, the only thing preventing you from killing Ragnaros and Sinestra is finding other like-minded players to go back and defeat those bosses. Unlike the other way around, where it's not just a matter of finding other individuals to complete that content, it's also a matter of continuing to complete a road that you might not be able to in hopes of getting to see that final boss.
+
+The "Do it while its current" when i have Exams or i am looking for a Job does not fly.
+So, you think it's better to find out that, after coming back from those exams/finding a job and realizing that now everyone is even farther from you is a positive thing?
+
+Honestly all I see from your posts is arguing with players who are giving you their honest opinions about the state of the raiding game, and defending the development team's design decisions. You should be listening to these many players and passing their genuine feedback upstairs, rather than trying to tell them how they should or shouldn't feel.
+That's actually the point of my posts. There's no genuine feedback in "TBC was great, bring it back". That's an opinion, as valid as that of the player next door saying "I hated TBC". But it's one that doesn't have anything useful for the developers to consider. I'm not telling anyone how they should feel. What I'm trying to do is to present you the opposite perspective. I'm trying to make you cross the street and see things from the other side. Because that's one of the best ways to have a discussion going on. If we keep it one-sided, there wouldn't be much discussion on pretty much anything.
+
+You want everyone to see Deathwing because, for some abstract reason it would be absolutely crippling for a player to finish the expansion but not fight him, but at the same time for those who missed the other 75% of Cataclysm raiding content, it just 'sucks for you'.
+There's no contradiction. The only meaning of "and that sucks" is that not being able to experience it as the current content when it was released is unfortunate. 
+I do think is still a better prospect than having to experience it when you're in a new expansion because you were always behind of what, for the other players, was actually "current content". Blue Tracker http://blue.mmo-champion.com/topic/229664-so-shocking-is-this-true/ / Official Forums http://eu.battle.net/wow/en/forum/topic/4941024518?page=13#244
+
+FEEDBACK: Temple of the Jade Serpent Challenge
+The Dungeon Journal only reflects Normal and Heroic abilities, and does not have a separate section for any added mechanics on Challenge mode. Consider that part of the challenge, as it were. 
+
+In the case of Befouled Waters, you may want to take a look at the buffs visible on the boss during the fight, as well as the combat log tooltip of the effect that is killing you, for a hint. Blue Tracker http://blue.mmo-champion.com/topic/229825-feedback-temple-of-the-jade-serpent-challenge/ / Official Forums http://eu.battle.net/wow/en/forum/topic/4941135292?page=1#3
+
+FEEDBACK: Temple of the Jade Serpent Challenge
+The Challenge mode for this dungeon is unlocked for the weekend and perhaps longer.
+
+A few relevant testing notes:
+
+You must have completed the Heroic version of the dungeon once in order to attempt the challenge mode. Item level will be normalized to 463. There is no queue system for challenge modes; groups must be formed manually and you must zone in from the outside world. The current Gold/Silver/Bronze times are not final. While the challenge is active, the group leader may Reset the dungeon at any time via a drop-down accessible by right-clicking your unit frame. You may want to dig up those dusty keybindings for things like crowd control and interrupts. Enemies in Challenge mode dungeons are 1 level higher than in Heroic versions, as a rule, such that bosses are now level 93.
+
+Please use this thread to share feedback regarding the dungeon, including information on group composition and completion times.
+
+If you speak to the large pandaren gentleman on the northwestern side of Halfhill, in the center of Valley of the Four Winds, he will teleport you into the instance at whatever difficulty you currently have specified, including Challenge. Blue Tracker http://blue.mmo-champion.com/topic/229783-feedback-temple-of-the-jade-serpent-chall/ / Official Forums http://us.battle.net/wow/en/forum/topic/6079750368?page=1#4
+
+FEEDBACK: Shado-Pan Monastery Challenge
+The Challenge mode for this dungeon is unlocked for the weekend and perhaps longer.
+
+A few relevant testing notes:
+
+You must have completed the Heroic version of the dungeon once in order to attempt the challenge mode. Item level will be normalized to 463. There is no queue system for challenge modes; groups must be formed manually and you must zone in from the outside world. The current Gold/Silver/Bronze times are not final. While the challenge is active, the group leader may Reset the dungeon at any time via a drop-down accessible by right-clicking your unit frame. You may want to dig up those dusty keybindings for things like crowd control and interrupts. Enemies in Challenge mode dungeons are 1 level higher than in Heroic versions, as a rule, such that bosses are now level 93. 
+
+Please use this thread to share feedback regarding the dungeon, including information on group composition and completion times. Blue Tracker http://blue.mmo-champion.com/topic/229785-feedback-shado-pan-monastery-challenge/ / Official Forums http://us.battle.net/wow/en/forum/topic/6079610164?page=1#1 
+
+
+Weekend Sale – 25% Off Faction Change
+Keep your friends close and your enemies closer. Through this weekend and for a limited time only, you can change your World of Warcraft character’s faction http://www.battle.net/account/management/wow/services/pfc-select.html from the Horde to the Alliance or vice versa for 25% off the regular price.
+
+To get started, simply click here https://www.battle.net/account/management/wow/services/pfc-select.html. Alternatively, you can log in to your Battle.net account at http://www.battle.net, select your World of Warcraft account, and then click “Faction Change” at the bottom of the page.
+
+Don’t delay -- this offer ends Monday, July 16 at 11:59 p.m. PDT.
+
+
+Curse Weekly Roundup
+Pico gives us news on Steam's Summer Sale, Ultima Forever, Guild Wars 2, Minecraft, Cube World and a preview of Scrolls. 
+
+
+http://media.mmo-champion.com/images/news/2012/july/cwr15.jpg http://www.youtube.com/watch?v=H3FMrJPE7oM&feature=plcp
