@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="rating,players,ratings,source,hidden,system,glyph,time,damage,healing,rated,arena,arenas,team/personal,high,people,resilience,pets,holy,good,patch,disc,realm,talent,classes,issue,bugs,gold,list,calc,back,swiftmend,skills,posts,elemental,cooldown,deliberately,number,fact,forums,paladin,shaman,general,make,change,healers,error,create,causing,selling" />
+<meta name="description" content="Arena System Update 
+Earlier this week the Arenas were temporarily disabled while we investigated rating calculation discrepancies. After thorough research, we have identified and created a solution to the issue, and we will be bringing the Arenas back online following off hours maintenance with the fix in place. Please be aware that because the rating issues were extensive, we have decided to reset Arena team and personal ratings to last week’s status. In addition, items and achievements which" />
+<title> Arena Update, Official forums issue, Blue posts [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Arena Update, Official forums issue, Blue posts</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-631574.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/631574-Arena-Update-Official-forums-issue-Blue-posts">Arena Update, Official forums issue, Blue posts</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2009-01-23, 05:49 AM</div></div><div class="posttext">Arena System Update<br />
+Earlier this week the Arenas were temporarily disabled while we investigated rating calculation discrepancies. After thorough research, we have identified and created a solution to the issue, and we will be bringing the Arenas back online following off hours maintenance with the fix in place. Please be aware that because the rating issues were extensive, we have decided to reset Arena team and personal ratings to last week’s status. In addition, items and achievements which were gained illegitimately with incorrect ratings will be removed, and the spent arena points refunded. We thank you for your patience while we worked through these issues related to the Arenas. <br />
+Kalgan also made additional posts about the arena rating system.<br />
+<br />
+- The team/personal ratings and the hidden ratings are related to each other. Your team/personal ratings essentially drift toward your hidden rating, so if you deliberately lower your hidden rating and remake a team, your team/personal ratings simply won't get up to high ratings until your hidden rating does. His exploit as proposed simply doesn't work because his assumptions about the relationship between the visible and hidden rating are incorrect.<br />
+<br />
+- Yes, a group of good players could still deliberately stomp nubs by intentionally losing lots of games to lower their hidden rating. A rating system won't stop that, but it still solves most cases of high rated players beating up on lower rated players. First, many of the cases where high rated players were being matched against low rated players wasn't because the high rated players were deliberately trying to stomp people, it was often accidental as high rated players had normal/natural reasons to change teams on occasion (helping friends, trying out new players, new comps, new strategies, etc). Second, it takes far more effort to deliberately deflate your rating down to low levels than it did to simply create a new team.<br />
+<br />
+- Something that many of you have mentioned is that the rating adjustments are now not always &quot;zero sum&quot;. However, a rating system doesn't need to be zero sum in order to prevent inflation. The new system uses a bayesian prior distribution in order to prevent inflation, which in simpler terms means there's math that enforces that players won't have ratings outside of some range (when working without bugs, of course). For the population size we have for arenas, this means we should see ratings range from around 600 to 2400 (again, assuming no bugs).<br />
+<br />
+- There were two bugs with the system that we're in the process of fixing before we reactivate arenas (should be soon) that were causing serious problems (and distorting everyone's perspective on the system). One was in the functionality that seeded everyone's hidden rating based on their pre-3.0.8 patch performance, causing players to &quot;drift&quot; toward wildly inaccurate ratings, the other being in the way that personal ratings were adjusted. <br />
+<br />
+Effects of rating changes in the middle of the season<br />
+I think you say that with the assumption that if it had been the start of the season, the bugs wouldn't have been there (not a good assumption in this case imo). The new system (when working) doesn't significantly change how hard it is to get the gear or who you have to beat to get the title/mount/etc (that's still entirely relative). It also tends to be mid/late in the season when the problems with the old system were the most exposed (with highly rated players starting new teams, helping friends, etc). <br />
+<br />
+&quot;Hidden&quot; rating<br />
+It is not like personal rating. The hidden rating uses a different approach to determining player ratings. It's more complex, but it tends to figure out a player's skill level far more quickly/accurately than an Elo system does.<br />
+<br />
+However, changing player's actual team/personal ratings extremely rapidly isn't exactly what we want. So, we're using an approach where we use the hidden rating (internally we refer to it as the GDF rating since it uses gaussian density filtering) for matchmaking since it creates better matchups than Elo and we use it as an anchor to figure out where the team/personal ratings should be moving toward. <br />
+<br />
+Rollback<br />
+Yes, I'm implying that we hope to roll back team/personal ratings back to what they were right before 3.0.8 went live. <br />
+<br />
+<br />
+Gold selling ads on official forums<br />
+There was a ... small issue with the advertising on official forums today. For a few hours the forums displayed gold selling ads, of course this was an error on Blizzard side and they have been removed quickly. Selling/buying gold is still forbidden and isn't a good idea. <br />
+Recently, there was a temporary error with our forum advertisements that caused a gold-selling ad to be displayed. At this time, we have resolved this error. Our stance, which is fully explained in the statement below, remains firmly against the buying or selling of gold, and we may take action against accounts that are involved in these activities.<br />
+<br />
+http://www.worldofwarcraft.com/info/basics/antigold.html (http://www.worldofwarcraft.com/info/basics/antigold.html)<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/news/2009/january/goldsellersforums_small.jpg (http://static.mmo-champion.com/mmoc/images/news/2009/january/goldsellersforums.jpg)<br />
+<br />
+<br />
+Blue posts<br />
+Burst damage in PvP<br />
+We think PvP is too bursty. What we haven't announced is what we are going to do about it. Risks of making ill-conceived changes include just shutting out classes or specs without a lot of CC potential, or perhaps having long stalemate-ish fights where nobody ever dies. But that doesn't mean we won't do anything.<br />
+<br />
+We are also still discussing whether this is a problem only with certain classes (rogue, mage, paladin, DK and possibly Feral get mentioned the most) or whether damage is just too high in general.<br />
+<br />
+Resilience will still make a difference. When you talk to players sitting at say 500 resilience they can notice a difference and by 800 or 900 they feel like they can stay alive (caveat: this is a very generalized statement and obviously isn't going to apply to every player or every situation). <br />
+<br />
+Resilience on pets<br />
+I understand that players want, and think it is good design for, their pets to have resilience. That might still be something we do. Our concern has always been that players need to be able gang up and kill pets when they really set their mind to it. It can be very frustrating to hack your way through the hunter or warlock pet, finally dispatch it, then still have to deal with the master (who, to be honest, have ways for bringing their pets back sometimes). I understand the situation I described isn't at all happening now, but with enough resilience there is a risk of very tanky pets. (Source (http://blue.mmo-champion.com/28/14496620664-lol-significant-pet-hp-buffs.html))<br />
+<br />
+Queue mechanics<br />
+This is basically correct. There is a hard cap for maximum allowable players on a realm. The queue begins once the capacity has been exceeded. The estimated wait time is based on the number of people who have recently logged out of the realm, and subsequent players who have been allowed to login. You'll notice the number will sometimes fluctuate drastically before stabilizing again. This is usually due to a number of people logging out at once, quickly allowing more people on, or a lack of people logging off for a few minutes, causing the wait time to inflate. (Source (http://blue.mmo-champion.com/1/14498464055-how-do-queues-work.html))<br />
+<br />
+[EU] ACcount-Wide Death Knight Creation<br />
+We believe this is not an issue at this time. Please note that a realm needs to be at least 90 days old before you can create a Death Knight there or you need a character on that realm of level 55 or higher. Character creation in general also needs to be enabled.<br />
+<br />
+If you are unable to create a Death Knight on a realm where you are certain that it should be possible to, then please be sure to contact a Game Master in-game. And please be aware that &quot;Chamber of Aspects&quot; is currently not 90 days old. (Source (http://blue.mmo-champion.com/1/7700830638-accountwide-death-knight-creation-update.html))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/24x24/paladin.jpg Paladin (Skills List (http://www.mmo-champion.com/index.php?page=610) / Talent + Glyph Calc. (http://talent.mmo-champion.com/?paladin))<br />
+Glyph of Light nerfed in a hotfix<br />
+This glyph is vastly overpowered. We are hotfixing the range from 20 yards down to 8 yards. In its current form it has basically become &quot;proc a Circle of Healing&quot; in the same patch that we nerfed Circle of Healing. (Source (http://blue.mmo-champion.com/27/14497013516-glyph-of-holy-light-hotfix.html))<br />
+<br />
+Glyph of Light - Explanations<br />
+Whether it was smart or not, the fact was that it was showing up as a gigantic component of paladin healing to the extent that it was having the impact of adding a whole additional spell to your rotation. That is far beyond the power that we want a glyph to have. Glyphs should be bonuses, about on par with passive talents. It is cool when they change up what you do a little bit, but this one crossed the line, especially at a time when we are trying to make AE damage not be such a trivial challenge for groups to overcome. We think it will still be a helpful glyph. (Source (http://blue.mmo-champion.com/27/14497013516-glyph-of-holy-light-hotfix.html))<br />
+<br />
+[EU] Arenas temporarily disabled<br />
+We have temporarily disabled all Arena matches while we investigate current rating calculation discrepancies. Further updates will be provided once we have additional information to share. (Source (http://blue.mmo-champion.com/11/7701101403-2201-arenas-temporarily-disabled.html))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/24x24/priest.jpg Priest (Skills List (http://www.mmo-champion.com/index.php?page=640) / Talent + Glyph Calc. (http://talent.mmo-champion.com/?priest))<br />
+Exciting changes for priests in 3.1<br />
+We have some exciting changes planned for priests. Many of them will make it in 3.1 (Ulduar). We hope to have them finalized enough to be able to announce some in the next couple of weeks, but that date might not work out for a number of reasons. The community has a way of overlooking all those caveats such as “at this time” or “assuming nothing changes” and suddenly we are “breaking promises.” (Source (http://blue.mmo-champion.com/27/14498463262-two-nonqq-questions-for-the-devs.html))<br />
+<br />
+Rapture and Power Word: Shield hotfixes<br />
+We are hotfixing these -- the fix may be out already. We are looking into the PoM issue. Just after a patch we get a ton of reports that other players can't always reproduce. There are several &quot;Hey, did my damage / healing go down from a stealth nerf?&quot; posts. It's the Onyxia Deep Breathing phenomenon. (Source (http://blue.mmo-champion.com/27/14498293672-my-first-gc-post.html))<br />
+<br />
+Healers rotations<br />
+When I say we want healers to have rotations, that doesn't necessarily mean you always press 112311231123 forever and install cooldown timers so that you don't go insane. Some dps classes are closer to that, but dps classes in general don't have to be as reactive to situations as do healers, so they can handle it.<br />
+<br />
+What I am really getting at are things like Swiftmend and Riptide. Swiftmend is a very fun spell -- IMO one of the best ones in the game. But you can't spam Swiftmend. In fact, you have to be pretty smart about when you set it up and when you use it. And yes it has a cooldown. Riptide has a similar mechanic where you want to X when Y happens and you can come up with a lot of other examples. Riptide is fun. Swiftmend is fun. Greater Heal... eh, it does the job. But it's not a particularly fun button to use.<br />
+<br />
+Disc gets this vibe with some of their shield mechanics, Grace and Penance. I do think that Holy could use a lot more of it though. The main &quot;interesting thing&quot; that happens with Holy is Holy Concentration and its Improved version. That's not bad, but we're not sure it's enough. I don't think we would actually use this specific example, but imagine a talent that sped up Greater Heal's cast time when you cast enough Flash Heals. Now you have a reason to &quot;weave.&quot; You have a mechanic that rewards you (but doesn't require you) to switch from one thing to another. Another idea (off the top of my head) is that CoH healed more on targets with Renew on them (this steals too much from the Resto playbooks IMO). These don't necessarily have to be random procs or cooldowns, though sometimes these systems end up using those specific mechanics. <br />
+<br />
+This is the kind of thing we'd like to do to Holy. (Source (http://blue.mmo-champion.com/27/14318866953-priest-explanation--8-reasons.html))<br />
+<br />
+Discipline Tree<br />
+Disc is a really strong spec in PvP and PvE. We talked about it a lot today, and we are convinced that if healing meters showed absorbs and damage negated that Disc would be up there with everyone else. It's just hard to really get a handle on how much damage you are preventing.<br />
+<br />
+I asked everyone around the table if they would feel comfortable having a Disc priest on main tank duty even with no paladin. Every one of them said yes.<br />
+<br />
+(I know the tree still has some bugs and a couple of awkward areas in the tree. I was reacting more to the thought that having Holy and Disc as separate healing trees was doomed to failure.) (Source (http://blue.mmo-champion.com/27/14318866953-priest-explanation--8-reasons.html))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/24x24/shaman.jpg Shaman (Skills List (http://www.mmo-champion.com/index.php?page=660) / Talent + Glyph Calc. (http://talent.mmo-champion.com/?shaman))<br />
+Elemental fixes in 3.0.8 and plans for patch 3.1<br />
+We do not plan to overhaul Elemental's spells in 3.1 so we need a longer-term fix for them. (This does not mean Elemental is getting no attention in 3.1.) We do plan on changing hunter abilities so we will have to rebalance them anyway. (Source (http://blue.mmo-champion.com/27/14498463262-two-nonqq-questions-for-the-devs.html))<br />
+<br />
+Shaman role in raids<br />
+This was in reference to why we let Elemental shaman damage be low in Sunwell. Our old design for shamans was that they couldn't do damage or heal as well as other specs because they could do both and because their buffs were so good. We retired that dated philosophy and now intend for them to do competitive dps -- just below the pure dps classes. (Source (http://blue.mmo-champion.com/27/14498463262-two-nonqq-questions-for-the-devs.html))<br />
+<br />
+Healing stream totem<br />
+I just thought I'd follow-up briefly that the Healing Stream Totem should in fact be 30 yards instead of 20 and is a bug. Also the Elemental Mastery is also currently bugged and the cooldown is not starting at the correct time. The cooldown should in fact be starting at the time it's cast. Both of these are anticipated to be fixed with an upcoming patch. (Source (http://blue.mmo-champion.com/8/14497012160-anyone-notice-totem-nerfs.html))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/24x24/warlock.jpg Warlock (Skills List (http://www.mmo-champion.com/index.php?page=680) / Talent + Glyph Calc. (http://talent.mmo-champion.com/?warlock))<br />
+Haunt bug hotfixed<br />
+The problem where two warlocks cannot both Haunt has been hotfixed. Hopefully you will see it very soon. (Source (http://blue.mmo-champion.com/28/14497013268-affliction-and-haunt-bug--aff-dps-loss.html))</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xylia</div><div class="date">2009-01-23, 06:08 AM</div></div><div class="posttext">I've never seen the ad's on the forums because i have ad block plus, but i always though blizzard were advertising their own products, but instead they have third party adverts?<br />
+<br />
+what are they so desperate for cash or they're trying to milk this cow dry?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc1503465d0</div><div class="date">2009-01-23, 07:16 AM</div></div><div class="posttext">&quot;We have exciting changes for Priests. Unfortunately everyone tells us Priest is great so we will nerf it to the ground but give a new shinny and ofc useless Tier set&quot;.<br />
+<br />
+I wonder which people answered they would take a Disc Priest to the raid.... Well maybe when there is NO Holy Pala around. People take Discs because this content is soooo terribly easy. Ulduar will be different. GIVE Discs Priest ANY usefulness in the raid ffs!<br />
+<br />
+Also advertisment was probably put there after some kind of &quot;hack&quot;... Well... it doesn't look good. What's next?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xacez</div><div class="date">2009-01-23, 07:24 AM</div></div><div class="posttext">[EU] Arenas temporarily disabled<br />
+We have temporarily disabled all Arena matches while we investigate current rating calculation discrepancies. Further updates will be provided once we have additional information to share. (Source (http://blue.mmo-champion.com/11/7701101403-2201-arenas-temporarily-disabled.html))<br />
+Quite certain that aint supposed to be in the Paladin section.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Izichial</div><div class="date">2009-01-23, 07:24 AM</div></div><div class="posttext">Hahaha, class on the goldselling ads. Well deserved.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Odmanex</div><div class="date">2009-01-23, 07:32 AM</div></div><div class="posttext">loled so hard on the gold selling thing:p<br />
+GG blizz:D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">immalek</div><div class="date">2009-01-23, 07:46 AM</div></div><div class="posttext">It can be very frustrating to hack your way through the hunter or warlock pet, finally dispatch it, then still have to deal with the master (who, to be honest, have ways for bringing their pets back sometimes). I understand the situation I described isn't at all happening now, but with enough resilience there is a risk of very tanky pets<br />
+<br />
+We're currently working hard to find a way to solve this problem without making Warlocks PvP viable.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Iridiel</div><div class="date">2009-01-23, 07:57 AM</div></div><div class="posttext">Eheh, they nerfed the CoH abuse because it was too powerful, so all the CoH spammers respecced to Discipline (90% of the priests on my server are Discipline now), you don't need a paladin for MT healing, you don't need a Discipline priest for MT healing, all you need to do is an healer with common sense and a bit of knowledge of his class. A discipline one maybe useful for one or two fights in the game, but it's not &quot;THAT&quot; needed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bbr</div><div class="date">2009-01-23, 08:16 AM</div></div><div class="posttext">hilarious!<br />
+a gold selling ad on blizzard's own forum.<br />
+<br />
+Shows how secure that is...<br />
+Just imagine if someone manages to stick a trojan or bad link into one of those ads.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LavaDuck</div><div class="date">2009-01-23, 08:17 AM</div></div><div class="posttext">That shows why ads should never have been there in the first place.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fr0hzn</div><div class="date">2009-01-23, 08:19 AM</div></div><div class="posttext">http://static.mmo-champion.com/mmoc/images/icons/24x24/shaman.jpg Shaman (Skills List (http://www.mmo-champion.com/index.php?page=660) / Talent + Glyph Calc. (http://talent.mmo-champion.com/?shaman))<br />
+Shaman role in raids<br />
+This was in reference to why we let Elemental shaman damage be low in Sunwell. Our old design for shamans was that they couldn't do damage or heal as well as other specs because they could do both and because their buffs were so good. We retired that dated philosophy and now intend for them to do competitive dps -- just below the pure dps classes. (Source (http://blue.mmo-champion.com/27/14498463262-two-nonqq-questions-for-the-devs.html))<br />
+<br />
+Funny :&gt;<br />
+Enhancement Shaman are still one of the strongest DPS classes at the moment.<br />
+Weird philosophy ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Graviteh</div><div class="date">2009-01-23, 08:21 AM</div></div><div class="posttext">I am strongly convinced that Blizzard is just breaking WoW on purpose in order to make any future products more attractive. There are many changes that one has to be retarded to approve of.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dorky</div><div class="date">2009-01-23, 09:30 AM</div></div><div class="posttext">We think PvP is too bursty<br />
+<br />
+Wow, really? So it had nothing to do with over two weeks of non-stop QQ-threads on the boards? ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pewpewarrows</div><div class="date">2009-01-23, 09:36 AM</div></div><div class="posttext">This is exaclty why &quot;theorycrafting&quot; fails so hard.<br />
+<br />
+Whenever you get a bunch of geeks who claim that they are 100% correct (like elitist jerks for example) through maths, and then you get actual players who are doing the encounters for real and find better ways of doing things in practice, it blows all the theorycrafting out the window.<br />
+<br />
+Too much maths and theorycrafting f**ked arena ratings.<br />
+<br />
+Just let the players play ffs and screw you with your &quot;people who are crap at the game deserves to do well too&quot; attitude blizzard.<br />
+<br />
+Scrubs will always be scrubs and they are scrubs for a reason. IF they play against top end players because that player rerolled team, then so f**king what.<br />
+<br />
+Theorycrafting fails so much. And this just proved it.<br />
+<br />
+If PvP is imbalanced then you fix it at the ROOTS of the problems, not create some retarded &quot;hidden rating&quot; system to cover up the fact PvP is imbalanced. <br />
+<br />
+It's like putting a plaster over a 9 inch knife wound.<br />
+<br />
+IT AINT GUNA STOP THE BLEEDING.<br />
+<br />
+mmphing retards.<br />
+<br />
+<br />
+Blizzard are now going to come up with some retarded &quot;fix&quot; to try and fix the fix to the fix and screw everything up even more. Just quit already with trying to make everyone equal, let the players determine their own ratings, not have them determined automatically by some shi*ty system that calculates things before you even play ffs.<br />
+<br />
+<br />
+Someone's upset they got banned from the EJ forums for general idiocy.<br />
+<br />
+How is this arena problem in any way a result of too much theorycrafting. Blizzard tried a brand new system without doing any PTR testing. Surprise, surprise that it broke everything.<br />
+<br />
+And for the record it is very, very rare that someone manages to find something completely radical and new that's better than the theorycrafting performed on the EJ forums.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wintie</div><div class="date">2009-01-23, 09:40 AM</div></div><div class="posttext">Whats happening with this Warlock overhaul or whatever? Every time I read it there seems to be mostly irrelevant and rather rude comments by the developers. What with all these bugs you can't help but feel they're purposely trying to make us a joke.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zsol</div><div class="date">2009-01-23, 10:13 AM</div></div><div class="posttext">Static Figures are never reliable with dynamic gameplay. Thats the point you failed to see.<br />
+<br />
+... (complete nonsense about how good you are)<br />
+<br />
+Manipulating peoples ratings so in essence crap players can win games is just a pathetic attempt at pleasing pathetic baby whiners.<br />
+<br />
+... (complete nonsense about how bad others are)<br />
+<br />
+<br />
+By static figures you are referring to?<br />
+<br />
+Crap players are still players. People normally like to play against others that have the same level of skill/gear, this system is there to help that happen. What is your problem?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kambodian</div><div class="date">2009-01-23, 10:26 AM</div></div><div class="posttext">Whats happening with this Warlock overhaul or whatever? Every time I read it there seems to be mostly irrelevant and rather rude comments by the developers. What with all these bugs you can't help but feel they're purposely trying to make us a joke.<br />
+<br />
+That!<br />
+<br />
++Swoosh is right<br />
++laugh at the statement : &quot;Pvp is too bursty&quot; NOOOOOOOOOOOOOOOOOOOO, RLY?<br />
+<br />
+And repeating that resilience will make it better is getting really...old!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zsol</div><div class="date">2009-01-23, 10:28 AM</div></div><div class="posttext">By static figures you are referring to?<br />
+<br />
+Do you like being owned 10 times in a row by a much higher geared/skilled team with not a tiny chance of killing even one of them?<br />
+<br />
+But to be honest, I think you understand what I am saying and just trolling on for the sake of &quot;I'll have the last word&quot;. Go ahead.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">McCrank</div><div class="date">2009-01-23, 10:43 AM</div></div><div class="posttext">I am strongly convinced that Blizzard is just breaking WoW on purpose in order to make any future products more attractive. There are many changes that one has to be retarded to approve of.<br />
+<br />
+<br />
+Aren't they making a &quot;next gen&quot; mmo?<br />
+<br />
+I'm pretty sure they would want all the 11.5+ million to buy that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">deo</div><div class="date">2009-01-23, 12:24 PM</div></div><div class="posttext">regarding the rollbacks and enchants and stuff being returned. <br />
+I didnt do a single game this week, but instead used this week as an oppurtunity to grind loads of honor and buy the gear needed for myself.<br />
+<br />
+I know that 75k is the honor cap and have brought 3 items this week using points from the previous week and grinded honor this week - will I be refunded back over the cap or is all that honor going to be lost? Because this is really cry-worthy if ive put in that effort and technically lose out on an item because of a fault at blizz's end.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rilgon</div><div class="date">2009-01-23, 12:25 PM</div></div><div class="posttext">+Swoosh is rightImpossible, he's talking about PVP. Anything + PVP = inherently wrong statement (unless it's &quot;remove PVP from the game&quot;).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zsol</div><div class="date">2009-01-23, 12:45 PM</div></div><div class="posttext">Static figures (for example) = The exact dps you can do given a standard rotation based on static statistics<br />
+Dynamic gameplay (for example) = Moving from a random fire<br />
+<br />
+Combine these 2 points together and you can see that theorycrafting merely supports practical gameplay and it isnt the be all and end all of overall dps. I hope you understand my point a bit clearer on that subject.<br />
+<br />
+Concerning your second point - <br />
+<br />
+High skilled players soon move up the ladder in the old system regardless of whther they made a new team or not.<br />
+It's not fun to be farmed.<br />
+<br />
+It's also not fun to have your personal rating pre-calculated and manipulated so that you don't even have to be skilled to get good in arena.<br />
+<br />
+...<br />
+<br />
+<br />
+Yes, now I understand your point on the first thing. I think that you are referring to theorycrafting as a whole, but I thought the current &quot;hidden rating&quot; was on the table. I agree with you on your point that you can not tell people how they should play based solely on theorycrafting. I also think that this is not the purpose of people at EJ. With that approach, you should be able to see what is your character's maximum in theory, therefore you can judge your own performance. Which is another way of saying that it merely supports practical gameplay.<br />
+(Also, if you get higher actual values than what theorycrafting suggests, then there probably is something wrong with the theory ;D)<br />
+<br />
+Regarding the second point, I don't see why are you concerned about bad players getting the same gear as good players are. I think good players should still be beating the bad players with the exact same quality gear.<br />
+And yes, in that aspect, this is to stop people QQ'ing and trolling on the forums by narrowing the gap between good and bad players. I can understand that, because IMO (and I think in yours as well) good players are good because of their skill.<br />
+Now you can argue about rewards, but what is more fun? Winning an arena battle, or getting one more piece of gear? I agree, skilled people should be rewarded, but not with better gear, which deepens the huge canyon between them and average or poorly skilled players.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">emulous</div><div class="date">2009-01-23, 12:57 PM</div></div><div class="posttext">swoosh you are a total moron..<br />
+<br />
+How can say that steamrolling scrubs is hard work? or that people who support a system that allow players to compete VS players of roughly the same skill level don't want to work for their rewards?<br />
+<br />
+TBH I hope you get banned because your clearly trolling, anyone who supports 2200 rating teams streamrolling 1500-1800 rating team &quot;for fun&quot; or whatever is simply trolling.<br />
+<br />
+I support this system 110%! there isn't a single sport or game in world that I know where the higher skilled players are allow to steamroll or destory lower skilled teams score for fun or otherwise and its about time blizzard created something to prevent it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Trouble</div><div class="date">2009-01-23, 01:09 PM</div></div><div class="posttext">I am really enjoying how they can hotfix a lot more stuff than they could before. A lot of the hotfixes we're seeing are a direct result of code added in 3.0.8 to allow for additional hotfix capabilities.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wynsight</div><div class="date">2009-01-23, 01:14 PM</div></div><div class="posttext">there isn't a single sport or game in world that I know where the higher skilled players are allow to steamroll or destory lower skilled teams score for fun or otherwise and its about time blizzard created something to prevent it.<br />
+<br />
+<br />
+<br />
+See: NCAA college basketball tournamet, any European relegation-style soccer leagues, Detroit Lions. Those that suck get hammered by more skilled teams, lose, and find something else to do with their lives because bitching won't make up for the fact that they're terrible at the game they play.<br />
+<br />
+Life isn't fair, and those who are weak at things sink to the bottom. What sucks is that Blizzard wants everyone to feel good about themselves and tries to give everyone a life preserver.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nemesisevil</div><div class="date">2009-01-23, 01:18 PM</div></div><div class="posttext">Swoosh how can you compare something like the government making the poor rich when not having to work and the rich still rich which while working really hard, to a new arena system that simply stops high rated players going against not so experienced players? All I can see happening is them making the game fairer.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nemesisevil</div><div class="date">2009-01-23, 01:23 PM</div></div><div class="posttext">See: NCAA college basketball tournamet, any European relegation-style soccer leagues, Detroit Lions. Those that suck get hammered by more skilled teams, lose, and find something else to do with their lives because bitching won't make up for the fact that they're terrible at the game they play.<br />
+<br />
+Life isn't fair, and those who are weak at things sink to the bottom. What sucks is that Blizzard wants everyone to feel good about themselves and tries to give everyone a life preserver.<br />
+<br />
+<br />
+Mate most people who don't get high in arenas or end game raiding cleared in a few months usually play WoW a LOT less than these high rated players (A lot on my server are online for hours upon hours throughout the week). Arena does take skill but I'm pretty sure most people could reach a high rating if we had more time on WoW.<br />
+<br />
+What Blizzard is doing is giving casuals good rewards but hardcores get the best rewards faster, what is wrong with that? Whether you think it's right or wrong anyway it's a strategy that keeps the customers happy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Grisham</div><div class="date">2009-01-23, 01:27 PM</div></div><div class="posttext">I think some of you totally missed the point about the &quot;hidden rating&quot; - it is the FINAL nail in the coffin of the whole &quot;arena business&quot; that poisoned the event from the beginning.<br />
+<br />
+Back in the days where when there was no personal rating and Wednesday chan trade was spammed with all the &quot;want your shoulders? contact me for info&quot;, I already noticed that the whole problem with win-trading, point selling etc could be resolved with just one change: making people unable to recreate a team, forcing them to choose ONE comp for a whole season (which make 100% sense by me book). <br />
+<br />
+Of course there could be issues: your partner(s) could be gone for a while/don't want to continue etc so it cannot be done this way. The hidden rating IS THE SOLUTION.<br />
+<br />
+I'm not a &quot;great&quot; PvP player as well but I did push 2k+ on both S3 and S4 and I can assure you that losing several times in a row 20+ points, effectively losing rating gained in dozens of &quot;legit&quot; matches simply because you faced uber-geared, skilled and bored 2k2+ gladiators was NOT FUN, nor &quot;sport&quot; at all. There should be a risk to recreate a team and players should have a &quot;rank&quot; tied to them according to their achievements in arena - this way it can stay competitive for every layer.<br />
+<br />
+S5 gives a different challenge for everyone: casuals/BG players can go for &quot;full blue&quot; set, others can try the &quot;full hatefull&quot; challenge, good ones can aim the &quot;all deadly&quot; (with or without accessories like weapon, ranged etc) and best of the best gladiator title/drake. <br />
+<br />
+It is unfortunate that this bug appeared but the initial change is one of the best thing that happened to arena-system from the beggining as this change will have a far greater impact that the &quot;personal rating&quot;.<br />
+<br />
+Of course l33t troglodyte won't be happy - rejoice then! ;D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LockBane</div><div class="date">2009-01-23, 01:29 PM</div></div><div class="posttext">regarding the rollbacks and enchants and stuff being returned. <br />
+I didnt do a single game this week, but instead used this week as an oppurtunity to grind loads of honor and buy the gear needed for myself.<br />
+<br />
+I know that 75k is the honor cap and have brought 3 items this week using points from the previous week and grinded honor this week - will I be refunded back over the cap or is all that honor going to be lost? Because this is really cry-worthy if ive put in that effort and technically lose out on an item because of a fault at blizz's end.<br />
+<br />
+<br />
+You should be fine as it says teams will be returned to their rating prior to 3.08 and any ILLEGITIMATE items will be removed and refunded. My question is what will they do for the people who already enchanted and gem'd out their new gear. I am a decent pvper and my brother and I do arcane and disc 2s, not the best combo buts its fun. We usually hang around 1750. Before the patch we got a bunch of LOS healers and a rogue or warrior which make it really hard to win and dropped to around 1665. After the patch we won one game and I bought the hateful chest which requires 1675. I chanted and gem'd it out and then DE my frostsavage chest. I just really hope they don't decide i got it illegitimately and leave my without a chest piece. Im not QQ it wont be to hard to put on my pve chest and get back to 1675, it will just be a real pain.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wynsight</div><div class="date">2009-01-23, 01:33 PM</div></div><div class="posttext">Mate most people who don't get high in arenas or end game raiding cleared in a few months usually play WoW a LOT less than these high rated players (A lot on my server are online for hours upon hours throughout the week). Arena does take skill but I'm pretty sure most people could reach a high rating if we had more time on WoW.<br />
+<br />
+What Blizzard is doing is giving casuals good rewards but hardcores get the best rewards faster, what is wrong with that? Whether you think it's right or wrong anyway it's a strategy that keeps the customers happy.<br />
+<br />
+<br />
+So basically what you're saying is that people who don't invest the time and energy into honing their craft should be duly compensated for those who do. I hate PVP with the intensity of a thousand suns, but for some reason, I really can't sit here and buy into this commie bullcrap of everyone should be equal and that Blizz needs to do something about it. <br />
+<br />
+Your &quot;potential&quot; as a PVPer has nothing to do with the &quot;real world&quot; of PVP. All it sounds like is a weak justification and a pipedream for a lack of overall skill. And yeah, the customers are happy because they basically get something for nothing. <br />
+<br />
+BTW, you don't hear me bitching that I can barely find time to casually do Naxx10 with close guild friends because of two jobs, wife and all the other hastles of the real world, do you?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">perera</div><div class="date">2009-01-23, 01:35 PM</div></div><div class="posttext">I am strongly convinced that Blizzard is just breaking WoW on purpose in order to make any future products more attractive. There are many changes that one has to be retarded to approve of.<br />
+<br />
+<br />
+I know it's silly, but I've been feeling the same way lately. If that turns out to be the case, GL selling anything I'm forced to update again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">emulous</div><div class="date">2009-01-23, 01:52 PM</div></div><div class="posttext">@Wynsight &amp; @Swoosh<br />
+<br />
+Your still talking comeplete bullshit.. Do team in the premier league in football &quot;create new teams&quot; in devsion 3 and 'pwn newbs' for fun? no..<br />
+<br />
+Does Dave Beckham pimp himself out to 5-6 lower devsion team to help boost there score? no..<br />
+<br />
+Do the olympic world record holders run races vs people with handicaps and then bost about how much they 'pwn' people who only have 1 leg?<br />
+<br />
+I will repeat myself in a clearer way then before.. NO SPORT or GAME allows top devsion teams to farm / grief the players in lower devsion.. <br />
+<br />
+This new system doesn't mean that 1500 rating players can get 2000 rating I don't know where you got that idea from.. what it does do is mean that 1500 players don't face 2000 rating players? how fricking hard is that to understand? both of you are saying that it makes thing easier and it might make getting slightly harder easier YES but they will face each other once your hidden rating goes up (which it will)..<br />
+<br />
+The system is simple..<br />
+<br />
+Team A: 1500 (hidden: 1500) &lt;- normal team<br />
+Team B: 1500 (hidden: 1500) &lt;- normal team<br />
+Team C: 2200 (hidden: 2200) &lt;- normal team<br />
+Team D: 1500 (hidden: 2200) &lt;- i like killing scrubs and remade a team.<br />
+<br />
+In this system team A will face team B and team C with face team D.. that fair and that is competition... what is not fair is if team D just gets to farm team A and B? Why? because that means there rating will go down unjustily because they are playing team that outskill / gear them.<br />
+<br />
+But in the same system if team A keeps beating team B and raise his rating. to 1900 so things look like this;<br />
+<br />
+Team A: 1900 (hidden: 1900) &lt;- normal team<br />
+Team B: 1100 (hidden: 1100) &lt;- normal team<br />
+Team C: 2000 (hidden: 2000) &lt;- normal team<br />
+Team D: 1700 (hidden: 2000) &lt;- i like killing scrubs.<br />
+<br />
+Then Team A C and D will all have a decent chance of facing each other.. they will still have to work just as hard once they reach the higher ratings.. <br />
+<br />
+Think of it has heroics -&gt; 10man -&gt; 25man... you wouldnt expect people who can't even do heroics to be able to 25 man.. and you can't expect people who are 1600 rating to beat players who are 2200 rating.. <br />
+<br />
+You just can't.. and the 1600 player play VS other 1600 rated players and are rewarded with heroic gear and the 2200 rating player get rewarded with his 25 man gear.. and when the 1600 rated player gets his heroics gear and moves upto 1800 rating he will face players in 10man gear and so on and so forth.. how can you not understand that?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bagwell</div><div class="date">2009-01-23, 01:54 PM</div></div><div class="posttext">Cant say its ever really failed me since i have completed all worthy achievements, have the best main spec gear in game, and am 2 pieces away from best offspec gear in game.<br />
+<br />
+<br />
+<br />
+<br />
+A male human retadin, period.<br />
+<br />
+Edit: I couldnt help myself creating this account just to troll this moron... ::)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc34986799a3</div><div class="date">2009-01-23, 02:10 PM</div></div><div class="posttext">so, they have set cd on coh, and now they want us to use some others spells.. crist, i was happy about how it was.. i 100% agree that coh was overpowered, but instead of lower the heals they put a freaking cd on it and force us to heal with something else.. now they want to create NEW spells, too make us use other stuff..<br />
+<br />
+Give new priest developer who wont break holy priestes!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paly</div><div class="date">2009-01-23, 02:19 PM</div></div><div class="posttext">Does Dave Beckham pimp himself out to 5-6 lower devsion team to help boost there score? no..<br />
+<br />
+<br />
+Completely off-topic, but yes ;) I'd say that the teams in USA can be compared to division 5 in the rest of the world ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rainei</div><div class="date">2009-01-23, 02:44 PM</div></div><div class="posttext">I've never seen the ad's on the forums because i have ad block plus, but i always though blizzard were advertising their own products, but instead they have third party adverts?<br />
+<br />
+what are they so desperate for cash or they're trying to milk this cow dry?<br />
+<br />
+<br />
+They are advertising their own product.<br />
+<br />
+Notice of all the gold selling companies Susanexpress is the one that always in game? Notice anyone that buys from susanexpress is never banned? They own the freakin company, where else do you think our absurd repair bills, outrageous travel prices, BS auction cuts, go? It dosen't dissapear from the game, it goes into another account to be sold back to the players.<br />
+<br />
+Now this downtime has me furious. I dont give a monkey's arse about their precious GD arena's and I could give a flying crap about if they are down. You should never, EVER, down the servers to fix arenas! Put them on their own server nottied to everything else! Oh wait they did! But you have to pay to play that realm!<br />
+<br />
+Heres a grand idea. Put all toons on an arena ONLY realm, AWAY FROM ALL OF WOW, FREE to play, so when this BS happens, WE ARENT EFFECTED! <br />
+<br />
+Morons.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RWeber</div><div class="date">2009-01-23, 02:54 PM</div></div><div class="posttext">This is exaclty why &quot;theorycrafting&quot; fails so hard.<br />
+<br />
+Whenever you get a bunch of geeks who claim that they are 100% correct (like elitist jerks for example) through maths, and then you get actual players who are doing the encounters for real and find better ways of doing things in practice, it blows all the theorycrafting out the window.<br />
+<br />
+The only thing failing hard is you at understanding what theorycrafting is. Do you seriously think that the theorycrafting people don't understand the difference between theoretical approach and actual game play?<br />
+<br />
+Yes, &quot;theorycrafting geeks&quot; can claim to be 100% correct. However, this correctness is only asserted within a rigid set of assumptions. Assumptions that do not hold in reality as every theorycrafter will readily admit.<br />
+<br />
+What theorycrafting gives you is something other than a brute force approach to making decisions about gearing or rotations. Often, by chance someone finds out an important discrepancy between theory and reality due to some effects not taken into account in the theory. This does not &quot;blow all theorycrafting out the window&quot;, on the contrary it means that the theories are reworked making them more accurate.<br />
+<br />
+Without a theory all you could do is to try every possible combination of gear and rotations to find out what works well. All too often this amounts to nothing more than the player's personal feelings and intuitions on what works well - and this is typically always non-optimal no matter how religiously the player believes in it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">perera</div><div class="date">2009-01-23, 03:02 PM</div></div><div class="posttext">regarding the rollbacks and enchants and stuff being returned. <br />
+I didnt do a single game this week, but instead used this week as an oppurtunity to grind loads of honor and buy the gear needed for myself.<br />
+<br />
+I know that 75k is the honor cap and have brought 3 items this week using points from the previous week and grinded honor this week - will I be refunded back over the cap or is all that honor going to be lost? Because this is really cry-worthy if ive put in that effort and technically lose out on an item because of a fault at blizz's end.<br />
+<br />
+<br />
+They are messing with arenas from what I understand, due to problems that messed up people's ratings. So your honor points should be safe.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FuzioN</div><div class="date">2009-01-23, 03:10 PM</div></div><div class="posttext">About this gold sell ad, this just proves that im more close to that i have right imo.<br />
+How did it get there?<br />
+i mean ive said for ages im almost 100% sure blizz have an own gold selling company.<br />
+<br />
+And by mistake somehow they showed their &quot;secret gold&quot; selling compay ad at wow hompage.<br />
+<br />
+Wouldnt suprise me if it was like this, becuse i mean just look how much they add unesscary shit to farm money for wich is redicilous.<br />
+<br />
+ofc there is companys that is normal not owned by blizz etc, if somone cba investigate this about this add on hompage be my guest :)<br />
+<br />
+call the company check company list who personaly name it is owned to etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cassi</div><div class="date">2009-01-23, 03:34 PM</div></div><div class="posttext">the hidden rating is just next step to give bad players best gear there is its continue to voa where pugs get deadly allready <br />
+<br />
+next point will be they reward for loosing and give a loser reward for sucking so the bad players don't quit or cry when they go sleep</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RWeber</div><div class="date">2009-01-23, 03:34 PM</div></div><div class="posttext">About this gold sell ad, this just proves that im more close to that i have right imo.<br />
+How did it get there?<br />
+i mean ive said for ages im almost 100% sure blizz have an own gold selling company.<br />
+<br />
+Is your tinfoil hat securely fastened? Seriously though, why would Blizzard go through all that trouble when they could just as well sell it in game if they wanted to? The reason there are big money sinks in the game is to stop inflation.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Genericrogue</div><div class="date">2009-01-23, 03:34 PM</div></div><div class="posttext">Check out the upcoming rogue PvE changes! I might be able to compete now! <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+oh, wait...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Windywoo</div><div class="date">2009-01-23, 03:45 PM</div></div><div class="posttext">Every single sport in the World allows teams to compete against each other.<br />
+<br />
+Of course the best teams play the worst teams and beat them with ease. Are you blind?<br />
+<br />
+What would you say to a system that allows the worst teams in a league to get exaclty the same rewards as the best teams in a league regardless of how they perform.<br />
+<br />
+I simply don't believe you are retarded enough to not understand that fair competition means that the best teams will win against the worst teams.<br />
+<br />
+To make them not ever play each other simply because the outcome favours the better would be retarded.<br />
+<br />
+Have you ever seen great moments in sporting history where the underdogs have won?<br />
+<br />
+Well gz if you support the new system, you will never see any under dogs winning against better teams, because blizzards system means they will never play each other.<br />
+<br />
+I still cant believe you think great teams in sport never play bad teams. That came as a bit of a shock to me. ::)<br />
+<br />
+<br />
+The difference between real world sports and Arena is there is no gear difference, and there are no classes to unbalance the game. There are no home or away games in arena, no supporters shouting from the terraces. There's no opportunity for someone to lift their game on a day because they a Frostbolt is always a frostbolt no matter how motivated you feel. You can't cast faster because you are on a high, you can't dodge your opponents tackle, because its decided by RNG.<br />
+<br />
+Most real world sports have leagues, and these are sorted by ability. Theoretically all the teams in the top league are of a very high standard, and the ones in a lower league are of a lower standard but should compete fairly well against each other. Arena has no leagues, and worse still, the top teams can play the lower teams more than 2 times a season. Of course better players beat the lesser ones, whats interesting in that? Better to pit them against players who are more of a challenge.<br />
+<br />
+And using real world sports is another really bad example for the reason that they are HORRIFICALLY overpaid. The best teams get stupid amounts of money, way above the lower competitors. They are better, but they aren't THAT much better.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nemesisevil</div><div class="date">2009-01-23, 03:50 PM</div></div><div class="posttext">So basically what you're saying is that people who don't invest the time and energy into honing their craft should be duly compensated for those who do. I hate PVP with the intensity of a thousand suns, but for some reason, I really can't sit here and buy into this commie bullcrap of everyone should be equal and that Blizz needs to do something about it. <br />
+<br />
+Your &quot;potential&quot; as a PVPer has nothing to do with the &quot;real world&quot; of PVP. All it sounds like is a weak justification and a pipedream for a lack of overall skill. And yeah, the customers are happy because they basically get something for nothing. <br />
+<br />
+BTW, you don't hear me bitching that I can barely find time to casually do Naxx10 with close guild friends because of two jobs, wife and all the other hastles of the real world, do you?<br />
+<br />
+<br />
+<br />
+What Blizzard is doing is giving casuals good rewards but hardcores get the best rewards faster, what is wrong with that? Whether you think it's right or wrong anyway it's a strategy that keeps the customers happy.<br />
+<br />
+but hardcores get the best rewards faster<br />
+<br />
+best<br />
+<br />
+And no I do hear you bitching. What else are you doing on these forums other than complaining about a system Blizzard are trying to improve and make fairer for everyone? I don't care about your personal life either, when did anyone ask whether you have kids or a job? This is about how Blizzard are going about things.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rilgon</div><div class="date">2009-01-23, 03:51 PM</div></div><div class="posttext">Check out the upcoming rogue PvE changes! I might be able to compete now! <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+oh, wait...And this cycle will continue, sadly, because Blizzard dare not buff Rogues, because the PVP-based outlash would be otherworldly.<br />
+<br />
+Screw the fact that they NEED significant buffs in PVE, as their damage sans-HAT is lacking, the Arenafags would bitch up a storm, so sorry Rogues.<br />
+<br />
+<br />
+And this 4-hour downtime JUST for Arena is fucking bullshit. Leave that crap until Tuesday maintenance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cassi</div><div class="date">2009-01-23, 04:14 PM</div></div><div class="posttext">aww here is lollipop take it and stop crying and sit down and we are singing you happy song so you can get sleep next time :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Graviteh</div><div class="date">2009-01-23, 04:19 PM</div></div><div class="posttext">I got an infraction on EJ for reporting a post.<br />
+<br />
+The moderators there aren't elitist, they're retarded.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daez</div><div class="date">2009-01-23, 04:26 PM</div></div><div class="posttext">Imagine if it would happen in real life - <br />
+<br />
+<br />
+Much like real life, there is absolutely no balance when it comes to opportunity. A warlock is not on the same scale as a mage at the moment. The mage has a clear advantage. So, I guess the warlock just sucks because their class is designed to get rolled right now.<br />
+<br />
+When Blizzard learns to balance classes then there will be fewer problems with arena. In the mean time, if you want to play a PvP based game go play WAR because at least Mythic does understand class balance.<br />
+<br />
+The biggest issue I have is that they felt the need to bring down the servers to fix arenas in a special maintenance when it could have waited till next Tuesday.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daez</div><div class="date">2009-01-23, 04:41 PM</div></div><div class="posttext">so, they have set cd on coh, and now they want us to use some others spells.. crist, i was happy about how it was.. i 100% agree that coh was overpowered, but instead of lower the heals they put a freaking cd on it and force us to heal with something else.. now they want to create NEW spells, too make us use other stuff..<br />
+<br />
+Give new priest developer who wont break holy priestes!<br />
+<br />
+<br />
+Oh my god, they want you to l2play the game instead of press one button over and over. That is horrible of them. STFU scrub.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Archdrood</div><div class="date">2009-01-23, 05:09 PM</div></div><div class="posttext">So...2hr went by...then 4hr went by... I need my WoW fix now! :-X</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">sapphirewizard</div><div class="date">2009-01-23, 05:19 PM</div></div><div class="posttext">I just love blizz's choice of words &quot;anticipate this process will last no longer&quot;, in other words &quot;we think it will take 4 hours but we have no idea&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Punchey</div><div class="date">2009-01-23, 05:21 PM</div></div><div class="posttext">imo just remove arena from the game completely and keep up the arena realms for competitive arena play. and make them pay a little extra that way we wont have any baddies there eighter. and less people in arena gear in raids :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Numsu</div><div class="date">2009-01-23, 05:37 PM</div></div><div class="posttext">Bet Blizzard owns that wowmine company themselves and are earning just bonus money from there ;p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jarry</div><div class="date">2009-01-23, 06:48 PM</div></div><div class="posttext">Then Blizzard should create different divisions in arena just like they do in the real sports World.<br />
+<br />
+&quot;Fixing&quot; peoples personal ratings when they play in the same &quot;division&quot; as each other is as bad as win trading or &quot;fixing&quot; horse races.<br />
+<br />
+In fact i will go as far as to say Blizzards new system works in almost the exact same principle as win trading tactics, something they themselves have banned many players for.<br />
+<br />
+IF you want to give people a &quot;chance&quot; like in the real sports World, then you make different divisions, and teams can get &quot;promoted&quot; or &quot;relegated&quot;.<br />
+<br />
+The new system sucked balls, this is something your forgetting, the players knew it, blizzard knew it.<br />
+<br />
+You seem to forget that this is the very reason why arena got taken offline.<br />
+<br />
+<br />
+You are so off base 0_0.. arena was taken offline because an incorrect calculation.. a terrible rogue alt in my guild had a 2800 rating because of this, the new system has nothing to do with the recent arena fiasco.<br />
+<br />
+Is it really hard to understand the new system? Persay Team A is a '1500' skill team, they fight 1500 skill teams and narrowly win because they are both terrible, now they work their way up to 1550.. they cant beat 1550 teams because they are 1500... So they fall back down. In what way does that give them easy access to gear? For those who immediately started and now have full PVP gear.. they did have to face fully pvp geared epic'd people who presumably would have a high secret rating, if they had weapon/shoulders etc. People in full savage typically wont have very high ratings. <br />
+<br />
+The system, as it was described and should work, is a very solid structure and enforces much better and fair gameplay. A highly skilled team should not benefit from beating a crap team. <br />
+<br />
+I just have a hard time figuring out why this is so grey and not easily seen?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">monkeysnarf</div><div class="date">2009-01-23, 07:32 PM</div></div><div class="posttext">http://static.mmo-champion.com/mmoc/images/icons/24x24/shaman.jpg Shaman (Skills List (http://www.mmo-champion.com/index.php?page=660) / Talent + Glyph Calc. (http://talent.mmo-champion.com/?shaman))<br />
+Shaman role in raids<br />
+This was in reference to why we let Elemental shaman damage be low in Sunwell. Our old design for shamans was that they couldn't do damage or heal as well as other specs because they could do both and because their buffs were so good. We retired that dated philosophy and now intend for them to do competitive dps -- just below the pure dps classes. (Source (http://blue.mmo-champion.com/27/14498463262-two-nonqq-questions-for-the-devs.html))<br />
+<br />
+Funny :&gt;<br />
+Enhancement Shaman are still one of the strongest DPS classes at the moment.<br />
+Weird philosophy ;)<br />
+<br />
+LOL nah. It's because elemental could at least heal in a pinch. Enhancement shaman, back in sunwell days, healed only slightly better than rogues.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wynsight</div><div class="date">2009-01-23, 08:22 PM</div></div><div class="posttext">What Blizzard is doing is giving casuals good rewards but hardcores get the best rewards faster, what is wrong with that? Whether you think it's right or wrong anyway it's a strategy that keeps the customers happy.<br />
+<br />
+but hardcores get the best rewards faster<br />
+<br />
+<br />
+<br />
+What's wrong with that? Your wording would make it suggest that everyone should be able to get the same bestest rewards, but it would just take more time for casual/less skilled players to amass greatness.<br />
+<br />
+It's garbage. The system is garbage, your everyone-should-be-happy philosophy is garbage. The people that don't deserve top level items should not get them, no matter what system is in. And there's never going to be a system in that'll satisfy the majority of the bell-curve population that'll fall below the requirements to get their precious top level requirement gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">The Ninth Layer</div><div class="date">2009-01-23, 08:59 PM</div></div><div class="posttext">Here's a question:<br />
+<br />
+If all you pro PvPers are so good at PvP, why would you complain about &quot;scrubs&quot; getting PvP gear? Wouldn't that make PvP more challenging and interesting for you? Wouldn't that make PvP more competitive, so that the best players (instead of the best-geared players) came out on top?<br />
+<br />
+Honestly the biggest problem with PvP right now is gear imbalance. If PvP gear is unattainable without a higher rating, and the only way to get those higher ratings is to have a certain level of gear, then the system is broken and &quot;scrub&quot; players are entitled to be upset about it. <br />
+<br />
+People should have an opportunity to be competitive in arenas.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">The Ninth Layer</div><div class="date">2009-01-23, 09:15 PM</div></div><div class="posttext">Because PvP gear is the &quot;reward&quot; for doing well in arena. You should not get rewarded if you suck, It's that simple.<br />
+<br />
+A solution to this (and ive thought long about this one) is to eliminate gear as a &quot;reward&quot; for doing well.<br />
+<br />
+Every person enters arena with a standard set of arena gear, and different rewards become available (for example, in game gold, or real life wow merchandise).<br />
+<br />
+The problem is that making your character become more powerful in - game i would imagine to be the best reward.<br />
+<br />
+Its a problem for sure because having gear as a reward makes the game more fun (imo) but also conflicts with the balance of arena (which you've highlighted yourself).<br />
+<br />
+Would you still play arena if the rewards didnt make your character more powerful? Im not sure i would either. But at the same time, why should bad players be rewarded with the same rewards as the good players? That is also unfair.<br />
+<br />
+<br />
+Think about how dumb and circular this is though. Doing well in PvP gets you PvP gear. You need PvP gear to do well in PvP. If you don't have PvP gear, you can't do well in PvP, and you can't get PvP gear. That's not a skill issue, it's a gear issue. If my Lava Burst crits for 7k and yours crits for 9k, and we're both equally skilled, you'll win almost every time, which will reward you with PvP gear, which will let you win more often. At that point it doesn't matter how good I am.<br />
+<br />
+With Season 1 I could play games every week and eventually catch up. With Season 3 I could get almost everything to be competitive. But with Season 5 (and 4 had this problem too), I have to break a certain threshold to be competitive, and that threshold is blocked by people who already have gear which exceeds it. I'm not fighting people of my gear level to get there, I'm fighting people with much better gear than me and it doesn't matter how good I am against them.<br />
+<br />
+Players shouldn't be rewarded for sucking but they shouldn't be punished for not having gear either and that's the system right now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Clarkis2001</div><div class="date">2009-01-23, 09:16 PM</div></div><div class="posttext">We're currently working hard to find a way to solve this problem without making Warlocks PvP viable. <br />
+<br />
+<br />
+OMG dude. You made me lol at work today. Thanks! Hahaha. This is not only true but hilariously stated. =D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hpot4</div><div class="date">2009-01-23, 11:08 PM</div></div><div class="posttext">This is exaclty why &quot;theorycrafting&quot; fails so hard.<br />
+<br />
+Whenever you get a bunch of geeks who claim that they are 100% correct (like elitist jerks for example) through maths, and then you get actual players who are doing the encounters for real and find better ways of doing things in practice, it blows all the theorycrafting out the window.<br />
+<br />
+Too much maths and theorycrafting f**ked arena ratings.<br />
+<br />
+Just let the players play ffs and screw you with your &quot;people who are crap at the game deserves to do well too&quot; attitude blizzard.<br />
+<br />
+Scrubs will always be scrubs and they are scrubs for a reason. IF they play against top end players because that player rerolled team, then so f**king what.<br />
+<br />
+Theorycrafting fails so much. And this just proved it.<br />
+<br />
+<br />
+Because of one miscalculation, you have now proved theorycrafting is ineffective. Go to school you ignorant sloth.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">infernalx</div><div class="date">2009-01-23, 11:33 PM</div></div><div class="posttext">I bet more than one person bought gold thinking it was from Blizzard themselves</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mahtamori</div><div class="date">2009-01-24, 12:01 AM</div></div><div class="posttext">They talk a lot about &quot;fun&quot; and &quot;healing&quot; with Priests, Druids, and Shamen. When will they do the same for Paladins?<br />
+<br />
+Right now &quot;fun&quot; and &quot;Paladin healing&quot; is diametrically opposed. There's two spells to push, with a situational third and fourth (neither of which actually add much). And the sum of 4 spells, 3 are carbon copies of each others with different numbers and subsequent cast times while the fourth spell is a mana and CD consuming double-heal spell which due to it's short-term nature is more than a little difficult to handle.<br />
+<br />
+Where's the spell X affects spell Y? Holy Shock needs to crit to do it, and as such 60-70% of the time you use it it will NOT affect Holy Light nor Flash of Light. Sacred Shield is good, but it works on the assumption that the target takes continual damage.<br />
+<br />
+Where's the non-single heal? Beacon of Light needs to be set up in advance and only affects two targets, provided that the target you heal is actually damaged in the first place!<br />
+<br />
+Paladins remain the only healing class unable to cope with all forms of PvE content, and it remains the least inventive (healing) class, and I feel this is mostly due to developer neglect than anything else. The mere fact that it's the only class where they bring up the healing meters as an argument is telling, when every other class they are adamant pointing out that meters isn't everything.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc34986799a3</div><div class="date">2009-01-24, 10:24 AM</div></div><div class="posttext">Oh my god, they want you to l2play the game instead of press one button over and over. That is horrible of them. STFU scrub.<br />
+<br />
+we dont only press one button, u gimp, so u stfu emo boy..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zsol</div><div class="date">2009-01-24, 10:33 AM</div></div><div class="posttext">They talk a lot about &quot;fun&quot; and &quot;healing&quot; with Priests, Druids, and Shamen. When will they do the same for Paladins?<br />
+<br />
+Right now &quot;fun&quot; and &quot;Paladin healing&quot; is diametrically opposed. There's two spells to push, with a situational third and fourth (neither of which actually add much). And the sum of 4 spells, 3 are carbon copies of each others with different numbers and subsequent cast times while the fourth spell is a mana and CD consuming double-heal spell which due to it's short-term nature is more than a little difficult to handle.<br />
+<br />
+Where's the spell X affects spell Y? Holy Shock needs to crit to do it, and as such 60-70% of the time you use it it will NOT affect Holy Light nor Flash of Light. Sacred Shield is good, but it works on the assumption that the target takes continual damage.<br />
+<br />
+Where's the non-single heal? Beacon of Light needs to be set up in advance and only affects two targets, provided that the target you heal is actually damaged in the first place!<br />
+<br />
+Paladins remain the only healing class unable to cope with all forms of PvE content, and it remains the least inventive (healing) class, and I feel this is mostly due to developer neglect than anything else. The mere fact that it's the only class where they bring up the healing meters as an argument is telling, when every other class they are adamant pointing out that meters isn't everything.<br />
+<br />
+<br />
+If you have a holy pally in the raid, you'll want to assign him to single target healing because that's the job that suits him/her the best. Accept it. If you roll a pally, you will be a single-target healer. This by itself doesn't mean that you are unable to heal multiple target. It is just harder, more inefficient. And no, Paladins are not the only healing class unable to cope with all forms of PvE content. You can do anything if you want to, it just needs more sweat from your part. Hell I have managed to heal through 10man Noth and Heigan with me being the only class capable of healing. Now get me a Druid who doesn't have any problems with healing through Patchwerk's hateful strikes.<br />
+<br />
+&quot;Where's the spell X affects spell Y?&quot;<br />
+There are judgements affecting haste rating, there's the HL cast time reduction, there's sacred shield, there's holy shock, there's beacon.<br />
+<br />
+And if you really use 3 or 4 abilities while healing in a raid, you should try and do some research on what more could you do because trust me, there is much much more to try and experiment with.<br />
+<br />
+Also I think healing as a pally is VERY exciting and fun.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daneel</div><div class="date">2009-01-24, 01:05 PM</div></div><div class="posttext">Swoosh is a moron, everyone who has been long enough on these forums knows that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aereon</div><div class="date">2009-01-24, 04:50 PM</div></div><div class="posttext">I don't like the new arena system.. <br />
+I have a 2v2 team on 1700'ish rating and I've played ALL the games on the team, thought my personal rating is 1640.. Now, this prevents me from buying upgrades later on, this is a dumbass change.. Gear doesn't equal skill, that's a fact. <br />
+So why not just bring the old system back, where you had the personal rating what the team rating was, if you had played all the matches.. It frustrates me, bah, I hope I'm not the only one who feels like this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Namamai</div><div class="date">2009-01-24, 07:34 PM</div></div><div class="posttext">myself and a friend have gathered pve gear since wolk... some 25man stuff some 10man stuff and alot of heroic stuff. We make a 2's team and dont do terribly well, but when we win we never got more than 10 pts. When we lost we usually lost more than 15... end of the night we went 11:11 and 1416 rating. 50% win rate and lost 80 points. <br />
+<br />
+There was a Flawless Victor beside me however, that had a 55% win rate on all his games... go figure...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aereon</div><div class="date">2009-01-24, 09:20 PM</div></div><div class="posttext">Exactly.<br />
+<br />
+You got punished because you have a higher ilevel of gear than your team mates. (it takes into account ALL of your level 80 gear, even those in bank slots)<br />
+<br />
+All youve accomplished in your team is to boost your team mates. (the exact thing blizz also wanted to stop)<br />
+<br />
+They get the gear and you get screwed.<br />
+<br />
+GG.<br />
+<br />
+<br />
+Yes, that's it. <br />
+Hope Blizzard realises this and sees what a major mistake they've done.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jexx</div><div class="date">2009-01-25, 05:21 AM</div></div><div class="posttext">Exactly.<br />
+<br />
+You got punished because you have a higher ilevel of gear than your team mates. (it takes into account ALL of your level 80 gear, even those in bank slots)<br />
+<br />
+All youve accomplished in your team is to boost your team mates. (the exact thing blizz also wanted to stop)<br />
+<br />
+They get the gear and you get screwed.<br />
+<br />
+GG.<br />
+<br />
+<br />
+If the new Arena rating system really works this way, that is total crap IMO.<br />
+<br />
+Im curious, to the people claiming the rating works this way now, is there any links to Blue posts confirming it is now based on gear including whats in your bank?? I really need to see an official response before I can believe Blizz dropped the ball on Arenas.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ozoR</div><div class="date">2009-01-25, 09:16 PM</div></div><div class="posttext">well we played 3 games of 3v3 today and won of all them. we gained F***** 14pts in 3 games! wtf is that?<br />
+<br />
+what's behind that crappy system? can't get any positive point :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chrion</div><div class="date">2009-01-25, 11:30 PM</div></div><div class="posttext">win 3 win 3 win 3, lose 9<br />
+win 3 win 3 win 3, lose 9<br />
+win 3 win 3 win 3, lose 9<br />
+over an hour played, 9-3 record, same exact team rating as when you started = big fucking waste of time and ultra frustration to the max! The unspoken silence during this garbage actually had me and my partner getting angry attitudes with eachother. We have played an average of 150 games a week for 2 season straight and always are calm and keep an upbeat attitude. Before we would have easily been to 2k+, but after playing over 60 games last night with the +3+3+3-9 bullshit continuing throughout, were sitting right at 1900 where we started and its garbage. My biggest complaint is blizzard saying there not going to go into detail on how the system works???!!!! WTF is that about? Any competitive ladder system out there atleast has the fucking basics of how the ladder or bracket works so the people in it understand, jesus!. I think we should all demand that blizzard explains in full detail exactly how the system works mathematically like right NAO. We pay for this shit, its not for you to treat us like dumbass herded animals that have no clue whats going on but continue walking around your field eating your grass, if we dont even understand how the shit works we can leave the field!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">randommagic</div><div class="date">2009-01-26, 12:27 AM</div></div><div class="posttext">dunno wtf or how this is working exectly but it seems really fucked imo<br />
+<br />
+my team had like 1804 rating or something last week<br />
+Now with the new system we play 10 games lost 4 games or so so what do you think the end resault was?<br />
+<br />
+lost 7 rating on the team score ( now 1797 ) but my personal rating is now 1818 wtf?<br />
+<br />
+bullshit imo.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darksi</div><div class="date">2009-01-26, 06:57 AM</div></div><div class="posttext">I dont find any good sides on this new system.. we plaid yesterday 10 games to test this out, we were 2050 rated when we started. We played many tight matches and ended up with 8 - 2 win lose ratio, gained 12 rating in total from this.. (won 4 4 3 4 5 3 4 5 / lost 9 and 11 points..) I would rly like to know aswell how this system exactly works.. 2062 would be 2100+ with the old system now so.. its just sad how they broke perfectly working system :(<br />
+I dont wanna do arenas anymore.. big thx.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleg</div><div class="date">2009-01-26, 11:15 AM</div></div><div class="posttext">We played many tight matches and ended up with 8 - 2 win lose ratio, gained 12 rating in total from this<br />
+<br />
+You forget that the new system also affects which teams you are matched up against. The old system would surely put you up against different teams than those you recently met. Possibly resulting in a lower win lose ratio.<br />
+<br />
+Guess we all would like to know the inner details of the new system. But even though the vast majority of PvP-ers seem to consider their own skills way over average (lol), quite a few of them seems to have no inhibitations concerning exploiting the rank system if they can. So maybe it is for the better that some details remain hidden?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Philis Diller</div><div class="date">2009-01-26, 09:00 PM</div></div><div class="posttext">last night when i was doing 3v3s our 1600 team went up against a 2050 team. i'm not sure how this happened but we held up good and almost beat them. It was a shock though when i looked up their team and it was at 2050. We had just purchased this team and were about 12 games in. we were on like a 6 or 7 game win streak so that might have been why. Also at the moment our team rating is at 1607 and me and the warlocks personal rating was 1530 while the pally was at 1607 personal rating. we are the only people that have been in the team so idk why this is happening.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gixen</div><div class="date">2009-01-28, 08:04 PM</div></div><div class="posttext">booo to the new system</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

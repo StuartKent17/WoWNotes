@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="million, that, the, another, 200,000, lost, mean, does, people, things, for, game, sign, hope, not, 1.8, this, queue, length, tweets, arena, achievements, stats, flying, poll, dlc, from, armory, was, sample, 504, last, time" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Malthael Cosplay from LBCC 2015, Thrill Conquest Builds, Jaetch's DB Farming Wizard 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Deck Spotlight: Kibler's ATLC Dragon Priest, EU Road to BlizzCon Trailer 
+ 
+&lt;img" />
+<title> Armory Stats - Flying Achievements, Arena Queue Length, Tweets, Poll, DLC #504 [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Flying Achievements, Arena Queue Length, Tweets, Poll, DLC #504</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1864434.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1864434-Armory-Stats-Flying-Achievements-Arena-Queue-Length-Tweets-Poll-DLC-504">Armory Stats - Flying Achievements, Arena Queue Length, Tweets, Poll, DLC #504</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-09-15, 04:09 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Malthael Cosplay from LBCC 2015, Thrill Conquest Builds, Jaetch's DB Farming Wizard (http://www.diablofans.com/news/48520-malthael-cosplay-from-lbcc-2015-thrill-conquest)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Deck Spotlight: Kibler's ATLC Dragon Priest, EU Road to BlizzCon Trailer (http://www.hearthpwn.com/news/1032-deck-spotlight-kiblers-atlc-dragon-priest-eu-road)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Ranked Play Leaderboards, Rotation for Sept. 15, 2015, Shop Sales, Into the Nexus #66 (http://www.heroesnexus.com/news/1483-ranked-play-leaderboards-rotation-for-sept-15-2015)<br />
+<br />
+Armory Stats - Flying Achievements<br />
+With flying finally here, we are checking back in to see how players are doing on unlocking flight. You can see the numbers from last month here (http://www.mmo-champion.com/content/5089-Armory-Stats-Flying-Achievements-August-14-Hotfixes-Blue-Tweets-HS-TGT-Cards).<br />
+<br />
+The sample used today is 1.8 million players (not characters) that have logged in since August 15th. Only level 100 characters are included in the data. Characters are grouped by player, so no matter how many characters a player has, they only count once.<br />
+<br />
+We included the 200 Treasures achievement just for comparison purposes, only 100 is required for Master Treasure Hunter (http://www.wowdb.com/achievements/10348-master-treasure-hunter), which is required for Draenor Pathfinder (http://www.wowdb.com/achievements/10018-draenor-pathfinder).<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: [ '#4768C4', '#949494', '#727272', '#595959', '#6B8E23', '#426F42']<br />
+});<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'flyingAch',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ '50 Treasures', '100 Treasures', '200 Treasures', 'Loremaster of Draenor', 'Explore Draenor', 'Securing Draenor', 'Tanaan Diplomat', 'Draenor Pathfinder'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.point.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Earned Flight Related Achievements',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [<br />
+{<br />
+data: [ {y: 59.49, color: '#AD5D3E', name:'50 Treasures'}, {y: 44.15, color: '#AD5D3E', name:'100 Treasures'}, {y: 10.32, color: '#AD5D3E', name:'200 Treasures'}, {y: 57.61, color: '#AD5D3E', name:'Loremaster of Draenor'}, {y: 45.50, color: '#AD5D3E', name:'Explore Draenor'}, {y: 34.98, color: '#AD5D3E', name:'Securing Draenor'},{y: 31.99, color: '#AD5D3E', name:'Tanaan Diplomat'}, {y: 28.67, color: '#AD5D3E', name:'Draenor Pathfinder'}],<br />
+<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+}]<br />
+});<br />
+<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'nonrollingchart',<br />
+zoomType: 'x',<br />
+spacingRight: 20,<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+title: {<br />
+text: 'Number of New Players Earning Draenor Pathfinder Per Week',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+subtitle: {<br />
+text: document.ontouchstart === undefined ?<br />
+'Click and drag in the plot area to zoom in' :<br />
+'Drag your finger over the plot to zoom in'<br />
+},<br />
+xAxis: {<br />
+type: 'datetime',<br />
+maxZoom: 14 * 24 * 3600000, // fourteen days<br />
+title: {<br />
+ text: null<br />
+},<br />
+startOnTick: false,<br />
+showFirstLabel: false<br />
+},<br />
+yAxis: {<br />
+title: {<br />
+text: 'Number of Players',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+startOnTick: true,<br />
+showFirstLabel: false<br />
+<br />
+},<br />
+tooltip: {<br />
+shared: true <br />
+},<br />
+legend: {<br />
+enabled: false<br />
+},<br />
+plotOptions: {<br />
+<br />
+areaspline: {<br />
+animation: false,<br />
+lineWidth: 3,<br />
+marker: {<br />
+enabled: true,<br />
+states: {<br />
+hover: {<br />
+enabled: true,<br />
+radius: 5<br />
+}<br />
+}<br />
+},<br />
+shadow: false,<br />
+states: {<br />
+hover: {<br />
+lineWidth: 3 <br />
+}<br />
+}<br />
+}<br />
+},<br />
+<br />
+series: [{<br />
+type: 'areaspline',<br />
+name: 'New Draenor Pathfinder Players',<br />
+pointInterval: 7 * 24 * 3600 * 1000,<br />
+pointStart: Date.UTC(2015, 5, 23),<br />
+data: [<br />
+1843 , 56360 , 72071 , 54629 , 45601 , 31540 , 28600 , 34791 , 41422 , 48633 , 86884 ]<br />
+}]<br />
+});<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;flyingAch&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+<br />
+&lt;br/&gt;<br />
+&lt;div id=&quot;nonrollingchart&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+&lt;table class=&quot;listing sortable news-table achievement-table listing-achievements mmoc-listing b-table b-table-a&quot; data-viewstate=&quot;&quot; data-ajax-set-window-state=&quot;true&quot; id=&quot;achievements&quot; data-row-selector=&quot;&gt;tbody&gt;tr&quot; data-default-sort-slug=&quot;name&quot; data-default-sort-order=&quot;asc&quot;&gt; &lt;thead class=&quot;b-table-header j-listing-table-header&quot;&gt; <br />
+&lt;tr&gt; &lt;th&gt;Name&lt;/th&gt; &lt;th&gt;Points&lt;/th&gt; &lt;th&gt;Percent&lt;/th&gt; &lt;th&gt;Category&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody class=&quot;filtered&quot;&gt; <br />
+<br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9727-expert-treasure-hunter&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/9727-expert-treasure-hunter&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20173/medium/icon_treasuremap.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9727-expert-treasure-hunter&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/9727-expert-treasure-hunter&quot;&gt;Expert Treasure Hunter&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Discover 50 treasures of Draenor (excluding Tanaan Jungle).&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 10&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;rewards&quot;&gt;59.49%&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;Draenor&lt;/td&gt;&lt;/tr&gt; <br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/10348-master-treasure-hunter&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/10348-master-treasure-hunter&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20173/medium/icon_treasuremap.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/10348-master-treasure-hunter&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/10348-master-treasure-hunter&quot;&gt;Master Treasure Hunter&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Discover 100 treasures of Draenor (excluding Tanaan Jungle).&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 10&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;rewards&quot;&gt;44.15%&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;Draenor&lt;/td&gt;&lt;/tr&gt; <br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9728-grand-treasure-hunter&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/9728-grand-treasure-hunter&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20173/medium/icon_treasuremap.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9728-grand-treasure-hunter&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/9728-grand-treasure-hunter&quot;&gt;Grand Treasure Hunter&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Discover 200 treasures of Draenor (excluding Tanaan Jungle).&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 10&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;rewards&quot;&gt;10.32%&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;Draenor&lt;/td&gt;&lt;/tr&gt; <br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9833-loremaster-of-draenor&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/9833-loremaster-of-draenor&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20173/medium/achievement_zone_draenor_01.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9833-loremaster-of-draenor&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/9833-loremaster-of-draenor&quot;&gt;Loremaster of Draenor&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Complete the Draenor quest achievements listed below.&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 10&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;rewards&quot;&gt;57.61%&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;Draenor&lt;/td&gt;&lt;/tr&gt;<br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/8935-explore-draenor&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/8935-explore-draenor&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20173/medium/achievement_zone_draenor_01.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/8935-explore-draenor&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/8935-explore-draenor&quot;&gt;Explore Draenor&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Explore the regions of Draenor.&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 25&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;rewards&quot;&gt;45.50%&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;Exploration&lt;/td&gt;&lt;/tr&gt; <br />
+<br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9562-securing-draenor&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/9562-securing-draenor&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20173/medium/inv_misc_map08.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9562-securing-draenor&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/9562-securing-draenor&quot;&gt;Securing Draenor&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Complete the Draenor bonus objectives listed below.&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 10&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;rewards&quot;&gt;34.98%&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;Draenor&lt;/td&gt;&lt;/tr&gt;<br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/10349-tanaan-diplomat&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/10349-tanaan-diplomat&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20444/medium/achievement_zone_tanaanjungle.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/10349-tanaan-diplomat&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/10349-tanaan-diplomat&quot;&gt;Tanaan Diplomat&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Earn Revered reputation with all three factions in Tanaan Jungle.&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 10&lt;/span&gt;&lt;/td&gt;&lt;td&gt;31.99%&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;Draenor&lt;/td&gt;&lt;/tr&gt; <br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/10018-draenor-pathfinder&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/10018-draenor-pathfinder&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20173/medium/achievement_zone_draenor_01.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/10018-draenor-pathfinder&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/10018-draenor-pathfinder&quot;&gt;Draenor Pathfinder&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Complete the Draenor achievements listed below:&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 25&lt;/span&gt;&lt;/td&gt;&lt;td&gt;28.67%&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;Draenor&lt;/td&gt;&lt;/tr&gt; <br />
+<br />
+<br />
+&lt;/tbody&gt;&lt;/table&gt;<br />
+<br />
+Arena Queue Length Issue Update<br />
+The long arena queue problem may be solved soon!<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2015/september/arenaQueues.png (https://twitter.com/WarcraftDevs/status/643594655360262144) <br />
+<br />
+<br />
+Blue Tweets<br />
+Funny how and are ignoring #RavenholdtOrRiot Almost as if they know they're wrong but are too stubborn to change.<br />
+Appreciate feedback, and hear you, please try to keep your comments positive, and wait until full reveals. (Muffinus (https://twitter.com/Muffinus/status/641115537309720576))<br />
+<br />
+Why was the drop rate of Val'anyr fragments lowered so much?<br />
+It hasn’t been touched in years (if ever) – sounds like bad luck. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/641358283001884674))<br />
+<br />
+Last LK Timewalking cache for me was Heroic, this time it was Normal. What gives? I've only done more H kills since then?<br />
+Maybe you’re thinking of the Draenor dungeon holiday? Timewalking gives a Normal cache; Draenor Mythics a Heroic one. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/641358151611125760))<br />
+<br />
+<br />
+Poll - Flying Unlock Knowdlege<br />
+If you are reading this news post, it is likely that you knew how to unlock flying. We are curious if you had any players in your guild that didn't know how to unlock flying.<br />
+<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/9077641.js&quot;&gt;&lt;/script&gt;<br />
+&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/9077641/&quot;&gt;Were there players in your guild that didn't know how to unlock flying?&lt;/a&gt;&lt;/noscript&gt;<br />
+<br />
+DLC #504 - Heir<br />
+DLC #504 (http://darklegacycomics.com/504) has been released.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2015/september/dlc504.jpg (http://darklegacycomics.com/504)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lamortykins</div><div class="date">2015-09-15, 06:12 AM</div></div><div class="posttext">Why don't they include Tanaan Diplmat....?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baelic</div><div class="date">2015-09-15, 06:12 AM</div></div><div class="posttext">Wait, how could there only be 10% who got the Treasure achievement yet 28% have Draenor Pathfinder? Something doesn't add up here.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">blckmagic</div><div class="date">2015-09-15, 06:15 AM</div></div><div class="posttext">Wait, how could there only be 10% who got the Treasure achievement yet 28% have Draenor Pathfinder? Something doesn't add up here.<br />
+<br />
+You dont need to get all 200 treasures to get flying</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dedweight</div><div class="date">2015-09-15, 06:16 AM</div></div><div class="posttext">Wait, how could there only be 10% who got the Treasure achievement yet 28% have Draenor Pathfinder? Something doesn't add up here.<br />
+<br />
+Look again, 44% of people have the required Treasure achievement for the Pathfinder achievement, there's nothing off with the graph.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lintgamer</div><div class="date">2015-09-15, 06:16 AM</div></div><div class="posttext">Wait, how could there only be 10% who got the Treasure achievement yet 28% have Draenor Pathfinder? Something doesn't add up here.<br />
+<br />
+You didn't have to have the 200 achievement only the 100 one</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Incarnia</div><div class="date">2015-09-15, 06:21 AM</div></div><div class="posttext">The first week or two after 6.2.2 I got a lot of whispers &quot;how can you fly?&quot; - and also saw a couple of questions about how to unlock flight in g-chat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-09-15, 06:23 AM</div></div><div class="posttext">The first week or two after 6.2.2 I got a lot of whispers &quot;how can you fly?&quot; - and also saw a couple of questions about how to unlock flight in g-chat.<br />
+<br />
+Were they players that don't log on frequently or did it just never come up in the guild conversation before then?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bubblykiss</div><div class="date">2015-09-15, 06:30 AM</div></div><div class="posttext">I got PF and found it very annoying to achieve, but hey, 28.67% of us did it, so it must have been *fun*, right?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darksoldierr</div><div class="date">2015-09-15, 06:31 AM</div></div><div class="posttext">1.7 million players (not characters) that have logged in since August 15th<br />
+<br />
+Talk about low sub numbers</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc76cf1b7b9d</div><div class="date">2015-09-15, 06:34 AM</div></div><div class="posttext">missing button &quot;I don't know&quot;. Because i really don't know if there was these people or not. So far anyone know, but maybe there is also the ones who don't.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nefadar</div><div class="date">2015-09-15, 06:35 AM</div></div><div class="posttext">&quot;1.7 million players&quot;<br />
+This is world wide, or just US?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DocileCraig</div><div class="date">2015-09-15, 06:36 AM</div></div><div class="posttext">The first week or two after 6.2.2 I got a lot of whispers &quot;how can you fly?&quot; - and also saw a couple of questions about how to unlock flight in g-chat.<br />
+<br />
+our g kicks were swift - like flying.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Enan1981</div><div class="date">2015-09-15, 06:38 AM</div></div><div class="posttext">I know a lot of people are waiting for The Pit quest to pop up XD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Turaska</div><div class="date">2015-09-15, 06:39 AM</div></div><div class="posttext">Yawn, flying in draenor is utterly redundant at this point &quot;fly places in draenor... you've already been too!&quot; well done Blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Incarnia</div><div class="date">2015-09-15, 06:41 AM</div></div><div class="posttext">Were they players that don't log on frequently or did it just never come up in the guild conversation before then?<br />
+<br />
+The guildies that asked were regular socials, so frequently logging in. Only conversations I've seen in g-chat about flying was in the beginning of WoD, people hitting lvl100 asking where to buy flying :P And around the time when Blizzard changed their mind about it. Never any lengthy conversations, could easily be missed by those not online at those particular moment.s</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mask</div><div class="date">2015-09-15, 06:43 AM</div></div><div class="posttext">It's amazing to me how many people pay their $15 a month to Blizzard, yet seemingly don't even play the game. I don't see how anyone who actively plays WoW wouldn't have the flying achievement. It is not difficult to get, or even very time consuming when spread out over many weeks of playing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zabatakis</div><div class="date">2015-09-15, 06:43 AM</div></div><div class="posttext">Talk about low sub numbers<br />
+<br />
+That is not sub numbers for facks sake...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Danuel</div><div class="date">2015-09-15, 06:49 AM</div></div><div class="posttext">&quot;Funny how and are ignoring #RavenholdtOrRiot Almost as if they know they're wrong but are too stubborn to change.<br />
+Appreciate feedback, and hear you, please try to keep your comments positive, and wait until full reveals.&quot;<br />
+<br />
+Ohh please, every rouge already know where will be ours new &quot;shitty&quot; base.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2015-09-15, 06:53 AM</div></div><div class="posttext">54% didn`t know..<br />
+<br />
+this sounds to me that the unlocking flying wod feature is a huge fail..<br />
+<br />
+1,7m subs.. thanks to the flying desaster in wod..<br />
+<br />
+and again.. the next for legion is on the start..<br />
+<br />
+ravenholdt or sewers? what did you expect from the shitty wod team?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ihnasir</div><div class="date">2015-09-15, 06:53 AM</div></div><div class="posttext">Why don't they include Tanaan Diplmat....?<br />
+<br />
+For real, that's the only thing I have left.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wolfie of Medivh</div><div class="date">2015-09-15, 06:58 AM</div></div><div class="posttext">hehe, one of DLC's more clever and cute comics in a while.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Adamas102</div><div class="date">2015-09-15, 06:59 AM</div></div><div class="posttext">&quot;Funny how and are ignoring #RavenholdtOrRiot Almost as if they know they're wrong but are too stubborn to change.<br />
+Appreciate feedback, and hear you, please try to keep your comments positive, and wait until full reveals.&quot;<br />
+<br />
+Ohh please, every rouge already know where will be ours new &quot;shitty&quot; base.<br />
+<br />
+If you can't even spell your class correctly, then you belong in the sewers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">keymil</div><div class="date">2015-09-15, 07:05 AM</div></div><div class="posttext">Lol, this comment about Revenholdt (by the player) is so arrogant and toxic. HE is the one being stubborn here, he actually has NO idea how will it look like yet complains already. Entitled kid... There is a line between good feedback and practically telling the company what they are forced to do or you give out your tantrum.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">arcaneshot</div><div class="date">2015-09-15, 07:25 AM</div></div><div class="posttext">You dont need to get all 200 treasures to get flying<br />
+<br />
+The funny thing is there's way more than 200 Treasures, too. It's much closer to 300.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce0fbf970d8</div><div class="date">2015-09-15, 07:27 AM</div></div><div class="posttext">It's amazing to me how many people pay their $15 a month to Blizzard, yet seemingly don't even play the game. I don't see how anyone who actively plays WoW wouldn't have the flying achievement. It is not difficult to get, or even very time consuming when spread out over many weeks of playing.<br />
+<br />
+^ This. Only this.<br />
+<br />
+I quitted the game ater two months the exp came out, and resubbed exactly 4 weeks ago. In less than 2 weeks I unlocked Draenor Pathfinder without problems. Treasures can be annoying, but everything else is trivial and could be done in the past year with normal daily routine.<br />
+<br />
+The cruel truth is that WoW community is just a bunch of fat crybabies that are never satisfied, and want everything handled to them without even minimal work. Seriously, most retarded and obese community togheter with League.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Backjauer</div><div class="date">2015-09-15, 08:03 AM</div></div><div class="posttext">The cruel truth is that WoW community is just a bunch of fat crybabies that are never satisfied, and want everything handled to them without even minimal work. Seriously, most retarded and obese community togheter with League.<br />
+<br />
+That's the dumbest thing I've read so far this month.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfdfb6601c6</div><div class="date">2015-09-15, 08:04 AM</div></div><div class="posttext">I've never met a player in game who felt that flying was THE missing feature of WoD. I see a lot of complaints on forums, but I've never met anyone in game. When flying was opened up, most players in my guild flew around for 2 minutes and then went back to afking the garrison.<br />
+<br />
+To the people who couldn't stand WoD without flight, is the game better now?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Backjauer</div><div class="date">2015-09-15, 08:05 AM</div></div><div class="posttext">I know a couple of people in my guild who haven't done the achievement for flying because they don't care about flying.<br />
+<br />
+<br />
+To the people who couldn't stand WoD without flight, is the game better now?<br />
+<br />
+Yes, yes it is. It's renewed my interest in running the Tanaan grind on alts, archeology and it's made levelling my newest alt through Draenor more enjoyable. I understand the whole immersion argument, but after doing something several times the sense of immersion wears off, and anything that can ease the tedium is a good thing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf93185380c</div><div class="date">2015-09-15, 08:12 AM</div></div><div class="posttext">There are probably people out there who are still subscribed and don't even realise it...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">VitesseEOD</div><div class="date">2015-09-15, 08:20 AM</div></div><div class="posttext">^ This. Only this.<br />
+<br />
+I quitted the game ater two months the exp came out, and resubbed exactly 4 weeks ago. In less than 2 weeks I unlocked Draenor Pathfinder without problems. Treasures can be annoying, but everything else is trivial and could be done in the past year with normal daily routine.<br />
+<br />
+The cruel truth is that WoW community is just a bunch of fat crybabies that are never satisfied, and want everything handled to them without even minimal work. Seriously, most retarded and obese community togheter with League.<br />
+<br />
+What does the supposed level of retardation or obesity have to do with anything and how does it enforce your argument? (which for what its worth, is utter bollocks)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Incarnia</div><div class="date">2015-09-15, 09:21 AM</div></div><div class="posttext">There are probably people out there who are still subscribed and don't even realise it...<br />
+<br />
+Most likely.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">brt2pp</div><div class="date">2015-09-15, 09:32 AM</div></div><div class="posttext">ow look, next to noone actually CARES about flying ... incredible, blizz should stop reading rage threads on forums because you guys are in such vast minority that your opinion ... especially that those opinnions are often stupid as hell doesn't matter, +guys from #RavenholdtOrRiot should find a life, or at least brain, because how on earth can you rage against something that you heaven't even seen yet ? + inb4 if blizz will again try to please vocal VAST minority there will be again someone that will start &quot;#sewersorriot&quot; or something equally stupid</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3f25629bd0</div><div class="date">2015-09-15, 09:45 AM</div></div><div class="posttext">if less than 30% of players have bothered with it, then either:<br />
+<br />
+A) Flight was not that big a deal in the first place, or:<br />
+B) The requirements are too big a pain in the arse for most to bother with.<br />
+<br />
+Or more likely, both.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aelric70</div><div class="date">2015-09-15, 10:03 AM</div></div><div class="posttext">Yawn, flying in draenor is utterly redundant at this point &quot;fly places in draenor... you've already been too!&quot; well done Blizzard.<br />
+<br />
+As someone with many sub-100 alts and two that need Tanaan, there is enormous value in flying. I can cherry pick every encounter. Immediately reach most items that were stuck behind some super mario jump or goblin glider puzzle. I quickly access remote quest waypoints with minimal hassle. I'm not constrained to flight paths. On my main, its a mild convenience; on the rest, it is literally game-changing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9a558117b7</div><div class="date">2015-09-15, 10:57 AM</div></div><div class="posttext">I for one am glad I can fly now. No, it hasn't solved any of the WoD problems but at least now I can be the one in charge of where I want to go, I can do my archaeology easier and I can get from A to B without having to waste 10 minutes killing irrelevant and annoying crap.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jazen</div><div class="date">2015-09-15, 11:02 AM</div></div><div class="posttext">It's amazing to me how many people pay their $15 a month to Blizzard, yet seemingly don't even play the game. I don't see how anyone who actively plays WoW wouldn't have the flying achievement. It is not difficult to get, or even very time consuming when spread out over many weeks of playing.<br />
+This. 10 Char</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3514689de5</div><div class="date">2015-09-15, 11:11 AM</div></div><div class="posttext">28%? That's actually quite a lot. Almost 1 in 3 players took the pain of grinding shitty &quot;content&quot; simply for the pleasure of being able to fly. Wow.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thorvath</div><div class="date">2015-09-15, 11:31 AM</div></div><div class="posttext">ow look, next to noone actually CARES about flying ... incredible<br />
+<br />
+You must be shocked that Blizz continues to bother with raids then... Remember back in the BRF days when MMOchamp ran graphs showing that barely 30% of the players had done it on any difficulty (even LFR) and less than 1% had made any progress in Mythic... it's like a complete waste of dev time amirite?<br />
+<br />
+http://www.mmo-champion.com/content/4797-Armory-Stats-Highmaul-and-Blackrock-Foundry-Blue-Tweets-Heroes-Map-Rift-Wardrobe</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lustyevilgnome</div><div class="date">2015-09-15, 11:38 AM</div></div><div class="posttext">How is the number of people who've done something as basic as &quot;Explore Draenor&quot; at less than 50%?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thunderdragon2</div><div class="date">2015-09-15, 11:49 AM</div></div><div class="posttext">Look again, 44% of people have the required Treasure achievement for the Pathfinder achievement, there's nothing off with the graph.<br />
+<br />
+actually there is, lowest amount of ppl for any one bracket over all is 31% yet only 26% have pathfinder now thats off</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baneleaf</div><div class="date">2015-09-15, 12:14 PM</div></div><div class="posttext">54% didn`t know..<br />
+<br />
+this sounds to me that the unlocking flying wod feature is a huge fail..<br />
+<br />
+1,7m subs.. thanks to the flying desaster in wod..<br />
+<br />
+and again.. the next for legion is on the start..<br />
+<br />
+ravenholdt or sewers? what did you expect from the shitty wod team?<br />
+<br />
+My guild had several people come back with patch 6.2.2 that did not realize how to unlock flying. And the 1.7 million accounts was the sample size, not all US accounts. I think rogues would stop going nuts if it was the Dalaran undercity and not termed as sewers. Maybe get to it through the sewers or a secret entrance that leads down from a building, but sewers is a bit much.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jasper Kazai</div><div class="date">2015-09-15, 12:16 PM</div></div><div class="posttext">How is the number of people who've done something as basic as &quot;Explore Draenor&quot; at less than 50%?<br />
+<br />
+I used to think the same thing, but people have made it very clear to me in how adamant they are in not going anywhere that they don't need to. Some people just really hate anything that isn't required. I don't get it, but then again I love getting achievements in the first place, personally.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocad6dd00489</div><div class="date">2015-09-15, 12:20 PM</div></div><div class="posttext">actually there is, lowest amount of ppl for any one bracket over all is 31% yet only 26% have pathfinder now thats off<br />
+<br />
+I don't think it works like that. The maximum value across the different brackets will act as an upper bound to the percentage of players with Draenor Pathfinder. If we look at the numbers we see that &quot;Loremaster of Draenor&quot; is at 57%, so if all the those people completed the rest of the achievements then that 57% would be the percent of people with flying.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thorvath</div><div class="date">2015-09-15, 12:21 PM</div></div><div class="posttext">actually there is, lowest amount of ppl for any one bracket over all is 31% yet only 26% have pathfinder now thats off<br />
+<br />
+Each statistic is independent, the only one one that overlaps with all the others (except the 200 Treasures one) is Pathfinder. Pathfinder is at 28.67% and the next lowest is the Tanaan reps at 32% so that means around 4% have that but are missing at least one of the others (apparently there's been issues with the apexis daily for the Pit on the Horde side so my money is on 'Securing Draenor').</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">roahn the warlock</div><div class="date">2015-09-15, 12:22 PM</div></div><div class="posttext">Filthy groundies.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocad6dd00489</div><div class="date">2015-09-15, 12:23 PM</div></div><div class="posttext">I used to think the same thing, but people have made it very clear to me in how adamant they are in not going anywhere that they don't need to. Some people just really hate anything that isn't required. I don't get it, but then again I love getting achievements in the first place, personally.<br />
+<br />
+Yes, and it's interesting that more people have completed &quot;Loremaster of Draenor&quot; (57%) than the &quot;Explore Draenor&quot; (45%) achievement.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce0fbf970d8</div><div class="date">2015-09-15, 12:32 PM</div></div><div class="posttext">What does the supposed level of retardation or obesity have to do with anything and how does it enforce your argument? (which for what its worth, is utter bollocks)<br />
+<br />
+It's not to enforce anything, it's a simple and plain insult toward the community.<br />
+<br />
+My argument doesn't need any backup, it's pretty solid as it is.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baluki</div><div class="date">2015-09-15, 12:32 PM</div></div><div class="posttext">I've thought about coming back to have some fun flying around, but I have zero interest in grinding the reps for Tanaan Diplomat. Especially the Saberstalkers. I know they want everyone to experience the content fully before unlocking flying, but this isn't the way to do that. How about doing most/all of the quests for each faction once?<br />
+<br />
+I hate grinding rep, and I'm surprised that they're requiring it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thorvath</div><div class="date">2015-09-15, 12:40 PM</div></div><div class="posttext">Yes, and it's interesting that more people have completed &quot;Loremaster of Draenor&quot; (57%) than the &quot;Explore Draenor&quot; (45%) achievement.<br />
+<br />
+I assume at least some of that is due to Frostfire and Shadowmoon being faction specific. If you are the opposite faction you aren't very likely to reveal the whole map for those zones unintentionally.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ambushu</div><div class="date">2015-09-15, 01:13 PM</div></div><div class="posttext">So after all that bitch in and moaning about needing to have flying, only about 30% of the people actually have it? Seemed with it /sarcasm.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I assume at least some of that is due to Frostfire and Shadowmoon being faction specific. If you are the opposite faction you aren't very likely to reveal the whole map for those zones unintentionally.<br />
+<br />
+It's actually not that hard. I grinded saberstalkers with a group of 5 with near instant respawne for about 2hrs maybe and hit revered. You're just crying to cry and I bet you're the type that bitches about having no content to do. You just want shit handed to you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thorvath</div><div class="date">2015-09-15, 01:26 PM</div></div><div class="posttext">So after all that bitch in and moaning about needing to have flying, only about 30% of the people actually have it? Seemed with it /sarcasm.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+It's actually not that hard. I grinded saberstalkers with a group of 5 with near instant respawne for about 2hrs maybe and hit revered. You're just crying to cry and I bet you're the type that bitches about having no content to do. You just want shit handed to you.<br />
+<br />
+Uh wut? I was replying to the guy who commented on the big gap between Loremaster and Exploring Draenor. <br />
+<br />
+LOL @ your 2 hour grind btw, took me 30 minutes: Trading Post + Human Racial + DMF Buff + Guild Banner FTW! The annoying one was Order of the Awakened.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Laringar</div><div class="date">2015-09-15, 02:53 PM</div></div><div class="posttext">Saberstalkers rep is actually really easy. You get 1500 (1800 with Trading Post 3) rep every time the Teeth daily is up, there's a weekly quest you can do that literally takes 5 minutes, and you get a very respectable 30 rep per Saber mob killed, and 600 for rares. An hour of group grinding Sunday and I had the rep, even without a banner.<br />
+<br />
+Order of the Awakened is the &quot;worst&quot;, and it's really not that bad. Just pace yourself on opening Treasures around Tanaan, don't open them if you don't have the quest incomplete for that day. Rares and respawning items get you the rest.<br />
+<br />
+I'll be joining the club tonight, I have one Order of the Awakened turnin left to get flying.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ambushu</div><div class="date">2015-09-15, 03:14 PM</div></div><div class="posttext">Uh wut? I was replying to the guy who commented on the big gap between Loremaster and Exploring Draenor. <br />
+<br />
+LOL @ your 2 hour grind btw, took me 30 minutes: Trading Post + Human Racial + DMF Buff + Guild Banner FTW! The annoying one was Order of the Awakened.<br />
+It was an estimated guess. I didn't keep track of the time. It went insanely quick.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Explicit Teemo Nudes</div><div class="date">2015-09-15, 03:23 PM</div></div><div class="posttext">It's amazing to me how many people pay their $15 a month to Blizzard, yet seemingly don't even play the game. I don't see how anyone who actively plays WoW wouldn't have the flying achievement. It is not difficult to get, or even very time consuming when spread out over many weeks of playing.<br />
+<br />
+<br />
+<br />
+There are many, many different ways to play this game. Your way isn't the only way.<br />
+You don't need flying in WoD to do raids, to pvp, to play your low level twinks, to play the AH/gold game, to level alt after alt after alt, etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce0fbf970d8</div><div class="date">2015-09-15, 04:12 PM</div></div><div class="posttext">There are many, many different ways to play this game. Your way isn't the only way.<br />
+You don't need flying in WoD to do raids, to pvp, to play your low level twinks, to play the AH/gold game, to level alt after alt after alt, etc.<br />
+<br />
+Then you don't need flying at all. Thus, why would you complain you can't?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Butter Emails</div><div class="date">2015-09-15, 04:23 PM</div></div><div class="posttext">54% didn`t know..<br />
+<br />
+this sounds to me that the unlocking flying wod feature is a huge fail..<br />
+<br />
+1,7m subs.. thanks to the flying desaster in wod..<br />
+<br />
+and again.. the next for legion is on the start..<br />
+<br />
+ravenholdt or sewers? what did you expect from the shitty wod team?<br />
+<br />
+Sounds like a lot of people who are still playing just simply don't care about flying, and probably never did.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baelic</div><div class="date">2015-09-15, 04:47 PM</div></div><div class="posttext">You dont need to get all 200 treasures to get flying<br />
+<br />
+So then why include it in the graph? As I'm obviously demonstrating it only brings confusion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2015-09-15, 04:51 PM</div></div><div class="posttext">WoW down to 1.8 million subs. FFXIV is catching up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Piz813</div><div class="date">2015-09-15, 05:02 PM</div></div><div class="posttext">fuck those idiots who sit in front of a computer to play WoW and don't look up how to play WoW. had what? 4 fucking months to do the flying achives?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">guardian_titan</div><div class="date">2015-09-15, 06:25 PM</div></div><div class="posttext">Always the people with filthy language in these news threads. It only makes you look childish or so mentally deficient that you can't form a complete thought without resorting to swears.<br />
+<br />
+As for the graph, many have been complaining about Assault on the Pit. Once that pops up, the numbers will jump up maybe 2-3% (or more). There's also people who want flying but don't want to bother with reps, etc. Those people appear to count against the flying total and look like they're anti-fliers or just don't care when they're not.<br />
+<br />
+As for less than 30%, nearly 1 in 3 players did it. More than 1 in 4 players have done it. In the US, 1 in 3 births are by c-sections. That's significant as well as troubling. Also in the US, 1 in 10 suffer from depression. That's significant. Depending on what numbers you look at (again for the US), anywhere from 1 in 4 to 1 in 2 are living in poverty. That's significant. Many states in the US have 1 in 3 (or more!) that are overweight or obese. That's significant. Not everything has to be 50% or better to be significant. Why is it that so many care about mythic raiding when only 1% of players even get that far? How is 1% significant? It all depends on priorities and what's being looked at. Sometimes even a small percent can be significant such as the top 1% having the majority of the wealth. So the fact that 28% of players have flying is significant to many people, Blizzard included. It might not mean anything to the people who are mocking it, but it means something to other people.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fritters154</div><div class="date">2015-09-15, 06:27 PM</div></div><div class="posttext">I used to think the same thing, but people have made it very clear to me in how adamant they are in not going anywhere that they don't need to. Some people just really hate anything that isn't required. I don't get it, but then again I love getting achievements in the first place, personally.<br />
+<br />
+What I find odd is that those same people are the ones complaining about flying being a gated process. What are they going to use flying for? Hovering above their garrison?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2015-09-15, 06:48 PM</div></div><div class="posttext">That is not sub numbers for facks sake...<br />
+<br />
+Um yes. Yes they are. When you remove the inflated &quot;subs&quot; from china you're left with that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baneleaf</div><div class="date">2015-09-15, 07:19 PM</div></div><div class="posttext">Um yes. Yes they are. When you remove the inflated &quot;subs&quot; from china you're left with that.<br />
+<br />
+<br />
+That is the sample size, not pure sub numbers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zabatakis</div><div class="date">2015-09-15, 07:31 PM</div></div><div class="posttext">Um yes. Yes they are. When you remove the inflated &quot;subs&quot; from china you're left with that.<br />
+<br />
+I am not sure if you are a troll or just stupid. Then I have to wonder which is worse? I will have to drink on it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lockula</div><div class="date">2015-09-15, 07:39 PM</div></div><div class="posttext">Has the pit popped up for horde recently? If not that might be lowering the number a little. Otherwise ya people asked how to get flying after the patch, and had no idea. They are casual players who some have been on vacation during the summer months. So, couldn't really grind this stuff out.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Delindil</div><div class="date">2015-09-15, 08:03 PM</div></div><div class="posttext">B) The requirements are too big a pain in the arse for most to bother with.<br />
+<br />
+<br />
+Well I wouldn't say they're a pain in the arse, but I would rather spend my time doing something fun instead of some achievements I'm not terribly interested in.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">undeadmoon</div><div class="date">2015-09-15, 08:30 PM</div></div><div class="posttext">The day before flight dropped, I was on a alt in one of those large auto invite guilds, and they were quite a few talking about how happy they were for flight the next day, I asked then if they knew how to obtain it, and the solid answer was no, there was about 100 people on, and about 15 involved in the conversation and none knew. <br />
+<br />
+When I told them, the general consensus was &quot;I'd rather quit than do that&quot; or &quot;It'll take me months, forget it.&quot;. They then asked me how I knew, I pointed them to the front of the launcher and mmo-champ, and asked how they didn't. Most of the answers were along the lines of thinking that flight would be bought like last time, so they just didn't read around on it. A couple had heard of &quot;Draenor Pathfinder&quot; but thought it was a buyable book, because of the Saberstalker Pathfinder book. Overall they were pissed.<br />
+<br />
+Blizz has said before, the people who actually read the launcher announcements or ads, and visit sites like mmo-champ and even wowhead for news are a small minority compared to the people who play the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alopex Major</div><div class="date">2015-09-15, 09:00 PM</div></div><div class="posttext">I usually get a whopping two Val'anyr fragments per run, it's frustrating but at least I'll get there eventually.<br />
+<br />
+Surprised that only 30% of people got flying though.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I've never met a player in game who felt that flying was THE missing feature of WoD. I see a lot of complaints on forums, but I've never met anyone in game. When flying was opened up, most players in my guild flew around for 2 minutes and then went back to afking the garrison.<br />
+<br />
+To the people who couldn't stand WoD without flight, is the game better now?<br />
+<br />
+Yes. Absolutely. <br />
+<br />
+I'm leveling alts, doing archy and fishing, doing pet battles. Actually logging in and playing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lamortykins</div><div class="date">2015-09-15, 10:17 PM</div></div><div class="posttext">Honestly, 30% completion for pathfinder makes it one of the most popular end-game features in WoD - ahead of every difficulty of actual raiding.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eliazer681</div><div class="date">2015-09-15, 10:26 PM</div></div><div class="posttext">Dark Legacy on point as usual. It's beyond ridiculous to not just have BoA's for the few remaining slots (Bracers/Belt/Gloves/Boots). Dungeon gear is for new players and transmog, just let me cruise through leveling.<br />
+<br />
+Wait, what's that, you'd rather I get continually frustrated in hopes that I shell out 60$? Got it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lamortykins</div><div class="date">2015-09-15, 10:33 PM</div></div><div class="posttext">Wait, what's that, you'd rather I get continually frustrated in hopes that I shell out 60$? Got it.<br />
+<br />
+<br />
+What part of leveling is frustrating to you that would be fixed by heirloom bracers? It's already way too easy/fast/boring.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Archibalde</div><div class="date">2015-09-15, 11:15 PM</div></div><div class="posttext">What part of leveling is frustrating to you that would be fixed by heirloom bracers? It's already way too easy/fast/boring.<br />
+<br />
+Yeah, seriously. I don't think they could possibly make 1 to 90 any faster than it already is with the current set of heirlooms. At low levels you 1-shot every monster depending on your class and a single dungeon can make you gain 2-3 levels if you do the quests. I managed to do 80-85 purely in Vashj'ir in about 2 hours on a Priest. It's just boring, and additional heirlooms wouldn't change that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lamortykins</div><div class="date">2015-09-15, 11:40 PM</div></div><div class="posttext">Yeah, seriously. I don't think they could possibly make 1 to 90 any faster than it already is with the current set of heirlooms. At low levels you 1-shot every monster depending on your class and a single dungeon can make you gain 2-3 levels if you do the quests. I managed to do 80-85 purely in Vashj'ir in about 2 hours on a Priest. It's just boring, and additional heirlooms wouldn't change that.<br />
+<br />
+They killed the sense of player progression from 1-100 with the new talent system and by showering us in heirlooms imo.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Notos</div><div class="date">2015-09-16, 12:45 AM</div></div><div class="posttext">I just came back recently after 6 months away (give or take) so I'm behind on a lot of the necessary achievements. I'm not sure if it's even worth doing all that stuff; I don't care about flying that much and I don't play that much these days anyways aside from a little LFR.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">plaits</div><div class="date">2015-09-16, 01:19 AM</div></div><div class="posttext">Has the pit popped up for horde recently? If not that might be lowering the number a little. Otherwise ya people asked how to get flying after the patch, and had no idea. They are casual players who some have been on vacation during the summer months. So, couldn't really grind this stuff out.<br />
+<br />
+If you look at the forums it does seem the Pit daily not popping for Horde for a while is keeping quite a few back.<br />
+<br />
+But I'm stunned by how many people don't even have the 50 treasures achieve, let alone the 100 you need for flying. Getting 50 takes no effort at all, they just appear out and about while questing. Do ~40% of people not level by questing? Or do they just not look at anything out in the world if it doesn't pertain to the quest they're on?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aelric70</div><div class="date">2015-09-16, 02:22 AM</div></div><div class="posttext">Why does it matter if the Pit daily spawns or not? Isn't the garrison NPC by the mailbox selling quest starters for every one of those dailies? Pretty sure i noticed them being sold. Is the &quot;Pit&quot; not available?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mazzic518</div><div class="date">2015-09-16, 02:36 AM</div></div><div class="posttext">Why does it matter if the Pit daily spawns or not? Isn't the garrison NPC by the mailbox selling quest starters for every one of those dailies? Pretty sure i noticed them being sold. Is the &quot;Pit&quot; not available?<br />
+<br />
+You can't buy the missives for the group apexis dalies. The pit popped today for Horde after 22 days. It was the only thing I needed for flying.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Logwyn</div><div class="date">2015-09-16, 02:41 AM</div></div><div class="posttext">What part of leveling is frustrating to you that would be fixed by heirloom bracers? It's already way too easy/fast/boring.<br />
+<br />
+Maybe its time to skip the leveling from 1-60? And revamp those areas to be max level with daily/weekly/etc quest hubs? Not sure. eh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">muindaur</div><div class="date">2015-09-16, 02:58 AM</div></div><div class="posttext">Since a week or two before 6.2.2 I've seen a big increase in players in Tannan for the daily areas. I was just trying to get some oil in off hours, and it was still hard to finish. Only around 2-3am seems to be the easiest times. Unlike the launch of 6.2 which was easy to do in comparison.<br />
+<br />
+Blizzard will likely see an increase in numbers this quarter. An increase they may or may not attribute to flying. I really think flying is playing a big part to bring more back. This time of year I usually see the end of summer drop off too.<br />
+<br />
+I was ready for flying since 3 weeks out of 6.2 being launched.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ProfessorTjc</div><div class="date">2015-09-16, 03:00 AM</div></div><div class="posttext">I don't care much for flying in Draenor. I'm mostly just doing it for the Mount and Nerd points.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">markdall</div><div class="date">2015-09-16, 03:00 AM</div></div><div class="posttext">What I find odd is that those same people are the ones complaining about flying being a gated process. What are they going to use flying for? Hovering above their garrison?<br />
+<br />
+Guess what? I fly places on my alt. I even did a couple quests that way. Tanaan jungle stuff too. It makes having an alt bearable. But if they pull this shit in Legion, I may not bother playing it at all.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd2fcff2650</div><div class="date">2015-09-16, 03:23 AM</div></div><div class="posttext">There's also people who want flying but don't want to bother with reps, etc. Those people appear to count against the flying total and look like they're anti-fliers or just don't care when they're not. Indeed, regardless of who completed Pathfinder, insipid content is going to be a hurdle for many. I do not have the faintest idea how some can conclude that these numbers accurately represent interest in flying, even if already presuming that people to whom it was the biggest deal haven't simply moved on ages ago. If anything, considering how many in their right minds would rather avoid doing any of these achievements at all, I would sooner write it up to flying having a broad and strong appeal that 30% of the players got it by now. Sadly I suspect that means Blizzard will use it as a way to cajole players into making their dry biscuit content look appealing every expansion in this way from now on though.<br />
+<br />
+Personally as a Horde-only EU player that only just returned for leveling my alts by getting flight I felt headlong into the pit of a certain daily not showing up after doing what felt like an eternity of sucking up and gritting teeth on a daily basis in Tanaan. Hope those in the same boat manage to get it soon.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2015-09-16, 03:40 AM</div></div><div class="posttext">I am not sure if you are a troll or just stupid. Then I have to wonder which is worse? I will have to drink on it.<br />
+<br />
+Are you fucking serious? You're calling me stupid? How fucking retarded are you to think that all 5 million subs are in the west. 1.8 million are in Europe and US. The rest are in china. Blizzard has even said more than half the &quot;subs&quot; are in china. Think before you post so you don't look like such a jackass. Slink away now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mazzic518</div><div class="date">2015-09-16, 05:24 AM</div></div><div class="posttext">Are you fucking serious? You're calling me stupid? How fucking retarded are you to think that all 5 million subs are in the west. 1.8 million are in Europe and US. The rest are in china. Blizzard has even said more than half the &quot;subs&quot; are in china. Think before you post so you don't look like such a jackass. Slink away now.<br />
+<br />
+You should tell us how you really feel.....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">plaits</div><div class="date">2015-09-16, 05:32 AM</div></div><div class="posttext">I'm leveling alts, doing archy and fishing, doing pet battles. Actually logging in and playing.<br />
+<br />
+Same. Flying has actually got me playing again (well, getting Draenor Pathfinder was the beginning)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">elvor0</div><div class="date">2015-09-16, 05:37 AM</div></div><div class="posttext">The day before flight dropped, I was on a alt in one of those large auto invite guilds, and they were quite a few talking about how happy they were for flight the next day, I asked then if they knew how to obtain it, and the solid answer was no, there was about 100 people on, and about 15 involved in the conversation and none knew. <br />
+<br />
+When I told them, the general consensus was &quot;I'd rather quit than do that&quot; or &quot;It'll take me months, forget it.&quot;. They then asked me how I knew, I pointed them to the front of the launcher and mmo-champ, and asked how they didn't. Most of the answers were along the lines of thinking that flight would be bought like last time, so they just didn't read around on it. A couple had heard of &quot;Draenor Pathfinder&quot; but thought it was a buyable book, because of the Saberstalker Pathfinder book. Overall they were pissed.<br />
+<br />
+Blizz has said before, the people who actually read the launcher announcements or ads, and visit sites like mmo-champ and even wowhead for news are a small minority compared to the people who play the game.<br />
+<br />
+Shit, those people must have had their minds blown when 6.0 dropped. &quot;What happened to all my spells? And there's new models! All these magical things have suddenly happened!&quot; Even if you didn't go to sites or notice it in the launcher, people have been talking about in trade for weeks. <br />
+<br />
+Personally I don't really get how people managed to not just get the achievement while levelling aside from the apexis dailies of course. And seriously, months? Jeysus.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Backjauer</div><div class="date">2015-09-16, 09:18 AM</div></div><div class="posttext">Then you don't need flying at all. Thus, why would you complain you can't?<br />
+<br />
+You really missed the &quot;many different ways&quot; point he was trying to make.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ItachiZaku</div><div class="date">2015-09-16, 11:54 AM</div></div><div class="posttext">Regarding the Val Fragments, some guildies were working on the older legendaries, and one needed 3 frags to complete and it took 2 full runs (only got the 1 bonus frag), and then while going through for transmog and to get the last tier token, one of those guildies on their alt ended up pulling 8 frags and that's while skipping 3-4 bosses I believe. I told him to go back for the last bosses he skipped, not sure if he did or not. RNG is an asshole.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Meggle</div><div class="date">2015-09-16, 12:42 PM</div></div><div class="posttext">I don't have problems with unlocking flying in this manner in future expansions. I think maybe 2-3 months after it hits (or whatever the timeframe was they used to unlock flying) is when we should be able to earn the achi and fly. I also think having RNG based achievements like waiting for certain dailies to pop up, is a huge mistake. I am a mount farmer/achi whore and RNG is the worst POS ever.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">elvor0</div><div class="date">2015-09-17, 05:43 PM</div></div><div class="posttext">I don't have problems with unlocking flying in this manner in future expansions. I think maybe 2-3 months after it hits (or whatever the timeframe was they used to unlock flying) is when we should be able to earn the achi and fly. I also think having RNG based achievements like waiting for certain dailies to pop up, is a huge mistake. I am a mount farmer/achi whore and RNG is the worst POS ever.<br />
+<br />
+Its not RNG. You can use the Vendor outside your garrison to buy the appropriate apexis daily.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Starscream101</div><div class="date">2015-09-17, 11:12 PM</div></div><div class="posttext">The last Sample was from 2 million this time 1.8 million does that mean we lost another 200,000 people? I hope that is not a sign of things for the game.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

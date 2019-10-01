@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="that, warhorse, for, the, tells, something, skeletal, recolors, will, and, not, players, mounts, horsemen, theres, these, edit, recolored, undead, new, 21215, build, alpha, succubus, model, more, hype, legion, get, every, week, apparently" />
+<meta name="description" content="Legion Alpha - Build 21215 
+Another build is going out to the beta realm.  
+ 
+http://media.mmo-champion.com/images/news/2016/march/thumb/newBuildBanner.jpg?v2  
+ 
+In the upcoming Patch 6.2.4, we're moving to a new Battle.net infrastructure. There are changes to many of the Battle.net-related Lua APIs, including Battle.net friends and Battle.net chat. If you maintain an AddOn that makes use of those features, you may want to log in to the PTR and test that your AddOn still functions correctly." />
+<title> Legion Alpha - Build 21215 [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Legion Alpha - Build 21215</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1958302.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1958302-Legion-Alpha-Build-21215">Legion Alpha - Build 21215</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2016-03-02, 11:35 PM</div></div><div class="posttext">Legion Alpha - Build 21215<br />
+Another build is going out to the beta realm. <br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2016/march/thumb/newBuildBanner.jpg?v2 (http://media.mmo-champion.com/images/news/2016/march/newBuildBanner.jpg) <br />
+<br />
+In the upcoming Patch 6.2.4, we're moving to a new Battle.net infrastructure. There are changes to many of the Battle.net-related Lua APIs, including Battle.net friends and Battle.net chat. If you maintain an AddOn that makes use of those features, you may want to log in to the PTR and test that your AddOn still functions correctly. To help AddOn authors troubleshoot potential compatibility issues, we’ve highlighted a few of the big changes to help direct you to areas that may need your attention.<br />
+<br />
+Conversations<br />
+Support for conversations has been removed. This includes all C-functions (BNCreateConversation, BNGetConversationInfo, etc.) as well as all Lua/XML references to conversations.<br />
+<br />
+Toons<br />
+The new Battle.net architecture doesn’t have the concept of “Toons”. Instead, we refer to “GameAccounts”. As a result, many functions with “Toon” in the name now refer to “GameAccount”<br />
+Examples:<br />
+BNGetToonInfo -&gt; BNGetGameAccountInfo<br />
+BNGetFriendToonInfo -&gt; BNGetFriendGameAccountInfo<br />
+BNGetNumFriendToons -&gt; BNGetNumFriendGameAccounts<br />
+<br />
+Presence IDs<br />
+Previously, “Presence IDs” could refer to either Battle.net accounts or individual toons. Most functions were able to accept either type of presence ID and, when passed the wrong type, tried to guess at what you were trying to do.<br />
+<br />
+Presence IDs have been replaced with bnetIDAccount and bnetIDGameAccount. With this change, we’ve made all functions strict about whether they accept Account IDs or Game Account IDs. In order to make this easier, all Lua variables have been updated to specify which type of ID they are.<br />
+<br />
+You can translate from a bnetIDGameAccount to a bnetIDAccount as follows:<br />
+bnetIDAccount = select(17, BNGetGameAccountInfo(bnetIDGameAccount));<br />
+You can find a player’s active bnetIDGameAccount from a bnetIDAccount as follows:<br />
+bnetIDGameAccount = select(6, BNGetFriendInfoByID(bnetIDAccount));<br />
+<br />
+Current Realm Name<br />
+The “realmName” CVar no longer exists. You can get the name of the current realm using GetRealmName().<br />
+<br />
+Do you mean GetRealmName(), the already-existing function? Or is this a new function that can (or must?) replace GetRealmName()?<br />
+The &quot;realmName&quot; CVar is no longer there, but the function to get the name of the current realm is still GetRealmName. Correction made to the post, thanks for asking.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc265ab2edbe</div><div class="date">2016-03-02, 11:37 PM</div></div><div class="posttext">well played good sir well played!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SoulSoBreezy</div><div class="date">2016-03-02, 11:37 PM</div></div><div class="posttext">*turns down the lights*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pons</div><div class="date">2016-03-02, 11:48 PM</div></div><div class="posttext">It's not conclusive proof, but the http://us.battle.net/wow/en/blog/19993881/legion-alpha-test-information-1-27-2016 page that said which content was on the alpha is down. It was up as soon as two days ago. (Didn't check yesterday.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Viradiance</div><div class="date">2016-03-03, 12:02 AM</div></div><div class="posttext">Mmm, Tswift.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nevcairiel</div><div class="date">2016-03-03, 12:02 AM</div></div><div class="posttext">It's not conclusive proof, but the http://us.battle.net/wow/en/blog/19993881/legion-alpha-test-information-1-27-2016 page that said which content was on the alpha is down. It was up as soon as two days ago. (Didn't check yesterday.)<br />
+<br />
+Its up now, with 2nd March update notice, and Feral Druid is marked as content added. Nothing else, though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd83fccc0c7</div><div class="date">2016-03-03, 12:07 AM</div></div><div class="posttext">lol people actually think taylor swift is good?<br />
+<br />
+<br />
+https://www.youtube.com/watch?v=IP0wuwJBdMI</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Adoxe</div><div class="date">2016-03-03, 12:10 AM</div></div><div class="posttext">lol people actually think taylor swift is good?<br />
+<br />
+<br />
+https://www.youtube.com/watch?v=IP0wuwJBdMI<br />
+<br />
+http://img.pandawhale.com/39328-Taylor-Swift-crying-gif-sad-czGK.gif</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Raynre Valence</div><div class="date">2016-03-03, 01:08 AM</div></div><div class="posttext">Good kitty sweet kitty little ball of murder... :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2016-03-03, 01:14 AM</div></div><div class="posttext">Aww, did I miss this Taylor placeholder, which song was it?<br />
+<br />
+Does the guy in that video know how annoying it is that he can't even rant on one take, and we get stupid &quot;jumps&quot; as he edits his shit together every 30 seconds.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Railander</div><div class="date">2016-03-03, 01:22 AM</div></div><div class="posttext">lol people actually think taylor swift is good?<br />
+<br />
+<br />
+https://www.youtube.com/watch?v=IP0wuwJBdMI<br />
+<br />
+although im sure you're trying to somehow &quot;break new ground&quot; by posting this video, as im sure that's how you felt (or reassured yourself), it contains some parts that are either exaggerated, twist the facts, or just straight up wrong.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">balir</div><div class="date">2016-03-03, 01:40 AM</div></div><div class="posttext">1.8gb update - there HAS to be more than just Feral Druids.....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pucek</div><div class="date">2016-03-03, 01:41 AM</div></div><div class="posttext">Still no BrM? Blizz pls...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Christhammer</div><div class="date">2016-03-03, 01:43 AM</div></div><div class="posttext">Subtlety Rogues – Many changes to talents and base abilities to adjust rotational speed.<br />
+<br />
+What? All they did was nerf Shadow Dance and a talent. They made it worse, not better. We need energy regen! It's insanely slow right now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">xskarma</div><div class="date">2016-03-03, 02:45 AM</div></div><div class="posttext">Let's concentrate on the actual news please and leave the Taylor Swift discussion behind.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Taium</div><div class="date">2016-03-03, 02:47 AM</div></div><div class="posttext">Ymiron, Hodir, and Thorim as Warrior followers? Brb.<br />
+<br />
+*Digs out Ulduar Transmog*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ghouldan</div><div class="date">2016-03-03, 03:15 AM</div></div><div class="posttext">Maybe I've never looked deep enough into this sort of stuff, but I've never seen this string before.<br />
+<br />
+&quot;ERR_APPROACHING_NO_PLAY_TIME_2 - You are in tired time, and your benefits have been reduced to 50% 50%% of normal. For the sake of your own health, please go offline and rest, do some exercise, and arrange your time properly.&quot;<br />
+<br />
+curious.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Logwyn</div><div class="date">2016-03-03, 03:17 AM</div></div><div class="posttext">Maybe I've never looked deep enough into this sort of stuff, but I've never seen this string before.<br />
+<br />
+&quot;ERR_APPROACHING_NO_PLAY_TIME_2 - You are in tired time, and your benefits have been reduced to 50% 50%% of normal. For the sake of your own health, please go offline and rest, do some exercise, and arrange your time properly.&quot;<br />
+<br />
+curious.<br />
+<br />
+Parental controls? Alarm to set at a time when you want to go do something else? <br />
+<br />
+I am the only one that is starting to loose steam on the excitement of the next expac to the point of not sure I really want to play it?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2016-03-03, 03:37 AM</div></div><div class="posttext">Seriously stop allowing shit posting about shit music to spam these comment sections. I come here for wow news not shit music discussion.<br />
+<br />
+As a feral I'm glad to be finally able to test.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Drew Crux</div><div class="date">2016-03-03, 03:57 AM</div></div><div class="posttext">Excellent, I get Thorim and Hodir as followers &gt;:) <br />
+<br />
+All I need now is Mimiron and Freya, and my dreams of owning the Ulduar bosses will finally be a reality!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DrIvoRobotnik</div><div class="date">2016-03-03, 04:13 AM</div></div><div class="posttext">That new mount. *Drool* Also, the new succy looks great, except well... her boobs still like she literally has balloons stuffed into her armor.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Brocksley</div><div class="date">2016-03-03, 06:01 AM</div></div><div class="posttext">I need that skeletal warhorse like I've never needed anything before. Wow.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tenjen</div><div class="date">2016-03-03, 06:22 AM</div></div><div class="posttext">What? All they did was nerf Shadow Dance and a talent. They made it worse, not better. We need energy regen! It's insanely slow right now.<br />
+<br />
+*sigh*<br />
+<br />
+all these are just tests to see what numbers come out. They will do it again and again in all sorts of directions with all sorts of adjustments, most of the time jsut to see what the performance output to contrast and compare. stop behaving like its the final product<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+That new mount. *Drool* Also, the new succy looks great, except well... her boobs still like she literally has balloons stuffed into her armor.<br />
+<br />
+Which makes sense, they're based on and base themselves on &quot;ideals&quot; of shallow beauty and base desire. To that same effect the succubus wear a painfully tight corset to pull off what you're talking about, to create that sort of allure and attend to their masochism at the same time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dawnshadow</div><div class="date">2016-03-03, 06:54 AM</div></div><div class="posttext">Maybe I've never looked deep enough into this sort of stuff, but I've never seen this string before.<br />
+<br />
+&quot;ERR_APPROACHING_NO_PLAY_TIME_2 - You are in tired time, and your benefits have been reduced to 50% 50%% of normal. For the sake of your own health, please go offline and rest, do some exercise, and arrange your time properly.&quot;<br />
+<br />
+curious.<br />
+<br />
+I think that's a thing from the Chinese version of the game-- I can't cite it, but I remember reading about something like that somewhere.<br />
+<br />
+Incidentally, the early prerelase builds of WoW had a &quot;tired&quot; status where you earned 50% less XP; you only earned full XP if you were &quot;rested.&quot; People hated it, so Blizzard halved XP gains and changed &quot;rested&quot; to give double XP instead. This was taken better.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Igzorn</div><div class="date">2016-03-03, 08:05 AM</div></div><div class="posttext">so seeing that mount do they update all the old undead mounts? they realy could use some triangles.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc49d114f31b</div><div class="date">2016-03-03, 08:16 AM</div></div><div class="posttext">Are you for real blizzard?! Give us brewmasters on alpha already!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lunaprika</div><div class="date">2016-03-03, 08:16 AM</div></div><div class="posttext">7.0 Nightmare Raid - Four Dragons - Dreamway (Ashenvale) - KLH (New)<br />
+7.0 Nightmare Raid - Four Dragons - Dreamway (Duskwood) - KLH (New)<br />
+7.0 Nightmare Raid - Four Dragons - Dreamway (Feralas) - KLH (New)<br />
+7.0 Nightmare Raid - Four Dragons - Dreamway (Hinterlands) - KLH (New)<br />
+<br />
+That's a minor but great move by Blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kathranis</div><div class="date">2016-03-03, 08:46 AM</div></div><div class="posttext">Maybe I've never looked deep enough into this sort of stuff, but I've never seen this string before.<br />
+<br />
+&quot;ERR_APPROACHING_NO_PLAY_TIME_2 - You are in tired time, and your benefits have been reduced to 50% 50%% of normal. For the sake of your own health, please go offline and rest, do some exercise, and arrange your time properly.&quot;<br />
+<br />
+curious.<br />
+Most likely just the English localization for a new string for the Chinese region. Chinese law mandates that online games discourage underage players from playing for an excessive amount of time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4dfe59358a</div><div class="date">2016-03-03, 08:50 AM</div></div><div class="posttext">Great, mage was nerfed again (frost artefact primarily), why Blizz hate this class?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ImpTaimer</div><div class="date">2016-03-03, 08:53 AM</div></div><div class="posttext">I'm sorry, what?<br />
+<br />
+I thought they were taking gear out of the equation for instanced PvP. They dump that idea completely now? They shouldn't even waste time testing if &quot;gear will fix it&quot;. Waste of development time.<br />
+<br />
+Welp, I have no hope for instanced PvP in Legion then, just as I had no hope for it in Cata, MoP, or WoD.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thilicen</div><div class="date">2016-03-03, 09:07 AM</div></div><div class="posttext">Thatmotherfuckinghorseholyfuckingshit<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I'm sorry, what?<br />
+<br />
+I thought they were taking gear out of the equation for instanced PvP. They dump that idea completely now? They shouldn't even waste time testing if &quot;gear will fix it&quot;. Waste of development time.<br />
+<br />
+Welp, I have no hope for instanced PvP in Legion then, just as I had no hope for it in Cata, MoP, or WoD.<br />
+<br />
+They never said that, not even once. They did however say they were greatly reducing the impact of gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Villager720</div><div class="date">2016-03-03, 09:13 AM</div></div><div class="posttext">Anyone else suspicious that mount be a &quot;Four Horseman&quot; mount. I'll avoid more details to avoid spoilers, but all the updated Racial PvP mounts so far have kept their banners, this one however hath lost its Horde flag. This implies it might be for a different &quot;faction&quot;.<br />
+<br />
+Edit: Yeah, there's 4 color variants on Wowhead. Pretty sure these are for those guys.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kuja</div><div class="date">2016-03-03, 10:14 AM</div></div><div class="posttext">Ooooh. That skeletal warhorse is delicious O: WTB.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">siccora</div><div class="date">2016-03-03, 10:32 AM</div></div><div class="posttext">cant do feral artefact line beacause of the eye of the archmage teleport</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DrIvoRobotnik</div><div class="date">2016-03-03, 10:44 AM</div></div><div class="posttext">Which makes sense, they're based on and base themselves on &quot;ideals&quot; of shallow beauty and base desire. To that same effect the succubus wear a painfully tight corset to pull off what you're talking about, to create that sort of allure and attend to their masochism at the same time.<br />
+<br />
+I mean they look silly and are clipping into each other. For what ever reason, it seems only the texture is updated at the moment, not the model.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mogai</div><div class="date">2016-03-03, 10:48 AM</div></div><div class="posttext">Artifact calculator doesnt work? or is it just me?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Auxis</div><div class="date">2016-03-03, 11:22 AM</div></div><div class="posttext">Artifact calculator doesnt work? or is it just me?<br />
+<br />
+Not you. I was thinking maybe they are partway through updating it, but they wouldn't advertise it if it wasn't finished, would they?<br />
+<br />
+- - - Updated - - -<br />
+<br />
+Is it just me, or does that Warhorse look like the Acherus Deathcharger? I wonder if DK's will get another mount?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Amalkatrazz</div><div class="date">2016-03-03, 11:40 AM</div></div><div class="posttext">Great, mage was nerfed again (frost artefact primarily), why Blizz hate this class?<br />
+<br />
+Sorry, what? You really think they hate the class that topped DPS rankings for 4 expansions in a row?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc985e663195</div><div class="date">2016-03-03, 11:46 AM</div></div><div class="posttext">Oh my god this Skeletal Warhorse!<br />
+<br />
+Hopefully it isn't class restricted *crosses fingers*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sylfaine</div><div class="date">2016-03-03, 12:03 PM</div></div><div class="posttext">Great, mage was nerfed again (frost artefact primarily), why Blizz hate this class?<br />
+<br />
+Not sur if serious or... :confused:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc32ac407789</div><div class="date">2016-03-03, 12:20 PM</div></div><div class="posttext">i like that store mount</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Exotath</div><div class="date">2016-03-03, 01:39 PM</div></div><div class="posttext">Horse mount is awesome.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cers</div><div class="date">2016-03-03, 01:54 PM</div></div><div class="posttext">Illidan hype! Although it's as far as I can see the same model as in TBC. Maybe some new texture work?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azgraal</div><div class="date">2016-03-03, 02:05 PM</div></div><div class="posttext">Oh how I'm hoping that horsey is not a store mount...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arafal</div><div class="date">2016-03-03, 02:18 PM</div></div><div class="posttext">people, that mount is just a recolor.<br />
+http://wow.mmozone.de/wp-content/uploads/sites/6/2013/07/pvp-mount-54-horde.jpg<br />
+at least its a good recolor.<br />
+its not gonna be a store mount.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc91d126fc9d</div><div class="date">2016-03-03, 02:26 PM</div></div><div class="posttext">Artifact Calculator is brocken.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rioo</div><div class="date">2016-03-03, 02:41 PM</div></div><div class="posttext">That sheep looks really evil.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">roninwookie</div><div class="date">2016-03-03, 02:45 PM</div></div><div class="posttext">I'm sorry, what?<br />
+<br />
+I thought they were taking gear out of the equation for instanced PvP. They dump that idea completely now? They shouldn't even waste time testing if &quot;gear will fix it&quot;. Waste of development time.<br />
+<br />
+Welp, I have no hope for instanced PvP in Legion then, just as I had no hope for it in Cata, MoP, or WoD.<br />
+<br />
+They are removing PvP gear, but still allowing PvE gear to be won through PvP for progression :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ins0mnia</div><div class="date">2016-03-03, 04:13 PM</div></div><div class="posttext">The Storm Peaks &gt; The Storm Peaks - Name changed from &quot;The Storm Peaks&quot; to &quot;The Storm Peaks &gt; The Storm Peaks&quot;.<br />
+<br />
+yeah, thanks</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Laylriana</div><div class="date">2016-03-03, 04:50 PM</div></div><div class="posttext">I can understand how Sidewinders would replace Multi-shot, but why would it also replace Arcane Shot?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocaaa1948e8d</div><div class="date">2016-03-03, 05:25 PM</div></div><div class="posttext">That recolored undead warhorse. That new succubus model.<br />
+Every week I get more hype.<br />
+<br />
+EDIT: apparently there's 4 recolors for the skeletal warhorse. Something tells me these will be the 4 Horsemen mounts and not for players.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Reek</div><div class="date">2016-03-03, 08:18 PM</div></div><div class="posttext">ok that mount and wolf look bad asssss</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Raynre Valence</div><div class="date">2016-03-03, 08:27 PM</div></div><div class="posttext">Oh sh*t what's this now?<br />
+<br />
+<br />
+7.0 Nightmare Raid - Four Dragons - Dreamway (Ashenvale) - KLH (New)<br />
+7.0 Nightmare Raid - Four Dragons - Dreamway (Duskwood) - KLH (New)<br />
+7.0 Nightmare Raid - Four Dragons - Dreamway (Feralas) - KLH (New)<br />
+7.0 Nightmare Raid - Four Dragons - Dreamway (Hinterlands) - KLH (New)<br />
+<br />
+While I doubt we'd actually get new raids for 7.0 (this is most likely just the update to add the instances into the overworld) this looks like a very welcome addition. Please, PLEASE Blizzard give me back my 1-3 boss mini raids.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gadzooks</div><div class="date">2016-03-03, 08:55 PM</div></div><div class="posttext">Set looks nice. But so did the Laketown sets in The Hobbit. What happens ON the set...so much more important. But, they did a great job building parts of Stormwind.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bazgrim</div><div class="date">2016-03-03, 10:23 PM</div></div><div class="posttext">I wish you guys would put those diffs into expander boxes or something.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lionwoman</div><div class="date">2016-03-03, 11:11 PM</div></div><div class="posttext">OMG female moose/stag &lt;3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bathory</div><div class="date">2016-03-03, 11:32 PM</div></div><div class="posttext">I wish they'd build a new Illidan model. I really, really dislike that one for some reason. For all the awesome media he gets out there, this seems to be the worst version.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alopex Major</div><div class="date">2016-03-04, 12:45 AM</div></div><div class="posttext">That doe looks fucking bad. I had to look at the filename to figure out what it was. For the love of god use some of your billions of dollars to send your artists to sketch animals at the zoo, please.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kotiria</div><div class="date">2016-03-04, 01:13 AM</div></div><div class="posttext">Got to be honest, that Illidan model is horrendous.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Laylriana</div><div class="date">2016-03-04, 03:03 AM</div></div><div class="posttext">Got to be honest, that Illidan model is horrendous.<br />
+<br />
+The legs are horrible. The legs below the knee are larger than the thigh. The ankle bracelet is too big and there is no muscle definition in the legs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shirohibiki</div><div class="date">2016-03-04, 05:23 AM</div></div><div class="posttext">The legs are horrible. The legs below the knee are larger than the thigh. The ankle bracelet is too big and there is no muscle definition in the legs.<br />
+<br />
+But that is his old model, isn't it? Perhaps they're tweaking with it or something? I don't really see any changes, but... Maybe it's the wrong picture or maybe they've done some small edits. Not quite sure why, though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sir Riptor</div><div class="date">2016-03-04, 05:25 AM</div></div><div class="posttext">Got to be honest, that Illidan model is horrendous.<br />
+<br />
+That is the old Illidan model<br />
+<br />
+The new one looks a lot better</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">clinophobia</div><div class="date">2016-03-04, 11:50 AM</div></div><div class="posttext">Give me the horse now!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ZenX</div><div class="date">2016-03-04, 01:56 PM</div></div><div class="posttext">I wish they'd build a new Illidan model. I really, really dislike that one for some reason. For all the awesome media he gets out there, this seems to be the worst version.<br />
+<br />
+<br />
+Got to be honest, that Illidan model is horrendous.<br />
+<br />
+<br />
+The legs are horrible. The legs below the knee are larger than the thigh. The ankle bracelet is too big and there is no muscle definition in the legs.<br />
+<br />
+<br />
+But that is his old model, isn't it? Perhaps they're tweaking with it or something? I don't really see any changes, but... Maybe it's the wrong picture or maybe they've done some small edits. Not quite sure why, though.<br />
+<br />
+<br />
+That is the old Illidan model<br />
+<br />
+The new one looks a lot better<br />
+<br />
+As Sir Riptor indicated what is shown in the news page is the old model;<br />
+<br />
+Old Model: http://beta.wowdb.com/npcs/22917-illidan-stormrage<br />
+New Model: http://legion.wowhead.com/npc=22917/illidan-stormrage</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Delaios</div><div class="date">2016-03-07, 08:47 AM</div></div><div class="posttext">This seems to be one of the worst pvp talents they ever designed. Way to go, class designers<br />
+<br />
+It would be great when you're up against a lot of melee, as long as they aren't Retribution, Enhancement, Frost, Unholy, Assassination, etc. Seems very situational at best and would just be detrimental most of the time.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1008 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, and, flex, with, normal, lfr, its, that, have, people, fight, much, everything, group, now, was, guild, really, from, dont, they, trade, kill, difficulty, organized, this, adds, end, boss, anymore, degree, get, good, bosses, are, not, flex4, blizzard, which, for, you, going, popular, than, against, over, achievement, hassle, crappier, require" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Angry Chicken 2.0 - Fun WD Build For Quick Bounties, Blizzcon 2014 Tickets Sold Out, Crimson's Tyrael Cosplay 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Funny and Lucky Moments 42, Tavern Takeover this Saturday, MG Tournament Decklists," />
+<title> Armory Stats - Siege of Orgrimmar Progression, Blue Tweets, DLC #439 [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Siege of Orgrimmar Progression, Blue Tweets, DLC #439</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1516189.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1516189-Armory-Stats-Siege-of-Orgrimmar-Progression-Blue-Tweets-DLC-439">Armory Stats - Siege of Orgrimmar Progression, Blue Tweets, DLC #439</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-05-11, 10:38 PM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Angry Chicken 2.0 - Fun WD Build For Quick Bounties, Blizzcon 2014 Tickets Sold Out, Crimson's Tyrael Cosplay (http://www.diablofans.com/news/48061-angry-chicken-2-0-fun-wd-build-for-quick-bounties)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Funny and Lucky Moments 42, Tavern Takeover this Saturday, MG Tournament Decklists, NESL $500 Cup this Sunday (http://www.hearthpwn.com/news/479-tavern-takeover-decklists-top-5-plays-of-the-week)<br />
+<br />
+Armory Stats - Siege of Orgrimmar Progression<br />
+Today we are taking a look at the Siege of Orgrimmar progression of players in each difficulty. Now that achievements are account wide, we can group characters by account and get an idea of what percentage of players (not characters) have defeated a boss on any difficulty at least once, based on progression data.<br />
+<br />
+The data used today is a sample made up of 7.3 million characters from 2.3 million accounts, with at least one character active after March 15. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. <br />
+<br />
+The second chart uses the number of players that killed Immerseus in each difficulty as the base of participating players for that difficulty. Each difficulty can be toggled on and off by clicking the name in the legend.<br />
+<br />
+We looked at per wing stats (http://www.mmo-champion.com/content/3608-Armory-Stats-Player-Raid-Completion-Blue-Tweets-Poll-World-PvE-Content-Fan-Art) in December 2013 and per boss stats (http://www.mmo-champion.com/content/3689-Armory-Stats-Siege-of-Orgrimmar-Progression-Blue-Tweets-DLC-423) in January 2014. You can leave suggestions for future stat posts in the comments!<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: [ '#ADADAD', '#949494', '#727272', '#595959', '#6B8E23', '#426F42']<br />
+});<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'sooAbs',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'Immerseus', 'Protectors', 'Norushen', 'Sha of Pride', 'Galakras', 'Iron Juggernaut', 'Dark Shaman', 'Nazgrim', 'Malkorok', 'Spoils', 'Thok', 'Siegecrafter', 'Paragons', 'Garrosh'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: true,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false,<br />
+groupPadding: 0.15,<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.series.name + ' ' + this.x + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Defeated Siege of Orgrimmar Bosses',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+shared: true,<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'LFR',<br />
+data: [{y: 71.1, color: '#bee4d3'},{y: 71.3, color: '#bee4d3'},{y: 71.5, color: '#bee4d3'},{y: 71.4, color: '#bee4d3'},{y: 64.4, color: '#d6e1ee'},{y: 64.4, color: '#d6e1ee'},{y: 64.5, color: '#d6e1ee'},{y: 64.4, color: '#d6e1ee'},{y: 58.9, color: '#f3e5cc'},{y: 58.8, color: '#f3e5cc'},{y: 58.7, color: '#f3e5cc'},{y: 51, color: '#ebc5c5'},{y: 51.2, color: '#ebc5c5'},{y: 51.2, color: '#ebc5c5'}],<br />
+<br />
+},{<br />
+name: 'Flex',<br />
+data: [{y: 41.5, color: '#81CCAA'},{y: 40.8, color: '#81CCAA'},{y: 39.7, color: '#81CCAA'},{y: 38.6, color: '#81CCAA'},{y: 34.5, color: '#81A4CC'},{y: 34, color: '#81A4CC'},{y: 32.5, color: '#81A4CC'},{y: 30.8, color: '#81A4CC'},{y: 27.7, color: '#E0BB79'},{y: 25.4, color: '#E0BB79'},{y: 23.6, color: '#E0BB79'},{y: 21.5, color: '#D48787'},{y: 21.0, color: '#D48787'},{y: 18.1, color: '#D48787'}],<br />
+<br />
+}, {<br />
+name: 'Normal',<br />
+data: [{y: 26.1, color: '#3e986f'},{y: 25.3, color: '#3e986f'},{y: 23.7, color: '#3e986f'},{y: 23.6, color: '#3e986f'},{y: 22, color: '#4779b1'},{y: 21.6, color: '#4779b1'},{y: 20.7, color: '#4779b1'},{y: 20.1, color: '#4779b1'},{y: 19.3, color: '#c58f2e'},{y: 18.6, color: '#c58f2e'},{y: 17.4, color: '#c58f2e'},{y: 16.7, color: '#be4848'},{y: 16.2, color: '#be4848'},{y: 13.3, color: '#be4848'}]<br />
+<br />
+}, {<br />
+name: 'Heroic',<br />
+data: [{y: 9.9, color: '#255c43'},{y: 8.5, color: '#255c43'},{y: 9.8, color: '#255c43'},{y: 7.3, color: '#255c43'},{y: 7.6, color: '#253f5c'},{y: 6.6, color: '#253f5c'},{y: 5.8, color: '#253f5c'},{y: 6.0, color: '#253f5c'},{y: 4.4, color: '#72531b'},{y: 3.7, color: '#72531b'},{y: 2.9, color: '#72531b'},{y: 1.8, color: '#762a2a'},{y: 1.3, color: '#762a2a'},{y: 0.8, color: '#762a2a'}]<br />
+<br />
+}<br />
+]<br />
+<br />
+});<br />
+<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'sooScaled',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'Immerseus', 'Protectors', 'Norushen', 'Sha of Pride', 'Galakras', 'Iron Juggernaut', 'Dark Shaman', 'Nazgrim', 'Malkorok', 'Spoils', 'Thok', 'Siegecrafter', 'Paragons', 'Garrosh'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: true,<br />
+},<br />
+<br />
+yAxis: {<br />
+endOnTick: false,<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false,<br />
+groupPadding: 0.15,<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.series.name + ' ' + this.x + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Participating Players that Defeated Siege of Orgrimmar Bosses',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+shared: true,<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'LFR',<br />
+data: [{y: 100, color: '#bee4d3'},{y: 100.3, color: '#bee4d3'},{y: 100.6, color: '#bee4d3'},{y: 100.5, color: '#bee4d3'},{y: 90.6, color: '#d6e1ee'},{y: 90.7, color: '#d6e1ee'},{y: 90.8, color: '#d6e1ee'},{y: 90.6, color: '#d6e1ee'},{y: 82.9, color: '#f3e5cc'},{y: 82.8, color: '#f3e5cc'},{y: 82.6, color: '#f3e5cc'},{y: 71.8, color: '#ebc5c5'},{y: 72.1, color: '#ebc5c5'},{y: 72.1, color: '#ebc5c5'}],<br />
+<br />
+},{<br />
+name: 'Flex',<br />
+data: [{y: 100, color: '#81CCAA'},{y: 98.3, color: '#81CCAA'},{y: 95.5, color: '#81CCAA'},{y: 92.8, color: '#81CCAA'},{y: 83, color: '#81A4CC'},{y: 81.9, color: '#81A4CC'},{y: 78.4, color: '#81A4CC'},{y: 74.2, color: '#81A4CC'},{y: 66.8, color: '#E0BB79'},{y: 61.1, color: '#E0BB79'},{y: 56.8, color: '#E0BB79'},{y: 51.8, color: '#D48787'},{y: 50.5, color: '#D48787'},{y: 43.5, color: '#D48787'}],<br />
+<br />
+}, {<br />
+name: 'Normal',<br />
+data: [{y: 100, color: '#3e986f'},{y: 97.1, color: '#3e986f'},{y: 91, color: '#3e986f'},{y: 90.6, color: '#3e986f'},{y: 84.3, color: '#4779b1'},{y: 82.7, color: '#4779b1'},{y: 79.4, color: '#4779b1'},{y: 77.1, color: '#4779b1'},{y: 73.9, color: '#c58f2e'},{y: 71.4, color: '#c58f2e'},{y: 66.9, color: '#c58f2e'},{y: 64.1, color: '#be4848'},{y: 62.2, color: '#be4848'},{y: 51.1, color: '#be4848'}]<br />
+<br />
+}, {<br />
+name: 'Heroic',<br />
+data: [{y: 100, color: '#255c43'},{y: 86.2, color: '#255c43'},{y: 98.8, color: '#255c43'},{y: 74.0, color: '#255c43'},{y: 77, color: '#253f5c'},{y: 66.9, color: '#253f5c'},{y: 59, color: '#253f5c'},{y: 61.1, color: '#253f5c'},{y: 44.1, color: '#72531b'},{y: 37.4, color: '#72531b'},{y: 28.9, color: '#72531b'},{y: 18.2, color: '#762a2a'},{y: 13.5, color: '#762a2a'},{y: 8.3, color: '#762a2a'}]<br />
+<br />
+}<br />
+]<br />
+<br />
+});<br />
+<br />
+<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'stillalivechart',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'SoO Wing 1', 'SoO Wing 2', 'SoO Wing 3', 'SoO Wing 4', 'SoO Glory'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.point.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Completed Siege of Orgrimmar on Any Difficulty',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [<br />
+{<br />
+data: [{y: 74.5, color: '#E0BB79', name:'Siege of Orgrimmar Wing 1'},{y: 68.8, color: '#E0BB79', name:'Siege of Orgrimmar Wing 2'},{y: 64.6, color: '#E0BB79', name:'Siege of Orgrimmar Wing 3'},{y: 55.5, color: '#E0BB79', name:'Siege of Orgrimmar Wing 4'},{y: 3.8, color: '#E0BB79', name:'Glory of the Orgrimmar Raider'}],<br />
+<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+}<br />
+<br />
+]<br />
+<br />
+});<br />
+});<br />
+&lt;/script&gt; <br />
+<br />
+<br />
+<br />
+&lt;div id=&quot;sooAbs&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+<br />
+&lt;div id=&quot;sooScaled&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+<br />
+&lt;div id=&quot;stillalivechart&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+Blue Tweets<br />
+Classes<br />
+You make a new toon, what spells/abilities do you use pre-level 15 when you choose a spec?<br />
+You learn non-spec-specific spells/abilities at various levels, just like today. That's no changing. At lvl10, you choose a spec. (Celestalon (https://twitter.com/Celestalon/status/461329723876847617))<br />
+&quot;Abilities have been reshuffled for a smoother leveling flow&quot; When do we get at peak at this?<br />
+That tends to happen later in the development process. (Celestalon (https://twitter.com/Celestalon/status/461334835823267840))<br />
+<br />
+Seems hard to hold easy and hard at opposite poles with the bored wanting more challenge and frustrated less<br />
+We find it good for the game to provide a variety of specs that feel different. Difficulty is one huge difference (Celestalon (https://twitter.com/Celestalon/status/461374364051460096))<br />
+Players who really want a challenging rotation are drawn to specs like Feral or Subtlety. (Celestalon (https://twitter.com/Celestalon/status/461374529856475136))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter (Forums (http://www.mmo-champion.com/forums/271-Hunter) / Skills (http://beta.wowdb.com/spells/class-abilities/hunter) / WoD Talent Calculator (http://beta.wowdb.com/talent-calculator#M))<br />
+Birthday presents for Hunters! Currently planning to replace Flaming Shots, return Rapid Fire to Marksmanship, and add Bear Trap to Survival (Celestalon (https://twitter.com/Celestalon/status/461632305627279360))<br />
+Don't forget to replace focusing shot too. It's even worse than flaming shots in my opinion. BOOOOORING.<br />
+From playtesting, it's far from boring; it has a significant impact on your rotation, has a high skill cap. (Celestalon (https://twitter.com/Celestalon/status/461652609946746880))<br />
+I just don't understand how aimed and powershot can do massive damage, but then focusing does terrible dmg with a longer cast.<br />
+You seem to be completely ignoring the focus regen, or brushing it off like it's irrelevant. It's really really not. (Celestalon (https://twitter.com/Celestalon/status/461658284315770880))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage (Forums (http://www.mmo-champion.com/forums/272-Mage) / Skills (http://beta.wowdb.com/spells/class-abilities/mage) / WoD Talent Calculator (http://beta.wowdb.com/talent-calculator#g))<br />
+The devs chose to make mana a non-issue in MoP. Why the change of heart now? I miss old Arcane....<br />
+Which Arcane variant did you like? I liked Cata, personally, it was simple but felt unique. (Muffinus (https://twitter.com/Muffinus/status/462117750186328064))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk (Forums (http://www.mmo-champion.com/forums/341-Monk) / Skills (http://beta.wowdb.com/spells/class-abilities/monk) / WoD Talent Calculator (http://beta.wowdb.com/talent-calculator#o))<br />
+as a MW, will I want to fistweave on mythic progression on a regular basis, or only on niche situations?<br />
+Could be either, depending on how you want to fill out your guild's healing strategy. (Celestalon (https://twitter.com/Celestalon/status/461304257778434048))<br />
+<br />
+BM 4 Chi Explosion is a waste defensively (+8.3% chi effic.), vs. 3 CE (+22.2%). Using it only with 3 intended part of rotation?<br />
+What are you measuring? (Celestalon (https://twitter.com/Celestalon/status/461322898628571136))<br />
+But in general, if you don't benefit from the AoE, you should prefer to do 3-Chi CEs. 4-Chis aren't a total waste though. (Celestalon (https://twitter.com/Celestalon/status/461323890568876032))<br />
+<br />
+Chi serenity sounds bad for WW to me because impossible to avoid energy capping. Would be better w/shorter CD/Duration.<br />
+It's tuned assuming that. (Celestalon (https://twitter.com/Celestalon/status/461372211282980864))<br />
+<br />
+Are there any plans to address the fact that zen sphere is completely unusable except in the most fringe situations?<br />
+Tuning phase is still yet to come. Yes. (Celestalon (https://twitter.com/Celestalon/status/461538850037571584))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest (Forums (http://www.mmo-champion.com/forums/274-Priest) / Skills (http://beta.wowdb.com/spells/class-abilities/priest) / WoD Talent Calculator (http://beta.wowdb.com/talent-calculator#U))<br />
+Another little birthday present for SPriests... Glyph of Mind Harvest: Your first Mind Blast against each enemy generates 3 Shadow Orbs. (Celestalon (https://twitter.com/Celestalon/status/461688151048589312))<br />
+I'll take it. Mandatory though, and that's not good. Might as well give us astral communion-esque something.<br />
+Aye, we're still debating the mandatoriness of it; may make it a Draenor Perk instead. (Celestalon (https://twitter.com/Celestalon/status/461699423924285441))<br />
+Yet you make a flash of light perk for retribution paladins. #Balance #Useful #Idonteven<br />
+Basically all DPS have a couple defensive perks, such as that. (Celestalon (https://twitter.com/Celestalon/status/461701908810305536))<br />
+<br />
+In WoD will Shadow Orbs decay out of combat like Holy Power and Chi? Glyph of Mind Harvest makes me believe they will.<br />
+Yes, though slowly. (Offhand I believe it's 20sec til it starts decaying, then 5sec per. Something close to that.) (Celestalon (https://twitter.com/Celestalon/status/462024617641521153))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue (Forums (http://www.mmo-champion.com/forums/275-Rogue) / Skills (http://beta.wowdb.com/spells/class-abilities/rogue) / WoD Talent Calculator (http://beta.wowdb.com/talent-calculator#Q))<br />
+To be clear, Hemorrhage is no longer part of Sub rotation, except when Backstab is not possible?<br />
+Correct. (Celestalon (https://twitter.com/Celestalon/status/461351119512272896))<br />
+<br />
+Rolling Hemo bleed will break Backstab? http://t.co/EhMZdSRfxm<br />
+Backstab &gt; Hemo, other than from the front, or if backloading damage is more useful than frontloading (very rare). (Celestalon (https://twitter.com/Celestalon/status/461348624710901760))<br />
+Which means sub from the front &lt; everyone else, while sub from the back = everyone else, wonder why so few play sub pve....<br />
+The skill difference between players will easily overshadow the miniscule difference between front and side/back. Sub is *hard*. (Celestalon (https://twitter.com/Celestalon/status/461356189708595200))<br />
+Help me understand the feral/Subtlety distinction on this one. Is retaining positionals literally about *difficulty*?<br />
+No. (Celestalon (https://twitter.com/Celestalon/status/461368532123406336))<br />
+<br />
+Is difficulty considered a defining part of a spec and if so how do you balance damage for a more difficult spec?<br />
+Yes, and it's difficult. (Celestalon (https://twitter.com/Celestalon/status/461366820050460673))<br />
+Is the more difficult spec balanced to a different (slightly higher) point to compensate?<br />
+In some extreme cases, yes. Emphasis on 'extreme' and 'slightly'. (Celestalon (https://twitter.com/Celestalon/status/461368347444015104))<br />
+Based on your statements about subtlety being hard am I correct in assuming sub has a **SLIGHTLY** higher balance point?<br />
+Yes. However, much of that is lost in raid encounters, where it's slower to target swap, ramp up, etc. (Celestalon (https://twitter.com/Celestalon/status/461372117385105408))<br />
+<br />
+can you explain me why sinister calling is nerf for wod?<br />
+Getting stat balance in the right ballpark. Not a nerf to the spec's performance. (Celestalon (https://twitter.com/Celestalon/status/461356594488299520))<br />
+puncturing wounds was delete for mop, can you revert this change please? No more critical from agility sound like a huge nerf<br />
+Absolutely nothing, and I really mean nothing, that you see in datamining should be considered a nerf/buff to spec performnce (Celestalon (https://twitter.com/Celestalon/status/461363108934475776))<br />
+ok, and what about energy regen? you guys wants rogues and ferals more dynamics, right?<br />
+What do you mean by &quot;dynamics&quot;? (Celestalon (https://twitter.com/Celestalon/status/461374046848823296))<br />
+I mean less passive, less dependant of autoattacks.<br />
+Ferals' autoattack damage is already quite low. Rogues varies a bit by spec, sometimes a little high, but not hugely so. (Celestalon (https://twitter.com/Celestalon/status/461375533511499776))<br />
+<br />
+On that note, what was the intent behind this? Rogues have no AoE way of spreading poinsons save for FoK.<br />
+FoK (or Blade Flurry) work quite well for that. (Celestalon (https://twitter.com/Celestalon/status/461594926761783296))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman (Forums (http://www.mmo-champion.com/forums/276-Shaman) / Skills (http://beta.wowdb.com/spells/class-abilities/shaman) / WoD Talent Calculator (http://beta.wowdb.com/talent-calculator#c))<br />
+One last birthday present. The TBD Shaman Draenor Perk... Now &quot;Unleash Elements also increases movement speed by 30% for 4sec.&quot; (Celestalon (https://twitter.com/Celestalon/status/461701587270770688))<br />
+Is that going to be available to all 3 specs?<br />
+Still discussing it. That TBD Perk was just for Ele/Enh, but we see the value of it for Resto, of course. (Celestalon (https://twitter.com/Celestalon/status/461702356254466050))<br />
+<br />
+Will Elemental retain its 'niche' of cleave 3-5 targets or are you moving in a different direction?<br />
+Yep, not planning to change that. (Celestalon (https://twitter.com/Celestalon/status/462026251532636160))<br />
+<br />
+Character / Items<br />
+As someone who loves transforms e.g deviate delight/orbs. Is it possible their effects persist through Shaman Ghost Wolf?<br />
+Maybe. We're working on this. (Celestalon (https://twitter.com/Celestalon/status/461539258017120256))<br />
+<br />
+Don’t think that much would change in the intervening 8 weeks…<br />
+In 6.0, Cloud Serpents no longer require Cloud Serpent Riding. (WatcherDev (https://twitter.com/WatcherDev/status/462251115560837120))<br />
+<br />
+Warlords of Draenor Stats<br />
+..inue and in the same way, how will it work with starsurge procs (moonkin)or hot streak (fire mage)? Potential problems there.<br />
+MSs don't trigger procs unless explicitly called out, and I don't believe we're making either of those trigger from MSs. (Celestalon (https://twitter.com/Celestalon/status/461335526142795776))<br />
+Can CCs with dmg components MS? (i.e. If I Combustion MS, will it DR the stun? Does it overwrite the dot?)<br />
+Damage can multistrike. Debuffs cannot. (Same as crit) (Celestalon (https://twitter.com/Celestalon/status/461347578882584577))<br />
+<br />
+If we get a multistrike with Templar's Verdict will the multstrike copy also trigger mastery damage like the original? cont...<br />
+It only goes one-way, though I don't recall which one offhand. I think its &quot;Mastery can MS, MS can't Mastery&quot;. (Celestalon (https://twitter.com/Celestalon/status/461335325134974977))<br />
+So, TV for [x] can MS for [x/30] and both can trigger Mastery, which can both MS? Would make more sense just with TV MS imo.<br />
+No. TV for XTV-MS for 0.3*XMastery for YMastery-MS for 0.3*Y. (Celestalon (https://twitter.com/Celestalon/status/461348001575747585))<br />
+<br />
+Is the Multi Strike Stat going to break cc such as polymorph or will it be &quot;smart&quot;?<br />
+It isn't a cleave (holinka (https://twitter.com/holinka/status/462291950771507202))<br />
+<br />
+Raid Finder and Heroic Dungeons<br />
+b/c the tops can't enjoy game by seeing LFR peeps in tier gear. They've hate it even existing.<br />
+It's unfortunate that's the perception. Some players might feel that way, but certainly not the ones we listen to. (WatcherDev (https://twitter.com/WatcherDev/status/461672408051499009))<br />
+<br />
+LFR changes will gate raiding away from avarage players and return it to a toy for elite players only. Thanks for nothing<br />
+Not sure I follow. Warlords makes &quot;organized&quot; raiding more accessible than ever. And LFR is still there with epic loot. (WatcherDev (https://twitter.com/WatcherDev/status/461980233256927232))<br />
+&quot;Organized&quot; raiding is still not a thing for many of us - LFR *is* our endgame. And the so-called epic loot won't be tier loot.<br />
+True, no argument from me there. Was just missing the &quot;no tier in LFR&quot; = &quot;raiding now a toy for elite players&quot; connection. (WatcherDev (https://twitter.com/WatcherDev/status/461990772666290176))<br />
+<br />
+LFR Loot better or equivalent to Heroic Dungeon loot? The watercooler post didn't specify.<br />
+.6.0 LFR ilvl is between Heroic dungeon and Normal raid, same as today. (WatcherDev (https://twitter.com/WatcherDev/status/461557185781067777))<br />
+Meaning for alts of Flex/Mythic/Heroic raiders it will still be a wanted road to take gearing up.<br />
+There are other sources of catch-up gear. And we'll tune the first Normal raid tier around having Heroic dungeon gear. (WatcherDev (https://twitter.com/WatcherDev/status/461563232964993024))<br />
+Was MSV 10N tuned for 463 gear? Looking for a frame of reference.<br />
+It was. But MSV 10N was tuned at a level that we'd call Heroic in 6.0. That was part of the point of the blog. (WatcherDev (https://twitter.com/WatcherDev/status/461571097746354177))<br />
+Wait, does this mean we can still do Heroic in WoD with Heroic dungeon gear like we always did with Normal before?<br />
+If you're good enough, sure. But obviously gear from other sources will help. (WatcherDev (https://twitter.com/WatcherDev/status/462022622629609473))<br />
+<br />
+Do calls that LFR gear having a higher iLvl than heroics still makes it part of progression show you you can't satisfy elitists?<br />
+Many want us to design for their specific needs. We're not trying to cater to any one group, but rather make a fun, coherent game. (WatcherDev (https://twitter.com/WatcherDev/status/462106422101413888))<br />
+<br />
+Just to clarify: there are still trinkets in LFR, they're just unique, not scaled down versions of the Normal/Heroic/Mythic … (WatcherDev (https://twitter.com/WatcherDev/status/461591289281003523))<br />
+<br />
+is lfr armour unique art or shared with dungeon art?<br />
+Different than dungeon art. (WatcherDev (https://twitter.com/WatcherDev/status/461571340651073536))<br />
+<br />
+Hey re lfr and flex options. Says min 10.. How will tanking work? 1 tank min or 2 tanks req?<br />
+LFR is still going to matchmake 25-player groups. 2 tanks. Encounter design often fundamentally requires 2 tanks. (WatcherDev (https://twitter.com/WatcherDev/status/461607501251624960))<br />
+But if some people drop, the numbers will scale down in the interim while the group waits for people to backfill. (WatcherDev (https://twitter.com/WatcherDev/status/461607621540077568))<br />
+. what happens if there is no second tank and ready to pull a boss ?<br />
+If there's no second tank and the boss requires 2, then you aren't ready to pull the boss, sorry. (WatcherDev (https://twitter.com/WatcherDev/status/461608006992416768))<br />
+On that note - any chance bosses will actually be unpullable if required roles aren't present?<br />
+That's an interesting idea - will think about whether that's doable. (WatcherDev (https://twitter.com/WatcherDev/status/461609003592585216))<br />
+<br />
+Is it still planned for H Dungeons to be harder than LFR? If so it seems weird to get better loot, easier.<br />
+LFR is gated; Heroic dungeons available day 1. LFR has a weekly lockout; dungeons daily. (WatcherDev (https://twitter.com/WatcherDev/status/461562266010128386))<br />
+What do you mean daily? Will we not be able to run heroics several times a day?<br />
+You can chain-queue for random Heroic indefinitely, but individual Heroic dungeons have always had a daily lockout. (WatcherDev (https://twitter.com/WatcherDev/status/461566258324832257))<br />
+<br />
+It wasn't fun at all. Heroics were overturned, and groups failed to do lfd heroics. Any plans to try to prevent a repeat of this<br />
+Honestly, by not overtuning our dungeons and entry-level raid content. That was a clear mistake in Cata. (WatcherDev (https://twitter.com/WatcherDev/status/462017718469001216))<br />
+<br />
+To remain relevant in my opinion or people will just abandon them, even more with more chances.<br />
+If they were equal, THAT would kill LFR. And we don't want to kill LFR. Dungeons will still be relevant for catch-up. (WatcherDev (https://twitter.com/WatcherDev/status/461569196640305152))<br />
+<br />
+So basically for me gearing an Alt, I would prefer to do Herioc Dungeons as my starting point than jump in 2 Normal/Herioc so on<br />
+Pretty much. Or you could do LFR. Or you could use loot from other sources in the outdoor world. Whichever you prefer. (WatcherDev (https://twitter.com/WatcherDev/status/461588013152096256))<br />
+<br />
+I will NOT be able to raid in #Warlords now. Thanks for that. Every1 is getting bumped up except LFR raiders. my core fun = gone<br />
+Just to be clear, your core fun was collecting class set pieces? Did you stop raiding each tier the moment you got your set? (WatcherDev (https://twitter.com/WatcherDev/status/461596867382767617))<br />
+Do you at least understand/care that for many, LFR was the tops and that taking that (tier gear) away feels immensely shitty?<br />
+Of course. Faster gearing may ease that a bit, but we know that we have to make up for the loss elsewhere. (WatcherDev (https://twitter.com/WatcherDev/status/461602311748726784))<br />
+<br />
+PvE<br />
+Will in-game cutscenes like the lei shen bridge be exclusive to normal/heroic/mythic in WoD raiding?<br />
+No. Though only Normal/Heroic/Mythic raiders will get a working skip button. (I kid, I kid.) (WatcherDev (https://twitter.com/WatcherDev/status/462106656378474496))<br />
+You're intended to experience the full story in LFR, except maybe the odd heroic bonus boss. (Muffinus (https://twitter.com/Muffinus/status/462113868743860224))<br />
+Awesome I hated the fact that only normal+ got to see cutscenes or exclusive bosses ._.<br />
+Bridge cutscene missing from LFR was never a deliberate intent - just a side-effect of how we broke the raid up into discrete wings (WatcherDev (https://twitter.com/WatcherDev/status/462112251718426624))<br />
+<br />
+To commit full time to raiding just because yall want to listen to the forum neckbeards will be terrible.<br />
+A core premise of our changes is that flexible+cross-server+Group Finder makes organized raiding accessible without a commitment. (WatcherDev (https://twitter.com/WatcherDev/status/461672718731972608))<br />
+That simply is wrong. Even with flex, you need a core group and a schedule.<br />
+Why? If you can search for or form a raid at any time of day with a region-wide browser, you can do it on your schedule. (WatcherDev (https://twitter.com/WatcherDev/status/461919066941554688))<br />
+why will PuGing thru this tool be better than LFR? Harder content exacerbates issues with PUGing, doesn’t solve it<br />
+A lot of LFR's social issues flow from lack of structure. Leader running the group vs. chaos and votekicking. (WatcherDev (https://twitter.com/WatcherDev/status/461924871875092481))<br />
+<br />
+Meanwhile gear imbalance is so gigantic that with my boosted green weapon tanks outdps me even when the stars align.<br />
+Weapons in particular are both a bit too meaningful and too hard to get currently, not going to argue there. (WatcherDev (https://twitter.com/WatcherDev/status/461521308812337152))<br />
+<br />
+How will normal/heroic raid access be in Wod? Will it be wing based menu-teleport like flex today or walk through a door?<br />
+Walk through a door, but the layouts themselves will be much less linear so you can pick what your group wants to do. (WatcherDev (https://twitter.com/WatcherDev/status/461561989840392192))<br />
+Glad to hear! So I assume we will be able to save lockouts to continue next week, differently flex is today, right?<br />
+Yes, you'll be able to extend raid lockouts if you like. (WatcherDev (https://twitter.com/WatcherDev/status/461566566023172096))<br />
+<br />
+So if we are at 12/14 HM in SoO and want to kill the 2 last bosses for loot, we have to do EVERY boss in NM before?<br />
+From the blog, &quot;Less linear layouts and shortcuts that allow experienced groups to skip to certain bosses...&quot; (WatcherDev (https://twitter.com/WatcherDev/status/461586615836897280))<br />
+Previously I heard one needed to clear all wings of Blackrock Foundry before facing Blackhand ALA Naxx, no longer case?<br />
+You do, but imagine if killing each wing boss X times lets you forge a key that unlocks Blackhand's door. (WatcherDev (https://twitter.com/WatcherDev/status/461587857333682177))<br />
+<br />
+Was MSV 10N tuned for 463 gear? Looking for a frame of reference.<br />
+Mists lacked a true &quot;entry-level&quot; organized raid difficulty at release. Warlords will have one. (WatcherDev (https://twitter.com/WatcherDev/status/461571207993634816))<br />
+<br />
+Watercooler doesn't specify whether people are saved to a single Mythic (or even Heroic) RaidID for the week (or reasons)<br />
+Mythic raid locks will work exactly like Heroic locks did in Mists and prior - a single fixed ID and lock. (WatcherDev (https://twitter.com/WatcherDev/status/461562094123372545))<br />
+<br />
+Are we (raid leaders) still going to be able to choose between personal and regular loot options on new normal/heroic?<br />
+That's the plan. (WatcherDev (https://twitter.com/WatcherDev/status/461588627781206017))<br />
+<br />
+Actions speak louder than words. Your actions say you're trying to kill lfr. What reason will there be to run it.<br />
+The exact same reasons that exist today: Seeing the content, getting some of the best loot outside of organized raiding. (WatcherDev (https://twitter.com/WatcherDev/status/461581310281011200))<br />
+<br />
+will be Normal T18 better than Mythic T17? It sucks to upgrade max difficulty gear with items you'll use for few days<br />
+No, just as Flex T16 was not better than Heroic T15. A Mythic raider should begin with Heroic of the next tier. (WatcherDev (https://twitter.com/WatcherDev/status/461569028142530560))<br />
+actually Heroic T15 was item lv 535, while Flex T16 was item lv 540. That's the reason of my concern.<br />
+Upgrades changed things a bit. Functionally Heroic raiders had 543-549 gear going into T16. In any case, T18 Mythic &gt; T17 Norm (WatcherDev (https://twitter.com/WatcherDev/status/461580438536867840))<br />
+Did you say that backwards? (Point is that T17 Mythic won't be ugprading into T18 Norm?)<br />
+T18 Mythic item level is greater than the item level of T17 Normal. (WatcherDev (https://twitter.com/WatcherDev/status/461582190111768577))<br />
+Going by his response earlier, T17 Mythic&gt;T18 normal.<br />
+Blarg, sorry, many tweets. Yes, T17 Mythic higher item level than T18 Normal. (WatcherDev (https://twitter.com/WatcherDev/status/461585478286716928))<br />
+Though technically my first statement was also true.... (WatcherDev (https://twitter.com/WatcherDev/status/461585552479748097))<br />
+<br />
+I find it hard to get flex grps. Get 1 maybe every 2 weeks or so. Flex matching is bad. LFR is only reliable raid<br />
+It wasn't designed explicitly for PUGs but it absolutely is puggable. It's a social problem. (WatcherDev (https://twitter.com/WatcherDev/status/461597415363989504))<br />
+Group Finder will help a lot with this - you can make your own group with minimal fuss, and set your own req (WatcherDev (https://twitter.com/WatcherDev/status/461597675490512897))<br />
+And yes, Group Finder groups can and will advertise their loot type, and you can choose or avoid them accordingly. (WatcherDev (https://twitter.com/WatcherDev/status/461598041318121472))<br />
+<br />
+the problem is, if you give exclusionary tools to the players many don't even get a chance to even try.<br />
+One of our main goals and challenges in designing Group Finder is to allow people to find like-minded allies. (WatcherDev (https://twitter.com/WatcherDev/status/461607167309529088))<br />
+What are you doing to prevent players from having silly reqs like today 560+ to do normal SoO.<br />
+1) You can't make a group whose req you don't meet yourself. 2) People with lower reqs will have groups that fill. (WatcherDev (https://twitter.com/WatcherDev/status/461607839560372224))<br />
+<br />
+This is all I wanted to know, but will there be any safeguards to prevent changing loot type mid-raid to avoid griefing?<br />
+You won't be able to change loot rules while an encounter is in progress. (WatcherDev (https://twitter.com/WatcherDev/status/461598423561797634))<br />
+<br />
+Personal loot brought a breath of fresh air and new life to pug raids, I feel making it optional will hurt more than help.<br />
+Why? Personal loot is great for PUGs. Terrible for F&amp;F groups that want to share with friends. A choice makes sense. (WatcherDev (https://twitter.com/WatcherDev/status/461597878167683072))<br />
+Why is personal loot bad for F&amp;F? If my raid team has more mail or plate than leather, personal loot seemsbetter<br />
+Then that option is available. But being able to pass loot around to those who most need/want it adds a lot. (WatcherDev (https://twitter.com/WatcherDev/status/461598683515990016))<br />
+<br />
+Another interesting question - if 24/25 have run, is there a bare minimum of loot drops?<br />
+There is not. In that case, you might get zero drops. Obviously that's an extreme edge case. (WatcherDev (https://twitter.com/WatcherDev/status/461604235444887553))<br />
+<br />
+any word on allowing players to solo queue or small group queue for older lfrs for transmog purposes?<br />
+Looking promising that we'll be able to do that for Dragon Soul and all 5.x LFRs at level 100. (WatcherDev (https://twitter.com/WatcherDev/status/461608431947108352))<br />
+<br />
+Battlegrounds<br />
+Concerned new random gear boxes will make me lose slots in my 2k+ teams because i was unlucky with boxes. Plans to address that? ty<br />
+The boxes have some degree of bad luck protection on them, especially the gold ones. (holinka (https://twitter.com/holinka/status/461342349176500224))<br />
+<br />
+Good question. Does the box open immediately after a BG is done or can I save opening it, even?<br />
+Would like to avoid bags but there might be technical limitations. Sorting that out. It will obey loot spec (holinka (https://twitter.com/holinka/status/462267632951898113))<br />
+<br />
+Will the strongboxes be available while leveling through BG's or is this a Max Level only reward?<br />
+it will be similar to the bags you get from dungeons (holinka (https://twitter.com/holinka/status/461314340889456640))<br />
+<br />
+will we be flooded with starter gear from strongboxes long after we have any use for it, or are boxes ‘smart’?<br />
+Possibly, but you know, you can DE it, or vendor it for gold. OMG what gold from PvP?! (holinka (https://twitter.com/holinka/status/461333949453574145))<br />
+<br />
+Because PvP Players have no good way to make gold.<br />
+there will be a way for PvPers to make gold through item acquisition in Warlords (holinka (https://twitter.com/holinka/status/461883171512913921))<br />
+<br />
+What's the feedback been like regarding bonus PvP loot roll on RBG win? I think it's a great idea, but a lot seem to disagree.<br />
+People that don't like to do RBGs are unhappy. Some concern that people won't bother if they don't get something. (holinka (https://twitter.com/holinka/status/462267852011995136))<br />
+its too time consuming for a roll... esp if you lose a few in a row and have multiple alts.<br />
+I'm never sympathetic to concerns about time commitment to gear out an alt. Gearing is your primary progression. (holinka (https://twitter.com/holinka/status/462283274170015744))<br />
+<br />
+Will any new bg come in warlords?<br />
+In the traditional sense, not at release. Ashran will certainly provide new PvP content. We have some other...plans. (holinka (https://twitter.com/holinka/status/462282594600497152))<br />
+<br />
+For instance, give a player gold medal if he assaulted bases and defended flags, depending on the current amount of bases.<br />
+We've explored how we would do this. But it could easily be exploitable. Imagine capture point swap parties. #ohbaby (holinka (https://twitter.com/holinka/status/462292370931712005))<br />
+There may be value in monitoring where people are fighting and if they're &quot;doing it right&quot; (holinka (https://twitter.com/holinka/status/462292521624670208))<br />
+<br />
+Won't RBG wintraders be able to farm full gear in week1 in WoD?<br />
+you can only earn 3 bonus roll tokens per week (holinka (https://twitter.com/holinka/status/461480810902609920))<br />
+but you can farm tokens before the season starts right?<br />
+Obviously, we don't want everyone geared in 1 week, so we'll ensure it doesn't happen. (holinka (https://twitter.com/holinka/status/461573781274648577))<br />
+<br />
+So, battle groups where they &quot;lose all the time&quot; will gear far slower now. what is the answer to this?<br />
+I'm not sure that's true. Actually, I think the losing team will have more incentive to put up a fight to get a better strongbox. (holinka (https://twitter.com/holinka/status/461332719012560896))<br />
+what about instances such as in wsg where if you're being GY camped, you don't have a chance, no matter how good incentive is.<br />
+We have to fix that graveyard situation then. (holinka (https://twitter.com/holinka/status/461335198148210688))<br />
+Admittedly, the CTF pose the biggest problem for any system like this as they often are the most lopsided score wise. (holinka (https://twitter.com/holinka/status/461335381489631232))<br />
+<br />
+Our intention with bonus rolls in RBGs is to continue to incentivize RBG participation but simplify a confusing conquest cap system. (holinka (https://twitter.com/holinka/status/461315907633958912))<br />
+are you guys considering letting smaller groups (say like 5) queue for RBGs? Or would that create too many problems?<br />
+We're doing Group Finder instead. Prefer you fill out your group yourself then match you with another group of people. (holinka (https://twitter.com/holinka/status/461573295242883073))<br />
+<br />
+But it still forces people who only like arena to do RBGs to keep on par with gear. Same as cap currently.<br />
+We realize that and we're fine with it. We say &quot;reward&quot; you say &quot;forced&quot; (holinka (https://twitter.com/holinka/status/461317059284979712))<br />
+I say &quot;forced&quot; with quotes too, but anyone who wants to keep up with gear will be doing RBGs, like it or not.<br />
+we like it (holinka (https://twitter.com/holinka/status/461318904099254272))<br />
+<br />
+PvP Gear<br />
+Q about PvP itemization. What stats will PvP Trinkets have? What happens to current items? PvP Power and Resilience still exists?<br />
+they won't exist but the item squish normalizes the ilevel of a lot of gear in those earlier tiers (holinka (https://twitter.com/holinka/status/462266830577360896))<br />
+.Also we plan to keep the damage reduction set bonus on PvP trinkets. We think it works well. (holinka (https://twitter.com/holinka/status/462266999872049152))<br />
+<br />
+will there be a third currency for pvp now that there will be three &quot;levels&quot; of gear available?<br />
+.you don't buy the first tier with currency. You get it through strong boxes only. But we'll be generous. (holinka (https://twitter.com/holinka/status/462265420456546304))<br />
+sweet, I love the idea of the strong boxes, gives more incentive to do BGs, which I think may help faction imbalance<br />
+I think skirmishes will also help BG queue times as it offers an alternative honor gear generator for the side with long queues. (holinka (https://twitter.com/holinka/status/462267235549986816))<br />
+<br />
+Sorry for so consistently sabling ideas, but these are all huge changes that must be polished to a shine.<br />
+The ilevel floor is low enough, we're not concerned about green pieces scaling. (holinka (https://twitter.com/holinka/status/461571610252554241))<br />
+Also, each season, the PvP gear moves further away from the freshly dinged max player. This has always been a problem. (holinka (https://twitter.com/holinka/status/461571791559741440))<br />
+<br />
+So will Mythic gear be better than Honor gear in instanced PvP?<br />
+yes (holinka (https://twitter.com/holinka/status/461316609617846272))<br />
+Makes sense, thanks for the clarification.<br />
+Sorry to be brief before. Phone. But definitely feel a Mythic raider should be able to step into PvP at a pretty high level. (holinka (https://twitter.com/holinka/status/461332408722153472))<br />
+<br />
+The gear scale up to a minimum ilvl is brilliant... no more skipping out on BGs because my freshly leveled alt's gear is too weak<br />
+Yes we felt that even if starter gear was sold for gold at a vendor, some people wouldn't know to do it. Why not make it easy? (holinka (https://twitter.com/holinka/status/461334761139474432))<br />
+<br />
+Are crafted gears gone now then?<br />
+Yes crafted PvP starter gear is gone now (holinka (https://twitter.com/holinka/status/461379412051509249))<br />
+<br />
+Will there be anymore scaling in Lowlvl bgs?<br />
+We scale your level and your ilevel already. We'll be setting the brackets to 10 level increments as well. (holinka (https://twitter.com/holinka/status/461335864493084672))<br />
+<br />
+Will that extra roll system use a currency separate from the raiding currency?(I would assume so)<br />
+The plan was to use the same token. (holinka (https://twitter.com/holinka/status/461332473159221248))<br />
+<br />
+Forcing arena players into RBGs to spend bonus tokens or you will be behind. Rather do a PvE boss for my extra gear, RBG sucks hard<br />
+&quot;Behind&quot; for what? For how long? Titles are decided at the end of the season. Most hardcore players finishing gearing fast. (holinka (https://twitter.com/holinka/status/461334412072714241))<br />
+<br />
+PvP<br />
+DPS CD's such as Avatar &amp; Holy Avenger, are they going to replace reck/wings, or will it still be stacked in a macro?<br />
+We'd like to end macros for this wherever possible. (holinka (https://twitter.com/holinka/status/462267455394430977))<br />
+<br />
+Ever thought about a CAPTCHA before entering a PVP/PVE queue? To prevent bots and AFK players in battlegrounds and instances?<br />
+Did some research and found that Captcha's aren't that effective anymore. Still worthwhile to investigate other options though. (holinka (https://twitter.com/holinka/status/461955798352936960))<br />
+<br />
+Not ignoring current season. Exploring PvP only options for underperforming specs. More to come. (holinka (https://twitter.com/holinka/status/461907257718886400))<br />
+Can you define under performing? Ele shamans are gods, but they're low on Rep. And Warriors are high on rep, but cleaves are ruined<br />
+I would not expect changes to Warriors, Warlocks, Shamans, Mages, Hunters or Rogues. No promises unmentioned classes will change. (holinka (https://twitter.com/holinka/status/461918081292316672))<br />
+<br />
+What is your theory on why their is a disparity in each factions PvP participation? Racials? Style? etc?<br />
+Different regions have different faction distributions suggesting it's more social than game related. (holinka (https://twitter.com/holinka/status/462119295531483136))<br />
+<br />
+Could be a terrible idea but, what if we could trade 4k honor for 250 honor bound to guild token? For us who are capped.<br />
+I'd prefer we sell BoA Honor boost pots than straight up Honor gifts. Think it's important you have to play the character. (holinka (https://twitter.com/holinka/status/461574107163676672))<br />
+<br />
+OK. So. OK. If I’m fighting some mob on a PvP realm and a player attacks me, my iLevel changes vs. the player but not the mob?<br />
+No, it just changes. You'll be stronger vs that mob you were in the middle of killing, too. (Celestalon (https://twitter.com/Celestalon/status/461313208574164993))<br />
+Will the health you gain by the extra stamina be 'empty' health (as usual) or 'full' health?<br />
+It keeps the same Health %. So you could go from 50k/100k to 75k/150k, for example. (Celestalon (https://twitter.com/Celestalon/status/461314422703550465))<br />
+<br />
+Any chance in WoD we'll see honor to conquest conversion in a way similar to honor to justice?<br />
+No and you can expect the justice to honor conversion to go away (holinka (https://twitter.com/holinka/status/461857177297104896))<br />
+<br />
+the group finder group is as random as joining a solo queue. So why no solo queue instead?<br />
+With Group Finder, there's an intrinsic social dynamic where someone put together the group (holinka (https://twitter.com/holinka/status/461333354940350464))<br />
+Leaders have to run a good group, so people stay. People have to behave, or get kicked. (holinka (https://twitter.com/holinka/status/461333433050873856))<br />
+<br />
+Am I not able to invite my friend to pvp with me on ashran if he is on a different server?<br />
+You will be able to bring a cross-realm friend to Ashran with you. (holinka (https://twitter.com/holinka/status/461333546787811328))<br />
+<br />
+Will skirmishes only be for solo queing, or will i by able to que Skirmish 2v2 with a friend?<br />
+you can queue with a friend as well (holinka (https://twitter.com/holinka/status/461480863293644800))<br />
+<br />
+is there anything stopping people exploiting the PvP ilvl in PvE by having someone follow them and keep them in PvP combat?<br />
+nope. Congrats, you have a great friend to do something so mundane for minimal impact (holinka (https://twitter.com/holinka/status/461531772295970816))<br />
+<br />
+Possible to use new PVP loot system to incentive visiting Tol Barad or even Wintergrasp?<br />
+the right way to fix Winterrgasp/Tol Barad is to instance them. Realm populations will always be a problem. It is on the backburner. (holinka (https://twitter.com/holinka/status/461572608165572608))<br />
+<br />
+can we please position the PvP-Vendor somewhere easy to reach for WoD. Like the one in Dalaran... I really dislike the current spot<br />
+they'll most likely be in Ashran. We want people outside of the capital cities. Big world out there. (holinka (https://twitter.com/holinka/status/461516048693334016))<br />
+I dislike having the PvP-Vendor outside the capital because you have to travel all the way back for Enchants/Reforge/AuctionHouse<br />
+Reforging is gone and the number of gem and enchant slots have been reduced. (holinka (https://twitter.com/holinka/status/461572721344667649))<br />
+<br />
+UI / Addons<br />
+another follow up, was the New BG scoreboard shown at Blizzcon scrapped?<br />
+It's still in progress. Probably won't make release. (holinka (https://twitter.com/holinka/status/461332067028979712))<br />
+<br />
+<br />
+Dark Legacy Comics #439<br />
+DLC #439 (http://www.darklegacycomics.com/439.html) has been released. <br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/may/dlc439.jpg (http://www.darklegacycomics.com/439.html)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2014-05-11, 10:48 PM</div></div><div class="posttext">Dat Garrosh kill %.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lizon</div><div class="date">2014-05-11, 10:48 PM</div></div><div class="posttext">The Clones are the best part of DLC. &gt;.&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azahel</div><div class="date">2014-05-11, 10:53 PM</div></div><div class="posttext">That's bizarre. <br />
+From the comments I see on MMO champs forums about how casual wow is now, I thought we'd have many more garrosh heroic kills.<br />
+weird...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc39f78ccd49</div><div class="date">2014-05-11, 10:55 PM</div></div><div class="posttext">That's bizarre. <br />
+From the comments I see on MMO champs forums about how casual wow is now, I thought we'd had many more garrosh heroic kills.<br />
+weird...<br />
+<br />
+SOO hc is easy, but most That plays the game is just bad, face it. and peoples that raid 2 days a week can clear all heroic content so i would call that casual or am i wrong?, u dont have to be close to hardcore to clear all heroic content nowdays,</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arbs</div><div class="date">2014-05-11, 10:59 PM</div></div><div class="posttext">SOO hc is easy, but most That plays the game is just bad, face it. and peoples that raid 2 days a week can clear all heroic content so i would call that casual or am i wrong?, u dont have to be close to hardcore to clear all heroic content nowdays,<br />
+<br />
+Nah HM SoO isn't easy, Unless your getting carried by a group that has SoO on farm. An the percentage of guilds that have SoO on farm is very low.<br />
+<br />
+I see alot of people completing LFR claiming that the raiding is easy &amp; refuse to try the other difficulties. Unless you have completed HM SoO in the form of progression not buying a clear than you really can't say it is easy. But not every boss is difficult &amp; not every boss is easy either. Its more of a ramp up than what H ToT was. <br />
+<br />
+Only the people who have actually cleared it for progression have the right to say it is easy or not.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kiritsugu-Thrall</div><div class="date">2014-05-11, 11:09 PM</div></div><div class="posttext">That's bizarre. <br />
+From the comments I see on MMO champs forums about how casual wow is now, I thought we'd have many more garrosh heroic kills.<br />
+weird...<br />
+<br />
+I'm going to be honest, I'm taking a large break until WoD and I have killed Heroic Garrosh months ago. I think the encounter is a complete joke. It's painstakingly awful to swallow that the playerbase is so awful/casual to not have even raised the bar on Garrosh kills. It actually shows you how the MMO genre is a dieing genre for hardcore players.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocffec8a8e39</div><div class="date">2014-05-11, 11:09 PM</div></div><div class="posttext">I see alot of people completing LFR claiming that the raiding is easy &amp; refuse to try the other difficulties.<br />
+I am glad they added LFR. A lot of lore is taking place in raids and to me lore is one of the main reasons to play WoW. Just because I don't have the time or skill to raid does not mean I should not experience these world changing events firsthand.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dundebuns</div><div class="date">2014-05-11, 11:09 PM</div></div><div class="posttext">That's bizarre. <br />
+From the comments I see on MMO champs forums about how casual wow is now, I thought we'd have many more garrosh heroic kills.<br />
+weird...<br />
+<br />
+It is casual. People have killed him, difficulty mode is irrelevant. Heroic is for the top echelons, but now EVERYONE has the opportunity to see all the bosses.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kiritsugu-Thrall</div><div class="date">2014-05-11, 11:10 PM</div></div><div class="posttext">Nah HM SoO isn't easy, Unless your getting carried by a group that has SoO on farm. An the percentage of guilds that have SoO on farm is very low.<br />
+<br />
+I see alot of people completing LFR claiming that the raiding is easy &amp; refuse to try the other difficulties. Unless you have completed HM SoO in the form of progression not buying a clear than you really can't say it is easy. But not every boss is difficult &amp; not every boss is easy either. Its more of a ramp up than what H ToT was.<br />
+<br />
+Yes it is. It's a complete joke and one of the most boring raid instances I have ever done in this game. It reminds me of Dragon Soul but longer and without a % nerf.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocffec8a8e39</div><div class="date">2014-05-11, 11:13 PM</div></div><div class="posttext">but now EVERYONE has the opportunity to see all the bosses.<br />
+And why is that a bad thing? EVERYONE pays the same price for the game, why would you want to take away some content from them?<br />
+<br />
+If you need to feel superior you can show off your titles, 'Heroic' tagged gear, etc. I don't understand why you would mind that all people get to experience the same content.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arbs</div><div class="date">2014-05-11, 11:15 PM</div></div><div class="posttext">It is casual. People have killed him, difficulty mode is irrelevant. Heroic is for the top echelons, but now EVERYONE has the opportunity to see all the bosses.<br />
+<br />
+Ya it sucks, the entitled crowd really ruined it their. one thing I always praise that Carbine is doing is the Raiding is only for the people who deserve to get their &amp; have the time for it.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I am glad they added LFR. A lot of lore is taking place in raids and to me lore is one of the main reasons to play WoW. Just because I don't have the time or skill to raid does not mean I should not experience these world changing events firsthand.<br />
+<br />
+Honestly, my personal opinion has always been if you don't have the time for it than you don't do it. Make the time for it &amp; than get to experience it. The main problem with MMOs &amp; games in general are they are to casual. <br />
+<br />
+Herioc Raiding is the only difficult part about WoW, which is kinda sad. When the rest of the game used to be atleast somewhat challenging all around.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RoKPaNda</div><div class="date">2014-05-11, 11:17 PM</div></div><div class="posttext">I'm going to be honest, I'm taking a large break until WoD and I have killed Heroic Garrosh months ago. I think the encounter is a complete joke. It's painstakingly awful to swallow that the playerbase is so awful/casual to not have even raised the bar on Garrosh kills. It actually shows you how the MMO genre is a dieing genre for hardcore players.<br />
+<br />
+Why, in your mind, does the low clear % on Heroic Garrosh mean that WoW players are awful? The numbers were equally low before the game went &quot;casual.&quot; If the MMO genre is in trouble, it was in trouble before it even started to grow in popularity. WoW was what made MMOs mainstream, and in Vanilla WoW like 2% of the game's playerbase even made it into the last tier, and a similarly small number made it into AQ40. <br />
+<br />
+What I think these numbers should tell you is that even though the game is more accessible than it ever has been, organized raiding is just not appealing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">randprin</div><div class="date">2014-05-11, 11:18 PM</div></div><div class="posttext">is it just me or do those charts not add up?<br />
+the % of players who completed each wing is higher (4-6% depending on the wing) from the % of players that killed last boss in LFR for that wing.<br />
+<br />
+also, i'd like to point out according to this chart close to half the player base that actually do raids (which, from the start, appears to be 70-75% of the total characters) only plays in LFR, granted some are there for the view and some are probably someone's XX alt, but most are probably loot oriented to some degree, which means the jump to organised raiding in WoD is going to be interesting to say the least.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cptaylor38</div><div class="date">2014-05-11, 11:21 PM</div></div><div class="posttext">Ya it sucks, the entitled crowd really ruined it their. one thing I always praise that Carbine is doing is the Raiding is only for the people who deserve to get their &amp; have the time for it.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+Honestly, my personal opinion has always been if you don't have the time for it than you don't do it. Make the time for it &amp; than get to experience it. The main problem with MMOs &amp; games in general are they are to casual. <br /> 
+<br />
+Herioc Raiding is the only difficult part about WoW, which is kinda sad. When the rest of the game used to be atleast somewhat challenging all around.<br />
+<br />
+Some people actually have lives.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arbs</div><div class="date">2014-05-11, 11:27 PM</div></div><div class="posttext">Why, in your mind, does the low clear % on Heroic Garrosh mean that WoW players are awful? The numbers were equally low before the game went &quot;casual.&quot; If the MMO genre is in trouble, it was in trouble before it even started to grow in popularity. WoW was what made MMOs mainstream, and in Vanilla WoW like 2% of the game's playerbase even made it into the last tier, and a similarly small number made it into AQ40. <br />
+<br />
+What I think these numbers should tell you is that even though the game is more accessible than it ever has been, organized raiding is just not appealing.<br />
+<br />
+I agree with him to an extent, Blizzard is allowing the players to be bad &amp; not want to better themselves they buckle at the knees from the pressure of the entitled crowd that stuff is to hard (when it really isn't) example Cata Heroics. Now it isn't all Blizzard's fault it is also the players fault themselves. But Blizzard should be giving us more challenging content. Like Timeless Isle wasn't challenging, but I do want more mobs that are deadly &amp; can kill you in like 2 attacks if your not careful that are out in the world. <br />
+<br />
+Bring back some sort of danger like the Fel Reaver in Hellfire or The Storm Giants in Howling Fjord. The World Bosses should also move around the zone not sit in one spot.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">randprin</div><div class="date">2014-05-11, 11:28 PM</div></div><div class="posttext">Why, in your mind, does the low clear % on Heroic Garrosh mean that WoW players are awful? The numbers were equally low before the game went &quot;casual.&quot; If the MMO genre is in trouble, it was in trouble before it even started to grow in popularity. WoW was what made MMOs mainstream, and in Vanilla WoW like 2% of the game's playerbase even made it into the last tier, and a similarly small number made it into AQ40. <br />
+<br />
+What I think these numbers should tell you is that even though the game is more accessible than it ever has been, organized raiding is just not appealing.<br />
+<br />
+actually, as a vanilla semi hardcore raider (my guild was actually working on KtZ before the pre expansion breaks forced us to stop) i can tell you AQ40 and naxx were only limited access due to the tight gear checks, especially resistance fights and fights like 4hm (it took us ages to gear up the minimal 6 warriors with 4pc T3 for that fight, which was one of the reasons we were delayed for so long)<br />
+<br />
+i argue that WoW has been more lenient with requirements from it's raiders over the years, but i do not see it as a bad thing. let the so called elitist crowd move to the niche games where they can have the difficult raids they crave, and leave us WoW as the mainstream MMO suited for mum and pop with their 12 year old kid to play at.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RoKPaNda</div><div class="date">2014-05-11, 11:29 PM</div></div><div class="posttext">is it just me or do those charts not add up?<br />
+the % of players who completed each wing is higher (4-6% depending on the wing) from the % of players that killed last boss in LFR for that wing.<br />
+<br />
+also, i'd like to point out according to this chart close to half the player base that actually do raids (which, from the start, appears to be 70-75% of the total characters) only plays in LFR, granted some are there for the view and some are probably someone's XX alt, but most are probably loot oriented to some degree, which means the jump to organised raiding in WoD is going to be interesting to say the least.<br />
+<br />
+There won't be a jump to organized raiding in WoD. Blizzard has stated that there is an idea in the community that if the difficulty bar is raised that the players will rise to the challenge (specifically in regard to making the jump to raiding.) but Blizzard's data indicates that this isn't the case. LFR players will likely just stay LFR players, at best some of them will move to Flex. <br />
+<br />
+With the recruitment standards in most raiding guilds I've seen in recent years it's extremely unlikely that your average LFR player, or even the skilled LFR players with time constraints, will join a raiding guild and actually raid. <br />
+<br />
+Raiding just isn't appealing for the majority, even when it was the only choice at end game very few people (in the grand scheme of things) moved beyond the first tier. We like to talk about how only 2% of the playerbase ever stepped foot into Naxx, but the number of people that got past razorgore (First boss in the second raid tier.) was also really really low.<br />
+<br />
+<br />
+actually, as a vanilla semi hardcore raider (my guild was actually working on KtZ before the pre expansion breaks forced us to stop) i can tell you AQ40 and naxx were only limited access due to the tight gear checks, especially resistance fights and fights like 4hm (it took us ages to gear up the minimal 6 warriors with 4pc T3 for that fight, which was one of the reasons we were delayed for so long)<br />
+<br />
+i argue that WoW has been more lenient with requirements from it's raiders over the years, but i do not see it as a bad thing. let the so called elitist crowd move to the niche games where they can have the difficult raids they crave, and leave us WoW as the mainstream MMO suited for mum and pop with their 12 year old kid to play at.<br />
+<br />
+I don't disagree with you. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arbs</div><div class="date">2014-05-11, 11:30 PM</div></div><div class="posttext">Some people actually have lives.<br />
+<br />
+Umm thats actually a very sad sterotype you know, I'm sure many World First / Hardcore raiders have lives, but they take the time out their day to play &amp; do something they love to do. Doesn't mean they don't have lives. You as a casual player can take 3 hours out of your night 3 times a week &amp; try to progress through the content &amp; still be able to do other things during the day. Some guilds do more &amp; some do even less but that don't mean they don't have lives. <br />
+<br />
+They just manage their time properly.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-05-11, 11:31 PM</div></div><div class="posttext">is it just me or do those charts not add up?<br />
+the % of players who completed each wing is higher (4-6% depending on the wing) from the % of players that killed last boss in LFR for that wing.<br />
+<br />
+Some players don't do LFR and only do higher difficulties, which is where the extra comes from. For example, I have never killed any of the last 2 LFR wings, but I have done them on Flex and Normal, so I don't show up as having participated in LFR.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocffd7e68c0d</div><div class="date">2014-05-11, 11:36 PM</div></div><div class="posttext">Some people actually have lives.<br />
+<br />
+Because raiding and clearing the instance once a week is such a time commitment that you have to be a no-lifer to accomplish that feat. :rolleyes:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daez</div><div class="date">2014-05-11, 11:37 PM</div></div><div class="posttext">I'm going to be honest, I'm taking a large break until WoD and I have killed Heroic Garrosh months ago. I think the encounter is a complete joke. It's painstakingly awful to swallow that the playerbase is so awful/casual to not have even raised the bar on Garrosh kills. It actually shows you how the MMO genre is a dieing genre for hardcore players.<br />
+<br />
+Yes, how dare people focus on life instead of the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">randprin</div><div class="date">2014-05-11, 11:40 PM</div></div><div class="posttext">Some players don't do LFR and only do higher difficulties, which is where the extra comes from. For example, I have never killed any of the last 2 LFR wings, but I have done them on Flex and Normal, so I don't show up as having participated in LFR.<br />
+<br />
+i would be very interested to see the delta of that information, as i wonder how many players totally ignore lower difficulties and just go straight to the edge of their abilities (and i have a lot of respect for these people, regardless of how far they progress, they are the ones i think i would consider the true &quot;hardcore&quot; raiders in this game)<br />
+<br />
+Edit: hmm, no sleep makes the English not so good, me think it is time to for some sleep... :) (*yeah, should read what i write three times at this hour)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc39f78ccd49</div><div class="date">2014-05-11, 11:46 PM</div></div><div class="posttext">Nah HM SoO isn't easy, Unless your getting carried by a group that has SoO on farm. An the percentage of guilds that have SoO on farm is very low.<br />
+<br />
+I see alot of people completing LFR claiming that the raiding is easy &amp; refuse to try the other difficulties. Unless you have completed HM SoO in the form of progression not buying a clear than you really can't say it is easy. But not every boss is difficult &amp; not every boss is easy either. Its more of a ramp up than what H ToT was. <br />
+<br />
+Only the people who have actually cleared it for progression have the right to say it is easy or not.<br />
+oh well, i downed garrosh Hc 2th of january so yeh, i would say i cleared it for progression, had around 240+ wipes on him obviously but i wouldnt say the fight is really hard honestly u could do it with ur eyes closed after a while cause the fight has so much repetition and nothing ever changes from pull to pull, and paragon is personally not hard aswell as a Melee, and belt on siege was easy after just a couple of pulls as i was up there 24/7, sure there may be a couple of harder ones every tier but there is more easy ones then challenging ones honestly,</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kazuchika</div><div class="date">2014-05-11, 11:54 PM</div></div><div class="posttext">Some people actually have lives.<br />
+<br />
+That's funny I know plenty of people who have cleared heroic siege who never raided more than 6-8 hours a week. Playing the real life card with how raiding in this game works now is the most pathetic excuse you can make for your own lack of progression.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-05-11, 11:57 PM</div></div><div class="posttext">People are crazy if they think Vanilla raids were harder than SoO. Grinding gear to pass resist tests were harder, and other stupid mechanisms like suddenly needing 6 tanks to beat a single boss all slowed down progression, but did not make the actual encounters difficult.<br />
+<br />
+It is very easy to check. Just go to youtube and find a video of vanilla boss that is played by a ranged dps. You never have to move, and at most you push 3 different buttons.. sure sure, you had to clear a previous raid 50 times in order to get your nature resist high enough.. but that was the only difficulty.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nekobaka</div><div class="date">2014-05-11, 11:58 PM</div></div><div class="posttext">Anyone remember ICC 10 man numbers? I cant remember if 10% or 20% for LK with 30% buff. Flex is supposed to be around ICC 10 man difficulty and would be interesting to compare ICC10 and SoO Flex on the bases of completion numbers. Blizz also didnt say ICC 10 with or without 30% buff.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BergErr</div><div class="date">2014-05-12, 12:02 AM</div></div><div class="posttext">Higher completion in normal than flex, strong.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Asrialol</div><div class="date">2014-05-12, 12:19 AM</div></div><div class="posttext">You've posted the hunter tweets before FYI</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Koala</div><div class="date">2014-05-12, 12:21 AM</div></div><div class="posttext">Ya it sucks, the entitled crowd really ruined it their. one thing I always praise that Carbine is doing is the Raiding is only for the people who deserve to get their &amp; have the time for it.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+Honestly, my personal opinion has always been if you don't have the time for it than you don't do it. Make the time for it &amp; than get to experience it. The main problem with MMOs &amp; games in general are they are to casual. <br />
+<br />
+Herioc Raiding is the only difficult part about WoW, which is kinda sad. When the rest of the game used to be atleast somewhat challenging all around.<br />
+<br />
+haha really you just said lfr people are the entitled ones wut.. think about what you just wrote then tell me who's acting entitled</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TrollShaman</div><div class="date">2014-05-12, 12:26 AM</div></div><div class="posttext">&quot;As someone who loves transforms e.g deviate delight/orbs. Is it possible their effects persist through Shaman Ghost Wolf?<br />
+Maybe. We're working on this. (Celestalon)&quot;<br />
+<br />
+As a fanatic in using combat-friendly costumes, this is all I wanted to hear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lockula</div><div class="date">2014-05-12, 12:29 AM</div></div><div class="posttext">Wonder what the graph would look like if Nourshen was the base instead of immerseus.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spirthealer</div><div class="date">2014-05-12, 12:33 AM</div></div><div class="posttext">Because raiding and clearing the instance once a week is such a time commitment that you have to be a no-lifer to accomplish that feat. :rolleyes:<br />
+<br />
+I raid once a week and I have downed garrosh, not hard :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Krazzorx</div><div class="date">2014-05-12, 01:07 AM</div></div><div class="posttext">What I can't figure out is why the numbers are drastically lower in wing 1 LFR to wing 4? I get the painfulness of it, but that large? or even wing 2 vs wing 1 for that matter. If pain was a part of it, why are the bosses inside a wing so even? <br />
+<br />
+I can't think of any explanation for a 6% difference between Thok and Siegecrafter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">KCguy</div><div class="date">2014-05-12, 01:20 AM</div></div><div class="posttext">I raid once a week and I have downed garrosh, not hard :)<br />
+<br />
+I did it raiding twice a week, sometimes only one. As long as your group plays decently enough it is very possible. That's why I cringe when people are raiding 20 hours a week. No thank you. Clearing on normal is good enough for me. lol</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lizon</div><div class="date">2014-05-12, 01:44 AM</div></div><div class="posttext">FYI: New DLC is out and the last panel is hilarious.<br />
+<br />
+http://www.darklegacycomics.com/440.html</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-05-12, 01:45 AM</div></div><div class="posttext">haha really you just said lfr people are the entitled ones wut.. think about what you just wrote then tell me who's acting entitled<br />
+<br />
+Yeah, people don´t reallknoow stupid they sound when they talk like that. Anyone who wants something I don´t want is ´entitled´.<br />
+<br />
+The whole LFR tier set thing is a classic example, raiders cried for 2 expansions about being ´forced´to run LFR for tier sets.. then they tell the LFR players to stop crying about losing them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alissana</div><div class="date">2014-05-12, 01:57 AM</div></div><div class="posttext">Again no Paladin info...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Utinil</div><div class="date">2014-05-12, 02:01 AM</div></div><div class="posttext">Do calls that LFR gear having a higher iLvl than heroics still makes it part of progression show you you can't satisfy elitists?<br />
+Many want us to design for their specific needs. We're not trying to cater to any one group, but rather make a fun, coherent game. (WatcherDev)<br />
+<br />
+Did the person asking this question, not realize how silly it sounds.<br />
+<br />
+How is asking for harder content (WoD Heroics) to have at least equal ilvl rewards with content that even the devs have called tourist mode (LFR) so unreasonable. The question, if anything, implies that casuals are the ones who feel super entitled.<br />
+<br />
+I know this isn't how every casual feels, but wow several of the questions were like this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-05-12, 02:45 AM</div></div><div class="posttext">Did the person asking this question, not realize how silly it sounds.<br />
+<br />
+How is asking for harder content (WoD Heroics) to have at least equal ilvl rewards with content that even the devs have called tourist mode (LFR) so unreasonable. The question, if anything, implies that casuals are the ones who feel super entitled.<br />
+<br />
+I know this isn't how every casual feels, but wow several of the questions were like this.<br />
+<br />
+Stop looking a chart that shows ilvls and instead use your brain.<br />
+<br />
+Heroic dungeons will be available for day 1, and you can run them non-stop (random) and once per day if you want a particular drop from one boss. They will be available the same day that WoD launches<br />
+<br />
+LFR will be released 4 weeks after WoD launches, and that will ONLY be the first 4 bosses that you can only kill once per week.<br />
+<br />
+You will have 4 weeks of heroic dungeons and 3 weeks of running Normal and Heroic mode. Without tier sets, you have to be really stupid to think you would be forced to run LFR. <br />
+<br />
+And that is the problem with this whole situation.. people are too stupid to think anything past ´omg, this chart shows LFR gear is above heroic dungeons´..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moradim</div><div class="date">2014-05-12, 03:13 AM</div></div><div class="posttext">we need more statistics<br />
+<br />
+specifically, guilds clearing H SoO without warlocks, and guilds clearing with them. honestly, two very different situations. :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vigilate</div><div class="date">2014-05-12, 03:43 AM</div></div><div class="posttext">Serious question. Why is MMO-Champion linking to tweets that are a month and a half old? I think Celestalon was even complaining about it the other day on twitter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chickat</div><div class="date">2014-05-12, 03:52 AM</div></div><div class="posttext">Are these worldwide accounts or western accounts? I feel like there are more than 2.3m players in the west.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jabberie</div><div class="date">2014-05-12, 04:00 AM</div></div><div class="posttext">Are these worldwide accounts or western accounts? I feel like there are more than 2.3m players in the west.<br />
+<br />
+It's a sample.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spotnick</div><div class="date">2014-05-12, 04:28 AM</div></div><div class="posttext">Funny when you watch those charts.. my former guild killed heroic Lich King on last week previous to Cataclysm for a US #232 kill, right now there are a lot more guilds who have killed heroic Garrosh, 6 months earlier, without a 30% buff.<br />
+<br />
+And considering there were 5M more people back then in the game.. I'm starting to really believe ICC was harder.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Velkhan</div><div class="date">2014-05-12, 05:10 AM</div></div><div class="posttext">So nothing again for paladins haha, poor guys i bet Ret is going to be sooo bad again.<br />
+Those hunters changes are great. As a MM, Rapid Fire welcome back :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">gilliousthunder</div><div class="date">2014-05-12, 05:29 AM</div></div><div class="posttext">Lets just call it like it is and be done with it. The &quot;hardcore players&quot; feel it's too easy and the casuals are ruining the game. The &quot;causal players&quot; feel the hardcore players are nuts that only they should be able to get in to see all the content even though they have to work, take care of the kids, ect.<br />
+<br />
+If you like the game, keep playing and enjoy the ride until the sad day the servers shut down for the last time.<br />
+<br />
+If you don't like it/feel it's just too easy and not challenging enough, no one is making you pay $15 a month. Stop playing and go find something else to do.<br />
+<br />
+If you look at it, it really is just that simple. Play or don't play....either way, I don't give a crap. I'm paying my $15 a month since there is so much to this game, I still haven't done EVERYTHING in the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LanceDH</div><div class="date">2014-05-12, 05:53 AM</div></div><div class="posttext">Lets just call it like it is and be done with it. The &quot;hardcore players&quot; feel it's too easy and the casuals are ruining the game. The &quot;causal players&quot; feel the hardcore players are nuts that only they should be able to get in to see all the content even though they have to work, take care of the kids, ect.<br />
+<br />
+If you like the game, keep playing and enjoy the ride until the sad day the servers shut down for the last time.<br />
+<br />
+If you don't like it/feel it's just too easy and not challenging enough, no one is making you pay $15 a month. Stop playing and go find something else to do.<br />
+<br />
+If you look at it, it really is just that simple. Play or don't play....either way, I don't give a crap. I'm paying my $15 a month since there is so much to this game, I still haven't done EVERYTHING in the game.<br />
+Keep in mind that people already spent money to play.<br />
+So saying &quot;well don't play then&quot; pretty much means just let go of something you spend money (for some people a alot) on.<br />
+And if it's other people that (to them) cause them to stop enjoying the game, then it's those people making them lose money and hours invested.<br />
+Sure one day the servers shut down and it's all gone, but at least it's blizzard's 'fault' then and all players loose what they had.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Snes</div><div class="date">2014-05-12, 07:05 AM</div></div><div class="posttext">Judging by the blue posts, LFR folk sure are a whiny bunch. Immediately resorting to ad-hominem insults against people that raid, using the same, tired, invalid arguments over and over again; ie: &quot;sorry I have a life&quot;, yet that life involves spending hours grinding out bonus roll coins and hours sitting in qeues, more hours waiting for a the group to fill back up after people leave, more hours wiping on bosses, and so on.<br />
+<br />
+Props to the devs. I wouldn't have the patience to give civil responses to grown men and women behaving like self-entitled children. LFR players are the new elitists.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Scarletlion</div><div class="date">2014-05-12, 07:11 AM</div></div><div class="posttext">Birthday presents for Hunters! Currently planning to replace Flaming Shots, return Rapid Fire to Marksmanship, and add Bear Trap to Survival<br />
+<br />
+Finally. That's what i have been waiting for the hunter. I am happy that rapid fire is here with us, at least with the mm spec.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CasCrow</div><div class="date">2014-05-12, 07:16 AM</div></div><div class="posttext">Finally got a flex garrosh kill thanks to a druid tank doing over 300k dps we downed him so fast he didn't have time for a 2nd intermission. No loot. &gt;_&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc09234ff08e</div><div class="date">2014-05-12, 07:35 AM</div></div><div class="posttext">These people saying Flex is hard because &quot;you need to have a schedule, find a group&quot; and whatever are simply ridiculous. Flex couldn't be easier even if they tried to make it so, and whoever can't clear it really doesn't deserve the achievements, titles, tier gear or whatever you do get from H/HC raids.<br />
+Not to mention Glory is now down in Flex and it's at least 10x easier to clear, I have never before dreamed about clearing Glory in current expac and I know I'd have to wait for next tier of gear to try it, and it would be hard even then.<br />
+<br />
+Yes, clearing a raid takes time, but no, it doesn't take a schedule. If you can put enough time into your char to get him to 520-530 and it's very very possible - then you can easily get into a decent Flex group. Do they expect easy access to ilvl540 gear + easier Flex so they can gear&amp;clear in 1-2 weeks? That's not how MMOs work. Sit on Timeless and try Celestials and Ordos every week, for 2 months, that'll push you into good ilvls<br />
+<br />
+...or get off your ass, do PvP for 550 weapons, do Oondasta, TI rares for 535 trinkets, HC scenarios and dungeons for 522 Valor gear - and then after 2-4 weeks of that with minimum daily time investment - get into a damn Flex with good gear and don't be a scrub.<br />
+<br />
+P.S. one more thing I find very amusing in LFR, people who don't know tacts because &quot;someone will tell them if they are important&quot;. If 30 min of their time for all vids are too much for them, I wouldn't let them get past HC dungeons. I'd think about Scenarios.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc661e873d35</div><div class="date">2014-05-12, 07:35 AM</div></div><div class="posttext">I love it like ppl, who think LFR is raiding are now whining like little kids! LFR is NOT raiding. Now that flex exists and it is pretty easy, try to raid for once.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3514689de5</div><div class="date">2014-05-12, 08:50 AM</div></div><div class="posttext">I guess the amount of information provided was too large to digest, so it just devolved to the usual &quot;casuals are new elitists&quot;.<br />
+Oh well :)<br />
+<br />
+I like how Bliz seems to distribute the bitchslaps in all directions: first to the casuals by removing tier gear from LFR, then just as solid one to snowflakes by making LFR ilvl higher than the pants-stainingly awaited heroic 5mans. Deary, deary me.<br />
+<br />
+And to think both sides keep paying them money and plan on to buy the most expensive xpac in the history of the game :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kamuimac</div><div class="date">2014-05-12, 09:36 AM</div></div><div class="posttext">I love it like ppl, who think LFR is raiding are now whining like little kids! LFR is NOT raiding. Now that flex exists and it is pretty easy, try to raid for once.<br />
+<br />
+and how is flex different from lfr when most go in there with 540 requirment for part 1 ? or those groups that are doin 560+ garosh flex looms farms ? <br />
+yet flex is clearly so much better in their eyes cause they can eliminate some part of playerbase and can finally feel &quot;elitest&quot; img that must feel so good for them overgearing content to the point of making it actually easier and more boring then even lfr is -_-<br />
+<br />
+also those graphs clearly show how dominant lfr is vs hc - and they are showing the direction game should go if they want to keep people playing - catering to casual people is the only future this game can have yet blizzzard is desperagtly trying to deny it - and it will end exackly like begining of cata ended in 2 mln sub loss</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seriuslee</div><div class="date">2014-05-12, 10:47 AM</div></div><div class="posttext">Honestly I'm tired of blizzard responding to people in a one-sided view, no matter what you post they will either cleverly not answer/address or dismiss your opinion casually and the fact of the matter is there's nothing you can do about it, hence where the game is headed. I really liked the game during Wrath but ever since then it seems like they had meetings to not enhance but to change almost everything that seemed the most enjoyable (my opinion btw) during that expansion which brings us to where WoW is now, which is dummied down to the point of all classes having no personality because everyone has to make the same choices (stats,gems.abilities,rotation,glyphs). So personally I'd rather offer my money to any MMO that gives me what WoW did when I really enjoyed it. With that said I feel like I just made a declaration to quit smoking.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nerraw</div><div class="date">2014-05-12, 10:47 AM</div></div><div class="posttext">Funny when you watch those charts.. my former guild killed heroic Lich King on last week previous to Cataclysm for a US #232 kill, right now there are a lot more guilds who have killed heroic Garrosh, 6 months earlier, without a 30% buff.<br />
+<br />
+And considering there were 5M more people back then in the game.. I'm starting to really believe ICC was harder.<br />
+<br />
+ICC had one thing that SoO does not. Limited Heroic attempts.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Laylriana</div><div class="date">2014-05-12, 11:18 AM</div></div><div class="posttext">Finally. That's what i have been waiting for the hunter. I am happy that rapid fire is here with us, at least with the mm spec.<br />
+<br />
+As a survival pve hunter, I say &quot;What good is a bear trap?&quot; Give me something I will use. It may have use in pvp but only in arenas I think. In bgs, other people will be hitting the target and that will break the trap.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7fb8344b2d</div><div class="date">2014-05-12, 12:20 PM</div></div><div class="posttext">People are crazy if they think Vanilla raids were harder than SoO. Grinding gear to pass resist tests were harder, and other stupid mechanisms like suddenly needing 6 tanks to beat a single boss all slowed down progression, but did not make the actual encounters difficult.<br />
+<br />
+It is very easy to check. Just go to youtube and find a video of vanilla boss that is played by a ranged dps. You never have to move, and at most you push 3 different buttons.. sure sure, you had to clear a previous raid 50 times in order to get your nature resist high enough.. but that was the only difficulty.<br />
+<br />
+<br />
+It took weeks or maybe a month to even realize the proper tactics for four horsemen, so yes, in a way it was harder than anything after that. Just because some scrub guild got there with full tactics available doesn't make it easy and simple. <br />
+<br />
+And to be a decent guild in AQ you didn't clear previous raid 50 times, you beat every other guild to the outdoor green dragons that could spawn almost at any time and before they did, you had to have people in duty to check the spawns at night, ready to make phonecalls and wake the guild to start a raid in middle of the night even at weekdays, AND you needed to be faster than the other guilds and no chance to wipe even if you had to assign half of the raid to PvP with the other side at the same time, if you were on PvP server (like anyone worth their salt).<br />
+<br />
+By almost any measure, that took the most skill and dedication so far in WoW.<br />
+<br />
+Obviously you didn't play back then and don't know much about it, so why are you talking about it?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2014-05-12, 12:44 PM</div></div><div class="posttext">I love it like ppl, who think LFR is raiding are now whining like little kids! LFR is NOT raiding. Now that flex exists and it is pretty easy, try to raid for once.<br />
+<br />
+The irony is that you are the only one whining like a little kid, maybe you need to grow up to see that though? :/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3f25629bd0</div><div class="date">2014-05-12, 12:50 PM</div></div><div class="posttext">Whats that you say? Could serpents will keep the rep requirement......<br />
+<br />
+What? sorry, oh, now I'd done it on 2 more alts...you have changed your minds.<br />
+<br />
+F you bliz.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stellan</div><div class="date">2014-05-12, 01:15 PM</div></div><div class="posttext">Nothings changed much since the last survey of this kind. LFR is still by far the most popular form of raiding. Flex isn't nearly as popular as people would like to claim. And, of course, normal and heroic are for a small minority of the player base. I expect that this will be the same in WoD no matter what the change in gear. LFR is really just the way subscribers like to see the raid content these days. After being a regular organized raider for years, it's certainly the only kind of raiding I want to do.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Farabee</div><div class="date">2014-05-12, 02:10 PM</div></div><div class="posttext">Well, now we have empirical proof that flex Garrosh is overtuned for the intended audience (540 geared players). Most likely due to DPS checks. Kind of silly that you're expected to have normal pieces to kill a Flex boss, but there it is. <br />
+<br />
+Empowered adds on Flex really need less HP. Most Normal-geared groups just ignore them entirely and burn Garry through P3. Not a viable strat for people in 540 gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">stgeorge78</div><div class="date">2014-05-12, 02:15 PM</div></div><div class="posttext">Well Watcher accomplished his goal, he's always despised normal-mode players (his comments are always dismissive to people - as a lawyer, there's no surprise about his superiority complex) When you find out that he's the guild leader of a world-first guild (who can't break the top-ten despite having the lead encounter designer telling them exactly how the fights work) well there's no surprise there.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">narud</div><div class="date">2014-05-12, 02:43 PM</div></div><div class="posttext">Well Watcher accomplished his goal, he's always despised normal-mode players (his comments are always dismissive to people - as a lawyer, there's no surprise about his superiority complex) When you find out that he's the guild leader of a world-first guild (who can't break the top-ten despite having the lead encounter designer telling them exactly how the fights work) well there's no surprise there.<br />
+<br />
+Which guild is he the leader of?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Teebone</div><div class="date">2014-05-12, 03:45 PM</div></div><div class="posttext">That's funny I know plenty of people who have cleared heroic siege who never raided more than 6-8 hours a week. Playing the real life card with how raiding in this game works now is the most pathetic excuse you can make for your own lack of progression.<br />
+<br />
+Comparing your own lifestyle to someone else's doesn't hold any merit either. I don't raid anything other than LFR and world bosses lately because I don't play the same hours every week. Ever hear of people that work on 'on-call' kind of job? No 9 other people + extras would schedule their time around me, nor would I expect or want them to do so. That doesn't make me entitled, but rather getting the best that I can get out of a crappy situation. <br />
+<br />
+If you think that makes me a bad player, whatever bitch. I play when I can. And before you play the ZOMG OQueue out that's pretty damn pointless too. Ignorant people like you really piss me off.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Firebert</div><div class="date">2014-05-12, 03:49 PM</div></div><div class="posttext">Below is a graph of accounts effectively &quot;stuck&quot; at their respective bosses. This is assuming that all accounts run the raids in order of difficulty from front to back. The higher the line, the more accounts are &quot;stuck&quot; at that specific boss. x axis is the boss, y is accounts.<br />
+<br />
+http://i.imgur.com/BtDRRau.jpg</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Magemaer</div><div class="date">2014-05-12, 04:39 PM</div></div><div class="posttext">&quot;Which Arcane variant did you like? I liked Cata, personally, it was simple but felt unique.&quot;<br />
+<br />
+LOL<br />
+very unique ab spam</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Santoryu</div><div class="date">2014-05-12, 05:43 PM</div></div><div class="posttext">Oh my, only 51% of players defeated Garrosh in LFR SoO! NERF BLIZZ!!!<br />
+<br />
+On a more serious note - Firebert; if I'm reading your graph correctly, more players are stuck on a boss in LFR than on normal or above? That seems...odd.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Firebert</div><div class="date">2014-05-12, 05:49 PM</div></div><div class="posttext">Firebert; if I'm reading your graph correctly, more players are stuck on a boss in LFR than on normal or above? That seems...odd.<br />
+This is probably because many have cleared the first wing and then jumped into Normal (huge under-stuck-value) or cannot get into the next wing (queues).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Santoryu</div><div class="date">2014-05-12, 06:13 PM</div></div><div class="posttext">This is probably because many have cleared the first wing and then jumped into Normal (huge under-stuck-value) or cannot get into the next wing (queues).<br />
+<br />
+How do the negative figures fit in?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Firebert</div><div class="date">2014-05-12, 06:21 PM</div></div><div class="posttext">How do the negative figures fit in?<br />
+Players that have skipped over bosses, mostly.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Santoryu</div><div class="date">2014-05-12, 06:24 PM</div></div><div class="posttext">Players that have skipped over bosses, mostly.<br />
+<br />
+Interesting stats indeed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ganush</div><div class="date">2014-05-12, 06:27 PM</div></div><div class="posttext">I think the numbers have less to do with difficulty and more to do with the state of the game and servers. I've raided 2 days a week with largely the same group of 10 players since Wrath and we lost two raiders around Christmas. Due to the state of our server, recruiting was impossible, so the 8 of us who were left just quit raiding. None of us wanted to look for a new group because we enjoyed the dynamic of our group, so at this point hardly anyone logs on and we just don't raid. I doubt we'd have killed Garrosh, but we certainly would have been in the 10+ heroic kill range as opposed to the 4 we all sit at, if there had been anyone left on our server to recruit. People just seem content to run LFR/flex and not push themselves with harder difficulties these days.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stellan</div><div class="date">2014-05-12, 06:57 PM</div></div><div class="posttext">Well, now we have empirical proof that flex Garrosh is overtuned for the intended audience (540 geared players). Most likely due to DPS checks. Kind of silly that you're expected to have normal pieces to kill a Flex boss, but there it is. <br />
+<br />
+Empowered adds on Flex really need less HP. Most Normal-geared groups just ignore them entirely and burn Garry through P3. Not a viable strat for people in 540 gear.I agree. If Blizzard really wants people to switch from LFR to flex (Normal in WoD), they have to make Flex a whole lot easier. I was shocked at the low completion rate for Flex. Is it really that much harder than LFR or is it just the problem of keeping an organized group together to the end?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sussemilch</div><div class="date">2014-05-12, 07:23 PM</div></div><div class="posttext">...10 or 25?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2014-05-12, 07:32 PM</div></div><div class="posttext">Oh my, only 51% of players defeated Garrosh in LFR SoO! NERF BLIZZ!!!<br />
+<br />
+My most advanced character is 13/14 Flex (and 9/14 normal), and has never downed Garrosh in any difficulty.<br />
+<br />
+And I haven't raided on him in months. The care meter is reading zero. I'm not going to assume my experience is representative, but if others feel that way, it's an inauspicious sign for raiding in WoD.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">smashcity</div><div class="date">2014-05-12, 08:31 PM</div></div><div class="posttext">Some people actually have lives.<br />
+<br />
+I am 14/14 heroic and play the game 6 hours a week. Sorry that you are so terrible at it that you have to call everyone a no-life.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">melodramocracy</div><div class="date">2014-05-12, 08:56 PM</div></div><div class="posttext">Some people actually have lives.<br />
+<br />
+All people have lives, some are just far better at time management.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Amazad</div><div class="date">2014-05-12, 09:55 PM</div></div><div class="posttext">I cannot believe how many cries am I reading regarding the minor LFR LOOT changes...<br />
+<br />
+Back in the day - casuals got their gear from 5mans, blizz augmented your options a bit to get gear by facerolling an end-content, now they do the reasonable thing by not letting you to get the same gear as the other difficulty of the raid and you're mad about it ? seriously.<br />
+<br />
+Deal with it - you cannot WIN the game if you don't PLAY the game. you don't have time to play the game ? that's cool and ok - then you shouldn't get the tier pieces, and I personally believe you shouldn't even be able to see how garrosh dies outside of youtube videos, but blizzard gave you the option to do so anyway so quit your bitchin'.<br />
+<br />
+I wanna see the first players who whines about how much blizzard should give gladiator set pieces for those who are ganking noobs in the outside world.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mikencarly</div><div class="date">2014-05-13, 12:32 AM</div></div><div class="posttext">I cannot believe how many cries am I reading regarding the minor LFR LOOT changes...<br />
+<br />
+Back in the day - casuals got their gear from 5mans, blizz augmented your options a bit to get gear by facerolling an end-content, now they do the reasonable thing by not letting you to get the same gear as the other difficulty of the raid and you're mad about it ? seriously.<br />
+<br />
+Deal with it - you cannot WIN the game if you don't PLAY the game. you don't have time to play the game ? that's cool and ok - then you shouldn't get the tier pieces, and I personally believe you shouldn't even be able to see how garrosh dies outside of youtube videos, but blizzard gave you the option to do so anyway so quit your bitchin'.<br />
+<br />
+I wanna see the first players who whines about how much blizzard should give gladiator set pieces for those who are ganking noobs in the outside world.LOL at tier peaces as long as epics still drops i could careless.Honestly i highly doubt ill bother with flex once you beaten the boss on 1 mode i see zero reasons to go back and do it on flex while i done it already on lfr and no tier peaces arent worth it i can always go back and use it for mogging no biggie for me its all about killing bosses and Epics tier or not.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+nice stats i knew lfr was mostlu used</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stellan</div><div class="date">2014-05-13, 01:16 AM</div></div><div class="posttext">What I find odd is that MMO Champion went to a fair amount of work to do this survey and the posters on these boards basically ignore the results and just keep on with their rather mindless ranting about LFR versus other forms of raiding. The survey is actually quite informative. Why don't we, you know, discuss it?<br />
+<br />
+I'm quite impressed by how little impact Flex has had on raiding and even more flummoxed by the low completion percentage of Flex raiders. I think we were led to believe that Flex was an easier version of raiding intended to replace LFR. Apparently, it isn't easy at all. I don't see it replacing LFR any time soon.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2014-05-13, 01:19 AM</div></div><div class="posttext">I'm quite impressed by how little impact Flex has had on raiding and even more flummoxed by the low completion percentage of Flex raiders. I think we were led to believe that Flex was an easier version of raiding intended to replace LFR. Apparently, it isn't easy at all. I don't see it replacing LFR any time soon.<br />
+<br />
+If they intend people to move from LFR into WoD Normal, they're going to have to make WoD Normal easier than SoO Flex. That audience is not going to tolerate much frustration.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7fb8344b2d</div><div class="date">2014-05-13, 02:09 AM</div></div><div class="posttext">Flex numbers are suprisingly good, considering everything it has going against it right now. And LFR numbers are a bit inflated because you still get set pieces and proper trinkets from there. LFR doesn't really need replacing anymore, since it's going to be place for &quot;special&quot; guys with their own little &quot;special&quot; loot, over all they are doing a bit better job at separating raiding from tourist ride.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mikencarly</div><div class="date">2014-05-13, 02:41 AM</div></div><div class="posttext">Flex numbers are suprisingly good, considering everything it has going against it right now. And LFR numbers are a bit inflated because you still get set pieces and proper trinkets from there. LFR doesn't really need replacing anymore, since it's going to be place for &quot;special&quot; guys with their own little &quot;special&quot; loot, over all they are doing a bit better job at separating raiding from tourist ride.Still won't change much as long as the epics our still better then 5 man heroics people will still be running it like they been doing now.you might get maybe 5% but i highly doubt it that only run lfr to run flex.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Farabee</div><div class="date">2014-05-13, 06:59 AM</div></div><div class="posttext">I agree. If Blizzard really wants people to switch from LFR to flex (Normal in WoD), they have to make Flex a whole lot easier. I was shocked at the low completion rate for Flex. Is it really that much harder than LFR or is it just the problem of keeping an organized group together to the end?<br />
+<br />
+It largely depends on the boss. Certain bosses in Flex are a huge step up from LFR (Norushen, Sha, and everything after and including Nazgrim) in terms of both mechanics and difficulty. This is good to a degree and helps players learn the ropes...bosses don't really feel like brick walls more than challenges to overcome.<br />
+<br />
+Then there's Garrosh. Now granted, at this point I can grab 9 randoms from my guild and kill him with few problems on that difficulty (hell 10man normal gets rolled now) there is a MASSIVE difference between the fight on LFR and the fight on Flex to the degree they might as well not be the same boss anymore. <br />
+<br />
+I have never seen a group with all 548 or lower ilvl people kill the guy on flex. Ever. He is 90% as difficult as Normal mode which was (and still usually is) done with organized guilds every week at the end of heroic attempts to roll over and get 'looms. Most people I know don't even bother with Flex4, the much crappier BOA isn't worth the hassle of finding enough people that don't have to be carried or sitting dead throughout the fight through OQueue or Other Raids. It's pretty much an expected occurrence to see a group spamming trade for Flex4 require the AotC achievement.<br />
+<br />
+Anyways, as I mentioned...lowering the base health and damage/health buff when they die of the Empowered adds would be a great targeted nerf to start with, since 100% of the Flex wipes I experienced before I joined an actual raiding guild were caused by being overrun by adds. Not that Blizzard gives a shit about current content anymore.<br />
+<br />
+<br />
+Flex numbers are suprisingly good, considering everything it has going against it right now.<br />
+<br />
+It doesn't have &quot;everything going against it.&quot; It's basically the return of the trade channel pug, which was popular in WOTLK. It's also the only way to progress your character until you get a cloak and a normal raid guild will take you, so yes it's popular.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd1f612b92e</div><div class="date">2014-05-13, 07:21 AM</div></div><div class="posttext">Hmm, less than 1% of players killed heroic Garrosh and less than 10% of players killed a heroic boss at all.<br />
+Logical conclusion is that only a very small minority of players does heroic raiding, and Blizzard should just ditch heroic mode so they can spend more time developing flex/normal mode content!</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

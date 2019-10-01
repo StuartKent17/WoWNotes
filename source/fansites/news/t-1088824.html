@@ -1,0 +1,857 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="quest, only, horde, line, made, bravo, that, design, mortem, post, with, dave, hero, kosak, fargo, cataclysm" />
+<meta name="description" content="World of Warcraft Patch 4.3.3 
+The new 64-bit client is now live. (Windows and Mac) 
+Bug Fixes 
+ 
+Fixed several client-side bugs. 
+ 
+ 
+General 
+ 
+Modified code and content support for the Scroll of Resurrection system." />
+<title> Cataclysm Post Mortem -- Quest Design with Dave &quot;Fargo&quot; Kosak [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Cataclysm Post Mortem -- Quest Design with Dave &quot;Fargo&quot; Kosak</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1088824.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1088824-Cataclysm-Post-Mortem-Quest-Design-with-Dave-quot-Fargo-quot-Kosak">Cataclysm Post Mortem -- Quest Design with Dave &quot;Fargo&quot; Kosak</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2012-02-28, 05:06 PM</div></div><div class="posttext">World of Warcraft Patch 4.3.3<br />
+The new 64-bit client is now live. (Windows (http://us.media.battle.net.edgesuite.net/downloads/wow-installers/live/WoWLive-64-Win-15354.zip) and Mac (http://us.media.battle.net.edgesuite.net/downloads/wow-installers/live/WoWLive-64-Mac-15354.zip))<br />
+Bug Fixes<br />
+<br />
+Fixed several client-side bugs.<br />
+<br />
+<br />
+General<br />
+<br />
+Modified code and content support for the Scroll of Resurrection system.<br />
+<br />
+<br />
+<br />
+<br />
+Cataclysm Post Mortem -- Quest Design with Dave &quot;Fargo&quot; Kosak<br />
+To kick-off our World of Warcraft: Cataclysm post mortem series, we sat down with World of Warcraft Lead Quest Designer Dave “Fargo” Kosak to discuss his thoughts on questing in Cataclysm.<br />
+<br />
+Q: What were your main goals going into Cataclysm?<br />
+Certainly from a quest design standpoint our primary goal with Cataclysm was to remake the old world, specifically the 1-60 questing experience. World of Warcraft was released in 2004, and we've learned so much in the years since about what constitutes good MMO gameplay. We wanted to make sure that the game was relevant to new players coming in, and walking up and down the length of the Barrens on foot over and over just didn’t do it for us anymore.<br />
+<br />
+Remaking the entire old world -- 46 zones! -- was ambitious. Actually, it was ludicrous. It was like re-releasing a whole game in the course of an expansion cycle. Then we added a couple new races and their starting zones on top of that. I’m not sure how we convinced ourselves we could make it happen, but somehow we pulled it together.<br />
+<br />
+Q: Are you happy with how the old world re-vamp turned out?<br />
+I am. Leveling up a new character to 60 nowadays is a great deal of fun. Every zone has stories to play out, with interesting nooks and crannies and plenty of hidden gems or references for players who remember the pre-Cataclysm world. Zones like Ashenvale now live up to their premise (intense Horde-vs.-Alliance combat), and previously empty zones now have a lot of character (see: Azshara). The content just flows. It's still World of Warcraft, but the quests have a modern feel, with lots of action and storytelling.<br />
+<br />
+<br />
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/L10g6JQLJFg?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br />
+<br />
+Q: But what didn't work out so well?<br />
+We really spread ourselves thin and taxed the team. The original plan was to totally re-do a handful of high-priority zones, but to leave a lot of the zones that worked mostly alone. We categorized them into &quot;red,&quot; &quot;yellow,&quot; and &quot;green&quot; zones. The idea behind the green zones (for example, Loch Modan) was just to tweak the quest flow to be a little smoother, but not to make any major changes.<br />
+<br />
+The reality is that even the green zones really needed a lot of love. Once we got in there, it was all or nothing: we ended up completely re-doing a lot of green zones so that they met our new quest design standards. We came up with a nickname: &quot;watermelon&quot; zones. They were green on the outside, until you got in there and started poking around. . . .<br />
+<br />
+Where that hurt us was when it came time to do the max-level content, the 80-85 zones. The content there turned out well, but the experience is inconsistent across the board -- Uldum feels totally different from Hyjal, which in turn feels different from Vashj'ir. The design decisions and efforts we made didn't always yield the desired results.<br />
+<br />
+Q: Tell us more about the level 80-85 zones -- what worked and didn’t?<br />
+We were aiming for a really global feel with Cataclysm, so we set the max-level zones in varied environments all over the world (underwater, across deserts, in the elemental plane of earth, etc). However, as a result, they ended up not feeling as connected as we'd like. You get widely different experiences in zones that aren’t geographically related to one another. That's something important that we're keeping in mind moving forward – World of Warcraft works best when there's a sense of place. A connected world to explore.<br />
+<br />
+We feel the storytelling in Cataclysm was strong. Whether assembling the ancients in Hyjal, rescuing your drowned crew in Vashj'ir, or reassembling the world pillar in Deepholm, there’s a strong sense of plot in every zone. Players participated in stirring stories, like bringing the Dragonmaw into the Horde via a violent coup or reuniting the Wildhammer Dwarves with a crazy wedding. These were memorable moments and shared experiences.<br />
+<br />
+The downside to creating these stories is that the zones on the whole ended up being way too linear. For example, because we wanted to show your character re-growing the burning devastation of Mount Hyjal, there was really only one way to play that zone: you started at point A, and you worked your way through to point Z. Pretty glorious the first time, but frustrating on your second or third character because there's only one way to do it, and no way to skip around. That's a lesson we’re going to carry forward for sure. We want big sweeping stories, but we want to give players the freedom to explore those stories on their own terms.<br />
+<br />
+Q: Places like Hyjal also used a lot of phasing to show the world changing.<br />
+We have a massive phase shift halfway through the story that changes the terrain for nearly a third of the zone. It's epic, right? But it can be a real pain for players when so much of the world changes like that. Phasing is like a story sledgehammer: it gets the job done, but at best it splits up players and at worst it totally confuses them.<br />
+<br />
+We're going to be a lot more careful going forward. The Firelands dailies in patch 4.2 gives you a much better idea of our future direction. There were sweeping visual changes to the world as you progressed, but there’s very little actual phasing. For the most part, everyone is playing together on the same map. That’s important to us. Looking ahead, we’re going to be a lot smarter about how we show changes to the world, and we’re going to do everything we can to avoid splitting players up.<br />
+<br />
+<br />
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/40hGL0F9Dyg?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br />
+<br />
+Q: Talk more about the 4.2 patch. Were the Firelands dailies a hint of what’s to come?<br />
+Definitely. With those dailies we were able to engage a lot of players, myself included. (I was the first quest designer on the team to get the mount and all the achievements on the live servers -- suck it up, slackers!) Previously, &quot;doing dailies&quot; meant hitting the same quest givers for the same three quests, usually in a static place. Here we were able to deliver a sense of progression and a story that unfurled over the course of a few weeks, all as you did a constantly changing set of quest objectives in a dynamic environment. We think that worked out well.<br />
+<br />
+Moving forward, we're going to look for more opportunities like this -- ways to keep people engaged and cool things to do solo with your max-level character. We've got ambitious plans.<br />
+<br />
+Q: Patch 4.2 also had the Aggra and Thrall questline, &quot;Elemental Bonds.&quot; Did that meet your expectations? How do you feel about Thrall's character development?<br />
+That's a tricky one -- we’ve got mixed feelings. The essential story is a good one, and we really wanted to portray all the inner struggles Thrall is going through. Here’s a guy that stepped down as Warchief and had to rediscover himself as a shaman in order to save the world. And he's haunted by his decisions: he’s afraid of what’s to come, paralyzed by doubt, angry at what Garrosh did to Cairne . . . the guy's a mess. We figured out a way to show all that internal tension, and we wrapped it up in a story that demonstrates how his mate, Aggra, will literally go to the ends of the world to pull him through this. It's a powerful love story, and a story about finding one’s inner focus.<br />
+<br />
+<br />
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/HsXglDs81FU?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br />
+<br />
+But we had to do a lot of things to make it work in the game. We needed to make a quest that 500 people could do simultaneously without getting in each other's way. We wanted a quest that players could do solo, no matter what their skill level. We didn’t know if the player was decked out in raid gear or level 85 greens, so we had to keep it simple. We somehow made all of it work under those restrictions, and we filled the screen with some killer imagery (I love the vision of Thrall immersed in the Abyssal Maw). But ultimately the quests themselves ended up not being as compelling from a gameplay perspective as we would have liked. Many players blew through them once and never looked back.<br />
+<br />
+I really think we can do better. Cataclysm was in many ways Thrall’s story, but it was hard for players to follow his development over the course of the expansion. Going forward we want to convey a clearer narrative, delivered in the context of solid gameplay. We have some ideas on how to do that, and we’re also going to keep experimenting. This is important to us -- we talk about ways to tackle this problem all the time.<br />
+<br />
+Q: The Cataclysm patches also saw the debut of some legendary weapons: Dragonwrath and the Fangs of the Father. Will future legendaries be this, uh, legendary?<br />
+Good question. We love class-specific content, but quest lines like those are very resource-intensive. Each sequence involves weeks of development focus that takes content away from dungeons, dailies, or outdoor zones.<br />
+<br />
+<br />
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/AXgV-V023-M?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br />
+<br />
+The feedback from players (and from our own team) has been overwhelmingly positive. Dragonwrath proved to be extremely popular, and allowed caster classes to get a front-row seat for major lore moments otherwise reserved only for dragons. Meanwhile, Fangs of the Father was pure rogue, from the theme to the mechanics. It was super-targeted and extremely fun -- it proved to us the value of focusing in on a specific class and tailoring the content to their abilities. Given that the audience for these weapons consists of badass raiders, we didn’t hold back on the difficulty either, so these quests were great for people who wanted a real challenge.<br />
+<br />
+The short answer is yes, we'll definitely continue doing these moving forward. Most likely future legendary quest lines will be built similar to the rogue experience: a couple key story moments, a lot of flavor, and some very specific challenges. But I wouldn't expect very many quest lines like these. Like legendary weapons themselves, they're going to be rare and special.<br />
+<br />
+Q: We haven't even talked about goblins and worgen yet. What lessons did you take away from the new racial starting zones?<br />
+In both cases, the starting areas really sold the character and tone of the new races. The worgen area is so marvelously gothic, and Kezan is unmistakably unique and gobliny. The art and the quests all work together to establish a racial character. So that’s a big win.<br />
+<br />
+As for the mechanics themselves, I’m glad we were so experimental, but our general feeling now that all is said and done is that we went a little too ‘gimmicky’ with the player’s initial experiences. Everyone can agree that the goblin experience gets pretty wild in places.<br />
+<br />
+That's a big lesson we're carrying away from the expansion as a whole.<br />
+<br />
+Q: Can you elaborate?<br />
+Overwhelmingly, players have told us that they want more quests where you have to flap a giant bird around a cave while targeting creatures in a 3D space.<br />
+<br />
+Q: Seriously?<br />
+Maybe not . . . But moving forward, we're re-focusing on core gameplay mechanics. World of Warcraft works best when you’ve got your boots on the ground and you get to play your class. To that end, we’re concentrating on giving players lots of fun combat challenges in continually changing environments, wrapped up in a terrific story that’s propelled forward by the quests. Whenever we do special mechanics, we want them to feel special, and they’ll never tear you away from combat for very long. Our goal is to load up the world with lots of interactive spaces, cool encounters, great characters, and neat spaces to explore. That’s part of the reason we’re keeping you grounded (literally) in Pandaria, and why we’re focusing on a single continent. But I’m getting ahead of myself. We’ll talk more about Pandaria soon enough.<br />
+<br />
+Q: Looking forward to it. Thanks for your time!<br />
+Not a problem!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Qualdroo</div><div class="date">2012-02-28, 05:11 PM</div></div><div class="posttext">&quot;Q: Are you happy with how the old world re-vamp turned out?I am. Leveling up a new character to 60 nowadays is a great deal of fun. Every zone has stories to play out, with interesting nooks and crannies and plenty of hidden gems or references for players who remember the pre-Cataclysm world. Zones like Ashenvale now live up to their premise (intense Horde-vs.-Alliance combat), and previously empty zones now have a lot of character (see: Azshara). The content just flows. It's still World of Warcraft, but the quests have a modern feel, with lots of action and storytelling.&quot;Exept the game lost its spirit realy.. You lvl to fast and are not getting everything out of the zones anymore like you did pre the shattering. I kind a miss the way you, if you wanted to, had to travel between 4-5 sometimes more zones to do a quest line! The world inside the game have simply become smaller.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kromus</div><div class="date">2012-02-28, 05:20 PM</div></div><div class="posttext">While an interesting read, I can't help but feel these sort of &quot;post Moretems&quot; avoid the tough questions.Hopefully this is a part in a series, but that tough questions can be asked concerning glaringly the weakest expansion in the series to date, and which has left MANY people worried with the forthcoming MOP.The legendaries are anything but Legendary in this expansions.Dragonwrath , of course people loved it, because it could be acquired so easily with just weeks of progression and insanely bump a casters DPS. It was literally a factor in Dragon Soul progression, thats poor.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yuuki Asuna</div><div class="date">2012-02-28, 05:20 PM</div></div><div class="posttext">Kinda shows they were focused too much on redoing the whole world and never put much effort and thought into the end game content. Kind of exciting to know they're focused just on the starting zone for Pandas and Pandaria as well as maybe some other tweaks to make the leveling not so linear. Can't wait to try out the beta to see for myself =]</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Taan</div><div class="date">2012-02-28, 05:20 PM</div></div><div class="posttext">and still no changes to silithus</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb5555a9189</div><div class="date">2012-02-28, 05:21 PM</div></div><div class="posttext">wow...talk about avoiding important points *plays FoxNews' applause sound* now, where is gallywix?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Keleri</div><div class="date">2012-02-28, 05:24 PM</div></div><div class="posttext">Q: Can you elaborate? Overwhelmingly, players have told us that they want more quests where you have to flap a giant bird around a cave while targeting creatures in a 3D space. RAAAAAAAAAAAGH Seriously though, I love Fargo. Can't wait to see what MoP will look like with these lessons in mind.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">InexpensiveGamer</div><div class="date">2012-02-28, 05:24 PM</div></div><div class="posttext">I wouldn't mind another option to level other than HFP; however, I really hope that they focus on end game content this time around. Epic raiding would be amazing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4dea2b911c</div><div class="date">2012-02-28, 05:25 PM</div></div><div class="posttext">My future 85-90 questing experience;Find Q mark &gt; click &gt; don't read any of the boring script, just accept &gt; press M &gt; head to Q mark on map &gt; complete &gt; repeat untill 90 &gt; never leave the capital city for another 12 months.Who cares about questing, wow is stale.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Adrim</div><div class="date">2012-02-28, 05:28 PM</div></div><div class="posttext">Fuck the Worgen and Goblin starting zones.<br />
+<br />
+Fuck no longer being able to level with a friend like I have in every single xpac.<br />
+<br />
+Fuck not being able to turn off XP or transmog or access any other Stormwind-only service due to phasing.<br />
+<br />
+Fuck phasing entirely.<br />
+<br />
+Fuck one-path-only quest chains.<br />
+<br />
+Fuck having to run to a third-party website every time I accidentally miss an exclaimation mark god knows where in Deepholm.<br />
+<br />
+Fuck Therazane chain on every single raiding toon.<br />
+<br />
+Yeah, I've done the &quot;new&quot; questing. It's crap. Most of the jokes aren't funny (some I admit are). Most of the chains are not &quot;epic&quot; unless you want to spend your whole life in a zone WELL past the level you should be in here. I did the Redridge chain once at by the time I got to the end in full heirlooms, the quests were fucking grey. That's brilliant.<br />
+<br />
+What I want is to get off the boat in Darkshore and have fifteen question marks, including some red ones, waiting for me. I leveled countless night elves through that zone...and Draenai and humans and really every race too...without getting sick of it. That was epic feeling.<br />
+<br />
+New Azeroth is crap and Dave &quot;Fargo&quot; Kosak is my new most-hated developer. Every time I run into a mob that evades because it spawned inside a rock, or get stuck in a new place or see a really crappy looking terrain transition I realized that they could have done a few things well but instead they opted to do a whole lot of things badly.That's a failure on all sides.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoceeceb76e25</div><div class="date">2012-02-28, 05:29 PM</div></div><div class="posttext">Yeah there was a few good questions but I felt they was avoiding anything serious I would of liked to hear more about their end game thoughts and what went right/wrong in the raiding area.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sarella</div><div class="date">2012-02-28, 05:30 PM</div></div><div class="posttext">I'm very disappointed they didn't admit to Vash'nir being a failure because of the firelands dailies. While the zone itself was great, you were forced to level through MH due to the firelands dailies - a terrible TERRIBLE waste of a good zone with a unique feel.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Loopb</div><div class="date">2012-02-28, 05:32 PM</div></div><div class="posttext">&quot;Given that the audience for these weapons consists of badass raiders, we didn’t hold back on the difficulty either, so these quests were great for people who wanted a real challenge.&quot;MUST be joking. Alot of normal mode raiders running arround with those.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Loopb</div><div class="date">2012-02-28, 05:34 PM</div></div><div class="posttext">&quot;Given that the audience for these weapons consists of badass raiders, we didn’t hold back on the difficulty either, so these quests were great for people who wanted a real challenge.&quot;MUST BE JOKING. I've seen A LOT of normal mode raiders running arround with those, people that had never killed H Shannox.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc47b4060ff1</div><div class="date">2012-02-28, 05:35 PM</div></div><div class="posttext">Oh what do you know, no questions about why their was no raid in 4.1, such rehash in 4.3.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dorfie</div><div class="date">2012-02-28, 05:36 PM</div></div><div class="posttext">Overwhelmingly, players have told us that they want more quests where you have to flap a giant bird around a cave while targeting creatures in a 3D space.The horror...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nameuser</div><div class="date">2012-02-28, 05:36 PM</div></div><div class="posttext">questing in cata is WAY too linear, and you lvl way too fast, you kill mobs way too fast... its a mess.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zephh</div><div class="date">2012-02-28, 05:37 PM</div></div><div class="posttext">I'm very disappointed they didn't admit to Vash'nir being a failure because of the firelands dailies. While the zone itself was great, you were forced to level through MH due to the firelands dailies - a terrible TERRIBLE waste of a good zone with a unique feel.<br />
+<br />
+They already admitted that Vash area was a failure...<br />
+<br />
+Looks like your on the late train</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alopex Major</div><div class="date">2012-02-28, 05:40 PM</div></div><div class="posttext">&quot;It's a powerful love story, and a story about finding one’s inner focus.&quot; Yeah no.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Inactivity</div><div class="date">2012-02-28, 05:40 PM</div></div><div class="posttext">&quot;Given that the audience for these weapons consists of badass raiders, we didn’t hold back on the difficulty either, so these quests were great for people who wanted a real challenge.&quot;MUST BE JOKING. I've seen A LOT of normal mode raiders running arround with those, people that had never killed H Shannox.<br />
+<br />
+Agreed. Sadly, because of my guild situations and falling apart, I never saw Dragonwrath until this week (when I will finish) but saw many, many far inferior casters who have never done heroic modes (whereas I have full heroic Firelands clears) with their welfare staves.<br />
+<br />
+IMO, make the legendary weapons faster/easier to obtain than currently, but require heroic mode clears. That will reduce the amount of staves in circulation, but also re-allocate the staves to people who deserve them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eggwolls</div><div class="date">2012-02-28, 05:41 PM</div></div><div class="posttext">I like how he said that &quot;like the legendaries themselves, these quests will be rare and special&quot;. That's a good one there. What? He wasn't joking? Oh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Flashoflight</div><div class="date">2012-02-28, 05:41 PM</div></div><div class="posttext">Fuck the Worgen and Goblin starting zones.<br />
+<br />
+Fuck no longer being able to level with a friend like I have in every single xpac.<br />
+<br />
+Fuck not being able to turn off XP or transmog or access any other Stormwind-only service due to phasing.<br />
+<br />
+Fuck phasing entirely.<br />
+<br />
+Fuck one-path-only quest chains.<br />
+<br />
+Fuck having to run to a third-party website every time I accidentally miss an exclaimation mark god knows where in Deepholm.<br />
+<br />
+Fuck Therazane chain on every single raiding toon.<br />
+<br />
+Yeah, I've done the &quot;new&quot; questing. It's crap. Most of the jokes aren't funny (some I admit are). Most of the chains are not &quot;epic&quot; unless you want to spend your whole life in a zone WELL past the level you should be in here. I did the Redridge chain once at by the time I got to the end in full heirlooms, the quests were fucking grey. That's brilliant.<br />
+<br />
+What I want is to get off the boat in Darkshore and have fifteen question marks, including some red ones, waiting for me. I leveled countless night elves through that zone...and Draenai and humans and really every race too...without getting sick of it. That was epic feeling.<br />
+<br />
+New Azeroth is crap and Dave &quot;Fargo&quot; Kosak is my new most-hated developer. Every time I run into a mob that evades because it spawned inside a rock, or get stuck in a new place or see a really crappy looking terrain transition I realized that they could have done a few things well but instead they opted to do a whole lot of things badly.That's a failure on all sides.<br />
+<br />
+Man.. you are so damn right! i just created this account on mmo champ to reply this... every single thing you said is <br />
+110% true and thats exactly my feeling aswell...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaneth</div><div class="date">2012-02-28, 05:47 PM</div></div><div class="posttext">Well, they confirmed what many of us had been thinking. The remake of the 1-60 experience, along with all of the zones was a bigger bite than they could chew, and because of that the rest of the xpack was rushed. I really hope in MoP they allow us to entirely skip leveling in the Cataclysm areas, and make an 80-85 megazone or grouping of zones in MoP that are just laid out better. Cataclysm was the first expansion where I truly hated leveling my toons through the zones, so much so that I have stopped playing my mage at 82. I just can't stomach it anymore. On the bright side, they have admitted to failures and hopefully they learn from them, which does give me hope for MoP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryme</div><div class="date">2012-02-28, 05:47 PM</div></div><div class="posttext">Some things that irk me:<br />
+<br />
+No, there were no nooks and crannies in the old world, it's the most linear questing experience I've ever seen in an MMO.<br />
+<br />
+The story telling was weak, but it mainly suffered due to really, REALLY, generic and dull story-lines. Go fix the world pillar, go kill the dwarves, go kill even more Twilight's Hammer - they're bad guys, trust us.<br />
+<br />
+The 4.2 dailies were wasted and did not live up to expectations. You STILL had to do the same quests, over and over and over, but occasionally you'd get to swap out 2 or 3 of them for a different set of 2 or 3 that you'd already done over and over and over. The quests were unimaginative and the whole zone felt wholly unimmersive since the place pretty much hard resets each day and everything you accomplished the day before needs doing again.<br />
+<br />
+Agree on the Elemental Bonds questline, it was boring with an OK story and some great visuals.<br />
+<br />
+The rogue questline was fantastic to play, but felt incredibly disjointed and contrived. The actual raid quests were lazy as hell, and the out of raid quest lines, whilst a blast to actually play left me wondering &quot;Why am I doing this again?&quot; sure, I'm doing them for the oranges, but as an actual story I'm working through, why do I actually give a damn what this rogue black dragon wants done? And why are we killing these people again? Because he says so? Who are they? What have they actually done?<br />
+<br />
+I'd have loved to see some more questions about how the design philosophy for end game got flipped on it's head and how promises for the most raid content ever per expansion simply got ignored, but I'll wait.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spellweaver</div><div class="date">2012-02-28, 05:49 PM</div></div><div class="posttext">Oh what do you know, no questions about why their was no raid in 4.1, such rehash in 4.3.<br />
+<br />
+Because the 2 heroics in 4.1 were originally part of the Firelands patch. However, those were already finished before they were done with Firelands so they decided to already release those heroics.<br />
+<br />
+Or would you have preferred it if they didn't do that, and rather have waited another few months with completely no new content?<br />
+(not saying 4.1 was such an amazing patch, but it still did give something slightly new to do.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sayomara</div><div class="date">2012-02-28, 05:50 PM</div></div><div class="posttext">Fuck the Worgen and Goblin starting zones.<br />
+<br />
+<br />
+The Goblin, Worgen answer was a complete coupout. The issues with the races wasn't the starting zones and Blizz knows that its everything after and how both races hardely matter at all to there faction after the starting zones. <br />
+<br />
+I am glad to see they are learning they can doing everything with Phasing. They have been pushing that button so hard and so often since Wrath that people just don't see each other in some zones.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jantasir</div><div class="date">2012-02-28, 05:52 PM</div></div><div class="posttext">Yeah, I've done the &quot;new&quot; questing. It's crap. Most of the jokes aren't funny (some I admit are). Most of the chains are not &quot;epic&quot; unless you want to spend your whole life in a zone WELL past the level you should be in here. I did the Redridge chain once at by the time I got to the end in full heirlooms, the quests were fucking grey. That's brilliant.<br />
+<br />
+<br />
+<br />
+here... take off all those heirlooms if you're worried about leveling too fast..i mean really, here i'm going to put on, what 35% (45% with guild perk) more experience? and then BITCH about zones not lasting.. seriously stfu and go cry somewhere else.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kryos</div><div class="date">2012-02-28, 06:00 PM</div></div><div class="posttext">I did the Redridge chain once at by the time I got to the end in full heirlooms, the quests were fucking grey. That's brilliant.<br />
+<br />
+You got to be kidding. You wear stuff that makes you get more than average XP and then complain that in this mode the quests get grey quicker? Really? /facepalm</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LordSothe</div><div class="date">2012-02-28, 06:06 PM</div></div><div class="posttext">Wait, they actually thought Cataclysm had a good story? I'm scared now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc955237267</div><div class="date">2012-02-28, 06:08 PM</div></div><div class="posttext">All in all, I am excited that they mention some of the things that bothered me in Cata and that they have plans to avoid the same in MoP.<br />
+<br />
+If they really plan to learn from their mistakes and they have only this one continent to focus on, then I think it is quite possible that MoP will be great.<br />
+After the complete crap that was SWTOR, I am looking forward to a high quality experience.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc810e31c697</div><div class="date">2012-02-28, 06:08 PM</div></div><div class="posttext">Completely avoided pretty much every single issue that people have raised.A great deal of the emphasis (or so it seemed) was that Cataclysm was lacklustre at best, and that's quite a ballsy statement to make as a company.Why can't they just openly admit it was bad in official postings such as this so they can identify the real failures and propose how they will never happen again?I can't believe they're pushing the Firelands dailies as a success, it was an incredibly uninspiring experience with repetitive quests, if anything it's one of the things I would never like to see added again, drawing content out over the period of a month or so in 10 minute chunks isn't the way to do it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ContentsMayVary</div><div class="date">2012-02-28, 06:08 PM</div></div><div class="posttext">I did the Redridge chain once at by the time I got to the end in full heirlooms, the quests were fucking grey. That's brilliant<br />
+<br />
+Not sure if trolling, or just very stupid... I'm kindof tending towards thinking the latter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ZenX</div><div class="date">2012-02-28, 06:08 PM</div></div><div class="posttext">Wait, they actually thought Cataclysm had a good story? I'm scared now.<br />
+<br />
+Explain why it didn't then?<br />
+<br />
+Having a good idea and a poor implementation is a common mistake we get to encounter in design(games, engineering etc.) world.<br />
+<br />
+<br />
+Agreed. Sadly, because of my guild situations and falling apart, I never saw Dragonwrath until this week (when I will finish) but saw many, many far inferior casters who have never done heroic modes (whereas I have full heroic Firelands clears) with their welfare staves.<br />
+<br />
+IMO, make the legendary weapons faster/easier to obtain than currently, but require heroic mode clears. That will reduce the amount of staves in circulation, but also re-allocate the staves to people who deserve them.<br />
+<br />
+Fear and Vengeance duo is common, as they are easily obtained. The challenging part of the questline comes after turning in the first batch of shadowy gems followed with the fighting against Nalice.<br />
+<br />
+Let alone any of those characters not having ever stepped in previous raids prove anything, as it is not Sleeper and Dreamer duo that is common,worrying about the quest not being challenging is pointless.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc810e31c697</div><div class="date">2012-02-28, 06:13 PM</div></div><div class="posttext">Explain why it didn't then?<br />
+<br />
+Having a good idea and a poor implementation is a common mistake we get to encounter in design(games, engineering etc.) world.<br />
+<br />
+Agreed<br />
+<br />
+The story itself was fine, it's just a shame that they instead decided to tell the story through a premium and badly written novel, rather than actually putting it in game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Venteus</div><div class="date">2012-02-28, 06:13 PM</div></div><div class="posttext">I like how he said that &quot;like the legendaries themselves, these quests will be rare and special&quot;. That's a good one there. What? He wasn't joking? Oh.<br />
+<br />
+Not sure if I understood your main point but I agree with the sentiment. I'm fairly certain Dragonwrath is already more common than Thunderfury. While idling in stormwind I get spammed with the stupid blue dragon flight monologue every half-hour. <br />
+<br />
+What are the implications?<br />
+<br />
+- Not difficult to obtain<br />
+- &quot;standard procedure&quot; rather than something a skilled player can opt to obtain. <br />
+- Barely an achievement<br />
+<br />
+= A powerful epic. Not a legendary.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rigrot</div><div class="date">2012-02-28, 06:15 PM</div></div><div class="posttext">The legendaries are anything but Legendary in this expansions.Dragonwrath , of course people loved it, because it could be acquired so easily with just weeks of progression and insanely bump a casters DPS. It was literally a factor in Dragon Soul progression, thats poor.<br />
+<br />
+As opposed to older legendaries where you just had to hope it dropped?<br />
+<br />
+edit: Though I wouldn't might if they increased the difficulty some more; the nexus was a nice change of pace in terms of quest difficulty.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wardley</div><div class="date">2012-02-28, 06:16 PM</div></div><div class="posttext">One thing that I always wondered about Thralls 'Elemental Bonds' questline. So, it starts with Thrall and the Dragon Aspects getting together to mend the World Tree and restore the world. They get interrupted by Fandral who does his thing and splits Thrall up. You then go on the quest to stick him back together. You complete it and then at the end Thrall marries (or whatever Orcs do) Aggra. Erm, what about Thrall and the Dragon Aspects actually, you know, finishing what they started and mend the World Tree?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MasterHamster</div><div class="date">2012-02-28, 06:17 PM</div></div><div class="posttext">As opposed to older legendaries where you just had to hope it dropped?<br />
+<br />
+Of course. 2% warglaive drops was an intensive and emersive experience, while crafting a legendary through raiding and questing is not<br />
+<br />
+derp</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thulvaso</div><div class="date">2012-02-28, 06:22 PM</div></div><div class="posttext">Very interesting read, I am glad they acknowledge the linear questing in Cataclysm and that they hope to address this in Mists, good stuff. :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ZenX</div><div class="date">2012-02-28, 06:23 PM</div></div><div class="posttext">Not sure if I understood your main point but I agree with the sentiment. I'm fairly certain Dragonwrath is already more common than Thunderfury. While idling in stormwind I get spammed with the stupid blue dragon flight monologue every half-hour. <br />
+<br />
+What are the implications?<br />
+<br />
+- Not difficult to obtain<br />
+- &quot;standard procedure&quot; rather than something a skilled player can opt to obtain. <br />
+- Barely an achievement<br />
+<br />
+= A powerful epic. Not a legendary.<br />
+<br />
+I had soloed Molten Core for the last two years for those bindings that had never dropped, until a rogue from our guild had both bindings dropped for him in his first run of the instance.<br />
+<br />
+So your degree of worth as a good player is realized through how RNG treats you, right?<br />
+<br />
+The dragonwrath questline has been out for more than almost 7 months now, it is normal for them to obtain the item as its the dedication that gets you rewarded in the end and incidentally requires effort in doing so, compared to Lolfury, Sulfulol, Twin trolls of lollinoth and Lolidal, that rewarded the lucky ones.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4d2020beea</div><div class="date">2012-02-28, 06:30 PM</div></div><div class="posttext">Of course. 2% warglaive drops was an intensive and emersive experience, while crafting a legendary through raiding and questing is not<br />
+<br />
+derp<br />
+No, it needs them both: super low drop rate AND extremely long/hard questline...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Adrim</div><div class="date">2012-02-28, 06:31 PM</div></div><div class="posttext">Not sure if trolling, or just very stupid... I'm kindof tending towards thinking the latter.<br />
+<br />
+<br />
+You got to be kidding. You wear stuff that makes you get more than average XP and then complain that in this mode the quests get grey quicker? Really? /facepalm<br />
+<br />
+<br />
+here... take off all those heirlooms if you're worried about leveling too fast..i mean really, here i'm going to put on, what 35% (45% with guild perk) more experience? and then BITCH about zones not lasting.. seriously stfu and go cry somewhere else.<br />
+<br />
+Wow, so many people who fail at reading comprehension.<br />
+<br />
+As I said VERY CLEARLY IN ENGLISH: the problem is that to complete these massive story arcs you are stuck in a zone past the point of advantageous leveling XP. Why the fuck should I still be doing doing green quests in Redridge at 20 when I'm now high enough level to start quests in Duskwood?<br />
+<br />
+Even without heirlooms (which I have done on new servers) you are getting a &quot;Hero's Call&quot; to the next zone before you finish any of these massive chains. Not to mention, do just a couple dungeons and when you come out, your green quests are now grey.<br />
+<br />
+The only people who complete these massive chains are twinks trying to get blues or Loremasters. It's not proper leveling. Unless you are stupid enough to think the only people who level are brand-new to the game and not interested in leveling a toon as quickly as possible.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">VanishO2</div><div class="date">2012-02-28, 06:32 PM</div></div><div class="posttext">They already admitted that Vash area was a failure...<br />
+<br />
+Looks like your on the late train<br />
+<br />
+It's a failure because they removed the raid... sad. With the raid and probably it's own set of dailies, the zone would be a lot better.<br />
+<br />
+---------- Post added 2012-02-28 at 06:37 PM ----------<br />
+<br />
+<br />
+Some things that irk me:<br />
+<br />
+No, there were no nooks and crannies in the old world, it's the most linear questing experience I've ever seen in an MMO.<br />
+<br />
+The story telling was weak, but it mainly suffered due to really, REALLY, generic and dull story-lines. Go fix the world pillar, go kill the dwarves, go kill even more Twilight's Hammer - they're bad guys, trust us.<br />
+<br />
+The 4.2 dailies were wasted and did not live up to expectations. You STILL had to do the same quests, over and over and over, but occasionally you'd get to swap out 2 or 3 of them for a different set of 2 or 3 that you'd already done over and over and over. The quests were unimaginative and the whole zone felt wholly unimmersive since the place pretty much hard resets each day and everything you accomplished the day before needs doing again.<br />
+<br />
+Agree on the Elemental Bonds questline, it was boring with an OK story and some great visuals.<br />
+<br />
+The rogue questline was fantastic to play, but felt incredibly disjointed and contrived. The actual raid quests were lazy as hell, and the out of raid quest lines, whilst a blast to actually play left me wondering &quot;Why am I doing this again?&quot; sure, I'm doing them for the oranges, but as an actual story I'm working through, why do I actually give a damn what this rogue black dragon wants done? And why are we killing these people again? Because he says so? Who are they? What have they actually done?<br />
+<br />
+I'd have loved to see some more questions about how the design philosophy for end game got flipped on it's head and how promises for the most raid content ever per expansion simply got ignored, but I'll wait.<br />
+<br />
+Not only that about 4.2 dailies, but they were also out of place. They should be live before the actual raid. Really stupid to make all that effort and &quot;learn&quot; about FL and it's residents that you've alread killed on the same day... We were still working out that big spider lair by the time we alread killed Ragnaros...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deadanon</div><div class="date">2012-02-28, 06:38 PM</div></div><div class="posttext">Intresting that they dont mention patch 4.1 at all... <br />
+<br />
+Personally - I did not like daylies in Firelands at all. They became as repetitive as the rest. And the rewards were to far between. <br />
+<br />
+25 daily quests are just to much IMO. 10 was fine. And considering that many players have many charas -it creates yet another way for player burnout. Do less - but make it better and more diverse. <br />
+<br />
+Its alos possible to add weekly questslines of 5-8 quests that give more rewards than daily quests. Having diffrent quests like that for each character prevents player burnout.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sapho</div><div class="date">2012-02-28, 06:40 PM</div></div><div class="posttext">Yes yes yes yes yes yes yes yes!!!He is perhaps a bit more positive about Cata than I am - but it does seem they've recognized quite a few of the problems (or at least, the things that I found problematic!). I'm looking forward to MoP a little more now :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Notos</div><div class="date">2012-02-28, 06:44 PM</div></div><div class="posttext">No, it needs them both: super low drop rate AND extremely long/hard questline...<br />
+<br />
+I'm sorry, that is just a horrible idea. So you want there to be a questline to allow access to a legendary, only to have it have a super low droprate? Or do you want a super low droprate item to start a questline for a legendary? Both ways are dumb imo: why should they bother designing a questline if so few people are going to see it? And if you have to do a hard questline just to unlock the ability for a legendary to drop, you've essentially put in a lot of work for a reward that you may never get. Awful, awful idea.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb372ace37b</div><div class="date">2012-02-28, 06:44 PM</div></div><div class="posttext">Fuck the Worgen and Goblin starting zones.<br />
+<br />
+Fuck no longer being able to level with a friend like I have in every single xpac.<br />
+<br />
+Fuck not being able to turn off XP or transmog or access any other Stormwind-only service due to phasing.<br />
+<br />
+Fuck phasing entirely.<br />
+<br />
+Fuck one-path-only quest chains.<br />
+<br />
+Fuck having to run to a third-party website every time I accidentally miss an exclaimation mark god knows where in Deepholm.<br />
+<br />
+Fuck Therazane chain on every single raiding toon.<br />
+<br />
+Yeah, I've done the &quot;new&quot; questing. It's crap. Most of the jokes aren't funny (some I admit are). Most of the chains are not &quot;epic&quot; unless you want to spend your whole life in a zone WELL past the level you should be in here. I did the Redridge chain once at by the time I got to the end in full heirlooms, the quests were fucking grey. That's brilliant.<br />
+<br />
+What I want is to get off the boat in Darkshore and have fifteen question marks, including some red ones, waiting for me. I leveled countless night elves through that zone...and Draenai and humans and really every race too...without getting sick of it. That was epic feeling.<br />
+<br />
+New Azeroth is crap and Dave &quot;Fargo&quot; Kosak is my new most-hated developer. Every time I run into a mob that evades because it spawned inside a rock, or get stuck in a new place or see a really crappy looking terrain transition I realized that they could have done a few things well but instead they opted to do a whole lot of things badly.That's a failure on all sides.<br />
+<br />
+You complain about questing being too fast, and still quest in full heirlooms? Then it's your own damn fault</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2a51bf75d5</div><div class="date">2012-02-28, 06:45 PM</div></div><div class="posttext">Dave Kosak I love you man, keep up the good work !</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bbr</div><div class="date">2012-02-28, 06:49 PM</div></div><div class="posttext">4.2 really put the final nail in the coffin for me tbh. Lots of anticipation, etc... and, all i got was a huge load of daily quests :/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">asher1611</div><div class="date">2012-02-28, 06:49 PM</div></div><div class="posttext">You know, for them saying the initial development and focus on 1-60 quests took away from their end game development...it is interesting to see so many people say they loved the difficulty and variety in T11 while finding T12 meh and T13 as /facepalm worthy. After 4.0.3, the initial xpac work was DONE. My worry going forward is how Blizzard failed to actually build new content into the expansion. I don't remember hearing so much that was planned, put into the game files, and left on the cutting room floor before it was pushed out -- at least not since vanilla.<br />
+<br />
+<br />
+Wow, so many people who fail at reading comprehension.<br />
+<br />
+As I said VERY CLEARLY IN ENGLISH: the problem is that to complete these massive story arcs you are stuck in a zone past the point of advantageous leveling XP. Why the fuck should I still be doing doing green quests in Redridge at 20 when I'm now high enough level to start quests in Duskwood?<br />
+<br />
+Even without heirlooms (which I have done on new servers) you are getting a &quot;Hero's Call&quot; to the next zone before you finish any of these massive chains. Not to mention, do just a couple dungeons and when you come out, your green quests are now grey.<br />
+<br />
+The only people who complete these massive chains are twinks trying to get blues or Loremasters. It's not proper leveling. Unless you are stupid enough to think the only people who level are brand-new to the game and not interested in leveling a toon as quickly as possible.<br />
+I've leveled a bunch of alts both with and without herilooms and Adrim is correct. Jump on the heirloom point if you want, but that's attacking one detail instead of the whole picture.<br />
+<br />
+It's the one single thing that disappointed me about Azshara. The zone is huge. There's a ton of neat, interesting goblin stuff in there. And yet by the time I got the breadcrumb quest to go to Bildgewater Port, it was already time for me to leave the zone. I had only half of the quests done.<br />
+<br />
+At least with the old style you would get pockets of quests that would take you to certain areas of the zone and give you a little mini-glimpse or story about that particular area. I think Northern Barrens still holds on to that a bit. Southern Barrens is the one leveling zone I have not been through yet, so I do not know if I can say the same.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">darkpower</div><div class="date">2012-02-28, 06:50 PM</div></div><div class="posttext">Wrath style questing was good. Each quest in a hub sent you to one specific place to do all the quests instead of having to go all over the zone and beyond to complete each just to get to the next set of quests the hub had for you. Cata took this a step further, and those it was linear, linear can be good if done correctly. I wouldn't want to go back to how the 1-60 areas were pre-Cata (quest drops took too much luck to actually DROP, and hubs became too disjointed for anyone to really care about them). I wouldn't know why anyone would actually WANT that back (perhaps afraid of change from the &quot;good ol' days&quot;). I think they just have to tweak a bit of the Wrath-style questing and things will be fine.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">merex760</div><div class="date">2012-02-28, 07:02 PM</div></div><div class="posttext">Cataclysm questing was great 1-60, but high level questing was complete crap compared to Burning Crusade and Wrath of the Lich King. Hopefully we see a return to the better format in Mists of Pandaria. I'm pretty disappointed they liked how the Molten Front dailies turned out. I hated that area. So much. Bring back the dailies like Burning Crusade. Those were the best. Enough of the phasing crap. Wrath had the best leveling experience overall. It had a nice flow AND I was able to fill up my quest journal and have a choice of where to go within the zone I was in.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fleps</div><div class="date">2012-02-28, 07:02 PM</div></div><div class="posttext">Oh.. my... God... They REALLY liked the Molten Front dailies? Seriously? It was the most painful dailies ever in this game. It was the first time after almost 6 years playing this that I didn't finished a story line / dailies farm in any of my chars.You keep doing it over and over and over to get 150 stupid things so you'll be able to get a quest then u need to get another 150 to do the other quest and.. Jesus.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Okacz</div><div class="date">2012-02-28, 07:03 PM</div></div><div class="posttext">I like how some people nostalgia-rage over here. <br />
+<br />
+New questing sucks, old was way funnier, because it was slower, less linear, more zones to explore. What?<br />
+<br />
+You guys remember what youre talking about? Desolace with quests &quot;kill centaurs here&quot;, &quot;kill centaurs there&quot;, &quot;kill more centaurs when you're on it&quot;? Maybe huh, EPL with almost NO questing experiance for leveling players? Thousend Needles &quot;Run here, run back, maybe kill some wyverns meanwhile&quot;? Arathi Highlands &quot;I dunno what to do now, so I gonna kill a few more elementals&quot;?<br />
+<br />
+Before Cata I hated 1-60. The worst part in leveling, and the one that discouraged from making alts. Just a pain in the ass. You moved from zone to zone because quests became too boring - there was no story around them to bind you to them at all. Exploration? Rather doing everything to avoid it. Interesting plots? Just compare them to current ones, and try not to laugh. Anyone knows what the old plot of questing in, for exampe, Feralas, was about? &quot;We are surrounded by hostile npcs. Kill them, and pick your reward&quot;.<br />
+<br />
+Laughing at current legenday storylines and stuff? Yea, BC ones were sooooo much better. One quest only - go to church and play for this damn Warglaive to drop this time. Vanilla? You mean &quot;get enough money to buy Thunderfury&quot;?<br />
+<br />
+Dailies are bad? Show me better dailies in history of WoW. Argent tournament was quite ok I guess. And that is kinda all. MF dailies are maybe boring at the end (SO BORING), but when you start them they are quite entertaining for a few days in a row. Plus, they provide real goals - unlocking next stages.<br />
+<br />
+So ppl, just give the credit where it should be given. Those things were GOOD in Cata. About questing - Ive got only one con on my mind. 4.1 or 4.2 was supposed to be a patch to introduce Abyssal Maw and continue Neptuons questline. We were awarded by revamped trolls (worst patch ever if you ask me) and quite fine daily quest hub. Shame on you, Blizz.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thallidomaniac</div><div class="date">2012-02-28, 07:05 PM</div></div><div class="posttext">Oh.. my... God... They REALLY liked the Molten Front dailies? Seriously? It was the most painful dailies ever in this game. It was the first time after almost 6 years playing this that I didn't finished a story line / dailies farm in any of my chars.You keep doing it over and over and over to get 150 stupid things so you'll be able to get a quest then u need to get another 150 to do the other quest and.. Jesus.<br />
+<br />
+It seemed like even the Argent Tournament ones were less painful than Molten Front. I won't repeat the MF grind after the first character again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deadanon</div><div class="date">2012-02-28, 07:15 PM</div></div><div class="posttext">I like how some people nostalgia-rage over here. <br />
+<br />
+New questing sucks, old was way funnier, because it was slower, less linear, more zones to explore. What?<br />
+<br />
+You guys remember what youre talking about? Desolace with quests &quot;kill centaurs here&quot;, &quot;kill centaurs there&quot;, &quot;kill more centaurs when you're on it&quot;? Maybe huh, EPL with almost NO questing experiance for leveling players? Thousend Needles &quot;Run here, run back, maybe kill some wyverns meanwhile&quot;? Arathi Highlands &quot;I dunno what to do now, so I gonna kill a few more elementals&quot;?<br />
+<br />
+Before Cata I hated 1-60. The worst part in leveling, and the one that discouraged from making alts. Just a pain in the ass. You moved from zone to zone because quests became too boring - there was no story around them to bind you to them at all. Exploration? Rather doing everything to avoid it. Interesting plots? Just compare them to current ones, and try not to laugh. Anyone knows what the old plot of questing in, for exampe, Feralas, was about? &quot;We are surrounded by hostile npcs. Kill them, and pick your reward&quot;.<br />
+<br />
+Laughing at current legenday storylines and stuff? Yea, BC ones were sooooo much better. One quest only - go to church and play for this damn Warglaive to drop this time. Vanilla? You mean &quot;get enough money to buy Thunderfury&quot;?<br />
+<br />
+Dailies are bad? Show me better dailies in history of WoW. Argent tournament was quite ok I guess. And that is kinda all. MF dailies are maybe boring at the end (SO BORING), but when you start them they are quite entertaining for a few days in a row. Plus, they provide real goals - unlocking next stages.<br />
+<br />
+So ppl, just give the credit where it should be given. Those things were GOOD in Cata. About questing - Ive got only one con on my mind. 4.1 or 4.2 was supposed to be a patch to introduce Abyssal Maw and continue Neptuons questline. We were awarded by revamped trolls (worst patch ever if you ask me) and quite fine daily quest hub. Shame on you, Blizz.<br />
+<br />
+I liked the 10 daily quests in TBC. 25 is just over the top.<br />
+<br />
+Legendery quest arks should not be there. They should rather do weekly quests that everyone can enjoy. <br />
+<br />
+Lastly - Quests do not have to tell a story. They need to be fun. After all -we all know that every zone has x amount of gathering quests - X amount of kill quests and so on. The story behind it does not make it any more intresting. Specially not when you are doing them again and again and again and again in a daily quest hub.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">greyghost</div><div class="date">2012-02-28, 07:16 PM</div></div><div class="posttext">No, it needs them both: super low drop rate AND extremely long/hard questline...<br />
+<br />
+Then it requires a spelling test, a obstacle course and another whole raid that requires insane resist gear stacking for just 2 fights or else I will accuse Blizzard of being a carebear company and I'll stomp my feet until mom comes and OH MAN YOU'RE GOING TO BE IN TROUBLE THEN.<br />
+<br />
+....<br />
+<br />
+Legendaries are supposed to be representative of a Guild's invested time towards getting more-powerful-than-normal items to assist them in difficult raid challenges, not a litmus test for seeing how close to an insanely stupid Korean MMO grind you can push on people until they shrug and deem it not worth the effort. Your desire for making people suffer to get SOOPER COOL STUFF OMG is not shared by a large amount of Blizzard's audience. There's a reason only 60,000~ people played Aion in North America just 6 months after launch. Making stuff that takes weeks of dev time that is only obtained by just a few hundred people due to inane RNG is a waste of everyone's time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neichus</div><div class="date">2012-02-28, 07:17 PM</div></div><div class="posttext">It seemed like even the Argent Tournament ones were less painful than Molten Front. I won't repeat the MF grind after the first character again.<br />
+<br />
+I just finished the Molten Front quests on something like my 5th character. I couldn't stand to do the Argent Tournament even for my main.<br />
+<br />
+^There, undeniable proof that the new daily design is going uphill rather than down...:P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Prfct</div><div class="date">2012-02-28, 07:18 PM</div></div><div class="posttext">This is nothing more than a marketing strategy... they are hyping MOP by saying they learned from their mistakes so people thinks MOP will be different than cataclysm when everything points to the contrary (easier content, simplified talent system, LFR from day 1 cancelling heroics ilvl, only 5 levels of content from 85 to 90). Truth is they are preparing everyone to think everything will be different.<br />
+<br />
+I really believe MOP beta will be limited to 1 or 2 zones and 1 or 2 levels, they won't let people see all the content in beta even if they paid the annual pass because if they did some would decide not to buy MoP (maybe some would burn out in beta). So they will continue hyping MoP saying 'we learned from all our mistakes' and then will say 'we won't let see you ALL of the content because it would spoil it for you... and once people buys the expansion everything will go to shit again and they won't care anymore.<br />
+<br />
+I'm not a Vanilla player, I bought the game on cataclysm and I really don't like the direction the game took... progression means shit when a new patch gives everything away for free... WoW has become a 'Pay to win' game, you pay your subscription and you're entitled to everything the game has to offer without making any kind of effort (Dragon soul nerf WILL reach 35%) EXCEPT SHOP MOUNTS/PETS. New mount looks kickass and everyone can have it (everyone with money) how is that fair with the playerbase? Everyone who asked me to come play WoW a year and a half ago has already left the game, we're talking about 15-20 people, and the 20 people left with me raiding has decided to leave after madness heroic falls.<br />
+<br />
+Sorry about my english it's not my native language... all I say it's that you can't catter to casuals without caring for the hardcore, eventually casuals get bored too and will leave the game without thinking twice because they know they can come back anytime and have everything handed to them in one or two weeks. What's stopping people from playing something else til the end of Pandaria and then comeback and do everything in one month and go away again? Ignorance, but they'll wise up eventually and Blizzard will lose a lot of potential money. Yeah, they will have 4 million players anyway but money and companies don't work that way and investors won't like to lose 5 million subscribers... I wonder what will they blame.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">crsh1976</div><div class="date">2012-02-28, 07:19 PM</div></div><div class="posttext">I think this is the first time I see them do something else than desperate damage control; about time.they saw how and why some stuff didn't work, now let's hope Greg Street is no longer in charge and have set themselves new goals based on facts and not some dickhead's fabled conception of what a good game is.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Loopb</div><div class="date">2012-02-28, 07:19 PM</div></div><div class="posttext">Theres a guild on Azralon called LastOne, they run with 4Staffs on mains, 2on replaces and 1,5 on alt, thats a 10man core wich has been running FL H since day1.Theres another guild on Azralon also called DOTA AR BR going for the third fangs of the father, they run several 10man and one 25. How can you call that a legendary weapon? I recognize that the old drop rate system was bad, i have a sulfuras, 1glaive, half thunderaan the other half simply doesnt drop and about 1/3 of Shadowmourne. I simply do not agree with the number of staves in brazilian realms, fangs are getting pretty common also.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">endersown</div><div class="date">2012-02-28, 07:19 PM</div></div><div class="posttext">Cata essentially had 2 patches. 4.1 was supposed to be part of 4.2, so that's really just one patch. 4.3 was the other. Over a year and only 2 patches. That's ~$230-270 for 3 content tiers and, since I have no desire to level new toons, very little value for someone like me. Cata was a more boring story for me than:<br />
+Vanilla (I didn't really know what was going on, but I felt like it was important. Doing the AQ gate turn ins without any knowledge that there was a staff questline to go along with it, I still felt the excitement of the movement.)<br />
+TBC (Again, I didn't really know what was going on for awhile, but I knew a little bit more and some of the zones had really cool plots and they felt epic and important), and<br />
+WotLK (I knew everything that was going on by this time. I was invested in the game by now, but I still felt the story a lot more. Not everywhere, granted, but moments like Wrathgate had me really into the story)<br />
+WoW has never been fantastic at storytelling, imo. But they've always been good at making the player feel like the story was vital and something worth caring about, even if the details were obscure or something; again, in my opinion.<br />
+<br />
+I don't know how or where Cata failed, because it sounded so awesome before it released and it took me a few months to realize I wasn't having fun anymore. It definitely didn't fail in every aspect, but, specifically for this post by Kosak, the storytelling did fail. The only zone I was even remotely interested in was Deepholme, and even there it was only slightly. <br />
+<br />
+I remember constantly telling people how awesome a value WoW was in the past. $15 a month! That's insane, when movie tickets are $10 and everything else costs at least an arm, and often a leg too. It used to be the best way I could spend $15. About 2 or 3 months into Cata, that suddenly stopped being true. I would rather spend $15 on food, some redbox rentals, or something like that than WoW. <br />
+<br />
+Here's to hoping MoP brings the value back to that $230 / year.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TommyJohn</div><div class="date">2012-02-28, 07:19 PM</div></div><div class="posttext">Shadowmourne was my personal favorite for legendary questlines. Hell, it even changed the mechanics of a few fights.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mvaliz</div><div class="date">2012-02-28, 07:20 PM</div></div><div class="posttext">I love how in the story section he mentions how great Mt Hyjal, Vashir and Deeholm was... and carefully omits uldum. I hope this is a good sign. :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deadanon</div><div class="date">2012-02-28, 07:20 PM</div></div><div class="posttext">It seemed like even the Argent Tournament ones were less painful than Molten Front. I won't repeat the MF grind after the first character again.<br />
+<br />
+Agree - Fireand quest were the most grindy and boring so far. 125 of some tree junk that was created just for a formula to hand out loot with as painfull threshold as BLizzard could push it. And they are wondering why the lost 1 million subs ? Really ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4e4dcc5580</div><div class="date">2012-02-28, 07:27 PM</div></div><div class="posttext">Q: The Cataclysm patches also saw the debut of some legendary weapons: Dragonwrath and the Fangs of the Father. Will future legendaries be this, uh, legendary?Good question. We love class-specific content, but quest lines like those are very resource-intensive.I...er...what, sorry but if Blizzard loves class-specific content then why did they remove every class-specific quest but the new crappy lvl20+50 class item quests with the launch of Cataclysm. Most of them didn't even need removing or changing that much...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deadanon</div><div class="date">2012-02-28, 07:27 PM</div></div><div class="posttext">One more thing to add to the 5 high lvl questmaps in Cata. There was no consistency in the story telling. Some had voiceover - others had nothing. Some had cutscenes - others didn't. It was a total nightmare in terms of immersion IMO. The biggest fail of the high lvl quest maps ? One story that ppl were forced to do no matter what. Thats just bad when it comes to Alts. The map that failed the most ? Vashr. Why ? Because it was two big considering the 3rd dimention it brought to it. And the story telling there was just horrible. And lastly ... Stop pileing stuff in Caverns of time. Crreate new map for such content.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hovsa</div><div class="date">2012-02-28, 07:28 PM</div></div><div class="posttext">How can anyone take this biased crap seriously.... avoiding every single bit that made Cata the end of WoW as we knew it...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TehTiny</div><div class="date">2012-02-28, 07:28 PM</div></div><div class="posttext">Boy do I miss the days where I got to level 56 on an alt and had to choose between winterspring or silithus to get to BC content. /Sarcasm. It is hard to deny that the world felt bigger when you had to travel across zones and sometimes even continents to complete quest lines. But after about the second time of doing such a quest line and having to pay 12 different flight masters to get to a destination in a decent amount of time you never wanted to do it again. There are certain things from back then I never got to experience such as the two mount class questlines. That is my own fault for leveling a paladin or warlock so late in the game. I am currently working on what will be my 9th level 85 toon and the only zones that I ever hate to see at this point are the BC ones.(I have leveled through the bc zones well over 20 times.) Sure the cata zones could have been done differently to make it feel less like a race from point A to B. One of the arguments I see all the time is that the game doesn't matter till 85 so why do you care?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nathiest</div><div class="date">2012-02-28, 07:30 PM</div></div><div class="posttext">To summarize We fucked up, we're sorry, we'll make it better.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">greyghost</div><div class="date">2012-02-28, 07:32 PM</div></div><div class="posttext">How can anyone take this biased crap seriously.... avoiding every single bit that made Cata the end of WoW as we knew it...<br />
+<br />
+Well, I'm sure Blizzard will have the interviewer throw in questions like <br />
+<br />
+&quot;Why do you smoke so much man sausage?&quot; <br />
+&quot;How come your mom no longer has Discount Tuesdays?&quot; and <br />
+&quot;So I hear WoW has 10 million subs now why is your game so DEAD AND STUPID&quot; <br />
+<br />
+...into their future interviews so it'll fit the right amount of fair and balanced questioning you clearly have come to expect from the internet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sokolas</div><div class="date">2012-02-28, 07:34 PM</div></div><div class="posttext">It's a good move before the new xpac to say things like &quot;yeah, we know this expansion was a failure, but we sure learn from our mistakes and will make a new truly amazing one&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xuvial</div><div class="date">2012-02-28, 07:37 PM</div></div><div class="posttext">I'm really impressed by the quest/zone design team, those were some very insightful responses and it's great how far they have come. If only the PvP/PvE balance team held the same amount of wisdom and insight, maybe then WoW would actually be a nice PvP game and not a total unbalanced mess.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tinykong</div><div class="date">2012-02-28, 07:40 PM</div></div><div class="posttext">The problem with the direction they are heading, is that they are making everything more accessible and easier, but the rewards are still paced at the old intervals.They dribble out gear and rep/faction/profession stuff, which people burn through quickly, and get tired of seeing no reward. My guild was only raiding two nights a week, we'd clear Morchok (and not see an axe drop for the 10th week in a row) through gunship the first night, work on new stuff the second night, and then there was absolutely zero reason for me to continue to play the rest of the week. I could log on and do a cooking/fishing daily, but that's 5 minutes at the most. <br />
+<br />
+You can burn through LFR and heroics so quickly, and the rewards for them come so few and far between, that people just feel like it's a waste of time. Sure, I could have gone and done LFR again, just to lose a roll on one of the last few pieces to someone who already has it and it looking to gear trade, but that isn't fun. Neither is slogging through the same 5 darkmoon faire dailies once a month.<br />
+<br />
+Blizzard needs to release more content, in much quicker time frames than they are accustomed to. Design 20 darkmoon faire games, release 5 week 1, then 5 more, then 5 more, and then 5 more. Then remove all of those, and add in more. Bring out a tier with 12 bosses, then 3 months later, 12 more bosses. Keep people interested with more community news, more PTR news, more future content news.Heres hoping that MOP actually sticks to the &quot;More content, faster&quot; ideaology they failed at in Cata. Rather than making molten front be a daily area, make it a one off quest zone. Put as much time into the casual player content as you do the legendary content.<br />
+<br />
+Gated easy content is no where near as fun and rewarding as open difficult content. I'd rather spend 2 weeks trying to get through a difficult quest encounter than spend 2 weeks logging on everyday to pick 6 seeds and kill the same 8 mobs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neichus</div><div class="date">2012-02-28, 07:40 PM</div></div><div class="posttext">It's a good move before the new xpac to say things like &quot;yeah, we know this expansion was a failure, but we sure learn from our mistakes and will make a new truly amazing one&quot;.<br />
+<br />
+They don't think it was a failure. Like every other installment so far they learned some lessons. Somethings they got right on accident before (like having a single cohesive continent to quest on). Other times they were experimenting, with better or worse results. There really is a difference between saying mistakes were made and calling something a failure.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Okacz</div><div class="date">2012-02-28, 07:48 PM</div></div><div class="posttext">For me, Cata served its purpose. Old zones just HAD to be revamped, no matter what. Whine about lack of content in Cata is waaaaaaaaay smaller than whine that would slowly build up about old zones being so painful to lvl.<br />
+<br />
+But I still feel that &quot;We put all effort into making 1-60 better&quot; is a lame excuse for totally screwing up 4.3 - expansion end patch.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bloodwine77</div><div class="date">2012-02-28, 07:52 PM</div></div><div class="posttext">Dailies are bad? Show me better dailies in history of WoW. Argent tournament was quite ok I guess. And that is kinda all. MF dailies are maybe boring at the end (SO BORING), but when you start them they are quite entertaining for a few days in a row. Plus, they provide real goals - unlocking next stages.<br />
+<br />
+Isle of Quel'Danas during TBC is the best daily quest hub this game has ever seen. The quest zone progressed and changed, but didn't lock people into separate phases from each other. Sure, you had to be there from the start to see and experience the transformation of the zone, but I honestly think that way is better than all the phasing that is overused now that takes away from the game's social experience.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">crsh1976</div><div class="date">2012-02-28, 07:53 PM</div></div><div class="posttext">They don't think it was a failure. Like every other installment so far they learned some lessons. Somethings they got right on accident before (like having a single cohesive continent to quest on). Other times they were experimenting, with better or worse results. There really is a difference between saying mistakes were made and calling something a failure.<br />
+<br />
+Failure is a pretty strong word, but this expansion went a little further than being just a bore; they never lost so many subscribers due to choices and patches they made during an expansion, hell players started to drop out within the first month after the expansion came out (lol I was one of them, too).<br />
+<br />
+It's not to say they can't turn this around, but let's at least agree that Cataclysm has its fair share of issues and earned itself a bad rep for good reasons.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2ab86bf917</div><div class="date">2012-02-28, 07:55 PM</div></div><div class="posttext">great read, really good :3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Axxy</div><div class="date">2012-02-28, 07:57 PM</div></div><div class="posttext">Y'know, I really don't think it bodes well for MoP if Blizzard are still in complete denial that Cataclysm was a major disappointment to a lot of it's playerbase. 1.8 million lost subs should tell you that something is not quite working right, all within 6-9 months of release. /shakeshead</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jd5</div><div class="date">2012-02-28, 07:58 PM</div></div><div class="posttext">I know I'll take some slack as there were many WotLK haters, but IMO that is the only time since original WoW they got questing right (yes there were issues with raiding being too easy, etc... I'm talking only about questing).<br />
+<br />
+Why it worked (this is coming from someone with 15x 80's at the end of it and 12x 85's at the end of Cata - which I'm amazed I did that many, having to do Deepholm that many times drained me) is that you had enough over-lap in the zones that you could choose your own path.<br />
+<br />
+With there being essentially two starting zones, four middle zones and two end zones, you could tailor how you leveled to 80 by doing both starters, or one and all the mid zones, or all the early zones and save the later zones for $ and so on. Much better then Cata, which was starting A or B (and with the polarizing hatred by 50% of the people on Vash, it was essentially one starting zone), must do Deepholm, finishing zone A or B.<br />
+<br />
+Now yes WotLK was over 10 levels, but you can still provide a similar system over 5 levels and give people more areas to choose for questing.<br />
+<br />
+IMO MoP should be seven zones (One extra zone would not be enough). Two for starting, three for middle and 2 for the end. Over lap them all by a level or so, that way if someone wants they can skip ahead or they can play thru all the zones.<br />
+<br />
+Given it looks like MoP is only 5 zones tho', they haven't figured out why people got bored with leveling in Cata. It'll be the same issue of people getting bored quick with the same path on every character.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">endersown</div><div class="date">2012-02-28, 07:59 PM</div></div><div class="posttext">Gated easy content is no where near as fun and rewarding as open difficult content. I'd rather spend 2 weeks trying to get through a difficult quest encounter than spend 2 weeks logging on everyday to pick 6 seeds and kill the same 8 mobs.<br />
+<br />
+This should be the new Blizzard motto. Raiding is still gated due to the whole other people requirement. I really would love it if they provided huge, extremely difficult quests as a core form of end game progression. You can either raid, pvp or quest. If you raid, you could theoretically get all the gear you need in just a few weeks, but no more &quot;badges&quot; so you rely on drops and that's it. PvP you can get all the gear you need in a month or two, but it's much more consistent and is controlled by your choices for new gear to purchase. Or, you can go on incredibly long, difficult quest lines. Each quest or maybe every few quests, you get a new piece of gear equivalent to current raid gear. It would take a much longer period of time /played to get the full set of new gear, but you wouldn't be relying on anyone else. Playing an hour-ish a day, it would take a couple months to get the full set. Maybe release a new quest line or part of the quest line each week so that it wouldn't become required for raiding.<br />
+<br />
+I love to raid, absolutely love it. What I want more of, however, is challenging, educating, and interesting solo content. I want to have so much solo content that is NOT repetitive that I can log on at any time and just have something new to do. <br />
+<br />
+It'll never happen, I know that. Still... it's my personal, and probably incredibly unpopular, opinion.<br />
+<br />
+Edit to add: I also think they needed to do something about 1-60 zones, as they really were becoming rapidly outpaced by newer content. I, personally, think they chose the wrong thing. Taking it out and starting the game at level 60, allowing alts to start at level 40, 50, 60 or wherever after someone has done 1-60 once, doing an Item and Level squish and making the game start at level 1, but in TBC... I don't know what would have been a better idea than what they did, but spending (wasting?) so much time redoing leveling content was, on some level, a mistake.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pantelija</div><div class="date">2012-02-28, 08:00 PM</div></div><div class="posttext">They always did these kind of things , at the end of expansion or few months after last major content patch they say they arent happy and they know they screwed up but they will make up for it in next expansion and all that will come out will be the same dissapointing crap tbh , it seems they are exploting hype and hope of guilable players...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Argroth</div><div class="date">2012-02-28, 08:17 PM</div></div><div class="posttext">I wonder when/how they are gonna copy SWTOR and add voice acting then pretend it was a totally original idea that they surely have been &quot;working on for awhile&quot; and not just picking everything from other mmos (I realize SWTOR is not the first mmo with voice over but I doubt any went to its extent in the past)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc44b549a6e8</div><div class="date">2012-02-28, 08:21 PM</div></div><div class="posttext">I wonder when/how they are gonna copy SWTOR and add voice acting then pretend it was a totally original idea that they surely have been &quot;working on for awhile&quot; and not just picking everything from other mmos (I realize SWTOR is not the first mmo with voice over but I doubt any went to its extent in the past)<br />
+<br />
+SW:TOR made the Guinness Book of World Records with their amount of voice-over, so I think it's a safe bet no one ever went quite that far :P<br />
+<br />
+http://www.guinnessworldrecords.com/news/2012/1/star-wars-the-old-republic-recognised-guinness-world-records-2012-gamers-edition/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc5457af5be</div><div class="date">2012-02-28, 08:21 PM</div></div><div class="posttext">I love how people are still railing on about Raids and droprates and the fact 4.1 only had &quot;rehashed heroics.&quot; This was an interview with the Lead Quest Designer about the QUESTS in WoW not an interview with the &quot;guy who created everything and is solely responsible for everything... ever&quot; - the vast majority of stuff people are railing on about isn't even related to his job. :rolleyes:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">toychristopher</div><div class="date">2012-02-28, 08:31 PM</div></div><div class="posttext">I didn't think I would ever say this but I'm tired of hearing from the developers. They make me depressed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca99433fff3</div><div class="date">2012-02-28, 08:31 PM</div></div><div class="posttext">kosak and ghostcrawler shud run for a politcians job cos they have all theright things talking bullcrap and giving loads of pr nonsense to win ppl over</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kazlehoff</div><div class="date">2012-02-28, 08:34 PM</div></div><div class="posttext">Q: The Cataclysm patches also saw the debut of some legendary weapons: Dragonwrath and the Fangs of the Father. Will future legendaries be this, uh, legendary?Good question. We love class-specific content, but quest lines like those are very resource-intensive<br />
+<br />
+Despite the fact that at least 75% of the non rogue community thought the idea of a single class legendary for a class that allready had access to 4 legendaries (3 were BIS at tier) when some classes and specs had not yet had access to a legendary item was biiased and basicly a gimmie to a class that had recieved alot of nerfing over the expansion (protip feral druids got completely hammered early in the expansion, and hunters havnt seen a BiS legendary yet (the bow from brutalis was better... to the point that the first Thor'dal went to a rogue))<br />
+<br />
+Role/ Multiple classes legendaries blizzard. you did decently with dragonwrath. the Cash-for-purples daggers? no, not so much.<br />
+<br />
+<br />
+Prediction: next expansion will offer at some point a Pole-arm legendary for Feral / Guardian druids and Monk DPS / Tanks.<br />
+<br />
+<br />
+Overall, there was a lot of stuff i liked, and did not like in cata.<br />
+<br />
+Liked: <br />
+- the new (and updated) zones. the new quest flow for low levels (i leveled 2 alts through it just to see each continent's new content.)<br />
+- the 85 zones stories. they didn't match up well, but i thought of it, as i went through it, to be more a situation of smaller goals in each area being completed for the greater good.<br />
+- the Raids. T11 was HARD. and it was glorious. Firelands was an impressive raid, but was Nerfed too hard, too quickly. Blizzard originally said they would Nerf it by small amounts over time, then slapped everything on at maximum in one week. that first week post Nerf was really disappointing.<br />
+- Goblins were bad ass. i thought they would end up being horde gnomes, but they came across much better than the gnomes did (I'm guessing this was because the gnomes were a last minute addition to vanilla, whereas goblins had a lot of back-story to draw on.)<br />
+<br />
+<br />
+Did not like:<br />
+- Herbalisim. Twilight highlands and Deepholm are still a PITA to herb. long work, low results. unless you are willing to break the rules, something me and a lot of others will not do. then having all the whiptail in one tiny area around the river and lake? completely mindless. extreme opposite ends of the scale. find a middle ground for panda island.<br />
+- Archaeology. Lots of grinding, not much to show for it. if you were lucky enough to get what you wanted out of it early it was a great feeling. if you didn't, you had wasted a lot of time on items or gear that was quickly outshone in T12. if you are still grinding your bug mount like me, i feel your pain.<br />
+- nerfing the Obsidian shuffle. come on. people need to be able to make money without needing experience on the NYSE.<br />
+- The cuts: War of the ancients excited the hell out of me. then they cut it with no notice. i shall lay flowers before that instance portal in Vashjir on the anniversary of the day they announced the cut.<br />
+- blizzard backed down on the casuals. ZA and ZG gave free epics, like they said they wouldn't do. the original heroics got Nerfed hard. DS heroic 5 mans are a joke. if they don't raid, what do they need competitive raiding gear for?<br />
+- LFR: liked the idea, hate the implementation. its TOO EASY. yes, the need for players to be able to figure it out and co-ordinate cross realm with no communication was and is important. but LFR was made WAY too easy, with no accountability to preform well or treat other players with any kind of respect.<br />
+- spine and madness: Deathwing was kind of a crappy end encounter. in each of the fights you battle him, he is more of a background object or platform than a real boss. in comparison to the epicness of fighting back Illidan, Kiljaden, LK.... Deathwing was kind of a joke. the end of madness feels like flushing Deathwing down a toilet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ihateyouall</div><div class="date">2012-02-28, 08:35 PM</div></div><div class="posttext">Umm, complaining about how they didn't talk about raids is pointless considering this wasn't the person behind raids that they interviewed, but the person behind quests.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neichus</div><div class="date">2012-02-28, 08:37 PM</div></div><div class="posttext">kosak and ghostcrawler shud run for a politcians job cos they have all theright things talking bullcrap and giving loads of pr nonsense to win ppl over<br />
+<br />
+Ghostcrawler was incredibly open and forthcoming with information during WotLK's development. The result was less than spectacular. Rather than lead people to a greater understanding of game development, it simply caused them to adopt an entitled attitude of always needing more communication while at the same time giving them the delusion they had as much information and expertise as the developers themselves. In short, trying to engage in a normal conversation was unsuccessful in achieving any useful goals.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Static</div><div class="date">2012-02-28, 08:46 PM</div></div><div class="posttext">Would it be okay for EU players to download this new 64-bit client as well?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kazlehoff</div><div class="date">2012-02-28, 08:51 PM</div></div><div class="posttext">Would it be okay for EU players to download this new 64-bit client as well?<br />
+<br />
+<br />
+<br />
+Nope, sorry, US only. lol :D<br />
+<br />
+couldnt you download it, and then just put it in tomorrow on EU maintiainence day?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chouzan</div><div class="date">2012-02-28, 08:51 PM</div></div><div class="posttext">Fangs of the Father is a garbage quest line. I was absolutely horrified that they even phased the final turn in so the guild that accompanies the Rogue for months can't see a single thing. Great, we get it, you went and killed some dragons off in the downtime when you weren't killing raid dragons, but you didn't do it yourself. <br />
+<br />
+Totally pissed in the face of every non-Rogue in a guild, and I just know Fangs will go down in WoW history as the most forced and worst legendary there is. Even Rogues I knew pre-patch who have theirs and those who are just now in the midst of their own set aren't excited about them beyond anything but an ilvl boost that will make them feel like they're doing higher content than they are.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TWBrien</div><div class="date">2012-02-28, 08:57 PM</div></div><div class="posttext">Fangs of the Father is a garbage quest line. I was absolutely horrified that they even phased the final turn in so the guild that accompanies the Rogue for months can't see a single thing. Great, we get it, you went and killed some dragons off in the downtime when you weren't killing raid dragons, but you didn't do it yourself. <br />
+<br />
+Totally pissed in the face of every non-Rogue in a guild, and I just know Fangs will go down in WoW history as the most forced and worst legendary there is. Even Rogues I knew pre-patch who have theirs and those who are just now in the midst of their own set aren't excited about them beyond anything but an ilvl boost that will make them feel like they're doing higher content than they are.<br />
+<br />
+<br />
+Couldn't have said it better myself.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Queen of Hamsters</div><div class="date">2012-02-28, 09:01 PM</div></div><div class="posttext">As long as they do not repeat the failure that is the Female Worgen (I loathe those bent &quot;tauren&quot; necks) I hope that they really bring a lot with them from Cata and into MoP. I can't wait for the next chapter of this game, and I am leaving Cataclysm with a lot of fond memories and awesome stuff for my character ^^.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">quantaron</div><div class="date">2012-02-28, 09:07 PM</div></div><div class="posttext">Well, if there was any doubt about Horde favoritism, this should put it to rest:<br />
+&quot;Cataclysm was Thrall's expansion.&quot;<br />
+<br />
+I'm a die-hard Alliance player. I have never played Horde, and have never had any desire to play Horde, and frankly, I hate the Horde. It's the intention of the design of the game that I hate the Horde - my faction has been at war with them for ages, we can't even talk to each other, and they go out of their way with zones like Arathi to show that the Horde are truly evil.<br />
+<br />
+So why the hell would half the playerbase care about the green-skinned demon orc who was their faction leader for years? I wouldn't expect the Horde to give a crap about a giant Varian Wrynn storyline, and I don't give a damn about Thrall. Just kill him off.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kanariya</div><div class="date">2012-02-28, 09:10 PM</div></div><div class="posttext">and still no changes to silithus<br />
+<br />
+Silithus was such an epic zone when they redid it in Vanilla. An elite-quest hub with micro-dungeons and a powerful story in its quest lines, not to mention plenty of dangerous mobs and two awesome raid zones. Grinding the repeatable quests was well worth the time for the epic rewards you were able to get. It's such a shame they butchered the whole thing in Cataclysm and barely left enough quests for someone in heirlooms to get from 55 to 57. Seriously, there are about 20 quests that you can do now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">The Ogdru Jahad</div><div class="date">2012-02-28, 09:25 PM</div></div><div class="posttext">Well, if there was any doubt about Horde favoritism, this should put it to rest:<br />
+&quot;Cataclysm was Thrall's expansion.&quot;<br />
+<br />
+I'm a die-hard Alliance player. I have never played Horde, and have never had any desire to play Horde, and frankly, I hate the Horde. It's the intention of the design of the game that I hate the Horde - my faction has been at war with them for ages, we can't even talk to each other, and they go out of their way with zones like Arathi to show that the Horde are truly evil.<br />
+<br />
+So why the hell would half the playerbase care about the green-skinned demon orc who was their faction leader for years? I wouldn't expect the Horde to give a crap about a giant Varian Wrynn storyline, and I don't give a damn about Thrall. Just kill him off.<br />
+<br />
+Blind hatred is pointless hatred. You really don't understand the Horde-Alliance war if you think Thrall is some &quot;green skinned demon orc&quot;. Considering he refused to give into his peoples bloodlust and instead cleanse them of it. Bringing peace to his people. Thrall, which may be a mary-sue, is by far one of the purest and most well intentioned characters of warcraft. If anyone is a retard, it's doucheVarian Wrynn. Find me one person who actually likes him and can support as to why hes a good guy. Because I'm sure 99% of the playerbase, and the entirety of the alliance finds him to be a huge tool who should be killed off. Not to mention, if you read the lore for once. You would see that the Alliance were basically Nazis. They rallied up the Orcs and put them in internment camps. Sounds like the Alliance are the good guys right? Lmfao.<br />
+<br />
+I love people who know nothing about the story and spew around their uneducated opinion as fact for the masses. Trollbait.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fangless</div><div class="date">2012-02-28, 09:26 PM</div></div><div class="posttext">This should be the new Blizzard motto. Raiding is still gated due to the whole other people requirement. I really would love it if they provided huge, extremely difficult quests as a core form of end game progression. You can either raid, pvp or quest. If you raid, you could theoretically get all the gear you need in just a few weeks, but no more &quot;badges&quot; so you rely on drops and that's it. PvP you can get all the gear you need in a month or two, but it's much more consistent and is controlled by your choices for new gear to purchase. Or, you can go on incredibly long, difficult quest lines. Each quest or maybe every few quests, you get a new piece of gear equivalent to current raid gear. It would take a much longer period of time /played to get the full set of new gear, but you wouldn't be relying on anyone else. Playing an hour-ish a day, it would take a couple months to get the full set. Maybe release a new quest line or part of the quest line each week so that it wouldn't become required for raiding.<br />
+<br />
+I love to raid, absolutely love it. What I want more of, however, is challenging, educating, and interesting solo content. I want to have so much solo content that is NOT repetitive that I can log on at any time and just have something new to do. <br />
+<br />
+It'll never happen, I know that. Still... it's my personal, and probably incredibly unpopular, opinion.<br />
+<br />
+Edit to add: I also think they needed to do something about 1-60 zones, as they really were becoming rapidly outpaced by newer content. I, personally, think they chose the wrong thing. Taking it out and starting the game at level 60, allowing alts to start at level 40, 50, 60 or wherever after someone has done 1-60 once, doing an Item and Level squish and making the game start at level 1, but in TBC... I don't know what would have been a better idea than what they did, but spending (wasting?) so much time redoing leveling content was, on some level, a mistake.<br />
+<br />
+Or spend less time making level content that people don't even absorb anyway, and more time spent making end-game content which everyone will be doing after the first week when they level to 90.<br />
+<br />
+<br />
+People wonder why Blizzard doesn't seem like they know what players want, it's because 10 million people ask for contradictory things.<br />
+<br />
+---------- Post added 2012-02-28 at 03:28 PM ----------<br />
+<br />
+<br />
+Silithus was such an epic zone when they redid it in Vanilla. An elite-quest hub with micro-dungeons and a powerful story in its quest lines, not to mention plenty of dangerous mobs and two awesome raid zones. Grinding the repeatable quests was well worth the time for the epic rewards you were able to get. It's such a shame they butchered the whole thing in Cataclysm and barely left enough quests for someone in heirlooms to get from 55 to 57. Seriously, there are about 20 quests that you can do now.<br />
+<br />
+Silithus wasn't fun in Vanilla. Grinding badges for the AQ Gates was only neat because of the zone PVP going on. The cult mob grinding was horrible and gave crappy rewards. I'm not sure how you got so much fun out of it ...<br />
+<br />
+AQ40 was fun, but that has nothing to do with Silithus.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">The Ogdru Jahad</div><div class="date">2012-02-28, 09:33 PM</div></div><div class="posttext">Silithus wasn't fun in Vanilla. Grinding badges for the AQ Gates was only neat because of the zone PVP going on. The cult mob grinding was horrible and gave crappy rewards. I'm not sure how you got so much fun out of it ...<br />
+<br />
+AQ40 was fun, but that has nothing to do with Silithus.<br />
+<br />
+I would do anything to keep silithus untouched. That zone was awesome, the entire &quot;feel&quot; of the zone was perfect for the storyline there. God I hope blizzard never touches it and leaves it as is for us who love stuff from vanilla.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">quantaron</div><div class="date">2012-02-28, 09:33 PM</div></div><div class="posttext">They rallied up the Orcs and put them in internment camps. Sounds like the Alliance are the good guys right? Lmfao.<br />
+<br />
+The orcs drank the blood of a demon and then literally invaded the Humans' homeworld. It's not automatically Nazi-esque to put things that are alive into internment camps - are we all nazis for putting cows in internment camps before they're slaughtered? The orcs are demonic green-skinned savages, not humans. I submit that it is you, sir, who is the troll here.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">endersown</div><div class="date">2012-02-28, 09:36 PM</div></div><div class="posttext">Or spend less time making level content that people don't even absorb anyway, and more time spent making end-game content which everyone will be doing after the first week when they level to 90.<br />
+<br />
+<br />
+People wonder why Blizzard doesn't seem like they know what players want, it's because 10 million people ask for contradictory things.<br />
+<br />
+I'm not sure what you mean. I was talking about end game content AS quests while potentially removing thousands of leveling quests for exactly the reason you stated: focus on endgame, not leveling. I think they shouldn't have worried about leveling content because... leveling, who cares? I've never met a player that's passionate about leveling content. I've met plenty who are passionate about leveling alts, but no one cares about the content they're leveling through (beyond a certain point). A much greater portion is passionate about end game content, however. <br />
+<br />
+They should have every team working on end game content of one form or another for like, 80% of the time, at least. I think that should include the lore and quest design guys. They should be making epic class, race, and faction quest lines as a form of end game content. <br />
+<br />
+Daily zones are not awesome end game solo content. They are adequate and they require much less effort. From a company like Blizzard which, at least in the past, prides itself on doing the awesome, rather than the easy, it's surprising to me that they're talking about adding more daily zones as the solution to lack of end game solo content.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ghul</div><div class="date">2012-02-28, 09:39 PM</div></div><div class="posttext">My future 85-90 questing experience;Find Q mark &gt; click &gt; don't read any of the boring script, just accept &gt; press M &gt; head to Q mark on map &gt; complete &gt; repeat untill 90 &gt; never leave the capital city for another 12 months.Who cares about questing, wow is stale.<br />
+<br />
+oh you mean just like every other mmo/game out there?<br />
+skipping quest-textes is a problem of the individual, not of the game.<br />
+<br />
+just finally stop claiming that your opininon reflects the whole world! im getting sick and tired of reading the same &quot;im saying its like this and everyone who disagrees is an angry kid&quot;-threads over and over again~~<br />
+<br />
+just quit the game and move on with your life, whats so hard about that?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1615415e70</div><div class="date">2012-02-28, 09:42 PM</div></div><div class="posttext">What this reminded me of: When you go for an interview and you are asked: 'What are your weak points?' The idea is to give an answer that does show a negative side, to succumb to the question BUT the key is to make the negative side actually sound slightly positive. The interviewee is giving nothing away here. It's unfortunate and slightly disrespectful in that a lot of people are taking the time to read it and hopefully to learn something about what went on behind the scenes but ultimately they are blasted with a PR exercise. It's a pro company with pro 'guardians' so I wouldn't expect any less but honestly, this is barely worth reading, alas.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xe4ro</div><div class="date">2012-02-28, 09:46 PM</div></div><div class="posttext">Well, if there was any doubt about Horde favoritism, this should put it to rest:<br />
+&quot;Cataclysm was Thrall's expansion.&quot;<br />
+<br />
+I'm a die-hard Alliance player. I have never played Horde, and have never had any desire to play Horde, and frankly, I hate the Horde. It's the intention of the design of the game that I hate the Horde - my faction has been at war with them for ages, we can't even talk to each other, and they go out of their way with zones like Arathi to show that the Horde are truly evil.<br />
+<br />
+So why the hell would half the playerbase care about the green-skinned demon orc who was their faction leader for years? I wouldn't expect the Horde to give a crap about a giant Varian Wrynn storyline, and I don't give a damn about Thrall. Just kill him off.<br />
+<br />
+Never played much WarCraft 3 have you? Thrall is way more than just a Leader of the Horde.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">quantaron</div><div class="date">2012-02-28, 10:00 PM</div></div><div class="posttext">Never played much WarCraft 3 have you? Thrall is way more than just a Leader of the Horde.<br />
+<br />
+Not to me, he isn't. The only reason he's portrayed as such is that Chris Metzen has a fetish. He even walked out on the Blizzcon stage carrying Thrall's freakin hammer, and voices the character. They tried to juice him up with as much Mary Sue power as possible (he somehow takes over Deathwing's power as the Aspect of Earth in the Dragon Soul, despite the fact that Deathwing is STILL ALIVE), but he'll always be just another orc to me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Puntar</div><div class="date">2012-02-28, 10:10 PM</div></div><div class="posttext">You got to be kidding. You wear stuff that makes you get more than average XP and then complain that in this mode the quests get grey quicker? Really? /facepalm<br />
+<br />
+Well, even with only one heirloom you out level zone very, very quick. Even if you try without ANY heirloom, you will still level very fast, especially if you have rested status. <br />
+<br />
+Even after lvl. 60 if you quest and do occasional instance you will get a level up within 30 min (with only one heirloom!). I was actually surprised how quickly you get experience in 5m anyway.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc37672be2a3</div><div class="date">2012-02-28, 10:20 PM</div></div><div class="posttext">Fixed several client-side bugs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Serzha</div><div class="date">2012-02-28, 10:49 PM</div></div><div class="posttext">Urgh... I would have to disagree with the rogue questline, the &quot;bosses&quot; themselves are a joke, even without reading any tactics you can one-shot it.. the sneaking gauntlets were fun, but they included too much &quot;vanish and rush&quot;, compared to &quot;sap this patrol and time it right to get through&quot; which could have been a lot more interesting... if the bosses also were capable of actually bloody killing you... it'd be a lot more fun as well... I got through the first boss in just heroic 5-man gear with 60% hp left, and fucking up maybe six interrupts... (which in theory should have killed me) and the second boss (Nelice or whatever?) was even easier... killed her with 90% hp left... the traveling time from Ravenholdt to Karazhan and back again took five times as long as the actual quest... which is disappointing...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deadanon</div><div class="date">2012-02-28, 11:01 PM</div></div><div class="posttext">I love how people are still railing on about Raids and droprates and the fact 4.1 only had &quot;rehashed heroics.&quot; This was an interview with the Lead Quest Designer about the QUESTS in WoW not an interview with the &quot;guy who created everything and is solely responsible for everything... ever&quot; - the vast majority of stuff people are railing on about isn't even related to his job. :rolleyes:<br />
+<br />
+And you dont think BLizzard desided to talk about quests cause it avoided the topic of patch 4.1? You have zero idea what PR stands for?<br />
+<br />
+---------- Post added 2012-02-28 at 11:02 PM ----------<br />
+<br />
+<br />
+I...er...what, sorry but if Blizzard loves class-specific content then why did they remove every class-specific quest but the new crappy lvl20+50 class item quests with the launch of Cataclysm. Most of them didn't even need removing or changing that much...<br />
+<br />
+100% agree.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">namelessone</div><div class="date">2012-02-28, 11:15 PM</div></div><div class="posttext">He is HAPPY about the old world revamp? Oh no. Does it mean we will see MORE of the linear questlines riddled with shoddy storytelling and pop-refs? God dammit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">llcjay1</div><div class="date">2012-02-28, 11:15 PM</div></div><div class="posttext">Dailies are the reason I am on a WoW break. I do not like to miss things (content and lore), and it was that drive that made me do the Firelands dailies. Not because I enjoyed them.I do not have a clue how to fix that model, but I wish I could. Maybe the PokeWoW will give me something to do other than that, but I'll still be missing that content.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Realism</div><div class="date">2012-02-28, 11:36 PM</div></div><div class="posttext">And you dont think BLizzard desided to talk about quests cause it avoided the topic of patch 4.1?<br />
+<br />
+This is the first in what will likely be a series of information releases leading up to the MoP press tour. They chose to open with Quest Design, and the only reason for this you're willing to accept is that they were desperately trying to avoid the subject of Patch 4.1 -- which they've, by the way, already discussed long ago when it came out in the first place?<br />
+<br />
+You don't suppose it was because Dave was the most readily available for a sit-down? Or that they thought Questing was the least complicated subject to start with? Or that they flipped a coin? Or anything more likely than a conspiracy theory that hinges on the idea that Blizzard is somehow afraid to address such a tiny unimportant issue?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sildor</div><div class="date">2012-02-28, 11:42 PM</div></div><div class="posttext">The biggest joke of the expansion was the Thrall quest chain. It was pushed as a patch feature, and was the least impressive content for a long time. Teleport to Uldum, kill 20 mobs, teleport to Vahj'ir and kill 20 mobs, teleport to Deepholm and... you guessed it kill 20 mobs, and finally, into the molten front to... kill 20 mobs!<br />
+<br />
+It might have an ok backstory, but really, come on, it was rubbish.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wyrdone</div><div class="date">2012-02-28, 11:42 PM</div></div><div class="posttext">Caution regarding 64-bit client.I placed the files and started up. Immediately wanted to update about 50MB of data after which it said game files don't match launcher.Reverting back to 32-bit client and the game decided it needed to fix corrupted files and is now downloading approx 250MB of stuff again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dproject</div><div class="date">2012-02-28, 11:47 PM</div></div><div class="posttext">Another &quot;praising my self&quot; interview which the result is just as expected. *yawn*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Umbrokill</div><div class="date">2012-02-29, 12:04 AM</div></div><div class="posttext">I wonder when/how they are gonna copy SWTOR and add voice acting then pretend it was a totally original idea that they surely have been &quot;working on for awhile&quot; and not just picking everything from other mmos (I realize SWTOR is not the first mmo with voice over but I doubt any went to its extent in the past)<br />
+<br />
+The quest lines in SW:TOR are the only redeeming things in the game, but after one time levling up, its FAR to boring, and endgame &quot;raiding&quot; and PVP is to similar to WoW, that they don't really stand out much. Thats what Blizzard now seems to want to avoid, to linear questlines that everyone HAS to do every time they level up, it offers no choice or variaty. <br />
+<br />
+OT: I liked the dailies in Wrath and BC, there where maybe a bit many in Wrath however. 10 quests in a relativly small zone is enough.<br />
+<br />
+I'm glad Blizzard realises some of their misstakes and think about how to make them better. Looking forward to MoP more after reading this. Lets hope they do more of these.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dasn</div><div class="date">2012-02-29, 01:00 AM</div></div><div class="posttext">Goblin starting zones are really cool, it's a shame we can't go back and explore them once we are done with them :/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Smokescreen1</div><div class="date">2012-02-29, 01:26 AM</div></div><div class="posttext">Nice Blue comments....except the Rogue legendaries....aren't that legendary. There are a lot of problems with them, ranging from not having Killing Spree on Weighted Blades, questionability of the proc itself conflicting with encounters/CDs, the damage not being nearly as legendary as other legendaries, no cool vanity items associated with it, no guild rewards like mounts/pets, no SW celebration, nothing. The wings aren't really anything but cosmetic, and it has a 5 min CD on it if I remember correctly. They could have given the ability to fly, as the caster staff does, and since they provide nothing else.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">retpally</div><div class="date">2012-02-29, 02:33 AM</div></div><div class="posttext">Sounds like they're not happy with a lot of their decisions this expansion lol.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2012-02-29, 03:49 AM</div></div><div class="posttext">Not sure what all the hate was in this thread. I thought the actual questing part of Cata was very good.I agree with him on a couple things. The Goblin first 5 levels were way to gimmicky, you felt like you were hardly playing your class at all. Once you get to the island it is much better. The Worgen area was awesome though.I didn´t mind the linear aspect of the 80-85 zones, but that is probably because I enjoyed the story and wasn´t all that interested in jumping to quests that gave the best rewards. Vash was absolutely my favorite zone in wow.I think the questing part of of cata was probably B+ or A- The reason I disliked the expansion is because the talent system and professions, which can barely be considered even an after-thought at this point. Archaeology was the biggest failure... it´s like fishing with flightpaths.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mazqaron</div><div class="date">2012-02-29, 03:54 AM</div></div><div class="posttext">The Molten Front dailies are poor compared to the Icecrown dailies especially after the crusaders patch. Mostly because they took too long; the quests themselves and the progression of the questlines took too long.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">F-Minus</div><div class="date">2012-02-29, 04:17 AM</div></div><div class="posttext">Thunderfury was the proper way of obtaining a legendary weapon. Split between both personal and guild effort, perfect balance, not to hard and not to easy to get. Well it was perfect. Everything else is just fiddling around with bad ideas. Collecting clusters/souls/pee from Bosses for 8 weeks is not called effort but boring, no variation except the quests.The guild should participate in obtaining a legendary, but not only by raiding with the guy, but with helping him. Well the staff had that summon boss event, which was cool, but we need more of those, like the collecting of carapaces for opening of AQ40 gates and such, where the whole guilds needs to punch in to get the designated guy a legendary stick, which in turn helps the whole guild. Right now, I don't have nothing with our rogues legendaries, I don't even know on what step he is, how much poop he already collected. Make some guild involvement please and announce progression on some guild information page and stuff like that. And here I'd say legendary items should only be obtainable with the whole guilds effort, no stinky solo guy who likes to pug should ever get one. etc. etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zingar</div><div class="date">2012-02-29, 04:32 AM</div></div><div class="posttext">thunderfury is just too random. you could spend months going there without getting any of the both pieces. i mean it was like what 4%? that means statistically its 25 weeks to get both pieces <br />
+also getting 3 of the same piece while none of the other wasnt fun</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd0826a5fa6</div><div class="date">2012-02-29, 04:50 AM</div></div><div class="posttext">Bug Fixes:<br />
+Fixed several client-side bugs.<br />
+Fantastic changelog!<br />
+I applaud Blizzard programmers for such an extensive all-things-explained patch notes!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wabun</div><div class="date">2012-02-29, 05:15 AM</div></div><div class="posttext">Going forward we want to convey a clearer narrative, delivered in the context of solid gameplay. We have some ideas on how to do that, and we’re also going to keep experimenting. This is important to us -- we talk about ways to tackle this problem all the time.<br />
+<br />
+How about you put in an extra Sound-Level bar for Dialog???? oO<br />
+<br />
+- 'Hold on a sec i want to hear what Ragnaros'... <br />
+<br />
+- &quot;BAAAAAANGGGGG-SHUNGGGG!!!!!!!!!!!!!!!!!!!!&quot; <br />
+<br />
+- 'WTF, WHICH $(§%/ Priest decided now is a good time to buff !?!?!?!'<br />
+<br />
+<br />
+, and that was 7 years ago, one would assume they should have fixed it by now... also while on topic wtf i spoke flavor-text doing on the combat-sound-bar??? oO if you can only have 3 bars put it on ambience for christs sake!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Conscious</div><div class="date">2012-02-29, 07:40 AM</div></div><div class="posttext">Glad to know that at least they share some of our concerns with how lack-luster the expansion has been.Still pissed they're using the 'Old World Revamp made the rest of the game suffer' cop out tho -_- smh</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hey Zeus</div><div class="date">2012-02-29, 07:48 AM</div></div><div class="posttext">i personally hated the goblin and worgen starting zones. not letting me leave til level 15? wtf...? means i cant keep profs up to date as i level, means i cant level how i want to level etc. ive leveled 12 toons through the human quests. and theyre my favorite. and thats why i do them. and 1 orc, 1 tauren, 3 undead, 1 belf, 1 nelf, 1 dwarf. but when i just make a toon i like to do it how i want to do it. i dont want to be forced into another set of linear bullshit quests. i dont like linear quests. i like being able to immerse myself in the world and do what i want to do when i want to do it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sidone</div><div class="date">2012-02-29, 08:17 AM</div></div><div class="posttext">Fantastic changelog!<br />
+I applaud Blizzard programmers for such an extensive all-things-explained patch notes!<br />
+<br />
+If those client-side bugs were any concern of us, i'm sure they would show us.<br />
+They usually elaborate on server-side stuff.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb1848b600a</div><div class="date">2012-02-29, 08:32 AM</div></div><div class="posttext">Fantastic changelog!<br />
+I applaud Blizzard programmers for such an extensive all-things-explained patch notes!<br />
+<br />
+It is brilliant. They don't tell you what they fixed, so you can't bitch about what they didn't fix.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">good diu bro</div><div class="date">2012-02-29, 09:02 AM</div></div><div class="posttext">Would it be okay for EU players to download this new 64-bit client as well?<br />
+<br />
+Yes you can, but you have to wait for your launcher to upgrade your client to 4.3.3 first.<br />
+<br />
+Class specific quests are fine, before they remove them anyway, but class specific legendary which disrupts class balance is another thing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wildmoon</div><div class="date">2012-02-29, 09:12 AM</div></div><div class="posttext">Some people just don't even read before they post. As expect from WoW community.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc5d440c410</div><div class="date">2012-02-29, 09:26 AM</div></div><div class="posttext">IMO, make the legendary weapons faster/easier to obtain than currently, but require heroic mode clears. That will reduce the amount of staves in circulation, but also re-allocate the staves to people who deserve them.<br />
+<br />
+If you cleared Firelands on hc you would get the staff way faster than people doing it on normal. Nothing makes hc clearing guilds deserve the staff more than others. The problem with so many staves in circulation was that 25 man guilds could farm them so fast at the start and most of the top guilds have at least 10 of them while normal clearing 10 man guilds are lucky to have one even. If anything the 25 man guilds should have had less than they have today and the 10 man should be equal to what it is.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc04136042b</div><div class="date">2012-02-29, 09:29 AM</div></div><div class="posttext">Leveling up a new character to 60 nowadays is a great deal of fun Oh well,, thats the problem. Designers believe that oneshoting everygthing what is moving around is great deal of fun. They made lvling so easy, that it hurts my brain. And I used to like qesting before...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ZenX</div><div class="date">2012-02-29, 09:43 AM</div></div><div class="posttext">You know, for them saying the initial development and focus on 1-60 quests took away from their end game development...it is interesting to see so many people say they loved the difficulty and variety in T11 while finding T12 meh and T13 as /facepalm worthy. After 4.0.3, the initial xpac work was DONE. My worry going forward is how Blizzard failed to actually build new content into the expansion. I don't remember hearing so much that was planned, put into the game files, and left on the cutting room floor before it was pushed out -- at least not since vanilla.<br />
+<br />
+<br />
+I've leveled a bunch of alts both with and without herilooms and Adrim is correct. Jump on the heirloom point if you want, but that's attacking one detail instead of the whole picture.<br />
+<br />
+It's the one single thing that disappointed me about Azshara. The zone is huge. There's a ton of neat, interesting goblin stuff in there. And yet by the time I got the breadcrumb quest to go to Bildgewater Port, it was already time for me to leave the zone. I had only half of the quests done.<br />
+<br />
+At least with the old style you would get pockets of quests that would take you to certain areas of the zone and give you a little mini-glimpse or story about that particular area. I think Northern Barrens still holds on to that a bit. Southern Barrens is the one leveling zone I have not been through yet, so I do not know if I can say the same.<br />
+<br />
+I bet you've entered dungeons in the meanwhile, because having tested those quests with characters that had no heirlooms, no guild and with no dungeon entry, and in the end, I had done all the quests in those zones without them losing their exp. quality(i.e. staying yellow).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tennesseej</div><div class="date">2012-02-29, 09:49 AM</div></div><div class="posttext">Fantastic changelog!<br />
+I applaud Blizzard programmers for such an extensive all-things-explained patch notes!<br />
+<br />
+Or perhaps they are fixes that players wouldn't even now about, like format bug in how the client reports information to the server. The deeper you get into explaining certain bug fixes, the more people get confused and start raging with false assumptions and misinformation.<br />
+<br />
+I bet most people don't know at an extremely deep level how their computer works and what the software is doing, and that's a good thing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozen Death Knight</div><div class="date">2012-02-29, 09:55 AM</div></div><div class="posttext">I liked the Molten Front dailies, although I did not do them a lot because I stopped played some time after its release. It was the first time I even bothered with dailies and I really do not like doing them otherwise (one exception is a few of the Icecrown dailies). <br />
+<br />
+As for the revamped lvl 1-60 zones, I think they did a really good job. I simply dislike leveling after doing it once with one character. I have only one main since Vanilla, but &quot;Cataclysm&quot; changed my perspective and I started leveling a Rogue just for fun. Once &quot;MoP&quot; comes out, I will finally make another max level character as a Pandaren Monk. Certainly looking forward to that. <br />
+<br />
+When it comes to the story of &quot;Cataclysm&quot;, my problem with it is not that the ideas were bad. The problem was the presentation. Not to mention all the wasted lore and bad narrative where you needed to read the novels to completely understand the plot. If you can not tell the story in-game, do not bother telling it at all. I do not feel more immersed in the characters in-game unless you show it. <br />
+<br />
+Deathwing is a prime example of this problem. Good background story and interesting characterization from previous lore, but all that was wasted by having him fly around doing almost nothing. Also, his lack of presence in the lvl 80-85 zones is a huge glaring problem if you did not bother leveling again. In the end, he just turned out to be a big cliché in &quot;Cataclysm&quot; with not a lot of character to explore. &quot;WotLK&quot; did this the right way with the Lich King and I really hope Blizzard learn from that expansion when forming the narrative for villains in future expansions. <br />
+<br />
+As for linear experience in &quot;Cataclysm&quot;, it does not matter so much to me, as long as the quests are fun and the stories interesting. Still, I think Blizzard are going in the right direction with &quot;MoP&quot; by taking it easy with the linear questing. Mixing it up is always good. That way the questing will not feel too stale.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Puro</div><div class="date">2012-02-29, 10:03 AM</div></div><div class="posttext">Cata was bad, gogo next.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">foo</div><div class="date">2012-02-29, 10:12 AM</div></div><div class="posttext">Wow ended with Lich King. Vanilla, Burning crusade and Wotlk had a back story supported by Warcraft games and mostly Thirt Game, after that it ,doesn't feel epic anymore. Because how many time did you tell yourself (60-80) : &quot;Oh a saw that in W3, ah i remember him from a mission i played in Reign of Chaos/FT&quot; Revamping old zones = bad idea , update ok . Let's be honest do you even do outside SW/OGR anymore ? Ofc not, why would you. I don't even want to explore, i liked olds zones..so many memories= All wiped. Queue to Djn, tag a bg. World pvp ? wait ...What ? Most of the servers are like 5:1 Horde/Alliance Ratio, just because Blizzard wanted more money, doing so they ruined all epicness of rivaliry. &quot;Epic Gear ? Come to the market they give it for free...and if you wait a few months you will get a -30% bonus&quot; 25 or 10 soon you could raid with 5 man group...fewer we are more fun it is ..or it's the other way around ? And so much more...RIP</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc80afdcec58</div><div class="date">2012-02-29, 10:27 AM</div></div><div class="posttext">He must have an awesome job. Making your money by designing the same 'pick 10 flowers' and 'kill 10 flower monsters' 90% of the time. Levelling will just never be fun for me when they are halfassing like they do. I understand you simply need some filler quests, but ONE cool quest every zone is just them not caring. In Hyjal we got the jousting thing, in uldum it was the 'kill 1000 gnomes with a giant fireball' in Zuldrak it was that giant giant that you could ride. But those are the only quests that stand out, the rest is all of the same crap.<br />
+<br />
+Then i read about how he thought Firelands dailies were awesome. I hate them. Putting easy quests in 1 place, then telling people 'YOU CANT DO ANYMORE TODAY, GO JOIN A QUEUE' when they're 'done'. Sad. It's like they arent even trying to hide the fact that instead of making up good stuff, they'd rather put a limit on how much crap you can do per day.<br />
+<br />
+Then as i came to the Legendaries part, and how totally awesome he thinks legendaries are, i just shook my head and closed the page. Thanks for giving the same class 4 different legendaries man. Great design where 99% of the people are collecting 10 bear asses all throughout the game, and 1% of the people that also happen to be Rogues have this many specific class quest lines. Put all your work on an item that ruins the fun of the people on the opposite side of pvp, while keeping quest PvE boring and bland. Great design choice right there.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MasterHamster</div><div class="date">2012-02-29, 10:54 AM</div></div><div class="posttext">The game continues getting overall better and better. Whiners just can't tell</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alixie</div><div class="date">2012-02-29, 11:02 AM</div></div><div class="posttext">That flapflapflap jousting quest in Hyjal was the most fun I had in Cata by far. No troll. I liked having to steer, aim, and control my height. Better than the &quot;Collect 10 bunnies and kill 10 Fire elementals&quot; quests. Took me til now to realize I friggen hate auto attack combat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">popzx</div><div class="date">2012-02-29, 11:29 AM</div></div><div class="posttext">for the first time in 8 years I don't feel I'd be going back to WoW. They moving in completly wrong direction, the game is so easy and flat you don't wanna even touch it. It's not nearly the same experience it was in the years back. And no, I'm not going older, having a ton of fun with LoL atm with former WoW friends and I think it's a matter of game design failure in wow. PvE is too easy and boring as fuck, pvp is 100% broken in terms of balance and design with new skills kicking in every expansion.. Why thety just can't make you chose let's say 9 skills when you que for arena or BG and make them pure PvP and balance them around? They fail to adopt other games cons as they did in the past. I think all people responsible for blizz games success is moved to the new MMO and thats it. I never thoguht I can quit wow, srsly ;D And now I'm free that you Kasak! No hope is left for fixing WoW.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cirque</div><div class="date">2012-02-29, 11:30 AM</div></div><div class="posttext">The jousting quest wasn't all that bad, really.. Anyway I always hated goblins passionately. But when I finally did roll a goblin, it was the most fun I ever had. How can the goblin starting area be the one thing they criticize? I loved it. It was great. I hate siege-based combat but the goblins did it just right. It was awesome, original, and extremely funny.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elethiem</div><div class="date">2012-02-29, 11:36 AM</div></div><div class="posttext">A lot of these &quot;lessons&quot; should have been known in advance. The effort required, the shortcomings etc etc. It sounds like a very messily run development process that was rushed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cirque</div><div class="date">2012-02-29, 11:37 AM</div></div><div class="posttext">Fuck the Worgen and Goblin starting zones.<br />
+<br />
+Fuck no longer being able to level with a friend like I have in every single xpac.<br />
+<br />
+Fuck not being able to turn off XP or transmog or access any other Stormwind-only service due to phasing.<br />
+<br />
+Fuck phasing entirely.<br />
+<br />
+Fuck one-path-only quest chains.<br />
+<br />
+Fuck having to run to a third-party website every time I accidentally miss an exclaimation mark god knows where in Deepholm.<br />
+<br />
+Fuck Therazane chain on every single raiding toon.<br />
+<br />
+Yeah, I've done the &quot;new&quot; questing. It's crap. Most of the jokes aren't funny (some I admit are). Most of the chains are not &quot;epic&quot; unless you want to spend your whole life in a zone WELL past the level you should be in here. I did the Redridge chain once at by the time I got to the end in full heirlooms, the quests were fucking grey. That's brilliant.<br />
+<br />
+What I want is to get off the boat in Darkshore and have fifteen question marks, including some red ones, waiting for me. I leveled countless night elves through that zone...and Draenai and humans and really every race too...without getting sick of it. That was epic feeling.<br />
+<br />
+New Azeroth is crap and Dave &quot;Fargo&quot; Kosak is my new most-hated developer. Every time I run into a mob that evades because it spawned inside a rock, or get stuck in a new place or see a really crappy looking terrain transition I realized that they could have done a few things well but instead they opted to do a whole lot of things badly.That's a failure on all sides.<br />
+<br />
+Though I cannot agree with the tone in your post, I do agree with its content really. This pretty much summed up what I feel about Cata, aside from the phasing, with which I have no problems. But yeah, Darkshore and Ashenvale, I leveled countless, countless toons there never getting tired of it, it was great, and the new Cataclysm leveling really in my opinion ruined everything. I was a big altoholic.. Before cata. Now I barely even saw through the new Azeroth content once. I try and try but just can't get through it, it's easier than ever, knowing every quest will be as faceroll as the last, and even without heirlooms you outlevel a zone very fast even without doing dungeons.<br />
+<br />
+Therazane was the biggest joke they could ever come up with. I thought it couldn't get worse after Hodir... But clearly they outdid themselves. Cataclysm is very linear and that's another cockblock for me when it comes to leveling an alt, there's no relief, before I only dreaded Northrend but knew I would be quickly done and I loved Azeroth and also Outlands. Now I don't like Azeroth and Outlands is the same old, same old after 12 alts or so, and Northrend the same disaster it always was to me on alts, and after that I can only expect to see the same old annoying Cata content and fucking Therazane......<br />
+<br />
+But yeah, a lot of criticism there. That's really it, you know, when there was lack of shit to do on a main I'd pop on an alt and it was NP. But now not even that is interesting to me anymore. <br />
+<br />
+Plus the fact my main server is full and I still can't transfer heirlooms to other servers to make the suffering a bit less. =-=</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Malackai</div><div class="date">2012-02-29, 12:49 PM</div></div><div class="posttext">Patch 4.2 also had the Aggra and Thrall questline, &quot;Elemental Bonds.&quot; Did that meet your expectations? How do you feel about Thrall's character development? But we had to do a lot of things to make it work in the game. We needed to make a quest that 500 people could do simultaneously without getting in each other's way. We wanted a quest that players could do solo, no matter what their skill level. We didn’t know if the player was decked out in raid gear or level 85 greens, so we had to keep it simple. We somehow made all of it work under those restrictions, and we filled the screen with some killer imagery (I love the vision of Thrall immersed in the Abyssal Maw). But ultimately the quests themselves ended up not being as compelling from a gameplay perspective as we would have liked. Many players blew through them once and never looked back. <br />
+<br />
+Yea no shit they went though it only once. I had to do it solo a couple of weeks ago on a fresh character and god that quest now is so goddamn annoying. not to mention if you end up dead you can start the whole vision your on over again. <br />
+So yea I can understand if people skip it after the first time it was fun to do when there were multiple people around. It was painfully obvious that the quest was build around a event with other people around. <br />
+<br />
+And the legendary q chain makes me head desk too. It was one major repetitive collect quest. the staff had some interesting parts.<br />
+But most of it was collect x amount of item turn it in then go back to the same spot and collect another amount of x item.<br />
+<br />
+The rogue one was even worse. Collect the shards that come from cluster container that drop from bosses (random amount on top of that) and turn them in. Now go back and go collect the same cluster containers without opening them and turn them in &gt;_&gt;. <br />
+<br />
+The daily hubs are starting to piss me off btw. The tournament ones from Wotlk its just gating in a horrible way. Especially now its outdated content they should have either added a repeatable quest you can do unlimited times to accumulate seals or removed the daily status from the quests. Hell even adding seal drops to ICC zone mobs or bosses would have been preferable. But to be forced to go back everyday to so a limited set of quest just to get the remaining stuff is more tedious then grinding away for a weekend to get your seals.<br />
+This is also one of the main reasons I haven been bothered to do them.<br />
+<br />
+and now with the fire-land dailies they do the same :S<br />
+<br />
+I want chains back like nether wing one sure they had dailies too and they gave you the most rep but besides that you could still farm the lose eggs for extra rep. so you could still finish it easier without being limited to daily progress.<br />
+<br />
+But yea we will see what MoP brings.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shadowsaint</div><div class="date">2012-02-29, 01:06 PM</div></div><div class="posttext">Fangs of the Father is a garbage quest line. I was absolutely horrified that they even phased the final turn in so the guild that accompanies the Rogue for months can't see a single thing. Great, we get it, you went and killed some dragons off in the downtime when you weren't killing raid dragons, but you didn't do it yourself. <br />
+<br />
+Totally pissed in the face of every non-Rogue in a guild, and I just know Fangs will go down in WoW history as the most forced and worst legendary there is. Even Rogues I knew pre-patch who have theirs and those who are just now in the midst of their own set aren't excited about them beyond anything but an ilvl boost that will make them feel like they're doing higher content than they are.<br />
+<br />
+Agreed, even look at Heroic Blade of the Unmaker, same Ilvl, same dps and its an (epic dagger) of the same teir. These legendary daggers do not feel or perform like legendaries. More like just an heroic epic. Blizz dropped the ball on these. No guild perk for everyone who helped, No chest with goodies in it, and no mount. Just wings that give a slow fall to a class who already has slow fall dmg reduction. Huge let down. Even heard yesturday on the forums that the proc is broken. Not much love for these wpns. I don't think blizzard even follows the rogue forums based on the blue post thinking &quot;everyone is happy with these wpns&quot; lol what a joke. I'm closing in on obtaining these and to be honest, I'm not that excited due to the lack of &quot;legendary'ness&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Santoryu</div><div class="date">2012-02-29, 01:48 PM</div></div><div class="posttext">Nothing even remotely resembling the Molten Front daily hub should EVER be added to the game again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Korru</div><div class="date">2012-02-29, 01:55 PM</div></div><div class="posttext">The rouge legendary should be like that, not something broken that everyone must have to do competitive dps unlike THAT STAFF.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">theturn</div><div class="date">2012-02-29, 03:35 PM</div></div><div class="posttext">&quot;We love class-specific content, but quest lines like those are very resource-intensive. Each sequence involves weeks of development focus that takes content away from dungeons, dailies, or outdoor zones.&quot;I always love when blizz rolls out the &quot;too intensive&quot; excuse, and yes its an excuse. Can someone explain to me why a questline would interrupt dungeon design? They should be two completely different departments. Of the three they mentioned dailies are the only thing that should be impacted but a special questline, and we all love dailies right??? I get angry everytime I hear this excuse, you're a multi billion dollar company, if its resource intessive get more resources.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">good diu bro</div><div class="date">2012-02-29, 04:24 PM</div></div><div class="posttext">I dont really see the problem of quest being linear, unless someone really enjoys kill-x or collect-x quests for a random NPC in a remote location.<br />
+Besides quests are not really tuned for heirlooms users and you always level faster before you complete all quests in the zone. <br />
+The situation was worse &quot;in the old days&quot;, because of RNG quest objectives and elite zones.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kressilac</div><div class="date">2012-02-29, 07:51 PM</div></div><div class="posttext">Loved the jousting quest. I'm almost 40 years old so I'm sure the nostalgia effect had an impact. (For all you young whipper-snappers standing on my grass, that means I played the game the quest was inspired from.) Immediately wondered why the jousting quest wasn't a daily and why there were not more of them. Give me a Mt Hyjal inspired Donkey Kong and I'd be all over it. Gotta rescue Aggra or something like that from a pitfiend and all the pitfiend can do is roll barrels down Mt Hyjal at you. Awesome.Give me a maze with stuff to pickup in it. Throw in fruit and wandering baddies that try to kill me. Really, the quest lines inspired from old arcade games could be very entertaining. Where's &quot;Tank&quot; as a PvP duel mode? Anyway, I must have had too much fun with arcade games to understand why such classic gameplay makes for piss poor content in an MMO. The jousting questline was loads of fun in my opinion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Keristrasza</div><div class="date">2012-03-01, 12:13 AM</div></div><div class="posttext">i personally hated the goblin and worgen starting zones. not letting me leave til level 15? wtf...? means i cant keep profs up to date as i level, means i cant level how i want to level etc. ive leveled 12 toons through the human quests. and theyre my favorite. and thats why i do them. and 1 orc, 1 tauren, 3 undead, 1 belf, 1 nelf, 1 dwarf. but when i just make a toon i like to do it how i want to do it. i dont want to be forced into another set of linear bullshit quests. i dont like linear quests. i like being able to immerse myself in the world and do what i want to do when i want to do it.<br />
+<br />
+I can some what agree with you, while I don't hate the worgen zone (I do like it) it is too linear. I have tons of alliance and horde alts, and all my alts follow the same quest pattern. Alliance go to the NE starter zone, horde go to the Tauren, and it bothers me that I can't take my worgen there too. I don't mind doing new starter zones from time to time, but I do like having the option to up and leave when I want and not when I'm told I can.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">blackwater</div><div class="date">2012-03-01, 01:50 AM</div></div><div class="posttext">Wow took gaint step backwards with cataclysm, instead of innovation they applied band-aids. <br />
+<br />
+This is what has me worried for pandaville, the lack of real story in exchange for a meta game. I came back into cataclysm very late, after a 2 year break. <br />
+<br />
+I though the zones sucked compared to wrath, there was a complete lack of momentum, appeal and sense to them. <br />
+Though some quests were undoubtedly cool the lack of synergy and cohesion killed the overall storyline. <br />
+The raiding experienced was total shit, boring + boring = boring. Everything was way to easy, I hate a game without a challenge. <br />
+The PvP is absolutely dismal. <br />
+Gearing up was extremely fast and then I simply had nothing to log in to do as the pve was a bore fest and the pvp is, well a joke.<br />
+<br />
+I don't think this will improve with a meta game of pet pokemon pvp. <br />
+<br />
+<br />
+They need to focus on the simple things. A fantastic storyline + really challenging and comprehensive pve + some decent pvp (for once).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TabooUK</div><div class="date">2012-03-01, 05:26 AM</div></div><div class="posttext">Q: Looking forward to it. Thanks for your time!<br />
+Not a problem!Thats not a question</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Prag</div><div class="date">2012-03-01, 08:13 AM</div></div><div class="posttext">Really sad to hear about 600 people hitting the unemployment offices, but I guess that's what happens after such a large game loses a lot of subscribers. My thoughts go out to them and theirs, I hope they find employment soon.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yriel</div><div class="date">2012-03-01, 01:56 PM</div></div><div class="posttext">Not to me, he isn't. The only reason he's portrayed as such is that Chris Metzen has a fetish. He even walked out on the Blizzcon stage carrying Thrall's freakin hammer, and voices the character. They tried to juice him up with as much Mary Sue power as possible (he somehow takes over Deathwing's power as the Aspect of Earth in the Dragon Soul, despite the fact that Deathwing is STILL ALIVE), but he'll always be just another orc to me.<br />
+<br />
+It´s amazing how one-sided people always are when it comes to the Horde-Alliance-Blizzard topic. Yes Metzen was carrying Thralls hammer while wearing an alliance shirt. It´s the same with the Thrall quest where people always go &quot;He said he´s gonna kill Varian so he´s a warmonger&quot; while in the water sequence he´s shaking hands with Varian and it is said that peace with the alliance is his biggest wish in life (aside from having kids).<br />
+You may not like the Horde or Thrall or whatever but Blizzard really tries to stay neutral on this whole topic.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0798c9712b</div><div class="date">2012-03-01, 02:14 PM</div></div><div class="posttext">I actually thought the answers were mostly good and I thought the previous Q&amp;As were semi-bad.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">probert</div><div class="date">2012-03-02, 12:54 AM</div></div><div class="posttext">Many of the broad points they made are fairly accurate, but I think they're saving face by saying they're happy with how cataclysm turned out. They spent the vast majority of their past 2 years of development on 1-60 content that lasts an average player about 2 weeks of playtime -- the leveling is so simple, and so streamlined, that you hit 60 almost instantaneously. There's no challenge; the story telling is linear; and honestly i think there was more whimsy and subtelty in the 1-60 Vanilla game than there is now. They also killed off a ton of plotlines with little or no thought. Malfurion is back and the emerald dream is resolved; no more dragon aspects; thrall fanservice wall-to-wall; infinite dragonflight is explained away in a 5 man dungeon; well of eternity is revisited in the same way. Cataclysm definitely feels like the 'end' of wow to me; perhaps the fresh canvas offered by MoP will give us something new and fresh -- but i'm not counting on it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9820a55f46</div><div class="date">2012-03-02, 03:15 PM</div></div><div class="posttext">They love class specific content ? I wonder why the class quests have been removed ?!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">badshots</div><div class="date">2012-03-02, 09:44 PM</div></div><div class="posttext">Hero of the Horde quest line is the only one that made me say bravo.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemons</div><div class="date">2012-03-03, 12:23 AM</div></div><div class="posttext">I hated the Molten Front...why? Becasue just like cataclysm questing the MF was linear as hell. Your &quot;choices&quot; were inconsequential. In fact they only serve to screw you because there is an optimal path that will finish the quests in the least amount of time, and if you don't look it up in some online guide and pick the wrong course you're just sol. then you end up unlocking everything, and thus being bored with everything. There is no replay value there. I went back on an alt and couldn't bring myself to do it again. Also...it doesn't take &quot;a few weeks&quot; to complete the zone...that would imply three weeks. It takes four weeks...otherwise known as a month. And that's also assuming you do the dailies every single day, so it can actually take a a lot longer, and even longer if you want to get all the achieves. Hell...even getting the Nether Drake in BC took a week of hardcore grinding, and maybe a month if you were a slacker and didn't try to look for any eggs. MF is a month of grinding your face off, and two months if you're a slacker...in other words too long! MF was the worst. If MoP has a similar quest hub I won't even bother with it.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

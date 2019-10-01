@@ -1,0 +1,660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, and, hill, are, king, awesome, too, you, its, long, with, pve, blue, base, objectives, more, eyes, fun, pretty, boss, have, many, imo, nearly, epic, quite, isnt, three, gilneas, matches, since, people, feeling, mixed, strand, storm, cant, seem, give, some, out, figure, might, there, alright, temple, think, bgs, kotmogu, new" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; New Beta Patch - Class Changes, Difficulty Changes, New Gear Models 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; NA Maintenance Postponed, Blue Tweets, Blue Posts - Balance &amp; Bugs 
+ 
+Armory Stats - Battleground Popularity 
+Today we are" />
+<title> Armory Stats - BG Popularity, Connected Realms, Blue Posts, Blue Tweets, FCM, Poll [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - BG Popularity, Connected Realms, Blue Posts, Blue Tweets, FCM, Poll</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1439963.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1439963-Armory-Stats-BG-Popularity-Connected-Realms-Blue-Posts-Blue-Tweets-FCM-Poll">Armory Stats - BG Popularity, Connected Realms, Blue Posts, Blue Tweets, FCM, Poll</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-16, 05:30 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; New Beta Patch - Class Changes, Difficulty Changes, New Gear Models (http://www.diablofans.com/news/47910-new-beta-patch-class-changes-difficulty-changes)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; NA Maintenance Postponed, Blue Tweets, Blue Posts - Balance &amp; Bugs (http://www.hearthpwn.com/news/260-na-maintenance-postponed-blue-tweets-blue-posts)<br />
+<br />
+Armory Stats - Battleground Popularity<br />
+Today we are taking a look at the number of battles for each battleground that took place in the last month. To find these numbers, we compared the number of battles a character had in a December snapshot of data to the number of battles they had in a January snapshot of data. <br />
+<br />
+These numbers come from a character's statistics pane, so any bugs with character statistics will have skewed the results. This means that there isn't any way for us to verify how accurate these numbers are, so do not take them as fact. <br />
+<br />
+The data used today is a sample made up of ~6.9 million level 90 characters. The sample is slightly biased, as players who are not in a guild are less likely to appear in our sample. <br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: [ '#81CCAA']<br />
+});<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'bgCounts',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: ['Alterac Valley' , 'Arathi Basin' , 'Battle for Gilneas' , 'Deepwind Gorge' , 'Eye of the Storm' , 'Isle of Conquest' , 'Silvershard Mines' , 'Strand of the Ancients' , 'Temple of Kotmogu' , 'Twin Peaks' , 'Warsong Gulch'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Battles',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+<br />
+title: {<br />
+text: 'Number of Battlegrounds Completed By Players in the Last Month',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'Count',<br />
+data: [1324712, 1456394, 1470825, 1358300, 1180802, 1157189, 1745853, 1092219, 1800424, 1339585, 1717370 ]<br />
+<br />
+}]<br />
+<br />
+});<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;bgCounts&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+http://blue.mmo-champion.com/public/style_images/master/tracker/flags/gb-en.png Connected Realms Update - 15/01<br />
+The following connection will need a little more time, and has been re-scheduled:<br />
+<br />
+English Realms<br />
+<br />
+(PvP) Bloodfeather and Kor’gall/Burning Steppes/Executus<br />
+<br />
+<br />
+The following realms are scheduled to be connected next:<br />
+<br />
+English Realms<br />
+<br />
+(PvP) Balnazzar and Shattered Halls/Ahn'Qiraj/Trollbane/Talnivarr/Chromaggus/Boulderfist/Daggerspine<br />
+(RP PvP) Ravenholdt and Scarshield Legion/The Venture Co/Sporeggar<br />
+<br />
+<br />
+German Realms<br />
+<br />
+(PvE) Shattrath and Garrosh/Nozdormu<br />
+<br />
+<br />
+I've updated the original post, all realm connections went through except Bloodfeather and Kor’gall/Burning Steppes/Executus, which needs a little more time. We'll let you know when that's back on the schedule<br />
+<br />
+If you are on a full realm, and not getting connected, will you receive more char slots then? Or will Blizzard sort this in another way, like merging a dead and a full realm? Seeing as, if you are on a realm getting connected you would be able to play with 22 chars at least (in cases with only two realms being connected), having them all in the same guild etc. <br />
+There aren't any plans to give a bunch of extra character slots to folks on non-connected realms to my knowledge, no. In the situation you mentioned with connected realms, the limit per realm is still the same, it's just those characters have a bit more freedom with how they interact with guilds or characters on a different realm (the one they're connected to). <br />
+<br />
+Full realms will not be connected with any other realms, that would just make queues worse.<br />
+<br />
+<br />
+Blue Posts<br />
+PvP Gear in WoD<br />
+What matters is that the gear takes the same amount of time (mean, median, and mode), and therefore effort, to acquire regardless of what you do to get it; an instance is an instance is an instance, and what you do in that instance doesn't mean a god-damned thing. Using strict Item Level parity as the benchmark is how you get from here to there.<br />
+Of course it matters what you do.<br />
+<br />
+How do you reconcile time investment in the two tasks when they don't require the same of you to complete? How are small group sports analogous to large-team puzzle solving? How is spending a week or weeks wiping on a boss comparable to a matchmade PvP game where you're going against human opponents of similar skill?<br />
+<br />
+Both require mastery of your class and coordination, but you can't cross out the type and manner of gameplay as common denominators and say it doesn't matter. Of course it does. (Blue Tracker (http://blue.mmo-champion.com/topic/289032-remove-baseline-resilience/) / Official Forums (http://us.battle.net/wow/en/forum/topic/11222392591?page=11#218))<br />
+<br />
+Login Screen Music<br />
+So I was listening to the login music from the past expansions and it seems to me that Blizz uses it as a overture to all the music to the current and the last expansion. Anybody else notice this or am I just nerd raging for no point <br />
+In interviews in the past, Russell Brower has discussed how he likes to keep the original idea of the login music (the theming and key elements) and build on it with each new expansion. There's an expectation of hearing a certain style of music that says to people that they're logging in to World of Warcraft. It evokes emotions in many people and so he's said he doesn't want to take that away but instead, enhance and add to it with each of the expansions. If you sit and listen to the whole thing, you'll find that you've ended up on a journey of sorts through World of Warcraft history. It tells you about where you've been and where you are now or are going to depending on where you are in your gameplay. (Blue Tracker (http://blue.mmo-champion.com/topic/289254-login-music/) / Official Forums (http://us.battle.net/wow/en/forum/topic/11224123022?page=1#5))<br />
+<br />
+A Day in the Life of Blizzard<br />
+Would a fly-on-the-wall developer meeting series be possible? Let us see one of the fabled sit downs, if it is very clearly stated that what is being discussed is just ideas maybe the community could handle it. <br />
+I can see how something like that would be cool. In reality though experiments like the recent &quot;WoW Source&quot; interviews would be closer to the final product than our weekly CM meetings with the developers. There's a certain production value and level of professionalism we want to achieve with any official Blizzard video, and not only are our meetings very informal, they're meant to accomplish something a little different than any public-facing interview. It's not really in anyone's best interest for us to repurpose those meetings for public consumption.<br />
+<br />
+Nah. I've seen people throw darts to make important decisions before. At least, that's what I hope they're doing. If they're actually thinking about it, we're all in big trouble with the major rework going into WOD. <br />
+<br />
+It's funny to hear blizzard (a multi-billion dollar company) talking about resources. But then again they are so stingy they can't hire a few programmers to fix bugs that have been around since vanilla, and they just recycle content over and over (see hearthstone, diablo 3 etc). <br />
+<br />
+Aka - We only NET about 95 Million dollars per month...Clearly we don't have enough resources for ANYTHING like this... <br />
+Reality is often quite a bit more complicated than these clever little narratives devoid of facts people like to conjure up. I wish we could get together and chat about that in greater detail some day. I'm sure the three of you would exercise patience and understanding should the opportunity arise.<br />
+<br />
+Would be awesome to get a real glimpse of what it's like behind the scenes, but I wouldn't believe it. <br />
+Sadly, there's quite a bit that can't be shared and/or you would find terribly boring. I've been neck deep in spreadsheets and planning documents as are many others. &quot;Behind the scenes&quot; would involve a lot of photos of people staring at computer screens, sounds of frantic typing, email notifications flickering across the screen, instant messages, and meetings involving spreadsheets and planning documents. There's a lot of work that goes on and not as much shenanigans as some would like to hope for, but as Zarhym said, we do try to give more glimpses into individuals and what they do at Blizzard when we can. We'll keep working toward that end as much as possible for you. (Blue Tracker (http://blue.mmo-champion.com/topic/289161-some-kinda-inside-blizzard-series/) / Official Forums (http://us.battle.net/wow/en/forum/topic/11223562725?page=2#35))<br />
+<br />
+<br />
+Blue Tweets<br />
+Classes<br />
+Was the Elemental Focus buff not actually added? The tool-tip in game still shows 15% instead of 20%<br />
+The Elemental and Death Knight buffs won't show up in tooltips until the next patch, unfortunately. It is live though. (Source (https://twitter.com/Celestalon/status/420677996886777856))<br />
+Weird question: Why does it show up in the Aspect of the Hawk-Tooltip? Normally it needs a patch to update it!<br />
+Difference in how they're built under the hood, whether they're built to be extensible by other spells or not. (Source (https://twitter.com/Celestalon/status/420709137165479936))<br />
+<br />
+With the &quot;ability bloat&quot; being removed. Can we expect major / minor rotation changes for classes in WOD?<br />
+Some specs may see no rotation changes, others may see significant rotation changes. I wouldn't expect any 'overhauls' though. (Source (https://twitter.com/Celestalon/status/420622256557924353))<br />
+&quot;mages will no longer be able to assign anything to the 3 key as they no longer need that many bindings.&quot;<br />
+Perhaps I'm odd, but if I were limited to two keybinds, they'd be 2 and 3. Button 1 is always some utility/movement button. (Source (https://twitter.com/Celestalon/status/420623574152396800))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight (Forums (http://www.mmo-champion.com/forums/269-Death-Knight) / Skills (http://www.wowdb.com/spells/class-abilities/death-knight) / Talent Calculator (http://www.wowdb.com/talent-calculator#Y))<br />
+Am I wrong in thinking those dk buffs favor unholy over frost?<br />
+Slightly, which helps balance them better. (Source (https://twitter.com/Celestalon/status/420457008295206912))<br />
+<br />
+Many DKs don't seem to enjoy the awkwardness of Plague Leech. Is it here to stay? many seem to want it to go the way of the dodo<br />
+We recognize that some people find it awkward to use, and some don't. That's fine for an optional talent. (Source (https://twitter.com/Celestalon/status/420438971613581313))<br />
+<br />
+To confirm: Icy Talons was buffed because Frost AoE is in a good place and to keep parity b/w DW &amp; 2h?<br />
+That's a decent summary; yeah. It was a knob that affects both DW and 2H fairly evenly, and results in them being closer. (Source (https://twitter.com/Celestalon/status/420368307984666624))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid (Forums (http://www.mmo-champion.com/forums/270-Druid) / Skills (http://www.wowdb.com/spells/class-abilities/druid) / Talent Calculator (http://www.wowdb.com/talent-calculator#s))<br />
+Wheres the moonkin buffs? Aren't we underperforming?<br />
+No, Moonkins are performing pretty well right now. Not amazing single target, but still quite good in most situations. (Source (https://twitter.com/Celestalon/status/420370559944245248))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter (Forums (http://www.mmo-champion.com/forums/271-Hunter) / Skills (http://www.wowdb.com/spells/class-abilities/hunter) / Talent Calculator (http://www.wowdb.com/talent-calculator#M))<br />
+Aye, the hunter buff is just across the board for all hunters. (Source (https://twitter.com/Celestalon/status/420360900529250304))<br />
+So, five out of six tiers in a row for Hawk buffs. Think there might be a bit bigger of an underlying problem, perhaps?<br />
+We use Hawk as a buff knob because it's a safe, consistent way to do it, without any unintended sideeffects on rotations. (Source (https://twitter.com/Celestalon/status/420372643699630080))<br />
+I think you mean you use Hawk because hunters do not, dare I say it?, scale well with gear and fall behind as each tier goes on.<br />
+Buffing Hawk is a buff to Hunter scaling rate. (Source (https://twitter.com/Celestalon/status/420427637513654272))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk (Forums (http://www.mmo-champion.com/forums/341-Monk) / Skills (http://www.wowdb.com/spells/class-abilities/monk) / Talent Calculator (http://www.wowdb.com/talent-calculator#o))<br />
+Any plan to give MW a ranged damage dealing chi dump for using with lightning?<br />
+Unlikely. CJL is meant primarily to be used in tandem with healing chi spenders. (Source (https://twitter.com/Celestalon/status/420036119942541312))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin (Forums (http://www.mmo-champion.com/forums/273-Paladin) / Skills (http://www.wowdb.com/spells/class-abilities/paladin) / Talent Calculator (http://www.wowdb.com/talent-calculator#I))<br />
+Not retribution? <br />
+No, Retribution is doing fairly well. (Source (https://twitter.com/Celestalon/status/420360244410068992))<br />
+<br />
+ret still need cast time for rep and TE, does this really balance in PVP for a melee class?<br />
+In WoD we're going to alter talents per spec a lot more, but not sure either of those as instant cast with short cooldown is good. (Source (https://twitter.com/holinka/status/420054789527846913))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest (Forums (http://www.mmo-champion.com/forums/274-Priest) / Skills (http://www.wowdb.com/spells/class-abilities/priest) / Talent Calculator (http://www.wowdb.com/talent-calculator#U))<br />
+I like all these dps buffsbut can you nerf disc priests while you're at it?<br />
+We discussed this heavily. We prefer not to make nerfs that aren't bugfixes this far into a tier; bad for guilds close to a kill. (Source (https://twitter.com/Celestalon/status/420365175804293120))<br />
+Can we take this to mean that, at SOME point we will get a disc rebalancing? Even if it's not now?<br />
+Yes. (Source (https://twitter.com/Celestalon/status/420435645253681153))<br />
+<br />
+did you forget shadow priest on that list?<br />
+Didn't forget Shadow; they're not underperforming. Their performance varies significantly between fights, but overall good. (Source (https://twitter.com/Celestalon/status/420360606294630401))<br />
+hrm, do you think a single target buff would make them too strong on some fights?<br />
+Yes, Shadow's pure single target is lower than others, but they still end up doing quite well on average. (Source (https://twitter.com/Celestalon/status/420363254221656064))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock (Forums (http://www.mmo-champion.com/forums/277-Warlock) / Skills (http://www.wowdb.com/spells/class-abilities/warlock) / Talent Calculator (http://www.wowdb.com/talent-calculator#k))<br />
+Do you feel that warlock pets movement speed is too slow? Seems like a DPS loss to use pets in a target switching fight.<br />
+No; how good they are at target switching is a pro/con of different warlock pets. (Source (https://twitter.com/Celestalon/status/420311343917309952))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior (Forums (http://www.mmo-champion.com/forums/278-Warrior) / Skills (http://www.wowdb.com/spells/class-abilities/warrior) / Talent Calculator (http://www.wowdb.com/talent-calculator#E))<br />
+Warrior Haste: Perhaps we could have it reduce all CDs above 30sec? Original Fury Mastery did something similar.<br />
+That's basically what Readiness does. May not be exactly &quot;all CDs above 30sec&quot;, but something like that. (Source (https://twitter.com/Celestalon/status/420069006381289472))<br />
+<br />
+<br />
+http://blue.mmo-champion.com/public/style_images/master/tracker/flags/us-en.png Free Character Migrations Available<br />
+Update - While Free Character Migrations opened this morning as planned, the page to initiate a transfer is currently and inexplicably inoperable, displaying a maintenance message. We're continuing to investigate the cause, but don't have a current estimate for when the FCMs will be available. We'll provide an update and re-post the announcement on the front page of the site once they are, though.<br />
+<br />
+If you're on one of the source realms listed below, you can move your characters to one of the designated destination realms and avoid the queues -- for free!<br />
+<br />
+By initiating one of these transfers, you will be moving your character to a new realm and home. This is a one-time, one-way move. If you wish to move your character elsewhere, you will need to use the paid transfer service.<br />
+<br />
+<br />
+Area 52 =&gt; Turalyon<br />
+Stormrage =&gt; Turalyon<br />
+Tichondrius =&gt; Blackrock<br />
+Illidan =&gt; Blackrock<br />
+Bleeding Hollow =&gt; Korgath<br />
+Darkspear =&gt; Korgath<br />
+<br />
+<br />
+Please be aware that, due to the unpredictable nature of free transfers, we may close down any Free Character Migrations at any time and without warning if the target realm becomes full. If you plan to move with friends or your guild, we suggest that you coordinate the effort to reduce the chance of any stragglers being left behind.<br />
+<br />
+Early closures aside, this set of Free Character Migrations will end on Wednesday, January 22.<br />
+<br />
+Begin a Free Character Migration now (https://www.worldofwarcraft.com/account/character-move-eligible-realms.html)! We recommend reviewing the FAQ (https://us.battle.net/support/en/article/free-character-migration), as it details what is or isn't allowed for transferred characters. <br />
+<br />
+<br />
+http://blue.mmo-champion.com/public/style_images/master/tracker/flags/gb-en.png Free Character Migrations Available<br />
+If you're on one of the source realms listed below, you can move your characters to one of the designated destination realms and avoid the queues—for free!<br />
+<br />
+By initiating one of these transfers, you will be moving your character to a new realm and home. This is a one-time, one-way move. If you wish to move your character elsewhere, you will need to use the paid transfer service.<br />
+<br />
+<br />
+Draenor =&gt; Magtheridon<br />
+Silvermoon =&gt; Wildhammer / Kilrogg<br />
+Kazzak =&gt; The Maelstrom<br />
+Outland =&gt; Grim Batol<br />
+Ragnaros =&gt; Grim Batol<br />
+Stormscale =&gt; Grim Batol<br />
+Sylvanas =&gt; Grim Batol<br />
+Twisting Nether =&gt; Grim Batol<br />
+<br />
+<br />
+Please be aware that, due to the unpredictable nature of free transfers, we may close down any Free Character Migrations at any time and without warning if the target realm becomes full. If you plan to move with friends or your guild, we suggest that you coordinate the effort to reduce the chance of any stragglers being left behind.<br />
+<br />
+Early closures aside, this set of Free Character Migrations will end on Tuesday, January 21.<br />
+<br />
+Begin a Free Character Migration now (https://eu.battle.net/account/management/wow/fcm/character-list.html?r=EU&amp;l=WoW1)! We recommend reviewing the FAQ (https://eu.battle.net/support/en/article/free-character-migration), as it details what is or isn't allowed for transferred characters. <br />
+<br />
+<br />
+Poll: What is Your Favorite Battleground?<br />
+Which battleground is your favorite? Be sure to let us know what you like about it in the comments! (For reasons other than how often you seem to win in it) <br />
+<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/7719515.js&quot;&gt;&lt;/script&gt;<br />
+&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/7719515/&quot;&gt;What is your favorite battleground?&lt;/a&gt;&lt;/noscript&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-16, 05:31 AM</div></div><div class="posttext">While preparing data for another upcoming battleground post, it became clear that most Eye of the Storm wins are still not recorded in your statistics most of the time.<br />
+<br />
+Unfortunately this bug has been around for five or more years now, but maybe if people ask Holinka (https://twitter.com/holinka) nicely we might get an update on it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dalanos</div><div class="date">2014-01-16, 05:50 AM</div></div><div class="posttext">How the hell is AV winning this poll?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Icyflamez</div><div class="date">2014-01-16, 05:51 AM</div></div><div class="posttext">How the hell is AV winning this poll?<br />
+<br />
+Apparently only Alliance people are voting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">druvirus</div><div class="date">2014-01-16, 05:54 AM</div></div><div class="posttext">How the hell is AV winning this poll?<br />
+<br />
+Because AV is the superior Battleground.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Silvertaurus</div><div class="date">2014-01-16, 05:55 AM</div></div><div class="posttext">I wonder if Legendary quest might have influenced the outcome</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darth Belichick</div><div class="date">2014-01-16, 05:57 AM</div></div><div class="posttext">&quot;Buffing Hawk is a buff to Hunter scaling rate&quot;<br />
+<br />
+This bothers me. He ignored the question and instead said something we know. All our scaling should come from one ability. What other class has a buff that accounts for such a huge part of their damage and scaling?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neradar</div><div class="date">2014-01-16, 05:58 AM</div></div><div class="posttext">They left one off the voting choices! Old Alterac Valley (before they changed it and it was a 6 hour long battle) lol</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-16, 06:02 AM</div></div><div class="posttext">Apparently only Alliance people are voting.<br />
+<br />
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Sneak peek of Armory Stats from later this week - Alliance won 78% of Level 90 Alterac Valley games (that we tracked) in the last month!&lt;/p&gt;&amp;mdash; WoWDB (@WoWDB) &lt;a href=&quot;https://twitter.com/WoWDB/statuses/422956396548608000&quot;&gt;January 14, 2014&lt;/a&gt;&lt;/blockquote&gt;<br />
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc63282c73c3</div><div class="date">2014-01-16, 06:02 AM</div></div><div class="posttext">As Silvertaurus said, I'm pretty sure the 2 &quot;forced&quot; BGs for the legendary quest have a big weight on this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shadowful</div><div class="date">2014-01-16, 06:04 AM</div></div><div class="posttext">AB is best battleground. I have no idea why I like it so much.<br />
+<br />
+AV sucks, but it's one of the few alliance seem to win a lot so u_u</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deathfouton</div><div class="date">2014-01-16, 06:05 AM</div></div><div class="posttext">&quot;Buffing Hawk is a buff to Hunter scaling rate&quot;<br />
+<br />
+This bothers me. He ignored the question and instead said something we know. All our scaling should come from one ability. What other class has a buff that accounts for such a huge part of their damage and scaling?<br />
+<br />
+That's kinda a good thing. This has been what has kept hunters consistent for many tiers. Every other class needs all sorts of specific spell retooling and remodeling so that they can compete at all levels, where hunters are scaled properly entirely based off this one buff. It's a very easy fix to all problems hunter related.<br />
+<br />
+It does pose as a problem when it continually scales up the value of Agility/AP on gear though, at this rate it won't be long before you skip socket bonuses to get agi no matter what.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8e13fe598c</div><div class="date">2014-01-16, 06:07 AM</div></div><div class="posttext">Really suprized AV is top I personally hate&quot;dislike&quot; it half the time it's zerg fests and not even pvp. Give me the smaller bg's anyday xD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spellbraker</div><div class="date">2014-01-16, 06:09 AM</div></div><div class="posttext">I voted WSG, but if we are talking about any BG at any time, then it would be BC AV.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2014-01-16, 06:09 AM</div></div><div class="posttext">Alterac Valley, but prefer the original version.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Straamibuu</div><div class="date">2014-01-16, 06:10 AM</div></div><div class="posttext">Personally I love AB and TP the best :) Even the new DG is up there for me. :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vexacus</div><div class="date">2014-01-16, 06:15 AM</div></div><div class="posttext">Old school AV was awesome. now its just a race to the finish.<br />
+WSG = has always been about the luck of the draw(as alliance i always seemed to loose cause horde always had 2 FC, 4 healers and 4 OP dps)<br />
+AB = was also horrible as alliance when not in a premade cause no one cares about defending a base/flag<br />
+EotS = See AB<br />
+IoC = i always liked the complexion of this one cause there is not really 1 way to win. you dont need all people in the BG to pay attention.<br />
+SotA = to many 20 minute draws.<br />
+Twin peak = WSG 2.0<br />
+Battle of Gilneas = same problem as AB. alliance rarely able to cap 2 flag and defend.<br />
+Silvershard Mines = like this one aswell. because you have a decent chance of making a comeback of you just push hard enough. and it's always fun to piss of some horde by changing the track last second.<br />
+Temple of Kotmogu = it's different, and i like different in this case. i personally don't get this one enough when i sign up for a random BG. it's fast paced and you can either have a close battle or get a easy quick win/loose.<br />
+Deepwind Gorge = never done this one cause i simply don't have the time to pvp that much the last few months.<br />
+i gave my vote to temple of kotmogu, but Silvershard is a good 2nd choice and Isle is my 3rd favorite.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">roahn the warlock</div><div class="date">2014-01-16, 06:20 AM</div></div><div class="posttext">And lo, the coolest mount in wow, not for looks, but for flight animation. Was ruined</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrKnubbles</div><div class="date">2014-01-16, 06:21 AM</div></div><div class="posttext">I'm surprised that WSG is so high. People just hold onto flags and then fight. That's not fun at all.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf77227e8ed</div><div class="date">2014-01-16, 06:24 AM</div></div><div class="posttext">AV still the best. Even when losing it doesn't infuriate me like the other BGs do.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MakeMeLaugh</div><div class="date">2014-01-16, 06:26 AM</div></div><div class="posttext">Aaaaaaaaaaaaaaand the iron skyreaver is a store mount.... sigh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9eb0d33af1</div><div class="date">2014-01-16, 06:38 AM</div></div><div class="posttext">Are these battleground samples at level 90? Otherwise I think you'd have a bit of a bias towards lower level battlegrounds like WSG and AB.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">shoc</div><div class="date">2014-01-16, 06:39 AM</div></div><div class="posttext">&quot;oops&quot;<br />
+-Blizzard Entertainment</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-16, 06:44 AM</div></div><div class="posttext">Are these battleground samples at level 90? Otherwise I think you'd have a bit of a bias towards lower level battlegrounds like WSG and AB.<br />
+<br />
+Yeah, we don't store or track characters under 90.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">PuppetShowJustice</div><div class="date">2014-01-16, 06:46 AM</div></div><div class="posttext">Are those still for sale on those....certain realms? I ask for reasons.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jangkun</div><div class="date">2014-01-16, 06:48 AM</div></div><div class="posttext">Just logged and It wasn't on the shop (Zul'jin) :S</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca527924a38</div><div class="date">2014-01-16, 07:02 AM</div></div><div class="posttext">&quot;I think you mean you use Hawk because hunters do not, dare I say it?, scale well with gear and fall behind as each tier goes on.<br />
+Buffing Hawk is a buff to Hunter scaling rate. (Source)&quot;<br />
+<br />
+Thank you for finally giving me an official source to link to when I get asked why I'm lagging behind in recount. All I have to say: Sorry guys! Please have patience with me until Blizzard decides to buff Hawk, then I'll be able to catch up with you. Inconvinient, I know, I know...<br />
+<br />
+Buffing Hawk might be an easy fix, but it is frustrating to know that I can play as good as I can and I'll still get left behind because of this issue. And that IS a problem, not only for a single player but also for a raid-team.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Krez</div><div class="date">2014-01-16, 07:03 AM</div></div><div class="posttext">Must be a lot of Alliance on this BG poll, lol. AV and Isle are the two I find Alliance consistently win at, OQ stats agree with me too week by week. Either they as a population are &quot;better&quot; at playing those maps, or the maps themselves assure the Alliance to easier victories. (My opinion is the latter.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Senftw</div><div class="date">2014-01-16, 07:11 AM</div></div><div class="posttext">Wasn't able to buy, got an error, buying other mounts brought up the confirmation so it's definitely not a payment issue. Probably fixed?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BatteredSausage</div><div class="date">2014-01-16, 07:11 AM</div></div><div class="posttext">Mount looks ok but that fucking mid air spin it does is annoying just like the golum. <br />
+i guess they found a new animation to play with that we will end up seeing in the next 10 + mounts......</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mitak</div><div class="date">2014-01-16, 07:23 AM</div></div><div class="posttext">Arathi Basin is my favorite. I like how open it feels and that you can see far ahead, its not easy to get ganked and the general feel of the place is nice. Also it feels very balanced.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Grimalkin of Old</div><div class="date">2014-01-16, 07:30 AM</div></div><div class="posttext">I only liked Wintergrasp, does that counts?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Flamez2</div><div class="date">2014-01-16, 07:38 AM</div></div><div class="posttext">Its in the shop on Aszune - EU at 20 Euro</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Drakzlol</div><div class="date">2014-01-16, 07:41 AM</div></div><div class="posttext">Im fucking disgusted how all the best looking mounts end up in the store. Fairie Dragon and now Iron Skyreaver??</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cuafpr</div><div class="date">2014-01-16, 07:46 AM</div></div><div class="posttext">found it on some US servers but can't buy it. I get a store error</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">starkey</div><div class="date">2014-01-16, 07:48 AM</div></div><div class="posttext">found it on some US servers but can't buy it. I get a store error<br />
+<br />
+cause its been disabled</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2d47959902</div><div class="date">2014-01-16, 07:50 AM</div></div><div class="posttext">cause its been disabled<br />
+<br />
+Was able to buy it 3 minutes ago on EU.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">starkey</div><div class="date">2014-01-16, 07:53 AM</div></div><div class="posttext">Was able to buy it 3 minutes ago on EU.<br />
+<br />
+probably checking server by server, front pages says <br />
+<br />
+It is unlikely that the mount was intended to appear in the store at this time and purchases appear to be disabled on most or all realms now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1b55bf99fe</div><div class="date">2014-01-16, 07:56 AM</div></div><div class="posttext">Besides bugs skewing these so called results, its pretty obvious that it doesen't take into consideration wheather its specific-que BG's or just Random BG. <br />
+The article headline of &quot;BG Popularity&quot; is pretty missleading.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">furydeath</div><div class="date">2014-01-16, 07:58 AM</div></div><div class="posttext">iron skyreaver on the blizzard store nuuu never saw that coming.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3dde1cb131</div><div class="date">2014-01-16, 08:02 AM</div></div><div class="posttext">Im fucking disgusted how some of the best looking mounts end up in the store. Fairie Dragon and now Iron Skyreaver??<br />
+Fixed that for you ;)<br />
+<br />
+There are plenty of amazing in game mounts.<br />
+<br />
+P.S. Brought mine (first store mount I have actually brought for myself!)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aspen</div><div class="date">2014-01-16, 08:05 AM</div></div><div class="posttext">Didn't we just have a store mount only a few weeks ago!? If they say all time spent on mop delays wod, how are they justifying all these mounts. Were going to be without new content for months and months more, but I see they have time to add store items on top of sub prices.... despicable. ...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hottage</div><div class="date">2014-01-16, 08:05 AM</div></div><div class="posttext">Sad to see yet another awesome mount relegated to the Blizzard $tore, but hey, it helps fun the game without causing a hike in subscription fees, so why not?<br />
+<br />
+As for the Battegrounds, in Classic it would have been Alterac Valley no question, it was literally like being a unit in a Warcraft III game. The epic battles, Ivus and the Frost Lord, calling in Cavalry charges and Airstrikes! Nowadays I'd say Warsong Gulch, because it's possible for one skilled player to really make a difference, only sucks when people take the flag then farm.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Itisamuh</div><div class="date">2014-01-16, 08:05 AM</div></div><div class="posttext">I can't fathom how Alterac is winning the poll, when most Horde can't stand it due to its horrible imbalances.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darksoldierr</div><div class="date">2014-01-16, 08:09 AM</div></div><div class="posttext">IoC and SotA default voted off, on any of my char, be it Ally or Horde. I can't stand Wrath BGs, i do not know what devs were smoking during making those and tought Vehicle combat will be fun, terrible Battlegrounds, especially before changes to SotA, it was frickin 'PvE to kill the demo', and now they even made it worse...AOE AROUND BOMBS ALL DAY ERR DAY, because that makes for better gameplay<br />
+<br />
+For me AB &gt; Kotogu &gt; WSG &gt; rest</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Strakha</div><div class="date">2014-01-16, 08:10 AM</div></div><div class="posttext">Some Ghostcrawler (the twitter post's still on the front page if you think i made them up)<br />
+<br />
+quotesfromgc/<br />
+<br />
+&quot;Blizzard employs X artists. If some of those work on Silvermoon, then something else isn't going to get made.&quot;<br />
+<br />
+&quot;Even hiring more artists still makes the choice between working on something old or something new.&quot;<br />
+<br />
+endquotesgc\<br />
+<br />
+So basically everyone(mostly blizz, but who pays them yadayada) is paying for this crap, but you have to pay a second time to actually get it.<br />
+<br />
+Optional mounts versus better things for everyone does not seem like a good way to stop the erosion of subs.<br />
+<br />
+Thoughts?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc495d044790</div><div class="date">2014-01-16, 08:19 AM</div></div><div class="posttext">AV is not a fun as it used to be. loved it when i could just sit down and kill alliance over a long time in the same AV</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Regalbeast</div><div class="date">2014-01-16, 08:19 AM</div></div><div class="posttext">haha....some Blizz employee somewhere is feeling like a total idiot for making that mount available on the store too early.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Strakha</div><div class="date">2014-01-16, 08:21 AM</div></div><div class="posttext">haha....some Blizz employee somewhere is feeling like a total idiot for making that mount available on the store too early.<br />
+<br />
+january is the historically lowest month for sales on average for most companies. im sure it will go on sale just before the superbowl when more people than ever will be drunk.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaleredar</div><div class="date">2014-01-16, 08:29 AM</div></div><div class="posttext">I can't fathom how Alterac is winning the poll, when most Horde can't stand it due to its horrible imbalances.<br />
+<br />
+Bunch of whiners is what they are. I haven't played a single AV game in the past... well, a pretty damn long time that was decided because of &quot;Alliance-favoring imbalance.&quot; The horde barely even try in Alterac Valley anymore. Same goes for Isle of Conquest.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">IronArms</div><div class="date">2014-01-16, 08:33 AM</div></div><div class="posttext">How in the world is Alterac Valley the highest on the list? It's the worst BG in existance now! It takes forever to traverse the map, no one ever stays somewhere to cap so your team can win(and for good reason, standing around and waiting is boring). I'm glad no one has really voted for Isle of Conquest because that one is even worse, but seriously AV?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaleredar</div><div class="date">2014-01-16, 08:43 AM</div></div><div class="posttext">How in the world is Alterac Valley the highest on the list? It's the worst BG in existance now! It takes forever to traverse the map, no one ever stays somewhere to cap so your team can win(and for good reason, standing around and waiting is boring). I'm glad no one has really voted for Isle of Conquest because that one is even worse, but seriously AV?<br />
+<br />
+Alterac Valley is plenty of fun for Alliance. I enjoy making the horde squirm. Hell, you can pretty easily force a turtle and grind them down into dust. It's quite enjoyable.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TrollShaman</div><div class="date">2014-01-16, 08:45 AM</div></div><div class="posttext">Maybe unlike the bat I might actually buy the skyreaver mount... if they're usable in no-flying areas like dungeons hopefully.<br />
+<br />
+Dammit Blizz.<br />
+<br />
+Personally I enjoy strand of the ancients, kinda even though somehow Horde is more likely to win it from my experience at least.<br />
+How AV is the most enjoyable I don't understand. Alliance usually wins it due to positioning of pvp objectives.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaleredar</div><div class="date">2014-01-16, 08:50 AM</div></div><div class="posttext">Maybe unlike the bat I might actually buy the skyreaver mount... if they're usable in no-flying areas like dungeons hopefully.<br />
+<br />
+Dammit Blizz.<br />
+<br />
+Personally I enjoy strand of the ancients, kinda even though somehow Horde is more likely to win it from my experience at least.<br />
+<br />
+I liked the OLD SoTA. All they've done is double down the zerg factor. After I got the meta for it, it was straight to blacklist... <br />
+<br />
+<br />
+How AV is the most enjoyable I don't understand. Alliance usually wins it due to positioning of pvp objectives.<br />
+<br />
+Like I said, that claim is BS in pretty much any AV game nowadays. The horde don't even try.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc92521f709a</div><div class="date">2014-01-16, 08:55 AM</div></div><div class="posttext">Alterac Valley: it was a great battleground once upon a time but due to countless nerf's killing mechanic's that wont ever be used until its fixed like the giant's or collecting scraps for summon troop's/buff's or releasing strong allied npc's it is getting more and more boring since now it is all about the rush. it was great back when the fight could last an eternity, yet you still got honor/reputation the longer you stayed and the more objectives you achieved, games could be decided with the team who had the most player's who went for objective's and stalling the enemy to summon stronger npc troops to push through, bases could hardly be solo caped without dying no-matter the gear if you where careless. now it is more like npc's die from 1-3 hits, aside from that its a rush towards the end of the map, ignore enemy player's almost like a pve raid and simply a race of time.... please bring back the epic feeling of the old alterac with new reward's and perhaps new reputation + threatening strong npc's making the fight last for multiple hour's. please bring back what you destroyed by overlooking during expansion's and nerfs or simply split it into 2 version's 1 normal as now and a 2nd hardcore old style.<br />
+<br />
+Strand of the Ancient: same case as AV, npc's and tower's got weaker over time, the map is more of a rush than it is fighting back, currently having the wall's is a disadvantage and the match is just not fun, it was not even that good to begin with but grew worse over time since it was simply just auto scaled with level's rather than taking a look and re-balancing it.<br />
+<br />
+Arathi Basin: a very well made map that goes back all the way to the first battleground's. it has been popular since due to the difference between all bases where each base grants a minor advantage and something negative, like the mine's grant you the possibility to capture it but the enemy cant see whether or not you are there even after capturing it so it put's extra pressure on other bases. the blacksmith serves as a spotter/tactic, where you can spot from a distance and guide your team or simply use as a shortcut. the lumber mill server's as a flight post where you can levitate/slow fall quickly toward's nearby bases should they weaken or be in trouble.<br />
+<br />
+Warsong Gulch: perhaps the most interesting yet balanced fight you can have, it offers the possibility for a team to go all out in a center/base fight or to ninja a flag or tank it through, due to its simplicity it offers a wide area of tactic's<br />
+<br />
+silvershard mines: an interesting map that display's a lot of options for tactic's however the minecart bug that occurs if you flip a switch just when it is turning still occurs from time to time when it turns the other way around and goes back all the way rather than towards a deposit.<br />
+<br />
+Temple of kotmungu: a great map indeed, the creativity is unique and remind's of the first pvp map's if you compare the re-play ability or tactics you can play in them.<br />
+<br />
+<br />
+note: all in all i gotta say the map's added during mists of pandaria remind me of the creativity of the old first battleground map's they are fun to play and can be replayed without getting you bored with multiple tactics. on the other hand they are still letting AV/SotA die by simply auto balancing and nerfing thing's rather than thinking of those who play for the skill and fun it require's, the fight's have turned into a rush for time rather than a long battle as the map's appeal to and worked the best with, so many map's yet no long map's that last hour's you can join or leave during the fight's. think back on the epic battles from alterac that all remember, there are even some who play on fake server's to achieve/obtain that old feeling again where gear was not everything and npc's where not as similar to critter's as they are now but where you had to think once in awhile if you would encounter 5-10 npc's with aoe slowly taking them down risking your life or wait for backup. now you can aoe or kill them one by one without loosing any health... bring back skill and effort</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc91c26bb0a7</div><div class="date">2014-01-16, 08:57 AM</div></div><div class="posttext">I still have the option to purchase the sky-reaver from the ingame store. Auchindoun EU.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaleredar</div><div class="date">2014-01-16, 09:03 AM</div></div><div class="posttext">Alterac Valley: it was a great battleground once upon a time but due to countless nerf's killing mechanic's that wont ever be used until its fixed like the giant's or collecting scraps for summon troop's/buff's or releasing strong allied npc's it is getting more and more boring since now it is all about the rush. <br />
+<br />
+You can literally do all of that still.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrExcelion</div><div class="date">2014-01-16, 09:07 AM</div></div><div class="posttext">I still have the option to purchase the sky-reaver from the ingame store. Auchindoun EU.<br />
+<br />
+I thought I did too, but then I clicked &quot;buy now&quot; and got a shop error.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Noix</div><div class="date">2014-01-16, 09:12 AM</div></div><div class="posttext">Any US server got mount yet?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kurnie</div><div class="date">2014-01-16, 09:19 AM</div></div><div class="posttext">How the hell is AV winning this poll?<br />
+<br />
+all the bots are voting. AV and IOC are the most blacklisted bg's in the game</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrExcelion</div><div class="date">2014-01-16, 09:38 AM</div></div><div class="posttext">Probably a bit of nostalgia too. I also use it for leveling 85-90 during the CTA. If Alliance have a high win rate they're also going to like getting it lol<br />
+<br />
+More than anything I think it's the nostalgia. Post-Vanilla BGs are all pretty low. Nothing has really wow-ed us.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2014-01-16, 09:40 AM</div></div><div class="posttext">I thought I did too, but then I clicked &quot;buy now&quot; and got a shop error.<br />
+<br />
+Mine is showing as &quot;transaction in process&quot;, I did the blue screen authenticator and shit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neotokyo</div><div class="date">2014-01-16, 09:43 AM</div></div><div class="posttext">Mine is fine, appeared in my bags seconds after purchase.. mistake or not, this is an awesome mount</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2014-01-16, 09:46 AM</div></div><div class="posttext">Got mine :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yunru</div><div class="date">2014-01-16, 09:47 AM</div></div><div class="posttext">How in the world is Alterac Valley the highest on the list? It's the worst BG in existance now! It takes forever to traverse the map, no one ever stays somewhere to cap so your team can win(and for good reason, standing around and waiting is boring). I'm glad no one has really voted for Isle of Conquest because that one is even worse, but seriously AV?<br />
+<br />
+Best honor gain on loss.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaleredar</div><div class="date">2014-01-16, 09:48 AM</div></div><div class="posttext">all the bots are voting. AV and IOC are the most blacklisted bg's in the game<br />
+<br />
+By precisely one faction. The same one for both, in fact.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrExcelion</div><div class="date">2014-01-16, 09:49 AM</div></div><div class="posttext">Looks like the Skyreaver gets some cool flight animations like the Sky Golem. (like that spiral)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0d8208a29e</div><div class="date">2014-01-16, 10:01 AM</div></div><div class="posttext">Poll: What is Your Favorite Battleground?<br />
+<br />
+Nearly 75% of the votes are for the vanilla BG's? :eek:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pokot</div><div class="date">2014-01-16, 10:02 AM</div></div><div class="posttext">Some Ghostcrawler (the twitter post's still on the front page if you think i made them up)<br />
+<br />
+quotesfromgc/<br />
+<br />
+&quot;Blizzard employs X artists. If some of those work on Silvermoon, then something else isn't going to get made.&quot;<br />
+<br />
+&quot;Even hiring more artists still makes the choice between working on something old or something new.&quot;<br />
+<br />
+endquotesgc\<br />
+<br />
+So basically everyone(mostly blizz, but who pays them yadayada) is paying for this crap, but you have to pay a second time to actually get it.<br />
+<br />
+Optional mounts versus better things for everyone does not seem like a good way to stop the erosion of subs.<br />
+<br />
+Thoughts?<br />
+<br />
+That's exactly how it looks for me. 100 devs get transferred to WoW; expansion gets postponed; ingame shop and a new mount in it are implemented as a priority. You might not want to purchase the mount but some of your money (not much but still) has gone towards it anyways. Blizzard is a marketing genius.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">volrat</div><div class="date">2014-01-16, 10:05 AM</div></div><div class="posttext">Apparently only Alliance people are voting.<br />
+<br />
+It doesn't ask wich is the BG you win easier, more probably a lot of veterans are voting, since the vanilla bgs are winning, and AV, especially some time ago, was by far the more enjoyable and complete pvp experience in WoW.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocdc293d5cb7</div><div class="date">2014-01-16, 10:08 AM</div></div><div class="posttext">Just bought the mount on Ragnaros EU. Why are we so sure its been released accidently? Is it because it usually gets a press release alongside it?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">EviForums</div><div class="date">2014-01-16, 10:10 AM</div></div><div class="posttext">Just bought the mount on Ragnaros EU. Why are we so sure its been released accidently? Is it because it usually gets a press release alongside it?<br />
+<br />
+It's showing on the launcher as available in game now; I reckon it got pulled due to some kind of store bug rather than early release, and the knock-on effect is that sales are driven up because people think they're getting something when they shouldn't.</div></div><hr />
+
+<div class="post"><div class="posttop"><div class="username">MasterHamster</div><div class="date">2014-01-16, 10:19 AM</div></div><div class="posttext">AV was my favorite until it became so amazingly easy for alliance to zerg</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rhelyo</div><div class="date">2014-01-16, 10:27 AM</div></div><div class="posttext">Well of course silvershard and temple have the highest numbers since for the past month i was queueing for them non stop for 10 hr+ to get my veteran achieve.Duh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bats</div><div class="date">2014-01-16, 10:48 AM</div></div><div class="posttext">Alterac Valley 30.2%??? How did this even happen, AV is the BG furthest away from actual PvP. Everyone I know hates AV except when alliance and need to farm honor for an under-geared alt.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stormgnoef</div><div class="date">2014-01-16, 10:50 AM</div></div><div class="posttext">Just bought the mount on eu realm.Got it instant</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Itisamuh</div><div class="date">2014-01-16, 10:55 AM</div></div><div class="posttext">I liked the OLD SoTA. All they've done is double down the zerg factor. After I got the meta for it, it was straight to blacklist... <br />
+<br />
+<br />
+<br />
+Like I said, that claim is BS in pretty much any AV game nowadays. The horde don't even try.<br />
+<br />
+Horde doesn't try because what he said isn't wrong. If you can't see the obvious ways the map favors Alliance, you aren't looking very hard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ikkarus</div><div class="date">2014-01-16, 10:57 AM</div></div><div class="posttext">Another Blizzard Store mount...of course...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Konung Alpha</div><div class="date">2014-01-16, 10:59 AM</div></div><div class="posttext">Why is SotA that low? IMO one of the best bg's. For me as a PvE player it is a rare chance to win among long queue of losses, i actually can be MvP without landing a single blow on a player.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Olena</div><div class="date">2014-01-16, 11:04 AM</div></div><div class="posttext">How did it came that Temple of Kotmogu is the populariest BG of them all if you look at Blizzard charts. I hate that BG with all of my hearth and hoping that there won't come any similaar in the future.<br />
+Prefering WSG or Twin Peaks and I love the zerging at AV ofcourse.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LanceDH</div><div class="date">2014-01-16, 11:04 AM</div></div><div class="posttext">AV is BS these days, it's all about zerging to the enemy base.<br />
+If it were old school AV I'd pick it without thinking twice, but these days i prefere Temple of Kotmogu because it focusses on PvP so much</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc1d3012705</div><div class="date">2014-01-16, 11:14 AM</div></div><div class="posttext">AV back in the days, now - AB.<br />
+I really miss old AV tho.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Madruga</div><div class="date">2014-01-16, 11:29 AM</div></div><div class="posttext">Alterac valley is first, and so much ahead??<br />
+<br />
+I see there is a lot of Alliance over here...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zrankfappa</div><div class="date">2014-01-16, 11:44 AM</div></div><div class="posttext">How about how many active players actually participated in more than 10 BG's last month?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stormcall</div><div class="date">2014-01-16, 11:56 AM</div></div><div class="posttext">Wow, AV winning? Every time I join a random BG and it's AV, the chat screen is flooded with comments like &quot;Fuck not this again&quot; or &quot;Ugh, AV&quot; or &quot;So and so has left the game&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4f448e7a9a</div><div class="date">2014-01-16, 11:59 AM</div></div><div class="posttext">How the hell is AV no1? Nowdays its basically played like a wotlk dungeon. <br />
+<br />
+Anyways, voted for AB.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc664e732ce0</div><div class="date">2014-01-16, 12:11 PM</div></div><div class="posttext">Fanboys arguing with people saying that Blizzard will put this crap to the store. Its sad that you are allowed to be loud and talk BS while everyone else gets warned for it. Inb4 infract while the fanboys are allowed to call people they disagree with a moron etc. Btw im playing on a priv server and man it feels better and better doing so when Blizzard puts all this crap to the website.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Laguna</div><div class="date">2014-01-16, 12:24 PM</div></div><div class="posttext">Why is SotA that low? IMO one of the best bg's. For me as a PvE player it is a rare chance to win among long queue of losses, i actually can be MvP without landing a single blow on a player.<br />
+<br />
+That's one reason why it sucks for PvP interested players.. <br />
+<br />
+I've voted for AB. Loved this BG from the day it was released 'til now.. it's awesome! Second choice would be AV (classic style).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">woofpup</div><div class="date">2014-01-16, 12:25 PM</div></div><div class="posttext">My favorite battleground is Wintergrasp which you didn't list.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">meekus</div><div class="date">2014-01-16, 01:03 PM</div></div><div class="posttext">As annoying as they can be, WSG and Twin Peaks are still my favorites.<br />
+<br />
+How AV is &quot;winning&quot; the poll I will never understand. It's part of the shitty three; AV, IoC and SotA - yuck!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mortemus</div><div class="date">2014-01-16, 01:05 PM</div></div><div class="posttext">I don't really understand blizzard why are there so many battlegrounds....<br />
+I mean i like only the vanilla BGs the rest of them are mostly crap.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc07dffa6e5a</div><div class="date">2014-01-16, 01:17 PM</div></div><div class="posttext">AV in its old format / games that are long. Warsong otherwise. Arathi second to that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc92521f709a</div><div class="date">2014-01-16, 01:36 PM</div></div><div class="posttext">You can literally do all of that still.<br />
+<br />
+yes however it serves no purpose and the npc's summoned are too weak to matter the least in the current time rush version of AV.<br />
+<br />
+the mechanics exist but serve no purpose</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Explicit Teemo Nudes</div><div class="date">2014-01-16, 01:39 PM</div></div><div class="posttext">I suppose you didn't take into account that some battlegrounds had their weekends when you pulled those numbers?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc92521f709a</div><div class="date">2014-01-16, 01:42 PM</div></div><div class="posttext">As annoying as they can be, WSG and Twin Peaks are still my favorites.<br />
+<br />
+How AV is &quot;winning&quot; the poll I will never understand. It's part of the shitty three; AV, IoC and SotA - yuck!<br />
+<br />
+<br />
+i gotta agree with you there that i c ant see why AV is winning, it is easy free honor for player's who dont wish to play pvpsince the entire team rushes to the boss and kill's.<br />
+<br />
+i could however understand if they meant the vanilla version and how challenging it could be with worthy reward's. hard work through many day's just to get some reward's as well as the fights that lasted multiple hours and team efforts that went into collecting and improving your allies like buff's npc spawns npc rescue and so on that could not just be beaten by a single player but required multiple player's since they posed a great threat especially the giant's. all mechanics still exist but where killed by changing the game into &quot;time rush&quot; rather than &quot;raid vs raid&quot; world fight, in fact they could remove every mechanic except tower's and boss and nobody would really notice anything, honestly i am wondering who went and took a dump on AV that was so well designed yet it became degraded to being the lowest desired battleground except for honor farming...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pacster</div><div class="date">2014-01-16, 01:47 PM</div></div><div class="posttext">Alterac valley is first, and so much ahead??<br />
+<br />
+I see there is a lot of Alliance over here...<br />
+<br />
+<br />
+Nah, I'm horde and I always loved AV. The problem about AV is that one side needs coordination while the other can just PVE-Rush and win...this is why it's not balanced. It's a great battleground and much more interesting than the others...it just needs to be fixed.<br />
+<br />
+I think most of the votes go for the great battle AV can be....not for the PVE-Rush AV usually is(cause PVE-Rush is the best option for alliance and horde players behave like lemmings following bots to their final defeat over and over again).<br />
+<br />
+Same with isle of conquest. As long as one side has an advantage by just going PVE while the other side needs to enforce PvP to win, the game is not balanced. The horde would have equal chances on both battlegrounds if they would all go for the pvp...unfortunately half of them believe they got a serious chance with a PVE-rush too...and lose. This is not horde-specific tho...if the horde would have the PVE-rush advantage on both battlegrounds then the alliance would screw it up just like that too. Hoping that PvP will happen if only one faction has to enforce pvp(to have a serious chance to win) just doesn't work....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-16, 01:55 PM</div></div><div class="posttext">I suppose you didn't take into account that some battlegrounds had their weekends when you pulled those numbers?<br />
+<br />
+Every battleground had a CtA during the span of time the data was from, but Silvershard Mines and AV got cut a little bit short due to the dates and time it takes to update the characters.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc7fa9b5d2f</div><div class="date">2014-01-16, 02:02 PM</div></div><div class="posttext">Of course it is AV. You get tons of honor, even if you lose. AV weekends were my favorite.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zrankfappa</div><div class="date">2014-01-16, 02:16 PM</div></div><div class="posttext">Every battleground had a CtA during the span of time the data was from, but Silvershard Mines and AV got cut a little bit short due to the dates and time it takes to update the characters.<br />
+<br />
+Is there any way you can compare activity? say ... % of active players who did a RBG, % of active players who did LFR, % of players who did any other difficulty raid, and % who did neither ... that sort of thing?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1571eb5575</div><div class="date">2014-01-16, 02:18 PM</div></div><div class="posttext">BFG, no contest.<br />
+<br />
+Really nice take on AB, an already great BG.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Angelirium</div><div class="date">2014-01-16, 02:22 PM</div></div><div class="posttext">I'd totally vote for AV is it still was like the old ways, 2 days long AVs. Only, revamped to fit today's honor gains. Like, keep it 2 days long with all the shinanigans but, say you kill a general, you gain honor points equal to an average BG win or something...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-16, 02:44 PM</div></div><div class="posttext">Is there any way you can compare activity? say ... % of active players who did a RBG, % of active players who did LFR, % of players who did any other difficulty raid, and % who did neither ... that sort of thing?<br />
+<br />
+Doing so would be somewhat complicated, but maybe. Data is stored by battleground and SoO boss, not just one datapoint for each activity type.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6bd9909497</div><div class="date">2014-01-16, 02:45 PM</div></div><div class="posttext">Silvershard Mines and Temple only being so high, most likely, due to the amount of players having to complete it for the legendary chain. AV is my favourite Battleground, folllowed by Arathi basin.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pastar</div><div class="date">2014-01-16, 02:50 PM</div></div><div class="posttext">Looks like we have 4028 hipsters...No one likes AV you are not cool for saying you do end of story.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2014-01-16, 02:52 PM</div></div><div class="posttext">Silvershard and Temple will easily have skewed results from all the PvE players being forced to do it for their legendary quest chain. (surprised nobody seems to have mentioned this)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9e3d10c2f8</div><div class="date">2014-01-16, 03:06 PM</div></div><div class="posttext">I really like the Battle for Gilneas the most because of the landscape and design. It also seems quite balanced in terms of defence boredom, i.e. its unlikely you will become bored defending one point because its most likely will be attacked just now. That isnt true for other base-BGs like ab and eye.<br />
+From the flag games WSG is my favorite, twin peaks quite less, former seems a bit more balanced and joyful.<br />
+MoPBGs probably silvershard mines, but I think there could be more things in that BG - there are so much unused space and different hidden paths, but there's no point because its all bout the meat battle near the carts. Still fine though.<br />
+I dont know why, but I really hate both wotlk BGs and Temple of Kotmogu. Just hate them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elrandir</div><div class="date">2014-01-16, 03:32 PM</div></div><div class="posttext">TIL people don't hate WSG, wtf?!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fleshfurnace</div><div class="date">2014-01-16, 04:22 PM</div></div><div class="posttext">Old AV was good but now its just two raid groups racing to the finish of a boss with slight pvp in between. Doesn't even feel like a bg most of the time. I voted for temple of kotmogu because lets face it, it's 90% pvp 10% objective. It's the closest bg to arena without all the pve elements. I do love AB as a close 2nd and silvershard mines.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BarosanuNr1</div><div class="date">2014-01-16, 04:52 PM</div></div><div class="posttext">Really sad to see my favorite battlegrounds (EotS and Sota) ranked so low. It's also unfortunate so many people don't know how to play them right.<br />
+<br />
+I also fail to understand what so many players enjoy about SilverMines. Aside from IoC and undead-AV (yes, the real one died at some point and is now less then a shadow of its older self), that must be the bg I hate the most and actually instantly leave when it gets randomly selected.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Goretex</div><div class="date">2014-01-16, 04:54 PM</div></div><div class="posttext">AV and AB are my favs, even though every AV I enter is an automatic loss.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Salech</div><div class="date">2014-01-16, 05:02 PM</div></div><div class="posttext">Must be a lot of Alliance on this BG poll, lol. AV and Isle are the two I find Alliance consistently win at, OQ stats agree with me too week by week. Either they as a population are &quot;better&quot; at playing those maps, or the maps themselves assure the Alliance to easier victories. (My opinion is the latter.)<br />
+<br />
+<br />
+And the others favor horde and the racials horde have, so 2 for Alliance rest for Horde.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Die Hard</div><div class="date">2014-01-16, 05:04 PM</div></div><div class="posttext">Vanilla always wins.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bromium</div><div class="date">2014-01-16, 05:08 PM</div></div><div class="posttext">They need to pull resources from all these paid mounts, and have them figure out 2 things:<br />
+<br />
+1. remove reinforcements from my Alterac Valley<br />
+2. buff the NPCs to an appropriate level<br />
+<br />
+Done, Son.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4b5982cd2c</div><div class="date">2014-01-16, 06:32 PM</div></div><div class="posttext">Ab &lt;3 &lt;3 &lt;3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Laylriana</div><div class="date">2014-01-16, 06:50 PM</div></div><div class="posttext">I always loved Strand of the Ancients. Seems I'm sunk deep in the minority. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc2679b3377</div><div class="date">2014-01-16, 07:28 PM</div></div><div class="posttext">Silvershard and Temple will easily have skewed results from all the PvE players being forced to do it for their legendary quest chain. (surprised nobody seems to have mentioned this)<br />
+<br />
+That was also my first thought. In MoP I didn't do any BGs at all, but those two shitty BGs with multiple chars. Sometimes took me 10 tries to get that one win, ugh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2014-01-16, 08:51 PM</div></div><div class="posttext">What is most amazing to me about that bar graph is how few BGs are being played -- less than 2.3 BGs per lvl 90 character over a period of a month. Even if you consider most of those are alts, that's a shockingly low number.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mcsheepy</div><div class="date">2014-01-16, 09:46 PM</div></div><div class="posttext">Original is always better!! Warsong will always be my favorite bg! !!!!!!!!!! lol<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Looks like we have 4028 hipsters...No one likes AV you are not cool for saying you do end of story.<br />
+<br />
+AV was great in vanilla with the turtles and summoning Ivus</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">redwitchy</div><div class="date">2014-01-16, 10:16 PM</div></div><div class="posttext">Voted EoTS, seems many voted AV on nostalgia lol. Always loved the atmosphere and ambience surrounding EoTS. The thought that you're on this floating rock, desperately trying to gain control....dunno really, never been a huge PvPer but always liked this this one out of the lot.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">manybadgers</div><div class="date">2014-01-16, 10:20 PM</div></div><div class="posttext">All the allies will vote av because that's the only one they can win and horde is divided between wsg and ab which are the two other classic bgs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Talgriv</div><div class="date">2014-01-16, 11:49 PM</div></div><div class="posttext">Voted AB, would be AV if it were like the old days...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seditian</div><div class="date">2014-01-16, 11:49 PM</div></div><div class="posttext">All the allies will vote av because that's the only one they can win and horde is divided between wsg and ab which are the two other classic bgs.<br />
+<br />
+Classic isn't always better. This is especially the case in World of Warcraft, I really like most of the newer battlegrounds. Twin Peaks is a lot better than Warsong Gulch, Battle for Gilneas is a lot more fun than Arathi Basin. Temple of Kotmogu is really awesome as well, a lot of action all the time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Damax</div><div class="date">2014-01-17, 12:10 AM</div></div><div class="posttext">Warsong and Twin peak are both very awesome<br />
+<br />
+Arathi basin is Awesome and the best king of the hill<br />
+<br />
+Av and isle of conquest I never play those pve zerg faceroll matchs. AV used to be cool LONG LONG AGO. except now its a run to the boss pve race crap often you don't even pvp sometimes you 20vs 1 stupid alliance/horde who didn't join the boss killing train. if teams focus too much on defending they become super long turtles with too little honor per hour gains although can be fun if you are ranged.<br />
+<br />
+Strand and eyes of the storm: mixed feeling since people can't seem to figure it out and some matches are pretty fun. eyes might have too many objectives.<br />
+<br />
+Gilneas: the three base king of the hill imo isn't quite nearly as epic as its 5 base equivalent because there is almost not enough objectives to take care of. however its pretty similar and still good.<br />
+<br />
+The other 2 new bgs are alright in my book a moving king of the hill and a king of the hill with flag(gold) a la eots though I like it more I think.<br />
+<br />
+Temple of kotmogu is awesome! closest thing to a death match! give more!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">finchna</div><div class="date">2014-01-17, 12:44 AM</div></div><div class="posttext">there is inflation for mines and temple due to the legendary quest</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Milton</div><div class="date">2014-01-17, 02:30 AM</div></div><div class="posttext">Alterac Valey -&gt; the old one with no time limit and awesome PVE bosses. 3h long epic pvp fights?! YES PLEASE!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">smcn</div><div class="date">2014-01-17, 03:01 AM</div></div><div class="posttext">You need to make the country flags bigger or more obvious on the FCM posts. My guild freaks out about transfers off Silvermoon (which is a medium pop server in the US) every damn time.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+a moving king of the hill<br />
+<br />
+Fun fact: Silvershard Mines is based off the Payload game type in Team Fortress 2. It's even called &quot;Payload&quot; on the BG list!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Krixooks</div><div class="date">2014-01-17, 07:47 AM</div></div><div class="posttext">Alterac Valley is the only battleground that feels like a battleground, I hope it gets fleshed out in a revamp that turns it into the epic conflict it once was (and very occasionally is during a protracted turtle).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wayne25uk</div><div class="date">2014-01-17, 10:12 AM</div></div><div class="posttext">Old AV if it still existed was the best.<br />
+<br />
+But Warsong Gulch has always been my favourite as its capture the flag at its best,&quot;will i make it home,will i get to the flag,will i get camped in my own base&quot; its all fun.<br />
+<br />
+Worst battleground has got to be Silvershard mines,that bg is so retarded its unreal,and being a stealther i can do fuck all to capture a mine cart by hiding so its useless. A close second is Temple of Kotmogu as horde just seem to grab every orb and sit in the middle n alliance are like,&quot;wtf we do im stupeeeeeeed&quot;.<br />
+<br />
+Also just to touch on a note that has severely pissed me off lately,those fucking russian teams that are obviously premades that win EVERY FUCKING GAME that they are in,cant they stay in their own battlegroup instead of being grouped with us in western europe,english v english,german v german etc because lets face it they are tough as fucking nails to beat!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seditian</div><div class="date">2014-01-17, 11:37 AM</div></div><div class="posttext">Old AV if it still existed was the best.<br />
+<br />
+But Warsong Gulch has always been my favourite as its capture the flag at its best,&quot;will i make it home,will i get to the flag,will i get camped in my own base&quot; its all fun.<br />
+<br />
+Worst battleground has got to be Silvershard mines,that bg is so retarded its unreal,and being a stealther i can do fuck all to capture a mine cart by hiding so its useless. A close second is Temple of Kotmogu as horde just seem to grab every orb and sit in the middle n alliance are like,&quot;wtf we do im stupeeeeeeed&quot;.<br />
+<br />
+Also just to touch on a note that has severely pissed me off lately,those fucking russian teams that are obviously premades that win EVERY FUCKING GAME that they are in,cant they stay in their own battlegroup instead of being grouped with us in western europe,english v english,german v german etc because lets face it they are tough as fucking nails to beat!<br />
+<br />
+Except for Isle of Conquest, I've never lost to a Russian team. Seeing as you're saying that stealth classes can't do much in Silvershard Mines, I'd say it's a case of learn to play.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mastid</div><div class="date">2014-01-17, 04:50 PM</div></div><div class="posttext">Isle of Conquest and Strand of the Ancients can go die in a fire as far as I'm concerned. Never getting off my exclude list.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">grendle</div><div class="date">2014-01-17, 07:19 PM</div></div><div class="posttext">I Like AV because it has nostalgic value for me, not to mention it being a pretty good time to honour return. Wsg is probably next on that list even though it is amlost the opposite! my verdict is still out on the Pandaren Bg's but i prefer Deepwind to the others which tend to feel a bit one sided.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0ac0b24389</div><div class="date">2014-01-18, 10:40 AM</div></div><div class="posttext">Voted AB, would be AV if it were like the old days...<br />
+This<br />
+...bring back the mega battles of old AV</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wayne25uk</div><div class="date">2014-01-18, 06:53 PM</div></div><div class="posttext">Except for Isle of Conquest, I've never lost to a Russian team. Seeing as you're saying that stealth classes can't do much in Silvershard Mines, I'd say it's a case of learn to play.<br />
+<br />
+Clearly its a case of learn your facts before you try to say something smart,as everybody (but you) knows you cant capture towers or carts or anything else for that matter in stealth....idiot.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Buu</div><div class="date">2014-01-20, 01:26 AM</div></div><div class="posttext">I'm surprised to not see Battle for Gilneas in the bottom. That thing is a stain in Stockton's resume.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Blackknight2014</div><div class="date">2014-01-21, 05:58 AM</div></div><div class="posttext">Too many Alliance voting lol, Everyone loves CTF maps though. Twin Peaks is just a little too large. AV was good, when it was more balanced.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

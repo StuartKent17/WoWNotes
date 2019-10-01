@@ -1,0 +1,1123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="you, lfr, wont, but, not, chance, the, with, see, decked, one, mythic, that, will, runes, two, and, your, are, fully, want, raiders, reason, happening, piece, serious, like, youre, maybe, gear, interview, comprehension, just, bis, here, have, any, into, unless, our, time, asses, seems, does, which, thus, agreeing, annoyed, derp, very" />
+<meta name="description" content="Gamescom Developer Interview 
+Sloot was back today with another WatcherDev interview! 
+ 
+&lt;iframe src=&quot;https://player.twitch.tv/?video=v84678318&amp;!autoplay&amp;t=1h55m&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; height=&quot;506&quot; width=&quot;900&quot;&gt;&lt;/iframe&gt; 
+ 
+Raid Addon Utility and Changes 
+ 
+Addons that do things like tracking boss timers and better visibility on who is being targeted by what are fine, it is all informational.   
+Some of the things that addons do that interact with the 3D world such as radars or sending" />
+<title> Gamescom Developer Interview - Addon Changes in Patch 7.1 [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Gamescom Developer Interview - Addon Changes in Patch 7.1</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-2052372.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/2052372-Gamescom-Developer-Interview-Addon-Changes-in-Patch-7-1">Gamescom Developer Interview - Addon Changes in Patch 7.1</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2016-08-20, 09:08 PM</div></div><div class="posttext">Gamescom Developer Interview<br />
+Sloot (https://twitter.com/Slootbag) was back today with another WatcherDev (https://twitter.com/WatcherDev/with_replies) interview!<br />
+<br />
+<br />
+&lt;iframe src=&quot;https://player.twitch.tv/?video=v84678318&amp;!autoplay&amp;t=1h55m&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; height=&quot;506&quot; width=&quot;900&quot;&gt;&lt;/iframe&gt;<br />
+<br />
+Raid Addon Utility and Changes<br />
+<br />
+Addons that do things like tracking boss timers and better visibility on who is being targeted by what are fine, it is all informational. <br />
+Some of the things that addons do that interact with the 3D world such as radars or sending people to specific spots on Mythic Kormrok and Kromog are not great. <br />
+You could have much more scripted movement with the current state of addons, micromanaging your raid's movement and telling players exactly where to move in the 3D world. <br />
+In Patch 7.1, addons will not be able to access unit position in raids, dungeons, and competitive instances. <br />
+The team wanted to get this in Patch 7.0.3, but they didn't want to break some mods that are harmless in the outdoor world, such as the ones that help with gathering or collecting treasures. <br />
+Anything that projects an arrow on your screen that interacts with the 3D world or giving you your position relative to others will be broken. <br />
+The team didn't want to announce this until they were sure it was doable, but that work has now been done internally. <br />
+<br />
+<br />
+Dungeons and Raids<br />
+<br />
+There will be spots throughout dungeons where Demon Hunters can take some shortcuts, but your healer can't be a Demon Hunter.<br />
+Part of why the team never fixed some of the terrain in Everbloom is the challenge mode leaderboard. Fixing it would make the top times unbeatable. <br />
+With Mythic keystones, every week is its own leaderboard, so there is more flexibility to fix any issues with the dungeon.<br />
+There is some tuning left to do on the enemy forces meters so that you can't skip too much of the dungeon. <br />
+You should have to fight most of the things in your path, dodging patrols and maybe some other groups. <br />
+Stealth or invisibility potions should allow you to change which groups you have to fight, maybe skipping some tougher ones to do easier ones.<br />
+Having new and different mechanics in higher raid difficulties gives the team more tuning knobs and players something to look forward to other than bigger numbers.<br />
+Rare mobs in dungeons that are part of the world quest system should be rewarding even if you are a player that is still leveling and doesn't have access to the world quest yet. This way going to kill the mob is still rewarding for the entire group. <br />
+<br />
+<br />
+Camera Zoom<br />
+<br />
+The team wants something to feel epic, even at a larger zoom distance, so they scale things up. Things have been huge throughout WoW's history. <br />
+Threats that are off screen that you need to pay attention to are trivialized if you can just zoom out to see them. <br />
+The team has to tune those kind of threats around a certain camera zoom distance. <br />
+If zooming out even more by setting the cvar gives you an advantage, does that make it required? <br />
+In a world where you can zoom the camera out and the mechanic is tuned around people doing that, not doing so penalizes you significantly. <br />
+Motion sickness and other issues that caused discomfort while playing led to the team trying to find a compromise that let everyone play comfortably. <br />
+The team strongly feels that the game looks and feels better at the maximum zoom allowed by the UI. <br />
+The new max zoom distance wasn't added to the slider because it will increase the number of people that are experiencing the game in a sub-optimal way.<br />
+<br />
+<br />
+Loot Rules<br />
+<br />
+With new personal loot rules, you can trade an item to another person in the raid if you have an equivalent or higher item level. You can't do this for bonus rolled loot. <br />
+The cooperative nature of group and guild gameplay leads to you wanting to pass an item you don't need to a friend. Personal loot denied you this opportunity until this change.<br />
+<br />
+<br />
+Mythic+ Dungeons<br />
+<br />
+The best loot from Mythic+ dungeons comes from the weekly chest. <br />
+The loot that you are getting out of Mythic+ dungeons per clear will need a fair bit of luck to compete with the very best loot in the game. <br />
+Most players are not going to farm alts and source multiple fresh keystones on a regular basis to play a ton of Mythic+ dungeons. <br />
+The Mythic+ dungeon shouldn't be worse for the average player in order to safeguard against exploits or abuse of the system at the high end by a minority of players. <br />
+The team didn't want to be overly stingy with a new system, instead allowing players to have freedom, finding the abuse cases, and solving them with targeted fixes. <br />
+A weekly lockout is an easy solution, but everyone would complete their mythic dungeons at the start of the week and then everyone else would have trouble finding a group. <br />
+There is a possibility that chests at the end of each Mythic+ dungeon run are a little bit too rewarding right now in terms of a guaranteed item for everyone in the group. It should be a complement to raiding, not the best way to gear up early on. <br />
+The number of items that come out of the chest might change before it goes live. Maybe there are always a couple of items in the chest for the group rather than one for everyone. <br />
+Mythic+ dungeons are cross-realm. The realm first achievement (http://beta.wowdb.com/achievements/11224-realm-first-keystone-master) will be awarded to each player in a five player group that is made up of players from different realms, but this could change to something like 3/5 people being from the same realm to get it. <br />
+If a player hasn't unlocked Arcway and Court of Starts they won't get a keystone sending them there. <br />
+<br />
+<br />
+Dungeon Design<br />
+<br />
+Most dungeons should have 3-5 bosses and take around 15-20 minutes to run on the low end to 35-40 minutes on a larger and epic dungeon. Anything past that isn't great for random matchmaking content, as the likelihood that someone is going to drop out along the way increases. <br />
+In raids, the bosses are the main content, with the trash there for pacing and to make it feel more like a real place.<br />
+With dungeons, the team values the non-boss content as well as the bosses. <br />
+In dungeons you are only spending 7-8 minutes of a 30 minute dungeon fighting the actual bosses, while spending the rest fighting the trash. There is a lot more thought that goes into the composition of the trash packs, their abilities, and mechanics. <br />
+You used to quest through a zone and get sent into a dungeon to wrap up the zone. <br />
+The team got away from doing that for a little while, as it increasingly felt bad when you were doing a solo quest line and then had to stop what you were doing to finish the line with a dungeon quest. <br />
+With random matchmaking and LFG, it is almost still a solo experience if you want it to be. You can jump right into the dungeon and finish the storyline at the end of the zone. <br />
+<br />
+<br />
+Tier Tokens<br />
+<br />
+There is no change to how tier set tokens work from Warlords. <br />
+Personal loot gives you the set piece directly while group loot and master loot drop tokens. <br />
+It feels better to loot a piece of gear rather than a token, but in a group loot situation the tokens function better.<br />
+<br />
+<br />
+Dungeon Design<br />
+<br />
+The team has an internal checklist when they think about encounters, similar to the role tips in the dungeon journal. <br />
+Sometimes they get to the dungeon journal phase, look at creating a tip for DPS, and find that there isn't anything they can think of to write there. <br />
+If that is the case, they probably need an additional mechanic. <br />
+The dungeon is an entire encounter, so as a whole it should have things that are interesting and engaging for all of the different roles. <br />
+<br />
+<br />
+Content Rewards<br />
+<br />
+Rather than items being a fixed power point, they are a spectrum. There is a floor on the stats and then a tapering pyramid of item level with a lower and lower chance to get that item the higher item level it is. This allows content to stay relevant for longer. <br />
+Before, dungeons had a fixed place in gearing up. As soon as you moved on to any form of raiding, there was very little reason to go back and do dungeons. The team would come up with excuses to send you back so that people could enjoy dungeons, such as Badges or Valor Points, but the gear was still irrelevant. <br />
+Even if you have progressed into raids in Legion, there is a chance that something cool could drop from it that will be useful for your character. <br />
+It always will be best to do the hardest content available to you in terms of reward for time spent. <br />
+You could still get something great from a world quest or Mythic dungeon, which is nice because that possibility didn't exist before. <br />
+The person who does raid finder over the course a patch might end up with a piece of high item level gear, but it is just one piece of gear. No one is going to mistake them for a Mythic raider. For the person that got that amazing drop, that probably made their day. <br />
+The team wanted to get back to a place where anything could happen rather than knowing nothing exciting would happen. <br />
+<br />
+<br />
+Augment Runes<br />
+<br />
+Augment runes and the higher stat food are there for min-maxers that want to squeeze every bit of potential out of the system. <br />
+There is also an economic side to this, with raiders selling BoE items from raids and using the profit to finance consumables and repairs. <br />
+Augment runes allows the team to have a baseline solid reward from Raid Finder when you don't win an item. <br />
+Past expansions gave you 28 gold, which didn't make anyone feel good. <br />
+The augment runes can actually sell for a decent amount early on in the expansion, which is a better solution than dropping hundreds of gold and causing inflation. <br />
+The intent is for augment runes to be a nice bonus to players in Raid Finder, not for Mythic raiders to feel that it is necessary to run Raid Finder.<br />
+Guilds that are using augment runes generally use the guild bank to fund them or rich players in that guild. <br />
+<br />
+<br />
+Scaling Dungeons<br />
+<br />
+As soon as the team starting working on the tech to scale the outdoor zones to the player level, they knew that they wanted to do it in dungeons as well. <br />
+If you can do any zone while leveling it would be strange to not be able to do certain dungeons, especially when they are integrated into the zone story. <br />
+This will also help with queue times, as the entire leveling pool of players can match with each other.<br />
+<br />
+<br />
+Raid Tiers<br />
+<br />
+When the team released Warlords, they thought of Highmaul and Foundry as the same tier. <br />
+They intended for Foundry to pick up where Highmaul left off, with early Foundry bosses tuned to expect a good amount of Highmaul gear. <br />
+Even with the time between the two raids, guilds coming in were not feeling rewarded by the 10 item level increase from Highmaul to Foundry. <br />
+It was common for a guild to clear normal Highmaul, do the first few bosses of Heroic Highmaul, and then go into normal Foundry, which was as hard as early Heroic Highmaul. <br />
+The team hotfixed the item level of loot from Foundry to make it a full tier apart. <br />
+In Legion, there is the sliding scale on item level so the team wanted to make sure that if you have been running Normal Nightmare for a while that when you go into Normal Nighthold the gear will feel like an upgrade. <br />
+Going into a brand new raid, killing the first few bosses, and disenchanting everything that drops does not feel great. <br />
+<br />
+<br />
+Legendary Items<br />
+<br />
+There has been some thought about a legendary item token that you could turn it, but it is premature at this stage in the system. <br />
+There aren't that many legendary items yet, so you don't feel completely unable to get the one you want. <br />
+If there were 20 legendary items for every spec, you might play the entire expansion and never see the one you wanted. That would feel pretty rough. <br />
+If you gave players a token, there would be a specific legendary they would spend that token on and feel like a very narrow and deterministic system. <br />
+The team is looking for ways to make items more interesting and exciting in a world where it feels like items are very formulaic. Legendary items can change your preferred talent build, stat ratings, or how you play your class. <br />
+There is something that would be lost by giving you a token, having you pick the legendary that is best for your existing talent build, and min-max that way. <br />
+Initially the team looked at having the legendary items disabled during the World First race, but you can only have one legendary item equipped, making them powerful but not overly so. <br />
+There is still some tuning to be done on tank and healer legendary items, as they can have more of an impact than one DPS having one. <br />
+There has always been some element of randomness in gearing up for progression. If you got Warforged Mythic Soul Capactiors on your first clear, that was a really big deal, bigger than a legendary item. <br />
+There hasn't been a situation where the outcome of the World First race was decided by someone's luck while gearing up. <br />
+Legendary items are tough to balance, which is why you can buy them from the NPC on beta. <br />
+<br />
+<br />
+Wrathion<br />
+<br />
+Wrathion is still around. <br />
+In alpha he made an appearance in Neltharion, as it is the home of his father, but the way he did it was a little confusing. <br />
+One of the members of the Highmountain Tauren that had been assisting you was revealed to be Wrathion in disguise. <br />
+This didn't make sense for the lore. <br />
+We definitely haven't seen the last of him. <br />
+<br />
+<br />
+Order Hall Story<br />
+<br />
+There are plans to continue the story of the Order Hall campaigns. The Alliance and Horde went to the Broken Shore, tried to stop the Legion, and failed miserably. <br />
+A lot of the story here is you working with your Order, building up your artifact, recruiting champions, and the Orders are our hope for success against the Legion in the long run. <br />
+As the story advances, Orders will be important. <br />
+<br />
+<br />
+Class Changes and Bugfixes<br />
+<br />
+The Exsanguinate nerf hotfix wasn't handled well. <br />
+Since then, the team has tried to post about upcoming class changes a couple of days before they go live, even holding back the hotfix if messaging hasn't gone out. <br />
+Players shouldn't have to worry about abilities silently changing in the middle of the raid.<br />
+The team fixed a couple hundred bugs a week after the patch went live and a couple thousand a week during late beta. <br />
+<br />
+<br />
+Class Balance and Artifacts<br />
+<br />
+The team draws the line at changing the relative order of specs in the short term, via hotfix. <br />
+If Fire is way too good, rather than bringing them down to a point where they are tied with or worse than Frost and Arcane, they will take them to slightly too good still. <br />
+You shouldn't regret what you spent your Artifact Power on. <br />
+As the team looks ahead to Patch 7.1 and later in the expansion, there is more flexibility to how Artifact Power can work. <br />
+They won't keep the game imbalanced for a long period of time, but in the short term there is a lot of disruption that comes from players feeling like the time they spent powering up their artifact was a mistake.<br />
+<br />
+<br />
+Treasure Goblins<br />
+<br />
+Treasure Goblins have been removed, they might come back later. <br />
+<br />
+<br />
+Karazhan<br />
+<br />
+The new Karazhan is definitely not just updating the old boss numbers. There will be some cool stuff that will blow people's minds, genuinely getting hyped!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Looneyluna</div><div class="date">2016-08-20, 09:38 PM</div></div><div class="posttext">Literally the only thing i got out of them breaking addons in 7.1 is that exorsus, one of the most helpful raid addons in the game, is going to be useless in legion.<br />
+<br />
+What a useless change.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6e5d6f317e</div><div class="date">2016-08-20, 09:40 PM</div></div><div class="posttext">&quot;There will be spots throughout dungeons where Demon Hunters can take some shortcuts, but your healer can't be a Demon Hunter.&quot; <br />
+What about swap blasters?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Risale</div><div class="date">2016-08-20, 09:43 PM</div></div><div class="posttext">Literally the only thing i got out of them breaking addons in 7.1 is that exorsus, one of the most helpful raid addons in the game, is going to be useless in legion.<br />
+<br />
+What a useless change.<br />
+<br />
+If you just use it for the bossmods then you are wasting then you are not using the addon to its fullest potentian, hell you are using maybe 10% of it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc327e1ca57c</div><div class="date">2016-08-20, 09:46 PM</div></div><div class="posttext">RIP pugs when all these addons break.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocaaa1948e8d</div><div class="date">2016-08-20, 09:46 PM</div></div><div class="posttext">Will this affect the Archy mod?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vegas82</div><div class="date">2016-08-20, 09:47 PM</div></div><div class="posttext">The real question remains, why do they design content and then realize it doesn't fit for lore reasons? Shouldn't that all be settled before you waste time and money on designing pointless content that will be cut?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bobby B</div><div class="date">2016-08-20, 09:47 PM</div></div><div class="posttext">Seems like they're thinking pro-actively about a lot of things that seemed a bit meh.<br />
+<br />
+Good to hear.<br />
+Still hoping for a Warlock buff before launch though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfd328e0b6e</div><div class="date">2016-08-20, 09:56 PM</div></div><div class="posttext">&quot;The team didn't want to announce this until they were sure it was doable, but that work has now been done internally.&quot;<br />
+-----&gt; Here comes the shit storm but we have to wait until the sales!<br />
+<br />
+RIP addons. The game is getting less and less customizable. Like I said this Legion will be worse than WoD was.<br />
+<br />
+When the casual players realize &quot;Karazhan is a Mythic dungeon&quot;... Ohh boy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3a779c5103</div><div class="date">2016-08-20, 09:59 PM</div></div><div class="posttext">Treasure Goblins<br />
+Treasure Goblins have been removed, they might come back later.<br />
+<br />
+yeah, sure! not like it would have been completely harmless and fun for players to find one. <br />
+Blizz...pls.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc27ce22f2</div><div class="date">2016-08-20, 10:03 PM</div></div><div class="posttext">&quot;The team didn't want to announce this until they were sure it was doable, but that work has now been done internally.&quot;<br />
+-----&gt; Here comes the shit storm but we have to wait until the sales!<br />
+<br />
+RIP addons. The game is getting less and less customizable. Like I said this Legion will be worse than WoD was.<br />
+<br />
+When the casual players realize &quot;Karazhan is a Mythic dungeon&quot;... Ohh boy.<br />
+<br />
+How would this make Legion worse? If anything it would make it better. No need for dumb addons to hold a players hand, and people who are good enough to play without those addons will get properly rewarded.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce769dc40bf</div><div class="date">2016-08-20, 10:04 PM</div></div><div class="posttext">RIP pugs when all these addons break.<br />
+<br />
+As if people were using addons.<br />
+<br />
+You're lucky if they have a flask/food buff</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Skorpionss</div><div class="date">2016-08-20, 10:05 PM</div></div><div class="posttext">&quot;The team didn't want to announce this until they were sure it was doable, but that work has now been done internally.&quot;<br />
+-----&gt; Here comes the shit storm but we have to wait until the sales!<br />
+<br />
+RIP addons. The game is getting less and less customizable. Like I said this Legion will be worse than WoD was.<br />
+<br />
+When the casual players realize &quot;Karazhan is a Mythic dungeon&quot;... Ohh boy.<br />
+<br />
+Hurr durr you can't get spoonfed info by an addon and have to actually pay attention to the encounter... how tragic...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2c82f72dbd</div><div class="date">2016-08-20, 10:11 PM</div></div><div class="posttext">&quot;The team didn't want to announce this until they were sure it was doable, but that work has now been done internally.&quot;<br />
+-----&gt; Here comes the shit storm but we have to wait until the sales!<br />
+<br />
+RIP addons. The game is getting less and less customizable. Like I said this Legion will be worse than WoD was.<br />
+<br />
+When the casual players realize &quot;Karazhan is a Mythic dungeon&quot;... Ohh boy.<br />
+<br />
+He didn't say addons are going. He just said addons that can track your position in raids and basically hold your hand to do stuff are dying. They will then design bosses around the fact that those addons don't exist.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mhyroth</div><div class="date">2016-08-20, 10:33 PM</div></div><div class="posttext">Good to see some info.<br />
+Wonder why Demon Hunters can get shortcuts while they said they don't want them to abuse Gliding/Jumping as an advantage. I see a ton of DH's abusing the jump in Battlegrounds already...<br />
+Also what will Blizzard do about the abuse of Account Sharing during Realm-First races (both Raids and Dungeons). It seems people who openly do things against the ToS get invited to events like this. (NOT talking about Sloot here but about other Raiders/PvP players).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hoeth</div><div class="date">2016-08-20, 10:35 PM</div></div><div class="posttext">&quot;If Fire is way too good, rather than bringing them down to a point where they are tied with or worse than Frost and Arcane, they will take them to slightly too good still&quot;<br />
+<br />
+Always nice to have confirmation that the Mage class is entitled to special treatment.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DevoutChaos</div><div class="date">2016-08-20, 10:37 PM</div></div><div class="posttext">The only 2 things we really use position add-ons for is /range x - which semi-competent raiders don't need, and less competent raiders never cared about anyway - and the ability to do things like assign specific positions with arrows like in Mythic Kormrok - Which isn't exactly run by PuGs, and tends to attract more competent raiders anyway. If you are running that sort of content you are smart enough to listen to your raid leader and know where you need to go/stand.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Keniwa</div><div class="date">2016-08-20, 10:40 PM</div></div><div class="posttext">We need an answer from blizzard on why Affliction warlock still have 2 Golden Traits with on-death mechanics in the artifact, they are so niche that they will rarely be useful, a golden traits should be cool, not something you can only use in a very specific scenario like scorpiron....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DevoutChaos</div><div class="date">2016-08-20, 10:42 PM</div></div><div class="posttext">Good to see some info.<br />
+Wonder why Demon Hunters can get shortcuts while they said they don't want them to abuse Gliding/Jumping as an advantage. I see a ton of DH's abusing the jump in Battlegrounds already...<br />
+<br />
+I can't speak for BGs, but in a dungeon how can you abuse it? I mean at best Druids (Wild Charge) and Rogues (Shadowstep) could follow I suppose?<br />
+It could be a viable group comp for dungeons, but I can't really see it sticking tbh, and that's assuming the type of jump doesn't break LoS on the DH.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">evertonbelmontt</div><div class="date">2016-08-20, 10:45 PM</div></div><div class="posttext">&quot;If Fire is way too good, rather than bringing them down to a point where they are tied with or worse than Frost and Arcane, they will take them to slightly too good still&quot;<br />
+<br />
+Always nice to have confirmation that the Mage class is entitled to special treatment.<br />
+<br />
+I LOL'd at that too.<br />
+I'm sure watcher wants to pass the idea of us not having to fear a nerf to the spec just because the others aren't as good, but it sounds like:<br />
+<br />
+&quot;Don't worry, mages will always be good no matter which spec.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaedis</div><div class="date">2016-08-20, 10:51 PM</div></div><div class="posttext">Hurr durr you can't get spoonfed info by an addon and have to actually pay attention to the encounter... how tragic...<br />
+<br />
+Ya, try doing Mythic Archi without a HUD for the Wroughts and Shackles. They've designed too many of these boss fights, particularly mythics, under the assumption that people have access to these position trackers. It's going to be chaos without them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ContentsMayVary</div><div class="date">2016-08-20, 10:57 PM</div></div><div class="posttext">Hopefully this won't break range checking - as a healer it will be somewhat of a pain not being able to tell if you're in range of the people you're trying to heal...<br />
+But I can live with not knowing which direction an out-of-healing-range person is - although they might not... ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8aff34db26</div><div class="date">2016-08-20, 10:58 PM</div></div><div class="posttext">Ya, try doing Mythic Archi without a HUD for the Wroughts and Shackles. They've designed too many of these boss fights, particularly mythics, under the assumption that people have access to these position trackers. It's going to be chaos without them.<br />
+<br />
+You really don't understand that, if they make the addons not work, they LITERALLY HAVE TO NO LONGER BUILD ENCOUNTERS WITH THE ADDON IN MIND?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aquinan</div><div class="date">2016-08-20, 10:59 PM</div></div><div class="posttext">Ya, try doing Mythic Archi without a HUD for the Wroughts and Shackles. They've designed too many of these boss fights, particularly mythics, under the assumption that people have access to these position trackers. It's going to be chaos without them.<br />
+<br />
+And they will design bosses around not having add-ons to hold your hand.. this is 7.1 who's going to care about Archie then?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HumbleDuck</div><div class="date">2016-08-20, 11:05 PM</div></div><div class="posttext">This guy opens his mouth and I get triggered.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Keile</div><div class="date">2016-08-20, 11:11 PM</div></div><div class="posttext">Ya, try doing Mythic Archi without a HUD for the Wroughts and Shackles. They've designed too many of these boss fights, particularly mythics, under the assumption that people have access to these position trackers. It's going to be chaos without them.<br />
+<br />
+Not really.<br />
+<br />
+Now they will design the fights knowing that people will not have them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lolsteak</div><div class="date">2016-08-20, 11:13 PM</div></div><div class="posttext">RIP Treasure Goblins</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mizzet</div><div class="date">2016-08-20, 11:14 PM</div></div><div class="posttext">Good riddance to those 3d/radar addons, they're nothing but paint-by-numbers aids that prevent people from developing actual useful skills like situational awareness.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MatadorMedia</div><div class="date">2016-08-20, 11:25 PM</div></div><div class="posttext">&quot;The new Karazhan is definitely not just updating the old boss numbers. There will be some cool stuff that will blow people's minds, genuinely getting hyped!&quot;<br />
+<br />
+ALL ABOARD THE HYPE TRAIN!!!!! chooo chooo!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dblanch369</div><div class="date">2016-08-20, 11:27 PM</div></div><div class="posttext">If those raid changes break DBM, I'm going to be furious, and call &amp;ull$hit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Apero</div><div class="date">2016-08-20, 11:46 PM</div></div><div class="posttext">The new max zoom distance wasn't added to the slider because it will increase the number of people that are experiencing the game in a sub-optimal way. [/list]<br />
+<br />
+And they plan to use the same &quot;argument&quot; to get rid of a the console macro that they have used last time. Sneaky move giving us back a console command but with 12 yards less distance. This way the outcry wont be as big as it was before. Sneeky Blizz.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mehrunes</div><div class="date">2016-08-21, 12:06 AM</div></div><div class="posttext">Their remarks about spec balance make no sense whatsoever. How are players going to regret focusing on one spec if it performs on par with another one? If someone is the type of player to play whatever the numbers tell them to even if they aren't the biggest fan of the spec, they aren't exactly the type of player to be too concerned about what they play anyway. Previous expansions taught them versatility by now. And there shouldn't even be any damn disruptions in the first place. After eons of alpha and beta, not to mention way over a decade at developing this game by now, they should finally git gud at balancing numbers and stop delivering the same messy shit show time and time again because they are too lazy to not suck at their jobs. &quot;They won't keep the game imbalanced for a long period of time&quot;. Yeah, right. Except it's the first expansion where they actually acknowledge they may keep it imbalanced, deliberately even, and aren't just bullshitting players with dozens of excuses of how they are going to fix the problems &quot;soon&quot;/the problems fix themselves at X ilvl (that may be irrelevant for progression)/the problems don't exist. In an expansion that can't afford it thanks to Artifacts. Yeah, that should fill people with hope in regards to their competence /s</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hirakinuki</div><div class="date">2016-08-21, 12:12 AM</div></div><div class="posttext">In Patch 7.1, addons will not be able to access unit position in raids, dungeons, and competitive instances.<br />
+<br />
+I understand that Blizzard want to remove the 3D assist on addon. But if addon can't access unit position, all healer UI will be broken. We can't anymore see if people are too away for healing or not.... We must try to heal someone to see if that people are in range or not.... It's seem weird and a boring gaemplay.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vreivai</div><div class="date">2016-08-21, 12:14 AM</div></div><div class="posttext">&quot;The intent is for augment runes to be a nice bonus to players in Raid Finder, not for Mythic raiders to feel that it is necessary to run Raid Finder.&quot;<br />
+<br />
+Holy fuck they still don't understand raiding at all after all these years.<br />
+<br />
+Thought I suppose the augment runes won't be what forces us to do LFR, given that loot from it will now have a random chance to be superior to mythic gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocea7d8b0d33</div><div class="date">2016-08-21, 12:29 AM</div></div><div class="posttext">I understand that Blizzard want to remove the 3D assist on addon. But if addon can't access unit position, all healer UI will be broken. We can't anymore see if people are too away for healing or not.... We must try to heal someone to see if that people are in range or not.... It's seem weird and a boring gaemplay.<br />
+<br />
+There are multiple ways to get a distance. The out of range indicator should be safe.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nyres</div><div class="date">2016-08-21, 12:44 AM</div></div><div class="posttext">So the from what I understand the addon change is going to break the annoying Circles that move around that DBM added in recently and the /range 10yd 20yd 30yd thing and TomTom(the arrow icon pointing you to a location)? Other than that DBM would still be able to tell timers and general &quot;switch target&quot;, &quot;Get away from boss&quot;, and &quot;stack&quot; messages right? If so then honestly its not too game breaking at least for tanks and DPS.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nekobaka</div><div class="date">2016-08-21, 01:19 AM</div></div><div class="posttext">Augment runes and the higher stat food are there for min-maxers that want to squeeze every bit of potential out of the system.<br />
+There is also an economic side to this, with raiders selling BoE items from raids and using the profit to finance consumables and repairs.<br />
+Augment runes allows the team to have a baseline solid reward from Raid Finder when you don't win an item.<br />
+Past expansions gave you 28 gold, which didn't make anyone feel good.<br />
+The augment runes can actually sell for a decent amount early on in the expansion, which is a better solution than dropping hundreds of gold and causing inflation.<br />
+The intent is for augment runes to be a nice bonus to players in Raid Finder, not for Mythic raiders to feel that it is necessary to run Raid Finder.<br />
+So the intent is a system that gives consumable rewards for less serious players to then trade for gold to more serious players to make someone feel better for not getting loot. Of which is to benefit the economy from guilds who already spend a lot of gold on consumables supplied by less serious players who then buy gear and carries from said guilds. Of course raiding guilds who have the gold will not feel like they need to run LFR for a consumable when they can buy it. <br />
+<br />
+Seems like a needless additional consumable all to make players feel better about not getting loot.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2016-08-21, 01:24 AM</div></div><div class="posttext">They need to just up and decide what the fuck they're doing. Is zooming out an advantage? Is having every fucking boss ability on a goddamn timer an advantage? Is having a stupid arrow pointing you to a spot an advantage? Either wipe all the shit or leave it alone make up your fucking mind.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Murderdoll</div><div class="date">2016-08-21, 01:49 AM</div></div><div class="posttext">Sounds like everytime they mention the camera distance, they find a new way at trying to justify the changes that go against what they said previously.<br />
+<br />
+Just give us the old distance on the fucking slider.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9de0d4c32c</div><div class="date">2016-08-21, 01:56 AM</div></div><div class="posttext">We need an answer from blizzard on why Affliction warlock still have 2 Golden Traits with on-death mechanics in the artifact, they are so niche that they will rarely be useful, a golden traits should be cool, not something you can only use in a very specific scenario like scorpiron....<br />
+<br />
+It was my understanding the weapon used to spit out spirits you would kill to proc them effects. I assume with the change to Reap the Gold Dragons will proc when you reap the souls.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kataroku</div><div class="date">2016-08-21, 02:06 AM</div></div><div class="posttext">Blizzard thinks it's more fun to have you read every spell a boss is casting and somehow recall that &quot;Enchantment Spring of Torment&quot; causes a deadly wave to pass through the raid. How can I avoid it when the boss's foot takes up my entire screen? Doesn't the simple fact that people have been playing the game with maxed camera distance for years mean that the game is &quot;fun&quot; being played that way?<br />
+<br />
+I like to be personally responsible for my own actions in raids. I want to be able to see when I'm in danger, and move on my own accord, rather than have a raid leader screaming at me to move away from something I can't even see.<br />
+<br />
+This is reminiscent of the days when game designers used to think that mazes were awesome, except in this case, it's &quot;fear&quot; and frustration of the unknown; &quot;We want players to be able to die to shit they can't see, it's more immersive!&quot;<br />
+<br />
+TL;DR: What's so wrong about being proactive during a raid encounter and reacting to the boss's actions in real-time vs memorizing the raid journal and repeating dance steps? Which is more fun? Maybe they're equally fun for different people? Limiting camera distance alienates those who find it more fun being proactive.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">manypillars</div><div class="date">2016-08-21, 02:09 AM</div></div><div class="posttext">So long, Ion, and thanks for all the vomit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seramore</div><div class="date">2016-08-21, 02:11 AM</div></div><div class="posttext">Blizzard thinks it's more fun to have you read every spell a boss is casting and somehow recall that &quot;Enchantment Spring of Torment&quot; causes a deadly wave to pass through the raid. How can I avoid it when the boss's foot takes up my entire screen? Doesn't the simple fact that people have been playing the game with maxed camera distance for years mean that the game is &quot;fun&quot; being played that way?<br />
+<br />
+I like to be personally responsible for my own actions in raids. I want to be able to see when I'm in danger, and move on my own accord, rather than have a raid leader screaming at me to move away from something I can't even see.<br />
+<br />
+This is reminiscent of the days when game designers used to think that mazes were awesome, except in this case, it's &quot;fear&quot; and frustration of the unknown; &quot;We want players to be able to die to shit they can't see, it's more immersive!&quot;that moment when people who don't belong in the mythic raiding scene complain about things that really won't be an issue.<br />
+<br />
+this gives me flashbacks to that one addon that Blizzard completely nullified in ICC. when that addon was taken care of by Blizzard, things ended up being fine. this isn't the end of the world. If you really need to rely on an addon that has arrows which point at things or arrows that tell you where to go in raids, then maybe this kind of raiding isn't for you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kataroku</div><div class="date">2016-08-21, 02:18 AM</div></div><div class="posttext">that moment when people who don't belong in the mythic raiding scene complain about things that really won't be an issue.<br />
+<br />
+this gives me flashbacks to that one addon that Blizzard completely nullified in ICC. when that addon was taken care of by Blizzard, things ended up being fine. this isn't the end of the world. If you really need to rely on an addon that has arrows which point at things or arrows that tell you where to go in raids, then maybe this kind of raiding isn't for you.<br />
+<br />
+Not sure why you quoted me... I was referring to the max camera distance, not addons which virtually play the game for you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jaese</div><div class="date">2016-08-21, 02:19 AM</div></div><div class="posttext">&quot;The intent is for augment runes to be a nice bonus to players in Raid Finder, not for Mythic raiders to feel that it is necessary to run Raid Finder.&quot;<br />
+<br />
+Holy fuck they still don't understand raiding at all after all these years.<br />
+<br />
+Thought I suppose the augment runes won't be what forces us to do LFR, given that loot from it will now have a random chance to be superior to mythic gear.<br />
+<br />
+If you feel the necessity to do LFR because of the very very very very very very small chance something will Titanforge to Mythic quality, that is your problem, and your problem alone.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zoldor</div><div class="date">2016-08-21, 02:59 AM</div></div><div class="posttext">only things I'll miss is the range bubble in DBM. Was just a nice feature for the stand x yards apart. Gauging distance can be annoying in some zones, but I'll adapt. Really it was nice just to create &quot;perfect&quot; positioning. Wasn't because I couldn't figure out to be away, just it was nice to be as tight as possible.<br />
+<br />
+Also, kind of sad Wraithion is again not very visible. I've been interested to see how he plays into the story.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arbs</div><div class="date">2016-08-21, 03:17 AM</div></div><div class="posttext">He didn't say addons are going. He just said addons that can track your position in raids and basically hold your hand to do stuff are dying. They will then design bosses around the fact that those addons don't exist.<br />
+<br />
+Basically no one will be able to make another Mythic Archimonde Lazer Weakaura, Which I am alright with it as it made that mechanic completely stupid proof. If your line is red you move, if it is green you stay put. There was no sense of worry or even cordination needed for it.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+that moment when people who don't belong in the mythic raiding scene complain about things that really won't be an issue.<br />
+<br />
+this gives me flashbacks to that one addon that Blizzard completely nullified in ICC. when that addon was taken care of by Blizzard, things ended up being fine. this isn't the end of the world. If you really need to rely on an addon that has arrows which point at things or arrows that tell you where to go in raids, then maybe this kind of raiding isn't for you.<br />
+<br />
+AVR is the addon your talking about, But it is true those who don't belong in Mythic raiding think this is the end of the world. If anything it will weed out those who are getting carried. An than those who actually have good awareness during raid &amp; not relying on an addon will go on with their everyday lives. Healers I also think are over reacting about healing range. I'm possible that is something that will not be affected in this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Murderdoll</div><div class="date">2016-08-21, 03:21 AM</div></div><div class="posttext">Its ironic that you say &quot;Those who dont belong in Mythic&quot;. <br />
+<br />
+Its the Mythic people that made those addons in the first place. They made them to make their lives easier.<br />
+<br />
+I doubt theyll break the range indicator. Itll be merely the Archimonde chains/Kormrok soaking etc that points you where to go.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arbs</div><div class="date">2016-08-21, 03:24 AM</div></div><div class="posttext">Its ironic that you say &quot;Those who dont belong in Mythic&quot;. <br />
+<br />
+Its the Mythic people that made those addons in the first place. They made them to make their lives easier.<br />
+<br />
+I doubt theyll break the range indicator. Itll be merely the Archimonde chains/Kormrok soaking etc that points you where to go.<br />
+<br />
+Well that is exactly that is being broken, but the comment about &quot;Those who dont belong in Mythic&quot; is more about those who think the range indicator being removed is the end of the world &amp; they can't function with out it. When really it is a small thing that really isn't even needed if your someone with good awareness. Most Mythic Raiders will mostly likely not even care or notice unless someone bring it up &amp; that is where the comment comes from. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaedis</div><div class="date">2016-08-21, 03:25 AM</div></div><div class="posttext">And they will design bosses around not having add-ons to hold your hand..<br />
+<br />
+Suuuuuure they will. Just like they designed all the bosses to be nice and small because they were planning to reduce the camera zoom distance, right? Oh wait...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Acww52</div><div class="date">2016-08-21, 03:28 AM</div></div><div class="posttext">FFXIV has no addons. dbm in TBC only had timers and a list of people in range of you. Its not the end of the world. Its quite easy to adapt to it but it will def make people worse raiders if they relayed too heavy on them and can't adapt to the new meta.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleccybubb</div><div class="date">2016-08-21, 03:34 AM</div></div><div class="posttext">FFXIV has no addons. dbm in TBC only had timers and a list of people in range of you. Its not the end of the world. Its quite easy to adapt to it but it will def make people worse raiders if they relayed too heavy on them and can't adapt to the new meta.<br />
+<br />
+Has an unofficial dps meter which is allowed as long as you aren't a dick with it. And apparently when ps3 support is dropped they want to implement their own ingame dps meter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seramore</div><div class="date">2016-08-21, 03:53 AM</div></div><div class="posttext">Its ironic that you say &quot;Those who dont belong in Mythic&quot;. <br />
+<br />
+Its the Mythic people that made those addons in the first place. They made them to make their lives easier.<br />
+<br />
+I doubt theyll break the range indicator. Itll be merely the Archimonde chains/Kormrok soaking etc that points you where to go.Yes, made to make their lives easier. Not made to be relied on so raiders can be able to handle mechanics.<br />
+<br />
+With addons like these, you're able to mindlessly handle mechanics. If you were able to, why wouldn't you take advantage of that? The problem is that people who complain and mention the fact that raiding is going to be harder without it is coming from those who probably don't belong in Mythic raiding guilds. I don't think any serious top raider would actually complain about the fact that the removal of this is going to make raiding harder for them. Mythic raiding is supposed to be hard, I don't think anyone should be complaining about anything in regards to difficulty unless an encounter is basically unkillable. I misunderstood the post that Kataroku made and thought he was referring to the addon, but my point still stands.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfe2bab4c21</div><div class="date">2016-08-21, 03:58 AM</div></div><div class="posttext">The only reason I see for people being against the addin change is either if they are raid leading a mythic guild full of baddies or if they themselves are baddies</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nathiest</div><div class="date">2016-08-21, 04:20 AM</div></div><div class="posttext">Treasure Goblins removed... Blizzard hates fun.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kanegasi</div><div class="date">2016-08-21, 04:32 AM</div></div><div class="posttext">What a stupid thing to break. Does Blizzard not understand that Kormrok, Kromrog, and even Iskar are impossible without positioning? If they want to break positioning, they better not make Mythic fights like those. You can't expect perfect positioning out of even the best groups without addons. Sure, group on raid markers and spreading out are easy, but the precision needed for those fights was dumb.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc95544e94a1</div><div class="date">2016-08-21, 04:39 AM</div></div><div class="posttext">If you feel the necessity to do LFR because of the very very very very very very small chance something will Titanforge to Mythic quality, that is your problem, and your problem alone.<br />
+<br />
+He is talking about the need to have Runes as raider and how that forces you to do LFR or buy them, nothing about titanforged gear. <br />
+<br />
+//inb4 discussion about being forced//</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfe2bab4c21</div><div class="date">2016-08-21, 04:44 AM</div></div><div class="posttext">What a stupid thing to break. Does Blizzard not understand that Kormrok, Kromrog, and even Iskar are impossible without positioning? If they want to break positioning, they better not make Mythic fights like those. You can't expect perfect positioning out of even the best groups without addons. Sure, group on raid markers and spreading out are easy, but the precision needed for those fights was dumb.<br />
+<br />
+You honestly don't need those. I feel like people are getting carried by these addons. Good to see them go</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kanegasi</div><div class="date">2016-08-21, 04:49 AM</div></div><div class="posttext">You honestly don't need those. I feel like people are getting carried by these addons. Good to see them go<br />
+<br />
+That's not a problem at all. Reading through this thread, there's too many smug elitists who don't like certain players stepping foot in Mythic raids. I can't imagine why. Those players don't affect you and are of no concern to you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfe2bab4c21</div><div class="date">2016-08-21, 04:58 AM</div></div><div class="posttext">That's not a problem at all. Reading through this thread, there's too many smug elitists who don't like certain players stepping foot in Mythic raids. I can't imagine why. Those players don't affect you and are of no concern to you.<br />
+<br />
+I have no problem with people trying out mythic? As long as they dont use cheats for it :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MysticalOS</div><div class="date">2016-08-21, 04:59 AM</div></div><div class="posttext">I really don't think you guys get the true extent of what they are breaking here. They aren't just breaking fancy lines and arrows. They are literally reverting the range checker back to the BC range checker. No radar, no dots. Just a list of names that are 10, 11, 15 or 28 yards away. There is no range 5 or range 6 anymore. it's inspect range, interact range, bandage range, type hacks. and yes those range checkers were hacks at best. Not very accurate and certainly not very customizable. Have to spread out 20 people with range 6? sorry not gonna happen anymore have to use range 10 even though it's much larger than actual requirement because range 6 requires unit positions.<br />
+<br />
+Do you like spam? no, well too bad. Can't check unit positions, don't know if you're on the boat, or the platform. Mogu side or mantid? top of galakras tower or on road. etc. Can't check position, filters are GONE. Can't use smart location checks to go &quot;this player only needs to know what's going on for boat&quot;. Now, timers and warnings for ALL yay!.<br />
+<br />
+Their fix is stupid and not well thought out. if they wanted to break arrows and stuff they could have just broke something else like detecting player facing/angle, not breaking unit position checks. This is going to have side effects that are really dumb and a huge step backwards.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seramore</div><div class="date">2016-08-21, 05:00 AM</div></div><div class="posttext">What a stupid thing to break. Does Blizzard not understand that Kormrok, Kromrog, and even Iskar are impossible without positioning? If they want to break positioning, they better not make Mythic fights like those. You can't expect perfect positioning out of even the best groups without addons. Sure, group on raid markers and spreading out are easy, but the precision needed for those fights was dumb.In case anybody was wondering, this is a prime example of what I was referring to in my two posts above.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfe2bab4c21</div><div class="date">2016-08-21, 05:03 AM</div></div><div class="posttext">In case anybody was wondering, this is a prime example of what I was referring to in my two posts above.<br />
+<br />
+It's a prime example of someone trying to bypass mechanics because they most likely do not belong in mythic to start with. Which is fine</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seramore</div><div class="date">2016-08-21, 05:07 AM</div></div><div class="posttext">That's not a problem at all. Reading through this thread, there's too many smug elitists who don't like certain players stepping foot in Mythic raids. I can't imagine why. Those players don't affect you and are of no concern to you.Assuming you're referring to my post in addition to the others who have responded to this problem, it has absolutely nothing to do with people stepping foot into Mythic. I don't care who does this difficulty and kills bosses in it, the problem is that it's intended to be difficult and people are complaining about the fact that addons which trivializes the difficulty are being disabled. If you're relying on an addon to bypass the difficulty that is intended to be difficult, then maybe the hard difficulty isn't for you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pooti</div><div class="date">2016-08-21, 05:12 AM</div></div><div class="posttext">Assuming you're referring to my post out of the others who have responded to this problem, it has absolutely nothing to do with people stepping foot into Mythic. I don't care who does this difficulty and kills bosses in it, the problem is that it's intended to be difficult and people are complaining about the fact that addons which trivializes the difficulty are being disabled. If you're relying on an addon to bypass the difficulty that is intended to be difficult, then maybe the hard difficulty isn't for you.<br />
+I agree with you 100%. I am however waiting for the &quot;I pay the same money as you so I should have access to everything you do&quot; retort to surface.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Confucius</div><div class="date">2016-08-21, 05:36 AM</div></div><div class="posttext">the camera zoom explanations were basically all garbage</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ImpTaimer</div><div class="date">2016-08-21, 05:48 AM</div></div><div class="posttext">Everytime Blizzard breaks an addon and makes a raider/pvper cry an angel gets its wings.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1f5e02b9df</div><div class="date">2016-08-21, 05:56 AM</div></div><div class="posttext">I have no problem with people trying out mythic? As long as they dont use cheats for it :)<br />
+<br />
+How the fuck are ALLOWED addons cheats? Blizzard has ALLOWED all these things to be done, because they provide the API AddOns can use.<br />
+<br />
+Want to see &quot;real cheats&quot; for WoW? Go find the cinematic programs that allow you to detach the camera from your character and go fly around. That is &quot;kinda cheaty&quot; but if Blizzard cripples their game further maybe more people are open to using third party software to exploit the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ImpTaimer</div><div class="date">2016-08-21, 06:10 AM</div></div><div class="posttext">How the fuck are ALLOWED addons cheats? Blizzard has ALLOWED all these things to be done, because they provide the API AddOns can use.<br />
+<br />
+Want to see &quot;real cheats&quot; for WoW? Go find the cinematic programs that allow you to detach the camera from your character and go fly around. That is &quot;kinda cheaty&quot; but if Blizzard cripples their game further maybe more people are open to using third party software to exploit the game.<br />
+<br />
+This is the kind of argument that screams 'It's not cheating if I don't get caught&quot;.<br />
+<br />
+The API is not a waver for addon creators to exploit the shit out of it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Realtalk</div><div class="date">2016-08-21, 06:11 AM</div></div><div class="posttext">People need to stop posting real mythic players don't need these types of add-ons.<br />
+<br />
+The add-on they're breaking was extremely beneficial in Methods world first Mythic Archimonde. Pretty sure (none?) maybe Paragon killed him with out their radar weak aura. Hell Seita own words he actually says how impressed and easy it made p2. The very changes that are being implemented are in line with where he said he said he'd like to raiding and addons headed. Getting to point of basically needing a guild coder to make first kills faster was becoming a joke. Top raiders saw this a year ago. <br />
+<br />
+http://manaflask.com/articles/wod-silver-a-post-hfc-paragon-interview</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zeropeorth</div><div class="date">2016-08-21, 06:19 AM</div></div><div class="posttext">FFXIV has no addons. dbm in TBC only had timers and a list of people in range of you. Its not the end of the world. Its quite easy to adapt to it but it will def make people worse raiders if they relayed too heavy on them and can't adapt to the new meta.<br />
+<br />
+FFXIV also telegraphs much better than WoW ever has; though WoW has gotten much better about this the last few years.<br />
+<br />
+<br />
+Everyone is harping on people not deserving to be in Mythic if they need these addons, forgetting the fact that people who play all versions of the raid use the addons, and possibly, those who play worse than you, actually 'need' them at the normal/heroic level because they aren't as skilled as the top tier players.<br />
+<br />
+<br />
+I personally didn't like all the fancy bubbles and stuff that was added to DBM, but the /range indicator has been in its current state for nearly a decade, seems odd they suddenly find it an issue; well, they suddenly find a lot of things issues, like camera distance as well. I think they've moved a lot of people around, and some of the people that left had some strong influence in keeping the standard we had.<br />
+<br />
+<br />
+Good or bad, its their direction. Most will adjust. I do not have faith in their ability to design with it in mind; as they have failed at their intentions consistently. They remove mobility and promise fights won't require nearly as much ... fights come out requiring more mobility. They increase health, increase healer spell costs and lower mana pools claiming there won't be one shot mechanics, triage is important, and you'll always have time to heal the tank after big damage ... and it just never happens that way. They have ideas, but they have no clue how to implement them or they completely forget (or worse case, they are just saying things to make the pitchforks go away and have no intentions of following through).<br />
+<br />
+<br />
+I play differently than I used to, most of this stuff will barely affect me at all; and I've played without the addons in the past rather fine; so no big deal, but can understand and relate to those who do take issue.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seramore</div><div class="date">2016-08-21, 06:24 AM</div></div><div class="posttext">People need to stop posting real mythic players don't need these types of add-ons.<br />
+<br />
+The add-on they're breaking was extremely beneficial in Methods world first Mythic Archimonde. Pretty sure (none?) maybe Paragon killed him with out their radar weak aura. Hell Seita own words he actually says how impressed and easy it made p2. The very changes that are being implemented are in line with where he said he said he'd like to raiding and addons headed. Getting to point of basically needing a guild coder to make first kills faster was becoming a joke. Top raiders saw this a year ago. <br />
+<br />
+http://manaflask.com/articles/wod-silver-a-post-hfc-paragon-interviewI feel like your first sentence and the rest of your post are conflicting with each other. You say people need to stop saying what people have been saying in this thread, but the rest of your post only reinforces what has been said so far. Take what I said in my previous post, and replace it with: &quot;if you have to use this addon to rely on a kill, maybe that world first kill wasn't for you.&quot; Paragon did it legitimately and Method relied on a coder to provide an addon to cheese the mechanic. The kill was fair, but the fact that one guild used an addon to make a mechanic minuscule and one guild didn't on a top kill says a lot.<br />
+<br />
+To you and the others who have posted in response to the replies in this thread, it's perfectly okay to have an opinion and say that you don't like this change. With that being said, the point of this entire argument is that if you're complaining about this and saying that your raiding experience is ruined because of this change, you're absolutely in the wrong.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ImpTaimer</div><div class="date">2016-08-21, 06:26 AM</div></div><div class="posttext">People need to stop posting real mythic players don't need these types of add-ons.<br />
+<br />
+The add-on they're breaking was extremely beneficial in Methods world first Mythic Archimonde. Pretty sure (none?) maybe Paragon killed him with out their radar weak aura. Hell Seita own words he actually says how impressed and easy it made p2. The very changes that are being implemented are in line with where he said he said he'd like to raiding and addons headed. Getting to point of basically needing a guild coder to make first kills faster was becoming a joke. Top raiders saw this a year ago. <br />
+<br />
+http://manaflask.com/articles/wod-silver-a-post-hfc-paragon-interview<br />
+<br />
+Correct. Mythic raiders are not a paragon of skill and honor. They just as prone as any player to using any tool they can get their hands on to achieve their goal.<br />
+<br />
+Every ban wave hitting Mythic Raiders and Rated PvP player and people just blow it off like &quot;oh they're an outlier&quot;. No. The hard truth is for every bleeding-edge &lt;insert raid size&gt; there's at least one person doing things they probably shouldn't be doing.<br />
+<br />
+Undocumented account sharing is the biggest offense committed by players, bleeding-edge or not.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">WuxianLP</div><div class="date">2016-08-21, 06:29 AM</div></div><div class="posttext">...<br />
+<br />
+Do you like spam? no, well too bad. Can't check unit positions, don't know if you're on the boat, or the platform. Mogu side or mantid? top of galakras tower or on road. etc. Can't check position, filters are GONE. Can't use smart location checks to go &quot;this player only needs to know what's going on for boat&quot;. Now, timers and warnings for ALL yay!.<br />
+<br />
+Their fix is stupid and not well thought out. if they wanted to break arrows and stuff they could have just broke something else like detecting player facing/angle, not breaking unit position checks. This is going to have side effects that are really dumb and a huge step backwards.<br />
+<br />
+Did you think about that they designed the new abilities and encounters with that in mind? I guess not.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">killbill</div><div class="date">2016-08-21, 07:13 AM</div></div><div class="posttext">With random matchmaking and LFG, it is almost still a solo experience if you want it to be. You can jump right into the dungeon and finish the storyline at the end of the zone.<br />
+<br />
+This is impossible, when my first time into dungeon, I want to watch everything including long cut scene but other members are already moving away. Great if you are the tank, everyone will wait but as dps I often left behind and since I was new to the dungeon I will be lost. If the solution is to watch on youtube then the idea to jump right into or continue the story is already lost.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gaucho-</div><div class="date">2016-08-21, 07:34 AM</div></div><div class="posttext">that moment when people who don't belong in the mythic raiding scene complain about things that really won't be an issue.<br />
+<br />
+this gives me flashbacks to that one addon that Blizzard completely nullified in ICC. when that addon was taken care of by Blizzard, things ended up being fine. this isn't the end of the world. If you really need to rely on an addon that has arrows which point at things or arrows that tell you where to go in raids, then maybe this kind of raiding isn't for you.<br />
+<br />
+Are you saying that raiding isn't for people in Method, Paragon or Exorsus then? Because these people crafted this addons for fights like Archimonde.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spunt</div><div class="date">2016-08-21, 07:44 AM</div></div><div class="posttext">&quot;You shouldn't regret what you spent your Artifact Power on.&quot;<br />
+<br />
+Funny. This is exactly what I felt when I picked up Soul Flame and Wrath of Consumption. On death talents for a spec with the LONGEST RAMP UP IN THE GAME are pure garbage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zka</div><div class="date">2016-08-21, 07:44 AM</div></div><div class="posttext">&quot;Part of why the team never fixed some of the terrain in Everbloom is the challenge mode leaderboard. Fixing it would make the top times unbeatable.&quot;<br />
+<br />
+Then why don't they make these shortcuts trivial? There isn't anything more offputting in an instance than spending minutes trying to walljump to avoid a few trashpacks that die in a few gcds...<br />
+<br />
+About the radar addons: if you need such an aid to make an encounter playable, then the encounter design is clearly stupid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Runefeather</div><div class="date">2016-08-21, 07:59 AM</div></div><div class="posttext">I am pretty excited for Karazhan to come back. It was my first raid, so I have a lot of nostalgia for it &lt;3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seramore</div><div class="date">2016-08-21, 08:49 AM</div></div><div class="posttext">Are you saying that raiding isn't for people in Method, Paragon or Exorsus then? Because these people crafted this addons for fights like Archimonde.Are you saying that you read absolutely nothing besides that single post you quoted?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc18e6a734ba</div><div class="date">2016-08-21, 09:10 AM</div></div><div class="posttext">The only 2 things we really use position add-ons for is /range x - which semi-competent raiders don't need, and less competent raiders never cared about anyway - and the ability to do things like assign specific positions with arrows like in Mythic Kormrok - Which isn't exactly run by PuGs, and tends to attract more competent raiders anyway. If you are running that sort of content you are smart enough to listen to your raid leader and know where you need to go/stand.<br />
+<br />
+These addons have been used since burning crusade (gruul), as generally people don't have a ruler in their mind (and when you have 25 players trying to get into position in a few seconds in a confined space, you do need the range check), allowing to measure the distance between 2 players. <br />
+<br />
+<br />
+Did you think about that they designed the new abilities and encounters with that in mind? I guess not.<br />
+<br />
+The mechanics which made people develop these sort of addons are still around though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mizzet</div><div class="date">2016-08-21, 09:41 AM</div></div><div class="posttext">About the radar addons: if you need such an aid to make an encounter playable, then the encounter design is clearly stupid.<br />
+<br />
+You could just get better, have people really forgotten how to play without addons holding their hand? The game would be much better if raiding addons were as sanitized as in FFXIV - yes they have parsers there, but it provides recount and TellMeWhen'esque functionality at most.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">papajohn4</div><div class="date">2016-08-21, 10:11 AM</div></div><div class="posttext">&quot;The team didn't want to announce this until they were sure it was doable, but that work has now been done internally.&quot;<br />
+-----&gt; Here comes the shit storm but we have to wait until the sales!<br />
+<br />
+RIP addons. The game is getting less and less customizable. Like I said this Legion will be worse than WoD was.<br />
+<br />
+When the casual players realize &quot;Karazhan is a Mythic dungeon&quot;... Ohh boy.<br />
+<br />
+the game would much more better without such addons... the reason is that Developers design raids having in mind that player use x y z addons... in order to make them challenging, they need to create much more complex mechanics, ending in a not so fun fight and people having to use addons to play the game.<br />
+<br />
+If you need an addon to deal with a mechanic, then the mechanic is already bad and failed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cerus</div><div class="date">2016-08-21, 10:12 AM</div></div><div class="posttext">Well that officially breaks tom tom as well doesn't it? Heaven forbid people use an addon for open world crap that doesn't hurt anything. <br />
+<br />
+<br />
+Also - wth is a treasure goblin? The D3 collectors battle pet? Or something else?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2469da80bf</div><div class="date">2016-08-21, 10:14 AM</div></div><div class="posttext">i am sure they will track their sub numbers on the changes they make . If they see a massive drop due to low succes rate they will asjust acording .<br />
+We all know their greed will change the way they &quot;feel&quot; rather fast, and before you know it they will cater to all and start preforming backflips for us ;-) .</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">stevietv</div><div class="date">2016-08-21, 10:19 AM</div></div><div class="posttext">Adam from DBM puts his thoughts together: https://www.patreon.com/posts/dbm-and-patch-7-6578091</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gaucho-</div><div class="date">2016-08-21, 10:25 AM</div></div><div class="posttext">Are you saying that you read absolutely nothing besides that single post you quoted?<br />
+<br />
+Trying to blame me for the poor choice of words? Catapulting the raiding scene back to TBC will have an larger impact on lower skilled player than on cutting edge. <br />
+<br />
+TBC encounters just had ~3 mechanics, advanced boss mods weren't needed. Blizzard themselves designed Archimonde, such boss mods didn't even exist prior to this encounter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">arcaneshot</div><div class="date">2016-08-21, 10:51 AM</div></div><div class="posttext">Let's put it this way: If you're not running Mythic content this change doesn't actually affect you in any way. The radar in nearly every case was a visual version of what DBM used to give you (a list of everyone that's too close to you)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eazy</div><div class="date">2016-08-21, 10:53 AM</div></div><div class="posttext">Nice, now naps won't be able to use addons which says them &quot;go there in 5...4...&quot;.<br />
+<br />
+That's not really problem for skilled people. If that's a problem for you, then you shouldn't progress.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Poganin</div><div class="date">2016-08-21, 11:25 AM</div></div><div class="posttext">&quot;You shouldn't regret what you spent your Artifact Power on.&quot;<br />
+<br />
+Funny. This is exactly what I felt when I picked up Soul Flame and Wrath of Consumption. On death talents for a spec with the LONGEST RAMP UP IN THE GAME are pure garbage.<br />
+<br />
+Yeah, &quot;Spirit Bond&quot; in the BM Hunter artifact would like a word too. A 40K heal at level 110 once every 6 seconds where enemies deal 50K per hit. Great design, Blizzard. But I guess you're too busy pampering mages as always.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Adi91</div><div class="date">2016-08-21, 11:27 AM</div></div><div class="posttext">It's a horribily stupid change (Addons).<br />
+<br />
+Retarded.<br />
+<br />
+Not a problem for skilled people, but a huge problem for non world TOP 100 groups.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mhyroth</div><div class="date">2016-08-21, 11:31 AM</div></div><div class="posttext">Adam from DBM puts his thoughts together: https://www.patreon.com/posts/dbm-and-patch-7-6578091<br />
+<br />
+He's right that Blizzard should've communicated earlier, but he puts the blame entirely on Blizzard and rants about &quot;muh my precious work and hours put into it&quot;, while he damn' well knows with games (and World of Warcraft in particular) you're never certain things will remain the same or change.<br />
+His opinion in that regard is also kind of biased (since he's saying he doesn't want Blizzard to remove it but change something else) since it's his work and thus he'd be shooting himself in the foot for doing so.<br />
+Nonetheless I enjoyed reading his opinion on this and his point of view is (seen from his side) correct, yet for the good of the game and the evolution of Raiding this had to happen.<br />
+<br />
+<br />
+It's a horribily stupid change (Addons).<br />
+<br />
+Retarded.<br />
+<br />
+Not a problem for skilled people, but a huge problem for non world TOP 100 groups.<br />
+<br />
+Because those non TOP 100 groups will actually have to improve instead of relying on external tools to progress ? You know getting better at the game ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2016-08-21, 12:16 PM</div></div><div class="posttext">It's a prime example of someone trying to bypass mechanics because they most likely do not belong in mythic to start with. Which is fine<br />
+<br />
+Um, the top raiders in the world are the ones that made this shit. The first week when you were derping around. The guys in Method don't belong in mythic? You couldn't have made a more ignorant comment.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleccybubb</div><div class="date">2016-08-21, 12:30 PM</div></div><div class="posttext">It's a horribily stupid change (Addons).<br />
+<br />
+Retarded.<br />
+<br />
+Not a problem for skilled people, but a huge problem for non world TOP 100 groups.<br />
+<br />
+Yeah must be hard having to actually put some effort in instead of being spoonfed now eh?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc32ac407789</div><div class="date">2016-08-21, 12:49 PM</div></div><div class="posttext">The team didn't want to announce this until they were sure it was doable, but that work has now been done internally.<br />
+more like they didn't want to announce it before getting enough preorders</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2016-08-21, 12:49 PM</div></div><div class="posttext">i love you blizzard for the addon changes in 7.1!<br />
+<br />
+a big first step that ppl force to use their eyes and brain for a boss fight!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1f5e02b9df</div><div class="date">2016-08-21, 12:54 PM</div></div><div class="posttext">i love you blizzard for the addon changes in 7.1!<br />
+<br />
+a big first step that ppl force to use their eyes and brain for a boss fight!<br />
+<br />
+can you tell when 5 people are 15 yards away from you by eye? I sure cannot in WoW.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8aff34db26</div><div class="date">2016-08-21, 12:58 PM</div></div><div class="posttext">Well that officially breaks tom tom as well doesn't it? Heaven forbid people use an addon for open world crap that doesn't hurt anything. <br />
+<br />
+<br />
+Also - wth is a treasure goblin? The D3 collectors battle pet? Or something else?<br />
+<br />
+It literally says that it's just for dungeon/raiding/competitive environment. Man, some of you don't even read before whining. Hillarious.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce85c021d73</div><div class="date">2016-08-21, 01:00 PM</div></div><div class="posttext">Welcome to the World of Whiners.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Raim Surion</div><div class="date">2016-08-21, 01:02 PM</div></div><div class="posttext">I feel like this is a step in the right direction. Designing future raid encounters with the certainty that players won't have certain addons is lot easier to manage than designing them with the assumption that most or many will be using them. While I am in favor of many quality of life addons, I have always disagreed with the notion that boss encounters should be designed with third party addons in mind when determining their difficulty and skills. XIV has been a pretty good example so far. Yes I am aware they now have some vocal addons to announce moves, but not much else and the content is more than approachable without them. I believe it will do better for the raid scene to be less about choreographed group dances using addons and more about personal responsibility with more mechanics that focus individuals.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2016-08-21, 01:05 PM</div></div><div class="posttext">can you tell when 5 people are 15 yards away from you by eye? I sure cannot in WoW.<br />
+then try and learn it. thats real playing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kanegasi</div><div class="date">2016-08-21, 01:14 PM</div></div><div class="posttext">I have no problem with people trying out mythic? As long as they dont use cheats for it :)<br />
+<br />
+AddOns aren't cheats :)<br />
+<br />
+<br />
+Assuming you're referring to my post in addition to the others who have responded to this problem, it has absolutely nothing to do with people stepping foot into Mythic. I don't care who does this difficulty and kills bosses in it, the problem is that it's intended to be difficult and people are complaining about the fact that addons which trivializes the difficulty are being disabled. If you're relying on an addon to bypass the difficulty that is intended to be difficult, then maybe the hard difficulty isn't for you.<br />
+<br />
+That's not your decision to make. You can believe whatever you want, elitist.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rafalga</div><div class="date">2016-08-21, 01:14 PM</div></div><div class="posttext">Ppl said addons were next after the camera change , there were right<br />
+<br />
+edit: i love elitist is now being used as some sort of insult, hilarious stuff.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jasper Kazai</div><div class="date">2016-08-21, 01:30 PM</div></div><div class="posttext">&quot;The team would come up with excuses to send you back so that people could enjoy dungeons, such as Badges or Valor Points, but the gear was still irrelevant.&quot;<br />
+<br />
+Well, that sure is one way to put it.<br />
+<br />
+&quot;The intent is for augment runes to be a nice bonus to players in Raid Finder, not for Mythic raiders to feel that it is necessary to run Raid Finder.&quot;<br />
+<br />
+Then you failed in your intent. A buff such as that is absolutely necessary for mythic raiders, whereas LFR players wouldn't care. If they only play LFR, then they have no need for it.<br />
+<br />
+<br />
+Just come out and say you want geared players to keep queuing so the queues don't completely suck. It's why you haven't put Valor in raids. There's no other reason why you'd do that. It's an understandable goal. I wish they'd own up to it rather than give this PR-speak.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1f5e02b9df</div><div class="date">2016-08-21, 01:34 PM</div></div><div class="posttext">then try and learn it. thats real playing.<br />
+<br />
+&quot;real playing&quot; is learning how to measure distance in a fanatasy-roleplaing-game with magic? And I thought real gaming was about having fun in the games you were playing...<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+&quot;The team would come up with excuses to send you back so that people could enjoy dungeons, such as Badges or Valor Points, but the gear was still irrelevant.&quot;<br />
+<br />
+Well, that sure is one way to put it.<br />
+<br />
+&quot;The intent is for augment runes to be a nice bonus to players in Raid Finder, not for Mythic raiders to feel that it is necessary to run Raid Finder.&quot;<br />
+<br />
+Then you failed in your intent. A buff such as that is absolutely necessary for mythic raiders, whereas LFR players wouldn't care. If they only play LFR, then they have no need for it.<br />
+<br />
+<br />
+Just come out and say you want geared players to keep queuing so the queues don't completely suck. It's why you haven't put Valor in raids. There's no other reason why you'd do that. It's an understandable goal. I wish they'd own up to it rather than give this PR-speak.<br />
+<br />
+Because telling the good people, that they are the only things that keep the LFR running would be an embarrassing statement to the status of LFR.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Ppl said addons were next after the camera change , there were right<br />
+<br />
+edit: i love elitist is now being used as some sort of insult, hilarious stuff.<br />
+<br />
+Of course they were right, once you see someone breaking someones arm with no reason, you know they soon will break more bones then just this one...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Adi91</div><div class="date">2016-08-21, 01:38 PM</div></div><div class="posttext">Yeah must be hard having to actually put some effort in instead of being spoonfed now eh?<br />
+<br />
+Yeah, because with the help of addons you hadn't put enough effort for an encounter, seems legit. Maybe if the addon killed the boss instead of you. <br />
+<br />
+Archimonde mythic became trivial because of the help of the addons... Wait... Not.ű<br />
+<br />
+This is like about flying and camera distance. If I want to use it, why they are disallow me to use it? It's just retarded.<br />
+<br />
+And who say &quot;spoonfed&quot; and other bullshits can easily turn the addons off, and play the fights with extra effort.<br />
+<br />
+But, taking this away from good, but not TOP players, could ruin the game experience. Totally worth it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kawlisse</div><div class="date">2016-08-21, 01:41 PM</div></div><div class="posttext">AddOns aren't cheats :)<br />
+<br />
+<br />
+Indeed, they should remove macro's that play the game with the press of a few buttons instead !!! specially in pvp !</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mizzet</div><div class="date">2016-08-21, 01:42 PM</div></div><div class="posttext">&quot;real playing&quot; is learning how to measure distance in a fanatasy-roleplaing-game with magic? And I thought real gaming was about having fun in the games you were playing...<br />
+<br />
+Having those kinds of holistic skills is very valuable, it shows situational awareness and the ability to quickly assess circumstances. Far more valuable than the ability to turret out a memorized rotation while staring at your GPS. <br />
+<br />
+That you don't think that's 'real gaming' says more about you than anything, really.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1f5e02b9df</div><div class="date">2016-08-21, 01:47 PM</div></div><div class="posttext">Having those kinds of holistic skills is very valuable, it shows situational awareness and the ability to quickly assess circumstances. Far more valuable than the ability to turret out a memorized rotation while staring at your GPS. <br />
+<br />
+That you don't think that's 'real gaming' says more about you than anything, really.<br />
+<br />
+What you listed has nothing to do with having a fucking tape measure in your eyes. Or can you really tell the difference between 14 and 15 yards/meters in WoW without any help?<br />
+<br />
+The things you mentioned are useful to find where to go to keep the needed distance, but help not with getting the right distance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jaese</div><div class="date">2016-08-21, 01:54 PM</div></div><div class="posttext">He is talking about the need to have Runes as raider and how that forces you to do LFR or buy them, nothing about titanforged gear. <br />
+<br />
+//inb4 discussion about being forced//<br />
+<br />
+<br />
+Thought I suppose the augment runes won't be what forces us to do LFR, given that loot from it will now have a random chance to be superior to mythic gear.<br />
+<br />
+You missed this. They're saying Runes won't force you, but the small chance of gear upgrades will.<br />
+<br />
+//reading comprehension//</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bohelric</div><div class="date">2016-08-21, 01:56 PM</div></div><div class="posttext">I really don't think you guys get the true extent of what they are breaking here. They aren't just breaking fancy lines and arrows. They are literally reverting the range checker back to the BC range checker. No radar, no dots. Just a list of names that are 10, 11, 15 or 28 yards away. There is no range 5 or range 6 anymore. it's inspect range, interact range, bandage range, type hacks. and yes those range checkers were hacks at best. Not very accurate and certainly not very customizable. Have to spread out 20 people with range 6? sorry not gonna happen anymore have to use range 10 even though it's much larger than actual requirement because range 6 requires unit positions.<br />
+<br />
+Do you like spam? no, well too bad. Can't check unit positions, don't know if you're on the boat, or the platform. Mogu side or mantid? top of galakras tower or on road. etc. Can't check position, filters are GONE. Can't use smart location checks to go &quot;this player only needs to know what's going on for boat&quot;. Now, timers and warnings for ALL yay!.<br />
+<br />
+Their fix is stupid and not well thought out. if they wanted to break arrows and stuff they could have just broke something else like detecting player facing/angle, not breaking unit position checks. This is going to have side effects that are really dumb and a huge step backwards.<br />
+<br />
+Absolutely this. Spot on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8c93e36b48</div><div class="date">2016-08-21, 02:36 PM</div></div><div class="posttext">Ohh my dear lord if legendaries are random....<br />
+<br />
+<br />
+There is a huge difference between an unholy DK that sometimes gets a movement speed boost during disabling abilities and then being able to pop 6-8 extra festering wounds per hit.<br />
+<br />
+<br />
+No... not just huge.. its the difference between sitting out or being the #1 dps.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3f37de703d</div><div class="date">2016-08-21, 02:47 PM</div></div><div class="posttext">Poor Blizzard tries so hard yet continues to fail. Legion will be the same as wod. Many people will fall for the hype until they see all the flaws and slowly start droping.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mizzet</div><div class="date">2016-08-21, 02:48 PM</div></div><div class="posttext">What you listed has nothing to do with having a fucking tape measure in your eyes. Or can you really tell the difference between 14 and 15 yards/meters in WoW without any help?<br />
+<br />
+The things you mentioned are useful to find where to go to keep the needed distance, but help not with getting the right distance.<br />
+<br />
+Of course you can, but then you've been using these addons as a crutch for so long your skills have atrophied. Atrophied to the point that you don't even believe something like that is possible. <br />
+<br />
+You have some catching up to do, but fret not, it's very doable for anyone who wishes to apply themselves.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1f5e02b9df</div><div class="date">2016-08-21, 03:03 PM</div></div><div class="posttext">Of course you can, but then you've been using these addons as a crutch for so long your skills have atrophied. Atrophied to the point that you don't even believe something like that is possible. <br />
+<br />
+You have some catching up to do, but fret not, it's very doable for anyone who wishes to apply themselves.<br />
+<br />
+Oh I know it's possible, but why do I need that &quot;skill&quot;? Where is the value in knowing how to do so?<br />
+So I can do now, what addons made trivial years ago?<br />
+That's like saying we shouldn't use robots to assemble cars, because we loose the skills to assemble cars. It's idiotic!<br />
+<br />
+Make the game a challenge and not a pointless exercise in pixel-counting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mizzet</div><div class="date">2016-08-21, 03:18 PM</div></div><div class="posttext">Because every game is fundamentally about testing your ability to master some arbitrary skillset, that it can be done better by programming or automation is besides the point. We assemble cars in the fastest, most efficient way because that's a for-profit industry defined by economic pressures, gaming is not comparable at all.<br />
+<br />
+It's kind of like the Olympics, to be topical. Is there a point in being good at running when you can show up with a motorcycle? Why learn to play tennis when you can build a robot that serves so fast it's impossible to return? It's a game, you're deliberately competing within a limited framework to demonstrate your mastery within that framework.<br />
+<br />
+So, it's just a medium for demonstrating an arbitrary skillset. Maybe it's raw power, or hand eye coordination. Likewise, the 'point' of a boss fight is not to down a boss for its own sake, you may as well hack the server and &quot;.kill&quot; command the boss if that's all you care about. It's about doing so while demonstrating a skill, like being able to analyze a situation and think quickly on your feet to put yourself in the right place at the right time. If you're relying on an addon to write you that script, that defeats the entire purpose of the challenge.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RuneDK</div><div class="date">2016-08-21, 03:44 PM</div></div><div class="posttext">Ohh my dear lord if legendaries are random....<br />
+<br />
+<br />
+There is a huge difference between an unholy DK that sometimes gets a movement speed boost during disabling abilities and then being able to pop 6-8 extra festering wounds per hit.<br />
+<br />
+<br />
+No... not just huge.. its the difference between sitting out or being the #1 dps.<br />
+<br />
+Yea, I get their end of it though. If it's a token and you get the specific one you want then you stop doing things that net that token. Less time you spend playing then eventually get the complaints. My issue is more of the fact that there's SO many legendaries already and they're going to add more from the sound of it. It would be one thing if say each spec had two that altered stat weights/gameplay/builds. But each spec has numerous ones plus the non spec related ones like the boots that increase move speed by haste. it's a flawed system yes, but it's still better than picking what you want. The bigger problem is the effect these will have on performance in a raid setting. I don't think they should be usable until halfway through a tier in Mythic raiding at the earliest.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9de0d4c32c</div><div class="date">2016-08-21, 03:45 PM</div></div><div class="posttext">You could just get better, have people really forgotten how to play without addons holding their hand? The game would be much better if raiding addons were as sanitized as in FFXIV - yes they have parsers there, but it provides recount and TellMeWhen'esque functionality at most.<br />
+<br />
+ACT that people use for FF14 can be customized to give pretty much the same callouts as DBM did a few expansions back. FF14 bosses work on a very strict x ability happens every y seconds so its very easy to set up ACT to give you callouts when boss attacks are about to happen, why you get a certain buff/debuff. Its not as advanced as DBM but it can be set up for similar functionality, and yes the top guilds Elysium etc have it set it up for callouts you can hear in their clear vids. <br />
+<br />
+Theres the Overleylines ECHO project which actually tells you what to do in the fight https://www.youtube.com/watch?v=YCQMSlnd_jU<br />
+<br />
+You also have to remember FF14s boss mechanics are about as complex than dungeon boss mechanics in WoW, they are just far more punishing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Unholyground</div><div class="date">2016-08-21, 04:19 PM</div></div><div class="posttext">How would this make Legion worse? If anything it would make it better. No need for dumb addons to hold a players hand, and people who are good enough to play without those addons will get properly rewarded.<br />
+<br />
+It is kinda of true, I have played without add-ons since 2004 except for like mogit which gives you no benefit outside of telling you if you have an appearance or not. I have even been top DPS and heals raiding in the past before heroics were introduced with no add-ons when shit was considered &quot;Harder&quot; lol, like WoW was ever hard, it is like anything sequential, you practice and rinse and repeat and get amazing at it, it is a repetition based game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc133ea5993d</div><div class="date">2016-08-21, 04:59 PM</div></div><div class="posttext">Because every game is fundamentally about testing your ability to master some arbitrary skillset, that it can be done better by programming or automation is besides the point. We assemble cars in the fastest, most efficient way because that's a for-profit industry defined by economic pressures, gaming is not comparable at all.<br />
+<br />
+It's kind of like the Olympics, to be topical. Is there a point in being good at running when you can show up with a motorcycle? Why learn to play tennis when you can build a robot that serves so fast it's impossible to return? It's a game, you're deliberately competing within a limited framework to demonstrate your mastery within that framework.<br />
+<br />
+So, it's just a medium for demonstrating an arbitrary skillset. Maybe it's raw power, or hand eye coordination. Likewise, the 'point' of a boss fight is not to down a boss for its own sake, you may as well hack the server and &quot;.kill&quot; command the boss if that's all you care about. It's about doing so while demonstrating a skill, like being able to analyze a situation and think quickly on your feet to put yourself in the right place at the right time. If you're relying on an addon to write you that script, that defeats the entire purpose of the challenge.<br />
+<br />
+Ahem no...That`s not a game then, that`s a competition. &quot;Game: a physical or mental activity or contest that has rules and that people do for pleasure&quot;<br />
+For pleasure...The Olympics is not for pleasure, if you need demonstrate your mastery not a pleasure either...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mush</div><div class="date">2016-08-21, 05:33 PM</div></div><div class="posttext">Ahem no...That`s not a game then, that`s a competition. &quot;Game: a physical or mental activity or contest that has rules and that people do for pleasure&quot;<br />
+For pleasure...The Olympics is not for pleasure, if you need demonstrate your mastery not a pleasure either...<br />
+<br />
+I'd argue that the Olympics is a series of games done competitively, so is raiding/high level pvp. On a different scale, but games can definitely be competitive. <br />
+<br />
+<br />
+Hey look there is more than one definition of game.<br />
+<br />
+game ɡām/<br />
+noun<br />
+<br />
+1 - a form of play or sport, especially a competitive one played according to rules and decided by skill, strength, or luck.<br />
+<br />
+2 - a physical or mental competition conducted according to rules with the participants in direct opposition to each other<br />
+<br />
+<br />
+Lets go to the olympics website. https://www.olympic.org<br />
+<br />
+http://i.imgur.com/DoIIMS6.jpg</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baelic</div><div class="date">2016-08-21, 05:43 PM</div></div><div class="posttext">Ahem no...That`s not a game then, that`s a competition. &quot;Game: a physical or mental activity or contest that has rules and that people do for pleasure&quot;<br />
+For pleasure...The Olympics is not for pleasure, if you need demonstrate your mastery not a pleasure either...<br />
+<br />
+Then what the hell would you call ESports? Which is literally playing a VIDEO GAME in a competitive space to prove your mastery. Also, are you really that arrogant to be trying to dictate just who gets pleasure out of which activity?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocbfa8dc246d</div><div class="date">2016-08-21, 06:08 PM</div></div><div class="posttext">Kek people mad like when they banned AVR<br />
+<br />
+l2play</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">keebs</div><div class="date">2016-08-21, 07:05 PM</div></div><div class="posttext">Even the adjusted camera zoom makes me nauseous within an hour. All that time invested in the game and just like that I can no longer enjoy it and have to quit. Will keep waiting to see if they revert it back to pre Legion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seramore</div><div class="date">2016-08-21, 07:18 PM</div></div><div class="posttext">Trying to blame me for the poor choice of words? Catapulting the raiding scene back to TBC will have an larger impact on lower skilled player than on cutting edge. <br />
+<br />
+TBC encounters just had ~3 mechanics, advanced boss mods weren't needed. Blizzard themselves designed Archimonde, such boss mods didn't even exist prior to this encounter.Except I further explained my post in my other posts, so again: are you saying that you read absolutely nothing besides that single post you quoted?<br />
+<br />
+Why are you making comparisons to an expansion that's almost a decade old?<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+That's not your decision to make. You can believe whatever you want, elitist.I'm an elitist because I said maybe you don't belong in mythic raids because of the fact that you aren't able to handle mechanics that an addon trivializes? Okay.<br />
+<br />
+Fortunately, this change isn't your decision to make either. So I'll just be sitting here laughing while you cry because an addon can't hold your hand anymore.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">NFA</div><div class="date">2016-08-21, 07:22 PM</div></div><div class="posttext">Willing to bet money on that every single person arguing the &quot;git gud&quot; in relation to the removal of addons is also using one themselves. Or is not raiding in a difficulty high enough where it matters.<br />
+<br />
+Either way, encounters have become so complicated with positional requirements that without addons its really just down to pure luck whether you manage to kill a boss or not. <br />
+<br />
+I guess we'll have to assume they'll tune back the difficulty of encounters if they do indeed intend to prevent these kind of addons from functioning. Things like mythic Archi would be near enough impossible without the radar. Not to mention all the top end guilds use these addons as well, just another reason why the &quot;l2p&quot; argument is stupid and doesn't work.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kanegasi</div><div class="date">2016-08-21, 07:32 PM</div></div><div class="posttext">I'm an elitist because I said maybe you don't belong in mythic raids because of the fact that you aren't able to handle mechanics that an addon trivializes? Okay.<br />
+<br />
+Fortunately, this change isn't your decision to make either. So I'll just be sitting here laughing while you cry because an addon can't hold your hand anymore.<br />
+<br />
+Oh, I'm not crying, just disappointed. You're just as worse as Blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seramore</div><div class="date">2016-08-21, 07:45 PM</div></div><div class="posttext">Oh, I'm not crying, just disappointed. You're just as worse as Blizzard.I guess so, my bad for not being disappointed over parts of an addon that cheeses fights being disabled.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ImpTaimer</div><div class="date">2016-08-21, 07:56 PM</div></div><div class="posttext">Willing to bet money on that every single person arguing the &quot;git gud&quot; in relation to the removal of addons is also using one themselves. Or is not raiding in a difficulty high enough where it matters.<br />
+<br />
+Either way, encounters have become so complicated with positional requirements that without addons its really just down to pure luck whether you manage to kill a boss or not. <br />
+<br />
+I guess we'll have to assume they'll tune back the difficulty of encounters if they do indeed intend to prevent these kind of addons from functioning. Things like mythic Archi would be near enough impossible without the radar. Not to mention all the top end guilds use these addons as well, just another reason why the &quot;l2p&quot; argument is stupid and doesn't work.<br />
+<br />
+Of course there's pure luck involved with a game that uses RNG. Blizzard piled on RNG because players kept creating addons to trivialize fights. Addons can't trivialize RNG, only overgearing or using exploits can.<br />
+<br />
+L2P argument works perfectly fine when a player is given the chance to experience the content, fail, and try again.<br />
+<br />
+Any case were the L2P argument doesn't work is because players are forcing other players to know mechanics they've never personally experienced and not give them a chance to fail (aka elitists).<br />
+<br />
+Mythic Archi would be completely possible without radar. Nobody cares about what world-first raiders do (except Blizzard if they need to fix a bug/exploit). Addons force players to adjust their methods according to the availability of addons, rather than just doing the boss mechanics. They look to cheese instead of appease.<br />
+<br />
+It's completely embarrassing to watch another player just willfully ignore mechanics. People forget, but to see someone straight-out ignore mechanics and then bitch something happens infuriates me.<br />
+<br />
+The only addons I've ever used:<br />
+<br />
+-Omen (in BC a raid leader forced me to, but knowing how much TPS my tank could do was important) -- No longer important since game has threat meter now.<br />
+-Recount/Skada/TinyDPS (because there's no way, short of Health/Time=DPS or battleground score board, to gauge your dps)<br />
+-TomTom (only for MoP, and deleted after, for the stupid lore scrolls that even the devs admit was stupid) -- Will be broken in 7.1 anyway.<br />
+<br />
+Git gud. Learn to accept shit happens in an online-only game. Stop trying to cheese, stop babysitting players, and stop expecting other players to babysit you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">NFA</div><div class="date">2016-08-21, 08:08 PM</div></div><div class="posttext">Of course there's pure luck involved with a game that uses RNG. Blizzard piled on RNG because players kept creating addons to trivialize fights. Addons can't trivialize RNG, only overgearing or using exploits can.<br />
+<br />
+L2P argument works perfectly fine when a player is given the chance to experience the content, fail, and try again.<br />
+<br />
+Any case were the L2P argument doesn't work is because players are forcing other players to know mechanics they've never personally experienced and not give them a chance to fail (aka elitists).<br />
+<br />
+Mythic Archi would be completely possible without radar. Nobody cares about what world-first raiders do (except Blizzard if they need to fix a bug/exploit). Addons force players to adjust their methods according to the availability of addons, rather than just doing the boss mechanics. They look to cheese instead of appease.<br />
+<br />
+It's completely embarrassing to watch another player just willfully ignore mechanics. People forget, but to see someone straight-out ignore mechanics and then bitch something happens infuriates me.<br />
+<br />
+The only addons I've ever used:<br />
+<br />
+-Omen (in BC a raid leader forced me to, but knowing how much TPS my tank could do was important) -- No longer important since game has threat meter now.<br />
+-Recount/Skada/TinyDPS (because there's no way, short of Health/Time=DPS or battleground score board, to gauge your dps)<br />
+-TomTom (only for MoP, and deleted after, for the stupid lore scrolls that even the devs admit was stupid) -- Will be broken in 7.1 anyway.<br />
+<br />
+Git gud. Learn to accept shit happens in an online-only game. Stop trying to cheese, stop babysitting players, and stop expecting other players to babysit you.<br />
+<br />
+You undermined your own argument in the same post. If they added RNG because addons trivialized fights, then removing aforementioned addons while keeping the same level of RNG and positional difficulty will make it overtuned and unnecessarily annoying.<br />
+<br />
+Also, please stop saying &quot;Git gud&quot;. You only out yourself as the same kind of elitist you were talking about in your post. Or are you going to tell Method, Exordus and all the other top guilds that use these addons to git gud as well? Honestly :rolleyes:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc06f0881615</div><div class="date">2016-08-21, 08:19 PM</div></div><div class="posttext">Yeah, those radars and whatnot aren't necessary at all. It's good that bad players will be punished. <br />
+<br />
+All I really need are timers for boss abilities. Otherwise I'd have to track that manually, which while possible is a massive pain.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Asotcha</div><div class="date">2016-08-21, 08:35 PM</div></div><div class="posttext">&quot;If Fire is way too good, rather than bringing them down to a point where they are tied with or worse than Frost and Arcane, they will take them to slightly too good still&quot;<br />
+<br />
+Always nice to have confirmation that the Mage class is entitled to special treatment.<br />
+<br />
+<br />
+Yeah, its not like its an example or anything. Completely outlandish.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jotunhammer</div><div class="date">2016-08-21, 08:44 PM</div></div><div class="posttext">All this talk of Mythic+ and all about Mythic plus. How many % of the players do Mythic + compared to how many don't? why not start worrying about those that do not and spend more time doing something for them and worrying more about them. WOW is not an elit game, it is not about winning the charts or topping some leage ladder, it is about the social, fun, raiding, dungeon part of the game, if you spend all your time thinking of the mythic + people then your missing out of more than 9/10 of the people thats left. It is insane with all this mythic+ stuff, start worrying more and about the regular player</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seramore</div><div class="date">2016-08-21, 08:53 PM</div></div><div class="posttext">All this talk of Mythic+ and all about Mythic plus. How many % of the players do Mythic + compared to how many don't? why not start worrying about those that do not and spend more time doing something for them and worrying more about them. WOW is not an elit game, it is not about winning the charts or topping some leage ladder, it is about the social, fun, raiding, dungeon part of the game, if you spend all your time thinking of the mythic + people then your missing out of more than 9/10 of the people thats left. It is insane with all this mythic+ stuff, start worrying more and about the regular playeryou have mythic dungeons for non-raiders who want to have something to do with a higher difficulty, as well as LFR, Nomal, and Heroic raids for those who aren't able to handle Mythic. I don't get what your point is, there are plenty of things to do for the &quot;regular player.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wries</div><div class="date">2016-08-21, 09:28 PM</div></div><div class="posttext">In Patch 7.1, addons will not be able to access unit position in raids, dungeons, and competitive instances.<br />
+So DBM /range will break? Worst change ever, if so.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cerus</div><div class="date">2016-08-21, 10:16 PM</div></div><div class="posttext">It literally says that it's just for dungeon/raiding/competitive environment. Man, some of you don't even read before whining. Hillarious.<br />
+<br />
+Blizzard loves subscribers just like you. You'll believe everything piece of BS they spoonfeed you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pawstruck</div><div class="date">2016-08-21, 10:54 PM</div></div><div class="posttext">Even the adjusted camera zoom makes me nauseous within an hour. All that time invested in the game and just like that I can no longer enjoy it and have to quit. Will keep waiting to see if they revert it back to pre Legion.<br />
+<br />
+You are an absolute liar. NOBODY has that kind of motion sickness...... WOW's zoom distance is *exponentially higher* than almost any other video game. Did you even play Crash Bandicoot?<br />
+<br />
+Get the hell out if you want, but don't go crying and playing the victim while you're on your way out.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Issalice</div><div class="date">2016-08-21, 11:48 PM</div></div><div class="posttext">I'm sad the treasure demons didn't make it in :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">skorpioX</div><div class="date">2016-08-22, 12:59 AM</div></div><div class="posttext">Finally...<br />
+I have been saying it that addons makes the game too easy...These dumb elitist raiders always complain about LFR and they themselves are far worse because they dont know how to play the encounters themselves. They need a &quot;walkthrough&quot; like Ion said. I can't wait for all the bitching these guilds are going to go through.<br />
+Finally we get to play dungeons and raids like they were intended to. Tough shit losers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2016-08-22, 01:12 AM</div></div><div class="posttext">Finally...<br />
+I have been saying it that addons makes the game too easy...These dumb elitist raiders always complain about LFR and they themselves are far worse because they dont know how to play the encounters themselves. They need a &quot;walkthrough&quot; like Ion said. I can't wait for all the bitching these guilds are going to go through.<br />
+Finally we get to play dungeons and raids like they were intended to. Tough shit losers.<br />
+<br />
+This LFR hero just said LFR players are better at the game than the top players in the world. That's adorable.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8aff34db26</div><div class="date">2016-08-22, 02:10 AM</div></div><div class="posttext">It's funny those who claim TomTom will be broken. It demonstrates they haven't read SHIT.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">plaits</div><div class="date">2016-08-22, 02:16 AM</div></div><div class="posttext">&quot;The team didn't want to announce this until they were sure it was doable, but that work has now been done internally.&quot;<br />
+-----&gt; Here comes the shit storm but we have to wait until the sales!<br />
+<br />
+RIP addons. The game is getting less and less customizable. Like I said this Legion will be worse than WoD was.<br />
+<br />
+When the casual players realize &quot;Karazhan is a Mythic dungeon&quot;... Ohh boy.<br />
+<br />
+Casual players run mythics now, what's stopping them from doing it in Legion?<br />
+<br />
+Also, saying rip addons is a touch of hyperbole, no? They're killing the functionality of a very small subset of addons that are too powerful in Blizzard's opinion. The vast majority of addons will still function. If you listen to the interview instead of just freaking out about the one line MMO Champion write, you'll realise the focus of what Ion is talking about. It's entirely instance content specific, for one thing. Anything out in the world is untouched by this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kurn1701</div><div class="date">2016-08-22, 04:07 AM</div></div><div class="posttext">the addon's were always going to be broken as soon as they started putting arrows on the screen.<br />
+this isnt the first time blizz have done this.<br />
+for those old timers back in wrath they broke a addon called AVR.<br />
+i had been thinking that the current dbm/ert looked almost the same as AVR did back in the day.<br />
+it was only a matter of time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Palemoon</div><div class="date">2016-08-22, 05:47 AM</div></div><div class="posttext">The team wants something to feel epic, even at a larger zoom distance, so they scale things up. Things have been huge throughout WoW's history.<br />
+<br />
+Ah, yes. As a Melee, I can tell you all about those epic fights that boil down to &quot;Black feet, green feet, grey feet, blue feet!&quot;. Truly, not being able to zoom out much farther than navel height greatly increases my enjoyment of those battles.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3285d9bbbe</div><div class="date">2016-08-22, 07:05 AM</div></div><div class="posttext">If I read between the lines, all I see is a decision by Blizzard devs to break some addons, to make their life and work simpler. Of course they should've had foresight and not enable these functionalities in the first place. They should have learned their lesson from AVR.<br />
+While I understand their decision and agree with it, also commend them for notifying the community in advance, the way they handle it is poor. They just give us the result, not the real reason. All this talk about vision, but we don't know what they want to do with this game. Push it more into competitive gaming/esports? Or just regulate it, like olympic comitees regulate sports?<br />
+<br />
+The other thing is, that while a lot of people find it positive, that they can use so many addons to customise WoW, it's apparent, that on the high end, you cannot play WoW &quot;straight out of the box&quot;. We can all agree, that after a certain level you cannot play this game effectively without keybindings, macros, addons. But after all this is done, you don't play the game as the devs envisioned it, it's not their fantasy anymore.<br />
+<br />
+Blizzard will never double down on addons, because that would be suicide. As they won't come out and give us their design goals and vision for the game. So they will be stuck in this place, where they try to juggle their vision vs the community.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Noradin</div><div class="date">2016-08-22, 07:53 AM</div></div><div class="posttext">The kill was fair, but the fact that one guild used an addon to make a mechanic minuscule and one guild didn't on a top kill says a lot.<br />
+<br />
+Yes. One group understood the game and used their head and the other tried brute force until they got lucky.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Because those non TOP 100 groups will actually have to improve instead of relying on external tools to progress ? You know getting better at the game ?<br />
+<br />
+Those aren't external tools, external tools are banned for a reason addons are part of the game.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+You are an absolute liar. NOBODY has that kind of motion sickness...... WOW's zoom distance is *exponentially higher* than almost any other video game. Did you even play Crash Bandicoot?<br />
+<br />
+That might be because bosses that fit on the screen at a normal zoom distance are exceedingly rare in WoW.<br />
+Most of the time you are lucky if oyu see one foot and a lot of sparcles. <br />
+<br />
+If they do not want radar addons then they should work on providing the thing that allows us awareness of what is around us in the real world: Auditory Clues.<br />
+But that would make headsets mandantory so they won't.<br />
+They'd have to scale back all that noise and sparkling they love so much, too.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zots</div><div class="date">2016-08-22, 08:12 AM</div></div><div class="posttext">it's apparent, that on the high end, you cannot play WoW &quot;straight out of the box&quot;. We can all agree, that after a certain level you cannot play this game effectively without keybindings, macros, addons.<br />
+<br />
+While I agree with what you've said to some degree, I would not add talk of keybindings and macros to your argument, as they have always been in the game since the very beginning and it just puts a hole in your statement. What I really wanted to bring to the attention of others is that World of Warcraft is an extremely functional game with or without addons, across all levels of play. I believe it's a pretty foolish claim to boast that someone couldn't complete end-game content without addons. Do they make it easier? Sure. Are they required? No. Are they something worth looking into? Quite possibly. Just like how if I wanted to deal better DPS as a Warrior, I'd look up a guide or a video, but that doesn't mean I've not honed my skills in game from what I know and what is allowed by the game.<br />
+<br />
+It certainly is a tricky subject, but I'd have to agree with Blizzard. GPS/Location Assistance addons should most definitely not be allowed in the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seramore</div><div class="date">2016-08-22, 08:13 AM</div></div><div class="posttext">Yes. One group understood the game and used their head and the other tried brute force until they got lucky.Or to flip things around, one group gave up on a mechanic and took the easy way out by using an addon and another group faced on the mechanic and beat it as intended without any help from an addon. Again, the kill was completely legit. The scenario just puts various things into perspective.<br />
+<br />
+Auditory cues aren't necessary. Timers are and still will be an imperative feature for boss mods.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chemii</div><div class="date">2016-08-22, 08:50 AM</div></div><div class="posttext">If I read between the lines, all I see is a decision by Blizzard devs to break some addons, to make their life and work simpler. Of course they should've had foresight and not enable these functionalities in the first place. They should have learned their lesson from AVR.<br />
+While I understand their decision and agree with it, also commend them for notifying the community in advance, the way they handle it is poor. They just give us the result, not the real reason. All this talk about vision, but we don't know what they want to do with this game. Push it more into competitive gaming/esports? Or just regulate it, like olympic comitees regulate sports?<br />
+<br />
+The other thing is, that while a lot of people find it positive, that they can use so many addons to customise WoW, it's apparent, that on the high end, you cannot play WoW &quot;straight out of the box&quot;. We can all agree, that after a certain level you cannot play this game effectively without keybindings, macros, addons. But after all this is done, you don't play the game as the devs envisioned it, it's not their fantasy anymore.<br />
+<br />
+Blizzard will never double down on addons, because that would be suicide. As they won't come out and give us their design goals and vision for the game. So they will be stuck in this place, where they try to juggle their vision vs the community.<br />
+<br />
+They don't really need to say anything though. What other company justifies changes any more than what they've told us or gives away it's long term strategy for a subscriber model? Blizzard gives out far more information than practically any other gaming company world wide and frankly, post 7.1 this change won't even enter players minds.<br />
+<br />
+Practically all PvP players who take arena seriously do so without addons as its part of tournament rules. In PvE, other than some boss mod it is possible to play this game to a high standard with the default UI, you just make it harder for yourself. Most addons are designed in someway to make things easier, that is the whole ethos of the addon system.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3285d9bbbe</div><div class="date">2016-08-22, 09:03 AM</div></div><div class="posttext">While I agree with what you've said to some degree, I would not add talk of keybindings and macros to your argument, as they have always been in the game since the very beginning and it just puts a hole in your statement. What I really wanted to bring to the attention of others is that World of Warcraft is an extremely functional game with or without addons, across all levels of play. I believe it's a pretty foolish claim to boast that someone couldn't complete end-game content without addons. Do they make it easier? Sure. Are they required? No. Are they something worth looking into? Quite possibly. Just like how if I wanted to deal better DPS as a Warrior, I'd look up a guide or a video, but that doesn't mean I've not honed my skills in game from what I know and what is allowed by the game.<br />
+<br />
+It certainly is a tricky subject, but I'd have to agree with Blizzard. GPS/Location Assistance addons should most definitely not be allowed in the game.<br />
+Fair point, but macros don't exist in a lot of other MMOs. And while re-binding keys is available in most games, it's still not something that is required to play this game.<br />
+My point is, that if you want to be effective in this game (or any other), you do these steps. First you re-bind your keys. Then WoW gives you the option of macros and on top of that you can use addons. And beyond a level it's not optional for the 99%, but mandatory. Because numbers are tweaked with the expectations, that you have everythign bound, macro'd and an addon is giving you &quot;recommendations&quot; on what to press next. Encounter mechanics expect of you to see the timers on abilities, get proximity and position warning, etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nellyel</div><div class="date">2016-08-22, 01:31 PM</div></div><div class="posttext">To all you people complaining about addons play dark souls 3 a while you'll get a massive boost in awareness, boss patterns , ability to concentrate on various things at the same time. Then come back to wow and you'll see how no boss mechanic is hard to handle.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocdd4fd472cb</div><div class="date">2016-08-22, 01:38 PM</div></div><div class="posttext">Killing relative player position is fine and all, but it won't teach Blizzard not to design crap bosses with static player positions.<br />
+The arrow wasn't the game changer - placing people on a map was.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaedis</div><div class="date">2016-08-22, 01:42 PM</div></div><div class="posttext">Because numbers are tweaked with the expectations, that you have everythign bound, macro'd and an addon is giving you &quot;recommendations&quot; on what to press next.<br />
+<br />
+No class or spec requires macros to function, or even to perform optimally. In fact, many of them don't even see real benefit from using macros. Almost the entirety of the macros I have coded are there for convenience. The only real game-changers in combat are my mouseover healing and buff macros, and my focus-target macros for certain critical abilities (like interrupts). No real point in macroing beyond that. Castsequence macros are always a DPS loss.<br />
+<br />
+Also, the specs are actually balanced around the assumption that you aren't using a rotation suggestion addon, because almost without fail you'll do more DPS by learning the rotation properly instead of blindly hitting whatever the addon says to hit. This is mostly because those addons have no look-ahead, nor can they account for boss mechanics and upcoming boss events. Literally no one at the top end of raiding (or PvP) uses those rotational suggestion addons, they exist purely for those that can't be arsed to learn their rotation.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elofyn</div><div class="date">2016-08-22, 01:58 PM</div></div><div class="posttext">On the topic of breaking addons, I think it's a positive change. I used to raid in Swtor and my personal opinion is that the raid mechanics in most difficult raid tears were considerably harder than HFC mythic. Then, on the other hand, Swtor did not allow any kind of addons. So the players had to know their own shit and the mechanics without a minimap popping up telling then how close they are from each other or where to stand exactly. <br />
+<br />
+So while distance tools and location guiding systems are surely handy, it feels more rewarding to kill that boss without an a tool doing half the work. Just my cents tho!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mad_Murdock</div><div class="date">2016-08-22, 02:06 PM</div></div><div class="posttext">Because numbers are tweaked with the expectations, that you have everythign bound, macro'd and an addon is giving you &quot;recommendations&quot; on what to press next. Encounter mechanics expect of you to see the timers on abilities, get proximity and position warning, etc.<br />
+<br />
+I'd like to see where Blizzard said they create and tweak the raid bosses on the assumption that players are being fed their rotation. And if players need to be feed their rotations, I'm not sure they are that good, so I don't know that I'd tweak a raid boss based around that. I didn't get that from What Ion said. If they are assuming that Players are beign fed everything via a add-on, why do boss still do their emotes?<br />
+<br />
+On the actual topic. I think it's really great that they are cutting out the mods like AVR (never used radar). As Ion stated they didn't want to break mods like Gatherer, which is overall harmless in what it does. Once they determined they could break the raid mods without the world mods, they announced it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lightwysh</div><div class="date">2016-08-22, 02:08 PM</div></div><div class="posttext">Honestly, This is a great change. You should be able to play the game 100% without addons. Positioning addons are a cancer on the game as they require stuff to be built around having that capability. It was an arms race. Make an encounter to be difficult &gt; addons come out to trivialize encounter &gt; make fight even more complex &gt; more addons &gt; and so on. <br />
+<br />
+I'd even go so far as to say DBM needs to knocked down to just timers again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cerus</div><div class="date">2016-08-22, 02:13 PM</div></div><div class="posttext">It's funny those who claim TomTom will be broken. It demonstrates they haven't read SHIT.<br />
+<br />
+I read it just fine. What's actually funny is that you think what blizzard says and what they do is always the same. Hope ya don't get any shit on your face - with your head so far up their ass I don't see how that's possible though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">h4rr0d</div><div class="date">2016-08-22, 02:15 PM</div></div><div class="posttext">Really wondering how many people from the git gud crowd in this thread even saw mythic Archimonde, let alone killed it (with or without addons) during actual progression. <br />
+If the fights become so trivial with the addons, how come less than 500 guilds were able to kill Mannoroth and Archimonde before ilvl upgrades became available? Truth is, even with these addons, the fights on mythic are so complex and unforgiving that even if you have all the information available (like how far you have to run before you won't get 1shot, or how far you have to move so you won't chain that 6 yd chain spell, while still being able to melee boss), there is still plenty of space for personal errors that can (and will) lead to wipe eventually.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Farabee</div><div class="date">2016-08-22, 02:24 PM</div></div><div class="posttext">Haha, love how they just straight backpedaled on the token situation after all the uproar they got this weekend when it was announced they were dropping it in Legion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb2358cdeee</div><div class="date">2016-08-22, 03:17 PM</div></div><div class="posttext">I'm more worried about the fact that this change will also (presumably) break the fight replay functionality on warcraftlogs making you unable to analyze what went wrong and who screwed up in your raid in a given situation.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">huldu</div><div class="date">2016-08-22, 04:48 PM</div></div><div class="posttext">Honestly, This is a great change. You should be able to play the game 100% without addons. Positioning addons are a cancer on the game as they require stuff to be built around having that capability. It was an arms race. Make an encounter to be difficult &gt; addons come out to trivialize encounter &gt; make fight even more complex &gt; more addons &gt; and so on. <br />
+<br />
+I'd even go so far as to say DBM needs to knocked down to just timers again.<br />
+<br />
+Should be entirely removed from the game. They're so lax over at blizzard it's not even fun any more. It should be 100% player skill to know every single part of the encounter and nail it down perfectly every time, not some addon telling you timers and crap. It has always annoyed me and just brings casual trash into mmos where they don't belong. I remember when mmos used to be hard and actually challenging. Wildstar was on the right path but obviously the outcry from casuals destroyed what could have been an amazing mmo.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stormwolf64</div><div class="date">2016-08-22, 04:52 PM</div></div><div class="posttext">WoW blizzard comes up as fucking retards. If you're going to lie about Zoom, stick to the fucking lie and don't change it. bunch of Fucking inbreds.<br />
+<br />
+Does the zoom which you have to activate outside the slider come with patch 7.1 or is it already in the game?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Syenite</div><div class="date">2016-08-22, 04:53 PM</div></div><div class="posttext">Yeah, those radars and whatnot aren't necessary at all. It's good that bad players will be punished. <br />
+<br />
+All I really need are timers for boss abilities. Otherwise I'd have to track that manually, which while possible is a massive pain.<br />
+<br />
+I vote for removing timers, too. <br />
+<br />
+L2stopwatch! Only bad players can't keep a mental countdown while avoiding large, green feet trying to stomp them. <br />
+<br />
+See? I can make silly claims too. Bosses are tuned around such a level of min-maxing when they are launched that even running just 1 yard too much will be too much of a dps / healing loss to make the enrage...<br />
+<br />
+<br />
+WoW blizzard comes up as fucking retards. If you're going to lie about Zoom, stick to the fucking lie and don't change it. bunch of Fucking inbreds.<br />
+<br />
+Does the zoom which you have to activate outside the slider come with patch 7.1 or is it already in the game?<br />
+<br />
+/console cameradistancemaxfactor 2.6<br />
+<br />
+Or install maxcam to make your life much easier.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc65c9006cf9</div><div class="date">2016-08-22, 04:54 PM</div></div><div class="posttext">... and just brings casual trash into mmos where they don't belong. <br />
+<br />
+Yep! This game should belong to the elitist jerks like you. /sarcasm off</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arbs</div><div class="date">2016-08-22, 06:43 PM</div></div><div class="posttext">I really don't think you guys get the true extent of what they are breaking here. They aren't just breaking fancy lines and arrows. They are literally reverting the range checker back to the BC range checker. No radar, no dots. Just a list of names that are 10, 11, 15 or 28 yards away. There is no range 5 or range 6 anymore. it's inspect range, interact range, bandage range, type hacks. and yes those range checkers were hacks at best. Not very accurate and certainly not very customizable. Have to spread out 20 people with range 6? sorry not gonna happen anymore have to use range 10 even though it's much larger than actual requirement because range 6 requires unit positions.<br />
+<br />
+Do you like spam? no, well too bad. Can't check unit positions, don't know if you're on the boat, or the platform. Mogu side or mantid? top of galakras tower or on road. etc. Can't check position, filters are GONE. Can't use smart location checks to go &quot;this player only needs to know what's going on for boat&quot;. Now, timers and warnings for ALL yay!.<br />
+<br />
+Their fix is stupid and not well thought out. if they wanted to break arrows and stuff they could have just broke something else like detecting player facing/angle, not breaking unit position checks. This is going to have side effects that are really dumb and a huge step backwards.<br />
+<br />
+Great post!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ElDoorO</div><div class="date">2016-08-22, 07:01 PM</div></div><div class="posttext">I have a few ideas for how the pointer could have been abused / can be abused. A lot of coordination could be done behind the scenes that'd make a very unfair playing field.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arbs</div><div class="date">2016-08-22, 07:29 PM</div></div><div class="posttext">Haha, love how they just straight backpedaled on the token situation after all the uproar they got this weekend when it was announced they were dropping it in Legion.<br />
+<br />
+They were never dropping it, just people to stupid to realize their were 2 seperate ways it was dropping &amp; started a massive shit storm without full context. Not surprising though, it is just like this whole range situation. The only thing being broken is the range checker inside instances &amp; everything else will be working like usual.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spotnick</div><div class="date">2016-08-22, 08:09 PM</div></div><div class="posttext">Ya, try doing Mythic Archi without a HUD for the Wroughts and Shackles. They've designed too many of these boss fights, particularly mythics, under the assumption that people have access to these position trackers. It's going to be chaos without them.<br />
+<br />
+Wouldn't be as hard as you think it is.. for shackles especially, you just move as a group always.<br />
+<br />
+For Wrought Chaos you'd have to work on positioning properly the group.<br />
+<br />
+The addons were really not needed, but it would have required more coordination.<br />
+<br />
+Malice from Garrosh however.. not so sure about that one.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+&quot;The new Karazhan is definitely not just updating the old boss numbers. There will be some cool stuff that will blow people's minds, genuinely getting hyped!&quot;<br />
+<br />
+ALL ABOARD THE HYPE TRAIN!!!!! chooo chooo!<br />
+<br />
+Call me crazy, or maybe I was tired when I heard it on the stream, but I am quite sure Ion said &quot;JAINAuinly getting hyped&quot;<br />
+<br />
+As in hinting something about Jaina Proudmoore.<br />
+<br />
+Hmmm.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3938b695d6</div><div class="date">2016-08-22, 08:16 PM</div></div><div class="posttext">Well I think that they will have to make less mechanics that require proper positioning otherwise 90% of casual guild will be done.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seramore</div><div class="date">2016-08-22, 08:21 PM</div></div><div class="posttext">WoW blizzard comes up as fucking retards. If you're going to lie about Zoom, stick to the fucking lie and don't change it. bunch of Fucking inbreds.<br />
+<br />
+Does the zoom which you have to activate outside the slider come with patch 7.1 or is it already in the game?lol? pretty sure they never addressed the issue until the inteview</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elonu</div><div class="date">2016-08-22, 09:44 PM</div></div><div class="posttext">Does anybody know how/if the range changes will effect vuhdo/healbot etc?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chloral</div><div class="date">2016-08-22, 09:53 PM</div></div><div class="posttext">R.I.P Treasure Goblins being cut like the Dance Studio was. :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Millie</div><div class="date">2016-08-22, 11:08 PM</div></div><div class="posttext">Will this affect the Archy mod?<br />
+<br />
+This kills every mod that can tell where any thing is positioned. The way to look at it is addons are now blind to where anything is positioned in the world for dungeons and raids.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+the camera zoom explanations were basically all garbage<br />
+<br />
+Come on man, they were perfectly fine. THE DETAILS ON THE STAIRS, MAN. If the step is chest high to compensate, it destroys the entire world. WoW comes to an end with chest high steps.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Assumi</div><div class="date">2016-08-22, 11:45 PM</div></div><div class="posttext">Does anybody know how/if the range changes will effect vuhdo/healbot etc?<br />
+<br />
+Yep, it's screwed. Basically we're going back to the TBC range checking system where there are built small set of ranges you're allowed to check for. Like 27 yards, 16 yards, 8, 3, etc. The range of things like Inspecting and Bandages. Your addons can now only check those ranges, they can't get exact range. So now say for instance you want to check if a player is 30 yards away for a 30 yard range spell.<br />
+<br />
+No bueno, you can only check if they are 27 yards, so you'll either not get a range check at all, or the creator will decide to say &quot;Sure, he's within 30 yards&quot; if he's within 27 so you're actually up to 3 yards closer than you need to be by the time the bar highlights. This could cause unexpected deaths because a dying player could be 29 yards away, within range, but you think he's out of range because the addon says he's too far away since he's past the 27 yards it can check for.<br />
+<br />
+Have fun when a boss requires everyone to spread out 10 yards from each other but your addon can only know if someone is within 7 yards and can't display position so you just get a text list of people within 7 yards. You then have to read their name, look at your screen and see where they are standing and move until they drop out of your range list (all within the few seconds before the boss does his spell), turns out they're only 8 yards away now (just past the range check distance of 7 yards) but that's still too close for the boss mechanic, boom you're dead.<br />
+<br />
+If you raided Gruul in TBC you'll remember this little bastard of a range checker that hardly helped at all.<br />
+<br />
+http://i.imgur.com/BHHFP2u.png<br />
+<br />
+Well he's back, because they've essentially just rolled back addon unitPosition logic 10 years and put us back in TBC.<br />
+<br />
+Also don't drink their koolaid on how they can now design fights around not needing them. Legion raids are full to the brim of these mechanics that beg for radar HUDs. In fact most feedback threads during beta test raid weekends were people asking for addon updates because it's way too much to keep track of without.<br />
+<br />
+If they really cared about drawing arrows and whatever they would have broken the GetPlayerFacing command which would have made drawing arrows to positions and knowing exactly where a unit was impossible but left alone the ability to check exact range from a target.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2016-08-23, 12:33 AM</div></div><div class="posttext">Look at all the fanboys defending them. Before the next expansion I guarantee you all addons will be broken. They're trying to dumb the game down to shit, removing customization, dumbing down classes. This is the road they're on. They are just messing with cameras and certain addons right now, but dbm will be next and then all addon support will be removed. Mark my words.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Not A Cat</div><div class="date">2016-08-23, 02:09 AM</div></div><div class="posttext">Look at all the fanboys defending them. Before the next expansion I guarantee you all addons will be broken. They're trying to dumb the game down to shit, removing customization, dumbing down classes. This is the road they're on. They are just messing with cameras and certain addons right now, but dbm will be next and then all addon support will be removed. Mark my words.<br />
+<br />
+You say fanboy but here you are joining the bandwagon. Ironic<br />
+<br />
+I'd hardly call it removing customization when every single raiding guild that has any idea what they're doing will require all raiders to have those add-ons. And removing add-ons that make certain mechanics trivial is hardly what I would call &quot;dumbing things down&quot;<br />
+<br />
+OT: I really wish they would just revert the camera back to the way it used to be. They keep changing their position on it and it almost seems like they don't know what their goal is anymore.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2016-08-23, 04:21 PM</div></div><div class="posttext">You say fanboy but here you are joining the bandwagon. Ironic<br />
+<br />
+I'd hardly call it removing customization when every single raiding guild that has any idea what they're doing will require all raiders to have those add-ons. And removing add-ons that make certain mechanics trivial is hardly what I would call &quot;dumbing things down&quot;<br />
+<br />
+OT: I really wish they would just revert the camera back to the way it used to be. They keep changing their position on it and it almost seems like they don't know what their goal is anymore.<br />
+<br />
+Addons give the game depth. If they remove all addons it dumbs the game down to a simpler state. Something an idiot could handle who is a new player getting overwhelmed by zoom macros and robust character stats.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">elmoe420</div><div class="date">2016-08-24, 07:27 PM</div></div><div class="posttext">Yep, it's screwed. Basically we're going back to the TBC range checking system where there are built small set of ranges you're allowed to check for. Like 27 yards, 16 yards, 8, 3, etc. The range of things like Inspecting and Bandages. Your addons can now only check those ranges, they can't get exact range. So now say for instance you want to check if a player is 30 yards away for a 30 yard range spell.<br />
+<br />
+No bueno, you can only check if they are 27 yards, so you'll either not get a range check at all, or the creator will decide to say &quot;Sure, he's within 30 yards&quot; if he's within 27 so you're actually up to 3 yards closer than you need to be by the time the bar highlights. This could cause unexpected deaths because a dying player could be 29 yards away, within range, but you think he's out of range because the addon says he's too far away since he's past the 27 yards it can check for.<br />
+<br />
+Have fun when a boss requires everyone to spread out 10 yards from each other but your addon can only know if someone is within 7 yards and can't display position so you just get a text list of people within 7 yards. You then have to read their name, look at your screen and see where they are standing and move until they drop out of your range list (all within the few seconds before the boss does his spell), turns out they're only 8 yards away now (just past the range check distance of 7 yards) but that's still too close for the boss mechanic, boom you're dead.<br />
+<br />
+If you raided Gruul in TBC you'll remember this little bastard of a range checker that hardly helped at all.<br />
+<br />
+http://i.imgur.com/BHHFP2u.png<br />
+<br />
+Well he's back, because they've essentially just rolled back addon unitPosition logic 10 years and put us back in TBC.<br />
+<br />
+Also don't drink their koolaid on how they can now design fights around not needing them. Legion raids are full to the brim of these mechanics that beg for radar HUDs. In fact most feedback threads during beta test raid weekends were people asking for addon updates because it's way too much to keep track of without.<br />
+<br />
+If they really cared about drawing arrows and whatever they would have broken the GetPlayerFacing command which would have made drawing arrows to positions and knowing exactly where a unit was impossible but left alone the ability to check exact range from a target.<br />
+<br />
+Where are you getting information on which APIs are changing? I saw MysticalOS also posted regarding this but I thought these changes were not on PTR yet? If you have datamined the API changes please provide a link, thanks!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc95544e94a1</div><div class="date">2016-08-31, 08:30 PM</div></div><div class="posttext">You missed this. They're saying Runes won't force you, but the small chance of gear upgrades will.<br />
+<br />
+//reading comprehension//<br />
+<br />
+No it wont, if you already do mythic then once the gear race is over you wont give a flying f about lfr titanforge chance, maybe one or two will but not a majority. I really cannot see that happening. What I can see happening is that if you're a serious raider you will want to do LFR or AH your way to runes until they implement a permanent reputation based one. As Ion said in some interview, and I paraphrase, 'you might see one or two lfr raiders with a mythic ilvl piece, but it wont ever be like those who actually raid mythic and are fully decked' thus if you are fully decked, which does not take very long time (not bis, just decked) you wont have any reason to go into lfr, unless you want a derp % chance to maybe get that odd trinket?! <br />
+<br />
+The best compromise I could do with your statement would be serious raiders doing LFR for runes, with a off chance of getting a new piece of loot, but never as the main reason. <br />
+<br />
+Regarding my reading comprehension, aren't we all talking out of our asses here? It seems more like you're annoyed I'm not agreeing with you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FoxMaccloud</div><div class="date">2016-10-17, 08:45 AM</div></div><div class="posttext">How would this make Legion worse? If anything it would make it better. No need for dumb addons to hold a players hand, and people who are good enough to play without those addons will get properly rewarded.<br />
+<br />
+people who are good enough to play without those addons will get properly rewarded?<br />
+<br />
+No they wont. they will have to deal with all the sh!t players out there -.-</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">gamawave</div><div class="date">2016-10-19, 04:52 AM</div></div><div class="posttext">This game is just disapointing me at the moment from a gear perspective.<br />
+I look forward to what my new PR lvl 7 mythic reward chest item will be, its an item 5ilvl higher than the one I got in heroic EN yesterday.<br />
+I look forward to world boss drop. Finally get loot - stats suck but its an ilvl upgrade. Add to bottom of bag to inflate my ilvl.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,725 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, and, that, for, you, even, are, now, not, what, its, can, doing, soo, give, gear, get, flex, loot, normal, content, lfr, months, thats, just, isles, players, needs, shit, every, catch-up, before, game, about, them, their, bosses, really, out, timeless, has, have, mobs, tot, mops, idea, your, valor, blizzard, right" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Reaper of Souls Highlights: New Class Skills and Visuals 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Leveling Rewards, Beta Key Giveaway, Events This Weekend, Warrior Beatdown Deck 
+ 
+Armory Stats - Player Raid Completion Rates 
+Today we" />
+<title> Armory Stats - Player Raid Completion, Blue Tweets, Poll - World PvE Content, Fan Art [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Player Raid Completion, Blue Tweets, Poll - World PvE Content, Fan Art</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1410957.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1410957-Armory-Stats-Player-Raid-Completion-Blue-Tweets-Poll-World-PvE-Content-Fan-Art">Armory Stats - Player Raid Completion, Blue Tweets, Poll - World PvE Content, Fan Art</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2013-12-01, 09:22 PM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Reaper of Souls Highlights: New Class Skills and Visuals (http://www.diablofans.com/news/2261-reaper-of-souls-highlights-new-class-skills-and-visuals/)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Leveling Rewards, Beta Key Giveaway, Events This Weekend, Warrior Beatdown Deck (http://www.hearthpwn.com/news/213-leveling-rewards-beta-key-giveaway-events-this)<br />
+<br />
+Armory Stats - Player Raid Completion Rates<br />
+Today we are again taking a look at the overall raid completion rate of players after many people asked for an update after last time (http://www.mmo-champion.com/content/3471-Armory-Stats-Player-Raid-Completion-Rates-Blue-Tweets-GW2-on-Sale-Fan-Art-Update). Now that achievements are account wide, we can group characters by account and get an idea of what percentage of players (not characters) have completed a raid at least once, based on earning the achievement for the each wing.<br />
+<br />
+It looks like percentages have changed slightly since the original post due to finding more casual players, returning players being added to the database, and profiles from merged realms disappearing until that character is logged in to again.<br />
+<br />
+The data used today is a sample from 7.6 million characters from 2.9 million accounts. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. You can leave suggestions for future stat posts in the comments!<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: ['#55C949']<br />
+});<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'stillalivechart',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'Sha of Anger', 'Galleon', 'Mogu\'shan Vaults', 'Heart of Fear', 'ToES', 'Nalak', 'Oondasta', 'ToT Wing 1', 'ToT Wing 4', 'Celestials', 'Ordos','SoO Wing 1', 'SoO Wing 2', 'SoO Wing 3', 'SoO Wing 4', 'SoO Glory'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.point.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Completed a Raid on Any Difficulty',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [<br />
+{<br />
+data: [{y: 72, color: '#81CCAA', name:'Sha of Anger'},{y: 57, color: '#81CCAA', name:'Galleon'},{y: 74, color: '#81CCAA', name:'Mogu\'shan Vaults'},{y: 67, color: '#81CCAA', name:'Heart of Fear'},{y: 63, color: '#81CCAA', name:'Terrace of Endless Spring'},{y: 60, color: '#81A4CC', name:'Nalak'},{y: 46, color: '#81A4CC', name:'Oondasta'},{y: 66, color: '#81A4CC', name:'Throne of Thunder Wing 1'},{y: 53, color: '#81A4CC', name:'Throne of Thunder Wing 4'},{y: 27, color: '#E0BB79', name:'All Celestials'},{y: 11, color: '#E0BB79', name:'Ordos'},{y: 40, color: '#E0BB79', name:'Siege of Orgrimmar Wing 1'},{y: 30, color: '#E0BB79', name:'Siege of Orgrimmar Wing 2'},{y: 19, color: '#E0BB79', name:'Siege of Orgrimmar Wing 3'},{y: 11, color: '#E0BB79', name:'Siege of Orgrimmar Wing 4'},{y: 0.36, color: '#E0BB79', name:'Glory of the Orgrimmar Raider'}],<br />
+<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+}<br />
+<br />
+]<br />
+<br />
+});<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;stillalivechart&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+Blue Tweets<br />
+Warlords of Draenor and Spirit<br />
+Saying spirit isn't a base-line stat for healers is incorrect...Unless you're going to implement a system that replaces it<br />
+You guys can call it anything you want. We say Int is the primary stat for healers. (Source (https://twitter.com/Ghostcrawler/status/403046664262283264))<br />
+So, will there be a plate piece that has Primary/Mastery/Spirit say? Primary int/str spirit stays for dps even?<br />
+No Spirit on plate (or leather or mail or cloth). Spirit is only on accessories + weapons. (Source (https://twitter.com/Ghostcrawler/status/403319040837287937))<br />
+Sorry if that wasn't clear. Seems like we should have spent more time on this at Blizzcon. (Source (https://twitter.com/Ghostcrawler/status/403319138682015745))<br />
+<br />
+Disappointing. Spirits such an interesting stat, feels like on such few pieces we'll lack customization.<br />
+But each piece can have more Spirit. So unless you really fine tune Spirit (rare in my experience) you can still customize. (Source (https://twitter.com/Ghostcrawler/status/403317598151921664))<br />
+You might want Spirit on 4 slots and I might want it on 2. You can gem it too if you have any gem slots. (Source (https://twitter.com/Ghostcrawler/status/403317775961051136))<br />
+<br />
+So we'll still see Spirit Cloth/Leather/Mail/Plate? It sounds like the change won't do much for healer gearing.<br />
+A Healadin would have Int on chest, helm etc. and Spirit on some rings, trinkets, cloak, neck, sword and shield. (Source (https://twitter.com/Ghostcrawler/status/402656402226675712))<br />
+<br />
+If you want to stack Spirit, get it on all those pieces. But you shouldn't need that much. Spirit will not appear on gloves, hats, etc. (Source (https://twitter.com/Ghostcrawler/status/403316779880955904))<br />
+I thought I needed way more than I had, but once I gemmed and enchanted for it, my mana pool was fine.<br />
+Some healers feel the need to stack Spirit in every slot. That's not the intent, or necessary, but to each their own. (Source (https://twitter.com/Ghostcrawler/status/403318379773046784))<br />
+You have no clue about healing GC. Spirit is the most important stat for healers, more than Int.<br />
+I've healed every fight in the game (without Spirit in every slot) but keep making those arguments! (Source (https://twitter.com/Ghostcrawler/status/403609796806328321))<br />
+if spirit doesn’t come on hats, gloves etc. and you say we don’t need it on trinket, ring etc. where do we get it then?<br />
+You'll get some on rings etc. You don't need it on every slot. You don't even need that today. (Source (https://twitter.com/Ghostcrawler/status/403608500275662848))<br />
+Q: would you have enough regen to do &quot;ok&quot; without wearing *any* spirit accessories? (i.e. full dps gear)<br />
+Possibly. It's not fun when you have starter gear (i.e. low Spirit) and constantly run OOM just healing a dungeon. (Source (https://twitter.com/Ghostcrawler/status/403634490389454848))<br />
+<br />
+Nerfing flying. Nerfing manareg in healing. Anything else?<br />
+No, we aren't nerfing mana regen for healing. We're adjusting how many slots you need with Spirit to achieve reasonable regen. (Source (https://twitter.com/Ghostcrawler/status/403643080181424129))<br />
+<br />
+When this was announced, it was said that spirit plate only gets the paladins excited. Still the case in WoD? Was hoping not.<br />
+There is no Spirit plate. There are Spirit rings, but all healers can use those. Spirit axes might still be rare. (Source (https://twitter.com/Ghostcrawler/status/402655889808584704))<br />
+<br />
+That'd be good if spirit was useful on classes like Mages.<br />
+We want healers to have claim on those pieces so they aren't competing for every slot, (Source (https://twitter.com/Ghostcrawler/status/402654845779193856))<br />
+<br />
+With Spirit being a secondary stat, what is the actual use of dynamic primary stats? Still need seperate DPS/Heal sets, no?<br />
+To min/max you'll want different rings etc. But if you need to e.g. heal a fight or are rerolling to heals, you'll be better off. (Source (https://twitter.com/Ghostcrawler/status/402650305365434370))<br />
+Today you would need all different pieces. In 6.0 your armor pieces are still usable, unless you value very different secondaries. (Source (https://twitter.com/Ghostcrawler/status/402650501029715968))<br />
+<br />
+Spirit is healer only, won't change like Int / Str. Hit gone Spirit does zip for anyone else. Still healer only gear. Why?<br />
+Bonus armor has very limited value to DPS in PvE since boss AE damage is rarely physical. (Source (https://twitter.com/Ghostcrawler/status/402653582253494273))<br />
+There will be DPS trinkets with limited value to healers. Again we are talking about 7-8 slots max vs 15-16 today. (Source (https://twitter.com/Ghostcrawler/status/402654145418522624))<br />
+<br />
+or en Ele shaman wouldnt be able to heal in ele gear if it doesnt have spirit on it<br />
+The most mana hungry healer would want Spirit on rings, neck, cloak, trinkets and weapon, assuming they had won all those pieces (Source (https://twitter.com/Ghostcrawler/status/402651943287271424))<br />
+it's more likely you could heal with say just weapon, trinkets and a ring, which is only 4 slots. (Source (https://twitter.com/Ghostcrawler/status/402652268702347264))<br />
+And even then, you *could* DPS with those pieces. They might still be better than lower ilevel spots with no Spirit. (Source (https://twitter.com/Ghostcrawler/status/402652437552844800))<br />
+<br />
+Misc<br />
+May i ask what you actually play a game for? To work at a construction line or to have fun?<br />
+To have fun obviously. But overcoming some level of challenge is often more fun. (Source (https://twitter.com/Ghostcrawler/status/405082866557517824))<br />
+<br />
+As much as I love laser light shows, is there any chance well be able to turn off other people's spell effects in the future?<br />
+We have been trending towards making your fx look awesome while chilling out those from others. (Source (https://twitter.com/Ghostcrawler/status/405082393519738880))<br />
+<br />
+Ghostcrawler's Departure<br />
+I was Lead Systems Designer most of the time I was on WoW. I split lead duties with Cory as Lead Content Designer. (Source (https://twitter.com/Ghostcrawler/status/405884954115981315))<br />
+Both of us reported to the Game Director, Tom Chilton, Kalgan. Nearly every decision any of us made was by consensus. (Source (https://twitter.com/Ghostcrawler/status/405885074010152961))<br />
+<br />
+GC, you'll still be playing though, right? Also, it turns out all those players saying you played mage were wrong haha.<br />
+Yes, I'm not quitting the game. Just no longer designing it. (Source (https://twitter.com/Ghostcrawler/status/405876334066294784))<br />
+<br />
+True. But how many universities and colleges had decent game development/software engineering programs 10-15 years ago?<br />
+First, I've been in this business for 16 years. Second, look at game devs you admire. How many have a degree in game design? Likely 0. (Source (https://twitter.com/Ghostcrawler/status/405832211686891520))<br />
+None. That is actually my point. What degree are we old farts supposed to have? (Source (https://twitter.com/Ghostcrawler/status/405868951260766209))<br />
+Gee, thanks for that. Nothing like insulting people you don't even know.<br />
+It wasn't intended as an insult. Degrees in game development are a pretty new thing. I am not. (Source (https://twitter.com/Ghostcrawler/status/405870165671550976))<br />
+I have one of those degrees. 4 shipped titles, 2 of which are Skylanders games. It sounds like the stuff I hear all the time.<br />
+That's awesome. I actually love Skylanders. (Source (https://twitter.com/Ghostcrawler/status/405875900345896960))<br />
+<br />
+You'll find out my future plans soon enough. For now, let's let this be about World of Warcraft. Warlords is going to be SAVAGE and EPIC. (Source (https://twitter.com/Ghostcrawler/status/405793892068380672))<br />
+Any chance you will at least tell us if it is gaming related or not?<br />
+I'm not leaving the industry. (Source (https://twitter.com/Ghostcrawler/status/405875155768860672))<br />
+<br />
+I would not expect many changes to the game as a result of my departure. We always design from a place of consensus and collaboration. (Source (https://twitter.com/Ghostcrawler/status/405794352271605760))<br />
+<br />
+I'm just curious did you know about your departure from blizzard pre blizzcon?<br />
+Yes. (Source (https://twitter.com/Ghostcrawler/status/405872224520773632))<br />
+<br />
+Are you going to stick around on Twitter in some form? Hate to see you disappear.<br />
+I'll stick around though I'm not sure my insights will be as valuable in the future. (Source (https://twitter.com/Ghostcrawler/status/405869792646557696))<br />
+<br />
+do you think a game design degree is a bad idea?<br />
+No. (Source (https://twitter.com/Ghostcrawler/status/405869654347763712))<br />
+<br />
+I wish you all the best... it's a shame Blizzard is losing someone as passionate as you. It won't quite be the same now <br />
+I appreciate it, but Blizzard has a ton of passionate folks. I wouldn't feel comfortable leaving if WoW wasn't in good hands. (Source (https://twitter.com/Ghostcrawler/status/405865838994931712))<br />
+<br />
+Greg will you stay with Blizz til WoD releases?<br />
+I'm afraid not, but it's in very good hands. (Source (https://twitter.com/Ghostcrawler/status/405869331537338368))<br />
+<br />
+What is the 'feature' you were hoping for. Sans NDA. Thanks for making the best you could. <br />
+I can't tell you, because I hope they'll still do it! (Source (https://twitter.com/Ghostcrawler/status/405868076127641600))<br />
+<br />
+Lots of things have been claimed as the imminent death of WoW, but this talk of you leaving is the first I actually believe.<br />
+No way. I'm very confident in the direction of Warlords. I'll be playing it with you guys. (Source (https://twitter.com/Ghostcrawler/status/405866460578205696))<br />
+<br />
+A HOLY PRIEST?!?!<br />
+True story. Everyone seems to think I was trolling. My mage is like level 86. (Source (https://twitter.com/Ghostcrawler/status/405866297663037440))<br />
+<br />
+good luck on your future travels. But who are the forum QQers going to QQ at now? :P<br />
+They'll find another name and still miss the point that Blizzard designs as a collective. (Source (https://twitter.com/Ghostcrawler/status/405864682843410432))<br />
+<br />
+I am leaving on good terms with all of my friends at Blizzard and I'm still going to be playing WoW. (Source (https://twitter.com/Ghostcrawler/status/405792932520665088))<br />
+The internet loves to play detective, but in this case it was a great opportunity and time to move on. I wasn't fired or asked to step down. (Source (https://twitter.com/Ghostcrawler/status/405793296582066176))<br />
+And leaving certainly has nothing to do with the community. WoW has a great community. We never took you all for granted. (Source (https://twitter.com/Ghostcrawler/status/405793421798817792))<br />
+The next time someone kicks your butt in DPS, you can wonder... was that GC? (Source (https://twitter.com/Ghostcrawler/status/405793020550725632))<br />
+<br />
+<br />
+Poll: Best World PvE Content<br />
+Another thing that people asked us to revisit after the &quot;new things are better&quot; effect wore off was this poll (http://www.mmo-champion.com/content/3398-SoO-Progression-Heroic-Norushen-Changes-Blue-Tweets-Poll-PvE-Content-Fan-Art). Now is a good time to do so after this thread (http://www.mmo-champion.com/threads/1410451-Timeless-Isle-is-the-worst-idea-created-in-any-game-ever!) popped up complaining about some of the aspects of Timeless Isle, as well as this thread (http://www.mmo-champion.com/threads/1410734-3-months-of-Timeless-Isle-has-actually-made-me-miss-dailies?p=24004718#post24004718) that talks about missing daily quests now that they are gone.<br />
+<br />
+Have your thoughts on Timeless Isle changed in the past few months? Let us know in the comments.<br />
+<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/7609016.js&quot;&gt;&lt;/script&gt;<br />
+&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/7609016/&quot;&gt;Which patch's questing and events did you enjoy the most?&lt;/a&gt;&lt;/noscript&gt;<br />
+<br />
+Fan Art<br />
+Today we have some nice art by d1eSEL (http://www.d1eselart.com/fan-art.html).<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2013/december/thumb/d1art01.jpg (http://media.mmo-champion.com/images/news/2013/december/d1art01.jpg) http://media.mmo-champion.com/images/news/2013/december/thumb/d1art02.jpg (http://media.mmo-champion.com/images/news/2013/december/d1art02.jpg) http://media.mmo-champion.com/images/news/2013/december/thumb/d1art03.jpg (http://media.mmo-champion.com/images/news/2013/december/d1art03.jpg)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2013-12-01, 09:25 PM</div></div><div class="posttext">I personally like the spirit changes. Having it on the less powerful pieces gives meaning to those pieces for healers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tierbook</div><div class="date">2013-12-01, 09:28 PM</div></div><div class="posttext">WoW raiding sure has taken a nosedive</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Farora</div><div class="date">2013-12-01, 09:34 PM</div></div><div class="posttext">I'd love to see LFR, Normal and Flex seperated in the statistics. And it would be great if it could be compared to raiding in TBC, Wotlk and Cata. I doubt you can find that data though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemonpartyfan</div><div class="date">2013-12-01, 09:36 PM</div></div><div class="posttext">Always love the fan art =]</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc813c9e8448</div><div class="date">2013-12-01, 09:39 PM</div></div><div class="posttext">i hate timeless daily its take to much :mad:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Taninsam</div><div class="date">2013-12-01, 09:39 PM</div></div><div class="posttext">I think it makes sense. Many people do the content once it's very outdated and they are overgeared. Also, SoO is still too new.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">smcn</div><div class="date">2013-12-01, 09:40 PM</div></div><div class="posttext">I usually get some schadenfreude from people freaking out about upcoming changes, but some of those questions and assumptions were just embarrassing. Mostly because they were easily answered or disproven with a little reading comprehension and critical thinking.<br />
+<br />
+And then there are the healers talking about spirit being a major stat in the current endgame... I'm reforging AWAY from spirit at 560 AIL because I don't need it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1e4c5b7903</div><div class="date">2013-12-01, 09:41 PM</div></div><div class="posttext">Timeless Island is sht . <br />
+<br />
+I hope they will keep this stupid Jump-and-run-platformer design out of WOW in the future. <br />
+<br />
+Wow is not Mario Brothers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aesahaettr</div><div class="date">2013-12-01, 09:46 PM</div></div><div class="posttext">Timeless Isle seems popular, but I can't fathom why.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jangkun</div><div class="date">2013-12-01, 09:46 PM</div></div><div class="posttext">If it's based on 2.9 millions accounts. Does it mean only 2.9 millions people are doing raid stuff (include LFR)? Is it only US stats? Eu? both but no Asia?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TipTopPoet</div><div class="date">2013-12-01, 09:47 PM</div></div><div class="posttext">WoW raiding sure has taken a nosedive<br />
+<br />
+You obviously don't raid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ltsmash</div><div class="date">2013-12-01, 09:50 PM</div></div><div class="posttext">WoW raiding sure has taken a nosedive<br />
+How has raiding taken a nosedive?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2013-12-01, 09:53 PM</div></div><div class="posttext">If it's based on 2.9 millions accounts. Does it mean only 2.9 millions people are doing raid stuff (include LFR)? Is it only US stats? Eu? both but no Asia?<br />
+<br />
+US and EU. That is all of the accounts we have come across so far that have a level 90 character.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc37d54b0df8</div><div class="date">2013-12-01, 09:58 PM</div></div><div class="posttext">I think it makes sense. Many people do the content once it's very outdated and they are overgeared. Also, SoO is still too new.<br />
+<br />
+those stats include LFR.<br />
+<br />
+I took a recent break, and came back, and managed to gear a new 90 (swapped to a new character) in 3 days to get all the LFR done up to and including the SoO ones....<br />
+<br />
+<br />
+I dont think your position is valid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2013-12-01, 09:59 PM</div></div><div class="posttext">Once again, the low Ordos completion is remarkable. It looks like close to 90% of players didn't bother to finish the legendary quest chain.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1e4c5b7903</div><div class="date">2013-12-01, 09:59 PM</div></div><div class="posttext">Timeless Isle seems popular, but I can't fathom why. <br />
+<br />
+Free epics drops . Put those free epics as a reward in Cooking , and Cooking will be the most popular activity in game .</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Janysa</div><div class="date">2013-12-01, 09:59 PM</div></div><div class="posttext">Timeless Isle seems popular, but I can't fathom why.<br />
+<br />
+free epix ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aesahaettr</div><div class="date">2013-12-01, 10:01 PM</div></div><div class="posttext">Free epics drops . Put those free epics as a reward in Cooking , and Cooking will be the most popular activity in game .<br />
+<br />
+I could do with better gear on my alts, but I just can't bring myself to play the Timeless Isle, I'd rather not play on my alts than run that abomination of a zone.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zannypants</div><div class="date">2013-12-01, 10:01 PM</div></div><div class="posttext">Warlords is going to be SAVAGE and EPIC.<br />
+It might be, now that you're no longer destroying the entire game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ikkarus</div><div class="date">2013-12-01, 10:01 PM</div></div><div class="posttext">I don't understand the Poll, why should we choose only one? Why not make a system combining all of them? <br />
+<br />
+&quot;For this faction we gonna have only dynamic events to farm reputation&quot;<br />
+<br />
+Why? Why not misc Daily Quests plus Dynamic Events to farm rep with that faction? It would be much less boring if we could choose the way we want to play..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nightfalls</div><div class="date">2013-12-01, 10:03 PM</div></div><div class="posttext">Problem with the Poll: I just plain out don't like doing World PvE content. It's like asking people who don't like 5 mans &quot;what's your favorite Heroics?&quot; So is Timeless Isle the &quot;best&quot; World PvE content of this expansion? Yes, I think it is. But do I want to feel like I have to do World PvE content at all for character progression? Hell no.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">vipers</div><div class="date">2013-12-01, 10:04 PM</div></div><div class="posttext">for me i understand why SoO wing 4 is only 11% done if all good loot is taken away on LFR then there is no reason to kill hellscream</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Toiran</div><div class="date">2013-12-01, 10:06 PM</div></div><div class="posttext">It might be, now that you're no longer destroying the entire game.<br />
+<br />
+Ahh people knowing absolutely zero.<br />
+<br />
+These posts are going to continue for years, still whilst they are totally wrong, and when proof is handed to them, it's ignored, ignorance is bliss.<br />
+<br />
+The poll, for me, it would be a mix of 5.2 and 5.4.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2013-12-01, 10:09 PM</div></div><div class="posttext">How has raiding taken a nosedive?<br />
+<br />
+LFR completion has obviously gone all to hell, and that's where most people were seeing the raids.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pacster</div><div class="date">2013-12-01, 10:14 PM</div></div><div class="posttext">Once again, the low Ordos completion is remarkable. It looks like close to 90% of players didn't bother to finish the legendary quest chain.<br />
+<br />
+I think it goes along with the decline of the player base. On most servers there are just not enough organized players anymore. So on most servers only those down Ordos that actually do the xrealm-thing and kill it on the high-pop servers. I don't think that Ordos was killed more than 2 or 3 times on my server...<br />
+<br />
+On top of that you simply have the situation that player say &quot;for what shall I kill Ordos now? Nobody raids on my server and in 6.0 we get a better dress immidiately anyway. It's not even stylish.&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lakhesis</div><div class="date">2013-12-01, 10:16 PM</div></div><div class="posttext">Re: stats<br />
+<br />
+I'd be curious to see mmo-c's numbers on how many have completed heroic modes. Particularly by account, and cross referenced by 10 vs 25 if possible.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2013-12-01, 10:17 PM</div></div><div class="posttext">Once again, the low Ordos completion is remarkable. It looks like close to 90% of players didn't bother to finish the legendary quest chain.<br />
+<br />
+13% of accounts have done Chapter IV: Celestial Blessings (http://www.wowdb.com/achievements/7536-chapter-iv-celestial-blessings) and 4.6% Chapter V: Judgment of the Black Prince (http://www.wowdb.com/achievements/8325-chapter-v-judgment-of-the-black-prince). I'll go through and list percentages for all of them in a future post.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nekobaka</div><div class="date">2013-12-01, 10:27 PM</div></div><div class="posttext">So with LFR included raiding has once again dropped down to the minority and is close to ICC numbers and even look close to Cata numbers in terms of those who completed the content pre-LFR. So much for some pro-LFRs belief that the majority want to raid.<br />
+<br />
+for me i understand why SoO wing 4 is only 11% done if all good loot is taken away on LFR then there is no reason to kill hellscream<br />
+Good loot taken away? I still see good loot to be had. Its LFR and there are no new VP rewards to further encourage players to do LFR which so far isnt go so well.<br />
+<br />
+free epix ?<br />
+Its also new and two of those factors can describe LFR.<br />
+<br />
+<br />
+@Chaud: One thing I havent figured out is how you account for players who have quit yet still show up on armory and therefore dont participate in new content. Is the impact small enough to not mater?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2013-12-01, 10:48 PM</div></div><div class="posttext">@Chaud: One thing I havent figured out is how you account for players who have quit yet still show up on armory and therefore dont participate in new content. Is the impact small enough to not mater?<br />
+<br />
+For the most part yeah, only ~5% of profiles we have are inactive. Lots of profiles disappear from armory once someone has stopped playing for a while, and those are removed from our DB after a week. <br />
+<br />
+I'll be taking a look at these stats and including achievement completion dates as a criteria in the future to get a better picture of how participation changed between the tiers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Blizzhoof</div><div class="date">2013-12-01, 11:00 PM</div></div><div class="posttext">I don't understand the Poll, why should we choose only one? Why not make a system combining all of them? <br />
+<br />
+&quot;For this faction we gonna have only dynamic events to farm reputation&quot;<br />
+<br />
+Why? Why not misc Daily Quests plus Dynamic Events to farm rep with that faction? It would be much less boring if we could choose the way we want to play..<br />
+<br />
+I completely agree. Daily quests aren't awful in and of themselves and offering us variety is a good thing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thunderdragon2</div><div class="date">2013-12-01, 11:05 PM</div></div><div class="posttext">erm chad, i think you need a biger pool as your last bar is off i know o atleast 5 guilds with the glory</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Orlong</div><div class="date">2013-12-01, 11:05 PM</div></div><div class="posttext">Now that Ghostcrawler is leaving, I think he should spill all the beans on future plans Blizzard has for WoW and other games. If he knows, he could also tell us what Titan was supposed to be and more!!!. I mean, what is Blizzard gonna do? Fire him 2 days before he leaves?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca159452d04</div><div class="date">2013-12-01, 11:14 PM</div></div><div class="posttext">Now that Ghostcrawler is leaving, I think he should spill all the beans on future plans Blizzard has for WoW and other games. If he knows, he could also tell us what Titan was supposed to be and more!!!. I mean, what is Blizzard gonna do? Fire him 2 days before he leaves?<br />
+<br />
+Take him to court for damages, he's under an NDA i'm sure of that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">morph4037</div><div class="date">2013-12-01, 11:14 PM</div></div><div class="posttext">Kind of conflicted how to answer the poll. I liked the 5.2 setup with dailies but doing the solo scenarios over and over on alts just made me burnt out of that place. Kind of ridiculous they didn't just remove or make credit for the scenarios account wide, then again this was probably the most alt unfriendly expansion up till the welfare isle popped up. :l</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">JoeShmo</div><div class="date">2013-12-01, 11:15 PM</div></div><div class="posttext">Now that Ghostcrawler is leaving, I think he should spill all the beans on future plans Blizzard has for WoW and other games. If he knows, he could also tell us what Titan was supposed to be and more!!!. I mean, what is Blizzard gonna do? Fire him 2 days before he leaves?<br />
+<br />
+NDA is a big deal. He may not have to worry about being fired from blizzard, but his new job may drop him and he could get blacklisted. Not only that, but theres legal repercussions that he would have to deal with for breaking a written agreement.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">markdall</div><div class="date">2013-12-01, 11:15 PM</div></div><div class="posttext">Timeless Isle seems popular, but I can't fathom why.<br />
+<br />
+Well let's see: <br />
+<br />
+1. Dailies I feel 100% comfortable ignoring. <br />
+2. Stuff I can kill weekly for a chance at GREAT loot. Got my Tier 16 normal pants from there.<br />
+3. Chance per kill of a drop I can send to one of my alts for gear that's great for them. <br />
+4. I can spend 30 minutes killing stuff and have enough for the next week's 3 warforged seals.<br />
+5. Since I'm on a super crowded server, my alts - no matter how bad - can easily get groups for all the one-a-week stuff and get their own loot drops too.<br />
+<br />
+So let's recap: Dailies I don't have to do, tons of stuff that's good for my alts. <br />
+<br />
+Timeless Isle is the polar opposite of 5.0's terrible drudgery.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">VanquishersFate82</div><div class="date">2013-12-01, 11:20 PM</div></div><div class="posttext">erm chad, i think you need a biger pool as your last bar is off i know o atleast 5 guilds with the glory<br />
+<br />
+Well I don't think it's wrong. If it's 2.9 million players, that's 10,000+ players that have Glory, or 418~ guilds that do 25m raiding.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dakia</div><div class="date">2013-12-01, 11:20 PM</div></div><div class="posttext">Can there be a poll option for &quot;I hate all daily quests&quot;?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thunderdragon2</div><div class="date">2013-12-01, 11:22 PM</div></div><div class="posttext">Well I don't think it's wrong. If it's 2.9 million players, that's 10,000+ players that have Glory, or 418~ guilds that do 25m raiding.<br />
+<br />
+thats why i said he needs a bigger data pool</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Schizoide</div><div class="date">2013-12-01, 11:22 PM</div></div><div class="posttext">Timeless isle was great for the first week. After that it's all undirected grind. Like I said in the linked thread, the objective should be to minimize grind, not find new ways to artificially extend content. That said, the question is whether undirected grind (timeless style) is better than directed grind (daily quests). And the answer is no, not really, but combining the two is somewhat less horrible than using solely one or the other.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xanwryn</div><div class="date">2013-12-01, 11:27 PM</div></div><div class="posttext">The amount of healing QQ is pretty funny. Spirit is a buffer. More of it helps those who have no understanding of mana efficiency.<br />
+<br />
+It helps at the start of the expansion when your heals aren't as powerful and you're not too sure on what you'll be facing and how prepared you'll need to be, but it's a stat that many start trying to get rid of around mid-to-late game because when you become more efficient at mana control you don't need as much mana regen.<br />
+<br />
+Healers need to stop thinking they can spam big heals as they could in Wrath. Hell, even then mana efficiency was a strategy in and of itself. Stacking Spirit is not a sign of how skilled you are, it's a sign you have no understanding of your class and its limits.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chickat</div><div class="date">2013-12-01, 11:29 PM</div></div><div class="posttext">Think if the molten front had had lots of rares and events plus the dailys. It would have been much more epic. I hope thats where they end up going with it. Heavy story based scenarios mixed with limited dailys, and random world content. Think a new story scenario every tier of rep, 3-6 dailys a day, and random world events all in one small zone. Thats what i want.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2013-12-01, 11:36 PM</div></div><div class="posttext">I think it goes along with the decline of the player base. On most servers there are just not enough organized players anymore. So on most servers only those down Ordos that actually do the xrealm-thing and kill it on the high-pop servers. I don't think that Ordos was killed more than 2 or 3 times on my server...<br />
+<br />
+On top of that you simply have the situation that player say &quot;for what shall I kill Ordos now? Nobody raids on my server and in 6.0 we get a better dress immidiately anyway. It's not even stylish.&quot;.<br />
+<br />
+Ordos is very easy to kill using oQueue. That's how I've done almost all my kills of him, from a medium pop server.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Togaman5000</div><div class="date">2013-12-01, 11:44 PM</div></div><div class="posttext">Naturally I have no source, but if my memory serves they're looking at having Timeless Isle as their blueprint for the final content patch, er, content at the end of each expansion. This ties in well with how, as someone mentioned, it's really just a very long, unguided grind - it fills the months very well. Content between expansion release and the final tier release will mirror Isle of Thunder or The Barrens more.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wozniak</div><div class="date">2013-12-01, 11:59 PM</div></div><div class="posttext">Timeless Island is sht . <br />
+<br />
+I hope they will keep this stupid Jump-and-run-platformer design out of WOW in the future. <br />
+<br />
+Wow is not Mario Brothers.<br />
+<br />
+Timeless Isle is probably the best thing they have done, much better then fucking dailies.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stellan</div><div class="date">2013-12-01, 11:59 PM</div></div><div class="posttext">Re: Armory Stats - Player Raid Completion Rates<br />
+<br />
+How many players were missed because they aren't in a guild? <br />
+<br />
+Should we assume that the people that were missed (non-guilded players) are much less likely to have run any raid or killed any world boss?<br />
+<br />
+Why is the sample only &quot;slightly&quot; biased? And how does the author know that it is only &quot;slightly&quot; biased?<br />
+<br />
+What method did the author use to get his sample?<br />
+<br />
+I think this chart is pretty inexact and not particularly helpful. I guess what I get from it, though, is that a lot of players don't raid or kill bosses.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ihyln</div><div class="date">2013-12-02, 12:26 AM</div></div><div class="posttext">Ghostcrawler getting let go? This is only 2 years too late.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Phood</div><div class="date">2013-12-02, 12:29 AM</div></div><div class="posttext">What's up with that dude jumping all over his &quot;degree&quot; statement. I mean c'mon. A degree in game design is the nerd/geek equivalent of majoring in theater or voice performance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2013-12-02, 12:35 AM</div></div><div class="posttext">How many players were missed because they aren't in a guild? <br />
+<br />
+Should we assume that the people that were missed (non-guilded players) are much less likely to have run any raid or killed any world boss?<br />
+<br />
+Why is the sample only &quot;slightly&quot; biased? And how does the author know that it is only &quot;slightly&quot; biased?<br />
+<br />
+What method did the author use to get his sample?<br />
+<br />
+Some, but there aren't many players with no guild anymore. The people missed are less likely to have participated in this content. It is only slightly biased because it covers the majority of active level 90 players, just with some that are guildless missing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bashkar</div><div class="date">2013-12-02, 12:39 AM</div></div><div class="posttext">I don't understand the Poll, why should we choose only one? Why not make a system combining all of them? <br />
+<br />
+&quot;For this faction we gonna have only dynamic events to farm reputation&quot;<br />
+<br />
+Why? Why not misc Daily Quests plus Dynamic Events to farm rep with that faction? It would be much less boring if we could choose the way we want to play..<br />
+<br />
+I think that's they way they're leaning, or at least I really hope so.<br />
+<br />
+5.1 meets Timeless Isle would be the best of it. Daily quests to direct flow and push the story forward, in an area littered with random events and rare spawns. <br />
+<br />
+I'd like events to expand beyond just elite spawns, especially events to prompt PvP. Add a little bit of tower control, some STV style events like the Arena or Fishing Derby, etc. It doesn't have to be new or groundbreaking, just enough to keep these areas populated, which would provide a little more room to implement massive group events or encounters.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2013-12-02, 01:33 AM</div></div><div class="posttext">13% of accounts have done Chapter IV: Celestial Blessings (http://www.wowdb.com/achievements/7536-chapter-iv-celestial-blessings) and 4.6% Chapter V: Judgment of the Black Prince (http://www.wowdb.com/achievements/8325-chapter-v-judgment-of-the-black-prince). I'll go through and list percentages for all of them in a future post.<br />
+<br />
+That is remarkable. I would think once people pass their role-trial that killing the 4 celestials would be a breeze. So 2/3 of the people who completed their role-test were not able to kill celestials.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+What's up with that dude jumping all over his &quot;degree&quot; statement. I mean c'mon. A degree in game design is the nerd/geek equivalent of majoring in theater or voice performance.<br />
+<br />
+And that wasn´t even his point. His point was when most of the famous developers got into the industry, there was no such thing as a degree in game design.<br />
+<br />
+That said, i think it is a waste to major in game design. You are much better off just majoring in computer programming and taking some gaming classes. Probably today, most people being hired in the gaming industry don´t have degrees in gaming, and majoring in programming leaves you a lot more options. The gaming industry would take you seriously with a degree in programming, but a regular programming company would not take you as serious if your degree is in game design.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2013-12-02, 01:34 AM</div></div><div class="posttext">That is remarkable. I would think once people pass their role-trial that killing the 4 celestials would be a breeze. So 2/3 of the people who completed their role-test were not able to kill celestials.<br />
+<br />
+I think the roadblock for that last quest is defeating Garrosh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jabin</div><div class="date">2013-12-02, 01:34 AM</div></div><div class="posttext">Wow didn't realize I was in that much of a minority with 0.36%</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">corebit</div><div class="date">2013-12-02, 02:07 AM</div></div><div class="posttext">Very interesting stats. It's funny seeing the forums complaining how the legendary cloak is now &quot;being handed to everyone&quot; but then you see such low completion rates.<br />
+<br />
+There is a big disconnect between forum perception and the actual state of the game, and these numbers are a big help in bridging that gap.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ealyssa</div><div class="date">2013-12-02, 02:47 AM</div></div><div class="posttext">Would love to see ToT glory completion rate to see the impact of heroics removal from SoO glory.<br />
+And &quot;proud&quot; member of the 0,36% minority ;) (and to be clear only because of said removal. My first legit glory since ICC)<br />
+<br />
+For the questing patch. I really liked IoT, but I love Timeless Isle. Even if now I'm pretty much done (have the Huolon mount, nearly all pets, killed all rare, found all chests. Only shaohao is really missing outside the insane collect everything achievment) I personnaly think it was one of the best patch content ever made.<br />
+<br />
+The absolute perfection for me would be : timeless isle a bit bigger (1,5-2,5x bigger) AND with a few (3-6) dailies (not tied to the main reputation like shaohao). I really enjoyed the one month discover of the isle, the rare hunting, chess hunting. Evenr redoing a few of the less grindy task with alts was really enjoyable. It's just that now it's a bit harder for me to go there and just kill elite. That's when a few dailies could be nice (for lucky charms a few valors points, etc.).<br />
+<br />
+But in overall really excited to see how the whole &quot;TI everywhere&quot; of WoD will really look like.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">crazy8</div><div class="date">2013-12-02, 02:48 AM</div></div><div class="posttext">Timeless isle was great for the first week. After that it's all undirected grind. Like I said in the linked thread, the objective should be to minimize grind, not find new ways to artificially extend content. That said, the question is whether undirected grind (timeless style) is better than directed grind (daily quests). And the answer is no, not really, but combining the two is somewhat less horrible than using solely one or the other.<br />
+<br />
+<br />
+Fantastic post, a bit more you could add but bang on, I just cancelled my sub as well, not a hardcore raider but have killed a few heroics on 25 man and for more then a few of us its enough till the next xpac.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrKnubbles</div><div class="date">2013-12-02, 03:12 AM</div></div><div class="posttext">Really? Most people enjoyed Timeless Isle over the other patches?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2013-12-02, 03:37 AM</div></div><div class="posttext">Really? Most people enjoyed Timeless Isle over the other patches?<br />
+<br />
+It had the most easy loot.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wormweir</div><div class="date">2013-12-02, 03:59 AM</div></div><div class="posttext">I wanted to comment on the patch quest structure poll. I opted not to vote because it's not as vanilla as what is presented. I hated the faction daily quests IN PATCH 5.0. That doesn't mean I don't like faction daily quests.... it mean's I didn't like the way they used them as a means of gating gear and content. I like have PURELY OPTIONAL daily quests as a means to acquire gold and do something out of the usual grind... but DON'T OBLIGATE ME TO DO THEM. So I don't want to vote no on it because I like daily faction quests in general, but not as they were used in this expansion. I can't even really comment on the daily quests or story line in any of the subsequent patches because, by then, I was so sick of daily quests I avoided them as much as possible.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vegas82</div><div class="date">2013-12-02, 04:04 AM</div></div><div class="posttext">I'm not a huge fan of timeless isle. Most of what I did on it was camp various rares or farm for rep. Was repetitive and, in the case of rares, boring as hell. Yeah, lots of gear dropped. Much like D3 it wasn't gear I could use. On the characters I sent the gear to it was usually poorly itemized when they turned it into gear. Wasn't interesting, just frustrating if I'd actually been trying to min/max my alts with that gear. As it was I stopped sending them the gear and d/e'd what I could, sold the tokens for the rest at a loss. Wasn't even worth my time mailing it to all my alts so they could turn them into gear and sell them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrKnubbles</div><div class="date">2013-12-02, 04:06 AM</div></div><div class="posttext">I liked Operation: Shieldwall the best but not the PvP quests. The group quests were also pretty lame on a dead server like mine.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Robert3620</div><div class="date">2013-12-02, 04:28 AM</div></div><div class="posttext">Makes you wonder how you can go from a mid 60's range of people doing content to below 15 percent. With so much focus this expansion being on raiding what are the other people doing?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf77227e8ed</div><div class="date">2013-12-02, 06:11 AM</div></div><div class="posttext">Really? Most people enjoyed Timeless Isle over the other patches?<br />
+<br />
+I love exploring, wandering and doing things on my own, not ordered where to go and what to kill. Timeless isle is the only patch-pve content outside raids that I really enjoyed and still somewhat do.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1e4c5b7903</div><div class="date">2013-12-02, 06:40 AM</div></div><div class="posttext">Makes you wonder how you can go from a mid 60's range of people doing content to below 15 percent. With so much focus this expansion being on raiding what are the other people doing?<br />
+<br />
+<br />
+They overtune the LFR in the first month , the flex guys weren't there anymore to help and LFR failed hard.<br />
+Probably the LFR crowd just stoped trying at that point.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kujako</div><div class="date">2013-12-02, 06:49 AM</div></div><div class="posttext">Timeless Isle is probably the best thing they have done, much better then fucking dailies.<br />
+<br />
+Not sure I understand. What is there to do there other then the daily/weekly quests?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darksoldierr</div><div class="date">2013-12-02, 06:52 AM</div></div><div class="posttext">Not sure I understand. What is there to do there other then the daily/weekly quests?<br />
+<br />
+PvP! With a PvE gear! Because fuck logic</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3ff0cc8be0</div><div class="date">2013-12-02, 06:57 AM</div></div><div class="posttext">&quot;Percentage of players that completed a raid on any difficulty&quot;<br />
+<br />
+2.9 accounts which belong to guilds. Out of what, 8 million total?<br />
+<br />
+More like &quot;Percentage of raiders who belong to a raid guild that completed a raid on any difficulty.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darmalus</div><div class="date">2013-12-02, 07:26 AM</div></div><div class="posttext">I'd love to see that chart broken up by difficulty, but sadly that's impossible since the 'Just kill bosses&quot; achievements are for any difficulty.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca01e16f76d</div><div class="date">2013-12-02, 07:39 AM</div></div><div class="posttext">WoW didn't expect glory of SoO is so rare. It was actually really easy this time around without hc kills.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aesahaettr</div><div class="date">2013-12-02, 08:04 AM</div></div><div class="posttext">Timeless Isle is the polar opposite of 5.0's terrible drudgery.<br />
+<br />
+I can't share that viewpoint at all, Timeless Isle is the epitome of drudgery as far as I'm concerned.<br />
+<br />
+So people like that a world boss can drop tier gear? So that's what, 10 minutes a week with OQ? And the rest of the time it's a redundant piece of shit? That's not good design, it's abysmal.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vensu</div><div class="date">2013-12-02, 08:35 AM</div></div><div class="posttext">The gear changes makes me think they're just doing them just to avoid having to create as much gear...<br />
+I don't like it. Now I'll have to compete with spell dps for items in raids and I don't think it'll actually make me feel like I'm playing a healer...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SodiumChloride</div><div class="date">2013-12-02, 08:36 AM</div></div><div class="posttext">True story. Everyone seems to think I was trolling. My mage is like level 86. (Source)<br />
+<br />
+That would explain Mage lvl 90 talent. :s</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Farora</div><div class="date">2013-12-02, 09:03 AM</div></div><div class="posttext">I can't share that viewpoint at all, Timeless Isle is the epitome of drudgery as far as I'm concerned.<br />
+<br />
+So people like that a world boss can drop tier gear? So that's what, 10 minutes a week with OQ? And the rest of the time it's a redundant piece of shit? That's not good design, it's abysmal.<br />
+<br />
+Poor guy, only plays Wow for gear.<br />
+<br />
+Timeless Isle is the best thing that comes from this shitty pandaland expansion. It gives people that don't like killing the same boss in a raid every week something to do. It brought back world pvp. And more importantly it brought life to the game. On a lot of servers the island is filled with people, doing different things. The last few expansion the only thing people did together was standing in Stormwind/Orgrimmar.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+&quot;Percentage of players that completed a raid on any difficulty&quot;<br />
+<br />
+2.9 accounts which belong to guilds. Out of what, 8 million total?<br />
+<br />
+More like &quot;Percentage of raiders who belong to a raid guild that completed a raid on any difficulty.&quot;<br />
+<br />
+The 2.9 million is actually a real number compared to the 8 million PR number. There are probably 3-4 million total players currently.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gilian</div><div class="date">2013-12-02, 09:58 AM</div></div><div class="posttext">Poor guy, only plays Wow for gear.<br />
+<br />
+Timeless Isle is the best thing that comes from this shitty pandaland expansion. It gives people that don't like killing the same boss in a raid every week something to do. It brought back world pvp. And more importantly it brought life to the game. On a lot of servers the island is filled with people, doing different things. The last few expansion the only thing people did together was standing in Stormwind/Orgrimmar.<br />
+<br />
+<br />
+I guess your experience depends on what server you are on. I'm on a medium populated PvE realm. There are now maybe 10 players on Timeless Isle.<br />
+<br />
+Timeless Isle is only about gear. It was popular the first two weeks because of the rewards and nothing else. Everyone was drowning in epics in two weeks time and now there is no one there except for a few achievement/mount farmers.<br />
+We also couldn't have more boring world bosses. Everyone zerges them after reset in 15 minutes. How is that good design and fun content? Are you actually doing them for something else than loot?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">F-Minus</div><div class="date">2013-12-02, 10:07 AM</div></div><div class="posttext">Past the initial cloak quests, and about 2 kills of Ordos and Celestials, I haven't been on the Timeless Isle since about 3 weeks after release. If you're an achievement or pet hunter I might see some value, but you can get all that done pretty soon, and after that I don't have any idea why you would return there, except to kill the world bosses and even that gets old once you got better gear. It's a complete clusterfuck zone, with no guidance no nothing, boring as hell. <br />
+<br />
+I've spent far more time with the previous patches, and it was also much more fun personally. Guess the free epics outweigh the need of a coherent progression and guidance, the Timeless Isle brings me a bit back to Vanilla with the endless pointless grinding, of the same zone, and I don't like that at all - whilst it was OK in Vanilla it's not OK in todays times - it's just tedious and boring.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elrandir</div><div class="date">2013-12-02, 10:09 AM</div></div><div class="posttext">&quot;Nerfing flying. Nerfing manareg in healing. Anything else?&quot; Why the Blues respond to people like this is beyond me.<br />
+&quot;As much as I love laser light shows, is there any chance well be able to turn off other people's spell effects in the future?&quot; What?! I don't even...<br />
+<br />
+Also, had no idea there was a weekly quest in the Barrens :P Out of those five, I like Timeless Isle best or I should say, hate Timeless Isle the least but ONLY because Daily Quests killed a part of my soul, Solo (or any) Scenarios are the second most boring thing in this game. When I heard about the Timeless Isle I resubbed after having been gone a month or four because I just couldn't deal with any more dailies to do on my army of alts, I was beyond fed up, at least on this boring Island I could gear up my toons a bit faster and have access to more LFR raids with alts a lot sooner.<br />
+<br />
+Happy with LFR but seriously am not happy in this expansion with the focus on daily quests and scenarios, and the neglect of Heroic Dungeons. Seems like the trend of neglecting Dungeons will continue in WOD with the little amount at launch and another recycling of an old dungeon I don't care about, at least there will be less dailies.<br />
+<br />
+IMO they should have max level normal dungeons, heroic dungeons and challenge modes so everyone is happy. It's not that much effort to give us this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ilfayt</div><div class="date">2013-12-02, 10:26 AM</div></div><div class="posttext">I'm wondering how much that number will be effected by the 'cycle' of the patch going all the way through. I imagine, just like a surge of interest in Wow at 5.3 and 5.4, there might be a few more %'s added to the Seige Completion numbers by WoD's release. Just curious, because imo, the data's never complete till it's &quot;complete&quot;, know what I mean?<br />
+<br />
+<br />
+&quot;Nerfing flying. Nerfing manareg in healing. Anything else?&quot; Why the Blues respond to people like this is beyond me.<br />
+&quot;As much as I love laser light shows, is there any chance well be able to turn off other people's spell effects in the future?&quot; What?! I don't even...<br />
+<br />
+Also, had no idea there was a weekly quest in the Barrens :P Out of those five, I like Timeless Isle best or I should say, hate Timeless Isle the least but ONLY because Daily Quests killed a part of my soul, Solo (or any) Scenarios are the second most boring thing in this game. When I heard about the Timeless Isle I resubbed after having been gone a month or four because I just couldn't deal with any more dailies to do on my army of alts, I was beyond fed up, at least on this boring Island I could gear up my toons a bit faster and have access to more LFR raids with alts a lot sooner.<br />
+<br />
+Happy with LFR but seriously am not happy in this expansion with the focus on daily quests and scenarios, and the neglect of Heroic Dungeons. Seems like the trend of neglecting Dungeons will continue in WOD with the little amount at launch and another recycling of an old dungeon I don't care about, at least there will be less dailies.<br />
+<br />
+IMO they should have max level normal dungeons, heroic dungeons and challenge modes so everyone is happy. It's not that much effort to give us this.<br />
+<br />
+well, you might be happy to know they're going back to the Wrath idea of adding 5-mans after launch with patches. So while it'll be about on par with MoP for launch dungeons, it'll have more of them by the end(and potentially keep the 5-man scene alive after the first content patch).<br />
+<br />
+<br />
+Edit: Personally, I loved the 'pitch' of Timeless Isle, but would like to see a cross between it and 5.1's 'continuous story'. Sounds like, from Blizzcon statements it may be more along those lines(the &quot;Blueprint for WoD&quot; line about Timeless Isle and I remember seeing another one about more 'structured story' in endgame grind, so fingers crossed!)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Farora</div><div class="date">2013-12-02, 10:38 AM</div></div><div class="posttext">I guess your experience depends on what server you are on. I'm on a medium populated PvE realm. There are now maybe 10 players on Timeless Isle.<br />
+<br />
+Timeless Isle is only about gear. It was popular the first two weeks because of the rewards and nothing else. Everyone was drowning in epics in two weeks time and now there is no one there except for a few achievement/mount farmers.<br />
+We also couldn't have more boring world bosses. Everyone zerges them after reset in 15 minutes. How is that good design and fun content? Are you actually doing them for something else than loot?<br />
+<br />
+I have geared maybe 6 alts on the island, that's a lot of time spent. The main reason why the island is fun because it makes the game feel like an MMO again. Before this island the only time I saw other players was when they stood afk in SW/Org. For example, all weekend I have been world pvping on the isle. Lots of fun.<br />
+<br />
+How they follow this up is another question though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nobleshield</div><div class="date">2013-12-02, 11:50 AM</div></div><div class="posttext">What's amusing is that only 11% have killed Ordos, which means that for the &quot;welfare legendary&quot; it's a far cry from everyone has it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Carlosdanger</div><div class="date">2013-12-02, 12:25 PM</div></div><div class="posttext">Gone for Thanksgiving, first thing I heard about the Ghostcrawler departure. Not terribly sad to see him go, the game seemed to somewhat lose it's way and meander all over his place while he was at the helm. Curious how much of an impact he still had on WoD.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2013-12-02, 12:27 PM</div></div><div class="posttext">while he was at the helm<br />
+<br />
+He wasn't at the helm.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Warlord Booty</div><div class="date">2013-12-02, 12:36 PM</div></div><div class="posttext">I tend to agree with GC's spirit assessment to a certain extent. Some people like the less stress, but if you finish a fight with 280K mana, obviously you can dump a huge portion of your spirit. <br />
+<br />
+I bet GC becomes led dev of the next big Blizz MMO thing (can't remember what it is called atm).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Reyzzz</div><div class="date">2013-12-02, 12:38 PM</div></div><div class="posttext">while he was at the helm.<br />
+<br />
+That's Tom Chilton you are talking about.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2013-12-02, 12:47 PM</div></div><div class="posttext">I bet GC becomes led dev of the next big Blizz MMO thing (can't remember what it is called atm).<br />
+<br />
+His last day at Blizzard is this friday, so they better get cracking on that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gilian</div><div class="date">2013-12-02, 01:55 PM</div></div><div class="posttext">I have geared maybe 6 alts on the island, that's a lot of time spent. The main reason why the island is fun because it makes the game feel like an MMO again. Before this island the only time I saw other players was when they stood afk in SW/Org. For example, all weekend I have been world pvping on the isle. Lots of fun.<br />
+<br />
+How they follow this up is another question though.<br />
+<br />
+You can gear 6 alts in two weeks time. I have a bank full of those BoA epics. That's not a lot of time. I don't even want to gear 6 alts because it's waste of time.<br />
+<br />
+I saw plenty of players when I was doing dailies during 5.0. It was just as crowded as on Timeless Isle in the first two weeks.<br />
+<br />
+A combination would be the best thing so everyone can choose what they want to do. I would also like to see group quest making a comeback or some other form of group content other than instances.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elrandir</div><div class="date">2013-12-02, 02:12 PM</div></div><div class="posttext">well, you might be happy to know they're going back to the Wrath idea of adding 5-mans after launch with patches. So while it'll be about on par with MoP for launch dungeons, it'll have more of them by the end(and potentially keep the 5-man scene alive after the first content patch).<br />
+<br />
+While that's good news, it is really scary that they have the same low amount of dungeons at launch for double the amount of levels, so leveling alts through dungeons is gonna be repetitive as hell again. In MOP they started with the criminally low 4 leveling dungeons for 5 levels, 6 or 7 (can't remember) dungeons for ten levels is actually worse... Ouch.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2013-12-02, 02:25 PM</div></div><div class="posttext">&quot;Percentage of players that completed a raid on any difficulty&quot;<br />
+<br />
+2.9 accounts which belong to guilds. Out of what, 8 million total?<br />
+<br />
+More like &quot;Percentage of raiders who belong to a raid guild that completed a raid on any difficulty.&quot;<br />
+<br />
+There are characters not in guilds and characters in guilds that don't raid in the sample.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tenjen</div><div class="date">2013-12-02, 03:23 PM</div></div><div class="posttext">some of these questions...seriously.<br />
+<br />
+its also like a whole bunch of people are thinking with current stat weighting and relevance and not WoD changed state relevance and weighting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yriel</div><div class="date">2013-12-02, 03:37 PM</div></div><div class="posttext">You can gear 6 alts in two weeks time. I have a bank full of those BoA epics. That's not a lot of time. I don't even want to gear 6 alts because it's waste of time.<br />
+<br />
+You can gear 6 alts in two days there. I opened most of the chests with my warlock and monk and got enough stuff to gear my mage, priest, druid, warrior, dk, shaman and hunter and still got more then enough cloth drops to sell a lot of them.<br />
+I never went there again after that, i don't like simple grinding and camping respawn spots. Dailies are much more fun compared to that imo.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Renuts</div><div class="date">2013-12-02, 04:14 PM</div></div><div class="posttext">I find the poll to be very surprising. I don't think people will enjoy the game nearly as much if the future of the game is going to be like Timeless Isle(Mindless Isle is right). I think we have seen two extremes in this expansion. One being way too many dailies at once(could have staggered the release of the faction dailies to combat this?), and two, basically no dailies at all on a big island with tons of mobs and things to loot. I've been playing since release, and I agree that dailies do get boring(like anything else in the game), but I always end up doing them and enjoying them. Having a clear objective to me is very important, or at least a beginning and end per character. I enjoy exploration and the unknown very much, but Timeless Isle has been extremely boring and disappointing, nothing about it makes me want to do it. There aren't any things that make it exciting, or any rewards that I want to mindlessly grind for. That being said I do like the idea of Timeless Isle, the model is a good idea, however I think they could leave it close to exactly how it is, put a storyline quest and a set of dailies, as well as having just about every other element that works combined, and it would have hit the mark for what we are looking for. Don't want to do the dailies? Well don't and &quot;explore&quot; to complete the objectives that way. Perhaps choice is the answer to the correct model involving factions/dailies/solo content.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tarx</div><div class="date">2013-12-02, 04:29 PM</div></div><div class="posttext">The barrens weekly quest was the worst content ever!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FeralSynapse</div><div class="date">2013-12-02, 05:16 PM</div></div><div class="posttext">Wow only .36 % for the meta mount? I wonder why. I didn't find any of the achieves to difficult-more so since they can be done in flex.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azerox</div><div class="date">2013-12-02, 06:31 PM</div></div><div class="posttext">Funny how i chose fiction quests, and i dislike timeless the most. <br />
+Don't think much people read the quests.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">seebs</div><div class="date">2013-12-02, 06:43 PM</div></div><div class="posttext">best storyline patch and people pick timeless isle? what story was there except a loot fest?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thurizas</div><div class="date">2013-12-02, 07:04 PM</div></div><div class="posttext">Re: Armory Stats - Player Raid Completion Rates<br />
+<br />
+What would be interesting to see is when these were done. What percentage of the people cleared ToT wing 1 in the first month that it was available the second month and so on. You should be able to do this by looking at the dates when the acheivement was finished. Also, you might be able to tweeze out the difficulty that the raid was done on by looking at the information from the armory page, it does show completion of LFR / Flex / Normal and Heroic...not sure how they pull that info.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zbandit511</div><div class="date">2013-12-02, 07:08 PM</div></div><div class="posttext">My favorite storyline patch (didn't really have quests) was the world event before wrath of the lich king, that was epic. You could become a zombie, infect people and they'd turn to zombies and if you were a zombie and found NPC zombies you could get them to follow you. I remember just raiding town after town infecting everything I could, I had a blast. That was probably my favorite and most memorable event.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">markdall</div><div class="date">2013-12-02, 07:42 PM</div></div><div class="posttext">My favorite storyline patch (didn't really have quests) was the world event before wrath of the lich king, that was epic. You could become a zombie, infect people and they'd turn to zombies and if you were a zombie and found NPC zombies you could get them to follow you. I remember just raiding town after town infecting everything I could, I had a blast. That was probably my favorite and most memorable event.<br />
+<br />
+As someone with an alt at the auction house, it was a pain in the ass because people like you were all HUEHUEHUEHUEHUE infecting everybody. I'm glad you enjoyed it, and I've still got my scourge haunt pet from then (and my arcanite ripper, and three+ vampire batlings) but the zombie bit itself was just pandering to griefers. <br />
+<br />
+Short version: It was fun for the victimizers, not for the victims. Funny how that works.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pennoyer</div><div class="date">2013-12-02, 08:00 PM</div></div><div class="posttext">75% of players never having tagged a celestial doesn't raise a red flag?<br />
+<br />
+I wonder how's many players are mostly just levellers,</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Schizoide</div><div class="date">2013-12-02, 08:22 PM</div></div><div class="posttext">If it's looking for the achievement, you only get that from killing all four Celestials. Assuming you haven't done it for the cloak, RNG reigns supreme there. You could get the tiger every single week.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bubblykiss</div><div class="date">2013-12-02, 10:40 PM</div></div><div class="posttext">Ordos at 11%, that is fascinating to me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2013-12-02, 10:48 PM</div></div><div class="posttext">Ordos at 11%, that is fascinating to me.<br />
+<br />
+And it was 10% at the previous report.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Luneward</div><div class="date">2013-12-02, 11:06 PM</div></div><div class="posttext">Wow only .36 % for the meta mount? I wonder why. I didn't find any of the achieves to difficult-more so since they can be done in flex.<br />
+<br />
+Probably because you still need to complete heroic mode for most encounters to get the meta. Only about 2% of players are heroic progression at best.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+And it was 10% at the previous report.<br />
+<br />
+So only a small number more people have fought Ordos than last time, which indicates only a few more people have finished their cloak in the past few weeks. I find the number that have completed Siege (including LFR) is about the same number of people.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2013-12-02, 11:18 PM</div></div><div class="posttext">So only a small number more people have fought Ordos than last time, which indicates only a few more people have finished their cloak in the past few weeks. <br />
+<br />
+Where &quot;few weeks&quot; is actually about six weeks. I'm surprised it's gone up so little in that time. A lot of people must have given up on the legendary quest chain rather early.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MysticalOS</div><div class="date">2013-12-02, 11:35 PM</div></div><div class="posttext">&quot;Have your thoughts on Timeless Isle changed in the past few months? Let us know in the comments.&quot;<br />
+<br />
+Nope, I still find TI miserable. it has no sense of progress at all. No variety of things t do. It's the worst of expansion. I honestly think the dailies of 5.0 would have been best if they had retained a dailies cap, even lowered it back to 10, and provided all those dailies as choices instead of min max goals to do all. And raised the charm output of said dailies. 5.1 was pretty nice with the story progression aspect but do to the rate at which rep was gained, was very short lived. It could have dragged slower. 5.2 was great because it was versetile. You could do pve dailies. You could do pvp dailies. You could do neither and just run around killing rares.<br />
+<br />
+Timeless isle, has no variety. It literally is grinding mobs, nothing more. You are either afking rare spawns in the order they spawned because they died too fast. or doing mind dulling grinding that's boring. Exploration was a selling point of island? Yeah, that lasted 2 days tops. We'll have this miserable island for like 8 months or more. I'm not saying it should have had dailies instead. I'm saying it should have had something in addition to grinding, giving you an either or type choice.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Army Dreamer</div><div class="date">2013-12-03, 12:13 AM</div></div><div class="posttext">They all are so terrible that I could not pick one.<br />
+<br />
+Worst World PvE Content<br />
+That's the right question. Here 5.0 is the worst, while 5.3 and 5.4 are the dullest.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2013-12-03, 12:15 AM</div></div><div class="posttext">If it weren't for the catch-up gear for alts on Timeless Isle, there'd be less people going for that place. As for myself, I'd probably still visit TI, but only for the weekly quests/loot.<br />
+<br />
+I really don't want another Timeless Isle-styled zone. Even Battlefield: Barrens was better.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Captiosus</div><div class="date">2013-12-03, 12:26 AM</div></div><div class="posttext">After looking at the completion chart above, I stopped to wonder how many people finished their cloak quest and then stopped playing. The real draw of this expansion for me was stabbing Garrosh in the face but I'm certain there were plenty of people who were only hooked by the Legendary line and subsequently quit after finishing it. Although purely anecdotal, I know two people who did precisely that. They finished the four celestials and haven't logged back in since.<br />
+<br />
+As for the poll, I find Timeless Isle to be the lowest kind of &quot;content&quot; there could be. There's little to no story behind it, the rare spawns aren't really rare, the &quot;dynamic&quot; events aren't dynamic because everyone knows their static timers or triggers. At the end of the day TI only consists of three types of farming, one of which becomes depreciated by allowing the epic items to be BOA, and the other two mostly meaningless because they only reward vanity items. The Epoch Stones weekly isn't as dull as the Kor'kron supplies weekly but it's damn close. <br />
+<br />
+On a larger scale - say a continental scale such as Draenor - I would like to see a mix between 5.2 &quot;Operation Shieldwall&quot; style dailies and events and 5.4 Timeless Isle events.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jimbojonez</div><div class="date">2013-12-03, 01:14 AM</div></div><div class="posttext">I hated not being able to fly on the Isle of Thunder and Aimless Isle. Isle of Thunder was the worst though. Once the masses stopped going there, the starting area was hell to ride through since its so overcrowded.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wormweir</div><div class="date">2013-12-03, 01:16 AM</div></div><div class="posttext">Where &quot;few weeks&quot; is actually about six weeks. I'm surprised it's gone up so little in that time. A lot of people must have given up on the legendary quest chain rather early.<br />
+<br />
+I'm one of those people who &quot;gave up&quot; or didn't even bother with the Legendary quest from the beginning. Why? Because traditionally legendary items have been nearly impossible to get. Without something to indicates that your current efforts are going to be wasted by impossible requirements later on... why bother wasting your time to begin with only to run into another impossible gating mechanic (i.e. heroic raiding tokens or the like)?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2013-12-03, 01:41 AM</div></div><div class="posttext">I love exploring, wandering and doing things on my own, not ordered where to go and what to kill. Timeless isle is the only patch-pve content outside raids that I really enjoyed and still somewhat do.<br />
+<br />
+But isn´t that just a soundbyte type thing? I mean, what really was there to explore on Timeless island. Everything basically took less than a few hours to explore and figure out. Sure, it took some time to figure out the cave-in, how to get the tiger to jump on the crane and maybe getting to get a few chests that required mario skills if you didn´t use websites. But the reality is that after a week, the entire island consisted of nothing but running in circles hoping to catch one of the rares up. I thought Thunder island provided more opportunities for exploration and at the same time directed us a bit with daily quests.<br />
+<br />
+I think events like on Timeless island are a neat thing.. the ale guys and the other stuff are a new way to do things.. but they should be in combination with daily quests. 5.1 dailies/scenario progression along with timeless island events would be perfect.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zoma</div><div class="date">2013-12-03, 03:23 AM</div></div><div class="posttext">I'm surprised Timeless Isle currently has 48% of the vote, when a recent thread had most people choosing dailies over Timeless Isle.<br />
+<br />
+Personally, I rank them as;<br />
+-5.2 - IoT dailies and solo scenarios<br />
+-5.1 - Domination Offensive/Operation Shieldwall dailies and storyline<br />
+-5.0 - Faction Dailies<br />
+-5.4 - Timeless Isle<br />
+-5.3 - Barrens Weekly</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Orkwuzhere</div><div class="date">2013-12-03, 03:46 AM</div></div><div class="posttext">Without trying to go, &quot;Waaaaah, i heat WoD im leevn,&quot; the more I read about WoD the more I'm disappointed with it (not digging the spirit stuff). :( <br />
+<br />
+<br />
+They all are so terrible that I could not pick one.<br />
+<br />
+That's the right question. Here 5.0 is the worst, while 5.3 and 5.4 are the dullest.<br />
+<br />
+5.4 was the least offensive patch from Pandaria even though SoO probably has some of the worst raid trash in existence (I'm looking at you, Sha mobs). Isle of Thunder and Isle of Giants have to be some of the worst zones out there (bad dailies, worse mob layouts). 5.2 is tied with 5.0 for being pretty bad (I hate Throne of Thunder).<br />
+<br />
+It's not a surprise people aren't doing a lot of Ordos because loot RNG is just abysmal throughout MoP (Hell, the RNG in general sucks whether it's raid mechanics like Durumu or loot). You can throw all of the, &quot;Hurr day suihld sen u all da loot in teh gaem&quot; replies you want but it's stupid that it takes over a patch or two to even catch up to the endgame content because some genius at Blizzard thought making you wait 4-6 months for your quest item or BiS gear was a really great idea (This was why D3 tanked). Legendary quests should challenge your skills and your knowledge of your class, not make you wait 6+ months for a stupid token, or use add-ons/sites like Open Raid to beat a bullshit quest like Change of Command or kill a raid boss because you were too late for the endgame content party (no one really asks for groups these days without said sites/add-ons).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Robert3620</div><div class="date">2013-12-03, 04:51 AM</div></div><div class="posttext">It's kinda of shocking to see that MSV was done by about seven times more people then have finished SoO. It looks like a lot of people are just not raiding anymore and it that keeps up makes you wonder about the future of raiding. Blizzard is going to have to either get more people raiding or take resources and devote them to other things for the people that do not wish to raid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wolvshammy</div><div class="date">2013-12-03, 05:16 AM</div></div><div class="posttext">A HOLY PRIEST?!?!<br />
+True story. Everyone seems to think I was trolling. My mage is like level 86. (Source)<br />
+<br />
+The next time someone kicks your butt in DPS, you can wonder... was that GC?<br />
+<br />
+Does GC ever get tired of getting caught in lies?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Orkwuzhere</div><div class="date">2013-12-03, 06:24 AM</div></div><div class="posttext">It's kinda of shocking to see that MSV was done by about seven times more people then have finished SoO. It looks like a lot of people are just not raiding anymore and it that keeps up makes you wonder about the future of raiding. Blizzard is going to have to either get more people raiding or take resources and devote them to other things for the people that do not wish to raid.<br />
+<br />
+Out of LFR, MoP raids are very unforgiving because they require you to pay attention and not suck (especially Galakras and Durumu). Fights like Lei Shen can be too much for some people (lots of mechanics to remember and know, and pugs can only handle so many wipes). Aside from difificulty, 5.0 raids were much more accessible due to cross servers, which helps players on low-pop servers like Nesingwary* (this one of the few servers that can't even pug 5.0 content). ToT is getting more action now that you can do it with other players from different servers. If anything, raids need to be completely accessible via cross-realm like 5.4 ToT/SoO Flex from the start (you can still have world firsts).<br />
+<br />
+<br />
+*It took Nesingwary 2-3 years after Cata's release for a raid guild to down Sinestra...no, I'm not kidding.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">holyson</div><div class="date">2013-12-03, 06:59 AM</div></div><div class="posttext">Probably because you still need to complete heroic mode for most encounters to get the meta. Only about 2% of players are heroic progression at best.<br />
+<br />
+Except you don't need heroics this tier just normal/flex achievements</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Robert3620</div><div class="date">2013-12-03, 07:09 AM</div></div><div class="posttext">Out of LFR, MoP raids are very unforgiving because they require you to pay attention and not suck (especially Galakras and Durumu). Fights like Lei Shen can be too much for some people (lots of mechanics to remember and know, and pugs can only handle so many wipes). Aside from difificulty, 5.0 raids were much more accessible due to cross servers, which helps players on low-pop servers like Nesingwary* (this one of the few servers that can't even pug 5.0 content). ToT is getting more action now that you can do it with other players from different servers. If anything, raids need to be completely accessible via cross-realm like 5.4 ToT/SoO Flex from the start (you can still have world firsts).<br />
+<br />
+<br />
+*It took Nesingwary 2-3 years after Cata's release for a raid guild to down Sinestra...no, I'm not kidding.<br />
+<br />
+As far as I understand these charts are for all modes, that would be lfr, flex, normal and heroic. I would expect the numbers to go up when the patch is no longer current for both normal and heroic but for the numbers to be so low right now is amazing. People do not even seem to be doing the content in lfr as of right now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Polarthief</div><div class="date">2013-12-03, 12:29 PM</div></div><div class="posttext">I'd like to note that I only voted for 5.2 Isle of Thunder because of the solo scenarios (most particularly, the weekly loot run), and NOT because of those god awful daily quests, and I'm willing to bet most others did too.<br />
+<br />
+If there wasn't solo-scenarios in 5.2, I would have voted for 5.4, but TBH, Timeless Isle wasn't all that great to me. It was a boring grindfest where players on your own faction could kill you, but let's face it; it was WAY better than 5.0, 5.1, or 5.3, all of which were 100% garbage (except 5.1's questline that didn't involve dailies).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yriel</div><div class="date">2013-12-03, 02:37 PM</div></div><div class="posttext">75% of players never having tagged a celestial doesn't raise a red flag?<br />
+<br />
+I wonder how's many players are mostly just levellers,<br />
+<br />
+Could also been people burned out on raiding. Most of my guild quit because of this and i can't motivate myself to raid anymore either. Since they shifted all endgame content basically to raids it's no surprise the attention rate goes down.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Peukst</div><div class="date">2013-12-03, 04:51 PM</div></div><div class="posttext">Probably because you still need to complete heroic mode for most encounters to get the meta. Only about 2% of players are heroic progression at best.<br />
+<br />
+http://www.wowhead.com/achievement=8454<br />
+<br />
+tell me where you see heroic completion...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Epison</div><div class="date">2013-12-03, 04:59 PM</div></div><div class="posttext">This poll is obviously way off. I can't speak to your servers but my server struggles to kill the ghost ship before it sails away due to lack of interest in the timeless isle. My best guess is the vast majority of responses to this poll don't play often or maybe at all anymore or are rating it how the felt when it was still new. You can spend an hour now on the isle and not see anyone anymore</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alternategray</div><div class="date">2013-12-03, 07:42 PM</div></div><div class="posttext">This poll is obviously way off. I can't speak to your servers but my server struggles to kill the ghost ship before it sails away due to lack of interest in the timeless isle. My best guess is the vast majority of responses to this poll don't play often or maybe at all anymore or are rating it how the felt when it was still new. You can spend an hour now on the isle and not see anyone anymore<br />
+<br />
+Yup. Huolon does laps around his area now. A bunch of laps. <br />
+<br />
+I don't get this poll whatsoever. Isle of Thunder had progression, a ton of different quests, relatively dangerous mobs when it launched, rares that didn't die in 10 seconds, an understandable storyline and very cool distinct landscapes/areas. If the Thunder rewards were kept current (along with evolving storyline/s) and players had a choice between Thunder and Timeless I'd love to see the difference in player participation. <br />
+<br />
+Timeless has been out for months (?) now and I have no idea wtf I'm supposed to be doing there. Really. I know I've looked it up, it's just that forgettable to me. And it's the same damn quests every day/week. Nothing changes. Rare &quot;Elites&quot; die well before you can reach them. I have a strong suspicion that the isle's popularity is due to the 496/535 gear. Newish players are going to associate &quot;catch-up gear&quot; with the island thinking that that's what the poll is about, and not realizing that catch-up gear happens every expac, just in different ways. Or maybe most players now don't give a shit about the game and everything that slows their acquiring of &quot;purplez&quot; is seen as unnecessary, and Timeless Isle gives them exactly what they want: a bland random loot pinata. If that's the case, I think it makes an excellent example for how the game itself is developing and the leadership at Blizzard needs to figure their shit out before the game's population is as barren as the Timeless Isle's.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vishniac</div><div class="date">2013-12-04, 12:03 AM</div></div><div class="posttext">I like the art by diesel, my favorite is the Panda one. I set it as my Desktop</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Orkwuzhere</div><div class="date">2013-12-04, 01:35 AM</div></div><div class="posttext">As far as I understand these charts are for all modes, that would be lfr, flex, normal and heroic. I would expect the numbers to go up when the patch is no longer current for both normal and heroic but for the numbers to be so low right now is amazing. People do not even seem to be doing the content in lfr as of right now.<br />
+<br />
+SoO LFR is abysmal*, and why put yourself through the pain if you can see all of the content on Flex (Flex even give you the normal mode rewards)? It's not even worth doing SoO for 90 valor points when you can get 100+ from ToT wings (certain mobs give you valor in ToT). MoPs raids are hit and miss depending on your mileage and such (SoO has some really bad trash mobs that are harder than the bosses. What the Christ!?)<br />
+<br />
+*LFR Norushen is just...words fail me.<br />
+<br />
+<br />
+imeless has been out for months (?) now and I have no idea wtf I'm supposed to be doing there. Really. I know I've looked it up, it's just that forgettable to me. And it's the same damn quests every day/week. Nothing changes. Rare &quot;Elites&quot; die well before you can reach them. I have a strong suspicion that the isle's popularity is due to the 496/535 gear. Newish players are going to associate &quot;catch-up gear&quot; with the island thinking that that's what the poll is about, and not realizing that catch-up gear happens every expac, just in different ways. Or maybe most players now don't give a shit about the game and everything that slows their acquiring of &quot;purplez&quot; is seen as unnecessary, and Timeless Isle gives them exactly what they want: a bland random loot pinata. If that's the case, I think it makes an excellent example for how the game itself is developing and the leadership at Blizzard needs to figure their shit out before the game's population is as barren as the Timeless Isle's.<br />
+<br />
+If MoP's Loot RNG wasn't absolutely dreadful where it took 10 months to get legendary quest items, and 30 months to even get something that's not even your BiS piece, we wouldn't be in this mess. Blizzard needs to fire the idiot who thought bosses should only drop 2 pieces of loot was a great idea.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Adhemar</div><div class="date">2013-12-04, 02:05 AM</div></div><div class="posttext">This poll is obviously way off. I can't speak to your servers but my server struggles to kill the ghost ship before it sails away due to lack of interest in the timeless isle. My best guess is the vast majority of responses to this poll don't play often or maybe at all anymore or are rating it how the felt when it was still new. You can spend an hour now on the isle and not see anyone anymore<br />
+<br />
+Or maybe most people don't play on dead servers. It stands to reason that most people responding to a poll are people who play on the servers that most of the population is on. Make a real ID friend on a high population server and get pulled over to their timeless isle. On mine, there is constant camping of Huolon, and Evermaw and the pirate ship die every hour (other than maybe at 4am, because I've never bothered to check the island then). Ordos and the Celestials die within 10 minutes of their previous death all day on Tuesday and Wednesday.<br />
+<br />
+I don't personally care much for the isle, and haven't wasted a lot of time there because it's optional content, but I see plenty of people out there who are not there for the gear. I think it's actually a pretty lousy catch-up mechanism. Random enchant 496s are laughable, and then you're basically stuck doing LFR until you get over 520, because no one wants to do ToT with anyone who still needs gear there.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">KoolKidKaos</div><div class="date">2013-12-04, 05:45 AM</div></div><div class="posttext">I didn't take the poll, there wasn't a none of the above option. :(<br />
+<br />
+Dailies, no thank you, I did them, but didn't enjoy them.<br />
+Timeless Isle was really nice for my alts, but the game as a whole isn't fun enough for me to want to play multiple toons, and waste gold on them. So yes for timeless, and no for the game overall. Main toon, and Alt Toon, it's all I have time for.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cybercrusader</div><div class="date">2013-12-04, 02:52 PM</div></div><div class="posttext">Very interesting data, is there a way we can see this by server and by Alliance/Horde? After my server had only 2 Ordos runs and 5 Celestials in 8 hours (4pm-12am EST on a PST server) yesterday (at least Alliance side), I truly wonder if this is result of patch fatigue, or that people just don't play/care/have access anymore...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2013-12-04, 05:05 PM</div></div><div class="posttext">Very interesting data, is there a way we can see this by server and by Alliance/Horde? After my server had only 2 Ordos runs and 5 Celestials in 8 hours (4pm-12am EST on a PST server) yesterday (at least Alliance side), I truly wonder if this is result of patch fatigue, or that people just don't play/care/have access anymore...<br />
+<br />
+I think people are using oQueue/Openraid more for those now, since that's much more convenient. This will tend to transfer those groups onto the more populated servers.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

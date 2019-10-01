@@ -1,0 +1,627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="lot, the, changes, like, really, and, vendor/de, usefull, rather, will, than, shit, something, get, l640, with, gear, fun, alts, having, making, max, cap, also, just, actually, max-level, characters, even, though, number, distribution, character, item, level, profession, seem, that, armory, stats, fell, all, opinion, disliked, might, vocal" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; XP Holiday Buff, Rob Pardo Interview 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Deck Spotlights: Master of the Elements Control Shaman &amp; Controladin 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot;" />
+<title> Armory Stats - Character Item Level Distribution and Number of Max-Level Characters [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Character Item Level Distribution and Number of Max-Level Characters</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1668515.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1668515-Armory-Stats-Character-Item-Level-Distribution-and-Number-of-Max-Level-Characters">Armory Stats - Character Item Level Distribution and Number of Max-Level Characters</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-12-30, 09:19 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; XP Holiday Buff, Rob Pardo Interview (http://www.diablofans.com/news/48293-xp-holiday-buff-rob-pardo-interview)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Deck Spotlights: Master of the Elements Control Shaman &amp; Controladin (http://www.hearthpwn.com/news/741-deck-spotlights-master-of-the-elements-control)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Epic Plays of the Week #10, Skin Spotlight: Winterveil Jaina (http://www.heroesnexus.com/news/1272-epic-plays-of-the-week-10-skin-spotlight)<br />
+<br />
+Armory Stats - Character Item Level Distribution<br />
+It is another quiet holiday week, so today we are taking a look at the item level distribution of Level 100 characters. There are 3.5 million characters and 2.4 million accounts that make up this sample. Keep in mind data collection started recently, so there may be some characters that we haven't come across yet.<br />
+<br />
+We can also look at everyone's highest item level character at the end of Mists of Pandaria. It appears that many players took advantage of the item level 550 honor gear at the end of the expansion. <br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart;<br />
+<br />
+setTimeout(function () {<br />
+height = subchart.height<br />
+width = $(&quot;.pgcharts&quot;).width()<br />
+subchart.setSize(width, height, doAnimation = true);<br />
+}, 1500)<br />
+<br />
+setTimeout(function () {<br />
+height = subchart.height<br />
+width = $(&quot;.pgcharts&quot;).width()<br />
+subchart.setSize(width, height, doAnimation = true);<br />
+}, 2500)<br />
+<br />
+setTimeout(function () {<br />
+height = subchart.height<br />
+width = $(&quot;.pgcharts&quot;).width()<br />
+subchart.setSize(width, height, doAnimation = true);<br />
+}, 4500)<br />
+<br />
+$(document).ready(function () {<br />
+chart = new Highcharts.Chart({<br />
+colors: [<br />
+'#DE2A2A', <br />
+'#2A54C7'<br />
+],<br />
+chart: {<br />
+renderTo: 'ilvl',<br />
+defaultSeriesType: 'line',<br />
+backgroundColor: '#efeedc',<br />
+zoomType: 'x',<br />
+},<br />
+<br />
+xAxis: {<br />
+tickInterval: 10,<br />
+title: {<br />
+text: 'Item Level',<br />
+style: {<br />
+color: '#000',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+startOnTick: false<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+min: 0,<br />
+tickPixelInterval: 50,<br />
+endOnTick: false,<br />
+title: {<br />
+text: 'Percent of Characters',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+line: {<br />
+animation: false,<br />
+pointStart: 581,<br />
+shadow: false,<br />
+marker: {<br />
+enabled: false,<br />
+symbol: 'circle',<br />
+radius: 3,<br />
+states: {<br />
+hover: {<br />
+enabled: true<br />
+}<br />
+}<br />
+}<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+var s = '&lt;b&gt;Item level: '+ this.x +'&lt;/b&gt;';<br />
+<br />
+$.each(this.points, function(i, point) {<br />
+s += '&lt;br/&gt;&lt;span style=&quot;color:'+ point.series.color + '&quot;&gt;'+ point.series.name +'&lt;/span&gt;: '+<br />
+Highcharts.numberFormat(point.y,3) + '%';<br />
+});<br />
+<br />
+return s;<br />
+},<br />
+<br />
+shared: true<br />
+},<br />
+title: {<br />
+text: 'Main Character Item Level by Region',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+shared: true,<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'US',<br />
+data: [0.049281445, 0.060690052, 0.073314331, 0.084722939, 0.096786139, 0.109316905, 0.122034697, 0.139802201, 0.162338877, 0.186652303, 0.212929506, 0.241638052, 0.266138504, 0.291667602, 0.347869022, 0.389108333, 0.434649251, 0.485613933, 0.535362943, 0.611669696, 0.679840803, 0.741653014, 0.784669076, 0.821139215, 0.857328815, 0.909602681, 0.944950662, 0.963092219, 0.962905193, 1.021350929, 0.987405645, 0.985067816, 0.977306222, 0.965523562, 1.043794091, 1.108318184, 1.274117049, 1.289827262, 1.318909861, 1.498548675, 1.470494722, 1.530062616, 1.603563974, 1.641062759, 1.879334336, 1.853711725, 1.839871775, 2.050182912, 1.901216419, 2.081229287, 2.146033919, 2.202702905, 2.308933875, 2.381313075, 2.665312596, 2.861503243, 2.871789693, 2.934069469, 2.823817432, 2.756020378, 2.657644515, 2.502506153, 2.368969335, 2.192977534, 2.042047265, 1.907481802, 1.782735223, 1.616188253, 1.497426517, 1.379132347, 1.272246785, 1.176115238, 1.035564932, 0.91250159, 0.855832604, 0.779993417, 0.688631042, 0.591657876, 0.516379768, 0.635515557, 0.480751247, 0.368535434, 0.299896761, 0.243601828, 0.216015441, 0.178423143, 0.146441637, 0.126616843, 0.105669891, 0.083320241, 0.073501358, 0.060503026, 0.051338735, 0.043670654, 0.051806301, 0.048533339, 0.061157618, 0.049842524, 0.030485296, 0.013278871, 0.008416186, 0.002618369, 0.000748105, 0.000467566, 0.000187026, 0.000187026, 0.00028054, 0.000467566, 0.002524856, 0]<br />
+},<br />
+{<br />
+name: 'EU',<br />
+data: [0.041324915, 0.051637187, 0.055580115, 0.067939676, 0.074460672, 0.086289455, 0.109416242, 0.121624153, 0.135803527, 0.148087263, 0.178796603, 0.190928688, 0.213448871, 0.236575658, 0.27676319, 0.317936454, 0.359261368, 0.413552449, 0.466251193, 0.530323767, 0.577032295, 0.629806865, 0.64974898, 0.67977589, 0.720949154, 0.747108962, 0.773496247, 0.797002162, 0.785097553, 0.804736366, 0.786310762, 0.776074315, 0.763714753, 0.758027839, 0.796850511, 0.871007881, 0.970490978, 0.993617765, 1.046998939, 1.226781274, 1.186062964, 1.273262325, 1.350149414, 1.344310848, 1.668692472, 1.624713664, 1.588924013, 1.877895114, 1.714870221, 1.876833556, 1.967445066, 2.059193959, 2.196741474, 2.294480584, 2.590882586, 2.801525913, 2.913368572, 2.972133359, 2.953176976, 2.901615615, 2.785299249, 2.70909459, 2.583906638, 2.477750893, 2.344904562, 2.23973455, 2.123418185, 1.993756526, 1.849839667, 1.745579561, 1.656408736, 1.543656171, 1.411947222, 1.268561142, 1.17408253, 1.100531764, 0.992404557, 0.883291617, 0.770766528, 0.987324246, 0.775164409, 0.569449742, 0.442593627, 0.363355947, 0.318239756, 0.264403628, 0.210870803, 0.175232803, 0.14050471, 0.117377923, 0.09349288, 0.076659612, 0.0641484, 0.053532825, 0.059447217, 0.058082357, 0.063769272, 0.05497351, 0.033135757, 0.016378315, 0.008113332, 0.003033021, 0.00219894, 0.000606604, 0.000454953, 0.000151651, 0.000151651, 0.000530779, 0.000379128, 0.004397881 ]<br />
+}]<br />
+<br />
+});<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'ilvlByRegion',<br />
+defaultSeriesType: 'line',<br />
+backgroundColor: '#efeedc',<br />
+zoomType: 'x',<br />
+},<br />
+<br />
+xAxis: {<br />
+tickInterval: 10,<br />
+title: {<br />
+text: 'Item Level',<br />
+style: {<br />
+color: '#000',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+startOnTick: false<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+min: 0,<br />
+tickPixelInterval: 50,<br />
+endOnTick: false,<br />
+title: {<br />
+text: 'Percent of Characters',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+line: {<br />
+animation: false,<br />
+pointStart: 581,<br />
+shadow: false,<br />
+marker: {<br />
+enabled: false,<br />
+symbol: 'circle',<br />
+radius: 3,<br />
+states: {<br />
+hover: {<br />
+enabled: true<br />
+}<br />
+}<br />
+}<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+var s = '&lt;b&gt;Item level: '+ this.x +'&lt;/b&gt;';<br />
+<br />
+$.each(this.points, function(i, point) {<br />
+s += '&lt;br/&gt;&lt;span style=&quot;color:'+ point.series.color + '&quot;&gt;'+ point.series.name +'&lt;/span&gt;: '+<br />
+Highcharts.numberFormat(point.y,3) + '%';<br />
+});<br />
+<br />
+return s;<br />
+},<br />
+<br />
+shared: true<br />
+},<br />
+title: {<br />
+text: 'Character Item Level',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+shared: true,<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'Players',<br />
+data: [0.044846504, 0.055691737, 0.063522079, 0.075456023, 0.084458823, 0.096560261, 0.115068342, 0.129765936, 0.147687788, 0.165358399, 0.194083611, 0.213596656, 0.237045809, 0.261206811, 0.308607598, 0.349811109, 0.393024547, 0.44578514, 0.497205782, 0.56671577, 0.62303561, 0.679816058, 0.710174336, 0.742919403, 0.781903619, 0.819799125, 0.850199276, 0.871345387, 0.864729376, 0.901745538, 0.876370205, 0.869628574, 0.859285823, 0.850911125, 0.907398459, 0.977285308, 1.106423142, 1.126229301, 1.168772763, 1.348410022, 1.31344566, 1.388231708, 1.463645857, 1.477212867, 1.763041288, 1.727197583, 1.701319769, 1.955031225, 1.798298764, 1.968388867, 2.047404137, 2.123488262, 2.247015048, 2.333400052, 2.624253291, 2.828428413, 2.894797889, 2.955137584, 2.895300371, 2.836426249, 2.728183285, 2.616590443, 2.487703851, 2.350233193, 2.20932891, 2.090994437, 1.970901277, 1.824720934, 1.692065728, 1.581519723, 1.484415107, 1.379103288, 1.24343319, 1.109144918, 1.031595221, 0.957018541, 0.856396552, 0.752717799, 0.656869387, 0.829806888, 0.643344251, 0.479493297, 0.378703815, 0.309738182, 0.272470779, 0.225907461, 0.182024047, 0.153466329, 0.124908611, 0.102129434, 0.08454257, 0.069426241, 0.058413514, 0.0491176, 0.056026725, 0.053807431, 0.062600863, 0.052676846, 0.03194947, 0.014990708, 0.008249077, 0.002847397, 0.001549319, 0.000544355, 0.000334988, 0.000167494, 0.000209367, 0.000502482, 0.000209367, 0.003559246 ]<br />
+},<br />
+{<br />
+name: 'Characters',<br />
+data: [0.078642814, 0.094835647, 0.105479887, 0.124560253, 0.143046127, 0.162975767, 0.189727912, 0.215149528, 0.2463179, 0.277514581, 0.317826809, 0.351967642, 0.399045755, 0.440150639, 0.510470563, 0.580082759, 0.645391964, 0.725421927, 0.802451119, 0.895871309, 0.976524073, 1.02946218, 1.072492085, 1.095224332, 1.129619947, 1.158297114, 1.180746269, 1.195976591, 1.15379596, 1.188248193, 1.13284719, 1.11886247, 1.092874672, 1.061225044, 1.106010117, 1.171800578, 1.309977531, 1.333332578, 1.404954724, 1.674910762, 1.588482933, 1.682356069, 1.762527577, 1.746504599, 2.116618404, 1.965164461, 1.899487236, 2.150221363, 1.918284511, 2.056348227, 2.115854057, 2.157496815, 2.234554316, 2.271695919, 2.454120071, 2.577717813, 2.579586217, 2.580237327, 2.472521017, 2.3876785, 2.255842796, 2.121176177, 1.987500379, 1.847200239, 1.709617778, 1.594710945, 1.480710005, 1.351082414, 1.242346976, 1.148870168, 1.070595373, 0.987932659, 0.884491031, 0.786824469, 0.730347718, 0.673078311, 0.599870854, 0.526465232, 0.458523276, 0.577676481, 0.444397011, 0.330367761, 0.261066966, 0.213281124, 0.187038543, 0.154851042, 0.125098127, 0.10536665, 0.085295464, 0.069866978, 0.057948827, 0.047332896, 0.039830972, 0.033518032, 0.038472133, 0.036801893, 0.043058215, 0.035839382, 0.021741426, 0.010134675, 0.005605211, 0.001925022, 0.001047438, 0.000368019, 0.000226473, 0.000113237, 0.000141546, 0.00033971, 0.000113237, 0.002377968]<br />
+}]<br />
+<br />
+});<br />
+<br />
+<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+colors: [<br />
+'#6CC479'<br />
+],<br />
+chart: {<br />
+renderTo: 'ilvlMoP',<br />
+defaultSeriesType: 'line',<br />
+backgroundColor: '#efeedc',<br />
+zoomType: 'x',<br />
+},<br />
+<br />
+xAxis: {<br />
+tickInterval: 10,<br />
+title: {<br />
+text: 'Item Level',<br />
+style: {<br />
+color: '#000',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+startOnTick: false<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+min: 0,<br />
+tickPixelInterval: 50,<br />
+endOnTick: false,<br />
+title: {<br />
+text: 'Percent of Characters',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+line: {<br />
+animation: false,<br />
+pointStart: 450,<br />
+shadow: false,<br />
+marker: {<br />
+enabled: false,<br />
+symbol: 'circle',<br />
+radius: 3,<br />
+states: {<br />
+hover: {<br />
+enabled: true<br />
+}<br />
+}<br />
+}<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+var s = '&lt;b&gt;Item level: '+ this.x +'&lt;/b&gt;';<br />
+<br />
+$.each(this.points, function(i, point) {<br />
+s += '&lt;br/&gt;&lt;span style=&quot;color:'+ point.series.color + '&quot;&gt;'+ point.series.name +'&lt;/span&gt;: '+<br />
+Highcharts.numberFormat(point.y,3) + '%';<br />
+});<br />
+<br />
+return s;<br />
+},<br />
+<br />
+shared: true<br />
+},<br />
+title: {<br />
+text: 'Mists of Pandaria Main Character Item Level',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+shared: true,<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'Players',<br />
+data: [0.140048041, 0.138946818, 0.142030242, 0.145912054, 0.148279683, 0.156704039, 0.156401203, 0.159346975, 0.161191523, 0.159732403, 0.195329438, 0.206314138, 0.221566077, 0.247197043, 0.24752741, 0.253418953, 0.258291865, 0.263329961, 0.259062722, 0.25900766, 0.281032121, 0.281995691, 0.289511539, 0.30966392, 0.316051014, 0.329128038, 0.337166966, 0.35456629, 0.370561555, 0.354263454, 0.381931683, 0.405305142, 0.403240349, 2.128526495, 0.686309733, 0.724164275, 0.680555842, 0.74544541, 0.75929329, 0.831726236, 0.772507967, 0.777380879, 0.78605301, 0.755081112, 0.726394252, 0.715629796, 0.807912288, 0.690907339, 0.697872575, 0.719979627, 0.704122016, 0.777821368, 0.742004088, 0.77889506, 0.811573854, 0.790898392, 0.81328075, 0.819915619, 0.812702608, 0.837507657, 0.841389468, 0.829358606, 0.828780464, 0.858816323, 0.83428658, 0.872278775, 0.857494855, 0.857384733, 0.872967039, 0.845656707, 0.901819083, 0.847776562, 1.088393797, 1.029092936, 0.976812372, 1.167929632, 0.987108808, 1.198736347, 0.996111306, 1.194661821, 1.078207484, 1.109317035, 1.086191351, 1.079005871, 1.077161322, 1.077739464, 1.151521408, 1.048336809, 1.007068475, 1.021439436, 0.999552628, 0.999194731, 0.966763712, 0.960404149, 1.054778964, 0.836626679, 1.08280509, 0.796129201, 1.114768089, 0.747317489, 5.728039204, 1.382668126, 1.13007509, 0.880097458, 0.855044634, 0.801717908, 0.791228758, 0.772507967, 0.761633389, 0.724659825, 0.775756575, 0.769121706, 0.767800238, 0.79034778, 0.811573854, 0.830597482, 0.806563289, 0.758632556, 0.706544706, 0.659715196, 0.699772184, 0.67948215, 0.745252696, 0.783905625, 0.769204298, 0.588080637, 0.43580902, 0.390493692, 0.373287082, 0.356163064, 0.359852161, 0.361916954, 0.408718933, 0.370148596, 0.419676103, 0.451171082, 0.352226191, 0.328604957, 0.145416503, 0.066789178, ]<br />
+}]<br />
+<br />
+});<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;ilvlByRegion&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;&lt;br&gt;<br />
+<br />
+&lt;div id=&quot;ilvl&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;&lt;br&gt;<br />
+<br />
+&lt;div id=&quot;ilvlMoP&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+Armory Stats - Number of Max-Level Characters<br />
+Today we are taking a look at the number of Level 100 characters that players have and Level 90 characters that players had at the end of Mists of Pandaria. There are 3.5 million characters and 2.4 million accounts that make up this sample at Level 100. <br />
+<br />
+While collecting this data, we came across some fun outliers, such as the player that has 42+ Level 100 characters and a player that had 195+ Level 90 characters.<br />
+<br />
+<br />
+&lt;script&gt; var chart; <br />
+$(document).ready(function() {<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'stillalivechart',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ '1', '2', '3', '4', '5', '6', '7', '8', '9+'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.point.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Max-Level Characters per Player',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [<br />
+{<br />
+data: [{y: 37.3, color: '#6CC479', name:'1 Level 90 Character'},{y: 20.3, color: '#6CC479', name:'2 Level 90 Characters'},{y: 12.9, color: '#6CC479', name:'3 Level 90 Characters'},{y: 8.7, color: '#6CC479', name:'4 Level 90 Characters'},{y: 6.1, color: '#6CC479', name:'5 Level 90 Characters'},{y: 4.4, color: '#6CC479', name:'6 Level 90 Characters'},{y: 3.1, color: '#6CC479', name:'7 Level 90 Characters'},{y: 2.2, color: '#6CC479', name:'8 Level 90 Characters'},{y: 5, color: '#6CC479', name:'9+ Level 90 Characters'},],<br />
+<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+},<br />
+{<br />
+data: [{y: 67.3, color: '#AB6448', name:'1 Level 100 Character'},{y: 22.6, color: '#AB6448', name:'2 Level 100 Characters'},{y: 6.9, color: '#AB6448', name:'3 Level 100 Characters'},{y: 2.1, color: '#AB6448', name:'4 Level 100 Characters'},{y: 0.71, color: '#AB6448', name:'5 Level 100 Characters'},{y: 0.26, color: '#AB6448', name:'6 Level 100 Characters'},{y: 0.10, color: '#AB6448', name:'7 Level 100 Characters'},{y: 0.05, color: '#AB6448', name:'8 Level 100 Characters'},{y: 0.06, color: '#AB6448', name:'9+ Level 100 Characters'},],<br />
+<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+}<br />
+<br />
+]<br />
+<br />
+});<br />
+});<br />
+&lt;/script&gt; <br />
+<br />
+&lt;div id=&quot;stillalivechart&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+Poll - Level 100 Characters<br />
+How many level 100 characters do you have?<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/8551630.js&quot;&gt;&lt;/script&gt;<br />
+&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/8551630/&quot;&gt;How many level 100 characters do you have?&lt;/a&gt;&lt;/noscript&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bodom</div><div class="date">2014-12-30, 12:18 PM</div></div><div class="posttext">With the subscription cost as low as it is I'm guessing it's becoming far more common to have more than one account as well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nerraw</div><div class="date">2014-12-30, 12:23 PM</div></div><div class="posttext">While collecting this data, we came across some fun outliers, such as the player that has 42+ Level 100 characters and a player that had 195+ Level 90 characters.<br />
+<br />
+Why?? I had problems getting my 10 to 90 last expansion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Saphyron</div><div class="date">2014-12-30, 12:24 PM</div></div><div class="posttext">So according to this EU has overall more raiders than US or at least serious raiders.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">balatro</div><div class="date">2014-12-30, 12:24 PM</div></div><div class="posttext">Something tells me those 42+ level 100 toons and 195+ level 90 toons weren't leveled by hand</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bodom</div><div class="date">2014-12-30, 12:30 PM</div></div><div class="posttext">Something tells me those 42+ level 100 toons and 195+ level 90 toons weren't leveled by hand<br />
+<br />
+Most likely some crazy multiboxers. A guy on EU servers has 24 accounts and he leveled them all together at the same time afaik.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2014-12-30, 12:35 PM</div></div><div class="posttext">boring stats.. no suprise.. NEXT!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Anthony3187</div><div class="date">2014-12-30, 12:44 PM</div></div><div class="posttext">I bet something to do with the fact that in Europe most people don't have kids or only have 1 child plays a role into it. There's a lot of casual gamers in the US with children and families. Just look at the WoW PvE world first races and games like CS:GO.. Europe always dominates heh.<br />
+<br />
+At least that's what I see whenever people always compare i-lvl's and world firsts/e-sports with the US vs Europe. EU is much more hardcore than America. (percentage of gamers anyway)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ealyssa</div><div class="date">2014-12-30, 12:47 PM</div></div><div class="posttext">The poll clearly show how disconnected mmoc forumers are from the average players.<br />
+<br />
+Only 30% of people here have one lv100 (myself having 3)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">OreoLover</div><div class="date">2014-12-30, 01:03 PM</div></div><div class="posttext">4x 100, Garrisons too hefty</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6771814438</div><div class="date">2014-12-30, 01:10 PM</div></div><div class="posttext">Garrison is not alt friendly, followers are not alt friendly. 1 char is enufff for me,</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lamora</div><div class="date">2014-12-30, 01:12 PM</div></div><div class="posttext">I bet something to do with the fact that in Europe most people don't have kids or only have 1 child plays a role into it. There's a lot of casual gamers in the US with children and families. Just look at the WoW PvE world first races and games like CS:GO.. Europe always dominates heh.<br />
+<br />
+As long as you exclude France, UK, Ireland, the Netherlands, Belgium, Denmark, Sweden, Norway, Finland and most likely a couple of others from EU. Fertility rates in those countries are pretty much identical to the US.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kejtaun</div><div class="date">2014-12-30, 01:13 PM</div></div><div class="posttext">Most likely some crazy multiboxers. A guy on EU servers has 24 accounts and he leveled them all together at the same time afaik.<br />
+<br />
+43 100s checkin' in<br />
+no multiboxing, one char a day, 26 characters to go</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce213c955fb</div><div class="date">2014-12-30, 01:21 PM</div></div><div class="posttext">Nooo I'm barely in the 1% for ilvl :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Prevenge</div><div class="date">2014-12-30, 01:53 PM</div></div><div class="posttext">Where's the option for zero level 100s?<br />
+<br />
+My main is 96. This is the first expansion where I've really struggled trying to care about playing, and I don't know why that is. There's a lot in the game I really like, and I think I'd like playing end game right now. But as is, I log in a few times a week, I putz around my garrison, send my followers out... then I try to think about where it was I left off leveling and just can't bring myself to taking the flightpath out there.<br />
+<br />
+After that I usually just play Hearthstone or Heroes of the Storm. :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Balazzar</div><div class="date">2014-12-30, 02:24 PM</div></div><div class="posttext">I bet something to do with the fact that in Europe most people don't have kids or only have 1 child plays a role into it. There's a lot of casual gamers in the US with children and families. Just look at the WoW PvE world first races and games like CS:GO.. Europe always dominates heh.<br />
+<br />
+At least that's what I see whenever people always compare i-lvl's and world firsts/e-sports with the US vs Europe. EU is much more hardcore than America. (percentage of gamers anyway)<br />
+<br />
+I think it has more to do with paid time off. In EU there is an amount of paid time off given as matter of law. In US there are 0 days off granted as a matter of law, with the FMLA allowing you to take unpaid leave from work for certain family matters free from risk of termination. Sure your employer might give you paid days off but they have no legal obligation to do so, and lets be honest the average joe is working an average job, not a cushy job with tons of days off. I believe the average US worker has 1.5 weeks paid time off in a year, which makes choosing how to spend that time off more critical. In EU you have enough time off to spend time with family and also have a number of shorter work weeks where you can just sit in front of PC.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocef71e99c15</div><div class="date">2014-12-30, 02:24 PM</div></div><div class="posttext">This is the first expansion where I've really struggled trying to care about playing, and I don't know why that is.<br />
+<br />
+Chances are you might be suffereing from an affliction called &quot;growing up&quot;, possibly with complications from a syndrome called &quot;Moving on&quot;.<br />
+<br />
+Just a layman diagnosis, of course... ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Grish</div><div class="date">2014-12-30, 02:27 PM</div></div><div class="posttext">By the end of MoP I had 20 level 90's, and currently have 4 of them to 100.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thewallofsleep</div><div class="date">2014-12-30, 02:32 PM</div></div><div class="posttext">Where's the option for zero level 100s?<br />
+<br />
+My main is 96. This is the first expansion where I've really struggled trying to care about playing, and I don't know why that is. There's a lot in the game I really like, and I think I'd like playing end game right now. But as is, I log in a few times a week, I putz around my garrison, send my followers out... then I try to think about where it was I left off leveling and just can't bring myself to taking the flightpath out there.<br />
+<br />
+After that I usually just play Hearthstone or Heroes of the Storm. :P<br />
+<br />
+This. I think the highest level toon I have is 95. I just can't be bothered. I enjoyed the first zone but the garrison sucked the motivation out of me. Seriously. When your base isn't in the zone you're leveling in that creates a problem. I let my subscription run out as I stopped caring about logging in, as the garrison feels like a grind that stripped away any interest in the storyline.<br />
+<br />
+Can garrisons be skipped apart from the mandatory quests to advance the story? If you ignore your garrison (follower missions, gathering farms, work orders, etc) does it gimp you?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Balazzar</div><div class="date">2014-12-30, 02:45 PM</div></div><div class="posttext">Can garrisons be skipped apart from the mandatory quests to advance the story? If you ignore your garrison (follower missions, gathering farms, work orders, etc) does it gimp you?<br />
+<br />
+<br />
+I mean they can technically be skipped, but the major Legendary questline breadcrumb is there. Your weekly &quot;campaign&quot; (the closest thing you really get to episodic, story-driven, quests at 100) is only picked up in Garrison. Your daily to get Apexis shards is in Garrison. You have to spend an unnecessary and absurd amount of gold to do professions without garrison, and some professions have BOP items made only in Garrison. You have to be in Garrison to queue for the Proving Grounds to the best of my knowledge.<br />
+<br />
+I think if you just want to hit 100 then yes, Garrison is optional. If you want to play more than a very casual amount (i.e., just do normal dungeons, farm i620 from world rares, and do weekly WB/LFR), then you have to interact with Garrison in some way or another. Hope this helps.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thelxi</div><div class="date">2014-12-30, 02:46 PM</div></div><div class="posttext">Love these statistics posts. Do another battleground/faction statistic next time please, and note the blacklisting timeline if you can to point out how much things changed when blacklisting was introduced.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zenfoldor</div><div class="date">2014-12-30, 02:52 PM</div></div><div class="posttext">My 5th(monk) is on the way to level 100, I will do 7 only because I turned off my 2nd account and my other 90s are on there....might do a DK eventually.<br />
+<br />
+My main, Zenfolder, is 653. Didn't think that was very good.....but apparently I'm ahead of the curve, lol. I'd be farther ahead if it weren't for dat full time job.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zrankfappa</div><div class="date">2014-12-30, 02:53 PM</div></div><div class="posttext">I have 9 100's ... and frankly bored to tears. Garrison's, while such a significant part of the expansion, are so limited. I havent had a single invasion, yet I have stacks of trinkets, shoulders, bracers, and chests for all my toons.<br />
+<br />
+Never really was in to achievement hunting but that is pretty much the only thing that is going to keep me occupied. At times I feel like I am trying too hard to stay interested.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Youn</div><div class="date">2014-12-30, 03:38 PM</div></div><div class="posttext">I hadn't really thought much about it... I technically have 1 of each class on the server at 91+... only the hunter (663), monk (598), deathknight (602) have reached 100.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Odari</div><div class="date">2014-12-30, 03:38 PM</div></div><div class="posttext">Where's the option for zero level 100s?<br />
+<br />
+My main is 96. This is the first expansion where I've really struggled trying to care about playing, and I don't know why that is. There's a lot in the game I really like, and I think I'd like playing end game right now. But as is, I log in a few times a week, I putz around my garrison, send my followers out... then I try to think about where it was I left off leveling and just can't bring myself to taking the flightpath out there.<br />
+<br />
+After that I usually just play Hearthstone or Heroes of the Storm. :P<br />
+<br />
+<br />
+Apparently this is all based around the accounts with level 100s, excluding those with 0.<br />
+<br />
+Though I'd be interested to see what the overall stats looked like with all active or recently active accounts included.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Taiknee</div><div class="date">2014-12-30, 04:31 PM</div></div><div class="posttext">According to the second chart, Horde got most of the noobs this xpac! (Just kidding, just kidding!)<br />
+<br />
+It's neat to see the item level curves by faction</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc67df56e342</div><div class="date">2014-12-30, 04:33 PM</div></div><div class="posttext">According to the second chart, Horde got most of the noobs this xpac! (Just kidding, just kidding!)<br />
+<br />
+It's neat to see the item level curves by faction<br />
+<br />
+its US vs EU not horde vs alliance</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Taiknee</div><div class="date">2014-12-30, 04:39 PM</div></div><div class="posttext">its US vs EU not horde vs alliance<br />
+<br />
+Wow! I completely didn't see that.. Those colors...... Thanks for clearing that up lol!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dug</div><div class="date">2014-12-30, 04:45 PM</div></div><div class="posttext">I have 9 100's ... and frankly bored to tears. Garrison's, while such a significant part of the expansion, are so limited. I havent had a single invasion, yet I have stacks of trinkets, shoulders, bracers, and chests for all my toons.<br />
+<br />
+Never really was in to achievement hunting but that is pretty much the only thing that is going to keep me occupied. At times I feel like I am trying too hard to stay interested.<br />
+<br />
+Do you do the Apexis Dailies? I think the invasions are triggered by killing so many of a certain orc clan. I know if you do &quot;The pit&quot; daily 2 or 3 days in a row you will trigger an Iron Horde invasion. I have a Shadowmoon clan queued up as well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zrankfappa</div><div class="date">2014-12-30, 04:57 PM</div></div><div class="posttext">Do you do the Apexis Dailies? I think the invasions are triggered by killing so many of a certain orc clan. I know if you do &quot;The pit&quot; daily 2 or 3 days in a row you will trigger an Iron Horde invasion. I have a Shadowmoon clan queued up as well.<br />
+<br />
+I was doing them on my druid ... but once i got the @5k for legendary quest, I stopped. The Apexis crystal dailies seem like a pointless grind outside of the legendary quest requirement.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rolly</div><div class="date">2014-12-30, 05:06 PM</div></div><div class="posttext">I'm in the &quot;didn't even make it to 100 before unsubscribing&quot; club.<br />
+<br />
+Games no longer an MMO it's a lobby queue system with mini games to keep you occupied while you wait.<br />
+<br />
+Suits at Acti-Blizz wet their pants at the money Zynga and Facebook were making for the cost to develop and decided it was a good way to go. They arrived too late.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">General Zanjin</div><div class="date">2014-12-30, 05:16 PM</div></div><div class="posttext">i have zero 100s because i dont have WoD and i am not subbed. hopefully after today i will have WoD and be subbed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hugh Wattmate</div><div class="date">2014-12-30, 05:53 PM</div></div><div class="posttext">why is 4 below 5+ :S hmmm</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baneleaf</div><div class="date">2014-12-30, 05:54 PM</div></div><div class="posttext">Most likely some crazy multiboxers. A guy on EU servers has 24 accounts and he leveled them all together at the same time afaik.<br />
+<br />
+<br />
+Depending on class and play style it is quite easy to level toons together. For example, you 3 box hunters having one with a tanking pet and two with dps pets. Using focus macros you can disdirect all mobs to the tank pet and burn them down. Also with the fact that most quest mobs have shared drops on quest items for party members means less grinding mobs and if you use things like the loot-a-rang or the hunters fetch glyph you can loot much easier.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nathiest</div><div class="date">2014-12-30, 05:57 PM</div></div><div class="posttext">It's not just the Garrisons that are holding people back it's also the fact that we where all spoiled by the Timeless Isle. Why level up your alts right now? Just wait until Blizz reintroduce the ultimate carrot on the stick.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zaphon</div><div class="date">2014-12-30, 06:00 PM</div></div><div class="posttext">43 100s checkin' in<br />
+no multiboxing, one char a day, 26 characters to go<br />
+<br />
+How exactly are you doing 90-100 in a single day? It takes me a couple best case. And how many hours total per toon is that?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zrankfappa</div><div class="date">2014-12-30, 06:37 PM</div></div><div class="posttext">why is 4 below 5+ :S hmmm<br />
+<br />
+because 5+ includes many more options ...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kejtaun</div><div class="date">2014-12-30, 06:37 PM</div></div><div class="posttext">How exactly are you doing 90-100 in a single day? It takes me a couple best case. And how many hours total per toon is that?<br />
+<br />
+91-100 takes me 6 xp pots so 6 hours. I've been streaming for few months until beta ended, lvling another who knows how many chars practicing the best routes. There is a good guide out there on the interwebs, if u want to speed up your leveling process.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thunderdragon2</div><div class="date">2014-12-30, 06:49 PM</div></div><div class="posttext">i have 6 lvl 100s would have been 7 but i dont like what casters have become now so i deleted my lock, tbh i wish followers were accountwide atleast and reps uptill revered so you could just go buy them on ur alts</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daez</div><div class="date">2014-12-30, 07:03 PM</div></div><div class="posttext">I have zero characters at max level. I started playing right before DAI came out, and I was all excited about it... then they so completely bundled the launch of WOD that I was just disgusted enough to stop playing again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bad Ashe</div><div class="date">2014-12-30, 07:10 PM</div></div><div class="posttext">i'm surprised at the max level numbers. this is the MOST alt-friendly xpac EVER, and also one of the best leveling-experiences EVER.<br />
+<br />
+my 7th character will ding probably tomorrow...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Youn</div><div class="date">2014-12-30, 07:45 PM</div></div><div class="posttext">Pretty sure these stats don't take multi-boxers into effect. That is because someone multi-boxing 5 characters is 5 accounts. Therefore, they would count as 5 separated people in that chart. Were someone like me have three 100s, nine 91-95 on one server. This is because, I have simply leveled one of every class. This allows me to play around in dungeons and lfrs with each type of character.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">daanjjo</div><div class="date">2014-12-30, 08:07 PM</div></div><div class="posttext">20 level 100's as of this week. Multibox 4 at a time, so about 2 days from 90-100.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">vitor210</div><div class="date">2014-12-30, 08:09 PM</div></div><div class="posttext">Uhm what?? How can there be players with 690 ilvl???</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">azurrei</div><div class="date">2014-12-30, 08:13 PM</div></div><div class="posttext">Uhm what?? How can there be players with 690 ilvl???<br />
+<br />
+Highmaul Mythic WF gear is 691....and Mythic WF BRF 701 gear is possible to obtain at the BMAH.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xeh.-</div><div class="date">2014-12-30, 08:51 PM</div></div><div class="posttext">Highmaul Mythic WF gear is 691....and Mythic WF BRF 701 gear is possible to obtain at the BMAH.<br />
+<br />
+Go to wowprogress and max ilevel is 684 atm. There is nobody at 690 or even close. Wowprogress is accurate. How did mmo champ got that 0,004% for 690?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wildtree</div><div class="date">2014-12-30, 08:55 PM</div></div><div class="posttext">Go to wowprogress and max ilevel is 684 atm. There is nobody at 690 or even close. Wowprogress is accurate. How did mmo champ got that 0,004% for 690?Armory data...<br />
+Wowprogress is fairly accurate, but often not up to date.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2014-12-30, 11:05 PM</div></div><div class="posttext">This site is /yawn.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-12-30, 11:20 PM</div></div><div class="posttext">Pretty sure these stats don't take multi-boxers into effect. That is because someone multi-boxing 5 characters is 5 accounts. Therefore, they would count as 5 separated people in that chart. Were someone like me have three 100s, nine 91-95 on one server. This is because, I have simply leveled one of every class. This allows me to play around in dungeons and lfrs with each type of character.<br />
+<br />
+<br />
+Multiboxes are a very tiny amount of players<br />
+If the multiboxer has multiple WoW accounts on the same BNet account, we detect it as the same account. <br />
+<br />
+<br />
+<br />
+Go to wowprogress and max ilevel is 684 atm. There is nobody at 690 or even close. Wowprogress is accurate. How did mmo champ got that 0,004% for 690?<br />
+<br />
+There is an armory bug that shows a few people at 690 for some reason. No idea why.<br />
+<br />
+<br />
+This site is /yawn.<br />
+<br />
+The holidays continue throughout this week, we can't fast forward through them. Hopefully lots of Patch 6.1 news in January though!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alopex Major</div><div class="date">2014-12-31, 02:29 AM</div></div><div class="posttext">I have 3 currently, working on 2 more. It's quicker and less painful than Pandaria so more of my 90s will probably make it to 100.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">F-Minus</div><div class="date">2014-12-31, 09:20 AM</div></div><div class="posttext">I bet something to do with the fact that in Europe most people don't have kids or only have 1 child plays a role into it. There's a lot of casual gamers in the US with children and families. Just look at the WoW PvE world first races and games like CS:GO.. Europe always dominates heh.<br />
+<br />
+At least that's what I see whenever people always compare i-lvl's and world firsts/e-sports with the US vs Europe. EU is much more hardcore than America. (percentage of gamers anyway)<br />
+<br />
+<br />
+The reasons some of you come up constantly is just laughable, let's list the reasons:<br />
+<br />
+1) Most Europeans are on welfare <br />
+2) Most Europeans work 10 times less as the US citizens<br />
+3) Most Europeans don't have children<br />
+etc. etc.<br />
+<br />
+It's just laughable. <br />
+<br />
+I think the real reason goes back to the 90s, where Europe had already a proper network infrastructure and I could play with my ISDN all over the place with really acceptable pings, today I ping sub 30ms to pretty much anywhere in Europe, thus why a lot more people play online games in Europe as in any other place, that's my theory at least. When I played QuakeWorld in 1996 with 55ms pings on Barrysworld servers in the UK, which were about 4500 miles away from me, pretty much the majority of the world couldn't go 200 miles without having huge packet loss or pings in the 500ms range (including the US).<br />
+<br />
+That and the internet was always affordable, and didn't cost an arm and a leg, even dailup at the start, plus we had like bazillion cybercafes all over Europe. Which made the internet + online gaming very popular and people who were hooked at in their teens are still playing video games now. <br />
+<br />
+Also gaming isn't something people are ashamed of here, my 69 year old father plays World of Tanks at least 2 hours a day. I play WoW and raid semi-hardcore amongst playing other games and I have 2 little children a job, 2 cats and a wife.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2b4a3c7b42</div><div class="date">2014-12-31, 10:15 AM</div></div><div class="posttext">^<br />
+theres a lot of casual gamers in EU and playing 1-2 hours per day is not consider as being loser or geek...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kobor</div><div class="date">2014-12-31, 11:25 AM</div></div><div class="posttext">I bet something to do with the fact that in Europe most people don't have kids or only have 1 child plays a role into it. There's a lot of casual gamers in the US with children and families. Just look at the WoW PvE world first races and games like CS:GO.. Europe always dominates heh.<br />
+<br />
+At least that's what I see whenever people always compare i-lvl's and world firsts/e-sports with the US vs Europe. EU is much more hardcore than America. (percentage of gamers anyway)<br />
+<br />
+I am not sure why is the difference, but saying from Hungary (still EU, yes?) lot of people has family, even with jobs, 2-5 kids and a wife (who don't like wow). Maybe in Western region it is different, but not sure about that.<br />
+<br />
+I will not be so popular I know, but there is some difference on the avarage brain level between the two zones.<br />
+<br />
+BTW how these stats know which character belong to the same account?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6be51aed98</div><div class="date">2014-12-31, 12:04 PM</div></div><div class="posttext">I bet something to do with the fact that in Europe most people don't have kids or only have 1 child plays a role into it. There's a lot of casual gamers in the US with children and families. Just look at the WoW PvE world first races and games like CS:GO.. Europe always dominates heh.<br />
+<br />
+At least that's what I see whenever people always compare i-lvl's and world firsts/e-sports with the US vs Europe. EU is much more hardcore than America. (percentage of gamers anyway)<br />
+<br />
+Think you're confusing Europe with China</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">JohnBrown</div><div class="date">2014-12-31, 04:17 PM</div></div><div class="posttext">Seems i'm one of the few with 11 characters at 100.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Guruftw</div><div class="date">2014-12-31, 04:19 PM</div></div><div class="posttext">I love to look at Stats charts! :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">JohnBrown</div><div class="date">2014-12-31, 04:33 PM</div></div><div class="posttext">Whats the percentage for people who have 6/7/8/9/10/11 chars at lvl 100 by the way? Since it does not show up on the charts.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aikez</div><div class="date">2014-12-31, 08:58 PM</div></div><div class="posttext">I've got 2 level 100's, working on my 3rd now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zaflis</div><div class="date">2015-01-01, 07:11 AM</div></div><div class="posttext">Also have 11 level 100 characters now. Just last night, new year's eve dinged last 4 of them together, at my time 1:00 (read: 100) and server time 0:00. It only happens once in a lifetime =)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3dde1cb131</div><div class="date">2015-01-01, 09:28 AM</div></div><div class="posttext">Even though the profession changes seem to be disliked (might be vocal opinion and all that), I actually really really like the changes.<br />
+<br />
+I fell like I am making something usefull rather than a lot of shit I will vendor/de just to get to max cap.<br />
+<br />
+Also having alts with L640 gear is a lot of fun! :)</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

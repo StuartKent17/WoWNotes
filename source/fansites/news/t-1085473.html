@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="blizzard, warlocks, holy, power/convictionsrift, original, very, roundup, /sarcasm, weekly, posts, blue, statistics, cebit, curse, 2012, dragonwrath" />
+<meta name="description" content="Statistics: Dragonwrath, Tarecgosa's Rest 
+Today we take a look at which classes ended up with Dragonwrath, Tarecgosa's Rest and how quickly they got it. The sample size is ~5.6 million level 85 characters, with ~15,000 Dragonwrath owners. 
+ 
+You can see that mages are obtaining the staff at an even faster rate now that Firelands is less difficult, while the other classes are maintaining roughly the same rate of acquisition.   
+ 
+&lt;script type=&quot;text/javascript&quot;" />
+<title> Dragonwrath Statistics, Blue Posts, Blizzard at CeBIT 2012, Curse Weekly Roundup [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Dragonwrath Statistics, Blue Posts, Blizzard at CeBIT 2012, Curse Weekly Roundup</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1085473.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1085473-Dragonwrath-Statistics-Blue-Posts-Blizzard-at-CeBIT-2012-Curse-Weekly-Roundup">Dragonwrath Statistics, Blue Posts, Blizzard at CeBIT 2012, Curse Weekly Roundup</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2012-02-22, 04:27 AM</div></div><div class="posttext">Statistics: Dragonwrath, Tarecgosa's Rest<br />
+Today we take a look at which classes ended up with Dragonwrath, Tarecgosa's Rest (http://db.mmo-champion.com/i/71086/dragonwrath-tarecgosas-rest/) and how quickly they got it. The sample size is ~5.6 million level 85 characters, with ~15,000 Dragonwrath owners.<br />
+<br />
+You can see that mages are obtaining the staff at an even faster rate now that Firelands is less difficult, while the other classes are maintaining roughly the same rate of acquisition. <br />
+<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js?v2.2&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart;<br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: ['#69CCF0', '#9482CA', '#808080', '#FF7D0A', '#2459FF']<br />
+});<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'dwrathTime',<br />
+zoomType: 'x',<br />
+spacingRight: 20,<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+title: {<br />
+text: 'Total Dragonwrath Acquisitions by Class',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+subtitle: {<br />
+text: document.ontouchstart === undefined ?<br />
+'Click and drag in the plot area to zoom in' :<br />
+'Drag your finger over the plot to zoom in'<br />
+},<br />
+xAxis: {<br />
+type: 'datetime',<br />
+maxZoom: 14 * 24 * 3600000, // fourteen days<br />
+title: {<br />
+text: null<br />
+},<br />
+startOnTick: false,<br />
+showFirstLabel: false<br />
+},<br />
+yAxis: {<br />
+title: {<br />
+text: 'Number of Characters',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+startOnTick: true,<br />
+showFirstLabel: false<br />
+<br />
+},<br />
+tooltip: {<br />
+shared: true <br />
+},<br />
+legend: {<br />
+enabled: false<br />
+},<br />
+plotOptions: {<br />
+series: {<br />
+fillOpacity: 0.1<br />
+},<br />
+areaspline: {<br />
+<br />
+animation: false,<br />
+lineWidth: 3,<br />
+marker: {<br />
+enabled: true,<br />
+states: {<br />
+hover: {<br />
+enabled: true,<br />
+radius: 5<br />
+}<br />
+}<br />
+},<br />
+shadow: false,<br />
+states: {<br />
+hover: {<br />
+lineWidth: 3 <br />
+}<br />
+}<br />
+}<br />
+},<br />
+<br />
+series: [<br />
+<br />
+{<br />
+type: 'areaspline',<br />
+name: 'Mage',<br />
+pointInterval: 7 * 24 * 3600 * 1000,<br />
+pointStart: Date.UTC(2011, 7, 09),<br />
+data: [<br />
+1 , 13 , 41 , 72 , 122 , 165 , 234 , 295 , 380 , 464 , 584 , 774 , 1021 , 1307 , 1641 , 1988 , 2264 , 2567 , 2851 , 3096 , 3358 , 3608 , 3897 , 4204 , 4489 , 4827 , 5162 , 5350 ]<br />
+},<br />
+<br />
+{<br />
+type: 'areaspline',<br />
+name: 'Warlock',<br />
+pointInterval: 7 * 24 * 3600 * 1000,<br />
+pointStart: Date.UTC(2011, 7, 16),<br />
+data: [<br />
+11 , 28 , 61 , 87 , 125 , 167 , 196 , 258 , 334 , 432 , 565 , 729 , 926 , 1124 , 1348 , 1547 , 1738 , 1924 , 2072 , 2215 , 2374 , 2544 , 2721 , 2899 , 3090 , 3272 , 3365 ]<br />
+}<br />
+,<br />
+<br />
+{<br />
+type: 'areaspline',<br />
+name: 'Priest',<br />
+pointInterval: 7 * 24 * 3600 * 1000,<br />
+pointStart: Date.UTC(2011, 7, 16),<br />
+data: [<br />
+5 , 16 , 45 , 64 , 91 , 120 , 154 , 203 , 264 , 321 , 438 , 587 , 750 , 904 , 1102 , 1256 , 1406 , 1585 , 1733 , 1900 , 2060 , 2214 , 2384 , 2555 , 2754 , 2934 , 3057 ]<br />
+},<br />
+{<br />
+type: 'areaspline',<br />
+name: 'Druid',<br />
+pointInterval: 7 * 24 * 3600 * 1000,<br />
+pointStart: Date.UTC(2011, 7, 16),<br />
+data: [<br />
+4 , 12 , 24 , 36 , 48 , 68 , 91 , 119 , 152 , 187 , 244 , 317 , 410 , 533 , 629 , 745 , 829 , 930 , 1011 , 1103 , 1199 , 1288 , 1373 , 1473 , 1597 , 1708 , 1766 ]<br />
+},<br />
+<br />
+{<br />
+type: 'areaspline',<br />
+name: 'Shaman',<br />
+pointInterval: 7 * 24 * 3600 * 1000,<br />
+pointStart: Date.UTC(2011, 7, 16),<br />
+data: [<br />
+2 , 4 , 9 , 15 , 20 , 23 , 30 , 35 , 56 , 70 , 95 , 129 , 162 , 209 , 253 , 308 , 353 , 399 , 450 , 484 , 540 , 594 , 639 , 693 , 754 , 806 , 843 ]<br />
+}]<br />
+});<br />
+<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;dwrathTime&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;<br />
+<br />
+<br />
+<br />
+Blue Posts<br />
+Warlock Ember System<br />
+How does Destruction’s Ember system work?<br />
+Basically, you build embers with some spells, and then spend those embers with Soul Fire, Ember Tap, or Fire and Brimstone. <br />
+<br />
+Internally, this is how it works:<br />
+<br />
+Immolate – DD + DoT on the target<br />
+Incinerate – generates 1/10th ember, or 2/10ths if it crits an immolated target.<br />
+Fel Flame – generates 1/10th ember, or 2/10ths if it crits an immolated target.<br />
+Conflagrate – triggers Backdraft and has a 12 second cooldown.<br />
+<br />
+Soul Fire – consumes one ember instead of mana.<br />
+Fire and Brimstone – costs 1 ember and has no cooldown.<br />
+Ember Tap – costs 1 embers.<br />
+<br />
+Each full ember costs 0.33% of your maximum health per second. If you stay below 1 ember, you take no damage. <br />
+<br />
+How does chaotic energy work?<br />
+We are experimenting with a resource-driven, rather than time-limited, caster model on the Destruction warlock.<br />
+<br />
+In a nutshell, Destruction warlocks are not GCD locked. In fact, chain-casting spells as a Destruction warlock is less important than spending all of your resources.<br />
+<br />
+Keep in mind this is all subject to change, but here is how Destruction flows at the moment:<br />
+<br />
+Start of Fight: Full mana bar, Empty Ember bar<br />
+<br />
+1. Immolate the target<br />
+2. Conflagrate to trigger emberstorm<br />
+3. Incinerate to generate embers<br />
+4. Continue until you are low on mana<br />
+<br />
+Middle of Fight: Empty mana bar, ~2 Embers<br />
+<br />
+1. Soul Fire<br />
+2. Soul Fire<br />
+3. Mana bar is mostly full (Soul Fire costs embers, so your mana refills during the Soul Fires)<br />
+<br />
+In addition to increasing your base mana regen, Chaotic Energy increases mana regen even more with Haste. This means the ability to cast spells scales smoothly with gear.<br />
+<br />
+As long as the warlock never lets her mana bar fill up and burn her embers, she's maximizing damage. This is very different from the standard caster model where priority is placed on casting at all times and ordering spells based on cooldown.<br />
+<br />
+Our hope is that the Destruction Warlock will attract players who are interested in a playstyle that rewards spending resources at the right time, rather than constantly casting.<br />
+<br />
+How does Destruction’s Mastery work?<br />
+Emberstorm increases the effectiveness of all Ember consuming spells. Soul Fire deals more damage. Fire &amp; Brimstone deals a higher % of the base spell’s damage. Ember Tap heals for more. (Blue Tracker (http://blue.mmo-champion.com/topic/217569-february-15-update-to-mists-talent-calculator/) / Official Forums (http://us.battle.net/wow/en/forum/topic/4063167954?page=62#1237))<br />
+<br />
+Development Time Cutbacks<br />
+Blizzard severaly reduced the number of people on WoW development teams in last few months, which explains the simplifying of various aspects of the game. They don´t want to spend too much time tuning bosses, so they simplify the player, for example.<br />
+I have no idea where you got this information from, but it's wrong. We're not simplifying various aspects of the game, we're constantly reviewing them to ensure they're fun, which can actually sometimes mean making them more involved. Also, we spend however long is necessary to tune bosses to make them engaging and challenging, we're not cutting back on that at all. (Blue Tracker (http://blue.mmo-champion.com/topic/217767-5-months/) / Official Forums (http://eu.battle.net/wow/en/forum/topic/3388890173?page=1#7)) <br />
+<br />
+<br />
+Play Diablo III and Win Beta Keys with Blizzard at CeBIT 2012!<br />
+CeBIT is a unique exhibition of digital technology, games and much more which takes place every year in Hannover, Germany. At the 2012 show, which starts on March 6, Blizzard Entertainment will be showcasing the Diablo III beta in the free gaming area, in partnership with ESL.<br />
+<br />
+Members of our Community and eSports teams are looking forward to meeting you there! So if you’re going to CeBIT make sure you drop by to see us, especially as you’ll have the chance to win some nice prizes — including Diablo III beta keys — in the various contests and activities we’ll be organizing.<br />
+<br />
+CeBIT is also hosting the final of the Intel Extreme Masters Season VI, where 24 of the best StarCraft II players will fight for the title of IEM World Champion and an impressive prize pool of $75,000! The roster so far contains famous names like Greg “IdrA” Fields, Giacomo “Socke” Thüs, Moon “MMA” Sung Won and Kim “viOLet” Dong Hwan – so make sure to follow the matches live or tune in on ESL TV (http://www.esl.tv/).<br />
+<br />
+We’re looking forward to seeing you there!<br />
+<br />
+Event: CeBIT 2012 / Intel Extreme Masters Season VI World Championship<br />
+Location: Messe Hannover / Exhibition Grounds 30521 Hannover Germany<br />
+When: March 6 to 10, 2012<br />
+Stream: ESL TV (http://www.esl.tv/)<br />
+More details: ESL news (http://www.esl-world.net/masters/#/masters/season6/hanover/) / CeBIT website (http://www.cebit.de/home)<br />
+<br />
+<br />
+Curse Weekly Roundup<br />
+Pico is back to tell us about the things you might have missed in Diablo 3, Guild Wars 2, World of Warcraft, Minecraft, Rift and Nitronic Rush news recently. <br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2012/february/cwr221.jpg (http://www.youtube.com/watch?v=zOZJk-c0qJU&amp;list=UUs1JJL6EDOOExrueuDscBJA&amp;index=1&amp;feature=plcp)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">esoterickk</div><div class="date">2012-02-22, 04:28 AM</div></div><div class="posttext">Mages sure love dem Legendaries</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2012-02-22, 04:33 AM</div></div><div class="posttext">Before someone asks for it, this is the current representation in bar chart form.<br />
+<br />
+<br />
+&lt;script&gt; var chart;<br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: ['#FF7D0A', '#69CCF0', '#808080', '#2459FF', '#9482CA']<br />
+});<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'dwrathBars',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: ['Druid','Mage','Priest','Shaman','Warlock'],<br />
+labels: {<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return this.point.name + ' - '+ this.y +'%';<br />
+}<br />
+},<br />
+<br />
+title: {<br />
+text: 'Dragonwrath Class Representation',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [<br />
+{<br />
+data: [{y: 12.3, color: '#FF7D0A', name:'Druid'},{y: 37.2, color: '#69CCF0', name:'Mage'},{y: 21.3, color: '#FFFFFF', name:'Priest'},{y: 5.9, color: '#2459FF', name:'Shaman'},{y: 23.4, color: '#9482CA', name:'Warlock'}],<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+}<br />
+<br />
+]<br />
+<br />
+});<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;dwrathBars&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4797852bd6</div><div class="date">2012-02-22, 04:39 AM</div></div><div class="posttext">On my server alone we got 96 DTR wielders.<br />
+<br />
+I'm sure the actual number is about 5x bigger than what you are mentioning.<br />
+<br />
+I think about 50-100k wielders worldwide now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Volitar</div><div class="date">2012-02-22, 04:39 AM</div></div><div class="posttext">Quick let Mage's get more broken!I was the I think the 3rd Elemental shaman US to get Dragonwrath, GO SHAMAN.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eon Drache</div><div class="date">2012-02-22, 04:39 AM</div></div><div class="posttext">I feel bad for the shammies now :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lokithor</div><div class="date">2012-02-22, 04:40 AM</div></div><div class="posttext">hmmm why not many shamans? was under the impression is was still BiS throughout the expansion.Still workin on mine :( 822 cinders and then 6 weeks of siphoning, and tryin to get people to go is hell</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bullettime</div><div class="date">2012-02-22, 04:43 AM</div></div><div class="posttext">hmmm why not many shamans? was under the impression is was still BiS throughout the expansion.Still workin on mine :( 822 cinders and then 6 weeks of siphoning, and tryin to get people to go is hell<br />
+<br />
+Due to the potency of Mages, guilds are ensuring that they're given to their Mage for maximum DPS benefit. Guilds are less likely to give Dragonwrath to one of the more underperforming caster DPS specs in comparison if they have other candidates like Mage that become borderline god mode with it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Harry Botter</div><div class="date">2012-02-22, 04:46 AM</div></div><div class="posttext">Am i the only one who just does not like the way the Destro locks seem to work out up there? Maybe once i see it in action during the beta it will be different, but for now it just seems meh at best.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jibbyjackjoe</div><div class="date">2012-02-22, 04:58 AM</div></div><div class="posttext">Destro, and locks in general, are looking so, so sweet. Can't wait for mop.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sylar Hao</div><div class="date">2012-02-22, 05:10 AM</div></div><div class="posttext">I'm glad I've always been a Destrolock... all these changes look sooooo awesome!!! I'm gonna enjoy my warlock sooooooooooooo much :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dasn</div><div class="date">2012-02-22, 05:10 AM</div></div><div class="posttext">bufff mages</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nerraw</div><div class="date">2012-02-22, 05:19 AM</div></div><div class="posttext">I'm gonna have so much fun with my warlock in Mists.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">AndaliteBandit</div><div class="date">2012-02-22, 05:29 AM</div></div><div class="posttext">Due to the potency of Mages, guilds are ensuring that they're given to their Mage for maximum DPS benefit. Guilds are less likely to give Dragonwrath to one of the more underperforming caster DPS specs in comparison if they have other candidates like Mage that become borderline god mode with it.<br />
+That, and there are a lot of guilds out there that told their shamans &quot;caster shamans = shield&quot; as a reason for not getting it, first or even second at least. Even though it's BiS, it's likely the same guilds that screwed their ele shamans and boomkins out of having a fair roll on the only (I think it was) 277 caster belts and boots before Ruby Sanctum came out, saying clothies got priority even though there were no leather or mail equivalents for shamans or boomkins to be rolling on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ihateyouall</div><div class="date">2012-02-22, 05:30 AM</div></div><div class="posttext">Still, if you assume the same ratio of characters, that's 0.26% that have the staff. For a legendary that &quot;everyone&quot; has, that's not that many. I think it just gets a bit exaggerated because of how public the final turn-in event is. Previous legendaries didn't have a big, public, voiced spectacle whenever someone turned it in. (Where you could also get spammed with someone dropping the quest and replaying the event repeatedly)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrExcelion</div><div class="date">2012-02-22, 05:33 AM</div></div><div class="posttext">While this applies to a lot of the other classes too, I notice a lot of PVP Mages (and there's a lot of those) going to FL to get a staff for PVP. I suppose it's also because there's just more Mages too.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">subanark</div><div class="date">2012-02-22, 05:33 AM</div></div><div class="posttext">I think the reason that shamans and druids are so low, is that they have a non-dps offspec. If your going to give it out to someone in the raid, give it to someone who always dpses, not someone who switch to/from heals depending on the fight (at least that was how it is for me).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">La</div><div class="date">2012-02-22, 05:37 AM</div></div><div class="posttext">I think the reason that shamans and druids are so low, is that they have a non-dps offspec. If your going to give it out to someone in the raid, give it to someone who always dpses, not someone who switch to/from heals depending on the fight (at least that was how it is for me).<br />
+<br />
+just because someone is a hybrid spec and can heal, doesn`t mean they ever will heal, I think ele shamans are one of the best with the staff because of their mastery personally but meh, that is a good reason, but mages and shadow priests do stupid damage compared to any hybrid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rockdontroll</div><div class="date">2012-02-22, 06:10 AM</div></div><div class="posttext">ele+DTR will pretty much do the same dps as a mage with similar gear but a 403/410 wep, and actually less on certain fights. ele got screwed hard this expansion, feel sorry for you eles</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sensa</div><div class="date">2012-02-22, 06:10 AM</div></div><div class="posttext">Destro, and locks in general, are looking so, so sweet. Can't wait for mop.<br />
+<br />
+really? from how I interpret the &quot;new&quot; design locks are essentially becoming casting rogues...but hey if that's your cup of tea...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rockdontroll</div><div class="date">2012-02-22, 06:14 AM</div></div><div class="posttext">Still, if you assume the same ratio of characters, that's 0.26% that have the staff. For a legendary that &quot;everyone&quot; has, that's not that many. I think it just gets a bit exaggerated because of how public the final turn-in event is. Previous legendaries didn't have a big, public, voiced spectacle whenever someone turned it in. (Where you could also get spammed with someone dropping the quest and replaying the event repeatedly)<br />
+<br />
+if you remove the pvpers/alts/casuals etc this is actually quite a big number. Divide this by whatever the number of &quot;serious&quot; progression guilds out there, and I imagine it basically represents at least 1 for every 10m and 2+ for every 25m guild. Essentially, whoever &quot;needed&quot; one (i.e. mages of semi/hard-core guilds) pretty much has one, and even boomkins/eles got a chance to get them since everyone else got it</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Potato Bus</div><div class="date">2012-02-22, 06:40 AM</div></div><div class="posttext">on March 6, Blizzard Entertainment will be showcasing the Diablo III beta in the free gaming area...So if you’re going to CeBIT make sure you drop by to see us, especially as you’ll have the chance to win some nice prizes — including Diablo III beta keysStill giving away beta keys in the first week of March... When does Q1 end? Hopefully this is a sign that the game will be released within about 2 weeks of this date, but honestly... not too hopeful they'll make the expected Q1 release date &gt;.&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2012-02-22, 07:55 AM</div></div><div class="posttext">I know it's a sample size and all, yet I still feel discouraged as a shaman to see my class dead last (again (http://www.wowhead.com/item=46017)). And who could blame a guild for assigning their mages first? :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cyan421</div><div class="date">2012-02-22, 08:07 AM</div></div><div class="posttext">Its crazy to me that there are twice as many &quot;important&quot; druid casters as Ele shaman. Elemental is the most fun spec I've ever played!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Topcraft</div><div class="date">2012-02-22, 08:17 AM</div></div><div class="posttext">I'm actually quite curious about the amount of Legendary Daggers attained so far. Most 25 man guilds should have at least one by now and should be somewhere half way their second.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hatredsheart</div><div class="date">2012-02-22, 08:28 AM</div></div><div class="posttext">Yes, Firelands might be easier now, but just you try finding a group where all the staff items aren't reserved, at least on my server.And I know the obvious answer is &quot;make a group and reserve them yourself&quot;. Tried it, grew old waiting for group to fill. Now that you can get equal or better gear from lfr (even by being afk for half the encounter) no-one cares about Firelands any more apart from ppl wanting the staff items.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">afhald</div><div class="date">2012-02-22, 08:49 AM</div></div><div class="posttext">im one of those 15k legendary staff owners!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">reverendball</div><div class="date">2012-02-22, 09:01 AM</div></div><div class="posttext">you know blizz has programmed you when you cant see priests on the graph because they are represented by grey and not white./sigh</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Faldric</div><div class="date">2012-02-22, 09:09 AM</div></div><div class="posttext">you know blizz has programmed you when you cant see priests on the graph because they are represented by grey and not white./sigh<br />
+<br />
+Happend to me too. :D<br />
+<br />
+Is there some information how many of that 5,6 Million are actually speccs that can use DTW? I know it might not be that accurate to take just a snapshot of what people are specced in the armory, because Balance Druids, Shadow Priests and Ele shammys could be on their second specc, but that pretty much evens out that some people might be on their 2nd specc not having DTW equipped when you were scanning for the 15000 DTW in the first place.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4d6ae87215</div><div class="date">2012-02-22, 09:26 AM</div></div><div class="posttext">mages don't have a faster rate now. Notice it is the same since 21 nov.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mnevis</div><div class="date">2012-02-22, 09:42 AM</div></div><div class="posttext">I feel bad for the shammies now :(<br />
+<br />
+If you didn't feel bad for Shaman already, you haven't been paying much attention to them this expansion. Resto in Arena has been the one thing we've been particularly good for. No-Shaman kills of end-tier bosses were all the rage last year. Elemental was way behind in T11 and going into T12 (i.e. when everyone picked the first, and for most 10mans, only legendary recipient). Shortly into T12, we got a pretty significant buff, and were nearly strong, but still by most metrics the worst caster class to receive a legendary.<br />
+<br />
+This tier, we're kinda alright, if we have it, but on average (raidbots), we're sitting in the basement for single-target DPS with Boomkin.<br />
+<br />
+Thanks for the graph, Chaud. I'd have thought Ele might take an upturn around the release of Dragon Soul, when serious 10man groups were finishing their first non-Mage staff (when I got mine), but I guess not. Fifty a week for Shaman, two-hundred and fifty a week for Mages, pretty regular.<br />
+<br />
+It's what we get for only paying $5.99 a month though. :rolleyes:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vintersol</div><div class="date">2012-02-22, 09:57 AM</div></div><div class="posttext">What the fuck are they doing with the WLs?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Joán</div><div class="date">2012-02-22, 10:03 AM</div></div><div class="posttext">Is there some information how many of that 5,6 Million are actually speccs that can use DTW? I know it might not be that accurate to take just a snapshot of what people are specced in the armory, because Balance Druids, Shadow Priests and Ele shammys could be on their second specc, but that pretty much evens out that some people might be on their 2nd specc not having DTW equipped when you were scanning for the 15000 DTW in the first place.<br />
+<br />
+I imagine they scanned for the Feat of Strength, not equipped staves.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mekh</div><div class="date">2012-02-22, 10:08 AM</div></div><div class="posttext">really? from how I interpret the &quot;new&quot; design locks are essentially becoming casting rogues...but hey if that's your cup of tea...<br />
+<br />
+Actually yes. All the fun of a dynamic melee rotation with the pyrotechnics of a caster? Sign me up!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vasilisa</div><div class="date">2012-02-22, 10:21 AM</div></div><div class="posttext">They should make two different charts for 25 and 10 man raid. We are getting our 3rd legendary atm but only thanks to the FL 25 pugs we are running.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vesci</div><div class="date">2012-02-22, 10:22 AM</div></div><div class="posttext">Our hope is that the Destruction Warlock will attract players who are interested in a playstyle that rewards spending resources at the right time, rather than constantly casting Sounds awful. I can't condemn it without playing it, but it sounds like a lot of waiting for the right moment which just sounds stupid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Straamibuu</div><div class="date">2012-02-22, 10:36 AM</div></div><div class="posttext">Destruction seems like it'll be worth watching, be a nice change from the typical wow casting (and there's always 2 other specs if it doesn't work out ;) )</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc79af98f473</div><div class="date">2012-02-22, 10:43 AM</div></div><div class="posttext">Complicating even more the warlock, Blizzard is surely on the &quot;right&quot; path...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6edda12fdb</div><div class="date">2012-02-22, 10:48 AM</div></div><div class="posttext">I really hate the way they make you click out to you tube. They don't do it with the MMO Report</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Brosemon</div><div class="date">2012-02-22, 11:06 AM</div></div><div class="posttext">Warlock looks interesting, can't wait to see more.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Maelleous</div><div class="date">2012-02-22, 11:15 AM</div></div><div class="posttext">Is D3 ever going to come out?!?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nyo</div><div class="date">2012-02-22, 11:26 AM</div></div><div class="posttext">It's unsuprising that more mages got the staff relative to the other classes. Druids, priests and shamans only have one spec each benefiting from the staff, while the total number of people playing each class is similar to the total number of mages. And even for the people playing mostly elemental shaman, moonkin or shadow priest, it must be the case that a significant number of them fill in as healers when needed, which may lead their guilds to give legendary to a full time dps'er, so it will be utilized all the time, rather than most of the time. My impression is that there are relatively few full time elemental shamans, and that's not necessarily just because of the state of the spec, but also due to resto shamans being strong, and due to past history (many may have rolled their shamans back when practically all shamans were healers, because it was considered the only feasible spec, and stuck with it after learning the 'trade'). As for warlocks, it has always been one of the least played classes, even during the times when it was arguably the strongest dps class, for whatever reason (maybe simply due to being less 'iconic' in the fantasy tradition?). All else aside, there are just more total full time dps caster mages than there are of any of the other classes, I wouldn't be suprised if the ratios of the class of people with the staff quite closely reflects the number of people playing each relevant spec fairly closely.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">F-Minus</div><div class="date">2012-02-22, 11:27 AM</div></div><div class="posttext">Why is Han Solo wearing a ginger wig?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wartywarlock</div><div class="date">2012-02-22, 11:28 AM</div></div><div class="posttext">Played warlock and basically only warlock since the release of WOW, from the broken times to the DC fix to fear SF chaining etc..cata ruined them for me, and this hardly sounds a lot better. Please return us to the days of complex spell weaving, it was actually interesting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Drakoes</div><div class="date">2012-02-22, 11:38 AM</div></div><div class="posttext">Why are there so many warlock answers.... jeesh</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6653dda655</div><div class="date">2012-02-22, 11:44 AM</div></div><div class="posttext">Why are there so many warlock answers.... jeesh<br />
+<br />
+Because they've been one of the most clunky and inconvenient casters for a long time now when you compare them to the relative ease of mages who can put practically zero effort into the game with a challenging 2-button rotation and come out as essentially the best caster dps of all, as well as the fact that they likely have one of the biggest/deepest gulfs between being sucky/mediocre in their DPS and being pretty good. I'm certainly hoping this is resolved in MoP but I won't count my chickens just yet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chairmanmao</div><div class="date">2012-02-22, 11:44 AM</div></div><div class="posttext">Why did I pick my ele alt to get a staff on. smh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Imhullu</div><div class="date">2012-02-22, 12:41 PM</div></div><div class="posttext">really? from how I interpret the &quot;new&quot; design locks are essentially becoming casting rogues...but hey if that's your cup of tea...<br />
+<br />
+That's whats cool, is they are trying to make casters feel a bit more than just &quot;click and cast&quot; which is what they all boil down to right now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9100b4471e</div><div class="date">2012-02-22, 01:01 PM</div></div><div class="posttext">They fucked over destro locks over when launching cata and now they aim to put in the killing blow.<br />
+<br />
+I used to like destro locks for the exact reason they say that they dont want to be... full burst nuke with cooldown management... now it will be a retarded point system with slow building dps like aff...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca99433fff3</div><div class="date">2012-02-22, 01:27 PM</div></div><div class="posttext">d3 wont be out til like may- june mists wont be out til december, blizzard say they wanted to release expansions faster thats fine, but they also said cata was gonna have more content and be about pvp etc, gz on losing another 1.8 million subs+ in 2012 blizzard</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Relentless</div><div class="date">2012-02-22, 02:20 PM</div></div><div class="posttext">Am I missing something with the new Destro spec? Are they basically saying that you're going to be taking damage (essentially DoT'ing YOURSELF) by playing properly and building up to the ~2 Embers they've indicated in the rotation? Unless there's some fairly potent life regen similar to the current affliction setup or they bring something to the table that other casters can't match, I don't see good things in destro's future.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb64642b22d</div><div class="date">2012-02-22, 02:55 PM</div></div><div class="posttext">Am I missing something with the new Destro spec? Are they basically saying that you're going to be taking damage (essentially DoT'ing YOURSELF) by playing properly and building up to the ~2 Embers they've indicated in the rotation? Unless there's some fairly potent life regen similar to the current affliction setup or they bring something to the table that other casters can't match, I don't see good things in destro's future.<br />
+<br />
+pve-wise<br />
+if health loss will be similar to life taping affli / demo (destro should not life tap because of boosted mana regen - as I understand it) it may be manageable<br />
+<br />
+pvp-wise<br />
+really don't know</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Serenah</div><div class="date">2012-02-22, 03:03 PM</div></div><div class="posttext">Is there a way to list everyone who got dragonwrath on a specific server. maybe even with date?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mnevis</div><div class="date">2012-02-22, 03:03 PM</div></div><div class="posttext">Still, if you assume the same ratio of characters, that's 0.26% that have the staff. For a legendary that &quot;everyone&quot; has, that's not that many. <br />
+<br />
+Going by the unscientific method of 'how many parses has WoL seen in the last week of your class?', we have:<br />
+<br />
+14300 Mages<br />
+9244 Warlocks<br />
+9998 SPriests<br />
+5548 Boomkins<br />
+5283 Elementals<br />
+<br />
+That's Ultraxion parses, normal and heroic, ten and twentyfive. <br />
+<br />
+For 44,373 total casters who log. Now, the big hole in the data is 'well, not everyone submits logs', and I don't know what that percentage is (somewhere around 15-20%, based on WoWProgress # of guilds that have killed Madness/Ultraxion tank parses/2). But there's a ballpark of the active caster balance at least. Some guilds have more than one raid group too, so there's that. <br />
+<br />
+If it's 20% of guilds worldwide that parse, and the Dragonwrath data are more or less complete, and the parses are representative (class-wise, of everyone who raids), then <br />
+<br />
+7.5% of raiding Mages have Dragonwrath<br />
+7.3% of Warlocks<br />
+6.1% of Shadow Priests<br />
+6.4% of Balance Druids<br />
+3.2% of Elemental Shaman<br />
+<br />
+Can get some other interesting data out of that statistic too. Seven of Eight heroic 10mans have a Rogue this tier. The average heroic 10man has 1.56 Paladins and 1.33 Druids.<br />
+<br />
+/bored this morning<br />
+/wish Blizz had their own World of Logs. Give Raidleaders a public/private/anonymous option and there ya go. They have all the logs anyways, and better ones than we singular observers have, especially on a fight like Ultraxion where not everyone's 'together'.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc79af98f473</div><div class="date">2012-02-22, 03:04 PM</div></div><div class="posttext">I'm actually starting to feel bad for the warlocks. Overhaul is never a good thing, because an overhauled spec/class becomes good just as the expansion ends. If it starts very good, it will be overnerfed, other classes are bound to get buffs in the course of the expansion, near the end it may receive some buffs, they might be scaled down afterwards. I hate such roller coasters.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0acb657688</div><div class="date">2012-02-22, 03:22 PM</div></div><div class="posttext">This feels soooooo legendary seeing eveyone with it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hippostar</div><div class="date">2012-02-22, 03:50 PM</div></div><div class="posttext">Where is the the graph about &quot;how quickly they got it&quot;?<br />
+You mention that aspect in your post but its not in there.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">painweaver</div><div class="date">2012-02-22, 04:05 PM</div></div><div class="posttext">/wish Blizz had their own World of Logs.<br />
+<br />
+there is a reason why they don't, and they never will. because that data would be too truthful. too truthful for their investors, and too truthful for their active players.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Notos</div><div class="date">2012-02-22, 04:41 PM</div></div><div class="posttext">I'm actually starting to feel bad for the warlocks. Overhaul is never a good thing, because an overhauled spec/class becomes good just as the expansion ends. If it starts very good, it will be overnerfed, other classes are bound to get buffs in the course of the expansion, near the end it may receive some buffs, they might be scaled down afterwards. I hate such roller coasters.<br />
+<br />
+I don't think they'll let the class go without at least one viable spec. I guess we'll have to see how things pan out during beta.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ganush</div><div class="date">2012-02-22, 05:19 PM</div></div><div class="posttext">They fucked over destro locks over when launching cata and now they aim to put in the killing blow.<br />
+<br />
+I used to like destro locks for the exact reason they say that they dont want to be... full burst nuke with cooldown management... now it will be a retarded point system with slow building dps like aff...<br />
+<br />
+I understand that those who are currently playing Destro will not likely accept the change quietly, but in reality I applaud Blizzard for trying to create a caster spec with a different sort of resource system and playstyle. There are enough caster specs that it is nice to see them trying something different with one of them. Yes, retooling a spec to this extent will cause some balance issues and I'm sure through the first tier of MoP there will be constant nerfs/buffs, but if they can sort it out by the end of that tier, I think Destro will be more interesting to play. That said, I would like to see one of the Warlock specs remain something that could be more frontloaded as it gives more opportunity to match your spec to specific fights. I don't see why a resource system like this can't still provide good burst potential though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">taggthemage</div><div class="date">2012-02-22, 07:25 PM</div></div><div class="posttext">would be cool to see how many of those staves were earned in 25m vs 10m... x-x</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Relentless</div><div class="date">2012-02-22, 07:26 PM</div></div><div class="posttext">pve-wise<br />
+if health loss will be similar to life taping affli / demo (destro should not life tap because of boosted mana regen - as I understand it) it may be manageable<br />
+<br />
+pvp-wise<br />
+really don't know<br />
+<br />
+That makes sense, but Life Tap is a much more controllable mechanism for when you're taking damage. It's on command, and you can time it or offset it with other methods. Always having to worry about a constant stream of damage seems counterproductive. Isn't that the reason they did away with the Seal of Blood for paladins?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rolly</div><div class="date">2012-02-22, 08:39 PM</div></div><div class="posttext">Oh look now locks get holy power............errrr embers</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vook</div><div class="date">2012-02-22, 10:18 PM</div></div><div class="posttext">So Warlocks get Holy Power/Convictions(Rift)...very original, Blizzard.<br />
+<br />
+/sarcasm</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rigrot</div><div class="date">2012-02-23, 02:37 AM</div></div><div class="posttext">Wow destro looks cool now, I might have a prob come mist when I want to play all 3 specs...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TrueProphecy22</div><div class="date">2012-02-23, 03:14 AM</div></div><div class="posttext">I regretted trying to re-roll my level 73 Warlock because I cannot stand playing that class at low level anymore.. maybe with these changes I can get back into the other mage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Draxz</div><div class="date">2012-02-23, 04:53 AM</div></div><div class="posttext">Least there honest about the numbers. Good to see more people playing the content. I like the idea of being able to MMO on your time and not set too much to a shedual fits the players who've aged with this game and things come up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">depotboy</div><div class="date">2012-02-23, 06:22 PM</div></div><div class="posttext">Cannot wait for GW2.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dejohn</div><div class="date">2012-02-24, 07:01 PM</div></div><div class="posttext">I really hate the way they make you click out to you tube. They don't do it with the MMO Report<br />
+<br />
+Its probably to reduce the amount of pico hate spam here. Usually these comments are filled to the brim with what must be the most hansom people who date supermodels and have perfect diction. There was only 1 comment here this week. The youtube comments however are where all these people can mouth off on the internet anonymously now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rukentuts</div><div class="date">2012-02-25, 08:46 AM</div></div><div class="posttext">Its probably to reduce the amount of pico hate spam here. Usually these comments are filled to the brim with what must be the most hansom people who date supermodels and have perfect diction. There was only 1 comment here this week. The youtube comments however are where all these people can mouth off on the internet anonymously now.I don't have to be a great chef to know when food is bad.<br />
+<br />
+This warlock system is....interesting. Gotta see how it plays out before I can give a +/-.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

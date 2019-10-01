@@ -1,0 +1,858 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="game, version, hope, good, online, crab, ghostcrawler, blue, designer, guess, misses, homoziation, dirty, hits, critical, watercooler, word, awesome, empires, ruined" />
+<meta name="description" content="Update - The online beta of Age of Empires Online is now available! Curse Premium members can get their beta keys now, non-premium members will have a chance to get one in 24 hours!  
+ 
+Dev Watercooler -- Critical Hits (And Misses) 
+‘Dev Watercooler’ is a blog series that provides an inside look into the thoughts and discussions happening within the World of Warcraft development team. In our first entry, Lead Systems Designer Greg &quot;Ghostctrawler&quot; Street laid down a few ground rules: 
+ 
+ 
+ 
+No" />
+<title> Dev Watercooler -- Critical Hits (And Misses) [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Dev Watercooler -- Critical Hits (And Misses)</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-889443.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/889443-Dev-Watercooler-Critical-Hits-(And-Misses)">Dev Watercooler -- Critical Hits (And Misses)</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2011-04-19, 04:43 PM</div></div><div class="posttext">Update - The online beta of Age of Empires Online (http://www.curse.com/keys/age-of-empires-online/default.aspx) is now available! Curse Premium members can get their beta keys (http://www.curse.com/keys/age-of-empires-online/default.aspx) now, non-premium members will have a chance to get one in 24 hours! <br />
+<br />
+Dev Watercooler -- Critical Hits (And Misses)<br />
+‘Dev Watercooler’ is a blog series that provides an inside look into the thoughts and discussions happening within the World of Warcraft development team. In our first entry, Lead Systems Designer Greg &quot;Ghostctrawler&quot; Street laid down a few ground rules:<br />
+<br />
+<br />
+<br />
+No promises.<br />
+Don’t read too much between the lines.<br />
+No whining about the choice of topics we cover.<br />
+<br />
+<br />
+<br />
+Critical History Lesson<br />
+<br />
+In the original combat rules of World of Warcraft, melee classes could get 200% crits while casters could only get 150% crits. This was back when all the designers presumably played rogues instead of mages, which according to the forums is what we all play now (which makes our dungeon testing interesting, I gotta tell you.)<br />
+<br />
+Over time, we added talents to allow various casters to get 200% crits as well. Warlocks “could” spend 5 points on the Ruin talent, for example, which you pretty much had to do to be a good warlock. As part of the Cataclysm talent tree evolutions we decided all DPS specs should be able to get 200% crits without investing talent points. There are still some inconsistencies though. Death knights can get 200% crits with both their melee and spell effects, while Assassination rogues get 200% crits with their physical attacks but only 150% crits with their poisons. Healers have always gotten 150% crits, both with their damage-dealing spells and with heals.<br />
+<br />
+The overall design could be described as one that is simple to learn but complex to master. Or put another way, you know most of what you need to know if you’re told that crits do more damage. How much extra damage they do is one of those nuances that more experienced players learn over time and one of the things that makes classes feel different.<br />
+<br />
+Or does it?<br />
+<br />
+You could argue that we’re just keeping old rules that don’t really benefit the game. Is it very interesting that rogue poisons or Enhancement Lightning Bolts don’t have big crits? Does it make you feel different when you pick those classes or specs? Does it feel rewarding when you learn those subtle distinctions? I’d posit perhaps not. Homogenization is something we fight against all the time and one of the primary reasons that we don’t make class A’s ability work just like class B’s ability.<br />
+<br />
+<br />
+Homogenization -- A Dirty Word<br />
+<br />
+If I can be snarky for a moment, players tend to beat the “homogenization!” drum too emphatically when they are losing something that is overpowered, and like to mock it as “flavor!” when we refuse to give them a cool ability that another class has.<br />
+<br />
+Too much homogenization is a bad thing, no question. But do weird crit rules really fall into that category? There is a difference between being complex (which adds depth) and being complicated (which might just add confusion). We’d rather spend our “complexity points” on things that are really meaningful differences. Pick Assassination because you like daggers or poisons or maybe Rupture, not because you like small crits.<br />
+<br />
+There are balance issues to consider too. Assassination rogues are never going to value crit as much as other characters are as long as some of their crits are smaller. We ran into the same issue with the damage-over-time-based specs when their dots couldn’t crit.<br />
+<br />
+<br />
+Healers Love Big Numbers Too<br />
+<br />
+It can be an issue for healing as well. In Lich King, critical heals were virtually wasted because much of the time they were going to be overhealing. In Cataclysm, where healer mana matters more and even big heals can’t trivially top someone off, crits are more valuable. But they aren’t valuable enough. Getting 10% haste allows you to get a heal to a target 10% faster. Getting 10% crit allows you to heal a target 5% more. Is it any wonder that crit tends to get devalued for most healers? Resto shaman like it, but look at how many talents they have that make crits better for them. We’re strongly considering just letting all heals crit for double, just like most attacks. We don’t think this would have huge PvE consequences. Healers will heal for a little more, but even if they choose to start stacking crit, they’re going to do that at the expense of Haste, Mastery or Spirit. It could have bigger PvP consequences. Most PvP healers don’t have crit chances beyond say 10% or so, so they aren’t going to crit often.<br />
+<br />
+We’ve been considering whether healing is too strong in PvP anyway. You may have noticed that we made the tooltips for Mortal Strike and equivalent debuffs intentionally vague for 4.1. As I write this, those debuffs are still at 10% healing, but we’re concerned that healing is too hard to counter and we might change that number. Changing it back to 50% would probably lead to the Mortal Strike debuff being mandatory for Arena comps again, but we never got much of a chance to see its effects at say 20%. A 20% Mortal Strike debuff could easily counter any excessive healing caused by 200% crits.<br />
+<br />
+<br />
+Changes Ahead?a<br />
+<br />
+Letting rogues and Enhancement shaman get 200% crits with non-physical damage would be a larger change, and not the kind of thing we would do mid-expansion. But it’s definitely something we’re considering for the future. That would only leave the damage spells cast by healers at the 150% crit range. We think we could make those full 200% crits as well. If we want to make sure the DPS specs still do a lot more damage, we have the knobs to do that. For example, we could buff passives such as Moonfury (the damage bonus for Balance druids) or Shadow Power (the damage bonus for Shadow priests) to make sure their spells still landed a lot harder than the healing specs did, even if the healers got big crits.<br />
+<br />
+If we made all those changes, then any crit in the game would be at 200%. It would be a very simple rule, and I’d argue any loss of class distinction is more than made up for by the positive balance ramifications. As always with this blog series, this is just speculation. You’re more likely to see 200% healing crits sooner, but even that isn’t something we’ve fully embraced yet. It’s just the kind of thing we discuss when hanging out at the bar... er, I mean watercooler.<br />
+<br />
+<br />
+Greg “Ghostcrawler” Street is the lead systems designer for World of Warcraft. He crits on a 19 or 20.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce5ee2a432e</div><div class="date">2011-04-19, 04:44 PM</div></div><div class="posttext">Greg “Ghostcrawler” Street is the lead systems designer for World of Warcraft. He crits on a 19 or 20.<br />
+<br />
+These jokes get worse and worse</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bure</div><div class="date">2011-04-19, 04:47 PM</div></div><div class="posttext">this joke wasnt bad</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Strafer</div><div class="date">2011-04-19, 04:47 PM</div></div><div class="posttext">So does Ghostie play a Mage or what?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vasz</div><div class="date">2011-04-19, 04:48 PM</div></div><div class="posttext">&quot;Letting rogues and Enhancement shaman get 200% crits with non-physical damage would be a larger change, and not the kind of thing we would do mid-expansion.&quot;<br />
+Mid-expansion? We have yet to even see the first major update lol.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">deftones</div><div class="date">2011-04-19, 04:49 PM</div></div><div class="posttext">I thought they were all the same %dmg anyway, might as well just make them even :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc13659f9a9c</div><div class="date">2011-04-19, 04:49 PM</div></div><div class="posttext">These jokes get worse and worse<br />
+<br />
+''Greg “Ghostcrawler” Street'' IKR?<br />
+;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wilian</div><div class="date">2011-04-19, 04:49 PM</div></div><div class="posttext">&quot;If I can be snarky for a moment, players tend to beat the “homogenization!” drum too emphatically when they are losing something that is overpowered&quot;<br />
+<br />
+Yes, Control Pet for hunters was totally OP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sivnet</div><div class="date">2011-04-19, 04:49 PM</div></div><div class="posttext">why dont we have crit chance affects crit severity? more crit = bigger crit. I'm sure as with anything else its only numbers and numbers are easy</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">masterprtzl</div><div class="date">2011-04-19, 04:51 PM</div></div><div class="posttext">If he says 20% MS is going to &quot;counter&quot; the buffed healing crits... wouldn't that mean that we all need to have MS on the team to bring healing in line as it already seems a bit out of control at the moment anyways?<br />
+<br />
+<br />
+Would be a huge nerf to any non mage/spriest caster cleave (boomkin / ele / warlock combos for example)...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce5ee2a432e</div><div class="date">2011-04-19, 04:52 PM</div></div><div class="posttext">&quot;Letting rogues and Enhancement shaman get 200% crits with non-physical damage would be a larger change, and not the kind of thing we would do mid-expansion.&quot;<br />
+Mid-expansion? We have yet to even see the first major update lol.<br />
+ <br />
+But seeing as Blizzard takes so long to update anything by the time they decide they want to do it 4.3 will be a week away from release :p (yes I did mean 4.3).<br />
+<br />
+OT though its nice to see they are thinking about healers again, especially in terms of balance. And I also like that the first counter to increased healing was to buff MS effects again, rather than buff damage. Will be interesting to see how this goes..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paneele</div><div class="date">2011-04-19, 04:52 PM</div></div><div class="posttext">&quot;If I can be snarky for a moment, players tend to beat the “homogenization!” drum too emphatically when they are losing something that is overpowered&quot;<br />
+<br />
+Yes, Control Pet for hunters was totally OP.<br />
+<br />
+Control pet was probably the only and exact situation he was referring to with this statement.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wilian</div><div class="date">2011-04-19, 04:54 PM</div></div><div class="posttext">Control pet was probably the only and exact situation he was referring to with this statement.<br />
+<br />
+Obviously.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc13f585d42e</div><div class="date">2011-04-19, 04:55 PM</div></div><div class="posttext">I'd love the 100% heal crit thingie....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">paloalto</div><div class="date">2011-04-19, 04:56 PM</div></div><div class="posttext">re: Rogue and Enhancement<br />
+<br />
+Essentially saying:<br />
+<br />
+&quot;We're probably not too happy with their 150 percent crits, but we're not going to do anything about it any time soon.&quot;<br />
+<br />
+Very similar to a few weeks ago:<br />
+<br />
+&quot;We're not too happy why how out entire combat is based on interrupts, but we're not going to do anything about it any time soon.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kurazaku</div><div class="date">2011-04-19, 04:56 PM</div></div><div class="posttext">&quot;Letting rogues and Enhancement shaman get 200% crits with non-physical damage would be a larger change, and not the kind of thing we would do mid-expansion.&quot;<br />
+Mid-expansion? We have yet to even see the first major update lol.<br />
+<br />
+Doesn't exactly bode well for just how much content they intend to give us then, does it? XD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">subanark</div><div class="date">2011-04-19, 04:57 PM</div></div><div class="posttext">Nooo... having heals be 200% just makes things even more unpredictable than it already is. Healers can't make up a run of bad streak of non-crits in a fight like a dps can. If you get unlucky with crits and the tank dies, then you get to do the encounter over again. If this happens to the dps, then there is still a good chance they can make up lost ground.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">underdogba</div><div class="date">2011-04-19, 05:01 PM</div></div><div class="posttext">Another completely milquetoast blog from GC, this time spending way too much space talking about a non-issue nobody actually cares about, as opposed to his usual fare of spending way too much space taking absolutely no concrete position and spouting platitudes about an issue people actually do care about!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">masterprtzl</div><div class="date">2011-04-19, 05:02 PM</div></div><div class="posttext">Also, the title says &quot;And misses&quot; but he mentions nothing on misses :X just sayin</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Swizzle</div><div class="date">2011-04-19, 05:02 PM</div></div><div class="posttext">Doesn't exactly bode well for just how much content they intend to give us then, does it? XD<br />
+<br />
+You know the prefix &quot;mid-&quot; doesn't just mean &quot;in the exact middle of&quot; right? It means anywhere from the start to the end of a certain occurrence. In this case, it means from the start of Cata to the end of Cata.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nekokami</div><div class="date">2011-04-19, 05:02 PM</div></div><div class="posttext">These jokes get worse and worse<br />
+<br />
+I like it, it's a reference to Dungeons&amp;Dragons :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2011-04-19, 05:03 PM</div></div><div class="posttext">who cares.. you balance the game around the rules... they decide to change the rules, and people may change their gear stats a bit.. but in the end, all we care about is our spec being viable. Congrats.. they figure out to let poisons crit... then they spend 2 months trying to figure out how much they need to nerf Mutilate to rebalance rogues... or how much they need to nerf stormstrike because LB now crits for enhancement.<br />
+<br />
+Honestly, this is one of the reasons there are so many complaints about the game being boring. Because instead of actually adding interesting systems and features, the devs apparently spend all their time chasing their own tails on small rule changes while adding very boring new features. Think about this? How much better do you think guild leveling or archeology would be if the devs had spent this much time talking about minor minor details.<br />
+<br />
+At the end of the day, classes will have to be balanced. For every paragraph talking about what they want to give a spec, they should spend another paragraph talking about how they will have to nerf something else. It is just a waste of dev time to focus on these trivial issues which in the end, don´t make the game more fun.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">taymatt</div><div class="date">2011-04-19, 05:05 PM</div></div><div class="posttext">Wow, how pathetic is it that the lead developer believes Resto Shammies value crit? Hopefully the mods around here will keep this in mind next time they try to pretend Blizz knows what they are doing with us.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">PlatedPriest</div><div class="date">2011-04-19, 05:05 PM</div></div><div class="posttext">re: Rogue and Enhancement<br />
+<br />
+Essentially saying:<br />
+<br />
+&quot;We're probably not too happy with their 150 percent crits, but we're not going to do anything about it any time soon.&quot;<br />
+<br />
+Very similar to a few weeks ago:<br />
+<br />
+&quot;We're not too happy why how out entire combat is based on interrupts, but we're not going to do anything about it any time soon.&quot;<br />
+<br />
+you must not understand the points of these water coolers.<br />
+<br />
+THEY ARE NOT PROMISES.<br />
+<br />
+all it is at best. is how they currently view these aspects of the game. and there thought process on some of these topics. just because GC discuss they fact that they are not happly with interrupts, hit/expertise for tanks, and critical hits doesn't mean they are going to role out a game changing patch tomorrow.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">underdogba</div><div class="date">2011-04-19, 05:07 PM</div></div><div class="posttext">Wow, how pathetic is it that the lead developer believes Resto Shammies value crit? Hopefully the mods around here will keep this in mind next time they try to pretend Blizz knows what they are doing with us.<br />
+<br />
+I felt the same way when I heard GC suggest that prot pallies might take the haste on judgment talent at the top of the holy tree!<br />
+<br />
+---------- Post added 2011-04-19 at 01:08 PM ----------<br />
+<br />
+<br />
+I like it, it's a reference to Dungeons&amp;Dragons :)<br />
+<br />
+It's just pandering, in order to appropriate some kind of nerd legitimacy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Buu</div><div class="date">2011-04-19, 05:08 PM</div></div><div class="posttext">Nooo... having heals be 200% just makes things even more unpredictable than it already is. Healers can't make up a run of bad streak of non-crits in a fight like a dps can. If you get unlucky with crits and the tank dies, then you get to do the encounter over again. If this happens to the dps, then there is still a good chance they can make up lost ground.<br />
+Reverse Psychology?<br />
+Because Healers don't make decisions on criticals. They do on normal Heals, and if they Crit... Hey extra second for breath.<br />
+If you &quot;plan&quot; your criticals, then I believe you're a poor healer.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Swizzle</div><div class="date">2011-04-19, 05:14 PM</div></div><div class="posttext">Wow, how pathetic is it that the lead developer believes Resto Shammies value crit? Hopefully the mods around here will keep this in mind next time they try to pretend Blizz knows what they are doing with us.<br />
+<br />
+Resto shaman like it, but look at how many talents they have that make crits better for them.<br />
+<br />
+Like can mean it's a bonus to have it, but it doesn't mean it's your number one stat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">paloalto</div><div class="date">2011-04-19, 05:14 PM</div></div><div class="posttext">you must not understand the points of these water coolers.<br />
+<br />
+THEY ARE NOT PROMISES.<br />
+<br />
+all it is at best. is how they currently view these aspects of the game. and there thought process on some of these topics. just because GC discuss they fact that they are not happly with interrupts, hit/expertise for tanks, and critical hits doesn't mean they are going to role out a game changing patch tomorrow.<br />
+<br />
+Not be rude, but what in my post indicates I believe the opposite?<br />
+<br />
+In fact, the content of my post is acknowledging that they recognize what they feel are problems within combat but aren't:<br />
+<br />
+<br />
+going to role out a game changing patch tomorrow.<br />
+<br />
+It's odd that you didn't understand that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Schizoide</div><div class="date">2011-04-19, 05:14 PM</div></div><div class="posttext">Another completely milquetoast blog from GC, this time spending way too much space talking about a non-issue nobody actually cares about, as opposed to his usual fare of spending way too much space taking absolutely no concrete position and spouting platitudes about an issue people actually do care about!<br />
+This is the dev watercooler. It's supposed to give players a window on what the devs are talking about this week, not &lt;&lt;nerfs/buffs to your class&gt;&gt;. <br />
+<br />
+I've been enjoying these watercoolers and blog posts a great deal. They're a huge improvement over the total lack of communication we had before.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Notos</div><div class="date">2011-04-19, 05:20 PM</div></div><div class="posttext">Wow, how pathetic is it that the lead developer believes Resto Shammies value crit? Hopefully the mods around here will keep this in mind next time they try to pretend Blizz knows what they are doing with us.<br />
+<br />
+Even after the mastery buff they gave resto, crit is still a very good stat because it offers both good throughput and an increase in mana regen because there are several talents that improve it. So basically, what GC said.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">underdogba</div><div class="date">2011-04-19, 05:20 PM</div></div><div class="posttext">This is the dev watercooler. It's supposed to give players a window on what the devs are talking about this week, not &lt;&lt;nerfs/buffs to your class&gt;&gt;..<br />
+<br />
+You're misunderstanding the nature of my criticism. I am not saying that GC's blogs are bad because they are not a litany of specific class changes a la class notes. It's because everything he writes is completely predictable, devoid of any controversy whatsoever, and essentially meaningless as far as advancing our understanding of where they want the game to go. The whole thing reeks of consulting a publicist, under the auspices of a blog.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">taymatt</div><div class="date">2011-04-19, 05:21 PM</div></div><div class="posttext">Resto shaman like it, but look at how many talents they have that make crits better for them.<br />
+<br />
+Like can mean it's a bonus to have it, but it doesn't mean it's your number one stat.<br />
+<br />
+Uh yeah. We &quot;like&quot; it so much, we reforge all of it to spirit, haste, and mastery. It is literally the bottom stat, so it is more than embarrassing that Blizz's lead developer would say we &quot;like&quot; it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">underdogba</div><div class="date">2011-04-19, 05:24 PM</div></div><div class="posttext">Uh yeah. We &quot;like&quot; it so much, we reforge all of it to spirit, haste, and mastery. It is literally the bottom stat, so it is more than embarrassing that Blizz's lead developer would say we &quot;like&quot; it.<br />
+<br />
+I wouldn't recommend starting this whole thing up, the particular poster you are responding to has made a cottage industry out of arguing the semantics of this point for no particularly good reason, seemingly just for the sake of having something to argue about.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">taymatt</div><div class="date">2011-04-19, 05:27 PM</div></div><div class="posttext">Even after the mastery buff they gave resto, crit is still a very good stat because it offers both good throughput and an increase in mana regen because there are several talents that improve it. So basically, what GC said.<br />
+<br />
+Incorrect. It is literally our worst throughput stat. The confusion likely stems from the fact that when people just hit 85 back in december, and were in greens and blues, mana regen was terrible and pre-buffed mastery was semi-useless. As such, several posters here and at EJ recommended crit as a way of dealing with mana issue. <br />
+<br />
+Once your gear isn't terrible (i.e., you didn't just hit 85; aren't wearing a bunch of greens; and are instead wearing mostly 346 gear and above), crit is of very low value. It really is no longer disputed that ALL of the other stats rank above crit in priority.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dacomp89</div><div class="date">2011-04-19, 05:28 PM</div></div><div class="posttext">You're misunderstanding the nature of my criticism. I am not saying that GC's blogs are bad because they are not a litany of specific class changes a la class notes. It's because everything he writes is completely predictable, devoid of any controversy whatsoever, and essentially meaningless as far as advancing our understanding of where they want the game to go. The whole thing reeks of consulting a publicist, under the auspices of a blog.<br />
+<br />
+You find what he talks about meaningless because you do not think about the game as deeply as he does. You are concerned with superficial changes, he is concerned with how the whole game interacts in itself. If you do not think his watercooler blog is useful then ignore it, he doesn't do it for you, he does it to provide some insight into how a game is run and developed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Phaidrae</div><div class="date">2011-04-19, 05:31 PM</div></div><div class="posttext">Good fucking GRRRRIIIIEEFFFFF...I know they say not to read too much into these stupid Devs thing - but honestly. So lame.<br />
+<br />
+I'm so damn sick of hearing the same motherfucking excuse for healers EVERY time they release any sort of talk/info about them. 95% of the time it boils down to this hot steaming pile of shit: &quot;We don't want to change too much for healers because it'll be too OP for PvP...&quot;<br />
+<br />
+Will they never EVER give us raiders a fucking break here? Would it be too much to ask for a little love for these MASSIVE works of art called raids as far as class-tuning and spec'ing love?<br />
+<br />
+I realize that there's a big following for PvP in this game (although I really cannot for the life of me figure out why)...but there's also a nice chunk of ppl that would REALLY enjoy seeing some stuff implemented/done/changed/fixed for PvE and that alone. A course of action that's NOT a swift set of debuffs/nerfs/setbacks and then buffing for classes that don't really need it.<br />
+<br />
+This is simply asking too much. I've crossed a line.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Orcheon</div><div class="date">2011-04-19, 05:31 PM</div></div><div class="posttext">Healers do not like randomness. Crits are random. I would rather every heal heal for 25% more than 25% of heals heal for 100% more.<br />
+<br />
+This is the same reason procs that don't regenerate mana aren't fun for healers. They add a level to the game that healers don't want, that we don't have any control over--the thing healers want is control.<br />
+<br />
+This is the exact opposite of what good healers want. We want MORE control, not less.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">vizzle</div><div class="date">2011-04-19, 05:33 PM</div></div><div class="posttext">These Dev Watercoolers and &quot;Ask the Devs!&quot; stuff are so open-ended and vague that it's obvious they are just doing it to keep the interest of those who don't really already know this in the first place. They don't say anything ground breaking and they don't share anything new that a decent player could think of himself. They try to show their knowledge of the game by mentioning that they know where Boomkins and SPriests get their passive damage from, but aside from that, there was nothing worthwhile reading in this post. Waste of time, just trying to make it seem like the developers haven't abandoned this game, which, the A team has.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc18646deaeb</div><div class="date">2011-04-19, 05:33 PM</div></div><div class="posttext">re: Rogue and Enhancement<br />
+<br />
+Essentially saying:<br />
+<br />
+&quot;We're probably not too happy with their 150 percent crits, but we're not going to do anything about it any time soon.&quot;<br />
+<br />
+Very similar to a few weeks ago:<br />
+<br />
+&quot;We're not too happy why how out entire combat is based on interrupts, but we're not going to do anything about it any time soon.&quot;<br />
+<br />
+Do you have any idea how long it takes for simple napkin ideas to turn into an idea that is put into the game?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">underdogba</div><div class="date">2011-04-19, 05:38 PM</div></div><div class="posttext">You find what he talks about meaningless because you do not think about the game as deeply as he does. You are concerned with superficial changes, he is concerned with how the whole game interacts in itself. If you do not think his watercooler blog is useful then ignore it, he doesn't do it for you, he does it to provide some insight into how a game is run and developed.<br />
+<br />
+Three quick points --<br />
+<br />
+1. You don't know anything about how I think about anything, so as far as I'm concerned, this is just troll bait.<br />
+<br />
+2. The fact that you keep insisting that I'm &quot;concerned with superficial changes&quot; means that you have essentially zero comprehension of the criticism I'm making.<br />
+<br />
+3. &quot;If you don't like it, ignore it&quot; is a patently-misused conversation-destroyer in the context in which you're offering it. This is a valid argument when it comes to censorship by an institution of political power. But to claim as you are that readers/watchers of a piece of media have no right to criticize it is patently absurd.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">paloalto</div><div class="date">2011-04-19, 05:38 PM</div></div><div class="posttext">Do you have any idea how long it takes for simple napkin ideas to turn into an idea that is put into the game?<br />
+<br />
+Poor guy :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rioo</div><div class="date">2011-04-19, 05:38 PM</div></div><div class="posttext">Once again just a bunch of bullshit.<br />
+<br />
+&quot;This game is broken beyond recognition and we know why, but instead of doing anything we'll wait until the next expansion which won't be out for 2-3 years. But hey, at least we're talking about it&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gerti</div><div class="date">2011-04-19, 05:40 PM</div></div><div class="posttext">I love how Ghostcrawler mock whiners <br />
+<br />
+&quot;This was back when all the designers presumably played rogues instead of mages, which according to the forums is what we all play now (which makes our dungeon testing interesting, I gotta tell you.)&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Phaidrae</div><div class="date">2011-04-19, 05:40 PM</div></div><div class="posttext">Healers do not like randomness. Crits are random. I would rather every heal heal for 25% more than 25% of heals heal for 100% more.<br />
+<br />
+This is the same reason procs that don't regenerate mana aren't fun for healers. They add a level to the game that healers don't want, that we don't have any control over--the thing healers want is control.<br />
+<br />
+This is the exact opposite of what good healers want. We want MORE control, not less.<br />
+<br />
+Heh, I couldn't agree more on the control part. They need to seriously sit back and re-evaluate how badly they've fucked up healing. Honestly. I love it that (at times) I can put a full set of HoTs on someone (main toon is a healy druid) and then spam Nourish or Healing Touch and essentially watch the tanks health NOT MOVE and watch my mana bar drain like a leaky faucet.<br />
+<br />
+I enjoy the fact that they made healing a more &quot;on your toes&quot; role...but there are so many instances I've run across where healing is just so ineffective that it's mind-boggling.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Freese</div><div class="date">2011-04-19, 05:41 PM</div></div><div class="posttext">These Dev Watercoolers and &quot;Ask the Devs!&quot; stuff are so open-ended and vague that it's obvious they are just doing it to keep the interest of those who don't really already know this in the first place. They don't say anything ground breaking and they don't share anything new that a decent player could think of himself. They try to show their knowledge of the game by mentioning that they know where Boomkins and SPriests get their passive damage from, but aside from that, there was nothing worthwhile reading in this post. Waste of time, just trying to make it seem like the developers haven't abandoned this game, which, the A team has.<br />
+<br />
+No. Maybe it doesn't pertain to YOU per se, but it does concern other people who play the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">vizzle</div><div class="date">2011-04-19, 05:41 PM</div></div><div class="posttext">If they spent as much time actually implementing changes and experimenting with numbers as they do jacking off at the watercooler we'd have an amazing game again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rennadrel</div><div class="date">2011-04-19, 05:42 PM</div></div><div class="posttext">Ghostcrawler is an idiot. Class homogenization has been the design method since Wrath came out, and it's now to the point where classes are so close to being similar the only difference is ability names and one or two spells that other classes have. This is especially true for melee classes, feral druids and rogues have always used the same resource systems and similar styles of combat techniques, in fact there isn't much that really separates rogues from cat druids aside from a couple of abilities, and more of the fact that feral druids can shape shift and cast healing spells. Plate classes are worse though, Retribution is basically a lousy cop out to what the original design of Retribution was in Burning Crusade and again a redesign in Wrath, personally I feels more unique now, it's still requires far too much micro managing and while I don't think it should be a complete face roll spec, other classes should get the same treatment otherwise change Ret back to the way it was in 3.0. Most classes don't really have anything unique about them and most can gear in a similar way, unlike in Burning Crusade when Protection Paladins used spell power swords to tank and intellect was used by both Enhance Shamans and Retribution Paladins :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Schizoide</div><div class="date">2011-04-19, 05:42 PM</div></div><div class="posttext">I am not saying that GC's blogs are bad because they are not a litany of specific class changes a la class notes. It's because everything he writes is completely predictable, devoid of any controversy whatsoever, and essentially meaningless as far as advancing our understanding of where they want the game to go. The whole thing reeks of consulting a publicist, under the auspices of a blog.<br />
+Really? I had no idea they were considering setting healing crits to 200% or increasing the mortal strike debuff in 4.1. How did you know about that stuff?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">loop not defined</div><div class="date">2011-04-19, 05:48 PM</div></div><div class="posttext">This game is broken beyond recognition...<br />
+<br />
+This comment is an example of why I tend to avoid WoW forums these days. Rampant lack of perspective, although I think the word &quot;lack&quot; is a huge understatement.<br />
+<br />
+---------- Post added 2011-04-19 at 10:53 AM ----------<br />
+<br />
+<br />
+If they spent as much time actually implementing changes and experimenting with numbers as they do jacking off at the watercooler we'd have an amazing game again.<br />
+<br />
+Because player opinions shouldn't ever be factored into game design, right? The Dev Watercooler blogs are more about getting people focused on topics Blizzard wants input on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Freese</div><div class="date">2011-04-19, 05:56 PM</div></div><div class="posttext">Once again just a bunch of bullshit.<br />
+<br />
+&quot;This game is broken beyond recognition and we know why, but instead of doing anything we'll wait until the next expansion which won't be out for 2-3 years. But hey, at least we're talking about it&quot;.<br />
+<br />
+Add this to another list of statements I've heard over the past six years now. Moving along....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dacomp89</div><div class="date">2011-04-19, 05:57 PM</div></div><div class="posttext">Three quick points --<br />
+<br />
+1. You don't know anything about how I think about anything, so as far as I'm concerned, this is just troll bait.<br />
+<br />
+2. The fact that you keep insisting that I'm &quot;concerned with superficial changes&quot; means that you have essentially zero comprehension of the criticism I'm making.<br />
+<br />
+3. &quot;If you don't like it, ignore it&quot; is a patently-misused conversation-destroyer misused in the context in which you're using it. This is a valid argument when it comes to censorship by an institution of political power. But to claim as you are that readers/watchers of a piece of media have no right to criticize it is patently absurd.<br />
+<br />
+I can derive from your posts how you think, that is the essence of how a discussion works. What you say is based on what you think, unless of course you are simply trolling? Am I the one falling for troll bait? This is my first post on this topic so I don't know what you're talking about. You might want to read his point #3, &quot;No whining about the choice of topics we cover.&quot; Just because you don't find his posts interesting doesn't mean no one else will, or are you so arrogant as to think that? Pray tell, what issue would you like him to cover? And would you be satisfied with just his thoughts on the matter, which he clearly states is as far as his blog will go, or would you demand to see him provide concrete changes with a timeline on when they will be implemented into the game? You clearly desire more than he is willing to provide and he has no obligation to provide inside details on WoW development, as clearly individuals less wise than yourself would greatly misconstrue them as facts and promises. With your great insight surely you can understand the predicament he is in? And yet you demand more. Of course you are free to do so, I hope you have fun in your exercise in futility.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sarevokcz</div><div class="date">2011-04-19, 05:58 PM</div></div><div class="posttext">This is the dev watercooler. It's supposed to give players a window on what the devs are talking about this week, not &lt;&lt;nerfs/buffs to your class&gt;&gt;. <br />
+<br />
+I've been enjoying these watercoolers and blog posts a great deal. They're a huge improvement over the total lack of communication we had before.<br />
+<br />
+Yeah, well, when all I get from these posts is usual &quot;We completely overlooked this issue in in beta and before 4.0.6, but it was totally intentional!&quot; Are they trying to tell me that enha shaman is supposed to scale that bad with 2 out of 3 noncap secondary stats?<br />
+<br />
+It's the same as the 10vs25 blog...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2011-04-19, 06:00 PM</div></div><div class="posttext">You find what he talks about meaningless because you do not think about the game as deeply as he does. You are concerned with superficial changes, he is concerned with how the whole game interacts in itself. If you do not think his watercooler blog is useful then ignore it, he doesn't do it for you, he does it to provide some insight into how a game is run and developed.<br />
+<br />
+If poisons crit for 200% damage and mutilate gets nerfed by 10%..... is the game more fun?<br />
+If enchance get 200% crit LBs and stormstrike is nerfed by 10%.... is the game more fun?<br />
+<br />
+The fact is, 5 minutes after they make these changes, nothing really matters. They will then have to spend a month trying to rebalance everything to deal with the increased damage of these new 200% crits. But in the end, is the game more fun?<br />
+<br />
+They spend far to much time talking and thinking about these ´deep´issues and are not adding enough FUN things to the game. These issues are not ´deep, they are negligible issues.<br />
+<br />
+I think GC is too caught up in spreadsheets and needs to step back like the original designers and constantly ask ´does this make the game more fun?´ 200% crit poisons and 10% nerf to mutilate does not make the game more fun, no matter how ´deep´it s.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Amerika</div><div class="date">2011-04-19, 06:02 PM</div></div><div class="posttext">Why are they considering buffing MS? That's just stupid. If they want to buff MS to help counter healing that means every comp would need MS again or else they would be relegated to a weaker status than they are now. Not to mention some of the strongest classes right now are warriors, hunters and rogues...all with MS.<br />
+<br />
+The odd thing is I don't think healing is that OP. I play RBG's and arena at high ratings and people die quickly in 3's and 5's and it really doesn't take that long to kill a flag carrier in RBG's despite almost every team running 4 healers (3 of them on D with the FC + a dps, rest on O typically but not always). Sometimes we have to wait for one stack of the vulnerability debuff on the FC if they are running a heavy D but that doesn't take very long to get up.<br />
+<br />
+Sometimes I don't think Blizzard plays the same game we do. And if they think buffing MS is going to fix a non-existent problem then I really don't think they are paying much attention.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cacodaemon</div><div class="date">2011-04-19, 06:04 PM</div></div><div class="posttext">One suggestion that might bear some weight; have crits for your main role at 200%, and other crits at 150%. For example, an Elemental Shaman would toss offensive spells with 200% crit effect, but healing at 150% crit effect. For a Restoration Shaman, those would reverse; healing would have a 200% crit effect, and damage spells would have 150% crit effect. <br />
+<br />
+Essentially, DPS abilities would crit at 200% for DPS-focused specs. Healing abilities would crit at 200% for healing-focused specs. A healer's DPS abilities would crit at 150%, and a DPSer's healing abilities would crit at 150%. <br />
+<br />
+This sort of change would reinforce distinction of roles, but remove some (seemingly) unnecessary artifacts of the original design.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Schizoide</div><div class="date">2011-04-19, 06:06 PM</div></div><div class="posttext">They aren't negligible, they're concrete design concerns. The end effect on experienced players is minimal, you're right about that, but setting all crits to 200% makes the game easier to balance, gear easier to itemize, and gameplay more intuitive and thus newbie-friendly.<br />
+<br />
+Not every change is buff/nerf &lt;&lt;your class here&gt;&gt; or content changes. Deeper mechanics changes matter, and some of us find that sort of thing interesting. If you don't, that's fine.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Snes</div><div class="date">2011-04-19, 06:07 PM</div></div><div class="posttext">People seem to be on either extreme here:<br />
+-Total Blizzard fanboys, tirelessly devoted to defending and praising each and every change Blizzard makes, including reversions. Usually any form of negative criticism towards Blizzard sets them off on a self-righteous tyrade.<br />
+or<br />
+-Nonsensical flamers that moan about every potential change, especially when it comes to cosmetic items.<br />
+<br />
+OT; the fact that he tries to convince us that the game isn't becoming homogenized is utterly ridiculous. Oh well, all empires fall eventually, let's hope WoW's dev team become less arrogant and learn from their decisions when it does.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Asatru</div><div class="date">2011-04-19, 06:11 PM</div></div><div class="posttext">I love how Ghostcrawler mock whiners <br />
+<br />
+&quot;This was back when all the designers presumably played rogues instead of mages, which according to the forums is what we all play now (which makes our dungeon testing interesting, I gotta tell you.)&quot;<br />
+<br />
+But that's no denial!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tinykong</div><div class="date">2011-04-19, 06:20 PM</div></div><div class="posttext">More pvp balancing that is detracting from the real issue plaguing the game (lack of content and &quot;quality of life issues.&quot;)<br />
+<br />
+When is Blizzard going to just realize that it's time to make PVP and PVE two completely separate game styles, with different gear and talent trees? As it stands, competitive PVP is all about finding whatever the current spec, item, ability, class or gear that can be used to create some sort of competitive advantage, and exploiting it. Blizzard constantly spends huge amounts of times designing, and redesigning, and retuning the game to work around these &quot;exploits.&quot; DPS is too high, let's bump resilience. Now healing is too easy, let's nerf that. Now mortal strike is too effective, let's nerf that. Warrior charge is too powerful, buff escapes. Too many escapes, buff Rogue stuns. <br />
+<br />
+Meanwhile, PVE players are having to endure the constant pendulum swing of class balancing for raiding and grouping. The only way it's going to end is to make the two gameplay choices distinctly separate. And the argument about people being confused is moot: if you want to be competitive in PVP, you can't just roll into an arena as a fresh 85 with quest greens and blues and expect to get a high rating. You have to research your class composition, create/grind a pvp gear set from crafted/BGs, and learn the ins and outs of all the specs in the game and how to counter them. With all that much research and prep going into it already, what's one more talent tree per class? <br />
+<br />
+Every class can dps, only some can heal. With only one &quot;pvp&quot; spec per class, healing/dmg could be tightly controlled through mechanics that would have absolutely no effect on any other facet of the game. That spec would only be viable in a pvp setting, introduce it as the &quot;third&quot; spec that everyone is clamoring for, and be done with it. When you zone into an arena or BG, that spec is activated by default, and since there is already a break between pve/pvp gear (resilience) you could make it non-viable to wear pve gear to pvp and pvp gear to pve. Don't like raiders having access to PVP weapons? Resilience reduces your main stat by 10% in your PVE spec. Same goes for PVE gear in PVP situations, each item slot that isn't PVP itemized reduces your dmg/healing output in PVP spec by some percentage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc884feb1aa3</div><div class="date">2011-04-19, 06:26 PM</div></div><div class="posttext">Nooo... having heals be 200% just makes things even more unpredictable than it already is. Healers can't make up a run of bad streak of non-crits in a fight like a dps can. If you get unlucky with crits and the tank dies, then you get to do the encounter over again. If this happens to the dps, then there is still a good chance they can make up lost ground.<br />
+<br />
+Although the thought of more healing for your mana is nice I have to agree with you on the grounds thats its unpredictable and can also lead to over healing making it a lottery.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chaoslux</div><div class="date">2011-04-19, 06:27 PM</div></div><div class="posttext">Once again just a bunch of bullshit.<br />
+<br />
+&quot;This game is broken beyond recognition and we know why, but instead of doing anything we'll wait until the next expansion which won't be out for 2-3 years. But hey, at least we're talking about it&quot;.<br />
+<br />
+Dev WaterCooler GROUND RULES:<br />
+<br />
+2) Don’t read too much between the lines. I’m going to point out a lot of design flaws in our game. “Oh no! Goatcaller admitted WoW was deeply flawed! It’s shark-jumping time!” Look, Blizzard is very critical about our own designs. There is virtually nothing in World of Warcraft that could not be improved. That has always been the case and will continue to be the case. Just because I’m going to be sharing that more frankly with you doesn’t mean that the game now has more cracks in its foundation than it ever did. There is an old saying (misattributed, from what I understand, to Otto Bismarck) that laws are like sausages; it is best not seeing them being made. My old friend and mentor Bruce Shelley used to apply the same maxim to game design.<br />
+<br />
+<br />
+&quot;Omg the game is broken&quot; is EXACTLY what the Dev Watercoolers are about. Its to tell us they KNOW about the issues and casually try to discuss what they talked about in their last meeting. YOU have to realize changes dont happen overnight.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc18646deaeb</div><div class="date">2011-04-19, 06:31 PM</div></div><div class="posttext">Poor guy :(<br />
+<br />
+What?.......</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Notos</div><div class="date">2011-04-19, 06:34 PM</div></div><div class="posttext">Incorrect. It is literally our worst throughput stat. The confusion likely stems from the fact that when people just hit 85 back in december, and were in greens and blues, mana regen was terrible and pre-buffed mastery was semi-useless. As such, several posters here and at EJ recommended crit as a way of dealing with mana issue. <br />
+<br />
+Once your gear isn't terrible (i.e., you didn't just hit 85; aren't wearing a bunch of greens; and are instead wearing mostly 346 gear and above), crit is of very low value. It really is no longer disputed that ALL of the other stats rank above crit in priority.<br />
+<br />
+Actually it's very much debated and depends a lot on your spec, the encounter, and whether you're running 10 or 25 man. For example, mastery has slightly less value in 25 mans because it doesn't affect earthliving (until 4.1 hits). On a fight like chimaeron of course it becomes an amazing stat for us. If your build doesn't have telluric currents, then crit becomes very useful for the extra regen. Also, mana regen isn't something that you simply stop worrying about at some point, especially once you hit hard modes, so looking at crit as just a throughput stat isn't really proper. I shouldn't be having to explain this, it's all in the resto 4.1 raiding thread on EJ. Maybe take a look?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Joey Ray III</div><div class="date">2011-04-19, 06:40 PM</div></div><div class="posttext">I know 99% of statistics are made up and all but I'd day about 0.00001% of wow population gives a slightest shit about this issue. What a waste of time. Doesn't this guy got anything better to do?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Flaks</div><div class="date">2011-04-19, 06:42 PM</div></div><div class="posttext">It was a great read but what really got me was the fact that they think upping the mortal strike debuff to 20% while also allowing heals to crit for double will apparently fix the imbalance of healing in PvP.<br />
+<br />
+The debuff needs to be at around 25% RIGHT NOW. Upping heal criticals should make them consider increasing the debuff to 30% (or leave at 25% since healer crit chances are so low; but 20% is just too low).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">loop not defined</div><div class="date">2011-04-19, 06:43 PM</div></div><div class="posttext">I think GC is too caught up in spreadsheets and needs to step back like the original designers and constantly ask ´does this make the game more fun?´ 200% crit poisons and 10% nerf to mutilate does not make the game more fun, no matter how ´deep´it s.<br />
+<br />
+Is a shallower pool more fun than a deep pool? Quite a few people find &quot;fun&quot; in depth. You have no authority when it comes to defining &quot;fun&quot; for anybody but yourself.<br />
+<br />
+---------- Post added 2011-04-19 at 11:47 AM ----------<br />
+<br />
+<br />
+I know 99% of statistics are made up and all but I'd day about 0.00001% of wow population gives a slightest shit about this issue. What a waste of time.<br />
+<br />
+Waste of your time, maybe. And thanks for the completely bullshit statistic. Maybe look into toning down the narcissism some day.<br />
+<br />
+<br />
+Doesn't this guy got anything better to do?<br />
+The Lead Systems Designer? Previously the Lead Class Designer? Details are pretty much his whole job. o_O</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shambulanced</div><div class="date">2011-04-19, 06:47 PM</div></div><div class="posttext">Letting rogues and Enhancement shaman get 200% crits with non-physical damage would be a larger change, and not the kind of thing we would do mid-expansion.<br />
+<br />
+Okay, so we can look forward to that in oh, say, a year?<br />
+<br />
+I really don't see why it's a &quot;larger&quot; change. It's a coefficient. The numbers aren't what makes a class anymore--yeah, once upon a time it was awesome to see a huge rogue crit, but now you can see huge crits off plenty of other classes too (frost dk comes to mind). Yeah, some classes have iconic spells (Death Grip, etc) but in general spells are all very similar. What is Chaos Bolt but a green Fireball that ignores resistances? Whoop-dee-doo. The only real thing that delineates many of the classes now are the graphics associated with their spells--that, right there, is homogenization, not giving people a standard stat coefficient that doesn't arbitrarily change with class/spec.<br />
+<br />
+It seems like the development team really lacks a common vision (dissension in the ranks, mayhap?) in terms of what is &quot;important&quot; and what can &quot;wait until someday (tm)&quot;.<br />
+<br />
+I guess I just don't understand how changing the crits is homogenization. Frankly, the crits never should have been different for casters and melee to begin with. X crit rating should give X crit %, and deal a standard % increased amount. Is this rocket science? Am I taking crazy pills?<br />
+<br />
+And don't even get me started on how PvP &quot;balance&quot; is, once again, throwing a bone in the PvE scheme.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Snes</div><div class="date">2011-04-19, 06:48 PM</div></div><div class="posttext">Is a shallower pool more fun than a deep pool? Quite a few people find &quot;fun&quot; in depth. You have no authority when it comes to defining &quot;fun&quot; for anybody but yourself.<br />
+Okay, so how does adding crit to poisons and nerfing an activated ability add depth? I'm willing to bet that if Blizzard went through with it, you would shower them with praise, and if they then reverted it, you would shower them with praise, and if they re-implemented, you would shower them with praise, etc..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">loop not defined</div><div class="date">2011-04-19, 06:52 PM</div></div><div class="posttext">I guess I just don't understand how changing the crits is homogenization. Frankly, the crits never should have been different for casters and melee to begin with. X crit rating should give X crit %, and deal a standard % increased amount. Is this rocket science? Am I taking crazy pills?<br />
+<br />
+Homogenization is an incredibly vague concept, and getting a proper feel for it can be difficult when your entire job, day in and day out, is digging into WoW.<br />
+<br />
+I'd say your comment is exactly the kind of opinion they wanted to read with this blog, not all the marginal bullshit other posters are tossing around.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">The Last DJ</div><div class="date">2011-04-19, 06:54 PM</div></div><div class="posttext">Originally Posted by Blizzard Entertainment <br />
+Greg “Ghostcrawler” Street is the lead systems designer for World of Warcraft. He crits on a 19 or 20.<br />
+<br />
+<br />
+<br />
+Given the frequency of the Dev Watercooler Blog, Greggers, you probably should have taken Improved Initiative over Improved Critical. ...and if you opted for Keen instead, switch out your dice, bro. You ain't hittin' that threat range very often.<br />
+<br />
+ETA: Age of Empires Online? WWWWWWOLOLOOOO</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">loop not defined</div><div class="date">2011-04-19, 06:55 PM</div></div><div class="posttext">Okay, so how does adding crit to poisons and nerfing an activated ability add depth? I'm willing to bet that if Blizzard went through with it, you would shower them with praise, and if they then reverted it, you would shower them with praise, and if they re-implemented, you would shower them with praise, etc..<br />
+<br />
+It doesn't matter to me, but I'm not so egotistical as to believe my opinion is the only one that matters. That's all.<br />
+<br />
+I'm sorry, did you have a point or do you just enjoy making useless ad hominem attacks?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Snes</div><div class="date">2011-04-19, 07:02 PM</div></div><div class="posttext">It doesn't matter to me, but I'm not so egotistical as to believe my opinion is the only one that matters. That's all.<br />
+<br />
+I'm sorry, did you have a point or do you just enjoy making useless ad hominem attacks?<br />
+Your post implied that his opinon didn't matter to anyone except him; so which opinions do matter then? And the fact that you got defensive over being called out as a Blizzard devotee doesn't really change my stance either.<br />
+<br />
+Funny how you mention egotism and make failed attempts to belittle the intellects of other people.<br />
+<br />
+Edit: The reason people are getting bored of the game lies on the basis that negative criticism isn't acceptable. It just gets filtered and corrupted to paint a pretty picture.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chaoslux</div><div class="date">2011-04-19, 07:06 PM</div></div><div class="posttext">Your post implied that his opinon didn't matter to anyone except him; so which opinions do matter then? And the fact that you got defensive over being called out as a Blizzard devotee doesn't really change my stance either.<br />
+<br />
+Everyone is entitled to their opinions. Thus, someone's opinion only matters to themselves. And No One's Opinion is more right than another's unless you have cold hard proof saying otherwise. At that point its not an opinion anymore and it becomes a fact.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Explosion_Rex</div><div class="date">2011-04-19, 07:13 PM</div></div><div class="posttext">Damn, what has happened to this site? I used to come here because you could talk about WoW without out getting trolled to death. It seems like as long as the trolls use big words and punctuation the devs let it slide.... which totally sucks.<br />
+<br />
+On Topic: I find these little watercooler blogs utterly pointless and I don't really think Ghostcrawler knows much about anything. Everytime time he opens his mouth and starts blurting nonsense about the game he's in charge of he almost always throws out some fact taht is completely wrong. Really, I wonder sometimes if he's ever even played WoW. I find it hilarious that he doesn't think the game is homaginized these days.... you can be ranged or mellee. That's pretty much the only difference in classes these days, besides a unique ability thrown in here and there.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Peacemoon</div><div class="date">2011-04-19, 07:21 PM</div></div><div class="posttext">This is especially true for melee classes, feral druids and rogues have always used the same resource systems and similar styles of combat techniques, in fact there isn't much that really separates rogues from cat druids aside from a couple of abilities, and more of the fact that feral druids can shape shift and cast healing spells.<br />
+<br />
+Can't agree. Yes Cats and Rogues both use energy and combat points, as they have since classic. But they play very differently and I'm sorry, but the whole druid tool set vs the whole rogue tool set is not &quot;1 or 2 abilities&quot;. If anything, Cats and Rogues have been moving away from each other not closer.<br />
+<br />
+---------- Post added 2011-04-19 at 06:23 PM ----------<br />
+<br />
+<br />
+<br />
+Just to add though, I agree with GC. All Criticals should be the same. This is the kind of thing which knowledgeable players may know of but 95% of WoW's playerbase has no idea Crits work differently on a class by class or even spec by spec basis. All crits should be 200%. All numbers should be adjusted to accommodate. In fact it took this blog to remind me and I know a damn lot about this gam!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sard</div><div class="date">2011-04-19, 07:32 PM</div></div><div class="posttext">Actually it's very much debated and depends a lot on your spec, the encounter, and whether you're running 10 or 25 man. For example, mastery has slightly less value in 25 mans because it doesn't affect earthliving (until 4.1 hits). On a fight like chimaeron of course it becomes an amazing stat for us. If your build doesn't have telluric currents, then crit becomes very useful for the extra regen. Also, mana regen isn't something that you simply stop worrying about at some point, especially once you hit hard modes, so looking at crit as just a throughput stat isn't really proper. I shouldn't be having to explain this, it's all in the resto 4.1 raiding thread on EJ. Maybe take a look? <br />
+Actually its not debated at all. Crit is by far the worst state for geared resto shaman. I can only assume if you like crit then you have only just started raiding. At the heroic level, 10 man or 25 man, crit is horrible. All of the top resto shaman stack some combination of spirit, haste and mastery, with strong argumetns made for both haste (better TC spam) and mastery (better overall healing). The fact that you speak as though TC is an option (its not for heroic 25 progression as there is no way you can keep up healing without using TC lighting bolts) reveals how little you know about the status of heroic resto shaman healing. Crit mana regen scales so poorly (water shield orb mana does not scale) that its hardly even worth mentioning. The EJ resto thread, last I checked (a month or so ago) was outdated from early on in the expansion (when crit was a good option) and the thread in general has a poor signal to noise ratio (I'm trying to think of any resto shaman who post in there who are 13/13 and drawing a blank).<br />
+<br />
+That the deves think crit is good for resto shaman because we have several talents that interact act with it is a total joke.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Amerika</div><div class="date">2011-04-19, 07:53 PM</div></div><div class="posttext">It was a great read but what really got me was the fact that they think upping the mortal strike debuff to 20% while also allowing heals to crit for double will apparently fix the imbalance of healing in PvP.<br />
+<br />
+The debuff needs to be at around 25% RIGHT NOW. Upping heal criticals should make them consider increasing the debuff to 30% (or leave at 25% since healer crit chances are so low; but 20% is just too low).<br />
+<br />
+Yeah, so then we can go back to balancing this game around requiring at least one class to have MS rather than the way it currently is where all classes can stand on their own (or theoretically). Going back to an archaic design where MS players are guaranteed a spot and balancing the whole game around Mortal Strike is quite possibly the dumbest thing ever. For example, what happens in 3's when a ret paladin and a dk want to play together? Right now the comp is possible and pretty good (not top tier but you can do well with it) but if the game suddenly went back to burst healing with 200% crit heals and a higher than 10% MS then that comp would be impossible. It's a dumb design and I'm glad they fixed it. More comps are viable now at the top end of arena's than there ever has been before and a lot of that has to do with MS being toned down and made a good debuff but not one you balance around.<br />
+<br />
+No, no and no. MS is fine at 10%. And healing isn't even OP at all right now and anybody who actually plays in the arena or rbg's would know this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rolly</div><div class="date">2011-04-19, 08:03 PM</div></div><div class="posttext">&quot;think about the game as deeply as he does&quot;<br />
+<br />
+BWAHAHAHAHAHAHA The only &quot;deep thinking&quot; Greg Street does is how to cover his ass for all the wrong headed decisions made with Cataclysm.<br />
+He and his team are in full on CYA mode, milking the micro transactions in game and through the apps will keep the wolves at bay for a bit, but I'm betting he's looking over his shoulder all the way and if it wasn't for an employment contract and bad publicity he'd be gone.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hamski</div><div class="date">2011-04-19, 08:05 PM</div></div><div class="posttext">Or they could reduce all spell damage to 150% crits again and let Ret Pallies and Shadow priests keep their defensive dispels.. There's a difference between homogenization and universalization of game mechanics.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kirian42</div><div class="date">2011-04-19, 08:07 PM</div></div><div class="posttext">These jokes get worse and worse<br />
+<br />
+Heavens forfend GC should make a joke about critical hits in an RPG while discussing critical hits in another RPG.<br />
+<br />
+That said, dude needs to get a sword/dagger and take Improved Critical Strike so he can crit on 17-20. Because what's the point of a rogue or fighter without Imp Crit?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tenzing21</div><div class="date">2011-04-19, 08:08 PM</div></div><div class="posttext">People seem to be on either extreme here:<br />
+-Total Blizzard fanboys, tirelessly devoted to defending and praising each and every change Blizzard makes, including reversions. Usually any form of negative criticism towards Blizzard sets them off on a self-righteous tyrade.<br />
+or<br />
+-Nonsensical flamers that moan about every potential change, especially when it comes to cosmetic items.<br />
+<br />
+OT; the fact that he tries to convince us that the game isn't becoming homogenized is utterly ridiculous. Oh well, all empires fall eventually, let's hope WoW's dev team become less arrogant and learn from their decisions when it does.<br />
+<br />
+Huh? Many posts are right in the middle- well-constructed cogent retorts to obvious attempts on GC's part to troll. The game is not the same as it was in the middle of BC, and that's due to bad design(ers) such as GC. <br />
+<br />
+edit: I do believe they ARE working on wow 2.0. A completely new and revamped system; and that these musing are an attempt to gauge how we feel about things now, right this minute without knowing that they plan to assimilate the best ideas into Wow 2.0<br />
+<br />
+This water cooler thing boils down to &quot;We know wow is in a bad way, but... we have no plans to fix anything. Our real resources are tied up in SC2 xpac, d3, and of course Titan. Once those get released, we'll have the time/money to develop wow 2.0. Til then, suck it&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Crispin</div><div class="date">2011-04-19, 08:11 PM</div></div><div class="posttext">Is a shallower pool more fun than a deep pool? Quite a few people find &quot;fun&quot; in depth. You have no authority when it comes to defining &quot;fun&quot; for anybody but yourself.[COLOR=&quot;red&quot;]<br />
+<br />
+<br />
+<br />
+So you're seriously arguing that fixing crit values (for the 7th time) adds more fun than say, guildhousing, or guildkeeps, redoing crafting into a non-macro style game or w/e, the game lacks content outside of pve/pvp, but instead they're focused on details they'll never get right.<br />
+<br />
+The game is OLD and classes are still far from balanced, and never have been, it's a lost fight, ofcourse they need to adjust for extremes, but hitting a sweet spot won't happen and they know it.<br />
+<br />
+<br />
+Ofcourse people wan't to see other &quot;thoughts&quot; than &quot;uhm, we're still trying to figure out how to balance stuff, can't spend time on actual content&quot;<br />
+<br />
+<br />
+People wan't awesome new features and additions, not the same old bs, classes will never be balanced, accept it and add content that doesnt evolve around said classes beeing balanced or not.<br />
+<br />
+<br />
+Ghostcrawler is fail, honestly, the game aint any different than it was when TBC ended, same type of content and raiders do the same as do pvpers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocaf071dd5f4</div><div class="date">2011-04-19, 08:15 PM</div></div><div class="posttext">Also, the title says &quot;And misses&quot; but he mentions nothing on misses :X just sayin<br />
+<br />
+It was pun relating to the saying 'Hits and misses', kinda like most of this expansion.<br />
+<br />
+The 200% healing from crits is quite interesting from my resto shaman point of view. With riptide, earthshield and healing rain all going at once with heals i crit alot, my greater healing wave at the moment crits for about 35-40k with a non crit one coming in around 25-30k. A 60k crit is pretty absurd seeing as the best geared tank i've been with had 200k health with the luck of the draw buff. Considering the role mastery plays for us and how i'm in around ilvl 345 stuff i don't see how this won't be op better gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Killtorz</div><div class="date">2011-04-19, 08:16 PM</div></div><div class="posttext">Is it me, or does the Blue posters seem more and more bitter?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Caldrumr</div><div class="date">2011-04-19, 08:21 PM</div></div><div class="posttext">Again, the first thing they need to do is create a totally separate set of combat rules for PvP, so that they are not balanced together. This will solve (or at least simplify) a lot of the &quot;what if this is too good/bad for PvP&quot; stuff. They are two totally different environments, and should be treated as such, with separate design.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Notos</div><div class="date">2011-04-19, 08:24 PM</div></div><div class="posttext">Actually its not debated at all. Crit is by far the worst state for geared resto shaman. I can only assume if you like crit then you have only just started raiding. At the heroic level, 10 man or 25 man, crit is horrible. All of the top resto shaman stack some combination of spirit, haste and mastery, with strong argumetns made for both haste (better TC spam) and mastery (better overall healing). The fact that you speak as though TC is an option (its not for heroic 25 progression as there is no way you can keep up healing without using TC lighting bolts) reveals how little you know about the status of heroic resto shaman healing. Crit mana regen scales so poorly (water shield orb mana does not scale) that its hardly even worth mentioning. The EJ resto thread, last I checked (a month or so ago) was outdated from early on in the expansion (when crit was a good option) and the thread in general has a poor signal to noise ratio (I'm trying to think of any resto shaman who post in there who are 13/13 and drawing a blank).<br />
+<br />
+That the deves think crit is good for resto shaman because we have several talents that interact act with it is a total joke.<br />
+<br />
+First of all, I can see that you have a preconceived hatred of crit so it seems pointless to argue with you. Think about this though, if GC says that &quot;resto shamans favor crit&quot; then maybe, just maybe, he has sources of information that point to this? You know, I imagine that most resto shamans aren't in guilds that are 13/13 heroic in raid progression, and the skill of a resto shaman isn't determined by his raid's progression because there are 24 other people that also have to contribute. You have to realize that there are many ways to heal as a resto shaman, and none of them are the &quot;right way&quot; for every situation. Yes, TC is an option...I would never run with it if I was tank healing, for example (gasp, some shamans tank heal omg noobs). I run with TC and haste is my favored secondary stat, but I still think that crit is a pretty decent stat.<br />
+<br />
+p.s. yes the old resto shaman thread on EJ is a bit out of date, which is why there is a new one.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vaelyn</div><div class="date">2011-04-19, 08:25 PM</div></div><div class="posttext">Uh yeah. We &quot;like&quot; it so much, we reforge all of it to spirit, haste, and mastery. It is literally the bottom stat, so it is more than embarrassing that Blizz's lead developer would say we &quot;like&quot; it.<br />
+<br />
+You reforge crit to mastery? Are you really insulting GC's understanding of the shaman class? Mastery is only useful on 2 or 3 encounters and it only affects about 2/3 of our heals on those encounters. I reforge mastery to crit, at least until 4.1 drops and improves it slightly :-P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bassnectar</div><div class="date">2011-04-19, 08:26 PM</div></div><div class="posttext">What about hunters?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ghostblade</div><div class="date">2011-04-19, 08:35 PM</div></div><div class="posttext">for people who don't get <br />
+<br />
+Greg “Ghostcrawler” Street is the lead systems designer for World of Warcraft. He crits on a 19 or 20.<br />
+<br />
+its a RP board game joke where you use D20 :) ( dices with 20 squares)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Brett Skullcrack</div><div class="date">2011-04-19, 08:37 PM</div></div><div class="posttext">Pick Assassination because you like daggers or poisons or maybe Rupture, not because you like small crits.<br />
+<br />
+I am lost for words at the incompetence of this guy. Who picks a spec because they &quot;like poisons&quot;? Why would you &quot;like poisons&quot;? It's just another line in the combat log.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Notos</div><div class="date">2011-04-19, 08:44 PM</div></div><div class="posttext">Pick Assassination because you like daggers or poisons or maybe Rupture, not because you like small crits.<br />
+<br />
+I am lost for words at the incompetence of this guy. Who picks a spec because they &quot;like poisons&quot;? Why would you &quot;like poisons&quot;? It's just another line in the combat log.<br />
+<br />
+Some people like the idea of using poisons as a source of damage? Kind of like some people prefer fire over arcane on a mage because the idea of roasting your enemies in flames is more appealing to them. It's the flavor of the class or spec.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">littlewisp</div><div class="date">2011-04-19, 08:46 PM</div></div><div class="posttext">I dunno about all the other resto shaman complaining, but I do like crit. I just don't find it as useful as the other stats. Would I like more crit? Absolutely. I just don't want to give up my other stats for it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">masterprtzl</div><div class="date">2011-04-19, 08:48 PM</div></div><div class="posttext">It was pun relating to the saying 'Hits and misses', kinda like most of this expansion.<br />
+<br />
+<br />
+Oh! LOL that went right over my head :X</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kittenboots</div><div class="date">2011-04-19, 08:52 PM</div></div><div class="posttext">More pvp balancing that is detracting from the real issue plaguing the game (lack of content and &quot;quality of life issues.&quot;)<br />
+<br />
+When is Blizzard going to just realize that it's time to make PVP and PVE two completely separate game styles, with different gear and talent trees? As it stands, competitive PVP is all about finding whatever the current spec, item, ability, class or gear that can be used to create some sort of competitive advantage, and exploiting it. Blizzard constantly spends huge amounts of times designing, and redesigning, and retuning the game to work around these &quot;exploits.&quot; DPS is too high, let's bump resilience. Now healing is too easy, let's nerf that. Now mortal strike is too effective, let's nerf that. Warrior charge is too powerful, buff escapes. Too many escapes, buff Rogue stuns. <br />
+<br />
+Meanwhile, PVE players are having to endure the constant pendulum swing of class balancing for raiding and grouping. The only way it's going to end is to make the two gameplay choices distinctly separate. And the argument about people being confused is moot: if you want to be competitive in PVP, you can't just roll into an arena as a fresh 85 with quest greens and blues and expect to get a high rating. You have to research your class composition, create/grind a pvp gear set from crafted/BGs, and learn the ins and outs of all the specs in the game and how to counter them. With all that much research and prep going into it already, what's one more talent tree per class? <br />
+<br />
+thank you for saying this!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Brett Skullcrack</div><div class="date">2011-04-19, 09:00 PM</div></div><div class="posttext">Some people like the idea of using poisons as a source of damage? Kind of like some people prefer fire over arcane on a mage because the idea of roasting your enemies in flames is more appealing to them. It's the flavor of the class or spec.<br />
+<br />
+Poisons are an entirely passive thing, which all rogue have. The only difference is what percentage of your damage says &quot;XYZ poison&quot; in Recount or WoL. I can kind of understand arcane vs. fire since the spells are actually different, but then again it's such an insignificant thing compared to picking based on a role (tank/healer/ranged/melee) for example. At the end of the day every spec boils down to a handful of abilities, some timers and some cooldowns, (and whatever goes with the role, e.g., tanks need to control the fight etc.etc.) what the animation or name of an ability is doesn't seem to make much of a difference to me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Failhance</div><div class="date">2011-04-19, 09:05 PM</div></div><div class="posttext">Uh yeah. We &quot;like&quot; it so much, we reforge all of it to spirit, haste, and mastery. It is literally the bottom stat, so it is more than embarrassing that Blizz's lead developer would say we &quot;like&quot; it.<br />
+<br />
+Orly? Yea GC definitely doesn't know what he's talking about.... &gt;_&gt; &lt;_&lt;<br />
+<br />
+Flame on...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TK99</div><div class="date">2011-04-19, 09:08 PM</div></div><div class="posttext">First, since it hasn't been said yet.<br />
+<br />
+GC - 'Oh hybrid dps classes? F*@k those guys they should be healers or tanks. Seriously.'<br />
+<br />
+Even if GC didn't say that it helps to maintain the feel of Blizz class design.<br />
+<br />
+But seriously I know Blizz employees and the only reason they don't say PvP balance has fucked the game is because people are making money off it (as is Blizz) so they are forced to limit how much they can nerf area in favor of raiders.<br />
+<br />
+Titan is being designed from the ground up to be different so it 'shouldn't' have this problem but they say players tend to mess over any grand plans they have.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Flaks</div><div class="date">2011-04-19, 09:24 PM</div></div><div class="posttext">Yeah, so then we can go back to balancing this game around requiring at least one class to have MS rather than the way it currently is where all classes can stand on their own (or theoretically). Going back to an archaic design where MS players are guaranteed a spot and balancing the whole game around Mortal Strike is quite possibly the dumbest thing ever. For example, what happens in 3's when a ret paladin and a dk want to play together? Right now the comp is possible and pretty good (not top tier but you can do well with it) but if the game suddenly went back to burst healing with 200% crit heals and a higher than 10% MS then that comp would be impossible. It's a dumb design and I'm glad they fixed it. More comps are viable now at the top end of arena's than there ever has been before and a lot of that has to do with MS being toned down and made a good debuff but not one you balance around.<br />
+<br />
+No, no and no. MS is fine at 10%. And healing isn't even OP at all right now and anybody who actually plays in the arena or rbg's would know this.<br />
+<br />
+Arenas, ok, healing is not OP. But you'd have to be blind to not see people stating that multiple healers makes it absurdly difficult, nigh impossible, to kill a flag carrier. Add the fact that they themselves stated that healing in PvP may be over the top right now and I really don't know why you're arguing against me on this.<br />
+<br />
+Also, considering that most classes have some sort of MS effect already I really don't see why that would be a problem at all. Frost mage, shadow priest, arms/fury warrior, rogues, hunters, death knights have pseudo MS. Couple that with the fact that just about every single 3's comp already contains one of these classes of these specs and Blizzard's own logic is a failure.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gistwiki</div><div class="date">2011-04-19, 09:33 PM</div></div><div class="posttext">You reforge crit to mastery? Are you really insulting GC's understanding of the shaman class? Mastery is only useful on 2 or 3 encounters and it only affects about 2/3 of our heals on those encounters. I reforge mastery to crit, at least until 4.1 drops and improves it slightly :-P<br />
+<br />
+<br />
+Mastery has been better than crit for throughput since before the initial buff from 2.5% per point to 3% per point, it's arguably better than haste for throughput as is, and will definitely be the best secondary stat for throughput once 4.1 hits. Where have you been? &gt;.&gt;<br />
+<br />
+@ Notos - EJ has been rather off for resto shaman information since mid-late wrath. Things have been beginning to get better, but it's still not a terribly good source of information. As strange as this'll sound, you're better off going to the community shaman forums in search of R-sham information &gt;.&gt;<br />
+<br />
+Edit: And even then, if you actually go through and read their threads you'll note that crit doesn't really have a place in the discussion when they're talking about throughput.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tusker</div><div class="date">2011-04-19, 09:38 PM</div></div><div class="posttext">Is it me, or does the Blue posters seem more and more bitter?<br />
+<br />
+Not at all, in my opinion. It's just the community views them under a massive magnifying glass and wrongly cries foul over the slightest thing, no matter how benign it might be. Given the way this community acts I'm surprised they even try.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rennadrel</div><div class="date">2011-04-19, 09:50 PM</div></div><div class="posttext">It's interesting though how critical strike as a whole stat in this game is completely useless for a lot of classes and specs. The only classes that really benefit from it for DPS anyway are Retribution Paladins and Warriors, Agility classes get it regardless so ultimately they wind up with a higher rating then other players, or at least they did in Wrath anyway. Death Knights avoid it at all cost aside from DW Frost, and most caster classes don't look at critical strike until they have optimized more vital stats. It is an RNG stat with only a static opportunity to grant any benefit, all other stats are constant aside from fluctuating buffs from talents, spells and procs which may increase your stats. I think Blizzard should just pitch critical strike and give all DPS specs a flat 25% critical strike chance at level cap. I am sick of seeing critical strike which gives you sweet jack all and doesn't benefit certain specs yet still exists for some reason.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Borcster</div><div class="date">2011-04-19, 09:51 PM</div></div><div class="posttext">Maybe this so-called designer should move his ass from the watercooler and actually do something useful? Whether or not a healer crits for 150% or 200% is a completely useless discussion at this point of the game. Whether or not an assassination rogues crits for 150% or 200% on their poisons is also a completely useless discussion. It's all about how you balance the total output. <br />
+<br />
+What they SHOULD discuss at their watercooler is how they can make crit(since it's the stat in question) more attractive. For example tying it to a buff/debuff, ie. for assassination rogue it could be a buff that increases poison damage done by a small percentage, for holy paladins it could be that their mastery shield stacks with the next incoming heal or whatever. <br />
+<br />
+Would be awesome if he ever discussed anything that is relevant and said &quot;We'll be doing this, this and this to change it. It will affect this and that, but we think that's a better way of doing it. It's not the solution we're looking for, but for now it's better&quot;. Or if they discussed something relevant and said straight out &quot;we won't change x, because it changes y and z&quot;. Instead of spewing out vague bullshit about time and money.<br />
+<br />
+Best of it all would be if they split PvE and PvP balancing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Callace</div><div class="date">2011-04-19, 10:06 PM</div></div><div class="posttext">Why do people think Mages are so hot in PvE? They're in the bottom half in raid statistics. I have a Mage along with several other toons, and I actually have been playing it less because his DPS is lower. Or is this just a PvP argument overwhelming the sum-total of the class?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">loop not defined</div><div class="date">2011-04-19, 10:30 PM</div></div><div class="posttext">Your post implied that his opinon didn't matter to anyone except him; so which opinions do matter then? And the fact that you got defensive over being called out as a Blizzard devotee doesn't really change my stance either.<br />
+<br />
+Funny how you mention egotism and make failed attempts to belittle the intellects of other people.<br />
+<br />
+Edit: The reason people are getting bored of the game lies on the basis that negative criticism isn't acceptable. It just gets filtered and corrupted to paint a pretty picture.<br />
+<br />
+Read his post. He made a clear, universal statement on what is not fun. Guess what? That's bullshit, no matter how you cut it.<br />
+<br />
+Negative criticism is perfectly acceptable. Just stop being stupid about it. If someone makes sweeping judgements and tries to pretend they speak on anybody's behalf but their own, I'm going to call them out on their bullshit. Stop hiding behind this &quot;blizzard devotee&quot; crap and actually argue over the goddamned point.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lilbuddhaman</div><div class="date">2011-04-19, 10:51 PM</div></div><div class="posttext">So, I quit wow at the end of BC as a feral druid (resto in vanilla), hardcore raider, Top 100 US blah blah blah, returned midway through Lich King to raid with my RL brother as a mage, quit after we killed Lich King Regular (and we had done nearly every achievement available before it, aside from a perfect Trial run 25). I didn't like when they nerfed the most perfectly balanced fight in the game (Kael), nor when they removed keying from BC, and I didn't like much of anything in Lich King save for a few fights. The actual Lich King Raid was crap, an empty rushed Black Temple ripoff with skulls on everything...<br />
+<br />
+ANYWAYS<br />
+<br />
+I still check out the updates about the game on this site, and all I can wonder is &quot;what in the hell are they doing with this game?&quot; It seems like on a weekly basis classes are getting major coefficients bounced around, damage scaling changed huge numbers on a whim, and batshit insane stuff like druids losing root break. All I can wonder is, how can anyone NOT say that this game is a broken mess, and that the devs truly have no clue what is going on ? If it wasn't clear from Lich King, all the real assets of blizz are being put into Titan or whatever its called... What % of art assets are still being recycled ? Better yet, what assets are even new ? Every mob I see in screenshots is just an old mob with feathers/fire/recolor added. Set pieces went to shit a LONG time ago. (With the exception of warlocks and warriors who for the most part get a &quot;good&quot; set).<br />
+<br />
+And the whole homogenization thing ? Please. To any PvE player, you basically have the choice of 4 different mechanics/rotations, sprinkled between all the classes/specs. It feels the same, it plays the same, its just blah. And for PvP, I dunno, never got into it, but it always felt like RPS...<br />
+<br />
+As far as &quot;some rogues might like to apply poisons for their damage&quot;. These are also the people that don't raid, don't know/care about what does the most damage, etc. They're casuals.<br />
+<br />
+well, no one will likely read this but its been a while since I checked on this game. (and damnit I really wanted FF14 to not suck, maybe the PS3 release will breath new life into the game). Anyone have any info/details on Rift's &quot;endgame&quot;?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mtawney1313</div><div class="date">2011-04-19, 11:01 PM</div></div><div class="posttext">Anyone have any info/details on Rift's &quot;endgame&quot;<br />
+<br />
+Haven't made it to endgame yet but just the levelling aspect of Rift was enough to make me quit Wow</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CrenVerdis</div><div class="date">2011-04-19, 11:11 PM</div></div><div class="posttext">Just a sidenote...<br />
+Please don't take the slippery slope to premium accounts. I don't like it when I have to read &quot;via curse premium&quot;. That makes me nervous.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Also please don't ban me because I don't like the company that pays checks and servers. Information have to be free and chances as equal as possible!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tusker</div><div class="date">2011-04-20, 12:02 AM</div></div><div class="posttext">Does anyone else feel like all the banter over balancing classes, pvp vs. pve -- all the banter over &quot;this blue said this and that, etc&quot;... none of that matters if you're able to play the game with friends, or in a guild with friends, and you raid (or maybe run heroics) and enjoy it? My guild (my friends) are 5/12 HC and I've never had more fun raiding (i'm a healer, btw). It's at least as good as I remember in parts of Vanilla and BC.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4924c6743e</div><div class="date">2011-04-20, 12:35 AM</div></div><div class="posttext">ITT: People expecting GC to outright say &quot;We think crits are a problem for [Your Class Here]. We are going to buff [Your class here]. You sure deserve it.&quot;<br />
+<br />
+This isn't about you fishing for buffs. It's an insight into the design and design problems of a game like World of Warcraft. It's about what a designer must consider. NOT some list of planned changes for YOUR class.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Calibar</div><div class="date">2011-04-20, 12:37 AM</div></div><div class="posttext">Honestly when I chose to play a warrior I never once in my mind thought, oh I can crit more than most other people and what not, hell I didn't know what crit was. I chose to play a warrior because 1 he wears plate, 2 no spells and 3 he had a sword and shield(changed now) <br />
+<br />
+I didn't even know there were differences in crit damage until now. So it really doesn't bother me in the least.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dalanos</div><div class="date">2011-04-20, 12:58 AM</div></div><div class="posttext">So basically I need to stack the fuck out of crit on my warrior to atleast seem like a threat to healers since they won't be buffing MS. Got it. Because i'm sick of trying to &quot;keep the healer busy&quot; while my team tries to kill the efc and have the healer stand there and /laugh and /no at me while keeping everyone alive.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">v1ze</div><div class="date">2011-04-20, 02:14 AM</div></div><div class="posttext">&quot;No whining about the choice of topics we cover.&quot;<br />
+<br />
+...and then Blizz fires back at the community.<br />
+<br />
+&quot;This was back when all the designers presumably played rogues instead of mages, which according to the forums is what we all play now (which makes our dungeon testing interesting, I gotta tell you.)&quot;<br />
+<br />
+Dear Blizz,<br />
+<br />
+ugh, I realize Blizz is cynical now but you're still the developers. You aren't required to act like bitches, it's on your own accord.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Steampunk</div><div class="date">2011-04-20, 02:45 AM</div></div><div class="posttext">Haven't made it to endgame yet but just the levelling aspect of Rift was enough to make me quit Wow<br />
+<br />
+Likewise!<br />
+<br />
+I'm pretty disappointed here. Seeing &quot;Dev Watercooler&quot; garbage like this just reminds me that Ghostcrawler is a terrible choice for Lead Designer. I'm not allowed to complain about the topics he writes about, yet this jerk's able to talk trash about me as a player?<br />
+<br />
+Screw that noise. I won't be coming back to WoW until his ego gets gut-checked.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xayla</div><div class="date">2011-04-20, 02:54 AM</div></div><div class="posttext">Is this guy on fucking dope or what.... the shit he says over the course of time doesn't even add up.<br />
+More burst damage.. yeah that's the plan.<br />
+<br />
+The game wasn't this fucking broken until he decided to start &quot;fixing&quot; it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zakbel</div><div class="date">2011-04-20, 04:34 AM</div></div><div class="posttext">Is this guy on fucking dope or what.... the shit he says over the course of time doesn't even add up.<br />
+More burst damage.. yeah that's the plan.<br />
+<br />
+The game wasn't this fucking broken until he decided to start &quot;fixing&quot; it.<br />
+<br />
+Yup, lets go back to vanilla. I can 1 shot ppl on my enhance shaman with Hearld of Woe. While i try to heal 30 dps in said enhance spec, thansk to no dual spec. Oh, not to mention the fact that you NEED 39 other ppl on at one time just to raid.<br />
+<br />
+Yup the game was perfect at release. World PVP only, no rewards for doing it. No end game raiding unless you were the 5% of the server population that passed the application process to get into a raid guild. Only 1 class could tank, hybrid heal/dps were expected to be healing only in raids, but their raid gear spread out their stats as if they were suppose to be doing both at the same time.<br />
+<br />
+Yup.... perfect..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb8551489e4</div><div class="date">2011-04-20, 04:36 AM</div></div><div class="posttext">You idiots realize he isn't the one making all the changes?<br />
+If you don't like the game, or used to but dislike where it's headed, why are you still here mocking the devs?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Beachcomber</div><div class="date">2011-04-20, 04:43 AM</div></div><div class="posttext">back when all the designers presumably played rogues instead of mages, which according to the forums is what we all play now<br />
+<br />
+He jokes, but there is a deep feeling of resentment amongst the player base for the pvp imbalances which continue to proliferate in this game.<br />
+<br />
+Right now, there is an unreasonably high frost mage representation and with good reason. They have a number of tools to lock down the opponent...too many tools. Then when you expect some significant nerfs to abilities like Deep Freeze, they instead get buffs to Ice Lance and Frostbolt which will make their shatter combos hit that much harder.<br />
+<br />
+Is Ghostcrawler incompetent? Tough to say. You can add numbers all day long and miss out on some critical numbers, like class/spec representation in arena and battlegrounds. You can also miss out on spell/counterspell issues, like paladin bubbles, ice block, instant cast heals. The list goes on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">slosh</div><div class="date">2011-04-20, 04:57 AM</div></div><div class="posttext">I can't for the life of me figure out why healers are complaining about the possibility of crit healing for 200%.<br />
+<br />
+I cast a heal. I know how much it heals for. I judge which heal to cast based on that information. Down 30k+? Big slow heal incoming ...<br />
+<br />
+WHAT! DOUBLE THE AMOUNT!?!? OMG!! DAMN YOU BLIZZARD AND YOUR RANDOMNESS!!<br />
+<br />
+Seriously, where's the logic in that? You were going to cast the spell anyway, right? What so now that you get more healing than you expected, suddenly you don't want to cast it?<br />
+<br />
+Furthermore, for pallies the synergy with our mastery would leave larger bubbles on our target while holy priests have larger hots/shields. HoTs critting won't change much, and apparently shaman already like the stat. :)<br />
+<br />
+There is literally no downside to crit for healers UNLESS you assume that you'll get a crit. None. Assume = bad player. Crit for 200% is a good thing because it will help balance how players value different stats.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Explosion_Rex</div><div class="date">2011-04-20, 05:43 AM</div></div><div class="posttext">So basically I need to stack the fuck out of crit on my warrior to atleast seem like a threat to healers since they won't be buffing MS. Got it. Because i'm sick of trying to &quot;keep the healer busy&quot; while my team tries to kill the efc and have the healer stand there and /laugh and /no at me while keeping everyone alive.<br />
+<br />
+Hahaha! This! So much this! It's really sad that this is the case in every BG I do.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pantelija</div><div class="date">2011-04-20, 06:02 AM</div></div><div class="posttext">You idiots realize he isn't the one making all the changes?<br />
+If you don't like the game, or used to but dislike where it's headed, why are you still here mocking the devs?<br />
+<br />
+Explain what does LEAD SYSTEM DESIGNER mean to you , developer that makes coffee breaks changes right ? &gt;.&gt;<br />
+<br />
+I dont remember when was the game this unbalanced and sad part is blizzard thinks this is the most balanced season of them all which shows that they are clueless and have 0 touch to reality .</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hungrydingo</div><div class="date">2011-04-20, 06:08 AM</div></div><div class="posttext">No one said the devs all played mages... it's obvious based on balance they all play Mages, DKs, and Warriors.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc006fb91b8d</div><div class="date">2011-04-20, 07:15 AM</div></div><div class="posttext">Explain what does LEAD SYSTEM DESIGNER mean to you , developer that makes coffee breaks changes right ? &gt;.&gt;<br />
+<br />
+I dont remember when was the game this unbalanced and sad part is blizzard thinks this is the most balanced season of them all which shows that they are clueless and have 0 touch to reality .<br />
+<br />
+This game is not made or balance only by one person! It's a team! GC is only the responsible and the face of the team. Don't know how his team work but or they get ideas and GC have the final word or they brainstorming and all agree with one idea after debate. Ofc GC as lider give the face for the change.<br />
+<br />
+IF the team sucks? That other story.<br />
+<br />
+And btw did you play wowlk when palas were imortals and kill you with one fart?<br />
+You remember vanilla when many class oneshot others?<br />
+You remember raids when you bring class only for buffs and other only for debuffs while the rest was there for dps and do the real fun?<br />
+You remember the days when only one class chould tank and the rest sucks or only there for aoe trash?<br />
+You remember when warlocks were gods and noone could kill them because overpower fear.<br />
+I can continue all day..<br />
+<br />
+I can't say this game is perfect balance but is way better balance now then few year ago! All 4 tanks are good, All healer can do their job, almost all dps specs can raid.<br />
+The game is way more noob friendly abd maybe that is what some ppl don't like because casuals don't have to play the game 24/7 to be good at his job. <br />
+<br />
+Anyway I think blues have to talk about all aspect of the game and crit is one aspect of the game. This kind of talk is to make ppl talk about one subject so they can see what wowplayers think about something they are reviewing or will. This is not to talk about nerfs and buffs. For that they have enouth QQ on foruns. they don't need to post about mages buffs and nerfs because people do it without anyone ask but they need this kind of post so ppl talk about crit! I think I made my point.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Theronus</div><div class="date">2011-04-20, 07:22 AM</div></div><div class="posttext">homogenization is something we fight against all the time<br />
+<br />
+made me lol so hard, damn!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc093ccd014a</div><div class="date">2011-04-20, 08:19 AM</div></div><div class="posttext">when he says that 10% haste gets your heal 10% faster to the target, he is correct. But when he says that 10% crit you heal for 5% more it seems wrong imo, shouldnt it be that 10% of the time you heal 5% more?<br />
+<br />
+is my assumption wrong?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce02695a3d4</div><div class="date">2011-04-20, 08:57 AM</div></div><div class="posttext">10% of the time it's 50% more, so 5% more in total.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Taleas</div><div class="date">2011-04-20, 09:13 AM</div></div><div class="posttext">Every time I hear this dude talking I think &quot;ummm ok&quot;.<br />
+<br />
+Then I look at the game again and think &quot;ummm ooook? Wait, LOLWUT?!&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nibelheim</div><div class="date">2011-04-20, 09:57 AM</div></div><div class="posttext">Ofcourse people wan't to see other &quot;thoughts&quot; than &quot;uhm, we're still trying to figure out how to balance stuff, can't spend time on actual content&quot;<br />
+<br />
+People wan't awesome new features and additions, not the same old bs, classes will never be balanced, accept it and add content that doesnt evolve around said classes beeing balanced or not.<br />
+<br />
+An interesting point. Their topics probably stem from the sheer amount of posts on PvE/PvP/Class Role forums over the tiny differences in each spec, each stat, each encounter, etc. While balancing the game is a good thing, they seem to be focusing too much on it. Some topics on changing WoW in terms of features / entertainment value / extras / new BGs / etc would probably be far more popular than &quot;Yeah, we thought of boosting this one stat and reducing this other one, but it's kind of something we don't want to do&quot; blogs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocef71e99c15</div><div class="date">2011-04-20, 10:40 AM</div></div><div class="posttext">Healers do not like randomness. Crits are random. I would rather every heal heal for 25% more than 25% of heals heal for 100% more.<br />
+<br />
+This is the same reason procs that don't regenerate mana aren't fun for healers. They add a level to the game that healers don't want, that we don't have any control over--the thing healers want is control.<br />
+<br />
+This is the exact opposite of what good healers want. We want MORE control, not less.<br />
+<br />
+I agree with you, and your example of procs that don't generate mana is a good point.<br />
+<br />
+I really think that if they make this change for healers, they should at the very least wait until nextg expansion, not throw it in mid-expansion. It is going to be a big deal for healers (whether you like it or not, personally I don't).<br />
+<br />
+The main problem with such a crit change as GC suggested is that it is going to affect different healer classes wildly differently, and thus upset the game balance: Those who rely on many small heals, like HoTs, like for example druids, will get a lot of benefit out of it. Classes relying on fewer big heals, like pala, is going to get less benefit out of the change.<br />
+<br />
+Secondly, it is going to throw off spell balance wildly, and any current rotation will be thrown off the board as some spells (again - HoTs more than anything else) will benefit more than other, and classes that currently rely on a mix of different spell may end up having to spam just one spell. Holy priests may end up Renew spamming like in ICC again... stuff like that.<br />
+<br />
+GC's post makes me worried that Blizz doesn't realize the extent of such a change. I hope they don't just rush into it. Wait until next expansion, if you're going to do it at all!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pretorian</div><div class="date">2011-04-20, 11:24 AM</div></div><div class="posttext">Not at all, in my opinion. It's just the community views them under a massive magnifying glass and wrongly cries foul over the slightest thing, no matter how benign it might be. Given the way this community acts I'm surprised they even try.<br />
+Given the way devs act, I'm surprised the community still tries...<br />
+<br />
+Q: What is the difference between being mugged on the street an being milked shamelessly by Blizzard ?<br />
+A: Mugging is faster and less painful. <br />
+<br />
+Most of you cannot understand why GC keeps being evasive... Really ?! The longer he talks, the more money they make. The more money they make, the more games they can develop which again, bring more money. It's just business, don't take it personally.<br />
+Yes, there is also the positive side where there's the desire to create something new, different, even unique; the desire to make other people happy, the hunger for fame and gratitude. Unfortunately, that is only valid for the beginnings as in the society we live in today, money overshadows almost everything else.<br />
+My point is: do you think CG is doing a very bad job ? I think he's doing a very good job. He's not there to keep you happy, he's there to keep you paying. For those of you who want to believe something else, please do, whatever makes you happy (at the end of the day).<br />
+<br />
+I just stopped paying, after 6 years. It's the only way. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chozobo</div><div class="date">2011-04-20, 12:11 PM</div></div><div class="posttext">So wait I didn't know this before...ALL healer classes have 150% chance to crit with offensive spells/non-physical attacks? Including Rets/Moonkins?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">valiorik</div><div class="date">2011-04-20, 12:15 PM</div></div><div class="posttext">Could someone with premium Curse (if there's atleasr one person in the world who desided to pay them) giveaway beta key for Age of Empires Online please?<br />
+<br />
+---------- Post added 2011-04-20 at 01:19 PM ----------<br />
+<br />
+<br />
+And btw did you play wowlk when palas were imortals and kill you with one fart?<br />
+You remember vanilla when many class oneshot others?<br />
+You remember raids when you bring class only for buffs and other only for debuffs while the rest was there for dps and do the real fun?<br />
+You remember the days when only one class chould tank and the rest sucks or only there for aoe trash?<br />
+You remember when warlocks were gods and noone could kill them because overpower fear.<br />
+I can continue all day..<br />
+<br />
+I felt very cool and unique buffing in vanila. I felt like my character is asom and only he can perform the task. Now I can replace anyone with virtualy any other class. Classes lost their asomnes long ago. It could be just: tank, healer, meele dps, range dps now not to confuse people.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">slosh</div><div class="date">2011-04-20, 01:45 PM</div></div><div class="posttext">I felt very cool and unique buffing in vanila. I felt like my character is asom and only he can perform the task. Now I can replace anyone with virtualy any other class. Classes lost their asomnes long ago. It could be just: tank, healer, meele dps, range dps now not to confuse people.<br />
+<br />
+That was a giant waste of time back in vanilla and lead to some people I knew rerolling because they didn't want to sit there casting kings or salvation NON STOP.<br />
+<br />
+And if you're really claiming that the current environment could be broken down into 4 roles and completely ignore the classes, then you obviously are not raiding or pvping. There is still plenty of flavor in the different classes, with different mechanisms for both what your casting and how you manage your resources.<br />
+<br />
+We are in a much, much better state now than we were when this game came out. People complaining about balance and homogenization now obviously didn't go through the inbalances and frustrating aspects of vanilla, or the pains that raid leaders in TBC went through trying to figure out not only who to invite due to buffs/debuffs, but also which group everyone should be in.<br />
+<br />
+<br />
+But back on topic, I would welcome the crit changes even though as a Pally healer I'd probably be the largest victim of overhealing. Again, if you decided to cast the heal in the first place, the fact that it crit should just be gravy. If you're sitting there counting on the spell to crit, then you're a bad player.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc006fb91b8d</div><div class="date">2011-04-20, 01:46 PM</div></div><div class="posttext">I felt very cool and unique buffing in vanila. I felt like my character is asom and only he can perform the task. Now I can replace anyone with virtually any other class. Classes lost their asomnes long ago. It could be just: tank, healer, meele dps, range dps now not to confuse people.<br />
+Ok if you were one of the guy who like spread one spell over all raid every few time just to buff them instead doing real dps and big numbers. Its fine not all should like to do dps and big numbers that why healers exists. But bring you over a raid just because you buff or not because you're a good player is just stupid. You telling me that you want that system because if you chose one class you have your spot saved even if other player is way better then you. ok. thanks god devs don't thing like that. Caring ppl days are over. Rl now is easier job and you don't have to care about your buffer that don't show up today and let 24+ without possibility to raid because their buffs are mandatory. If someone don't show up you can fit their role easily with someone else and raid even if someone don't come.<br />
+But anyway thats not balance. Balance is all class who have the role dps actualy can do their job well, healer same and tanks idem.<br />
+<br />
+Edit: Crits on healers are allways good. If crit overheal that not a big problem because you did not wast mana to heal more but if you filling up a tank and your spell crit and heal all hp tank that is lovely and fun because you see a big number and save one gcd/mana. Healer should not heal base on crits. Crits are there to give some random to fight and help you. Sometimes helps, sometimes not. In the end healer should allways expect to heal 2 times but if 1 spell crit then you don't need to heal the second. That is fun thing and bring other thing to the game to skill. Like respond to a crit. when you crit you stop cast if you overheal or change next cast to a less expensive.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tonystark</div><div class="date">2011-04-20, 03:40 PM</div></div><div class="posttext">The constant change in abilities and spells is never ending with this game. Every expansion they have reworked them and this time around has been a CF. Adding stats, combined stats, removal of stats, talent tree reduction, three different glyph slots etc etc etc. They're never going to get the classes worked out because they constantly try to reinvent them every expansion. Come next expansion they are going to revamp it all over again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">EndOfDays</div><div class="date">2011-04-20, 03:53 PM</div></div><div class="posttext">So does Ghostie play a Mage or what?<br />
+<br />
+Thats why mages are so cheesy with all those cc's they have is a damn joke alrdy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8e35e9fe46</div><div class="date">2011-04-20, 03:55 PM</div></div><div class="posttext">Just what fire and frost mages need, bigger crits!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3c1a940126</div><div class="date">2011-04-20, 03:58 PM</div></div><div class="posttext">If poisons crit for 200% damage and mutilate gets nerfed by 10%..... is the game more fun?<br />
+If enchance get 200% crit LBs and stormstrike is nerfed by 10%.... is the game more fun?<br />
+<br />
+The fact is, 5 minutes after they make these changes, nothing really matters. They will then have to spend a month trying to rebalance everything to deal with the increased damage of these new 200% crits. But in the end, is the game more fun?<br />
+<br />
+They spend far to much time talking and thinking about these ´deep´issues and are not adding enough FUN things to the game. These issues are not ´deep, they are negligible issues.<br />
+<br />
+I think GC is too caught up in spreadsheets and needs to step back like the original designers and constantly ask ´does this make the game more fun?´ 200% crit poisons and 10% nerf to mutilate does not make the game more fun, no matter how ´deep´it s.<br />
+<br />
+I couldn't have said it better myself.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">shokter</div><div class="date">2011-04-20, 04:22 PM</div></div><div class="posttext">I've been playing WoW for nearly four years. Maybe I'm just easy to please but imo this game just keeps getting better and better. GC's blogs are great. There has not been one that I do not find interesting. These blogs are not a place to go to get an inside scoop on upcoming changes to your class or even to game as a whole. They are simply an insight into the development process, and one that is pretty unique. I can't think of many (or any) other games that give this sort of glimpse into how ( NOTE: 'how' ...not 'what') they think about the game. <br />
+<br />
+And wow...all you people complaining about the soft pokes he takes at the community (the whole 'we used to all play rogues not we are all fr.mages) need to relax and learn to laugh at yourselves a little. I know I am.<br />
+<br />
+ps I do not play a mage or warrior (in pvp) or any other class considered OP. <br />
+<br />
+This game is fine (read: fine not perfect) and the dev blogs are a way of showing that wow is a more a process than a finished product. The fact the game is constantly changing is, in large part, why it is still around. I appreciate being given an insight into that process.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Meera</div><div class="date">2011-04-20, 04:42 PM</div></div><div class="posttext">Call me idiot but, the devs says &quot;no promises&quot; but they do it:<br />
+<br />
+<br />
+Letting rogues and Enhancement shaman get 200% crits with non-physical damage would be a larger change, and not the kind of thing we would do mid-expansion. But it’s definitely something we’re considering for the future.<br />
+<br />
+wtf</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Freese</div><div class="date">2011-04-20, 04:54 PM</div></div><div class="posttext">Call me idiot but, the devs says &quot;no promises&quot; but they do it:<br />
+<br />
+<br />
+<br />
+wtf<br />
+<br />
+&quot;Something we're looking at&quot; =/= &quot;Something we are going to do.&quot;&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">slosh</div><div class="date">2011-04-20, 05:31 PM</div></div><div class="posttext">The constant change in abilities and spells is never ending with this game. Every expansion they have reworked them and this time around has been a CF. Adding stats, combined stats, removal of stats, talent tree reduction, three different glyph slots etc etc etc. They're never going to get the classes worked out because they constantly try to reinvent them every expansion. Come next expansion they are going to revamp it all over again.<br />
+<br />
+I've been playing since Vanilla, and I feel like each expansion has been an improvement over the prior in terms of balance while also maintaining enough variety in the classes to keep them from all being the same.<br />
+<br />
+The removal/combining of stats was a welcome change imo. Before you'd occasionally see gear from a previous tier be better than the next simply because the stat allocation on some items would be horrific for certain classes/specs. Not anymore. With primary stats driving more secondary stats (e.g. Int -&gt; SP) and the introduction of mastery, they've finally made a system that's simpler to understand, allowing people to quickly look at gear and determine if it's an upgrade rather than go to a spreadsheet to figure it out.<br />
+<br />
+This discussion about crit is just further refinement. I can understand their hesitation of doing it mid-expansion because it might require adjustment of numerous classes, specs, or spells to keep things balanced (e.g. PvP and Mortal Strike in his post).<br />
+<br />
+But what I like most about these blogs is not that you get an insight into what they are looking at, but you hear some of the logic behind why what seems like a simple idea to implement becomes so much more complex due to ramifications you hadn't considered but they are truly concerned about. Being a programmer myself, I can relate.<br />
+<br />
+To me, it shows time and again that they want to improve the game. There are tons of ideas on how to do it, but knowing that they thoroughly think things through is comforting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">myrddinde</div><div class="date">2011-04-20, 06:53 PM</div></div><div class="posttext">I bet when I lie in bed with that cute 20 year old hot brunette and am about to die peacefully my thoughts will be about this article - can I have those 3 min of my life back? The guy must have written political speeches - so much text so little info.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TurdChef</div><div class="date">2011-04-20, 07:24 PM</div></div><div class="posttext">Homoziation is a dirty a word.<br />
+<br />
+Age of Empires was an awesome game, until v3 ruined it a bit. I hope the online version is as good.<br />
+<br />
+...and guess who was the game designer for it? Mr Blue crab himself, Ghostcrawler</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">perera</div><div class="date">2011-04-20, 09:07 PM</div></div><div class="posttext">Another completely milquetoast blog from GC, this time spending way too much space talking about a non-issue nobody actually cares about, as opposed to his usual fare of spending way too much space taking absolutely no concrete position and spouting platitudes about an issue people actually do care about!<br />
+<br />
+While what you said about his posts is true, I'm not sure which one is the worse... his 'milquetoast blog' does get casual people thinking about things they normally wouldn't, whereas when he replied to threads he usually just provided a short answer to simple questions, and avoided questions which required &quot;I don't know&quot; or &quot;it wouldn't work&quot; answers. So I'd argue that what he wrote before served no purpose but to show he was on the forums, but what he's doing now benefits at least the casuals.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">iidesu</div><div class="date">2011-04-21, 03:42 AM</div></div><div class="posttext">this joke wasnt bad</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Banzhe</div><div class="date">2011-04-21, 07:34 AM</div></div><div class="posttext">We’ve been considering whether healing is too strong in PvP anyway. You may have noticed that we made the tooltips for Mortal Strike and equivalent debuffs intentionally vague for 4.1. As I write this, those debuffs are still at 10% healing, but we’re concerned that healing is too hard to counter and we might change that number. Changing it back to 50% would probably lead to the Mortal Strike debuff being mandatory for Arena comps again, but we never got much of a chance to see its effects at say 20%.<br />
+<br />
+Yes, cause that won't make it &quot;mandatory&quot; to have an arms in the comp (Above 2s) <br />
+Blizz is just full of shrewd people.. (NOT), when will you face the fact that you can't balance it out EVER until you start working on that 4th tree for all classes that's purely for pvp..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Digibytes</div><div class="date">2011-04-21, 06:20 PM</div></div><div class="posttext">GC took the long boat to China to announce the prelude to a PvP healing nerf.<br />
+<br />
+Amusing as it is to watch that message go right over most of their heads, I suppose you can't blame people for not seeing it when he's going off about homogenization and other side-winding nonsense aimed purposely at not just spitting it out. Some of them got it, but most of them are in la-la land.<br />
+<br />
+He's got to aim at crit to nerf healing because that's the only thing that won't touch PvE and right now, they can't afford to piss them all off. They can't even afford to piss off PvP healers either, but it looks like that's what he's up to next. Not that this should even be an issue, but they're going to make it one whether healers like it or not.<br />
+<br />
+---------- Post added 2011-04-21 at 02:37 PM ----------<br />
+<br />
+<br />
+Homoziation is a dirty a word.<br />
+<br />
+Age of Empires was an awesome game, until v3 ruined it a bit. I hope the online version is as good.<br />
+<br />
+...and guess who was the game designer for it? Mr Blue crab himself, Ghostcrawler<br />
+<br />
+Yep. Back when he was Greg &quot;DeathShrimp&quot; Street.<br />
+<br />
+Today he's a crabby dev at Blizzard who listens to nonsense that healers are OP in PvP and must be nerfed. Talk about losing sight of what the word NEW idea means. All I see is changing stuff around and nothing NEW in the way of ideas that challenge people but don't screw with character identity. <br />
+<br />
+I think GC is capable based on the work done thus far with Vashj'ir, Throne of Tides, etc. But I think he surrounds himself with people who are too caught up in being OP themselves that work within that company.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Macross74</div><div class="date">2011-04-24, 03:57 AM</div></div><div class="posttext">Ghost crawler is an Idiot who has lost the plot.<br />
+<br />
+The designs of the class's are horrible, the extreme grinding of the game is reason i have stopped playing.<br />
+Their is no originality in the game.<br />
+<br />
+Raiding sucked as a healer as most of the 1st lot of raids require so much timing to make it fun.<br />
+Any lag or misshape cause a wipe and i keep up on reading the forums and see no change to this design.<br />
+The only way cata will become fun is if GC and his idiot crews is.<br />
+<br />
+1. split pvp and pve (this is a must)<br />
+<br />
+2. bring back casual into the game (i never see this happening)<br />
+<br />
+3. GC and is idiots are removed and bring new people who understand what are the major failings of the game and try and repair them</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

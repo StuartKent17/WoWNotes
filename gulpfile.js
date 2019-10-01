@@ -2,6 +2,7 @@ const gulp  = require('gulp');
 var replace = require('gulp-replace');
 var concat = require('gulp-concat');
 var html2txt = require('gulp-html2txt');
+var cheerio = require('gulp-cheerio');
 
 var html2TextOpts = {
     ignoreHref :true,
@@ -49,6 +50,20 @@ gulp.task( 'default',
       defaultTasks.map(function(name) { return name; })
    )
 );
+
+var news_path = "source/fansites/news/*.html";
+var news_path_txt = "source/fansites/news_txt/";
+gulp.task('news', function () {
+  return gulp
+    .src([news_path])
+    .pipe(cheerio(function ($, file, done) {
+      
+      $(":root").replaceWith($('.post').eq(0))
+      
+      done();
+    }))
+    .pipe(gulp.dest(news_path_txt));
+});
 
 
 // add a function that combines the files but prefaces it with Patch [Filename], I hope I don't have to go back through and add patch names

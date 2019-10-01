@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, tthe, behind, t-shirt, hunter, blizzard, employee, side, lol, hand, right, demon, derp, hey, discussion, amphitheater, community, see, myself, engineering, looking, bored" />
+<meta name="description" content="Engineering Community Amphitheater Discussion 
+WoW, Heroes, Battle.Net, and Overwatch engineers talked and answered questions. This was not included on the Virtual Ticket. If you are interested in the more technical side of game design, it is worth watching!  
+ 
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/mx_C7LkB1Q8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt; 
+ 
+ 
+The Overwatch team was putting together a demo of Overwatch in China, but they had forgotten they" />
+<title> Engineering Community Amphitheater Discussion [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Engineering Community Amphitheater Discussion</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1895006.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1895006-Engineering-Community-Amphitheater-Discussion">Engineering Community Amphitheater Discussion</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-11-08, 07:59 AM</div></div><div class="posttext">Engineering Community Amphitheater Discussion<br />
+WoW, Heroes, Battle.Net, and Overwatch engineers talked and answered questions. This was not included on the Virtual Ticket. If you are interested in the more technical side of game design, it is worth watching! <br />
+<br />
+<br />
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/mx_C7LkB1Q8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br />
+<br />
+<br />
+The Overwatch team was putting together a demo of Overwatch in China, but they had forgotten they couldn't show anything with blood. The game had to be patched over weak wifi in China to get rid of the blood. The team realized that there was one point in the code where the client determines if you shot another unit or the environment, a simple if statement. They realized they could change one byte of the executable to get rid of the blood. They wrote an executable to load the game client, find the byte, flip it, and save the modified client. It worked and Chinajoy got their Overwatch demo. <br />
+At Warlords launch, things were a little rocky. The team had all of the hardware they needed, but because WoW is an older game, each blade had to be dedicated to certain parts of the game. The team set up the blade configuration to what they thought would work well, but they weren't very particular about what kinds of blades were in each pool. They didn't have enough of the high memory blades allocated to instances, so they were running out of memory. Running in your garrison would spin up a new instance, resulting in hundreds of thousands of instances. It took the team around 8 hours to go into the datacenters and pull blades, add memory, and move blades between clusters. This result in some downtime, but when everything came back up it was much more stable. After that there were just software issues. <br />
+The Heroes of the Storm engine is the Starcraft engine, so when the team wants to make changes they have to consider all of the user created mods that may be using the functionality. They can't change things that would harm user mods in the Arcade. The team built lots of chains and shackles but everyone is okay with it. Thankfully no one leaves Team 1, so all of the people working on it are familiar with things.<br />
+The original WoW developers decided that there would be an array to hold your inventory. The first several entries are things that end up on the paper doll, your head and leg slots and such. After that comes your inventory. At some point they wanted to add a bank to the game, so they added that to the end of the array. Players shouldn't be able to access their bank anywhere in the world, as it would break the code. This was handled by adding lots of statements in different places in the code, defining what the array position was where the inventory ended and where the bank begins. This value was hardcoded all over the place, but it isn't just a simple search to find them all. Some math logic may rely on it being constant. If you want to add slots to the backpack, who knows what you are going to break? It becomes very buggy and error prone, and likely that you are going to make a mistake. This mistake would break the game in a way you don't like. As a result, they would have to put amazing engineers that could be working on new features on a task to look through thousands of lines of code to find all of those cases, as well as the QA department testing every edge case in the world to ensure the change doesn't break anything. This is how we ended up with a fixed size backpack. <br />
+The team would rather fix things when they come back to work on related new features. When they worked on cross-realm zones, they rethought how they handed off players between realms. They ripped out lots of the old code and redid it, resulting in being able to add features in the future without having to worry about 16 slot backpack style bugs. This allowed for seamless instancing for garrisons, along with some new things in Legion that have yet to be revealed. <br />
+All of the games are like legacy code that the Battle.Net team has to support. When the team wanted to increase the number of friends you could have on Battle.Net, they had to go and find all of the places where there was a constraint in the games. The UI in all of the games may have constraints on how many friends you can have and see. All of the games have to be patched to support any new features or changes. The team can never do anything that would require all of the games to patch simultaneously, so changes have to be backwards compatible to some effect. <br />
+It's reasonable to assume the WoW team is looking at new technologies, including DirectX 12. No timeline or announcements yet though. <br />
+Heroes of the Storm is a very data driven game. The design team comes to the systems team and wants to do something fun like a hero that is controlled by two different players (and show it off at Blizzcon). The team panics a little bit, thinks about it, and then gets it done. <br />
+Engineers don't ever want to tell design no. Designers are amazing at what they do and have great creative ideas, so no one wants to tell them no. Especially when the designer will find their own way to do it. There is a picture that gets passed around of a trash can with a iron sitting on top of it. The iron is turned on and there is a coffee pot on top of it, with spaghetti in the coffee pot. Problem solved, they can make spaghetti. <br />
+It is really important to figure out where the designers feel pressure when designing the game and try to make that pressure go away. As soon as you have a designer looking at a dialogue box with 128 checkboxes, they are no longer thinking about the awesome experience they want to deliver, they are thinking about what the difference between LEAVE_WORLD_CANCELS and ENTER_WORLD_CANCELS. (Where is the player when they are not in the world?!)<br />
+Overwatch has strike teams, where lots of people from different disciplines come together to work to get a feature done. With Overwatch, that is usually a hero. They get a gameplay engineer, engine programmer, designer, animator, and effects artist to make Hanzo. They have to bring in the Sound team which is always stressed. Everyone works together to perfect the gameplay, get feedback from each other, feedback from the entire team, and finally feedback from the rest of Blizzard and beta players. A lot of this interaction comes from sitting down and playing through what you are working on together. <br />
+There are two types of heroes in Overwatch: D.Va and not D.Va. They only started working on her a few months ago, not realizing it would take all of those months to get her done. <br />
+The team decided that the designers would eventually ask for something like a rocket that you fire and then control, so they got ahead of it and wrote some code to do that kind of gameplay. Junkrat came along and they thought they had it covered and everything was great. It turns out that all of that had to be redone for D.Va. Bugs came up like jumping out of the mech, but it is still behind capturing the payload, moving along. Another bug resulted in the camera going to 0,0,0 when you jumped out of the mech, leaving you with controlling nothing. <br />
+Engineers and designers have complementary goals. The designer's goal is to ensure that the highest number of players get the best experience. The engineer's goal is to ensure that no one has a bad experience. Think about all of the edge cases and make sure your code can cover them. <br />
+Appear Offline not being ready comes down to some legacy code. It is hard to design it in a way that remains consistent throughout the games. It isn't really hard technically to do. What do you do when your friend is appearing offline but they are in front of you in the game world? Appear Offline really means &quot;I want to hide from my friends so I can play D3 rather than go and raid&quot;, but when you are both standing in front of the auctioneer...<br />
+The team uses lots of standard industry tools like VTune, as well as internally developed profilers. There is lots of automation to test things, like putting 10 heroes in a one lane map and having them fight each other to compare performance over each build. Heroes get changed from build to build, but it gives you a general performance trend and catching catastrophic mistakes. <br />
+Overwatch uses similar profiling tools. <br />
+Any time you are optimizing code there are trade-offs. Your knowledge about optimizations, the time it takes to write optimizations, how maintainable your code is going to be, and what constraints you are going to put on the engineers and content team to solve problems. <br />
+The team has had to make tons of optimizations that took the form of talking to artists to simplify collision geometry. There is no flat surface in a body, so optimizations are needed for performance. <br />
+When the team is trying to solve a design problem, they consider the fantasy they are trying to create, not what is the solution they are trying to write. They want to consider the player experience they are trying to craft. <br />
+At one point in his previous life as a HFT engineer, @kurtismcc (https://twitter.com/kurtismcc/with_replies) saved 120ns on a hash function and people were thrilled. It was a big win. <br />
+The WoW team spends a lot of time looking at if it is faster to read static data out of a table to speed things up by 4-5x, then pat themselves on the back. Then they will do something like launch Warlords, spin up hundreds of thousands of instances, and find out that when you want to shut an instance down you have to crawl over a linked list to find the one you want to shut down. Someone decided hash tables would take too long so they put it in a linked list.<br />
+The teams have likely written five our six profilers to meet the needs of each team.<br />
+Blizzard has identified that they really want to make games stay online longer. They want to think less about engineering like something they throw over the wall and more along the lines of achieving three nines (https://en.wikipedia.org/wiki/High_availability#Percentage_calculation). They have been trying to achieve this internally, especially with WoW, but they are dealing with an older live infrastructure. Battle.Net also has a lot of older infrastructure. The team recently tried to get to a one hour patch cycle and they got down to 1h 45min in NA and 53 minutes in EU. They are getting faster and it would be nice if they could live patch WoW without maintenance one day. <br />
+There is a lot of static data that drives the game, so patch days require copying a lot of that data in very inefficient ways to a lot of places. They are working on improving that process. A lot of maintenance is inefficiently pushing updated code, binaries, and data to remote data centers. After that they need to do live testing, as until recently testing environments haven't been as great as they should be. They also have to take down and bring back servers in a specific order. The team has development environments where they test everything, but that all has to be replicated in the live environment and hope testing accounted for everything. <br />
+There are lots of people that enjoy VR at Blizzard, but they work on amazing game ideas, not adding amazing tech without a good idea. When and if they come up with a good application for VR, they will explore it. If VR will help player immersion it would be cool.<br />
+The team uses Perforce on the Overwatch team, as well as proprietary source control software they wrong for art assets. <br />
+Battle.Net uses Git for all of their code and Jenkins. <br />
+The WoW server team uses Subversion still, but there is talk of moving to Git where there is lots of shared code.<br />
+Team 1 uses Git, Perforce, Jenkins (https://jenkins-ci.org/). (Not Leeroy) <br />
+The WoW UI team looks at the source code to figure out what functions do and occasionally use WoWPedia. There is some documentation for server side Lua, but client side not so much.<br />
+The Lua engine that runs on the server side is worse than not having documentation, as it actively scrapes the code looking for new functions to add so that designers have more flexibility. This means you end up with 17 functions named teleport and having no idea which one is the right one. If it is bad for addon developers, it is much worse internally. <br />
+WoW doesn't use a ton of agile development. A few of the teams are moving to scrum like things. Blizzard doesn't have a lot of consistency between teams internally. <br />
+The Overwatch team was worried about datamining. We found (http://www.overpwn.com/news/85-possible-content-teaser-overwatch-strings) the Progression system 2.0 and even though you can still see it in the Blizzcon demo, it was something they killed 2 days before beta. They realized they didn't like it at all. They did it on such short notice that they left behind some remnants. <br />
+The WoW team knows that as soon as they put data on the CDN we will pull it and go over it with a fine tooth comb. When they were talking about changing over the system to the new content delivery system, they talked about encrypting every single thing to keep anticipation as high as possible. Encrypting everything would mean that they can't patch them, so you would have to completely redownload that content, so the team decided not to encrypt everything. <br />
+It is challenging to create a locked down and secure environment that allows for rapid iteration. Iteration is very important in both engineering and game design, so it is sometimes given priority over locking things down. <br />
+Blizzard games operate at a scale where an innocuous decision will come back to bite you really hard. You want to let players do the /who query in WoW to see who was online, but players were hitting the server really hard. Servers were spending 85% of their time answering the queries because there were so many players online. A good example of the n squared problem. The team has to be sensitive to things like this, as there aren't population bounds like the other games have. <br />
+Legion is rewriting a lot of code so that you subscribe to changes and get them pushed to you, resulting in more responsive servers. During Brewfest, the ram racing quest wasn't very fun, because you could never see the buckets. The server would only update your area of interest every 5-6 seconds, so you would arrive to the bucket's location before it updated and loaded the bucket. The team is trying really hard to improve that in Legion, but it is a lot of work.<br />
+Team 1 - SC2 and Heroes, Team 2 - WoW, Team 3 - Diablo, Team 4 - Overwatch, Team 5 - Hearthstone. <br />
+The teams all want to be on mobile more. Hearthstone has shown that Blizzard can do mobile well. Lots of people wanted to do Garrision missions on mobile devices and the team is aware and wanted that too. <br />
+Blizzard does code reviews across most of the teams and is taking advantage of modern C++ features to make code more readable. Readability and maintainability is an important value for them. Products have to live for a really long time, which is why it is important. <br />
+There is a cheap solution and a right solution and the team supposed to do the right thing, even if it takes longer. You don't want to have to come back and fix things that were done poorly. <br />
+There is a tension between wanting to understand code vs rewriting code that might look messy. If there is code with clearly defined ways to extend it, that is code that is great, even if it is legacy code. <br />
+Overwatch had a lot of people signing up for a constrained beta test. One of the things they want to see is how the code works in different network environment. One person at Blizzcon was playing from Chile and he let them know that it was playing great. The team has even trying playing over a tethered phone and it worked well. <br />
+Open beta weekends are good for crashing servers and exposing bugs. The D3 beta weekend exposed a bug that sent lots of games to a D3 server after it came back from a crash because it appeared to have no load.<br />
+Technology choices that you can get off of the shelf are generic and don't always solve the problems Blizzard encounters when developing games. The team would rather work with constraints they have built themselves rather than constraints someone else built into a tool. <br />
+If there was open source code to solve a problem on the WoW server team, they would use it. If you look at the legal descriptions in the client you can see a lot of the open source licenses from libraries that they use. They try to not reinvent the wheel. <br />
+Having a completed game is a valuable experience if you are looking for things to put on your resume. Passion for learning and variety in what you have done is also good.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Marlamin</div><div class="date">2015-11-08, 10:30 AM</div></div><div class="posttext">YES! Been waiting for this one, thanks chaud and person that recorded it!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce043f44c28</div><div class="date">2015-11-08, 10:33 AM</div></div><div class="posttext">aWeSoMe, thanks</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd55d136bb2</div><div class="date">2015-11-08, 10:43 AM</div></div><div class="posttext">Makes me feel dizzy when I think about how messed up the code of WoW really is.<br />
+It takes them longer to develop an expansion everytime they release a new one... (at least that's my conclusion from this)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nymrohd</div><div class="date">2015-11-08, 10:45 AM</div></div><div class="posttext">Makes me feel dizzy when I think about how messed up the code of WoW really is.<br />
+It takes them longer to develop an expansion everytime they release a new one... (at least that's my conclusion from this)<br />
+<br />
+Not just that but it reminds me of something I always forget. Legally the game needs to keep working for people who have only bought vanilla (or weel, whatever vanilla keys get you access to these days; probably two xpacs back). This must make Q&amp;A such fun . . .</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc89084f456c</div><div class="date">2015-11-08, 10:50 AM</div></div><div class="posttext">this was mighty interesting. I hope to see more of this in the future</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc28280ad8ec</div><div class="date">2015-11-08, 10:53 AM</div></div><div class="posttext">What do you do when your friend is appearing offline but they are in front of you in the game world? Appear Offline really means &quot;I want to hide from my friends so I can play D3 rather than go and raid&quot;, but when you are both standing in front of the auctioneer...<br />
+<br />
+Not sure what the problem is, here. Everyone has the right to privacy, and if you do &quot;get caught&quot; by your guild mates like this, just bullshit something up like &quot;oh sorry I can't stay&quot; and log on an alt or something.<br />
+<br />
+inb4 IT'S AN MMO YOU SHOULD BE A SOCIAL BUTTERFLY PLAYING WITH 40 PEOPLE AT ALL TIMES!!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Easo</div><div class="date">2015-11-08, 10:54 AM</div></div><div class="posttext">So wait, the real reason for Appear Offline not being implemented is because character as such still can be seen by friends? Emm, what? I don't remember people asking for complete invisibility to friends, it was mostly &quot;don't show up on friends list, guild list, etc.&quot;... And as they said, that is not hard to implement. Common, it was promised around 3 years ago, in 2012.<br />
+Also laughed a bit about the missing documentation.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Veilor</div><div class="date">2015-11-08, 11:05 AM</div></div><div class="posttext">So wait, the real reason for Appear Offline not being implemented is because character as such still can be seen by friends? Emm, what? I don't remember people asking for complete invisibility to friends, it was mostly &quot;don't show up on friends list, guild list, etc.&quot;... And as they said, that is not hard to implement. Common, it was promised around 3 years ago, in 2012.<br />
+Also laughed a bit about the missing documentation.<br />
+<br />
+Exactly this. It's actually harder to spot guildies today than in Vanilla. And I don't think people pay attention to other players as much as then. Stupid reason imo. I just want to be able to play alts or other games without them or battle net friends pestering me about things.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tenjen</div><div class="date">2015-11-08, 11:17 AM</div></div><div class="posttext">Now this is some damn good and interesting info</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc443165a3eb</div><div class="date">2015-11-08, 11:35 AM</div></div><div class="posttext">Not just that but it reminds me of something I always forget. Legally the game needs to keep working for people who have only bought vanilla (or weel, whatever vanilla keys get you access to these days; probably two xpacs back). This must make Q&amp;A such fun . . .<br />
+<br />
+That's why they update the Battle Chest. If you buy the &quot;base game&quot; now, you get the WoD code and content up to and including Panderia.<br />
+Basically you only can't get to Dreanor or level above 90, everything else is the same as a fully expanded account.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6771814438</div><div class="date">2015-11-08, 11:49 AM</div></div><div class="posttext">nice! these guys should run main stage! Not Alex safababababi or Mutzen ;-/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Erishkigal</div><div class="date">2015-11-08, 11:51 AM</div></div><div class="posttext">I wish they would do more of this. Explaining why they can't extend the backpack, even though it is highly technical, is a better way than just saying no. No doubt there are other features that people want that are difficult due to engineering.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Smag</div><div class="date">2015-11-08, 12:19 PM</div></div><div class="posttext">I wish they would do more of this. Explaining why they can't extend the backpack, even though it is highly technical, is a better way than just saying no. No doubt there are other features that people want that are difficult due to engineering.<br />
+<br />
+Hope they will updgrade to a full panel moving forward. Super interesting and a very good explanation of the issues that would otherwise be labeled as &quot;blizzard are lazy&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Exerionx</div><div class="date">2015-11-08, 12:39 PM</div></div><div class="posttext">Really cool inside peak at the more technical side of things.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rayaleith</div><div class="date">2015-11-08, 12:59 PM</div></div><div class="posttext">TBH this panel is the main reason I bought the virtual ticket. It was disappointed when they announced it will not be in the package.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaleredar</div><div class="date">2015-11-08, 01:07 PM</div></div><div class="posttext">I'm half-tempted to bookmark this wall of text to save as a response to the average whiny forum-goer that bitches about technical constraints they don't understand.... very simply put &quot;Do you understand anything they said in the first paragraph? No? Well then quit bitching about coding/hardware/whatever constraints you know nothing about.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Febo</div><div class="date">2015-11-08, 01:19 PM</div></div><div class="posttext">Most interesting part of blizzcon so far</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Buildapanda</div><div class="date">2015-11-08, 01:20 PM</div></div><div class="posttext">Yeah we wanted mobile for garrisons... a year ago.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elysia</div><div class="date">2015-11-08, 01:22 PM</div></div><div class="posttext">YES! Been waiting for this one, thanks chaud and person that recorded it!<br />
+<br />
+You're welcome. :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Logwyn</div><div class="date">2015-11-08, 01:30 PM</div></div><div class="posttext">I wish they would do more of this. Explaining why they can't extend the backpack, even though it is highly technical, is a better way than just saying no. No doubt there are other features that people want that are difficult due to engineering.<br />
+<br />
+Only two reasons I can think they don't is there is a section of the player base that would always ask. What's a blade? Array? Three nines? They have to then maybe answer what those are instead of the question at hand. The other is the couch quarterbacking on the decisions for engineering and coding. Things like &quot;why did you do it that way?&quot; and &quot;In my company we always do X if we do Y&quot;. And as we've already seen in this thread a post about documenting. <br />
+<br />
+But I agree it'd be nice to know!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Marlamin</div><div class="date">2015-11-08, 02:02 PM</div></div><div class="posttext">You're welcome. :p<br />
+<br />
+http://marlamin.com/gifs/g/applaudtoast.gif</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ChaosWolf</div><div class="date">2015-11-08, 02:06 PM</div></div><div class="posttext">Hope they will updgrade to a full panel moving forward. Super interesting and a very good explanation of the issues that would otherwise be labeled as &quot;blizzard are lazy&quot;.<br />
+<br />
+ANY problem can and will get labeled as &quot;Blizzard is lazy&quot; by people who think they know more.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kathranis</div><div class="date">2015-11-08, 02:21 PM</div></div><div class="posttext">Great panel, highly recommend actually watching the video, so you get some more of the nuance and jokes and stuff.<br />
+<br />
+It had never occured to me that they would have originally built the game's inventory system as a single array, given how it's presented in the UI, but knowing that's the case it makes a lot of sense. What a clusterfuck.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nerraw</div><div class="date">2015-11-08, 02:27 PM</div></div><div class="posttext">Awesome write-up! This is most illuminating.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+You're welcome. :p<br />
+<br />
+You awesome person, you.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Great panel, highly recommend actually watching the video, so you get some more of the nuance and jokes and stuff.<br />
+<br />
+It had never occured to me that they would have originally built the game's inventory system as a single array, given how it's presented in the UI, but knowing that's the case it makes a lot of sense. What a clusterfuck.<br />
+<br />
+I was thinking the same. I knew they had some extra stuff attached to it, since they've talked a little about it in the past, but I had no idea your bank is in there too. That's just insane.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granda</div><div class="date">2015-11-08, 02:28 PM</div></div><div class="posttext">Oh god! The array use for inventory bank and equipment. It hurts my soul.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fizyx</div><div class="date">2015-11-08, 03:04 PM</div></div><div class="posttext">Actually, I can understand using the array for inventory, bank, and equipment. Make it 2 dimensional (or maybe even 3 dimensional, since you have bags in the bank, so you might need two dimensions there to really keep track of all the slots) and everything would be nicely organized, easily accessible, and, most importantly, it would run fast. I think the real issue comes from hard coding array placements into the code somewhere else, which is... lazy. All you have to do is throw a constant definition into a main library for that array placement. Then, if it ends up that you need to change the array placement, you change it in one place, and done. I can see why you might not do this if you think that the basic code might never change, and I think the Blizzard of 15 years ago probably didn't have the understanding of the codes longevity the way today's Blizzard does when developing :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jaese</div><div class="date">2015-11-08, 03:22 PM</div></div><div class="posttext">Actually, I can understand using the array for inventory, bank, and equipment. Make it 2 dimensional (or maybe even 3 dimensional, since you have bags in the bank, so you might need two dimensions there to really keep track of all the slots) and everything would be nicely organized, easily accessible, and, most importantly, it would run fast. I think the real issue comes from hard coding array placements into the code somewhere else, which is... lazy. All you have to do is throw a constant definition into a main library for that array placement. Then, if it ends up that you need to change the array placement, you change it in one place, and done. I can see why you might not do this if you think that the basic code might never change, and I think the Blizzard of 15 years ago probably didn't have the understanding of the codes longevity the way today's Blizzard does when developing :P<br />
+<br />
+The problem is combining similar (but not really) aspects into one array--very short-sighted. Paperdoll + main bag + bank all in one array? That's asking for trouble even if they didn't hard-code area placement expectations. What if they wanted to add a new gear slot in an expansion? Increase bank size? The problem extends beyond the base bag size.<br />
+<br />
+I was most surprised about the team opting for linked-list traversal over a hash table. :confused:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">schippie</div><div class="date">2015-11-08, 03:36 PM</div></div><div class="posttext">As a developer myself i have to say this was literally the best panel at blizzcon to watch. Really interesting especially considering what kind of Code legacy they are dealing with. <br />
+Gives a great perspective on things.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">arcaneshot</div><div class="date">2015-11-08, 04:50 PM</div></div><div class="posttext">I wish they would do more of this. Explaining why they can't extend the backpack, even though it is highly technical, is a better way than just saying no. No doubt there are other features that people want that are difficult due to engineering.<br />
+<br />
+They have told us this before. The only thing they've told us that was new that it also includes the bank.<br />
+<br />
+It being a straight-up array isn't such a huge surprise if you're familiar with how it was in Warcraft 3 (that also was an array, but it was 2-6 items per unit at a given time)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gadzooks</div><div class="date">2015-11-08, 05:12 PM</div></div><div class="posttext">ANY problem can and will get labeled as &quot;Blizzard is lazy&quot; by people who think they know more.<br />
+<br />
+Especially the vanilla server demanders. You can glean from the comments why the idea of resurrecting 10 year old server code gets noped on by them - even if they do have a large portion of it, if it's undocumented...oy. <br />
+<br />
+I don't code, but this was still a very interesting look at the heavy lifting done by the tech guys.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nerraw</div><div class="date">2015-11-08, 05:19 PM</div></div><div class="posttext">Especially the vanilla server demanders. You can glean from the comments why the idea of resurrecting 10 year old server code gets noped on by them - even if they do have a large portion of it, if it's undocumented...oy. <br />
+<br />
+I don't code, but this was still a very interesting look at the heavy lifting done by the tech guys.<br />
+<br />
+They also explained it very well on the Q&amp;A panel why they don't do it. From a tech-standpoint this Blizzcon is heaven.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2015-11-08, 06:42 PM</div></div><div class="posttext">I don't understand a good few parts of the technical jibber-jabber, but I'm still glad Blizzard held an engineering talk.<br />
+<br />
+Thank you for recording it, Elysia. :)<br />
+<br />
+P.S. And chaud too! :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bareno</div><div class="date">2015-11-08, 07:13 PM</div></div><div class="posttext">Hey I see myself! I'm the bored looking derp in the demon hunter t-shirt behind tthe blizzard employee on the right hand side... Lol!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">aeuhe4yxzhds</div><div class="date">2015-11-09, 12:40 AM</div></div><div class="posttext">Sounds like the coding is pretty horrible and they might not have expected the game to live this long. Maybe it might be worth investing in WoW 2 with just new coding so the game can move forward with new tech and stuff. End up being easier to create stuff for the game</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">usiris</div><div class="date">2015-11-09, 02:59 AM</div></div><div class="posttext">Hey I see myself! I'm the bored looking derp in the demon hunter t-shirt behind tthe blizzard employee on the right hand side... Lol!<br />
+<br />
+Oh hey, I'm the dude right next to you!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Laringar</div><div class="date">2015-11-09, 04:10 PM</div></div><div class="posttext">Found the picture:<br />
+<br />
+http://i.imgur.com/kJDiwyG.jpg</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">databyss</div><div class="date">2015-11-09, 11:08 PM</div></div><div class="posttext">Not sure what the problem is, here. Everyone has the right to privacy, and if you do &quot;get caught&quot; by your guild mates like this, just bullshit something up like &quot;oh sorry I can't stay&quot; and log on an alt or something.<br />
+<br />
+inb4 IT'S AN MMO YOU SHOULD BE A SOCIAL BUTTERFLY PLAYING WITH 40 PEOPLE AT ALL TIMES!!!!<br />
+<br />
+The problem is what system is providing what data. If you're standing next to your buddy, his client has the information that your in game, because you're right there.<br />
+<br />
+The social system is still heavily integrated into each games built in social system, so that's probably feeding the data more to Battle.Net than the other way.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cptaylor38</div><div class="date">2015-11-10, 02:31 AM</div></div><div class="posttext">Actually, I can understand using the array for inventory, bank, and equipment. Make it 2 dimensional (or maybe even 3 dimensional, since you have bags in the bank, so you might need two dimensions there to really keep track of all the slots) and everything would be nicely organized, easily accessible, and, most importantly, it would run fast. I think the real issue comes from hard coding array placements into the code somewhere else, which is... lazy. All you have to do is throw a constant definition into a main library for that array placement. Then, if it ends up that you need to change the array placement, you change it in one place, and done. I can see why you might not do this if you think that the basic code might never change, and I think the Blizzard of 15 years ago probably didn't have the understanding of the codes longevity the way today's Blizzard does when developing :P<br />
+<br />
+I don't know but it seems like they could just find all traces of the class/variable reference and just change what they needed to that way. Guess it depends on the language.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Marlamin</div><div class="date">2015-11-10, 10:51 AM</div></div><div class="posttext">I don't know but it seems like they could just find all traces of the class/variable reference and just change what they needed to that way. Guess it depends on the language.<br />
+<br />
+That's the problem, though. It's not referenced as a variable or class everywhere, they mentioned it the slot index could also just be hardcoded. What a nightmare.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">klepp0906</div><div class="date">2015-11-11, 04:07 AM</div></div><div class="posttext">so basically they deem it not worth their time to fix the backpack. <br />
+<br />
+i know blizzard, not like you make ~50 million a fucking month.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, for, engine, theyre, wow, that, and, fps, most, consoles, mmo, using, suitable, game, your, their, performance, make, then, suspect, from, blizz, new, entirely, subs, starting, are, msaa, future, cmaa, topic, planning, way, build, replacement, whatever, scratch, fund, but, demands, existing, trying, evolve, its, financial, some, got, saying, not, rather" />
+<meta name="description" content="Engineer’s Workshop: Engine Evolution in Warlords of Draenor 
+Welcome to the first in an ongoing series of programming- and engineering-focused articles that, over time, will cover some of the technical nuts and bolts that go into creating and running World of Warcraft. 
+ 
+Before we kick this first one off, a quick warning: What follows is a fairly technical explanation for a graphical-setting change related to anti-aliasing. Most of you probably won’t notice any difference at all—this is" />
+<title> Engineer’s Workshop: Engine Evolution in Warlords of Draenor [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Engineer’s Workshop: Engine Evolution in Warlords of Draenor</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1593440.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1593440-Engineer’s-Workshop-Engine-Evolution-in-Warlords-of-Draenor">Engineer’s Workshop: Engine Evolution in Warlords of Draenor</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-09-17, 05:03 PM</div></div><div class="posttext">Engineer’s Workshop: Engine Evolution in Warlords of Draenor<br />
+Welcome to the first in an ongoing series of programming- and engineering-focused articles that, over time, will cover some of the technical nuts and bolts that go into creating and running World of Warcraft.<br />
+<br />
+Before we kick this first one off, a quick warning: What follows is a fairly technical explanation for a graphical-setting change related to anti-aliasing. Most of you probably won’t notice any difference at all—this is primarily for those who tend to tinker with their hardware and graphical settings.<br />
+<br />
+In short, we’re taking strides to improve the performance of World of Warcraft, while also ensuring there’s plenty of potential to further increase graphical fidelity and enhance our support of high-end CPUs and graphics hardware.<br />
+<br />
+For Warlords of Draenor, we made a decision to remove Multisample Anti-Aliasing (MSAA) and instead include a new anti-aliasing technology called Conservative Morphological Anti-Aliasing (CMAA). This change is going to allow us to bring some overdue technological advancements to World of Warcraft over the course of the next few years—we’re thinking long-term with this change.<br />
+<br />
+One reason MSAA remained viable for WoW over the past decade was that the GPU had the time and resources to handle it. WoW has been a CPU-bound game for much of its lifetime, but during the Warlords development cycle, we endeavored to change that. A lot of that work involved analyzing the flow of data through our code and making sure we work on only what we need to for any given frame. One example is we now variably reduce the number of bones that need to be animated based on proximity and view (sometimes called level of detail, or LOD), a primary consumer of CPU time. We’ve also added a job system that the engine uses to task out animation and scene management in ways we had prototyped in Patch 5.4, but are expanding in Warlords.<br />
+<br />
+The outcome of all of this is that more than ever before, World of Warcraft relies heavily on a GPU that previously was largely free to handle things like MSAA. We explored a number of options to reconcile this increased GPU demand with the game’s anti-aliasing needs, and ultimately decided to embrace CMAA as our anti-aliasing technology for Warlords of Draenor. As with anything that can potentially change the look of the game, we vetted removing MSAA through our engineering and art teams before coming to the conclusion to swap it for CMAA. CMAA provides solid anti-aliasing at a fraction of the cost in memory and performance. It also integrates well with technologies we have planned for the future, and helps us bring those to the game sooner. We also support FXAA (Fast Approximate Anti-Aliasing), an even lighter-weight solution, as an option for our players using DirectX 9.<br />
+<br />
+CMAA fulfills our goals of providing high-quality anti-aliasing at reduced performance cost, while giving us the extra headroom we need to further improve the graphical fidelity of the game. We don’t have to make any architectural concessions within the engine for CMAA to work, and for Warlords of Draenor we’ve already been able to implement new graphical features like target outlining, soft particles, a new shadowing technique, and refraction—and more graphical features are on the horizon for future patches and expansions.<br />
+<br />
+For the launch of Warlords of Draenor, CMAA is the top-tier graphical setting available, but after release we’ll be exploring more options for players with high-performance graphics cards—and if they provide quality while still fitting into our future technology plans, we’ll take a serious look at adding them to the game.<br />
+<br />
+The graphical future of World of Warcraft is a bright one, and the changes we’ve made during the development of Warlords of Draenor have laid the groundwork for us to continue making the game look better and better far into the future.<br />
+<br />
+Thanks for reading!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">papajohn4</div><div class="date">2014-09-17, 05:09 PM</div></div><div class="posttext">TL;DR Besides we are at 2014 we will still going to support your mothers toast machine in order to not lose a subscription from people who still have ENIAC on their home.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">potis</div><div class="date">2014-09-17, 05:10 PM</div></div><div class="posttext">An explanation was needed but in reality.<br />
+<br />
+The graphics are so old and bad, no matter how they change it but Anti-Aliasing barely does anything at all at any setting, at least i dont see any difference, up close there is a tiny difference on hair and stuff but otherwise its non-existent. <br />
+<br />
+Not to mention if you dont play at max camera distance you are playing the game wrong and at that distance there is no chance you even care about anti-aliasing on your character.<br />
+<br />
+Sure a few corners and edges will look better, woohoo for raiding improvement.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">panzerdan</div><div class="date">2014-09-17, 05:10 PM</div></div><div class="posttext">Grommloc is pleased, You shall not be punished</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mx</div><div class="date">2014-09-17, 05:10 PM</div></div><div class="posttext">TL;DR Besides we are at 2014 we will still going to support your mothers toast machine in order to not lose a subscription from people who still have ENIAC on their home.<br />
+<br />
+Nothing wrong with trying to make the game as accessible to as many people as possible, imo.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baphomette</div><div class="date">2014-09-17, 05:10 PM</div></div><div class="posttext">Honestly, MSAA broke in 5.0, so I don't mind seeing alternative methods that actually work.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Denizly</div><div class="date">2014-09-17, 05:11 PM</div></div><div class="posttext">TL;DR Besides we are at 2014 we will still going to support your mothers toast machine in order to not lose a subscription from people who still have ENIAC on their home.<br />
+<br />
+Not everyone has a great comp. Some people only play wow, hs and mobas :P they don't need anything superb for that</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Anshlun</div><div class="date">2014-09-17, 05:11 PM</div></div><div class="posttext">I think it is about time Blizzard think about changing the core game engine, to achieve better graphics, rather than switching AA tech.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Phabulous</div><div class="date">2014-09-17, 05:11 PM</div></div><div class="posttext">&quot;Morphological&quot; is only a word if you're a Power Ranger.<br />
+<br />
+I ended up here thinking this would be an article on Engineering the profession. I am le disappoint.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bluspacecow</div><div class="date">2014-09-17, 05:11 PM</div></div><div class="posttext">The pro &quot;we like our graphics sharp and not fuzzy&quot; MSAA crowd ain't gonna like this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lolsteak</div><div class="date">2014-09-17, 05:12 PM</div></div><div class="posttext">Nothing wrong with trying to make the game as accessible to as many people as possible, imo.<br />
+The downside is that it could be at the cost of a greater proportion of the playerbase.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jokerfiend</div><div class="date">2014-09-17, 05:13 PM</div></div><div class="posttext">I don't even know what it is, much less care. I guess I could look it up, but again, I don't care.<br />
+<br />
+Seems to be a positive thing, regardless of my opinion. Thumbs up. The new bank tabs, featurettes, plus new tech is awesome. Glad to see some positives.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6a5a7ae332</div><div class="date">2014-09-17, 05:13 PM</div></div><div class="posttext">I for one hate FXAA (World of Blurcraft anyone?) and CMAA is extremely ineffective. (For me on a 27&quot; 1080p Monitor on Warlords Beta it is equal to having Anti-Aliasing Disabled!)<br />
+<br />
+Really hope we get a way to enable SuperSampling, which those of us that use it on Live have also just lost!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bisso</div><div class="date">2014-09-17, 05:14 PM</div></div><div class="posttext">So I guess it explains the WHY they removed the MSAA. I tested it on the PTR, and it's true that the CMAA is just slightly blurring the whole screen, and most of the jagged edges are still very apparent. I'm not sure that Blizz art team was very pleased with the final decision, as it blurs their textures as well as the edges of polygons, unlike the MSAA that seemed to only work around the edges. If it allows us to be at 60fps in Tarren Mill vs. Southshore though, well I guess it's a good trade.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baphomette</div><div class="date">2014-09-17, 05:17 PM</div></div><div class="posttext">Not to mention if you dont play at max camera distance you are playing the game wrong and at that distance there is no chance you even care about anti-aliasing on your character.<br />
+Discounting the first part of your statement which is obviously not true 100% of the time: the more zoomed out you are (the smaller your character on screen), the greater the proportion of pixels that are on an edge, making AA a greater benefit.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I think it is about time Blizzard think about changing the core game engine, to achieve better graphics, rather than switching AA tech.<br />
+It will never be worth rewriting from scratch.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dragothica</div><div class="date">2014-09-17, 05:17 PM</div></div><div class="posttext">What kind of GPU would you need for CMAA (preferably at max 1080p)? Is Radeon HD 6970 2 Gb enough?<br />
+<br />
+Not going to aim at having 60 fps during raids but around 30 fps is fine..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc56187fe24d</div><div class="date">2014-09-17, 05:17 PM</div></div><div class="posttext">I really hope we get some how MSAA to work. We got new player model and i'd love to see the new model without these ugly jagged edges. I use AA in every game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bisso</div><div class="date">2014-09-17, 05:19 PM</div></div><div class="posttext">Not to mention if you dont play at max camera distance you are playing the game wrong and at that distance there is no chance you even care about anti-aliasing on your character.<br />
+<br />
+Camera distance doesn't affect Aliasing, yes small details will matter way less at max distance, but the aliasing will remain as ugly overall. That's why I don,t like games on console, which don't have the power to put some AA to remove the jagging. The Aliasing on a Mountain is as ugly as for a strand of hair.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">markdall</div><div class="date">2014-09-17, 05:20 PM</div></div><div class="posttext">This is pretty cool, one of the first new things I noticed on PTR was the mouse-over target relationship highlighting. That is, when I mouse over an unplugged friendly player they are briefly outlined in blue, flagged friendlies in green, etc. <br />
+<br />
+I thought the graphics on the PTR looked quite nice, and of course since I didn't copy my massive collection of addons over the game ran much faster than I'm used to. (Pity I can't raid with the default UI.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soisoisoi</div><div class="date">2014-09-17, 05:20 PM</div></div><div class="posttext">What kind of GPU would you need for CMAA (preferably at max 1080p)? Is Radeon HD 6970 2 Gb enough?<br />
+<br />
+Not going to aim at having 60 fps during raids but around 30 fps is fine..<br />
+<br />
+You'll never be able to achieve a stable 60 FPS during raids (at least during the actual fights, anyway) no matter what hardware you have. Wouldn't worry too much about it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">markdall</div><div class="date">2014-09-17, 05:23 PM</div></div><div class="posttext">You'll never be able to achieve a stable 60 FPS during raids (at least during the actual fights, anyway) no matter what hardware you have. Wouldn't worry too much about it.<br />
+<br />
+You guys all noticed that you now check a box and have radically different graphics settings inside a BG or instance, right? I thought that was also extremely cool of them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tehdef</div><div class="date">2014-09-17, 05:23 PM</div></div><div class="posttext">The graphics are so old and bad<br />
+<br />
+SEeing that art is in the eye of the beholder, WoW has some amazing landscapes and buildings. It's great that you find it bad, but it's most definitely not.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Keleri</div><div class="date">2014-09-17, 05:25 PM</div></div><div class="posttext">I just got a brand-new computer, my old one was very sexy during the end of BC but it was limping along in MOP. I'm happy to see further improvements to performance, I like having graphics on high-- it really helps immersion for me when I'm not just an avatar flopping around in the fog of war.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6a5a7ae332</div><div class="date">2014-09-17, 05:26 PM</div></div><div class="posttext">I really hope we get some how MSAA to work. We got new player model and i'd love to see the new model without these ugly jagged edges. I use AA in every game.<br />
+<br />
+MSAA is gone for good, you might have noticed MSAA is not offered on many modern game engines, specifically those that use Deferred Rendering. It's simply incompatible with Deferred Rendering. (Which the new engine is using now, providing us with substantial visual quality improvements in Draenor)<br />
+However most modern games offer far better AA methods than FXAA (Used primarily on Consoles) and CMAA (Ineffective on most Jaggies especially when there is a high contrast differential)<br />
+<br />
+SSAA is the best AA method and is still compatible with the new WoW Engine. It's a high performance hit however (Half the FPS usually), I'm sure we'll be seeing this added in the future, and until then the method to use SSAA in Diablo 3 should work perfectly with the new WoW Engine.<br />
+<br />
+MLAA and SRAA are the two modern methods that they should have added, as they are comparable to MSAA in terms of performance hit/quality.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hollowness</div><div class="date">2014-09-17, 05:28 PM</div></div><div class="posttext">TL;DR Besides we are at 2014 we will still going to support your mothers toast machine in order to not lose a subscription from people who still have ENIAC on their home.<br />
+<br />
+No everybody can affort 2000 USD$ computer specially in country outside NA...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5f2949af42</div><div class="date">2014-09-17, 05:29 PM</div></div><div class="posttext">Quick noob question not related to the topic entirely... what languages (programming) is wow made of ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pyrophobia</div><div class="date">2014-09-17, 05:29 PM</div></div><div class="posttext">TL;DR Besides we are at 2014 we will still going to support your mothers toast machine in order to not lose a subscription from people who still have ENIAC on their home.<br />
+<br />
+The people come and tell you the things they have done with the game how they have made it viable for high end computers to provide that beauty in detail that people want to see in a world to get lost into and all you can say is but the game will run on a low end machine. <br />
+<br />
+So what, what is your problem with low end machine being able to play the game on the cost of less visual effects?<br />
+I live in a poor country and 2 months ago i spent what is ~80% of a monthly salary to ugprade several components of my PC to something that is not even near the top end and that's money i've saved in the course of few months. And invested in a better CPU while leaving the old GPU GTX650 and hoping to change that in a year. So i am happy that i will be able to play with good enough quality regardles that the cry babies born with silver spoon moan over the fact that ppl like me or worse even can play the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">potis</div><div class="date">2014-09-17, 05:30 PM</div></div><div class="posttext">SEeing that art is in the eye of the beholder, WoW has some amazing landscapes and buildings. It's great that you find it bad, but it's most definitely not.<br />
+<br />
+Dont mistake graphics being bad and liking them.<br />
+<br />
+The graphics are bad but i dont mind them, they are just bad and Anti-Aliasing barely does anything for the game.<br />
+<br />
+Literally strands of hair and a mountain/hill while flying gets fixed, the rest is the same.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gaebryel Quintyne</div><div class="date">2014-09-17, 05:33 PM</div></div><div class="posttext">I just wish SSAA gets implemented 'cause it's very similar to MSAA but giving more graphic fidelity than CMAA... Check this thread out for more info (and the video in it):<br />
+http://www.mmo-champion.com/threads/1566175-A-Plea-For-Better-Quality-Anti-Aliasing-in-WoD!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">papajohn4</div><div class="date">2014-09-17, 05:35 PM</div></div><div class="posttext">Not everyone has a great comp. Some people only play wow, hs and mobas :P they don't need anything superb for that<br />
+<br />
+we are not talking about a great comp here though...we are at least talking about something better than pentium 4.<br />
+<br />
+<br />
+The people come and tell you the things they have done with the game how they have made it viable for high end computers to provide that beauty in detail that people want to see in a world to get lost into and all you can say is but the game will run on a low end machine. <br />
+<br />
+So what, what is your problem with low end machine being able to play the game on the cost of less visual effects?<br />
+I live in a poor country and 2 months ago i spent what is ~80% of a monthly salary to ugprade several components of my PC to something that is not even near the top end and that's money i've saved in the course of few months. And invested in a better CPU while leaving the old GPU GTX650 and hoping to change that in a year. So i am happy that i will be able to play with good enough quality regardles that the cry babies born with silver spoon moan over the fact that ppl like me or worse even can play the game.<br />
+<br />
+Just because they spend time to &quot;convince&quot; me that they have created something very beautiful doesn't mean that I have not played other games and especially other MMOs to compare with...what they said is that they are very talented because they managed to make something acceptable at 2014 in their old and crap graphic engine. Also have you seen the so called cmaa anti-aliasing in beta? Does not look good at all (in my opinion).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sylreick</div><div class="date">2014-09-17, 05:36 PM</div></div><div class="posttext">CMAA does basically the same as MSAA. The only noticable differences in in the &quot;steps-effect&quot;, like the planks of would in the Grizzley Hills pvp area, you'll see them flicker a bit (and stairs and some similar areas with close parallel lines). Characters will still be made smooth.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Barcasaur</div><div class="date">2014-09-17, 05:36 PM</div></div><div class="posttext">No everybody can affort 2000 USD$ computer specially in country outside NA...<br />
+<br />
+Mine was just a hair over 1,000 dollars. runs Warcraft like butter.<br />
+<br />
+2k is over kill.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ejpaints</div><div class="date">2014-09-17, 05:39 PM</div></div><div class="posttext">No everybody can affort 2000 USD$ computer specially in country outside NA...<br />
+<br />
+The $300 walmart special could run WoW better than what most people complaining have. I know bc I ran it on one just fine for about 2 years, and my kids now use the same PC, with nothing more than a cheapo Radeon card swapped in. You don't have to spend a fortune on a computer to run WoW. What many ppl make the mistake of is insisting on gaming on a laptop which is horribly restricted on receiving updated hardware. <br />
+<br />
+You can build yourself a very nice desktop to game on for under $1000. And doing so let's you update it over time. Sure I like my fancy gaming machine, but it's overkill on what I need to play any blizzard game at max settings. It's unnecessary to be able to run several instances of the game at max settings. I could've spent half what I paid and still been perfectly fine for WoW.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayperos</div><div class="date">2014-09-17, 05:45 PM</div></div><div class="posttext">CMAA is it? That is really disappointing, don't understand why they can't just add an option for SSAA. Right now WoD is a blurry, jagged mess. I guess them exploring ideas for more options is good, but I have a feeling they will never get around to it and just forget about it. We better be able to force SSAA, I really don't want to play WoD with CMAA.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheValkyrie</div><div class="date">2014-09-17, 05:45 PM</div></div><div class="posttext">I currently run everything medium to low on live and if I go high or ultra I will see some lag. But with this new system on Beta, I am able to run max settings on everything without even a hint of lag at any point. The difference is really extraordinary.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shampro</div><div class="date">2014-09-17, 05:48 PM</div></div><div class="posttext">More emphasis and effort to improve performance by the Graphics card?<br />
+<br />
+About damn time, Count me in.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Salacnar</div><div class="date">2014-09-17, 05:49 PM</div></div><div class="posttext">MSAA is gone for good, you might have noticed MSAA is not offered on many modern game engines, specifically those that use Deferred Rendering. It's simply incompatible with Deferred Rendering. (Which the new engine is using now, providing us with substantial visual quality improvements in Draenor)<br />
+However most modern games offer far better AA methods than FXAA (Used primarily on Consoles) and CMAA (Ineffective on most Jaggies especially when there is a high contrast differential)<br />
+<br />
+SSAA is the best AA method and is still compatible with the new WoW Engine. It's a high performance hit however (Half the FPS usually), I'm sure we'll be seeing this added in the future, and until then the method to use SSAA in Diablo 3 should work perfectly with the new WoW Engine.<br />
+<br />
+MLAA and SRAA are the two modern methods that they should have added, as they are comparable to MSAA in terms of performance hit/quality.<br />
+<br />
+Dont forget about TXAA (removes jaggies on moving objects) in combination with CMAA</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kryos</div><div class="date">2014-09-17, 05:50 PM</div></div><div class="posttext">Problem is, the old Antialiasing looks much better. Just give me the OPTION to use the old Antialiasing. CMAA makes the image blurry. I want my MSAA back!<br />
+https://software.intel.com/sites/default/files/managed/3d/e5/cmaa_fig10.jpg<br />
+<br />
+WoD also looks blurry (left 5.4, right 6.0)<br />
+http://i.imgur.com/OI1pVTcl.jpg</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc511894f75b</div><div class="date">2014-09-17, 05:51 PM</div></div><div class="posttext">No everybody can affort 2000 USD$ computer specially in country outside NA...<br />
+<br />
+You really think you need to spend anywhere near that amount to run WoW? you could spend less than $1000 easily and still run it, my 6 year old laptop can still play WoW lol.. maybe if you actually knew anything about computers you wouldn't be complaining.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Triggered Fridgekin</div><div class="date">2014-09-17, 05:53 PM</div></div><div class="posttext">No everybody can affort 2000 USD$ computer specially in country outside NA...<br />
+<br />
+The inevitable misconception of PC gaming.<br />
+<br />
+WoW already has relaxed settings which span a fairly wide array of systems. Those who fall below the minimum specifications shouldn't blame Blizzard for not catering to machines which likely came with Windows XP pre-installed. Blizzard always tweaks the graphics with each expansion and there was a lot of time between Mists and Warlords to upgrade if your system was on the minimum end of Mists. Folks probably spent more on the subscription in Mists than it would take to upgrade components to be ready for Warlords.<br />
+<br />
+It shouldn't take a tech-related post less than two months from release to make people realize that their toasters will not cut it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zolok2.0</div><div class="date">2014-09-17, 05:53 PM</div></div><div class="posttext">So is this why the PTR looks so shitty and jagged compared to current wow? I thought I noticed a difference when selecting my AA options, I didn't see 16x in there at ALL. VERY disappointing change. At least put MSAA in as an option for those of us who can use it, why should we be punished because people choose to play on an old outdated system then complain about it? VERY let down right now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce026f1ce64</div><div class="date">2014-09-17, 05:58 PM</div></div><div class="posttext">You'll never be able to achieve a stable 60 FPS during raids (at least during the actual fights, anyway) no matter what hardware you have. Wouldn't worry too much about it. that sounds like a challenge to me</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ermelloth</div><div class="date">2014-09-17, 06:04 PM</div></div><div class="posttext">Excellent, so it means I can still enjoy the game with my 3 year old PC.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca07ba3dd81</div><div class="date">2014-09-17, 06:12 PM</div></div><div class="posttext">Blizzard, Blizzard and their machinations. World advances in such uneven way.<br />
+they speak about engineering.<br />
+<br />
+what about orthopedist for orc's hunch?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MatadorMedia</div><div class="date">2014-09-17, 06:12 PM</div></div><div class="posttext">I was really hoping this Engineer's Workshop was going to talk about the engineering profession. Why do I know next to nothing about profession changes in WoD? Are they listed somewhere? We are getting new things for profs, right? The only thing I've heard about is illusion enchants and losing profession stat buffs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ZenX</div><div class="date">2014-09-17, 06:19 PM</div></div><div class="posttext">Quick noob question not related to the topic entirely... what languages (programming) is wow made of ?<br />
+<br />
+The client-side is probably a mix of python, c++ and lua.<br />
+<br />
+The server-side is probably a mix of python, perl and sh/bash operating over RedHat/CentOS servers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2014-09-17, 06:22 PM</div></div><div class="posttext">I preffered it before tbh :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xjev</div><div class="date">2014-09-17, 06:26 PM</div></div><div class="posttext">The client-side is probably a mix of python, c++ and lua.<br />
+<br />
+The server-side is probably a mix of python, perl and sh/bash operating over RedHat/CentOS servers.<br />
+<br />
+As far as I know mainly VC++ for client, photoshop, 3DSMax and Maya for graphical assets. Oracle for their DB. Java/Spring for their web.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Velerios</div><div class="date">2014-09-17, 06:28 PM</div></div><div class="posttext">Best joke of the day:<br />
+<br />
+<br />
+CMAA provides solid anti-aliasing<br />
+<br />
+i really needed to laugh when i read this sentence: Here, I fixed it for you blue:<br />
+<br />
+<br />
+CMAA provides solid blurring without any reliable anti-aliasing</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soisoisoi</div><div class="date">2014-09-17, 06:31 PM</div></div><div class="posttext">WoD also looks blurry (left 5.4, right 6.0)<br />
+http://i.imgur.com/OI1pVTcl.jpg<br />
+I'm sure that picture is from the start of it where the fog or something wasn't working properly.<br />
+<br />
+<br />
+that sounds like a challenge to me<br />
+Well, if you have the money to put your CPU up to, and keep it at like 7 GHz, then go for it. :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pandapuncher</div><div class="date">2014-09-17, 06:32 PM</div></div><div class="posttext">Nothing wrong with trying to make the game as accessible to as many people as possible, imo.<br />
+<br />
+there is a little wrong with it. They still don't make PS4 games playable on the playstation 1. <br />
+<br />
+Most mid-rage computers can handle games at medium settings. I'm playing Skyrim right now on a intel 4000</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yelmurc</div><div class="date">2014-09-17, 06:33 PM</div></div><div class="posttext">Hope to see more of these. I think its a good sign they are trying to discuss their engineer with the public. It can only lead to better decisions.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayperos</div><div class="date">2014-09-17, 06:33 PM</div></div><div class="posttext">I wish I could run the game at like 4k resolution, then you wouldn't have to worry about AA.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pandapuncher</div><div class="date">2014-09-17, 06:33 PM</div></div><div class="posttext">So is this why the PTR looks so shitty and jagged compared to current wow? I thought I noticed a difference when selecting my AA options, I didn't see 16x in there at ALL. VERY disappointing change. At least put MSAA in as an option for those of us who can use it, why should we be punished because people choose to play on an old outdated system then complain about it? VERY let down right now.<br />
+<br />
+No punishment, put on CMAA. It's the same thing at 16x, if not better. Or am I mistaken? Why would they make their engine worse?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2014-09-17, 06:42 PM</div></div><div class="posttext">MSAA may be old, but it's still superior to a bunch of AA options out there. Also, CMAA -- which is still trash compared to MSAA -- being only available as an option under DirectX11 is stupid. And FMAA? Holy crap, it's worse than having AA disabled completely!<br />
+<br />
+<br />
+WoD also looks blurry (left 5.4, right 6.0)<br />
+http://i.imgur.com/OI1pVTcl.jpg<br />
+It might be due to Blizzard finally removing the console command to disable ffxGlow. The checkbox was removed a good while back, but you can still change the setting on live by typing &quot;/console ffxglow 0&quot; (without the quote marks).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xires</div><div class="date">2014-09-17, 06:44 PM</div></div><div class="posttext">No everybody can affort 2000 USD$ computer specially in country outside NA...<br />
+<br />
+You don't need $2000 for a computer to run WoW on max. I spent 400 on mine and then upgraded the graphics and power supply for a total of 600 spent overall and I run WoW on max settings just fine.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aeula</div><div class="date">2014-09-17, 06:58 PM</div></div><div class="posttext">Erm...does this mean that my game will be shiny? I don't understand a word they just said up there...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pankind</div><div class="date">2014-09-17, 07:00 PM</div></div><div class="posttext">The inevitable misconception of PC gaming.<br />
+<br />
+WoW already has relaxed settings which span a fairly wide array of systems. Those who fall below the minimum specifications shouldn't blame Blizzard for not catering to machines which likely came with Windows XP pre-installed. Blizzard always tweaks the graphics with each expansion and there was a lot of time between Mists and Warlords to upgrade if your system was on the minimum end of Mists. Folks probably spent more on the subscription in Mists than it would take to upgrade components to be ready for Warlords.<br />
+<br />
+It shouldn't take a tech-related post less than two months from release to make people realize that their toasters will not cut it.<br />
+<br />
+2k is an exaggeration but the topic isn't about running wow or not running wow. It's about a computer running wow at a decent graphics setting and still achieving a good FPS.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc807490b295</div><div class="date">2014-09-17, 07:05 PM</div></div><div class="posttext">Woo, as a game developer I'm surprised and very interested in this new posts! As the post says, I think they changed to CMAA just to have more GPU time to spend in other things like the GPU bone animation optimization it mentions, that in fact seems more interesting for me than the anti-aliasing change. Here is the first time I hear WoW have moved to Deferred Rendering, interesting, it means more chances to see future cool effects and improvements. In response to some of the replies:<br />
+<br />
+With a 27''@1080p you will see jagged borders and pixels everywhere, with or without anti-aliasing. 24@1080p or 27@1440p are the good choices in my opinion.<br />
+<br />
+About my field, the programming languages: <br />
+<br />
+- For sure the client is implemented with at least C++ and Lua, but never heard about Python, maybe or maybe not. XML and a custom binary format for the cooked assets (remember Storm.dll :P?). And just to be clear, VC++ is not a language, is a compiler (well, that's what some people say... ;).<br />
+- For the dedicated server (where the world is running) probably they use C++ too, sounds crazy to replicate functionality and entities they implemented in C++ in another language. Not sure if they used Lua in the server side too, but makes sense. For sure they use bash, perl, ruby, etc... bot more probably for internal tools.<br />
+- No idea about the DB, but I think that the queries/inserts/updates done by the dedicated server while you are playing are done in a DB that is entirely loaded in the server RAM, and copied to a HD every N seconds, think in any DB that supports this feature, maybe the changed the DB more than once since WoW started to run.<br />
+- No idea about the Backend (web and other services) maybe Java as Xjev mentioned, or php, or ruby..., maybe some services are in node.js, at least I can imagine someone at Blizzard is proposing this ^_^.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kryos</div><div class="date">2014-09-17, 07:06 PM</div></div><div class="posttext">2x MSAA is good, 4x MSAA is great, and 8x MSAA is superlative when it comes to removing aliasing artifacts from the edges of polygons. You can add coverage samples and edge-detect algorithms to 4x MSAA and it still doesn’t rival true 8x MSAA. <br />
+<br />
+Morphological AA also works in conjunction with MSAA. MLAA can be a great option, but it can have a detrimental effect on image quality when small text is critical in game play. As such, it isn’t viable as a set-and-forget method of anti-aliasing for everyone.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Unholyground</div><div class="date">2014-09-17, 07:18 PM</div></div><div class="posttext">You'll never be able to achieve a stable 60 FPS during raids (at least during the actual fights, anyway) no matter what hardware you have. Wouldn't worry too much about it.<br />
+<br />
+Ya many people don't realize that the graphics are only as good as the code they are built on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">IIamaKing</div><div class="date">2014-09-17, 07:21 PM</div></div><div class="posttext">The downside is that it could be at the cost of a greater proportion of the playerbase.<br />
+<br />
+You think the amount of high end pc users is more than the amount of average-crappy pc users? Catering to the top end PC crowd is a sure way to lose business for any game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc290cb72e4b</div><div class="date">2014-09-17, 07:22 PM</div></div><div class="posttext">Just set your desired level of AA in your GPU's control panel and be done with it. Stop moaning.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">llewllew</div><div class="date">2014-09-17, 07:22 PM</div></div><div class="posttext">People with normal PCs are going to be surprised when they log in. They'll be expecting a graphical upgrade, because of new models and such, and they're going to get jaggies in some places and weird smoodgies in other places. They won't know what it is, but they'll know things look worse, not better.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc807490b295</div><div class="date">2014-09-17, 07:23 PM</div></div><div class="posttext">2x MSAA is good, 4x MSAA is great, and 8x MSAA is superlative when it comes to removing aliasing artifacts from the edges of polygons. You can add coverage samples and edge-detect algorithms to 4x MSAA and it still doesn’t rival true 8x MSAA. <br />
+<br />
+Morphological AA also works in conjunction with MSAA. MLAA can be a great option, but it can have a detrimental effect on image quality when small text is critical in game play. As such, it isn’t viable as a set-and-forget method of anti-aliasing for everyone.<br />
+<br />
+Ehr.. I don't think they use MSAA or CMAA when rendering the user interface... just the scene (characters, buildings, etc..), then the user interface is rendered on top of that without any post-process.<br />
+<br />
+The pipeline probably is:<br />
+<br />
+&gt; Bind the framebuffer where the scene will be rendered<br />
+&gt; Render the scene <br />
+&gt; Bind another framebuffer or the default one and render the previous rendered scene with the post process (apply CMAA)<br />
+&gt; Render the User interface.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Conscious</div><div class="date">2014-09-17, 07:24 PM</div></div><div class="posttext">Yet another move towards getting the game ready for retirement.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">IIamaKing</div><div class="date">2014-09-17, 07:26 PM</div></div><div class="posttext">SEeing that art is in the eye of the beholder, WoW has some amazing landscapes and buildings. It's great that you find it bad, but it's most definitely not.<br />
+<br />
+Says art is subjective then makes a statement of fact about art, &lt;3 irony.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc719e068c3a</div><div class="date">2014-09-17, 07:27 PM</div></div><div class="posttext">Problem is, the old Antialiasing looks much better. Just give me the OPTION to use the old Antialiasing. CMAA makes the image blurry. I want my MSAA back!<br />
+https://software.intel.com/sites/default/files/managed/3d/e5/cmaa_fig10.jpg<br />
+<br />
+WoD also looks blurry (left 5.4, right 6.0)<br />
+http://i.imgur.com/OI1pVTcl.jpg<br />
+<br />
+<br />
+Erm.. that image doesn't show MSAA, it shows SMAA which is a modified version of MLAA which is deferred renderer compatible. MSAA isn't really deferred renderer compatible. MSAA 1x is the equivalent to no AA at all, which is what I run WoW with at the moment. SMAA 1x is actually a very good AA technique.<br />
+<br />
+Also, as they said in the blog, they are improving the rendering engine and there could possibly be other AA implementations added over time.<br />
+<br />
+<br />
+Yet another move towards getting the game ready for retirement.<br />
+<br />
+I don't think implementing a completely new rendering engine that is similar to that utilised in the Frostbite and CryEngine 3 game engines powering Battlefield 4 and Crysis 3, can be considered &quot;moving the game towards retirement&quot;. It's a massive upgrade to WoW's game engine in reality.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wsgroves</div><div class="date">2014-09-17, 07:28 PM</div></div><div class="posttext">I run wow at 4k and am much more concerned with them fixing SLI/Crossfire scaling then I am about AA options. It would be nice if the game benefited from multi gpu's more! And no, dont blame nvidia or amd.<br />
+I know...first world problems =/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc807490b295</div><div class="date">2014-09-17, 07:32 PM</div></div><div class="posttext">I run wow at 4k and am much more concerned with them fixing SLI/Crossfire scaling then I am about AA options. It would be nice if the game benefited from multi gpu's more! And no, dont blame nvidia or amd.<br />
+I know...first world problems =/<br />
+<br />
+Yep, very few companies care about high end performance / enthusiast gamer machines, in fact low performance and old machines are taken much in consideration, It will not gonna change this century for WoW I think hehe.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7805351bd4</div><div class="date">2014-09-17, 07:33 PM</div></div><div class="posttext">I guess not everyone can afford a $3000 USD computer, especially in the US.¹<br />
+<br />
+The thing I took most note of in this blue post, which I was utterly engrossed in and found really interesting up until then, is the target outlining.<br />
+Does anyone have screenshots of this in effect? Because I have seen this used in a couple other games, and always found it to be abhorrent and immersion breaking.<br />
+Anyone? I'm hoping they've found a way to do this, that doesn't irk me.<br />
+<br />
+¹) That was a zing aimed at a less-than-thought-through previous comment. Let it slide.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zoaric</div><div class="date">2014-09-17, 07:36 PM</div></div><div class="posttext">I guess not everyone can afford a $3000 USD computer, especially in the US.¹<br />
+<br />
+The thing I took most note of in this blue post, which I was utterly engrossed in and found really interesting up until then, is the target outlining.<br />
+Does anyone have screenshots of this in effect? Because I have seen this used in a couple other games, and always found it to be abhorrent and immersion breaking.<br />
+Anyone? I'm hoping they've found a way to do this, that doesn't irk me.<br />
+<br />
+¹) That was a zing aimed at a less-than-thought-through previous comment. Let it slide.<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/june/npcOutlines.jpg<br />
+<br />
+<br />
+https://www.youtube.com/watch?v=X-qXpIPpj1o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wsgroves</div><div class="date">2014-09-17, 07:38 PM</div></div><div class="posttext">Thanks for the outline pix. Hopefully we can disable that feature.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zoaric</div><div class="date">2014-09-17, 07:40 PM</div></div><div class="posttext">Thanks for the outline pix. Hopefully we can disable that feature.<br />
+<br />
+You're welcome. There is indeed a toggle for it. However, I think the yellow around <br />
+quest-givers (and maybe quest objective items?) can't be turned of right now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc719e068c3a</div><div class="date">2014-09-17, 07:41 PM</div></div><div class="posttext">Yep, very few companies care about high end performance / enthusiast gamer machines, in fact low performance and old machines are taken much in consideration, It will not gonna change this century for WoW I think hehe.<br />
+<br />
+You might actually see some extra benefit with multi-GPU setups. Part of what Blizzard said in a much more simplified manner, was that WoW will rely much more heavily on shader programs than it used to, shader programs can only be run on the GPU and that is more or less what they're offloading a fair amount of the CPU load onto, making dedicated shader programs to run more efficiently on the GPU, the more shader units your GPU's have, the better performance you will get when the shader programs are executed, therefore multiple GPU's should mean more shader units to process more shader effects.<br />
+<br />
+Also, being a deferred rendering system similar to modern game like Battlefield 4 etc. Nvidia and AMD are far more likely to release new drivers that will actually have a beneficial effect on WoW's performance, there hasn't really been a GPU driver update with an advertised improvement in WoW's performance for a long time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocedbf46d113</div><div class="date">2014-09-17, 07:42 PM</div></div><div class="posttext">The game has improved in graphics more and more over the years, it doesn't look like it used to ten years ago and I really like the look of the game. It sure can not compete with games that have top graphics, but it looks gorgeous and it has a really great-looking style.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ghâzh</div><div class="date">2014-09-17, 07:44 PM</div></div><div class="posttext">What most people don't seem to understand is that while this is a big improvement for lower end machines, it also helps tremendously the higher end. There's currently no setup that can run 25man raids smoothly - and this engine fix should help it a lot. The focus here isn't on the AA but rather the underlying engine changes. If MSAA isn't compatible it has to go so that we can have more efficiently running game, not just for the people with ancient PC's but for all of us.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wulfstan</div><div class="date">2014-09-17, 07:47 PM</div></div><div class="posttext">Great now we gonna be playing World of Jagcraft</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HolySkyBalls</div><div class="date">2014-09-17, 07:57 PM</div></div><div class="posttext">It looks pretty awesome using SSAA, which is better than CMAA. You do have to force this option in your GPU settings..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc39820a35d</div><div class="date">2014-09-17, 08:00 PM</div></div><div class="posttext">instead of whining, can someone upload some screenshots side by side with MSAA vs CMAA, zooming in on things to compare them better, etc? thanks</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6a5a7ae332</div><div class="date">2014-09-17, 08:02 PM</div></div><div class="posttext">It looks pretty awesome using SSAA, which is better than CMAA. You do have to force this option in your GPU settings..<br />
+<br />
+Are you positive this is possible for 6.0. I use Super Sampling on Live, had zero luck forcing it on Beta via the normal methods.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sylreick</div><div class="date">2014-09-17, 08:04 PM</div></div><div class="posttext">http://i.imgur.com/OI1pVTcl.jpg<br />
+<br />
+The difference in those images is an effect of lighting changes. Antialiasing deals with object edges, or &quot;jaggies&quot; on the polygon models. It is not what is making things &quot;blurry&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc807490b295</div><div class="date">2014-09-17, 08:04 PM</div></div><div class="posttext">You might actually see some extra benefit with multi-GPU setups. Part of what Blizzard said in a much more simplified manner, was that WoW will rely much more heavily on shader programs than it used to, shader programs can only be run on the GPU and that is more or less what they're offloading a fair amount of the CPU load onto, making dedicated shader programs to run more efficiently on the GPU, the more shader units your GPU's have, the better performance you will get when the shader programs are executed, therefore multiple GPU's should mean more shader units to process more shader effects.<br />
+<br />
+Also, being a deferred rendering system similar to modern game like Battlefield 4 etc. Nvidia and AMD are far more likely to release new drivers that will actually have a beneficial effect on WoW's performance, there hasn't really been a GPU driver update with an advertised improvement in WoW's performance for a long time.<br />
+<br />
+I have a theory about that and is that the number of shader cores isn't as important as the GPU generation. I mean, a newer graphic card, even if has less power and shader cores can be better by the fact that usually comes with a newer feature, maybe a new extension for OpenGL/DirectX or directly a new version of those graphics APIs, anyway, things not available in the past generation, and this features open the door to improvements and optimizations that can't be done in previous graphics cards, and I think this is what blizzard is doing, is moving to a newer generation features (4 year old or so), closing the hairpin for older graphic cards. Thing for example in MRT, Deferred Lighting is really expensive if you run it in a card without MRT (Multi Render Target), even if you are using half-floats in a 32 bit texture, but with a card with MRT, even if this card has less shader cores, less memory or less clock speed automatically means a big optimization for this feature, making possible to store the data on a single pass and more chance to get 60fps, that's the sort of things I mean Blizzard is taking in consideration.<br />
+<br />
+<br />
+Ah and about that ....<br />
+<br />
+http://i.imgur.com/OI1pVTcl.jpg<br />
+<br />
+This image isn't a good reference, too small, and what about the JPG compression artifacts? 1080p screenshot in PNG makes justice! XD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lyphe</div><div class="date">2014-09-17, 08:08 PM</div></div><div class="posttext">I for one hate FXAA (World of Blurcraft anyone?) and CMAA is extremely ineffective. (For me on a 27&quot; 1080p Monitor on Warlords Beta it is equal to having Anti-Aliasing Disabled!)<br />
+<br />
+Really hope we get a way to enable SuperSampling, which those of us that use it on Live have also just lost!<br />
+<br />
+I call bs. My monitor is a 2560x1440 Dell ultrasharp 27inch powered by a GTX780 - and I could not tell any consequential difference between msaa and the new cmaa. If there was a difference, I had to look for it and it was so neglible that I wasn't sure it was really there.<br />
+<br />
+So there is no way that toaster of yours with bad resolution will see a difference. You are just being dramatic for no reason.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tisane</div><div class="date">2014-09-17, 08:09 PM</div></div><div class="posttext">For the launch of Warlords of Draenor, CMAA is the top-tier graphical setting available, but after release we’ll be exploring more options for players with high-performance graphics cards—and if they provide quality while still fitting into our future technology plans, we’ll take a serious look at adding them to the game. <br />
+<br />
+Looking forward to that, because I totally disagree with:<br />
+<br />
+CMAA provides solid anti-aliasing and <br />
+CMAA fulfills our goals of providing high-quality anti-aliasing<br />
+<br />
+<br />
+Surely it looks good/equal for the big stuff in WoD, but not for the smallest of details or smaller objects in the distance like currently in MoP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6a5a7ae332</div><div class="date">2014-09-17, 08:10 PM</div></div><div class="posttext">The difference in those images is an effect of lighting changes. Antialiasing deals with object edges, or &quot;jaggies&quot; on the polygon models. It is not what is making things &quot;blurry&quot;.<br />
+<br />
+Unfortunately, my experience with FXAA enabled on the Beta produces the same result as shown in that image in every zone. CMAA does not produce that affect. It is not Bloom or any other lighting effect, as if it was the same result would occur with CMAA.<br />
+<br />
+FXAA is essentially nothing more than a Full Screen Blur Effect.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HolySkyBalls</div><div class="date">2014-09-17, 08:14 PM</div></div><div class="posttext">Are you positive this is possible for 6.0. I use Super Sampling on Live, had zero luck forcing it on Beta via the normal methods.<br />
+<br />
+I am not playing beta so have not tested it there. I notice a difference on the 6.x PTR. Maybe a bad testing ground.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6a5a7ae332</div><div class="date">2014-09-17, 08:17 PM</div></div><div class="posttext">So I just forced FXAA on Live to take these screenshots to try and show people just how bad it is.<br />
+https://www.dropbox.com/s/yhx6re7mo7o4jcz/FXAA%201.png?dl=1<br />
+https://www.dropbox.com/s/dd53kpbku1ssit3/FXAA%202.png?dl=1</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc719e068c3a</div><div class="date">2014-09-17, 08:21 PM</div></div><div class="posttext">I have a theory about that and is that the number of shader cores isn't as important as the GPU generation. I mean, a newer graphic card, even if has less power and shader cores can be better by the fact that usually comes with a newer feature, maybe a new extension for OpenGL/DirectX or directly a new version of those graphics APIs, anyway, things not available in the past generation, and this features open the door to improvements and optimizations that can't be done in previous graphics cards, and I think this is what blizzard is doing, is moving to a newer generation features (4 year old or so), closing the hairpin for older graphic cards. Thing for example in MRT, Deferred Lighting is really expensive if you run it in a card without MRT (Multi Render Target), even if you are using half-floats in a 32 bit texture, but with a card with MRT, even if this card has less shader cores, less memory or less clock speed automatically means a big optimization for this feature, making possible to store the data on a single pass and more chance to get 60fps, that's the sort of things I mean Blizzard is taking in consideration.<br />
+<br />
+<br />
+Thats true, I might have been a bit mis-representative about more shader units meaning better performance and being the only thing that counts, shader unit count does of course count and make a difference, the more shader programs you can run at once in parallel, the better performance will be, like multi-threading on a much larger scale.<br />
+<br />
+In the same way though, newer GPU's with newer architectures will usually be better than older ones, a lot of newer GPU's do tend to have more units per GPU though so thats was part of the point I was getting at. Dual 780Ti's in SLI should be better and see some benefit compared to a single one, but one 780ti is probably better than two 580GTX's potentially. My point mainly was you should see much more benefit from two cards than a single card of the same type with the deferred system.<br />
+<br />
+MRT is really well supported in the DirectX 11 pipeline by itself and most modern GPU's (within the last 4 years or so) support it so you're pretty well covered there. Obviously newer more powerful GPU's provide improved architectures designed specifically to the latest graphics API's. I am pretty excited about the deferred rendering as it should really give WoW a big improvement especially as Blizzard add more features to it and should last it a good long time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc39820a35d</div><div class="date">2014-09-17, 08:28 PM</div></div><div class="posttext">So I just forced FXAA on Live to take these screenshots to try and show people just how bad it is.<br />
+https://www.dropbox.com/s/yhx6re7mo7o4jcz/FXAA%201.png?dl=1<br />
+https://www.dropbox.com/s/dd53kpbku1ssit3/FXAA%202.png?dl=1<br />
+<br />
+1 - it doesn't look bad<br />
+2 - FXAA is worse than CMAA, and WoD will be using CMAA<br />
+3 - The screenshots you took don't show much, need side by side, comparison, close ups etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bigvizz</div><div class="date">2014-09-17, 08:28 PM</div></div><div class="posttext">It's a mmo i don't give a shit about high end graphics. I'm more worried about content and gameplay. As long as it doesn't look like a PS1 game, I'm cool with whatever makes the game run more smoothly. Arguing SSAA, MSAA, FXAA, or CMAA is pointless considering this game was meant to cover a wide market which includes low end pc's. Nuff Said :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">twinkfist</div><div class="date">2014-09-17, 08:31 PM</div></div><div class="posttext">Great now we gonna be playing World of Jagcraft<br />
+<br />
+only if you are from pittsburgh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6a5a7ae332</div><div class="date">2014-09-17, 08:31 PM</div></div><div class="posttext">I call bs. My monitor is a 2560x1440 Dell ultrasharp 27inch powered by a GTX780 - and I could not tell any consequential difference between msaa and the new cmaa. If there was a difference, I had to look for it and it was so neglible that I wasn't sure it was really there.<br />
+<br />
+So there is no way that toaster of yours with bad resolution will see a difference. You are just being dramatic for no reason.<br />
+<br />
+Sounds like you are at the sweetspot then in terms of Pixel Density. People with 20&quot; monitors at 1080p are saying the same thing.<br />
+<br />
+For someone that's &quot;calling bs&quot;, you made alot of assumptions in that post. Including that I play on a &quot;toaster&quot;. I have the 760GTX (Not even remotely close to being a toaster), the only difference is you have a substantially higher resolution monitor, which if anything excludes you from having a objective perspective on this as you are not affected by it. Higher Pixel Density = Less Viable Aliasing. (Me with my &quot;bad resolution&quot; of 1080p on a 27&quot; screen clearly see's aliasing with CMAA, just like the majority with 1080p screens at higher than 21&quot; dimensions)<br />
+<br />
+Do you also &quot;call bs&quot; on my claim that FXAA is extremely blurry?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ComputerNerd</div><div class="date">2014-09-17, 08:35 PM</div></div><div class="posttext">TL;DR Besides we are at 2014 we will still going to support your mothers toast machine in order to not lose a subscription from people who still have ENIAC on their home.<br />
+<br />
+Then offer to pay for us to upgrade if you don't like it.<br />
+Blizzard have not dismissed better options for better hardware, to the contrary they are looking for such options if they can fit their plans.<br />
+<br />
+<br />
+<br />
+but after release we’ll be exploring more options for players with high-performance graphics cards—and if they provide quality while still fitting into our future technology plans, we’ll take a serious look at adding them to the game.<br />
+<br />
+<br />
+If you don't like it, then offer more constructive discussion rather than the all too common tactic of attacking the wrong people.<br />
+<br />
+If you want to &quot;fix&quot; the problem, then I have a fairly modest request of an nvidia 750ti.<br />
+<br />
+I am on low-end hardware and am very grateful to blizzard and other developers that have decided we are worth supporting.<br />
+If this change makes arrogant jerks leave the game, then it can only be for the best.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">asphyx5</div><div class="date">2014-09-17, 08:36 PM</div></div><div class="posttext">Is there any way to get rid of Blur effect while using CSAA?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pateuvasiliu</div><div class="date">2014-09-17, 08:39 PM</div></div><div class="posttext">TL;DR Besides we are at 2014 we will still going to support your mothers toast machine in order to not lose a subscription from people who still have ENIAC on their home.<br />
+<br />
+You're no more special than Bob with the Potato PC, who pays the same amount of money.<br />
+<br />
+If you want graphics that much go play GW2, then come back after 2 weeks.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">caervek</div><div class="date">2014-09-17, 08:44 PM</div></div><div class="posttext">So I just forced FXAA on Live to take these screenshots to try and show people just how bad it is.<br />
+<br />
+I think anyone who's ever played Diablo 3 knows how bad it is, makes the game look worse lol.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tharkkun</div><div class="date">2014-09-17, 08:56 PM</div></div><div class="posttext">Mine was just a hair over 1,000 dollars. runs Warcraft like butter.<br />
+<br />
+2k is over kill.<br />
+<br />
+I have a 7010 from Dell. Was $700 but I'm loaning it from work. I added a $300 video card and I sit at over 100 fps in most zones on ultra with shadows off. Easily over 60 in raid settings.<br />
+<br />
+EDIT: 7010 is an i5-3570 @ 3.40GHZ. 8GB of ram. 500 GB drive. Far from spectacular.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hugh Wattmate</div><div class="date">2014-09-17, 09:03 PM</div></div><div class="posttext">Spent like £700 on my build runs MoP, WoD and the PTR on ultra fine even in 40man open raids like ordos i wont drop below 25fps. You defiantly don't need a 2k PC</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Easo</div><div class="date">2014-09-17, 09:13 PM</div></div><div class="posttext">I would have liked some light Depth of Field, I am sucker for it.<br />
+Mostly could be used in in-game cutscenes.<br />
+IIRC, blues talked about it somewhere in Cata/beggining of MoP, that they have toyed with the idea, but have to find a good way to actually put it in game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayperos</div><div class="date">2014-09-17, 09:14 PM</div></div><div class="posttext">Are you positive this is possible for 6.0. I use Super Sampling on Live, had zero luck forcing it on Beta via the normal methods.<br />
+<br />
+Yep, no amount of forcing works for me. I have asked many times if there was a way and no answers. I don't think its possible on Beta.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Khalys</div><div class="date">2014-09-17, 09:15 PM</div></div><div class="posttext">Ah, the hilarious thread where people pretend supporting several methods is not possible and it's an either-or situation.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Velerios</div><div class="date">2014-09-17, 09:16 PM</div></div><div class="posttext">I really wished that ENB would work with WoW without the risk to get banned for using it!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Emophia</div><div class="date">2014-09-17, 09:19 PM</div></div><div class="posttext">A blog post trying to justify how they made the game look like shit.<br />
+<br />
+PTR looks so bad because the new anti aliasing is hot garbage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9a48be24dc</div><div class="date">2014-09-17, 09:25 PM</div></div><div class="posttext">As someone who grew up watching shit on vhs and betamax your tears give me great pleasure</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocea8c9ba75a</div><div class="date">2014-09-17, 09:25 PM</div></div><div class="posttext">MoP looks soooo much better than WoD with all the jagged edges. It got so ugly :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Todd Duval</div><div class="date">2014-09-17, 09:27 PM</div></div><div class="posttext">The problem probably came down to that some features will only work with CMAA and to get it to work with the older method would require even more overhead and additional development.<br />
+<br />
+It's kind of garbage that the Engineer's Workshop didn't even release their own comparison image, probably because it indeed does look much worse, even to the untrained eye.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kryos</div><div class="date">2014-09-17, 09:30 PM</div></div><div class="posttext">As someone who grew up watching shit on vhs and betamax your tears give me great pleasure<br />
+<br />
+Me, too and those looked better because analog... sure, low res, crappy colors and distortions.. but no jagged lines!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocbfaacb1cad</div><div class="date">2014-09-17, 09:31 PM</div></div><div class="posttext">Changing their AA technology won't cut it for the future. Also, having a high-end system, this doesn't make me very happy, but I'm in minority.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sylreick</div><div class="date">2014-09-17, 09:32 PM</div></div><div class="posttext">https://www.youtube.com/watch?v=LTWx7kvepk0<br />
+<br />
+I would love to see SSAA as an option, but in most cases I don't see many differences of CMAA to MSAA. So as compared to today, you have to actually be looking for those differences to see them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">W1ldW1ng</div><div class="date">2014-09-17, 09:34 PM</div></div><div class="posttext">I would love to see SSAA as an option, but in most cases I don't see many differences of CMAA to MSAA. So as compared to today, you have to actually be looking for those differences to see them.<br />
+<br />
+Thanks for the vid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Strakha</div><div class="date">2014-09-17, 09:42 PM</div></div><div class="posttext">As a linux / opengl user I wonder if this change will be implemented as well.<br />
+<br />
+The game runs flawlessly now on wine, so I hope that this doesn't ruin things for me or I shall be sad.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ulgrim</div><div class="date">2014-09-17, 09:55 PM</div></div><div class="posttext">MoP looks soooo much better than WoD with all the jagged edges. It got so ugly :(<br />
+<br />
+The jagged edges makes the game more savage™.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Coffeebean</div><div class="date">2014-09-17, 10:02 PM</div></div><div class="posttext">Thats true, I might have been a bit mis-representative about more shader units meaning better performance and being the only thing that counts, shader unit count does of course count and make a difference, the more shader programs you can run at once in parallel, the better performance will be, like multi-threading on a much larger scale.<br />
+<br />
+In the same way though, newer GPU's with newer architectures will usually be better than older ones, a lot of newer GPU's do tend to have more units per GPU though so thats was part of the point I was getting at. Dual 780Ti's in SLI should be better and see some benefit compared to a single one, but one 780ti is probably better than two 580GTX's potentially. My point mainly was you should see much more benefit from two cards than a single card of the same type with the deferred system.<br />
+<br />
+MRT is really well supported in the DirectX 11 pipeline by itself and most modern GPU's (within the last 4 years or so) support it so you're pretty well covered there. Obviously newer more powerful GPU's provide improved architectures designed specifically to the latest graphics API's. I am pretty excited about the deferred rendering as it should really give WoW a big improvement especially as Blizzard add more features to it and should last it a good long time.<br />
+<br />
+I just want to point out to the two of you, and anyone else talking about SLI performance optimization, that there's not really much, if anything, to do in that regard. When you make a call to a graphics API (DirectX in WoW's case), you are asking for something very specific. So specific, in fact, that GPUs are able to almost perfectly parallelize any rasterization you ask it to perform. The only reason you don't see exactly double the performance, when running SLI or Xfire, is because one GPU will be responsible for ensuring that frames are delivered to the CPU in the proper order (this relationship is effectively the master-slave model). This means that it will always seem like one GPU is doing more work than the other, and it is, but the reality of the situation is that as much work as possible is being offloaded to the secondary GPU. <br />
+<br />
+Hopefully this shines some light on the SLI situation. There always seems to be a lot of confusion around this issue.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">voskopoula</div><div class="date">2014-09-17, 10:16 PM</div></div><div class="posttext">The most important part of this post is <br />
+The outcome of all of this is that more than ever before, World of Warcraft relies heavily on a GPU that previously was largely free to handle things like MSAA. We explored a number of options to reconcile this increased GPU demand with the game’s anti-aliasing needs, and ultimately decided to embrace CMAA as our anti-aliasing technology for Warlords of Draenor.<br />
+<br />
+So to translate they are changing the antialiasing method, because they are sending more weight from CPU to GPU overall. So in order to not have customers getting bottlenecked from average GPUs even if they have awesome CPUs they did change the antialiasing method to a lighterweight method.<br />
+<br />
+Seems it is all about balancing while adding new graphical features and i bet the new character models did have an impact. Thats why they <br />
+One example is we now variably reduce the number of bones that need to be animated based on proximity and view (sometimes called level of detail, or LOD), a primary consumer of CPU time.<br />
+Translation, with the new character models average cpus are bottlenecking and we must cut down LoD on bones too!<br />
+<br />
+Thoughts<br />
+1) If you have an awesome cpu with an awesome gpu on a 3 monitor setup, it will pay up visualy if you can tinker those lod limitations (unless they are automated and open up depending your hardware)<br />
+2) If you had a balanced average PC on MoP things might drop a little on fps but i don't think they will drop inside raid encounters. Now the word balanced is pretty vague. This is a huge subject and we really can't know what balanced setup we need unless we spawn on the center of the major city hub of a faction in WoD the first weeks :P. However i would expect some really low fps for average PCs (CPU+GPU on 120-180$/euro each) if you spawn on the center of the major city hub during the first level up weeks :P. Considering all players will be showing heads and not helmets..:P<br />
+3) Bottlenecking could be more easy to happen, especially on average game PC, no matter what balancing they will do, the graphical data will be bigger right?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mytheros</div><div class="date">2014-09-17, 10:19 PM</div></div><div class="posttext">I don't know, as someone who plays truly beautiful looking games like Metro Last Light , Battlefield 4, hell even Tomb Raider (2013) ..... there much more but my point is only to say if you are speaking of graphics....WoW is WAY WAY WAY down on the list.....so my take is speaking about WoW's AA technology is splitting hairs.... you have a game engine that's ancient...ok I'll credit Blizz they are using higher polys now so the later expansions graphically are better than say Vanilla through Wrath look....but WoW doesn't touch the quality of just about any modern FPS......and there's other MMOs that look better as well if people want to argue the virtues of creating a much smaller game (like an FPS) vs. a huge undertaking like a MMORPG.....<br />
+<br />
+I've played games for damn near 32 years.....I'm one of those geeks that built his own machines (for about 15 years straight) .....I did the over clocking, not just of CPU's but memory and GPU's...AND I'm not talking with the current easy mode Bios systems and mobos I'm talking the old school over clocking flicking dip switches, &quot;forcing&quot; timing settings on memory.......and breaking shit some times costing me lots of money....:)<br />
+<br />
+I no longer do that stuff....and my current desktop was pre-made , bought from one of the popular gaming PC companies....<br />
+<br />
+But anyway I'm a geek and I honestly don't see a big difference even in the video posted above. I have a system that can handle Metro Last Light on high and get 60 fps (except some spots in the story when the screen gets really busy it dips down into the 40's).....I run Battlefield 4 on max settings and get about 60-70 fps, again unless the battle is really intense then i do sometimes lag down into low 40's.<br />
+<br />
+With my rig in beta everything looks beautiful to me...on Ultra and DX11....the game looks great (for WoW I mean).....I think like almost any type of change blizz makes with WoW it'll be over dramatized and people will exaggerate the hell out of it, making it way more an issue that it has any real right to be.<br />
+<br />
+Btw why is the color/shadowing different in the video with CMAA versus all the others? LOL....CMAA, according to all I've read on it, like any other AA tech doesn't &quot;do&quot; anything with colors.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-17, 10:21 PM</div></div><div class="posttext">I have a feeling they saw the video and decided in the future SSAA is coming. Woot. For now I am forced to downsample from 4k to get decent results, still looks like ass compared to MSAA, but it is better than FXAA or CMAA.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Voisier</div><div class="date">2014-09-17, 10:24 PM</div></div><div class="posttext">Lucky I picked up that 780ti when I did then</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc002f52dd83</div><div class="date">2014-09-17, 10:28 PM</div></div><div class="posttext">Who cares about anti-aliasing, when I have a decent high end PC, that can play all the new games with high+ settings with over 60 fps, but in WoW i dip to the 30's, while both my cpu and gpu can't go over 60% usage? It's the engine it can't hold itself, it's too old and can't use the modern hardware. Adding more graphical extras will make it even worse...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-17, 10:30 PM</div></div><div class="posttext">Who cares about anti-aliasing, when I have a decent high end PC, that can play all the new games with high+ settings with over 60 fps, but in WoW i dip to the 30's, while both my cpu and gpu can't go over 60% usage? It's the engine it can't hold itself, it's too old and can't use the modern hardware. Adding more graphical extras will make it even worse...<br />
+<br />
+You. Are. Lying.<br />
+<br />
+You are either lying or you haven't played in years and are just whining. I have a 760, which is an average video card, and I have an i5 3570k, which is also pretty average. I play the game at 60 FPS solid except when I turn Shadows up to Ultra.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gaebryel Quintyne</div><div class="date">2014-09-17, 10:33 PM</div></div><div class="posttext">Any way of forcing SSAA in beta or PTR? Anyone tried it yet, especially with a AMD GFX card?<br />
+I know MSAA cannot be forced anymore in beta or PTR due to the engine being changed to deferred engine or something like that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayperos</div><div class="date">2014-09-17, 10:38 PM</div></div><div class="posttext">Any way of forcing SSAA in beta or PTR? Anyone tried it yet, especially with a AMD GFX card?<br />
+I know MSAA cannot be forced anymore in beta or PTR due to the engine being changed to deferred engine or something like that.<br />
+<br />
+<br />
+I've tried forcing SSAA in the beta in my control panel drivers, and through nvidia inspector, neither works.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-17, 10:39 PM</div></div><div class="posttext">Any way of forcing SSAA in beta or PTR? Anyone tried it yet, especially with a AMD GFX card?<br />
+I know MSAA cannot be forced anymore in beta or PTR due to the engine being changed to deferred engine or something like that.<br />
+It is possible to force it on some cards, but it results in severe graphical infidelities. It is easier to just downsample, if you have a decent monitor and a decent graphics card, I can point you in the right direction for downsampling. Be aware, it can make the text ingame look a bit blurry due to the way the method works, but the results are much better than the new options on PTR/Beta.<br />
+<br />
+Link on how to Downsample: http://www.neogaf.com/forum/showthread.php?t=509076</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">caervek</div><div class="date">2014-09-17, 10:44 PM</div></div><div class="posttext">Lol, they haven't even bothered posting this on the EU site yet as it's caused such a backlash :P (normally posts like this are copied straight over).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-17, 10:45 PM</div></div><div class="posttext">Lol, they haven't even bothered posting this on the EU site yet as it's caused such a backlash :P (normally posts like this are copied straight over).<br />
+I don't think it caused such a big backlash. I was one of the people advocating for answers on the subject, and I am very upset about the change, but I am glad they had the guts to answer us without dodging questions or answers. They did a good job.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocedbf46d113</div><div class="date">2014-09-17, 10:46 PM</div></div><div class="posttext">Lol, they haven't even bothered posting this on the EU site yet as it's caused such a backlash :P (normally posts like this are copied straight over).<br />
+<br />
+What backlash?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-17, 10:48 PM</div></div><div class="posttext">What backlash?<br />
+The official forums are full of people whining about it, surprise surprise.<br />
+<br />
+To be honest, they can be mad, it is good to be mad, especially about something like this. I agree with them too, Blizzard really did drop the ball here, big time, but the end effect is a more optimized game overall.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayperos</div><div class="date">2014-09-17, 10:51 PM</div></div><div class="posttext">Someone should tweet the devs to ask why SSAA is off the table? How about offering FXAA, CMAA and Low/High SSAA settings?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-17, 10:54 PM</div></div><div class="posttext">Someone should tweet the devs to ask why SSAA is off the table? How about offering FXAA, CMAA and Low/High SSAA settings?<br />
+Well, for one, they are out of time, I am 100% sure they have finished in house builds at this point. I fully expect, especially after all that has been said, that we will be seeing SSAA ingame by the launch of 7.0, if not 7.0 itself, like I said above though, if you can handle the blur on the text, Downsampling is the superior option for the next expansion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayperos</div><div class="date">2014-09-17, 11:08 PM</div></div><div class="posttext">Well, for one, they are out of time, I am 100% sure they have finished in house builds at this point. I fully expect, especially after all that has been said, that we will be seeing SSAA ingame by the launch of 7.0, if not 7.0 itself, like I said above though, if you can handle the blur on the text, Downsampling is the superior option for the next expansion.<br />
+<br />
+Well, my monitor is only 1080p, don't think it can go higher. Plus I play at 1600x1200, so CMAA looks like ass at this resolution. I would go up to 1080, but then I lose widescreen on some parts, I can't stand black bars on my monitor.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daywalk3r</div><div class="date">2014-09-17, 11:12 PM</div></div><div class="posttext">So what is the real reason now for removing MSAA?<br />
+This article doesn't mention a switch to a deferred renderer at all, just says &quot;msaa got to expensive, so we removed it and integrated a cheaper crappy looking version for console peasants&quot;, or am i missing something here?<br />
+I really get the feeling here they are preparing the engine for a console version of WoW... :(<br />
+But then again they would need to improve on the multithreading of the engine (with the slow ass APUs in consoles).<br />
+<br />
+BTW i need my transparency AA ;(((<br />
+All that flickering on the edges of trees and bushes and gras... all those jaggies... drives me crazy...<br />
+<br />
+<br />
+https://www.youtube.com/watch?v=KSSTDu6ymp8<br />
+<br />
+<br />
+Also i have been playing with disabled glow effect, now i have to live with it :p<br />
+Who is gonna pay for my eye surgery? :rolleyes:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-17, 11:12 PM</div></div><div class="posttext">Well, my monitor is only 1080p, don't think it can go higher. Plus I play at 1600x1200, so CMAA looks like ass at this resolution. I would go up to 1080, but then I lose widescreen on some parts, I can't stand black bars on my monitor.<br />
+<br />
+Sounds like you have a 16:10 Monitor then yes?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">starlite</div><div class="date">2014-09-17, 11:16 PM</div></div><div class="posttext">By the way: In WoD you will no longer be able to turn off full-screen glow without also disabling ALL anti-aliasing of any sort. Back to the year 2000 and huge jaggies on any diagonal line.<br />
+<br />
+There used to be a setting to turn off glow, then they got rid of that and you had to do a console command. now that's also gone. The default setting (see below) is for me completely unbearable, and now there is no way to get rid of it without getting rid of AA as well. <br />
+<br />
+Glow illustrated:<br />
+<br />
+imgur.com/a/lIVw5</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ComputerNerd</div><div class="date">2014-09-17, 11:20 PM</div></div><div class="posttext">The official forums are full of people whining about it, surprise surprise.<br />
+<br />
+To be honest, they can be mad, it is good to be mad, especially about something like this. I agree with them too, Blizzard really did drop the ball here, big time, but the end effect is a more optimized game overall.<br />
+<br />
+If you are going to judge a community on the negative responses then you will never get an accurate view.<br />
+Look at how many people make threads bashing LFR, and then look at the poll results in each of those threads, which are overwhemingly positive in their support for the feature.<br />
+Players who want to whine are more readily going to vocalise their opinions and to insist on sharing them with as many as possible.<br />
+Those happy about something rarely feel the need to inform others of that.<br />
+<br />
+If this is to support old hardware then obviously blizzard feel that is worth doing, most likely due to numbers of players they would lose if they did not.<br />
+<br />
+Sure, it can be disappointing that your hardware isn't utilised or supported properly.<br />
+I get that, but there isn't the need for the hostility that has been demonstrated here.<br />
+Namecalling won't achieve the result you want.<br />
+Real constructive discussion could, but I am seeing little of that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-17, 11:21 PM</div></div><div class="posttext">If you are going to judge a community on the negative responses then you will never get an accurate view.<br />
+Look at how many people make threads bashing LFR, and then look at the poll results in each of those threads, which are overwhemingly positive in their support for the feature.<br />
+Players who want to whine are more readily going to vocalise their opinions and to insist on sharing them with as many as possible.<br />
+Those happy about something rarely feel the need to inform others of that.<br />
+<br />
+Well, the Official Forums are notorious for being home to either serious suck ups or whiners, that is the reason I am unsurprised.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc002f52dd83</div><div class="date">2014-09-17, 11:24 PM</div></div><div class="posttext">You. Are. Lying.<br />
+<br />
+You are either lying or you haven't played in years and are just whining. I have a 760, which is an average video card, and I have an i5 3570k, which is also pretty average. I play the game at 60 FPS solid except when I turn Shadows up to Ultra.<br />
+Nope, I am not lying and I still play WoW. The problem is not the rendering of the graphics themselves, it's the amount of data, that the engine have to handle in extreme situations(overcrowded places, raids, etc...)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-17, 11:25 PM</div></div><div class="posttext">Nope, I am not lying and I still play WoW.<br />
+Give me some speccy stats then, seriously, there is no way in hell you have average hardware and cannot hit 60 at 1080p.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc002f52dd83</div><div class="date">2014-09-17, 11:29 PM</div></div><div class="posttext">Give me some speccy stats then, seriously, there is no way in hell you have average hardware and cannot hit 60 at 1080p.<br />
+I am not saying I can't hit 60, I am saying I can't hold it in extreme situations like overcrowded places and raids.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+I have 8350 at 4.6Ghz, 8GB DDR3 1866, HD7950 at 1100/6000<br />
+Should be enough, right? And the stupid thing is that when it dips to 30/40fps on the crowded places, it only uses up to 60-70% of both cpu and gpu... so they are not the bottlenecks here.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-17, 11:31 PM</div></div><div class="posttext">I am not saying I can't hit 60, I am saying I can't hold it in extreme situations like overcrowded places and raids.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+I have 8350 at 4.6Ghz, 8GB DDR3 1866, HD7950 at 1100/6000<br />
+<br />
+I don't think anyone can hold 60 at Max Settings at the Shrines on a High Pop realm, raids though? I hold 60 in raids, I play with everything Ultra except Particle Effects and Shadows, which are each Good respectively.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hugh Wattmate</div><div class="date">2014-09-17, 11:40 PM</div></div><div class="posttext">People must be on a wooden machine or something mines running all settings ultra in raid and out of raid and on world boss's just fine on the new settings. I am not seeing any of this box edging people are on about on Beta in the new zones. When WoD beta comes back online i will make a video or something. People are totally overreacting. <br />
+<br />
+As for the fog, blur thing yeah there is some fog in new zones and the fog in old zones was a bug thats fixed.<br />
+<br />
+Never understood why people care about above 60fps in a MMO like WoW not like the game has anything that blurs when you move. Can't really tell the difference and if you can then you are concentrating to much on the wrong thing! Try gaming your abilities or paying attention to the fight. 30fps is plenty in a game like WoW.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daywalk3r</div><div class="date">2014-09-17, 11:40 PM</div></div><div class="posttext">No CPU can handle 25man heroic on live without dips to 30ish FPS on bosses like Malkorok (at Pull with Bloodlust and all procs, cds, etc...).<br />
+WoW is very CPU limited and only using about 1,5 threads of usually 4-8 on modern CPUs.<br />
+But there is no way they can change the engine to support more threads without recoding it completely.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc002f52dd83</div><div class="date">2014-09-17, 11:41 PM</div></div><div class="posttext">If the engine was able to use that extra 30-40% of my PC's power with it's engine, maybe even in extreme situations I would be able to hold 60fps. I will understand if I have dip in performance and I see that during that dip my cpu and/or gpu are going to 100% load, but only 60-70% means that the engine can't take advantage of all the &quot;horse power&quot; it has access to.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayperos</div><div class="date">2014-09-17, 11:45 PM</div></div><div class="posttext">I just want to know why Nvidia inspector doesn't work, when its worked before. I thought that was the whole point of the program to add better AA to games that don't offer it. Do they block it in the code or what?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-17, 11:50 PM</div></div><div class="posttext">I just want to know why Nvidia inspector doesn't work, when its worked before. I thought that was the whole point of the program to add better AA to games that don't offer it. Do they block it in the code or what?<br />
+<br />
+No actually, it is more than likely because of all the engine work they did Nvidia hasn't updated the drivers for your card to support the changes yet, once that gets through you should be able to use it again, I say should. Its also really important to note: Inspector and Control Panel do not always work, for instance, in Skyrim I cannot force anything via Control Panel or Inspector, in WoW (on Live) I can force 1 type of non-native AA, on Beta I can force 1 as well, but its fucked 6 ways to Sunday. It all depends on if the Moon is Aligned properly and the gods are on your side...... shit kinda sucks sometimes :rolleyes:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ablib</div><div class="date">2014-09-17, 11:56 PM</div></div><div class="posttext">Well, my monitor is only 1080p, don't think it can go higher. Plus I play at 1600x1200, so...<br />
+<br />
+<br />
+1080p is 1920 x 1080. But you're running it at 1600 x1200 ? What model is your monitor? People who play at this resolution as their native resolution, need to get better monitors.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-18, 12:01 AM</div></div><div class="posttext">1080p is 1920 x 1080. What model is your monitor? People who play at this resolution as their native resolution, need to get better monitors.<br />
+<br />
+Wait, are you saying people who play native 1080p need to get better monitors?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gaebryel Quintyne</div><div class="date">2014-09-18, 12:02 AM</div></div><div class="posttext">My monitor says the recommended resolution for it is 1920 x 1080. It does not go any higher. Can I still use downsampling on this monitor or it won't work 'cause I checked the link for downsampling and it requires resolution to be much higher than that I think.<br />
+<br />
+How do I know if my monitor is 1080p? Where can I find that out?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-18, 12:04 AM</div></div><div class="posttext">My monitor says the recommended resolution for it is 1920 x 1080. It does not go any higher. Can I still use downsampling on this monitor or it won't work 'cause I checked the link for downsampling and it requires resolution to be much higher than that I think.<br />
+<br />
+You can add custom resolutions that go higher via things like Nvidia Control Panel. Go read through the link I posted, he goes in depth to explain exactly what to do, it is pretty crazy. I can play WoW at 4k downsampled (3840x2400), and I do not notice any FPS hits at all, plus the Anti-Aliasing is no longer needed due to the Downsampling.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ablib</div><div class="date">2014-09-18, 12:04 AM</div></div><div class="posttext">Wait, are you saying people who play native 1080p need to get better monitors?<br />
+<br />
+Yes. People who use the term &quot;1080p&quot; while referencing their computer monitors are noobs. 1920 x 1080 is a terrible PC resolution. 1920 x 1200 is the closest comparable resolution. A monitor with a native resolution of 1920 x 1080 is a poor quality screen.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-18, 12:05 AM</div></div><div class="posttext">Yes. People who use the term &quot;1080p&quot; while referencing their computer monitors are noobs. 1920 x 1080 is a terrible PC resolution. 1920 x 1200 is the closest comparable resolution. A monitor with a native resolution of 1920 x 1080 is a poor quality screen.<br />
+<br />
+Not entirely true, I mean, my monitor is 16:10, so I play at 1920x1200, but still, 1080p looks fine, and most monitors that use it are fine too.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gaebryel Quintyne</div><div class="date">2014-09-18, 12:07 AM</div></div><div class="posttext">Yes. People who use the term &quot;1080p&quot; while referencing their computer monitors are noobs. 1920 x 1080 is a terrible PC resolution. 1920 x 1200 is the closest comparable resolution. A monitor with a native resolution of 1920 x 1080 is a poor quality screen.<br />
+<br />
+1920 x 1200 resolution gives like black bars if you want to run anything in 16:9 screen. 1920 x 1080 is 16:9 so that should be better, no?<br />
+<br />
+Btw, I have a AMD 7870 GFX card.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayperos</div><div class="date">2014-09-18, 12:09 AM</div></div><div class="posttext">1080p is 1920 x 1080. But you're running it at 1600 x1200 ? What model is your monitor? People who play at this resolution as their native resolution, need to get better monitors.<br />
+<br />
+Old. Samsung SyncMaster BX2231.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ablib</div><div class="date">2014-09-18, 12:12 AM</div></div><div class="posttext">Not entirely true, I mean, my monitor is 16:10, so I play at 1920x1200, but still, 1080p looks fine, and most monitors that use it are fine too.<br />
+<br />
+No it's pretty true. A 1920x1080 screen is of lesser quality than 1920x1200. I can see it instantly, and it drives me insane. It's not a computing resolution.<br />
+<br />
+Unfortunately, in the past 5-6 years or so, monitor manufacturers have been clinging to the &quot;1080p&quot; term as a reason to produce shitty monitors, because 90% of consumers think that 1080p is the best.<br />
+<br />
+Granted it's not as noticeable on 22&quot; or smaller monitors, but on a 24, 27, or 30&quot; monitor it's absolutely awful.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">krihan</div><div class="date">2014-09-18, 12:23 AM</div></div><div class="posttext">its kinda funny that i had never been able to pull 60+ fps consistently with my 4770k and gtx 780 sli setup in raids . i guess this change will make it easier to have consistent fps, without randomly dropping frames.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ablib</div><div class="date">2014-09-18, 12:24 AM</div></div><div class="posttext">1920 x 1200 resolution gives like black bars if you want to run anything in 16:9 screen. 1920 x 1080 is 16:9 so that should be better, no?<br />
+<br />
+Btw, I have a AMD 7870 GFX card.<br />
+<br />
+You should set your monitor at whatever the native resolution is. 1920 x 1200 is better than 1080p. 1920 x 1200 could also be called 1200p (higher is better).<br />
+<br />
+1920 x 1200 should also be set at 16:10.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-09-18, 12:26 AM</div></div><div class="posttext">its kinda funny that i had never been able to pull 60+ fps consistently with my 4770k and gtx 780 sli setup in raids . i guess this change will make it easier to have consistent fps, without randomly dropping frames.<br />
+I can say for sure, I never dip below 50 in very crowded areas on beta, the lowest I was dipping was Pre-Optimization Tanaan Intro and that was 45, they really did a good job with the optimization, despite the terrible AA changes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kanegasi</div><div class="date">2014-09-18, 12:46 AM</div></div><div class="posttext">Oh sweet, a blog post about all the Engineering changes.<br />
+<br />
+*reads*<br />
+<br />
+Oh...<br />
+<br />
+Sweet, a blog post about graphical changes. Legitimately interested, not sure if better than what I thought the blog was about.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+&quot;Morphological&quot; is only a word if you're a Power Ranger.<br />
+<br />
+I ended up here thinking this would be an article on Engineering the profession. I am le disappoint.<br />
+<br />
+https://software.intel.com/en-us/articles/conservative-morphological-anti-aliasing-cmaa<br />
+Origin of word: https://en.wikipedia.org/wiki/Morphology_%28biology%29<br />
+<br />
+&quot;Morph&quot; is not just a verb from a kid's show, it's from the Greek word &quot;morphé&quot; which means &quot;form&quot;. Showing only the form seen.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Melchior</div><div class="date">2014-09-18, 01:51 AM</div></div><div class="posttext">Yes. People who use the term &quot;1080p&quot; while referencing their computer monitors are noobs. 1920 x 1080 is a terrible PC resolution. 1920 x 1200 is the closest comparable resolution. A monitor with a native resolution of 1920 x 1080 is a poor quality screen.<br />
+<br />
+Most 3D games scale horizontal+, not vertical-. 1920x1080 is 16:9 which is a wider aspect ratio than 1920x1200 which is 16:10. Horizontal+ means 3D games will display the same vertical information in your game regardless of resolution, but add to the sides the wider your aspect ratio is. That means 1920x1200 has less of the game on the screen, because the sides are cut off compared to 1920x1080. The extra 120 vertical pixels are useful in the Windows UI and games that do not have aspect ratio scaling, but those games are far rarer. For most games that scale with aspect ratio, wider is better. 16:9 &gt; 16:10 &gt; 4:3 &gt; 5:4<br />
+<br />
+As for the panel quality, there are plenty of IPS 1920x1080 monitors.<br />
+<br />
+Not that I particularly care, as my monitor is 2560x1440 (16:9 so woot), but your information is out of date.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mormolyce</div><div class="date">2014-09-18, 02:24 AM</div></div><div class="posttext">Yes. People who use the term &quot;1080p&quot; while referencing their computer monitors are noobs. 1920 x 1080 is a terrible PC resolution. 1920 x 1200 is the closest comparable resolution. A monitor with a native resolution of 1920 x 1080 is a poor quality screen.<br />
+<br />
+...What? I don't know what the hell you're talking about. &quot;1080p&quot; is a term used to market TVs, it means 1920x1080 - ie an aspect ratio of 16:9. Thanks to the success of big screen TVs this has become a de facto standard, so a lot of monitors are made in this ratio now rather than 16:10 (1920x1200), which was briefly popular several years ago. I'd say most monitors these days are 16:9 rather than 16:10.<br />
+<br />
+One is not &quot;better&quot; than the other, it's simply two different &quot;widescreen&quot; standards. 16:10 is slightly taller. I mean okay, you might personally prefer one over the other but that's just opinion.<br />
+<br />
+And regardless of which you have you should always run your monitor in its native resolution because modern PC monitors look shitty in non-native resolutions because they have to approximate them, unlike the old CRTs that were capable of the full range of resolutions without loss.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+&quot;Morphological&quot; is only a word if you're a Power Ranger.<br />
+<br />
+Or trained in science, or Greek.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+You should set your monitor at whatever the native resolution is. 1920 x 1200 is better than 1080p. 1920 x 1200 could also be called 1200p (higher is better).<br />
+<br />
+1920 x 1200 should also be set at 16:10.<br />
+<br />
+It's only &quot;better&quot; to set your monitor to 1920x1600 (16:10) if that's your monitor's native resolution, which I think is unlikely unless you went out of your way to buy one, or it's quite old.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+My monitor says the recommended resolution for it is 1920 x 1080. It does not go any higher. Can I still use downsampling on this monitor or it won't work 'cause I checked the link for downsampling and it requires resolution to be much higher than that I think.<br />
+<br />
+How do I know if my monitor is 1080p? Where can I find that out?<br />
+<br />
+If it says the recommended resolution is 1920x1080, that means it's 1080p.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+<br />
+The downside is that it could be at the cost of a greater proportion of the playerbase.<br />
+<br />
+Yeah I'm sure millions will quit WoW because of MSAA.<br />
+<br />
+Obviously WoW is a game you play because you're a massive graphics snob.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd78055c23a</div><div class="date">2014-09-18, 04:49 AM</div></div><div class="posttext">The downside is that it could be at the cost of a greater proportion of the playerbase.<br />
+<br />
+I wouldn't call it a loss to lose a player who plays for the graphics.<br />
+WoW has always had a cartoony look about it, and I think it would be best to keep it that way.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">sheppo</div><div class="date">2014-09-18, 09:34 AM</div></div><div class="posttext">The pro &quot;we like our graphics sharp and not fuzzy&quot; MSAA crowd ain't gonna like this.<br />
+<br />
+it's not an issue as long as we can force a different AA method through our graphics card control panel... some games that specify AA methods don't let you do that. e.g. any game that uses FXAA will not let you force, MSAA or SSAA for example. I run with 8x SSAA because it actually AA's foliage and text.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2014-09-18, 09:56 AM</div></div><div class="posttext">CMAA looks crap.<br />
+I doubt that any current GPU will be taxed out by WoW anytime soon, no matter what they add. &lt;_&lt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yig</div><div class="date">2014-09-18, 10:39 AM</div></div><div class="posttext">Excellent, so it means I can still enjoy the game with my 3 year old PC.<br />
+<br />
+WTF? I built my PC on Newegg for $800 in 2008 and beyond replacing my graphics card twice since then, I run WOW at Ultra 1080p and 30-60+ FPS.<br />
+<br />
+Three years?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lb</div><div class="date">2014-09-18, 01:53 PM</div></div><div class="posttext">The jagged edges makes the game more savage™.<br />
+<br />
+You mean more &quot;sawage™&quot; :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb86fbed2f6</div><div class="date">2014-09-18, 02:22 PM</div></div><div class="posttext">WTF? I built my PC on Newegg for $800 in 2008 and beyond replacing my graphics card twice since then, I run WOW at Ultra 1080p and 30-60+ FPS.<br />
+<br />
+Three years?<br />
+<br />
+Most kids building PCs have no real idea about the relative performance of the parts they're using. Their mentality is usually along the lines of &quot;if your [pc part] wasn't the most expensive thing on the market then your FPS is going to suck lol&quot; regardless of the actual performance demands of the game.<br />
+<br />
+On topic: CMAA is in no way a suitable replacement for MSAA. I'm starting to suspect that Blizz are using the WoW subs to fund development of an MMO game engine that is more suitable for consoles. I'm not saying that they're trying to make WoW for consoles but it's got to make some financial sense to evolve their existing tried and tested engine over time rather than build an entirely new engine from scratch for whatever future MMO they're planning.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">markos82</div><div class="date">2014-09-18, 02:56 PM</div></div><div class="posttext">Darkmoon Card of Draenor Inscription. 3 sec cast. Reagents: Light Parchment, War Paints (11), Sorcerous Air (3). Tools: Virtuoso Inking Set. 10). Tools: Virtuoso Inking Set<br />
+<br />
+Will using this trigger daily CD?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soulsinger</div><div class="date">2014-09-18, 07:44 PM</div></div><div class="posttext">[...]<br />
+On topic: CMAA is in no way a suitable replacement for MSAA. I'm starting to suspect that Blizz are using the WoW subs to fund development of an MMO game engine that is more suitable for consoles. I'm not saying that they're trying to make WoW for consoles but it's got to make some financial sense to evolve their existing tried and tested engine over time rather than build an entirely new engine from scratch for whatever future MMO they're planning.<br />
+<br />
+Why, whatever can you mean? You pick CMAA when you want to minimize your power use and deal with texture blurring in certain situations. You know, like playing a game with eleventeen moving elements on a giant TV screen. ;)<br />
+<br />
+The game doesn't have a lot of alpha textures, does it? Nah, we'll be fine.<br />
+<br />
+FXAA can be God-awful depending on the game developer (it uses developer implemented shaders); remember, that 'X' stands for &quot;approximate&quot;! Mostly I think it looks like that Barbra Walters filter if you're sitting, oh, normal distance from a monitor or laptop screen, but becomes passable across a room. Hmmm....<br />
+<br />
+Of course they're moving towards a console engine, I completely agree. It's the Disney Parks problem all over again, &quot;There's some market we haven't taken money from yet no matter how tenuously related!&quot;<br />
+<br />
+Notice we're moving towards having each class have exactly [NUMBER_OF_BUTTONS_ON_A_PS4_CONTROLLER] powers you'd use most often. Pair that with our big, big step down in rendering from MSAA which, whoops, just by coincidence the new consoles have problems using...<br />
+<br />
+Hey, there's got to be somebody left on XBOX Live with money, right?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ttak82</div><div class="date">2014-09-19, 08:12 AM</div></div><div class="posttext">Honestly, MSAA broke in 5.0, so I don't mind seeing alternative methods that actually work.<br />
+<br />
+Hi noob question,, but could this be a reason behind the game crashes that have been occuring since expansion 5.x. I got a Nvidia GT540M and after trying just about everything (setting changes/driver updates/addon removal/defrag/reinstall/repair) to end crashes in MoP, and its never worked. I am convinced that heres some WoW code compatibility issues with this card.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kojinshugi</div><div class="date">2014-09-19, 06:35 PM</div></div><div class="posttext">No it's pretty true. A 1920x1080 screen is of lesser quality than 1920x1200. I can see it instantly, and it drives me insane. It's not a computing resolution.<br />
+<br />
+This is absolute gobbledegook. There is no such thing as &quot;computing resolution&quot;. 1920x1080 is generally the exact same ppi as a comparable 1920x1200 monitor, except it's slightly narrower.<br />
+<br />
+<br />
+Unfortunately, in the past 5-6 years or so, monitor manufacturers have been clinging to the &quot;1080p&quot; term as a reason to produce shitty monitors, because 90% of consumers think that 1080p is the best.<br />
+<br />
+No, they've been making 1080p monitors because most visual content is produced at a 16:9 aspect ratio.<br />
+<br />
+<br />
+Granted it's not as noticeable on 22&quot; or smaller monitors, but on a 24, 27, or 30&quot; monitor it's absolutely awful.<br />
+<br />
+Again, you're talking absolute nonsense. The resolution of a panel has absolutely NOTHING to do with its quality, except that cheap 16:10 monitors generally aren't made anymore, so a lot of people have lower quality 1920x1080 monitors they bought for $150. A high quality 16:9 monitor has absolutely no visual difference compared to a high quality 16:10 monitor, except it has 120 fewer vertical pixels.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaddd</div><div class="date">2014-09-21, 02:24 PM</div></div><div class="posttext">I run wow at 4k and am much more concerned with them fixing SLI/Crossfire scaling then I am about AA options. It would be nice if the game benefited from multi gpu's more! And no, dont blame nvidia or amd.<br />
+I know...first world problems =/<br /> 
+<br />
+I have been thinking about picking up a 4K monitor and running at 4K. How good does the game look compared to 1080p, do you see a noticeable difference? I mainly want to be able to pan my camera out even further and also just have an even prettier game. WoD, and even MoP, look better than older content. WoD I think especially looks like the game got a visual bump wandering the zones and I want to see this.<br />
+<br />
+Do you run SLI to achieve 4K or are you using a single card. I currently run a 770 superclock and may trade it in for a 970, 2x 970s or a single 980.<br />
+<br />
+What are peoples thoughts on this? Will SLI be working better with WoD and the game changes?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HeWhoWalksWithGreenFlames</div><div class="date">2014-10-13, 09:07 PM</div></div><div class="posttext">2x MSAA is good, 4x MSAA is great, and 8x MSAA is superlative when it comes to removing aliasing artifacts from the edges of polygons. You can add coverage samples and edge-detect algorithms to 4x MSAA and it still doesn’t rival true 8x MSAA. <br />
+<br />
+Morphological AA also works in conjunction with MSAA. MLAA can be a great option, but it can have a detrimental effect on image quality when small text is critical in game play. As such, it isn’t viable as a set-and-forget method of anti-aliasing for everyone.<br />
+<br />
+I've not seen any issues with MLAA in World of Warcraft.<br />
+<br />
+<br />
+Everyone not liking the changes,<br />
+<br />
+If you aren't happy with the changes, do what I do, disable AA in-game, override it in your NCP or AMD Catalyst, and enable you own AA. I use AMD. I've override it on my Catalyst Control Center. I sometimes change it to 8xEQAA or 16x with MLAA enabled. When I am in Shrine of Two Moons, I get anywhere between 100 to 200 FPS. In &quot;Garry&quot; or Garrosh 10/25 man, I get around 30 FPS with maximum settings, but Multisample is set to 0x. Give it a try if you aren't happy with CMAA.<br />
+<br />
+Second Thing. CMAA. All it really does is it motion blurs jagged edges of a line while differet levels of MSAA make it less &quot;jaggy.&quot; I would expect the implementation of CMAA on WoD to be some what rocky. It's new tech. Blizzard-Activation still needs to work the bugs out. If you ask me, unless they are implementing motion blur, the only gains for this is for low-level computer specs to be able to enjoy the game with everyone else. I wouldn't even use CMAA unless they refined it because the drop in performance with MSAA 8x would disappear, but in my situation, it wouldn't really matter. In the overall picture, with CMAA, ill probably see 35 FPS on Garrosh 25man instead of 30 FPS.<br />
+<br />
+Another thing to consider. A lot of the issues in raid doesn't comes down from having a minimum spec computer, but the amount of particle effects that occur in the game. Why is this. Simply, shadows, particles, and others aren't off-loaded to the GPU. So a simple bottleneck occurs when you're doing Garrosh 25man at the CPU level, and the players with less than $2,000 &quot;invested&quot; computers are going to suck at it. Thus, they can't play the game on an equal level like those who have high-spec computers on heavy particle-fight bosses. (Particle effects + shadows) x (25 individual players + boss + surrounding background + mods + computations + textures + ...) = omg, my computer is going to explode with low specs. All rendering of models are done by the GPU, texturing, etc. Lets face it, unless AMD comes up with its own variant of PhysX or World of Warcraft implements PhysX from NVidia, you will always be at the mercy of the bottleneck with Particle Effects. What CMAA does for the low-level specs is that it gives them a slight boost in performance at whatever little portion of the game the Devs can cut out. Meaning that there is only so much performance they can be squeezed out without having to nuke the whole WoW platform, re-build it, restructure it, re-code it, etc... Implementing CMAA is that means of squeezing out performance without simply smashing it with a sledge hammer.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Keile</div><div class="date">2014-10-13, 09:15 PM</div></div><div class="posttext">I've not seen any issues with MLAA in World of Warcraft.<br />
+<br />
+<br />
+Everyone not liking the changes,<br />
+<br />
+If you aren't happy with the changes, do what I do, disable AA in-game, override it in your NCP or AMD Catalyst, and enable you own AA. I use AMD. I've override it on my Catalyst Control Center. I sometimes change it to 8xEQAA or 16x with MLAA enabled. When I am in Shrine of Two Moons, I get anywhere between 100 to 200 FPS. In &quot;Garry&quot; or Garrosh 10/25 man, I get around 30 FPS with maximum settings, but Multisample is set to 0x. Give it a try if you aren't happy with CMAA.<br />
+<br />
+Second Thing. CMAA. All it really does is it motion blurs jagged edges of a line while differet levels of MSAA make it less &quot;jaggy.&quot; I would expect the implementation of CMAA on WoD to be some what rocky. It's new tech. Blizzard-Activation still needs to work the bugs out. If you ask me, unless they are implementing motion blur, the only gains for this is for low-level computer specs to be able to enjoy the game with everyone else. I wouldn't even use CMAA unless they refined it because the drop in performance with MSAA 8x would disappear, but in my situation, it wouldn't really matter. In the overall picture, with CMAA, ill probably see 35 FPS on Garrosh 25man instead of 30 FPS.<br />
+<br />
+Another thing to consider. A lot of the issues in raid doesn't comes down from having a minimum spec computer, but the amount of particle effects that occur in the game. Why is this. Simply, shadows, particles, and others aren't off-loaded to the GPU. So a simple bottleneck occurs when you're doing Garrosh 25man at the CPU level, and the players with less than $2,000 &quot;invested&quot; computers are going to suck at it. Thus, they can't play the game on an equal level like those who have high-spec computers on heavy particle-fight bosses. (Particle effects + shadows) x (25 individual players + boss + surrounding background + mods + computations + textures + ...) = omg, my computer is going to explode with low specs. All rendering of models are done by the GPU, texturing, etc. Lets face it, unless AMD comes up with its own variant of PhysX or World of Warcraft implements PhysX from NVidia, you will always be at the mercy of the bottleneck with Particle Effects. What CMAA does for the low-level specs is that it gives them a slight boost in performance at whatever little portion of the game the Devs can cut out. Meaning that there is only so much performance they can be squeezed out without having to nuke the whole WoW platform, re-build it, restructure it, re-code it, etc... Implementing CMAA is that means of squeezing out performance without simply smashing it with a sledge hammer.<br />
+<br />
+Problem is you cant change it with NCP and AMD Catalyst in 6.0.<br />
+<br />
+I've tried it on the PTR and there was absolutely no effect.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

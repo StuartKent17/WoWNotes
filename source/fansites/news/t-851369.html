@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="simple, stop, firewall, thread, analyze, queue, order, packets, computer, fact, understand, hope, causing, report, comics, /facepalm, posts, blue, patch, 4.0.6, making, works, latency, software, sense, understanding, word" />
+<meta name="description" content="Home/World latency in Patch 4.0.6 
+Patch 4.0.6 changed how latency is displayed to the client, we now have a &quot;Home&quot; latency and a &quot;World&quot; latency, BrianI on the Tech Support forums posted a long explanation of what it means exactly and how latency works in WoW.  
+ 
+http://media.mmo-champion.com/images/news/2011/february/ping406.jpg 
+ 
+We have been seeing a lot of confusion regarding some of our recent changes to the User Interface, specifically in regard to the new in-game latency meters. With" />
+<title> Latency Changes in Patch 4.0.6 and beyond, Blue Posts, MMO Report, Comics [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Latency Changes in Patch 4.0.6 and beyond, Blue Posts, MMO Report, Comics</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-851369.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/851369-Latency-Changes-in-Patch-4-0-6-and-beyond-Blue-Posts-MMO-Report-Comics">Latency Changes in Patch 4.0.6 and beyond, Blue Posts, MMO Report, Comics</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2011-02-14, 06:24 AM</div></div><div class="posttext">Home/World latency in Patch 4.0.6<br />
+Patch 4.0.6 changed how latency is displayed to the client, we now have a &quot;Home&quot; latency and a &quot;World&quot; latency, BrianI on the Tech Support forums posted a long explanation of what it means exactly and how latency works in WoW. <br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2011/february/ping406.jpg (http://media.mmo-champion.com/images/news/2011/february/ping406.jpg)<br />
+<br />
+We have been seeing a lot of confusion regarding some of our recent changes to the User Interface, specifically in regard to the new in-game latency meters. With 4.0.6, we have split the two separate connections the client forms to our game servers into two different ratings, labeled 'Home' and 'World'.<br />
+<br />
+The speculation regarding what these ratings mean has been very interesting and some of the guesses as to what the numbers actually refer to have been pretty imaginative. Some have speculated that 'Home' referred to your personal latency and 'World' was Blizzard's latency. This is incorrect.<br />
+<br />
+In essence, 'Home' refers to your connection to your realm server. This connection sends chat data, auction house stuff, guild chat and info, some addon data, and various other data. It is a pretty slim connection in terms of bandwidth requirements.<br />
+<br />
+'World' is a reference to the connection to our servers that transmits all the other data... combat, data from the people around you (specs, gear, enchants, etc.), NPCs, mobs, casting, professions, etc. Going into a highly populated zone (like a capital city) will drastically increase the amount of data being sent over this connection and will raise the reported latency.<br />
+<br />
+Prior to 4.0.6, the in-game latency monitor only showed 'World' latency, which caused a lot of confusion for people who had no lag while chatting, but couldn't cast or interact with NPCs and ended up getting kicked offline. We hoped that including the latency meters for both connections would assist in clarifying this for everyone.<br />
+<br />
+As is probably obvious based upon this information, the two connections are not used equally. There is a much larger amount of data being sent over the World connection, which is a good reason you may see disparities between the two times. If there is a large chunk of data 'queued' up on the server and waiting to be sent to your client, that 'ping' to the server is going to have to wait its turn in line, and the actual number returned will be much higher than the 'Home' connection.<br />
+<br />
+&quot;Well, great,&quot; you may say, &quot;but what does that mean to me?!&quot;<br />
+<br />
+Not much, maybe, but I wanted to focus on how local (or network) factors can (and will!) affect these numbers.<br />
+<br />
+Here are the most common causes of high pings/latency (on both Home and World):<br />
+<br />
+<br />
+1) Wireless<br />
+2) Packet loss<br />
+3) Almost-but-not-quite-broadband*<br />
+4) Addons (yes, those wonderful UI modifications)<br />
+5) Firewalls (some firewalls do interesting things to latency... try playing without it to see if it helps!)<br />
+5) Mis-configured or defective home routers (please temporarily bypass before anything else)<br />
+6) Quality of Service and Traffic Management Systems performing packet queuing of some sort.<br />
+7) Net link saturation (not necessarily your ISP, but somewhere between you and Blizzard)<br />
+<br />
+<br />
+*As of July 2010, the 'official' definition of Broadband Internet (per the FCC) is '4Mbps downstream and 1Mbps upstream'. Anything lower than this is not 'officially' broadband.<br />
+<br />
+Lowering video settings (especially view distance) has the added benefit of lowering the amount of data your connection is asked to convey, as well, so even that can be a valid troubleshooting step.<br />
+<br />
+If your 'Home' connection latency is low and your 'World' connection latency is high, that frequently indicates that there is some sort of QoS congestion controls being applied to your internet connection, at either the micro (LAN) or macro (WAN) level. A common symptom would be that you would be able to chat, but not to cast.<br />
+<br />
+If both connections report high latency, that means your connection to our servers, in general, is almost completely saturated, or 'overflowing'. Without making any claims where that saturation lies, that seems to have been the most common case to date.<br />
+<br />
+Please refer to our support pages (such as http://us.blizzard.com/support/article.xml?locale=en_US&amp;articleId=21018&amp;parentCategoryId&amp;pageNumber=1&amp;categoryId=2329) or contact a technical support representative directly for further information and troubleshooting. <br />
+<br />
+<br />
+Patch 4.0.6 Latency Changes<br />
+BrianI also explained why some people saw their latency improve dramatically in 4.0.6, and how they had to revert the changes for the moment to keep everyone happy. The good news is: tons of improvements are coming!<br />
+With 4.0.6 we made a couple changes to our instance servers in an attempt to lower latency. Unfortunately, with those changes came increased bandwidth requirements. Due to the nature of the feedback we received, we have temporarily reverted those changes, as of around ~6pm PST last night. Are you still experiencing issues?<br />
+<br />
+Could you go into a little more detail on this? You said the change done with 4.0.6 caused a bandwidth problem but was said problem on my end, your end, or somewhere in between? If this change did cause a problem on my end how can I prepare for when it has been reimplemented?<br />
+<br />
+In a nutshell? That's a bit hard to explain clearly, but I'll try. Some people have an ISP whose peering link to their tier 1 backbone provider is oversaturated. Some people have ISPs that are throttling their connection in some way. Some people are on wireless connections, or are using old routers that are causing issues. Some people simply have a misconfigured or malfunctioning LAN device. Some people just have lower bandwidth connections. I’ll explain further below.<br />
+<br />
+Unequivocally, the bandwidth problems were not internal to our network. We never came close to capacity. The actual total peak transfer data rate was around 1/5th of our maximum capacity.<br />
+<br />
+When we performed maintenance the day we released 4.0.6 we made a couple modifications to our instance (BG/arena/dungeon/raid) servers. One of these changes had the effect of lowering latency for a very high percentage of our users... around 99% or so. The numbers were pretty staggering, to be honest. My personal ‘instance server’ experience was a drop from 120-150ms average ping down to 12ms. No, really, 12 ms. From my home residential connection. It was amazing. Raiding was glorious. The vast majority of our users saw similar improvements.<br />
+<br />
+Then again, I have a very stable high bandwidth cable connection with a well designed internal LAN, and I had no problems handling the requisite increases in bandwidth. You see, part of that reason the latency went down is that a lot more packets were being sent. In some cases, the bandwidth almost tripled. For those who don't (or can't) meet all of our minimum system requirements (e.g. broadband internet*) or who are having issues with their connection or are on a flaky wireless connection... things weren't so pretty. We ended up rolling back that change until a later date when we will be able to selectively turn on that performance enhancement on a ‘per client’ basis. Unfortunately, that will require another patch, so we’ll just have to wait a bit.<br />
+<br />
+Yes, we really did roll back that change for something that negatively affected less than 1% of total users. We really do care about providing the best environment we can. We do things like this frequently.<br />
+<br />
+We do understand that some people do not have the options available to them that others do. We know that people are playing on 6 to 8 year old computers (in some cases, even older) with a flaky 3G or satellite connection, even though this does not meet our minimum system requirements. Not everyone can afford newer or better and not all areas have a faster connection available, currently. We do see people connecting from all over the world from backbones that are throttling their connections due to the cost of transmitting data over transoceanic cables. We see all these things… and we feel some of the same frustrations these people do when trying to have a smooth gaming experience. It is actually difficult to be unable to help someone due to situations outside your control.<br />
+<br />
+To be honest, World of Warcraft was not designed for these types of setups. That is why we are very clear with our ‘minimum system requirements’ and what, exactly, is supported. Will we still try to help you connect and do our best to help you out, anyway? Absolutely. We just can’t make any promises or guarantees, as much as we would like to. The actual bandwidth requirements are not that high. In ordinary play, WoW shouldn’t end up taking more than a few hundred megabytes a month. What is important, however, is the stability of the connection and width of the ‘pipe’, due to the bursts of data that need to be transmitted at times. While total bandwidth may not be high, there will be short periods where a ton of data is being sent simultaneously (like, you know, raid boss fights or even when first logging on to a server when your toon is in a capital city).<br />
+<br />
+We may wish it were otherwise, but if we tried to send and receive less data we wouldn’t be able to provide the immersive, complex, top-notch gaming experience (most people) have come to know, love, and expect from Blizzard Entertainment. I wish there were some way to do both, but there really isn’t, at least with today’s technologies. Either we can provide an intense environment that over 98% of people who play WoW have no problems with, or we can lower our standards to unacceptable levels and try to get that extra ~2% in, as well.<br />
+<br />
+Anyway, I apologize for the lengthy post, and I’m sure this will be lost in the thread, but I’ve been meaning to post some thoughts on this for awhile. I hope you’ve enjoyed the read… it was fun to type, at least. :)<br />
+<br />
+<br />
+Blue Posts<br />
+Getting a GM Survey without a ticket response<br />
+This is a known issue and from what I understand, has to do with the limitations of the in-game mail system. We are, of course, working with our developers to find a solution. &gt;^.^&lt;<br />
+<br />
+In the mean time, I do apologize for any confusion or inconvenience this may cause. We are definitely aware of the frustration an individual might feel if they see their petition disappear and receive a survey with seemingly no response. Remember that Game Masters will respond to each and every petition submitted, and be sure to always check your in-game mail before filling out a survey. (Source (http://blue.mmo-champion.com/topic/158053/getting-gm-survey-without-a-ticket-response))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin (Forums (http://www.mmo-champion.com/forums/273-Paladin) / Cataclysm Talent Calculator (http://www.wowtal.com/#k=..paladin) / Skills/Talents (http://www.mmo-champion.com/content/1670-Paladin-Cataclysm))<br />
+Light of Dawn/Beacon of Light Bugfix<br />
+The hotfix note correctly describes what an attempt to fix a bug ended up changing, which was not actually the original intent. We're reverting the hotfix until we can fix the bug without causing Light of Dawn to no longer trigger Beacon. (Source (http://blue.mmo-champion.com/topic/158065/yet-another-pally-nerf))<br />
+<br />
+<br />
+The MMO Report<br />
+Let's start the week with a nice and warm MMO Report (http://www.g4tv.com/thefeed/blog/tag/3321/The-MMO-Report.html). <br />
+<br />
+<br />
+&lt;object classId=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; width=&quot;480&quot; height=&quot;418&quot; id=&quot;VideoPlayerLg51202&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.g4tv.com/lv3/51202&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed src=&quot;http://www.g4tv.com/lv3/51202&quot; type=&quot;application/x-shockwave-flash&quot; name=&quot;VideoPlayer&quot; width=&quot;480&quot; height=&quot;382&quot; allowScriptAccess=&quot;always&quot; allowFullScreen=&quot;true&quot; /&gt;&lt;/object&gt;<br />
+<br />
+<br />
+Comics<br />
+Dark Legacy Comics #275 (http://www.darklegacycomics.com/275.html) and Teh Gladiators #210 + #211 (http://www.tehgladiators.com/?p=210) are now available! <br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2011/february/dl275.jpg (http://www.darklegacycomics.com/275.html) http://media.mmo-champion.com/images/news/2011/february/tehglad210.jpg (http://www.tehgladiators.com/?p=210)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Foxsakes</div><div class="date">2011-02-14, 06:29 AM</div></div><div class="posttext">WTB Oceanic servers based in Australia, even with using Lowerping, my ping is still pretty high.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Earthshockaz</div><div class="date">2011-02-14, 06:32 AM</div></div><div class="posttext">if we get servers in australia won't we have to wait longer to get expansions like china?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">omfgishBenneh</div><div class="date">2011-02-14, 06:34 AM</div></div><div class="posttext">What Ash said. :D<br />
+I know HEAPS of people who don't play WoW just because there are no Australian servers.<br />
+If the Oceanic servers were restricted to Oceanic players it wouldn't be too bad, but alas they're not. -_-</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Simca</div><div class="date">2011-02-14, 06:34 AM</div></div><div class="posttext">Very nice - my connection has been blazing fast both on Home AND World post-patch.<br />
+Running at Home: 45 and World: 54 right now, whereas it used to be Ping: 220 before the patch.<br />
+<br />
+BrianI, by the way, is by FAR the best Forum Support Agent Blizzard has in that section of the forums. His informative and helpful posts go far and beyond most things Blizzard Employees would say. I just love it when he does stuff like this.<br />
+<br />
+He is an absolutely amazingly helpful person and a credit to the company. Somebody give him a raise.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">omfgishBenneh</div><div class="date">2011-02-14, 06:34 AM</div></div><div class="posttext">if we get servers in australia won't we have to wait longer to get expansions like china?<br />
+<br />
+Why would we wait? It's only a matter of updating the server patch.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hellgrazr</div><div class="date">2011-02-14, 06:34 AM</div></div><div class="posttext">best part is comics</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Luzifer</div><div class="date">2011-02-14, 06:35 AM</div></div><div class="posttext">Srsly it's about damn time Oceanic servers moved to Australia.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">sdracklryeg</div><div class="date">2011-02-14, 06:37 AM</div></div><div class="posttext">WTB Oceanic servers based in Australia, even with using Lowerping, my ping is still pretty high.<br />
+<br />
+Lowerping? Eww. Look for Australian based Tunnels, i'm on reducethelag.com which is Brisbane based and being &lt;100km brisbane i raid on like 190-230 with ADSL1<br />
+<br />
+That being said if we get Australian based ones it still would be about 150 ping better :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">domzai</div><div class="date">2011-02-14, 06:39 AM</div></div><div class="posttext">WTB Oceanic servers based in Australia, even with using Lowerping, my ping is still pretty high.<br />
+<br />
+amen. 225 ping is bearable through tunnels - but i cry a little when i hear people complaining about how they get 50ms instead of 20 -_-</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Copperman</div><div class="date">2011-02-14, 06:40 AM</div></div><div class="posttext">lol @ people in Australia. imo if you want better play , go to the U.s</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">awayfromlife</div><div class="date">2011-02-14, 06:41 AM</div></div><div class="posttext">Telstra wont come to the party in relation to Aus servers; it's quite sad.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Earthshockaz</div><div class="date">2011-02-14, 06:42 AM</div></div><div class="posttext">@copperman Dude.... Australia is awesome, we got giant spiders, snakes, crocodiles, stingrays and a shit ton of other animals that will kill you if you try and fuck with them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bloodwine77</div><div class="date">2011-02-14, 06:43 AM</div></div><div class="posttext">I've been wondering what Home vs. World Latency was, and I think Blizzard dropped the ball in how they label it in-game and there is no in-game explanation for the two values.<br />
+<br />
+I'm glad that I now know what they are thanks to BrianI, but they need to make adjustments in-game to better explain what the values mean.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">greyghost</div><div class="date">2011-02-14, 06:43 AM</div></div><div class="posttext">Yes, we really did roll back that change for something that negatively affected less than 1% of total users. We really do care about providing the best environment we can. We do things like this frequently.<br />
+<br />
+People who think that Blizzard provides terrible service needs to take this bit into consideration.<br />
+<br />
+Then again, 1% of the millions of people playing this game is an awful lot of players. Like, more than many other MMO's have playing their game total.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">sdracklryeg</div><div class="date">2011-02-14, 06:43 AM</div></div><div class="posttext">@copperman Dude.... Australia is awesome, we got giant spiders, snakes, crocodiles, stingrays and a shit ton of other animals that will kill you if you try and fuck with them.<br />
+<br />
+You forgot to mention the Fires and Floods!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hammersoth</div><div class="date">2011-02-14, 06:43 AM</div></div><div class="posttext">Way to rip off Penny-Arcade's Dickwolves comic DA!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">greyghost</div><div class="date">2011-02-14, 06:45 AM</div></div><div class="posttext">Way to rip off Penny-Arcade's Dickwolves comic DA!<br />
+<br />
+At least they ripped it off in a way where they won't get death threats against the author's family/children.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Earthshockaz</div><div class="date">2011-02-14, 06:50 AM</div></div><div class="posttext">You forgot to mention the Fires and Floods!<br />
+<br />
+and the cyclone up in queensland as well xD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Omegadark</div><div class="date">2011-02-14, 06:50 AM</div></div><div class="posttext">i just saw it on front page...<br />
+<br />
+and all i could stare at was the 111 FPS.... im getting max of 66 fps if i have EVERYTHING on low/disabled... <br />
+<br />
+but i couldnt do that because i couldnt see AOE or spell effects at all so its basically in between 30-47 fps</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Slavebot</div><div class="date">2011-02-14, 06:51 AM</div></div><div class="posttext">Lowerping? Eww. Look for Australian based Tunnels, i'm on reducethelag.com which is Brisbane based and being &lt;100km brisbane i raid on like 190-230 with ADSL1<br />
+<br />
+That being said if we get Australian based ones it still would be about 150 ping better :(<br />
+<br />
+You may want to look into Pingbetter.com its free(currently in beta) and if you sign up you get it for a free year. I've personally tried a lot of ping lowering programs being on the east coast playing on a west coast server and it's been the best/easiest to use.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bluspacecow</div><div class="date">2011-02-14, 06:54 AM</div></div><div class="posttext">Very nice - my connection has been blazing fast both on Home AND World post-patch.<br />
+Running at Home: 45 and World: 54 right now, whereas it used to be Ping: 220 before the patch.<br />
+<br />
+133 ms / 145 ms is mine IIRC. For connecting from NZ that's absolutely insanely good.<br />
+<br />
+<br />
+BrianI, by the way, is by FAR the best Forum Support Agent Blizzard has in that section of the forums. His informative and helpful posts go far and beyond most things Blizzard Employees would say. I just love it when he does stuff like this..<br />
+<br />
+The guy does way too much IMHO. At one point he was taking care of 6 very long stick threads related to Disconnections and Latency. He used to attempt to answer every post or failing that answer every post that was either glaring off topic or a different issue altogether. He's backed off on that now as he does get a bit busy - I know from a few blues I've spoken to that he's pretty much busy all day , on the phone with ISP techs as well as multiple online methods of communication (IRC , email , IM's etc etc) all day.<br />
+<br />
+I would really hate to see the guy burn himself out - he needs to delegate some of his work to some other people IMHO.<br />
+<br />
+That's not the only thing he's done. Boub if you're reading this you need to add this in too :<br />
+<br />
+http://us.battle.net/wow/en/forum/topic/1965992365?page=16#301<br />
+<br />
+He's reversed the 3.3.5 &quot;pick a random port from a pool&quot; connection issue.<br />
+<br />
+Previous to 3.3.5 when you logged on your realm server it would open up a connection to that realm servers IP address only on port 3724. For some unknown reason with (AFAIK) 3.3.5 they changed it so it would randomly pick a port chosen from the following ports : 1119,3724,4000,6112-6119 . I have verified this over the months since 3.3.5 with netstat - one server would connect on 3724 , another server would pick 1119, another would pick 4000. Even if you connected to say an instance or battleground or continent specific server it would do this and not always to the same port it connected to your realm server on.<br />
+<br />
+This caused a few issues with some people to point where there would be exceptionally long threads about it in the old forums - when they connected to their realm on port 3724 no bad latency , any other ports caused bad latency. Don't ask me why as I don't know why that was so.<br />
+<br />
+Brian L's gotten this reversed - world of warcraft will now connect solely on port 3724 to any realm server.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Velossa</div><div class="date">2011-02-14, 06:58 AM</div></div><div class="posttext">Way to rip off Penny-Arcade's Dickwolves comic DA!<br />
+<br />
+Glad I'm not the only one who saw this. Way to be behind the times, DLC.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Omegadark</div><div class="date">2011-02-14, 06:59 AM</div></div><div class="posttext">i guess my latency is ok... i dont know i wish i had a better computer... i want that 111 fps... so bad... so.... so so bad....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">toychristopher</div><div class="date">2011-02-14, 07:03 AM</div></div><div class="posttext">Instead of calling it &quot;home&quot; and &quot;world&quot; wouldn't it make more sense to call it &quot;interface&quot; and &quot;world&quot;?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seegtease</div><div class="date">2011-02-14, 07:07 AM</div></div><div class="posttext">Way to rip off Penny-Arcade's Dickwolves comic DA!<br />
+<br />
+I know, right? If I hadn't seen it, this comic would be more funny, but I have. And PA's was better, imo.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc541431a6c3</div><div class="date">2011-02-14, 07:10 AM</div></div><div class="posttext">My monitor couldnt even handle those 111 fps =)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Karot</div><div class="date">2011-02-14, 07:28 AM</div></div><div class="posttext">DLC...so true...haha<br />
+<br />
+But must save some for the other &quot;heroes&quot;! :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baygon</div><div class="date">2011-02-14, 07:30 AM</div></div><div class="posttext">is it weird that yet again Rift hasn't been mentioned at all by MMO Report, something is going on here..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MysticalOS</div><div class="date">2011-02-14, 07:34 AM</div></div><div class="posttext">@ blue, doh i missed that post, i saw the home/world posts but i dunno how i missed port one. good. Cause that random port mapping certainly has never helped me :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kojinshugi</div><div class="date">2011-02-14, 07:44 AM</div></div><div class="posttext">Way to rip off Penny-Arcade's Dickwolves comic DA!<br />
+<br />
+At this point Penny Arcade has so many comics with so many gaming related jokes it's like the Simpsons Did It thing. No matter what joke you think of, PA has done it already.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nitrax</div><div class="date">2011-02-14, 07:51 AM</div></div><div class="posttext">Blizzard actions are rarely logical.<br />
+<br />
+If you read again, it isn't interface and world. They basically just have different servers for chat/AH stuff and game-playing stuff, but it's the same ping measurement. That said I'd love to have a real &quot;world&quot; lag meter then I know if i should complain on my ISP or Blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">JebJoya</div><div class="date">2011-02-14, 08:18 AM</div></div><div class="posttext">5) Firewalls (some firewalls do interesting things to latency... try playing without it to see if it helps!)<br />
+<br />
+Are Blizzard seriously suggesting, on their official forums, that users should switch off their firewalls? What about those people that are NATted on a on a public network, or those that connect directly to their modem? Pretty shocking advice to be freewheeling out there without context attached...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Narshe</div><div class="date">2011-02-14, 08:45 AM</div></div><div class="posttext">You may want to look into Pingbetter.com its free(currently in beta) and if you sign up you get it for a free year. I've personally tried a lot of ping lowering programs being on the east coast playing on a west coast server and it's been the best/easiest to use.<br />
+<br />
+Thanks for that. I find it hard to believe its completely free for the full year considering its beta and they might just attach free access for all right now. But Ill enjoy it while it lasts :) Ive used WTFast before and liked it, and this seems to give about the same performance, makes my game slightly faster regardless of ping numbers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">xeroxide</div><div class="date">2011-02-14, 08:45 AM</div></div><div class="posttext">they rollback a change for 1% of their players, but will not allow australia to host their own servers?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Narshe</div><div class="date">2011-02-14, 08:46 AM</div></div><div class="posttext">Are Blizzard seriously suggesting, on their official forums, that users should switch off their firewalls? What about those people that are NATted on a on a public network, or those that connect directly to their modem? Pretty shocking advice to be freewheeling out there without context attached...<br />
+<br />
+This isnt anything new, its a valid suggestion that theyve been giving since the game was released.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xanwryn</div><div class="date">2011-02-14, 08:53 AM</div></div><div class="posttext">WTB Oceanic servers based in Australia, even with using Lowerping, my ping is still pretty high.<br />
+<br />
+I use WoW Tunnels myself since it's closer to home.<br />
+<br />
+I'm glad they reverted the changes, not sure if my connection could handle it. I wish what their FCC labelled as broadband was the definition of broadband in New Zealand because whilst some people get above 4Mbps speeds, I am certainly not one of them (don't even know why, to be honest).<br />
+<br />
+I'm not into trusting the latency monitor in-game, however. I feel it's incredibly inaccurate, the reason is why is that I'm actually on a bank alt in the middle of Stormwind City's Auction House (Trade District one, not the Dwarven District one) and am getting a &quot;Home&quot; ping of ~1200-1400ms and a &quot;World&quot; ping of ~4000-6000 ms. Sounds high, right? Here's a picture.<br />
+<br />
+http://i.imgur.com/y4Qdt.png<br />
+<br />
+The reason I call this inaccurate is because it's certainly not taking me 1.2-1.4s to chat or 4-6 seconds to use the Auction House. I get false readings like this all the time and am never quite sure why, could be since I use an SSH Tunnelling Service (WoW Tunnels, as mentioned above) or could be something completely unrelated.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6af618f320</div><div class="date">2011-02-14, 09:04 AM</div></div><div class="posttext">Did he really say people should disable their firewalls because they might affect latency? Gotta be shitting me... I guess they need to increase Authenticator sales.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nathanyel</div><div class="date">2011-02-14, 09:52 AM</div></div><div class="posttext">At this point Penny Arcade has so many comics with so many gaming related jokes it's like the Simpsons Did It thing. No matter what joke you think of, PA has done it already.<br />
+<br />
+However, in this case, it's a rather recent strip, that can't be a &quot;Simpsons did it&quot; coincidence.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ealyssa</div><div class="date">2011-02-14, 09:57 AM</div></div><div class="posttext">Did he really say people should disable their firewalls because they might affect latency? Gotta be shitting me... I guess they need to increase Authenticator sales.<br />
+<br />
+No he says to TRY without firewall if you have latency. You know, to find the problem (firewall configuration in this case)...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">marrakoosh</div><div class="date">2011-02-14, 10:05 AM</div></div><div class="posttext">Did anyone else notice the 'Speed' attribute on the 'General' pane in the character screen as well? Not seen it reported anywhere (unless I've missed it) but just tells you run speed, mount speed and swim speed! :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">VanishO2</div><div class="date">2011-02-14, 10:13 AM</div></div><div class="posttext">Did he really say people should disable their firewalls because they might affect latency? Gotta be shitting me... I guess they need to increase Authenticator sales.<br />
+<br />
+To test and see if it's the reason, so you know where to work on to solve your problem.<br />
+<br />
+Not to play without it forever.<br />
+<br />
+It's the nature of any testing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8e35e9fe46</div><div class="date">2011-02-14, 10:15 AM</div></div><div class="posttext">And I thought the 100-120ms drop in latency could be chalked up to my new wireless router and receiver :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pantelija</div><div class="date">2011-02-14, 10:19 AM</div></div><div class="posttext">http://www.wowbash.com/image-18123.html &lt; win</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Keosen</div><div class="date">2011-02-14, 10:31 AM</div></div><div class="posttext">Did he really say people should disable their firewalls because they might affect latency? Gotta be shitting me... I guess they need to increase Authenticator sales.<br />
+<br />
+Why?<br />
+Turning off the firewall while playing will don't make any difference protection-wise.<br />
+<br />
+Actually if you are a user that doesn't click every flashing bullshit that promises you 1million dollars or following links from &quot;ridicouslyNamedSender@@blizzard.com&quot; you are safe even without AV or firewall.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fela</div><div class="date">2011-02-14, 10:33 AM</div></div><div class="posttext">Way to rip off Penny-Arcade's Dickwolves comic DA!<br />
+<br />
+Was my first thought too :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc693ae91c3a</div><div class="date">2011-02-14, 10:42 AM</div></div><div class="posttext">Did he really say people should disable their firewalls because they might affect latency? Gotta be shitting me... I guess they need to increase Authenticator sales.<br />
+<br />
+Firewalls, particularly software firewalls, can and often will &quot;batch up&quot; the traffic going either way, and then check a number of packets all together. While this may mean that the firewall itself will use less CPU/be more efficient, it can cause a sometimes massive increase in latency due to this batching operation. This is because the packets that are sent/received are not sent on instantly, and may instead be checked as a big batch, say, every quarter of a second, for instance. Taking that example, and allowing for 50ms to process all of the packets gives an instant increase of 300ms to your latency before anything has even left your computer. Not to mention you may get the same delay on the way back in.<br />
+<br />
+While ok for non-time sensitive applications like web/media streaming (with appropriate buffering), for games, where sometimes a few milliseconds can be all the difference, this is a very bad thing.<br />
+<br />
+While it is not appropriate in all situations, playing without a firewall as a test can be a useful indicator of whether or not your own firewall is actually causing such a problem.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ZeroWashu</div><div class="date">2011-02-14, 11:01 AM</div></div><div class="posttext">I don't know what they did, but recently many in my guild and I have even seen it on LFD runs with people from other servers have been getting game freezing lag. I am referring to pauses of ten to thirty seconds. We have gotten theses spikes in open areas, most recently being Crucible, as well as instances. <br />
+<br />
+The most interesting part is that it does not affect all servers in a battle group. In two runs we had one or two people totally unaffected - however in both cases neither was the tank and they reported near instant aggro when other people reported being stuck. It was like those affected didn't matter anymore.<br />
+<br />
+Reminds me of the good old days in Ultima Online during its release where we experienced what many referred to as the Chesapeake two step - take two steps and stop - take two steps and stop (named for the server)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jlrm365</div><div class="date">2011-02-14, 12:26 PM</div></div><div class="posttext">&quot;Yes, we really did roll back that change for something that negatively affected less than 1% of total users. We really do care about providing the best environment we can.&quot;<br />
+<br />
+Am I the only person who recognises the contradiction, there? F*** the 1%!<br />
+<br />
+The sooner those &quot;per client&quot; tweaks can be patched in, the better.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FishHead</div><div class="date">2011-02-14, 12:33 PM</div></div><div class="posttext">Yes, we really did roll back that change for something that negatively affected less than 1% of total users. We really do care about providing the best environment we can. We do things like this frequently.<br />
+<br />
+<br />
+We may wish it were otherwise, but if we tried to send and receive less data we wouldn’t be able to provide the immersive, complex, top-notch gaming experience (most people) have come to know, love, and expect from Blizzard Entertainment. I wish there were some way to do both, but there really isn’t, at least with today’s technologies. Either we can provide an intense environment that over 98% of people who play WoW have no problems with, or we can lower our standards to unacceptable levels and try to get that extra ~2% in, as well.<br />
+<br />
+Boy, they really like to toot their own horn.<br />
+<br />
+Here I am, 6 months later and Blizzard still hasn't fixed my 5000ms+ latency. I wish I could spit on this blue through my monitor.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jaerin</div><div class="date">2011-02-14, 01:32 PM</div></div><div class="posttext">Wow seriously ripped of PA almost completely.<br />
+<br />
+Was this a demonstration of how to do the comic without being offensive or just demonstrating how to plagerize?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Katana Angel</div><div class="date">2011-02-14, 01:46 PM</div></div><div class="posttext">I don't get this. They changed the requirements of the bandwidth in an attempt to improve on latency, which actually caused folks to have increased latency. This Brian guy is suggesting that's because their systems/internet couldn't handle it.<br />
+<br />
+Problem is my latency, connection, and everything else have been fine, and always has been. I've always had about ~150ms connection. I've got a mid-range cable internet connection, and I still saw lag so bad that it prevented me from raiding on those nights after they &quot;fixed&quot; the issue. Those two nights I couldn't raid at all because it was take a step, try to heal, nothing happens, 20 seconds later everything catches up and the tank is dead.<br />
+<br />
+I'm just so, so confused. If they're trying to suggest that people with crappy connections were the ones that saw the issues with this change, I'd like to disagree. Hell, the person running really bad DSL in our raid group didn't see any lag! This is all so backwards on my end.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Throrion</div><div class="date">2011-02-14, 01:46 PM</div></div><div class="posttext">Boubouille, the guy goes on to elaborate;<br />
+<br />
+The number of affected accounts was not in the hundreds of thousands. It probably wasn't even in the thousands. It is much closer to a few hundred, if that much. All percentages and numbers applied are referring to North America, only, not our global user base. That doesn't make it 'less important'; it just makes the impact footprint smaller.<br />
+<br />
+So his lengthy report only refers to a very niche audience in the US. They still claim that there's nothing wrong in Europe and the rest of the world. Might want to clarify that. :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nixxen</div><div class="date">2011-02-14, 02:27 PM</div></div><div class="posttext">I don't get this. They changed the requirements of the bandwidth in an attempt to improve on latency, which actually caused folks to have increased latency. This Brian guy is suggesting that's because their systems/internet couldn't handle it.<br />
+<br />
+Problem is my latency, connection, and everything else have been fine, and always has been. I've always had about ~150ms connection. I've got a mid-range cable internet connection, and I still saw lag so bad that it prevented me from raiding on those nights after they &quot;fixed&quot; the issue. Those two nights I couldn't raid at all because it was take a step, try to heal, nothing happens, 20 seconds later everything catches up and the tank is dead.<br />
+<br />
+I'm just so, so confused. If they're trying to suggest that people with crappy connections were the ones that saw the issues with this change, I'd like to disagree. Hell, the person running really bad DSL in our raid group didn't see any lag! This is all so backwards on my end.<br />
+<br />
+They changed the way the client and servers handled packages, sending them more often in smaller packages.<br />
+This in turn can &quot;clutter up the package queue&quot;. In other words, too many packages are sent, &quot;smart&quot; firewalls/routers/W.E. cluster up those packages and send them as a larger package instead of many small ones - at a slower interval than the game itself sends them. This will cause lag and in some cases disconnects due to loss of too many packages.<br />
+<br />
+The change they applied will show you if you have set up your connection well. If it doesn't work, either your LAN or your ISP is not set up correctly. Granted, you can't do much about your ISPs set up other than bitch and whine at them, but if enough people do it they will bend over for the masses.<br />
+Your own LAN on the other hand is each persons own responsibility to set up and maintain.<br />
+<br />
+However, if everything is set up correctly, you will notice better ping times(latency) than you had before the patch.<br />
+<br />
+I advise checking the entire thread. It has quite a lot of insight on how to approach the changes that are coming.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bloodwine77</div><div class="date">2011-02-14, 02:32 PM</div></div><div class="posttext">&quot;Yes, we really did roll back that change for something that negatively affected less than 1% of total users. We really do care about providing the best environment we can.&quot;<br />
+<br />
+Am I the only person who recognises the contradiction, there? F*** the 1%!<br />
+<br />
+The sooner those &quot;per client&quot; tweaks can be patched in, the better.<br />
+<br />
+I don't see a contradiction. I assume you are talking about how they are not providing the best environment they can for 99% of the playerbase.<br />
+<br />
+However, they only recently tweaked their bandwidth/latency stuff. It is not as if they took something away from the 99% that the 99% have been using for months or even years.<br />
+<br />
+That 99% of the playerbase has been doing just fine for over 6 years. I think we can wait a little bit longer for Blizzard to figure out what went wrong and try to improve the experience.<br />
+<br />
+My point is that the playerbase didn't lose anything, we just haven't gained anything yet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bluspacecow</div><div class="date">2011-02-14, 02:34 PM</div></div><div class="posttext">I'm not into trusting the latency monitor in-game, however. I feel it's incredibly inaccurate, the reason is why is that I'm actually on a bank alt in the middle of Stormwind City's Auction House (Trade District one, not the Dwarven District one) and am getting a &quot;Home&quot; ping of ~1200-1400ms and a &quot;World&quot; ping of ~4000-6000 ms. Sounds high, right? Here's a picture.<br />
+<br />
+The reason I call this inaccurate is because it's certainly not taking me 1.2-1.4s to chat or 4-6 seconds to use the Auction House. I get false readings like this all the time and am never quite sure why, could be since I use an SSH Tunnelling Service (WoW Tunnels, as mentioned above) or could be something completely unrelated.<br />
+<br />
+I'm in New Zealand myself and don't get these figures<br />
+<br />
+133/156 is mine IIRC. Just recently had my account and port upgraded to an ADSL2 type connection tho. In Hamilton roughly 1 km from the exchange<br />
+<br />
+It's possible it could be an interface issue. Have you tried taking the cliched 4 folders out of your wow folder ? IE The interface , wtf and both cache folder (one in Data folder and one in wow folder)<br />
+<br />
+Also trying using this cvar :<br />
+<br />
+http://www.wowpedia.org/CVar_bgLoadThrottle</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DarkZero</div><div class="date">2011-02-14, 02:38 PM</div></div><div class="posttext">For some time, just after 4.0.6 launched, I was having some latency issues. Instead of my usual 250ms, it was up to 700-800ms. It was pretty annoying, but I dismissed it as an unusual lag issue. I wonder if it's related to this...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darangen</div><div class="date">2011-02-14, 03:05 PM</div></div><div class="posttext">Yes, we really did roll back that change for something that negatively affected less than 1% of total users. We really do care about providing the best environment we can. We do things like this frequently.<br />
+<br />
+People who think that Blizzard provides terrible service needs to take this bit into consideration.<br />
+<br />
+Then again, 1% of the millions of people playing this game is an awful lot of players. Like, more than many other MMO's have playing their game total.<br />
+<br />
+Yeah, and it only took them about 6 months to do so. Awesome customer service!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Layuth</div><div class="date">2011-02-14, 03:09 PM</div></div><div class="posttext">Yet another list of problems where Blizzard is not at fault in any way. Perhaps I should delete my WTF, Interface and Cache folders.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Asrialol</div><div class="date">2011-02-14, 03:23 PM</div></div><div class="posttext">I for one is really glad Blizzard does things like this. I for one is currently playing on Edge/2g/3g Mobile network, since I'm in the military at a place without public internet. The last few days I've been playing with 70ms, while it's usually at 300-800.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SbEguy</div><div class="date">2011-02-14, 04:44 PM</div></div><div class="posttext">Yeah, and it only took them about 6 months to do so. Awesome customer service!<br />
+<br />
+what do you mean, 6 months? It was 5 days.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Simca</div><div class="date">2011-02-14, 05:03 PM</div></div><div class="posttext">Boubouille, the guy goes on to elaborate;<br />
+<br />
+The number of affected accounts was not in the hundreds of thousands. It probably wasn't even in the thousands. It is much closer to a few hundred, if that much. All percentages and numbers applied are referring to North America, only, not our global user base. That doesn't make it 'less important'; it just makes the impact footprint smaller.<br />
+<br />
+So his lengthy report only refers to a very niche audience in the US. They still claim that there's nothing wrong in Europe and the rest of the world. Might want to clarify that. :p<br />
+<br />
+All that means is that they rolled out the changes in the US first, and then they saw problems for a very niche users in the U.S., so they reverted the changes for the entire U.S.<br />
+<br />
+His lengthy report refers to changes that will soon be worldwide and affect everyone.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DrgnDancer</div><div class="date">2011-02-14, 05:17 PM</div></div><div class="posttext">Boy, they really like to toot their own horn.<br />
+<br />
+Here I am, 6 months later and Blizzard still hasn't fixed my 5000ms+ latency. I wish I could spit on this blue through my monitor.<br />
+<br />
+So you, personally, in all the world, have 5000 Latency and you somehow think this is Blizzard's issue to fix? Millions of people connect fine, you have a problem, and you think it's Blizzard's fault? That makes perfect sense. It must be their anti-FishHead filter. Just get them to turn it off.<br />
+<br />
+<br />
+&quot;Yes, we really did roll back that change for something that negatively affected less than 1% of total users. We really do care about providing the best environment we can.&quot;<br />
+<br />
+Am I the only person who recognises the contradiction, there? F*** the 1%!<br />
+<br />
+The sooner those &quot;per client&quot; tweaks can be patched in, the better.<br />
+<br />
+Yes they really reverted a change that shaved a 100 or 200ms of latency off people who already had a really good connection to prevent it from seriously impacting 1% of the population whose connections went to complete shit. That's good business and fair to customers. It's a shame, and I hope they can fix it so I can get those 100ms shaved off again, but I don't want to sacrifice someone else's ability to play at all so I can have an almost unnoticeablely better connection.<br />
+<br />
+<br />
+I don't get this. They changed the requirements of the bandwidth in an attempt to improve on latency, which actually caused folks to have increased latency. This Brian guy is suggesting that's because their systems/internet couldn't handle it.<br />
+<br />
+And that's exactly what happened. Networking is complicated, and as Brian points out his explanation is necessarily complicated as well. The change they made reduced latency at the expense of burst high bandwidth requirements. Much like we talk about damage being &quot;spikey&quot; in game, this caused the bandwidth requirements to become &quot;spikey&quot;. That's harder on connections, just like &quot;spikey&quot; damage is harder on healers. Misconfigurations or supersaturation anywhere up or down your Internet stream can cause the &quot;spikes&quot; to get backed up. The problem could be anywhere from your ISP's backbone connection all the way down to your computer or router. The fact that you have a pretty good connection most of the time doesn't leave out the possibility that somewhere in either your setup or your ISP's setup something may not be dealing with spikes well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc5c312fa0d</div><div class="date">2011-02-14, 05:24 PM</div></div><div class="posttext">Yeah, and it only took them about 6 months to do so. Awesome customer service!<br />
+<br />
+... I think you mean 'since last Wednesday'?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xayla</div><div class="date">2011-02-14, 05:37 PM</div></div><div class="posttext">2 things about the network topics going down here.<br />
+<br />
+1. GG Blizzard at putting your game data down packets that look like torrents on known torrent ports, then wonder why your traffic gets stomped to crap by them.<br />
+<br />
+2. None of the Naggle, Ack crap matters if you code your game to use UDP. Why would anyone code a game in TCP. By the time TCP works out some lost packet guarenteed delivery algorithms that point in time of the game is long gone and the packet is now meaningless.<br />
+<br />
+<br />
+Based on an NMAP scan after patch they disable Naggle on the instance servers and that is what some people could not hang with as it will exploit weak connections by increasing your packet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">theturn</div><div class="date">2011-02-14, 06:02 PM</div></div><div class="posttext">Damn, I want 111 fps, I can't seem to get higher than 60 no matter what my settings are. :'(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc908001abe</div><div class="date">2011-02-14, 07:13 PM</div></div><div class="posttext">so in each if you &quot;lag&quot; it's your fault not our fault. Nice... pretty useless there are so much things to fix before that...who said classes balance?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Urikslargda</div><div class="date">2011-02-14, 07:54 PM</div></div><div class="posttext">So 99% of players have to suffer UP TO 10x higher latency for 1% of players with crappy connection, fair as hell! Because blizz didn't release fix. Great!<br />
+In reality my guess would be that it fixes 10% or less connection, 80% stays same 10% got really fked up, that's REAL reason why they stopped it and are waiting for per client setting.<br />
+<br />
+Yeah, that sounds more like the truth of the matter to me, but then I have a hard time believing that I was one of the 1%.<br />
+<br />
+Regardless, I'm glad they FINALLY at least admitted that the problems were caused by changes they made. Doh!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">unkn0wnerr0r</div><div class="date">2011-02-14, 08:16 PM</div></div><div class="posttext">No he says to TRY without firewall if you have latency. You know, to find the problem (firewall configuration in this case)...<br />
+<br />
+/facepalm<br />
+<br />
+Please, just stop</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tripl</div><div class="date">2011-02-14, 09:04 PM</div></div><div class="posttext">Damn, I want 111 fps, I can't seem to get higher than 60 no matter what my settings are. :'(<br />
+<br />
+Tried to turn off V-sync? like in... its capping @ your refresh rate of 60 hz?<br />
+<br />
+I got it turned off and got a solid 100+ fps, also, thanks blizz, i got 15ms ping now &lt;3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pixel</div><div class="date">2011-02-14, 11:37 PM</div></div><div class="posttext">/facepalm<br />
+<br />
+Please, just stop<br />
+<br />
+Stop what ? Making sense ?<br />
+<br />
+You really should try understanding how a firewall software works first before even saying a word in that thread. A firewall MAY queue up packets on your computer in order to analyze them, hence causing lag. Simple as this. If you're not able to understand this simple fact, there's no hope for you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">gibbie99</div><div class="date">2011-02-15, 09:49 PM</div></div><div class="posttext">You may want to look into Pingbetter.com its free(currently in beta) and if you sign up you get it for a free year. I've personally tried a lot of ping lowering programs being on the east coast playing on a west coast server and it's been the best/easiest to use.<br />
+<br />
+Most sane people lock their fps at 60 since the human eye can not perceive frame refreshes higher than that. Given that, most modern good sound cards can get 100-200 fps on WoW, which is a very old game by now. So this guy simple has the frame rate unlocked. No biggie. Its kinda like GS i guess.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pyrostorm9001</div><div class="date">2011-02-15, 10:54 PM</div></div><div class="posttext">Most sane people lock their fps at 60 since the human eye can not perceive frame refreshes higher than that.<br />
+This is not true, ask anyone who has a system that can do 60, 100, 200 fps. you CAN tell the difference. why and how you can tell the difference can be found here<br />
+<br />
+http://en.wikipedia.org/wiki/Frame_rate#Visible_frame_rate<br />
+<br />
+http://www.100fps.com/how_many_frames_can_humans_see.htm</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nathanyel</div><div class="date">2011-02-16, 12:03 AM</div></div><div class="posttext">This is not true, ask anyone who has a system that can do 60, 100, 200 fps. you CAN tell the difference. why and how you can tell the difference can be found here<br />
+Of course the &quot;minimum FPS&quot; increases the faster the movements on the screen are, but WoW is not as much about rapid movements as a shooter game, thus requiring a lower value. 60 is a good one for WoW.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">michalowski</div><div class="date">2011-02-16, 07:36 AM</div></div><div class="posttext">in mi hose play whit 220 but server say 600 wtf XD and play good some delay in skill but play normal</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

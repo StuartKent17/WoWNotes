@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, forums, this, twitter, and, for, all, just, customers, also, track, etc, did, websites, party, 3ed, checkout, latest, rather, seams, sign, have, followers, keep, maelstrom, devs, stats, wont, your, means, stupid, direction, launcher, battle.net, directly, link, people, whats, simple, said, being, then, official, imo, first, taking, there, replys, put, need" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Maintenance Reminder, Updated Legendaries, Error 395002, Non-Jade Poison DoT WD 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Versus Series: Meta vs Grenan, Blue Posts 
+ 
+&lt;img" />
+<title> Armory Stats - Followers, Maelstrom Weapon Change Reverted, Blue Tweets, DLC #474 [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Followers, Maelstrom Weapon Change Reverted, Blue Tweets, DLC #474</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1696528.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1696528-Armory-Stats-Followers-Maelstrom-Weapon-Change-Reverted-Blue-Tweets-DLC-474">Armory Stats - Followers, Maelstrom Weapon Change Reverted, Blue Tweets, DLC #474</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-01-27, 06:59 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Maintenance Reminder, Updated Legendaries, Error 395002, Non-Jade Poison DoT WD (http://www.diablofans.com/news/48315-maintenance-reminder-updated-legendaries-error)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Versus Series: Meta vs Grenan, Blue Posts (http://www.hearthpwn.com/news/763-versus-series-meta-vs-grenan-blue-posts)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Beta Key Giveaway, Into the Nexus #35, Weekly Sale Changes (http://www.heroesnexus.com/news/1290-beta-key-giveaway-into-the-nexus-35-weekly-sale)<br />
+<br />
+Armory Stats - Garrison Followers<br />
+We are taking a look at an often requested topic, garrison stats. Unfortunately the Battle.Net API doesn't give us any garrison specific information, so all we can look at is achievements. You can always give this post a thumbs up (http://us.battle.net/en/forum/topic/15270937621#1) to show your interest in having garrison data in the API though!<br />
+<br />
+We are continuing with follower data today, looking at 2.7 million players and 4.4 million characters. Keep in mind that the 20 x Level 100 Follower (http://www.wowdb.com/achievements/9129-filling-the-ranks) achievement unlocks the War Mill / Bunker blueprints.<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+setTimeout(function(){ height = subchart.height<br />
+width = $(&quot;.pgcharts&quot;).width()<br />
+subchart.setSize(width, height, doAnimation = true);},2500)<br />
+<br />
+<br />
+setTimeout(function(){ height = subchart.height<br />
+width = $(&quot;.pgcharts&quot;).width()<br />
+subchart.setSize(width, height, doAnimation = true);},1500)<br />
+<br />
+setTimeout(function(){ height = subchart.height<br />
+width = $(&quot;.pgcharts&quot;).width()<br />
+subchart.setSize(width, height, doAnimation = true);},4500)<br />
+<br />
+$(document).ready(function() {<br />
+<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'followerChart',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ '5 Followers', '10 Followers', '25 Followers', '40 Followers', '1 Level 100 Follower', '10 Level 100 Followers', '20 Level 100 Followers', '1 Item Level 625 Follower', '1 Item Level 650 Follower', '10 Item Level 650 Followers', '20 Item Level 650 Followers'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+max: 100,<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.point.category + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Completed Garrison Follower Achievements',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [<br />
+{<br />
+data: [{y: 100.0, color: '#D6C4B0'}, {y: 99.2, color: '#D6C4B0'}, {y: 39.4, color: '#D6C4B0'}, {y: 3.4, color: '#D6CFB0'}, {y: 93.5, color: '#A6D986'}, {y: 74.8, color: '#A6D986'}, {y: 46.9, color: '#A6D986'}, {y: 61.9, color: '#86B8D9'}, {y: 33.1, color: '#86B8D9'}, {y: 8.1, color: '#86B8D9'}, {y: 1.8, color: '#86B8D9'} ],<br />
+<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+}<br />
+<br />
+]<br />
+<br />
+});<br />
+});<br />
+&lt;/script&gt; <br />
+<br />
+<br />
+<br />
+&lt;div id=&quot;followerChart&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Patch 6.1 - Maelstrom Weapon Change Reverted<br />
+Enhancement Shamans can relax for now, as the Maelstrom Weapon change will be reverted. <br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2015/january/wcdESham.png (https://twitter.com/WarcraftDevs/status/559816917771251712) <br />
+<br />
+<br />
+Blue Posts<br />
+Choluna and Thisalee Crow Followers<br />
+QA has finished testing a hotfix that will provide the Choluna or Thisalee Crow follower NPC to players who previously completed the quest &quot;Primal Fury&quot;. If you had completed the quest last week and didn't receive the follower, you should receive the follower as soon as you login once realms have been restarted. Restarts for US realms are currently scheduled for tomorrow at 5am PST. I'm happy to announce that just like any other follower, Choluna and Thisalee Crow have a chance to roll as rare or epic when you recruit them.<br />
+<br />
+Players who have not yet completed Primal Fury will receive Choluna or Thisalee Crow as soon as they complete the quest, in addition to the other rewards.<br />
+<br />
+Apologies for any inconvenience caused over the last week. (Blue Tracker (http://blue.mmo-champion.com/topic/359235-no-thisalee/) / Official Forums (http://us.battle.net/wow/en/forum/topic/15699466503?page=28#560))<br />
+<br />
+<br />
+Blue Tweets<br />
+Classes<br />
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage (Forums (http://www.mmo-champion.com/forums/272-Mage) / Skills (http://www.wowdb.com/spells/class-abilities/mage) / Talent Calculator (http://www.wowdb.com/talent-calculator#g))<br />
+Amplify Magic doesn't affect glyph of regenerative ice heals or the cold snap heal. Have reported this for about a month.<br />
+This is intended. % heals aren't increased. (holinka (https://twitter.com/holinka/status/555859111305170944))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin (Forums (http://www.mmo-champion.com/forums/273-Paladin) / Skills (http://www.wowdb.com/spells/class-abilities/paladin) / Talent Calculator (http://www.wowdb.com/talent-calculator#I))<br />
+how do you see Seraphim ever being viable again after this tier when it doesn't scale?<br />
+This is a common misconception. It totally does scale. Check out Theck's theorycrafting. Static ratings don't &quot;not scale&quot;. (Celestalon (https://twitter.com/Celestalon/status/555907364771995649))<br />
+<br />
+Character / Items<br />
+With the new heirloom tab include BoA items, such as those from Archeology in Pandaria?<br />
+We feel like it would muddy the waters of the system. The Heirloom tab is only for items that scale with character level. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/555955219574452224))<br />
+<br />
+PvE<br />
+Frustrating in progression wipes to wait for 3 minute CD's. Any chance we can get those to reset on wipe ?<br />
+This is definitely a topic of discussion on our end. Appreciate the feedback! (WarcraftDevs (https://twitter.com/WarcraftDevs/status/555905987597459456))<br />
+<br />
+PvP<br />
+Have you realised that you have basically killed any form of competitive PvP?<br />
+Quite the contrary, I expect this year to be one of the best for competitive PvP. Stay tuned! (holinka (https://twitter.com/holinka/status/556139803633135617))<br />
+<br />
+hello friend, I am curious as to if challenger/rival/duelist/gladiator titles are still available from 5v5, I mever saw a blue post<br />
+Hello friend. Those titles will only be given out in the 3v3 bracket this season. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/556206783300378624))<br />
+<br />
+Dev Communication<br />
+Just want'd to offer a late thank you for the communication you did with players while working for blizzard. Appreciated <br />
+Talking to players is one of the most rewarding parts of my job. Wish more devs and their managers understood that. (Ghostcrawler)<br />
+Please pass this on to he seems to have a phobia of talking to the PvP community<br />
+Team has gone in a different direction with communication then when I originally joined Twitter. (holinka (https://twitter.com/holinka/status/555757668682330112))<br />
+Are we going back to BC era of communication? I really really hope not. Even on the forums you guys are quiet now. <br />
+<br />
+What happened?<br />
+just a lot of scrutiny over me using my personal Twitter as a personal Twitter account (holinka (https://twitter.com/holinka/status/555770380502065153))<br />
+There is some understandable frustration with the current lack of communication. Blizzard seems to have stopped the Dev twitter communication model but its not clear what the new model is.<br />
+<br />
+That's great, but there is nothing on the forums. The least people ask for is a reply, even if it's &quot;We're doing nothing yet&quot;<br />
+Patch notes are a central location for people to find out about future changes. Don't want news spread throughout forum threads. (holinka (https://twitter.com/holinka/status/555810786010873856))<br />
+<br />
+<br />
+Dark Legacy Comics #474<br />
+DLC #474 (http://www.darklegacycomics.com/474) has been released. <br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2015/january/dlc474.jpg (http://www.darklegacycomics.com/474)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tybudd33</div><div class="date">2015-01-27, 07:34 AM</div></div><div class="posttext">DLC is spot on, too much ish to do!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">arcaneshot</div><div class="date">2015-01-27, 08:33 AM</div></div><div class="posttext">DLC is spot on, too much ish to do!!<br />
+<br />
+Not so sure about that; the only time my quest log got full was when I was hoarding quests from the Inn.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc59b5827c7e</div><div class="date">2015-01-27, 09:23 AM</div></div><div class="posttext">Too much to do in WoD? Lol, this is the expansion with the least amount of content. I can't remember leaving the Garrison the last time. :rolleyes:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dome Fossil</div><div class="date">2015-01-27, 09:36 AM</div></div><div class="posttext">Poor farmer Ted. All he ever wanted out of life was to not be butchered.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocdc2931750c</div><div class="date">2015-01-27, 09:51 AM</div></div><div class="posttext">Too much to do in WoD? Lol, this is the expansion with the least amount of content. I can't remember leaving the Garrison the last time. :rolleyes:<br />
+<br />
+Indeed my friend! Clearly shows that I have 25 followers on 655 ilvl.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ttak82</div><div class="date">2015-01-27, 09:54 AM</div></div><div class="posttext">Interesting data about the followers - 5 followers and 10 followers - seem easy to obtain, but there is a steep drop in players having 25+ followers.<br />
+<br />
+As for Ilevel, I have not yet started upgrading them over 645, as I am trying to get as many 645 followers as possible. (I dont play alot, so less missions/crates/tokens etc). I have about 5-6 645ers only atm.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc59b5827c7e</div><div class="date">2015-01-27, 10:13 AM</div></div><div class="posttext">Interesting data about the followers - 5 followers and 10 followers - seem easy to obtain, but there is a steep drop in players having 25+ followers.<br />
+<br />
+As for Ilevel, I have not yet started upgrading them over 645, as I am trying to get as many 645 followers as possible. (I dont play alot, so less missions/crates/tokens etc). I have about 5-6 645ers only atm.<br />
+<br />
+Thats because you get ~10 followers from doing the leveling content, and most people couldnt care less to collect all of them. Garrisons are a horrible feature.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tak3nSupr4</div><div class="date">2015-01-27, 12:05 PM</div></div><div class="posttext">thank god to those reverted changes for enhance<br />
+<br />
+would of been a absolute joke otherwise</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Korru</div><div class="date">2015-01-27, 12:38 PM</div></div><div class="posttext">thank goodness indeed, i like off-healing my raid</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">demoniko</div><div class="date">2015-01-27, 02:11 PM</div></div><div class="posttext">You wanted GC gone? Enjoy!<br />
+1. Almost zero communication with the community<br />
+2. Worst class balance since BC<br />
+3. No explanation on most changes (latest blogs on battle.net are just pure PR bullshit)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jasper Kazai</div><div class="date">2015-01-27, 02:36 PM</div></div><div class="posttext">40 followers is practically impossible without an inn currently. It requires a lot of rep grinding. It will be much easier in 6.1. I'm at 37/40 myself. To be honest I could've had it by now, but the past few weeks I've been passing on the inn followers since they've been boring and I don't want do just add followers for the hell of it. Not a fan of the inn followers at all for the most part; they're just a means to an end since I had horrible follower luck on my main. (I.E. I got absolutely no scavengers outside of the inn until just two weeks ago when my 30th or so follower hit epic.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc650e753a1c</div><div class="date">2015-01-27, 02:57 PM</div></div><div class="posttext">2. Worst class balance since BC<br />
+<br />
+Really now?Some seasons of WoTLK,Cata and all of MoP except last season were way worse.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf93185380c</div><div class="date">2015-01-27, 03:07 PM</div></div><div class="posttext">Holinka sounds mad.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DeadmanWalking</div><div class="date">2015-01-27, 03:08 PM</div></div><div class="posttext">You wanted GC gone? Enjoy!<br />
+1. Almost zero communication with the community<br />
+2. Worst class balance since BC<br />
+3. No explanation on most changes (latest blogs on battle.net are just pure PR bullshit)<br />
+<br />
+This sudden love for GC is the deepest pool of congealed bullshit I have ever seen spring up on a wow forum. Things have changed, as they always do, and for some unknown reason your brain connected the dots between GC and Blizz with some half thought up conspiracy theory that things were better under GC. GC was given too much credit for shitty stuff when he was with wow and now he gets too much credit for the best stuff in wow. <br />
+<br />
+Shit changes on a daily basis, get use to it. Just another day at Blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">General Zanjin</div><div class="date">2015-01-27, 03:59 PM</div></div><div class="posttext">Why the hell does the alliance get thisalee and not both factions? She is suppose to be neutral</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">stgeorge78</div><div class="date">2015-01-27, 04:05 PM</div></div><div class="posttext">Blizzard's new communication strategy: no communication.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">darklogrus</div><div class="date">2015-01-27, 04:38 PM</div></div><div class="posttext">The last 2 graphs showed just how lack luster the garrisons really are. This one shows that really after the initial leveling, nobody cares much about followers. While the last 1 shows nobody cares about the followers missions.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">inyu</div><div class="date">2015-01-27, 04:42 PM</div></div><div class="posttext">Woah... I think it's the first time that I'm in the lowest graphic bar :D I have most of them at 654 ilvl (not wasting items for 1 ilvl upgrade until they rise the cap).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">risingforce</div><div class="date">2015-01-27, 05:04 PM</div></div><div class="posttext">The last 2 graphs showed just how lack luster the garrisons really are. This one shows that really after the initial leveling, nobody cares much about followers. While the last 1 shows nobody cares about the followers missions.<br />
+<br />
+Almost 10% of the game have 10 x i650 Followers -most likely for Highmaul Cache missions. I'd say that's a fair amount of people that care. If you are raiding then you care about the Cache and Runestone missions.<br />
+<br />
+Maintaining both Followers and Garrisons is easy and doesn't take much time, it just benefits from regular usage; as always with WoW, you get back what you put in. So either put up or shut up. Me and many in the guild have plenty of time to raid Mythic, their professions and my Garrisons / Followers. Not many do alts -and are more now than ever to not have to do alts -Garrisons feel that necessity for many.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gadzooks</div><div class="date">2015-01-27, 05:41 PM</div></div><div class="posttext">Blizzard's new communication strategy: no communication.<br />
+<br />
+That worked so well for them before, lol. Remember the forum revolts before Ghostcrawler started talking to people? Oh, it's gonna get good. They only want to communicate through patch notes? Why? Are they afraid to defend their work, and their vision? <br />
+<br />
+There's blood in the water. What's the over/under on Holinka pulling a Tseric on the Twitterverse? LOL. He's getting a bit...testy...stock up on popcorn!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2015-01-27, 05:51 PM</div></div><div class="posttext">This sudden love for GC is the deepest pool of congealed bullshit I have ever seen spring up on a wow forum. Things have changed, as they always do, and for some unknown reason your brain connected the dots between GC and Blizz with some half thought up conspiracy theory that things were better under GC. GC was given too much credit for shitty stuff when he was with wow and now he gets too much credit for the best stuff in wow. <br />
+<br />
+Shit changes on a daily basis, get use to it. Just another day at Blizzard.<br />
+<br />
+meh, I think you got it backwards. Most people like GC as a dev because of his communication, almost everyone with half a brain realizes that class balance was not done by one person, so you neither hated him or loved him based on that. Yes, a lot of the kiddies hated him because ´he´ nerfed ´their´ spec but they are the same kiddies who cry about every patch note, and he just game them a name they could add onto the beginning of every childish rant.<br />
+<br />
+I liked GC because of his longish posts where he would explain things in a very big view, so you could see that these guys do spend a lot of time thinking about this stuff. ( although I am not so sure about that at the moment). Sometimes I didn´t agree wtih GC, but you always felt he was taking stuff seriously and putting in the effort to make it the best it could be.<br />
+<br />
+GC wasn´t really liked because of stuff he added to the game, he was liked because he communicated directly with players about his opinions and thoughts behind changes. <br />
+<br />
+I also think the new PVP guy is a bit stressed out. They put so much effort into Ashran, and bragged about it so much, and it has been the worst ´world´ pvp system we have had. Tol Borad was pretty lame, but at least you knew they spent very little time on it. Ashran was a big feature.. and sadly, they think fixing queues is going to fix it..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2015-01-27, 06:36 PM</div></div><div class="posttext">They don't want to communicate because the left hand has no clue what the right hand is doing. It's a mess and it's only going to get worse. Selfies, twitter intergration, centering a whole expansion around a facebook game. The next two quarter numbers are going to be hilarious.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zrankfappa</div><div class="date">2015-01-27, 06:42 PM</div></div><div class="posttext">My quest logs are full of Heroic Dungeon Quests. Apparently the quest rewards alone are not enough motivation for me to run heroics, aside from the Millhouse Manastorm quest.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rcshaggy</div><div class="date">2015-01-27, 06:52 PM</div></div><div class="posttext">I hope you are happy, you killed the Farmer named Ted. <br />
+<br />
+Any chance we might see Tanaan Jungle and Fields of Faralhon? <br />
+I really want to see what those places looked like before they got all corrupted and what lived there too. <br />
+Like Laughing Skull Clan could be in Faralhon, Faralhon Draenei (There are ghosts in Netherstorm), but they are freeing people certain destroyed camps and going to their main base. Redwalker Clan another Orc clan being recruited into the Iron Horde. <br />
+Got a lot more ideas too, and how it would work for Warlords of Draenor.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sundreamer</div><div class="date">2015-01-27, 07:06 PM</div></div><div class="posttext">i am the 1.8%! i want a higher follower limit...25 followers aren't enough :( i don't want to have to deactivate my big followers to lvl new followers :/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hugh Wattmate</div><div class="date">2015-01-27, 07:06 PM</div></div><div class="posttext">Gotta be honest at least GC did reply and did it on the forums! I hate this twitter communication it sucks Wish Blizzard would combine all of the forums from around the world none of this EU/US rubbish just 1 forum. This way all the feedback happens in 1 place. No longer on Twitter, Facebook, EU Forums, US forums etc etc makes it much more easy for the Devs to keep track and the customers also. It also means your customers won't have to sign up for 3ed party websites just to checkout the latest it seams a rather stupid direction taking to twitter first imo there is no need.<br />
+<br />
+Put the replys on the official forums and then link it directly to the battle.net launcher for people to track whats being said simple.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xetenor</div><div class="date">2015-01-27, 07:14 PM</div></div><div class="posttext">This twitter communication is shit. I miss the days of actually seeing replies in the forums. At least GC communicated directly with us. They really should add the blue changes or replies in the launcher so people can see.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tss</div><div class="date">2015-01-27, 08:32 PM</div></div><div class="posttext">Someone please tell me how Dark Legacy Comics isn't just B^U tier shit with WoW slapped on top?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2015-01-28, 02:31 AM</div></div><div class="posttext">Very glad that Blizzard is reverting the nerf to Maelstrom Weapon. Wonder why it was considered in the first place?<br />
+<br />
+Also, I would have the 40 followers achievement by now if it weren't for some bugged quests. I'll be completing it soon thanks to the garrison inn building, but still...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoced0e5e7573</div><div class="date">2015-01-28, 11:32 AM</div></div><div class="posttext">Major Glyphs<br />
+Telluric Currents: Instead of causing your Lightning Bolt spell to cost no mana, it now causes your Lightning Bolt, Lava Burst, and Flame Shock spells to cost no mana and deal 100% increased damage.<br />
+<br />
+<br />
+did I just see a huge elemental buff??</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfa52095fb7</div><div class="date">2015-01-28, 04:29 PM</div></div><div class="posttext">At least my threat towards Blizzard because of the senseless Enhancer-Nerf has done its job!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc93bb8b9624</div><div class="date">2015-01-31, 02:47 PM</div></div><div class="posttext">Farmer Ted at the comics... Hey wait, that's the vagabond driver from Death rally! Bogus Bill next?</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

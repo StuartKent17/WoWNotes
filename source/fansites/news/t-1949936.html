@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, and, you, years, that, theyre, game, dps, for, realism, going, bring, even, just, back, not, happening, why, people, into, with, roll, this, dice, have, race, skill, are, fun, competitiveness, amongst, cant, encouraged, turn, they, parity, corner, working, may, one, themselves, worked, which, relative, classes, blizzard, has, really, non-hardcore, mmo" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Witch Doctor Builds Highlight 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Popular Constructed Decks of the Week, Love is in the Air Winner - Congratulations Hejiahua! 
+ 
+&lt;img" />
+<title> Demonology Artifact Intro, RPPM Bug, Legion Class Feedback, Tweets, Armies of Azeroth [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Demonology Artifact Intro, RPPM Bug, Legion Class Feedback, Tweets, Armies of Azeroth</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1949936.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1949936-Demonology-Artifact-Intro-RPPM-Bug-Legion-Class-Feedback-Tweets-Armies-of-Azeroth">Demonology Artifact Intro, RPPM Bug, Legion Class Feedback, Tweets, Armies of Azeroth</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2016-02-15, 01:08 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Witch Doctor Builds Highlight (http://www.diablofans.com/news/48652-witch-doctor-builds-highlight)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Popular Constructed Decks of the Week, Love is in the Air Winner - Congratulations Hejiahua! (http://www.hearthpwn.com/news/1191-popular-constructed-decks-of-the-week-love-is-in)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Heroes Homescreen Backgrounds, Squadron's Mini WTF Moments #16 (http://www.heroesnexus.com/news/1618-heroes-homescreen-backgrounds-squadrons-mini-wtf)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Unreleased Pharah Skin - Raptorion (http://www.overpwn.com/news/130-unreleased-pharah-skin-raptorion)<br />
+<br />
+Legion Beta - Demonology Warlock Artifact Intro<br />
+Demonology Warlocks have a somewhat unique artifact weapon, rather than a regular weapon, it is a skull that floats near you. You can see the latest variation in this video (https://www.youtube.com/watch?v=8vck_oIcaoE&amp;feature=youtu.be&amp;t=95).<br />
+<br />
+<br />
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/5hzyHSKMqgg?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br />
+<br />
+<br />
+RPPM Bug and Legion Changes<br />
+Aye, thanks to you and a few other community members for helping identify that bug. Indeed, we're going to wait until 7.0 to fix it.<br />
+<br />
+But we're going to go a step further, as well. Warning, the following is super techy. You do not need to understand it, it's just for the theorycrafters.<br />
+<br />
+Conceptually, the intended difference between random chance procs and On-Use effects should be that the chance ones are unreliable, whereas the On-Use ones are active when you want them to. This extra proc chance on the pull (which you identified is actually stronger than intended) goes against that rather significantly, ensuring that the random chance ones are active when you most want them to, on the pull.<br />
+<br />
+As such, we're going to change the functionality of RPPM procs in Legion. The TimeSinceLastProcSuccess and TimeSinceLastProcAttempt will both be set to 0 on the start of boss encounters, instead of the 120 and 10 respectively that it currently is. This will significantly affect the overall DPS value of these trinkets, and we'll adjust tuning on all trinkets to account for this change.<br />
+<br />
+I think the issue behind why the current system was originally implemented is that there are two brands of &quot;random&quot; trinket currently - RPPM and % chance to proc + ICD. The issue is the % chance to proc + ICD variety is actually incredibly consistent (pretty much get a proc upon expiration of each ICD window - and these trinkets also start boss encounters with their ICD window cooled down, so you can reliably get a proc on the pull with these trinkets, especially as a dual-wielder).<br />
+<br />
+Are there any changes to this flavor of trinket being planned, or &quot;tuning will fix it?&quot;<br />
+Yes. ICD trinkets are relatively rare these days, but are a different flavor that we'll still use from time to time. As others have pointed out the extra proc chance on the pull for RPPM trinkets was significantly related to trying to compete with those ICD trinkets, which were the vast majority of trinkets at the time. Nowadays, they aren't the norm, so we don't need to make RPPM ones overpowered to compete with them. ICD trinkets will likely be a little less consistent, but still more consistent than RPPM. We don't want to have too much difference between ICD and RPPM, because it's a distinction that the vast majority of the playerbase shouldn't need to understand.<br />
+<br />
+If you want consistency, On-Use trinkets will be attractive to you. If you don't mind randomness, chance to trigger ones may be up your alley.<br />
+<br />
+Overall, we're attempting to cut down the on-the-pull cooldown stacking, and this is just one angle that we're attacking that problem from.<br />
+<br />
+<br />
+Legion - Class Feedback and Changes<br />
+http://static.mmo-champion.com/mmoc/images/icons/idruids.gif Druid (Forums (http://www.mmo-champion.com/forums/270-Druid) / Skills (http://beta.wowdb.com/spells/class-abilities/druid) / Talent Calculator (http://beta.wowdb.com/talent-calculator#s) / Artifact Calculator (http://beta.wowdb.com/artifact-calculator#tAAAAAAAA) / PvP Talent Calculator (http://beta.wowdb.com/pvp-talent-calculator#s))<br />
+[Feedback] Guardian<br />
+We'll fix the extension cheese on Frenzied Regen, don't worry. For better testing, just don't use that.<br />
+<br />
+On the topic of Bear AoE, we'd like to hear more fair discussion about it. There's obviously a significant amount of transition shock, going from 100% spammable AoE to just 6sec Thrash and Berserk.<br />
+<br />
+How much of the concern is that shock, and how much is actual ineffectiveness in gameplay? Thrash seems to certainly be enough to hold onto mobs once you've hit them with it, so the only weakness would be in mobs that stream in more often than its cooldown. How often does that actually happen, and when do your other single-target abilities (including Moonfire which is ranged) not suffice?<br />
+<br />
+Tanks have different strengths and weaknesses, and this is certainly a weakness of Bears. But is it weak enough to make you unable to perform your role in a dungeon? Or unable to be brought to raid? (Since there are 2 tanks in raids, things tend to work out fine as long as each tank can do at least 1 of the jobs on each fight..) (Blue Tracker (http://blue.mmo-champion.com/topic/401781-feedback-guardian/) / Official Forums (http://us.battle.net/wow/en/forum/topic/20419283872?page=3#43))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter (Forums (http://www.mmo-champion.com/forums/271-Hunter) / Skills (http://beta.wowdb.com/spells/class-abilities/hunter) / Talent Calculator (http://beta.wowdb.com/talent-calculator#M) / Artifact Calculator (http://beta.wowdb.com/artifact-calculator#NAAAAAAAA) / PvP Talent Calculator (http://beta.wowdb.com/pvp-talent-calculator#M))<br />
+[Feedback] Marksman Hunter<br />
+Hey Marksmanship Hunters. You've given tons of constructive feedback, which we appreciate, and are using to continue iterating on things. Please keep it coming, and know that we are listening.<br />
+<br />
+The next build will include several significant changes based on testing, and your valuable feedback. This includes highlights such as Multi-Shot becoming a Focus-generator for Marksmanship, and applying Hunter's Mark to either all or none of its targets (instead of randomly rolling against each target individually), Marked Shot hitting all marked targets, a much longer Vulnerable duration, and a few talent revisions.<br />
+<br />
+We look forward to you all getting to try out that build, and hearing your feedback based on it! Thanks!<br />
+<br />
+Random side note, any news on fixing the bug where Vulnerability, Marked for Death (artifact trait), and True Aim are attributed to only one hunter? There's also a bug where you can only cast Marked Shot 6s after Hunter's Mark is triggered, even though the Hunter's Mark debuff lasts 12s. Admittedly #1 isn't a huge deal for testing gameplay (though it feels bad to do so much less DPS when you're not the only hunter), but #2 affects how you play quite a bit. Fixing these would be the cherry-on-top.<br />
+I believe every one of those is fixed for the next build. Also, you'll probably appreciate that Hunter's Mark is now applied on cast of Arcane/Multi, rather than on land. (Blue Tracker (http://blue.mmo-champion.com/topic/401751-feedback-marksman-hunter/) / Official Forums (http://us.battle.net/wow/en/forum/topic/20418912809?page=4#76))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior (Forums (http://www.mmo-champion.com/forums/278-Warrior) / Skills (http://beta.wowdb.com/spells/class-abilities/warrior) / Talent Calculator (http://beta.wowdb.com/talent-calculator#E) / Artifact Calculator (http://beta.wowdb.com/artifact-calculator#F) / PvP Talent Calculator (http://beta.wowdb.com/pvp-talent-calculator#E))<br />
+[Feedback] Fury Warrior<br />
+Thanks to all of those contributing useful, constructive feedback.<br />
+<br />
+As we've been saying lately, this is an alpha. And an alpha is the perfect time to experiment with a variety of potential designs, and get feedback on them. So when we make changes and you dislike them, that's not a failure, that's an opportunity for successful use of the testing process. Share your feedback, and do it in a constructive way. We're listening. (And please share your feedback when you do like things as well!)<br />
+<br />
+We're iterated many times on Fury so far this expansion, based on testing and feedback, and will continue to do so. Capturing the essence of a raging berserker, with fantasy-fulfilling, engaging, and enjoyable combat is a very delicate process.<br />
+<br />
+The next build will include a multitude of further revisions to Fury, including things like Rampage triggering (instead of requiring) Enrage, and Furious Slash being free. We look forward to more constructive feedback once you've had a chance to try that build.<br />
+<br />
+Thanks!<br />
+<br />
+Also, if you can squeeze it into the next build could you fix the bug with haste reducing the length of enrage? It makes it very hard to test the specs functionality correctly.<br />
+This is not a bug. It looks weird, but it's important that it works that way so that haste doesn't change how many abilities fit into an Enrage, thus creating a gigantic haste breakpoint. Haste acts to compress the entire rotation, reducing GCDs, short cooldowns, and Enrage duration. (Blue Tracker (http://blue.mmo-champion.com/topic/401745-feedback-fury-warrior/) / Official Forums (http://us.battle.net/wow/en/forum/topic/20043424942?page=12#231))<br />
+<br />
+<br />
+Blue Tweets<br />
+Random thought: Why do NPC's call you &quot;Shaman&quot; in the Maelstrom into quests? cc @craig_amai<br />
+Presumably as an honorific, rather than being initiate, acolyte, etc. But the feedback of it coming of weird is fair. Thanks! (craig_amai (https://twitter.com/craig_amai/status/696631877617086464))<br />
+<br />
+<br />
+Ghostcrawler Tweets<br />
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.<br />
+I blame you for Looking For Retards feature. Other then that you did rly good job.I liked tbc progression best<br />
+I did work on LFR and I do have some regrets about how it turned out. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/691998359410728960))<br />
+I welcome LFR - it allows people to raid and progress upward instead of having nothing if not in the best guild<br />
+I think all players need the chance to progress. Maybe an anonymous, toothless raid isn't the only option though. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/692019262928453632))<br />
+<br />
+<br />
+Warcraft Armies of Azeroth<br />
+An alpha version of the Warcraft Armies of Azeroth has been released (http://www.moddb.com/mods/waa-mod/news/warcraft-armies-of-azeroth-alpha-arcade-launch) to the Starcraft 2 Arcade. Only the Turtle Rock map is available in the current release. <br />
+<br />
+<br />
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;http://www.moddb.com/media/iframe/1493815&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen&gt;&lt;/iframe&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">eschatological</div><div class="date">2016-02-15, 07:50 AM</div></div><div class="posttext">Multi-shot as a focus generator and much more predictable Marked for Death....that's pretty good stuff. Alpha at work!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nutri</div><div class="date">2016-02-15, 08:28 AM</div></div><div class="posttext">The Demo lock artifact is mogable into 1h/offhand right?<br />
+I think that floating skull will start to annoy me pretty quickly :-P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">D3cadent</div><div class="date">2016-02-15, 09:06 AM</div></div><div class="posttext">Conceptually, the intended difference between random chance procs and On-Use effects should be that the chance ones are unreliable, whereas the On-Use ones are active when you want them to. This extra proc chance on the pull (which you identified is actually stronger than intended) goes against that rather significantly, ensuring that the random chance ones are active when you most want them to, on the pull.<br />
+<br />
+As such, we're going to change the functionality of RPPM procs in Legion. The TimeSinceLastProcSuccess and TimeSinceLastProcAttempt will both be set to 0 on the start of boss encounters, instead of the 120 and 10 respectively that it currently is. This will significantly affect the overall DPS value of these trinkets, and we'll adjust tuning on all trinkets to account for this change.<br />
+<br />
+I think the issue behind why the current system was originally implemented is that there are two brands of &quot;random&quot; trinket currently - RPPM and % chance to proc + ICD. The issue is the % chance to proc + ICD variety is actually incredibly consistent (pretty much get a proc upon expiration of each ICD window - and these trinkets also start boss encounters with their ICD window cooled down, so you can reliably get a proc on the pull with these trinkets, especially as a dual-wielder).<br />
+<br />
+Are there any changes to this flavor of trinket being planned, or &quot;tuning will fix it?&quot;<br />
+Yes. ICD trinkets are relatively rare these days, but are a different flavor that we'll still use from time to time. As others have pointed out the extra proc chance on the pull for RPPM trinkets was significantly related to trying to compete with those ICD trinkets, which were the vast majority of trinkets at the time. Nowadays, they aren't the norm, so we don't need to make RPPM ones overpowered to compete with them. ICD trinkets will likely be a little less consistent, but still more consistent than RPPM. We don't want to have too much difference between ICD and RPPM, because it's a distinction that the vast majority of the playerbase shouldn't need to understand.<br />
+<br />
+If you want consistency, On-Use trinkets will be attractive to you. If you don't mind randomness, chance to trigger ones may be up your alley.<br />
+<br />
+Overall, we're attempting to cut down the on-the-pull cooldown stacking, and this is just one angle that we're attacking that problem from.<br />
+ARGHHHHHHHH<br />
+<br />
+WHYYYYYYYY???? <br />
+<br />
+WHY DO YOU INSIST ON MAKING PULL TO PULL DPS SO INCREASINGLY VARIABLE..... Why is having a reliable proc on the pull a BAD THING???? I don't for a second believe the 'we'll adjust tuning on all trinkets accordingly' remark. God damn it.<br />
+<br />
+Stop RNGing the shit out of the game. It's not fun despite what you think. Between this sort of thing, and bloody WF Socket 'procs' on gear... Ugh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce193b9fd19</div><div class="date">2016-02-15, 09:40 AM</div></div><div class="posttext">RPPM is one of the main reasons I stopped DPS'ing. Now it gets even worse? I really feel bad for everyone, who needs to rely on using those trinkets.<br />
+Extreme randomness is not fun or interesting - it's just frustrating.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">aeuhe4yxzhds</div><div class="date">2016-02-15, 10:10 AM</div></div><div class="posttext">ARGHHHHHHHH<br />
+<br />
+WHYYYYYYYY???? <br />
+<br />
+WHY DO YOU INSIST ON MAKING PULL TO PULL DPS SO INCREASINGLY VARIABLE..... Why is having a reliable proc on the pull a BAD THING???? I don't for a second believe the 'we'll adjust tuning on all trinkets accordingly' remark. God damn it.<br />
+<br />
+Stop RNGing the shit out of the game. It's not fun despite what you think. Between this sort of thing, and bloody WF Socket 'procs' on gear... Ugh.<br />
+<br />
+I think you missed the memo with timeless isle. People loved that shit, so we got a whole expansion of it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sierra85</div><div class="date">2016-02-15, 10:11 AM</div></div><div class="posttext">Armies of Azeroth looks pretty bad ass.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheMeII</div><div class="date">2016-02-15, 10:41 AM</div></div><div class="posttext">RPPM is one of the main reasons I stopped DPS'ing. Now it gets even worse? I really feel bad for everyone, who needs to rely on using those trinkets.<br />
+Extreme randomness is not fun or interesting - it's just frustrating.<br />
+<br />
+RPPM is not extreme randomness,2min cd and then randomly sometime is always worse chance and you still might need 10 or so attacks to get it proc. and usually if you want the best dps you should be using on use trinkets so you can manage when you want the power.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc13291a7c6c</div><div class="date">2016-02-15, 11:42 AM</div></div><div class="posttext">ARGHHHHHHHH<br />
+<br />
+WHYYYYYYYY???? <br />
+<br />
+WHY DO YOU INSIST ON MAKING PULL TO PULL DPS SO INCREASINGLY VARIABLE..... Why is having a reliable proc on the pull a BAD THING???? I don't for a second believe the 'we'll adjust tuning on all trinkets accordingly' remark. God damn it.<br />
+<br />
+Stop RNGing the shit out of the game. It's not fun despite what you think. Between this sort of thing, and bloody WF Socket 'procs' on gear... Ugh.<br />
+<br />
+Isn't that why there are &quot;on use&quot; trinkets? I believe they want you to make a choice between RNG and on demand.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocef366ff7e8</div><div class="date">2016-02-15, 11:45 AM</div></div><div class="posttext">I actually like LFR. It's an easy/quick source of equip that's decent enough to farm current expansion reps and I can see the raids on my own, learn the layouts and the basics of the fights. Then 1-2 expansions later I can come back and progress soloing those fights on my own. Haven't been able to play outside of my own schedule since late LK, meaning this is the best way for me to actually have any challenge in the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SoundOfGuns</div><div class="date">2016-02-15, 12:04 PM</div></div><div class="posttext">Stop giving Ghostcrawler attention. Jesus.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Flamez2</div><div class="date">2016-02-15, 12:36 PM</div></div><div class="posttext">Stop giving Ghostcrawler attention. Jesus.<br />
+I like reading his thoughts behind stuff, but hate all the artifact crap.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dasn</div><div class="date">2016-02-15, 12:50 PM</div></div><div class="posttext">ghostcrawzZzZzZz</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">GoldLion91</div><div class="date">2016-02-15, 01:23 PM</div></div><div class="posttext">They really need to fix the bears aoe , i boosted one for legion. Bosses like Yalnu in everblood were already hard with spameable thrash, i cant imagine with cooldown.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Glaziola</div><div class="date">2016-02-15, 01:32 PM</div></div><div class="posttext">I like reading his thoughts behind stuff, but hate all the artifact crap.<br />
+I agree with this part, they are doing the same like with Garrisons in WoD. Everything was about the Garrisons, and take a look now, nobody gives a damn about them. Same will happen with the artefacts when some time passes in the expansion.<br />
+<br />
+Interest will shift to other aspects of the game and yet blizzard invested all of their resources into artefacts.<br />
+They are going to be useless after Legion as blizzard said themselves, which is why I dont understand why so much effort for them?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">atl4ntis</div><div class="date">2016-02-15, 01:35 PM</div></div><div class="posttext">I actually like LFR. It's an easy/quick source of equip that's decent enough to farm current expansion reps and I can see the raids on my own, learn the layouts and the basics of the fights. Then 1-2 expansions later I can come back and progress soloing those fights on my own. Haven't been able to play outside of my own schedule since late LK, meaning this is the best way for me to actually have any challenge in the game.<br />
+<br />
+&gt; LFR<br />
+&gt; challenge</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2016-02-15, 02:04 PM</div></div><div class="posttext">I like reading his thoughts behind stuff, but hate all the artifact crap.<br />
+<br />
+i dislike the artefact system mor and more..<br />
+<br />
+its the reason that im not playing dd monk, frost dk and fire mage in legion!<br />
+<br />
+in terms of the dd monk, with only fist weapons they destroy the entire class for me!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tumppu</div><div class="date">2016-02-15, 02:25 PM</div></div><div class="posttext">&gt; LFR<br />
+&gt; challenge<br />
+<br />
+He obviously meant the soloing part. But it's ok, nobody expects people to read stuff anyway.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lyphe</div><div class="date">2016-02-15, 02:44 PM</div></div><div class="posttext">RPPM is one of the main reasons I stopped DPS'ing. Now it gets even worse? I really feel bad for everyone, who needs to rely on using those trinkets.<br />
+Extreme randomness is not fun or interesting - it's just frustrating.<br />
+<br />
+I thought they explained it pretty well, and you can essentially choose. More dps from an unreliable proc, or reliability from an on-use procs. And you'll virtuallyi always have a way of obtaining either type of trinket ... whether from badges, or something else.<br />
+<br />
+Personally, I like the variety.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Necrotica</div><div class="date">2016-02-15, 05:40 PM</div></div><div class="posttext">Maybe I'm doing something wrong, but I'm testing out Outlaw Rogue and I'm just getting wrecked... I feel like I'm doing nothing for damage and just getting eaten up alive. I can't even get my legendary quest done.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xandrigity</div><div class="date">2016-02-15, 06:25 PM</div></div><div class="posttext">Why do we continue to care what GC thinks? How many years has it been since he was relevant to wow</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sir Riptor</div><div class="date">2016-02-15, 06:26 PM</div></div><div class="posttext">Maybe I'm doing something wrong, but I'm testing out Outlaw Rogue and I'm just getting wrecked... I feel like I'm doing nothing for damage and just getting eaten up alive. I can't even get my legendary quest done.<br />
+<br />
+Its been the same for me with a lot of other artifacts<br />
+<br />
+The mobs just hit way too hard and i can't kill them fast enough</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tatakau</div><div class="date">2016-02-15, 09:30 PM</div></div><div class="posttext">gained a garrison follower? i'm out!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2016-02-15, 10:01 PM</div></div><div class="posttext">Maybe I'm doing something wrong, but I'm testing out Outlaw Rogue and I'm just getting wrecked... I feel like I'm doing nothing for damage and just getting eaten up alive. I can't even get my legendary quest done.<br />
+<br />
+They buffed creature health in the last build, maybe a bit much: http://blue.mmo-champion.com/topic/401493-2-10-alpha-build-design-notes/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Huntaer</div><div class="date">2016-02-15, 10:05 PM</div></div><div class="posttext">Armies of Azeroth looks pretty bad ass.<br />
+<br />
+I do hope the english is better ingame than it is in the trailer</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daedius</div><div class="date">2016-02-15, 10:52 PM</div></div><div class="posttext">I do hope the english is better ingame than it is in the trailer<br />
+<br />
+What you say !!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2016-02-15, 11:50 PM</div></div><div class="posttext">Beta? How do you get that? Still says alpha on my client.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kishill</div><div class="date">2016-02-16, 12:03 AM</div></div><div class="posttext">this artifact is awesome... damn thinking of rerolling my warri... :( no never but a alt lock is a must damn !</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Borgia</div><div class="date">2016-02-16, 02:37 AM</div></div><div class="posttext">Haste REDUCES enrage duration for fury...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fincayra</div><div class="date">2016-02-16, 05:33 AM</div></div><div class="posttext">Why do we continue to care what GC thinks? How many years has it been since he was relevant to wow<br />
+<br />
+Now that he's not getting shit on all day every day, it's nice to see what his reflections on our game are. His comments are nothing more than that. <br />
+<br />
+I suggest you scroll past them if you don't care.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rikku45</div><div class="date">2016-02-16, 07:55 AM</div></div><div class="posttext">How long are you going to keep posting ghost crawlers thoughts? There will have to be a point where it has to stop. I understand he was big with Wow but now he is just a guy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2016-02-16, 11:35 AM</div></div><div class="posttext">How long are you going to keep posting ghost crawlers thoughts? There will have to be a point where it has to stop. I understand he was big with Wow but now he is just a guy.<br />
+<br />
+Maybe if you cry more.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wooters</div><div class="date">2016-02-16, 02:13 PM</div></div><div class="posttext">- - - Updated - - -<br />
+<br />
+<br />
+RPPM is one of the main reasons I stopped DPS'ing. Now it gets even worse? I really feel bad for everyone, who needs to rely on using those trinkets.<br />
+Extreme randomness is not fun or interesting - it's just frustrating.<br />
+<br />
+<br />
+why o why hate on the rng? randomness are FUN, and silly as it sounds.. it adds more &quot;realism&quot;. I had enough of shit happening in the exact..same order when I played super Mario back in the day or any other game for that matter^^<br />
+<br />
+Even a boss should ideally be logically random in its actions on each pull(probably not possible?). again it would add realism.. realism and things happening so you need to use your head..is a good thing in a game..not bad. and yes..even in a fantasy game this true</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc82e782b950</div><div class="date">2016-02-16, 04:52 PM</div></div><div class="posttext">- - - Updated - - -<br />
+<br />
+<br />
+<br />
+<br />
+why o why hate on the rng? randomness are FUN, and silly as it sounds.. it adds more &quot;realism&quot;. I had enough of shit happening in the exact..same order when I played super Mario back in the day or any other game for that matter^^<br />
+<br />
+Even a boss should ideally be logically random in its actions on each pull(probably not possible?). again it would add realism.. realism and things happening so you need to use your head..is a good thing in a game..not bad. and yes..even in a fantasy game this true<br />
+<br />
+Some people are into the competitiveness of a DPS race, the pitting of skill against skill. You can't race with the roll of a dice. Blizzard have worked themselves into a corner with this one by working for years to bring classes up to relative DPS parity which has, in turn, encouraged competitiveness amongst DPS. They may think they're going to bring back the &quot;fun&quot; by moving away from that, but really they're just going to piss off a bunch of people. <br />
+<br />
+They're also increasing the throwaway mentality that's been creeping up since the game's inception. WoW was always billed as the non-hardcore MMO, and additions over the years have reinforced that to a ridiculous degree. Give it a couple of years, the dice will roll for you and you can just watch.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

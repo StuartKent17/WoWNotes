@@ -1,0 +1,783 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="virus, website, gumblar, files, safe, make, details, site, change, mmo-champion, javascript, unique, password, infects, code, computer, article, websites, hacked, called, affected, attempts, driven, botnet, parasites, work, unmask, sounds, tool, read, automated, means, computers, suggest, strongly, open, technical, passwords, java, version, file, infected, world, manually, removing, scan, spyware, suspect, full/intensive, installing" />
+<meta name="description" content="Update - Huh, yeah, you had a message pointing to http://www.agoragames.com/ while the site was down. They're the very awesome and comprehensive techs in charge of MMO-Champion, the site was perfectly safe. The site database was also safe and none of your passwords are compromised here, it's really just a few JS files changed, and worst case scenario you are very unlucky and got a spyware that won't affect your WoW account.  
+ 
+I'm just very serious when it comes to security and had no plan to" />
+<title> Oh god, MMO-Champion got hacked [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Oh god, MMO-Champion got hacked</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-720175.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/720175-Oh-god-MMO-Champion-got-hacked">Oh god, MMO-Champion got hacked</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-05-21, 08:12 PM</div></div><div class="posttext">Update - Huh, yeah, you had a message pointing to http://www.agoragames.com/ while the site was down. They're the very awesome and comprehensive techs in charge of MMO-Champion, the site was perfectly safe. The site database was also safe and none of your passwords are compromised here, it's really just a few JS files changed, and worst case scenario you are very unlucky and got a spyware that won't affect your WoW account. <br />
+<br />
+I'm just very serious when it comes to security and had no plan to hide the problem. (Even if I'm probably overreacting)<br />
+<br />
+Oh god, MMO-Champion got hacked<br />
+Yay! It finally happened! MMO-Champion got hacked! But don't worry too much, the title is mostly here to scare you and make sure you will read the rest. The site got indirectly affected by a very nasty virus called Gumblar, the site is cached in various ways and it means that most users are potentially safe but I strongly suggest that you read the entire post. <br />
+<br />
+Gumblar, AKA Troj/JSRedir-R, is a botnet driven virus which attacks both websites and normal computers. Sounds scary, and to anyone who owns their own website it is, but to anyone else it's mostly harmless. <br />
+<br />
+How does it work?<br />
+The virus is split into two parts. There's a javascript version, which infects websites, and the actual virus itself which infects computers. Whenever a browser executes the javascript on a website, it runs a Java applet and (through a Java exploit or two) installs the virus onto your computer. The virus, once warm and snug on a computer, looks for any FTP details you may have stored (In dreamweaver, filezilla, pretty much any FTP application) and makes a copy of them.<br />
+<br />
+For every FTP it manages to get, it attempts to make a connection and then infects the website with the javascript. It does this by opening .js/.html/.php files and attaching a unique version of itself to a position inside the file, usually at the end. This new code is unique per website, not per file, so removing it isn't as daunting as it sounds.<br />
+<br />
+In addition to spreading itself to every website it can get its claws on, the virus also reprises its role as a traditional Trojan and attempts to install other spyware onto your computer, including redirecting popular websites (such as Google) to its own unsafe alternative.<br />
+<br />
+How do I know if I have it? How do I get rid of it?<br />
+Most modern anti-viruses should pick up the Gumblar virus. Personally I'd suggest downloading and installing Malwarebytes (http://www.malwarebytes.org) and doing a complete system scan. Make absolute sure your anti-virus is up to date before scanning, and make sure it's on a full/intensive scan, take no risks with a quick sweep.<br />
+<br />
+For webmasters, there's a lovely tool called Unmask Parasites (http://www.unmaskparasites.com) for checking if your website is safe or not. However, if you suspect you may have been infected but this tool returns nothing, you may be best suited to manually look through the files. Open up a few random .js files, and look at the end for a line or two of code that you don't recognise. Open up some .html files for a &amp;lt;script&amp;gt; tag that shouldn't be there. If you find it, take your website down immediately and start removing it. If you have backups, make sure they're clean and restore them. Otherwise, you can manually fix the files. Automated tools do not work so well for this as it's unique code for every website.<br />
+<br />
+As always, it is recommended you change any private details (such as passwords) after you have confirmed you are safe. While World of Warcraft/Battlenet accounts are not affected by this virus, it is still strongly advised you change your password for it regardless.<br />
+<br />
+My epics are safe?<br />
+Gumblar is a botnet driven virus, which means the infection process is entirely automated by other infected machines, no human intervention. As it was not designed to look for World of Warcraft details, it is not particularly interested in looking for them. This doesn't mean you can slack and use this as an excuse to never change your password though. It's always a good time to change your password!<br />
+<br />
+Technical details<br />
+For more details about Gumblar, see this Wikipedia article (http://en.wikipedia.org/wiki/Gumblar) or this Unmask Parasites (http://blog.unmaskparasites.com/2009/05/07/gumblar-cn-exploit-12-facts-about-this-injected-script/) article. For a technical summary of Gumblar, there's a nice article on iss.net (http://www.iss.net/threats/gumblar.html) about it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc9a381547d</div><div class="date">2010-05-21, 08:13 PM</div></div><div class="posttext">Woah<br />
+<br />
+Downloaded Malwarebytes as I've had some problems with the Jawaw applet lately, kept getting errors from it. I read somewhere that it's just a bug they need to fix but right now I'm getting a bit paranoid so I need to check.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shalaman</div><div class="date">2010-05-21, 08:15 PM</div></div><div class="posttext">o_O!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc95fb9b4dc6</div><div class="date">2010-05-21, 08:16 PM</div></div><div class="posttext">No way!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">loseriv</div><div class="date">2010-05-21, 08:16 PM</div></div><div class="posttext">god i was scared</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Worgoblin</div><div class="date">2010-05-21, 08:16 PM</div></div><div class="posttext">I was about to laugh, but then realized it's not April 1st. :'(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">WyriHaximus</div><div class="date">2010-05-21, 08:17 PM</div></div><div class="posttext">Nasty! Authenticator ftw 8)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rushgarroth</div><div class="date">2010-05-21, 08:17 PM</div></div><div class="posttext">Whoops.. and i thought ther ewould be an update :-\</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc73fb8ac2b2</div><div class="date">2010-05-21, 08:17 PM</div></div><div class="posttext">MMOhshit.<br />
+<br />
+Just goes to show, nobody is safe.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bluntednt</div><div class="date">2010-05-21, 08:17 PM</div></div><div class="posttext">Gumblar will get you next!!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zulandia</div><div class="date">2010-05-21, 08:18 PM</div></div><div class="posttext">jesus? <br />
+<br />
+CRAP SO WAS http://badurl.com/ bad to go on?!<br />
+<br />
+<br />
+Considering it was the site linked to I would run a scan ;p (Take the hint and remove the link too)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thaanerazz</div><div class="date">2010-05-21, 08:18 PM</div></div><div class="posttext">jesus? <br />
+<br />
+CRAP SO WAS http://www.agoragames.com/ bad to go on?!<br />
+<br />
+Hope not :o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">WyriHaximus</div><div class="date">2010-05-21, 08:19 PM</div></div><div class="posttext">MMOhshit.<br />
+<br />
+Just goes to show, nobody is safe.<br />
+Nobody should assume he's save. Same as nobody should assume &quot;insert security name here&quot; can't be broken. Heck assumption is the mother of all fuckups!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc73fb8ac2b2</div><div class="date">2010-05-21, 08:20 PM</div></div><div class="posttext">Nobody should assume he's save. Same as nobody should assume &quot;insert security name here&quot; can't be broken. Heck assumption is the mother of all fuckups!<br />
+<br />
+<br />
+Assume makes an ass out of u and me, indeed :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gunmist</div><div class="date">2010-05-21, 08:20 PM</div></div><div class="posttext">http://www.nooooooooooooooo.com/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">centinex</div><div class="date">2010-05-21, 08:21 PM</div></div><div class="posttext">Thanks for all the info on this virus. It would have been easy for most admins to just ignore it or even write a small news post with minimal information. As someone who has lots of FTP info saved locally, I really appreciate the detailed info on this threat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hopinhamster</div><div class="date">2010-05-21, 08:21 PM</div></div><div class="posttext">wonder if this has anything to do with my account getting hacked 15 minutes ago.... The guy is on stealing all my shit right now.. and i cant even get ahold of blizzard.. i try'd to log on and it asks for an authenticator number, and i have never had one before, wonder if the 2 are connected</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">magaa</div><div class="date">2010-05-21, 08:21 PM</div></div><div class="posttext">jesus? <br />
+<br />
+CRAP SO WAS http://www.agoragames.com/ bad to go on?!<br />
+<br />
+<br />
+<br />
+boub can we get a confirmation on this? <br />
+<br />
+should we run a scan if we went on this website</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">PrettyBiased</div><div class="date">2010-05-21, 08:22 PM</div></div><div class="posttext">I knew that shit was bogus</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bbr</div><div class="date">2010-05-21, 08:23 PM</div></div><div class="posttext">Hm, when was this exactly? And for how long and at what hours was the virus active and a potential threat?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dakario</div><div class="date">2010-05-21, 08:23 PM</div></div><div class="posttext">Oh damn! Thanks for the info about the Virus :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sarrior</div><div class="date">2010-05-21, 08:23 PM</div></div><div class="posttext">Boub owned the achievement [Mmochamp counter hacker]</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Patty</div><div class="date">2010-05-21, 08:23 PM</div></div><div class="posttext">jesus? <br />
+<br />
+CRAP SO WAS http://www.agoragames.com/ bad to go on?!<br />
+<br />
+<br />
+Answer this question please :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc32bf69b9</div><div class="date">2010-05-21, 08:24 PM</div></div><div class="posttext">Thanks for all the info on this virus. It would have been easy for most admins to just ignore it or even write a small news post with minimal information. As someone who has lots of FTP info saved locally, I really appreciate the detailed info on this threat.<br />
+<br />
+<br />
+You're welcome :)<br />
+<br />
+<br />
+<br />
+wonder if this has anything to do with my account getting hacked 15 minutes ago.... The guy is on stealing all my shit right now.. and i cant even get ahold of blizzard.. i try'd to log on and it asks for an authenticator number, and i have never had one before, wonder if the 2 are connected<br />
+<br />
+<br />
+I can almost guarantee that it isn't. There was at most a 30 minute period where we had compromising javascript, and it absolutely does not effect your World of Warcraft account.<br />
+<br />
+<br />
+<br />
+boub can we get a confirmation on this? <br />
+<br />
+should we run a scan if we went on this website<br />
+<br />
+Agora Games are the server techs for MMO-Champion. They are safe. Sorry for the confusion.<br />
+<br />
+<br />
+<br />
+Hm, when was this exactly? And for how long and at what hours was the virus active and a potential threat?<br />
+<br />
+At most, a period of half an hour just before we realised and took the site down.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Joucifer</div><div class="date">2010-05-21, 08:24 PM</div></div><div class="posttext">Another reason you shouldn't post links to battle.net pages.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Veldoran</div><div class="date">2010-05-21, 08:25 PM</div></div><div class="posttext">Our biggest suspect..........http://images.free-extras.com/pics/g/garfield-1072.jpg</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zulandia</div><div class="date">2010-05-21, 08:25 PM</div></div><div class="posttext">Agora Games are the server techs for MMO-Champion. They are safe. Sorry for the confusion.<br />
+<br />
+<br />
+*Sigh of relief*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Patty</div><div class="date">2010-05-21, 08:25 PM</div></div><div class="posttext">Thank you for the answer to the question.. Im still waiting for my Authenticator.. Even though I did order it 4 weeks ago.. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">magaa</div><div class="date">2010-05-21, 08:25 PM</div></div><div class="posttext">You're welcome :)<br />
+<br />
+I can almost guarantee that it isn't. There was at most a 30 minute period where we had compromising javascript, and it absolutely does not effect your World of Warcraft account.<br />
+Agora Games are the server techs for MMO-Champion. They are safe. Sorry for the confusion.<br />
+At most, a period of half an hour just before we realised and took the site down.<br />
+<br />
+<br />
+thanks another few minutes and my life expectcy would have been gone a couple more years &lt;3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sebid</div><div class="date">2010-05-21, 08:26 PM</div></div><div class="posttext">MMO Champion just got Gumblar'd :o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">AtotheJ</div><div class="date">2010-05-21, 08:27 PM</div></div><div class="posttext">We're sorry, but the page you requested could not be found.<br />
+<br />
+Any other antivirus I can download for free?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ferm-perm</div><div class="date">2010-05-21, 08:28 PM</div></div><div class="posttext">And here I was thinking that the message was saying that the site was getting upgraded</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Roflomnom</div><div class="date">2010-05-21, 08:28 PM</div></div><div class="posttext">Doing a full scan just to be safe. I'd suggest others to also if you are feeling paranoid about this event.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dark Side</div><div class="date">2010-05-21, 08:28 PM</div></div><div class="posttext">Whats done is done, glad you were able to get rid of the virus ;D Ps: no more porn mr/mrs Boubouille</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Powerogue</div><div class="date">2010-05-21, 08:29 PM</div></div><div class="posttext">regardless of the reassuring newspost i'm still panicked that my entering this website = i'm hacked now :'(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc04935466da</div><div class="date">2010-05-21, 08:29 PM</div></div><div class="posttext">We're sorry, but the page you requested could not be found.<br />
+<br />
+Any other antivirus I can download for free?<br />
+<br />
+<br />
+Get Avast, bro.<br />
+<br />
+http://www.avast.com/en-eu/index</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-05-21, 08:29 PM</div></div><div class="posttext">And here I was thinking that the message was saying that the site was getting upgraded<br />
+<br />
+<br />
+We upgraded to a spyware free version, that's a pretty good upgrade!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Syrda</div><div class="date">2010-05-21, 08:31 PM</div></div><div class="posttext">I can almost guarantee that it isn't. There was at most a 30 minute period where we had compromising javascript, and it absolutely does not effect your World of Warcraft account.<br />
+Agora Games are the server techs for MMO-Champion. They are safe. Sorry for the confusion.<br />
+At most, a period of half an hour just before we realised and took the site down.<br />
+<br />
+I guess the &quot;What did you do an hour ago&quot;-thread should be renamed to &quot;what did you do half an hour ago&quot; then, huh?<br />
+<br />
+On a more serious note:<br />
+<br />
+I appreciate the way you guys deal(t) with the problem, being straight-forward and not freaking out over it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Odexy</div><div class="date">2010-05-21, 08:32 PM</div></div><div class="posttext">I'm not quite sure I understand what the virus does exactly, but as long as my keyz are safe then it's cool. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc32bf69b9</div><div class="date">2010-05-21, 08:33 PM</div></div><div class="posttext">I appreciate the way you guys deal(t) with the problem, being straight-forward and not freaking out over it.<br />
+<br />
+<br />
+What makes you think we didn't freak out? :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Indiglo</div><div class="date">2010-05-21, 08:35 PM</div></div><div class="posttext">Glad everything is back to normal.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Calon</div><div class="date">2010-05-21, 08:40 PM</div></div><div class="posttext">Norton, squashing your virus since 1990.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eversor</div><div class="date">2010-05-21, 08:41 PM</div></div><div class="posttext">NoScript reigns supreme over shitty malware infections.<br />
+<br />
+<br />
+Thanks for being honest Boub.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Syrda</div><div class="date">2010-05-21, 08:41 PM</div></div><div class="posttext">What makes you think we didn't freak out? :D<br />
+Poor wording on my side:<br />
+What I actually meant is that you appeared not to have freaked out and instead seemed to have handled the problem professionally. Making the users feel well informed and all that.<br />
+<br />
+After all, I guess you did freak out - I know I would have.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc73e1e9fe53</div><div class="date">2010-05-21, 08:42 PM</div></div><div class="posttext">so, reading from wikipedia page. u only have this virus whena pdf file was opened rite?<br />
+<br />
+im scanning nonetheless tho but just want to know this:)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-05-21, 08:42 PM</div></div><div class="posttext">NoScript doesnt protect you from that, except if you block absolutely all the JS on all the pages.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bbr</div><div class="date">2010-05-21, 08:43 PM</div></div><div class="posttext">At most, a period of half an hour just before we realised and took the site down.<br />
+<br />
+<br />
+Got anything more accurate? Time in minutes? :P<br />
+<br />
+Anyhow, noscript really helps I guess.<br />
+I've got it allowed for root site access though, so if it was embedded in mmoc itself it might have had a chance to run.<br />
+<br />
+<br />
+<br />
+Norton, squashing your virus CPU time since 1990.<br />
+<br />
+<br />
+Fixed that for you.<br />
+<br />
+<br />
+<br />
+so, reading from wikipedia page. u only have this virus whena pdf file was opened rite?<br />
+<br />
+<br />
+It's good practice to simply get rid of anything adobe made from your computer.<br />
+Most specifically the Adobe flash, and adobe acrobat. Near and around 90% of current day virus infections on the internet occur through those bits of software.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Norn</div><div class="date">2010-05-21, 08:43 PM</div></div><div class="posttext">OHH SHIT!!<br />
+<br />
+<br />
+<br />
+um, sorry</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Maneken</div><div class="date">2010-05-21, 08:45 PM</div></div><div class="posttext">That's why you should get a Mac.<br />
+&#63743;<br />
+<br />
+Good point but still i love to play almost every game not just few of them :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocdb664a58d7</div><div class="date">2010-05-21, 08:46 PM</div></div><div class="posttext">OHH SHIT!!<br />
+<br />
+Well, that was totally called for.<br />
+<br />
+<br />
+<br />
+Good point but still i love to play almost every game not just few of them :D<br />
+<br />
+My friend said this a few months ago, only to get hacked a couple of weeks after :/ Nothing is safe (apart from Linux of course!).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dakoeda</div><div class="date">2010-05-21, 08:46 PM</div></div><div class="posttext">Has earned the achivement [Lol u bad haxz0rs]<br />
+<br />
+<br />
+Succesfully pwn a virus attack</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-05-21, 08:47 PM</div></div><div class="posttext">Got anything more accurate? Time in minutes? :P<br />
+<br />
+<br />
+Can't give you a time, don't tell them but it's very likely that 90% of the users had no way to be infected because of how we cache files. All the JS files are on Limelight and our caching settings are set to &quot;cache indefinitely&quot;. Basically, only people who downloaded the JS files (= didn't have them cached), on a few Limelight servers, over a fairly small period, got infected. And for most of them it's just a matter of cleaning up a spyware.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sempelis</div><div class="date">2010-05-21, 08:47 PM</div></div><div class="posttext">Affected.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BetrayedOf52</div><div class="date">2010-05-21, 08:47 PM</div></div><div class="posttext">Ill get a mac when i plan to play WoW in the worst condidtions possible</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sieglol</div><div class="date">2010-05-21, 08:48 PM</div></div><div class="posttext">you better get an authenticator boub</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-05-21, 08:50 PM</div></div><div class="posttext">you better get an authenticator boub<br />
+<br />
+<br />
+Doesn't affect WoW accounts.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kokiron</div><div class="date">2010-05-21, 08:51 PM</div></div><div class="posttext">Inb4 everyone who gets hacked today blames Boub.<br />
+<br />
+http://i934.photobucket.com/albums/ad186/Supr_Silvr/thumb_MichealJacksonPopcorn.gif</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Norn</div><div class="date">2010-05-21, 08:52 PM</div></div><div class="posttext">Doesn't affect WoW accounts. <br />
+<br />
+i think its a joke, but you probably know that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-05-21, 08:55 PM</div></div><div class="posttext">i think its a joke, but you probably know that.<br />
+<br />
+Joke? Doesn't affect Boubouille</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Onyxia</div><div class="date">2010-05-21, 08:57 PM</div></div><div class="posttext">Doesn't affect WoW accounts. <br />
+<br />
+Mmo-champion.com was merely a set back. <br />
+8)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thaanerazz</div><div class="date">2010-05-21, 08:57 PM</div></div><div class="posttext">http://www.instantrimshot.com/<br />
+http://sadtrombone.com/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocdb664a58d7</div><div class="date">2010-05-21, 08:57 PM</div></div><div class="posttext">Joke? Doesn't affect Boubouille<br />
+<br />
+My sarcasm detector is broken too, don't worry :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Syrda</div><div class="date">2010-05-21, 08:57 PM</div></div><div class="posttext">Joke? Doesn't affect Boubouille<br />
+:D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DrgnDancer</div><div class="date">2010-05-21, 08:58 PM</div></div><div class="posttext">Ill get a mac when i plan to play WoW in the worst condidtions possible<br />
+<br />
+Kind of a stupid statement. I've played WoW consistently on both Mac and PC, if anything the Mac client can squeeze a bit more out of the same hardware than the Windows client. Neither of them is hugely superior at any rate.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kimbur</div><div class="date">2010-05-21, 08:59 PM</div></div><div class="posttext">On your Birthday aswel ://</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bbr</div><div class="date">2010-05-21, 09:00 PM</div></div><div class="posttext">I'd be more worried if it was hidden in one of those giant, fullscreen frontpage advert videos that auto run that you've had up during some MLG event twice in the past.<br />
+<br />
+This, meh, nothing bleeped.<br />
+Not seeing anything weird in the html files I store locally.<br />
+<br />
+Probably not affected.<br />
+Still, any idea &quot;how&quot; you got hacked? I presume you've made sure it won't happen again anytime soon.<br />
+<br />
+<br />
+<br />
+<br />
+Ill get a mac when i plan to play WoW in the worst condidtions possible<br />
+<br />
+<br />
+You clearly don't own a Mac.<br />
+If you did, you'd be singing quite a different tune.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RRamco</div><div class="date">2010-05-21, 09:03 PM</div></div><div class="posttext">Any free virusscanners for Mac?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rapti</div><div class="date">2010-05-21, 09:03 PM</div></div><div class="posttext">My acc was compromised few months ago, its all your fault Boubouille! :-X</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sieglol</div><div class="date">2010-05-21, 09:04 PM</div></div><div class="posttext">emmm It was a joke, since every time someone post the word: Hacked. The only thing people reply is: Authenticator. :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mascotte</div><div class="date">2010-05-21, 09:05 PM</div></div><div class="posttext">Well, it was bound to happen someday :)<br />
+Glad that you where able to identify and fix the problem fast tho.<br />
+<br />
+For the people that are freaked out (Well, you should be a little) there are some alternatives next to AMB that is linked on the front-page.<br />
+<br />
+Spybot Search And Destroy should, once updated, be able to target and delete any infections that you may have.<br />
+<br />
+Download it from:<br />
+http://www.safer-networking.org/en/download/index.html<br />
+<br />
+If a full scan with that doesn't give you any results (Or at least related to this specific case) your pretty safe.<br />
+And its not as bloated as full-blown virus-scanner+guardians etc, which might be what your looking for.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zinraa</div><div class="date">2010-05-21, 09:07 PM</div></div><div class="posttext">.....so do you think that maybe this is what infected my computer yesterday? Maybe it was coincidence...maybe not. But whilst I was on MMO-Champ yesterday evening my computer went batshit crazy. Kept getting messages all over saying my computer was infected. Couldnt run ANYTHING on it, everytime I tried the Malware would protect itself by saying that the program was &quot;infected&quot; and could not be ran and immediatly shut it down. It was a nightmare, but I finally managed to get it under control and got it out of my machine. Malwarebytes is now my new bestfriend.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc32bf69b9</div><div class="date">2010-05-21, 09:08 PM</div></div><div class="posttext">.....so do you think that maybe this is what infected my computer yesterday? Maybe it was coincidence...maybe not. But whilst I was on MMO-Champ yesterday evening my computer went batshit crazy. Kept getting messages all over saying my computer was infected. Couldnt run ANYTHING on it, everytime I tried the Malware would protect itself by saying that the program was &quot;infected&quot; and could not be ran and immediatly shut it down. It was a nightmare, but I finally managed to get it under control and got it out of my machine. Malwarebytes is now my new bestfriend. <br />
+<br />
+<br />
+Nope. At most it was available half an hour period earlier today. There are no known time travelling viruses.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nomm</div><div class="date">2010-05-21, 09:08 PM</div></div><div class="posttext">Well i hope noscript saved the day for me.<br />
+<br />
+Any ideas if Microsoft Security Essentials has this covered also?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vehemence</div><div class="date">2010-05-21, 09:10 PM</div></div><div class="posttext">How did you got that virus? It was bound to happen someday :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shuror</div><div class="date">2010-05-21, 09:10 PM</div></div><div class="posttext">Or don't be stupid on your PC. MOST PC threats can be prevented with the use of something called a brain, I suggest you get one and stop trying to create a PC vs Mac war.<br />
+NoScript isn't wrong either. That pretty much eliminates any unwished hacks unless they plant the malicious code onto the hacked website itself.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dark Side</div><div class="date">2010-05-21, 09:11 PM</div></div><div class="posttext">Old god, MMO-Champion got hacked<br />
+<br />
+It was a new old god conspiracy to hack MMO-Champion! They wish to use Boubouilles crierical abilitys to usher in a new age of darkness and tentacles 0_o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc32bf69b9</div><div class="date">2010-05-21, 09:12 PM</div></div><div class="posttext">It was a new old god conspiracy to hack MMO-Champion! They wish to use Boubouilles crierical abilitys to usher in a new age of darkness and tentacles 0_o<br />
+<br />
+<br />
+But which old go (http://www.mmo-champion.com/about:unknown)d wa (http://www.mmo-champion.com/about:unknown?verse=2:18)s it?!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mascotte</div><div class="date">2010-05-21, 09:13 PM</div></div><div class="posttext">Well i hope noscript saved the day for me.<br />
+<br />
+Any ideas if Microsoft Security Essentials has this covered also?<br />
+<br />
+<br />
+Unless you block _ALL_ javascript apps it didnt.<br />
+NoScript basically gives you the option to only allow parts of sites you flag as safe, if one of those gets infected it does nothing, since you already allowed it.<br />
+So no, the chances of NosSript saving you from an infection related to this are rather slim.<br />
+<br />
+<br />
+@Boub;<br />
+<br />
+Regarding the website/ftp part of the users/infection:<br />
+Since the files got changed with the code would the change show up as an new timestamp on the last edit of that file?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Conkernog</div><div class="date">2010-05-21, 09:13 PM</div></div><div class="posttext">Can anyone else see &quot; Oh NOES ITS TEH GUMBLAR!!&quot; Becoming a new internet phrase?? :P :P :P :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">superstargoddess</div><div class="date">2010-05-21, 09:14 PM</div></div><div class="posttext">So does this mean that since I have my ftp info for my personal site stored on my SmartFTP, that my website may get messed with? Doing a scan now to get rid of anything that may have creeped in, since I was visiting here earlier today too.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baracuda</div><div class="date">2010-05-21, 09:14 PM</div></div><div class="posttext">Gumblar makes me a sad panda :'(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc32bf69b9</div><div class="date">2010-05-21, 09:14 PM</div></div><div class="posttext">So does this mean that since I have my ftp info for my personal site stored on my SmartFTP, that my website may get messed with? Doing a scan now to get rid of anything that may have creeped in, since I was visiting here earlier today too.<br />
+<br />
+<br />
+It's possible, yes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf747bdc2eb</div><div class="date">2010-05-21, 09:15 PM</div></div><div class="posttext">I did a full scan with AVG Internet Security free trial version, newly updated, and it showed nothing. Shud be OK then right?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chesha</div><div class="date">2010-05-21, 09:15 PM</div></div><div class="posttext">I have NoScript and AdBlocker turned on, hopefully they'll have mitigated it, but I'm going to run a check anyway, just in case.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bamahut</div><div class="date">2010-05-21, 09:16 PM</div></div><div class="posttext">Time to migrate to Ubuntu I guess, or Mac!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocdb664a58d7</div><div class="date">2010-05-21, 09:16 PM</div></div><div class="posttext">I did a full scan with AVG Internet Security free trial version, newly updated, and it showed nothing. Shud be OK then right?<br />
+<br />
+Sounds fine. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">superstargoddess</div><div class="date">2010-05-21, 09:18 PM</div></div><div class="posttext">It's possible, yes.<br />
+<br />
+<br />
+Alrighty then, thank you. I just checked my website and it's still there, so that's good. I'll have to ftp in and see if there is anything strange in there and keep an eye on the site for a few days.<br />
+<br />
+I was at the site here, then went to the store to get a couple of things, so I guess that it's possible that something could have happened in the short time that I was gone. Not sure how long after I visited the site that you had this problem, but I may have been here in that time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zinraa</div><div class="date">2010-05-21, 09:21 PM</div></div><div class="posttext">Nope. At most it was available half an hour period earlier today. There are no known time travelling viruses.<br />
+<br />
+<br />
+Oh ok, awesome. I must have misread the post, I thought this all went on yesterday. Least I got my Malwarebytes now!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kyul</div><div class="date">2010-05-21, 09:23 PM</div></div><div class="posttext">Does anyone know fi Ad-Aware will detect this virus?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wiizle</div><div class="date">2010-05-21, 09:24 PM</div></div><div class="posttext">Feck.. malwarebytes for the win though. Never thought this would happen to MMO, But I guess since they can hack the authenticator they could hack any =(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Conkernog</div><div class="date">2010-05-21, 09:27 PM</div></div><div class="posttext">That's pure win.<br />
+<br />
+Gotta admit yours was better =P, more work put into it atleast ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vober</div><div class="date">2010-05-21, 09:27 PM</div></div><div class="posttext">OMG! Were all going to die. *hides under desk*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1d14b7e6cc</div><div class="date">2010-05-21, 09:30 PM</div></div><div class="posttext">Nope. At most it was available half an hour period earlier today. There are no known time travelling viruses.<br />
+<br />
+<br />
+The only thing i saw today was &quot;http://www.mmo-champion.com/maintenance.html&quot;<br />
+So hopefully my comp should be safe :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Riokou</div><div class="date">2010-05-21, 09:39 PM</div></div><div class="posttext">World of Warcraft/Battlenet accounts are not effected by this virusEWW TYPO</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Keristrasza</div><div class="date">2010-05-21, 09:41 PM</div></div><div class="posttext">Scary o_O</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mossmantle</div><div class="date">2010-05-21, 09:41 PM</div></div><div class="posttext">Boubouille doesn't afraid of anything.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">petsoul</div><div class="date">2010-05-21, 09:45 PM</div></div><div class="posttext">last time i visited MMO champ meit. you´re done for!!!!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">knopp</div><div class="date">2010-05-21, 09:47 PM</div></div><div class="posttext">a full scan with norton should do the trick right?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spacemanspif</div><div class="date">2010-05-21, 09:48 PM</div></div><div class="posttext">Anyone know if this affects smartphones? They block all the fun stuff on my work comp so I browse forums on my iPhone, and was logged in during the hack</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mascotte</div><div class="date">2010-05-21, 09:50 PM</div></div><div class="posttext">a full scan with norton should do the trick right?<br />
+<br />
+<br />
+A fullscan with any updated major antivirus scan should do the trick yes :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">AuthurDent</div><div class="date">2010-05-21, 09:51 PM</div></div><div class="posttext">Gumblar crits Boubouille for over 9000!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2cfe61b4f1</div><div class="date">2010-05-21, 09:52 PM</div></div><div class="posttext">that's mobile AH for ya</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tharkkun</div><div class="date">2010-05-21, 09:52 PM</div></div><div class="posttext">All my files have been replaced with Folders Crystals! HELP!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2010-05-21, 09:52 PM</div></div><div class="posttext">Wheres chicken little when you need him? :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jasyn</div><div class="date">2010-05-21, 09:53 PM</div></div><div class="posttext">&quot;User interaction is required to exploit this vulnerability in that the target must visit a malicious page.&quot;<br />
+<br />
+&quot;tricking a user into visiting a specially crafted web page or opening a malicious PICT file.&quot;<br />
+<br />
+&quot;User interaction is required in that a target must open a malicious file or visit a malicious page.&quot;<br />
+<br />
+&quot;User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.&quot;<br />
+<br />
+&quot;local attacker can elevate their privileges during an initial installation or update of iTunes for Windows.&quot;<br />
+<br />
+&quot;The flaw is caused by an integer overflow error in ColorSync when processing certain images with an embedded color profile, which could be exploited by attackers to potentially execute arbitrary code via a specially crafted web page.&quot;<br />
+<br />
+You have to open an infected QuickTime .SMIL file. (back in 2007)<br />
+<br />
+&quot;To exploit this vulnerability, an attacker must persuade a user into using QuickTime to open a specially crafted QuickTime movie file.&quot;<br />
+<br />
+Try not to open random files from sources you don't trust and you'll be fine. Also, most of these were fixed in under a week. I'm fairly confident that there is some form of Mac related &quot;virus&quot; out there, just be careful in what you install or open.<br />
+<br />
+With that said, there is absolutely nothing wrong with using Windows. Use whichever one you prefer and be smart and safe on either.<br />
+<br />
+Also, try not to spread mis-information about either OS, there is no point as the only person your choice of OS affects is you.<br />
+<br />
+<br />
+All this is nearly the same on PC... you have to actively do something (or passively ignore it) to get infected.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chaoslux</div><div class="date">2010-05-21, 09:57 PM</div></div><div class="posttext">Technical details<br />
+For more details about Gumblar, see this Wikipedia article (http://en.wikipedia.org/wiki/Gumblar) or this Unmask Parasites (http://blog.unmaskparasites.com/2009/05/07/gumblar-cn-exploit-12-facts-about-this-injected-script/) article. For a technical summary of Gumblar, there's a nice article on iss.net (http://www.iss.net/threats/gumblar.html) about it.<br />
+<br />
+<br />
+Ironically, when i tried to read the article at UnmaskParasites, AVG popped up saying &quot;The website you tried to open has been blocked and detected to contain a Trojan/JS.Downloader (probably Gumblar :p) and AVG will not let you risk your computer life&quot;<br />
+::)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">knopp</div><div class="date">2010-05-21, 09:58 PM</div></div><div class="posttext">can norton anti virus detect/remove this?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mr_Bojangles</div><div class="date">2010-05-21, 10:00 PM</div></div><div class="posttext">&quot;User interaction is required to exploit this vulnerability in that the target must visit a malicious page.&quot;<br />
+<br />
+<br />
+<br />
+<br />
+Wait wait wait, are you telling me that all I have to do to allow an attacker to gain full access to a Mac is visit a website (such as a previously safe one that recently got infected itself)? Are you really trying to say that an exploit that loads itself just by going to a webpage isn't a big deal? Excluding local networks, is there really a way to get a virus WITHOUT user interaction of some sort? I'm pretty sure viruses don't just install themselves on isolated box's.<br />
+<br />
+Edit: Yes I know your overall message was to choose an OS based on whichever you prefer, but it sounds like your trying to downplay very serious vulnerabilities. Also, about exploits being patched within a week, that is generally true AFTER the exploit is made known. Whenever some Russian 16 year old finds a way to cause Facebook to give ring 4 access, he isn't going to tell security companies, he is going to start making the biggest botnet he can before they even realize a botnet is being made.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">knopp</div><div class="date">2010-05-21, 10:02 PM</div></div><div class="posttext">Ironically, when i tried to read the article at UnmaskParasites, AVG popped up saying &quot;The website you tried to open has been blocked and detected to contain a Trojan/JS.Downloader (probably Gumblar :p) and AVG will not let you risk your computer life&quot;<br />
+::)<br />
+<br />
+<br />
+sounds kinda like ones of those movies with all the heroes.<br />
+<br />
+noo dont go in there you'll get killed.<br />
+i have to go in there i cant just leave them to death.<br />
+then avg pops up and stares you into the eye: no i wont allow you to risk your (computters) life</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">link_991</div><div class="date">2010-05-21, 10:04 PM</div></div><div class="posttext">This possibly explains why my computer started acting wonky last night and Java decided to launch itself</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mr_Bojangles</div><div class="date">2010-05-21, 10:07 PM</div></div><div class="posttext">This possibly explains why my computer started acting wonky last night and Java decided to launch itself<br />
+<br />
+<br />
+Read the article and thread. I doubt MMO champ infected you a full day before MMO champ got infected.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">knopp</div><div class="date">2010-05-21, 10:16 PM</div></div><div class="posttext">maybe he infected MMO?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">link_991</div><div class="date">2010-05-21, 10:18 PM</div></div><div class="posttext">Read the article and thread. I doubt MMO champ infected you a full day before MMO champ got infected.<br />
+<br />
+<br />
+when exactl did the the infection happen, by &quot;last night&quot; I don't mean &quot;a full day&quot; ago. time zones and such ya know</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TurdChef</div><div class="date">2010-05-21, 10:18 PM</div></div><div class="posttext">Is it eve possible to a virus anymore? I haven't had one since that buggy piece of crap XP came out.<br />
+<br />
+But I suppose I use Gmail and don't download something that can be executed by my PC, i.e. only rar, zip and txt files.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">homerunhomer</div><div class="date">2010-05-21, 10:22 PM</div></div><div class="posttext">So has anyone actually found a virus on their systems yet? :P<br />
+<br />
+Out of interest, nothing showing here so far.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Velvet</div><div class="date">2010-05-21, 10:32 PM</div></div><div class="posttext">[quote=Velvet ]<br />
+I found one actually : (<br />
+<br />
+Ran a scan with Nod 32 the same moment i saw the title and BAM there it was : )<br />
+<br />
+Thanks Boub for informing us :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Conkernog</div><div class="date">2010-05-21, 10:33 PM</div></div><div class="posttext">I like the way virus's are talked about using disease terminology =D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Milkshaker</div><div class="date">2010-05-21, 10:38 PM</div></div><div class="posttext">http://www.trommelyd.no/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">killaklown</div><div class="date">2010-05-21, 10:41 PM</div></div><div class="posttext">good thing i never got it.. Wouldnt feel like going into ~100 of my sites and remove the virus from it.. although could have always paid some kid $5 to go fix them all :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Flammable</div><div class="date">2010-05-21, 10:43 PM</div></div><div class="posttext">Use Firefox and Noscript along with Adblock (Optional but recommended).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TurdChef</div><div class="date">2010-05-21, 10:47 PM</div></div><div class="posttext">You can't get a virus from viewing a web page, atleast not if you're using a decent browser like Chrome, Firefox, Safari. Infact even with IE this site won't have one.<br />
+<br />
+Why? Because it isn't a site offering you &quot;Malware/Spyware protection, click here to protect yourself now&quot; crap</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc32bf69b9</div><div class="date">2010-05-21, 10:48 PM</div></div><div class="posttext">You can't get a virus from viewing a web page, atleast not if you're using a decent browser like Chrome, Firefox, Safari. Infact even with IE this site won't have one.<br />
+<br />
+Why? Because it isn't a site offering you &quot;Malware/Spyware protection, click here to protect yourself now&quot; crap<br />
+<br />
+<br />
+You sure can. Java, your friendly cross-OS security hole.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mascotte</div><div class="date">2010-05-21, 10:49 PM</div></div><div class="posttext">Use Firefox and Noscript along with Adblock (Optional but recommended).<br />
+<br />
+<br />
+Doesnt work if the infection is located in parts of the website that you already flagged as save.<br />
+Sorry.<br />
+<br />
+<br />
+<br />
+<br />
+Why? Because it isn't a site offering you &quot;Malware/Spyware protection, click here to protect yourself now&quot; crap<br />
+<br />
+<br />
+Having to physically allow a process in order to get a virus/infection is a myth, there are several ways around that.<br />
+Java is one of em.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">paladruid</div><div class="date">2010-05-21, 10:51 PM</div></div><div class="posttext">/afraid</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vredesbyrd</div><div class="date">2010-05-21, 10:52 PM</div></div><div class="posttext">Time to migrate to Ubuntu I guess, or Mac!<br />
+<br />
+<br />
+Actually had a Mac in today. Virus issue.<br />
+Mac isn't safe, either.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cadus</div><div class="date">2010-05-21, 10:54 PM</div></div><div class="posttext">There are no known time travelling viruses.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc626163a888</div><div class="date">2010-05-21, 11:00 PM</div></div><div class="posttext">NoScript reigns supreme over shitty malware infections.<br />
+<br />
+<br />
+Thanks for being honest Boub.<br />
+<br />
+<br />
+This! I &lt;3 NoScript. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Naivedo</div><div class="date">2010-05-21, 11:09 PM</div></div><div class="posttext">Nasty! Authenticator ftw 8)<br />
+FTL in my mind because their are millions that don't use it and never get hacked. Stupidity + Authenticator safety = FTW, though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soisoisoi</div><div class="date">2010-05-21, 11:14 PM</div></div><div class="posttext">FTL in my mind because their are millions that don't use it and never get hacked. Stupidity + Authenticator safety = FTW, though.<br />
+<br />
+<br />
+Neither the Authenticator or NoScript are 100% safe though; but they do help I guess</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dannax</div><div class="date">2010-05-21, 11:14 PM</div></div><div class="posttext">Glad everything got back up and running. Can't imagine (well I can) why someone would attack you Boub. You're such a great source of information. Not just you but the whole team here. I did check out that Agoragames.com website while I waited for MMO to come back up and it's a very nice impressive website. So, hats off the all the behind-the-scener's out there that make this place possible. You guys are wonderful!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryker</div><div class="date">2010-05-21, 11:23 PM</div></div><div class="posttext">Does Avast protect against this??? Cause I didnt get a virus warning when I opened up the site, hell I even clicked on the link here. I did a full scan and nothing found but I just want to be sure Avast is good.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tagmonkey</div><div class="date">2010-05-21, 11:24 PM</div></div><div class="posttext">Is there any reason 'god' isn't capitalized in your news title?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">galdroth</div><div class="date">2010-05-21, 11:30 PM</div></div><div class="posttext">Is there any reason 'god' isn't capitalized in your news title?<br />
+<br />
+<br />
+lol</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soisoisoi</div><div class="date">2010-05-21, 11:32 PM</div></div><div class="posttext">Is there any reason 'god' isn't capitalized in your news title?<br />
+<br />
+<br />
+Probably because no one cares? :3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tyden49</div><div class="date">2010-05-21, 11:33 PM</div></div><div class="posttext">gumblar was merely a setback</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thyskl</div><div class="date">2010-05-21, 11:34 PM</div></div><div class="posttext">Neither the Authenticator or NoScript are 100% safe though; but they do help I guess <br />
+<br />
+<br />
+In many cases, people with NoScript would already have added MMOChampion to their whitelists, so the purpose is kind of defeated. With FTP access, the Javascript isn't going to be coming from any other domain (which wouldn't be on the whitelist) since complete file access to the httpdocs of the infected website is gained.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bullseyed</div><div class="date">2010-05-21, 11:45 PM</div></div><div class="posttext">It's good practice to simply get rid of anything adobe made from your computer.<br />
+Most specifically the Adobe flash, and adobe acrobat. Near and around 90% of current day virus infections on the internet occur through those bits of software.<br />
+<br />
+<br />
+You forgot the (c) This post paid for by Steve Jobs. Bow down before the mighty collective!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6427d98424</div><div class="date">2010-05-21, 11:58 PM</div></div><div class="posttext">My 2 cents it was some Blizz employee that hacked mmo-champion, as a revenge for leaking Cataclysm information sooner than intended.<br />
+<br />
+Vengeance is a dish served cold...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">knopp</div><div class="date">2010-05-21, 11:59 PM</div></div><div class="posttext">do the hackers even get anything out of it other than knowing that something they spend hours programming could annoy someone else?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemons</div><div class="date">2010-05-22, 12:07 AM</div></div><div class="posttext">Hacked by the lamest virus name ever...<br />
+<br />
+Gumblar...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Robyn</div><div class="date">2010-05-22, 12:09 AM</div></div><div class="posttext">You sure can. Java, your friendly cross-OS security hole.<br />
+<br />
+Thanks Dinnerbone!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soisoisoi</div><div class="date">2010-05-22, 12:37 AM</div></div><div class="posttext">Known as Gumblar by ScanSafe and Troj/JSRedir-R by Sophos, this botnet first appeared in 2009. It is characterized by re-directing user's Google searches and is suspected to come from Adobe Flash and PDF files.<br />
+<br />
+I think I have this, my google kept re-directing me to random (blocked by my NoScript, though) websites, and now sometimes re-directs me to google... my AVG Free(fully updated) doesn't pick this up though :S<br />
+<br />
+Just downloaded and scanned with Malwarebytes and it detected two things, but I've never used this before so anyhelp would be nice, what do I do with them?<br />
+<br />
+<br />
+<br />
+Vendor Catagory Item<br />
+Backdoor.IRCBot Registry Key HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\GoogleUpdateBeta<br />
+<br />
+Malware.Trace File C:\Windows\Tasks\Acrobat Update.job<br />
+<br />
+These are what where found, do I just hit &quot;Remove Selected&quot; or what? :'(<br />
+<br />
+Sorry about the double post thing :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Camie</div><div class="date">2010-05-22, 12:49 AM</div></div><div class="posttext">These are what where found, do I just hit &quot;Remove Selected&quot; or what? :'(<br />
+<br />
+<br />
+<br />
+I'm no expert but I would say yes, especially the backdoor it allows hackers to get acces to your computer.<br />
+You only risk having to reinstall the google and adode programs you have installed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soisoisoi</div><div class="date">2010-05-22, 12:51 AM</div></div><div class="posttext">I'm no expert but I would say yes, especially the backdoor it allows hackers to get acces to your computer.<br />
+You only risk having to reinstall the google and adode programs you have installed.<br />
+<br />
+<br />
+Alrighty, thanks for the fast reply especially at this time hehe :) Will see what it does! <br />
+<br />
+edit:<br />
+Okay, done that and restarted my laptop, is there anyway to tell if I haven't got it without scanning again? :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CenVan</div><div class="date">2010-05-22, 01:02 AM</div></div><div class="posttext">http://www.nooooooooooooooo.com/<br />
+<br />
+<br />
+lol this was actually a web site :o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mochaomhog</div><div class="date">2010-05-22, 02:51 AM</div></div><div class="posttext">so, your site can only be infected if you allow FTP uploads of the site code? go go pubkey auth only SSH!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6585e2794c</div><div class="date">2010-05-22, 03:12 AM</div></div><div class="posttext">good to hear it wasn't any worse :]</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Raptor</div><div class="date">2010-05-22, 03:29 AM</div></div><div class="posttext">lol, my avast ate the virus, what's wrong with your anti virus soft? xD<br />
+<br />
+and if someone interested: http://www.safer-networking.org/index2.html<br />
+Spybot - Search &amp; Destroy detects and removes spyware, a relatively new kind of threat not yet covered by common anti-virus applications. <br />
+i love it's &quot;paranoid&quot; mode =)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrKnubbles</div><div class="date">2010-05-22, 05:05 AM</div></div><div class="posttext">I was wondering why I kept getting redirected the last couple of days and today I downloaded several programs to counter this. Ad-Aware and Spybot did not detect any problems. I had to use Malwarebytes' Anti-Malware to fix some problems and ComboFix to finish the rest. Wise Registry Cleaner also helped me to clean up my registry since so much information got changed.<br />
+<br />
+If you decide to download, install and use the programs I listed, please make sure you download them from a trusted site because they do make viruses named after these programs to trick you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tayla</div><div class="date">2010-05-22, 05:15 AM</div></div><div class="posttext">Is there any reason 'god' isn't capitalized in your news title?<br />
+<br />
+<br />
+::)<br />
+<br />
+<br />
+<br />
+Hacked by the lamest virus name ever...<br />
+<br />
+Gumblar...<br />
+<br />
+<br />
+It is horribly lame, isn't it.<br />
+<br />
+<br />
+@ Boub -- Thanks for the info!!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zehsebas</div><div class="date">2010-05-22, 05:19 AM</div></div><div class="posttext">Why the fuck would ANYONE EVER hack mmo-champion.<br />
+Why? there is NO reason to!<br />
+=/<br />
+<br />
+God bless us having such awesome administrators!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Necroparadox</div><div class="date">2010-05-22, 05:26 AM</div></div><div class="posttext">that kinda sucks for mmo-champion. at least nothing substantial was done</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">druidicitus</div><div class="date">2010-05-22, 05:47 AM</div></div><div class="posttext">Can smartphones be affected by this? Specially ones with android 1.5, using opera mini as browser.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Studioburst</div><div class="date">2010-05-22, 06:17 AM</div></div><div class="posttext">Why the fuck would ANYONE EVER hack mmo-champion.<br />
+Why? there is NO reason to!<br />
+=/<br />
+<br />
+God bless us having such awesome administrators!<br />
+<br />
+<br />
+The thrill ... end of.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">saph27</div><div class="date">2010-05-22, 06:45 AM</div></div><div class="posttext">wouldn't a virus scanner have saved you guys? most are free...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Skulli</div><div class="date">2010-05-22, 06:58 AM</div></div><div class="posttext">Might upgrade the board-software to 1.1.11<br />
+&gt; http://www.simplemachines.org/community/index.php?topic=351341.0</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-05-22, 07:12 AM</div></div><div class="posttext">wouldn't a virus scanner have saved you guys? most are free...<br />
+<br />
+<br />
+A lot of viruses will go past virus scanners, an antivirus protects your computer but doesn't make you invulnerable to any threat out there. <br />
+<br />
+<br />
+<br />
+Might upgrade the board-software to 1.1.11<br />
+&gt; http://www.simplemachines.org/community/index.php?topic=351341.0<br />
+<br />
+<br />
+The problem didn't come from the site, that's why I said the MySQL DB was also fine.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aracks</div><div class="date">2010-05-22, 07:47 AM</div></div><div class="posttext">Yesterday, 15h30 Bruxelles UTC +2, Bitdefender popped an alert about a blocked Trojan when I was reading the site. 1,5 secondes later, it was some chaotic apocalypse about 30+ infected files within my compter &gt;&lt; <br />
+<br />
+I guess I've found the origin. <br />
+<br />
+At what time was the infection active on MmoChamp ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thundertom</div><div class="date">2010-05-22, 07:47 AM</div></div><div class="posttext">I'm not a real expert when it comes to these things, but to have a piece of spyware installed on your computer, don't you get one of those messages from windows that say &quot;this and that program wants run on your computer, is this what you want? Please type your admin pw to continue&quot; or is it bypassing the defender?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wreyez</div><div class="date">2010-05-22, 07:56 AM</div></div><div class="posttext">:o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc5c312fa0d</div><div class="date">2010-05-22, 08:07 AM</div></div><div class="posttext">Is there any reason 'god' isn't capitalized in your news title?<br />
+<br />
+<br />
+Because to some people it doesn't matter?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aracks</div><div class="date">2010-05-22, 08:10 AM</div></div><div class="posttext">In my case, my antivirus announced a successful defense. Not so successful in the end ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ikkatsu</div><div class="date">2010-05-22, 08:55 AM</div></div><div class="posttext">As a webmaster myself, i feel for you Boub... but obviously such a big website like MMOC maintains regular backups.<br />
+<br />
+I, on the otherhand, had a couple of my own websites hacked in the same manner... and it usually replaced all your web pages with the same .htm file saying something like &quot;You have been hacked by xxx&quot;.<br />
+<br />
+So lame.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocdb664a58d7</div><div class="date">2010-05-22, 09:21 AM</div></div><div class="posttext">Is there any reason 'god' isn't capitalized in your news title?<br />
+<br />
+<br />
+<br />
+Because to some people it doesn't matter?<br />
+<br />
+<br />
+<br />
+Actually the capitalisation of the 'g' links to how there are one or many of them. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gogge</div><div class="date">2010-05-22, 09:21 AM</div></div><div class="posttext">Does Avast protect against this??? Cause I didnt get a virus warning when I opened up the site, hell I even clicked on the link here. I did a full scan and nothing found but I just want to be sure Avast is good.<br />
+<br />
+<br />
+Yes.<br />
+<br />
+avast! Gumblar.cn summary (http://blog.avast.com/2009/06/03/gumblarcn-summary/)<br />
+<br />
+<br />
+avast! was the first antivirus program to detect the infection right at the start and all users of avast! were protected throughout the duration of the attack.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Salacnar</div><div class="date">2010-05-22, 09:44 AM</div></div><div class="posttext">i am using Panda AV Pro 2010 and right now itrs scanning my entire system for that damm virus</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-05-22, 09:50 AM</div></div><div class="posttext">Yesterday, 15h30 Bruxelles UTC +2, Bitdefender popped an alert about a blocked Trojan when I was reading the site. 1,5 secondes later, it was some chaotic apocalypse about 30+ infected files within my compter &gt;&lt; <br />
+<br />
+I guess I've found the origin. <br />
+<br />
+At what time was the infection active on MmoChamp ?<br />
+<br />
+<br />
+It started at 14:30 EST, MMO-Champion wasn't the cause of your computer going crazy. We took down the site around 16:00 EST, and went back online at 17:30EST. <br />
+<br />
+Technically, people who visited people within that hour and a half could have been infected, but as I said in an earlier comment it only concerns people who didn't get cached versions of the safe files, that's not a lot of people. Also, as far as I know you also need Java on your computer to be infected but that's something I'd rather leave out of the front page news. More people running around with up to date antiviruses isn't a bad thing ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Acrotis</div><div class="date">2010-05-22, 09:51 AM</div></div><div class="posttext">If I wasn't on the site when it went down will there be any need for the scan? And can this affect phones? :o<br />
+<br />
+Edit: I have Avast! working and judging by what was just said and the information in the blog, I should in theory be fine. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pompeii</div><div class="date">2010-05-22, 09:56 AM</div></div><div class="posttext">Just a note, there are probably going to be 35083580 comments like this that turn up to be nothing (This one most likely included) but my virus protection is still going off when I go on MMOchampion. Maybe it's just now detected the previous trojan, or from a different program in some sort of strange coincidence, but I felt it was worth mentioning in case some sort of exploit/virus/trojan is still present on the site.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc5c312fa0d</div><div class="date">2010-05-22, 09:58 AM</div></div><div class="posttext">I hope the virus didn't hurt'd my dragon eggs. :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Goad</div><div class="date">2010-05-22, 10:06 AM</div></div><div class="posttext">Fairly happy I wasn't on the site when this happened.<br />
+<br />
+Very well handled tho</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aracks</div><div class="date">2010-05-22, 10:16 AM</div></div><div class="posttext">Thank for the answer Boubouille ! <br />
+<br />
+Curiously, Java was effectively infected ... But everything is clean now so it's good. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wild Turkey</div><div class="date">2010-05-22, 10:25 AM</div></div><div class="posttext">Ah! I was sleeping during maintenance.<br />
+IN YOUR FACE GUMBLER</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hellnas</div><div class="date">2010-05-22, 10:31 AM</div></div><div class="posttext">I did have that backdoor.bot and thanks to Malwarebyte I managed to remove it, thanks a lot Boub :-*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Beargrillz</div><div class="date">2010-05-22, 11:54 AM</div></div><div class="posttext">Damn kids! And there computers! Lawl</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pumps</div><div class="date">2010-05-22, 12:48 PM</div></div><div class="posttext">How do I know if I have it? How do I get rid of it?<br />
+Make absolute sure your anti-virus is up to date before scanning, and make sure it's on a full/intensive scan, take no risks with a quick sweep.<br />
+<br />
+<br />
+What? No way. virus scanners slows down your computer tenfold with their prodding and probing of everything.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gotjuice</div><div class="date">2010-05-22, 01:50 PM</div></div><div class="posttext">I got hacked, somehow right after this place got hacked. Coincidence?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cilraaz</div><div class="date">2010-05-22, 01:53 PM</div></div><div class="posttext">What? No way. virus scanners slows down your computer tenfold with their prodding and probing of everything.<br />
+<br />
+<br />
+Firstly, he was speaking of an intentional scan, not the background processing. Secondly, background processing was a problem a decade ago, but hardly as much today.<br />
+<br />
+Now I just need one of those NBC &quot;The More You Know&quot; rainbows.<br />
+<br />
+Oh, there we go...<br />
+<br />
+http://1.bp.blogspot.com/_Q75UkpJYlrw/RejHomDUG2I/AAAAAAAAAFg/BCDaYenudac/s400/nbc_the_more_you_know.jpg<br />
+<br />
+<br />
+<br />
+I got hacked, somehow right after this place got hacked. Coincidence?<br />
+<br />
+<br />
+<br />
+Yep.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gotjuice</div><div class="date">2010-05-22, 02:18 PM</div></div><div class="posttext">I don't think so...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nathiest</div><div class="date">2010-05-22, 04:30 PM</div></div><div class="posttext">meh, I need an excuse to buy a new computer anyways.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mimoo</div><div class="date">2010-05-22, 05:16 PM</div></div><div class="posttext">Turns out a lot of people are getting hacked with their WoW accounts.<br />
+I wonder if this is related in some way? :(<br />
+This is poopy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kalserrar</div><div class="date">2010-05-22, 06:11 PM</div></div><div class="posttext">Just posting to clarify that as of five minutes ago, the virus is still here on the site. Just in case anyone was on the belief that it wasn't. It tried to download when I clicked on some of the old threads in the news section. Luckily, avast! was able to deal with them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">oddigy</div><div class="date">2010-05-22, 06:44 PM</div></div><div class="posttext">It looks like the exact venue through which any user visiting this site could have been hacked would have been through an infected PDF file.<br />
+<br />
+You are only vulnerable to this attack if you are running an outdated version of Adobe Reader on your computer.<br />
+<br />
+More information here:<br />
+<br />
+http://www.symantec.com/connect/blogs/gumblar-botnet-ramps-activity<br />
+<br />
+<br />
+Visitors to an infected site will be redirected to an alternative site containing further malware, which was once (redacted), but has now switched to a variety of domains. The site sends the visitor an infected PDF that is opened by the visitor's browser or Acrobat Reader. The PDF will then exploit a known vulnerability in Acrobat to gain access to the user's computer. <br />
+<br />
+If you have Adobe Reader (any version) installed on your PC, please launch it, go to the Help dropdown, and continue to select &quot;Check for Updates&quot; and install what it finds until there are no more updates to install. This will also protect you against the majority of drive-by parasites that are on other sites.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">insurgi</div><div class="date">2010-05-22, 06:49 PM</div></div><div class="posttext">those who give they`r freedom for security--&gt; deserve neither <br />
+<br />
+and thanks for the heads up on virus</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc32bf69b9</div><div class="date">2010-05-22, 09:40 PM</div></div><div class="posttext">It looks like the exact venue through which any user visiting this site could have been hacked would have been through an infected PDF file.<br />
+<br />
+You are only vulnerable to this attack if you are running an outdated version of Adobe Reader on your computer.<br />
+<br />
+More information here:<br />
+<br />
+http://www.symantec.com/connect/blogs/gumblar-botnet-ramps-activity<br />
+<br />
+If you have Adobe Reader (any version) installed on your PC, please launch it, go to the Help dropdown, and continue to select &quot;Check for Updates&quot; and install what it finds until there are no more updates to install. This will also protect you against the majority of drive-by parasites that are on other sites.<br />
+<br />
+<br />
+Incorrect. The first variants of the virus were believed to have been spread via a PDF file. The latest (2010) variation utilizes Javascript to display a Java application with malicious code.<br />
+<br />
+<br />
+<br />
+Just posting to clarify that as of five minutes ago, the virus is still here on the site. Just in case anyone was on the belief that it wasn't. It tried to download when I clicked on some of the old threads in the news section. Luckily, avast! was able to deal with them.<br />
+<br />
+<br />
+Details please. We removed the virus before this news post went up. Avast should have a log of the most recent attacks, please PM me a copy of the lines relating to MMO-Champion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">quiz</div><div class="date">2010-05-22, 10:51 PM</div></div><div class="posttext">Scanning with Malwarebytes right now and already checked my websites :P. Nothing found yet :).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">codixthedane</div><div class="date">2010-05-23, 01:13 AM</div></div><div class="posttext">i think my computer caught this virus or w/e, cause my main hotmail account and 1 of my wow accounts got hacked on the same night (last night to exact)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sting</div><div class="date">2010-05-23, 07:12 PM</div></div><div class="posttext">But what about the Melware? (http://www.explosm.net/comics/2051/)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mimoo</div><div class="date">2010-05-23, 09:32 PM</div></div><div class="posttext">i think my computer caught this virus or w/e, cause my main hotmail account and 1 of my wow accounts got hacked on the same night (last night to exact)<br />
+<br />
+<br />
+This happened to a lot of people. Use a virus scan to get rid of it.<br />
+I used Microsoft Security Essentials and ESET Smart Security to get rid of what I had.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fantasy4fun</div><div class="date">2010-05-24, 01:08 AM</div></div><div class="posttext">ESET Smart Security ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Morsker</div><div class="date">2010-05-24, 02:55 AM</div></div><div class="posttext">This description of the hack was far too long, and a bit sensationalist besides. You could've gotten to the point in only one or two paragraphs. As much as I love MMO Champion for reporting on WoW things, the coverage of security topics has always been far too long-winded and confused.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">static1800</div><div class="date">2010-05-24, 07:17 AM</div></div><div class="posttext">Can the mods or someone delete the link to the unmask parasites article about gumblar it ironically appears to have gumblar on it!<br />
+<br />
+I went to it a few hours ago and avg blocked it, having a lot of ftp details on this laptop I was most annoyed and instantly disconnected my network connection and scanned. AVG appeared to have done its work and everything came back clean though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tayla</div><div class="date">2010-05-24, 07:29 PM</div></div><div class="posttext">This description of the hack was far too long, and a bit sensationalist besides. You could've gotten to the point in only one or two paragraphs. As much as I love MMO Champion for reporting on WoW things, the coverage of security topics has always been far too long-winded and confused.<br />
+<br />
+<br />
+i'm sorry that your small brain couldn't comprehend the nicely detailed and informative post about the situation. Yes, He could have gotten to the point in one or two paragraphs, but then, we wouldn't have all of the information that we need. i, for one, am extremely grateful for the &quot;long-winded&quot; post.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Twest</div><div class="date">2010-05-24, 08:14 PM</div></div><div class="posttext">Very same day, I got hacked by a BOT which added an Authenticator (givin me a Core Hound Pup). Fortunately, all it did was empty the bags on both of my 80's and spend/swipe all but 90G, between the two of them. Got the acct back today, so I am golden, and very, very fortunate.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">sKoToNy</div><div class="date">2010-05-24, 09:27 PM</div></div><div class="posttext">Very same day, I got hacked by a BOT which added an Authenticator (givin me a Core Hound Pup). Fortunately, all it did was empty the bags on both of my 80's and spend/swipe all but 90G, between the two of them. Got the acct back today, so I am golden, and very, very fortunate.<br />
+<br />
+<br />
+Twest the same exact thing happened to me, and it was on the first day I registered an account here in MMO-champion....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc32bf69b9</div><div class="date">2010-05-24, 09:29 PM</div></div><div class="posttext">To repeat for the xth time, this virus does not affect World of Warcraft accounts or battlenet accounts or accounts for anything other than FTP. Anything that happened around the same time as this notice was purely coincidental.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">parody</div><div class="date">2010-05-25, 05:29 AM</div></div><div class="posttext">Gumblar was named for the first website to host the scripting and associated malware. <br />
+<br />
+The methods involved to exploit your browsers get updated regularly with the latest exploits. The bot included with the infection can vary on the end host that the exploit includes in its payload.<br />
+<br />
+I've reviewed many infected sites in my lab and the malware downloaded can be a many as 10 variants of keyloggers and banking trojans. While the malware commonly included with the gumblar infection are not targetting WoW logins, they may be capable of capturing the keystrokes for logging in. <br />
+<br />
+Many of the suggested AV solutions in this thread are good for cleaning up any infection, if you feel like your AV has not done a good enough job when cleaning up, backup your personal data and re-install your operating system. Once your system has been compromised it can be very hard to nail down exactly what has been changed, updated and installed by the infection. <br />
+<br />
+Many malware will download other malware binaries as required or instructed by their C&amp;C host. ( gumblar.cn was the first C&amp;C host - hence the name ).<br />
+<br />
+PM me here if you have questions or @lordparody on twitter. <br />
+I am an ISS Threat Analyst and was involved in the original review of the gumblar infections.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wowremy</div><div class="date">2010-05-25, 10:13 PM</div></div><div class="posttext">malwarebytes should fucking love you guys for all the downloads and hits their gonna be getting the next week or so :)</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, that, jesus, green, and, classes, doing, shaman, you, while, others, trouble, much, without, insanely, difficult, get, just, try, endless, enhance, awful, for, some, through, blow, can, want, past, exists, know, believe, main, which, very, true, compounds, when, say, most, also, silver, people, not, even, dont, problem, numbers, sees, one" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Battle.net Parental Control Changes, Feedback on Density is Needed, MannerCookie's Torment 6 Freeze Barb 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Weekly News Recap, Community Spotlight - Soulstone, FanArt; ESGN Fight Nights Trailer 
+" />
+<title> Armory Stats - Proving Grounds, Parental Control Changes, Blue Tweets, Fan Art [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Proving Grounds, Parental Control Changes, Blue Tweets, Fan Art</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1433545.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1433545-Armory-Stats-Proving-Grounds-Parental-Control-Changes-Blue-Tweets-Fan-Art">Armory Stats - Proving Grounds, Parental Control Changes, Blue Tweets, Fan Art</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-06, 01:36 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Battle.net Parental Control Changes, Feedback on Density is Needed, MannerCookie's Torment 6 Freeze Barb (http://www.diablofans.com/news/47901-battle-net-parental-control-changes-feedback-on)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Weekly News Recap, Community Spotlight - Soulstone, FanArt; ESGN Fight Nights Trailer (http://www.hearthpwn.com/news/250-weekly-news-recap-community-spotlight-soulstone)<br />
+<br />
+Armory Stats - Proving Grounds<br />
+Today we are looking at data from proving grounds achievements, with a sample of 6.3 million characters and 2.3 million players that were active after November 19th. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. You can leave suggestions for future stat posts in the comments!<br />
+<br />
+Our first chart shows the percentage of players that earned proving grounds achievements, for at least one role, at least two roles, or at least three roles. The second chart shows the same data, but scales the percentages so that they consider only the participating players. A participating player is a player that earned at least Bronze in one role.<br />
+<br />
+Unfortunately we are unable to look at achievements by class, as achievements are earned account wide, and there is no way to know which character they were earned on.<br />
+<br />
+There are three data points for every difficulty level, but you may need to click the names in the legend to hide taller bars and mouse over close to the X axis in order to see them.<br />
+<br />
+A total of ~20,000 players have completed the You're Doing it Wrong (http://www.wowdb.com/achievements/8697-youre-doing-it-wrong), or ~3% of the players that earned at least one Silver role achievement. <br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: [ '#8C7853', '#545454', '#DBDB70', '#55C949', '#6B8E23', '#426F42']<br />
+});<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'provingGroundsAbs',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'Bronze', 'Silver', 'Gold', 'Endless 10', 'Endless 20', 'Endless 30'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: true,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false,<br />
+colorByPoint: true<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.series.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Completed Proving Grounds Achievements',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+shared: true,<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'At least one role',<br />
+data: [46.4, 26.8, 7.6, 2.0, 1.1, 0.8],<br />
+<br />
+}, {<br />
+name: 'At least two roles',<br />
+data: [11.6, 5.2, 1.03, 0.23, 0.13, 0.09]<br />
+<br />
+}, {<br />
+name: 'At least three roles',<br />
+data: [2.28, 1.01, 0.20, 0.06, 0.03, 0.03]<br />
+<br />
+}<br />
+]<br />
+<br />
+});<br />
+<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'provingGroundsScaled',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'Bronze', 'Silver', 'Gold', 'Endless 10', 'Endless 20', 'Endless 30'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: true,<br />
+},<br />
+<br />
+yAxis: {<br />
+endOnTick: false,<br />
+title: {<br />
+ text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false,<br />
+colorByPoint: true<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.series.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Participating Players that Completed Proving Grounds Achievements',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+shared: true,<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'At least one role',<br />
+data: [100, 57.7, 16.4, 4.4, 2.4, 1.7]<br />
+<br />
+}, {<br />
+name: 'At least two roles',<br />
+data: [25, 11.3, 2.2, 0.5, 0.3, 0.2]<br />
+<br />
+}, {<br />
+name: 'At least three roles',<br />
+data: [4.9, 2.2, 0.4, 0.12, 0.07, 0.06]<br />
+<br />
+}<br />
+]<br />
+<br />
+});<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+<br />
+<br />
+<br />
+&lt;div id=&quot;provingGroundsAbs&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+<br />
+&lt;div id=&quot;provingGroundsScaled&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+Upcoming Battle.net Parental Control Changes<br />
+On January 7, 2014 or shortly afterwards, we’re making a change to Battle.net® Parental Controls: a new default setting will prevent in-game purchases for accounts that have Parental Controls turned on. The account will not be able to:<br />
+<br />
+<br />
+Make purchases in the World of Warcraft® in-game Shop<br />
+Make real-money purchases in Hearthstone™: Heroes of Warcraft™<br />
+Make purchases in the Diablo® III real-money auction house (note: the auction house will be permanently closed on March 18, 2014)<br />
+<br />
+<br />
+We’re making this change to ensure that Parental Controls users will have more control over real-money purchases in Blizzard games. No action is needed to keep this default setting and prevent in-game purchases.<br />
+To enable in-game purchases for this account:<br />
+1. Log in to Battle.net and visit the Retrieve Parental Controls page (https://battle.net/account/parental-controls/retrieve.html).<br />
+2. Enter your Parental Controls email address.<br />
+3. Click the Send Parental Controls Email button.<br />
+4. Check your Parental Controls email for a message from Blizzard Entertainment.<br />
+5. Click the link under the account user’s name. This will take you to the Parental Controls setup page.<br />
+6. Under the Purchase Settings section, check Allow in-game purchases, and click the Save Settings button.<br />
+<br />
+If you’d like to remove Parental Controls from this Battle.net account, visit our Adding and Removing Battle.net Parental Controls (https://battle.net/support/article/300680) support article for detailed instructions.<br />
+<br />
+<br />
+<br />
+Blue Tweets<br />
+Art<br />
+What overall feel are you guys going for for armor in WoD? Something light/nomadic/less bulky?<br />
+overall theme is primal/barbarian . We're also tapping into iron horde theme strategically. (Source (https://twitter.com/artofcgrobinson/status/415515445504917504))<br />
+<br />
+Any chance of allowing white/statless items as transmog models? Some very nice models among those going to waste!<br />
+Doubtful as it's currently the #1 lock-out mechanism. More likely that we'll try to (re)include such assets as future rewards! (Source (https://twitter.com/Dave_Maldo/status/414928788011503616))<br />
+Consider their models for re-inclusion I mean!<br />
+Oh yes, that's what I meant! Just a matter of the item/reward peeps finding the right time &amp; place for all that stuff. (Source (https://twitter.com/Dave_Maldo/status/414933395718696960))<br />
+<br />
+I mean, they don't start holding the bow like a gun suddenly. I just wonder why it's such a problem with fist/1Hand weapons.<br />
+Bow/gun was hard-coded in from the very beginning, built into the system. And again, for *both* philosophical &amp; technical reasons. (Source (https://twitter.com/Dave_Maldo/status/417015792794746880))<br />
+<br />
+Character / Items<br />
+Probably too much for twitter, but what plans for trinkets in WoD? RPPM/ICD/On-use/&lt;insert new thing here&gt;<br />
+Variety. All of the above, along with some more ideas. (Source (https://twitter.com/Celestalon/status/409912902208872448))<br />
+<br />
+Just FYI, Tauren could need an offensive racial (wow that sounds weird) So many of my druid pal racechanged to Troll...<br />
+Yes, adding a throughput benefit to races that had don't have one currently is part of balancing the racials. (Source (https://twitter.com/Celestalon/status/416685577774178304))<br />
+<br />
+Warlords of Draenor Stats<br />
+Will low level gear only have haste and crit or will amplify, readiness and multi-strike(lol) be low level too?<br />
+Unsure. Since most low level gear only has 1 secondary stat on it, it could be OK. Still deciding. (Source (https://twitter.com/Celestalon/status/409903833586737152))<br />
+<br />
+Will Multistrike interact with some class mechanics like, say, crit for fire mages &amp; how is it meaningfully different from crit?<br />
+Just there are some class abilities that trigger from crits, there may be some that trigger from Multistrikes. (Source (https://twitter.com/Celestalon/status/412888346147303424))<br />
+&quot;Just as there are...&quot;, rather. Yes, Flameglow would work better against Multistrikes (and still worse against crits). (Source (https://twitter.com/Celestalon/status/412889709111562240))<br />
+<br />
+Isnt multistrike just crit with the chance of hitting somthing you dont want to plus only 1/3 the power? (I am guessing: No )<br />
+No... Multistrike doesn't hit a different target. Can trigger 1 or 2 times per attack. (Source (https://twitter.com/Celestalon/status/412679443606294529))<br />
+Which means if it strikes twice and both crits it's +120% otherwise it's +90% or less. How will this ever be better than crit?<br />
+It has an appropriate coefficient so that it's competitive. Is that what you mean? (Source (https://twitter.com/Celestalon/status/414137086740922368))<br />
+Does that mean Multistrike is affected by our Crit rating?<br />
+No... Multistrike and Crit are separate mechanics. (Source (https://twitter.com/Celestalon/status/412749259339882496))<br />
+<br />
+Double multistrike, all three hits crit! &lt;- This is the only thing will hear about in WoD PvP.<br />
+We recognize that problem and are preemptively working on potential solutions. (Source (https://twitter.com/Celestalon/status/414879986005204992))<br />
+<br />
+Right, what's wrong with that? Also I imagine some specs getting procs off multistrike hits<br />
+Yeah, 1% Multistrike will be way cheaper than 1% crit. That's fine, happens all the time. (Source (https://twitter.com/Celestalon/status/414223646018641920))<br />
+critrat is near 100% right now. Multistrike capped around 6.1 then? Or lower critchances in general?<br />
+And half that crit is from Agi, not crit rating. (Source (https://twitter.com/Celestalon/status/414540496514449408))<br />
+wait, I missed something... no more agi-&gt;crit? Same for int-crit? Agi-dodge and str-parry?<br />
+I'm saying that you can't say that &quot;I capped crit in X tiers, so I'll cap multistrike in X/2 tiers&quot;. Crit came from Agi too. (Source (https://twitter.com/Celestalon/status/414611030845566977))<br />
+<br />
+is the only way to get multi strike through gear? Toons have base mastery and crit...<br />
+We may have the occasional buff, or class ability, or consumable. Characters don't have base haste, yet you get it from all over. (Source (https://twitter.com/Celestalon/status/414226931156934656))<br />
+<br />
+Lot of tick mechanics were changed to less frequent but more powerful to decrease server load. Any worry for multistrike?<br />
+We learned a lot from those changes. We're designing Multistrike and handling some similar challenges with that in mind. So, I see where the concern is coming from and we're making sure that it won't cause problems like that again. (Source (https://twitter.com/Celestalon/status/414221767318573056))<br />
+<br />
+PvE<br />
+Keep that crap out of my visual clusterfuck melee pile. <br />
+We 110% recognize the problem that is visual clutter, especially in raids, and want to make it better, not worse. (Source (https://twitter.com/Celestalon/status/409914478726098944))<br />
+We've started toning up your own visuals, and toning down others' visuals. Much more of that to come in WoD. (Source (https://twitter.com/Celestalon/status/409914531796619264))<br />
+<br />
+I want to always have something to work for (in WoD gear), but I don't want to rely on it for damage + competitive raid spot.<br />
+Those desires are competing with each other though, you see? (Source (https://twitter.com/Celestalon/status/409905201118584832))<br />
+<br />
+PvP<br />
+Is ONE DR (or something like it) a system you'd consider for WoW PvP? It would dramatically cut down on CC and make it strategic<br />
+Prefer to reduce the number of CC spells. Players seeing &quot;Immune&quot; more isn't going to be fun. (Source (https://twitter.com/holinka/status/412658000252256256))<br />
+Is that actually going to happen though? You guys say that an awful lot yet Hunters have been the only ones to lose any.<br />
+It's the plan for WoD. (Source (https://twitter.com/holinka/status/413011853044772864))<br />
+Simpler solution is removing so much CC that DR isn't needed to such a large extent anyway.<br />
+DR categories help prevent class stacking, which is good, but the number of categories has grown too high. (Source (https://twitter.com/holinka/status/412657768827342848))<br />
+<br />
+Since 72% resil makes healing very efficent atm im interested to see how healers will will be adjusted for low resil PVP.<br />
+We're exploring 150% crits for PvP damage/healing which makes a big difference for both base resil and battle fatigue. (Source (https://twitter.com/holinka/status/411656873142517760))<br />
+Bringing back resi providing crit % reduction is something people (I) have been suggesting for over a year...<br />
+Sure but that's not what we're talking about here (Source (https://twitter.com/holinka/status/412389880036331520))<br />
+<br />
+I hope it can be reduced, and I would love to see it removed as a stat and just be a background effect like battle fatigue.<br />
+Base resil will be reduced as low as possible. Like PvP dmg reduction as set bonus (trinkets). Don't like resil gems. (Source (https://twitter.com/holinka/status/411651164384403456))<br />
+<br />
+What about making base resilience only active in instanced pvp? Pve players still stand a chance but pvp gear good in world pvp.<br />
+This would just mean the game is way more bursty out in the world. Not something we want. (Source (https://twitter.com/holinka/status/411014814568181760))<br />
+I didn't think of that. I just hope you guys find a way to make world pvp work. I'm stoked about Ashran #WoD<br />
+I think we have good plans here to make ilevels much closer in WoD than MoP. (Source (https://twitter.com/holinka/status/411016910981967872))<br />
+<br />
+a lot of problems with battle fatigue in duel...not applied .Is Battle fatigue removed in wod?<br />
+A goal for WoD is for Battle Fatigue &amp; Base Resilience to be as low as possible. This has broad implications. (Source (https://twitter.com/holinka/status/410985909962563584))<br />
+<br />
+One quick question as someone asked. RBG was TotG too, yes? I'm sure I heard H. say so.<br />
+Yes, RBGs will have TotG too. (Source (https://twitter.com/holinka/status/411265400936996864))<br />
+<br />
+Horde towers are much easier to defend; gives a large advantage to the Alliance UNLESS can wipe on Galv.<br />
+We're looking at what we can do on the map, but it will take a long time to change community opinion (Source (https://twitter.com/holinka/status/411016178392252416))<br />
+<br />
+will there be LoS objects around the central fighting points in Ashran?<br />
+Yes we're designing the contested areas with LoS in mind (Source (https://twitter.com/holinka/status/414512606481633280))<br />
+Will hunters still have quad damage stampede, and various other things that only apply in arena fixed to be v. player?<br />
+Our design for the area is a PvP playground with an emphasis on atmosphere, exploration &amp; participation. (Source (https://twitter.com/holinka/status/414632770690748417))<br />
+A lot of things are going to feel &quot;crazy&quot; and OP out there. Be forewarned. (Source (https://twitter.com/holinka/status/414633493365141504))<br />
+<br />
+Holiday Events<br />
+More world events please. More server wide events. More quests like &quot;Only one may rise&quot;!<br />
+I'd love to do more stuff like that, totally. (Source (https://twitter.com/Dave_Maldo/status/417349277199790080))<br />
+<br />
+Dave, if you work on holiday events in WoW, could you guys raise ilevel of the holiday drops? To Timeless Isle at least.<br />
+The item peeps generally bump the player power drops once per expansion, in tune w/ the level/ability bump the encounter peeps do. (Source (https://twitter.com/Dave_Maldo/status/417018011149561856))<br />
+but by adding Timeless Isle you've allowed people to skip catch-up content, making holiday drops sort of useless. It's a shame.<br />
+I understand what you're saying! Still, if people are killing Ahune only for his cloaks, I have failed horribly. T_T (Source (https://twitter.com/Dave_Maldo/status/417349698093977600))<br />
+no, for his scythe! Lol. Wow is a &quot;loot-porn&quot; game. Heard the term before? We want lootz. No worthy lootz? We don't run content.<br />
+That's what I was saying: I'm more about snowing scythes and funky gas masks and flying hell-horses than magical ring item levels. (Source (https://twitter.com/Dave_Maldo/status/417440817297387520))<br />
+fair enough, you're my kind of guy then! More snowing scythes and glowing horses please! Increase drop rate on Love Rocket!<br />
+OG Love Rocket was like Broom (i.e. everyone during LiitA) but so funky and loved by team I had to make it a VERY rare permanent. (Source (https://twitter.com/Dave_Maldo/status/417442733003767808))<br />
+<br />
+<br />
+Fan Art<br />
+Another nice piece of Hearthstone art today from breathing2004.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/january/thumb/hsBreathing.jpg (http://breathing2004.deviantart.com/art/hearthstone-title-art-397834834)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Colmadero</div><div class="date">2014-01-06, 01:52 AM</div></div><div class="posttext">Interesting numbers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2014-01-06, 01:52 AM</div></div><div class="posttext">I kind of hope they just overhaul low level gear. It's still following a lot of Vanilla/BC stat theory and makes no sense in todays game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yig</div><div class="date">2014-01-06, 02:03 AM</div></div><div class="posttext">I love breathing's stained glass mosaic pieces.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+They need to make starting area white gear Moggable, Worgen and Goblin and Pandaren custom models are just a waste unless you're a role player like me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bad Ashe</div><div class="date">2014-01-06, 02:07 AM</div></div><div class="posttext">i'm very interested at the proving grounds data. seeing as there were blue posts and even GC tweets talking about &quot;how popular the proving grounds feature was&quot;<br />
+<br />
+but those numbers seem to tell a very different story. and i'm sure they have even more data beyond achieves, about how many attempted but failed too. how can they say how &quot;popular&quot; it was and use it as a template for future content with these numbers?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moonshadow101</div><div class="date">2014-01-06, 02:12 AM</div></div><div class="posttext">Every time I see &quot;finding the right time &amp; place,&quot; in this way, I get kinda depressed. I imagine the game 15 years from now, when the transmog system will be totally complete and we'll have subraces and all that good stuff, and the twelve people still playing the game will be sitting around waiting for something to do with all of it. <br />
+<br />
+They need to stop waiting for a time and place and just do it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spirthealer</div><div class="date">2014-01-06, 02:13 AM</div></div><div class="posttext">I kind of hope they just overhaul low level gear. It's still following a lot of Vanilla/BC stat theory and makes no sense in todays game.<br />
+<br />
+I hate low level gear, they need to do a quick clean up on things for WOD.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zorperior</div><div class="date">2014-01-06, 02:14 AM</div></div><div class="posttext">Am I the only one that sees Green Jesus being well.... Green Jesus in that mosaic?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mizzet</div><div class="date">2014-01-06, 02:18 AM</div></div><div class="posttext">i'm very interested at the proving grounds data. seeing as there were blue posts and even GC tweets talking about &quot;how popular the proving grounds feature was&quot;<br />
+<br />
+but those numbers seem to tell a very different story. and i'm sure they have even more data beyond achieves, about how many attempted but failed too. how can they say how &quot;popular&quot; it was and use it as a template for future content with these numbers?<br />
+<br />
+Maybe they tried but were just bad and couldn't complete it? Only 50% of the playerbase being able to complete even bronze seems pretty in line with my impression of them. Endless 30 is no easy feat either.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">toxicrusader</div><div class="date">2014-01-06, 02:19 AM</div></div><div class="posttext">I'm really hoping they add stuff like this: <br />
+<br />
+http://img.photobucket.com/albums/v84/evilknick/WoW/draeneihammer_zps03248be9.jpg<br />
+<br />
+Definitely would change how much time I spend on my toons... I'm sick of all that crappy armor designs we see nowadays... Warrior T16? More like a human (or orcish) lighthouse...<br />
+We need (at least the RP community) more options for transmog!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bad Ashe</div><div class="date">2014-01-06, 02:21 AM</div></div><div class="posttext">Maybe they tried but were just bad and couldn't complete it? Only 50% of the playerbase being able to complete even bronze seems pretty in line with my impression of them. Endless 30 is no easy feat either.<br />
+<br />
+actually i never went past endless 10 myself, and have never even done bronze/silver/gold on my main. never really felt the need to go do it with so many other in-game grinds that have actual rewards to still be unlocked for</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xenyatta</div><div class="date">2014-01-06, 02:23 AM</div></div><div class="posttext">Augh I wish I knew about the open raid thing. Ladies represent!!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Marema</div><div class="date">2014-01-06, 02:25 AM</div></div><div class="posttext">Armory Stat suggestion: I would like to see the % of players who have the &quot;logged on during X anniversary&quot; FoS. I'm curious to see how many current players have been here since achievements came out. It would give some good insight on also on what the ratio of old players vs new ones.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Achaman</div><div class="date">2014-01-06, 02:29 AM</div></div><div class="posttext">go girl team!<br />
+<br />
+and i wonder how many of them are actually girls though</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-06, 02:32 AM</div></div><div class="posttext">Armory Stat suggestion: I would like to see the % of players who have the &quot;logged on during X anniversary&quot; FoS. I'm curious to see how many current players have been here since achievements came out. It would give some good insight on also on what the ratio of old players vs new ones.<br />
+<br />
+Yeah, that is already on the todo list.<br />
+<br />
+<br />
+but those numbers seem to tell a very different story. and i'm sure they have even more data beyond achieves, about how many attempted but failed too. how can they say how &quot;popular&quot; it was and use it as a template for future content with these numbers?<br />
+<br />
+~45% of all players doing something isn't too bad for a feature that has no real rewards or significant advertising of the feature in game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nekobaka</div><div class="date">2014-01-06, 02:33 AM</div></div><div class="posttext">i'm very interested at the proving grounds data. seeing as there were blue posts and even GC tweets talking about &quot;how popular the proving grounds feature was&quot;<br />
+<br />
+but those numbers seem to tell a very different story. and i'm sure they have even more data beyond achieves, about how many attempted but failed too. how can they say how &quot;popular&quot; it was and use it as a template for future content with these numbers?<br />
+<br />
+getting 45% of your player base to do something sounds fairly popular especially with a game that caters to such a wide variety of players that WoW does. There are also those that just dont care and we dont know who has tried or just doent want to challenge themselves or try to improve themselves. It is an optional feature. Personally I did proving grounds on the PTR and havent cared to do it on live. Maybe if I pick up the game again and PuGs start requiring it or it helps me bypass over bloated LFD and LFR ilvl requirements then sure I will do them. If proving grounds rewarded LFR level gear then the &quot;popularity&quot; might just go up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">arcaneshot</div><div class="date">2014-01-06, 02:34 AM</div></div><div class="posttext">That Blue tweet knows people won't stop running Frost Lord Ahune until they get that scythe. I won't stop until I get it on all my Staff-equipping characters.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mizzet</div><div class="date">2014-01-06, 02:40 AM</div></div><div class="posttext">actually i never went past endless 10 myself, and have never even done bronze/silver/gold on my main. never really felt the need to go do it with so many other in-game grinds that have actual rewards to still be unlocked for<br />
+<br />
+Good for you, whatever makes you happy. I personally don't care for tangible rewards much as raiding already supplies plenty, I went for endless 30 solely for the prestige of the title.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airwaves</div><div class="date">2014-01-06, 02:48 AM</div></div><div class="posttext">Fucking proving grounds. What a waste of time. If I wanted to so solo content I would go play a bloody solo game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bad Ashe</div><div class="date">2014-01-06, 03:06 AM</div></div><div class="posttext">getting 45% of your player base to do something sounds fairly popular especially with a game that caters to such a wide variety of players that WoW does. There are also those that just dont care and we dont know who has tried or just doent want to challenge themselves or try to improve themselves. It is an optional feature. Personally I did proving grounds on the PTR and havent cared to do it on live. Maybe if I pick up the game again and PuGs start requiring it or it helps me bypass over bloated LFD and LFR ilvl requirements then sure I will do them. If proving grounds rewarded LFR level gear then the &quot;popularity&quot; might just go up.<br />
+<br />
+The 45% thing though.... you are sent to do it by a yellow quest from the shrine. the steep dropoff of how many continued to do it after completing the initial quest with the bronze run shows how unpopular it in fact is.<br />
+<br />
+see what i mean?<br />
+wasnt knocking the feature, i just dont see how these numbers translate to how eager the devs are to make it an integrated part in future content</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Felade</div><div class="date">2014-01-06, 03:31 AM</div></div><div class="posttext">Proving Grounds bought me back to the game after a several month break. After getting all 3 endless achievements and &quot;you're doing it wrong&quot; I have to say its very well done content. It would be nice if it was a bit more prominent in the community - the average flex RL doesn't really know what those titles really mean, and they think I've completed gold or something. It would be nice if there was some cosmetic gear rewards too or something. Maybe an achievement for getting all 3 endless achievements on one account?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3d5e9cedde</div><div class="date">2014-01-06, 04:06 AM</div></div><div class="posttext">@felade - as one of the first players in the world to achieve endless wave 30 in all roles, I agree compltely. But my healing and tank achievement where both removed (for no reason at all, and they can't re-reward it to me either, cuz having 30+ waves in pg tanking in statistics isn't proof enough). The tanking one was by far the hardest one, I went in and 1shot the healing one to get it back but have yet to managed the tanking one again (only did like 3-4 tries after having ot removed).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nekobaka</div><div class="date">2014-01-06, 04:11 AM</div></div><div class="posttext">The 45% thing though.... you are sent to do it by a yellow quest from the shrine. the steep dropoff of how many continued to do it after completing the initial quest with the bronze run shows how unpopular it in fact is.<br />
+<br />
+see what i mean?<br />
+wasnt knocking the feature, i just dont see how these numbers translate to how eager the devs are to make it an integrated part in future content<br />
+Well thats the thing with developers along with what is casual. The developers wont clearly define ether publicly and even vary it based on internal expectations. Players do get after Blizzard when developers use such terms though and use such words at times to dodge the question such as when asked how many players like LFR vs do it because there is no alternative. I didnt mean you bash you as well rather than help high light other factors including WoWs varied population wants and needs. Proving grounds are among the most optional features out there and at least based on the last numbers surpasses LFR completion rates which used to be in the majority. <br />
+<br />
+@Chaud this brings a question to mind of if you have sufficient data to show how many players participate in holiday events including the ones that could be viewed as a bit more optional.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mefistophelis</div><div class="date">2014-01-06, 04:46 AM</div></div><div class="posttext">So for this data they used a 2,300,000 player pool and only about 20,000 have the &quot;You're Doing it Wrong!&quot; achievement ? Is it really that hard ? <br />
+I did it on my monk (happening to be my main) as a healer clearing the silver dps pg.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MakeMeLaugh</div><div class="date">2014-01-06, 05:51 AM</div></div><div class="posttext">Man, proving grounds is so boooring, can't stand it. I did it when it launched, I was always almost falling asleep...<br />
+<br />
+Wish they improved brawler's guild instead of implementing this, now it's just another feature that gets overgeared that will be forgotten once the next expansion arrives... sigh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eternal Ice</div><div class="date">2014-01-06, 07:19 AM</div></div><div class="posttext">So for this data they used a 2,300,000 player pool and only about 20,000 have the &quot;You're Doing it Wrong!&quot; achievement ? Is it really that hard ? <br />
+I did it on my monk (happening to be my main) as a healer clearing the silver dps pg.<br />
+<br />
+As a rogue I find the healing challenge pretty hard, my hunter didn't have better luck.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">marq1983</div><div class="date">2014-01-06, 07:47 AM</div></div><div class="posttext">I just wish it would get more difficult much faster, other then that i loved Proving Grounds.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Flowsion</div><div class="date">2014-01-06, 08:09 AM</div></div><div class="posttext">Proving grounds is tedious, but its certainly not 'boring'. Wave 20+ on especially heals and dps can get intense at times, and I was expecting to see more complaints about the bugs in healing endless, especially since NPC's will sometimes 'die' while still at 10% health.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocdd602b3b80</div><div class="date">2014-01-06, 08:15 AM</div></div><div class="posttext">As a rogue I find the healing challenge pretty hard, my hunter didn't have better luck.<br />
+<br />
+Yeah but as a Rogue or Hunter, you should find the tanking challenge a breeze.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ashamel</div><div class="date">2014-01-06, 09:02 AM</div></div><div class="posttext">I'd be interested how many people were trying for the Bigger Bag achievement, and how far they were through it. A lot will presumably have a few of the items randomly, but higher numbers, let alone completion, will be a bit rarer.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Siri</div><div class="date">2014-01-06, 09:06 AM</div></div><div class="posttext">How many players completed endless 30 on all three roles? The representation is apparently not big enough to show on the graph!<br />
+<br />
+Also, you can see which characters, specifically, completed the endless 30 achievement. The maximum score achieved is saved in statistics and statistics are character specific even if the achievements aren't.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5b53551f34</div><div class="date">2014-01-06, 09:10 AM</div></div><div class="posttext">Man, proving grounds is so boooring, can't stand it. I did it when it launched, I was always almost falling asleep...<br />
+<br />
+Wish they improved brawler's guild instead of implementing this, now it's just another feature that gets overgeared that will be forgotten once the next expansion arrives... sigh.<br />
+<br />
+Dude you can't overgear it since your ilvl goes down to 463...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darmalus</div><div class="date">2014-01-06, 09:10 AM</div></div><div class="posttext">Huh, I completely forgot about proving grounds.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocced9c7d33d</div><div class="date">2014-01-06, 11:28 AM</div></div><div class="posttext">Proving grounds, isn't that something for new players? Haven't bothered with it, there's no rewards right??</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc37d54b0df8</div><div class="date">2014-01-06, 11:52 AM</div></div><div class="posttext">So for this data they used a 2,300,000 player pool and only about 20,000 have the &quot;You're Doing it Wrong!&quot; achievement ? Is it really that hard ? <br />
+I did it on my monk (happening to be my main) as a healer clearing the silver dps pg.<br />
+<br />
+no idea if its hard or not. I suspect not.<br />
+<br />
+But I've never set foot in proving grounds, and dont intend to.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Raiju</div><div class="date">2014-01-06, 12:07 PM</div></div><div class="posttext">Proving grounds is tedious, but its certainly not 'boring'. Wave 20+ on especially heals and dps can get intense at times, and I was expecting to see more complaints about the bugs in healing endless, especially since NPC's will sometimes 'die' while still at 10% health.<br />
+<br />
+It is certainly boring to me as a dps. I've barely done it but furthest I got was about 17 or so. Was it lack of dps? No. Was it the intense challenge? No.<br />
+<br />
+It's how boring the fights are, falling asleep after 15 mins of such a mindnumbing encounter and getting hit by an orb.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Toiran</div><div class="date">2014-01-06, 12:13 PM</div></div><div class="posttext">I'd say Proving Grounds is a success, most players don't know about it, or hardly care because it just offers an achievement and title, if it offered a set of transmog gear like say,challenge modes,for Endless 30, you'd see a big increase. It's also basically mentioned nowhere, and I don't think it took that long to create, the time invested was worth it for Blizzard, hopefully they expand on it in WoD.<br />
+<br />
+I have gold on two chars, and I seriously didn't think I'd be in the 1% for that, as for endless, I just haven't got round to trying, think I will tonight though.<br />
+<br />
+I think time is a factor as well, you've got to dedicate a few hours to getting endless, and reforge/regem etc, you can't just pause it in the middle of waves, so I'd imagine people are put off wiping on wave 28 and having to do it all over again, which is a good thing also, it SHOULD be hard/require attention etc, just saying people ragequit etc.<br />
+<br />
+Wondered what happened to the model update, also, does anyone know when the watercooler should be out?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kelgo</div><div class="date">2014-01-06, 01:14 PM</div></div><div class="posttext">The reason the numbers are so low because of how unbalanced it is for classes doing it. Some classes you can blow through endless 30 without much trouble while others it is insanely difficult just to get past silver. Also most people don't even know it exists which compounds the problem.<br />
+<br />
+Personally I think its a waste of time at least with brawlers guild there is some thought to it, in PG you pretty much breeze through it or struggle extremely hard due to the poor scaling of many classes at that ilvl.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kourvith</div><div class="date">2014-01-06, 01:26 PM</div></div><div class="posttext">A lot of things are going to feel &quot;crazy&quot; and OP out there. Be forewarned.<br />
+<br />
+Be forewarned.<br />
+<br />
+http://images1.wikia.nocookie.net/halo/images/3/3d/Give_that_man_a_cookie.jpg<br />
+<br />
+Now Blizzard is having some balls again. I like that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yag</div><div class="date">2014-01-06, 02:46 PM</div></div><div class="posttext">I simply don't see a reason to do the proving grounds. So I have never bothered doing them. <br />
+<br />
+Now, if there was exclusive mog gear or something as a prize for achieving stuff there, i would do them. Otherwise I just ignore it like always.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bad Ashe</div><div class="date">2014-01-06, 03:18 PM</div></div><div class="posttext">recently started healing on my pally, and now i've been in there most of last nite and this morning to see how far i can get in endless...<br />
+<br />
+maybe i was completely wrong, because once you DO start its pretty addictive. i guess its just getting the people TO start it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2014-01-06, 03:22 PM</div></div><div class="posttext">Implement new feature, give it no rewards. Wonder why more than half have never gone near it and the other half did bronze and walked away.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MakeMeLaugh</div><div class="date">2014-01-06, 03:31 PM</div></div><div class="posttext">Dude you can't overgear it since your ilvl goes down to 463...<br />
+<br />
+I'm talking about brawler's guild.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Skippert</div><div class="date">2014-01-06, 04:11 PM</div></div><div class="posttext">Just FYI, Tauren could need an offensive racial (wow that sounds weird) So many of my druid pal racechanged to Troll...<br />
+Yes, adding a throughput benefit to races that had don't have one currently is part of balancing the racials. (Source)<br />
+Owyeah. Expect a whole lot of trolls/orcs to switch to tauren, at least I will. Even if it's something boring like a 1% dmg increase, because &quot;Tauren ar strongk&quot;, I'll take it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vasku90</div><div class="date">2014-01-06, 06:32 PM</div></div><div class="posttext">I just wondering if this information took into account the amount of people who lost the achievements for tanking and healing during 5.4 patch. I went back and completed them again after loosing them but you will find anyone who plays this game for titles and achievements in general will at least complete these or attempted.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mican17</div><div class="date">2014-01-06, 07:44 PM</div></div><div class="posttext">Implement new feature, give it no rewards. Wonder why more than half have never gone near it and the other half did bronze and walked away.<br />
+<br />
+The rewards are the titles (i.e. prestige). Proving grounds are quite challenging for many classes/spec. I really liked em.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Quill</div><div class="date">2014-01-06, 09:33 PM</div></div><div class="posttext">I got the healing/dps 30-wave title mainly to prove to myself that I could do it. I would not have been able to rest after trying it, until I was able to beat it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ZeroWashu</div><div class="date">2014-01-06, 10:05 PM</div></div><div class="posttext">never ever tried the proving grounds, so people find them worthwhile?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Huntaer</div><div class="date">2014-01-06, 10:31 PM</div></div><div class="posttext">dat art &lt;3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Atnag</div><div class="date">2014-01-06, 11:33 PM</div></div><div class="posttext">I love the art! It reminds me of the opening animation for the movie Hercules.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2014-01-07, 02:48 AM</div></div><div class="posttext">Am I the only one that sees Green Jesus being well.... Green Jesus in that mosaic?<br />
+Nope. And while I, as a shaman, enjoy having my class prominently in the middle... Really wish it were possible to have someone else other than Thrall. =/<br />
+<br />
+<br />
+The reason the numbers are so low because of how unbalanced it is for classes doing it. Some classes you can blow through endless 30 without much trouble while others it is insanely difficult just to get past silver. Also most people don't even know it exists which compounds the problem.<br />
+Very true. My main is a shaman, and believe me when I say that you do not want to try doing PG as enhance. It is awful.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bodom</div><div class="date">2014-01-07, 10:19 AM</div></div><div class="posttext">I really liked proving grounds. I've done gold and wave 10 endless on a bunch of characters for fun and also obtained all 3 titles.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc58ad131b44</div><div class="date">2014-01-07, 04:12 PM</div></div><div class="posttext">Did all PG achis for the titles by cheesing with the easy specs. The difficulty between best and worst class/spec is insane. Doing 30 waves with frost mage isn't that hard, but GL with feral druid. Same with healers, shaman, druid and monk have tons of leeway while paladin has to be perfectly itemized and played for PG and still might get owned by AI or RNG.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

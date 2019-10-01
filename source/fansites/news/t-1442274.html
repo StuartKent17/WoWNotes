@@ -1,0 +1,1354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, win, probability, random, for, alliance, that, queue, have, horde, are, players, from, this, calculations, when, bgs, and, your, 1/11, 1/10, pve, you, battles, victories, should, pvp, 1/9, player, data, stats, big, centric, battlegrounds, 1/7, was, used, not, which, calculated, statistics, posted, difference, only, reflex, out, how, calculation, also, calculate" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Balance on Legendary Drops, Zakarum, Paladins, Templars and Crusaders, Are Numbers Too Large in RoS 
+ 
+Armory Stats - Battleground Win Ratios 
+Today we are taking a look at the win percentage for each faction and battleground that took place in the last month. To find these numbers, we compared the number of battles and victories a character had in a" />
+<title> Battleground Win Ratios, Upcoming SoO Changes Feedback, Blue Tweets, DLC #424 [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Battleground Win Ratios, Upcoming SoO Changes Feedback, Blue Tweets, DLC #424</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1442274.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1442274-Battleground-Win-Ratios-Upcoming-SoO-Changes-Feedback-Blue-Tweets-DLC-424">Battleground Win Ratios, Upcoming SoO Changes Feedback, Blue Tweets, DLC #424</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-20, 01:54 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Balance on Legendary Drops, Zakarum, Paladins, Templars and Crusaders, Are Numbers Too Large in RoS (http://www.diablofans.com/news/47914-balance-on-legendary-drops-zakarum-paladins)<br />
+<br />
+Armory Stats - Battleground Win Ratios<br />
+Today we are taking a look at the win percentage for each faction and battleground that took place in the last month. To find these numbers, we compared the number of battles and victories a character had in a December snapshot of data to a January snapshot of data.<br />
+<br />
+These numbers come from a character's statistics pane, so any bugs with character statistics will have skewed the results. This means that there isn't any way for us to verify how accurate these numbers are, so do not take them as fact.<br />
+<br />
+Percentages came fairly close to 100% in most cases, so we normalized the data to 100%. Unfortunately it seems that most Eye of the Storm wins are still not recorded in your statistics most of the time. This bug has been around for five or more years now, but we normalized the data we had (~7.9% and ~9.8% win ratios for each faction) for the chart. <br />
+<br />
+The data used today is a sample made up of ~7 million level 90 characters and ~16 million battles. The sample is slightly biased, as players who are not in a guild are less likely to appear in our sample. <br />
+<br />
+You can see the data from the last time we did this back in 2011 (http://www.mmo-champion.com/content/2187-Battleground-Horde-Alliance-Win-Ratio-Setup-of-the-Month), which shows a slightly different picture.<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: [ '#2A54C7', '#DE2A2A']<br />
+});<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'bgWinRatioChart',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: ['Alterac Valley' , 'Arathi Basin' , 'Warsong Gulch' , 'Eye of the Storm' , 'Strand of the Ancients' , 'Isle of Conquest' , 'Twin Peaks' , 'Battle for Gilneas' , 'Temple of Kotmogu' , 'Silvershard Mines' , 'Deepwind Gorge'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.series.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Battleground Win Percentages Over the Last Month',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'Alliance',<br />
+data: [78.2, 40, 47.4, 44.4, 31.7, 84.9, 42.7, 42.1, 41.9, 35.5, 42.1 ]<br />
+<br />
+},{<br />
+name: 'Horde',<br />
+data: [21.8, 60, 52.6, 55.6, 68.3, 15.1, 57.3, 57.9, 58.1, 64.5, 57.9 ]<br />
+<br />
+}]<br />
+<br />
+});<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;bgWinRatioChart&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+Upcoming Siege of Orgrimmar Changes<br />
+I agree. I also am not sure why removing the trivial healing mechanic from Sigecrafter is even...worth it. Most guilds are 4 healing this encounter to kill it, now it's definitely going to be a 4 heal fight. Directly after your tuned for 6-8 fight, Thok. ???<br />
+Raid groups are largely making steady progress, but as I said, there are exceptions. Regarding Heroic difficulty in particular, it's pretty obvious that there is a very large jump in difficulty from Thok to Siegecrafter. Siegecrafter/Paragons/Garrosh are currently very close to equal in difficulty, with each presenting different challenges and guilds taking roughly the same number of attempts to defeat each. We'd rather see an upward slope in difficulty, which leaves guilds feeling like the next step is within reach given enough time and dedication, rather than a sudden jump up to a much higher difficulty plateau. That's why we're nerfing Heroic Blackfuse moderately, Paragons just a little bit, and Garrosh not at all.<br />
+<br />
+The changes shouldn't be enough to meaningfully alter healer composition, but they will make some of those &quot;combo&quot; deaths to two damage sources overlapping a bit less likely. <br />
+<br />
+I'm certain that guilds who have already defeated these encounters or who are on the verge of doing so will find that the adjustments make a big difference, but remember, that's because you've already refined a working strategy and have practiced the execution. Guilds coming into the fights for the first time will still need to handle the precise movement associated with the different Blackfuse phases, belt teams will have to learn to navigate the belt lasers consistently, and so forth. Both Blackfuse and Paragons will remain quite challenging. And then there's always Garrosh....<br />
+<br />
+<br />
+Blue Tweets<br />
+Art<br />
+I've been asking to allow us to make uncorrupted orcs for a while. Any chance of that happening???<br />
+can't definitively say yes, but it's likely that will be an option in some way. It would be cool to see UO PC in Azeroth (Source (https://twitter.com/artofcgrobinson/status/420240346287579136))<br />
+<br />
+Would it really be that difficult to update the goblin/worgen models? You guys surely still have the original LoDs, right?<br />
+I'd like to at some point, they still use our original rigging/animation system. Pandaren introduced new system. (Source (https://twitter.com/artofcgrobinson/status/420010766842871808))<br />
+<br />
+Character / Items<br />
+Will [Ai-Li's Skymirror] ever be allowed to copy one's character illusion again? Ex: Grasp from Pre-ZF? An updated WoD version?<br />
+Those are fun, but we don't want it to become annoying, and that opens up too many possibilities. (Source (https://twitter.com/Celestalon/status/420066414142054400))<br />
+<br />
+Warlords of Draenor Stats<br />
+Will Disc at least be fixed to do double healing from a multistrike crit. Else it is 100% useless stat for Disc.<br />
+I think you may misunderstand something. Crits don't do doublehealing for Disc, as a rule. But how does that make MS useless? (Source (https://twitter.com/Celestalon/status/420311774638772224))<br />
+Sorry, said that backwards, when a spell crit as Disc procs MS, the MS is just as powerful as non-crit, makes it feel weak<br />
+You're misunderstanding Multistrike. The healing of the hit that triggered multistrike doesn't matter. Separate healing roll. (Source (https://twitter.com/Celestalon/status/420428623003144192))<br />
+And an MS that crits would trigger Divine Aegis. (Source (https://twitter.com/Celestalon/status/420428755710914560))<br />
+<br />
+I keep seeing promises that the item squish won't affect soloing capabilities, but is this for all characters or only level 90s?<br />
+All. (Source (https://twitter.com/Celestalon/status/420365820015804416))<br />
+That is to say; the squish won't affect soloing capabilities, but other changes may. Soloing at low levels isn't a balance focus. (Source (https://twitter.com/Celestalon/status/420366130876674048))<br />
+<br />
+Does this mean that we'll start seeing the new stats (possibly mastery even) on gear at very low levels?<br />
+Mastery is staying lvl80+. New stats are still being determined, but most likely not available from level 1. (Source (https://twitter.com/Celestalon/status/420066849296891905))<br />
+<br />
+PvE<br />
+I hope this wouldn't replace Warstomp. I know it's not the best for PvE DPS but great for questing/soloing as a caster druid.<br />
+No, we wouldn't replace Warstomp. (Source (https://twitter.com/Celestalon/status/420066065830256640))<br />
+<br />
+PvP<br />
+That is good news! Are you planning to increase base resilience with the new season?<br />
+Yes (Source (https://twitter.com/holinka/status/420653520820256768))<br />
+<br />
+How big in game scale wise is Ashran? Like are we talking AV big or Wintergrasp big<br />
+From base to base is similar to AV but it's wider. (Source (https://twitter.com/holinka/status/420348121730654208))<br />
+Would you say Ashran is a spiritual successor to AV? Or more like Timeless Isle?<br />
+More like AV (Source (https://twitter.com/holinka/status/420373947289309184))<br />
+<br />
+back to gear being the major determining factor in PvP success. Guess the accessibility experiment didn't work out?<br />
+I don't really see how you came to that conclusion. (Source (https://twitter.com/holinka/status/420059429690552320))<br />
+dialing back resilience &quot;as much as possible&quot; says bursty PvP and emphasizes PvP power. Sounds like old times 2 me.<br />
+In WoD, health pools will be relatively larger and PvP Power is being redefined. It will end up less bursty. (Source (https://twitter.com/holinka/status/420071620997156865))<br />
+Is this true for low lvl PvP too? Some spells are too potent in heirloom gear. Aimed Shot and Shield Slam can *literally* one-shot.<br />
+A lot of spells have base damage which leads to this issue. We're going through these spells to reduce the base damage. (Source (https://twitter.com/holinka/status/420300460524720129))<br />
+<br />
+so I was wondering if you guys could start doing realm rankings/leaders instead of region? A lot of friends and I are curious.<br />
+We've gotten the request a lot so we'll have to look into it. (Source (https://twitter.com/holinka/status/420072710232735749))<br />
+&quot;Instead&quot;? Why not &quot;in addition to&quot;?<br />
+Certainly what I meant (Source (https://twitter.com/holinka/status/420179154944794624))<br />
+<br />
+It also feels lousy to work hard to acquire full grievous gear only to be killed by a dragon slayer in heroic pve gear<br />
+Yup, we've mentioned we don't want to end up in this situation again. (Source (https://twitter.com/holinka/status/420060806152085504))<br />
+but I give you credit in admiting that what occurred was not what you intended.<br />
+Certain systems (like warforged and upgrades) that inflate ilevels didn't make much sense for PvP. (Source (https://twitter.com/holinka/status/420070028499619840))<br />
+PvP not having them meant gear falling further behind. (Source (https://twitter.com/holinka/status/420070055280250881))<br />
+<br />
+I've already given you a good solution. Nerf dmg/healing by 65/55% and roll those numbers into a raid wide buff for players who pve<br />
+It isn't a good solution for the same reasons base resilience and battle fatigue aren't good solutions. (Source (https://twitter.com/holinka/status/420054481389121536))<br />
+The entire reason why you needed BF/Resil is because abilities do too much damage/healing.<br />
+It's lousy to have a spell hit for 100k against a creature and 20k against a player no matter where you increase/decrease it. (Source (https://twitter.com/holinka/status/420058924553732096))<br />
+<br />
+as horde I frequently spend more time in random BG queue then in the actual games. Fix it please. Faction conflict !&gt; fast queues<br />
+I wish it could be fixed quickly. I really do. (Source (https://twitter.com/holinka/status/420059546095071232))<br />
+<br />
+Warlords of Draenor<br />
+Didnt know where to ask. Blizzcon mention quest items gone from bank in WoD. Will my [Amulet of Draconic Subversion] disappear?<br />
+Don't know yet. Could be considered a Toy, perhaps. If you still have the quest, may be kept. Very up in the air, know important (Source (https://twitter.com/Celestalon/status/420065883440939008))<br />
+<br />
+<br />
+Dark Legacy Comics - #424<br />
+DLC #424 has been released (http://www.darklegacycomics.com/424.html)!<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/january/dlc424.png (http://www.darklegacycomics.com/424.html)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2014-01-20, 01:59 AM</div></div><div class="posttext">I dont understand the hatred towards the nerfs. Nerfs happen. This time they were selective instead of Flat %. Thought people might finally be okay with them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Belize</div><div class="date">2014-01-20, 02:02 AM</div></div><div class="posttext">Well... At least the Alliance has Alterac Valley and SotA...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lastgope</div><div class="date">2014-01-20, 02:02 AM</div></div><div class="posttext">Lol at the AV and IoC &quot;balance&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tucci</div><div class="date">2014-01-20, 02:03 AM</div></div><div class="posttext">Why the hell did I have Isle blacklisted.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">theKarn</div><div class="date">2014-01-20, 02:03 AM</div></div><div class="posttext">here is the first &quot;I KNEW IT!&quot; post.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dristereau</div><div class="date">2014-01-20, 02:04 AM</div></div><div class="posttext">Interesting PVP show. Complete bias towards Alliance in 40 Man BGs (PVE Often) and Horde wins in every other Category. Not by much, but it still half justifies some of the complaints. Doing my own experiment atm to see my own personal experiences, will have to compare :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Khwaj</div><div class="date">2014-01-20, 02:04 AM</div></div><div class="posttext">and horde want IoC and AV removed cos its &quot;unbalanced&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TrollShaman</div><div class="date">2014-01-20, 02:06 AM</div></div><div class="posttext">from my experience with the battlegrounds they give a decent rough idea of the bg winrates, though certainly not that drastic.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nillah</div><div class="date">2014-01-20, 02:08 AM</div></div><div class="posttext">Wonder why alliance only wins the two 40 mans. We knew AV was biased, but why IoC now?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Socialhealer</div><div class="date">2014-01-20, 02:19 AM</div></div><div class="posttext">my perfect AV/IoC blacklist has been working nicely, there's no PvP in those bg's anyway, it's been designed to just ZERG in 5 minutes flat, boring load of shit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bloodbath234543</div><div class="date">2014-01-20, 02:20 AM</div></div><div class="posttext">They need to remove IOC from the game, and remove AV from Q to make it like vanilla AV with Hour(s) long battles, dailies, objectives and mini bosses, AND make the dailies, boss and player kills give honor. In one fail swoop you get rid of the whole reason Horde dont Q AV and IOC, BOTS.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">City Pop</div><div class="date">2014-01-20, 02:20 AM</div></div><div class="posttext">The BG statistics look about right to me, except for maybe SotA. I feel like I win more than 31% of SotA as Alliance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kolic</div><div class="date">2014-01-20, 02:24 AM</div></div><div class="posttext">It also feels lousy to work hard to acquire full grievous gear only to be killed by a dragon slayer in heroic pve gear<br />
+<br />
+Forgive me for not understanding, but how is that necessarily a &quot;bad&quot; thing? That player worked hard to get their heroic PVE gear too. Why can't they get some kills? For arena, sure, I can see that being a problem, but BGs should be accessible to PVE'ers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airwaves</div><div class="date">2014-01-20, 02:24 AM</div></div><div class="posttext">Oh yer. FOR THE HORDE! lol</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arcrin</div><div class="date">2014-01-20, 02:26 AM</div></div><div class="posttext">What did we always say about the BG's since forever?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Quill</div><div class="date">2014-01-20, 02:29 AM</div></div><div class="posttext">Hordies are welcome to faction switch for shorter queue times if they don't mind losing a lot. Seriously, alli bg's are terrible.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce1e4d9dec7</div><div class="date">2014-01-20, 02:31 AM</div></div><div class="posttext">For arena, sure, I can see that being a problem, but BGs should be accessible to PVE'ers.<br />
+And why is that exactly? <br />
+<br />
+I can't expect to clear normal raids with PVP gear, why should we let PVE'ers do &quot;normal&quot; BGs with their gear?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Asphyxiate9</div><div class="date">2014-01-20, 02:31 AM</div></div><div class="posttext">Interesting to note that the old stats show horde having a huge win ratio over alliance in IoC though if recent memory serves me no changes to that BG have been made.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce1e4d9dec7</div><div class="date">2014-01-20, 02:32 AM</div></div><div class="posttext">I dont understand the hatred towards the nerfs. Nerfs happen.<br />
+They shouldn't happen outside the super mainstream content unless it's a fix or balancing because of class stacking. <br />
+<br />
+It makes comparisons to guilds that have previously cleared the content impossible and thus completely invalidate any real progression.<br />
+<br />
+<br />
+Interesting to note that the old stats show horde having a huge win ratio over alliance in IoC though if recent memory serves me no changes to that BG have been made.<br />
+I don't know any one who doesn't have IOC blacklisted, that might be the cause - all good PvP'ers from the Horde simply blacklist it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Khwaj</div><div class="date">2014-01-20, 02:33 AM</div></div><div class="posttext">They need to remove IOC from the game, and remove AV from Q to make it like vanilla AV with Hour(s) long battles, dailies, objectives and mini bosses, AND make the dailies, boss and player kills give honor. In one fail swoop you get rid of the whole reason Horde dont Q AV and IOC, BOTS.<br />
+<br />
+lol, giving reason why IoC/AV should change/remove with your left hand while trying to deny the underlying reason is you want the advantage in ALL bgs with your right hand<br />
+its not like alliance can black list the other 9 bgs<br />
+<br />
+alliance - 2 bgs<br />
+horde - 9 bgs</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jibjabb</div><div class="date">2014-01-20, 02:34 AM</div></div><div class="posttext">(GASP) AV IS BALANCED IN THE ALLIANCE FAVOR!?<br />
+<br />
+ZOMG NO WAY<br />
+<br />
+if only the player base had been saying this for the last 5 years or so</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Godric</div><div class="date">2014-01-20, 02:35 AM</div></div><div class="posttext">They need to remove IOC from the game, and remove AV from Q to make it like vanilla AV with Hour(s) long battles, dailies, objectives and mini bosses, AND make the dailies, boss and player kills give honor. In one fail swoop you get rid of the whole reason Horde dont Q AV and IOC, BOTS.<br />
+<br />
+What an absolutely horrible idea. It's interesting to note how many horde players will complain about the 40 mans but don't seem to have a problem with winning the majority of everything else.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kolic</div><div class="date">2014-01-20, 02:36 AM</div></div><div class="posttext">And why is that exactly? <br />
+<br />
+I can't expect to clear normal raids with PVP gear, why should we let PVE'ers do &quot;normal&quot; BGs with their gear?<br />
+<br />
+I say gear should cross over more. Let PVP gear be slightly worse but still viable in raids, and PVE gear about the same in BGs. I'd rather players be able to enjoy both without having to spend double the time to get the respective gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Railander</div><div class="date">2014-01-20, 02:41 AM</div></div><div class="posttext">i assume the people being perplexed by the statistics havent done bgs in a while.<br />
+the main reason the disparity between alliance/horde w/l rations skyrocketed in favor of alliance in AV and IoC was because of the option to blacklist bgs.<br />
+compare january's graphic with the one from 2011. the trends were the same, but deffinitely not as impacted.<br />
+back when the 2011 statistic was snapshotted (WotLK i believe), horde still used to win IoC, but if you remember cataclysm, alliance almost always won it. when MoP came out and the option to blacklist bgs was implemented, horde players simply blacklisted the bgs they used to lose most of the time (those 2), which resulted in only inexperienced horde players still playing them (because they dont even know there is an option to blacklist them) or bots.<br />
+alliance, on the other hand, picked some other 2 bgs that they thought they lost the most to blacklist. again, inexperienced players and bots still played said bgs.<br />
+<br />
+bg blacklisting was a great idea in principle, but turned out disastrous. it is also the main reason queue times are horrible.<br />
+<br />
+as for why there were trends in bgs to begin with, the only explanation i can think of is mentality formed among the years in both factions. all bgs are symmetrical enough that a 1% delta in w/l ratios would still be a bit much solely because of it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stormykitten</div><div class="date">2014-01-20, 02:43 AM</div></div><div class="posttext">Mean call to arms conflicting with my IoC blacklist!<br />
+<br />
+Honestly though, ioC would probably be a lot of fun as a 10-15 player Bg. It's just a complete fail with 40 people tho. Actually, i don't think the map is that far off being a nice world zone, but it's totally not suited for complete pugs, you don't even have the same realm recognition fallback of TB-esque battlefields to fall back on most of the time :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rekx</div><div class="date">2014-01-20, 03:00 AM</div></div><div class="posttext">Oh look, its pretty close, but slightly horde dominated except for AV and IOC. who would have thought AV favors alliance.. o right. people have been saying that since its release but nah.. lets NEVER fix AV. IOC.. not sure what to say of the huge disparity there. I think thats more along the lines of stupid horde always running for the sieges and no one stops the glaves or catapults.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sesethi</div><div class="date">2014-01-20, 03:02 AM</div></div><div class="posttext">lol, giving reason why IoC/AV should change/remove with your left hand while trying to deny the underlying reason is you want the advantage in ALL bgs with your right hand<br />
+its not like alliance can black list the other 9 bgs<br />
+<br />
+alliance - 2 bgs<br />
+horde - 9 bgs<br />
+oh yea... the win disparity is sooooo great that you actually need to blacklist the other 9 right :)?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ispamx</div><div class="date">2014-01-20, 03:05 AM</div></div><div class="posttext">Oh look, its pretty close, but slightly horde dominated except for AV and IOC. who would have thought AV favors alliance.. o right. people have been saying that since its release but nah.. lets NEVER fix AV. IOC.. not sure what to say of the huge disparity there. I think thats more along the lines of stupid horde always running for the sieges and no one stops the glaves or catapults.<br />
+<br />
+I wouldn't call winrates up to 68.3% slightly dominated, Horde flat out smash Alliance in every battleground except Warsong Gulch which I would call slightly dominated. But no, lets complain about the two battlegrounds Alliance win and how they need to be rebalanced. Horde can just blacklist those two and go win like 60%+ of their battlegrounds, Alliance can only blacklist 2/9.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tommassive</div><div class="date">2014-01-20, 03:05 AM</div></div><div class="posttext">IoC is still broken. At least you can blacklist two. The only real fix is mixed factions BGs, which is what should happen.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd123591856</div><div class="date">2014-01-20, 03:08 AM</div></div><div class="posttext">Those AV/IoC statistics are totally not surprising. That doesn't stop AV from being my favourite BG though, and i'm looking forward to Ashran a hell of a lot.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce1e4d9dec7</div><div class="date">2014-01-20, 03:15 AM</div></div><div class="posttext">But no, lets complain about the two battlegrounds Alliance win and how they need to be rebalanced.<br />
+So we should have one BG that favours Alliance by design (AV) .. because they can't win other battlegrounds by properly working as a team?<br />
+<br />
+What does say about Alliance players?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Khwaj</div><div class="date">2014-01-20, 03:19 AM</div></div><div class="posttext">oh yea... the win disparity is sooooo great that you actually need to blacklist the other 9 right :)?<br />
+<br />
+horde 1 - bl av/ioc<br />
+horde 2 - bl av/ioc<br />
+horde 3 - bl av/ioc<br />
+etc<br />
+<br />
+<br />
+ally 1 - bl temple/ab<br />
+ally 2 - bl sota/mines<br />
+ally 3 - bl eots/deepwind<br />
+etc<br />
+<br />
+get the picture?<br />
+horde have it ez to bl the 2 ones they lose more often in hence the disparity<br />
+allies have to choose 2 from a group of 9 and they are not going to choose the same<br />
+overall the stats will be a bit more even cos of that factor<br />
+<br />
+lets swap it around and there was 9 40m bgs and only 2 10/15m bgs total, which 2 40m would you bl list?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Maconi</div><div class="date">2014-01-20, 03:21 AM</div></div><div class="posttext">60/40 isn't a bad ratio at all (although the fact that it favors the Horde more often than not is odd). Blizzard would be the most amazing designers/developers EVER if they managed to pull off a consistent 50/50 (that's not realistic though).<br />
+<br />
+The 3 BGs that need to be looked at/rebalanced are obviously Alterac Valley, Isle of Conquest, and Strands of the Ancient. That large of a disparity shouldn't be acceptable.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BobAwesome</div><div class="date">2014-01-20, 03:25 AM</div></div><div class="posttext">Interesting to note that the old stats show horde having a huge win ratio over alliance in IoC though if recent memory serves me no changes to that BG have been made.Alliance discovered that the docks flag is closer to them than it is to the Horde.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Levit</div><div class="date">2014-01-20, 03:27 AM</div></div><div class="posttext">Really guys....Alliance only wins AV and IOC and you are already saying they need to fix it because it's not fair. So basically horde players wont be happy until they dominate all battlegrounds?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lastgope</div><div class="date">2014-01-20, 03:34 AM</div></div><div class="posttext">Really guys....Alliance only wins AV and IOC and you are already saying they need to fix it because it's not fair. So basically horde players wont be happy until they dominate all battlegrounds?<br />
+<br />
+No LEARN TO READ or atleast LEARN TO STATISTICS.<br />
+<br />
+The other 9 BG's are closer to the dream 50/50 Ratio, so close that there are probably other factors involved, like Racial's or Playerskill. Than look at the 40 Man BG's. <br />
+<br />
+Can you see the difference?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dustdog</div><div class="date">2014-01-20, 03:36 AM</div></div><div class="posttext">It's interesting to note how many horde players will complain about the 40 mans but don't seem to have a problem with winning the majority of everything else.<br />
+<br />
+<br />
+When I saw the stats I just knew there would be a slew of omg alliance zerg type comments, even though the 2011 figures show horde dominating IoC and being much closer in AV. Arguements of convenience, meow.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bloodbath234543</div><div class="date">2014-01-20, 03:42 AM</div></div><div class="posttext">lol, giving reason why IoC/AV should change/remove with your left hand while trying to deny the underlying reason is you want the advantage in ALL bgs with your right hand<br />
+its not like alliance can black list the other 9 bgs<br />
+<br />
+alliance - 2 bgs<br />
+horde - 9 bgs<br />
+<br />
+You are missing the point, a LOT of Alliance only queue for IOC and AV because its a steamroll when half of the opposing team are bots, I dare you to roll a 90 on horde and queue IOC so you can watch 10-20 people every game mount up at the beginning, pile up into a ball and run continuously to mid then graveyard run the rest of the game because they are all using the same program. Never again will I ever join that madness, if you dont blacklist then all you get is IOC and AV, I shit you not... every game... If Blizz removes blacklisting and all that pops is AV and IOC over and over again, ill just selectively queue and pass on insta queues with 90% losses for 50 honor.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">D-Throes</div><div class="date">2014-01-20, 03:43 AM</div></div><div class="posttext">lol at butthurt horde players crying for a fix av and ioc, meanwhile they praise themselves for dominating the other bg no problem haha cool story...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce1e4d9dec7</div><div class="date">2014-01-20, 03:45 AM</div></div><div class="posttext">lol at butthurt horde players crying for a fix av and ioc, meanwhile they praise themselves for dominating the other bg no problem haha cool story...<br />
+Horde dominates all mirror maps.<br />
+<br />
+What does that say about Alliance players?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">D-Throes</div><div class="date">2014-01-20, 03:47 AM</div></div><div class="posttext">Horde dominates all mirror maps.<br />
+<br />
+What does that say about Alliance players?<br />
+nothing keep playing?<br />
+im laughing at whordies that cry that av and ioc favors the ally haha</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dispirit</div><div class="date">2014-01-20, 03:51 AM</div></div><div class="posttext">absolutely hilarious and as a horde player that doesn't blacklist AV or IoC only because it's a much shorter queue if you don't....not surprising. of course i afk in either a cave or a tower and browse the internet/watch tv....so whatever.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Levit</div><div class="date">2014-01-20, 03:53 AM</div></div><div class="posttext">No LEARN TO READ or atleast LEARN TO STATISTICS.<br />
+<br />
+The other 9 BG's are closer to the dream 50/50 Ratio, so close that there are probably other factors involved, like Racial's or Playerskill. Than look at the 40 Man BG's. <br />
+<br />
+Can you see the difference?<br />
+<br />
+<br />
+Ok, so Arathi Basin= Horde 60% to Alli 40%(20% losing ratio not good or even close to your 50%) Warsong Gulch=47.4% Alli to 52.6 Horde ( The only one close to your so call dream ratio. still almost a 6% discrepancy) EOS= Alli 44% to horde 55%( 10% no even close). SOTA= 34%Alli to Horde 68%(That's 30% not even close) TP= 42% Alliance 57% to horde (12% not close.) BFG= 42% to Alli 57% horde ( 12% diff) ToK= 41% Alli to 58% Horde(17% diff) SM= 35% Alli to 64% horde( 30% diff again) DG= 42% Alli to 57% horde ( 15% diff.) <br />
+<br />
+So I say again we only have 2 BGs as ally and you still complain and moan that they should be taken away. didn't they ever tell you you being greedy is bad.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Skarssen</div><div class="date">2014-01-20, 03:54 AM</div></div><div class="posttext">So we should have one BG that favours Alliance by design (AV) .. because they can't win other battlegrounds by properly working as a team?<br />
+<br />
+What does say about Alliance players?<br />
+<br />
+Alliance doesn't have an advantage in AV or IoC. I have never once seen a horde team backcap towers in AV, and I have never seen horde make a concerted attempt to kill the first round of glaives in IoC. Horde lose those two because all the good players blacklist them and the Horde players that do play them don't know a winning strategy. The same thing happens in the other 9 BGs; Alliance loses all the time so Alliance players don't ever experience winning strategies.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce1e4d9dec7</div><div class="date">2014-01-20, 03:56 AM</div></div><div class="posttext">nothing keep playing?<br />
+im laughing at whordies that cry that av and ioc favors the ally haha<br />
+That's most likely because Alterac Valley has shorter distances for Alliance, easier bosses and multiple choke points that cannot be circumvented in any way, not to mention the tower design is less convoluted and makes it easier for ranged to move and kite. <br />
+<br />
+It's been on the table since 2005 when AV came out and nothing was ever done about it. One spawn change was made and that's about it.<br />
+<br />
+<br />
+Alliance doesn't have an advantage in AV or IoC.<br />
+In IoC no but in AV they do and there were lots of discussion about it on the &quot;old&quot; forums which are now inaccessible unfortunately.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7b2361416c</div><div class="date">2014-01-20, 03:59 AM</div></div><div class="posttext">Alterac Valley, remove reinforcements and make boss unkillable without towers being down!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mammoon</div><div class="date">2014-01-20, 04:00 AM</div></div><div class="posttext">Alliance doesn't have an advantage in AV or IoC. I have never once seen a horde team backcap towers in AV, and I have never seen horde make a concerted attempt to kill the first round of glaives in IoC. Horde lose those two because all the good players blacklist them and the Horde players that do play them don't know a winning strategy. The same thing happens in the other 9 BGs; Alliance loses all the time so Alliance players don't ever experience winning strategies.<br />
+<br />
+Please think about this for a second.<br />
+<br />
+In all the BGs that the zone is completely identical, horde has a better win rate.... and you are saying it is because (even though the game is 10 years old) the Alliance hasn't figured out winning strategies.<br />
+<br />
+In all the BGs that the zone is different for each side, the alliance has a HUGELY favored win record... and you are saying it is because (even though the game is 10 years old) the Horde hasn't figured out winning strategies.<br />
+<br />
+Like, seriously? That is your argument?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Priority</div><div class="date">2014-01-20, 04:12 AM</div></div><div class="posttext">I would play alliance for random bgs if they were at least fun, but from my experience they are just awful. I just got out of a AB, I was playing on my horde priest in some season 14 gear. I was the only healer on horde. Ally had 4, 3 of which were much better geared than myself. We won with 3 bases, having 4 most of the game. I have to assume bots are involved. My heals were equal to 3 of their healers combined. I think if you are Alliance play AV/IoC. Less chance you will be set up with bots, they are the two bgs where Alliance players will actually want to play.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Khwaj</div><div class="date">2014-01-20, 04:13 AM</div></div><div class="posttext">You are missing the point, a LOT of Alliance only queue for IOC and AV because its a steamroll when half of the opposing team are bots, I dare you to roll a 90 on horde and queue IOC so you can watch 10-20 people every game mount up at the beginning, pile up into a ball and run continuously to mid then graveyard run the rest of the game because they are all using the same program. Never again will I ever join that madness, if you dont blacklist then all you get is IOC and AV, I shit you not... every game... If Blizz removes blacklisting and all that pops is AV and IOC over and over again, ill just selectively queue and pass on insta queues with 90% losses for 50 honor.<br />
+<br />
+There is no cp in specific q'ing outside of cta<br />
+also im trying to work my way slowly towards bloodthirsty and i also like cp along the way as a bonus<br />
+so outside of cta, i always use q rbg<br />
+on avg its takes me about 4-6 random bgs to get the daily 150cp done, on a bad streak it takes about 6-8 randoms <br />
+outside of lucky landing in av/ioc first go, i rarely get them (im lucky i get one of them in 20-30 games)<br />
+so your point has absolutely no meaning to me<br />
+<br />
+at the end of the day THIS is what happens<br />
+horde bl av/ioc, allies bl 2 of the other 9<br />
+<br />
+both sides q random bgs, but since there is a lot of horde players that blacklist the ONLY 2 that they lose more in, the randomd bg q will be like 80-90% of the 9 remaining bgs and that horde has the advantage in<br />
+so horde wins those bgs more often<br />
+<br />
+small disadvantage is the longer q times which i think it a price well worth paying<br />
+<br />
+edit:<br />
+also i dont understand why horde think there is alliance map advantage in ioc/av<br />
+90% of the time horde dont backcap while alliance do, when horde do, alliance generally lose<br />
+also i dont see why they say docks are closer to alliance = instant loss, all it takes is 2 ppl to kill those glaives, they onyl have 1.2mill hp, sometimes only 1 person is required. ive killed both glaives on my hunter b4 when horde actually steamrolled to docks instead of mass hanger and partial ws</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dristereau</div><div class="date">2014-01-20, 04:26 AM</div></div><div class="posttext">Might as well add this here. I play both Factions in PVP. I always Blacklist AV and IoC as Horde, and IoC/SotA as Alliance. I blacklist these Battlegrounds because fairly often little to no PVP Happens. Alliance tactics are always the same, the outcome is based on how the Horde react. In IoC, Alliance will go Docks. If Horde kill Glaives, they can win, because Glaives are what the Alliance rely on. In AV, if the Horde defends at Galv, they usually win. Otherwise the Alliance wins usually due to Zerg.<br />
+<br />
+Regarding AV, I do consider it biased. If players listen and DKs/Paladins rush FW Towers, Alliance can be still killing Galv whilst FW are being capped. On the other hand, I consider SSM to be Horde biased due to ease of access to both Lava and Mid Carts.<br />
+<br />
+Why do the Horde win more? Teamwork, Gear and Playing the Objective. Horde players from my experience often have Gear that currently is mostly Grievous, yet Alliance often have Timeless Gear or Ungemmed/Unenchanted Tyrannical. Alliance Players are more interested in fighting than trying to win the BG, and willing to ignore Objectives if they can kill that bad guy. Horde seem to have more focus on killing Healers, and Alliance sometimes ignores them.<br />
+<br />
+If Horde were to defend AV, you would see a different result in that BG. Gear and Healers in smaller BGs are much more important than in the 40 Man PVE Raids (AV/IoC). Looking at BGTargets, you can often tell which team will win based on HP and Healers.<br />
+<br />
+These are my Personal opinions. I've recorded the last 100 BGs I played (4th Jan - 18th Jan) and will hopefully post the results of my experiences soon, when I organize them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">slackjawsix</div><div class="date">2014-01-20, 04:38 AM</div></div><div class="posttext">absolutely hilarious and as a horde player that doesn't blacklist AV or IoC only because it's a much shorter queue if you don't....not surprising. of course i afk in either a cave or a tower and browse the internet/watch tv....so whatever.<br />
+<br />
+Why because an unfair game is funny? Just the opening of AV is unfair while Ally can easy kill galv with a grp of 20 the simple fact Bal freezes herself for a few seconds setting the Horde assault back is imbalanced.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemonpartyfan</div><div class="date">2014-01-20, 04:40 AM</div></div><div class="posttext">No LEARN TO READ or atleast LEARN TO STATISTICS.<br />
+<br />
+The other 9 BG's are closer to the dream 50/50 Ratio, so close that there are probably other factors involved, like Racial's or Playerskill. Than look at the 40 Man BG's. <br />
+<br />
+Can you see the difference?<br />
+<br />
+I would say A) only one of the BGs are close to 50/50 and B) its ridiculous to look at all Hordes as having &quot;more skill&quot; than Alliance.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+That's most likely because Alterac Valley has shorter distances for Alliance, easier bosses and multiple choke points that cannot be circumvented in any way, not to mention the tower design is less convoluted and makes it easier for ranged to move and kite. <br />
+<br />
+It's been on the table since 2005 when AV came out and nothing was ever done about it. One spawn change was made and that's about it.<br />
+<br />
+<br />
+In IoC no but in AV they do and there were lots of discussion about it on the &quot;old&quot; forums which are now inaccessible unfortunately.<br />
+<br />
+This is ironic, because originally (and for a very long time) Horde was MUCH MUCH closer as far as spawns go. They used to be able to get to Belinda before Alliance could. Galv has ALWAYS been considered the harder boss, and the same goes for Drek. Your other two points I have seen differing opinions though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">getupkid55</div><div class="date">2014-01-20, 04:49 AM</div></div><div class="posttext">Yeah, Alliance have a landslide on IoC/AV ... but Horde wins every other BG by a sizable margin. I don't think they have a right to bitch.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dimad</div><div class="date">2014-01-20, 04:52 AM</div></div><div class="posttext">Interesting to note that the old stats show horde having a huge win ratio over alliance in IoC though if recent memory serves me no changes to that BG have been made.<br />
+<br />
+This is true. The change came from the change in Alliance strategy. Instead of all the alliance going for docks and horde capping workshop. Alliance now grabs both which leave the horde with purely running 4 bombs at a time inside the alliance keep.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Skarssen</div><div class="date">2014-01-20, 05:04 AM</div></div><div class="posttext">Please think about this for a second.<br />
+<br />
+In all the BGs that the zone is completely identical, horde has a better win rate.... and you are saying it is because (even though the game is 10 years old) the Alliance hasn't figured out winning strategies.<br />
+<br />
+In all the BGs that the zone is different for each side, the alliance has a HUGELY favored win record... and you are saying it is because (even though the game is 10 years old) the Horde hasn't figured out winning strategies.<br />
+<br />
+Like, seriously? That is your argument?<br />
+<br />
+So your argument is that Horde don't lose AV and IoC because they completely fail to backcap AV towers, and completely fail to zerg the first set of glaives (and therefore guarantee a win), but rather that Horde start farther back in AV and Alliance can reach the docks flag faster?<br />
+<br />
+Like, seriously? That is your argument?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Whidbey</div><div class="date">2014-01-20, 05:08 AM</div></div><div class="posttext">The difference in distances does not equal the fact the Horde( having played both sides in both BG's) refuses to follow any strat but Zerg.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">OrlyNO</div><div class="date">2014-01-20, 05:18 AM</div></div><div class="posttext">I would say A) only one of the BGs are close to 50/50 and B) its ridiculous to look at all Hordes as having &quot;more skill&quot; than Alliance.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+This is ironic, because originally (and for a very long time) Horde was MUCH MUCH closer as far as spawns go. They used to be able to get to Belinda before Alliance could. Galv has ALWAYS been considered the harder boss, and the same goes for Drek. Your other two points I have seen differing opinions though.<br />
+<br />
+Back in the days, we (Horde) had a shorter way to Belinda then Alliance had to Galv, that is very true. <br />
+But the &quot;advantages&quot; Alliance have/had wasn't laying on Belinda/Galv. It's the main base. <br />
+For Horde to get into Alliance base, we need to cross an open bridge where we have no cover from NPC fire, while Alliance has loads of buildings and mostly avoidable NPC fire. (And no bridge). Not that it does much dmg anyways. But it's the principle.<br />
+Back when you could actually bring the wing commanders outside the keep, Alliance had an advantage there as well, as the Graveyard capture point in Alliance base was/is directly outside the keep. Which meant Horde would have to be careful with pulling the wing commanders while the GY was being captured (in case of wipe, Alliance could recap easily).<br />
+While last Graveyard capture point inside Horde base, is past the keep, and over a bridge.. Which made it a lot safer to pull wing commanders out, cause it was easier to defend that capture point while commanders were getting killed.<br />
+<br />
+But how things are now I don't really care about.. I lost interest for pvp, as soon as resilience gear and arena came out.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pimpeddakota</div><div class="date">2014-01-20, 05:22 AM</div></div><div class="posttext">Yeap, IoC and AV, that is why those are on ignore</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb47e9d5b09</div><div class="date">2014-01-20, 05:31 AM</div></div><div class="posttext">What does say about Alliance players?<br />
+<br />
+One thing and one thing only. Alliance racials are shit in comparison. <br />
+Anyone who fails to see this is probably retarded or trolling their ass off.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">godgunner</div><div class="date">2014-01-20, 05:43 AM</div></div><div class="posttext">doesnt the graph show that on mirrored maps that the side that is better (gear/skill/teamwork) at pvp seems to win more and that on non mirrored maps the side with the map advantage will win more<br />
+because the design so favors one side enough to be able to overcome the skill/gear/teamwork factors.<br />
+<br />
+graph says horde is wining most BG but most BG are mirrored so that means its a gear/skill/teamwork win. But on maps where its not mirrored one side or the other (which ever the map favors)<br />
+steam rolls most of the time. (non mirrored maps are just bad design)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">|Dexter|</div><div class="date">2014-01-20, 05:44 AM</div></div><div class="posttext">This contents zero real news just some forum chat... :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">godgunner</div><div class="date">2014-01-20, 05:44 AM</div></div><div class="posttext">doesnt the graph show that on mirrored maps that the side that is better (gear/skill/teamwork) at pvp seems to win more and that on non mirrored maps the side with the map advantage will win more<br />
+because the design so favors one side enough to be able to overcome the skill/gear/teamwork factors.<br />
+<br />
+graph says horde is wining most BG but most BG are mirrored so that means its a gear/skill/teamwork win. But on maps where its not mirrored one side or the other (which ever the map favors)<br />
+steam rolls most of the time. (non mirrored maps are just bad design)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zenny</div><div class="date">2014-01-20, 05:49 AM</div></div><div class="posttext">One thing and one thing only. Alliance racials are shit in comparison. <br />
+Anyone who fails to see this is probably retarded or trolling their ass off.<br />
+<br />
+lol, Every Man for Himself.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemonpartyfan</div><div class="date">2014-01-20, 05:57 AM</div></div><div class="posttext">Back in the days, we (Horde) had a shorter way to Belinda then Alliance had to Galv, that is very true. <br />
+But the &quot;advantages&quot; Alliance have/had wasn't laying on Belinda/Galv. It's the main base. <br />
+For Horde to get into Alliance base, we need to cross an open bridge where we have no cover from NPC fire, while Alliance has loads of buildings and mostly avoidable NPC fire. (And no bridge). Not that it does much dmg anyways. But it's the principle.<br />
+Back when you could actually bring the wing commanders outside the keep, Alliance had an advantage there as well, as the Graveyard capture point in Alliance base was/is directly outside the keep. Which meant Horde would have to be careful with pulling the wing commanders while the GY was being captured (in case of wipe, Alliance could recap easily).<br />
+While last Graveyard capture point inside Horde base, is past the keep, and over a bridge.. Which made it a lot safer to pull wing commanders out, cause it was easier to defend that capture point while commanders were getting killed.<br />
+<br />
+But how things are now I don't really care about.. I lost interest for pvp, as soon as resilience gear and arena came out.<br />
+<br />
+While I think your GY point was totally valid, I still think the Horde has a field advantage otherwise. FW keep requires you to run through a small area, then up stairs and uphill between two towers, which Hordies can easily just stand upon and rain death upon you. You can of course do nothing. On the other side of the map, pre bridge, Horde can scale the mountains around SPGY and rain fire down there too. Its much easier to attack/defend with the high ground.<br />
+<br />
+Not to mention, again, how ridiculous it is that Horde can reach the Ally captain before we can... I mean.. if they could reach Galv before Allys reaches Balinda.. whatever.. Back in the day I had seen a group of 10 people engage Balinda before my team even got there.<br />
+<br />
+People should also quit calling this a PVE fight. Without your opponents, you could EASILY take down your opponents commander. This isn't about your struggles versus the AI controlled NPCs, this is purely about defending your own bases/captains/commanders.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+doesnt the graph show that on mirrored maps that the side that is better (gear/skill/teamwork) at pvp seems to win more and that on non mirrored maps the side with the map advantage will win more<br />
+because the design so favors one side enough to be able to overcome the skill/gear/teamwork factors.<br />
+<br />
+graph says horde is wining most BG but most BG are mirrored so that means its a gear/skill/teamwork win. But on maps where its not mirrored one side or the other (which ever the map favors)<br />
+steam rolls most of the time. (non mirrored maps are just bad design)<br />
+<br />
+No, SSM and AB aren't mirrored either.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ApeDosMil</div><div class="date">2014-01-20, 06:00 AM</div></div><div class="posttext">Considering the fact that there are more alliance players than horde as a total, and considering other than AV and IoC, the maps are mostly mirrored, why would horde win more? Skill? No. Just no to that. Skilled players are on both sides. More willing healers? Maybe, but I can't be absolutely certain that seals the deal. I have been in bgs where the horde had four healers and alliance had none, just to still win without. Racials? Maybe, someone has the numbers to support that. I do not. Morale? Ahh, maybe! Rarely do I hear strategies discussed, or any constructive/informative communication on alliance side. I had to explain to this CAPS LOCKer in temple of kotmogu that merely keeping two orbs isn't a win if we don't take the middle for the higher points. Lack of alliance pvp guilds and abundance of horde pvp guilds? That would bolster morale in individual match ups if more alliance guildmates rolled together in bgs, but by itself might not be concrete enough. I offer no answers, just questions. I hear no dialogue with the developers as to address this problem, though I wish they would. I do hear horde players trying to remove the alliance's only two winning bg's, yet alliance can only blacklist two from the 9 we are less successful at.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Isolyphic</div><div class="date">2014-01-20, 06:01 AM</div></div><div class="posttext">Mastery needs bumped down to level 20. It's too heavily involved in classes nowadays which is breaking low level classes. It's extremely hard to tank with a Paladin at low level as they take alot of damage as block chance% and damage reduction from ShotR is not available. It was a rather painful experience to go through.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">getupkid55</div><div class="date">2014-01-20, 06:04 AM</div></div><div class="posttext">lol, Every Man for Himself.<br />
+Congrats on naming the only strong alliance PvP racial?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vyil</div><div class="date">2014-01-20, 06:12 AM</div></div><div class="posttext">Horde need to get off their elitelist ego...<br />
+I play both horde and alliance, i play since the ever start of WoW.<br />
+<br />
+People saying AV is unbalanced and theres never been anything done about it....? How about your spawn got a few yards closer?<br />
+IoC...Alliance get the docks closer, Horde get the gunship. May i also remind, the glaives can be destroyed in 10 seconds by merely 3 rogues....?<br />
+<br />
+Now the fact people are judging &quot;Horde&quot; and &quot; alliance&quot; is discriminating to say the least, as without a doubt the best players play alliance (They are only a few though, check arena standings), and the most PvE oriented players (who are often worse in pvp) play horde.<br />
+<br />
+In my oppinion the reason behind the win/loss ratio is the newer players all pick alliance. I just notice when i play alliance, my team consists of players who reached lvl 90 in 2013 allot.<br />
+However when i play on my horde, i notice players who got their achievements dated to 2008 (Achievement implented), wich basicly mean they are allot more experienced.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dristereau</div><div class="date">2014-01-20, 06:14 AM</div></div><div class="posttext">Just thought I'd add my experience of the last hour or so doing Alliance Random BGs. I've won two daily wins (Shammy/Monk) and currently trying for a third (Paladin). Paladin is currently on an 8 loss streak and I lost 3 trying to get the two wins on the other two. Its not been fun in the slightest, because the Alliance is actively ignoring the objective. Alliance Healer ran off from WW Flag whilst Horde were there and left me and one other DPS to die. EotS people don't call inc to bases or when fight in Mid even fight where the Flag spawns so Horde can chain cap.<br />
+<br />
+Just had AV pop. Hope to Elune we win this. I despise playing the faction I currently do, and pride in it is nothing. I like Alliance races more, but a few minutes extra queing for a Win compared to an Hour or so trying to win one?<br />
+<br />
+Won, thank Elune for that.. Need to make a Horde Paladin..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Torais</div><div class="date">2014-01-20, 06:30 AM</div></div><div class="posttext">Alliance doesn't have an advantage in AV or IoC.<br />
+<br />
+As someone that has played Alliance for 5 years I can safely say you are either lying or delusional.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bawl</div><div class="date">2014-01-20, 06:30 AM</div></div><div class="posttext">Even with some level of error in the record keeping those percentages are still pathetic. What'd you wanna bet if, or rather when, someone asks about them on the official forums that any blue responses will be the old fallback &quot;our data is more accurate than yours&quot; and &quot;you cant see the whole picture&quot; or some such nonsense?<br />
+<br />
+I agree that there are imbalances in the game design itself (maps, racials, the blacklist, etc), but my guess is that most of it stems from what could be called social issues. Things along the lines of PVPers tending to favor horde (as it is perceived as more war-like or whatever), defeatist attitudes, and others.<br />
+<br />
+Regardless of the reason though I wholly place the blame on the devs. Their battleground design philosophy hasn't changed to any great degree since battlegrounds were first introduced, at a time when they were little more than a fun distraction. Take pretty much any other game with team based PVP these days and it's immediately obvious how outdated their design is.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Torais</div><div class="date">2014-01-20, 06:32 AM</div></div><div class="posttext">Congrats on naming the only strong alliance PvP racial?<br />
+<br />
+Thanks to race changes, why do you need more then one?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc878ebd00c0</div><div class="date">2014-01-20, 06:33 AM</div></div><div class="posttext">As someone that has played Alliance for 5 years I can safely say you are either lying or delusional.<br />
+<br />
+Several easily defended chokepoints arent considered an advantage to buttonmashing FOTM rerolling plebs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eldrad</div><div class="date">2014-01-20, 06:44 AM</div></div><div class="posttext">Isle of Conquest, on paper, is the coolest BG in the game. You have seige engines of different strengths and weaknesses, air bombardment, paratroopers, tower defenses, bombs, resources...<br />
+But when played it just turns into crap. It's really a shame. This BG could amazing</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Meil</div><div class="date">2014-01-20, 06:45 AM</div></div><div class="posttext">As an achievement hunter, they really need to do something about AV and IoC. I want to like IoC, because I love that siege-style warfare, but it's just awful now(and yes, there is always Wintergrasp, but most people seem to avoid it anymore).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Minginging</div><div class="date">2014-01-20, 06:48 AM</div></div><div class="posttext">Congrats on naming the only strong alliance PvP racial?<br />
+It's worth mentioning because humans are the most popular race by a fair margin(and I would consider it the best one for some classes).<br />
+<br />
+Anyways, I started leveling some hordies recently, mainly through PvP, and it has been a much more enjoyable experience than on my allies. If you can think of something to do while waiting in queues, it's completely worth switching to horde.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Whiskra</div><div class="date">2014-01-20, 06:50 AM</div></div><div class="posttext">From my old experience with Alliance in battlegrounds, most of them are of the mentality that they don't care at all about winning any BG's, only about getting as many PvP points as possible as fast as possible. If they have to fight an upphill battle, many simply give up and encourage others to do the same.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocecd02275a7</div><div class="date">2014-01-20, 06:53 AM</div></div><div class="posttext">horde is more pvp active , has more and better pvp`ers. Leaving IoC and AV out of the discussion because their`re unbalanced, the percentage of horde wins is even higher from the start to late second half of every season. Alliance caches up on wins near the end of each season when horde players either gear up alts or just stop playing cause they have reached all their goals .</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc562e1aede6</div><div class="date">2014-01-20, 07:04 AM</div></div><div class="posttext">Horde base vs. Alliance base<br />
+<br />
+Towers vs. Bunkers<br />
+<br />
+AV, the most unbalanced BG ever.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryken</div><div class="date">2014-01-20, 07:07 AM</div></div><div class="posttext">Its really important to note the bias on both sides. To the people crying out about how AV and IoC favours alliance because of the map design, you have to realize that the problem is greatly noticeable because AV and IoC are blacklisted more than any other BG by the horde, to the point where queue times for AV and IoC are equal for horde and alliance, which cannot be said about any other BG. Also the size of AV and IoC are 4 times than others player-wise, which is statistically important because the way the data is gathered. For every bg win/loss, there are 80 entries statistically, and when combined with the fact that most other horde blacklist AV/IoC, you're looking at a bg where there are more horde queuing for it to AFK for the little honor gains. Faster queues for this bgs, more people fitting in them, more cycles, = more AFK honor and therefore more AFKers, which contributes more to the loss ratio for horde than any other bgs.<br />
+<br />
+Combine all these statistically relevant things, the win/loss ratio on IoC and AV is no where near as telling as the whole story.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Goondicker</div><div class="date">2014-01-20, 07:20 AM</div></div><div class="posttext">Actually it seems there is a larger gap in percentages now than the previous graphs you guys linked. It's just that the scale is shown differently.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sevyvia</div><div class="date">2014-01-20, 07:25 AM</div></div><div class="posttext">It's actually funny watching Hordies clamor desperately for &quot;balance&quot; in the two BGs they don't win. Of course, &quot;balance&quot; here means &quot;Make me win, Blizz. plz.&quot;<br />
+<br />
+If you had your balance, your queues would explode within half a year. Alliance would stop queuing, because it'd just be one more in-game representation of Blizzard's admitted Horde bias. You've got the best racials, and have had them for ages now. In a game as homogenized as WoW, it's only natural that even advantage as small as racials are a pull towards playing Horde. Remove or balance racials much more closely, and then sure, we can look at actual balance in IoC/AV. Not your balance, of course. Actual balance. <br />
+<br />
+I don't get why it matters, though. You can blacklist the two battlegrounds that you aren't at an advantage in, so why does &quot;balancing&quot; them matter to you? I can't (And wouldn't, if I could. I'm not a child) blacklist the 9 BGs I'm at a disadvantage in.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tiporispit</div><div class="date">2014-01-20, 07:48 AM</div></div><div class="posttext">There's no imbalance in AV. I played Alliance for the first few years and they zerg. Period. Every single time. I switched to Horde a few years ago, and every match begins with 40 players arguing over what to do. There's always 20 clowns saying &quot;zerg doesn't work&quot;, as the Alliance team zergs and wins. It's like half the Horde players are retarded or something.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nerraw</div><div class="date">2014-01-20, 07:51 AM</div></div><div class="posttext">I could have told you that. This is one of the reasons why I decided to quit until the expansion. It simply is impossible to get anywhere in casual PvP as Alliance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ApeDosMil</div><div class="date">2014-01-20, 07:53 AM</div></div><div class="posttext">I went through some crazy number crunches to illustrate why the horde's average 59.13% win rate after blacklisting AV/IoC vs. the alliance's win rate of 51.52% win rate with AV/IoC not blacklisted and SotA and SSM blacklisted instead (seeing as they are our worst losses as alliance) and I'm sickened. IF (pay attention to that word) you just get conquest only from random bgs based off of those blacklists, it would take the average alliance player 94.5 more minutes a week to cap, not including queue times. Getting a full conquest set would take an alliance player 20.58 more hours (or 1234.94 minutes) a season. If you really believe that gap is acceptable, you are delusional.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darksoldierr</div><div class="date">2014-01-20, 07:53 AM</div></div><div class="posttext">SotA and IoC need to be entirely redesigned or removed, i have them blacklisted since blacklisting was introduced... Wotlk had terrible bgs</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sillicis</div><div class="date">2014-01-20, 07:54 AM</div></div><div class="posttext">And why is that exactly? <br />
+<br />
+I can't expect to clear normal raids with PVP gear, why should we let PVE'ers do &quot;normal&quot; BGs with their gear?<br />
+<br />
+Ban PvP'ers from LFD, LFR, worldbosses and everything then. Why should we let pvp'ers do Pve content with pvp gear.<br />
+random bg's are the Looking for Group of PvP. If you care that much about some people not being at their skillcap, or people being at the top of their game in pve gear. Go do rated bg's. Compare those to 'normal raids' as you put it</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Couac</div><div class="date">2014-01-20, 08:03 AM</div></div><div class="posttext">To all the Alliance players who complain about Horde players who complain about imbalance in AV and IoC: Do you really think it's fair that you have two dead sure wins and therefore get loads of honor basically for free every time you enter them? Sure, Horde may slightly dominate other bgs, but results fall within error margin in almost all of them and the chance of winning is more or less 50-50, not 90-10.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yakshamash</div><div class="date">2014-01-20, 08:07 AM</div></div><div class="posttext">Horde PVPers... Cry more... Want bottle of milk with pacifier, too?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Khwaj</div><div class="date">2014-01-20, 08:31 AM</div></div><div class="posttext">To all the Alliance players who complain about Horde players who complain about imbalance in AV and IoC: Do you really think it's fair that you have two dead sure wins and therefore get loads of honor basically for free every time you enter them? Sure, Horde may slightly dominate other bgs, but results fall within error margin in almost all of them and the chance of winning is more or less 50-50, not 90-10.<br />
+<br />
+take in the result of all bgs the result is very slightly in hordes favour, but its practiaclly 50/50 (~52/48 horde advantage)<br />
+with out those 2, its ~ 60/40 horde advantage<br />
+<br />
+so it takes the high amount of wins from those 2 bgs alone to make it even for the other 9<br />
+<br />
+i would gladly take the longer rand q times for a greater chance of winning the other 9 and im sure many alliance would too instead of relying on 2 bgs</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airbag888</div><div class="date">2014-01-20, 09:07 AM</div></div><div class="posttext">This is my personal experience from the Vanilla days.<br />
+<br />
+On Arthas-US, Horde won probably 90% of bgs. When AV changed to become closer to what it is now, we lost it 90% of the time.<br />
+<br />
+I really despise blizz allowing faction change because the day that happened all Alliance wanna-bes changed to horde to 'win more' and be more 'badass', all they did was pollute the pvp player base and make queues longer.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ettan</div><div class="date">2014-01-20, 09:14 AM</div></div><div class="posttext">Av is imbalanced it has always been so.<br />
+If both teams rush flawlessly; alliance team will always win.<br />
+With towers you get knockoffs, for bunkers that can be prevented.<br />
+Tower/bunker placement is also more benefical for the alliance side, the first bunker is placed off to the side.<br />
+While all towers are placed directly on the fastest route up. <br />
+Towers are also &quot;easier&quot; to cap, theres only one mob that has to die and it is easier losed.<br />
+With the bunkers, theres 2 mobs that has to go down and these are harder to los (far from impossible, there is a sweet spot but your average player will not use this). <br />
+<br />
+The bridge is also a way better choke point than what the horde have. Ranged can really dominate that bridge, on the horde side it is simple to rush that narrow corridor when you have walls to los behind. <br />
+Still a fun bg, if anything should be done; make it slower / impossiburu to rush.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Delekii</div><div class="date">2014-01-20, 09:16 AM</div></div><div class="posttext">I can't help but laugh at every person who was &quot;surprised&quot; by this &quot;news&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryme</div><div class="date">2014-01-20, 09:16 AM</div></div><div class="posttext">Wonder why alliance only wins the two 40 mans. We knew AV was biased, but why IoC now?<br />
+<br />
+Faster access to glaives, which are superior base busters for casual groups/pugs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc83c3477b24</div><div class="date">2014-01-20, 09:18 AM</div></div><div class="posttext">that moment when you have IoC and AV blacklisted as alliance, and lose almost every bg :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryme</div><div class="date">2014-01-20, 09:19 AM</div></div><div class="posttext">lol, giving reason why IoC/AV should change/remove with your left hand while trying to deny the underlying reason is you want the advantage in ALL bgs with your right hand<br />
+its not like alliance can black list the other 9 bgs<br />
+<br />
+alliance - 2 bgs<br />
+horde - 9 bgs<br />
+<br />
+The other bgs are mirrors of each other and temple is just a brawl fight - it may just be that Horde are, in general, better pvpers than Alliance. The statistics clearly show this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Khwaj</div><div class="date">2014-01-20, 09:32 AM</div></div><div class="posttext">The other bgs are mirrors of each other and temple is just a brawl fight - it may just be that Horde are, in general, better pvpers than Alliance. The statistics clearly show this.<br />
+<br />
+i agree, so let us have those 2 while u have the rest<br />
+<br />
+<br />
+Faster access to glaives, which are superior base busters for casual groups/pugs.<br />
+<br />
+for crying out loud plzzzzz stop using this as an excuse<br />
+all it takes is 2 ppl out of 40 to kill both glaives, 1 if ur exceptionally skilled, they only have 1.2mill hp, thats pretty weak as it is<br />
+<br />
+same can be said abt av, i havnt been to drek in ages as i always go with 3-4 ppl including myself to back cap towers<br />
+80% of the time there is only 1-2, 3 tops defending the towers<br />
+the times i lost av is when horde have like 5-7 players back capping and wipe us out and our tower defenders</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eats Compost</div><div class="date">2014-01-20, 09:42 AM</div></div><div class="posttext">If those statistics are even remotely indicative of what's actually happening, then Blizzard REALLY needs to get on that. No faction should be dipping below a 45% win rate in any BG, and those AV/IoC stats are beyond ridiculous. The only one there that's in an acceptable range is Warsong Gulch, and one out of eleven is NOT good.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Freegels</div><div class="date">2014-01-20, 10:03 AM</div></div><div class="posttext">Sum all horde wins from the 11 bgs - 569,1<br />
+Ally - 530,9<br />
+<br />
+1100 is for 100<br />
+569,1 is for x<br />
+<br />
+x= 51,7363<br />
+Overall horde wins on 51,73% of all BGs that's not a big w/l ratio<br />
+Though i'm assuming all BGs are played the same amount, which we know is not true</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5b3bf16116</div><div class="date">2014-01-20, 10:09 AM</div></div><div class="posttext">who would have thought AV favors alliance.. o right. people have been saying that since its release but nah.. lets NEVER fix AV.<br />
+<br />
+Wrong.<br />
+AV favored horde in the beginning. Then they moved horde entrance in patch 2.4 further away and it has been this way since then.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Amithyst</div><div class="date">2014-01-20, 10:10 AM</div></div><div class="posttext">That graph accurately explains why I always exclude AV and IoC from que. :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Freegels</div><div class="date">2014-01-20, 10:15 AM</div></div><div class="posttext">Also it's fun how alliance keeps acting like they NEVER win the other 9 bgs, they do, just a bit less often than horde<br />
+And also fun how Horde acts like they can't bl IOC/AV and be happy orcs raping alliance elsewhere.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zephinism</div><div class="date">2014-01-20, 10:20 AM</div></div><div class="posttext">I would like to remove Isle of Conquest from my Blacklist as a Horde player so I can get the meta and get the khan title, but it'll never happen.<br />
+<br />
+Blizzard needs to ban bots, nerf the heck out of glaive damage severely or move docks flag</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sarevokcz</div><div class="date">2014-01-20, 10:23 AM</div></div><div class="posttext">I went through some crazy number crunches to illustrate why the horde's average 59.13% win rate after blacklisting AV/IoC vs. the alliance's win rate of 51.52% win rate with AV/IoC not blacklisted and SotA and SSM blacklisted instead (seeing as they are our worst losses as alliance) and I'm sickened. IF (pay attention to that word) you just get conquest only from random bgs based off of those blacklists, it would take the average alliance player 94.5 more minutes a week to cap, not including queue times. Getting a full conquest set would take an alliance player 20.58 more hours (or 1234.94 minutes) a season. If you really believe that gap is acceptable, you are delusional.<br />
+<br />
+horde spends those 20 hours in queue...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Holymoocow</div><div class="date">2014-01-20, 10:25 AM</div></div><div class="posttext">AV favored for allys, been for while and allys whine about horde starting spot.<br />
+Bl av/IoC is good idea if ya horde becease both bgs are broken been for while.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sarevokcz</div><div class="date">2014-01-20, 10:25 AM</div></div><div class="posttext">Wrong.<br />
+AV favored horde in the beginning. Then they moved horde entrance in patch 2.4 further away and it has been this way since then.<br />
+<br />
+it never favored horde. horde had faster bel, alliance had everything else, chokepoints, better towers etc. now alliance has everything.<br />
+<br />
+in the end, horde has the same right to complain about broken BGs as alliance does about racials. But to be honest, if even symetric BGs like kotmogu are dominated by horde by pretty big margin, its hardly only about racials.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Olena</div><div class="date">2014-01-20, 10:34 AM</div></div><div class="posttext">Why all horde players are complaining about AV? They have advantages in almost all other BG's but no, it's not enough ?<br />
+<br />
+I'm playing for the Alliance and my win/lose ratio is about 90% of wins (and yes, I've banned all 40 ppl BG's because of long queues there, so it's not from AV or IoC). It's all about people you going with - how many bots on each side or how many not geared players there is. I guess, I'm lucky to see decent players in my team quite often.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0fec037461</div><div class="date">2014-01-20, 10:41 AM</div></div><div class="posttext">I can't be bothered to go through all this butthurt here, is this data US only, or both US and EU?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Igzorn</div><div class="date">2014-01-20, 11:10 AM</div></div><div class="posttext">pvp died for me about that time arenas were put in the game (bc)i mean befor that nobody needet recilence or pvp power. and i was there i got my knight titel with my hunter</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FatCheeseMan</div><div class="date">2014-01-20, 11:15 AM</div></div><div class="posttext">I strongly feel like alliance numbers are too high. Have not managed to get my first win of the day all week. Granted I only do about 5 bgs a day.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gokule00</div><div class="date">2014-01-20, 11:18 AM</div></div><div class="posttext">They need to remove IOC from the game, and remove AV from Q to make it like vanilla AV with Hour(s) long battles, dailies, objectives and mini bosses, AND make the dailies, boss and player kills give honor. In one fail swoop you get rid of the whole reason Horde dont Q AV and IOC, BOTS.<br />
+<br />
+&quot;Fail Swoop&quot; made me laugh, not sure if it was intentional or not xD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MasterHamster</div><div class="date">2014-01-20, 11:30 AM</div></div><div class="posttext">Absolutely no one with a clue is surprised about AV.<br />
+<br />
+And apologists are essentially saying that it'd be balanced if one faction started doing proper teamwork in order to defend against the mindless zerg that win regardless.<br />
+The layout of AV doesn't support these 10 minute games. Horde towers, respawn, placement are all ideal for the Alliance.<br />
+<br />
+Sad, considering I loved that BG before Blizzard did the third or fourth horde-specific nerf.<br />
+Tho I suppose no one even remembers that anymore.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc61f52dddc1</div><div class="date">2014-01-20, 11:59 AM</div></div><div class="posttext">It's just a matter of self-fullfilling prophecy. Horde joins AV or IoC and starts with the feeling of beeing destroyed in minutes. Alliance in many other BGs. No wonder when that happens. My Alliance Main played some 3k BGs and won some 2,2k. Of course as healer and mostly not in a group. I never understood why Alliance is complaing so much. If Horde would start to defend their stupid towers in AV or just ignore the workshop in IoC things would change. But no, they insist to play their strange tactics.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rhelyo</div><div class="date">2014-01-20, 11:59 AM</div></div><div class="posttext">Ok, so Arathi Basin= Horde 60% to Alli 40%(20% losing ratio not good or even close to your 50%) Warsong Gulch=47.4% Alli to 52.6 Horde ( The only one close to your so call dream ratio. still almost a 6% discrepancy) EOS= Alli 44% to horde 55%( 10% no even close). SOTA= 34%Alli to Horde 68%(That's 30% not even close) TP= 42% Alliance 57% to horde (12% not close.) BFG= 42% to Alli 57% horde ( 12% diff) ToK= 41% Alli to 58% Horde(17% diff) SM= 35% Alli to 64% horde( 30% diff again) DG= 42% Alli to 57% horde ( 15% diff.) <br />
+<br />
+So I say again we only have 2 BGs as ally and you still complain and moan that they should be taken away. didn't they ever tell you you being greedy is bad.<br />
+<br />
+That is wrong dude.Lets see how your statistics are at 50/50 w/l for both factions.<br />
+AB-H60% vs A40% (that is 10% in favor of horde to the mark of 50/50 that the ideal w/l should be for both factions),i dont know where u pull the 20% crap<br />
+WG-H47,4% vs A52,6 (that is a 2,6% in favor of Alliance) not that big deal (u called that 6% remember ideal w/l should be 50%-50% for both factons<br />
+EotS-A44,4% vs H 55,6% (5,4% in favor of Horde)<br />
+Strand-A31,7% vs H68,3% (18,3% in favor of Horde) <br />
+AV-A78,2% vs H21,8% ( 28,2% in favor of Alliance)<br />
+IoC-A84,9% vs H15,1% (34,9% in favor of Alliance)<br />
+Twin Peaks-A42,7% vs H57,3%(7,3% in favor to Horde)<br />
+BfG-A42,1% vs H57,9%( 7,9% in favor to horde)<br />
+ToK-A41,9% vs H58,1% (8,1% in favor to horde)<br />
+Silvershard mines-A35,5% vs H64,5% (14,5% in favor to horde)<br />
+Deepwind-A42,1% vs H57,9% (7,9% in favor to horde)<br />
+<br />
+Now if you look at all statistics it is true that horde win ratio is better than alliance on most bgs,but u have to admit that the difference in w/l is not that great.I mean come on in 10 games played on many of those bgs alliance wins 4 and horde wins 6 (w/l &lt;10%)<br />
+It's true that Strand 18,3% and silvershard 14,5% which favors the horde are a bit high and they should take a look at them(but its mostly player skill and such).<br />
+Now take a look at AV/IoC (28,2% and 34,9%).Don't you see something wrong there?<br />
+My point in all this is that most bgs that people say its horde dominated,the w/l ratio between both factions are &lt;10% and are close to the 50/50.But IoC and AV w/l ratio is too overwhelming.<br />
+<br />
+If i were to blame anyone i would probably blame the hk premades which are made especially by the russian servers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darksoldierr</div><div class="date">2014-01-20, 12:12 PM</div></div><div class="posttext">Why does Strand favors Horde that much? Silvershard i can understand, that map is not balanced, but Strand?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">illumnat</div><div class="date">2014-01-20, 12:29 PM</div></div><div class="posttext">In AV, if the Horde defends at Galv, they usually win. Otherwise the Alliance wins usually due to Zerg.<br />
+&lt;snip&gt;<br />
+Regarding AV, I do consider it biased. If players listen and DKs/Paladins rush FW Towers, Alliance can be still killing Galv whilst FW are being capped. On the other hand, I consider SSM to be Horde biased due to ease of access to both Lava and Mid Carts.<br />
+&lt;snip&gt;<br />
+<br />
+If Horde were to defend AV, you would see a different result in that BG. Gear and Healers in smaller BGs are much more important than in the 40 Man PVE Raids (AV/IoC). Looking at BGTargets, you can often tell which team will win based on HP and Healers.<br />
+<br />
+These are my Personal opinions. I've recorded the last 100 BGs I played (4th Jan - 18th Jan) and will hopefully post the results of my experiences soon, when I organize them.<br />
+<br />
+The problem with Horde and AV is that players think it's a zerg race to the boss. However, the map isn't designed that way. <br />
+<br />
+In order for Horde to win, they need to play a defensive game and therein lies the problem. Playing AV defensively means a match that lasts a good 10-15 minutes longer for Horde to win. Unfortunately, that leaves us with two problems... 1) the &quot;OMG my honor-per-hour&quot; crowd would rather lose AV quickly than play to win and 2) new players think that you have to &quot;race to the boss&quot; to win. With these two factors, many Horde who like to play to win end up blacklisting AV.<br />
+<br />
+I know that Horde can win AV. I regularly run with an AV premade group... we play defensively and we win... even if we have only 15 people in the match, we win. We let the pugs push offensively while we back-cap and defend our base. <br />
+<br />
+Speaking of which... in AV pugs, you seldom see Horde back-capping while Alliance regularly sends 5+ to recap their bunkers.<br />
+<br />
+Yep... Horde has to play defensively to win AV.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+doesnt the graph show that on mirrored maps that the side that is better (gear/skill/teamwork) at pvp seems to win more and that on non mirrored maps the side with the map advantage will win more<br />
+because the design so favors one side enough to be able to overcome the skill/gear/teamwork factors.<br />
+<br />
+graph says horde is wining most BG but most BG are mirrored so that means its a gear/skill/teamwork win. But on maps where its not mirrored one side or the other (which ever the map favors)<br />
+steam rolls most of the time. (non mirrored maps are just bad design)<br />
+<br />
+Non-mirrored maps are fine. Players who don't understand the strats needed to play those BGs are what's wrong.<br />
+<br />
+Horde does fine in AV if they play defensively. Horde does fine in IoC if they take docks/kill glaives.<br />
+<br />
+**BUT** 99% of the time (ok about 80% of the time according to the graphs), Horde does neither so they lose.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fahrenheit</div><div class="date">2014-01-20, 12:45 PM</div></div><div class="posttext">I'm genuinely curious as to the reasoning why Horde win more overall games. With such a large sample size I don't think it's possible to be something like player skill. <br />
+<br />
+My (granted) anecdotal evidence suggests that the same players that make up one faction are the same caliber of players that make up the other faction, especially now, 9 years into the game's life.<br />
+<br />
+I will say this though, I've been PvPing the same spec/class combo (Feral Druid) for nearly 9 years now and I've always managed to win (approx. 56% winning percentage) more than I lose with the exception of current WoW, all done while solo queuing my way to &quot;Battlemaster&quot;, &quot;Justicar&quot;, &quot;of the Alliance&quot;, and now I nearly have &quot;Khan&quot; done.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FenrisUy</div><div class="date">2014-01-20, 12:46 PM</div></div><div class="posttext">60/40 isn't a bad ratio at all (although the fact that it favors the Horde more often than not is odd). Blizzard would be the most amazing designers/developers EVER if they managed to pull off a consistent 50/50 (that's not realistic though).<br />
+<br />
+The 3 BGs that need to be looked at/rebalanced are obviously Alterac Valley, Isle of Conquest, and Strands of the Ancient. That large of a disparity shouldn't be acceptable.<br />
+<br />
+Strands is the perfect mirror BG, if they are not winning the same as Horde is not by design.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4b5982cd2c</div><div class="date">2014-01-20, 12:48 PM</div></div><div class="posttext">If u play in the Horde you must always have AV and IoC on the blacklist :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc130c3465fa</div><div class="date">2014-01-20, 01:06 PM</div></div><div class="posttext">Wonder why alliance only wins the two 40 mans. We knew AV was biased, but why IoC now?<br />
+<br />
+IMHO it's because AV &amp; IoC are the only battlegrounds where you can win without fighting the other team, ie: both teams rush to ennemi base and do their stuff.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca20fa69a21</div><div class="date">2014-01-20, 01:55 PM</div></div><div class="posttext">Some people here have a hard time understanding that the blacklist feature are only making the imbalance tendecies worse. If all racials were removed from the game, and there were no blacklist feature, the win ratioes except for in Silvershard Mine and AV would be a lot closer to 50/50. Twin Peaks and to a lesser degree AB are also a tiny bit in favour of Horde.<br />
+<br />
+These are the results from a couple of years ago: http://www.mmo-champion.com/content/2187-Battleground-Horde-Alliance-Win-Ratio-Setup-of-the-Month<br />
+<br />
+And as you see the results are a lot closer to 50/50. Even with favourable Horde racials.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Itisamuh</div><div class="date">2014-01-20, 03:00 PM</div></div><div class="posttext">Wonder why alliance only wins the two 40 mans. We knew AV was biased, but why IoC now?<br />
+<br />
+I thought it was common knowledge that both maps favor Alliance by design. But to answer the question, the main reason is docks. The other major nodes are centered, while docks is much closer to the Alliance base, and therefore almost a guaranteed cap for them regardless of how many Horde go to try to contest it. And coincidentally, docks just happens to be the single best node on the map. As long as people protect the glaives, docks alone can beat both workshop and hangar. Horde can win, obviously, but much like in Alterac, it takes much more teamwork and effort for Horde to win than it does for Alliance, so most never bother. What these statistics show is that right now, Horde is the better faction overall in player quality, and these two maps are ridiculously imbalanced.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2014-01-20, 03:15 PM</div></div><div class="posttext">these stats show that the current pvp is broken.. on of the biggest fail in mop.. pls bliz repair the whole pvp system in wod.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6595fba278</div><div class="date">2014-01-20, 03:17 PM</div></div><div class="posttext">Man i must be hella unlucky, i knew i lost alot as horde - Twisting neither EU. <br />
+For 100 bg's, iv been tracking i've won 39 of them. (This is without IoC and AV).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stolensouls</div><div class="date">2014-01-20, 03:32 PM</div></div><div class="posttext">Funny when I play my alliance toon my win rates look like the horde bars in all except Av and Ioc but when I play my horde toons the win rates look like the alliance bars...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Theonebone1</div><div class="date">2014-01-20, 03:49 PM</div></div><div class="posttext">Why do people even care about these win rates so much? This is a PvE game. PvP doesn't matter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Snorri</div><div class="date">2014-01-20, 04:00 PM</div></div><div class="posttext">Alterac Valley should be removed. It's more of a big scenario than a battleground. You may end up fighting more NPCs than enemy players. Both sides try to rush to the enemy general and zerg him down. Isle of Conquest is a little better, but it still has the same problem with both armies rushing to the other side and ignoring most players. I don't see the point in having both Twin Peaks and Warsong Gulch because they are near identical.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sajek</div><div class="date">2014-01-20, 04:03 PM</div></div><div class="posttext">Horde do seem to have the stronger pvp playerbase overall. I understand the talk about &quot;oh, let us have AV/IoC&quot; but they have been imbalanced forever. Certainly winnable like any BG, put against an 'equal' force, Alliance can click the docks flag to it's channel completion before a character with a 40 yard range can even come close to hitting him. Docks is win...hangar is awkward to use since it's a bit slow to do what you need to do and the mid is even for both sides. All about docks.<br />
+<br />
+AV is a different animal and horde can win it if played well but the choke points are not conveniently placed for Horde. Bellinda when horde go for her, we need to wrap around to enter the building, alliance just run through since it's exactly at the location they travel, then towers all in sequence along the way.<br />
+<br />
+Since it's all about zerg now to kill a PvE target and plead on chat to find a tank and healers (which is mindblowingly annoying), those BG's are horrible to play.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Grayson Carlyle</div><div class="date">2014-01-20, 04:23 PM</div></div><div class="posttext">On the Eye of the Storm stat bug:<br />
+<br />
+I watched my EotS stats since I first found out that the wins are not being recorded correctly. It's worse than wins not being recorded, but sometimes winning EotS actually subtracts from your win stat. I first noticed when my EotS win stat was at 137 (actual wins was just shy of 170). I chanced into 4 EotS in a row before logging out to check my stats, winning all 4. When I logged out to check the armory, my # of wins was down to 134. However, all the other BG victory/battle stats appear to be correct, and overall victory/battle stats is correct, so you can figure out how many actual EotS wins you have (if you're over 100; under 100 can easily be checked via the 100 wins achievement).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Phasma</div><div class="date">2014-01-20, 04:49 PM</div></div><div class="posttext">I thought it was common knowledge that both maps favor Alliance by design. But to answer the question, the main reason is docks. The other major nodes are centered, while docks is much closer to the Alliance base, and therefore almost a guaranteed cap for them regardless of how many Horde go to try to contest it. And coincidentally, docks just happens to be the single best node on the map. As long as people protect the glaives, docks alone can beat both workshop and hangar. Horde can win, obviously, but much like in Alterac, it takes much more teamwork and effort for Horde to win than it does for Alliance, so most never bother. What these statistics show is that right now, Horde is the better faction overall in player quality, and these two maps are ridiculously imbalanced.<br />
+<br />
+I would agree if racials were not a huge factor.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2014-01-20, 04:53 PM</div></div><div class="posttext">It would be interesting to see the NA vs. EU breakdown.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ThatsOurEric</div><div class="date">2014-01-20, 05:10 PM</div></div><div class="posttext">I strongly argue with a lot of those percentages given how long I've been playing this game. If anything, those percentages should either be<br />
+in favor of the alliance over Horde, or have the margins shorter. I don't recall Horde winning more, even by a little bit than the other side.<br />
+<br />
+AV though, that I will contest is primarily won by Alliance. Rightfully so, the landscape is tailor made for them. Horde have to cross a bridge<br />
+for crying out loud, its the best chokepoint for people to play defensively. There's a lot more landscape for them to travel to our base than<br />
+vice versa, superior towers and a helluva lot less defense at the base compared to Alliance (all those cluttered enemy NPCs that players pull)<br />
+and its skewed in their favor.<br />
+<br />
+I've always wanted them to redo the entire BG because it really is unfairly balanced. Even if we take the above statistics as &quot;fact&quot;, most of<br />
+the BGs aren't landslide guarenteed wins for the Horde faction. AV on the other hand, is by a HUGE margin skewed in one's favor, which<br />
+isn't fair, considering it gives the highest amount of honor and experience to date. (Does it still?)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nzete</div><div class="date">2014-01-20, 05:18 PM</div></div><div class="posttext">I play an Alliance healer. Solo queuing is horrible (and has been since every really terrible focuses me due to addons instead of just the good players).<br />
+<br />
+My win percentages don't match the Alliance as a whole. Some of the smaller maps can be disproportionally influences by an a least semi-competent healer (Battle for Gilneas being the prime example with only 3 nodes). In the &quot;required pvp for raiding&quot;, Temple of Kotomogu is influenced by healers, but Silvershard Mines more by crowd control (and catching up from the starting disadvantage). In guild we call them the &quot;other one&quot; and the &quot;sucky one&quot; respectively.<br />
+<br />
+But, as I see it, pvp isn't really about playing your character, it is about being CCed and communing with the spirit healer. Fun times. There are times when liking achievement points leads to sad situations.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">StrayFox</div><div class="date">2014-01-20, 05:22 PM</div></div><div class="posttext">We need more PvP only BGs. Alliance is more PvE if anything so we lose the majority of our BGs. The only time I win is when I get 4 of my buddies to carry our team. Kinda sad really, I love Alliance and I love both PvE and PvP. I guess I'll stick to arenas.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SirBadass</div><div class="date">2014-01-20, 05:24 PM</div></div><div class="posttext">Tell you what, we'll be okay with them fixing AV and IoC to not favor Alliance when they fix racials to not favor Horde.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sargiean</div><div class="date">2014-01-20, 05:32 PM</div></div><div class="posttext">I did random battle grounds all last night, and got conquest 4 times (before blocking it) and lost every time. Now that I see the graph, I feel a bit better.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moradim</div><div class="date">2014-01-20, 05:35 PM</div></div><div class="posttext">lets see, horde dominate every mirror map...no surprise here.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bootyraider</div><div class="date">2014-01-20, 05:36 PM</div></div><div class="posttext">These numbers for Alliance make me not want to do battlegrounds any more since numbers show we consecutively win only (2) out of (11) battlegrounds. That's absurd.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1561bc551c</div><div class="date">2014-01-20, 05:37 PM</div></div><div class="posttext">So horde wins in PVP and ally in hitting the wall. <br />
+<br />
+Nothing new here, move along.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Volitar</div><div class="date">2014-01-20, 05:38 PM</div></div><div class="posttext">Lol wow I knew AB and IoC were ally favored but..c'mon that is fucking ridiculous. So Horde wins the balance and mirrored maps so its okay to have two maps that blatantly favor Alliance?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">muffinss</div><div class="date">2014-01-20, 05:54 PM</div></div><div class="posttext">Horde have a stronger pvp player base... and they have had one for a very long time. Ever since BC horde have been strong in the pvp side of things. And why not? Look at their races... Big strong warrior orcs, sneaky voodoo empowered trolls, awesome undead assassins and warlocks, big strong bulls that will beat you with massive totem poles. Horde races simply look more warriorish. This results in the horde seeming “cooler” than alliance races do with their cute child like gnomes, drunk dwarves and generic humans. The horde are going to be more appealing to players who just want to go around and face smash other players.<br />
+<br />
+Faction changes also don't help this because people end up with the “can't beat them, join them” mentality and faction change over to the current, and currently long standing, horde dominant side.<br />
+<br />
+There also appears to be more pride among horde players than alliance players as well. Most horde players I have met are more involved with the story and exhibit proud behavior in the race they have chosen to be in versus their alliance counterpart. Most alliance players I have met are not involved in the story and really seem depressed about being in the alliance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Advo</div><div class="date">2014-01-20, 06:01 PM</div></div><div class="posttext">More evidence the war games approach needs to be applied to random BGs. It will massively help with queue times for the horde, give alliance a hopeful better than 30-40% chance to win any non-40 BG, and perhaps do away with some blacklist nonsense (blacklisting because you dont like the BG = fine. because your faction never wins it = not fine).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dispirit</div><div class="date">2014-01-20, 06:04 PM</div></div><div class="posttext">IMHO it's because AV &amp; IoC are the only battlegrounds where you can win without fighting the other team, ie: both teams rush to ennemi base and do their stuff.<br />
+<br />
+that's absolutely not true in IoC. I've noticed after like 1000 IoC's playing as horde that alliance is doing something to destroy horde in ACTUAL pvp there as well. So many times I've looked at the scoreboard to see alliance have like 60-80 killing blows on players while the horde has like 5-10 and whenever the horde zergs either docks or workshop, they meet alliance head on and flat out lose the clusterf*** every time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ApeDosMil</div><div class="date">2014-01-20, 06:14 PM</div></div><div class="posttext">horde spends those 20 hours in queue...<br />
+<br />
+You misinterpreted what I did then. Queue time is not factored. Alliance has to play 20+ hours more a season to get the same gear. And I wouldn't complain about queue when alliance gets Call to Arms for AV or IoC, horde huff and puff that week, not queuing for the CTA and randoms with the blacklist in effect. Our direct queues go from 1-2 minutes to 15-20 minutes on Call to Arms. As someone who plays both horde and alliance I can attest to the fact that queues aren't at all bad for horde.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+that's absolutely not true in IoC. I've noticed after like 1000 IoC's playing as horde that alliance is doing something to destroy horde in ACTUAL pvp there as well. So many times I've looked at the scoreboard to see alliance have like 60-80 killing blows on players while the horde has like 5-10 and whenever the horde zergs either docks or workshop, they meet alliance head on and flat out lose the clusterf*** every time.<br />
+<br />
+Whenever I am horde, the strategy is to zerg and when I am alliance, we send 20-30 to ws and the rest to docks. We get those kills from workshop and rezzers in the keep, not really on the road. Very few kills are attributed to the one-three hordies that know to destroy glaives. We almost always set out to defend glaives, but rarely get much resistance against them. I like IoC a lot as alliance, but if you've seen prior stats before blacklisting, IoC was a horde bg like most others. Whoever's saying it's imbalanced towards alliance must not realize this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">subanark</div><div class="date">2014-01-20, 06:32 PM</div></div><div class="posttext">With blacklisting and fact that more expert players avoid BGs they don't win as much (or don't pvp at all) means that even a small advantage balloons into a much bigger win/loss ratio. Heck back when there was battle groups, win/loss ratios would vary depending on which server group you were in.<br />
+<br />
+AV favors the alliance due to the horde base being more easily accessible, and the horde towers are more easily taken without killing the NPCs.<br />
+<br />
+I think the alliance's advantage of IoC is simply that they are able to position the glaives in a more secure location. They can if very carefully placed not only outrange the towers, but on the est side of the horde base can be placed overlooking a ledge that takes a while to get over there. If horde doesn't have experienced stealthers to take out these or is able to make a major push to take out docks alliance will win (and if they do manage this alliance will usually lose, as this is the strat they know the best). <br />
+<br />
+Horde advantage in other BGs (which are much more symmetrical) is either due to alliance focusing on the BGs they more easily win, or that horde have better pvp racials (which is debatable).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dispirit</div><div class="date">2014-01-20, 07:03 PM</div></div><div class="posttext">You misinterpreted what I did then. Queue time is not factored. Alliance has to play 20+ hours more a season to get the same gear. And I wouldn't complain about queue when alliance gets Call to Arms for AV or IoC, horde huff and puff that week, not queuing for the CTA and randoms with the blacklist in effect. Our direct queues go from 1-2 minutes to 15-20 minutes on Call to Arms. As someone who plays both horde and alliance I can attest to the fact that queues aren't at all bad for horde.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+Whenever I am horde, the strategy is to zerg and when I am alliance, we send 20-30 to ws and the rest to docks. We get those kills from workshop and rezzers in the keep, not really on the road. Very few kills are attributed to the one-three hordies that know to destroy glaives. We almost always set out to defend glaives, but rarely get much resistance against them. I like IoC a lot as alliance, but if you've seen prior stats before blacklisting, IoC was a horde bg like most others. Whoever's saying it's imbalanced towards alliance must not realize this.<br />
+<br />
+Either way horde is still not winning the pvp battles at both workshop and docks no matter how many they send. My point is that there's still pvp in IoC and horde flat out loses it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2014-01-20, 07:20 PM</div></div><div class="posttext">That grapth shows that all bgs need to be fixed, not just av and isle of conquest...they should all be in the 10% range 0o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aeb</div><div class="date">2014-01-20, 07:29 PM</div></div><div class="posttext">As someone that has shot for the bg meta on both sides (faction changing) I'm surprised I haven't seen mines mentioned favoring horde. <br />
+<br />
+Started as horde and loved this bg so much, as alliance now it's just unbearable. Horde starts closer to the two shorter paths you need in order to win which gives them time to set up for ring of frost, typhoon etc. It really doesn't help that most alliance also think that they have to take the west track because it's closest (though usually it is a free cap) and end up sending too many people to it. <br />
+<br />
+Maybe it's just like AV though where ally was losing it more often so they blacklisted it. This would definitely be my #1 blacklist choice if I didn't need the meta.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zrankfappa</div><div class="date">2014-01-20, 07:42 PM</div></div><div class="posttext">The constant whining from the griefers that they cannot easily kill players in PVE gear is pretty hilarious. Seriously ... the tears shed by PVP'ers over this is almost as wonderful as the tears shed by censers when they get ganged up on. <br />
+<br />
+PVP gear is for Arenas and BG's , PVE gear everywhere else. <br />
+<br />
+Please ... don't give me some line about WPVP. No one wants WPVP, and no censers aren't WPVP either. Comparing the shenanigans on TI to WPVP is like calling rape sex.<br />
+<br />
+Gankers want to gank, and they want to gank easily. They do not however, under any circumstances, want to engage in any WPVP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8dbfc1017b</div><div class="date">2014-01-20, 07:48 PM</div></div><div class="posttext">Are this stats from EU or US???<br />
+(Even if the horde win in 10-15 BG, the alliance still won more than lose in the total recount of bgs played, because alterac and IOC are played with much more frequently than 10/15 Bg's)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ElDoorO</div><div class="date">2014-01-20, 07:58 PM</div></div><div class="posttext">People are reading for more in to these graphs than they should. It's missing crucial information that one could only get from having access to the internal database.<br />
+We need the median iLvl for both Horde and Alliance for wins/losses. In addition, we need something to plot out percentage of full pvp gear versus low iLvl pve gear. Perhaps including their rating.<br />
+Would also be handy to know class and spec distributions on those wins/losses. This could quickly get overwhelming trying to understand what's going on -- in a reasonable manner.<br />
+<br />
+There are only two BG's here that should be able to speak alone: Temple of Kotmogu and Strand of the Ancients. Those are about as even as you're ever going to get.<br />
+Strand I'm very curious about, but I'll never have access to the tools to parse and develop a comfortable understanding of 'why'.<br />
+<br />
+These numbers were taken over the past month, so it's not unreasonable to take in to account AV and IoC as blacklisted from Horde and that will, perhaps, skew the numbers -- I might even argue that it'd skew them *dramatically*.<br />
+<br />
+For the person who feels you should be able to PvE in PvP gear (albeit not as well) and PvP in PvE gear -- they tried that in early MoP. People whined because players had PvP gear and were PvE'ing and they aren't trying as hard! People complained so they did a huge PvP nerf to gear that they now regret -- especially with the Timeless Isle &quot;PvP&quot; (I use quotes because they broke it and I won't count it as World PvP).<br />
+<br />
+As far as the World PvP option -- in my opinion PvP should be supreme. If you don't want to PvP on a PvP server -- realm transfer off. No one is forcing you to stay on a PvP serve. You'll do yourself, and your community, a favor by leaving to somewhere else you'll have more fun.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ApeDosMil</div><div class="date">2014-01-20, 08:11 PM</div></div><div class="posttext">Either way horde is still not winning the pvp battles at both workshop and docks no matter how many they send. My point is that there's still pvp in IoC and horde flat out loses it.<br />
+<br />
+I was trying to reinforce what you said actually, then went off from there. Horde can win IoC the same way alliance does: Wipe the enemy force at workshop and take docks. Horde needs to stop putting any faith in hangar and just leave it be.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+As someone that has shot for the bg meta on both sides (faction changing) I'm surprised I haven't seen mines mentioned favoring horde. <br />
+<br />
+Started as horde and loved this bg so much, as alliance now it's just unbearable. Horde starts closer to the two shorter paths you need in order to win which gives them time to set up for ring of frost, typhoon etc. It really doesn't help that most alliance also think that they have to take the west track because it's closest (though usually it is a free cap) and end up sending too many people to it. <br />
+<br />
+Maybe it's just like AV though where ally was losing it more often so they blacklisted it. This would definitely be my #1 blacklist choice if I didn't need the meta.<br />
+<br />
+/agreed. Alliance can definitely win SSM, but our best strategy, unlike horde's &quot;zerg the short tracks&quot; strategy, is to change the tracks on the two you can with groups loosely between the one depot and two carts. Cool thing about SSM though is the importance of stealthies switching tracks and letting the opposing team take the now super long tracked carts, just to be taken from them later by stealthies ganging up on them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dopplegager</div><div class="date">2014-01-20, 08:12 PM</div></div><div class="posttext">Good Horde players are always MIA inside of IOC and AV. Horde stopped taking mid and killing glaives so Ally wins most of the time by taking Workshop and Docks. AV is easily Horde winnable if they play it right. They never seem to though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zrankfappa</div><div class="date">2014-01-20, 08:45 PM</div></div><div class="posttext">As far as the World PvP option -- in my opinion PvP should be supreme. If you don't want to PvP on a PvP server -- realm transfer off. No one is forcing you to stay on a PvP serve. You'll do yourself, and your community, a favor by leaving to somewhere else you'll have more fun.<br />
+<br />
+If everyone transferred off PVP servers who didn't want to PVP, they would become ghost towns, and have to be merged.<br />
+<br />
+I have been on a PVP realm for more than 6 years, there's never been any WPVP ... just the occasional ganking.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemonpartyfan</div><div class="date">2014-01-20, 08:49 PM</div></div><div class="posttext">The other bgs are mirrors of each other and temple is just a brawl fight - it may just be that Horde are, in general, better pvpers than Alliance. The statistics clearly show this.<br />
+<br />
+This is not true.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BobAwesome</div><div class="date">2014-01-20, 09:02 PM</div></div><div class="posttext">I see a few posts saying Horde is better due to racials...<br />
+<br />
+Anyone mind saying how Horde racials are better than Alliance?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8dbfc1017b</div><div class="date">2014-01-20, 09:05 PM</div></div><div class="posttext">Sum all horde wins from the 11 bgs - 569,1<br />
+Ally - 530,9<br />
+<br />
+1100 is for 100<br />
+569,1 is for x<br />
+<br />
+x= 51,7363<br />
+Overall horde wins on 51,73% of all BGs that's not a big w/l ratio<br />
+Though i'm assuming all BGs are played the same amount, which we know is not true<br />
+The Oqueue say the same that this graph, but the alliance still win more Bgs (Adding all the bgs) in total than the horde, and that have an explanation: bgs aren't played in the same amount.<br />
+The most played Bg are AV and IOC<br />
+<br />
+Watch this:<br />
+i.imgur.com/ZmbxkUq.png<br />
+i.imgur.com/nGjkCwx.png</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FpicEail</div><div class="date">2014-01-20, 09:18 PM</div></div><div class="posttext">I don't know any one who doesn't have IOC blacklisted, that might be the cause - all good PvP'ers from the Horde simply blacklist it.<br />
+<br />
+It would be interesting to see the reasons for which people blacklist it. I know a lot of people don't like vehicles. Personally, I love IoC's mechanics but I can't stand losing every time (horde, obv) so I blacklist it. Such a shame, but what can they do? :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">theostrichsays</div><div class="date">2014-01-20, 09:25 PM</div></div><div class="posttext">I am surprised by the difference in AV still, I am currently horde and if I go in there with a 3-5 man premade I still feel like I win a fair portion of the games. Just settle with the fact that your going to back cap towers and graveyards, and call it a day. Its fairly rare to see a hunter drop a flare on the choke point coming out of the tower before the south towers anymore so its easy to stealth right on to the towers, and ther eis likely only 1 or 3 people up there. But that is simply my personal experience, I honestly don't remember the last time I won IoC as horde, I am sure I have won at least one this expansion but I can not recall when it was.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">notorious98</div><div class="date">2014-01-20, 09:26 PM</div></div><div class="posttext">Seems pretty accurate to me. That's what happens when every Horde toon has a viable racial in PvP. Extra stam, reduced stun duration, AoE stun, AoE silence, WotF, in-combat health regen, touch of the grave, voodoo shuffle, blood fury, and berserking. Goblins are the only race that are really on the short end of the stick. But those racials sure beat everything the Alliance had outside of EMFH.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">roahn the warlock</div><div class="date">2014-01-20, 09:29 PM</div></div><div class="posttext">my theory. horde is used to winning more, so the average horde player doesn't go to the big battle ground where the fight isn't decided by actual PVP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BobAwesome</div><div class="date">2014-01-20, 09:31 PM</div></div><div class="posttext">Seems pretty accurate to me. That's what happens when every Horde toon has a viable racial in PvP. Extra stam, reduced stun duration, AoE stun, AoE silence, WotF, in-combat health regen, touch of the grave, voodoo shuffle, blood fury, and berserking. Goblins are the only race that are really on the short end of the stick. But those racials sure beat everything the Alliance had outside of EMFH.So you don't think Stoneform, a 20% heal, Escape Artist, a sprint or Shadowmeld have any uses in pvp? Lets not forget the weapon specializations that allow you to gem/reforge/gear for more damage...<br />
+<br />
+Yeah... the people who claim Horde have superior racials are the people who shouldn't be pvping. You simply lack the intelligence to use things to your advantage...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ApeDosMil</div><div class="date">2014-01-20, 09:35 PM</div></div><div class="posttext">I am surprised by the difference in AV still, I am currently horde and if I go in there with a 3-5 man premade I still feel like I win a fair portion of the games. Just settle with the fact that your going to back cap towers and graveyards, and call it a day. Its fairly rare to see a hunter drop a flare on the bridge anymore so its easy to stealth right on to the towers, and ther eis likely only 1 or 3 people up there. But that is simply my personal experience, I honestly don't remember the last time I won IoC as horde, I am sure I have won at least one this expansion but I can not recall when it was.<br />
+<br />
+I really wish there were more horde that understand this, backcapping wins the game. That being said, as someone who right now plays mostly alliance, I will admit how easy the towers down south are to defend after being capped. One entrance, really small interior, the flag in the middle is solid so it helps a little more with preventing knock backs. Trying to defend the bunkers from backcappers is near impossible. They're much bigger than the towers, plenty of open space for knock backs to be advantageous and any alliance not noticed can retake the bunker while line of sighted from distracting players/combatants. Horde do have the advantage though if it comes to turtling with the chokepoint and highground after the first two bunkers, aside from the bridge.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2014-01-20, 10:23 PM</div></div><div class="posttext">Horde loses IoC and AV due to self-reinforcing effects. The good horde PvPers tend to blacklist them, which makes the horde loses, which makes the good horde players blacklist them. A feedback loop of fail.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">subanark</div><div class="date">2014-01-20, 10:29 PM</div></div><div class="posttext">That grapth shows that all bgs need to be fixed, not just av and isle of conquest...they should all be in the 10% range 0o<br />
+<br />
+You can have a perfectly symmetrical BG (like Strand) and the stats can be way off. This is due to any fluctuation (luck, or some good team queueing a lot) can encourage people who are losing to try another BG, and let the winning side who has more experience continue to steamroll newbs who don't know better.<br />
+<br />
+The primary way to &quot;fix&quot; this particular issue is to simply to add horde v horde and alliance v alliance for non-rated BGs. This will partially fix the issue, although having mixed teams or horde and alliance will fix it further.<br />
+<br />
+Racial balance can be examined better at the arena level, although there might be some racials that work better in BGs (I would think goblin and worgen movement racials work better in BGs).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2014-01-20, 10:30 PM</div></div><div class="posttext">The primary way to &quot;fix&quot; this particular issue is to simply to add horde v horde and alliance v alliance for non-rated BGs. This will partially fix the issue, although having mixed teams or horde and alliance will fix it further.<br />
+<br />
+Mixed teams are the only real solution.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">notorious98</div><div class="date">2014-01-20, 10:33 PM</div></div><div class="posttext">So you don't think Stoneform, a 20% heal, Escape Artist, a sprint or Shadowmeld have any uses in pvp? Lets not forget the weapon specializations that allow you to gem/reforge/gear for more damage...<br />
+<br />
+Yeah... the people who claim Horde have superior racials are the people who shouldn't be pvping. You simply lack the intelligence to use things to your advantage...<br />
+<br />
+GotN is garbage. If it were a flat 20% heal, then maybe. But it's not, it's over 15 seconds. And it's on a 3 minute CD. That is shit. Sprint is ok. Escape Artist is ok because it doesn't do much for real crowd control. It just fixes movement. It's not like breaking out of a REAL CC that keeps you from being able to cast or attack and there is no DR for slows or snares which reduces its effectiveness when the effect can just be reapplied almost instantly. Shadowmeld is ok because it drops you from being a target and stealths you. That's nice. Stoneform, again, is only ok. The weapon specializations? Meh. So you get a very slight increase in constant damage. Considering most PvP favors burst over sustained damage (due to healers almost always being OP), the weapon specializations are nothing great.<br />
+<br />
+And, by the way, I never said they had no uses. I said they were worse than Horde racials.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">meltorefas</div><div class="date">2014-01-20, 10:53 PM</div></div><div class="posttext">Those numbers look entirely accurate from my perspective, playing 90s BGs both sides on Shadow Council. I have never lost a game in IoC on my ally hunter, and not lost more than 1/~25 games of AV on her. Whereas my horde paladin is better geared, but never sees wins in IoC and rarely in AV. <br />
+<br />
+Not sure what the deal is with IoC, but AV definitely favors the Alliance by a small but significant amount when it comes to a pure race... which is all that 90% of the games there amount to. Would be nice if the horde played more defensively/smarter rather than just zerging, since alliance will pretty much always have the advantage in pure zerg AV. [That doesn't mean they will always WIN a pure zerg, just that they have the edge in it.]</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Explicit Teemo Nudes</div><div class="date">2014-01-20, 10:54 PM</div></div><div class="posttext">AV is too rushy which makes it boring, but you can simply change that for yourself by not joining in the rush. I love AV because when I defend on either side I get some really fun pvp going on. The people saying there's no pvp just park their fat asses in the middle of Field of Strife and then start whining. I really want the old AV back though.<br />
+I still don't understand why Blizzard isn't adding a bg with no objective so those people can stop whining.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc15e2758cd0</div><div class="date">2014-01-20, 11:06 PM</div></div><div class="posttext">so at the end of the days conclusion:<br />
+<br />
+Alliance is the faction with most players using bots / Honorbuddy - Have a nice day everyone</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mormolyce</div><div class="date">2014-01-20, 11:06 PM</div></div><div class="posttext">Those win/loss stats are incredibly skewed since they introduced blacklisting. Pre-blacklist I saw 50/50 win loss in AV and IoC, or at worst maybe 60/40. But now every Horde player with a brain blacklists them, which means the average skill/gear level of Horde players in AV and IoC is vastly lower, which causes more Horde players to blacklist them, which causes more Alliance players to not blacklist them as they become easier and easier wins, which causes more Horde to blacklist them...<br />
+<br />
+The spillover of &quot;better&quot; (on average) Horde players into non-AV/IoC BGs is what causes the Horde win/loss ratios to be a bit higher there.<br />
+<br />
+As someone with 80/100 wins in the IoC achievement on a Horde toon, man is this frustrating.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Salech</div><div class="date">2014-01-20, 11:19 PM</div></div><div class="posttext">Horde winning everything except 2 Battlegrounds, better make it so Horde win them ALL instead with shitty balance!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">subanark</div><div class="date">2014-01-20, 11:27 PM</div></div><div class="posttext">For me, warstomp has never worked out well (as a elemental shaman). If I'm in range against a single person I usually spend a full 1.5 seconds getting off a 2 second stun due to push back (its rare to be to get into melee as a spell caster if you are also one). If I'm up against multiple alliance I'm dead anyways. If its the &quot;mob&quot; situation, it has no effect or worse due to stun DR (not to mention the 5 man limit). I haven't really done arena, so with proper coordination it may work well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Salech</div><div class="date">2014-01-20, 11:36 PM</div></div><div class="posttext">So you don't think Stoneform, a 20% heal, Escape Artist, a sprint or Shadowmeld have any uses in pvp? Lets not forget the weapon specializations that allow you to gem/reforge/gear for more damage...<br />
+<br />
+Yeah... the people who claim Horde have superior racials are the people who shouldn't be pvping. You simply lack the intelligence to use things to your advantage...<br />
+<br />
+<br />
+Yeah stoneform is soooooooooooo good and escape artist is probably the most insane skill in the game, there is 1 good racials for PvP on alliance, 1, unless you are totally out of this world crazy ofcourse, and that's Every man for himself.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">NorthWay</div><div class="date">2014-01-20, 11:44 PM</div></div><div class="posttext">The primary way to &quot;fix&quot; this particular issue is to simply to add horde v horde and alliance v alliance for non-rated BGs. <br />
+Disagree.<br />
+<br />
+A better fix would be to randomize starting points. I mean, the SotA statistics should leave any ally in here speechless. As much as I hate SotA for its utter randomness, it is in many ways the most fairly designed bg (apart from not being very good).<br />
+Perhaps all BGs should be played twice over, once from each starting point?<br />
+<br />
+I have another fix I'd like to suggest: The PvE bosses in AV and IoC needs at least 3x as much hp. Have you looked at the scoreboard at the end of an ally IoC rush? The amount of healing being dished out is pathetic. The boss goes down so fast that I can get killed inside the hold and have the game over signal go while I'm still waiting for the hold gy ress to complete. Any defense play goes straight out the window with this idiocy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MightyWombat</div><div class="date">2014-01-20, 11:46 PM</div></div><div class="posttext">Are this stats from EU or US???<br />
+(Even if the horde win in 10-15 BG, the alliance still won more than lose in the total recount of bgs played, because alterac and IOC are played with much more frequently than 10/15 Bg's)<br />
+<br />
+well the info says the data was gathered from around 7mill subs wich means EU and US.and in total alliance might have the higher win ratio but per player that wouldnt be true...due to them losing 9 other bgs ^^ while hordes changes of winning are higher on 9 and low 2 that they can B-List thats what i think some people want to show here.When you see it from 1 players view.Thats IF this data is anywere near accurate...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Constraint</div><div class="date">2014-01-20, 11:47 PM</div></div><div class="posttext">bg blacklisting was a great idea in principle, but turned out disastrous. it is also the main reason queue times are horrible.<br />
+<br />
+That, my friend, is nonsense. If BG blacklisting was the main reason why queue times are horrible, then, logically speaking, as soon as a Horde player queues for AV or IoC, their queue should be instant. Think about it. If that's what Alliance queue for and Horde don't.<br />
+<br />
+That's impossible for a number of reasons. Firstly, although it's possible for Horde to blacklist both AV and IoC, it CERTAINLY isn't possible for Alliance to blacklist every other BG in the game besides AV and IoC, unless you're suggesting that Alliance as a whole simply don't queue for randoms, they just queue for specific BGs, forgoing the extra CP/HP for randoms. <br />
+<br />
+As soon as Alliance hits &quot;queue&quot; when they join a random BG, the game doesn't just think, &quot;I'll only allow these guys to queue for AV and IoC, since, they win more here.&quot; And equally, when Horde hit &quot;queue&quot;, they game doesn't think, &quot;Fuck these guys. Instead of giving them a magical instant queue for AV and IoC (lol) I'm going to force them to wait 12 minutes in the OTHER bg queues, since they win more over there.&quot;<br />
+<br />
+Secondly, how is it even remotely difficult to ascertain that the reason for horrible queue times is simply because of faction imbalance..? We all know it's the case. It's been the case for some time now. The ratio is simply too heavily skewed in favor of Horde. For a tiny example, say 50k Horde players are actively queueing, and 30k Alliance players actively queueing. The Alliance players are close-to-instantly matchmade with 30 horde players (who've been in queue for ~12 minutes). The Horde players who can't queue instantly are forced to wait until either Alliance players finish their BGs or new Alliance players are queueing. It's not a difficult concept to work out. The &quot;snowball effect&quot; is only kept under control by the fact that there's a limited number of Horde players queueing, and the fact that people are increasingly put off queueing the longer the queue is (simple logic).<br />
+<br />
+TL;DR - blacklisting has absolutely nothing to do with queue times, as clearly proven by the fact that Horde, the most populous faction, do not have instant queues when they specific queue for AV or IoC. Faction imbalance is the sole reason for long queue times for Horde.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemonpartyfan</div><div class="date">2014-01-20, 11:53 PM</div></div><div class="posttext">Disagree.<br />
+<br />
+A better fix would be to randomize starting points. I mean, the SotA statistics should leave any ally in here speechless. As much as I hate SotA for its utter randomness, it is in many ways the most fairly designed bg (apart from not being very good).<br />
+Perhaps all BGs should be played twice over, once from each starting point?<br />
+<br />
+I have another fix I'd like to suggest: The PvE bosses in AV and IoC needs at least 3x as much hp. Have you looked at the scoreboard at the end of an ally IoC rush? The amount of healing being dished out is pathetic. The boss goes down so fast that I can get killed inside the hold and have the game over signal go while I'm still waiting for the hold gy ress to complete. Any defense play goes straight out the window with this idiocy.<br />
+<br />
+The focus of those BGs aren't actually killing the commanders though. They aren't very hard to kill for a reason. Originally AV was about a push war. Not its become a commander zerg, nothing more.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Constraint</div><div class="date">2014-01-20, 11:53 PM</div></div><div class="posttext">Disagree.<br />
+<br />
+A better fix would be to randomize starting points. I mean, the SotA statistics should leave any ally in here speechless. As much as I hate SotA for its utter randomness, it is in many ways the most fairly designed bg (apart from not being very good).<br />
+Perhaps all BGs should be played twice over, once from each starting point?<br />
+<br />
+I have another fix I'd like to suggest: The PvE bosses in AV and IoC needs at least 3x as much hp. Have you looked at the scoreboard at the end of an ally IoC rush? The amount of healing being dished out is pathetic. The boss goes down so fast that I can get killed inside the hold and have the game over signal go while I'm still waiting for the hold gy ress to complete. Any defense play goes straight out the window with this idiocy.<br />
+<br />
+I don't understand what you're trying to say. You say a better fix would be to randomize start points, then you clearly prove that the only BG which DOES randomize start points (SotA) has the BIGGEST Horde victory percentage..?<br />
+<br />
+I think there are a few reasons why Horde's dominating most BGs, and I don't think it has too much to do with start points. <br />
+<br />
+Yeah, Horde racials are effortlessly stronger than Alliance's. Hopefully this'll be changed soon. <br />
+<br />
+Also, Horde, sitting in queue for a lot longer, would, I imagine, be more determined to make the most out of their more limited BG time than an Alliance player, who can get instant queues whenever and wherever they like. No-one likes sitting through a 12 minute queue just to lose over and over. Of course, no-one likes to sit through an instant queue just to lose over and over either, but it's still a factor. This doesn't solve the mystery that Horde have longer queue times to begin with, it might simply help explain why Horde win more often than Alliance.<br />
+<br />
+Thirdly, perhaps the age-old adage is correct - more PvPers choose Horde because they look more &quot;badass&quot;, or &quot;warlike&quot;. This is obviously completely subjective, but it's been going around since Vanilla, and I certainly haven't seen any evidence to the contrary.<br />
+<br />
+IoC was always a completely flawed BG. There's simply no mechanic WHATSOEVER to force or guide players into mass PvP conflict. It almost ENCOURAGES you to avoid the other faction, which is retarded. Sure, there are exceptions, but there always are.<br />
+<br />
+As for AV - anyone who's played in the old days weeps for what once was. Sure, it's faster now, but who fucking cares? I wouldn't trade fun for speed any day, month or year. It's no longer a battle of push and shove, it's just a rush to the end hoping that your towers stay capped and theirs don't. Where do I sign up!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">illumnat</div><div class="date">2014-01-20, 11:57 PM</div></div><div class="posttext">I strongly argue with a lot of those percentages given how long I've been playing this game. If anything, those percentages should either be<br />
+in favor of the alliance over Horde, or have the margins shorter. I don't recall Horde winning more, even by a little bit than the other side.<br />
+<br />
+AV though, that I will contest is primarily won by Alliance. Rightfully so, the landscape is tailor made for them. Horde have to cross a bridge<br />
+for crying out loud, its the best chokepoint for people to play defensively. There's a lot more landscape for them to travel to our base than<br />
+vice versa, superior towers and a helluva lot less defense at the base compared to Alliance (all those cluttered enemy NPCs that players pull)<br />
+and its skewed in their favor.<br />
+<br />
+<br />
+As a Horde player... we have 2 really good choke points. The choke point at Iceblood GY and the choke point on the hill leading up to our base. It's just a question of if enough Horde are willing to play defensively for it to matter.<br />
+<br />
+There is only one way past Iceblood. You need to have a stacked defense there though. Some up front towards where the roads come together just past IB tower and some a little further back by Tower Point to catch the stragglers that make it through.<br />
+<br />
+We can hold off the Alliance indefinitely at our gate if we're willing to do it. I've played in some Horde AV premades where we have a strat called &quot;Sweaty Armpits.&quot; Basically, we let the Alliance take all of our towers and wait for them at our base. We then hold them off at our gate and whittle them down until they run out of reinforcements. Yeah... it takes quite a while, but it is doable... even with as few as 20 in the premade.<br />
+<br />
+The bridge is a great chokepoint as well, but it's not insurmountable. Horde has to make a concerted group push across the bridge and through the Alliance that are fighting at the end of it. Too often, Horde stops on the bridge and doesn't push through. In order to succeed on the bridge, they need to rush as a group straight through to the aid station and cap it to keep the Alliance from rezzing back there.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BobAwesome</div><div class="date">2014-01-21, 01:05 AM</div></div><div class="posttext">GotN is garbage. If it were a flat 20% heal, then maybe. But it's not, it's over 15 seconds. And it's on a 3 minute CD. That is shit. Sprint is ok. Escape Artist is ok because it doesn't do much for real crowd control. It just fixes movement. It's not like breaking out of a REAL CC that keeps you from being able to cast or attack and there is no DR for slows or snares which reduces its effectiveness when the effect can just be reapplied almost instantly. Shadowmeld is ok because it drops you from being a target and stealths you. That's nice. Stoneform, again, is only ok. The weapon specializations? Meh. So you get a very slight increase in constant damage. Considering most PvP favors burst over sustained damage (due to healers almost always being OP), the weapon specializations are nothing great.<br />
+<br />
+And, by the way, I never said they had no uses. I said they were worse than Horde racials.<br />
+<br />
+Yeah stoneform is soooooooooooo good and escape artist is probably the most insane skill in the game, there is 1 good racials for PvP on alliance, 1, unless you are totally out of this world crazy ofcourse, and that's Every man for himself.<br />
+<br />
+Yeah, but EMFH is better than any other racial for pvp. You get a free trinket. There's nothing better than that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bluespirit</div><div class="date">2014-01-21, 01:11 AM</div></div><div class="posttext">The fact that Blizzard haven't balanced alterac valley disturbs me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Otaka</div><div class="date">2014-01-21, 01:17 AM</div></div><div class="posttext">and horde want IoC and AV removed cos its &quot;unbalanced&quot;<br />
+<br />
+Alliance has huge advantages in both bgs if you didnt know.<br />
+<br />
+in isle they can reach docks alot faster, and docks is instant win. <br />
+in AV horde has far worse base defense NPC-wise so its piss easy for alliance to cap the towers and protect them too. (horde archers cant shoot inside, in alliance towers atleast 2 archers can prevent flag capture, Dun Baldar gy can be interrupted by alliance tower archers)<br />
+<br />
+Big inbalance in design is the reason why alliance has such big win ratio in AV and Isle. :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemonpartyfan</div><div class="date">2014-01-21, 01:33 AM</div></div><div class="posttext">Alliance has huge advantages in both bgs if you didnt know.<br />
+<br />
+in isle they can reach docks alot faster, and docks is instant win. <br />
+in AV horde has far worse base defense NPC-wise so its piss easy for alliance to cap the towers and protect them too. (horde archers cant shoot inside, in alliance towers atleast 2 archers can prevent flag capture, Dun Baldar gy can be interrupted by alliance tower archers)<br />
+<br />
+Big inbalance in design is the reason why alliance has such big win ratio in AV and Isle. :D<br />
+<br />
+Archers are really a non issue. You can just have one person aggro and kill them while another caps. Horde has a better base. Its easier to defend FW keep. You run uphill, through gates, into a tiny room, then uphill again between towers. Horde and their archer can stand around/in towers and just aoe and defend. SPGY is easy to assault as Horde. I always just stand on top of the mountains surrounding it and rain fire upon the silly Alliance. Balinda is also much easier than Galv.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moglock</div><div class="date">2014-01-21, 02:09 AM</div></div><div class="posttext">And those graphs are 100% of the reason why I, as horde, have had AV and IoC blacklisted from the very day blacklisting was introduced. It was truly upsetting when I began leveling my Hunter and forgot about blacklisting and ended up in an AV. First and only time that will happen on that character. 80-20 is unacceptable. Maybe Horde bailing on them has made it worse but it was never even close to balanced.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SirBadass</div><div class="date">2014-01-21, 02:26 AM</div></div><div class="posttext">I see a few posts saying Horde is better due to racials...<br />
+<br />
+Anyone mind saying how Horde racials are better than Alliance?<br />
+More damage/burst racials, as well as the AoE Stun/Silence.<br />
+<br />
+Beyond that, it's just a self-fulfilling prophecy. Horde is viewed as the 'better' faction, so many of the better players switch to Horde, leaving the Alliance with the worse players. You'll notice that most of the top rated teams in both rated battlegrounds and 3v3/5v5 arena are Horde. At that point it's not about FOR THE HORDE vs FOR THE ALLIANCE, just minmaxing for any possible advantage you can get.<br />
+<br />
+PvE is in a similar position, with many of the top Alliance guilds switching to Horde.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fahrenheit</div><div class="date">2014-01-21, 04:01 AM</div></div><div class="posttext">More damage/burst racials, as well as the AoE Stun/Silence.<br />
+<br />
+Beyond that, it's just a self-fulfilling prophecy. Horde is viewed as the 'better' faction, so many of the better players switch to Horde, leaving the Alliance with the worse players. You'll notice that most of the top rated teams in both rated battlegrounds and 3v3/5v5 arena are Horde. At that point it's not about FOR THE HORDE vs FOR THE ALLIANCE, just minmaxing for any possible advantage you can get.<br />
+<br />
+PvE is in a similar position, with many of the top Alliance guilds switching to Horde.<br />
+<br />
+It really got bad during MoP when a number of top Alliance PvE guild went Horde due to racial imbalances. It started a bit of a domino effect that most certainly bled into PvP, look at the the top arena teams or RBGs teams, almost all are horde. The actual players by and large on both factions are of equal skill and gear in random BGs, it's all about racials and success breeding success at this point. <br />
+<br />
+I've been playing for a long time strictly as a solo queuing type from random BGs and it was NEVER this bad. I'm not sure what Blizzard can do though, if they just equalize racials, why would all the people who faction swapped to horde come back to the alliance? Faction pride? People don't really care about that, it's about min/maxing and no one will be spending money for no reason.<br />
+<br />
+If they &quot;just&quot; equalize the racials there wouldn't be incentive for top pve and pvp players to come back to the alliance. But something needs to be done, it's just unfun to have to use something like oqueue or you lose 6 or 7 out of 10 games.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc61f52dddc1</div><div class="date">2014-01-21, 06:52 AM</div></div><div class="posttext">Docks are not the reason alliance wins so often. In most games glaives don't even reach the horde fortress. For some reason horde insists in taking workshop and demolishers. Demolishers can be destroyed quite easily by 4-5 people. Result: 15-20 horde players are just standing in front of the gate just doing nothing. It's just bad tactics not the map.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9725088499</div><div class="date">2014-01-21, 08:10 AM</div></div><div class="posttext">Did anyone calculate the total percentages, ie. which faction wins more overall?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shon237</div><div class="date">2014-01-21, 08:29 AM</div></div><div class="posttext">Yeah, Alliance have a landslide on IoC/AV ... but Horde wins every other BG by a sizable margin. I don't think they have a right to bitch.<br />
+<br />
+<br />
+Horde ques are basically 5 to 6 times longer. (10 to 12 minute ques on average). Most horde, including me don't que for 40 man bg's. For me I despise these because they are more PVE and PVP. People just zerging to bosses.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elite Peon</div><div class="date">2014-01-21, 09:35 AM</div></div><div class="posttext">Archers are really a non issue. You can just have one person aggro and kill them while another caps. Horde has a better base. Its easier to defend FW keep. You run uphill, through gates, into a tiny room, then uphill again between towers. Horde and their archer can stand around/in towers and just aoe and defend. SPGY is easy to assault as Horde. I always just stand on top of the mountains surrounding it and rain fire upon the silly Alliance. Balinda is also much easier than Galv.<br />
+<br />
+I know what you are saying it is a bit unbalanced but not so much the horde would lose that much . Notice the other thing about those 2 BG's is that they have a PVE side to them . Over the years I notice most horde players will totally ignore the BG objectives in AV and Isle so they can kill alliance players ...for example Horde rarly guard towers or grave yards . The funny thing is the horde would win almost ALL AV's if they would turtle the alliance at Galv ...forces alliance back to the starting cave and then the horde bottle neck them at the northern pass ...and win by reinforcements</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemonpartyfan</div><div class="date">2014-01-21, 10:36 AM</div></div><div class="posttext">I know what you are saying it is a bit unbalanced but not so much the horde would lose that much . Notice the other thing about those 2 BG's is that they have a PVE side to them . Over the years I notice most horde players will totally ignore the BG objectives in AV and Isle so they can kill alliance players ...for example Horde rarly guard towers or grave yards . The funny thing is the horde would win almost ALL AV's if they would turtle the alliance at Galv ...forces alliance back to the starting cave and then the horde bottle neck them at the northern pass ...and win by reinforcements<br />
+<br />
+Every time I see Horde win this is how they do it. For some reason, they don't though. I guess all the players that know how do play AV blacklist it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spaceshaman</div><div class="date">2014-01-21, 11:14 AM</div></div><div class="posttext">Although I stopped playing WOW when Cata came out and my memory of WOW has started to become foggy and distant long ago, I think this was the big picture of PVP throughout from classic to WOTLK. It's a shame back then Blizz released only BS data claiming horde-alli win ratio was 50%-50%. Anyway, very nice job at data mining! Great post.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-21, 11:26 AM</div></div><div class="posttext">Did anyone calculate the total percentages, ie. which faction wins more overall?<br />
+<br />
+Horde ~52.5% and Alliance ~47.5%.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alopex Major</div><div class="date">2014-01-21, 12:51 PM</div></div><div class="posttext">So you don't think Stoneform, a 20% heal, Escape Artist, a sprint or Shadowmeld have any uses in pvp? Lets not forget the weapon specializations that allow you to gem/reforge/gear for more damage...<br />
+<br />
+<br />
+Haha, Shadowmeld? You're joking, right? <br />
+<br />
+Go ahead and PVP as Alliance if you think their racials are so great for it.<br />
+<br />
+And I don't understand people talking about &quot;Horde players&quot;. Every single person I know who plays WoW has characters of both factions. Which means there's something other than the player skill level happening here.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca20fa69a21</div><div class="date">2014-01-21, 12:54 PM</div></div><div class="posttext">Although I stopped playing WOW when Cata came out and my memory of WOW has started to become foggy and distant long ago, I think this was the big picture of PVP throughout from classic to WOTLK. It's a shame back then Blizz released only BS data claiming horde-alli win ratio was 50%-50%. Anyway, very nice job at data mining! Great post.<br />
+<br />
+It was a lot more balanced in Wotlk and beforehand. This is the same data mining proces done at the start of Cataclysm and a year beforehand (start of Icc patch): <br />
+<br />
+http://www.mmo-champion.com/content/2187-Battleground-Horde-Alliance-Win-Ratio-Setup-of-the-Month<br />
+<br />
+There is a blacklisting feature now that enables players to remove two (or three?) bgs from the random bg queue, hence making every BG more unbalanced. And Every man for himself (human racial) was also A LOT stronger in Wotlk and Cataclysm.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2014-01-21, 01:15 PM</div></div><div class="posttext">Horde ~52.5% and Alliance ~47.5%.<br />
+<br />
+And this is why they aren't changing things. It's all screwed up, but this statistic is close to balanced, so whatever.<br />
+<br />
+Powerpoint engineering at its finest.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8dbfc1017b</div><div class="date">2014-01-21, 01:23 PM</div></div><div class="posttext">Can someone tell me if that stats are from US or EU???</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ElDoorO</div><div class="date">2014-01-21, 01:24 PM</div></div><div class="posttext">If everyone transferred off PVP servers who didn't want to PVP, they would become ghost towns, and have to be merged.<br />
+<br />
+I have been on a PVP realm for more than 6 years, there's never been any WPVP ... just the occasional ganking.<br />
+<br />
+My experience was different.<br />
+A guildie was fishing. Got ganked. Normally it's a gank 'n run. This person camped them. We came in and killed them. They called in more friends. It became a large event. It.Was.Fun.<br />
+<br />
+Perhaps you have never experienced that -- and if so, and if you enjoy pvp, then I'm sad you weren't able to see such shenanigans.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Warlord Booty</div><div class="date">2014-01-21, 01:25 PM</div></div><div class="posttext">I'm shocked the SotA is such a landslide. <br />
+<br />
+We all know AV is Alliance slanted, we are 30 seconds slower, and that's why we lose. Those 30 seconds are killing the archers/being slowed by the archers. <br />
+<br />
+IoC... I honestly have no idea why we lose. <br />
+<br />
+It comes down to Alliance avoiding PVP and the Horde looking for it. AV/IoC is a PVE zerg? Nah. AV, not only are we 30 seconds slower, but alliance ALWAYS backcaps and horde does this 5% of the time. Even when we do guard the towers, those 4-5 people get overrun by the 12-15 alliance that are backcapping.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7e81579803</div><div class="date">2014-01-21, 01:27 PM</div></div><div class="posttext">I understand why they've slight decreased the difficulty of the last bosses but I still feel like I have cheated if I don't get to kill it as it was made.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HerrDrache</div><div class="date">2014-01-21, 01:47 PM</div></div><div class="posttext">And why is that exactly? <br />
+<br />
+I can't expect to clear normal raids with PVP gear, why should we let PVE'ers do &quot;normal&quot; BGs with their gear?<br />
+<br />
+I would liken normal BGs to &quot;normal/heroic dungeons&quot; and not &quot;normal raids&quot;. That being said, I would fully expect you to be able to clear any LFR in mostly PvP gear as DPS or one of the healers.<br />
+<br />
+I would not expect PvE gear to work well in rated BGs and arenas, though, just as I would not expect PvP gear to work in normal and heroic raids.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocefe5057e27</div><div class="date">2014-01-21, 02:31 PM</div></div><div class="posttext">Just look at Strand of the Ancients. <br />
+<br />
+This BG is the exact same for Horde and Alliance, yet in this case Horde has outplayed Alliance which should tell us that in the polled players the average Horde player was simply a better PVP player otherwise it is hard to explain the gap for a BG that is identical for both factions.<br />
+<br />
+Outside of AV and IoC all BGs are reasonably close, Horde has outperformed Alliance a little bit but not as bad as they did during Strand of the Ancients which is identical.<br />
+<br />
+Everyone knows how imbalanced AV and IoC are and it's time Blizzard fixes this and don't give me this &quot;take this away from alliance&quot;. That is total crap, everyone wants fair and fun BGs and not BGs that are simply looked at free win grinding.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">helmaroc</div><div class="date">2014-01-21, 03:45 PM</div></div><div class="posttext">I guess people are afraid that if they balance IoC and AV that the Horde will start to dominate and the alliance wins will be unbalanced compared to now. AV I understand because of chokepoints but with the damn Isle, Really Horde? All you have to do is destroy the docks and disregard the stupid ass workshop. Why does the Horde always go for the damn workshop when you can just use superior manpower and take the docks away from the alliance?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocefe5057e27</div><div class="date">2014-01-21, 03:53 PM</div></div><div class="posttext">Because the docks are a losing battle.<br />
+<br />
+Horde can't get there before it is already tapped and then you can't win there simply and even if you kill the glaives there are still the catapults that brings alliance into the fortress quickly while the Gunship... well the Gunship is awful.<br />
+If Docks were not so good why are Alliance players afraid of moving the flag position on docks and gunship so that they are equally far from each spawn point? It's a simple solution.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Royalite</div><div class="date">2014-01-21, 04:24 PM</div></div><div class="posttext">The problem with AV isn't AV. The problem is being able to blacklist battlegrounds. In 2011 the win ratio was a lot more balanced: 54 to 46 compared to ~20ish to ~80ish now.<br />
+Most horde blacklist AV so it is just filled with bots.<br />
+<br />
+The blacklist is why the win ratio is so unbalanced now not the map.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frankyice</div><div class="date">2014-01-21, 04:52 PM</div></div><div class="posttext">The simple fact that Horde shows such a major advantage in every BG that is entirely or nearly identical for both factions shows that Horde is better at PvP.<br />
+<br />
+We can disagree about the reasons. Personally, my opinion is that the average Horde player is probably older and more experienced. They are also probably more likely to look at all aspects of their character and options before making a race decision (instead of simply choosing someone that looks like them anthropomorphically, like Alliance races).<br />
+<br />
+These factors generally favor Horde, because the minor advantage in racials (yes, Horde's are better, but this is a very minor actual BG difference) causes better players to join Horde more often and THAT is what makes the huge difference.<br />
+<br />
+Alliance PvP racials: Every Man for Himself (strong, frees up a trinket slot), Stoneform (weak), Gift of the Naaru (weak/medium), Escape Artist (medium), Shadowmeld (weak), Darkflight (weak)<br />
+<br />
+Horde PvP racials: Blood Fury (weak), Hardiness (weak/medium), War Stomp (strong, probably the strongest PvP racial), Berserking (weak/medium), Da Voodoo Shuffle (weak), Will of the Forsaken (medium, would be strong without shared CD), Touch of the Grave (weak), Arcane Torrent (strong, probably the 2nd strongest PvP racial), Rocket Jump (weak, probably the weakest PvP racial, Goblins probably worst race for PvP)<br />
+<br />
+So out of that list, War Stomp and Arcane Torrent make great differences. But Human is probably 3rd best race for PvP. The difference I suppose being that overall, there are just MORE in the Horde list. But again, this doesn't explain the UNGODLY disparity between Horde/Alliance on mirror maps.<br />
+<br />
+Therefore, Horde is better at PvP (on average).<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I guess people are afraid that if they balance IoC and AV that the Horde will start to dominate and the alliance wins will be unbalanced compared to now. AV I understand because of chokepoints but with the damn Isle, Really Horde? All you have to do is destroy the docks and disregard the stupid ass workshop. Why does the Horde always go for the damn workshop when you can just use superior manpower and take the docks away from the alliance?<br />
+<br />
+Because Alliance is closer to Docks flag. Period. And it's significantly closer. Alliance can cap that flag BEFORE Horde arrives, and then it's just such a cluster so that it doesn't matter that Horde can eventually take it because it takes longer than a minute to down the 20 Alliance that went Docks and glaives will be up by then. And saying that all you have to do is down the glaives doesn't negate the fact that you get them. Basically, the Horde is forced to play D no matter what while Alliance doesn't ever have to play D to win. And that's what makes that BG unbalanced. If they just moved that Docks flag about....15-20 yards north, that place would be dramatically different. The other 2 nodes are basically equidistant.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2014-01-21, 08:54 PM</div></div><div class="posttext">Because Alliance is closer to Docks flag. Period. And it's significantly closer. Alliance can cap that flag BEFORE Horde arrives, <br />
+<br />
+If alliance does that, and the horde don't suck, the fight will still be going on when the glaives spawn. At that point, the glaives are indefensible and will die.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemonpartyfan</div><div class="date">2014-01-21, 11:14 PM</div></div><div class="posttext">I'm shocked the SotA is such a landslide. <br />
+<br />
+We all know AV is Alliance slanted, we are 30 seconds slower, and that's why we lose. Those 30 seconds are killing the archers/being slowed by the archers. <br />
+<br />
+IoC... I honestly have no idea why we lose. <br />
+<br />
+It comes down to Alliance avoiding PVP and the Horde looking for it. AV/IoC is a PVE zerg? Nah. AV, not only are we 30 seconds slower, but alliance ALWAYS backcaps and horde does this 5% of the time. Even when we do guard the towers, those 4-5 people get overrun by the 12-15 alliance that are backcapping.<br />
+<br />
+Where does the Horde/Alliance wave meet?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Necrotix</div><div class="date">2014-01-22, 03:48 AM</div></div><div class="posttext">Ah yes, typical Horde. Whining as usual.<br />
+<br />
+The stats just show that generally, the alliance are better at PvE. Also, most players are alliance. We are a majority. Not everyone wants to be playing as ugly orcs, trolls or cows. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vaelkyri</div><div class="date">2014-01-22, 07:55 AM</div></div><div class="posttext">Issue is IOC has ZERO to do with map balance.<br />
+<br />
+Here is the problem.<br />
+<br />
+<br />
+https://www.youtube.com/watch?v=YKUyeN4kKLo</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryme</div><div class="date">2014-01-22, 11:26 AM</div></div><div class="posttext">i agree, so let us have those 2 while u have the rest<br />
+<br />
+I'd rather they were all balanced, which they nearly are, the outliers are problems - I'm sorry if you can't see that.<br />
+<br />
+<br />
+<br />
+for crying out loud plzzzzz stop using this as an excuse<br />
+all it takes is 2 ppl out of 40 to kill both glaives, 1 if ur exceptionally skilled, they only have 1.2mill hp, thats pretty weak as it is<br />
+<br />
+same can be said abt av, i havnt been to drek in ages as i always go with 3-4 ppl including myself to back cap towers<br />
+80% of the time there is only 1-2, 3 tops defending the towers<br />
+the times i lost av is when horde have like 5-7 players back capping and wipe us out and our tower defenders<br />
+<br />
+I know, that's why I put in casual/pug groups - I've never played IoC outside of this format, but I imagine getting your group to send over a small division of stealth/burst DDs is a lot easier when the group isn't made up entirely of people with a split division of tactics.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frankyice</div><div class="date">2014-01-22, 06:02 PM</div></div><div class="posttext">A lot of this is also about inertia. Alliance have won AV / IoC so much that it's a self-fulfilling prophecy on Horde side.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kamelioe</div><div class="date">2014-01-22, 10:16 PM</div></div><div class="posttext">bg's are good for melee only. they ruin them with all the stun b.s, and the general education of bg's needs to be explained to alliance mostly. something like in this battle the object is to get a horde flag have it carried and protect from your entire group when the flag carrier is safe have a team go retrieve the alliance flag and please notice the healers healing the flag. also explain do not stand in the middle attacking anything they can. education is a huge must in bg,s</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">sidhebane</div><div class="date">2014-02-07, 11:41 AM</div></div><div class="posttext">That is wrong dude.Lets see how your statistics are at 50/50 w/l for both factions.<br />
+AB-H60% vs A40% (that is 10% in favor of horde to the mark of 50/50 that the ideal w/l should be for both factions),i dont know where u pull the 20% crap<br />
+WG-H47,4% vs A52,6 (that is a 2,6% in favor of Alliance) not that big deal (u called that 6% remember ideal w/l should be 50%-50% for both factons<br />
+EotS-A44,4% vs H 55,6% (5,4% in favor of Horde)<br />
+Strand-A31,7% vs H68,3% (18,3% in favor of Horde) <br />
+AV-A78,2% vs H21,8% ( 28,2% in favor of Alliance)<br />
+IoC-A84,9% vs H15,1% (34,9% in favor of Alliance)<br />
+Twin Peaks-A42,7% vs H57,3%(7,3% in favor to Horde)<br />
+BfG-A42,1% vs H57,9%( 7,9% in favor to horde)<br />
+ToK-A41,9% vs H58,1% (8,1% in favor to horde)<br />
+Silvershard mines-A35,5% vs H64,5% (14,5% in favor to horde)<br />
+Deepwind-A42,1% vs H57,9% (7,9% in favor to horde)<br />
+<br />
+Now if you look at all statistics it is true that horde win ratio is better than alliance on most bgs,but u have to admit that the difference in w/l is not that great.I mean come on in 10 games played on many of those bgs alliance wins 4 and horde wins 6 (w/l &lt;10%)<br />
+It's true that Strand 18,3% and silvershard 14,5% which favors the horde are a bit high and they should take a look at them(but its mostly player skill and such).<br />
+Now take a look at AV/IoC (28,2% and 34,9%).Don't you see something wrong there?<br />
+My point in all this is that most bgs that people say its horde dominated,the w/l ratio between both factions are &lt;10% and are close to the 50/50.But IoC and AV w/l ratio is too overwhelming.<br />
+<br />
+If i were to blame anyone i would probably blame the hk premades which are made especially by the russian servers.<br />
+<br />
+Not sure how your math works. A horde/alliance win ratio of 60/40 doesn't mean a &quot;10% in favor of horde&quot;. It means that the horde win 20 percentage points of the time more than alliance (60 minus 40). It also actually means that the horde win 50% more often than alliance (60 is 150% of 40). These numbers mean slightly different things, but they are both correct, and in neither case is &quot;60 is 10 more than 50&quot; actually relevant to anything</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">VeraeliaBlack</div><div class="date">2014-02-18, 07:36 PM</div></div><div class="posttext">In AV, Horde used to be able to mount inside the gate at the starting tunnel. Alliance wasn't able to, and I suspect that largely evened out the distance/time that the two sides had. Now, Alliance is across and almost at Galv before Horde are even off the GY at Iceblood. Couple that with the jumping-the-fence thing, and it's going to be Alliance dominated. Glaives are overpowered, and most Horde go Workshop in IoC - most of them trying to do the cheapshot of getting Demos and sitting at the keep GY to one-shot people rezzing, which Alliance figured out by just steamrolling them with Glaives. If you bust the Glaives, it's almost certain Horde is going to win it. <br />
+<br />
+The real issue isn't the fact Alliance dominates those two BGs, the issue is that Horde absolutely crush Alli in any BG that doesn't have a PvE standpoint/can't be zerged. I've got Strand and Temple blacklisted, because I can't stand either of them; Strand, it's usually whoever's on the Offensive first wins. Horde just seem to start on O more than we do. Not sure what controls that, but I imagine balancing that out would make that one a lot more even. Over a third of all the Strands I've ever done, end up being a turtle at Yellow with people camping the stairs to stop bombs. Not very fun, just an attrition war (like most of the non-zerg AVs and IoCs turn into). People have been saying that Horde racials/PvP elements are way too strong, ever since Vanilla, and maybe now Blizz will pay attention to that fact. I'm seconding that they do comparisons with data pre-blacklisting option to get a better handle on what's adjusted what where, and how the changes between those times have reflected.<br />
+<br />
+But I honestly doubt even with this, the only thing that will happen is a hard nerf to Alliance in AV and IoC. If nothing changes as far as making it more even so that Horde doesn't absolutely smash Alliance in the other 9 BGs anymore, I doubt I'll be even bothering with PvP post getting my Battlemaster/Khan finished. I play Horde as well, but it's not fun when your team sits and GY camps the other side. Might be good for a laugh every once in a while, but when it happens all the time, it's hardly a thrill, or very sportsmanlike conduct.<br />
+<br />
+Tl;Dr - this needs to be fixed, but I highly doubt that it will be as far as balancing the other 9. Alliance is just going to see a hard nerf on the two we don't constantly lose, and non-arena/RBG PvP will continue to suck for Blue, and be amazing for Red (when they're not sitting in 45 min queues).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">PlutoEjecto</div><div class="date">2014-02-20, 04:04 AM</div></div><div class="posttext">There were so many issues with AV map being pro-alliance, and its only recently that Blizz has decided to address it is sad.<br />
+<br />
+If these balance issues were addressed 'sooner' I probably still be playing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">stochastics</div><div class="date">2014-03-20, 04:29 PM</div></div><div class="posttext">Can the article poster please post the Mathematics used to calculate the battleground win percentages for the past month?<br />
+How was the percentage calculated for a sample of 7 million players? What was/ how was the math done - please post your fumula or calculation used. I am also highly doubtful of the accuracy of posted win ratios if they are taken armory statistics because these statistics reflect a characters entire bg data since character creation which could have been 7 years ago.<br />
+<br />
+The win ratio's that i have arrived at are:<br />
+A horde players win probability when joining a random bg queue is ~80%( + or - 5%)<br />
+An Allaince players win probability when joining a random bg queue is ~24% ( + or - 5%)<br />
+<br />
+These win probabilities i posted above are derived from the data aggregation and its subsequent calculation using two different methods. One method is using a wow addon called reflex. The other method is a manual aggregation of statics of new character's statistics, meaning a new character created since the release of the MOP expansion. Both the data which was compiled and gathered by reflex, when calculated matched up with the win probabilities i have calculated by manual aggregation of bg statistics for a new character. My calculations are explained below. Different mathematical calculations and different data aggregation based on probability theory arrive at similar win probability ratios. Read the rest of the of the post to find out how to do these calculations.<br />
+<br />
+Here are my calculations and my understanding of how win ratio's should be calculated - BG stats that are not recent should not be used. Win probability calculated from over 1,2 , 3 or more years worth of PVP or more should not be used.<br />
+If you just created a new character in MOP and these were your statistics, this is how you would accurately calculate your Alliance random BG win probability for this season:<br />
+<br />
+Alterac Valley battles 25<br />
+Alterac Valley victories 18<br />
+Arathi Basin battles 13<br />
+Arathi Basin victories 5<br />
+Battle for Gilneas battles 8<br />
+Battle for Gilneas victories 2<br />
+Eye of the Storm battles 15<br />
+Eye of the Storm victories --<br />
+Strand of the Ancients battles 29<br />
+Strand of the Ancients victories 7<br />
+Twin Peaks battles 15<br />
+Twin Peaks victories 6<br />
+Warsong Gulch battles 12<br />
+Warsong Gulch victories 2<br />
+Silvershard Mines battles --<br />
+Silvershard Mines victories --<br />
+Temple of Kotmogu battles 2<br />
+Temple of Kotmogu victories 1<br />
+Isle of Conquest battles 29<br />
+Isle of Conquest victories 28<br />
+Deepwind Gorge victories 4<br />
+Deepwind Gorge battles 17<br />
+<br />
+Since you have no stats for silver shard mines, maybe because you blocked it, the total number of battlegrounds is 10 otherwise it should be 11. What this means is that you have a probability of 1/10 of getting into any of these battlegrounds from the random bg queue. This is important because we will now use this to calculate your overall battleground win probability when you join the random bg queue for PVP.<br />
+<br />
+your random bg win probability is:<br />
+(1/10) * (18/25)-Alterac +<br />
+(1/10) * (5/13)-Arathi +<br />
+(1/10) * (2/8)-Gilneas +<br />
+(1/10) * (0/15)-Eye of +<br />
+(1/10) * (7/29)-Ancients +<br />
+(1/10) * (6/15)-Twin Pks +<br />
+(1/10) * (2/12)-Warsong +<br />
+(1/10) * (1/2)-Kotmogu +<br />
+(1/10) * (28/29)-Isle of +<br />
+(1/10) * (4/17)-Deepwind +<br />
+<br />
+= .1 * .72 + .1*.384615 +.1*.25+.1*0+.1*.241379+.1*.4+.1*.16666+.1*.5+.1*.965517+.1*.235294<br />
+=.072 + .0384615 + .025 + 0 +.0241379 + .04 + .016666 + .05 + .0965517 + .0235294<br />
+<br />
+= .3863472721 * 100 = 38.6% win ratio in the random bg queue since MOP expansion<br />
+<br />
+Now let us calculate alliance win probability based on your stats without the big battlegrounds. We should be leery of the large PvE centric battlegrounds, which i believe have been adjusted to balance or rather i should say skewed to create a false sense of balance between factions in PvP. Now let us remove the two big PvE centric bgs from our calculation to find out a player's real win probability. If we remove the big battlegrounds which alliance has a high probability of winning evident by the stats posted; alterac valley and Isle of conquest. So then when we remove these two bgs from the queue we have a total of 8 possible random bgs that we will queue up for, hence 1/8 (this should be 1/9 but no stats given for mines). I will also remove the Kotmogu bg from this calculation because the sample space is too small to be accurate - basically this bg was played too few times only twice. Therefore the total number of battlegrounds are 7, hence 1/7. The following calculation should be the true measure of an alliance players win probability in the random bg queue:<br />
+<br />
+(1/7) * (5/13)-Arathi +<br />
+(1/7) * (2/8)-Gilneas +<br />
+(1/7) * (0/15)-Eye of +<br />
+(1/7) * (7/29)-Ancients +<br />
+(1/7) * (6/15)-Twin Pks +<br />
+(1/7) * (2/12)-Warsong +<br />
+(1/7) * (4/17)-Deepwind +<br />
+<br />
+= .14286*.384615 +.14286*.25+.14286*0+.14286*.241379+.14286*.4+.14286*.16666+.14286*.235294<br />
+= .239707 * 100 = 24% win probability for alliance players in the random BG queue.<br />
+<br />
+This 24% win probability for alliance feels right.<br />
+<br />
+Here is some data from a horde player who just recently created a fresh 90 in the MOP expansion. To find out the win probability in the Random bg queue of a horde player i used the following calculations ;<br />
+<br />
+(1/11) * (8/11)-Alterac +<br />
+(1/11) * (6/10)-Isle of +<br />
+(1/11) * (29/39)-Warsong +<br />
+(1/11) * (19/20)-Gilneas +<br />
+(1/11) * (17/21)-Arathi +<br />
+(1/11) * (17/19)-Twin Pks +<br />
+(1/11) * (9/11)-Ancients +<br />
+(1/11) * (7/8)-Kotmogu +<br />
+(1/11) * (4/4)-Mines +<br />
+(1/11) * (8/9)-Deepwind +<br />
+(1/11) * (7/25)-Eye of +<br />
+<br />
+=.090909*.727272+.090909*.6+.090909*.74359x+.090909*.95+.090909*.8095+.090909*.894736+.090 909*.818181+.090909*.875+.090909*1+.090909*.88888+.090909*.28<br />
+<br />
+=.78065398 * 100 = 78.06% probability of winning in the random bg queue for horde<br />
+<br />
+We should be leery of the large PvE centric battlegrounds, which i believe have been adjusted balance or rather i should say skewed to create a false sense of balance between factions in PvP. Now let us remove the two big PvE centric bgs from our calculation to find out a horde player's real win probability.<br />
+<br />
+(1/9) * (29/39)-Warsong +<br />
+(1/9) * (19/20)-Gilneas +<br />
+(1/9) * (17/21)-Arathi +<br />
+(1/9) * (17/19)-Twin Pks +<br />
+(1/9) * (9/11)-Ancients +<br />
+(1/9) * (7/8)-Kotmogu +<br />
+(1/9) * (4/4)-Mines +<br />
+(1/9) * (8/9)-Deepwind +<br />
+(1/9) * (7/25)-Eye of +<br />
+<br />
+=.111111*.74359x+.111111*.95+.111111*.8095+.111111*.894736+.111111*.818181+.111111*.875+.1 11111*1+.111111*.88888+.111111*.28<br />
+<br />
+= .806657 * 100 = 80.7% win probability in the random BG queue for a horde player<br />
+<br />
+When you compare this horde win probability to the alliance win probability i calculated earlier which was equal to a 24% win probability for alliance, both probabilities roughly adds up to ~100 with a + or - 5% error / deviation.<br />
+<br />
+Therefore i conclude that the horde are steam rolling alliance in battleground. My Statistics calculations show that they have a 80% win probability when joining a random bg queue. While alliance players have at best a 24% chance at winning a bg in a random bg queue. Please note that my statements are contingent to both of the large PvE centric battlegrounds being blacklisted and removed from win probability calculations.<br />
+<br />
+I have a theory that blizzard is aware of the steam rolling of alliance players in PVP and is therefore tweaking the PVE aspects of the large bgs to balance PvP between the factions. Because the statistics do not add up i suspect this. What i mean is that if the horde are steam rolling alliance in 9 out of 11 bgs by hudge margins then that begs the question why are they only losing in the big BGs that are PvE centric. <br />
+<br />
+<br />
+In regards to my calculations I did not cherry pick the data for my calculations. I also have not biased the results of the calculations by using my own data. In my calculations that i have posted i have used only the pvp stats posted by others in the battle form thread called &quot;Dispelling a myth - Alliance win ratio&quot;. I have also written out all my calculations and the reasoning behind them. I have specifically excluded the large PvE centric bgs from both the horde and alliance win probability for reasons i explained in my posts on this thread. I used only the recent PvP stats/data that was posted in that battle.net thread, This means recent stats, explicitly mentioned by posters which correspond to MoP expansion, not 3 or more years of pvp stats. I also used only the data from the first alliance player and the first horde player who posted their pvp stats in that very thread on blizzards forum. <br />
+<br />
+A horde players win probability when joining a random bg queue is ~80%( + or - 5%)<br />
+An Allaince players win probability when joining a random bg queue is ~24% ( + or - 5%)<br />
+<br />
+An alliance players win probability when including the 2 PvE bgs is about 38%<br />
+A Horde players win probability when including the 2 PvE bgs is about 78%<br />
+<br />
+There is almost no difference in a horde players overall random bg win probability, a 2% difference when including or excluding the 2 big PvE centric bgs. However there is a big difference for an alliance player, a 14% difference in the random bg win probability for an allaince player if the 2 large bgs are included or excluded.<br />
+<br />
+How come a horde player only has a 2 percent difference in their win probability from the inclusion or exclusion of the two big bgs(alterac &amp; isle of..) while alternatively the alliance player has a huge percentage difference of about 14%?<br />
+<br />
+If you use the reflex wow addon can also accurately calculate your win ratio . The following reflex data was taken from a horde poster in the same battle.net thread. If the reflex calculations are 8 to 31 or 8:31 then you can calculate your win ratio like so:<br />
+<br />
+When odds of losing an event are A:B<br />
+Then the probability that you will lose the even is P(E')= (A)/(A+B)<br />
+Where P(E') is the probability that the event will not occur.<br />
+<br />
+So in your case the odds given by reflex were;<br />
+8:31 = (8)/(8+31) = (8)/(39) = .205128 * 100 = 20.5% chance of losing in the random bg queue.<br />
+<br />
+In order to get your random BG win probability you would need to subtract the probability of losing the random BG from the total sample space. By the first axiom in probability your calculated win or losing probabilities must be between 0&lt;P(E)&lt;1. By the second axiom of probability theory the total sample space is 1, P(S) =1. There fore:<br />
+<br />
+P(Probability of Losing bg ) - 1 = |P(probability of wining BG) |<br />
+<br />
+.205128 - 1 = .7948 * 100 = 79.5% chance of winning a bg in the random bg queue<br />
+<br />
+An alternative way of calculating the win ratio is by If reflex shows that you won 31 bgs and lost 8 bgs, then you have played 39 total games<br />
+<br />
+31/39 * 100 =79.49% wins in BGs recently, this would be your most up to date win ratio with bg sample space data gathered and compiled by the addon reflex.<br />
+<br />
+The win probabilities compiled and gathered by reflex when calculated match up with the win probabilities i calculated using different mathematical calculations based on probability theory. Hence i believe that my predictions about alliance and horde win probability are arguably valid because similar probability is arrived at by the add-on reflex's bg win/played data aggregation which is then calculated and computed differently from the calculations and data aggregation i used based on probability theory with different sample spaces of different players. <br />
+<br />
+Therefore:<br />
+A horde players win probability when joining a random bg queue is ~80%( + or - 5%)<br />
+An Allaince players win probability when joining a random bg queue is ~24% ( + or - 5%)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-03-21, 12:36 AM</div></div><div class="posttext">I am also highly doubtful of the accuracy of posted win ratios if they are taken armory statistics because these statistics reflect a characters entire bg data since character creation which could have been 7 years ago.<br />
+<br />
+<br />
+<br />
+To find these numbers, we compared the number of battles and victories a character had in a December snapshot of data to a January snapshot of data.<br />
+<br />
+As for the rest of your post, this isn't something we talked about at all, just individual battleground ratios. If you wanted to combine win ratios in this post with weights from these numbers (http://www.mmo-champion.com/content/3697-Armory-Stats-BG-Popularity-Connected-Realms-Blue-Posts-Blue-Tweets-FCM-Poll), you could repeat your wall of calculations.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

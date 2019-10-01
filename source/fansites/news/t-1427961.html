@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="pet, battles, the, someone, with, that, have, other, number, has, doing, show, pair, something, words, data, even, 100, from, people, actually, ~35%, tried, its, guess, trained, and, pets, never, way, who, hasnt, bothered, can, stats, art, fan, collection, blue, tweets, veil, winters, give, some, captured, they, along, armory, while, battle" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2012/july/wowmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; TCG Pets Giveaway - Day #1 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Common Situations with the Three Resources Part 3, MLG/ManaGrind Weekend Tournaments 
+ 
+Armory Stats - Battle Pet Collection 
+Today we are taking a look at the battle" />
+<title> Armory Stats - Battle Pet Collection, Blue Tweets, Winter's Veil Fan Art [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Battle Pet Collection, Blue Tweets, Winter's Veil Fan Art</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1427961.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1427961-Armory-Stats-Battle-Pet-Collection-Blue-Tweets-Winter-s-Veil-Fan-Art">Armory Stats - Battle Pet Collection, Blue Tweets, Winter's Veil Fan Art</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2013-12-27, 09:27 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2012/july/wowmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; TCG Pets Giveaway - Day #1 (http://www.mmo-champion.com/content/3652-TCG-Pets-Giveaway-Blue-Tweets-Dark-Legacy-Comics-421)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Common Situations with the Three Resources Part 3, MLG/ManaGrind Weekend Tournaments (http://www.hearthpwn.com/news/241-common-situations-with-the-three-resources-part-3)<br />
+<br />
+Armory Stats - Battle Pet Collection<br />
+Today we are taking a look at the battle pet ownership achievement completion rate of players. Now that achievements are account wide, we can group characters by account and get an idea of what percentage of players (not characters) have completed an achievement.<br />
+<br />
+These numbers are based off of the players that have earned the achievements (http://www.wowdb.com/achievements/1017-can-i-keep-him) in the pet collection series and Raiding with Leashes (http://www.wowdb.com/achievements/7934-raiding-with-leashes), Raiding with Leashes II: Attunement Edition (http://www.wowdb.com/achievements/8293-raiding-with-leashes-ii-attunement-edition), Crazy for Cats (http://www.wowdb.com/achievements/8397-crazy-for-cats), and Celestial Family (http://www.wowdb.com/achievements/8519-celestial-family).<br />
+<br />
+The data used today is a sample of 8.1 million characters from 3 million accounts. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. You can leave suggestions for future stat posts in the comments!<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: ['#55C949']<br />
+});<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'petBattleCollect',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ '1 pet', '15 pets', '25 pets', '50 pets', '75 pets', '100 pets', '125 pets', '150 pets', '250 pets', '400 pets'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+max: 100,<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.point.name + ' unique pets&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Collected Unique Pets',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [<br />
+{<br />
+data: [{y: 99.9, color: '#81CCAA', name:'1'},{y: 90.2, color: '#81CCAA', name:'15'},{y: 81, color: '#81CCAA', name:'25'},{y: 60.4, color: '#81CCAA', name:'50'},{y: 46.1, color: '#81CCAA', name:'75'},{y: 35.6, color: '#81CCAA', name:'100'},{y: 27.9, color: '#81CCAA', name:'125'},{y: 22.6, color: '#81CCAA', name:'150'},{y: 11.1, color: '#81CCAA', name:'250'},{y: 5.0, color: '#81CCAA', name:'400'}],<br />
+<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+}<br />
+<br />
+]<br />
+<br />
+});<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'petBattleCollect2',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'Raiding with Leashes', 'Raiding with Leashes II', 'Crazy for Cats', 'Celestial Family'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.point.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Completed Misc Pet Collection Achievements',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [<br />
+{<br />
+data: [{y: 7.3, color: '#81CCAA', name:'Raiding with Leashes'},{y: 3.2, color: '#81CCAA', name:'Raiding with Leashes II'},{y: 2.9, color: '#81CCAA', name:'Crazy for Cats'},{y: 0.5, color: '#81CCAA', name:'Celestial Family'}],<br />
+<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+}<br />
+<br />
+]<br />
+<br />
+});<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;petBattleCollect&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+&lt;div id=&quot;petBattleCollect2&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+Blue Tweets<br />
+Warlords of Draenor<br />
+During WoD beta I hope you guys will be on the Beta forums with us all like GC did for Wrath, it would mean alot to us.<br />
+We definitely will. Beta is the time for lots of change, feedback and iteration. (Source (https://twitter.com/holinka/status/408304617093472257))<br />
+<br />
+Classes<br />
+Are Raid CDs gonna be looked at/rehauled in WoD?<br />
+We're looking at them, but nothing that we're ready to announce yet. (Source (https://twitter.com/Celestalon/status/408307281785155585))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk (Forums (http://www.mmo-champion.com/forums/341-Monk) / Skills (http://www.wowdb.com/spells/class-abilities/monk) / Talent Calculator (http://www.wowdb.com/talent-calculator#o))<br />
+Cool. Just one last question; how do you guys feel about WW's new mastery? worked out in the end? I like it b/c of chibrew now<br />
+Yeah, overall, Windwalker mastery (after several iterations) is looking fairly solid to us. Not perfect, but pretty good. (Source (https://twitter.com/Celestalon/status/408321951682154496))<br />
+<br />
+Any word on MW Monk Mastery? Currently scales horribly, and can be 100% negated by other players movement/lack of attention.<br />
+What do you think of the Detonate Chi talent we showed at BlizzCon? (Source (https://twitter.com/Celestalon/status/408304794969702400))<br />
+having it as a talent means when you're spec'd for the other talents your mastery still goes back to scaling horribly<br />
+What if it were baseline, not a talent? (Source (https://twitter.com/Celestalon/status/408305759982592001))<br />
+<br />
+Is the intent with fist stance that you pick it and stay in it the whole fight or swap based on high/low damage phases?<br />
+Swap based on phase is fine. Swap in between every few GCDs is not fine. (Source (https://twitter.com/Celestalon/status/408029630969290752))<br />
+<br />
+Character / Items<br />
+What's the chance on transmogging between Axe/Mace/Sword and Polearm/Staff? Bigger issue with changing primary stats in 6.0.<br />
+It's unlikely for both philosophical &amp; technical reasons. (Source (https://twitter.com/Dave_Maldo/status/408309981365026816))<br />
+<br />
+Will CDR trinkets change to Readiness rating in 6.0 to scale down as you level? Or going to be effectively &quot;turned off&quot; 100?<br />
+Yes, the SoO trinkets that the new stats are based on will likely change to the new stat, in 6.0. (Source (https://twitter.com/Celestalon/status/408298535101022208))<br />
+<br />
+PvE<br />
+Bosses bypass Armor quite often, is there changes to Armor incoming to make Bonus Armor more reliable?<br />
+No, that's kind of the intended interesting part of Armor. It's good against the dragon's claws, not so good against his breath. (Source (https://twitter.com/Celestalon/status/408081393583808512))<br />
+TBH I would appreciate it if things like Snapping Bite died a horrible death.<br />
+Snapping Bite was a problem because it resulted in a significant tank imbalance on that fight, not because it ignored armor. (Source (https://twitter.com/Celestalon/status/408092953513435136))<br />
+But the ignoring of armor is what caused the tank imbalance. Obviously I don't expect that to continue to be a thing.<br />
+We have abilities that ignore armor all the time. Usually they're done in such a way that it affects tanks equally, but not here. (Source (https://twitter.com/Celestalon/status/408093252693139456))<br />
+<br />
+PvP<br />
+Haven't really done much pvp in my 3 years playing wow Did a bit in wrath but thats about it What would you say I'm missing<br />
+Personally, I love the variety of gameplay that PvP offers. Competition rarely plays out the same way twice in a row. (Source (https://twitter.com/holinka/status/408391176673189888))<br />
+But, like any other part of WoW, your experience with PvP will have a lot to do with who you play with. (Source (https://twitter.com/holinka/status/408391257539346432))<br />
+<br />
+Why is it that the Vicious War Wolf isn't account wide, but the Skeletal Warhouse is? Please tell me it's an oversight.<br />
+The Vicious Skeletal Warhorse? As far as I know it is not account wide. (Source (https://twitter.com/holinka/status/408016330684518400))<br />
+<br />
+Btw are you gonna keep r1 and glad percentages the same? Everyone is stoked - gonna increase incentive to playz!<br />
+Our intent is to keep the relative number of rewards the same. Last season based on team count. This season on player count. (Source (https://twitter.com/holinka/status/407744725588783104))<br />
+Despite what the Internet would have you believe, a larger % of playerbase is doing 3s than previous seasons. But not 3x. (Source (https://twitter.com/holinka/status/407745072591953920))<br />
+Well sure - I'm just selfish and I wanna know if I should camp my grevious gladiator or no LOL :&gt;&gt;&gt;<br />
+We are taking a look at it. The fact that more people are on the ladder since no team is required increases the pool size. (Source (https://twitter.com/holinka/status/407750918474461186))<br />
+<br />
+<br />
+Fan Art<br />
+Today we have some Winter's Veil themed fan art!<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2013/december/thumb/wvArt0.jpg (http://d1eselxxxx.deviantart.com/art/An-Emerald-Christmas-World-of-Warcraft-422240147) http://media.mmo-champion.com/images/news/2013/december/thumb/wvArt1.jpg (http://linxz2010.deviantart.com/art/Christmas-422362683) http://media.mmo-champion.com/images/news/2013/december/thumb/wvArt2.jpg (http://el-grimlock.deviantart.com/art/Spirit-of-Winter-Veil-419755558)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Evlyxx</div><div class="date">2013-12-27, 09:52 AM</div></div><div class="posttext">Oh boy I thought I was casual with my pet collection. Seems I am in the top 5% though. I feel dirty now :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2013-12-27, 10:03 AM</div></div><div class="posttext">I have 532 unique pets and everything except the celestial family. Can't be bothered with the tournament. Not got any of the timeless isle ones either I don't think, maybe 1 or 2 at most.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tente</div><div class="date">2013-12-27, 10:08 AM</div></div><div class="posttext">I was expecting more pet collectors too, 0,5% on tournament looks too low :S</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Monstafish2k</div><div class="date">2013-12-27, 10:16 AM</div></div><div class="posttext">568 next week maybe 574 ! (Tuskarr Kite from TCG the only TCG pet thats missing on my list :c )</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Peacemoon</div><div class="date">2013-12-27, 10:30 AM</div></div><div class="posttext">The celestial family requires you obtain all 4 pets, which takes 10 victories. I have 2 pets and 4 wins but wouldn't show up on that chart. ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">steelslife</div><div class="date">2013-12-27, 10:41 AM</div></div><div class="posttext">Strange. Celestial Family is boring, but easy.<br />
+And i'm one of 5%, lol.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tumppu</div><div class="date">2013-12-27, 10:47 AM</div></div><div class="posttext">I have none of the raid pet collection achievements, because I prefer getting them as drops as opposed to buying. Also, I have abysmal luck with pet drops.<br />
+<br />
+But at ~460 pets, I seem to fit the top 5% despite not having any non in-game pets (TCG stuff etc).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2013-12-27, 10:47 AM</div></div><div class="posttext">That's 0.5% not 5%</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9cb242d19c</div><div class="date">2013-12-27, 10:48 AM</div></div><div class="posttext">My highest level pet is level 6 and i've been playing since MoP release, I can't say i'm not surprised most other people can't be bothered with it aswell.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc788bbee8c8</div><div class="date">2013-12-27, 10:51 AM</div></div><div class="posttext">Celestial Tournament is not popular. What a surprise.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">det</div><div class="date">2013-12-27, 10:52 AM</div></div><div class="posttext">I have 532 unique pets and everything except the celestial family. Can't be bothered with the tournament. Not got any of the timeless isle ones either I don't think, maybe 1 or 2 at most.<br />
+<br />
+Tournament looks challenging in a fun way and the pets look among the best. Alas..I couldn't be bothered so far...sitting at 559 pets according to yay mount...no idea if it counts doubles (Blizzard UI says I have 575 pets, so I guess it does)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MasterHamster</div><div class="date">2013-12-27, 11:03 AM</div></div><div class="posttext">Celestial Tournament is not popular. What a surprise.<br />
+<br />
+It takes 10 weeks to complete the achievement.<br />
+Judging the popularity by that makes little sense</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lmaster01</div><div class="date">2013-12-27, 11:08 AM</div></div><div class="posttext">I guess the reason why ppl doesn't have the RWLII is due Coilfang Strider, I for example needed every week since the achievement was availiable to get the freaking pet, while all the other was acquired in something like 2~3 weeks...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sainur</div><div class="date">2013-12-27, 11:32 AM</div></div><div class="posttext">I used to be a pet collector back in Cataclysm, back when 150 pets were considered to be a lot of pets that only a few people could ever dream of.<br />
+<br />
+Now with this silly Pokemon pet system, I no longer care about my pets. It's pointless and a waste of time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">greyghost</div><div class="date">2013-12-27, 11:33 AM</div></div><div class="posttext">I'd like to know the % of folks that have 500+ pets (I fall into that category, heh).<br />
+<br />
+The fact that more than a third of players have 100+ pets, though, really is impressive considering how much effort goes into getting that 100 pre-pet battles, either from pure collecting or actually going through and capturing pets in the wild.<br />
+<br />
+I'd say the pet battle feature is a success, compared to how many people I see bothering with Archaeology anymore.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cantor</div><div class="date">2013-12-27, 12:04 PM</div></div><div class="posttext">I guess the reason why ppl doesn't have the RWLII is due Coilfang Strider, I for example needed every week since the achievement was availiable to get the freaking pet, while all the other was acquired in something like 2~3 weeks...<br />
+I assume you don't get the concept of a random loot; it took you a long time to get the Stalker, and you were quick to get the other pets, but that has no reflection on anyone else - I got the Stalker on my first kill, for example, but am still waiting for the Netherspace Abyssal. Some people in my guild completed it the week it came out.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sam the Wiser</div><div class="date">2013-12-27, 12:12 PM</div></div><div class="posttext">I'm part of the .5% I'm just too good!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">solitha</div><div class="date">2013-12-27, 12:13 PM</div></div><div class="posttext">I used to be a pet collector back in Cataclysm, back when 150 pets were considered to be a lot of pets that only a few people could ever dream of.<br />
+<br />
+Now with this silly Pokemon pet system, I no longer care about my pets. It's pointless and a waste of time.<br />
+<br />
+You do realize you're talking about a game within a game right? Everything about WoW is pointless and a waste of time. That's kind of what a pastime is by definition.<br />
+<br />
+I didn't think I'd like it, and I'm not wild over it, but it's fun enough. My husband says it's boring, but he loves Hearthstone, which to me seems to be about the same in general pace. IDIC.<br />
+<br />
+Oh, and the Coilfang Stalker is not my sticking point; the Netherspace Abyssal is, which requires traversing the vast majority of Karazhan as well as soloing the Chess event. It's been more annoying than I want to deal with.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Acideyeliner</div><div class="date">2013-12-27, 12:24 PM</div></div><div class="posttext">I have 500+ unique pets but don't really have a strong team to do the Celestial tournament with. I'm sure I'm not the only one in the same boat. I collect rather than level them up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8ba596ddc7</div><div class="date">2013-12-27, 12:37 PM</div></div><div class="posttext">nice wow i guess the people who are in those 1% are really extremely dedicated to the pet battles, it's nice to see blizzard has something for everyone :D<br />
+<br />
+happy holidays</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb54112e783</div><div class="date">2013-12-27, 12:49 PM</div></div><div class="posttext">I honestly can't be bothered with battle pets but I have played now and again, it's just not what I signed up for. That said I've nothing against other players having fun with it and wish them all the most fun they can get out of pet duels if that's their thing. Horses for courses. Maybe in the future Blizz will release a dedicated battle pet arena game linked to a battle.net account and what pets have been collected over various or single WoW accounts.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spazzer</div><div class="date">2013-12-27, 12:51 PM</div></div><div class="posttext">I'm part of the .5% I'm just too good!<br />
+<br />
+This. I was thinking the other way around as I thought the ladder.<br />
+<br />
+~Spazzer</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">druvirus</div><div class="date">2013-12-27, 12:54 PM</div></div><div class="posttext">I used to be a pet collector back in Cataclysm, back when 150 pets were considered to be a lot of pets that only a few people could ever dream of.<br />
+<br />
+Now with this silly Pokemon pet system, I no longer care about my pets. It's pointless and a waste of time.<br />
+<br />
+&quot;Back when vanity pets literally did nothing except follow you around and were the epitome of frivolous I collected them. But now that they're actually useful and were given a point to exist past just their graphic, I find them more pointless than I did when they were the only thing in the game that actually served no point.&quot;<br />
+<br />
+Wait what?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrKnubbles</div><div class="date">2013-12-27, 01:16 PM</div></div><div class="posttext">Aww yea, top 5% with over 400 pets! :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wildtree</div><div class="date">2013-12-27, 01:45 PM</div></div><div class="posttext">It takes 10 weeks to complete the achievement.<br />
+Judging the popularity by that makes little senseWell..... it's more than 1 achievement though<br />
+<br />
+One week for the Celestial Tournament Achievement.<br />
+3 weeks for the Master of the Masters Achievement. <br />
+10 weeks to collect the 4 pets, for Celestial Family Achievement.<br />
+<br />
+The tournament can be a little bit of a pain, when you start with it. <br />
+Where people are getting trapped - and I admit this where Blizzard sorta drops the ball - is the misleading 15 level 25 pets requirement.<br />
+No way in hell one can complete this scenario with only 15 pets. <br />
+There's a total of 9 opponents in the scenario which rotate weekly, with each week giving you 3 of them. The sets of 3 are always the same, but still..<br />
+The 4 Celestials after those 3 can be beaten with a combo of 4 pets total, unless the RNG gods hate you, and you don't have a backup.<br />
+<br />
+The combo for those is: Pandaren Water Spirit, Chrominius, Darkmoon Tonk. Have Magical Crawdad as healer at hand.<br />
+Kill order: <br />
+Xuen (he can once in a blue moon brutally crit and your strat fails)<br />
+Niuzao (he can once in a while absorb too much dmg, and your strat can fail here too)<br />
+Chi-Chi (absolutely no chance against the strat)<br />
+Yu-Lon (same, no chance but has to be last, since you use him to heal in between)<br />
+<br />
+Strat, the same on all 4 Celestials:<br />
+Water Spirit - Cast Geyser, Cast Whirlpool, SWAP OUT<br />
+Chrominius - Cast Howl, Cast Surge of Power. <br />
+<br />
+This is normally enough to kill all 4.. However.. <br />
+For Niuzao your Chrominius rotation should be: HOWL - BITE - SURGE OF POWER<br />
+<br />
+In between the fights, swap your Tonk for a Crawdad.. <br />
+Open battle with Yu-Lon with Crawdad, Cast Wish. Swap to injured Pet, wait for heal to go off, abandon battle. Repeat for second hurt pet. <br />
+BAM, your team is good to go again. Don't forget to put the Tonk back in before you move to the next.<br />
+<br />
+<br />
+On Yu-Lon you might have to bring the Tonk in after Chrominius sometimes. His Rotation is: Shock and Awe - Ion Cannon<br />
+<br />
+It took me literally several hours for my first couple attempts. But nowadays, I've got it nailed down, and with a little luck, I finish it in about 30 minutes.<br />
+<br />
+<br />
+I'm too in the 5% and 0.5%.... And maybe even worse. lol<br />
+Top 1000 World at WowProgress, Top 800 at Warcraftpets.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fungj</div><div class="date">2013-12-27, 02:10 PM</div></div><div class="posttext">So, I've put barley any time into pet collecting and I'm still in the 5%.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">aliqux</div><div class="date">2013-12-27, 02:16 PM</div></div><div class="posttext">Oh boy I thought I was casual with my pet collection. Seems I am in the top 5% though. I feel dirty now :(<br />
+<br />
+I know, I was looking at the chart and realized the same thing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">axolotls</div><div class="date">2013-12-27, 02:55 PM</div></div><div class="posttext">Wow, I'm sitting at 500 unique pets and honestly thought 400+ was common.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Necrotica</div><div class="date">2013-12-27, 03:13 PM</div></div><div class="posttext">Wow, I'm sitting at 500 unique pets and honestly thought 400+ was common.<br />
+<br />
+Wow... Didn't realize how few have more than 400... I only have 434 and I thought that was low... course GF has 551 and the Celestial achievement</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Amithyst</div><div class="date">2013-12-27, 03:14 PM</div></div><div class="posttext">So.. what you're saying is.. I do to much pet battles? xD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FeliciaMarie</div><div class="date">2013-12-27, 03:43 PM</div></div><div class="posttext">I'm one of the few in the .5 percent I suppose. 598 unique pets here but pet battles to me is like hardcore heroic raiding to others. I just spend my time focusing on pets.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3dde1cb131</div><div class="date">2013-12-27, 03:48 PM</div></div><div class="posttext">I wonder if more people have 400 pets than people who kill HC Garrosh.<br />
+<br />
+Maybe blizz should scrap Mythic raiding and support more people with devoting that time to Pet Battles!<br />
+<br />
+(I am of course not being serious, but really trying to prove the point that people really should embrace that WoW is supported by and played by a wide variety of people for a wide variety of reasons and none of us would have anything without the other.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">The Last DJ</div><div class="date">2013-12-27, 04:46 PM</div></div><div class="posttext">I have 500+ unique pets but don't really have a strong team to do the Celestial tournament with. I'm sure I'm not the only one in the same boat. I collect rather than level them up.<br />
+<br />
+Same. I'm well over 400 pets but haven't much bothered with the Celestial Tourney. I'm more into collecting rather than leveling (which gets old quickly).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Necrotica</div><div class="date">2013-12-27, 05:14 PM</div></div><div class="posttext">Same. I'm well over 400 pets but haven't much bothered with the Celestial Tourney. I'm more into collecting rather than leveling (which gets old quickly).<br />
+<br />
+Leveling is the most boring aspect of it, I leveled enough to have a balanced team to capture pets, about it...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Heldamon</div><div class="date">2013-12-27, 05:27 PM</div></div><div class="posttext">Does that mean that there won't be any strength polearms ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc52fe769775</div><div class="date">2013-12-27, 05:31 PM</div></div><div class="posttext">Waiting for a graph showing the increase in the use of graphs by Chaud. Would be more interesting than this ''news'' we're getting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2013-12-27, 05:36 PM</div></div><div class="posttext">You have the choice of some graphs that you can ignore that may interest some people, or nothing. If there's nothing to report, what are you expecting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Heldamon</div><div class="date">2013-12-27, 05:56 PM</div></div><div class="posttext">At least make the graphs have a dark backround cause all that white hurts my eyes :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Myrddral</div><div class="date">2013-12-27, 06:03 PM</div></div><div class="posttext">Really? You thought over 400 pets was a casual collection?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arishia</div><div class="date">2013-12-27, 06:38 PM</div></div><div class="posttext">I'm at 575 pets and still not number one on my server. *sniffle*<br />
+<br />
+I love the pet battle stuff, I hope they continue to maintain and update it into the next expansions, it's one of the main reasons I've stuck around so long.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tayla</div><div class="date">2013-12-27, 07:00 PM</div></div><div class="posttext">i am part of the top 5%. i am proud and disturbed all at the same time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2013-12-27, 07:16 PM</div></div><div class="posttext">I'd love to finish raiding with leashes II but Lady Vashj doesn't want me to. ._.<br />
+Also I have yet to enter that RNG infested mess that is the Celestial tournament. Doubt I'll have much fun with it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hoshkar</div><div class="date">2013-12-27, 07:22 PM</div></div><div class="posttext">They should add a 500+ unique pet achievement already. Fun to see the numbers on this still. <br />
+&lt;---in all of those stats (548 unique pets atm)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pacster</div><div class="date">2013-12-27, 08:20 PM</div></div><div class="posttext">No way in hell one can complete this scenario with only 15 pets. <br />
+<br />
+There's a total of 9 opponents in the scenario which rotate weekly, with each week giving you 3 of them. The sets of 3 are always the same, but still..<br />
+The 4 Celestials after those 3 can be beaten with a combo of 4 pets total, unless the RNG gods hate you, and you don't have a backup.<br />
+<br />
+The combo for those is: Pandaren Water Spirit, Chrominius, Darkmoon Tonk. Have Magical Crawdad as healer at hand.<br />
+Kill order: <br />
+Xuen (he can once in a blue moon brutally crit and your strat fails)<br />
+Niuzao (he can once in a while absorb too much dmg, and your strat can fail here too)<br />
+Chi-Chi (absolutely no chance against the strat)<br />
+Yu-Lon (same, no chance but has to be last, since you use him to heal in between)<br />
+<br />
+Strat, the same on all 4 Celestials:<br />
+Water Spirit - Cast Geyser, Cast Whirlpool, SWAP OUT<br />
+Chrominius - Cast Howl, Cast Surge of Power. <br />
+<br />
+This is normally enough to kill all 4.. However.. <br />
+For Niuzao your Chrominius rotation should be: HOWL - BITE - SURGE OF POWER<br />
+<br />
+In between the fights, swap your Tonk for a Crawdad.. <br />
+Open battle with Yu-Lon with Crawdad, Cast Wish. Swap to injured Pet, wait for heal to go off, abandon battle. Repeat for second hurt pet. <br />
+BAM, your team is good to go again. Don't forget to put the Tonk back in before you move to the next.<br />
+<br />
+<br />
+On Yu-Lon you might have to bring the Tonk in after Chrominius sometimes. His Rotation is: Shock and Awe - Ion Cannon<br />
+<br />
+<br />
+You actually only need 3. Instead of the tonk you can use the crawdad(or a levelled up niuzao-pet) right away. Not to mention that bigglesworth would be the better choice instead of tonk anyway cause it can kill yu-lon all alone and can be used for a number a other fights too. But even if you play it safe and go with 4 pets...youz still got eleven for the other 3...and you only need 9 at max. Which means that it's easily possible to do at least one week with 15 pets.<br />
+Usually there is a trainer among &quot;first set of 3&quot; where you can heal a pet with the crawdad too. So it should be possible to do 2 weeks with 15 pets as well....maybe even 3 is possible but that would likely need some luck and serious testing. Might be an interesting task for someone who wants to do something special.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">killerkarl</div><div class="date">2013-12-27, 08:36 PM</div></div><div class="posttext">They should add a 500+ unique pet achievement already. Fun to see the numbers on this still. <br />
+&lt;---in all of those stats (548 unique pets atm)<br />
+<br />
+They need to add an achievement for 600 pets too while they are at it. More and more people are reaching that milestone.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2013-12-27, 10:26 PM</div></div><div class="posttext">Waiting for a graph showing the increase in the use of graphs by Chaud. Would be more interesting than this ''news'' we're getting.<br />
+<br />
+Blizzard goes dark for 3-4 weeks at the end of the year. If you come across more interesting news, feel free to send it our way.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2013-12-27, 10:29 PM</div></div><div class="posttext">They need to add an achievement for 600 pets too while they are at it. More and more people are reaching that milestone.<br />
+<br />
+There are probably only a few dozen people in the world who broke 600. Requires you to not only have every TCG pet, every promotional pet, along with owning the collector edition of every Blizzard game they released, attending every Blizzcon, the anniversary and 1 time events ( Olympics ) along with all the RAF pets. Warcraft pets has about 20 people listed with 600 or more and I would guess everyone who is really dedicated is listed there.<br />
+<br />
+I am #1 on my server (top 500 in world) and only have 576 and I only have about 10 more pets that I can possibly get ( if I decide to RAF 4 times). If the highest person on a server can´t even get close to an achievement.. eh.. probably shouldn´t be an achievement.<br />
+<br />
+The celestial tournament is not easy and can be annoying if you get bad RNG on the actual celestials and don´t have a backup team and have to start over.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">OneFrozen</div><div class="date">2013-12-27, 10:34 PM</div></div><div class="posttext">I feel proud being part of the 5%, and the 7.3% and the 2.9%. Missing some from Raiding with Leashes II and the Celestial pets - but there are on the list now, need to be in those 0.5% :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2013-12-27, 10:39 PM</div></div><div class="posttext">I remember them saying it was a popular feature. Looking at those numbers, I'd have to disagree.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I used to be a pet collector back in Cataclysm, back when 150 pets were considered to be a lot of pets that only a few people could ever dream of.<br />
+<br />
+Now with this silly Pokemon pet system, I no longer care about my pets. It's pointless and a waste of time.<br />
+<br />
+You're confused. Before it was pointless and a waste of time having those pets since they didn't do anything.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2013-12-28, 12:09 AM</div></div><div class="posttext">I have 544 unique pets...wonder how many have 500+ 0o Also have celestial family /flex :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Faderaven</div><div class="date">2013-12-28, 12:36 AM</div></div><div class="posttext">I could use some new pets!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nekobaka</div><div class="date">2013-12-28, 01:19 AM</div></div><div class="posttext">As someone who hasnt bothered with pet battles can someone give some guesstimate numbers of what a player might have if they captured along the way while leveling? In other words something to pair with the data to show that at x number someone has to be doing pet battles.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bad Ashe</div><div class="date">2013-12-28, 01:19 AM</div></div><div class="posttext">i'm suddenly much prouder of my Venus pet...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">snuzzle</div><div class="date">2013-12-28, 04:27 AM</div></div><div class="posttext">What's the chance on transmogging between Axe/Mace/Sword and Polearm/Staff? Bigger issue with changing primary stats in 6.0.<br />
+It's unlikely for both philosophical &amp; technical reasons. (Source)<br />
+<br />
+Wait, bigger issue with 6.0? So primary stats won't change on weapons?<br />
+<br />
+Dammit, I was hoping I'd FINALLY be able to bust out my War mace (http://www.wowhead.com/item=32014) again :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Outofmana</div><div class="date">2013-12-28, 05:34 AM</div></div><div class="posttext">As someone who hasnt bothered with pet battles can someone give some guesstimate numbers of what a player might have if they captured along the way while leveling? In other words something to pair with the data to show that at x number someone has to be doing pet battles.<br />
+I never even trained the pet battles and I have 73 pets. So I guess it's from 100 that people actually tried the pet battles (~35%)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zizonyx</div><div class="date">2013-12-28, 08:39 AM</div></div><div class="posttext">Jiggle physics.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elf Boots</div><div class="date">2013-12-28, 08:46 AM</div></div><div class="posttext">I had no idea there was ranking for pets. Cheers for that info. <br />
+I'm also in the 5% and 0.5%. Curious to see how I rank against others though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc113bf80ca3</div><div class="date">2013-12-28, 12:12 PM</div></div><div class="posttext">Gimmee my pets prutty please!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">toliman</div><div class="date">2013-12-28, 12:14 PM</div></div><div class="posttext">Curious to see how I rank against others though.<br />
+<br />
+Then you'd want to check out warcraftpets.com and put yourself in the rankings. <br />
+<br />
+Alternatively, WoWProgress keeps a score and rank for everyone who's updated their armory profile in a while.<br />
+e.g. http://www.wowprogress.com/petscore<br />
+<br />
+i'm at #2543 with 556 of 581 collected uniques, but i'm getting a bit sick of the process post 5.3. haven't bothered trying to get the TI pets all that much due to egregious and heinous RNG from drops. and once you've been grinding for a month, it gets boring as hell. <br />
+<br />
+if i think about it, i just haven't done much since about april 2013, it got really tedious all of a sudden once i'd collected the majority of pets. nothing that's been added has improved the process or made it better, just harder.<br />
+<br />
+still have 150 odd uncommon -&gt; rare's to go, and 30 odd pets left to collect, but i'm not in a rush to level or get all the speed/power variants or build teams to fight celestial/fable pets, it's a joke.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6818f34952</div><div class="date">2013-12-28, 01:27 PM</div></div><div class="posttext">And the small gnome tries to fish yet another pet!. throws the fishing rod into the water, the question is will there be bait?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">roboscorcher</div><div class="date">2013-12-29, 03:59 AM</div></div><div class="posttext">Hi Chaud!<br />
+<br />
+I'd like to see PvPvE instances. Dungeons with a bit of battleground-style pvp.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elf Boots</div><div class="date">2013-12-29, 01:41 PM</div></div><div class="posttext">Then you'd want to check out warcraftpets.com and put yourself in the rankings. <br />
+<br />
+Alternatively, WoWProgress keeps a score and rank for everyone who's updated their armory profile in a while.<br />
+e.g. http://www.wowprogress.com/petscore<br />
+<br />
+I thought I was a special snowflake being in the 0.5% but I can see I still have some work to do. WoWProgress has me at #11 for my server. I have next weekend off. Gonna see if I can crack the top 10.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2013-12-29, 09:42 PM</div></div><div class="posttext">I'd like to see stats on what fraction of level 90 characters are fully enchanted, fully gemmed, have all profession augments, and have all major glyphs (and similarly for lvl 90 mains).</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

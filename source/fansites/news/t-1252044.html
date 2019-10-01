@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="using, and, the, was, that, kill, use, power, flower, spellsteal, frost, creative, what, exploit, hodir, back, note, down, hard, there, mode, off-topic, makes, also, smart, buff, http://youtu.be/-pr0t6yh_0a, during, ensidias, ulduar, hilarious, somewhat, lighter, right, after, for, although, reported, posted, they, recall, game, did, vodka, mechanics, iirc, banned, ensidia, video, rotation" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2012/july/wowmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Shaman and Death Knight Tier 15 Armor Sets, Build 16467 Pets, Audio, Icons 
+ 
+Developer Watercooler: Encounter Tuning by Watcher 
+In this blog, I’d like to shed some light on an aspect of our design that may unfortunately seem inscrutable or even arbitrary: how and when we make adjustments to our raid encounters once they’re on the live servers. The" />
+<title> Developer Watercooler: Encounter Tuning by Watcher [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Developer Watercooler: Encounter Tuning by Watcher</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1252044.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1252044-Developer-Watercooler-Encounter-Tuning-by-Watcher">Developer Watercooler: Encounter Tuning by Watcher</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2013-01-17, 05:06 PM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2012/july/wowmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Shaman and Death Knight Tier 15 Armor Sets, Build 16467 Pets, Audio, Icons (http://www.mmo-champion.com/content/3088-Shaman-and-Death-Knight-Tier-15-Armor-Sets-Build-16467-Pets-Audio-Icons)<br />
+<br />
+Developer Watercooler: Encounter Tuning by Watcher<br />
+In this blog, I’d like to shed some light on an aspect of our design that may unfortunately seem inscrutable or even arbitrary: how and when we make adjustments to our raid encounters once they’re on the live servers. The only changes we jump on immediately to fix are a clearly irritating bugs that never benefit the player in any way (e.g., issues that can cause players to fail to receive loot from a boss, glitches that can cause an encounter to evade or reset prematurely, etc.). Thanks to our internal QA team and the feedback from players on our test realms, those are relatively few in number.<br />
+<br />
+Other than these clear-cut cases, virtually every change has some negative cost to it, such that the benefits must clearly be evident in order to justify making them. If we fix a bug that allows for an unintended strategy on a fight, then the following week there will be raid groups that previously had a working strategy on an encounter and will now have to re-learn it. If we reduce the difficulty of an encounter, there will always be groups who were very close to a kill on the “pre-nerf” version whose victory feels cheapened as a result. And so forth.<br />
+<br />
+Given this background, let’s look at some of the adjustments we’ve made (or not made, in some cases) to the 5.0 raid zones over the course of the past months, broken down into a few general categories.<br />
+<br />
+Unintended Tactics<br />
+<br />
+Our players are ingenious and adept at coming up with clever solutions to the challenges posed by our raid encounters. While we have learned from past experience to an extent (Rule #14 of encounter design: If it’s possible to kite adds instead of killing them, someone will kite them instead of killing them), we are still unable to always anticipate the lengths to which our players will go to overcome a difficult encounter. There’s nothing inherently wrong with that, and often one of the hallmarks of a great encounter is that it is open to multiple approaches, depending on the strengths and weaknesses of an individual raid group. I can think of three distinct approaches that we saw to handle the Molten Elementals summoned by Heroic Ragnaros, for example, and I’m sure there are more out there.<br />
+<br />
+For example, a common tactic on the Heroic mode of Amber-Shaper Un’sok in the Heart of Fear is to have a dedicated transformed player who maintains a Destabilize stack on Un’sok throughout the entire second phase of the fight, when he is otherwise nearly invulnerable and the raid’s attention is focused on the Amber Monstrosity. This is only possible due to a bug. Un’sok was intended to be immune to Amber Strike during phase 2 of the fight, and he was in fact immune to it during that phase for much of the beta testing of the boss. However, fixing a separate bug late in development (ensuring that Amber Strike could always interrupt the otherwise-uninterruptible Monstrosity) caused Amber Strike to also bypass Un’sok’s shield in phase 2. Oops.<br />
+<br />
+This would have been a simple bug to fix, but we chose to not do so. This was a clever tactic, and while it made phase 3 of the encounter relatively simple, it did so at the expense of adding length, challenge, and complexity to the first two phases of the fight. Kudos to the players who first came up with it.<br />
+<br />
+As a general matter, unintended tactics are only a problem when they either trivialize an encounter, or when they simultaneously are the “right” (i.e., easier) way to do the fight and make it less fun in the process.<br />
+<br />
+Gara’jal the Spiritbinder<br />
+On the first night of Heroic progression through Mogu’shan Vaults, Heroic Gara’jal proved to be an incredibly tough test for the damage-dealing capability of the best raid guilds in the world. A number of groups were a few percent shy of a kill, but it appeared quite possible that it would simply require another week worth of gear upgrades to get there. We would have been fine with that, but then one raid group noticed that one of the trolls before Gara’jal cast a massive haste buff on itself that was Spellstealable. The raid kept a couple of those enemies crowd controlled throughout the encounter, periodically breaking them out to let them cast their buffs for the mages to Spellsteal. This gave them the extra bit of damage that they needed, and Gara’jal fell.<br />
+<br />
+Other guilds got wind of this tactic, and were attempting to utilize it as well. We definitely didn’t want the fight to require the awkward use of Spellsteal and bringing other mobs into the encounter, mandating the use of multiple mages in order to meet the DPS check for initial kills. But we also didn’t want an unfair playing field in the Heroic progression race, with one guild able to continue progressing in the instance while others were stuck behind a slightly-out-of-reach DPS check and unable to take advantage of the trick that had been used to secure the first kill. As such, we made a hotfix that prevented that buff from being Spellstolen, but also reduced Gara’jal’s health by 5% to offset for the extra damage that the mages with the buff would have done.<br />
+<br />
+Exploits vs. “Creative Use of Game Mechanics” – A Brief Aside<br />
+<br />
+I’d like to take a moment to note that what this guild did was not an “exploit” in the sense of being cheating, bad, wrong, or against the rules of the game. Players used Spellsteal to steal a beneficial effect from a mob, which is what the spell is supposed to do, and the beneficial effect increased the power of the mage, which is what it was supposed to do. This was the essence of “creative use of game mechanics.” (Note that this is not to say that it isn’t possible to violate the Code of Conduct by using Spellsteal in general – if you find a spell that you can steal that causes you to damage nearby allies, and you take it back to town to grief newbies, that’s a little different. . . .)<br />
+<br />
+By contrast, a different group found a bug with Gara’jal where he could be dragged on top of the gate to his room such that players standing outside the gate could damage him without being susceptible to his attacks, and used this “unintended tactic” to defeat him. We fixed that bug, but also removed the loot and achievements earned from the players involved, and issued account suspensions. In general, it is never permissible to cause parts of a boss encounter to evade in order to gain an advantage, or to use line of sight or collision to get a boss stuck where you can attack it but its abilities no longer function.<br />
+<br />
+Will of the Emperor<br />
+One more example, also from Heroic progression—most of the “unintended tactics” tend to be discovered and applied by cutting-edge progression guilds, since they’re the first ones to see the encounters, and are often undergeared and struggling to find every possible advantage, which usually means thinking outside the box. On Heroic Will of the Emperor, the Emperor’s Rage constructs that spawn present a real challenge. Their health is significantly increased, but each one of them also produces a deadly Titan Spark upon being destroyed, which explodes on contact to deal massive damage. The amount of damage and attention required to keep up with both the Rages and the Sparks they produce is one of the core demands the Heroic mode makes upon a raid group. It was so demanding, in fact, that most of the early groups that reached this encounter were unable to handle the overall DPS requirement.<br />
+<br />
+Looking for solutions to this problem, clever players noticed that the mage spell Ring of Frost froze enemies for 10 seconds, had a 30-second cooldown, and had no target cap. Cue three mages cycling Rings of Frost to keep every Rage frozen for the entire fight. They spawn in waves of four in 25-player mode, resulting in anywhere from 52 to 64 Rages frozen in one giant clump by the end of the fight, causing client and server performance issues in the process. On the upside (for the designers observing these attempts), when this mage rotation faltered, the resulting wipes were fairly comical, bearing more than a little resemblance to an endless stream of passengers emerging from a clown car.<br />
+<br />
+This was an example of a tactic that made the fight both significantly easier and significantly less fun. With so many enemies entirely neutralized by a small portion of the raid, the gameplay for many of the remaining players was reduced to standing in the middle of the room nuking the boss(es) for ten minutes and hoping the mages didn’t screw up. Not ideal. We wanted to fix it. However, the issue here wasn’t specific to the Will encounter. We had always fully intended for all forms of crowd control to work on Rages, so changing that was not an option.<br />
+<br />
+The problem was Ring of Frost – being able to incapacitate an unlimited number of targets with a single spellcast caused problems. This ended up being a case where the negative cost of hotfixing the issue outweighed the upside of improving the encounter. When hotfixing spells, we do not have the ability to update the tooltips and other data that resides on each individual client. Thus, if we had added a target cap to the spell via hotfix, a mage who attempted to use it on a large pull in a dungeon, or a large group of players in a battleground, would have thought the spell was broken when it suddenly didn’t work on many of the targets. Quite simply, confusing hundreds of thousands of players in all sorts of contexts, in order to fix a problem in a situation affecting a few hundred players, was not an acceptable trade-off. As such, we changed Ring of Frost (capping it at 5 targets) in patch 5.1, allowing for ample notice through patch notes and PTR cycles, as well as a properly updated in-game tooltip. By the time this change went live, access to superior gear from Heart of Fear and Terrace of Endless Spring allowed players to much more readily handle killing the Rages as we originally intended.<br />
+<br />
+Pure Difficulty Adjustments<br />
+<br />
+Other adjustments occur simply because a boss is proving to be more difficult than we’d intended, creating a roadblock. Note that we will essentially never make pure numerical (health/damage) adjustments to a raid encounter that make it more challenging once it’s gone live. If we goof on the tuning in the players’ favor, then so be it.<br />
+<br />
+On average, the self-selected pool of guilds that go through the effort of copying characters to our test servers are far more skilled and organized than the typical Normal-mode raider (and the pick-up groups that form tend to be below the target skill threshold), so there is a bit of estimation that goes into tuning Normal mode encounters. Because a disproportionately difficult Normal mode encounter presents a brick wall that entirely blocks progress, we will act to reduce the difficulty of such encounters, often shortly after they first become accessible, to avoid giving players a frustrating experience. For example, when Heart of Fear was released, we observed that even some guilds that had fully cleared Heroic Mogu’shan Vaults were struggling to meet the berserk timer on Normal Garalon; we made several adjustments to the fight to bring its difficulty in line with the rest of the instance on that first day. By the time that most others saw the encounter, it was where we wanted it to be difficulty-wise.<br />
+<br />
+Over the long-run course of a raid tier, we pay close attention to the community’s overall rate of progression. We don’t have target completion numbers for each tier or for a given number of bosses; we are far more concerned with the rate of change. Progression is fun. Running into a challenge can also be quite a bit of fun. Running into a challenge that seems insurmountable is not. So when we notice that the rate at which groups are progressing is beginning to stall, we tend to take action. In Dragon Soul (and in Icecrown Citadel before that), we used a zonewide aura to reduce the difficulty of encounters over time. Some community members’ “hand on the dial” jokes notwithstanding, those processes were not automated, and reflected an assessment of the latest progression numbers from the live servers. We have the framework for such a system in place for the current raid tier, but we have not yet felt that its activation was necessary.<br />
+<br />
+Our goal is not to make sure that the group that currently has defeated 4 of 6 Mogu’Shan Vaults bosses finishes Sha of Fear before our next patch; we do want to ensure, however, that they feel reasonably able to continue progressing at the rate they have been, with the assistance of gear upgrades gained along the way. As such, we recently reduced the difficulty of a few elements of the Normal difficulty Elegon encounter in a hotfix. This doesn’t necessarily mean that Elegon was “too hard” in some absolute sense – his difficulty presented a welcome challenge to the first wave of raiders who tackled the encounter this past fall. But the folks who defeated Elegon back then have moved on to Heart of Fear, Terrace, and/or Heroic raids in the meantime. A nerf to Elegon doesn’t affect them one way or another, but allows for raid groups still making those attempts to continue making progress today.<br />
+<br />
+And then there’s LFR. Ultimately, LFR raids are designed to be completed by groups of players that qualify to queue for them. This does not mean that it should be impossible to fail, but unlike our Normal and Heroic raids, which are designed as progressions of increasing difficulty, LFR is designed to have a flat level of difficulty within each wing. Whereas a raiding guild will routinely give up and return another night or another week when they run into a challenge they can’t quite overcome, an LFR group that runs into a difficulty spike continues to grind away as new people cycle in to replace those who depart. Most players who ran LFR last fall will recall the ubiquitous partially-complete instances with a dense carpet of skeletons to greet arriving players—not a particularly fun experience. As such, we act quickly to adjust the difficulty of encounters in LFR when needed.<br />
+<br />
+Until Next Time<br />
+Ultimately, there is no hard-and-fast rule or formula that we follow to determine how and whether to make adjustments to encounters once they are in players’ hands, but hopefully this blog has provided some insight into the sorts of factors we consider, and our thought process with regard to a handful of specific changes during this last tier.<br />
+<br />
+Ion “Watcher” Hazzikostas is Lead Encounter Designer, and really wishes you would stop making him ban you</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">IProto</div><div class="date">2013-01-17, 05:15 PM</div></div><div class="posttext">woot first?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2013-01-17, 05:15 PM</div></div><div class="posttext">Read this and Ion really gives players a lot to look up to. He is so open about encounter design and how it effects their decisions.<br />
+<br />
+EDIT: And yes, you are first because I actually took the time to read this one :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Trigunflame</div><div class="date">2013-01-17, 05:21 PM</div></div><div class="posttext">All I got from this is what I already knew - nerf mages every time we can. <br />
+Spell steal is essentially worthless in PvE now, and has been for a while - Thanks! <br />
+Oh, and let's nerf Ring of Frosts target limit while we're at it, can't have that working in say.. BGs.<br />
+Then of course the recent neutering of fire to an virtually noncompetitive state.<br />
+<br />
+Not sure why I'm still playing this class.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Uselessrouge</div><div class="date">2013-01-17, 05:24 PM</div></div><div class="posttext">woah nice post :)<br />
+<br />
+lol at the haste buff from the trash :D did never see that one ^^<br />
+well we will allways find some clever guy to find something that they did not think of ^^<br />
+<br />
+<br />
+seems fun for both sides ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">VanishO2</div><div class="date">2013-01-17, 05:33 PM</div></div><div class="posttext">&quot;In Dragon Soul (and in Icecrown Citadel before that), we used a zonewide aura to reduce the difficulty of encounters over time. Some community members’ “hand on the dial” jokes notwithstanding, those processes were not automated, and reflected an assessment of the latest progression numbers from the live servers.&quot;<br />
+<br />
+Good read... but not buying that part... hehehe they were automated.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8b57eca00f</div><div class="date">2013-01-17, 05:34 PM</div></div><div class="posttext">Interesting read.<br />
+So that's why the orbs are useless on Amber-shaper, it was supposed to last more than 30 seconds :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Genju</div><div class="date">2013-01-17, 05:35 PM</div></div><div class="posttext">All I got from this is what I already knew - nerf mages every time we can. <br />
+Spell steal is essentially worthless in PvE now, and has been for a while - Thanks! <br />
+Oh, and let's nerf Ring of Frosts target limit while we're at it, can't have that working in say.. BGs.<br />
+Then of course the recent neutering of fire to an virtually noncompetitive state.<br />
+<br />
+Not sure why I'm still playing this class.<br />
+<br />
+Tell that those shamans, whose spells didnt get nerfed because of an encounter(tsulong HM) via hotfix(and not in an later patch like mages), instead they completly dont work together anymore. Doesnt seem to matter to nerf the shamans in all other aspects of wow.<br />
+<br />
+and crying as a mage? very good pve/pvp class in every addon. They are one of the last classes that are allowed to cry about sth.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Layuth</div><div class="date">2013-01-17, 05:37 PM</div></div><div class="posttext">TL;DR: We didn't learn from Freya.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MasterHamster</div><div class="date">2013-01-17, 05:59 PM</div></div><div class="posttext">An interesting read to say the least.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fayenoor</div><div class="date">2013-01-17, 06:06 PM</div></div><div class="posttext">Good read.<br />
+<br />
+Note that mages locking down adds using CC is not unique to Will Heroic or even to the Ring of Frost spell. Back in SSC, using Frost Nova rotations to CC waves of murloc and DPS-ing them down was a similar example (though in that case, the added needed to be killed before the rotation wore off). <br />
+<br />
+Using creative use of spellsteal isnt new to MoP either. Recall Flower Power buff in Ulduar and Ensidia's smart use of it to kill Hodir Hard Mode. What makes that an exploit and what Vodka did a &quot;creative use of game mechanics&quot;? IIRC Ensidia was banned for using Flower Power although they posted a video of the kill and reported Flower Power right after using it to kill Hodir.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc592b6850e6</div><div class="date">2013-01-17, 06:08 PM</div></div><div class="posttext">Morals of the devblog is if you are a mage just smash your nuke and don't even think about anything fancy or you will get nerfed...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Marooned</div><div class="date">2013-01-17, 06:10 PM</div></div><div class="posttext">Using creative use of spellsteal isnt new to MoP either. Recall Flower Power buff in Ulduar and Ensidia's smart use of it to kill Hodir Hard Mode. What makes that an exploit and what Vodka did a &quot;creative use of game mechanics&quot;? IIRC Ensidia was banned for using Flower Power although they posted a video of the kill and reported Flower Power right after using it to kill Hodir.<br />
+<br />
+I think they got the ban using saronite bombs on LK normal which was part of standard rogue rotation on those days, not for that flower buff. but again a stupid decision by blizzard since it was their own fault.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Raiju</div><div class="date">2013-01-17, 06:10 PM</div></div><div class="posttext">Was nice to see their side of things on this tier for sure</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Grutamuqt</div><div class="date">2013-01-17, 06:11 PM</div></div><div class="posttext">by contrast, a different group found a bug with gara’jal where he could be dragged on top of the gate to his room such that players standing outside the gate could damage him without being susceptible to his attacks, and used this “unintended tactic” to defeat him. We fixed that bug, but also removed the loot and achievements earned from the players involved, and issued account suspensions. In general, it is never permissible to cause parts of a boss encounter to evade in order to gain an advantage, or to use line of sight or collision to get a boss stuck where you can attack it but its abilities no longer function.<br />
+<br />
+<br />
+<br />
+TM Door strat</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nnelson54</div><div class="date">2013-01-17, 06:30 PM</div></div><div class="posttext">I think they got the ban using saronite bombs on LK normal which was part of standard rogue rotation on those days, not for that flower buff. but again a stupid decision by blizzard since it was their own fault.<br />
+<br />
+That's not entirely true. Some members admitted to knowing that the bombs were rebuilding the platform and that 4-5 of their raid members went and powerleveled up Engineering just to have more bombs to throw to rebuild the platform faster. It's not like they had no clue what was causing it and didn't know it was an exploit.<br />
+<br />
+All the top guilds push exploits and all have been suspended for them at one point or another. It's just a part of the World First game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">subanark</div><div class="date">2013-01-17, 06:33 PM</div></div><div class="posttext">Mages - too clever for their own good.<br />
+<br />
+If Shamans and warriors ever move close to the top of the dps charts you can pretty much expect some raid will try and stack them for a stormlash/skull banner rotation to max out deeps.<br />
+<br />
+As for my pet peeves:<br />
+Make totems work while aerial (e.g. Alakir P3)<br />
+NPCs should not attack totems while rooted (since they don't do so while snared)! It kind of makes earthgrab totem potentially less useful than earthbind.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">quras</div><div class="date">2013-01-17, 06:43 PM</div></div><div class="posttext">TL;DR: We didn't learn from Freya.<br />
+<br />
+So true. At this point in the game you would think blizzard would have designed encounters a little more intelligently vs players than they do.<br />
+<br />
+Decent read but most of what it boiled down to was players are crafty and if they beat blizzards design through interesting play styles and tactics it has to be &quot;less fun&quot; in most situations cause it's not how we (blizzard) designed it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2013-01-17, 06:43 PM</div></div><div class="posttext">On the upside (for the designers observing these attempts), when this mage rotation faltered, the resulting wipes were fairly comical, bearing more than a little resemblance to an endless stream of passengers emerging from a clown car<br />
+<br />
+WooT Devs watching attempts .. creepy... but I bet they had plenty to laugh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DetectiveJohnKimble</div><div class="date">2013-01-17, 06:44 PM</div></div><div class="posttext">That's not entirely true. Some members admitted to knowing that the bombs were rebuilding the platform and that 4-5 of their raid members went and powerleveled up Engineering just to have more bombs to throw to rebuild the platform faster. It's not like they had no clue what was causing it and didn't know it was an exploit.<br />
+<br />
+All the top guilds push exploits and all have been suspended for them at one point or another. It's just a part of the World First game.<br />
+<br />
+Yeah, the whole feigning that they didn't know what was causing it was just some bs that ensidia used at the time to maintain face in front of fans who were stupid enough to believe that, and that story exists till today. Of course, blizzard had all the facts with which to make the right call, even if the players don't see them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Edlarel</div><div class="date">2013-01-17, 06:48 PM</div></div><div class="posttext">I really enjoy reading insight from all of the members of Blizzard. This was a particularly interesting one for me because I've been in those encounters where it just feels like gear and skill won't be enough only to come back the next week and have a nerf make it feel somewhere between perfect and trivial. It is definitely nice to see their view on these situations.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">relentless92</div><div class="date">2013-01-17, 06:49 PM</div></div><div class="posttext">Fun Fact: Why is everyone streaming atm playing with a fucking cap on their heads?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Edlarel</div><div class="date">2013-01-17, 06:51 PM</div></div><div class="posttext">WooT Devs watching attempts .. creepy... but I bet they had plenty to laugh.I'm not sure they watch average progression very often; but I'm positive the first 2-3 weeks after release of a progression raid are watched and cheered much like a superbowl where you can change the ref's ruling. :D<br />
+<br />
+<br />
+Fun Fact: Why is everyone streaming atm playing with a fucking cap on their heads?Maybe they're trying to cap their dps?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">subanark</div><div class="date">2013-01-17, 07:06 PM</div></div><div class="posttext">Dear Blizzard,<br />
+<br />
+Add more boss fights with undispellable stacking healing debuffs, so that restro shamans can be creative with their spirit link.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf8d92a9ebb</div><div class="date">2013-01-17, 07:25 PM</div></div><div class="posttext">im liking the dev wartercoolers so far, and to know what developers think and how they do it , hope they keep it up for long^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Karnige</div><div class="date">2013-01-17, 07:46 PM</div></div><div class="posttext">interesting read! refreshing content from blizz. I like the behind the scenes talk</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chaoslux</div><div class="date">2013-01-17, 08:01 PM</div></div><div class="posttext">Yeah, the whole feigning that they didn't know what was causing it was just some bs that ensidia used at the time to maintain face in front of fans who were stupid enough to believe that, and that story exists till today. Of course, blizzard had all the facts with which to make the right call, even if the players don't see them.<br />
+<br />
+Lost of people twisted that story so much, ive seen people saying &quot;Paragon got banned for using Saronite bombs on Heroic LK&quot; , or people claiming &quot;Ensidia got the real world first on Heroic LK but got banned&quot;<br />
+<br />
+Nevermind the fact it was Normal.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">milowen</div><div class="date">2013-01-17, 08:44 PM</div></div><div class="posttext">Very interesting reading.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vongimi</div><div class="date">2013-01-17, 09:34 PM</div></div><div class="posttext">Always love posts like these... really goes to show you how much they are in control of everything, and its not just random and estimations. This is the reason WoW is on top! Now if only Blizzard could instill that level of intelligence and control into the Diablo dev team...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemonpartyfan</div><div class="date">2013-01-17, 10:47 PM</div></div><div class="posttext">So true. At this point in the game you would think blizzard would have designed encounters a little more intelligently vs players than they do.<br />
+<br />
+Decent read but most of what it boiled down to was players are crafty and if they beat blizzards design through interesting play styles and tactics it has to be &quot;less fun&quot; in most situations cause it's not how we (blizzard) designed it.<br />
+<br />
+I kind of have to agree with them in regards to the Gara'Jal evadeish bug.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2013-01-17, 11:23 PM</div></div><div class="posttext">always, after reading one of these, no matter which dev posts it.. I realize just how much smarter they are then the average player. One of the reasons I am so negative on PFO is because they are purposefully allowing players to vote on features....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Belize</div><div class="date">2013-01-17, 11:26 PM</div></div><div class="posttext">Maybe they're trying to cap their dps?<br />
+<br />
+Har-dee-har. You so punny.<br />
+<br />
+Do devs really watch our attempts? That's... interesting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Anjkh</div><div class="date">2013-01-18, 12:01 AM</div></div><div class="posttext">Great read. I still can't fully understand how community managers can hold their grounds with all the shit the playerbase throw at them...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0b02ba1114</div><div class="date">2013-01-18, 12:01 AM</div></div><div class="posttext">Har-dee-har. You so punny.<br />
+<br />
+Do devs really watch our attempts? That's... interesting.<br />
+<br />
+Definitely not most, but I can imagine they'll be watching the top 10 guilds at least. The information is just so much quicker and better when you see it happen live. Makes total sense they do it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mukki</div><div class="date">2013-01-18, 03:06 AM</div></div><div class="posttext">Read this and Ion really gives players a lot to look up to. He is so open about encounter design and how it effects their decisions.<br />
+<br />
+EDIT: And yes, you are first because I actually took the time to read this one :P<br />
+<br />
+Damn dude, you're not gonna melt from not getting your first post vitamins, are you?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">quras</div><div class="date">2013-01-18, 03:58 AM</div></div><div class="posttext">I kind of have to agree with them in regards to the Gara'Jal evadeish bug.<br />
+<br />
+Oh and I agree it was getting by there intent of the encounter but I care little for their intent when they have full control to stop those types of things before they even start. Either way, I got a $1 says it was not, &quot;less fun&quot; when the group beat it except maybe for blizzard who had to watch someone out smart them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tybudd33</div><div class="date">2013-01-18, 04:09 AM</div></div><div class="posttext">All I got from this is what I already knew - nerf mages every time we can. <br />
+Spell steal is essentially worthless in PvE now, and has been for a while - Thanks! <br />
+Oh, and let's nerf Ring of Frosts target limit while we're at it, can't have that working in say.. BGs.<br />
+Then of course the recent neutering of fire to an virtually noncompetitive state.<br />
+<br />
+Not sure why I'm still playing this class.<br />
+<br />
+Wow, just wow!!!<br />
+<br />
+This should be the definition for Tunnel Vision in Websters!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SodiumChloride</div><div class="date">2013-01-18, 06:14 AM</div></div><div class="posttext">Good read.<br />
+<br />
+Note that mages locking down adds using CC is not unique to Will Heroic or even to the Ring of Frost spell. Back in SSC, using Frost Nova rotations to CC waves of murloc and DPS-ing them down was a similar example (though in that case, the added needed to be killed before the rotation wore off). <br />
+<br />
+Using creative use of spellsteal isnt new to MoP either. Recall Flower Power buff in Ulduar and Ensidia's smart use of it to kill Hodir Hard Mode. What makes that an exploit and what Vodka did a &quot;creative use of game mechanics&quot;? IIRC Ensidia was banned for using Flower Power although they posted a video of the kill and reported Flower Power right after using it to kill Hodir.<br />
+<br />
+On a lighter (and somewhat off-topic) note, there was also the hilarious exploit of Spellsteal in AV back during BC.<br />
+<br />
+http://youtu.be/-pr0t6yH_0A</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5b6f556fce</div><div class="date">2013-01-18, 07:44 PM</div></div><div class="posttext">Ion good guy</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

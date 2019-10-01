@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="client, builds, blizzard, confirm, strings, warden, release, scan.dll, based, evidence, point, gluestrings.lua, is64bitclient, released, check, 64-bit, streaming, left, login, light, screen, bottom, debug, assertion, interesting, find, beta, internal, assertions, alpha, corner, build, enabled, player, base, supports, love, architectures, likes, jump, actual, misunderstanding, assumptions, ahead, guys, purposes, afaik, proof, showed, localisation" />
+<meta name="description" content="Tier 12 Video Preview - Hunter 
+It's time for another Tier 12 video preview, this time with the hunter set: the Flamewaker's Battlegear! 
+ 
+&lt;object width=&quot;700&quot; height=&quot;455&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/aAI5WSeiqeI?fs=1&amp;hl=en_US&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/aAI5WSeiqeI?fs=1&amp;hl=en_US&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot;" />
+<title> Tier 12 Hunter Preview, 64 Bits Client, iPhone Authenticator, Occu'thar Video [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Tier 12 Hunter Preview, 64 Bits Client, iPhone Authenticator, Occu'thar Video</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-916938.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/916938-Tier-12-Hunter-Preview-64-Bits-Client-iPhone-Authenticator-Occu-thar-Video">Tier 12 Hunter Preview, 64 Bits Client, iPhone Authenticator, Occu'thar Video</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2011-06-04, 06:33 AM</div></div><div class="posttext">Tier 12 Video Preview - Hunter<br />
+It's time for another Tier 12 video preview, this time with the hunter set: the Flamewaker's Battlegear (http://db.mmo-champion.com/is/1005/flamewakers-battlegear/)!<br />
+<br />
+<br />
+&lt;object width=&quot;700&quot; height=&quot;455&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/aAI5WSeiqeI?fs=1&amp;hl=en_US&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/aAI5WSeiqeI?fs=1&amp;hl=en_US&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;700&quot; height=&quot;455&quot;&gt;&lt;/embed&gt;&lt;/object&gt;<br />
+<br />
+<br />
+World of Warcraft 64-bit client soon?<br />
+According to the latest changes in the interface files of the Patch 4.2 PTR client, it seems that Blizzard is finally getting ready to release a 64-bit version of the WoW client.<br />
+<br />
+<br />
+GlueStrings.lua<br />
+if ( IsWindowsClient() ) then<br />
+if ( Is64BitClient() ) then<br />
+dllURL = SCANDLL_URL_WIN64_SCAN_DLL;<br />
+else<br />
+dllURL = SCANDLL_URL_WIN32_SCAN_DLL;<br />
+end<br />
+end<br />
+<br />
+AccountLogin.lua<br />
+SCANDLL_URL_WIN32_SCAN_DLL = &quot;http://us.scan.worldofwarcraft.com/update/Scan.dll&quot;;<br />
+SCANDLL_URL_WIN64_SCAN_DLL = &quot;http://us.scan.worldofwarcraft.com/update/Scan-64.dll&quot;;<br />
+<br />
+<br />
+And as I write this news post I can already see the confused look in your eye: &quot;Wait? What? Who cares?&quot;. Well, this change means two things:<br />
+<br />
+<br />
+<br />
+People with 64-bit Operating Systems (= anyone with more than 3gb of Memory, most likely) will see a slight increase in performance. <br />
+People who regularly experiences crashes when World of Warcraft uses too much memory will finally be able to play WoW without crashing every x hours/minutes. (People playing in super high resolution, or with a boatload of addons)<br />
+<br />
+<br />
+Of course nothing is official yet, but there's a glimmer of hope for the increasing number of people with 64-bit systems. However, I'd like to point out that we're only seeing a couple of strings in .lua files and not real changes so I wouldn't expect it for Patch 4.2. <br />
+<br />
+<br />
+iPhone Mobile Authenticator App Update<br />
+Due to an issue with the latest version of the iPhone Battle.net Mobile Authenticator application (version 1.3.0), we've temporarily taken down the app from the iTunes store. Rest assured that we're already working on a new version and will be providing an update in this thread as soon as that new update is up. Please note that until the new version is made available, iPhone and iTouch users will be unable to download the app or upgrade it to the latest version.<br />
+<br />
+If you use a non-iPhone version of the Battle.net Mobile Authenticator, have not upgraded to version 1.3.0, or if you upgraded an existing version via iTunes but have not retrieved a new serial number, your Mobile Authenticator should be unaffected by this issue and continue to function as normal. Regardless if you retrieved the update or not, there is no security threat or risk associated with the Authenticator's ability to continue protecting your account while attached.<br />
+<br />
+As always, if you are experiencing any issues with an Authenticator or Mobile Authenticator, we encourage you to contact our customer support staff for assistance - https://us.battle.net/support/en/ticket/submit<br />
+<br />
+Thanks!<br />
+<br />
+<br />
+Patch 4.2 - Memento Mori + Method vs Occu'thar (Baradin Hold)<br />
+Memento Mori (http://wow-mm.com/) and Method (http://www.methodwow.com/) teamed up on test realms to go kick Occu'thar's ... eyes. Occu'thar is the new boss of Baradin Hold and if you have no idea of what's going on in this fight, don't worry, there's a dungeon journal entry for that guy too! <br />
+<br />
+Occu'thar (Baradin Hold)<br />
+This ravenous demon broke free of its cage and gained access to the western wing of the prison, devouring all of the inmates held there. Occu'thar's gluttony resulted in a body too bloated to escape its environs, effectively turning the prison wing into its new holding cell. <br />
+<br />
+<br />
+<br />
+Focused Fire (http://db.mmo-champion.com/s/96884/focused-fire/) - Occu'thar sets his gaze on the location of a random player, then inflicts 35,000 Fire damage every 1 sec to players within 12 yards of the targeted location. <br />
+Searing Shadows (http://db.mmo-champion.com/s/101007/searing-shadows/) - Occu'thar inflicts 105,000 Shadow damage to players in a 60 degree cone in front of him, and increases Shadow damage taken by 100% for 30 sec. <br />
+Eyes of Occu'thar (http://db.mmo-champion.com/s/96920/eyes-of-occuthar/) - Occu'thar forms an Eye of Occu'thar on every player for 10 sec. The eyes bore into their target hosts with the Gaze of Occu'thar.<br />
+<br />
+<br />
+<br />
+Gaze of Occu'thar (http://db.mmo-champion.com/s/96942/gaze-of-occuthar/) - The Eye of Occu'thar gazes at its target host, inflicting 6,000 Shadow damage every 1 sec for 10 sec.<br />
+Occu'thar's Destruction (http://db.mmo-champion.com/s/96968/occuthars-destruction/) - After an Eye of Occu'thar remains attached to a player for 10 sec, it fully bores into the host and detonates with Occu'thar's Destruction, inflicting 25,000 Shadow damage on all players.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+&lt;object width=&quot;700&quot; height=&quot;455&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/2iK7Nu3nMco?fs=1&amp;hl=en_US&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/2iK7Nu3nMco?fs=1&amp;hl=en_US&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;700&quot; height=&quot;455&quot;&gt;&lt;/embed&gt;&lt;/object&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Culix</div><div class="date">2011-06-04, 06:37 AM</div></div><div class="posttext">first! zomg<br />
+<br />
+Infracted</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaldriss</div><div class="date">2011-06-04, 06:37 AM</div></div><div class="posttext">second!!!!<br />
+<br />
+OT: they didnt get rid of the ears on the helmet....<br />
+<br />
+<br />
+Infracted.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pyrostorm9001</div><div class="date">2011-06-04, 06:39 AM</div></div><div class="posttext">I really enjoy the Hunter Tier 12. very very nice.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sithel</div><div class="date">2011-06-04, 06:39 AM</div></div><div class="posttext">That armor...has an eye patch...I cannot decide if that is cool, or out of place...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cattleclysm</div><div class="date">2011-06-04, 06:40 AM</div></div><div class="posttext">Nerf mages</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2031ce955d</div><div class="date">2011-06-04, 06:41 AM</div></div><div class="posttext">Where does Boub get the music for these videos?They are awsome !</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ImNot1337</div><div class="date">2011-06-04, 06:47 AM</div></div><div class="posttext">o_O <br />
+<br />
+64-bit support? <br />
+<br />
+YAY!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc30e8f0ae61</div><div class="date">2011-06-04, 06:48 AM</div></div><div class="posttext">Almost fell of my chair laughing when I saw the orc wearing the hunter t12.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kavoo</div><div class="date">2011-06-04, 06:50 AM</div></div><div class="posttext">Wheres the Troll version ???</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2011-06-04, 06:51 AM</div></div><div class="posttext">Wheres the Troll version ???<br />
+<br />
+http://www.youtube.com/watch?v=dQw4w9WgXcQ</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">gathanasiou</div><div class="date">2011-06-04, 06:53 AM</div></div><div class="posttext">Yay for 64-bit. Was'bout time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Keristrasza</div><div class="date">2011-06-04, 06:58 AM</div></div><div class="posttext">http://www.youtube.com/watch?v=dQw4w9WgXcQ<br />
+<br />
+Epic haha xD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb8750d8f95</div><div class="date">2011-06-04, 07:05 AM</div></div><div class="posttext">Why is at least one of the arcane mages not using glyph of mirror image?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kindlin</div><div class="date">2011-06-04, 07:08 AM</div></div><div class="posttext">Yay 64 bit<br />
+<br />
+I wonder how the people with mobile authenticator can get a code? Can you do it on the website or something?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dontrike</div><div class="date">2011-06-04, 07:21 AM</div></div><div class="posttext">Fight looks interesting. I look forward to having him drop 6 pieces of pvp every week. (Unfortunate for me, but probably not for others.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Critcryin</div><div class="date">2011-06-04, 07:21 AM</div></div><div class="posttext">http://www.youtube.com/watch?v=dQw4w9WgXcQ<br />
+<br />
+<br />
+Have my children.<br />
+<br />
+<br />
+OT: Before watching that video.. that set looks.. interesting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Magmaros</div><div class="date">2011-06-04, 07:21 AM</div></div><div class="posttext">/wtb knowing when 4.2 comes out, i'm getting bored</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf89e9482f3</div><div class="date">2011-06-04, 07:23 AM</div></div><div class="posttext">Very nice set.<br />
+That doggy'll be a PUG-wiper for quite a few weeks, I guess.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb0d6912b72</div><div class="date">2011-06-04, 07:24 AM</div></div><div class="posttext">LOl,looks a lot like Pascal programming</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Viziel</div><div class="date">2011-06-04, 07:29 AM</div></div><div class="posttext">where can you get that voice for events on vent? if that's vent they're using that is</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Samin</div><div class="date">2011-06-04, 07:37 AM</div></div><div class="posttext">where can you get that voice for events on vent? if that's vent they're using that is<br />
+<br />
+That's TeamSpeak</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mercadi</div><div class="date">2011-06-04, 07:48 AM</div></div><div class="posttext">Hunter set is amazing. Now I know why locks don't get epic looking sets any more - those artists who used to make them have moved to designing sets for hunters.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2011-06-04, 07:51 AM</div></div><div class="posttext">64 bit..thankyou blizzard &lt;3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">WyriHaximus</div><div class="date">2011-06-04, 07:51 AM</div></div><div class="posttext">About time we got 64bit support :cool:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Unferth</div><div class="date">2011-06-04, 07:51 AM</div></div><div class="posttext">Wouldn't they have to recompile the entire game to be 64 bit native?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zatheyll</div><div class="date">2011-06-04, 07:53 AM</div></div><div class="posttext">Where does Boub get the music for these videos?They are awsome !<br />
+<br />
+Two Steps from Hell, X-Ray Dog, Immediate Music, and the like, I think this one is from Two Steps from Hell.<br />
+<br />
+A good place to get started on this kind of music is on DragonstarDT's Youtube channel: <br />
+<br />
+http://www.youtube.com/user/DragonstarDT?blend=1&amp;ob=5<br />
+<br />
+(Definitely worth it to see all his epic music mixes).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Radefa</div><div class="date">2011-06-04, 07:53 AM</div></div><div class="posttext">Looks like a easy fight</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seramore</div><div class="date">2011-06-04, 07:57 AM</div></div><div class="posttext">unrelated, but song in the video with lyrics: http://www.youtube.com/watch?v=Z9VahB0MkG0</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Begpo</div><div class="date">2011-06-04, 08:01 AM</div></div><div class="posttext">Looks like a easy fight<br />
+<br />
+like every other PVP-Boss fight :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pappahealar</div><div class="date">2011-06-04, 08:08 AM</div></div><div class="posttext">64-bit support finally.<br />
+<br />
+Only 2-3 years later than expected, hm?<br />
+<br />
+Finally I will stop experience wow errors every once in an hour or two because of memory leakage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">good diu bro</div><div class="date">2011-06-04, 08:08 AM</div></div><div class="posttext">Why they cant just call it flamewalker stalker's battlegear? Hunters tier sets should have &quot;stalker&quot; in their names, its the culture and tradition.<br />
+Reasons for t9 is understandable, but for whats the story for t10 and t11? Cryptlord stalker and murlok stalker too offensive? I think not.<br />
+<br />
+EDIT: For reference's sake,<br />
+http://db.mmo-champion.com/is/749/stalkers-chain-battlegear/ TBC noob set<br />
+http://db.mmo-champion.com/is/186/beaststalker-armor/ d3<br />
+http://db.mmo-champion.com/is/206/giantstalker-armor/ t1<br />
+http://db.mmo-champion.com/is/215/dragonstalker-armor/ t2<br />
+http://db.mmo-champion.com/is/794/cryptstalker-battlegear/ t3<br />
+http://db.mmo-champion.com/is/651/demon-stalker-armor/ t4<br />
+http://db.mmo-champion.com/is/652/rift-stalker-armor/ t5<br />
+http://db.mmo-champion.com/is/669/gronnstalkers-armor/ t6<br />
+http://db.mmo-champion.com/is/794/cryptstalker-battlegear/ t7<br />
+http://db.mmo-champion.com/is/838/scourgestalker-battlegear/ t8<br />
+<br />
+<br />
+LOl,looks a lot like Pascal programming<br />
+Looks more like pseudo code to me.<br />
+<br />
+<br />
+<br />
+Wouldn't they have to recompile the entire game to be 64 bit native?<br />
+Not too sure about your question. If you mean do they need to recode the game from scratch, no they wont have to but it would be easier to do so albeit more effort to do so.<br />
+If you mean do they need a separate executable for 32 bit and 64 bit? Yes and no (they share the same library anyways), but with a launcher, I see no reason why they dont make it into 2 executable.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd1f612b92e</div><div class="date">2011-06-04, 08:12 AM</div></div><div class="posttext">LOl,looks a lot like Pascal programming<br />
+<br />
+Like the filename says, it is lua code (same code you write wow addons in), but with that syntax it could just be almost any programming language ;) it's just variable declaration after all.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">anubra</div><div class="date">2011-06-04, 08:17 AM</div></div><div class="posttext">where can you get that voice for events on vent? if that's vent they're using that is<br />
+<br />
+if u mean &quot;user left your channel&quot; etc thats TS3 standard sound</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd1f612b92e</div><div class="date">2011-06-04, 08:19 AM</div></div><div class="posttext">Wouldn't they have to recompile the entire game to be 64 bit native?<br />
+<br />
+Yes they would, but recompiling is the easy part ;)<br />
+<br />
+The problem part with migrating 32bit C to 64bit C is that the 32bit code has to be absolutely clean (no int size assumptions, missing function prototyping, etc.). /if the 32bit code is not fully clean it will take quite a while to get it &quot;64 bit ready&quot;, especially with a program the size of WoW.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocced9c7d33d</div><div class="date">2011-06-04, 08:23 AM</div></div><div class="posttext">second!!!!<br />
+<br />
+OT: they didnt get rid of the ears on the helmet....<br />
+<br />
+Why would they get rid of the ears when its based on a creature with those ears?? Imho best looking T12 set.<br />
+<br />
+The T12 loot piñata looks easy :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc41ce4810a1</div><div class="date">2011-06-04, 08:26 AM</div></div><div class="posttext">occuthar's had a couple of hints dropped as to what he was:<br />
+at the start, there was an untargetable small version of him in BH in the centre<br />
+when 4.1 hit, he vanished from the cage<br />
+<br />
+it's as nice little touch that blizz did :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nandini</div><div class="date">2011-06-04, 08:26 AM</div></div><div class="posttext">I think the file referred to in the GlueXML is the .DLL file the client uses when &quot;submitting non-personal system data&quot; for statistical purposes. (The GlueXML is the part of the UI that is in control at that stage of login.)<br />
+<br />
+It makes sense that a 64-bit DLL would be used for collecting this hardware and software information on a 64-bit Windows platform.<br />
+<br />
+I'm almost certain this has nothing to do with an actual 64-bit Windows client.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hastings</div><div class="date">2011-06-04, 08:33 AM</div></div><div class="posttext">Finally the 64 bit is here. So tired of crashing all the time nowadays because i play it on full ultra. Wish there would be some warlock changes apart from some cosmetic changes, because warlocks could use some tweaking especially demo.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yossarian</div><div class="date">2011-06-04, 08:37 AM</div></div><div class="posttext">occuthar's had a couple of hints dropped as to what he was:<br />
+at the start, there was an untargetable small version of him in BH in the centre<br />
+when 4.1 hit, he vanished from the cage<br />
+<br />
+it's as nice little touch that blizz did :P<br />
+that's true :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2031ce955d</div><div class="date">2011-06-04, 08:42 AM</div></div><div class="posttext">Two Steps from Hell, X-Ray Dog, Immediate Music, and the like, I think this one is from Two Steps from Hell.<br />
+<br />
+A good place to get started on this kind of music is on DragonstarDT's Youtube channel: <br />
+<br />
+http://www.youtube.com/user/DragonstarDT?blend=1&amp;ob=5<br />
+<br />
+(Definitely worth it to see all his epic music mixes).<br />
+<br />
+Thank you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">schippie</div><div class="date">2011-06-04, 08:52 AM</div></div><div class="posttext">64bit awesome. It seems lately blizzard is hard at work imporving world of warcraft (technically) ipv6 support dx11 support and now 64bit support freaking awesome.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kodiack</div><div class="date">2011-06-04, 08:56 AM</div></div><div class="posttext">&quot;People who regularly experiences crashes when World of Warcraft uses too much memory will finally be able to play WoW without crashing every x hours/minutes. (People playing in super high resolution, or with a boatload of addons)&quot;<br />
+<br />
+You would be right, but as of patch 4.1 Blizzard's been compiling the WoW executable with a large address aware flag. :P <br />
+<br />
+http://us.battle.net/wow/en/forum/topic/1658706617?page=8#145</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca172a76622</div><div class="date">2011-06-04, 09:02 AM</div></div><div class="posttext">The hunter gear actually looks pretty sweet :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">furydeath</div><div class="date">2011-06-04, 09:19 AM</div></div><div class="posttext">Well if we have learned anything it's more like it:<br />
+<br />
+World of Warcraft 64-bit added patch 4.3<br />
+<br />
+World of Warcraft 64-bit working patch 5.0.4a.B/72</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Roshar</div><div class="date">2011-06-04, 09:23 AM</div></div><div class="posttext">Why they cant just call it flamewalker stalker's battlegear?<br />
+<br />
+It's not Flamewalker, it's FlameWAKER. No idea why Blizzard named the tier set that instead of Flamewalker.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Noctus78</div><div class="date">2011-06-04, 09:34 AM</div></div><div class="posttext">do have to say i noticed the amount of ranged vs melee on occu'thar :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shinagami091</div><div class="date">2011-06-04, 10:06 AM</div></div><div class="posttext">The music is lovely. Where was the Worgen perspective?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ragemachina</div><div class="date">2011-06-04, 10:08 AM</div></div><div class="posttext">Why no troll or more importantly Forsaken preview on the hunter set??? i am so hurt mmo! :mad:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yunru</div><div class="date">2011-06-04, 10:28 AM</div></div><div class="posttext">I find 2nd boss easier than the 1st in BH.<br />
+Spread--dont stand in fire and stack when you get the eyes and aoe them down.<br />
+SO simple.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elbruho</div><div class="date">2011-06-04, 10:40 AM</div></div><div class="posttext">really love that hunter set!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc31e86327c3</div><div class="date">2011-06-04, 10:48 AM</div></div><div class="posttext">not a bad looking set although the helm is quite...weird...its the face of a flamewalker made into a helm...umm weird...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2c87439113</div><div class="date">2011-06-04, 10:55 AM</div></div><div class="posttext">hahah despawn :))</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jimakos84</div><div class="date">2011-06-04, 10:55 AM</div></div><div class="posttext">oh come on, no worgen version??i think i saw twice female belf version though:P small fail</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc10930da336</div><div class="date">2011-06-04, 11:02 AM</div></div><div class="posttext">o_O <br />
+<br />
+64-bit support? <br />
+<br />
+YAY!<br />
+<br />
++1 Bring on the beef!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2e5a20d730</div><div class="date">2011-06-04, 11:02 AM</div></div><div class="posttext">Is it just me, or is tier 12 actually nice?<br />
+<br />
+First effort by Blizzard in a looooong time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Easo</div><div class="date">2011-06-04, 11:28 AM</div></div><div class="posttext">X64, thats realy good. I also like that hunter set, therefore, everything is nice!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dubbelbasse</div><div class="date">2011-06-04, 11:29 AM</div></div><div class="posttext">Hunter t12 is the best looking set I've seen in a very long time from Blizz. It's absolutely amazing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LanceDH</div><div class="date">2011-06-04, 11:32 AM</div></div><div class="posttext">People who regularly experiences crashes when World of Warcraft uses too much memory will finally be able to play WoW without crashing every x hours/minutes. (People playing in super high resolution, or with a boatload of addons)<br />
+I take it this is only for 64-bit</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9002b04c84</div><div class="date">2011-06-04, 11:37 AM</div></div><div class="posttext">Finally! A 64 bit version...now only Crossfire and SLI support to go :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kodiack</div><div class="date">2011-06-04, 11:39 AM</div></div><div class="posttext">I take it this is only for 64-bit<br />
+<br />
+No. Absolutely no one should be crashing because of an address space limitation now. The large address aware flag bumps it up to 4 GB on x64 operating systems and 3 GB on x86 operating systems (assuming the x86 OS will acknowledge the flag in the first place; not recommended).<br />
+<br />
+A 64-bit executable would not further increase stability at this point. It would help with performance and may give the devs some extra room to work with for, say, caching purposes, but it won't help with out of storage crashes anymore. If you're seeing an out of storage crash now, your cache folder is likely the culprit. Deleting it should fix things up.<br />
+<br />
+---------- Post added 2011-06-04 at 06:41 AM ----------<br />
+<br />
+<br />
+Finally! A 64 bit version...now only Crossfire and SLI support to go :P<br />
+<br />
+WoW already scales nicely with CrossFire and SLI. Another WoW player and I posted our own benchmarks here:<br />
+<br />
+http://us.battle.net/wow/en/forum/topic/1305770941#1<br />
+<br />
+Each and every test that I've run has shown that multi-GPU setups are, indeed, beneficial. They're not officially supported, per se, but the drivers and game engine are evolved enough to make things run well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">homerunhomer</div><div class="date">2011-06-04, 11:41 AM</div></div><div class="posttext">Would like that 64 bit WoW. Very much so.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Monthu</div><div class="date">2011-06-04, 11:52 AM</div></div><div class="posttext">New hunter set looks awesome, shame no male Nelf :'(.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocea8dfff509</div><div class="date">2011-06-04, 11:57 AM</div></div><div class="posttext">release the dailys already so i can borefest on them till raid comes</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ferali</div><div class="date">2011-06-04, 12:11 PM</div></div><div class="posttext">You can use <br />
+http://www.techpowerup.com/forums/showthread.php?t=112556<br />
+<br />
+In order to avoid the crashs about memory in WoW.<br />
+<br />
+Works like a charm. Large Address Aware change in WoW executable, make sure to change it everytime your update the game.<br />
+<br />
+This way WoW will be able to use more than 2GB of ram.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kodiack</div><div class="date">2011-06-04, 12:21 PM</div></div><div class="posttext">You can use <br />
+http://www.techpowerup.com/forums/showthread.php?t=112556<br />
+<br />
+In order to avoid the crashs about memory in WoW.<br />
+<br />
+Works like a charm. Large Address Aware change in WoW executable, make sure to change it everytime your update the game.<br />
+<br />
+This way WoW will be able to use more than 2GB of ram.<br />
+<br />
+I put together some tools that did this as well; however, post-4.1, WoW is compiled with the LAA flag by default. I linked this before.<br />
+<br />
+http://us.battle.net/wow/en/forum/topic/1658706617?page=8#145</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Resa</div><div class="date">2011-06-04, 12:22 PM</div></div><div class="posttext">To clarify one point:<br />
+Wow doesn't crash anymore from using too much memory..<br />
+<br />
+Blizzard added the Large Address Aware flag in 4.1 - which allows 64bit users with 6 gig of ram to automatically use up to 3gb of RAM for WoW (previous Blizzard recommendations for LAA)... <br />
+Most of the crashes we saw were from multi-monitor setups, using high/ultra settings, and even under these conditions, wow only used slightly more than 2gb.<br />
+<br />
+Theres really no reason for needing 4gb when wow runs perfectly under 2gb (except in certain circumstances).<br />
+<br />
+We haven't seen a single too much memory crash since LAA was enabled by Blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kodiack</div><div class="date">2011-06-04, 12:24 PM</div></div><div class="posttext">^^Thanks for the backup, Ressy. :D<br />
+<br />
+Also, it's not just 6 GB of RAM. Any x64 owner will have the large address aware flag enabled by default. It's either there or it's not, and with 4.1 released, it's there. Also, 64-bit operating systems can use 4 GB of address space. 32-bit are limited to 3 GB, and that's if the end-user tells the OS to acknowledge the flag at all, which is not recommended.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aedeus</div><div class="date">2011-06-04, 12:40 PM</div></div><div class="posttext">Surprise surprise another rehash for BH.<br />
+<br />
+Impressive Blizzard, you can come up with a totally unique area, but can't fill it with anything that truly is unique.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4aee6fd695</div><div class="date">2011-06-04, 12:46 PM</div></div><div class="posttext">That boss will be a pain to PuG.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Swizzle</div><div class="date">2011-06-04, 12:57 PM</div></div><div class="posttext">Why is at least one of the arcane mages not using glyph of mirror image?<br />
+<br />
+Because it's not a DPS gain to do so?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ssateneth</div><div class="date">2011-06-04, 12:58 PM</div></div><div class="posttext">That boss will be a pain to PuG.<br />
+<br />
+Why's that? Everyone can stand generally behind boss now (no stupid parries). Its up to the dps to not cause deaths this time (kill the adds or everyone dies) instead of healers stuck on dispel duty, and the concept of spreading out/stacking doesnt seem too hard to me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocddab580ec1</div><div class="date">2011-06-04, 01:07 PM</div></div><div class="posttext">Nerf mages<br />
+<br />
+totaly indeed!;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bluspacecow</div><div class="date">2011-06-04, 01:10 PM</div></div><div class="posttext">Personally I'm a bit cynical about what the above snippet of lua code means for a 64 bit client.<br />
+<br />
+If you read it all it's doing is checking if the player has the 64 bit client and loading a 64 bit version of scan.dll (ie Warden)<br />
+<br />
+This does not mean they even have a 64 bit client ready. It also doesn't mean it's coming in the immediate future necessarily.<br />
+<br />
+After all they do have a linux client they use internally which has never been released (and never going to be release afaik)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Izzyasha</div><div class="date">2011-06-04, 01:28 PM</div></div><div class="posttext">wow teir 13 on belf look fugly</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Achaman</div><div class="date">2011-06-04, 01:55 PM</div></div><div class="posttext">hunter t12 looks nice on a gobber</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nyrin</div><div class="date">2011-06-04, 02:09 PM</div></div><div class="posttext">using tukui ftw</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jasper Kazai</div><div class="date">2011-06-04, 02:13 PM</div></div><div class="posttext">Aw, why does another Baradin Hold boss not get to have a unique model? Lazy lazy, Blizzard.<br />
+<br />
+(Although I suppose that VoA bosses didn't technically have unique models, either...)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MaxedOut</div><div class="date">2011-06-04, 02:16 PM</div></div><div class="posttext">Sadly, doggy doesnt look too difficult really. Lots of health maybe, but in the end, same old same old, dont stand in stuff, tank swap, stack/AE, spread. Looks fun none the less, then again puggers dont know any of those methods so...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sukki</div><div class="date">2011-06-04, 02:44 PM</div></div><div class="posttext">Sweet, 64-bit. Also, that tier makes me jealous that I'm not a hunter, even though that eye patch is ridiculous.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azgraal</div><div class="date">2011-06-04, 02:45 PM</div></div><div class="posttext">im REALLY looking forward to a 64-bit client :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfcb4b8290f</div><div class="date">2011-06-04, 03:13 PM</div></div><div class="posttext">Whats the name of the bar addon that the warlock is using to track his spell priority order?<br />
+<br />
+(not referring to the Power Auras left of it)<br />
+<br />
+Thanks in advance!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc49efe580e8</div><div class="date">2011-06-04, 03:28 PM</div></div><div class="posttext">ive got 24gb of ram - whats the betting i notice no difference at all? :rolleyes:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3b4a01e7e2</div><div class="date">2011-06-04, 03:32 PM</div></div><div class="posttext">BH boss: pretty easy by the looks of it.<br />
+Hunter tier: oelala! (don't touch my tralala)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Raleik</div><div class="date">2011-06-04, 03:34 PM</div></div><div class="posttext">Wow, I really like the looks of that tier on a Tauren. Gotta get working on leveling mine up!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Easo</div><div class="date">2011-06-04, 03:36 PM</div></div><div class="posttext">ive got 24gb of ram - whats the betting i notice no difference at all? :rolleyes:<br />
+<br />
+One thing is total available RAM, second is, how much programms and OS'es can actually use. And x64 could give you MOAR performance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">falafel</div><div class="date">2011-06-04, 03:37 PM</div></div><div class="posttext">The T12 loot piñata looks easy :)<br />
+<br />
+No I think that thing where you have to spread and THEN gather up is gonna be a killer!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kduv889</div><div class="date">2011-06-04, 03:50 PM</div></div><div class="posttext">Two Steps from Hell, X-Ray Dog, Immediate Music, and the like, I think this one is from Two Steps from Hell.<br />
+<br />
+A good place to get started on this kind of music is on DragonstarDT's Youtube channel: <br />
+<br />
+http://www.youtube.com/user/DragonstarDT?blend=1&amp;ob=5<br />
+<br />
+(Definitely worth it to see all his epic music mixes).<br />
+<br />
+I cannot thank you enough for linking me to this amazing YT artist!:cool:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tuoweit</div><div class="date">2011-06-04, 04:26 PM</div></div><div class="posttext">That armor...has an eye patch...I cannot decide if that is cool, or out of place...<br />
+<br />
+Yeah, the eyepatch is to help a hunter's depth perception for all their ranged attacks... oh wait.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Snes</div><div class="date">2011-06-04, 04:29 PM</div></div><div class="posttext">I find Blizzard's idea of &quot;hot on the heels of...&quot; comical. To most people's standards, 4.2 is not &quot;hot on the heels of&quot; 4.1.<br />
+They should stick with Slow™ Soon™.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gottie4u</div><div class="date">2011-06-04, 04:40 PM</div></div><div class="posttext">Lol the boss is too fat to get out of his cell. * face-palm*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rolly</div><div class="date">2011-06-04, 04:41 PM</div></div><div class="posttext">Well I see some of you like it, but those day-glo colours on the hunter armour look stupid as hell to me. The male orc is just comical, period.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ihyln</div><div class="date">2011-06-04, 04:46 PM</div></div><div class="posttext">Wow is not going 64bit. Those strings are just for checking if Windows is 64bit or not and it will load the appropriate scan dll.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfcb4b8290f</div><div class="date">2011-06-04, 04:49 PM</div></div><div class="posttext">Whats the name of the bar addon that the warlock is using to track his spell priority order?<br />
+<br />
+(not referring to the Power Auras left of it)<br />
+<br />
+Thanks in advance!<br />
+<br />
+Does anyone know?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paigeyotto</div><div class="date">2011-06-04, 04:55 PM</div></div><div class="posttext">What's the addon the person is using that makes the chatbox smaller, or any addon in general that makes it so you can change the size of it?<br />
+I hate how the default one is so big and annoying.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xiloscient</div><div class="date">2011-06-04, 05:01 PM</div></div><div class="posttext">God I sure hope they don't do another &quot;Lets make the PvE gear look like raid bosses guys!&quot; tier....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rolly</div><div class="date">2011-06-04, 05:02 PM</div></div><div class="posttext">What's the addon the person is using that makes the chatbox smaller, or any addon in general that makes it so you can change the size of it?<br />
+I hate how the default one is so big and annoying.<br />
+<br />
+Right click general chat tab, unlock window, grab lower right hand corner with mouse, resize as you wish. Move and separate the chat channels by their tab.This is the standard Wow UI you don't need an addon to do this. You can resize it until you find an addon you like.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Veldryn</div><div class="date">2011-06-04, 05:28 PM</div></div><div class="posttext">lame tank'n'spank boss</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paigeyotto</div><div class="date">2011-06-04, 05:36 PM</div></div><div class="posttext">Right click general chat tab, unlock window, grab lower right hand corner with mouse, resize as you wish. Move and separate the chat channels by their tab.This is the standard Wow UI you don't need an addon to do this. You can resize it until you find an addon you like.<br />
+<br />
+Thanks, I wasn't aware of that.<br />
+Though I still like the way their's looks.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nefastus</div><div class="date">2011-06-04, 05:45 PM</div></div><div class="posttext">Fiery shoulders, fiery helmet... Amazing how this time they managed to do a full tier to look lame. Guess it is to match the lack of reason to go to the place to fight recycled rag. Hopefully in a few months we will get to fight some new boss that isnt something recicled / retconed from the other expansions. One can hope.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Therec</div><div class="date">2011-06-04, 05:59 PM</div></div><div class="posttext">Because it's not a DPS gain to do so?<br />
+<br />
+Exactly. The glyph of Mirror Image is purely aesthetic.<br />
+<br />
+---------- Post added 2011-06-04 at 01:01 PM ----------<br />
+<br />
+<br />
+Why's that? Everyone can stand generally behind boss now (no stupid parries). Its up to the dps to not cause deaths this time (kill the adds or everyone dies) instead of healers stuck on dispel duty, and the concept of spreading out/stacking doesnt seem too hard to me.<br />
+<br />
+It's not hard for competent players. However I can guarantee that in 25-pugs you will have 3-4 idiots not stacking for the eyes, causing them to explode and wipe the group.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Weep</div><div class="date">2011-06-04, 06:34 PM</div></div><div class="posttext">WTF where's the troll armor view...it's way too blood elf up in this bitch.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Helriser</div><div class="date">2011-06-04, 06:46 PM</div></div><div class="posttext">Dunno if it got changed in the last two weeks, but I pugged a 25m 2 weeks ago and 1 shotted it. Super easy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc99608ce6b1</div><div class="date">2011-06-04, 07:13 PM</div></div><div class="posttext">Memento Mori still going?<br />
+<br />
+I remember coming out of the silithus hives at 60 then being asked to help a couple of them heading in</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">seru</div><div class="date">2011-06-04, 07:17 PM</div></div><div class="posttext">huntard looks awesome!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">themightysven</div><div class="date">2011-06-04, 07:40 PM</div></div><div class="posttext">That armor...has an eye patch...I cannot decide if that is cool, or out of place...<br />
+<br />
+next tier will have an eyepatch and a monocle. over the same eye.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc7a357fa0</div><div class="date">2011-06-04, 08:21 PM</div></div><div class="posttext">Where are the Worgens in Hunter Tier12 Prewiew? :confused:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">velfurious</div><div class="date">2011-06-04, 08:35 PM</div></div><div class="posttext">I think the file referred to in the GlueXML is the .DLL file the client uses when &quot;submitting non-personal system data&quot; for statistical purposes. (The GlueXML is the part of the UI that is in control at that stage of login.)<br />
+<br />
+It makes sense that a 64-bit DLL would be used for collecting this hardware and software information on a 64-bit Windows platform.<br />
+<br />
+I'm almost certain this has nothing to do with an actual 64-bit Windows client.<br />
+<br />
+I agree,<br />
+<br />
+Although to me, all I saw was a file that is likely used by WoW to scan the base system for viruses / hacks.<br />
+<br />
+Aka, I think it is just a 64bit scanner implementation.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca950e9c259</div><div class="date">2011-06-04, 09:31 PM</div></div><div class="posttext">is people talking throu a 2000 year microphone in that video? i couldnt stand that gameplay for more than 40 seconds</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc19bcb4de98</div><div class="date">2011-06-04, 09:43 PM</div></div><div class="posttext">wow teir 13 on belf look fugly<br />
+<br />
+<br />
+lol u fail<br />
+<br />
+OT: set looks ossom!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc737e3afa75</div><div class="date">2011-06-04, 10:03 PM</div></div><div class="posttext">They forgot to show the armor on Trolls!!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Skwert</div><div class="date">2011-06-04, 10:44 PM</div></div><div class="posttext">Pretty sure the emblem on the belt looks like a Vancouver based yoga company logo.... <br />
+Just saying.... :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spoonman</div><div class="date">2011-06-04, 11:13 PM</div></div><div class="posttext">YAY 64 Bit Client Finally!!!!!!!!<br />
+<br />
+http://www.youtube.com/watch?v=FKSdPfucDQA</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Freese</div><div class="date">2011-06-05, 12:28 AM</div></div><div class="posttext">BORING!!! how come blizzard always use same crappy old models,yet all you fagots still play this shite boring pve based game.same bullshit boring watch out for the fire,dont stand on that spot and move when i say move crap.YAWN!!! play something else with some descent pvp.wow is now the most lame game ever.to think i played this since beta is fubar.<br />
+<br />
+Blizzard refers to these bosses as &quot;loot piñatas&quot; for a reason.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Acideyeliner</div><div class="date">2011-06-05, 01:42 AM</div></div><div class="posttext">I wonder which colors will be normal and heroic. I love them all! Though my favorite will always be t8.5.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Naforce</div><div class="date">2011-06-05, 07:57 AM</div></div><div class="posttext">Whats the name of the bar addon that the warlock is using to track his spell priority order?<br />
+<br />
+(not referring to the Power Auras left of it)<br />
+<br />
+Thanks in advance!<br />
+<br />
+I'm not sure what you mean but right under my char I have a cooldown bar (not a priority thingy) and to the left of my char are my dottimers, both from fortexorcist!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bluspacecow</div><div class="date">2011-06-05, 08:34 AM</div></div><div class="posttext">I think the file referred to in the GlueXML is the .DLL file the client uses when &quot;submitting non-personal system data&quot; for statistical purposes. (The GlueXML is the part of the UI that is in control at that stage of login.)<br />
+<br />
+It makes sense that a 64-bit DLL would be used for collecting this hardware and software information on a 64-bit Windows platform.<br />
+<br />
+You might be half right there.<br />
+<br />
+scan.dll is warden.<br />
+<br />
+Friend of mine on #wowuidev raised a good point :<br />
+<br />
+If there is a 64 bit client coming then why does it need to check if it is a 64 bit client ? <br />
+<br />
+That's like a car checking it's a car first before applying accelerant to the engines ? Does a web browser first check it's a web browser before fetching a page ? Makes no sense to me<br />
+<br />
+He thinks it could just be a 64 bit version of Warden. It's possible the calls &quot;isWindowsClient()&quot; and the &quot;Is64BitClient()&quot; is refereeing to having a 64 bit version of windows IE The operating system and not the wow client it self.<br />
+<br />
+EDIT: Just extracted the FrameXML/GlueXML myself. The only place Is64BitClient() is used is in the lines of code already given. Straight after that it does a Warden scan with ScanDLLStart(SCANDLL_URL_LAUNCHER_TXT, dllURL);<br />
+<br />
+Not sure if that means the call is from internal Blizzard code or O/s code but it doesn't seem to be defined in the interface files you can extract at the login screen.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemons</div><div class="date">2011-06-05, 08:44 AM</div></div><div class="posttext">I'm so glad they're adding a 64 bit client...especially because I now have a 64 bit OS as of last month :)<br />
+<br />
+Too bad I'm guessing it's going to take them forever to put it out.<br />
+<br />
+EDIT: Thank you commenters for crushing my hopes and dreams.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">xxCorrosivexx</div><div class="date">2011-06-05, 10:34 AM</div></div><div class="posttext">what is the addon just above his cast bars called!?!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dyminator</div><div class="date">2011-06-05, 10:35 AM</div></div><div class="posttext">Gimme 64-bit client! &lt;3 idd! about time ;) i didn't know WoW only used max 3Gb memory tho :S i got 6Gb available</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TOM_RUS</div><div class="date">2011-06-05, 10:38 AM</div></div><div class="posttext">Wow is not going 64bit. Those strings are just for checking if Windows is 64bit or not and it will load the appropriate scan dll.<br />
+<br />
+No, they don't. You can open an disassembler and check this out.<br />
+<br />
+<br />
+You might be half right there.<br />
+<br />
+scan.dll is warden.<br />
+<br />
+Friend of mine on #wowuidev raised a good point :<br />
+<br />
+If there is a 64 bit client coming then why does it need to check if it is a 64 bit client ? <br />
+<br />
+That's like a car checking it's a car first before applying accelerant to the engines ? Does a web browser first check it's a web browser before fetching a page ? Makes no sense to me<br />
+<br />
+He thinks it could just be a 64 bit version of Warden. It's possible the calls &quot;isWindowsClient()&quot; and the &quot;Is64BitClient()&quot; is refereeing to having a 64 bit version of windows IE The operating system and not the wow client it self.<br />
+<br />
+EDIT: Just extracted the FrameXML/GlueXML myself. The only place Is64BitClient() is used is in the lines of code already given. Straight after that it does a Warden scan with ScanDLLStart(SCANDLL_URL_LAUNCHER_TXT, dllURL);<br />
+<br />
+Not sure if that means the call is from internal Blizzard code or O/s code but it doesn't seem to be defined in the interface files you can extract at the login screen.<br />
+<br />
+First of all, scan.dll isn't warden. Also, you can't load 64-bit DLL into 32-bit process (this mean there's should be separate executable to do that). &quot;IsWindowsClient()&quot; and the &quot;Is64BitClient()&quot; has nothing to do with user's OS, they are identify WoW client as being Windows and 64-bit.<br />
+<br />
+And last, there's one more string, that was missed:<br />
+<br />
+<br />
+GlueStrings.lua<br />
+X64_BUILD = &quot;x64&quot;;<br />
+<br />
+(probably showed on login screen at bottom left corner)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bluspacecow</div><div class="date">2011-06-05, 12:22 PM</div></div><div class="posttext">First of all, scan.dll isn't warden. Also, you can't load 64-bit DLL into 32-bit process (this mean there's should be separate executable to do that). &quot;IsWindowsClient()&quot; and the &quot;Is64BitClient()&quot; has nothing to do with user's OS, they are identify WoW client as being Windows and 64-bit.<br />
+<br />
+Fair point about scan.dll. It could be warden it could be the survey scan they do for hardware. Blizzard won't confirm the inner workings of Warden even to an MVP so it could go either way.<br />
+<br />
+But until we see a Blizzard employee confirm if a 64 bit client is coming or not we can't confirm that the Is64BitClient() function call is referencing a 64 bit client. I think it comes down to if they are still going to support a 32 bit client and have a 64 bit client or go all to a 64 bit client. Again I point out that if the client is already a 64 bit client (when it's released) then why does it have to check if it is ?<br />
+<br />
+Is it possible to have a 64 bit program on a 64 bit operating system actually be running as 32 bit ? Is that why it still needs to check ?<br />
+<br />
+<br />
+<br />
+And last, there's one more string, that was missed:<br />
+<br />
+GlueStrings.lua<br />
+X64_BUILD = &quot;x64&quot;;<br />
+(probably showed on login screen at bottom left corner)<br />
+<br />
+That's an interesting find in GlueStrings.lua and is new to this build of the wow client. But there's also strings in there for Assertion builds , PTR only builds , internal builds , alpha builds, beta builds , debug builds , GM builds , release builds , PTR release builds , PTR assertions enabled builds, streaming builds ....<br />
+<br />
+Not all of which see the light of day as released to players. It's just a file of strings for common variables / strings for localisation purposes AFAIK. As proof it's still rather flimsy. It's entirely possible they could be working on a 64 bit client but are far far away from releasing it.<br />
+<br />
+Don't get me wrong here guys. I would love to see a 64 client for all architectures Blizzard supports as much as the next guy. I just think the player base likes to jump a bit too far ahead in their assumptions based on very little actual evidence. Or based on a misunderstanding of the evidence.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb7f999acbc</div><div class="date">2011-06-05, 12:24 PM</div></div><div class="posttext">Nice to see a 64-bit support being planned for near future:cool:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Easo</div><div class="date">2011-06-05, 12:47 PM</div></div><div class="posttext">Will have to see in next PTR patches, maybe they add something more, which may/may not tell, if they are working on X64 client, or just the Warden.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pixel</div><div class="date">2011-06-05, 03:24 PM</div></div><div class="posttext">A 32 bits process can not run a 64 bits DLL, and vice versa, otherwise they wouldn't be able to share their address space - or at least, wouldn't be able to do so easily. It's just way more simple to have a 64 bits DLL for a 64 bits process, and a 32 bits DLL for a 32 bits process.<br />
+<br />
+Hence the reason the WoW client needs to know which version is itself in order to properly set up which version of the DLL to load. The only funky part is &quot;why doing this in Lua ?&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bluspacecow</div><div class="date">2011-06-05, 09:26 PM</div></div><div class="posttext">Here is lolz for this thread.<br />
+<br />
+<br />
+<br />
+/Applications/World of Warcraft Public Test/World of Warcraft.app/Contents/MacOS$ strings * | grep Is | grep Client<br />
+<br />
+VoiceIsDisabledByClient<br />
+IsWindowsClient<br />
+IsMacClient<br />
+IsLinuxClient<br />
+Is64BitClient<br />
+IsGMClient<br />
+<br />
+<br />
+Lolz Linux , Voice disable and GM client builds.<br />
+<br />
+WTB GM client build nao!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gilian</div><div class="date">2011-06-06, 06:55 AM</div></div><div class="posttext">Fight looks interesting. I look forward to having him drop 6 pieces of pvp every week. (Unfortunate for me, but probably not for others.)<br />
+<br />
+Yes, so interesting. /sarcasm<br />
+<br />
+It's practically tank and spank.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3f8691e37f</div><div class="date">2011-06-07, 06:10 AM</div></div><div class="posttext">love the hunter set.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4df3b2f527</div><div class="date">2011-06-13, 07:48 PM</div></div><div class="posttext">Does anyone know the font that it used for the damage﻿ text? (Memento Mori + Method vs Occu'thar 4.2 PTR)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Energy</div><div class="date">2011-06-17, 11:40 AM</div></div><div class="posttext">Some part of basic WoW UI is written with same LUA. I think Is64BitClient() function can be used for displaying &quot;x64&quot; tag on login screen. Why have different UI builds for pretty same clients? just for one or two &quot;x64&quot; marks ? :)</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

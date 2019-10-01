@@ -1,0 +1,755 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="rage,gear,cataclysm,generate,ability,gained,damage,warriors,strike,based,druids,heroic,constant,amount,warrior,players,change,improve,longer,concept,cooldown,harder,characters,manage,problems,rage-starved,mechanic,weapons,levels,swing,instant,formula,attack,means,maul,warriors/druids,make,druid,resource,feel,ways,mechanics,generated,control,goal,tanks,normalization,normalized,give,reduce" />
+<meta name="description" content="Rage Normalization in Cataclysm 
+We are going to take the opportunity in Cataclysm to try and fix some of the problems with the Rage mechanic for both warriors and druids. Some of these problems include: 
+ 
+Warriors/druids in the lowest levels of gear can be Rage-starved. 
+Warriors/druids in the highest levels of gear no longer have to manage their Rage when it becomes infinite. 
+Warrior/druid tanks lose Rage income as they improve their gear and take less damage. 
+The gameplay of warrior and" />
+<title> Rage Normalization in Cataclysm [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Rage Normalization in Cataclysm</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-706843.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/706843-Rage-Normalization-in-Cataclysm">Rage Normalization in Cataclysm</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-04-05, 04:45 PM</div></div><div class="posttext">Rage Normalization in Cataclysm<br />
+We are going to take the opportunity in Cataclysm to try and fix some of the problems with the Rage mechanic for both warriors and druids. Some of these problems include:<br />
+<br />
+Warriors/druids in the lowest levels of gear can be Rage-starved.<br />
+Warriors/druids in the highest levels of gear no longer have to manage their Rage when it becomes infinite.<br />
+Warrior/druid tanks lose Rage income as they improve their gear and take less damage.<br />
+The gameplay of warrior and druid tanks loses a lot of depth when massive boss hits means never having to manage Rage.<br />
+Heroic Strike and Maul are effective, but tedious abilities for using up extra Rage.<br />
+In general, warriors and druids don’t have enough control over their Rage.<br />
+<br />
+To resolve these issues, Rage will be normalized in Cataclysm. This will make the Rage gained by characters more consistent and avoid drastic differences between low-end and high-end gear.<br />
+<br />
+The concept of normalized Rage may leave a negative impression on some veteran players, as we tried it once before in The Burning Crusade and it wasn't successful, resulting in them feeling weakened. However, we think that the concept is still sound -- it was just that the previous implementation didn't balance the values correctly, leading to players being Rage-starved. That is not the goal. As part of the change, we want to give warriors and druids a lot of ways to control their rage, so even in the worst-case scenarios they won’t feel like they lack the resource to do their job.<br />
+<br />
+Here are some of the ways the Rage mechanic will change in Cataclysm:<br />
+<br />
+1) Rage is no longer generated based on damage done by auto-attacks. Instead, each auto-attack provides a set amount of Rage, and off-hand weapons will generate 50% of the Rage main hands do. This amount is based on a constant formula which factors in the base swing speed of the weapon. This means the Rage gained should be averaged out between fast and slow weapons. The constant formula also gives us the ability to easily increase the rage gained if it feels too low (or reduce it if is too high). We are also implementing the following mechanics, which will still allow rage to improve to some extent as you improve gear:<br />
+<br />
+If the attack is a critical strike, it will generate 200% Rage.<br />
+Haste will accelerate swing times to generate Rage faster.<br />
+<br />
+2) Rage from damage taken will no longer be based on a standard creature of the character’s level, but instead will based on the health of the warrior or druid. Again, there is a constant that is multiplied by the rage generated in order to allow for fine-tuning. This calculation ignores all damage reduction from armor, absorption, avoidance, block, or similar mechanics, so improving your gear will not reduce Rage gained.<br />
+<br />
+3) We will provide warriors and druids with more instant sources of rage. For example, the warrior shouts are changing to work more like the death knight ability Horn of Winter. Instead of Battle Shout consuming Rage, it will generate Rage but have a short cooldown. Both classes will have additional methods to generate Rage in an emergency or bleed off Rage when they have too much.<br />
+<br />
+4) All “on next swing” attacks in Cataclysm are being removed. Heroic Strike and Maul will be instant swings that cost a variable amount of Rage. For example, imagine Heroic Strike costs between 10 and 30 Rage. You must have at least 10 Rage to use the attack, but it will consume all available Rage up to a maximum of 30. Any Rage consumed above the minimum will cause the ability to hit harder, and in some cases much harder. We will tune the ability so that it’s generally not a good idea to hit it when you have low Rage (unless everything else is somehow on cooldown) but becomes a more attractive button the higher your Rage.<br />
+<br />
+<br />
+We understand this change may be scary for many players, but keep in mind that the constants in the formulas for gaining Rage will give us the ability to make quick adjustments if we feel Rage generation is too low. Our goal is for each character's Rage to not be always high or always low, but rather a resource that needs to be managed properly by the player.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zlajo</div><div class="date">2010-04-05, 04:48 PM</div></div><div class="posttext">I like this :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Griefel</div><div class="date">2010-04-05, 04:49 PM</div></div><div class="posttext">They failed in TBC because it was mid content, so ppl went from beeing 100 rage 24/7 to having to worry about it when you were competing for raid spots and such, now they will add it at the start of the expansion so no one would cry about it(gear won't be so good, everyone will get used to it), they might aswell make it yellow and call it energy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zero44556</div><div class="date">2010-04-05, 04:58 PM</div></div><div class="posttext">Sounds interesting, can't wait to see how it's implemented</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">phantomlink</div><div class="date">2010-04-05, 04:58 PM</div></div><div class="posttext">Sounds like some decent changes coming which will make raiding interesting.<br />
+<br />
+What about cleave though? they want to remove all on next trike attacks, will it have the same mechanic as HS and Maul?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0efa2cff2a</div><div class="date">2010-04-05, 04:59 PM</div></div><div class="posttext">cant wait to see how it will be sounds pretty cool</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Barook</div><div class="date">2010-04-05, 05:02 PM</div></div><div class="posttext">Sounds like some decent changes coming which will make raiding interesting.<br />
+<br />
+What about cleave though? they want to remove all on next trike attacks, will it have the same mechanic as HS and Maul?<br />
+<br />
+Most likely it will be like Swipe.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">snowcrash512</div><div class="date">2010-04-05, 05:02 PM</div></div><div class="posttext">Sounds like some decent changes coming which will make raiding interesting.<br />
+<br />
+What about cleave though? they want to remove all on next trike attacks, will it have the same mechanic as HS and Maul?<br />
+<br />
+<br />
+I sure hope so, cleave is a nice tool, but the fact that it cancels if you switch targets combined with having to wait for the swing to go off can be a real pain sometimes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rat</div><div class="date">2010-04-05, 05:05 PM</div></div><div class="posttext">So they're turning Heroic Strike into Execute, basically?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xacez</div><div class="date">2010-04-05, 05:07 PM</div></div><div class="posttext">My Warrior approves</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hegar</div><div class="date">2010-04-05, 05:08 PM</div></div><div class="posttext">This does look like a good way of implementing this, but as a druid i will have to retrain my hand - i'm so used to tapping my 'Z' button (maul) with my thumb, constantly, while i use other buttons, that i find myself accidently doing it on my pally tank as well :P<br />
+<br />
+Also, it will be odd to see 'Melee' on my damage done reports.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">vendelin</div><div class="date">2010-04-05, 05:08 PM</div></div><div class="posttext">I like it! Atlast my index finger can rest from scrolling HS!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shroud</div><div class="date">2010-04-05, 05:09 PM</div></div><div class="posttext">interesting the shouts are turning into horn of winter for warriors i like it and nice on the heroic strike cleave the next on swing thing was very akward to say the least.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nickishulk</div><div class="date">2010-04-05, 05:10 PM</div></div><div class="posttext">Making heroic strike actually do heroic (possibly even epic) damage. F'ing sweet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">phantomlink</div><div class="date">2010-04-05, 05:10 PM</div></div><div class="posttext">So they're turning Heroic Strike into Execute, basically?<br />
+<br />
+If they do, I hope they fix execute</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Valandill</div><div class="date">2010-04-05, 05:11 PM</div></div><div class="posttext">So they're turning Heroic Strike into Execute, basically?<br />
+<br />
+<br />
+That's exactly what I took away from that last statement too. So that makes me wonder if/what they are planning for Execute...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Beace</div><div class="date">2010-04-05, 05:11 PM</div></div><div class="posttext">Sounds really cool.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thaurr</div><div class="date">2010-04-05, 05:11 PM</div></div><div class="posttext">Im not really Happy with this, I love the way Heroic Strike and Cleave work right now. It's one of my favorite things about a warrior (next to charge probably).<br />
+<br />
+I don't really like the idea of 10-30 rage abilities either but that's probably because of the way they nerfed the fun out of Execute (which no longer executes but just slaps you for some damage, as to where Kill Shot really is a Kill Shot). However Im just going to wait and see what the Beta brings to make any decisions yet however Im a bit disappointed (but then again, so was I when they announced Titan's Grip and it's not too bad but 1H&gt;2H imo).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc052e60f280</div><div class="date">2010-04-05, 05:12 PM</div></div><div class="posttext">I'm liking the sound of an instant cleave/heroic strike.<br />
+<br />
+Saurfang will also approve, however, his cleaves were always instant! ;D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zalz</div><div class="date">2010-04-05, 05:14 PM</div></div><div class="posttext">Heroic strike is dead, hooray \o/<br />
+<br />
+Anyone saying that it's fun to spam a move every second without stop is probably braindead cause no person with half a brain could get any enjoyment from performing such a routine action.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xendrie</div><div class="date">2010-04-05, 05:15 PM</div></div><div class="posttext">I'm curious how these changes are going to affect rune strike since they said &quot;all&quot; next auto attack abilities.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Krypper</div><div class="date">2010-04-05, 05:21 PM</div></div><div class="posttext">As someone who's been having fun with a warrior, I approve of this. I don't think I was ever rage starved on my druid though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sofa</div><div class="date">2010-04-05, 05:24 PM</div></div><div class="posttext">I'm curious how these changes are going to affect rune strike since they said &quot;all&quot; next auto attack abilities.<br />
+<br />
+<br />
+I wouldn't be surprised if they turned it into a revenge like ability. Not available unless you dodge/parry, but instantly attacks when used, and given a short cooldown.<br />
+<br />
+I'm impartial to this news. I've been playing my warrior since a year after release, and the whole rage mechanic is what I liked best about being a DPS warrior. I just hope the rage change isn't going to cause me to dislike playing my warrior. It's definitely too early to say, though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Halabash</div><div class="date">2010-04-05, 05:25 PM</div></div><div class="posttext">So they're turning Heroic Strike into Execute, basically?<br />
+<br />
+<br />
+HS is a threat tool and rage dump. Execute is a killing tool and rage dump. Warriors are given an ability to create massive threat with tools like HS without putting out tons of dmg. Execute puts out tons of damage in a short period of time to &quot;beat&quot; the incoming heal on the player or mob.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Valandill</div><div class="date">2010-04-05, 05:26 PM</div></div><div class="posttext">(which no longer executes but just slaps you for some damage, as to where Kill Shot really is a Kill Shot). <br />
+<br />
+<br />
+I don't know why they just don't make Execute like Kill Shot. Big hitting attack but with a cooldown. It's kinda dumb that one of our weakest attacks is called EXECUTE.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Veay</div><div class="date">2010-04-05, 05:28 PM</div></div><div class="posttext">The current intuitive rage generation mechanics and warrior gameplay in general are the only things that still make me want to play this game after all these years. I certainly do hope they dont screw this up for the sake of making the game more simple, approachable, easier to balance or fix their own design mistakes. Removing majority of stats, normalizing rage gains, simplifying trees, further gear self-customization, i dont really like the direction this game is to take in Cata. Even if the next expansion looks much better so far than the current one in terms of the included features.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rat</div><div class="date">2010-04-05, 05:29 PM</div></div><div class="posttext">HS is a threat tool and rage dump. Execute is a killing tool and rage dump. Warriors are given an ability to create massive threat with tools like HS without putting out tons of dmg. Execute puts out tons of damage in a short period of time to &quot;beat&quot; the incoming heal on the player or mob.<br />
+<br />
+<br />
+...Yes.<br />
+<br />
+But they're using the same exact mechanic for both attacks, now, is my point.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">canefan</div><div class="date">2010-04-05, 05:29 PM</div></div><div class="posttext">He is right, i am a veteran player and i am very fearful of this making us horrible. Beginning of BC was horrendous trying to tank anything having no rage, i really don't want that again.<br />
+<br />
+And heroic strike taking on execute sounds like a bad idea to me, but i have always loved execute.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ironfeet</div><div class="date">2010-04-05, 05:46 PM</div></div><div class="posttext">I made pretty much this exact recommendation for how to fix rage over a year ago:<br />
+<br />
+http://forums.worldofwarcraft.com/thread.html?topicId=15211810450&amp;postId=154419756380&amp;sid=1#127<br />
+<br />
+&quot;A possible solution would be to award a percentage of rage based on damage that WOULD have hit the tank. So, damage which is avoided or mitigated (via shield block or even armor) awards rage in addition to actually getting hit and dealing damage.&quot;<br />
+<br />
+Please just hire me now. I can make your game better!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rédempteur</div><div class="date">2010-04-05, 05:51 PM</div></div><div class="posttext">So they're turning Heroic Strike into Execute, basically?<br />
+<br />
+<br />
+And Maul into Ferocious bite. I mostly agree with the first 3 statements but the 4th i already dislike. Especially because they will make them have global cooldowns = much less threat (from a bear POV).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Krymoar</div><div class="date">2010-04-05, 05:53 PM</div></div><div class="posttext">So, whats going to happen with bladestorm? if you get rage with every hit?<br />
+<br />
+Bladestorm crits = LAWL FUL RAGE AFTER BLADESTORM LAWL SUDDEN DEATH FULL RAGE EXECUTE11111<br />
+?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">GNARW</div><div class="date">2010-04-05, 05:56 PM</div></div><div class="posttext">this will fix warriors :D<br />
+finally normal players get a chance to compete without being nerfed cause the best in the world got some fine epixx</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1f722ef552</div><div class="date">2010-04-05, 05:59 PM</div></div><div class="posttext">Well.. I'm not a playing a worrior but i still like this news since it shows that blizzard already has concrete plans for cataclysm which means Beta (and of course) release are coming closer :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">vendelin</div><div class="date">2010-04-05, 05:59 PM</div></div><div class="posttext">Especially because they will make them have global cooldowns = much less threat (from a bear POV).<br />
+<br />
+<br />
+You sure about that? They can just increase the threat modifier for whichever spell and you will be on the same threat level again :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Steeveex</div><div class="date">2010-04-05, 06:02 PM</div></div><div class="posttext">And Maul into Ferocious bite. I mostly agree with the first 3 statements but the 4th i already dislike. Especially because they will make them have global cooldowns = much less threat (from a bear POV).<br />
+<br />
+<br />
+I completely agree. I rather like having a separate cooldown for Maul. Slap it on a macro and I'm a threat machine. Now I'm gonna have to grow a 6th finger to get it into my rotation. ;D<br />
+<br />
+On the plus side, it is always fun relearning how to play a toon. Keeps things fresh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ama</div><div class="date">2010-04-05, 06:02 PM</div></div><div class="posttext">But they're using the same exact mechanic for both attacks, now, is my point.<br />
+<br />
+<br />
+No, they're not! Execute consume all of your remaining rage, plus it is not usable on enemies what have more than 20% of their health. New HS will use at least 10 point of rage, but no more than 30 and usable anytime you've got enough rage. There is a difference. Read it again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gurggy</div><div class="date">2010-04-05, 06:06 PM</div></div><div class="posttext">I'm really excited about the changes to rage, actually. What I'm less enthusiastic about is this blurb about the &quot;change&quot; to haste that they've been promising us for the last couple months that's supposed to make it more attractive for us (since they're taking away armor penetration). <br />
+<br />
+Haste is extraordinarily expensive because, for classes with cast times, it reduces them, allowing their overall dps to increase at about the same level as their haste, within the limitations of their resource. For us, it has always been overpriced because it only affects our white swings and so we receive about 10% of the haste benefit that caster types get from it. <br />
+<br />
+Supposedly they were going to to improve the attractiveness of haste for us, and I'm sincerely hoping this isn't all they're bringing to the table, since essentially this change amounts to no change at all.<br />
+<br />
+I think I'm with other posters about the HS change, I actually think it's likely to change some things about the class, i.e. Bloodsurge can't have the same proc chance/source as it has now, since we won't be using heroic strike often enough to make it the same, but in return we'll be getting an execute like ability to use during the entire combat. That does make the Arms talent a bit lackluster, however, but presumably they'll do something to execute to make it more worthwhile.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rédempteur</div><div class="date">2010-04-05, 06:06 PM</div></div><div class="posttext">You sure about that? They can just increase the threat modifier for whichever spell and you will be on the same threat level again :)<br />
+<br />
+<br />
+I agree but, will blizz do it? We all know they change something and wait 9000 years to &quot;fix&quot; it (Vanish lmao)<br />
+<br />
+Edit<br />
+<br />
+<br />
+<br />
+No, they're not! Execute consume all of your remaining rage, plus it is not usable on enemies what have more than 20% of their health. New HS will use at least 10 point of rage, but no more than 30 and usable anytime you've got enough rage. There is a difference. Read it again.<br />
+<br />
+<br />
+L2P?? http://www.wowhead.com/?spell=47471 http://www.wowhead.com/?spell=48577. Execute is worse tho, cause of the 20% factor, and with Sudden Death talented, you need at least 40 rage for a fully powered Execute.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Joniebonie</div><div class="date">2010-04-05, 06:09 PM</div></div><div class="posttext">Rage Normalization in Cataclysm<br />
+<br />
+3) We will provide warriors and druids with more instant sources of rage. For example, the warrior shouts are changing to work more like the death knight ability Horn of Winter. Instead of Battle Shout consuming Rage, it will generate Rage but have a short cooldown. Both classes will have additional methods to generate Rage in an emergency or bleed off Rage when they have too much.<br />
+<br />
+<br />
+<br />
+Pinch me, am I dreaming?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wreil</div><div class="date">2010-04-05, 06:10 PM</div></div><div class="posttext">* Execute<br />
+* Instant<br />
+* 5 yds. range<br />
+* 15 Rage<br />
+* Attempt to finish off a wounded foe, causing [X + AP * 0.2] damage and converting each extra point of rage into Y additional damage (up to a maximum cost of 30 rage). Only usable on enemies that have less than 20% health.<br />
+<br />
+doesn't this sound a lot like the new heroic strike?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Valandill</div><div class="date">2010-04-05, 06:11 PM</div></div><div class="posttext">No, they're not! Execute consume all of your remaining rage, plus it is not usable on enemies what have more than 20% of their health. New HS will use at least 10 point of rage, but no more than 30 and usable anytime you've got enough rage. There is a difference. Read it again.<br />
+<br />
+<br />
+http://www.wowhead.com/?spell=47471<br />
+<br />
+Execute only consumes a MAX of 30 rage. Only difference is it starts at 15 rage, not 10 like the new HS.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jimlow</div><div class="date">2010-04-05, 06:12 PM</div></div><div class="posttext">how is this going to effect warriors with TG that have 2 really slow weapons? Also isn't this going to make arms warriors feel realllly bursty with up to 4 instant attacks + bleed effects + 1.5 sec slam time?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gurggy</div><div class="date">2010-04-05, 06:12 PM</div></div><div class="posttext">No, they're not! Execute consume all of your remaining rage, plus it is not usable on enemies what have more than 20% of their health. New HS will use at least 10 point of rage, but no more than 30 and usable anytime you've got enough rage. There is a difference. Read it again.<br />
+<br />
+<br />
+Ummm... is this sarcasm?<br />
+Execute (http://www.wowhead.com/?spell=47471)<br />
+<br />
+With improved execute, . . . . lessee. . . costs 10 rage, uses up to 30 rage. .. . .<br />
+<br />
+So the issue is, how is the new HS different than just making execute usable at any time? I don't think the mechanics are really that different, especially if you've played an Arms warrior recently and had the Sudden Death (http://www.wowhead.com/?spell=29724) Talent.<br />
+<br />
+In fact, without modification, HS would actually be preferable to execute, since it could be used during the entire fight without a proc chance. <br />
+<br />
+But certainly the 10 rage minimum and 30 rage maximum is pretty much identical.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Warriorfury</div><div class="date">2010-04-05, 06:13 PM</div></div><div class="posttext">Dear god this is amazing! I know what I'll be leveling for Cataclysm ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nate1493</div><div class="date">2010-04-05, 06:14 PM</div></div><div class="posttext">This doesn't sound like more rage control... This sounds like Blizzard is giving all warriors a set amount of rage based on nothing but the fact you swing.<br />
+<br />
+Also, unless Blizzard greatly changes warriors, specifically fury warriors, there isn't a time to use HS or Cleave. On top of that, we will have been greatly reduced in our ability to damage multiple targets. This sounds like a very poor idea.<br />
+<br />
+Imagine this situation... Every main hand swing you generate 25 rage, every offhand swing you generate 12.5 rage. You receive this amount of rage every 3 seconds. There is a high chance any swing can, and will, miss. Not being able to change main hand swings to &quot;yellow&quot; attacks effectively turns them from 0% miss to 17% miss (give or take). So, unless blizzard is planing on implementing some change in Titan's grip and hit reduction, I think removing HS has a much further reaching negative then blizzard is willing to admit.<br />
+<br />
+Simply not &quot;liking&quot; the fact that warriors appear to have no issue with rage is simply because we have adjusted to the system and created our gear to give us no rage issues. This is very similar to healers or mana DPS classes. They have attuned their gear so they do NOT have mana issues! And this is a problem because? Well apparently we are supposed to have headaches with mana and rage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Verdeooze</div><div class="date">2010-04-05, 06:15 PM</div></div><div class="posttext">TANK POV:<br />
+/delete Devastate, revenge, Shield With HS Spam MACROS<br />
+:-[</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">aloís</div><div class="date">2010-04-05, 06:16 PM</div></div><div class="posttext">Chqnge sounds interessting, especially the shouts will be nice for them to finally hqve a useage: P. And fi ally haste won't b akward to hqve haha<br />
+L</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rat</div><div class="date">2010-04-05, 06:16 PM</div></div><div class="posttext">No, they're not! Execute consume all of your remaining rage, plus it is not usable on enemies what have more than 20% of their health. New HS will use at least 10 point of rage, but no more than 30 and usable anytime you've got enough rage. There is a difference. Read it again.<br />
+<br />
+<br />
+Execute only uses a maximum of 30 rage, much like the new HS. You haven't played your warrior since, like, vanilla, haven't you?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gurggy</div><div class="date">2010-04-05, 06:16 PM</div></div><div class="posttext">Pinch me, am I dreaming?<br />
+<br />
+<br />
+I like this too, provided that they don't add cooldowns to Demoralizing shout. <br />
+<br />
+I don't care so much when I'm dps, but since we don't have any good ticking AoE that we can use for area aggro, I sometimes use Demo Shout while running through packs and wait to use TC/Shockwave until I've got the group rounded up. I'd hate to see my ability to do that taken away because they wanted to impose a 20 second cooldown on it so it worked like horn of winter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elanale</div><div class="date">2010-04-05, 06:16 PM</div></div><div class="posttext">Nate.... this isn't the only change. Blizzard's about a mile ahead of you. That's not to say this thing is guaranteed to work flawlessly, but they already know that. You can't honestly believe that they hadn't thought of it, can you? I mean, really? They have over a hundred employees for WoW alone, do you honestly think that you in the course of an hour thought up concerns that they didn't consider in the months they were secretly working on this change?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Malediction</div><div class="date">2010-04-05, 06:22 PM</div></div><div class="posttext">Actually looks like a reasonable solution to fixing the rage problem however I still don't know why they feel like they need to make it scale again, isn't that sort of defeating the purpose of the change in the first place?<br />
+<br />
+Also help a bro out! http://social.bioware.com/brc/457891</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gurggy</div><div class="date">2010-04-05, 06:25 PM</div></div><div class="posttext">This doesn't sound like more rage control... This sounds like Blizzard is giving all warriors a set amount of rage based on nothing but the fact you swing.<br />
+<br />
+Also, unless Blizzard greatly changes warriors, specifically fury warriors, there isn't a time to use HS or Cleave. On top of that, we will have been greatly reduced in our ability to damage multiple targets. This sounds like a very poor idea.<br />
+<br />
+Imagine this situation... Every main hand swing you generate 25 rage, every offhand swing you generate 12.5 rage. You receive this amount of rage every 3 seconds. There is a high chance any swing can, and will, miss. Not being able to change main hand swings to &quot;yellow&quot; attacks effectively turns them from 0% miss to 17% miss (give or take). So, unless blizzard is planing on implementing some change in Titan's grip and hit reduction, I think removing HS has a much further reaching negative then blizzard is willing to admit.<br />
+<br />
+<br />
+Don't forget the one other implementation, that the amount of rage doubles if you crit.<br />
+<br />
+However, your other point is very valid. The current system that changes white to yellow reducing from a 17% miss chance to a certain hit (with enough hit rating) is certainly something we will lose out on. Of course, right now when we do that, we also don't get any rage back from those hits. <br />
+<br />
+I still like the concept because they can actually adjust the levels in beta depending on whether we're seeing ourselves becoming rage starved or whatever, but I do think that they'll have to do something to prevent every Fury warrior losing about 1-2K dps right off the bat to accommodate for not having this &quot;secondary&quot; global timer mechanic we're used to. To be fair, I'm willing to take the hit as long as it doesn't stay at the point that I was at before I geared up, where I was pulling so little dps that I had to beg just to get in the raids. Especially with the stiff enrages Blizz is loving so much these days that require 6.5K dps on average in 25's.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cerbdog</div><div class="date">2010-04-05, 06:25 PM</div></div><div class="posttext">Will be nice to see some changes with my warrior. The new HS does sound like Execute's rage mechanic. Of course, &quot;who cares?&quot; pops into my mind when I read the complaints about that. They may make a lot of skills like that in the end. You'll get used to it, so no point in whining.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thunderlight</div><div class="date">2010-04-05, 06:27 PM</div></div><div class="posttext">I find this change very interesting. It will feel fresh to play a warrior in cataclysm, which is awesome. To all the people critisizing the new rage system, i say, wait till the beta because blizzard is changing alot of abilities so Execute =/= Heroic Strike</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Throrion</div><div class="date">2010-04-05, 06:29 PM</div></div><div class="posttext">This sounds pretty interesting. I love the shouts change. I wonder what they're doing to Execute though, because the new Heroic Strike sounds completely similar to how Execute currently works.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thunderlight</div><div class="date">2010-04-05, 06:31 PM</div></div><div class="posttext">So Warriors gonna spam heroic strike and it deals dmg instantly???<br />
+<br />
+<br />
+LOL it sounds somewhat op!!!!<br />
+<br />
+<br />
+infinite rage?<br />
+<br />
+OP again!<br />
+<br />
+So briefly warriors gonna spam heroic strike and improved execute all the time since<br />
+they no longer have rage problems?<br />
+<br />
+nice idea to balance the rage managment indeed! <br />
+<br />
+/facepalm.<br />
+<br />
+It's like mages can spam instant frostbolts all the time and they never go oom.Brilliant idea !!!4<br />
+<br />
+I think you didn't read the post very well. Anyways, blizzard has surely putten alot of tought into this new system, so: No, warriors won't be gods, and no they won't have infinite rage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elanale</div><div class="date">2010-04-05, 06:35 PM</div></div><div class="posttext">So Warriors gonna spam heroic strike and it deals dmg instantly???<br />
+<br />
+<br />
+LOL it sounds somewhat op!!!!<br />
+<br />
+<br />
+infinite rage?<br />
+<br />
+OP again!<br />
+<br />
+So briefly warriors gonna spam heroic strike and improved execute all the time since<br />
+they no longer have rage problems?<br />
+<br />
+nice idea to balance the rage managment indeed! <br />
+<br />
+/facepalm.<br />
+<br />
+It's like mages can spam instant frostbolts all the time and they never go oom.Brilliant idea !!!4<br />
+<br />
+<br />
+Functionally illiterate. Your post gets seven stamps with my FAIL stamp. Go back and try reading again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nate1493</div><div class="date">2010-04-05, 06:39 PM</div></div><div class="posttext">Nate.... this isn't the only change. Blizzard's about a mile ahead of you. That's not to say this thing is guaranteed to work flawlessly, but they already know that. You can't honestly believe that they hadn't thought of it, can you? I mean, really? They have over a hundred employees for WoW alone, do you honestly think that you in the course of an hour thought up concerns that they didn't consider in the months they were secretly working on this change?<br />
+<br />
+<br />
+So you are saying they are planning a COMPLETE reworking of how Fury Warriors operate? This sounds like something MUCH different than advertised then. If this is the case, then it is way more than just rage management they are talking about. They did NOT discuss this yet, and if this is what they are thinking, then they need to talk about it.<br />
+<br />
+If they plan on greatly altering the way main hand swings will land, we are talking about a 20%~ loss in damage. BT-WW-(1 sec delay)-BT-Free-Free is fairly typical rotation Fury rotation. The way swings would line up would be with each of the attacks so (Swing-BT-Swing-WW-Swing-BT-Swing-Swing-Free-Swing-Free. All this change is looking like is filling the Free swings with this new &quot;HS&quot; which looks exactly like Execute.<br />
+<br />
+Unless this new Heroic Strike/Cleave operates separately from the typical GCD, or the GCD is greatly reduced, you might as well throw away most of the other useful tools a fury warrior can do. No more place to add sunder, shout, or demo shout. No more chances for stance dances. You either totally break your rotation and have far too much rage, or you simply don't cast HS for one of your new moves.<br />
+<br />
+I'm very leery of these changes, trying to insert more necessary GCDs into a class that already is GCD starved is just asking for huge problems. On top of the potentially huge DPS loss from changing main hand swings to white swings.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mochaomhog</div><div class="date">2010-04-05, 06:41 PM</div></div><div class="posttext">This does look like a good way of implementing this, but as a druid i will have to retrain my hand - i'm so used to tapping my 'Z' button (maul) with my thumb, constantly, while i use other buttons, that i find myself accidently doing it on my pally tank as well :P<br />
+<br />
+Also, it will be odd to see 'Melee' on my damage done reports.<br />
+<br />
+<br />
+my bear uses a macro &quot;/cast !maul; /cast mangle&quot; and 2 more for lacerate and swipe... no more mashing maul for me. It odes have a downside, in heroics I will go rage starved fast on single pull trash, or even small groups, as maul is going off all the time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Malthurius</div><div class="date">2010-04-05, 06:41 PM</div></div><div class="posttext">When blizz says they are going to change one thing, people always seem to cry out that it will break the game in some way (Some have more sense however) the thing is, they probably have more things other than just this planned for the warrior class to balance this change out with their existing abilities.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bloodwine77</div><div class="date">2010-04-05, 06:42 PM</div></div><div class="posttext">I have never had a high level warrior with which I have tanked with, but it sounds like they are going to tweak the Warrior to be more like a Death Knight with respect to cooldowns and resource management.<br />
+<br />
+I remember DK tanking being braindead in 3.1 (I think 3.1 ... whichever patch before the start of the DK tank nerfs). Now I have to think more and rotate my abilities a bit more intelligently or I end up with no resources available and I just stand there and get kicked in the nuts until the cooldowns are up. I'm not saying that DK tanking is tough, but there is a huge difference between DK tanking pre-3.2 and DK tanking now.<br />
+<br />
+It is also nice for warriors and druids not being penalized rage-wise for overgearing an instance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Entity</div><div class="date">2010-04-05, 06:57 PM</div></div><div class="posttext">So they're turning Heroic Strike into Execute, basically?<br />
+<br />
+<br />
+I don't understand all of the comments to this effect. It's like saying Shield Slam is the same as Bloodthirst because they're both offensive abilities that cost 20 rage and are instant cast.<br />
+<br />
+Blizzard is just taking the rage dump implementation of an ability and applying it to more abilities than just Execute. You know zero about how the abilities themselves are going to be implemented, how each is affected by talents, glyphs, etc. to make them behave differently.<br />
+<br />
+Every single ability that takes a set amount of rage to fire off is equivalent according to the poor reasoning being thrown around here.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Drew World Order</div><div class="date">2010-04-05, 07:01 PM</div></div><div class="posttext">Interesting changes...I feel like this will completely how we watch our threat and rage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ShiroRX</div><div class="date">2010-04-05, 07:03 PM</div></div><div class="posttext">this is a great piece of info. it's the shot across the bow regarding class changes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">darkwarrior42</div><div class="date">2010-04-05, 07:07 PM</div></div><div class="posttext">So you are saying they are planning a COMPLETE reworking of how Fury Warriors operate? This sounds like something MUCH different than advertised then. If this is the case, then it is way more than just rage management they are talking about. They did NOT discuss this yet, and if this is what they are thinking, then they need to talk about it.<br />
+<br />
+If they plan on greatly altering the way main hand swings will land, we are talking about a 20%~ loss in damage. BT-WW-(1 sec delay)-BT-Free-Free is fairly typical rotation Fury rotation. The way swings would line up would be with each of the attacks so (Swing-BT-Swing-WW-Swing-BT-Swing-Swing-Free-Swing-Free. All this change is looking like is filling the Free swings with this new &quot;HS&quot; which looks exactly like Execute.<br />
+<br />
+Unless this new Heroic Strike/Cleave operates separately from the typical GCD, or the GCD is greatly reduced, you might as well throw away most of the other useful tools a fury warrior can do. No more place to add sunder, shout, or demo shout. No more chances for stance dances. You either totally break your rotation and have far too much rage, or you simply don't cast HS for one of your new moves.<br />
+<br />
+I'm very leery of these changes, trying to insert more necessary GCDs into a class that already is GCD starved is just asking for huge problems. On top of the potentially huge DPS loss from changing main hand swings to white swings.<br />
+<br />
+<br />
+And once again, do you really think there is any chance that this hasn't occurred to them yet? <br />
+And in case you missed it, every talent tree is getting a major overhaul, and talent trees are a large source of the style and nature of a spec. Ergo, every class is getting a major overhaul. I understand your concerns, but just wait for the beta and see what they're doing. <br />
+<br />
+Also: depending on just how much damage heroic strike does, it's possible that as high threat ability, it might cause you to pull aggro. I can't say I'd be entirely surprised, given the nature of the change's that they're already making, to see high threat abilities changed so that non-tanks are discouraged from using them at the risk of pulling aggro.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nucz0r</div><div class="date">2010-04-05, 07:09 PM</div></div><div class="posttext">This will hopefully fix warrior rage problems in 2v2 vs classes with absorbs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jeddek</div><div class="date">2010-04-05, 07:11 PM</div></div><div class="posttext">These changes tend to worry me when looking at the current way fury warriors are set up. We currently need 5% (4% if alliance) hit for the &quot;cap&quot;, and with this it will increase that to 17% (as someone has already stated). Now, if they go through and fix this with talents, or change how titan grip works with duel wielding, that could fix the hit problem. <br />
+<br />
+The other problem I see is how a fury warrior uses GCD. Currently a fury warrior uses HS during every swing, and basically uses up every single GCD for either BT, WW or Slam (among a few other things). With this current system, the fury warrior will lose rage much easier. From what i hear, it sounds more like an Energy-ish system then the current rage system. For those who have played a rogue, many times you are sitting, waiting for your energy to recover so you can use another attack. But to compensate, those attacks do more burst, and rogue's melee damage is a great portion of the overall damage done. <br />
+<br />
+When looking at the fury warrior, currently our hardest hitting Ability is BT (normally hitting around 15-20k). WW and slam do around 12-15k hits. These hits happen every time they are off CD, because we have infinite rage (along with HS going on, which is actually the majority of our damage). If we are finding ourselves waiting for our rage to recover (waiting for next white hit to connect), wouldnt that greatly decrease our damage? With the current system, we need to attack as often as possible, and going rage starved for even 1-2 GCD is a great dps decrease. I could see having to wait for rage more often with this new system totally killing Fury if something isnt changed with how the fury warrior is played. Changing BT, WW, or Slam's burst might fix it, but i dont think they'll want to change fury into a Burst class.<br />
+<br />
+Am I thinking too much into this? I know I dont have hard numbers and such, but this seems to me like it could pose a problem if the Fury warrior isnt greatly changed. <br />
+<br />
+oh, and this wasnt strongly thought out and is more a &quot;first response&quot; type post, so please, no flaming ;D<br />
+<br />
+Edit:<br />
+Also, this isn't a QQ post. I don't hate the changes, they just make me nervous. I could see them balancing it by changes Titan grip so they hit is less on fury, and by making it so the damage is more bursty, or some other addition. It just makes me nervous, because I enjoy my warrior alot, and this change looks like it's going to almost completely change how warriors are played, and I'm hoping ill still enjoy my warrior after this change takes place.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alianthos</div><div class="date">2010-04-05, 07:11 PM</div></div><div class="posttext">Heroic strike is dead, hooray \o/<br />
+<br />
+Anyone saying that it's fun to spam a move every second without stop is probably braindead cause no person with half a brain could get any enjoyment from performing such a routine action.<br />
+<br />
+<br />
+This. Ten times. Apart from Arms spec, which doesnt really imply HS spamming, Fury and Prot HS spamming is getting a bnit boring and dumb. I mean, after 3h raiding ICC as a prot warrior, i could as well go to the hospital and ask for a right hand transplant....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">aramco007</div><div class="date">2010-04-05, 07:17 PM</div></div><div class="posttext">finally!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">skippy13312000</div><div class="date">2010-04-05, 07:17 PM</div></div><div class="posttext">Given blizzard's history of balancing (pseudo-balancing, neo-balancing??) I'm not exactly stoked to see what's gonna happen. I'm sure it will be WAY over tuned in the beginning and then we'll have to wither under a hail of nerfs for ~6 mos or so right before they realize they nerfed it too much at which point they will over buff it again. I'm not against changing it but I'm certainly not gonna act like this probably won't be a pain in the ass for a while afterwards, like 6+ months.<br />
+<br />
+Goodluck to them though I like my prot warrior so if it makes it more fun I'm down.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Flower</div><div class="date">2010-04-05, 07:18 PM</div></div><div class="posttext">This is big.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Augrelle</div><div class="date">2010-04-05, 07:19 PM</div></div><div class="posttext">From what I understand. note that all numbers are just examples.<br />
+<br />
+1) Every Auto-attack will generate rage. This is no longer based on damage and thus not gear dependent. It will be dependent on the speed of the weapon and that will be normalized - think flametongue from shamans.<br />
+<br />
+1.0 speed weapons generate 10 rage every auto-attack swing.<br />
+2.0 speed weapons generate 20 rage every auto-attack swing.<br />
+3.0 speed weapons generate 30 rage every auto-attack swing.<br />
+4.0 speed weapons generate 40 rage every auto-attack swing.<br />
+<br />
+2) Haste effects rage due to increasing the speed that you auto-attack and thus gain rage. Think of this like flametongue for shamans again - you will most likely want the slowest weapons possible to gain the most rage from haste.<br />
+<br />
+<br />
+3) Crits will cause double rage gen.<br />
+<br />
+<br />
+4) All hits done to you will cause rage generation depending on your max health. This means you will gain more rage with higher your max health, it doesn't matter if the attack lands at all. This would make warrior tanks none rage-starved at higher gear levels from avioding too many hits.<br />
+<br />
+This normalization might work better since they are doing it at the start of the expansion instead of in the middle.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zikenz</div><div class="date">2010-04-05, 07:21 PM</div></div><div class="posttext">i play my fury warrior for quite a few years already and i am somewhat used to the how-the-warrior works idea.<br />
+i dont like this change, i just dont like it and im afraid of it.<br />
+so, we are loosing heroic strike, which is currently 25-3x% of our dmg. i admit spamming HS was/is stupid, boring, smashing a keyboard (1 button) constantly for 4 hours of raid was and still is devastating for it...<br />
+BUT if they want to remove it then what about our overall dmg? we will be left with BT, WW, Bloodsurge? lol? really? i mean, reaaaaally? /wave my warrior hi my enh shaman/rogue.<br />
+even if, theoretically, we would have enough rage to spam bt,ww,slams whenever they are up, we dont have enought gcd to fill heroic strike in. for example: bt - ww - slam - bt - free(yeee heroic strike!) - bt - slam - ww -bt ... oh, hi sunder armor. oh, hi battle shout, oh, hi commanding shout, hi berserker rage... or should i say, goodbye because i dont have the time to use it.<br />
+<br />
+the point is, we dont have the chance of actually using heroic strike to a point where our dmg becomes competitive.<br />
+the only options are: improving talents to improve our dmg by x% (improving unending fury, removing the penalty on titans grip), or making the new heroic strike not only an instant attack, BUT also a GCD free attack. does it sounds op? no. we wont have rage for it, unless they wont destroy the rage mechanic that much.<br />
+<br />
+im more of a traditionalist and a realist...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fxrs</div><div class="date">2010-04-05, 07:24 PM</div></div><div class="posttext">From what I understand. note that all numbers are just examples.<br />
+<br />
+1) Every Auto-attack will generate rage. This is no longer based on damage and thus not gear dependent. It will be dependent on the speed of the weapon and that will be normalized - think flametongue from shamans.<br />
+<br />
+1.0 speed weapons generate 10 rage every auto-attack swing.<br />
+2.0 speed weapons generate 20 rage every auto-attack swing.<br />
+3.0 speed weapons generate 30 rage every auto-attack swing.<br />
+4.0 speed weapons generate 40 rage every auto-attack swing.<br />
+<br />
+2) Haste effects rage due to increasing the speed that you auto-attack and thus gain rage. Think of this like flametongue for shamans again - you will most likely want the slowest weapons possible to gain the most rage from haste.<br />
+<br />
+<br />
+3) Crits will cause double rage gen.<br />
+<br />
+<br />
+4) All hits done to you will cause rage generation depending on your max health. This means you will gain more rage with higher your max health, it doesn't matter if the attack lands at all. This would make warrior tanks none rage-starved at higher gear levels from avioding too many hits.<br />
+<br />
+This normalization might work better since they are doing it at the start of the expansion instead of in the middle.<br />
+<br />
+<br />
+We'll see....................though I won't hold my breath.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shornaal</div><div class="date">2010-04-05, 07:27 PM</div></div><div class="posttext">Sounds nice.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Logabas</div><div class="date">2010-04-05, 07:29 PM</div></div><div class="posttext">The changes DO look interesting, but as a veteran I can't help but flinch when I see the word &quot;normalization&quot;. It reminds me of the old warrior saying:<br />
+<br />
+<br />
+&quot;Remember, remember, the 5th of December,<br />
+The patch day treason and plot.<br />
+I see no reason, for MS and Cleavin',<br />
+Since Tseric wants us to spec Prot.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">skippy13312000</div><div class="date">2010-04-05, 07:29 PM</div></div><div class="posttext">i play my fury warrior for quite a few years already and i am somewhat used to the how-the-warrior works idea.<br />
+i dont like this change, i just dont like it and im afraid of it.<br />
+so, we are loosing heroic strike, which is currently 25-3x% of our dmg. i admit spamming HS was/is stupid, boring, smashing a keyboard (1 button) constantly for 4 hours of raid was and still is devastating for it...<br />
+BUT if they want to remove it then what about our overall dmg? we will be left with BT, WW, Bloodsurge? lol? really? i mean, reaaaaally? /wave my warrior hi my enh shaman/rogue.<br />
+even if, theoretically, we would have enough rage to spam bt,ww,slams whenever they are up, we dont have enought gcd to fill heroic strike in. for example: bt - ww - slam - bt - free(yeee heroic strike!) - bt - slam - ww -bt ... oh, hi sunder armor. oh, hi battle shout, oh, hi commanding shout, hi berserker rage... or should i say, goodbye because i dont have the time to use it.<br />
+<br />
+the point is, we dont have the chance of actually using heroic strike to a point where our dmg becomes competitive.<br />
+the only options are: improving talents to improve our dmg by x% (improving unending fury, removing the penalty on titans grip), or making the new heroic strike not only an instant attack, BUT also a GCD free attack. does it sounds op? no. we wont have rage for it, unless they wont destroy the rage mechanic that much.<br />
+<br />
+im more of a traditionalist and a realist...<br />
+<br />
+<br />
+Whoa! simmer down there chief. Did you read the post or just the replies?<br />
+<br />
+4) All “on next swing” attacks in Cataclysm are being removed. Heroic Strike and Maul will be instant swings that cost a variable amount of Rage. For example, imagine Heroic Strike costs between 10 and 30 Rage. You must have at least 10 Rage to use the attack, but it will consume all available Rage up to a maximum of 30. Any Rage consumed above the minimum will cause the ability to hit harder, and in some cases much harder. We will tune the ability so that it’s generally not a good idea to hit it when you have low Rage (unless everything else is somehow on cooldown) but becomes a more attractive button the higher your Rage.<br />
+<br />
+So no HS isn't going anywhere it's just gonna be different now. <br />
+<br />
+I thought I was a reactionary. Let's not burn the house down just yet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zikenz</div><div class="date">2010-04-05, 07:38 PM</div></div><div class="posttext">yes, i read it. <br />
+and did you read what ive wrote?<br />
+<br />
+the new heroic strike will be an instant and will now, most likely, require a GCD(the current heroic strike doesnt, just to let you know). so we will barely have the time to use heroic strike(assuming we have rage) which will be only a filler in the rotation, and we will be loosing hell alot of our main hand real overall damage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Axelhander</div><div class="date">2010-04-05, 07:44 PM</div></div><div class="posttext">yes, i read it. <br />
+and did you read what ive wrote?<br />
+<br />
+the new heroic strike will be an instant and will now, most likely, require a GCD(the current heroic strike doesnt, just to let you know). so we will barely have the time to use heroic strike(assuming we have rage) which will be only a filler in the rotation, and we will be loosing hell alot of our main hand real overall damage.<br />
+<br />
+<br />
+Because nothing else about Warriors will change, amirite? ::)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">krynis</div><div class="date">2010-04-05, 07:44 PM</div></div><div class="posttext">As a long time warrior I am deeply excited by these changes, HS has always been a down point for me (largely due to hotkey management issues) so this should be great.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">antifreeze</div><div class="date">2010-04-05, 07:47 PM</div></div><div class="posttext">I remember bliizard saying that NEXT TIME SWING IS FUCKING AWESOME at theirs point and they love mechanics.... they were telling that homogeni... something else of this game is terrybad and they are proud of rune strike at dk and warriors next swing abilities. Now they removing it...<br />
+I bet they will give the strikes a cooldown and warrior will be like ret pala.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Toblerone</div><div class="date">2010-04-05, 08:01 PM</div></div><div class="posttext">I finally won't get Carpal Tunnel before I hit 30. I approve of this change!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">brianem</div><div class="date">2010-04-05, 08:03 PM</div></div><div class="posttext">Well....it'll be nice to have another ability to use and not just macro'd into everything else (maul), but I was kind of hoping for something with a little more depth. Every other tanking class has a way to manage ranged casters a bit better, be nice to get a ranged stun or silence (/que Rhino super bark(growl) spaz). The rage normalization isn't exactly encouraging, but then it pretty much sucks the way it is now too...so meh. I'll reserve my opinion for more details.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">monteiro</div><div class="date">2010-04-05, 08:04 PM</div></div><div class="posttext">This has fail all over it:<br />
+<br />
+1) The HS change is stupid, plain and simple. Requires 10 rage, consumes up to 30 for extra damage? Thats an improved execute without the 20% hp restriction. At lower levels of gear, its will be inferior to execute, but once you get decent its damage willl outshine execute's. Also, no point in having 2 similar skills with only damage as a difference in the same class.<br />
+<br />
+2) The main problem with rage is how it scales with gear: once we get hit caped, we hit more often and get more rage. Same with expertise. More crit rating = more critical strikes = more rage. Since low geared warriors have low hit/expertise/crit, their rage generation and also damage is terrible. This &quot;normalization&quot; apparently is ignoring all that; rage should be generated even on miss/dodge/parries, that way a t7 warrior would generate almost as much rage as a t10 one (t10 would generate more since it will crit more often).<br />
+<br />
+3) The system is called &quot;rage&quot;. I would &quot;rage&quot; if i try to hit an enemy and it would miss/dodge/parry my attack. Giving some extra rage to that would help balancing low-geared warriors.<br />
+<br />
+4) I once saw in a blue post that they were unhappy about having no benefit in having a full rage bar (since the execute nerf). Makes sense, after all, if I'm full raged, I should hit harder (*free advice here blizzard), this would force warriors to admin their rage since having less rage = less damage. However, i didnt see anything in this &quot;normalization&quot; regarding this issue.<br />
+<br />
+Come on, its been 5 years and the rage system (aka the core of the warrior class) is still broken, and that second &quot;normalization&quot; is the best they can do? For real, hire me and I will fix your game for you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sammonoske</div><div class="date">2010-04-05, 08:05 PM</div></div><div class="posttext">For warriors, I foresee threat issues and rage issues. Enough to where we will look for rage from our shouts.<br />
+<br />
+Haste as prot might play a roll as well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jorkku</div><div class="date">2010-04-05, 08:11 PM</div></div><div class="posttext">OK tell me how you can tell it is nice change if you dont the cd of the new hs or will it be mixed up with BT and ww cds? Think if you can swing the hs now 2-3 times before next cycles starts again every swing does approx lets say avg 10k crit and 5k hit, if you do the little math 2x10k+5k you get 25k. So after this change you can prolly swing 1 heroic strike(assuming cd is like 3 sec maybe more) so lets say the change would come to live NOW: the one heroic strike have to hit atleast 25k in one strike to beat the old mechanic(next swing). Lets say bloodhthirst crits now approx 14k and hits 6k. So imagine why would they change heroic strike so overpowered that it will be almost double up better than bloodthirst. I repeat imagine the new heroic strike mechanic would come to live now and how good it has to be to beat the old mechanic. <br />
+<br />
+Another points 1. it will be basically the same because if you crit now you will get 100rage immediately so this &quot;the attack is a critical strike, it will generate 200% Rage&quot; doesnt change anything and 2. oh wait &quot;Haste will accelerate swing times to generate Rage faster&quot; doesnt this sound like old mechanic, if you hit more you get more rage(it also means you can hit more big strikes where the rage is practically generated nowadays). So the post doesnt really say anything positive yet maybe they straight it up in the future.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Augrelle</div><div class="date">2010-04-05, 08:15 PM</div></div><div class="posttext">This has fail all over it:<br />
+<br />
+1) The HS change is stupid, plain and simple. Requires 10 rage, consumes up to 30 for extra damage? Thats an improved execute without the 20% hp restriction. At lower levels of gear, its will be inferior to execute, but once you get decent its damage willl outshine execute's. Also, no point in having 2 similar skills with only damage as a difference in the same class.<br />
+<br />
+2) The main problem with rage is how it scales with gear: once we get hit caped, we hit more often and get more rage. Same with expertise. More crit rating = more critical strikes = more rage. Since low geared warriors have low hit/expertise/crit, their rage generation and also damage is terrible. This &quot;normalization&quot; apparently is ignoring all that; rage should be generated even on miss/dodge/parries, that way a t7 warrior would generate almost as much rage as a t10 one (t10 would generate more since it will crit more often).<br />
+<br />
+3) The system is called &quot;rage&quot;. I would &quot;rage&quot; if i try to hit an enemy and it would miss/dodge/parry my attack. Giving some extra rage to that would help balancing low-geared warriors.<br />
+<br />
+4) I once saw in a blue post that they were unhappy about having no benefit in having a full rage bar (since the execute nerf). Makes sense, after all, if I'm full raged, I should hit harder (*free advice here blizzard), this would force warriors to admin their rage since having less rage = less damage. However, i didnt see anything in this &quot;normalization&quot; regarding this issue.<br />
+<br />
+Come on, its been 5 years and the rage system (aka the core of the warrior class) is still broken, and that second &quot;normalization&quot; is the best they can do? For real, hire me and I will fix your game for you.<br />
+<br />
+<br />
+That is what they are doing basicly. You no longer gain rage based on damage done but you gain rage on every auto-attack, even if it misseds from what I understand.<br />
+<br />
+<br />
+I remember bliizard saying that NEXT TIME SWING IS FUCKING AWESOME at theirs point and they love mechanics.... they were telling that homogeni... something else of this game is terrybad and they are proud of rune strike at dk and warriors next swing abilities. Now they removing it...<br />
+I bet they will give the strikes a cooldown and warrior will be like ret pala.<br />
+<br />
+I think they liked it a lot before hand since (from my memory) no one has yet to really spam it every single second of every single fight untill WotLK.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Charo</div><div class="date">2010-04-05, 08:17 PM</div></div><div class="posttext">Also, do none of you remember the posts about how you'll require more and more hit as your level 85 raid progression... well progresses? Sure your five percent to hit worked for you for THIS WHOLE EXPANSION PACK, but in Cataclysm, you're going to be looking at stacking more and more hit anyway, point is:<br />
+<br />
+A LOT OF THINGS ARE CHANGING, YOU'RE NOT SEEING THE WHOLE PICTURE, STOP BEING SO FRIGGING SHORT SIGHTED!<br />
+<br />
+Imagine how useful this will be for leveling up warriors as well, having a real ability @ level one? Gtfo!<br />
+<br />
+But seriously, like many others have said, you don't know what else is being changed, if you apply the current known changes into the current system, some things just would not work, i.e., shamans having zero intellect for enhancement, you would OOM a lot faster than your Shamanistic Rage cooldown could keep up with, so obvi something is being changed else where.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Polishedhead</div><div class="date">2010-04-05, 08:27 PM</div></div><div class="posttext">Crit and haste are going to be very popular next expansion.<br />
+<br />
+My bet is that we will see Warriors gemming for Crit or Haste instead of Strength.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2010-04-05, 08:36 PM</div></div><div class="posttext">Cataclysm news? 0o i sense a beta nearby :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">drsjohnny</div><div class="date">2010-04-05, 08:47 PM</div></div><div class="posttext">sounds really great can't wait to see it in action on my warrior</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jorkku</div><div class="date">2010-04-05, 08:48 PM</div></div><div class="posttext">Crit and haste are going to be very popular next expansion.<br />
+<br />
+My bet is that we will see Warriors gemming for Crit or Haste instead of Strength.<br />
+<br />
+<br />
+Haste still sucks as always cause again if you crit you get the primary rage like nowadays so crit will overpower haste in this rage issue and ofc like now gemming crit in best icc gear is almost the same as gemming str so in Cataclysm when you &quot;dont have the rage issues&quot; gemming strenght getting even better. And if the intent is to just remove rage starvation why they even want to do it by lowering the value of the other stat? someone might call this nerfing. And if they want to get rid off rage loss they arent really changing the mechanic if they just doing another stat better for getting rage than another, now it has been str/crit and next it will be crit/haste like they posted. Change the mechanic not the input where the rage is gained. Period.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Harthmut</div><div class="date">2010-04-05, 09:05 PM</div></div><div class="posttext">My Warrior approves<br />
+<br />
+<br />
+Mine too.<br />
+Looks promising.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wabun</div><div class="date">2010-04-05, 09:13 PM</div></div><div class="posttext">Just a question: will there maybe be a minimum of rage we get per hit? <br />
+because if not it will be boring as hell to grind low lvl stuff because mobs will hit for like 0.001 % of my health and i will always have to wait for my 2 sec swing timer to give me rage again...<br />
+another problem will be keeping mobs from evading with berserker shout when i want to pull a lot of them together.<br />
+<br />
+i hope shield specialization does not change and stays the &quot;minimum rage income&quot; xD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bluespirit</div><div class="date">2010-04-05, 09:13 PM</div></div><div class="posttext">Bear threats gonna suck, they better fix the threat of all other ability's.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Marduke</div><div class="date">2010-04-05, 09:19 PM</div></div><div class="posttext">I like it! Atlast my index finger can rest from scrolling HS!<br />
+/cast !Heroic Strike<br />
+<br />
+Macro that to all skills.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Haven</div><div class="date">2010-04-05, 09:19 PM</div></div><div class="posttext">To these news: HALLELUJAH! At last. Such an obvious idea, set amounts of rage per swing based on weapon speed. What could ever be wrong with it?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Haven</div><div class="date">2010-04-05, 09:22 PM</div></div><div class="posttext">/cast !Heroic Strike<br />
+<br />
+Macro that to all skills.<br />
+<br />
+It won't be on next swing. Most likely it will take a GCD. Sorta Execute-lite.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb7046fcad0</div><div class="date">2010-04-05, 09:30 PM</div></div><div class="posttext">It won't be on next swing. Most likely it will take a GCD. Sorta Execute-lite.<br />
+<br />
+<br />
+Ghostcrawler said somewhere that they will base these skills not on the globlal cooldown. He said it somewhere in one of the recent warrior discussions.<br />
+But a good idea would also be to base the CD of Heroic Strike and Cleave on the Weaponspeed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">golbez</div><div class="date">2010-04-05, 09:39 PM</div></div><div class="posttext">Let's hope they do it right... The least thing this game needs is less people willing to tank.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fxrs</div><div class="date">2010-04-05, 09:42 PM</div></div><div class="posttext">Let's hope they do it right... The least thing this game needs is less people willing to tank. <br />
+<br />
+<br />
+Good point.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vashdakari</div><div class="date">2010-04-05, 09:43 PM</div></div><div class="posttext">Hmm, i won't hold my breath. I remember the last time they did this, and how they ignored all the feedback from all the people who were actually playing in the BC Beta, and how they let it go live in it's worst form. I also remember being rage starved @ lvl 70, tanking dungeons, before having a single piece of lvl 70 epic gear. I remember the large number of warriors who re-rolled or quit, and then i remember Blizzard actually fixing it so we could at least be functional again.<br />
+<br />
+<br />
+World of Warcraft Client Patch &quot;Before the Storm&quot; (12/5/2006) (a.k.a. 2.0)<br />
+<br />
+Warriors<br />
+-Rage generation from dealing damage has been normalized.<br />
+All Rage awards are averaged with our expected rage per swing (adjusted for weapon speed).<br />
+<br />
+Sounds familiar, doesn't it?<br />
+<br />
+<br />
+World of Warcraft Client Patch 2.0.10 (03/6/2007)<br />
+<br />
+Warriors<br />
+-The rage normalization equation has been adjusted to grant more rage. The typical warrior should see an increase of 15% to 20% in their rage generation.<br />
+<br />
+Three months to fix it, from the time it was released to live. Not to mention it was already broken in TBC Beta, and they ignored it. How much happens in your guild in three months? How much progression does your guild make in three months? That's the only thing that worries me when Blizzard makes these statements of, &quot;We'll fix it quickly if it isn't working right.&quot; History says otherwise.<br />
+<br />
+This doesn't mean that the new angle they're taking will necessarily be bad, it may turn out to be quite amazing. (I certainly fall under the category of old timers with apprehension, since I remember the worst of times and how long it took them to finally fix it.) I just think there could be better solutions to help warriors be functional at all levels of play, without resorting to gimmicks that turn rage into something more akin to &quot;energy&quot; than rage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fxrs</div><div class="date">2010-04-05, 09:49 PM</div></div><div class="posttext">Hmm, i won't hold my breath. I remember the last time they did this, and how they ignored all the feedback from all the people who were actually playing in the BC Beta, and how they let it go live in it's worst form. I also remember being rage starved @ lvl 70, tanking dungeons, before having a single piece of lvl 70 epic gear. I remember the large number of warriors who re-rolled or quit, and then i remember Blizzard actually fixing it so we could at least be functional again.<br />
+<br />
+Sounds familiar, doesn't it?<br />
+<br />
+Three months to fix it, from the time it was released to live. Not to mention it was already broken in TBC Beta, and they ignored it. How much happens in your guild in three months? How much progression does your guild make in three months? That's the only thing that worries me when Blizzard makes these statements of, &quot;We'll fix it quickly if it isn't working right.&quot; History says otherwise.<br />
+<br />
+This doesn't mean that the new angle they're taking will necessarily be bad, it may turn out to be quite amazing. (I certainly fall under the category of old timers with apprehension, since I remember the worst of times and how long it took them to finally fix it.) I just think there could be better solutions to help warriors be functional at all levels of play, without resorting to gimmicks that turn rage into something more akin to &quot;energy&quot; than rage.<br />
+<br />
+<br />
+Given their track record this is understandable. I too was there and feel the same way.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arthas</div><div class="date">2010-04-05, 09:52 PM</div></div><div class="posttext">can't wait to see</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">skippy13312000</div><div class="date">2010-04-05, 09:55 PM</div></div><div class="posttext">Because nothing else about Warriors will change, amirite? ::)<br />
+<br />
+<br />
+^^^^^^ <br />
+<br />
+What that guy wrote. <br />
+<br />
+You have to know there will be more changes. You are trying to apply the changes to HS to what we do NOW. We aren't gonna do it that way in the future you can be sure of that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">NotYoFriendGuy</div><div class="date">2010-04-05, 10:02 PM</div></div><div class="posttext">Fuckin A. :)<br />
+<br />
+All of you QQing about implementing these changes into present rotations/priorities are seriously short-sighted retards. But you've all been flamed already by some other people with some kind of sense already, so i'll just leave it.<br />
+<br />
+The changes to shouts are really exciting, imo. I'm an arms warrior through and through, and when i respec to fury to play around, one of my favorite changes was how much rage you could get from abilities, like berserker rage. Definitely made me feel more in control.<br />
+<br />
+This is exciting. A week ago, i would've been one of the few opposed to removing next-swing abilities, but i can see how this could bring balance to warrior dps compared to other classes... it probably makes scaling way easier for blizzard. Lastly, rage changes should be fun too. i foresee way less time worrying about rage, and much more time thinking about it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">quez</div><div class="date">2010-04-05, 10:02 PM</div></div><div class="posttext">yes, i read it. <br />
+and did you read what ive wrote?<br />
+<br />
+the new heroic strike will be an instant and will now, most likely, require a GCD(the current heroic strike doesnt, just to let you know). so we will barely have the time to use heroic strike(assuming we have rage) which will be only a filler in the rotation, and we will be loosing hell alot of our main hand real overall damage.<br />
+<br />
+<br />
+Do you seriously think that blizzard won't compensate for the massive dps Heroic strike was accounted for? Really?<br />
+Warriors will not fall behind, not for long at least.<br />
+<br />
+I'm really exited about these changes, one of the reasons why I quit raiding on my fury warrior a month back was because it was so damn boring doing that ez-mode rotation.<br />
+<br />
+Now with another low-cd ability doing damage depending on rage will affect the fury warrior prio list a lot, thinking ahead like:<br />
+&quot;After this gcd I will cast WW, leaving a x sec window for next BT with 30 rage remaining, HS is coming off 2 secs earlier then BT, shall I use HS right away? Will any autoswings go off before BT so it doesn't get delayed? Or should I use HS after BT to ensure that it won't get delayed?&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lilbuddhaman</div><div class="date">2010-04-05, 10:16 PM</div></div><div class="posttext">Forgive me for not reading the 8 pages of replies... but this article pretty much translates to:<br />
+<br />
+&quot;Keep stacking stam, best stat ever, later fellas&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deviltry</div><div class="date">2010-04-05, 10:18 PM</div></div><div class="posttext">Forgive me for not reading the 8 pages of replies... but this article pretty much translates to:<br />
+<br />
+&quot;Keep stacking stam, best stat ever, later fellas&quot;<br />
+<br />
+Pretty much not.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">allay</div><div class="date">2010-04-05, 10:18 PM</div></div><div class="posttext">Forgive me for not reading the 8 pages of replies... but this article pretty much translates to:<br />
+<br />
+&quot;Keep stacking stam, best stat ever, later fellas&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dementation</div><div class="date">2010-04-05, 10:20 PM</div></div><div class="posttext">Well all i have to say on this is that they're playing with an unstable bomb and if they mess it up they can expect to see a lot of wars quiting or rerolling like it happened back in 2.0ish.<br />
+<br />
+But since we'll basicly start back from scratch while lvling to 85 guess i'll change my main to my dk if they fuck it up to bad.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">perera</div><div class="date">2010-04-05, 10:24 PM</div></div><div class="posttext">It seems very interesting overall, but the heroic strike change bothers me... it sounds to me like they are turning heroic strike into a gimped version of execute, a version which will never be used due to the global cooldown, as the other abilities will be more useful. If it's not that gimped, excute will lose its niche.<br />
+I think a better design to deal with rage would be that when a warrior/druid is full of rage they could activate a skill that slowly bleeds it and increases their damage while active.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Awesomation</div><div class="date">2010-04-05, 10:25 PM</div></div><div class="posttext">so to me this mean that instead of strength stacking on a fury warr we will be stacking the shit out of crit and haste as to generate more rage</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bigfoot1291</div><div class="date">2010-04-05, 10:31 PM</div></div><div class="posttext">It seems very interesting overall, but the heroic strike change bothers me... it sounds to me like they are turning heroic strike into a gimped version of execute, a version which will never be used due to the global cooldown, as the other abilities will be more useful. If it's not that gimped, excute will lose its niche.<br />
+I think a better design to deal with rage would be that when a warrior/druid is full of rage they could activate a skill that slowly bleeds it and increases their damage while active.<br />
+<br />
+<br />
+lol, Execute lost its niche back in 3.1 or whenever the hell it was they changed it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Myria</div><div class="date">2010-04-05, 10:56 PM</div></div><div class="posttext">For god's sake, why don't they just call it &quot;energy&quot; and be done with it. That's clearly where this is going.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shuror</div><div class="date">2010-04-05, 11:19 PM</div></div><div class="posttext">Zarhym is just a CM, not a game designer. The 10-30 rage cost was obviously pretty randomly thrown value.<br />
+<br />
+If I were to design a rage dump ability, I'd make it something like 200% weapon damage for 60 rage. (Using Fury/Arms numbers as an example. Prot numbers would differ due to talents, of course.)<br />
+<br />
+It would cost a shitload, so that you couldn't use it very often; but it would certainly be worth the button press and the GCD at times when you are in abundance of rage. <br />
+<br />
+I doubt Blizzard will make something much different. It will follow the model of hitting a fair bit harder than other abilities of the spec, but with a significantly higher rage cost.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">quez</div><div class="date">2010-04-05, 11:56 PM</div></div><div class="posttext">For god's sake, why don't they just call it &quot;energy&quot; and be done with it. That's clearly where this is going.<br />
+<br />
+<br />
+Did you even read the post? This version of normalized rage is no where close to energy. And to me this solution is the best one by far.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Delondial</div><div class="date">2010-04-06, 12:34 AM</div></div><div class="posttext">Is there some public outcry from warriors and druid that tanking is too easy? This &quot;rage issue&quot; seem to boil down to Blizzard now liking the fact that rage going to infinity for boss fights. Strikes me as something they can really screw the pooch on if they tamper too much. They're not really ones to find that happy balance until years after release, or never.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bloodcore</div><div class="date">2010-04-06, 12:51 AM</div></div><div class="posttext">This has fail all over it:<br />
+<br />
+1) The HS change is stupid, plain and simple. Requires 10 rage, consumes up to 30 for extra damage? Thats an improved execute without the 20% hp restriction. At lower levels of gear, its will be inferior to execute, but once you get decent its damage willl outshine execute's. Also, no point in having 2 similar skills with only damage as a difference in the same class.<br />
+<br />
+2) The main problem with rage is how it scales with gear: once we get hit caped, we hit more often and get more rage. Same with expertise. More crit rating = more critical strikes = more rage. Since low geared warriors have low hit/expertise/crit, their rage generation and also damage is terrible. This &quot;normalization&quot; apparently is ignoring all that; rage should be generated even on miss/dodge/parries, that way a t7 warrior would generate almost as much rage as a t10 one (t10 would generate more since it will crit more often).<br />
+<br />
+3) The system is called &quot;rage&quot;. I would &quot;rage&quot; if i try to hit an enemy and it would miss/dodge/parry my attack. Giving some extra rage to that would help balancing low-geared warriors.<br />
+<br />
+4) I once saw in a blue post that they were unhappy about having no benefit in having a full rage bar (since the execute nerf). Makes sense, after all, if I'm full raged, I should hit harder (*free advice here blizzard), this would force warriors to admin their rage since having less rage = less damage. However, i didnt see anything in this &quot;normalization&quot; regarding this issue.<br />
+<br />
+Come on, its been 5 years and the rage system (aka the core of the warrior class) is still broken, and that second &quot;normalization&quot; is the best they can do? For real, hire me and I will fix your game for you.<br />
+<br />
+<br />
+Quite good.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Heywes</div><div class="date">2010-04-06, 12:53 AM</div></div><div class="posttext">Im wondering if the Maul and Heroic Strike changesa will make a noticable difference to threat generation.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Markluzz</div><div class="date">2010-04-06, 12:55 AM</div></div><div class="posttext">something i thought that might work was a stamina rage system, two bars each ability either generates rage and costs stamina or generates stamina but costs rage. Also to make sure you dont run out one stance will regenerate 10 stamina per second or 10 rage per second however you deal 75% less damage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">gylindril</div><div class="date">2010-04-06, 01:06 AM</div></div><div class="posttext">Is it just me or did blizz not think out the tanking rage too much there? Lets see, we will give every warrior the same amount of rage per hit, &quot;normalized&quot; with off-hand giving half and crit giving double. Okay thats fine, so Fury's will have a bit more. Then we see that tanks will also get more rage for getting hit. Isn't the reason they give rage for damage because tanks dont hit as hard as DPS? I dunno, maybe they'll reduce it the amount they get from hits for tanks, dunno how they will do that, maybe one-handed weapons which could nerf the .001% of Warrior DPSers who dual-wield one-handers... Just wondering.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aurel</div><div class="date">2010-04-06, 01:39 AM</div></div><div class="posttext">i play my fury warrior for quite a few years already and i am somewhat used to the how-the-warrior works idea.<br />
+i dont like this change, i just dont like it and im afraid of it.<br />
+so, we are loosing heroic strike, which is currently 25-3x% of our dmg. i admit spamming HS was/is stupid, boring, smashing a keyboard (1 button) constantly for 4 hours of raid was and still is devastating for it...<br />
+BUT if they want to remove it then what about our overall dmg? we will be left with BT, WW, Bloodsurge? lol? really? i mean, reaaaaally? /wave my warrior hi my enh shaman/rogue.<br />
+even if, theoretically, we would have enough rage to spam bt,ww,slams whenever they are up, we dont have enought gcd to fill heroic strike in. for example: bt - ww - slam - bt - free(yeee heroic strike!) - bt - slam - ww -bt ... oh, hi sunder armor. oh, hi battle shout, oh, hi commanding shout, hi berserker rage... or should i say, goodbye because i dont have the time to use it.<br />
+<br />
+the point is, we dont have the chance of actually using heroic strike to a point where our dmg becomes competitive.<br />
+the only options are: improving talents to improve our dmg by x% (improving unending fury, removing the penalty on titans grip), or making the new heroic strike not only an instant attack, BUT also a GCD free attack. does it sounds op? no. we wont have rage for it, unless they wont destroy the rage mechanic that much.<br />
+<br />
+im more of a traditionalist and a realist...<br />
+<br />
+<br />
+I'm concerned myself, but there are easy fixes to a few of the things you mentioned.<br />
+<br />
+1. All the shouts will generate rage, and be on an extended cooldown, so they won't necessarily be on the GCD, (also eliminating the need for Blood rage/berserker rage). Sunder Armor...lessee how to work that in? Hey we could make it a next swing ability! lmao<br />
+<br />
+2. They could change the hit penalty for DW to 4% mainhand, 17% offhand to compensate for taking HS off of next swing ability<br />
+<br />
+Making HS work like execute sounds kinda dumb when we already have execute, but we'll see how they work that out.<br />
+<br />
+Hopefully we won't see a PvE nerf because PvP warrs are generating uber-rage with their larger health pools and then spamming 30rage HS bursts! ;D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Helloder</div><div class="date">2010-04-06, 02:08 AM</div></div><div class="posttext">OMG HEROIC STRIKE CHANGE SO AWSUM AND ORIGNAL!!<br />
+I really like how amazing this new heroic strike works, the idea is so great, I really wonder where they came up with it...<br />
+[/sarcasm]</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Inveigh</div><div class="date">2010-04-06, 02:28 AM</div></div><div class="posttext">For those people embarrassing themselves with the &quot;Let's just call it Energy&quot; comments, I really suggest you read the post again, possibly quite a bit slower and with a bit less nerd rage than the first read.<br />
+<br />
+I think the removal of &quot;Next Swing&quot; abilities is really something to be excited about, and those warriors scrolling HS for the entire period of their raid will agree that it's a welcome change. Can't wait to see more changes. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Caerdwyn</div><div class="date">2010-04-06, 02:40 AM</div></div><div class="posttext">Well, it's about time they normalised it. I am happy to hear this from a Fury warrior PoV, more than a tanking PoV. Hopefully this will mean that we don't get sudden bursts of rage that are impossible to dump. Even the on-next-swing skills being changed to instant is going to make a huge difference here! I'll have to change my itchy heroic strike (http://www.wowhead.com/spell=47450) / cleave (http://www.wowhead.com/spell=47520) button pressing habit. ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Master Guns</div><div class="date">2010-04-06, 04:14 AM</div></div><div class="posttext">Wow, congratulations on destroying the warrior class blizzard. Jesus christ.<br />
+Terrible for warriors with good gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tang</div><div class="date">2010-04-06, 05:40 AM</div></div><div class="posttext">Is it just me or did blizz not think out the tanking rage too much there? Lets see, we will give every warrior the same amount of rage per hit, &quot;normalized&quot; with off-hand giving half and crit giving double. Okay thats fine, so Fury's will have a bit more. Then we see that tanks will also get more rage for getting hit. Isn't the reason they give rage for damage because tanks dont hit as hard as DPS? I dunno, maybe they'll reduce it the amount they get from hits for tanks, dunno how they will do that, maybe one-handed weapons which could nerf the .001% of Warrior DPSers who dual-wield one-handers... Just wondering.<br />
+<br />
+<br />
+Sorry, but what the hell is your point?<br />
+<br />
+Currently tanks get rage for hitting and being hit, and they still will. It's just that their rage for hitting will not go up as they get better gear and their rage from being hit will not go down as they get better gear.<br />
+<br />
+As a fury/arms war, you will get a consistent amount of rage regardless of your gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">stupid11</div><div class="date">2010-04-06, 06:43 AM</div></div><div class="posttext">They failed in TBC because it was mid content, so ppl went from beeing 100 rage 24/7 to having to worry about it when you were competing for raid spots and such, now they will add it at the start of the expansion so no one would cry about it(gear won't be so good, everyone will get used to it), they might aswell make it yellow and call it energy.<br />
+<br />
+<br />
+Yup, Warriors will be Rogues with no combo points (a.k.a. Hunters with Focus) that start a fight at 0 Energy.<br />
+<br />
+Oh and as an added bonus, you get a copied version of Druid's old Ferocious Bite, which was changed because it sucked balls.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spazcat</div><div class="date">2010-04-06, 07:03 AM</div></div><div class="posttext">Please spam me all you want after this comment, its my oppinion, and if you have a problem with it, get help. I personally believe this &quot;normalization&quot; is a new way of energy but starting from zero. Everything has a set value, nothing to determine a change. This = this much rage, this = that much rage. It's so basic, rage to me is the core of the warrior class. When I get rage my character should be pumped, like a baseball player on steroids, just going all out banana insane on the target. Like a no remorse enrage. A full rage bar to me means, I am pissed the F*** off. My solution to the rage problem, the higher your rage bar is the more damage you do. A full rage bar means you get a % modifier on your dmg. A low rage bar means your at basic damage. Sort of like hunter pets. You feed them, at yellow happy face they do their normal dmg. At green, they do 50% more damage. So a full rage bar or above 0 rage means more damage. So warriors who dps will be forced to manage their rage by having a good amount of it to get the % bonus to their abilities, without running out and not getting a bonus to damage. So you'd have to time you abilities right to have alot of rage whenyou use them to get a nice damage boost to them. For low levels who get parried/miss/dodge alot of their attacks. If I was a warrior and some worm in rfc dodged my slash. I'd get pissed off and be like. &quot;OMGWTFBBQ, worm cant dodge a knife, im MADDDD!!! RAWR!&quot; So imo dodges,parries,misses should give some amount of rage. So if a mob dodges your heroic strike you are refunded a % of that rage that it cost or w/e. Or it just generates 5-10 rage. Another idea, is that at a full rage bar or 75 rage + or situations where u have infinite rage moments, you should be able to hit some short CD ability that puts u in a nutjob maniac mode and u get a huge dmg bonus. This drains 60+ rage and you lose more constantly as the buff persists but your abilities are going to hit a hell of a lot harder. That way you have to manage using the CD in conjunction with your abilities so you dont just waste rage and not have any more rage to use abilities. When instead you could have used that rage on abilities and done more dmg than with just white hits with a dmg buff. These are just stupid ideas that came to the top of my head. Sorry for the wall of text. I just feel blizz took the easy way out on this problem. Yes it sounds good on paper, and yes it fixes alot of problems, but it seems to take away the core feeling of the class and make it feel like some sort of rogue/hunter where you just keep refilling your rage and theres no trivial rng to get crit or get a crit on a mob to give you more rage to use.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zikenz</div><div class="date">2010-04-06, 07:12 AM</div></div><div class="posttext">im really amazed how ignorant some of you are.<br />
+throughout 5 years there has been a sentence in the warrior community, you know. &quot;No warrior changes are good warrior changes&quot;. ever figured out where did that come from?<br />
+<br />
+sure we dont know how many changes there will be, but these arent that promising as some of you think.<br />
+<br />
+you have to be really pathetic to call others retards, just because they are here some time already and have experience with blizzard changing our class. lmao</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kunz</div><div class="date">2010-04-06, 08:18 AM</div></div><div class="posttext">sounds like i haev to play my tank warr again x)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bullhammer</div><div class="date">2010-04-06, 08:26 AM</div></div><div class="posttext">hoping this works outs nicely since rage is nothing more than a broken resource nowadays. Its either we rage starve or swim in rage ocean freely. When healers did not care about mana they get fixed same goes for other classes, a resource must be handled carefully and we should have more control over our resource.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Avatar</div><div class="date">2010-04-06, 08:56 AM</div></div><div class="posttext">I never have any rage problems as a tank. Ok I´m playing may tank for 3 Years now.<br />
+I know what to do and what not. <br />
+So where is the rage problem ? I can tell you ...<br />
+<br />
+There a a freaky high number of warriors in wow that want to get into raids and hero inis as tanks. <br />
+There are many reasons why but they have no clue how to tank. <br />
+On the other side there are so many dps plyers which will never learn that you have to wait for aggro. Look at Aggro...pay attention.<br />
+<br />
+Rage for a tank is all about Aggro generation. Change HS ist a good solution. Make Devaste a dot like Hit like Bleed, Blocking attacks with reflect damage on the attacker, Add more aggro the protection.....<br />
+<br />
+Rage will come from hate...hate will come from hits....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">deathnes</div><div class="date">2010-04-06, 10:06 AM</div></div><div class="posttext">With every single Boub's post I like Cataclysm more and more... :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Icake</div><div class="date">2010-04-06, 11:20 AM</div></div><div class="posttext">Looking forward to these rage changes for bear tanks :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Puyobwoc</div><div class="date">2010-04-06, 01:11 PM</div></div><div class="posttext">Bear threats gonna suck, they better fix the threat of all other ability's.<br />
+<br />
+<br />
+This. As a bear tank, maul is my most damaging attack aside from my white swings as it is macro'd to all of my attacks. adding another GCD will definitely decrease threat gen</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daedalon</div><div class="date">2010-04-06, 01:30 PM</div></div><div class="posttext">Sounds like they are turning them into rogues tbh</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mihalik</div><div class="date">2010-04-06, 03:10 PM</div></div><div class="posttext">Sounds like they are turning them into rogues tbh<br />
+<br />
+<br />
+Sorta....tho considering that rogues generate energy regardless of their abilites hitting or not....not really...much larger margin of error to fuck this up for us.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">seigfried13</div><div class="date">2010-04-06, 04:24 PM</div></div><div class="posttext">Talent: Improved Heroic Strike<br />
+Increases the damage dealt by Heroic Strike by 5% and in addition causes all melee attacks dealt with the weapon held in the main hand to become yellow attacks.<br />
+<br />
+or alternatively<br />
+<br />
+Talent: Improved Heroic Strike<br />
+Increases the damage dealt by Heroic Strike by 5% and in addition there is a 25%/50%/75% chance for melee attacks done with the main hand weapon to become skill-based damage.<br />
+<br />
+I am skeptical of change but I will withhold outrage until I see something more concrete.<br />
+<br />
+They should completely rework the rage system instead of making it a rogue/dk hybrid. Been mentioned before in various threads, but having rage affect damage output of skills instead of usability of skills would make playing a warrior truly unique. QQ normalization.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Maerad</div><div class="date">2010-04-06, 04:27 PM</div></div><div class="posttext">Did you guys even READ the fist post? They just told about the BASIC changes for rage. They didn't say a word how your talenttree / skills affect the rage being generated.<br />
+<br />
+So the basic rage will be normalized and be a way easier to change / balance if there are some flaws or problems. Nothing like today, where a simple change could make the class loose massivly or getting op in an instant.<br />
+<br />
+I guess every talenttree will have his own, unique skills which give some kind of bonus rage - and I don't see what could be bad about something like a chain combo of certain skills to get out the max. of dmg. Way more interesting playstyle.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Marvdatboi</div><div class="date">2010-04-06, 07:33 PM</div></div><div class="posttext">Welp, looks like I know what I' m rolling once Cata hits.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">G l o w y r m</div><div class="date">2010-04-14, 04:19 PM</div></div><div class="posttext">they might aswell make it yellow and call it energy.<br />
+<br />
+<br />
+No they shouldn't?<br />
+<br />
+This new model is amazing. If you don't like it, it's because you don't understand it yet, which is fine. I'm telling you though, this is the best thing to happen to rage ever. No longer warriors not caring about their rage or not having enough.<br />
+<br />
+The new Heroic Strike is awesome too. Makes you think about your rage before you hit it. If you have 30 rage it will use it all, if you have 10 rage it will use it all.<br />
+<br />
+Great stuff, warrior game play is about to get so much better.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mmownd</div><div class="date">2010-04-23, 08:25 PM</div></div><div class="posttext">this rage normalization will end up letting the warrior/druid never care about rage ever !</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

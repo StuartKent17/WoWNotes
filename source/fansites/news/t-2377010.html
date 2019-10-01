@@ -1,0 +1,592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="from, hunter, pets, than, its, utility, one, what, some, more, dps, not, for, await, but, wonna, damage, theirs, bfa, reworks, dummy, skills, playstyle, pure, traps, without, any, with, specs, execp, yours, useless, other, bonuses, far, changes, get, these, day, best, update, azeroth, battle, auction, house, api, easy, hope, type, both" />
+<meta name="description" content="&lt;img src=&quot;https://media.mmo-champion.com/images/news/2012/july/wowmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Battle for Azeroth Alpha - Build 26032 
+ 
+Hunter Pets in Battle for Azeroth 
+As we’ve kicked off the Battle for Azeroth Alpha, we’ve seen a lot of discussion about the new way Hunter pets work. While we’re by no means finished, we have reached a place where we want to share some insight into our plans and explain some of what you might see in" />
+<title> Hunter Pets in Battle for Azeroth, Auction House API Update [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Hunter Pets in Battle for Azeroth, Auction House API Update</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-2377010.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/2377010-Hunter-Pets-in-Battle-for-Azeroth-Auction-House-API-Update">Hunter Pets in Battle for Azeroth, Auction House API Update</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2018-02-14, 06:38 AM</div></div><div class="posttext">&lt;img src=&quot;https://media.mmo-champion.com/images/news/2012/july/wowmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Battle for Azeroth Alpha - Build 26032 (https://www.mmo-champion.com/content/7394-Battle-for-Azeroth-Alpha-Build-26032)<br />
+<br />
+Hunter Pets in Battle for Azeroth<br />
+As we’ve kicked off the Battle for Azeroth Alpha, we’ve seen a lot of discussion about the new way Hunter pets work. While we’re by no means finished, we have reached a place where we want to share some insight into our plans and explain some of what you might see in development as Alpha continues.<br />
+<br />
+Our primary thoughts on pets going forward:<br />
+<br />
+<br />
+Move past the idea of a DPS/Tank pet specialization - In Battle for Azeroth, all pets will have equal damage, health, and armor. All can tank or DPS equally. Choosing to put a particular pet into “Tank spec” feels outdated, so we’re going to shift all pets to a setup that will work as though they’re specced into both Ferocity and Tenacity (in Legion terms). All offensive and defensive passive abilities such as Blood of the Rhino and Combat Training will be rolled into every pet by default. Charge will be removed, and all pets will have Growl and Dash/Swoop. Some spec-specific actives will be redistributed where appropriate. We are keeping the names Ferocity, Tenacity, and Cunning as the broad groups that all families fall into. They are no longer changeable, and each has a new passive and active ability that are useful in almost any situation. <br />
+<br />
+Maintain and/or reinstate pet family uniqueness - Pet family flavor is part of what makes selecting a companion unique and special, and want to emphasize that even more. A special ability has been added to all pet families that were missing one. Exotic Pets still have their unique ability (like Surface Trot) in addition to a new ability. Pure flavor abilities that many pets have are also staying like Trick (http://beta.wowdb.com/spells/94022-trick) and Rest (http://beta.wowdb.com/spells/94019-rest).<br />
+<br />
+Expanding access to Bloodlust, and the removal of Battle Res from pets - In Legion, all Hunters have access to Bloodlust and Battle Res, but they only exist among a handful of families, which leads to very narrow options. To that end, Bloodlust will be available on roughly a third of the tamable pet families rather than just two. In a world where we are proliferating abilities to many families, our first inclination was to add Battle Res to a separate third of those families. After seeing that landscape, it felt odd to fully embrace Resurrection as part of the Hunter kit. Further, moving into Battle for Azeroth, we are solidifying Bloodlust and Battle Res as the strong shared cooldowns that a group can bring - one offense, one defense. In that world, Hunters having access to both of the super powerful group benefits didn’t feel appropriate. <br />
+<br />
+A variety of pet ability packages - It’s important to acknowledge that some hunters want to maximize their impact with their pet, while others are collectors who want a pet for every occasion. There should be opportunities to cleverly swap from one pet to another in a given situation and reap the benefit. At the same time, the Hunter who has grown attached to their spider named Fluffy should feel effective across the game. We’re going to try to ensure that every pet package is attractive, with a unique combination of benefits that work in many situations.<br />
+<br />
+<br />
+Here are some specifics of the Battle for Azeroth design for Hunter pets:<br />
+<br />
+There are currently 51 pet families, and each family will be categorized as Ferocity, Tenacity, or Cunning. Each will have an active and a passive, and the active will be a Hunter class button that changes contextually with your active pet. <br />
+<br />
+<br />
+Ferocity<br />
+Primal Rage (http://beta.wowdb.com/spells/264667-primal-rage) (Active - Bloodlust) Predator’s Thirst (http://beta.wowdb.com/spells/264663-predators-thirst) (Passive - 3% Leech for you and your pet)<br />
+Tenacity<br />
+Survival of the Fittest (http://beta.wowdb.com/spells/264735-survival-of-the-fittest) (Active - 20% damage reduction for the Hunter and Pet for 6 seconds with a 3 minute cooldown) Endurance Training (http://beta.wowdb.com/spells/264662-endurance-training) (Passive - 10% max health for you and your pet)<br />
+Cunning<br />
+Master’s Call (http://beta.wowdb.com/spells/53271-masters-call) (Active – a friendly target and your pet are immune to root and moment impairing effects for 4 seconds with a 45 second cooldown) Pathfinding (http://beta.wowdb.com/spells/264656-pathfinding) (Passive - 8% movement speed for you and your pet)<br />
+<br />
+Each pet family will get one of six different abilities, and each ability will have a unique name themed to the family. Precedented abilities such as Ankle Crack (http://beta.wowdb.com/spells/50433-ankle-crack) - 50% Snare, Monstrous Bite (http://beta.wowdb.com/spells/54680-monstrous-bite) - Healing Reduction Debuff, Shell Shield (http://beta.wowdb.com/spells/26064-shell-shield) – 50% Reduced Damage Taken, Agile Reflexes (http://beta.wowdb.com/spells/160011-agile-reflexes) - 30% Dodge, and Thick Hide (http://beta.wowdb.com/spells/160057-thick-hide) – Reduced Damage Taken at Low Health already exist in the game, and we’re exploring adding something similar to Tranquilizing Shot (http://beta.wowdb.com/spells/19801-tranquilizing-shot) to the list.<br />
+<br />
+While this does create a landscape where there may only be a handful of families that exactly fit the combination of tools you prefer, each family was chosen with variety as a premium. There are winged creatures, predators, grazers, and more represented across as many abilities as possible, while keeping them thematically appropriate. <br />
+<br />
+For two specific examples: a Spirit Beast in Battle for Azeroth still has Spirit Mend (http://beta.wowdb.com/spells/90361-spirit-mend) and Spirit Walk (http://beta.wowdb.com/spells/90328-spirit-walk), and will gain Endurance Training (http://beta.wowdb.com/spells/264662-endurance-training) and Survival of the Fittest (http://beta.wowdb.com/spells/264735-survival-of-the-fittest). They also have a new ability, Spirit Shock (http://beta.wowdb.com/spells/264265-spirit-shock), that dispels magic and soothes enraged enemies. Cats, on the other hand, gain Catlike Reflexes (http://beta.wowdb.com/spells/263892-catlike-reflexes) – a 30% dodge cooldown – in addition to Primal Rage (http://beta.wowdb.com/spells/264667-primal-rage) and Predator’s Thirst (http://beta.wowdb.com/spells/264663-predators-thirst). Both pets have equal damage, health, and armor – both can tank or DPS equally.<br />
+<br />
+Nowadays, only about half of the pet families out there have a useful ability, and we want to improve on that. In Battle for Azeroth, Bloodlust will be much more prominent, so Hunters should no longer feel bound to Core Hounds and Nether Rays as their best options. Most importantly, these changes should result in a pet landscape where all pets can serve as dps or tank as well as they could in Legion.<br />
+<br />
+Please remember that all of the above, especially the numbers, are subject to change as we test in the Battle for Azeroth Alpha. Feel free to discuss anything related to Hunter pets here. We really appreciate your feedback!<br />
+<br />
+<br />
+Mobile/Web Auction House Disabled in 7.3.5<br />
+Just letting you all know that we are working on a hotfix at the moment to re-enable the Web and Mobile AH. <br />
+<br />
+Due to changes made in 7.3.5, players will be need to have logged in to the game since the patch launch in order to be able to access the Mobile AH once this hotfix is live. Just for some additional clarity, these database changes were why we disabled the tools on the launch of 7.3.5 and why it took us a little bit to update them.<br />
+<br />
+Soon as I'm aware that this is live I'll update the thread.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2018-02-14, 07:11 AM</div></div><div class="posttext">At least I can have different pets out sometimes :3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tarx</div><div class="date">2018-02-14, 07:17 AM</div></div><div class="posttext">Nice changes</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gulantik</div><div class="date">2018-02-14, 07:22 AM</div></div><div class="posttext">Yeah, regarding Hunter pets, i've always been all for total cosmetic choice on whatever pet you wanna have. I'm glad these changes are being made.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9aac36c166</div><div class="date">2018-02-14, 07:28 AM</div></div><div class="posttext">Now only need to implement a simple mechanism: Pets should be able attack only if the target is in the line of sight of the hunter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HuxNeva</div><div class="date">2018-02-14, 07:32 AM</div></div><div class="posttext">So any pet hunter class will have have a battle rez and bloodlust and dispel while still maintaining ultimate ranged mobility, self heals, kiting, rezzable mini-tank and the rest of the toolkit? Unless they balance this out with significantly lower dps, i can't see why anyone would ever opt to take e.g. a mage into a M+.<br />
+<br />
+(edit: yes I misread, see below. thx for pointing this out)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elfcap</div><div class="date">2018-02-14, 07:33 AM</div></div><div class="posttext">I'm glad for the changes, I can finally use some variety, but also please solve the stable slot problems somehow. I know, it's not that important for others, but many of us are collectors too and we are lacking space even with rares only.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Faethor</div><div class="date">2018-02-14, 07:35 AM</div></div><div class="posttext">So any pet hunter class will have have a battle rez and bloodlust and dispel while still maintaining ultimate ranged mobility, self heals, kiting, rezzable mini-tank and the rest of the toolkit? Unless they balance this out with significantly lower dps, i can't see why anyone would ever opt to take e.g. a mage into a M+.<br />
+<br />
+If you read it again, they are REMOVING battle rez from pets.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc182f786f2</div><div class="date">2018-02-14, 07:35 AM</div></div><div class="posttext">I like it! I like it, I like it, I like it!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HuxNeva</div><div class="date">2018-02-14, 07:35 AM</div></div><div class="posttext">If you read it again, they are REMOVING battle rez from pets.<br />
+You are right, misread that</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">JohnRoads</div><div class="date">2018-02-14, 07:37 AM</div></div><div class="posttext">So any pet hunter class will have have a battle rez and bloodlust and dispel while still maintaining ultimate ranged mobility, self heals, kiting, rezzable mini-tank and the rest of the toolkit? Unless they balance this out with significantly lower dps, i can't see why anyone would ever opt to take e.g. a mage into a M+.<br />
+<br />
+I guess you either did not read the or did not understand the post. A third (1/3) of the pet families will have bloodlust, only spirit beat will have dispel and no pet will have battle res.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9aac36c166</div><div class="date">2018-02-14, 07:38 AM</div></div><div class="posttext">And make it baseline for the hunter<br />
+<br />
+Imo, all kind of combat ress should be the sole privilege of the healer role.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Faethor</div><div class="date">2018-02-14, 07:38 AM</div></div><div class="posttext">And make it baseline for the hunter<br />
+<br />
+I don't think you read the same article that I did.......</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HuxNeva</div><div class="date">2018-02-14, 07:41 AM</div></div><div class="posttext">I guess you either did not read the or did not understand the post. A third (1/3) of the pet families will have bloodlust, only spirit beat will have dispel and no pet will have battle res.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+I don't think you read the same article that I did.......<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Imo, all kind of combat ress should be the sole privilege of the healer role.<br />
+<br />
+You were too fast, I misread and edited the response already</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nerraw</div><div class="date">2018-02-14, 07:42 AM</div></div><div class="posttext">Man. Can't wait to not have to manually scan the AH anymore.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf8e5b938a8</div><div class="date">2018-02-14, 07:42 AM</div></div><div class="posttext">So when are they going to do the same for Warlocks? Why can't they use the pet of their preference which brings the utility they want?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ishan</div><div class="date">2018-02-14, 08:06 AM</div></div><div class="posttext">Yeah...<br />
+<br />
+So the choice in legion is: Quillen/Crane/Moth (and in very rare occasions a Nether ray/Core hound)<br />
+And in BfA it will be: Quillen or maybe a Spirit beast if there are enough Bresses. (and in very rare occasions a Nether ray)<br />
+<br />
+So yay for even less choice. /s<br />
+<br />
+Edit: Nevermind it seems Bres is going away completely... Spirit beast or Nether ray it is then...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Doffen</div><div class="date">2018-02-14, 08:10 AM</div></div><div class="posttext">Very cool changes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Demise_</div><div class="date">2018-02-14, 08:26 AM</div></div><div class="posttext">TLDR,<br />
+<br />
+After much thought, we are reverting pets to how they pretty much were in WoTLK.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Notshauna</div><div class="date">2018-02-14, 08:34 AM</div></div><div class="posttext">I am personally more a fan of Guild Wars 2's approach to pets, where each pet has their own unique ability, each pet class shares most of their stats and secondary ability. That being said this seems to a big step up, I've always believed that Hunters should have a large stable of pets.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Malrune</div><div class="date">2018-02-14, 09:08 AM</div></div><div class="posttext">Before Legion: &quot;We are going to try something new and exciting with hunter specs.&quot;<br />
+During Legion: &quot;We are so sorry for how this all turned out.&quot;<br />
+Before BfA: &quot;We are going to try something new and exciting with hunter pets.&quot;<br />
+<br />
+Round and round we go.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spaze</div><div class="date">2018-02-14, 09:12 AM</div></div><div class="posttext">pls remove growl in instances its so annoying while leveling get someone in group who didnt know how to switch it off or didnt give a shit to switch it off :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LadyLisanna</div><div class="date">2018-02-14, 09:27 AM</div></div><div class="posttext">So any pet hunter class will have have a battle rez and bloodlust and dispel while still maintaining ultimate ranged mobility, self heals, kiting, rezzable mini-tank and the rest of the toolkit? Unless they balance this out with significantly lower dps, i can't see why anyone would ever opt to take e.g. a mage into a M+.<br />
+<br />
+<br />
+<br />
+Seems you mis read... They are removeing the Hunter Battle rez</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">salate</div><div class="date">2018-02-14, 09:48 AM</div></div><div class="posttext">mama mia, i like the changes...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ishan</div><div class="date">2018-02-14, 10:18 AM</div></div><div class="posttext">Before Legion: &quot;We are going to try something new and exciting with hunter specs.&quot;<br />
+During Legion: &quot;We are so sorry for how this all turned out.&quot;<br />
+Before BfA: &quot;We are going to try something new and exciting with hunter pets.&quot;<br />
+<br />
+Round and round we go.<br />
+<br />
+I think this has been true since at least TBC :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gforcez</div><div class="date">2018-02-14, 10:22 AM</div></div><div class="posttext">Are they fixing pathing for hunter pets aswel? Sometimes hunter pets still do really weird stuff.. or walking very weird routes and end up pulling everything in their way.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Makabreska</div><div class="date">2018-02-14, 10:22 AM</div></div><div class="posttext">Yeah...<br />
+<br />
+So the choice in legion is: Quillen/Crane/Moth (and in very rare occasions a Nether ray/Core hound)<br />
+And in BfA it will be: Quillen or maybe a Spirit beast if there are enough Bresses. (and in very rare occasions a Nether ray)<br />
+<br />
+So yay for even less choice. /s<br />
+<br />
+Edit: Nevermind it seems Bres is going away completely... Spirit beast or Nether ray it is then...<br />
+<br />
+What are you talking about? ALL ferocity pets will have access to Bloodlust, so if you want it, you can pick like a cat or raptor.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaver</div><div class="date">2018-02-14, 10:24 AM</div></div><div class="posttext">BM hunters are currently way too complex. We need to have the pet doing 99 % of the damage and auto attack should be the only ability! Also the pet should automatically evaluate when to use Bloodlust cause otherwise I would have to actually activate my brain and ain’t nobody got time for that!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoceb1073a651</div><div class="date">2018-02-14, 10:26 AM</div></div><div class="posttext">Yeah, regarding Hunter pets, i've always been all for total cosmetic choice on whatever pet you wanna have. I'm glad these changes are being made.<br />
+<br />
+Except that it would not be that much cosmetic, since specific pet families will get specific skills. You will have a broader choice for each skill, but if you want to have that, you will have to use some pet from that family.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2018-02-14, 10:30 AM</div></div><div class="posttext">sounds good..<br />
+<br />
+but the question is.. <br />
+<br />
+leech vs more hp vs movement for raiding?^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Appelgren</div><div class="date">2018-02-14, 10:35 AM</div></div><div class="posttext">Now only need to implement a simple mechanism: Pets should be able attack only if the target is in the line of sight of the hunter.<br />
+<br />
+Makes no sense whatsoever. Try again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Saulburn</div><div class="date">2018-02-14, 11:04 AM</div></div><div class="posttext">Now only need to implement a simple mechanism: Pets should be able attack only if the target is in the line of sight of the hunter.<br />
+<br />
+Also:<br />
+<br />
+DoTs only tick if the caster is in line of sight of the target.<br />
+<br />
+Hots only tick if the caster is in line of sight of the target.<br />
+<br />
+AoE effects only work if affected targets are in line of sight of the caster.<br />
+<br />
+Healers need to be facing their targets to heal.<br />
+<br />
+Mwahahahahahaaaa!<br />
+<br />
+P.S. OMG a pet. I cant snare it / root it / fear it / kill it / ignore it. /sigh</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9aac36c166</div><div class="date">2018-02-14, 11:07 AM</div></div><div class="posttext">Makes no sense whatsoever. Try again.<br />
+<br />
+How so? Ah, I see, you are a hunter yourself and you like to hug walls and corners while your pet does the work.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Also:<br />
+<br />
+DoTs only tick if the caster is in line of sight of the target.<br />
+<br />
+Hots only tick if the caster is in line of sight of the target.<br />
+<br />
+AoE effects only work if affected targets are in line of sight of the caster.<br />
+<br />
+Healers need to be facing their targets to heal.<br />
+<br />
+Mwahahahahahaaaa!<br />
+<br />
+P.S. OMG a pet. I cant snare it / root it / fear it / kill it / ignore it. /sigh<br />
+<br />
+Moar salt. I like it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ManiaCCC</div><div class="date">2018-02-14, 11:17 AM</div></div><div class="posttext">How so? Ah, I see, you are a hunter yourself and you like to hug walls and corners while your pet does the work.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+Moar salt. I like it.<br />
+<br />
+What you wrote just doesn't make sense.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9aac36c166</div><div class="date">2018-02-14, 11:21 AM</div></div><div class="posttext">What you wrote just doesn't make sense.<br />
+<br />
+You can't understand the words or you can't imagine/accept the concept?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Appelgren</div><div class="date">2018-02-14, 11:22 AM</div></div><div class="posttext">How so? Ah, I see, you are a hunter yourself and you like to hug walls and corners while your pet does the work.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+Moar salt. I like it.<br />
+<br />
+Oh.. You are one of those. <br />
+Immune to logical reasoning and arguments.<br />
+<br />
+Ill stop adressing you for the sake of myself and the rest of the forum.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ManiaCCC</div><div class="date">2018-02-14, 11:24 AM</div></div><div class="posttext">You can't understand the words or you can't imagine/accept the concept?<br />
+<br />
+Your reasoning is nonexistent. Your point was countered and than you responded with some gibberish. That's why. <br />
+<br />
+But feel free to explain why you feel how you feel about hunter pets.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Appelgren</div><div class="date">2018-02-14, 11:27 AM</div></div><div class="posttext">Your reasoning is nonexistent. Your point was countered and than you responded with some gibberish. That's why. <br />
+<br />
+But feel free to explain why you feel how you feel about hunter pets.<br />
+<br />
+This exactly. He got several other examples of how fkn stupid his suggestion was and he replied &quot;moar salt. I like it&quot;.<br />
+<br />
+Kind of a trend of these forums sadly enough...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">osmo</div><div class="date">2018-02-14, 11:28 AM</div></div><div class="posttext">ion : bring the class not the player , we're gonna make classes unique again<br />
+<br />
+<br />
+dev team : he lets make sure more hunter pets get blood lust / time warp...<br />
+<br />
+<br />
+happy i dont pre order</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ManiaCCC</div><div class="date">2018-02-14, 11:33 AM</div></div><div class="posttext">ion : bring the class not the player , we're gonna make classes unique again<br />
+<br />
+<br />
+dev team : he lets make sure more hunter pets get blood lust / time warp...<br />
+<br />
+<br />
+happy i dont pre order<br />
+<br />
+I think you just picked wrong point and build opinion around it. Also, Bloodlust is already hunter's &quot;baseline&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bloodnickel</div><div class="date">2018-02-14, 11:54 AM</div></div><div class="posttext">How so? Ah, I see, you are a hunter yourself and you like to hug walls and corners while your pet does the work.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+Moar salt. I like it.<br />
+<br />
+Lol, really dude, if you were going to do that you might as well make all dots and hots only tick when in los of the caster. Does that really make sense to you?<br />
+<br />
+It's pretty obvious you're the salty one here.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MiiiMiii</div><div class="date">2018-02-14, 11:55 AM</div></div><div class="posttext">Concidering MM will now be petless, they are the only Hunter spec that can't bring Bloodlust?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ManiaCCC</div><div class="date">2018-02-14, 11:56 AM</div></div><div class="posttext">Concidering MM will now be petless, they are the only Hunter spec that can't bring Bloodlust?<br />
+<br />
+They CAN'T have pet at all?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaito92</div><div class="date">2018-02-14, 11:56 AM</div></div><div class="posttext">Cant they just upgrade all pet AIs? <br />
+<br />
+I mean maybe thats my imagination but im playing a unholy dk since a couple of weeks and the ghoul behave likes something straight of vanilla.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9aac36c166</div><div class="date">2018-02-14, 11:58 AM</div></div><div class="posttext">Lol, really dude, if you were going to do that you might as well make all dots and hots only tick when in los of the caster. Does that really make sense to you?<br />
+<br />
+It's pretty obvious you're the salty one here.<br />
+<br />
+Once you los the caster, the dots/hots expire, you can even drop combat. You can't do the same with pets when the hunter is in range and doesn't cancel pet attack. Your argument is invalid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3d7f422663</div><div class="date">2018-02-14, 12:13 PM</div></div><div class="posttext">So taking away Gust of Wind from Ele sham because it's supposedly similar to blink is OK but making bloodlust even more available is not. <br />
+<br />
+Bl should be back to sham only</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9aac36c166</div><div class="date">2018-02-14, 12:18 PM</div></div><div class="posttext">So taking away Gust of Wind from Ele sham because it's supposedly similar to blink is OK but making bloodlust even more available is not. <br />
+<br />
+Bl should be back to sham only<br />
+<br />
+It would be mandatory to bring a shaman to every single group. It hurts small groups the most, aka M+. A shaman spot should be reserved every single time you start any kind of group.<br />
+<br />
+Back in the days, when BL was only a shaman thing, the game was not so sophisticated, only one kind of competitive pve group content existed (raids).<br />
+<br />
+Now we have timers to beat, every single % of dps to squeeze out of the group and a BL ability is must.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ManiaCCC</div><div class="date">2018-02-14, 12:20 PM</div></div><div class="posttext">So taking away Gust of Wind from Ele sham because it's supposedly similar to blink is OK but making bloodlust even more available is not. <br />
+<br />
+Bl should be back to sham only<br />
+<br />
+Again, bloodlust is already baseline, if you want call it that, for hunter. And it is not the same. Lust is basically mandatory ability for any pve group content. There is no way around it. They could give it to just shaman's and it would fit somehow into &quot;bring the class, not the player&quot; philosophy..but it would be too much, wouldn't be? &quot;Bring some tank, healer, shaman and some dps&quot; .<br />
+<br />
+Anyway, I think they should remove lust altogether or scale it back to affect just Shaman only - or spread bloodlust to more classes. 3 for now is sufficient probably.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Once you los the caster, the dots/hots expire, you can even drop combat. You can't do the same with pets when the hunter is in range and doesn't cancel pet attack. Your argument is invalid.<br />
+Also you can't run away from dots...so no, argument is not invalid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9aac36c166</div><div class="date">2018-02-14, 12:32 PM</div></div><div class="posttext">Also you can't run away from dots...so no, argument is not invalid.<br />
+<br />
+You are clueless and just try to defend a broken mechanism that makes hunters superior in los situations. Read again: dots expire over time once you are not in los of the caster and he/she can't reapply them, also you can drop combat. You can't do the same with a hunter pet, because it follows you all the time, regardless you are in los of the hunter or not.<br />
+<br />
+I have no idea what do you want with running away when you are within the range of the ranged specs, ofc they can reach you - except in a los situation, where hunters still can keep up combat and attack with the pet.<br />
+<br />
+You can't beat this argument and you know it. So a pet should stop attacking after a few seconds, once a hunter is not in los of the target.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ManiaCCC</div><div class="date">2018-02-14, 12:45 PM</div></div><div class="posttext">You are clueless and just try to defend a broken mechanism that makes hunters superior in los situations. Read again: dots expire over time once you are not in los of the caster and he/she can't reapply them, also you can drop combat. You can't do the same with a hunter pet, because it follows you all the time, regardless you are in los of the hunter or not.<br />
+<br />
+I have no idea what do you want with running away when you are within the range of the ranged specs, ofc they can reach you - except in a los situation, where hunters still can keep up combat and attack with the pet.<br />
+<br />
+You can't beat this argument and you know it. So a pet should stop attacking after a few seconds, once a hunter is not in los of the target.<br />
+<br />
+Calling me clueless and still not writing a single reason, why you feel it is broken system. So let's make some assumptions here too. You are so bad, that hunter sending pat at you and do nothing else will kill you. Am I right? I guess so.<br />
+<br />
+Look..if you want change some mechanics, you have to say why you feel it hurts the game. Hunters are not super strong in PvP and if someone will die just by pet alone, it tells more about the &quot;victim&quot; not the hunter class. Also, if hunter is just sending pet and do nothing else, it is hurting it's own team so this gameplay is pretty much worth nothing. The best use of pet you may not like is to split your dps, doing some ranged damage and let pet chase down healer or something like that. That works and you may not like it but still how it is bad for the game?<br />
+<br />
+Pet running back because of los would be so disconnecting for hunter player. This would actually hurt the game - it would be broken for many - because logic wouldn't just apply. &quot;Why my pet is coming back when opponent just run into that small hut&quot;? So how it works in the game makes perfect sense. Only question is, if this mechanics broken or unfair? If yes, tell me how please..<br />
+<br />
+Also comparing dots and pets... dots has duration, pets have health bar, you can dispel dots, which is pretty rare, you can run from pets, slow them, stun them, fear them..basically anything.. which is very common. <br />
+<br />
+I can beat your argument anyday buddy. And based on how you react on whole &quot;hunter pet issue&quot; I would probably mop you with holy priest.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vutar</div><div class="date">2018-02-14, 12:55 PM</div></div><div class="posttext">At this point hunter pets are just boring. They all feel the same with different skins.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9aac36c166</div><div class="date">2018-02-14, 01:15 PM</div></div><div class="posttext">Pet running back because of los would be so disconnecting for hunter player. This would actually hurt the game - it would be broken for many - because logic wouldn't just apply. &quot;Why my pet is coming back when opponent just run into that small hut&quot;? So how it works in the game makes perfect sense. Only question is, if this mechanics broken or unfair? If yes, tell me how please..<br />
+<br />
+You answered your own question:<br />
+<br />
+Also comparing dots and pets... dots has duration, pets have health bar, you can dispel dots, which is pretty rare, you can run from pets, slow them, stun them, fear them..basically anything.. which is very common.<br />
+Pets are superior to dots, because they follow you all the time, you can't drop combat when you fight them, even if you are not in line of sight of their master.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Scroolooseuk</div><div class="date">2018-02-14, 01:22 PM</div></div><div class="posttext">&quot;Tank spec” feels outdated&quot;<br />
+<br />
+Is it me or is this game becomming more like GW2 everday. Along with this and giving tanks and healers &quot;extra abilities in island scenarios to help dps heal and tank&quot;, it would appear WoW is eventually aiming to ditch the holy trinaty altogether.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">aeuhe4yxzhds</div><div class="date">2018-02-14, 01:31 PM</div></div><div class="posttext">&quot;Choosing to put a particular pet into “Tank spec” feels outdated,&quot;<br />
+<br />
+lol. Depth and choices is &quot;feeling&quot; outdated. What the hell is it with less gameplay mechanics and depth to anything?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ThatsOurEric</div><div class="date">2018-02-14, 01:39 PM</div></div><div class="posttext">I like it. It made no sense for them to have removed the unique abilities in the previous expansions..<br />
+<br />
+I like not having to always have to have one of 3 or 2 pets with BR &amp; BL.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Blackmist</div><div class="date">2018-02-14, 01:39 PM</div></div><div class="posttext">&quot;Move past the idea of a DPS/Tank pet specialization&quot;<br />
+<br />
+Sounds good.<br />
+<br />
+&quot;each family will be categorized as Ferocity, Tenacity, or Cunning.&quot;<br />
+<br />
+So you've just locked each pet type into DPS, Tank and PvP instead.<br />
+<br />
+How is that moving past anything. It's doing the exact same sodding thing, with more limitations.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zorv</div><div class="date">2018-02-14, 01:40 PM</div></div><div class="posttext">Any chance that, with the other changes coming to hunters and their pets in the next expansion, hunter pets could become account-wide like mounts and battle pets?<br />
+<br />
+When I made my first hunter on my main server, I managed (over the years) to tame almost all of the rare BM pets (Skoll, Arcturis, the various rare spiders in the firelands area, both spectral cats, the spectral owl, ghost crab, etc, etc).... Since those days, I've created some hunters on other servers to play with friends, but haven't even attempted to tame these guys on those other servers, mainly due to the greatly increased difficulty of finding them after the implementation of cross-realm zones, and the large number of other players who are trying to tame them. Having hunter pets become account-wide would solve that issue for a number of us players that have hunters on numerous servers, and would probably be easily done if the methods for mounts and battle pets could be duplicated for them.<br />
+<br />
+Just an idea... as with anything else, if you don't ask, you surely will not receive....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ManiaCCC</div><div class="date">2018-02-14, 01:43 PM</div></div><div class="posttext">You answered your own question:<br />
+<br />
+<br />
+Did I? I asked question.. and somehow I answered my own question?<br />
+<br />
+<br />
+<br />
+<br />
+Pets are superior to dots, because they follow you all the time, you can't drop combat when you fight them, even if you are not in line of sight of their master.<br />
+<br />
+So is stun superior to slows, big damage superior to small damage etc. You still don't understand. You want change mechanic and can't articulate single reason why.<br />
+<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+&quot;Move past the idea of a DPS/Tank pet specialization&quot;<br />
+<br />
+Sounds good.<br />
+<br />
+&quot;each family will be categorized as Ferocity, Tenacity, or Cunning.&quot;<br />
+<br />
+So you've just locked each pet type into DPS, Tank and PvP instead.<br />
+<br />
+How is that moving past anything. It's doing the exact same sodding thing, with more limitations.<br />
+<br />
+Every pet deals exactly same damage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">deathslover</div><div class="date">2018-02-14, 02:16 PM</div></div><div class="posttext">i personally dont like these changes at all. i like having a full ability to choose my pet and the spec i use it for. i love my spirit pets specially loque and arty they are my &quot;to go&quot; pets. if they are going to screw us over with limiting our choices at least give us a way to &quot;transmog&quot; our pets (like the item for hati) so i can still use loque even tho she isnt technically her. and the ability to have have pets account wide (say pick 5) that any toon can use (need to buy the unlock or earn it whatever) that would be easy to do</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stormcall</div><div class="date">2018-02-14, 02:27 PM</div></div><div class="posttext">&quot;each family will be categorized as Ferocity, Tenacity, or Cunning.&quot;<br />
+<br />
+So you've just locked each pet type into DPS, Tank and PvP instead.<br />
+<br />
+<br />
+No, they haven't. There are TONS of PvE instances where the movement speed boost(and occasionally, the root/slow immunity) of Cunning pets is useful...in fact, outside of Bloodlust(if nobody else in your group can provide it), I can't see any reason to ever use a &quot;DPS pet&quot; over a &quot;PvP pet&quot; since their damage is going to be the same. Now, the pet family abilities could make a difference, but being a DPS pet doesn't mean they get a DPS ability anyway, since according to the Blizzard post, the cat family(a &quot;DPS family&quot; pet) gets a dodge CD as their family ability.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9aac36c166</div><div class="date">2018-02-14, 02:44 PM</div></div><div class="posttext">Did I? I asked question.. and somehow I answered my own question?<br />
+<br />
+<br />
+<br />
+So is stun superior to slows, big damage superior to small damage etc. You still don't understand. You want change mechanic and can't articulate single reason why.<br />
+You compare apples and oranges and you don't want to understand the whole situation. Read again, I won't write it down again how it's an advantage to keep a player in combat and damaging it, having 100% uptime, even when there is no actual interaction between the player characters due to los situation.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Regalbeast</div><div class="date">2018-02-14, 02:46 PM</div></div><div class="posttext">At this point hunter pets are just boring. They all feel the same with different skins.<br />
+<br />
+Yeah I think that's what they are trying to fix bro...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Truefacts</div><div class="date">2018-02-14, 03:21 PM</div></div><div class="posttext">&gt;Both pets have equal damage, health, and armor – both can tank or DPS equally<br />
+<br />
+Except that's not true, they don't have equal health because one specifically has 10% more health than the other. I feel like this person missed the point entirely.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tibblaye</div><div class="date">2018-02-14, 03:26 PM</div></div><div class="posttext">At this point hunter pets are just boring. They all feel the same with different skins.<br />
+<br />
+better than being forced to use x pet because it's better than the one you like</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kromkar</div><div class="date">2018-02-14, 03:29 PM</div></div><div class="posttext">It's like this every expansion, hunters this, warlocks that, hunters need this and warlocks need that.... Bloody hell, the whole game is nearly based on these classes...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lummiuster</div><div class="date">2018-02-14, 03:30 PM</div></div><div class="posttext">Very bad changes. First of all remove bloodlust from hunters and mages. Then bring back TBC pet style. Talents limited to pet family. And must feed your pet again and with good food otherwise he'll deal bad damage or leave.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Queen of Hamsters</div><div class="date">2018-02-14, 03:32 PM</div></div><div class="posttext">Glad to see them trying to bring back the flavor of Hunter pets.<br />
+<br />
+Sure it's nice to bring the same pet that you like the look of for every fight and never switch, but that's where it stops. I want to return to a time when a simple thing like being aware of what pets to bring was a valued contribution. It gave some meaning to being a Hunter using pets, rather than just have pets be a cosmetic stat stick.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Crookids</div><div class="date">2018-02-14, 03:39 PM</div></div><div class="posttext">&quot;Move past the idea of a DPS/Tank pet specialization&quot;<br />
+<br />
+Sounds good.<br />
+<br />
+&quot;each family will be categorized as Ferocity, Tenacity, or Cunning.&quot;<br />
+<br />
+So you've just locked each pet type into DPS, Tank and PvP instead.<br />
+<br />
+How is that moving past anything. It's doing the exact same sodding thing, with more limitations.<br />
+<br />
+What? How did you get that from this?<br />
+<br />
+I swear, players who are at the most basic levels of gameplay need to stop critiquing as if they know what they’re talking about. <br />
+<br />
+If pets all do the same damage and each family has a different subset of abilities, you can’t see how they may be beneficial for different situations? Different raid bosses? Different mythic dungeons? Different comps? Different play styles?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aerisot</div><div class="date">2018-02-14, 03:46 PM</div></div><div class="posttext">I miss exotic pets that had very unique abilities like Moon beam.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">GMZohar1</div><div class="date">2018-02-14, 03:49 PM</div></div><div class="posttext">So they want to keep the uniqueness of pets by taking away the uniqueness of pets? lol seems like they are streamlining pets just as they did to all classes, how lame</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aerisot</div><div class="date">2018-02-14, 03:50 PM</div></div><div class="posttext">What? How did you get that from this?<br />
+<br />
+I swear, players who are at the most basic levels of gameplay need to stop critiquing as if they know what they’re talking about. <br />
+<br />
+If pets all do the same damage and each family has a different subset of abilities, you can’t see how they may be beneficial for different situations? Different raid bosses? Different mythic dungeons? Different comps? Different play styles?<br />
+<br />
+I think his point is, currently in legion ANY pet can be one of those three, you would just need to have one with Bres, lust, ect... now only 1/3 of the amount of pets can be each spec, so you still have to pick and choose.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aspenarious</div><div class="date">2018-02-14, 03:52 PM</div></div><div class="posttext">I wonder, if the idea is to make Hunters into another Bloodlust Class, what that means relative to Lone Wolf Talent/Marksman Spec who prefer not to have a pet?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Banard</div><div class="date">2018-02-14, 04:03 PM</div></div><div class="posttext">woot! limiting options! I am all for limiting options! <br />
+<br />
+Current world...take what pet you want..MAYBE in a 5 man you will need a brez/hero...MAYBE. <br />
+<br />
+New world...like ability A..well you know have 1/3 the options!<br />
+<br />
+<br />
+Is it that hard to keep the exact same thing blizzard is doing but allow us to switch between &quot;families&quot; so we can have our cake and eat it too? <br />
+<br />
+I like mechanical....lets assume there placed with the leech ability...but ...wait i want that damage reduction ability...look at me no more mechanical for me! THANK YOU FOR LIMITING MY OPTIONS. <br />
+<br />
+Its not that hard to keep pet families different then ferocity/cunning/tenacity. Why add a pointless constraint?<br />
+<br />
+Now these other abilities...pvp sure...maybe in a 5 man...but in a raid there is enough people classes that this doesn't matter. Maybe its time to move away from those abilities and add something different and unique.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">meowfurion</div><div class="date">2018-02-14, 04:10 PM</div></div><div class="posttext">It's like this every expansion, hunters this, warlocks that, hunters need this and warlocks need that.... Bloody hell, the whole game is nearly based on these classes...<br />
+<br />
+Took the words right out of my mouth<br />
+<br />
+I am sooooooooo f*****g sick of hearing about Warlocks and Hunters.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SL1200</div><div class="date">2018-02-14, 04:14 PM</div></div><div class="posttext">Now only need to implement a simple mechanism: Pets should be able attack only if the target is in the line of sight of the hunter.<br />
+<br />
+And how would they compensate for that massive nerf? Why stop there? Might as well ask for the dead zone back too.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I wonder, if the idea is to make Hunters into another Bloodlust Class, what that means relative to Lone Wolf Talent/Marksman Spec who prefer not to have a pet?<br />
+<br />
+Call your pet, bloodlust, dismiss pet. Easy enough.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tussee</div><div class="date">2018-02-14, 04:32 PM</div></div><div class="posttext">They can make all the changes to hunter pets they want.<br />
+<br />
+As long as they don't fix pet pathing BM are screwed.<br />
+<br />
+1. Portal keeper and Eonar platform switching makes pets get stuck 50% of the times.<br />
+2. Damage is gimped on Kin'garoth when switching from a newly killed add to the 3rd one.<br />
+<br />
+Pet pathing has been a major hunter problem since launch. I have been playing hunter for 12 years+ now, and I can't believe they haven't fixed that yet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Crookids</div><div class="date">2018-02-14, 04:36 PM</div></div><div class="posttext">I think his point is, currently in legion ANY pet can be one of those three, you would just need to have one with Bres, lust, ect... now only 1/3 of the amount of pets can be each spec, so you still have to pick and choose.<br />
+<br />
+No. What he implied is that the pets will simply be ideal for each game-type and archetype as before which he why he referenced &quot;Move past the idea of a DPS/Tank pet specialization&quot;.<br />
+<br />
+The new pet types are not cookie cutter &quot;this one is DPS and this one is Tank&quot; as he implied.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Onikaroshi</div><div class="date">2018-02-14, 04:53 PM</div></div><div class="posttext">Have a pet family you like and want to use? Nah....<br />
+<br />
+World content? Tenacity<br />
+Raiding? Tenacity<br />
+PvP? Tenacity<br />
+<br />
+10% HP and a CD reduction too strong.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Porkrind</div><div class="date">2018-02-14, 05:09 PM</div></div><div class="posttext">Yeah I think that's what they are trying to fix bro...<br />
+<br />
+how? <br />
+<br />
+By making them EVEN MORE GENERIC?<br />
+<br />
+I wish hunter pets had been pushed in the opposite direction like they used to be. I want bears and turtles to be tanky by default. I want bats and snakes and birds to be PVP harrassers by default and I don't want them to be tanky too. I want there to be pure glass cannon DPS pets and some more durable reliable DPS pets. I don't suppose we need oldschool pet talent trees but I sure would like to select SOME skills for pets instead of every bear being the same and every bird being the same. Right now, pets are stat sticks and that's what they're being tuned to be even more and that's super boring. They're obligatory pets, not flavorful pets. Kinda defeats the point of being a Hunter unless your entire WoW existence is playing pretty pretty princess dressup and you have to have a kitty cat and don't want to get yelled at in a raid for having your precious kitty cat as your pet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Unholyground</div><div class="date">2018-02-14, 05:40 PM</div></div><div class="posttext">pls remove growl in instances its so annoying while leveling get someone in group who didnt know how to switch it off or didnt give a shit to switch it off :D<br />
+<br />
+It toggles off automatically when entering dungeons since the beginning of Legion, these people have to be turning it back on after they get in... lol</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Urti</div><div class="date">2018-02-14, 06:16 PM</div></div><div class="posttext">You compare apples and oranges and you don't want to understand the whole situation. Read again, I won't write it down again how it's an advantage to keep a player in combat and damaging it, having 100% uptime, even when there is no actual interaction between the player characters due to los situation.<br />
+<br />
+Show us on the doll exactly where the big, bad hunter hurt you lol.<br />
+<br />
+Seriously, you sound like youre just salty over some hunter handing you a PvP spanking. There are ways to mitigate that hunter specific game mechanic, use them.<br />
+<br />
+Next you'll argue that rogue stealth is unfair because you can't see them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Logwyn</div><div class="date">2018-02-14, 07:01 PM</div></div><div class="posttext">Now only need to implement a simple mechanism: Pets should be able attack only if the target is in the line of sight of the hunter.<br />
+<br />
+Eh? Why really? Can you not sent a trained animal around a corner and attack something?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Worgoblin</div><div class="date">2018-02-14, 07:02 PM</div></div><div class="posttext">reinstate pet family uniqueness<br />
+<br />
+I love this!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ealyssa</div><div class="date">2018-02-14, 07:05 PM</div></div><div class="posttext">At this point hunter pets are just boring. They all feel the same with different skins.<br />
+Hmmm no, the exact opposite.<br />
+<br />
+Actually you are required to play core hound, neither ray (BL) or crane (BR).<br />
+<br />
+That's the only 3 usefull pets you can have. Everything else is a subpar choice.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tiwack</div><div class="date">2018-02-14, 07:15 PM</div></div><div class="posttext">Are they fixing pathing for hunter pets aswel? Sometimes hunter pets still do really weird stuff.. or walking very weird routes and end up pulling everything in their way.<br />
+<br />
+You're not supposed to highlight that issue as everyone knows that blizzs AI pathing is dumb as nails, and it always will be thanks to the dated game and spaghetti code. The few pet classes in-game will never warrant a proper fix considering half the time you don't notice any issues ... as they put it. :confused: Their timeconstraint doesn't allow them to spend time on an issue they don't consider productive or enough of an issue to warrant the time fixing it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lichbane</div><div class="date">2018-02-14, 07:35 PM</div></div><div class="posttext">pls remove growl in instances its so annoying while leveling get someone in group who didnt know how to switch it off or didnt give a shit to switch it off :D<br />
+<br />
+Install the Bad Pet addon. They'll get the hint when chat gets spammed. My main is a hunter, and I have no qualms incriminating myself if I screw up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Regalbeast</div><div class="date">2018-02-14, 07:37 PM</div></div><div class="posttext">how? <br />
+<br />
+By making them EVEN MORE GENERIC?<br />
+<br />
+I wish hunter pets had been pushed in the opposite direction like they used to be. I want bears and turtles to be tanky by default. I want bats and snakes and birds to be PVP harrassers by default and I don't want them to be tanky too. I want there to be pure glass cannon DPS pets and some more durable reliable DPS pets. I don't suppose we need oldschool pet talent trees but I sure would like to select SOME skills for pets instead of every bear being the same and every bird being the same. Right now, pets are stat sticks and that's what they're being tuned to be even more and that's super boring. They're obligatory pets, not flavorful pets. Kinda defeats the point of being a Hunter unless your entire WoW existence is playing pretty pretty princess dressup and you have to have a kitty cat and don't want to get yelled at in a raid for having your precious kitty cat as your pet.<br />
+<br />
+I like the direction they are going. I don't have to HAVE to use a certain pet for specific abilities or types. I like them having pet families so that you still have to switch but it's not as specific.<br />
+<br />
+Currently, in live, any pet can do anything. That is boring.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bufferunderrun</div><div class="date">2018-02-14, 09:01 PM</div></div><div class="posttext">why don't they stop fucking around with pet and return to the ol' good day of pet skill, feeding and affection? this crap of making pet all the same is retarded.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I like the direction they are going. I don't have to HAVE to use a certain pet for specific abilities or types. I like them having pet families so that you still have to switch but it's not as specific.<br />
+<br />
+Currently, in live, any pet can do anything. That is boring.<br />
+<br />
+what is boring is the only difference btw pet being the graphic, pet should be all different like it was back in the brokentoth days.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aspenarious</div><div class="date">2018-02-14, 09:19 PM</div></div><div class="posttext">And how would they compensate for that massive nerf? Why stop there? Might as well ask for the dead zone back too.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+Call your pet, bloodlust, dismiss pet. Easy enough.<br />
+<br />
+You can't call a pet if you have Lone Wolf.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Goretex</div><div class="date">2018-02-14, 10:09 PM</div></div><div class="posttext">This change sucks, I like to have wolves and pets that match a xmog I'm wearing at that time. But with This change why would I bring my wolf if the raid already has classes with a lust. So this change will force me to pick a tenacity pet because they have better abilities. So I won't be able to choose a pet I want like we do now. A lot of posts on these threads show how ignorant people are about Hunter pets.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dembai</div><div class="date">2018-02-15, 02:05 AM</div></div><div class="posttext">The Tenacity CD is too powerful, while the BL access is SHITE (as most raids will have access to it anyway and you can only use one a fight), and removing Brezzes, which are 100% more important than BL access, just takes away one of the more important things a hunter brought to a raid that is pushing into harder content.<br />
+<br />
+Not to mention that because the Tenacity CD is so powerful, that no hunter would (in their right mind) ever bring a Ferocity pet again, even though they are (on a visual level) the most appealing pets.<br />
+<br />
+Take Lust - Give Brez. And Give Brez regardless of spec. Or put it on the Cunning Pets, and Give Ferocity pets something else. As it stands, the most popular pets will not be seen on high level hunters come BFA. And that's a real shame. (Unless you're going to restrict Shammies and Mages from casting Lust as often as they do (ie: put it back on a long CD)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Regalbeast</div><div class="date">2018-02-15, 05:05 AM</div></div><div class="posttext">what is boring is the only difference btw pet being the graphic, pet should be all different like it was back in the brokentoth days.<br />
+<br />
+I literally have no idea what you just said</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bufferunderrun</div><div class="date">2018-02-15, 07:08 AM</div></div><div class="posttext">I literally have no idea what you just said<br />
+<br />
+they are simplifying pet mechanic to much there is no value in hunting rare pets beside how they look and they are reduced into a simple dot, i would like them go back old mechanics (different stats, feeding, learning abilities, etc) polish them a bit and make hunting rare pets or difficult to tame one (those with special mechanics or tameable raid bosses) worth taming and fostering.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Regalbeast</div><div class="date">2018-02-15, 02:05 PM</div></div><div class="posttext">they are simplifying pet mechanic to much there is no value in hunting rare pets beside how they look and they are reduced into a simple dot, i would like them go back old mechanics (different stats, feeding, learning abilities, etc) polish them a bit and make hunting rare pets or difficult to tame one (those with special mechanics or tameable raid bosses) worth taming and fostering.<br />
+<br />
+The problem with making rare pets or spirit pets better than others is that not everyone can get one during the course of an expansion. Bad design IMO.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bufferunderrun</div><div class="date">2018-02-15, 05:05 PM</div></div><div class="posttext">The problem with making rare pets or spirit pets better than others is that not everyone can get one during the course of an expansion. Bad design IMO.<br />
+<br />
+it's bad design if it's only about camping a spot with other x player to get one or if the requirement is to clear x dungeon/raid in mythic, but a system that require fostering a pet like it was back in vanilla is not.<br />
+Anyway we can debate how to make the system better on thing is clear for me the current way of making pet different only visually is just retarded and extremely immersion breaking (a lion do same damage and have same ability as a turtle?).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bloodnickel</div><div class="date">2018-02-15, 05:29 PM</div></div><div class="posttext">Once you los the caster, the dots/hots expire, you can even drop combat. You can't do the same with pets when the hunter is in range and doesn't cancel pet attack. Your argument is invalid.<br />
+<br />
+Then get out of range, argument is valid again. You really just sound like an angry little girl, lol.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cocomen2</div><div class="date">2018-02-15, 07:05 PM</div></div><div class="posttext">Best changes so far, for hunter to get some utility in these day its not so easy - one hope of mine that duo pet from BM gona give bonuses from both type of pets not only from 1st one.<br />
+As its now hunter no more than dps dummy , what to do - DAMAGE - but what if i wonna some other playstyle????? - no yours 3 specs pure dps without any utility (execp traps)<br />
+<br />
+<br />
+<br />
+more than 20 pets with useless skills await theirs reworks in BFA.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Helryx</div><div class="date">2018-02-15, 07:19 PM</div></div><div class="posttext">We've come a long ways from having to tame specific pets to rank up their abilities for another pet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">deathslover</div><div class="date">2018-02-16, 05:32 AM</div></div><div class="posttext">oh dear.the only thing i can think of &quot;never go full retard blizz&quot; and devs talking between themslves saying &quot;ppl are complaining that pats are being a pain in the but cause they are too useful&quot; other dev says &quot;oh wait hold my beer.....&quot; and now we have these silly changes</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">KevyB</div><div class="date">2018-02-16, 02:43 PM</div></div><div class="posttext">Yeah these pet changes are fucking pathetic...<br />
+<br />
+<br />
+In Battle for Azeroth, all pets will have equal damage, health, and armor. All can tank or DPS equally.<br />
+<br />
+uh<br />
+<br />
+<br />
+Maintain and/or reinstate pet family uniqueness <br />
+<br />
+ok... well i'm glad i dropped this POS long ago.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nami</div><div class="date">2018-02-17, 04:34 PM</div></div><div class="posttext">So it looks like Spirit Beasts are going to be Tenacity. Pretty excited about that extra health and defensive cd in raids :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Powerogue</div><div class="date">2018-02-18, 02:42 AM</div></div><div class="posttext">REALLY loving what I'm hearing about hunters. I feel like they're bringing back the purpose in taming multiple pets that's been insignificant for ages. It was losing that that made me so bored with my hunter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Exatik</div><div class="date">2018-02-21, 07:45 PM</div></div><div class="posttext">How about hunters that like everything about the class but pets? Can we have lone wolf in surv?<br />
+I remember before WoD Blizz said that they see survs taking malicious ammo(?), so they think that people dont like lone wolf at surv. But people took that mostly because it was better balance-wise, not gameplay-wise.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

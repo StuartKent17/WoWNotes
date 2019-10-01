@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, that, color, e0bb79, and, blue, for, chart, have, players, draenor, orcs, pdt, but, detection, botters, are, thats, use, false, were, can, you, maintenance, 1200, dont, percent, spear, wrynns, vanguard, society, preservation, outcasts, exarchs, skull, shatari, style, fontsize, text, title, defense], enabled, 000, bots, response, about, something, there, player, reporting" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Pylon Manipulation in 2.2, John Yang on Legacy Gear, WW + Rend Testing on PTR 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Blackrock Mountain Patch 8311 - Ninja Card Back, Achievements, Mobile, Never Before Seen Boss Card, Gold Cards Cards" />
+<title> Armory Stats - Draenor Reputations, Blue Posts, Blue Tweets, Fan Art [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Draenor Reputations, Blue Posts, Blue Tweets, Fan Art</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1747649.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1747649-Armory-Stats-Draenor-Reputations-Blue-Posts-Blue-Tweets-Fan-Art">Armory Stats - Draenor Reputations, Blue Posts, Blue Tweets, Fan Art</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-03-31, 02:53 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Pylon Manipulation in 2.2, John Yang on Legacy Gear, WW + Rend Testing on PTR (http://www.diablofans.com/news/48378-pylon-manipulation-in-2-2-john-yang-on-legacy-gear)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Blackrock Mountain Patch 8311 - Ninja Card Back, Achievements, Mobile, Never Before Seen Boss Card, Gold Cards Cards Coming Soon (http://www.hearthpwn.com/news/831-blackrock-mountain-patch-8311-ninja-card-back)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Upcoming Shop Sales, Epic Plays Of The Week #23, Into the Nexus #44 (http://www.heroesnexus.com/news/1334-upcoming-shop-sales-epic-plays-of-the-week-23-into)<br />
+<br />
+Armory Stats - Draenor Reputations<br />
+Today we are taking a look at the Draenor reputation achievement completion rate of players. The data used today is a sample of 6.1 million characters from 3.1 million accounts.<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: [ '#ADADAD', '#949494', '#727272', '#595959', '#6B8E23', '#426F42']<br />
+});<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'draenorReps',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'Arakkoa Outcasts', 'Council of Exarchs', 'Frostwolf Orcs', 'Steamwheedle Preservation Society', 'Vol\'jin\'s Spear / Wrynn\'s Vanguard', 'Laughing Skull Orcs / Sha\'tari Defense'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.point.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Earned Exalted Draenor Reputation Achievements',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+ credits: {<br />
+enabled: false<br />
+},<br />
+series: [<br />
+{<br />
+data: [{y: 4.39, color: '#E0BB79', name:'Arakkoa Outcasts'}, {y: 1.72, color: '#E0BB79', name:'Council of Exarchs'}, {y: 0.94, color: '#E0BB79', name:'Frostwolf Orcs'}, {y: 4.00, color: '#E0BB79', name:'Steamwheedle Preservation Society'}, {y: 9.33, color: '#E0BB79', name:'Vol\'jin\'s Spear / Wrynn\'s Vanguard'}, {y: 0.90, color: '#E0BB79', name:'Laughing Skull Orcs / Sha\'tari Defense'}],<br />
+<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+}]<br />
+});<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;draenorReps&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+US Maintenance - 12:00 AM PDT to 11:00 AM PDT<br />
+We will be performing scheduled maintenance beginning on Tuesday, March 31, at 12:00 AM PDT and we expect the service to be available again at approximately 11:00 AM PDT. During this time the game will be unavailable for play.<br />
+<br />
+<br />
+Blue Posts<br />
+Bots and Hacks<br />
+We tend to not discuss what we're doing in the fight against bots for the simple reason that any shred of information that goes out has the potential to hurt our efforts. Simply put, the safer botters (and bot-makers) feel, the more likely we are to catch them. Minutes count with these sorts of things. Using made-up numbers here, but just for illustration: a new detection method that catches 50 botters could have only been 5 (or none) if the botters had any reason to believe there might be something coming.<br />
+<br />
+I completely understand why that's a crappy response, but we have to use every single advantage we can get here, and that means being relatively quiet about an issue that's obviously very important -- both to the community, and to us.<br />
+<br />
+As to the question of &quot;player reporting vs Blizzard detection,&quot; that's not something we're taking an either/or response to. We're constantly working on improving our detection methods. That doesn't mean that player reports don't help.<br />
+<br />
+Can you make reporting players easier? The only option right now that I know of is to report them mid arena game which isn't always possible.<br />
+We absolutely need to do better about getting this information out there, but the best method to report players you suspect are using a bot or hack -- especially if you can gather some video evidence -- is to email hacks@blizzard.com. That email address is monitored constantly by the team responsible for investigating such things. (Blue Tracker (http://blue.mmo-champion.com/topic/366639-blizzard-when-will-you-address-cheating/) / Official Forums (http://us.battle.net/wow/en/forum/topic/16773748032?page=2#23))<br />
+<br />
+<br />
+Blue Tweets<br />
+Misc<br />
+so after the last quest do Misprinted Draenic Coins have no use?<br />
+Correct. They have no use once you've completed the final quest. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/581231419105669120))<br />
+<br />
+<br />
+Fan Art<br />
+puzzlehead84 has shared (http://puzzlehead84.imgur.com/) some fun WoW items created in the real world. Be sure to check the full gallery for more pictures and construction images. <br />
+<br />
+<br />
+&lt;div class=&quot;gallery&quot; id=&quot;gallery-crafts&quot;&gt;http://media.mmo-champion.com/images/news/2015/march/thumb/mailbox01.jpg (http://media.mmo-champion.com/images/news/2015/march/mailbox01.jpg) http://media.mmo-champion.com/images/news/2015/march/thumb/mailbox02.jpg (http://media.mmo-champion.com/images/news/2015/march/mailbox02.jpg) http://media.mmo-champion.com/images/news/2015/march/thumb/mailbox03.jpg (http://media.mmo-champion.com/images/news/2015/march/mailbox03.jpg) http://media.mmo-champion.com/images/news/2015/march/thumb/mailbox04.jpg (http://media.mmo-champion.com/images/news/2015/march/mailbox04.jpg) <br />
+http://media.mmo-champion.com/images/news/2015/march/thumb/mailbox05.jpg (http://media.mmo-champion.com/images/news/2015/march/mailbox05.jpg) http://media.mmo-champion.com/images/news/2015/march/thumb/shield01.jpg (http://media.mmo-champion.com/images/news/2015/march/shield01.jpg) http://media.mmo-champion.com/images/news/2015/march/thumb/shield02.jpg (http://media.mmo-champion.com/images/news/2015/march/shield02.jpg) http://media.mmo-champion.com/images/news/2015/march/thumb/hammer01.jpg (http://media.mmo-champion.com/images/news/2015/march/hammer01.jpg) &lt;/div&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xentronium</div><div class="date">2015-03-31, 06:07 AM</div></div><div class="posttext">Amusingly, I got the &quot;Savage Friends&quot; exalted with one Draenor rep achieve on October 20, before WoD's release date. A bug that was never fixed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wishblade</div><div class="date">2015-03-31, 06:29 AM</div></div><div class="posttext">And here we see that Warlords reputations are just not that interesting and takes too damn long... I miss Pandaria reputations, despite way too many dailies...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">otarma</div><div class="date">2015-03-31, 06:33 AM</div></div><div class="posttext">I was fed up when I ground the rep of Shaohao on Timeless Island, so I refuse to grind the reps in Draenor because endless killing is simply boring to death.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2015-03-31, 06:37 AM</div></div><div class="posttext">the rep armory stats show one of the true fails of this xpac!<br />
+<br />
+sad that this is not easy to repair in this xpac..<br />
+<br />
+happy grinding sad folk..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3dde1cb131</div><div class="date">2015-03-31, 06:40 AM</div></div><div class="posttext">Reps are indeed a mess, I like that there is not raid gear locked behind them, but I hate the only real way of gaining rep is grinding mobs.<br />
+<br />
+I have 59 exalted reps on my main.<br />
+<br />
+And only one of those from Warlords.<br />
+<br />
+I never got exalted with the Emperor on Timeless Isle either, the one thing I really can't deal with is grinding mobs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aliok</div><div class="date">2015-03-31, 06:41 AM</div></div><div class="posttext">Stats don't speak very well of Blizzard's design for reputations for WoD. Of course, there are no head enchants or recipes to grind for from rep vendors, so that's probably skewing perception.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dope_danny</div><div class="date">2015-03-31, 06:45 AM</div></div><div class="posttext">Who would have thought spending hours upon hours killing things that give 5 rep each for every reputation was anti fun people didnt do? :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Durandro</div><div class="date">2015-03-31, 06:58 AM</div></div><div class="posttext">They just need to buff the reputation from each kill. Double or triple what they are now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ukerric</div><div class="date">2015-03-31, 07:04 AM</div></div><div class="posttext">I got Arrakoa thru follower missions tokens. It helps having multiple alts who funnel BOA tokens.<br />
+<br />
+It's interesting that the two reputations that are most exalted outside of PvP are ones with such tokens.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Duridi</div><div class="date">2015-03-31, 07:06 AM</div></div><div class="posttext">I really like being exalted with factions, but to be honest, I've completely forgot the Draenor factions even exist.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Winterstrife</div><div class="date">2015-03-31, 07:12 AM</div></div><div class="posttext">I'd take the MoP dailies over WoD's grind... can't understand why Blizzard take so many steps backwards on Reputation grinds this expac.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soeroah</div><div class="date">2015-03-31, 07:18 AM</div></div><div class="posttext">Hopefully the graph tells Blizzard to bring dailies, or tokens, or daily dungeon reps, or even cloth turn ins, I don't care, just no more grinding.<br />
+<br />
+It's so liberating to know I'm not in a minority.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lolburke</div><div class="date">2015-03-31, 07:18 AM</div></div><div class="posttext">Those numbers are embarrassingly low. Blizzard really needs to change the reputation system for the WoD factions if they want to see any significant increase in the participation rates.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Higgit</div><div class="date">2015-03-31, 07:28 AM</div></div><div class="posttext">Have almost every rep exalted over the years... Draenor... meh... no thanks</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lexurus</div><div class="date">2015-03-31, 07:29 AM</div></div><div class="posttext">It took me about... 2-3 hours of grinding mobs are Socrethar's Rise to get exalted with the Exarchs from about... 65% revered. The rest came from quests *thankfully*. Ashran rep is the easiest as all you have to do is farm fragments. Just wish there were dailies for these reps. Even one or two would be a help... Only way I can see myself getting through the Sha'tari rep is by sitting in Shattrath for days grinding through mobs. Not the funnest way to spend a day...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocbeba583bd0</div><div class="date">2015-03-31, 07:37 AM</div></div><div class="posttext">That mailbox. Awesome!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ihnasir</div><div class="date">2015-03-31, 07:38 AM</div></div><div class="posttext">Have almost every rep exalted over the years... Draenor... meh... no thanks<br />
+<br />
+Same here, I don't need to waste my time on these.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Synros</div><div class="date">2015-03-31, 07:42 AM</div></div><div class="posttext">That Alliance shield looks pretty badass, and I've love to have a mailbox like that!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lolburke</div><div class="date">2015-03-31, 07:51 AM</div></div><div class="posttext">I really like being exalted with factions, but to be honest, I've completely forgot the Draenor factions even exist.<br />
+<br />
+That's because the faction rewards are stupid. Reskinned mounts with terrible animations, bland tabards, and some useless items. What's the point?<br />
+<br />
+Only the trading post mount is even remotely worth it, and that's if you're Alliance. Horde just gets another wolf.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Etul</div><div class="date">2015-03-31, 07:54 AM</div></div><div class="posttext">Exalted with all horde factions in WoD. Didn't see a problem with it, it's cake compared to grinding the Insane title (which I'm still working on, but distracted by too much other stuff).<br />
+<br />
+Edit: Noticed that the lowest completed horde reps are frostwolf and laughing skull, you can easily grind 7k+ rep/hour with both. Frostwolf: AoE mind-frozen goren near Hoarfrost (don't kill him or they stop spawning), laughing skull get a group and go anti-clockwise around pit, cannon across to skip the east side and pick up the 2 types of buffs along the way for massive dmg buffs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Delaios</div><div class="date">2015-03-31, 07:55 AM</div></div><div class="posttext">I wonder how low Arakkoa and Steamwheedle would be if it wasn't for the rep tokens you can send across characters. The Nagrand rare beasts also had a high droprate for the exp elixir early in the expansion and you had groups farming them cross-realm all the time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lolburke</div><div class="date">2015-03-31, 08:02 AM</div></div><div class="posttext">Exalted with all horde factions in WoD. Didn't see a problem with it, it's cake compared to grinding the Insane title (which I'm still working on, but distracted by too much other stuff).<br />
+<br />
+Edit: Noticed that the lowest completed horde reps are frostwolf and laughing skull, you can easily grind 7k+ rep/hour with both. Frostwolf: AoE mind-frozen goren near Hoarfrost (don't kill him or they stop spawning), laughing skull get a group and go anti-clockwise around pit, cannon across to skip the east side and pick up the 2 types of buffs along the way for massive dmg buffs.<br />
+<br />
+Just because it's easy doesn't mean it isn't needlessly long and boring. It's too monotonous for anyone to bother with it, especially when the rewards are subpar at best.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bawk</div><div class="date">2015-03-31, 08:05 AM</div></div><div class="posttext">Honestly wish that there were dailies for the reputations. I have no reason to go out into the world, there's no sense of organization because there is no dailies. Garrison 'daily' is a mess. Grinding mobs for Apexis to grind mobs for rep to grind mobs for more Apexis to waste gold on recolored mounts. The mount rewards aren't even unique to the factions, the other rewards are meh. I have never felt so frustrated over an expansion before like I have with Warlords. I want to enjoy the zones and have a purpose to be out there but, I would rather sit in my Garrison doing nothing because I have no reason to go out. Grinding mobs is excessively boring and no amount of rep goodies will motivate me to work on reputations.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8ba596ddc7</div><div class="date">2015-03-31, 08:14 AM</div></div><div class="posttext">horrible graph again :confused:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SkyTides</div><div class="date">2015-03-31, 08:15 AM</div></div><div class="posttext">I'm just leaving it for end of wod/next expansion. By that time they might buff the rep gain, or give you more tokens/championing. Grinding thousands of mobs, for several reps, for boring re-coloured talbuks is not fun. At least shaohao had a gorgeous mount to work for.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MasterHamster</div><div class="date">2015-03-31, 08:34 AM</div></div><div class="posttext">There are no significant rewards from factions since we &quot;didn't want items locked behind dailies&quot;, so now factions are as optional as we wanted in 5.0<br />
+<br />
+I.e completely irrelevant.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2015-03-31, 08:39 AM</div></div><div class="posttext">I wonder how many of the &quot;at least 1 faction&quot; people only have Nat Pagle, and have him from MoP. That was how I unlocked my level 3 Trading Post.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Faethor</div><div class="date">2015-03-31, 08:47 AM</div></div><div class="posttext">I have all 5 of the reps at exalted. None of them were very difficult to do and I really don't mind the grind to get them, I actually kinda enjoyed it.<br />
+<br />
+I think I have 73 exalted reps atm (game is down and the armory is weird with how it lists them). I've been doing rep grinds since vanilla when it was nothing but a near endless grind to get some of the reps up. It may just be a personal thing with me to get them, but it's one of the things I enjoy doing in the game. It's obviously not for everyone, but that's why the game has many different aspects to it. There is generally something for everyone even though most people don't care about anything they don't want to do themselves.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrExcelion</div><div class="date">2015-03-31, 08:54 AM</div></div><div class="posttext">Seems rather early for the servers to be coming down</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocecbefcd692</div><div class="date">2015-03-31, 09:07 AM</div></div><div class="posttext">I got the Frostwolves and Steamwheedle Preservation Society on Exalted, i'm almost exalted with Arrakoa Outcasts and I'm currently &quot;preparing&quot; to start on the Laughing Skull because I want to remove the Trading Post from my garrison :P Blizzard have tried various methods of obtaining reputation over the expansions, Classic- Quests &amp; Grind, TBC - Do specific Dungeons, Grind, Return Items &amp; Dailies, Wrath - Tabards &amp; Later the Argent Tournament, Cataclysm - Tabards &amp; Dailies(Molten Front), Mists - Dailies &amp; Later That one daily dungeon &amp; scenario.Now we're back to Grind.What I think is best is a combination of all of those - every faction should have like 2-3 daily quests for 200-300rep each, you should be able to do one dungeon with a champion faction for 500 reputation and there should be mobs to grind or Items to grind and return for the people who want to get to Exalted in one day. Also I think the reason so few people are raising reputation in Warlords is because there are no useful gear rewards, at least one 640-650 Epic would have made them more popular, but then people would have complained that &quot;they are forced to grind rep for gear&quot;, I guess Blizzard wanted to avoid that. Rewards should be : Friendly - Low Level Gear (615), Honored - Toy, Revered - Follower &amp; Piece of Gear (640-650), Exalted - Tabard, Mount &amp; Pet + Cosmetic Item or a title if its relevant.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shadocat</div><div class="date">2015-03-31, 09:10 AM</div></div><div class="posttext">Well, isn't the have-one-rep-exalted achievement buggy? I believe I got it without any fraction even close to exalted.<br />
+<br />
+Then I only push factions on my main - have 78 factions on exalted now.<br />
+Don't see any point in doing so for my alts since mounts and pets are account-wide anyways and I have no need<br />
+for all the followers.<br />
+<br />
+So, why even bother making a chart for chars? It should look a bit different for accounts.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1325507f8a</div><div class="date">2015-03-31, 09:14 AM</div></div><div class="posttext">How can the &quot;one exalted rep&quot; be 42%, when all the others combined are about half that?<br />
+<br />
+I'm guessing the same bug that got me the first achievement for one exalted rep is skewing the results. I got that achievement when I logged onto my lvl 86 mage that had never even been to Draenor. This is before I had exalted with any draenor faction on any character.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2015-03-31, 09:15 AM</div></div><div class="posttext">How can the &quot;one exalted rep&quot; be 42%, when all the others combined are about half that?<br />
+<br />
+I'm guessing the same bug that got me the first achievement for one exalted rep is skewing the results. I got that achievement when I logged onto my lvl 86 mage that had never even been to Draenor. This is before I had exalted with any draenor faction on any character.<br />
+<br />
+I'm not certain, but I think being Best Friend with Nat Pagle from MoP counts, as you can get him in the Garrison.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2015-03-31, 09:23 AM</div></div><div class="posttext">The one rep achievement was bugged, you could get it from creating a level 1 spacegoat since the 6.0 patch (before wod even launched). So that drastically over emphasizes how many people have grinded 1 rep :/ I have the level three trading post because of it and no wod reps at exalted.<br />
+<br />
+http://i.imgur.com/i2xSYPdh.jpg</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Judai</div><div class="date">2015-03-31, 09:31 AM</div></div><div class="posttext">tfw grinded all these out because I was bored</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Farseer</div><div class="date">2015-03-31, 09:40 AM</div></div><div class="posttext">Same as the others. I actually randomly received the 'Savage Friends' achievement when logging in to an alt that was at lvl 20 or so, right after 6.0. That explains why it's at 40%+, when the actual factions added together are less than half that number. I still don't have a single one of the factions on exalted, but I haven't really tried. Didn't really see the point tbh, I don't really like the new mounts anyway.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6bcb83d3cc</div><div class="date">2015-03-31, 10:15 AM</div></div><div class="posttext">sooo.. if i count the percentages of the reputations thats a total of 21.28% tough i think its likely that rep hunters have more factions on one char.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yakshamash</div><div class="date">2015-03-31, 10:16 AM</div></div><div class="posttext">Warlords rep? No, thanks. There's much time before next expansion (not for getting rep), so looking forward for more useless content which I will not touch, neither 99% of active players. They said Timeless Isle (rep) was success and people like it, so they gonna bring something like it in WoD. Well, I needed few mounts for 200 mounts achievement so I farmed TI rep... Still need few for 250 mounts achievement, but I don't give a F for reskins and stupid grind.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zrankfappa</div><div class="date">2015-03-31, 10:24 AM</div></div><div class="posttext">so, we have seen 4 end game &quot;things to do&quot;, Challenge Modes, Raiding, alt Leveling, and Rep grinding. It seems to me that a very small percentage of people are actually doing those activities. It would be interesting to see how Garrison stats look, as it seems that those are the thing that people still log in to do.<br />
+<br />
+For what it's worth I have one exalted rep and that is because i pooled all the tokens from missions and used them on one alt.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+There are no significant rewards from factions since we &quot;didn't want items locked behind dailies&quot;, so now factions are as optional as we wanted in 5.0<br />
+<br />
+I.e completely irrelevant.<br />
+<br />
+yup ...<br />
+<br />
+optional without rewards == irrelevant<br />
+optional with rewards == mandatory</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aelric70</div><div class="date">2015-03-31, 10:24 AM</div></div><div class="posttext">Those numbers are embarrassingly low. Blizzard really needs to change the reputation system for the WoD factions if they want to see any significant increase in the participation rates.<br />
+<br />
+There should be DEEP optional L100 quest chains (not dailies) that take you to at least 1/2 way through Revered, followed by whatever mechanism for Exalted. Group quest dailies, tabards for rep gain in dungeons/raids, Crafting faction &quot;supplies&quot;, etc. Just make most of it story driven.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fenixdown</div><div class="date">2015-03-31, 10:33 AM</div></div><div class="posttext">21% of characters have at least 1 rep at exalted. Double that have the achievement.<br />
+<br />
+I love that bug. I had it happen to me, as well. I have nothing at exalted this expansion, and I have zero intention to even do so.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soeroah</div><div class="date">2015-03-31, 11:20 AM</div></div><div class="posttext">I have all 5 of the reps at exalted. None of them were very difficult to do and I really don't mind the grind to get them, I actually kinda enjoyed it.<br />
+<br />
+I think I have 73 exalted reps atm (game is down and the armory is weird with how it lists them). I've been doing rep grinds since vanilla when it was nothing but a near endless grind to get some of the reps up. It may just be a personal thing with me to get them, but it's one of the things I enjoy doing in the game. It's obviously not for everyone, but that's why the game has many different aspects to it. There is generally something for everyone even though most people don't care about anything they don't want to do themselves.<br />
+<br />
+That's nice and all, but as someone with 23,800 dailies completed on my Death Knight, I feel that WoD's approach to reputations completely removed any kind of grind I actually found fun and replaced it with 'gameplay' the Timeless Isle conditioned me to associate with wasted time and anger. The thought of going back to TI or trying to spend longer than 10 minutes grinding rep in WoD actually makes me feel pissed off.<br />
+<br />
+I don't see why they had to remove dailies as a reputation tool when they got rid of the issue people had with them in MoP - that they were 'mandatory' for raiders. For three expansions there was no vocal outcry about dailies and reputation, apart from people wanting to be able to Champion the reputations. MoP puts raid gear behind reputation while simultaneously making dailies the only way to gain that rep, people complain about the gear being gated so Blizzard undoes that terrible decision, then makes another one by using dailies as a scapegoat?<br />
+<br />
+<br />
+Why can't we have both? Why can't we have a choice once a day between the rep grind as it currently is in WoD, or a set of five or so dailies that reward 250 rep a piece and you can't get rep from killing mobs? That way we can choose between gated but efficient, or non-gated and possible to do in one day. Better yet, bring in the other four ways MoP had to gain reputation.<br />
+<br />
+Personally I think it says something that I'd prefer to level hundreds of battle pets to level 25 than to try getting reputations I WANT to get to exalted over and done with.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoced3a8de52c</div><div class="date">2015-03-31, 11:35 AM</div></div><div class="posttext">Wait...There are reputations in WoD!? <br />
+<br />
+In all seriousness reputations are something that goes in the &quot;What WoD did wrong&quot; category. There so many tools they could use for rep: dungeons, scenarios, dailies yet they chose to go back to old school grind. Perhaps another aspect of this expansion that didn't make deadline?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rokee</div><div class="date">2015-03-31, 11:46 AM</div></div><div class="posttext">My last Exalted rep on my main was Vol'jin's Spear, because I never found time for Ashran - and then I get from Neutral to Exalted in less than 24 hours.<br />
+<br />
+The Laughing Skull had to be one of the absolute worst grinds I've ever been on. Yeah, even worse than Shaohao. I must've triggered around 10 to 12 Botani invasions on my way there. Must've destroyed their entire population at least 3 times.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-03-31, 11:54 AM</div></div><div class="posttext">I thought that 1 exalted rep achievement was fixed, but maybe not. Removed it from the graph.<br />
+<br />
+Looking at the individual achievements, ~20% of players have at least 1.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DraenorRaider</div><div class="date">2015-03-31, 11:57 AM</div></div><div class="posttext">Reps are indeed a mess, I like that there is not raid gear locked behind them, but I hate the only real way of gaining rep is grinding mobs.<br />
+<br />
+I have 59 exalted reps on my main.<br />
+<br />
+And only one of those from Warlords.<br />
+<br />
+I never got exalted with the Emperor on Timeless Isle either, the one thing I really can't deal with is grinding mobs.<br />
+<br />
+If you don't like grinding you're either not playing the right game or you aim too high.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hatebreedd</div><div class="date">2015-03-31, 12:19 PM</div></div><div class="posttext">I have not played since december but i also have a crapload of reps on exalted. But the mobgrinding one is abit crappy in WOD. The amount of rep you get per kill is also pretty low imo. Some daily quests would be nice or a very tiny storyline per faction why they even are there or something ? :) <br />
+<br />
+But this will prolly get fixed in a later patch so do not worry :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alopex Major</div><div class="date">2015-03-31, 12:50 PM</div></div><div class="posttext">Rep dailies are my #1 wish for WoD, after flying. I'm someone who usually gets all the reps (I have Beloved -- though not Insane yet), but I am only exalted with Wrynn this time around. Even with the tokens I'm not done with Steamwheedle or Arakkoa yet. It really needs fixing. It's super if you love grinding, you should still be able to do that, but there should be other methods as well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">skello83</div><div class="date">2015-03-31, 01:03 PM</div></div><div class="posttext">Bots and Hacks<br />
+&quot;&quot;&quot;&quot;&quot;&quot;As to the question of &quot;player reporting vs Blizzard detection,&quot; that's not something we're taking an either/or response to. We're constantly working on improving our detection methods. That doesn't mean that player reports don't help.<br />
+<br />
+Can you make reporting players easier? The only option right now that I know of is to report them mid arena game which isn't always possible.<br />
+We absolutely need to do better about getting this information out there, but the best method to report players you suspect are using a bot or hack -- especially if you can gather some video evidence -- is to email hacks@blizzard.com. That email address is monitored constantly by the team responsible for investigating such things. (Blue Tracker / Official Forums)&quot;&quot;&quot;&quot;&quot;&quot;<br />
+<br />
+<br />
+Are u kidding me? So ur saying that im gonna put time and make your job Blizz? Are you serious? Its like im gonna go into a restaurnag and order a Pizza and pay for it then go myself info the kitchen and make the pizza myself? NO...no fucking way. I PAY YOU TO MAKE YOUR JOB. Why the hell we gonna give u Video evidence on someone who is booting - put time to download a video recorder program and install it and learn how to use and then record and send the file? Im gonna put that important time on just to report 1 fucking bot? Hell no. You guys just did confirm that your &quot;Right Click - Report Player&quot; aint working as intended and now WE GONNA send a video to prove. NO. I can give u a fucking ide instead. Put a damn future on the game so when you report a guy u gonna have a option to record 30-60 sec video ingame and just send it to you (Blizzard) directly. That would be 100000% better and easier for us. AND if it happens that the guy is a really boter and u perma ban him, WE SHOULD GET REWARDED (more days on game time maybe) for helping you. You are not giving us the game for free so why the hell we gonna give u something free. Well thats my opinion. And i cant reply this on US server so i just did write it here. PS: My English is bad, i know so dont bother to remind me. Regards</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mask</div><div class="date">2015-03-31, 01:33 PM</div></div><div class="posttext">Even though I haven't bothered to farm any of them yet, I'm happy reps are difficult and grindy to increase this expansion. I remember fondly grinding cultists in Silithus for +1 rep each all the way to exalted back in vanilla pre-Silithus revamp. It took a long long time, and was really quite pointless, but whatever. The entire game is pointless. It's fine to have a few corners of content for the people who want something to grind just to say they did it. I think I was the only person on my server who had that rep maxed out before the big revamp to that zone happened, which makes it something special to remember. <br />
+<br />
+Making things easy also makes them forgettable. Sorry but throwing on a tabard and AOE'ing through 10 dungeons to max your rep isn't going to make for a memorable experience.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2015-03-31, 01:37 PM</div></div><div class="posttext">Even though I haven't bothered to farm any of them yet, I'm happy reps are difficult and grindy to increase this expansion. I remember fondly grinding cultists in Silithus for +1 rep each all the way to exalted back in vanilla pre-Silithus revamp. It took a long long time, and was really quite pointless, but whatever. The entire game is pointless. It's fine to have a few corners of content for the people who want something to grind just to say they did it. I think I was the only person on my server who had that rep maxed out before the big revamp to that zone happened, which makes it something special to remember. <br />
+<br />
+Making things easy also makes them forgettable. Sorry but throwing on a tabard and AOE'ing through 10 dungeons to max your rep isn't going to make for a memorable experience.<br />
+<br />
+Neither is making them long grinds with 5rep per mob as no one does them in the first place as shown by the graph...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soeroah</div><div class="date">2015-03-31, 01:53 PM</div></div><div class="posttext">Even though I haven't bothered to farm any of them yet, I'm happy reps are difficult and grindy to increase this expansion. I remember fondly grinding cultists in Silithus for +1 rep each all the way to exalted back in vanilla pre-Silithus revamp. It took a long long time, and was really quite pointless, but whatever. The entire game is pointless. It's fine to have a few corners of content for the people who want something to grind just to say they did it. I think I was the only person on my server who had that rep maxed out before the big revamp to that zone happened, which makes it something special to remember. <br />
+<br />
+Making things easy also makes them forgettable. Sorry but throwing on a tabard and AOE'ing through 10 dungeons to max your rep isn't going to make for a memorable experience.<br />
+<br />
+Difference is that rep was there to exist as a grind. The WoD feel as 'mandatory' to collection-focused players as MoP's did to raiders.<br />
+<br />
+If the reps didn't have any items on them there'd be a lot less grief about them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Holywraths</div><div class="date">2015-03-31, 01:54 PM</div></div><div class="posttext">I don't realy care about the achievement but that downtime. What are they doing, it's not like there some content to be added or something. I am kinda curious as to what they are doing that need such a long downtime.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2015-03-31, 01:56 PM</div></div><div class="posttext">I don't realy care about the achievement but that downtime. What are they doing, it's not like there some content to be added or something. I am kinda curious as to what they are doing that need such a long downtime.<br />
+<br />
+EU servers are only having rolling restarts, so maybe they're implementing the WoW tokens for the US, they did say the release would be staggered.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Patife17</div><div class="date">2015-03-31, 02:09 PM</div></div><div class="posttext">Endless mob grind to become Exalted = no fun.<br />
+<br />
+Give us a tabard to run dungeons like in Cata.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MajesticCrawdad</div><div class="date">2015-03-31, 02:13 PM</div></div><div class="posttext">Weird! People don't want an endless mob grind just so they have the ability to buy recolor mounts and a semi-useless follower or gear for exorbitant prices? Color me surprised!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kheldin</div><div class="date">2015-03-31, 02:20 PM</div></div><div class="posttext">Endless mob grind to become Exalted = no fun.<br />
+<br />
+Give us a tabard to run dungeons like in Cata.<br />
+<br />
+That would be a suitable solution! To keep grinding is okay, but using tabards like in Cata and WotLK would still be the best option!<br />
+<br />
+I guess botters prefer the grinding way tho - kind of funny, isn't it?<br />
+<br />
+Regards,<br />
+Tzanesh</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spoonman</div><div class="date">2015-03-31, 02:23 PM</div></div><div class="posttext">Sorry for me being stupied here but doesnt 12 AM to 11 AM Maintenace mean 23 hours Maintenance?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tservo</div><div class="date">2015-03-31, 02:37 PM</div></div><div class="posttext">What they should have done since they didn't want raid gear to be locked behind reps is make all the heroic dungeon gear, LFR gear, and Apexis gear the same item level. That way everyone can do stuff the way they actually want to.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca9d2f0f895</div><div class="date">2015-03-31, 02:39 PM</div></div><div class="posttext">draenor-the most boring expansion of all times</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2015-03-31, 02:40 PM</div></div><div class="posttext">Sorry for me being stupied here but doesnt 12 AM to 11 AM Maintenace mean 23 hours Maintenance?<br />
+<br />
+12am is midnight, so only 11 hours.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spoonman</div><div class="date">2015-03-31, 02:50 PM</div></div><div class="posttext">12am is midnight, so only 11 hours.<br />
+<br />
+There is no such thing as 00:00 AM? Im not too good at american time<br />
+<br />
+Edit: Nvm ofc there isnt, im retarded lol</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jasper Kazai</div><div class="date">2015-03-31, 03:22 PM</div></div><div class="posttext">I hate the new rep gaining system in WoD. They claim to have removed the grind, but all they did was replace it with an even more tedious grind. I'd much rather just have a slew of dailies to complete each day to get rep. I actually liked doing it that way. Farming mobs ad nauseum is not a good replacement.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">arcaneshot</div><div class="date">2015-03-31, 03:56 PM</div></div><div class="posttext">I hate the new rep gaining system in WoD. They claim to have removed the grind, but all they did was replace it with an even more tedious grind. I'd much rather just have a slew of dailies to complete each day to get rep. I actually liked doing it that way. Farming mobs ad nauseum is not a good replacement.<br />
+<br />
+Actually you can somewhat simulate it. I've come up with a method of *slowly* gaining rep by just running into the appropriate zone and killing all the Rare spawns, then leaving for the day. This especially works well in Magnarok where four of the rare spawns give 450 rep from killing them (although two of them hit like trucks)<br />
+<br />
+It doesn't get more &quot;daily&quot; than that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dd614</div><div class="date">2015-03-31, 04:09 PM</div></div><div class="posttext">Reputations are a total failure in WoD, with the vast majority of WoW players not even caring to max them. Another terrible design decision by Blizzard, like 20 man mythic.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">IIamaKing</div><div class="date">2015-03-31, 04:32 PM</div></div><div class="posttext">I hope blizzard is taking notes. Reputations are a massive failure, just like every thing else non raid in WoD.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Stats don't speak very well of Blizzard's design for reputations for WoD. Of course, there are no head enchants or recipes to grind for from rep vendors, so that's probably skewing perception.<br />
+<br />
+If they kept rewards the same and simply added dailys to get rep, I would have EXd all of them by now.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+They just need to buff the reputation from each kill. Double or triple what they are now.<br />
+<br />
+No, they need to scrap the lazy &quot;kill mobs for no reason&quot; grind. MoP was perfect in terms of reputation, fun quests cool, unfolding story lines. The only issue is they gated gear behind them, remove the gear and MoP was the best rep system ever.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Civil</div><div class="date">2015-03-31, 04:32 PM</div></div><div class="posttext">That Gnomish Mailbox is amazing. Very well done, puzzlehead84!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nodq</div><div class="date">2015-03-31, 04:40 PM</div></div><div class="posttext">And still nothing happens about those effin bots in BGs etc. For MONTHS even YEARS they are there. I stopped playing WoW because of that. Even in Arena there bots now, its the worst experience ever, i was in a random BG where I was the ONLY non bot! Thats so stupid. It reminds me of AION after release in WEST, so mayn bots, it was absurd. Then they banned them ALL. Guess what, the world was empty, none was there to play. And im pretty sure blizzard is adding themself some bots into BGs and so on. So that queue times are shorter and more players are there and what not. otherwise there is no reason to let those bots be online for such a long time... f*ck honor buddy, f*ck this company, and f*ck all those people who uses it or ever used it, seriosly.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thetraveler12</div><div class="date">2015-03-31, 04:46 PM</div></div><div class="posttext">If you don't like grinding you're either not playing the right game or you aim too high.<br />
+<br />
+I seriously hope you're joking.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">robomatticus</div><div class="date">2015-03-31, 05:13 PM</div></div><div class="posttext">I think it's funny that in order to catch botters, Blizz had to change their TOS to where, to the unsuspecting person, Warden can scan your local memory.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Sorry for me being stupied here but doesnt 12 AM to 11 AM Maintenace mean 23 hours Maintenance?<br />
+<br />
+Nope, it's just you being stupied.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hopjesvla</div><div class="date">2015-03-31, 05:36 PM</div></div><div class="posttext">I have most factions exalted in all expansions exept in wod. The only one I have exalted is Arrakoa and thats because I finished the quest line in Spires and sent all the arrakoa mission tokens to my main. I miss having the option to do a few daily quests to grind factions. Mindless killing of mobs in an area isn't fun for me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Awbee</div><div class="date">2015-03-31, 05:36 PM</div></div><div class="posttext">How to fix WoD reps:<br />
+<br />
+1) Add a couple of dailies for each faction, as an option.<br />
+<br />
+2) Add tabards that will give rep in dungeons, as an option.<br />
+<br />
+<br />
+This way, you'll have pure mob grind, dailies, and tabard dungeon running as options. Something for everyone.<br />
+<br />
+As it is currently, there's no way I'd ever be doing those reps before 7.0. We've had good rep systems since BC, all through Wrath, Cata and MoP. Why the departure?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2015-03-31, 06:23 PM</div></div><div class="posttext">There is no such thing as 00:00 AM? Im not too good at american time<br />
+<br />
+Edit: Nvm ofc there isnt, im retarded lol<br />
+<br />
+Yeah, 24 hour clock doesn't need AM/PM :)<br />
+<br />
+I don't see why they don't add a faction reward to the Apexis daily/Scouting Missives (or maybe not the missives to prevent 1 day farming if that's what they want) to give 250 or 500 rep. Not a massive amount, but over time adds up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xe4ro</div><div class="date">2015-03-31, 06:41 PM</div></div><div class="posttext">I'm still at 0/3000 Voljin. :&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">woofpup</div><div class="date">2015-03-31, 06:54 PM</div></div><div class="posttext">Mythic fail, Blizz. No daily rep quests nor tabards? Who wants to grind mobs to get rep? I certainly don't. Need to wake up here.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thetraveler12</div><div class="date">2015-03-31, 07:14 PM</div></div><div class="posttext">Mythic fail, Blizz. No daily rep quests nor tabards? Who wants to grind mobs to get rep? I certainly don't. Need to wake up here.<br />
+<br />
+^ this this this</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thorvath</div><div class="date">2015-03-31, 07:21 PM</div></div><div class="posttext">Another day, another chart showing the general player base completely rejecting Blizzard's design changes in WoD.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tangers58</div><div class="date">2015-03-31, 07:29 PM</div></div><div class="posttext">It would be great if Blizz stopped banning innocent players for &quot;botting&quot; whatever they use to determine if a player is using a 3rd party program is very, very flawed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocde26664bcf</div><div class="date">2015-03-31, 08:26 PM</div></div><div class="posttext">I think they're not the ones to be blamed here, though. Even here countless people complained about being artificially slowed down in terms of gaining rep because of dailies. Blizzard apparently listened and now it's getting clearer that either those people were just the minority or didn't know what they would get themselves into.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Queen of Hamsters</div><div class="date">2015-03-31, 09:09 PM</div></div><div class="posttext">As someone who only jumps into PVP when I need honor for a certain transmog item (don't blame me for Blizzard being morons with the pricing of old pvp stuff) I'm quite fond of the bots. <br />
+<br />
+Until they're on my team, that is.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nzete</div><div class="date">2015-03-31, 09:15 PM</div></div><div class="posttext">Now that graph needs the silly small bar for &quot;exalted with all of the above&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Conscious</div><div class="date">2015-03-31, 11:11 PM</div></div><div class="posttext">Jesus that is terrible compared to previous expansions.<br />
+<br />
+All of Boubs graphs seem to be doing more harm than good.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Feanoro</div><div class="date">2015-04-01, 01:07 AM</div></div><div class="posttext">Kids these days...<br />
+<br />
+Some of you clearly have no idea what classic reps were like, and no I don't mean when you ran back at 80+ merrily AoEing everything down with one shots.<br />
+<br />
+If anything, WoD reps are the closest to classic in a looooong time. Even then, the fact that you go through the majority of those grinds via questing is easier than classic.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Common Sense</div><div class="date">2015-04-01, 02:46 AM</div></div><div class="posttext">Kids these days...<br />
+<br />
+Some of you clearly have no idea what classic reps were like, and no I don't mean when you ran back at 80+ merrily AoEing everything down with one shots.<br />
+<br />
+If anything, WoD reps are the closest to classic in a looooong time. Even then, the fact that you go through the majority of those grinds via questing is easier than classic.<br />
+<br />
+You make it sound like that's a good thing. The reputation grind in this expansion has been so stupidly ludicrous that it isn't even worth bothering with just for a bunch of recolored mounts with unfinished running animations.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ChaosWolf</div><div class="date">2015-04-01, 03:01 AM</div></div><div class="posttext">Amusingly, I got the &quot;Savage Friends&quot; exalted with one Draenor rep achieve on October 20, before WoD's release date. A bug that was never fixed.<br />
+<br />
+... wait... HOW?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moraven</div><div class="date">2015-04-01, 04:07 AM</div></div><div class="posttext">Classic Timbermaw, a favorite. That bugger and his heals were great.<br />
+<br />
+My wife did the original Insane.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+If the reputation areas had dynamic content, it could make reputation grinding interesting. <br />
+<br />
+Steamwheedle was fun since there was a variety of ways you can complete it. They need to do it that way for all the reputations.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fritters154</div><div class="date">2015-04-01, 06:35 AM</div></div><div class="posttext">Kids these days...<br />
+<br />
+Some of you clearly have no idea what classic reps were like, and no I don't mean when you ran back at 80+ merrily AoEing everything down with one shots.<br />
+<br />
+If anything, WoD reps are the closest to classic in a looooong time. Even then, the fact that you go through the majority of those grinds via questing is easier than classic.<br />
+<br />
+In what way was a reversion to Vanilla rep systems a good thing? Epic gear was also absurdly difficult to acquire and leveling from 1-60 took probably twice as long as it now takes to get from 1-100.<br />
+<br />
+Reputations are pointless if their rewards are meaningless. For the most part, unless you are a collector of pets or mounts these reps are meaningless. In terms of mounts, the mounts offered aren't even particularly appealing mounts. Comparatively, Shaohao rep was worth the grind because the mount was beautiful.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+... wait... HOW?<br />
+<br />
+This was a common bug early on. I logged in and got it on one of my characters in like the first month of WoD. Still don't have a single rep on any of my characters actually at exalted but I have the achievement...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dargen</div><div class="date">2015-04-02, 04:34 PM</div></div><div class="posttext">This fan arts realy well made.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

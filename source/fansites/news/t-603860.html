@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="windows,click,registry,spell,build,theory,spells,patch,listed,find,ping,2.3.2,characters,ranks,pane,dword,hand,right-click,test,7705,plan,entry,work,performance,wait,comics,download,softwares,ptrs,people,tcpnodelay,modify,change,case,assign,notes,post,official,tcpackfrequency,mind,bring,menu,dialog,regedit,type,7710,interfaces,vista,database,hkey_local_machinesystemcurrentcontrolsetservicestcpipparametersinterfaces" />
+<meta name="description" content="New spell ranks on PTR 
+Usual disclaimer, keep in mind that it's not official and that it's very, very unlikely to see these spells in game in 2.3.2. Now, the good news, it seems that premade mage characters got a little bonus on 2.3.2 PTRs .... a new rank of Frostbolt and Fireball !  
+ 
+http://static.mmo-champion.com/mmoc/siteImages/images/news/2007/november/newmageranks_small.jpg 
+ 
+This spell could be here for three reasons : 
+1st theory - Blizzard might plan to introduce new ranks of" />
+<title> New spell ranks on PTR, lag fix, comics [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; New spell ranks on PTR, lag fix, comics</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-603860.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/603860-New-spell-ranks-on-PTR-lag-fix-comics">New spell ranks on PTR, lag fix, comics</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2007-12-17, 07:01 AM</div></div><div class="posttext">New spell ranks on PTR<br />
+Usual disclaimer, keep in mind that it's not official and that it's very, very unlikely to see these spells in game in 2.3.2. Now, the good news, it seems that premade mage characters got a little bonus on 2.3.2 PTRs .... a new rank of Frostbolt and Fireball ! <br />
+<br />
+<br />
+http://static.mmo-champion.com/mmoc/siteImages/images/news/2007/november/newmageranks_small.jpg (http://www.mmo-champion.com/images/news/2007/november/newmageranks.jpg)<br />
+<br />
+This spell could be here for three reasons :<br />
+1st theory - Blizzard might plan to introduce new ranks of existing spells before the expansion, they did it in the past and it wouldn't be really surprising. However, it was stated in a blue post that there wasn't any plan to do so. (But devs could have changed their mind)<br />
+2nd theory (most likely) - When premades characters were made, they just gave the character all the spells related to &quot;Mages&quot; in the database including unused ones, this could also explain the seed of corruption bugs on the warlock characters. They could just be test spells. (See 3rd theory)<br />
+3rd theory - Someone forgot to clean his Blizzcon mess (http://www.mmo-champion.com/images/news/2007/july/magespells.jpg) from the spell database. ^^<br />
+<br />
+<br />
+-------------------------------<br />
+<br />
+International lag fix<br />
+WoW lags, it's not something new if you're playing on servers a bit far away from your country, but don't worry people are fixing it ! Out of all the methods offered to fix the lag on your machine, one of them posted on Elitistjerks forums seems to work very well. <br />
+<br />
+&lt;&gt; &lt;&gt; &lt;&gt; Read this first &lt;&gt; &lt;&gt; &lt;&gt;<br />
+1 - It might have side effects, like slowing down your download speed or affecting your performance on other softwares. (In my case, it didn't change anything)<br />
+2 - If you're not sure about what you're doing, just don't do it. I don't want to be responsible because you crashed your computer in some way because you wasted your registry.<br />
+2.1 - Seriously, if you don't know what you're doing, don't do it. It will be fixed in one or two weeks anyway. (and the official fix won't have any impact on other softwares)<br />
+3 - If you don't have the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSMQ\ directory, you can download and apply this file (http://rapidshare.com/files/77255080/msmq.reg.html) to your registry. <br />
+4 - Windows Vista users might want to check this post (http://forums.worldofwarcraft.com/thread.html?topicId=3271071466&amp;postId=33532161447&amp;sid=1#190) too. <br />
+<br />
+Source - Elitistjerks.com (http://elitistjerks.com/f15/t17761-server_locations_latency_australia/p8/)<br />
+<br />
+&quot;1 - TcpAckFrequency - NOTE if you are running Windows Vista this setting may not have any effect - a hotfix is needed which i'm tracking down. This works fine under Windows XP<br />
+<br />
+Type &quot;regedit&quot; in windows &quot;run..&quot; dialog to bring up registry menu<br />
+<br />
+Then find:<br />
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\<br />
+<br />
+There will be multiple NIC interfaces listed in there, find the one you use to connect to the internet, there will be several interfaces listed (they have long names like {7DBA6DCA-FFE8-4002-A28F-4D2B57AE8383}. Click each one, the right one will have lots of settings in it and you will see your machines IP address listed there somewhere. Right-click in the right hand pane and add a new DWORD value, name it TcpAckFrequency, then right click the entry and click Modify and assign a value of 1.<br />
+<br />
+You can change it back to 2 (default) at a later stage if it affects your other TCP application performance. it tells windows how many TCP packets to wait before sending ACK. if the value is 1, windows will send ACK every time it receives a TCP package.<br />
+<br />
+2 - TCPNoDelay<br />
+This one is pretty simple (Discussed here (http://technet2.microsoft.com/windowsserver/en/library/e6491291-872e-4260-8ced-77525b0d79a51033.mspx?mfr=true))<br />
+<br />
+Type &quot;regedit&quot; in windows &quot;run..&quot; dialog to bring up registry menu<br />
+<br />
+Then find:<br />
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSMQ\Parameters<br />
+<br />
+Right-click in the right hand pane and add a new DWORD value, name it TCPNoDelay, then right click the entry and click Modify and assign a value of 1.<br />
+<br />
+Click Ok and close the registry editor, then reboot your PC.&quot;<br />
+<br />
+Basically, this fix is deactivating the Nagle algorithm to improve your ping. If you don't want to do it you can just wait for the 2.3.2 patch as it's supposed to deactivate it too, but I don't think you can test it on PTRs right now because the updated patch notes from the latest PTR Build (7705) are actually for the upcoming build (7710).<br />
+The patch notes that were included with this build (7705) are actually for the next build (7710).<br />
+Once you're done with the technical stuff (it probably won't take more than 1 minute if you're not too bad), you can finally get your reward.<br />
+<br />
+<br />
+http://static.mmo-champion.com/mmoc/siteImages/images/news/2007/november/lagfix.jpg (http://www.mmo-champion.com/images/news/2007/november/lagfix.jpg)<br />
+<br />
+Even if in this case, the fix was used to decrease a very high ping, it seems to work very well on low (~100ms) ping for some people (lowered to ~20 or ~30ms).<br />
+<br />
+<br />
+-------------------------------<br />
+<br />
+Comics<br />
+Monday ! Dark Legacy !<br />
+<br />
+<br />
+http://static.mmo-champion.com/mmoc/siteImages/images/news/2007/november/dl121.jpg (http://www.darklegacycomics.com/121.html)<br />
+<br />
+.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Merin</div><div class="date">2007-12-17, 07:27 AM</div></div><div class="posttext">I'm trying to fiddle with the latency settings but I dont seem to even have an MSMQ in that specified place for step 2...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fr0hzn</div><div class="date">2007-12-17, 07:28 AM</div></div><div class="posttext">http://www.mmo-champion.com/images/news/2007/november/newmageranks_small.jpg (http://www.mmo-champion.com/images/news/2007/november/newmageranks_small.jpg)<br />
+<br />
+<br />
+They are screaming ... But ...<br />
+what do they want? ...<br />
+Water? Bred? Portals? ...<br />
+...<br />
+NO! NERFS!<br />
+<br />
+I love it how Blizz mess up their own PTR :D<br />
+I remember the last PTR where you could &quot;port&quot; yourself to everywhere using a console command.<br />
+Now THAT was fun! *lol*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2007-12-17, 07:29 AM</div></div><div class="posttext">Merin : Read the post. :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Merin</div><div class="date">2007-12-17, 07:32 AM</div></div><div class="posttext">Merin : Read the post. :p<br />
+<br />
+<br />
+Oh sorry &gt;&lt; Gosh I feel dumb.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Merin</div><div class="date">2007-12-17, 07:50 AM</div></div><div class="posttext">My latency seemed to drop a fair bit with the changes. Was always 200-300, now I'm 100-150 so far. Fiddling in AV fighting to get proper testing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">spankey</div><div class="date">2007-12-17, 07:51 AM</div></div><div class="posttext">280 FPS? WTF how? :o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2007-12-17, 07:53 AM</div></div><div class="posttext">Stupidly low graphic settings + decent computer, mostly because I run up to 3 clients at the same time ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fr0hzn</div><div class="date">2007-12-17, 08:25 AM</div></div><div class="posttext">Stupidly low graphic settings + decent computer, mostly because I run up to 3 clients at the same time ^^<br />
+<br />
+<br />
+BOTTER!<br />
+/reported.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Maldivia</div><div class="date">2007-12-17, 09:27 AM</div></div><div class="posttext">The two spells mentioned have been in spell database since TBC was released, so there's not actually anything new about them, except that they are in the premades spellbooks.<br />
+<br />
+http://www.wowhead.com/?spell=38697<br />
+http://www.wowhead.com/?spell=38692</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2007-12-17, 11:10 AM</div></div><div class="posttext">skypower : not in this way, but yes the fix should be applied in the 2.3.2 patch when it goes live and in the upcoming build of the 2.3.2 patch on PTR.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pyrostemplar</div><div class="date">2007-12-17, 11:35 AM</div></div><div class="posttext">New spell ranks on PTR<br />
+<br />
+<br />
+http://www.mmo-champion.com/images/news/2007/november/newmageranks_small.jpg (http://www.mmo-champion.com/images/news/2007/november/newmageranks_small.jpg)<br />
+<br />
+<br />
+<br />
+Now we all know why the damage of mages at lvl 70 was &quot;jaw dropping&quot;... they were using rank 17 Fireballs!<br />
+<br />
+I guess devs play on private servers :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">sarnat</div><div class="date">2007-12-17, 12:09 PM</div></div><div class="posttext">So do you suggest us appliying this fix now or after the patch? (or it won't do much after the patch?) ty for help :)<br />
+<br />
+I didn't check the whole thing but applying it now will affect all TCP connections from your computer, which basically means almost everything you do on the net. The effect it has on them might be from nothing to noticiable, just like it can lower your ping in WoW. If you wait till patch, the fix should only affect WoW and you should revert back to original values if you applied the fix.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2007-12-17, 12:15 PM</div></div><div class="posttext">Well, depends if you want to get your ping lowered 1 or 2 weeks before the others, the registry edits are easily revertable in case of problem if you've got a clue about what you did. ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">sundance</div><div class="date">2007-12-17, 01:28 PM</div></div><div class="posttext">Hey there! Just letting you know, that you're not supposed to put a blank space before an exclamation mark. See http://en.wikipedia.org/wiki/Plenk for details.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azain</div><div class="date">2007-12-17, 01:33 PM</div></div><div class="posttext">Hey there! Just letting you know, that you're not supposed to put a blank space before an exclamation mark. See http://en.wikipedia.org/wiki/Plenk for details.<br />
+<br />
+<br />
+random ?<br />
+<br />
+see what i did there !</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Macalister</div><div class="date">2007-12-17, 01:51 PM</div></div><div class="posttext">Wee, new rank of Holy Light in Sunwell.. wee.we.w.e.we.we.we.w.e.we..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tesu</div><div class="date">2007-12-17, 01:52 PM</div></div><div class="posttext">Very nice latency fix ;D Mine got lowered from around 150 to around 45.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lat</div><div class="date">2007-12-17, 05:08 PM</div></div><div class="posttext">same !!! from 160 to 50ms ! awesome ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">betolol</div><div class="date">2007-12-17, 06:54 PM</div></div><div class="posttext">The MSMQ file seems to be down ???</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2007-12-17, 07:10 PM</div></div><div class="posttext">Probably went poof during the server transition we did, will re-upload it in a minute. ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azain</div><div class="date">2007-12-17, 07:20 PM</div></div><div class="posttext">Probably went poof during the server transition we did, will re-upload it in a minute. ^^<br />
+<br />
+<br />
+cool thanks, was gonna bump betolol's post given the success people are having with it :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2007-12-17, 07:37 PM</div></div><div class="posttext">Temporarily reuploaded on http://rapidshare.com/files/77255080/msmq.reg.html (Got a few issues with the upload on the site right now)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">furydeath</div><div class="date">2007-12-17, 08:09 PM</div></div><div class="posttext">If you look in the jewelcrafting thing you see that there is a primal stone statue. Only heals for 70 a tick.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jstar555</div><div class="date">2007-12-17, 10:09 PM</div></div><div class="posttext">lag fix is awesome. i went from 200ms down to 120<br />
+<br />
+just wondering tho, does this fix apply for other games as well?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">aliengrey</div><div class="date">2007-12-17, 10:36 PM</div></div><div class="posttext">3.44sec fireball? wearing haste? heh</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cloudpulse</div><div class="date">2007-12-17, 10:43 PM</div></div><div class="posttext">Wonderful latency fix. My main's realm is on the west coast, and I live in the east coast. I usually get 240-300ms. After the registry editing, I am getting 120-160ms. I have a high level alt on an east coast server, so the change will probably bring my latency to dramatically low levels.<br />
+<br />
+There's probably some skeptics out there about the real effects of this change (i.e the latency value is lower, however there is actually no difference), but believe me the difference is noticeable, and I'm not even in the oceanic region.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aldarias</div><div class="date">2007-12-18, 01:18 AM</div></div><div class="posttext">Will this &quot;lag fix&quot; in anyway help out with the vanish(bug) thanks to serverlag?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pyrostemplar</div><div class="date">2007-12-18, 12:27 PM</div></div><div class="posttext">Ofc, how else can they test WOTLK stuff out, or any future patches for example.<br />
+<br />
+<br />
+It was a rather poor attempt of a joke. The &quot;Private servers&quot; keywords have different connotation than &quot;internal test servers or development servers&quot; (which ofc also are private servers :)). So the failing joke was implying that devs played on [&quot;pirate&quot;] private servers.<br />
+<br />
+Need to skill up my humor :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fugazi</div><div class="date">2007-12-18, 03:44 PM</div></div><div class="posttext">Fix is sweet. Down from 300-400 to 100-200, and it is noticeable real lag reduction.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pirron</div><div class="date">2008-01-02, 12:25 AM</div></div><div class="posttext">has anyome tried this with Visata?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">saibiou</div><div class="date">2008-03-04, 02:42 PM</div></div><div class="posttext">has anyome tried this with Visata?<br />
+<br />
+<br />
+I applied this to Vista (without sp1, now i'm running sp1).<br />
+My ping was around 60 to 70, now it is between 15 an 18 in shattrah in front of aldor bank, and the same in raid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jamieblue</div><div class="date">2009-09-12, 02:54 AM</div></div><div class="posttext">3 - If you don't have the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSMQ\ directory, you can download and apply this file (http://rapidshare.com/files/77255080/msmq.reg.html) to your registry. <br />
+4 - Windows Vista users might want to check this post (http://forums.worldofwarcraft.com/thread.html?topicId=3271071466&amp;postId=33532161447&amp;sid=1#190) too. <br />
+<br />
+<br />
+<br />
+Hi, that link is invalid - 'file could not be found' :S Would you mind posting another link for this :) <br />
+<br />
+One more question, do these registry edits work for all online games, such as farcry 1? I would be grateful for any replies at all :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tickingtime</div><div class="date">2009-09-12, 05:32 AM</div></div><div class="posttext">Hi, that link is invalid - 'file could not be found' :S Would you mind posting another link for this :) <br />
+<br />
+One more question, do these registry edits work for all online games, such as farcry 1? I would be grateful for any replies at all :)<br />
+<br />
+Wow, please stop making new accounts and necro-ing old threads, ffs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jamieblue</div><div class="date">2009-09-12, 12:10 PM</div></div><div class="posttext">Wow, please stop making new accounts and necro-ing old threads, ffs.<br />
+<br />
+<br />
+So what do you suggest I do, create a new thread? I feel the question is relevent, so sourely it is not necro'ing if it adds to the article - the answer could not be found by reading the previous pages. But anyway, thanks for the help.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tickingtime</div><div class="date">2009-09-12, 02:34 PM</div></div><div class="posttext">So what do you suggest I do, create a new thread? I feel the question is relevent, so sourely it is not necro'ing if it adds to the article - the answer could not be found by reading the previous pages. But anyway, thanks for the help.<br />
+<br />
+May I suggest going to the MMO-Champion WoW General Discussion forums and creating a thread discussing what you are asking for. Refer to this thread with a link and I'm sure people would be glad to help you.<br />
+http://www.mmo-champion.com/index.php?board=3.0</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jamieblue</div><div class="date">2009-09-12, 09:00 PM</div></div><div class="posttext">Thanks, really ;D</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

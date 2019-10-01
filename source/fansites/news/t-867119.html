@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="assumed, play, quit, patch/patch, tbc/wrath?this, 2.4.5.100, upsets, care, rest, qqers, matter, fact, wrong, assumptions, playing, cataclysm, question, pose, hell, ruined, wrath, played, people, stuck, video, zulgurub, blue, posts, arts, artworks, guns, things, patch, sheep, game, couple, service, paying, unsatisfied" />
+<meta name="description" content="PAX East is this week! If you're interested in previews and announcements, check out the PAX East 2011 Coverage on Curse.com! 
+ 
+Cataclysm - Heroic Zul'Gurub Dungeon and Boss Guide 
+Jesse Cox from OMFGcata released a nice video of the updated version of Zul'gurub. If you didn't have time to visit the new instance on PTRs, you should probably spend 15 minutes watching it, you will probably end up thinking &quot;hey, the new ZG is better than I thought!&quot;.  
+ 
+&lt;object width=&quot;700&quot; height=&quot;455&quot;&gt;&lt;param" />
+<title> Patch 4.1 Zul'gurub Video, Blue Posts, Artworks, Fan Arts [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Patch 4.1 Zul'gurub Video, Blue Posts, Artworks, Fan Arts</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-867119.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/867119-Patch-4-1-Zul-gurub-Video-Blue-Posts-Artworks-Fan-Arts">Patch 4.1 Zul'gurub Video, Blue Posts, Artworks, Fan Arts</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2011-03-12, 07:26 AM</div></div><div class="posttext">PAX East is this week! If you're interested in previews and announcements, check out the PAX East 2011 Coverage on Curse.com (http://www.curse.com/content/PAXEast2011.aspx)!<br />
+<br />
+Cataclysm - Heroic Zul'Gurub Dungeon and Boss Guide<br />
+Jesse Cox from OMFGcata (http://www.youtube.com/user/OMFGcata) released a nice video of the updated version of Zul'gurub. If you didn't have time to visit the new instance on PTRs, you should probably spend 15 minutes watching it, you will probably end up thinking &quot;hey, the new ZG is better than I thought!&quot;. <br />
+<br />
+<br />
+&lt;object width=&quot;700&quot; height=&quot;455&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/1GC9x9eKIYM?fs=1&amp;hl=en_US&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/1GC9x9eKIYM?fs=1&amp;hl=en_US&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;700&quot; height=&quot;455&quot;&gt;&lt;/embed&gt;&lt;/object&gt;<br />
+<br />
+<br />
+Patch 4.1: Addon Messages Will Be Filtered<br />
+Boring stuff you will probably not understand unless you're an addon developer, but it seems important! <br />
+Addon authors that use chat messages should check that their addons still work in 4.1<br />
+<br />
+Authors will need to add calls to RegisterAddonMessagePrefix() in order to receive addon messages of a particular prefix, presumably during PLAYER_ENTERING_WORLD for the majority of addons. Note that this system errs on the side of sending too much; it is possible for addon messages to make it to the CHAT_MSG_ADDON handlers when no addon has registered it.<br />
+<br />
+<br />
+<br />
+RegisterAddonMessagePrefix( &amp;lt;string&amp;gt; )<br />
+<br />
+Returns a boolean if successful (could fail if it hits the client side limit of 512 prefixes).<br />
+<br />
+<br />
+<br />
+IsAddonMessagePrefixRegistered( &amp;lt;string&amp;gt; )<br />
+<br />
+Returns a Boolean if the prefix has been registered.<br />
+<br />
+<br />
+<br />
+&amp;lt;table&amp;gt; GetRegisteredAddonMessagePrefixes( &amp;lt;table&amp;gt; )<br />
+<br />
+Returns a table (or you can pass in a table), that will be filled in with all prefixes that were registered.<br />
+<br />
+<br />
+<br />
+Prefixes are limited to 16 characters now, and they no longer take up a portion of the 256 character chat message limit. The server has a 64 prefix limit. If you exceed this limit your client will not filter any messages.<br />
+<br />
+Also: SendAddonMessage() is now allowed for the OFFICER channel.<br />
+<br />
+<br />
+Blue Posts<br />
+Winged Raids and Firelands<br />
+A developer working on a particularly awesome Firelands boss encounter today took me on a tour of the dungeon. I think you'll find the layout to be a pleasant change of pace from winged dungeons. Many of the mechanics being worked on that I was shown were quite nifty as well. I'm really excited for this one. ;) (Source (http://blue.mmo-champion.com/topic/163408/can-we-have-less-winged-raids))<br />
+<br />
+Quest Phasing<br />
+This is the sort of philosophy we're going for with phasing, as we do feel it's an important tool for storytelling. We do recognize issues where we've &quot;over-phased&quot; zones in the past though, and we generally tried to take a more minimal approach to phasing in Cataclysm. While there is still a good deal of phasing involved in many of the zones, we tried to make each phase a little more intricate and less intrusive on group gameplay. We want to make sure that, in times when a group is required, phasing doesn't hold you back from grouping with friends. (Source (http://blue.mmo-champion.com/topic/163327/phasing-a-huge-mistake))<br />
+<br />
+Phased Ore/Herbs<br />
+It is an issue we're aware of and having been looking into. We've applied a number of hotfixes to phased gathering nodes since the release of Cataclysm, but this one is still there and is certainly a bugger. (Source (http://blue.mmo-champion.com/topic/163327/phasing-a-huge-mistake))<br />
+<br />
+Appearance Tab - Using other items visuals while keeping your real gear<br />
+We have discussed these types of ideas with the developers several times in recent history. We're not entirely opposed to some of the ideas, though the feature would probably be more limited than the functionality many players are asking for.<br />
+<br />
+This is still largely a contested concept though, as we'd want to make sure it's done well and doesn't have unforeseen negative impacts on gameplay/art style. When we have more information to share with you regarding our decision whether or not to move forward, and how, we'll be sure to let you know. (Source (http://blue.mmo-champion.com/topic/163386/the-appearance-tab-2))<br />
+<br />
+<br />
+Blizzard Art Gallery Update<br />
+The World of Warcraft: Wrath of the Lich King Art Gallery (http://us.battle.net/wow/en/media/artwork/wow-wrath) has been updated with four pieces representing the Warcraft universe.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2011/march/classes-deathknight-male-full_small.jpg (http://us.media.blizzard.com/wow/media/artwork/wow-wrath/classes-deathknight-male-full.jpg) http://media.mmo-champion.com/images/news/2011/march/classes-deathknight-female-full_small.jpg (http://us.media.blizzard.com/wow/media/artwork/wow-wrath/classes-deathknight-female-full.jpg) http://media.mmo-champion.com/images/news/2011/march/bosses-arthas01-full_small.jpg (http://us.media.blizzard.com/wow/media/artwork/wow-wrath/bosses-arthas01-full.jpg) http://media.mmo-champion.com/images/news/2011/march/bosses-arthas02-full_small.jpg (http://us.media.blizzard.com/wow/media/artwork/wow-wrath/bosses-arthas02-full.jpg)<br />
+<br />
+<br />
+New Warcraft Fan Art<br />
+The Blizzard Fan Art Section (http://us.blizzard.com/community/fanart/?ip=warcraft) has been updated with ten new pieces of fan artwork set within the Warcraft universe.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2011/march/ss1275_small2.jpg (http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1275.jpg) http://media.mmo-champion.com/images/news/2011/march/ss1276_small.jpg (http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1276.jpg) http://media.mmo-champion.com/images/news/2011/march/ss1277_small.jpg (http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1277.jpg) http://media.mmo-champion.com/images/news/2011/march/ss1278_small.jpg (http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1278.jpg) http://media.mmo-champion.com/images/news/2011/march/ss1279_small.jpg (http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1279.jpg)<br />
+http://media.mmo-champion.com/images/news/2011/march/ss1280_small.jpg (http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1280.jpg) http://media.mmo-champion.com/images/news/2011/march/ss1281_small.jpg (http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1281.jpg) http://media.mmo-champion.com/images/news/2011/march/ss1282_small.jpg (http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1282.jpg) http://media.mmo-champion.com/images/news/2011/march/ss1283_small.jpg (http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1283.jpg) http://media.mmo-champion.com/images/news/2011/march/ss1284_small.jpg (http://us.media.blizzard.com/blizzard/_images/community/fanart/en-us/ss1284.jpg)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Omnicient</div><div class="date">2011-03-12, 07:29 AM</div></div><div class="posttext">You missed a tag on the front page Boub, seems to have merged two news together. Otherwise good post! I'll enjoy watching this video!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Torm</div><div class="date">2011-03-12, 07:35 AM</div></div><div class="posttext">You missed a tag on the front page Boub, seems to have merged two news together. Otherwise good post! I'll enjoy watching this video!<br />
+<br />
+One minute later its all fine :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ferledon</div><div class="date">2011-03-12, 07:36 AM</div></div><div class="posttext">Nice =) Looking forwards to watching the video!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Roflomnom</div><div class="date">2011-03-12, 07:42 AM</div></div><div class="posttext">Cool beans</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kynd</div><div class="date">2011-03-12, 07:55 AM</div></div><div class="posttext">Nice video.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CrazyTaco93</div><div class="date">2011-03-12, 08:02 AM</div></div><div class="posttext">Heh, love the Dynasty Warriors music put in the video :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lonedrifter</div><div class="date">2011-03-12, 08:03 AM</div></div><div class="posttext">Lady Sylvanas fan art... &lt;3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chikko</div><div class="date">2011-03-12, 08:21 AM</div></div><div class="posttext">not a big fan of the death knight fan art, but I do love the Lady Sylvanas fan art</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bloodwine77</div><div class="date">2011-03-12, 08:21 AM</div></div><div class="posttext">I really hope they add an appearance tab in the future.<br />
+<br />
+I know they don't want the work of the designers to go to waste if a lot of people wear older gear for the visuals, but I do think it'll make WoW feel a bit more diverse and alive. Right now almost every member of each class look similar to one another.<br />
+<br />
+I'd love to have my warlock run around with my Tier 5 set for visuals, even if I am wearing Tier 11 for real.<br />
+<br />
+The only real limitation I'd see is with weapons. I think a lot of people would be satisfied if we could just have different armor for visuals and always use our real weapons for visuals.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemons</div><div class="date">2011-03-12, 08:28 AM</div></div><div class="posttext">I really dig the DK Blizz art. I love how their armor is just over the top crazy with skulls, chains, runes, and spikes. Also, I'd give my left arm to be able to paint like that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc18e6c28fd9</div><div class="date">2011-03-12, 08:30 AM</div></div><div class="posttext">Appearance Tab. I read and i did something pleasant in my pants... Skrew firelands, skrew everything GIEFF APPERANCE TAB!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Angarin</div><div class="date">2011-03-12, 08:39 AM</div></div><div class="posttext">Awesome I'm very very pleased they hotfixed alot of these fights. The last fight seemed way to easy and I&quot;m glad they fixed it. It does look hectic and alot of fun. The only fight I'm not a fond of is the panther one. Being a healer with all that damage going out isnt exactly pretty</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kinetix</div><div class="date">2011-03-12, 08:54 AM</div></div><div class="posttext">the appearance tab would basically be exactly like DCUO's Style setting, which isn't a bad thing at all</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc808acf4ea3</div><div class="date">2011-03-12, 09:31 AM</div></div><div class="posttext">pih i expected more from ZG, same layout different bosses. Artwork is awesom though :).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nanessa</div><div class="date">2011-03-12, 09:48 AM</div></div><div class="posttext">This is still largely a contested concept though, as we'd want to make sure it's done well and doesn't have unforeseen negative impacts on gameplay<br />
+<br />
+How can this have negative impacts on gameplay?:/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Upptagen</div><div class="date">2011-03-12, 10:17 AM</div></div><div class="posttext">Firelands will be great I think. It looks great atleast. Tho I want to finish Sinestra first... 8/13 HC atm, hope I'll do it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Archermit</div><div class="date">2011-03-12, 10:29 AM</div></div><div class="posttext">We have discussed these types of ideas with the developers several times in recent history. We're not entirely opposed to some of the ideas, though the feature would probably be more limited than the functionality many players are asking for.<br />
+<br />
+This is still largely a contested concept though, as we'd want to make sure it's done well and doesn't have unforeseen negative impacts on gameplay/art style. When we have more information to share with you regarding our decision whether or not to move forward, and how, we'll be sure to let you know. (Source)<br />
+<br />
+I think the thing that scares them is most classes would probably have a T? set that they love such as T6 for hunter / lock or ofc T2 for paladin but the up side to this has to be that they would need to make new teir gear look really awsome and it would only make the game look cooler<br />
+<br />
+on a side note, they could add that you need to have aquired the item in order to display the skin which would make people go back to old content but not force since its purely an appearance thing and holds no stat changes</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Afakaz</div><div class="date">2011-03-12, 10:40 AM</div></div><div class="posttext">pih i expected more from ZG, same layout different bosses. Artwork is awesom though :).<br />
+<br />
+Just curious, what more were you expecting? The layout has changed a little bit, not in that the actual fixtures have changed but some paths that were open are redirected now, I don't know what else they could have changed in the instance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0dc54b4c6d</div><div class="date">2011-03-12, 10:44 AM</div></div><div class="posttext">Jesse Cox &lt;33</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Strafer</div><div class="date">2011-03-12, 11:00 AM</div></div><div class="posttext">Appearance Tab - Using other items visuals while keeping your real gear<br />
+<br />
+I would love this!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Snes</div><div class="date">2011-03-12, 11:02 AM</div></div><div class="posttext">All the Sylvanas and Illidan artwork looks good but I find the other stuff more original; I like the flying mount one the best from these</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc808acf4ea3</div><div class="date">2011-03-12, 11:02 AM</div></div><div class="posttext">Just curious, what more were you expecting? The layout has changed a little bit, not in that the actual fixtures have changed but some paths that were open are redirected now, I don't know what else they could have changed in the instance.<br />
+<br />
+i expected full remap not just old instance filled with new bosses, this show's that blizzard has lost their creativity atleast for me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shpetznaz</div><div class="date">2011-03-12, 11:05 AM</div></div><div class="posttext">i think the thing that scares them is most classes would probably have a t? Set that they love such as t6 for hunter / lock or ofc t2 for paladin but the up side to this has to be that they would need to make new teir gear look really awsome and it would only make the game look cooler<br />
+<br />
+on a side note, they could add that you need to have aquired the item in order to display the skin which would make people go back to old content but not force since its purely an appearance thing and holds no stat changes<br />
+<br />
+thats a brilliant idea!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0d8e6c2903</div><div class="date">2011-03-12, 11:25 AM</div></div><div class="posttext">Their argument against an appearance tab was always:<br />
+<br />
+1. th3n nobody will wear the super awesome T11 armor QQ (well maybe because a lot of people don't like it)<br />
+2. people will wear ugly gear<br />
+<br />
+My answer:<br />
+<br />
+1. make good looking armor sets again you cheap bastards and realize that not everyone is wearing the newest tier sets, it is great that raiders have something good looking but the rest is fucked at least in dungeons.<br />
+2. Not really since you can't dye your gear and if I wanted to put the most stupid looking armor on I can already do that in cities.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bareno</div><div class="date">2011-03-12, 11:28 AM</div></div><div class="posttext">i expected full remap not just old instance filled with new bosses, this show's that blizzard has lost their creativity atleast for me.<br />
+<br />
+Than it wouldn't be the same Zul'Gurub anymore, it'd be Zul'whatever. They did the best they could do with ZG while still keeping it fresh IMHO.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zogrim</div><div class="date">2011-03-12, 11:38 AM</div></div><div class="posttext">That Guide is fucking perfect in Information AND Entertainment aspects. Love it!<br />
+Just as the two Blizzard Arthas Artworks, especially the one w/ Invincible</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc81d359246a</div><div class="date">2011-03-12, 11:39 AM</div></div><div class="posttext">ZG looks like some levels in Crash Bandicoot on PSX :-D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Harken_no1</div><div class="date">2011-03-12, 12:09 PM</div></div><div class="posttext">Appearance Tab <br />
+<br />
+GIEF!!!!!!!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kinetix</div><div class="date">2011-03-12, 12:19 PM</div></div><div class="posttext">Than it wouldn't be the same Zul'Gurub anymore, it'd be Zul'whatever. They did the best they could do with ZG while still keeping it fresh IMHO.<br />
+<br />
+blizzard hasn't been doing their best in a long long time, and here you are coming up with another excuse for blizzard's laziness.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mojomaker</div><div class="date">2011-03-12, 12:19 PM</div></div><div class="posttext">Hey thank you so much MMO-champ :)<br />
+You have no idea how long it took to put that video together. I may not be the best player, but I know how to work out strats and provide enough details on how to let even the worst wow player (probably me :P) get through the fights. <br />
+<br />
+If you want to see my raid guides, you can watch them here:<br />
+<br />
+http://www.youtube.com/watch?v=LtG8bre4XlE&amp;playnext=1&amp;list=PL2204DFCEB9EDEF59<br />
+<br />
+-Jesse</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shadamehr</div><div class="date">2011-03-12, 12:56 PM</div></div><div class="posttext">How can this have negative impacts on gameplay?:/<br />
+<br />
+It will affect PvP. <br />
+<br />
+Complaints along the lines of &quot;I went to gank and own him, turned out his full arena gear was disguised, he owned my sorry ass, no fair !!!&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RokFenris</div><div class="date">2011-03-12, 12:58 PM</div></div><div class="posttext">I really hope they add an appearance tab in the future.<br />
+<br />
+I know they don't want the work of the designers to go to waste if a lot of people wear older gear for the visuals, but I do think it'll make WoW feel a bit more diverse and alive. Right now almost every member of each class look similar to one another.<br />
+<br />
+I'd love to have my warlock run around with my Tier 5 set for visuals, even if I am wearing Tier 11 for real.<br />
+<br />
+The only real limitation I'd see is with weapons. I think a lot of people would be satisfied if we could just have different armor for visuals and always use our real weapons for visuals.<br />
+When I don't like the art, I don't care about it going to waste.<br />
+Which is the case with each and every tier gear since BC. I really don't understand how the artists can make lower level gear that I like and tier gear that I hate so much for the same game. If given the option, I would rather sport the look of the initial gear of lv1 characters than the latest tear, so lame I find the tier gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mrwingtipshoes</div><div class="date">2011-03-12, 01:07 PM</div></div><div class="posttext">Appearance tab please! I want my druid to look like he's wearing leather and not plate!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RokFenris</div><div class="date">2011-03-12, 01:08 PM</div></div><div class="posttext">It will affect PvP. <br />
+<br />
+Complaints along the lines of &quot;I went to gank and own him, turned out his full arena gear was disguised, he owned my sorry ass, no fair !!!&quot;<br />
+<br />
+Something I would like very much, thank you.<br />
+<br />
+It would add uncertainty for gankers.<br />
+<br />
+If it was left to me, I would go even further: block inspect and knowing the level, total health, and total power for other faction players. Let gankers wonder if that seemingly AFK player in a lowbie zone is really a lowbie, or a disguised PvPer just waiting to turn the tables on any attacker.<br />
+<br />
+Even for arenas and other forms of organized PvP. It would make for more player-driven uncertainty, in turn making PvP more exciting and uncertain.<br />
+<br />
+And you know what?<br />
+<br />
+Most of my characters in DCUO and LotRO mostly sport the gear look of lowbie (often lv1) characters. I don't care at all about looking powerful, I only care about my character being pleasant to look at for me.<br />
+<br />
+Which, unfortunately, is something I can't do in WoW. It's one of the reasons I had made a lowbie character to post in the forums; I didn't want my avatar to be wearing tier gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Psii</div><div class="date">2011-03-12, 01:09 PM</div></div><div class="posttext">It will affect PvP. <br />
+<br />
+Complaints along the lines of &quot;I went to gank and own him, turned out his full arena gear was disguised, he owned my sorry ass, no fair !!!&quot;<br />
+<br />
+You simply add a check box &quot;Hide Custom Gear Appearance&quot; so the PvP'ers can't be whiny babies when they do something stupid like this.<br />
+If all you look at is someones gear when you try to gank them, you deserve it in the first place.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">carrierz</div><div class="date">2011-03-12, 01:12 PM</div></div><div class="posttext">ZG is a total joke. Stupidly undertuned, easier than every current heroic. Oneshotted every boss with a pug on the PTR first time. Crap dungeon, it would've been interesting if the new mechanics actually did do more than just scratch you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Malico</div><div class="date">2011-03-12, 01:43 PM</div></div><div class="posttext">Hello<br />
+<br />
+Very nice video! <br />
+<br />
+I give you a tip.<br />
+<br />
+If you want to make video. MAKE SURE you have status on bar so everyone can see hp and more fun to watch video. Thanks!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryme</div><div class="date">2011-03-12, 01:51 PM</div></div><div class="posttext">Would still have preferred some new entirely new content :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lynix</div><div class="date">2011-03-12, 02:04 PM</div></div><div class="posttext">i expected full remap not just old instance filled with new bosses, this show's that blizzard has lost their creativity atleast for me.<br />
+<br />
+A full remap..? really...? It's the same place it always was. It had no logical reason to change at all.<br />
+<br />
+I admit they should have at the very least ammped up the textures to match todays textures but in all honesty to expect a full remap is asking too much. I'd be more worried about ZA that didn't change at all.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alixie</div><div class="date">2011-03-12, 02:12 PM</div></div><div class="posttext">For once, I wish fan artists would portray sylvannas in the most grossest way possible. Flesh falling off, sores everywhere, limpy boobs, bones sticking out. Shes a friggen corpse, make her look like one. Im tired of all these boring pin-up drawings. That said, the fan art linked are boring with static poses of a blue skinned sexy alien girl.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lynix</div><div class="date">2011-03-12, 02:19 PM</div></div><div class="posttext">ZG is a total joke. Stupidly undertuned, easier than every current heroic. Oneshotted every boss with a pug on the PTR first time. Crap dungeon, it would've been interesting if the new mechanics actually did do more than just scratch you.<br />
+<br />
+I'm not saying the people I did the instance with on the PTR were good players but it didn't seem as bad as you make it.. My first try none of the group had done it and we wiped a couple times. Maybe you should spend less time preparing for bosses... i have never watched a video guide, read up on boss abilities or asked someone to explain a boss to me.. If it's not explained in vent I go in blind most of the time and because of that I find things a lot more challenging then the average player does. <br />
+<br />
+<br />
+Don't get mad because your full raid gear still out gears a new sub-tier in the game.. go do those instances on a 333 premade and not a 359 geared character copy from live and tell me how you feel about it, because the instance is designed for people at about 333 ilvl maybe a little higher.<br />
+<br />
+---------- Post added 2011-03-12 at 02:22 PM ----------<br />
+<br />
+<br />
+For once, I wish fan artists would portray sylvannas in the most grossest way possible. Flesh falling off, sores everywhere, limpy boobs, bones sticking out. Shes a friggen corpse, make her look like one. Im tired of all these boring pin-up drawings. That said, the fan art linked are boring with static poses of a blue skinned sexy alien girl.<br />
+<br />
+Sylvannas is not a corpse.... She is a banshee.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0d8e6c2903</div><div class="date">2011-03-12, 02:56 PM</div></div><div class="posttext">It will affect PvP. <br />
+<br />
+Complaints along the lines of &quot;I went to gank and own him, turned out his full arena gear was disguised, he owned my sorry ass, no fair !!!&quot;<br />
+<br />
+You could turn it off if you are such a coward that you only want to pvp against weaker enemies (aka ganking). It also wouldn't be active in BG and arena.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dagnares</div><div class="date">2011-03-12, 03:27 PM</div></div><div class="posttext">I think armor dyes would be cool to have too. Right now, everyone in your class really does look the same at the end. More customizing features for your character is a good thing. I really don't want to look like a carbon copy of another player.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lanerios</div><div class="date">2011-03-12, 03:35 PM</div></div><div class="posttext">And ofcourse... more japanophile fan art. THERE IS MORE THAN JAPAN FOR ART PEOPLE.<br />
+<br />
+WTB someone that makes some original fanart..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mojomaker</div><div class="date">2011-03-12, 03:58 PM</div></div><div class="posttext">I think armor dyes would be cool to have too. Right now, everyone in your class really does look the same at the end. More customizing features for your character is a good thing. I really don't want to look like a carbon copy of another player.<br />
+<br />
+I actually think dyes would work well in wow to set you apart, but there are so many types of armors, i can only imagine the world that would have to go into that for Blizz.<br />
+...though I could be wrong.<br />
+<br />
+<br />
+Though for some reason the cynic in me thinks there'd be 11 millions characters all dressed on black running around.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lanerios</div><div class="date">2011-03-12, 04:25 PM</div></div><div class="posttext">As for the appearance tab: HELL NO.<br />
+<br />
+Every plate user would wear a judgement recolor (TBC heroic drops) or the T6 warrior gear. Yay for more diversity... ow wait!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rewiinded</div><div class="date">2011-03-12, 04:29 PM</div></div><div class="posttext">As for the appearance tab: HELL NO.<br />
+<br />
+Every plate user would wear a judgement recolor (TBC heroic drops) or the T6 warrior gear. Yay for more diversity... ow wait!<br />
+<br />
+That's the great thing!<br />
+<br />
+I would never wear those items on my plate characters but I would wear the DK starting equipment on my DK<br />
+<br />
+Everyone can dress the way they like, you think those items look good whereas I think something else looks good.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2011-03-12, 04:32 PM</div></div><div class="posttext">How can this have negative impacts on gameplay?:/<br />
+<br />
+Mainly for pvp. A lot of players use the opponenets visuals as part of their strategy. I think Blizzard doesn´t want players to be able to hide their gear in pvp settings. At least that is what Blizzard said a few years ago. I also kinda agree with it even in social settings. If you want to walk into town looking poor or a certain way, then you should take off your plate armor. The gear swapper makes it easy to do.<br />
+<br />
+This is something I think has no justiification to be implemented. It is easy enough to accomplish ingame now.. and the only real use people would have for it was to deceive people.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Quaero</div><div class="date">2011-03-12, 04:36 PM</div></div><div class="posttext">This is something I think has no justiification to be implemented. It is easy enough to accomplish ingame now.. and the only real use people would have for it was to deceive people.<br />
+<br />
+Or, you know... maybe making your character look better?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kiro</div><div class="date">2011-03-12, 04:37 PM</div></div><div class="posttext">Well, there'd be far more negative effects with an appearance tab I think. Most likely, blizzard would further cheaper out on the artwork of gear from there on forward saying &quot;hey, you guys want to equip your old stuff anyways, so why should we waste resources there when we can put an ox-cart in a section of the world you may not care about instead!&quot;. <br />
+<br />
+Man, I expected a LOT more out of ZG. It looks rather boring, very very hum-drum, and elementary in overall design. I hope ZA looks a bit better.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mrwingtipshoes</div><div class="date">2011-03-12, 04:51 PM</div></div><div class="posttext">So i have to ask. Do you know what every type of gear is at every level? If not then don't start complaining about PVP effects from something like this. Just about EVERY other mmo has done it with ZERO negative effect on any part of their game play. Besides if you bothered to read the first post in the thread it mentions a suggestion to be able to just turn it off if you are that worried about it. Was i the only one that bothered to read the First post AND the blue post?<br />
+<br />
+As for &quot;EVERYONE WILL WEAR THE SAME THING!&quot; I think you're sorely mistaken, i know lots of people that would avoid judgment recolour or T6 warrior, especially since, again, in the thread the suggestion is against being able to use things you can't normally use, like other classes Tier. Personally i'd rather look like an Org. Grunt or a SW Guard than a blue lvl 60 pally....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Melilithia</div><div class="date">2011-03-12, 06:07 PM</div></div><div class="posttext">Just disable the appearance tab in Arenas and Battlegrounds.<br />
+<br />
+And look at their health dammit. if it says 130k and all they're wearing is a Lovely Black Dress, are you going to think they're ACTUALLY wearing it?<br />
+<br />
+<br />
+On a second note, grats to Terras of MG for getting into the art gallery!<br />
+<br />
+<br />
+<br />
+For once, I wish fan artists would portray sylvannas in the most grossest way possible. Flesh falling off, sores everywhere, limpy boobs, bones sticking out. Shes a friggen corpse, make her look like one. Im tired of all these boring pin-up drawings. That said, the fan art linked are boring with static poses of a blue skinned sexy alien girl.<br />
+<br />
+Only one of the pics uploaded is even a pin-up... I agree that maybe she could use with some missing skin or maybe even some bones showing, but otherwise she looks fine.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mojomaker</div><div class="date">2011-03-12, 06:28 PM</div></div><div class="posttext">Well, there'd be far more negative effects with an appearance tab I think. Most likely, blizzard would further cheaper out on the artwork of gear from there on forward saying &quot;hey, you guys want to equip your old stuff anyways, so why should we waste resources there when we can put an ox-cart in a section of the world you may not care about instead!&quot;. <br />
+<br />
+Man, I expected a LOT more out of ZG. It looks rather boring, very very hum-drum, and elementary in overall design. I hope ZA looks a bit better.<br />
+<br />
+I hate to break it to you, but ZA is preeeetty much the exact same... at least right now. Here's hoping they change it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dewiniaid</div><div class="date">2011-03-12, 07:05 PM</div></div><div class="posttext">The addon changes are nice. What it means for users is:<br />
+<br />
+- Slower/lower bandwidth clients will no longer be bogged down by addon message spam that they're receiving even if they don't use the addon. This is especially nice since every addon that looks for messages has to handle all of said incoming messages, even if it's just long enough to determine &quot;Nope, not for me.&quot; <br />
+<br />
+- Certain addons like EPGP Lootmaster that are intended to keep details between officers can now use the officer channel to share data rather than sending the data via raid or guild channels. A lot of loot systems by design don't want raiders to know what other raiders are expressing interest on an item (or how much DKP they're bidding/etc) but still need officers to know for loot council/etc decisions.<br />
+<br />
+The bad news is that all addons that do talk/listen are going to be broken until they're patched -- though it sounds like it'd be trivial to write an addon that effectively undoes the change for short-term compatibility while you wait for updates.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deathpaw</div><div class="date">2011-03-12, 07:13 PM</div></div><div class="posttext">Does anyone else have any clue on why we should be helping Hakkar's Spirit? The hole point of us being their the first time was to get Hakkar's Heart and throw it back into the Void so it could never return. But here we are with it's Spirit... It does not make since to me at all, I am sorry.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">The Last DJ</div><div class="date">2011-03-12, 07:28 PM</div></div><div class="posttext">Sylvannas is not a corpse.... She is a banshee.<br />
+<br />
+Banshees are dead, but are incoporeal. Sylvanas also re-posessed her original body some time before she formed the Forsaken, and it wasn't &quot;poof, I'm reincarnated and/or I ran back to my corpse and I'm alive again&quot;. She's dead, dude, and wearing the skin like an Egger Suit. Some of the earliest concept art by Metzen actually shows her with a stitched up sorta patchwork Black Jack face. It's the in-game Deader Barbie look and the creepy goth kid fanart of her that has spawned all these sexy pinups.<br />
+<br />
+OT: I'm all for an appearance tab done intelligently. (Not unlike how it's handled in LotRO, with the exception of if it's equipped in a costume slot, it's &quot;equipped&quot; and doesn't get to float around in your inventory or bank for you to accidentally vendor or destroy.) Hell, I'd be down with it expressly for the ability to not have to wear a 300-pound chainmail skirt as an enhancement shaman. Dude, it's an accident waiting to happen.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rolly</div><div class="date">2011-03-12, 07:39 PM</div></div><div class="posttext">When a boss (or any loot drop) is downed and rolled on, the winner should just be given the option &quot;Take as Scroll&quot; this scroll is then used on whatever corresponding piece of equipment a person wants, ie: glove scroll, chest scroll etc etc and gives the stats of the drop to the target piece of gear.<br />
+<br />
+That way if I want to run around in a full twill set on my priest he will still have the raid stats needed. This also has the benefit of people running old content to get gear they enjoy the look of. I have been advocating this for years.<br />
+<br />
+Blizzard has this obnoxious belief that the power of avatars should be recognizable by sight.<br />
+<br />
+edit: added (or any loot drop)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Duster505</div><div class="date">2011-03-12, 09:31 PM</div></div><div class="posttext">I have to agree with the video. PUgs in ZG will be horrible.... No way its worth the 353 items.... <br />
+<br />
+Im Not gonna bother. My sub runs out on the 16th. Thats it for next 4 months. Will probably go RIFT.<br />
+<br />
+---------- Post added 2011-03-12 at 09:43 PM ----------<br />
+<br />
+<br />
+Mainly for pvp. A lot of players use the opponenets visuals as part of their strategy. I think Blizzard doesn´t want players to be able to hide their gear in pvp settings. At least that is what Blizzard said a few years ago. I also kinda agree with it even in social settings. If you want to walk into town looking poor or a certain way, then you should take off your plate armor. The gear swapper makes it easy to do.<br />
+<br />
+This is something I think has no justiification to be implemented. It is easy enough to accomplish ingame now.. and the only real use people would have for it was to deceive people.<br />
+<br />
+WOW isn't just a pvp game.... PVE is dying in WOW atm. The guild system is actually hurting the game alot for casual ppl cause many guilds dont manage to get full groups for raids anymore (many lost intrest) and those few that are still around are sorta forced to stay in their guild cause of the rep system. About half of my guild has quit in the past 2 weeks. Same trend is going all over the server. Guilds that had max 49 online every night are now down to less than 20.. and many of them have stopped raiding - exept 2-3 hardcore ones. <br />
+<br />
+ZG and ZA will be a nightmare for the casual gamer. Most players have already got quite a few 359 items and those 353 are an insult in so many ways... now 4 months into the expansion. Other raiding content is not worth another 4 months and BLizzard must be crazy thinking it will do so. Cause like I said.. guilds are strugling to get ppl to show up. <br />
+<br />
+Yes .. thats how boring it is atm. ANd ZG and ZA will just make it worse. Those two rewamped instances are the reason I will not resub for the next 4 months. I wont miss anything at all. Its just not wort the time nor the money.... I will do it once or twice later if I deside to resub. Thats how unimpressive this 4.1 patch feels for me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kiro</div><div class="date">2011-03-12, 09:57 PM</div></div><div class="posttext">I hate to break it to you, but ZA is preeeetty much the exact same... at least right now. Here's hoping they change it.<br />
+<br />
+If that's the case, then chalk 4.1 up as an epic failure, and people give blizzard far-far too much credit, and look what it's getting us in return.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Duster505</div><div class="date">2011-03-12, 10:27 PM</div></div><div class="posttext">If that's the case, then chalk 4.1 up as an epic failure, and people give blizzard far-far too much credit, and look what it's getting us in return.<br />
+<br />
+Intresting fact.....<br />
+<br />
+4.1 will be coming about 5 months after the launch of Cataclysm expansion - the content... is 2 rewamped raid dungeons into 5 man content.<br />
+<br />
+2.1 patch in TBC came 5 months after the orginal launch of the expansion. It had an entire new raiding content even tho That expansion launched with great 10 man and 25 man ORGINAL raiding content. <br />
+<br />
+Now Blizzard is telling us they are sending content out on more frequent basis in smaller doases. Thats just lies. They are trying to fool ppl. Heroic versions of raid content is NOT new content. They are doing about HALF of the conent they did in TBC claiming they are doing more...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Powell</div><div class="date">2011-03-12, 11:15 PM</div></div><div class="posttext">i hope they never implement the Appearance Tab.<br />
+In fact, i would most likely quit when it happens, might not be a big deal, but i cba running around in a town or in a raid/dungeon with people in a tuxedo or some other random costumes like Aion or other rubbish MMOs.<br />
+<br />
+The art of blizzard is great, sure, some gear looks bad, but implementing this is not a good idea, and it would just take away the effort of the Art team.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Goreskull</div><div class="date">2011-03-13, 12:43 AM</div></div><div class="posttext">About the appearance tab, as always the community comes with a radical suggestion, and blizzard choses a more practical and simple approach.<br />
+<br />
+Basically, we will be allowed to change the two major colours of our gear, whilst accessories such as chains and so on will retain their colour.<br />
+<br />
+That way everyone will be able to keep their gear individual looking and art isn't lost. That would also by far be the best solution.<br />
+<br />
+I am not interested in seeing 117 paladins in judgement at Deathwing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kensairabbit37</div><div class="date">2011-03-13, 04:47 AM</div></div><div class="posttext">I am Daerth in that video lol.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mattikinsmatt</div><div class="date">2011-03-13, 06:54 AM</div></div><div class="posttext">Appreance tab should be like what they have in Rift. You can buy dyes for your armor and with each piece of armor (helm, chest, shoulders, legs and boots) you have a primary and secondary colour. So you can mix and match those colours to make it look alot different.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">loladin</div><div class="date">2011-03-13, 07:37 AM</div></div><div class="posttext">Okay I didn't read every last comment about the appearance tab, so sorry if this was pointed out.<br />
+<br />
+The main reason I personally would like an appearance tab is simply because Blizzard's gear designers forget alot of things. For example, if I'm remembering right, there is no heroic level plate dps belt to match the warrior tier set. Or how none of the agility leather belts match druid sets. Or how most prot paladins are mixed in thirds, DK-, warrior-, and pally-style and NONE of the plate tanking boots match up with their tier set (or belt for tanking, or boots for ret.... you get the point.)<br />
+<br />
+Bottom line, Blizzard forgot to design gear properly, period. And an appearance tab would cover their lazy asses. So even if they restricted it to dyes, I think I should be allowed to change the skin at least to some other design of that current tier. And before you even point out the pvp implications of this, again, it could be turned off for arena's and rated BGs or whatever, and who gives a damn about ganking besides fools anyways. Protip: you are higher level, you are going to win, if griefing someone over the internet gives you a rubbery one, you need to grow up.:cool:<br />
+<br />
+---------- Post added 2011-03-13 at 01:42 AM ----------<br />
+<br />
+<br />
+Intresting fact.....<br />
+<br />
+4.1 will be coming about 5 months after the launch of Cataclysm expansion - the content... is 2 rewamped raid dungeons into 5 man content.<br />
+<br />
+2.1 patch in TBC came 5 months after the orginal launch of the expansion. It had an entire new raiding content even tho That expansion launched with great 10 man and 25 man ORGINAL raiding content. <br />
+<br />
+Now Blizzard is telling us they are sending content out on more frequent basis in smaller doases. Thats just lies. They are trying to fool ppl. Heroic versions of raid content is NOT new content. They are doing about HALF of the conent they did in TBC claiming they are doing more...<br />
+<br />
+Sounds like you should've quit back then, instead of playing through Wrath since this game's been bad since TBC...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Duster505</div><div class="date">2011-03-13, 10:26 AM</div></div><div class="posttext">Sounds like you should've quit back then, instead of playing through Wrath since this game's been bad since TBC...<br />
+<br />
+When did I say I played Wrath ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Begpo</div><div class="date">2011-03-13, 11:09 AM</div></div><div class="posttext">Sylvannas is not a corpse.... She is a banshee.<br />
+<br />
+Sylvannas is a banshee... in her own corpse.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0d8e6c2903</div><div class="date">2011-03-13, 12:04 PM</div></div><div class="posttext">i hope they never implement the Appearance Tab.<br />
+In fact, i would most likely quit when it happens, might not be a big deal, but i cba running around in a town or in a raid/dungeon with people in a tuxedo or some other random costumes like Aion or other rubbish MMOs.<br />
+<br />
+The art of blizzard is great, sure, some gear looks bad, but implementing this is not a good idea, and it would just take away the effort of the Art team.<br />
+<br />
+Is that a threat? Because I doubt anyone cares if you quit.....<br />
+<br />
+And maybe before you start ranting you need to learn 2 read before you open your mouth, the appearance tab threads always stated real armor has to be put into the tabs, plate wearers have to wear plate of a certain level for example.<br />
+<br />
+And the effort of the art team went out the window a long time ago otherwise people wouldn't be so eager for an appearance tab. And since there are no dungeon sets anymore non raiders are forced to wear ugly non matching shit and a lot of people hate that.<br />
+<br />
+<br />
+Intresting fact.....<br />
+<br />
+4.1 will be coming about 5 months after the launch of Cataclysm expansion - the content... is 2 rewamped raid dungeons into 5 man content.<br />
+<br />
+2.1 patch in TBC came 5 months after the orginal launch of the expansion. It had an entire new raiding content even tho That expansion launched with great 10 man and 25 man ORGINAL raiding content.<br />
+<br />
+Now Blizzard is telling us they are sending content out on more frequent basis in smaller doases. Thats just lies. They are trying to fool ppl. Heroic versions of raid content is NOT new content. They are doing about HALF of the conent they did in TBC claiming they are doing more... &quot;<br />
+<br />
+TotalBiscuit compared the .1 patches of vanilla and expansions and rest assured at this point it will be the worst and lamest .1 patch in history of WoW.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Viertel</div><div class="date">2011-03-13, 01:31 PM</div></div><div class="posttext">&quot;We have discussed these types of ideas with the developers several times in recent history. We're not entirely opposed to some of the ideas, though the feature would probably be more limited than the functionality many players are asking for.<br />
+<br />
+This is still largely a contested concept though, as we'd want to make sure it's done well and doesn't have unforeseen negative impacts on gameplay/art style. When we have more information to share with you regarding our decision whether or not to move forward, and how, we'll be sure to let you know.&quot;<br />
+<br />
+Translation: &quot;Sorry, even though it makes sense and would be cool to see the good 'ol Judgement on Paladins here and there, we're simply too lazy to bother putting in anything relating to quality of life. Now, if you excuse us, we need to get back to the dartboard to see which dungeon we're going to recycle for 4.2 and 4.3 heroic five mans!&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">delage35</div><div class="date">2011-03-13, 04:19 PM</div></div><div class="posttext">blizzard hasn't been doing their best in a long long time, and here you are coming up with another excuse for blizzard's laziness.<br />
+<br />
+What he came up with was another excuse for you to /rant about your unreasonable expectations... it was a 2-for-1 special</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">keymil</div><div class="date">2011-03-13, 04:31 PM</div></div><div class="posttext">TotalBiscuit compared the .1 patches of vanilla and expansions and rest assured at this point it will be the worst and lamest .1 patch in history of WoW.<br />
+<br />
+The best thing Blizzard could do now is to change the naming of patch from 4.1 to, say, 4.0.9. That way it would NOT be major content patch, but still patch.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">venom1414</div><div class="date">2011-03-13, 04:40 PM</div></div><div class="posttext">NOOob who made The Dk + lich king the suck ? Lady Sylvanas is the best .. i won't remember that sucker ( Lich king patch 3.0.0):mad:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">venom1414</div><div class="date">2011-03-13, 04:42 PM</div></div><div class="posttext">lich i won't remember you!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Duster505</div><div class="date">2011-03-13, 05:01 PM</div></div><div class="posttext">The best thing Blizzard could do now is to change the naming of patch from 4.1 to, say, 4.0.9. That way it would NOT be major content patch, but still patch.<br />
+<br />
+It doesn't change the fact tho that we are getting closer to 5 months into the content and next patch is not really a content patch... THey are simply not sending out content (even tho its less) MORE freqently. Its WAYYY to slow.<br />
+<br />
+The progression of the overall feel of WOW atm is so screwed. PPl should not have to do Heroic content in launch raids for 3-5 more months. And heroic dungeons are NOT NEW CONTENT compared to the normal one. Its the same crap with few things changed.<br />
+<br />
+THe progression should be that when MOST guilds that want to do normal raiding are done with it... then its time for new raiding content. The 5 man dungeons are NOT for those ppl. And thats why alot of guilds are loosing ppl every single day cause ppl are just gonna unsub for next 3-4 months till next raiding content comes out. Even my guild has done all normal bosses raiding 2-3 days per week and most dont log on anymore.. ANd we are ranked like 40 on our serve so IMAGINE how bored ppl are gonna be in 4 months from now.<br />
+<br />
+Its just horrible.<br />
+<br />
+ANd just to sum it up. This is the same guy that made the ZG video talking about 4.1<br />
+http://www.youtube.com/user/OMFGcata#p/u/10/szhPFbTwBN0<br />
+<br />
+And here is another well known YouTuber saying pretty much the same (from 6:15)<br />
+http://www.youtube.com/user/TotalHalibut#p/c/785DC64F790A5CA5/0/kx9kOybWkf8<br />
+<br />
+There is a very loud majority of ppl that have played ALOT of WOW that see through what BLizzard is doing.<br />
+<br />
+I have to agree with TB when he says &quot; They are not giving us what we were promised in patch 4.1&quot; THis is not just little disturbing to me. Its a point that need to be hammered into the mind of BLizzard that progression is very flawed in the game atm... and that keeping Firelands from ppl for 2-4 months simple can NOT be justified at this point.<br />
+<br />
+If ppl REALLY want to be called hardcore raiders they should be done with heroic content by now. If they are not... then BLizzard has overtuned it to the point where normal more casual raiders ARE suffering. Cause most of them dont care about Heroics... And if they are still stuck in Normal .. then its another very obvious sign that BLIzzard got it wrong. <br />
+<br />
+I think thats what we are seeing right now. Blizzard just got it wrong. Less and less ppl are loging in atm to even do normal raids. The rewards are not there if ppl havnt done it already. THey will NOT do it before patch 4.2 cause the guild will not have the number of players TO do it. Even the hardcore guilds on my server are loosing ppl every single day to unsub cause they really dont see the point of doing the heroics. And who can dissagre with them ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">annalee1225</div><div class="date">2011-03-13, 08:16 PM</div></div><div class="posttext">ZG looks great cannot wait :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rukh</div><div class="date">2011-03-14, 03:54 AM</div></div><div class="posttext">http://enxieferite.net84.net/wp-content/uploads/2008/12/primera1.jpg</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

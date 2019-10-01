@@ -1,0 +1,1151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="blessing,shield,tank,proc,healing,hammer,damage,bubble,heal,ancient,kings,hots,heals,target,valanyr,contribute,tick,overhealing,active,hint,absorbed,casts,holy,light,amount,spell,works,absorbs,druid,healed,size,includes,ticks,direct,pwshield,work,applied,procs,paladin,1500,rejuv,players,item,healer,ghostcrawler,questions,effect,update,chance,spells" />
+<meta name="description" content="Update - Updated the post with a few more information from Ghostcrawler 
+ 
+Val'anyr, Hammer of the Ancient Kings 
+The proc on Val'anyr, Hammer of the Ancient Kings has been clarified by Bornakk.  
+Val'anyr, Hammer of the Ancient Kings dedicated page. 
+We have received many questions about how the proc works on Val’anyr, the Hammer of the Ancient Kings. While we originally intended for this effect to be a mystery, we realize that guilds now know what the tooltip on the proc says without" />
+<title> Val'anyr, Hammer of the Ancient Kings [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Val'anyr, Hammer of the Ancient Kings</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-647148.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/647148-Val-anyr-Hammer-of-the-Ancient-Kings">Val'anyr, Hammer of the Ancient Kings</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2009-05-04, 05:40 PM</div></div><div class="posttext">Update - Updated the post with a few more information from Ghostcrawler<br />
+<br />
+Val'anyr, Hammer of the Ancient Kings<br />
+The proc on <br />
+Val'anyr, Hammer of the Ancient Kings (http://static.mmo-champion.com/mmoc/images/news/2009/april/valanyr.jpg) has been clarified by Bornakk. <br />
+Val'anyr, Hammer of the Ancient Kings (http://www.mmo-champion.com/index.php?page=855) dedicated page.<br />
+We have received many questions about how the proc works on Val’anyr, the Hammer of the Ancient Kings. While we originally intended for this effect to be a mystery, we realize that guilds now know what the tooltip on the proc says without necessarily knowing the details on how it works. This leads to situations where a healer may not know if assembling the hammer is worth it for them (hint: it is), and perhaps even worse, a misinformed leader may not think you deserve the hammer (hint: you do).<br />
+<br />
+Players also wonder if the proc makes the item deserving of its legendary status given that the stat allocation is normal for items of its item level (Hint: it does).<br />
+<br />
+The effect reads “Your healing spells have a chance to cause Blessing of Ancient Kings for 15 seconds allowing your heals to shield the target absorbing damage equal to 15% of the amount healed.”<br />
+<br />
+The way this works is that when the proc happens (which is a 10% chance whenever a hot or direct spell heals, with a 45 sec internal cooldown) you gain a buff (the Blessing) on yourself. Now all of your heals for the next 15 sec cause an 8 sec damage shield. The shield stacks with itself. It includes healing done by subsequent ticks of existing hots on the target. Note that the spell has to actually heal, so hots ticking on a fully-healed target cannot cause the proc. However the shield is based on the size of the heal itself, not the amount healed – i.e. 100% overhealing will not proc the Blessing on the healer, but the shield itself includes overhealing once the Blessing is active. The shield can grow to a maximum size of 20,000 damage absorbed.<br />
+<br />
+Example 1: A paladin casts Holy Light for 10K on the tank, which partially heals her. The Blessing procs, so the paladin’s Holy Light immediately causes a shield on the tank which will now absorb 1500 damage. The tank dodges the next two hits, so no damage is absorbed. The paladin then casts another heal for 8K, but only heals the tank for 600 before she is at full health. The shield is now at 2700 damage absorbed (1500 + 1200) for 8 sec.<br />
+<br />
+Example 2: A druid casts Rejuv on the tank, healing her. The Blessing procs on the druid on the second tick. A shield is applied to the tank which absorbs 15% of the amount healed by that tick and each remaining tick of the Rejuv. If the druid also gets Lifebloom and Regrowth on the tank while the Blessing is up, then those ticks also contribute to the shield. If the shield goes down because the 8 sec duration expires or it absorbs that much damage, it can go up again as long as the Blessing lasts, which is 15 sec. <br />
+<br />
+Update by Ghostcrawler<br />
+To answer some questions:<br />
+<br />
+1) If you are lucky enough to have two hammers in your group, then they will both contribute to the same bubble.<br />
+<br />
+2) It should work as you would expect with PW:Shield and similar effects. Specifically, the damage should work through one shield and then the other. I don't know off the top of my head which one is used first. Sometimes we have edge cases with multiple absorbs like this that we will need to solve as they arise. (To be clear, PW:Shield will not proc the blessing or the bubble though, because it does not heal.)<br />
+<br />
+3) If you have the blessing (i.e. you caused healing and the proc occured) then overhealing will count towards the bubble. Hots that tick on a target will still contribute to the bubble. You can also choose to switch to a direct heal if you don't have enough GCDs available to get all of your hots up before the blessing fades. The confusing part here is that hots that don't heal won't cause the blessing (we didn't want you fishing for the bubble before a pull by constantly healing the tank, though I suppose you could if your tank was injured). But once the blessing is active, then all of your healing spells will contribute to the bubble even if they do no actual healing.<br />
+<br />
+We'll leave it to you guys to theorycraft out if you think the hammer is marginally better for one class than another. Some players were speculating before this announcement that the bubble only applied to one spell, which would definitely favor Holy Light. We implemented it the way we did to make sure the other healing classes could still get juicy bubbles while the blessing was active (which is 15 sec).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocdeff62abe0</div><div class="date">2009-05-04, 05:42 PM</div></div><div class="posttext">1 question, in example 1<br />
+1500 for first shield<br />
+and then 600<br />
+equals 1500+1200?<br />
+<br />
+Is that a typo or am I just reading it wrong?<br />
+<br />
+Anyway, awesome proc, just as it should be for a legendary.<br />
+<br />
+PS. This should eliminate a lot of the debate on who gets this item, since all heals work like that. I think maybe Disc priests are a bit held back, because they don't heal for a lot, but do already protect a lot, and this won't proc off of PW:S<br />
+<br />
+I think this pretty much evens out the chances, since every class will have it's good sides. F.e. shamans with chain heal, druids with multiple hots rolling on multiple targets, which will shield a lot, and pala's with simply high heals. <br />
+<br />
+Just 1 question, haven't read it anywhere yet, will AoE heals while under the Blessing shield all targets?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xadaver</div><div class="date">2009-05-04, 05:45 PM</div></div><div class="posttext">sooo paladin/disc priest item ;-)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tps</div><div class="date">2009-05-04, 05:46 PM</div></div><div class="posttext">Much better than expected. Thanks for the update!<br />
+<br />
+<br />
+Now as a Raid Leader I don't ever have to hear the &quot;Its much better in the hands of a Paladin&quot; argument again, thanks guys!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kelvall</div><div class="date">2009-05-04, 05:46 PM</div></div><div class="posttext">Its good for any healer period.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc051827bd13</div><div class="date">2009-05-04, 05:47 PM</div></div><div class="posttext">Must start lvling my resto druid again :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2d1425a8d1</div><div class="date">2009-05-04, 05:49 PM</div></div><div class="posttext">Sounds quite cool.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Clay</div><div class="date">2009-05-04, 05:50 PM</div></div><div class="posttext">Must start lvling my resto druid again :D<br />
+<br />
+<br />
+hum... ok.<br />
+<br />
+awesome proc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Burls</div><div class="date">2009-05-04, 05:53 PM</div></div><div class="posttext">1 question, in example 1<br />
+1500 for first shield<br />
+and then 600<br />
+equals 1500+1200?<br />
+<br />
+<br />
+<br />
+1200 is 15% of 8000. Even though the 8k heal only healed for 600, the shield is still calculated on the base heal amount.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spl4sh3r</div><div class="date">2009-05-04, 05:53 PM</div></div><div class="posttext">1 question, in example 1<br />
+1500 for first shield<br />
+and then 600<br />
+equals 1500+1200?<br />
+<br />
+<br />
+You didn't read it completely.....it say second heal is 8k but the tank only gets healed 600 (rest is overhealing)<br />
+<br />
+15% of 8000 = 1200<br />
+<br />
+Damn Burls beat me</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">yuzm</div><div class="date">2009-05-04, 05:53 PM</div></div><div class="posttext">CAN'T WAIT TO FACE THOSE IN THE ARENA &lt;3 <br />
+oh wait</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LavaDuck</div><div class="date">2009-05-04, 05:55 PM</div></div><div class="posttext">Screw arena!<br />
+<br />
+Nice of them to reveal how it works.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Radux</div><div class="date">2009-05-04, 05:56 PM</div></div><div class="posttext">This will benefit all healers. Healers with HoT's or raider healers will probably activate the proc much faster (after the 45 sec internal cooldown) than tank healers mostly due to the amount of raid damage bouncing around now. However, I will say that this proc provides awesome mitigation for any tank. <br />
+<br />
+EDIT: clarity.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MangoSmash</div><div class="date">2009-05-04, 06:04 PM</div></div><div class="posttext">This mace on a disc priest or a druid in arenas will be pretty crazy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Iosif</div><div class="date">2009-05-04, 06:04 PM</div></div><div class="posttext">Screw arena!<br />
+<br />
+Nice of them to reveal how it works.<br />
+<br />
+<br />
+I think its sad that they had to reveal it, it seemed pretty damn ovious to most theory crafters. But over all its a great weapon for any healer if it goes to a Druid/Priest over a Pally is it really that big of a loss? Maybe to the loot whore of a Pally but with any luck they will /gquit shortly after.<br />
+<br />
+Best Question Ever...<br />
+Do you Raid to Gear or Gear to Raid?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vehemence</div><div class="date">2009-05-04, 06:07 PM</div></div><div class="posttext">This legendary has potency to live through the whole lifespan of WoW :o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Monticristo</div><div class="date">2009-05-04, 06:11 PM</div></div><div class="posttext">This legendary has potency to live through the whole lifespan of WoW :o<br />
+<br />
+<br />
+I doubt it. They will probably add something like &quot;effect will not apply to those level 90 and over&quot;, or some wording similar to that. I also doubt this will be of use in the next expansion since they will make legendary that are much better than this one with the stats a person needs to be useful to the raid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Radux</div><div class="date">2009-05-04, 06:12 PM</div></div><div class="posttext">Best Question Ever...<br />
+Do you Raid to Gear or Gear to Raid? <br />
+<br />
+<br />
+Well said.<br />
+QFT.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mantús</div><div class="date">2009-05-04, 06:13 PM</div></div><div class="posttext">This legendary has potency to live through the whole lifespan of WoW :o<br />
+<br />
+<br />
+&quot;The shield can grow to a maximum size of 20,000 damage absorbed.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FireBorne</div><div class="date">2009-05-04, 06:15 PM</div></div><div class="posttext">Definitely worth getting....now who in your guild gets it first?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">coil780</div><div class="date">2009-05-04, 06:20 PM</div></div><div class="posttext">Resto Druid (due to it only taking the amount from the tick and subsequent ticks, if it procs off the last tick and the HoT fully heals the target then its a waste of a proc).<br />
+<br />
+Disagree!<br />
+<br />
+1) A resto druid's HOTs will be ticking on many targets, guaranteeing a fast proc each time the cooldown comes up.<br />
+<br />
+2) Similarly, many targets means many beneficiaries. Imagine throwing out a Wild Growth while this is up (or a Circle of Healing), or a pile of Lifeblooms. Huge potential to mitigate incoming raid damage, as well as providing benefit while MT healing.<br />
+<br />
+3) While it doesn't proc on overheals, every tick of a HOT will refresh and strengthen the shield for the full value of the tick (even if most of the tick is overheal).<br />
+<br />
+4) If it procs on the last tick, the druid still has the Blessing and the target still receives a shield - the very next heal the druid casts will add to that shield. There's no waste going on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cowiesh</div><div class="date">2009-05-04, 06:20 PM</div></div><div class="posttext">It doesn't say anything about stacking shield on others. So a shaman could spam CH in the 15sec he got the blessing. Giving most of the raid a shield. Same deal with other heals. Imo this mace is for all healers, sometimes the tank take a big hit, sometimes raid take dmg, sometimes both. Means all kind of healers can use it. <br />
+<br />
+Now we know why it's legendary :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bbr</div><div class="date">2009-05-04, 06:20 PM</div></div><div class="posttext">Pretty much looks as it'd work as expected.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fedelesa</div><div class="date">2009-05-04, 06:20 PM</div></div><div class="posttext">Best Question Ever...<br />
+Do you Raid to Gear or Gear to Raid? <br />
+<br />
+<br />
+Hope you don't mind me stealing this, but this is probably one of the best Questions/Quotes I have read to date. <br />
+<br />
+QFT</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc695f354894</div><div class="date">2009-05-04, 06:23 PM</div></div><div class="posttext">From that the usefulness of the proc probably goes something like:<br />
+<br />
+Holy Paladin &gt; Resto Shaman &gt; Disc Priest (due to less healing output) &gt; Holy Priest &gt; Resto Druid (due to it only taking the amount from the tick and subsequent ticks, if it procs off the last tick and the HoT fully heals the target then its a waste of a proc).<br />
+<br />
+<br />
+Wow... really nice way to remain biased and completely ignore what was stated all of a few paragraphs previously. For a druid, the shield works on what the total amount healed would be for that HoT regardless of if it ticks or not.<br />
+<br />
+Editing in:<br />
+<br />
+&quot;But once the blessing is active, then all of your healing spells will contribute to the bubble even if they do no actual healing.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">superstargoddess</div><div class="date">2009-05-04, 06:25 PM</div></div><div class="posttext">This is just something that they put in the game to make people argue and tear each other apart. It's causing friction everywhere apparently. GG.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gzilia</div><div class="date">2009-05-04, 06:25 PM</div></div><div class="posttext">Wow... really nice way to remain biased and completely ignore what was stated all of a few paragraphs previously. For a druid, the shield works on what the total amount healed would be for that HoT regardless of if it ticks or not.<br />
+<br />
+Editing in:<br />
+<br />
+&quot;But once the blessing is active, then all of your healing spells will contribute to the bubble even if they do no actual healing.&quot;<br />
+<br />
+<br />
+dont forget 20K + lifeblooms.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CSJenova</div><div class="date">2009-05-04, 06:28 PM</div></div><div class="posttext">A shield is applied to the tank which absorbs 15% of the amount healed by that tick and each remaining tick of the Rejuv.<br />
+<br />
+Nope. Its subsequent ticks. Meaning if it procs on the last tick, it only absorbs 15% of that tick. <br />
+<br />
+<br />
+Way to cut off the very next sentence ace...<br />
+<br />
+A shield is applied to the tank which absorbs 15% of the amount healed by that tick and each remaining tick of the Rejuv. If the druid also gets Lifebloom and Regrowth on the tank while the Blessing is up, then those ticks also contribute to the shield.<br />
+<br />
+As Ghostcrawler clarified afterwards, the blessing, the buff on the healer, will not proc off a hot rolling on a fully healed person. However, the shield will still build based off ticks on a fully healed target. What you are quoting is Bornakk saying, &quot;if rejuv procs the blessing, the shield will benefit from more than one tick&quot;. He's not saying if rejuv procs the blessing the remaining and only the remaining ticks proc the shield.<br />
+<br />
+Now...will the shield affect already rolling LB and regrowths? That wasn't specified, but 2 GCD's to get those added to the shield would hardly be the worst thing in the world.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gzilia</div><div class="date">2009-05-04, 06:30 PM</div></div><div class="posttext">A shield is applied to the tank which absorbs 15% of the amount healed by that tick and each remaining tick of the Rejuv.<br />
+<br />
+Nope. Its subsequent ticks. Meaning if it procs on the last tick, it only absorbs 15% of that tick. <br />
+<br />
+<br />
+Leaving stuff out ?<br />
+how fucking sad.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc695f354894</div><div class="date">2009-05-04, 06:31 PM</div></div><div class="posttext">A shield is applied to the tank which absorbs 15% of the amount healed by that tick and each remaining tick of the Rejuv.<br />
+<br />
+Nope. Its subsequent ticks. Meaning if it procs on the last tick, it only absorbs 15% of that tick. <br />
+<br />
+<br />
+&quot;Each remaining tick of the rejuv&quot;? To me that suggests that the shield will be calculated instantly based on the amount of healing that would be done by any ticks yet to occur.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">steinn</div><div class="date">2009-05-04, 06:34 PM</div></div><div class="posttext">A shield is applied to the tank which absorbs 15% of the amount healed by that tick and each remaining tick of the Rejuv.<br />
+<br />
+Nope. Its subsequent ticks. Meaning if it procs on the last tick, it only absorbs 15% of that tick. <br />
+<br />
+<br />
+Well let's at least hope your guild doesn't give you one until you understand how it works. Please read the blue posts more carefully.<br />
+<br />
+Once a healer has the 15 second BUFF, which can trigger off any effective healing, any and all heals they cast in that time frame will make bubbles (or add on to already-existing bubbles).<br />
+<br />
+Also if it's proccing off the last tick of a lifebloom, that's a pretty big tick to start with.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">NonMagical</div><div class="date">2009-05-04, 06:34 PM</div></div><div class="posttext">@CSJenova and Gzilia (edit: Steinn, too)<br />
+<br />
+Read what you quoted. Priestgirl09 didn't say that future ticks wouldn't add to the shield. The person she quoted said the entire HoT (IE the ticks that happened prior to the blessing) would be added to the shield, which is not true.<br />
+<br />
+Let's hope you have reading comprehension before your guild gives you one, too Mr Steinn.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gzilia</div><div class="date">2009-05-04, 06:37 PM</div></div><div class="posttext">I think the problem the druids have is that it is good for them. However, its not in the best interest of the guild for them to have it.<br />
+<br />
+It procs off any tick and the percentage is taken from that and subsequent ticks. So not the ticks before.<br />
+It does not proc off of a tick that doesnt heal.<br />
+<br />
+So... tick one.. doesnt proc. tick two fully healed. tick 3 tick 4 tick 5 cant proc.<br />
+<br />
+Tick one doesnt proc. tick two doesnt proc. tick three does proc. Thats the last tick so only a percentage of that tick is taken.<br />
+<br />
+A paladin spamming holy light will provide much better shields than a resto druid or holy priest. I am priest and while it is a good weapon it would be better for a MT healer.<br />
+<br />
+<br />
+But while druids have a nice AOE heal ( WG ) and we are able to spam hots all over the place within no time.<br />
+Does not mean we cant maintank heal ( not saying that i want the item )<br />
+but picture this<br />
+<br />
+<br />
+*look up resto druid t8 bonus *<br />
+- val proc<br />
+- AOE ATACK O NOES<br />
+- wild growth ( or even... even... tranq omg did i just say that? yes i did )<br />
+-rejuv spam ( insta heal )<br />
+- raid members extra safe for a while.<br />
+<br />
+<br />
+now MT setting,<br />
+<br />
+hot rotation, nourish when spike.<br />
+nourish crits up for easy 10k<br />
+lifebloom 20K.<br />
+<br />
+<br />
+<br />
+* this does not mean i endorce druids for maintank heals, but they(atleast I ) can get the job done.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc695f354894</div><div class="date">2009-05-04, 06:38 PM</div></div><div class="posttext">@CSJenova and Gzilia (edit: Steinn, too)<br />
+<br />
+Read what you quoted. Priestgirl09 didn't say that future ticks wouldn't add to the shield. The person she quoted said the entire HoT (IE the ticks that happened prior to the blessing) would be added to the shield, which is not true.<br />
+<br />
+Let's hope you have reading comprehension before your guild gives you one, too Mr Steinn.<br />
+<br />
+<br />
+&quot;The confusing part here is that hots that don't heal won't cause the blessing (we didn't want you fishing for the bubble before a pull by constantly healing the tank, though I suppose you could if your tank was injured). But once the blessing is active, then all of your healing spells will contribute to the bubble even if they do no actual healing.&quot;<br />
+<br />
+I think your in the confused category. Once it is activated all spells will contribute to the shield. This means pre-existing remaining hot ticks if you read what was posted.<br />
+<br />
+Editing in: I believe I said that the remaining HoT ticks would be applied. And given that Lifebloom ticks per second I can't imagine this being difficult to proc at all.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gzilia</div><div class="date">2009-05-04, 06:41 PM</div></div><div class="posttext">I certainly agree. Its an excellent weapon for all healers and it would be very useful for a good priest or druid to have this. But I'm talking maths wise I would expect we will be the last two classes to get it if you based it on who giving it to would benefit the guild the most.<br />
+<br />
+The problem that people here have is,<br />
+<br />
+This item - has a nice special proc.<br />
+that benefits all healers<br />
+in a diffrent way.<br />
+<br />
+<br />
+<br />
+stats wise it seems to have been made for a MT healing Holy Paladin imho.<br />
+Dont start on stats,<br />
+After you have enough shards and acces to this item. any healer will have great gear to forget some mp5 bonus &gt;_&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">NonMagical</div><div class="date">2009-05-04, 06:41 PM</div></div><div class="posttext">&quot;The confusing part here is that hots that don't heal won't cause the blessing (we didn't want you fishing for the bubble before a pull by constantly healing the tank, though I suppose you could if your tank was injured). But once the blessing is active, then all of your healing spells will contribute to the bubble even if they do no actual healing.&quot;<br />
+<br />
+I think your in the confused category. Once it is activated all spells will contribute to the shield. This means pre-existing remaining hot ticks if you read what was posted.<br />
+<br />
+No where in that does it say heals prior to the blessing will add to the shield. That says, and I quote, &quot;all of your healing spells will contribute to the bubble even if they do no actual healing.&quot;<br />
+<br />
+Translation: After you have the blessing, any overheal you do will still be counted for the shield.<br />
+<br />
+Incorrect translation: Heals prior to the blessing will add to the shield.<br />
+<br />
+Example: HoT is cast. Tick 1 (no proc), Tick 2 (no proc), Tick 3 (proc, healing added to shield), Tick 4 (healing added to shield). New HoT Tick 1 (healing added to shield) Tick 2 (healing added to shield) etc etc.<br />
+<br />
+The original Tick 1 and 2 will NOT be added to the shield.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bigbaddan</div><div class="date">2009-05-04, 06:43 PM</div></div><div class="posttext">&quot;The confusing part here is that hots that don't heal won't cause the blessing (we didn't want you fishing for the bubble before a pull by constantly healing the tank, though I suppose you could if your tank was injured). But once the blessing is active, then all of your healing spells will contribute to the bubble even if they do no actual healing.&quot;<br />
+<br />
+I think your in the confused category. Once it is activated all spells will contribute to the shield. This means pre-existing remaining hot ticks if you read what was posted.<br />
+<br />
+Editing in: I believe I said that the remaining HoT ticks would be applied. And given that Lifebloom ticks per second I can't imagine this being difficult to proc at all.<br />
+<br />
+<br />
+It doesn't say anything about pre-existing hot ticks. Common sense tells us that only heals/ticks that hit AFTER the shield procs will count.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">treasy</div><div class="date">2009-05-04, 06:44 PM</div></div><div class="posttext">I certainly agree. Its an excellent weapon for all healers and it would be very useful for a good priest or druid to have this. But I'm talking maths wise I would expect we will be the last two classes to get it if you based it on who giving it to would benefit the guild the most and the lifespan of how long they would be using the weapon for. <br />
+<br />
+While it does benefit all healers, Proc and stats wise it seems to have been made for a MT healing Holy Paladin imho.<br />
+<br />
+<br />
+<br />
+I jizzed myself when I thought of a resto druid + this mace + thorim hardmode. This weapon is alot better for druids than you make it out to be. <br />
+<br />
+How often have you wiped in ulduar because your MT died.<br />
+<br />
+How many times have you wiped because your raid slowly died off?<br />
+<br />
+I'll bet the second scenario is higher.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stieger23</div><div class="date">2009-05-04, 06:44 PM</div></div><div class="posttext">It will be interesting to see how it handles chain heal or other multi-target healing abilities. Since the proc actually originates on the healer, does it only impact the primary target of the heal while the blessing is active, or all people who receive the heal.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gzilia</div><div class="date">2009-05-04, 06:45 PM</div></div><div class="posttext">I jizzed myself when I thought of a resto druid + this mace + thorim hardmode. This weapon is alot better for druids than you make it out to be. <br />
+<br />
+How often have you wiped in ulduar because your MT died.<br />
+<br />
+How many times have you wiped because your raid slowly died off?<br />
+<br />
+I'll bet the second scenario is higher.<br />
+<br />
+<br />
+Come to think of it, this -&gt; druid -&gt; loatheb even more faceroll<br />
+basicly this mace counters that entire encounter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">treasy</div><div class="date">2009-05-04, 06:46 PM</div></div><div class="posttext">Come to think of it, this -&gt; druid -&gt; loatheb even more faceroll<br />
+<br />
+<br />
+I laughed at the idea of someone with Val'anyr healing loatheb</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">treasy</div><div class="date">2009-05-04, 06:47 PM</div></div><div class="posttext">It will be interesting to see how it handles chain heal or other multi-target healing abilities. Since the proc actually originates on the healer, does it only impact the primary target of the heal while the blessing is active, or all people who receive the heal.<br />
+<br />
+<br />
+<br />
+It benefits anyone who receives a heal while the buff is active on the healer.<br />
+<br />
+Pretty godly for AOE healing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gzilia</div><div class="date">2009-05-04, 06:47 PM</div></div><div class="posttext">I laughed at the idea of someone with Val'anyr healing loatheb<br />
+<br />
+I cant wait to one man it :o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">NonMagical</div><div class="date">2009-05-04, 06:48 PM</div></div><div class="posttext">Come to think of it, this -&gt; druid -&gt; loatheb even more faceroll<br />
+basicly this mace counters that entire encounter.<br />
+<br />
+Not sure if it would work on Loatheb, though it might. You aren't overhealing people, they are receiving 0% of it. Probably works but you'd have to test it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">treasy</div><div class="date">2009-05-04, 06:50 PM</div></div><div class="posttext">Says the resto druid? <br />
+<br />
+Check out the stats on the weapon. Even with a good offhand a resto druid and holy priests can get better of all stats apart from haste just by using a staff already found in Ulduar. With another 2 raid instances minimum yet to come eventually there is going to be a weapon that surpasses this so much stat-wise for a druid/priest that they will have to replace it, at least on some bosses.<br />
+<br />
+On the other hand, a holy paladin/disc priest/resto shaman increase ALL of their stats except one compared to what they could find in Ulduar.<br />
+<br />
+So my comments stand. It would be a nice mace for priest/druid and it is a great proc. It would be very useful. But it would have a longer lifespan and proc more often in the hands of a MT healer.<br />
+<br />
+<br />
+<br />
+Not resto. <br />
+<br />
+<br />
+So I assume you are clairvoyant then, because you know the ratio of spike damage to raid damage in every upcoming WOTLK raid. Interesting.<br />
+<br />
+You know as well as I do that this mace is not particularly useful because of it's stats, just as Warglaives were pieces of shit unless you had the set bonus for the PROC, this weapon is defined by it's proc, not it's stats.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">NonMagical</div><div class="date">2009-05-04, 06:50 PM</div></div><div class="posttext">Says the resto druid? <br />
+<br />
+Check out the stats on the weapon. Even with a good offhand a resto druid and holy priests can get better of all stats apart from haste just by using a staff already found in Ulduar. With another 2 raid instances minimum yet to come eventually there is going to be a weapon that surpasses this so much stat-wise for a druid/priest that they will have to replace it, at least on some bosses.<br />
+<br />
+On the other hand, a holy paladin/disc priest/resto shaman increase ALL of their stats except one compared to what they could find in Ulduar.<br />
+<br />
+So my comments stand. It would be a nice mace for priest/druid and it is a great proc. It would be very useful. But it would have a longer lifespan and proc more often in the hands of a MT healer.<br />
+<br />
+<br />
+With another 2 raid instances possibly before you replace the mace, then hopefully more than 1 druid in your guild will have it made and it won't be an issue.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gzilia</div><div class="date">2009-05-04, 06:52 PM</div></div><div class="posttext">Says the resto druid? <br />
+<br />
+Check out the stats on the weapon. Even with a good offhand a resto druid and holy priests can get better of all stats apart from haste just by using a staff already found in Ulduar. With another 2 raid instances minimum yet to come eventually there is going to be a weapon that surpasses this so much stat-wise for a druid/priest that they will have to replace it, at least on some bosses.<br />
+<br />
+On the other hand, a holy paladin/disc priest/resto shaman increase ALL of their stats except one compared to what they could find in Ulduar.<br />
+<br />
+So my comments stand. It would be a nice mace for priest/druid and it is a great proc. It would be very useful. But it would have a longer lifespan and proc more often in the hands of a MT healer.<br />
+<br />
+<br />
+Dont start about stats, <br />
+<br />
+its been said over and over that stats dont make the legendary.<br />
+the proc does<br />
+and this proc is wonderfull for anyhealer. <br />
+some encounters, yes this will shine more on a paladin.<br />
+but I would love to see that paladin aoe heal. in a AOE heavy fight.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Korialstrazs</div><div class="date">2009-05-04, 06:52 PM</div></div><div class="posttext">About what I figured they'd say, and thus, still terrible for disc priests. And still best in the hands of a holy pally, or whatever healer puts out the most healing in your raids.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">xSerp</div><div class="date">2009-05-04, 06:53 PM</div></div><div class="posttext">&quot;The shield can grow to a maximum size of 20,000 damage absorbed.&quot;<br />
+<br />
+<br />
+I'm wondering about this. Does this mean the bubble can only possibly max at 20k over the 15 secs? or say, can you get it up to 10k, have it used, and then get it up to 20k. So like will it max at 20k or is 20k just the max at any one time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CSJenova</div><div class="date">2009-05-04, 06:53 PM</div></div><div class="posttext">@CSJenova and Gzilia (edit: Steinn, too)<br />
+<br />
+Read what you quoted. Priestgirl09 didn't say that future ticks wouldn't add to the shield. The person she quoted said the entire HoT (IE the ticks that happened prior to the blessing) would be added to the shield, which is not true.<br />
+<br />
+Let's hope you have reading comprehension before your guild gives you one, too Mr Steinn.<br />
+<br />
+<br />
+If that is the case, then the wording was very poor. PriestGirl's post sounds like they're saying &quot;a druid only gets the benefit of 1 HoT's ticks after the proc&quot; which is not the case. Every healer's shield will be directly related to the HPS of that healer while their buff is active. The post that I quoted is making the argument that since it &quot;only counts towards whatever is left of the HoT&quot;, if you read their first post, it is not as good for a druid. The proc doesn't create a shield for just the heal that caused the proc. From the post that I quoted, and the first post in that line of discussion, it sounds like Priestgirl is under the impression that the proc will only create a shield based on the 1 heal that caused the proc, when that is not the case. That was the entire point of Borak's post.<br />
+<br />
+If I misunderstood Priestgirl's post, then I apologize to her, but it sounds like they were still confused as to HOW the proc and the subsequent buff actually works. If the druid is rolling rejuvs, the fact that the first part of their rejuv was clipped will not matter at all over the course of the full 15 seconds the blessing is up.<br />
+<br />
+It seems to me from what Bornakk and GC posted, that as long as your healers are putting out comparable HPS, the shield should be equally effective in anyone's hands. How large the individual heals are is largely irrelevent as once the shield procs...overheal doesn't matter...and even if HoT overheals don't proc it, if all 3 HoT's are rolling, that's 5 ticks every 3 seconds, I think, and I would guess the odds that at least SOME of those aren't overheal would be pretty great.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zenthelm</div><div class="date">2009-05-04, 06:53 PM</div></div><div class="posttext">&quot;The confusing part here is that hots that don't heal won't cause the blessing (we didn't want you fishing for the bubble before a pull by constantly healing the tank, though I suppose you could if your tank was injured). But once the blessing is active, then all of your healing spells will contribute to the bubble even if they do no actual healing.&quot;<br />
+<br />
+<br />
+People can just fish for the proc off warlocks?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">treasy</div><div class="date">2009-05-04, 06:55 PM</div></div><div class="posttext">I'm wondering about this. Does this mean the bubble can only possibly max at 20k over the 15 secs? or say, can you get it up to 10k, have it used, and then get it up to 20k. So like will it max at 20k or is 20k just the max at any one time.<br />
+<br />
+<br />
+<br />
+Point could use a bit of clarification, but it does seem to mean that each shield can absorb a maximum of 20,000 damage<br />
+<br />
+IE, a maximum of 20,000 damage reduction from 1 attack.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">koba</div><div class="date">2009-05-04, 06:55 PM</div></div><div class="posttext">Says the resto druid? <br />
+<br />
+Check out the stats on the weapon. Even with a good offhand a resto druid and holy priests can get better of all stats apart from haste just by using a staff already found in Ulduar. With another 2 raid instances minimum yet to come eventually there is going to be a weapon that surpasses this so much stat-wise for a druid/priest that they will have to replace it, at least on some bosses.<br />
+<br />
+On the other hand, a holy paladin/disc priest/resto shaman increase ALL of their stats except one compared to what they could find in Ulduar.<br />
+<br />
+So my comments stand. It would be a nice mace for priest/druid and it is a great proc. It would be very useful. But it would have a longer lifespan and proc more often in the hands of a MT healer.<br />
+<br />
+its not always about the stats though...thunderfury had horrible stats yet it was the best tank weapon up to BT i think before they nerfed it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc695f354894</div><div class="date">2009-05-04, 06:58 PM</div></div><div class="posttext">No where in that does it say heals prior to the blessing will add to the shield. That says, and I quote, &quot;all of your healing spells will contribute to the bubble even if they do no actual healing.&quot;<br />
+<br />
+Translation: After you have the blessing, any overheal you do will still be counted for the shield.<br />
+<br />
+Incorrect translation: Heals prior to the blessing will add to the shield.<br />
+<br />
+Example: HoT is cast. Tick 1 (no proc), Tick 2 (no proc), Tick 3 (proc, healing added to shield), Tick 4 (healing added to shield). New HoT Tick 1 (healing added to shield) Tick 2 (healing added to shield) etc etc.<br />
+<br />
+The original Tick 1 and 2 will NOT be added to the shield.<br />
+<br />
+<br />
+Sorry if my language confused you but what I meant by pre-existing was the hots of another spell that have still to go through. Not some retroactive shielding at all. That would be rather crazy!<br />
+<br />
+What I really meant is more along the lines of:<br />
+<br />
+Rejuv added<br />
+Lifebloom added<br />
+Lifebloom added<br />
+Rejuv tick no healing<br />
+Lifebloom tick healing<br />
+Shield forms.<br />
+Remaining Rejuv and Lifebloom tick values are added to the shield.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spl4sh3r</div><div class="date">2009-05-04, 07:11 PM</div></div><div class="posttext">Update by Ghostcrawler(To be clear, PW:Shield will not proc the blessing or the bubble though, because it does not heal.)[/blizzquote]<br />
+<br />
+<br />
+Fail....glyphed versioin heals ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Grizabella</div><div class="date">2009-05-04, 07:13 PM</div></div><div class="posttext">OK. Everybody pay attention.<br />
+<br />
+Let me make this very simple for you.<br />
+<br />
+The proc will cap at 20,000 for the shield. EVERY class will be looking to fill that shield up, and each will do it in different ways. Analyzing how quickly it will proc, and how much it will proc for is pointless since any healer can get that amount of heals off to keep hitting 20k. <br />
+<br />
+The ONLY difference will be where the healer chooses to place the shield(s). <br />
+<br />
+This means ALL classes of healers get EQUAL benefit from the proc.<br />
+<br />
+Arguing the stats on it is also unnecessary, as every healing class benefits from all of it's stats.<br />
+<br />
+ALSO, DO NOT COMPARE THIS TO THE HODIR HARD MODE STAFF and say that is the one druids should go for. That staff will be EVEN MORE RARE THAN VAL, and DPS classes should get it first anyway!<br />
+<br />
+Case closed. Give the mace fragments to your most deserving raider. Ignore ALL other factors.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Celebronde</div><div class="date">2009-05-04, 07:14 PM</div></div><div class="posttext">Id love to see a priest have this proc and then CoH while the raid is taking AoE damage.. lots of pretty bubbles ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Korialstrazs</div><div class="date">2009-05-04, 07:17 PM</div></div><div class="posttext">OK. Everybody pay attention.<br />
+<br />
+Let me make this very simple for you.<br />
+<br />
+The proc will cap at 20,000 for the shield. EVERY class will be looking to fill that shield up, and each will do it in different ways. Analyzing how quickly it will proc, and how much it will proc for is pointless since any healer can get that amount of heals off to keep hitting 20k. <br />
+<br />
+The ONLY difference will be where the healer chooses to place the shield(s). <br />
+<br />
+This means ALL classes of healers get EQUAL benefit from the proc.<br />
+<br />
+Arguing the stats on it is also unnecessary, as every healing class benefits from all of it's stats.<br />
+<br />
+ALSO, DO NOT COMPARE THIS TO THE HODIR HARD MODE STAFF and say that is the one druids should go for. That staff will be EVEN MORE RARE THAN VAL, and DPS classes should get it first anyway!<br />
+<br />
+Case closed. Give the mace fragments to your most deserving raider. Ignore ALL other factors.<br />
+<br />
+<br />
+Except for disc priests.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hx9</div><div class="date">2009-05-04, 07:24 PM</div></div><div class="posttext">Soo... where's our legendary arena hammer<br />
+<br />
+Didn't think so... I'm guessing the proc will be disabled in arena.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">-Ethos-</div><div class="date">2009-05-04, 07:25 PM</div></div><div class="posttext">Except for disc priests.<br />
+<br />
+<br />
+Who get barely any benefit at all.<br />
+<br />
+:(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seditian</div><div class="date">2009-05-04, 07:30 PM</div></div><div class="posttext">Soo... where's our legendary arena hammer<br />
+<br />
+Didn't think so... I'm guessing the proc will be disabled in arena.<br />
+<br />
+<br />
+Let's pray that they will.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FreeTheRock</div><div class="date">2009-05-04, 07:34 PM</div></div><div class="posttext">From that the usefulness of the proc probably goes something like:<br />
+<br />
+Holy Paladin &gt; Resto Shaman &gt; Disc Priest (due to less healing output) &gt; Holy Priest &gt; Resto Druid (due to it only taking the amount from the tick and subsequent ticks, if it procs off the last tick and the HoT fully heals the target then its a waste of a proc). MT healers will have priority as overhealing doesn't stack and most raid healing is one/two spells to top up.<br />
+<br />
+Factor in the stats and again similar. <br />
+<br />
+Holy Paladin/Disc Priest &gt; Resto Shaman &gt; Resto druid/Holy priest.<br />
+<br />
+So for the benefit of min/maxing you'd do that but really it will be good for any healer. The stats really aren't so great for a holy priest or druid though and they will end up replacing it much sooner than the other classes, possibly even in the next raid instance. Theres even some good staffs in Ulduar which are better stat-wise.<br />
+<br />
+<br />
+<br />
+unless im completely blind, you saying that if it procs off the last tick then its a waste if they are at full hp? did u not read the post correctly by GC? once the shield is active it doesnt matter if the heals do healing or not it will still contribute to the shield, its only trying to get the shield to proc first that overhealing doesnt count GG learn to read</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shjade</div><div class="date">2009-05-04, 07:37 PM</div></div><div class="posttext">Soo... where's our legendary arena hammer<br />
+<br />
+Didn't think so... I'm guessing the proc will be disabled in arena.<br />
+<br />
+<br />
+Of course it will, given how the proc on warglaives didn't work in the arena and Thori'dal required ammo there.<br />
+<br />
+Wait.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7960b93d6c</div><div class="date">2009-05-04, 07:56 PM</div></div><div class="posttext">I think you are underestimating just how good the proc is for a resto druid. Think about this:<br />
+<br />
+A paladin casts a holy light every 1.5 seconds with some haste. That mean on average it'll take 15 seconds for the paladin to proc the effect once the internal cooldown is up. The paladin should be getting 1 proc every minute or so not counting overheals. The situation is a bit better for the paladin if Glyph of Holy light can proc the effect, but that remains to be seen.<br />
+<br />
+A druid has a huge amount of hots ticking all at once, all of which provide a chance for the proc to come into effect. Let's say the druid has 1 lifebloom stack, 2 rejuvenation, 1 regrowth, wild growth on 6 people, and invidual lifeblooms on 4 people ticking at all times on average. That's 12 chances to proc the equip effect every second. Even with counting overheals the druid will nearly always be proccing it almost exactly at the 45 second mark.<br />
+<br />
+If you count overheals too, the situation for the paladin is even worse and the time difference in procs will be greater. The tank is often getting healed to full health before that holy light hits, and will often be avoiding several hits in a row resulting in an even worse proc chance for the paladin. Meanwhile most of those hots are on people who have taken damage. Lifebloom and WG each tick every second, so they will nearly always be the first heal landing. Not to even mention that the druid can get 20+ chances to proc the effect for every 1 the paladin healer gets.<br />
+<br />
+<br />
+The heal gives the caster a buff, which makes all of their heals after that moment provide shields to their targets no matter when they were cast. Effectively this means all hot ticks from existing hots will provide shields, and all future heals will provide shields as well. <br />
+<br />
+While the paladin has bigger heals, the druid gets a big headstart as they'll already have a huge amount of people hotted who will immediately start gaining shields. In addition to those existing hots on the tank and the raid, the druid can spam heal whoever is in most need of the shield (the tank) to grow it even larger. At the same time the paladin has no such existing hots to benefit from.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deathcold</div><div class="date">2009-05-04, 07:57 PM</div></div><div class="posttext">Come to think of it, this -&gt; druid -&gt; loatheb even more faceroll<br />
+basicly this mace counters that entire encounter.<br />
+<br />
+<br />
+<br />
+<br />
+Maybe not, since you ll be healing for 0 while the debuff is up and 15% of 0 = 0.<br />
+They already nerfed the counter for that fight: Scracred shield can be only casted at one target at time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Amgyn</div><div class="date">2009-05-04, 08:07 PM</div></div><div class="posttext">so in summary, this is how it works....<br />
+<br />
+1 - heal #1 ---- heals for 0, overheals for A -- no proc.<br />
+2 - heal #2 ---- heals for X, overheals for Y -- procs blessing.<br />
+3 - target ------ gains shield for (X+Y)*0.15<br />
+4 - Heal #3 ---- heals for 0, overheals for Z<br />
+5 - target ------ gains shield for Z*0.15 + remaining shield from step 3.<br />
+<br />
+<br />
+HOT's example:<br />
+<br />
+1 - hot tick #1 - heals for 0 - no proc<br />
+2 - hot tick #2 - heals for X - procs blessing<br />
+3 - target gains X*0.15 shield<br />
+4 - hot tick #3 - heals for Y <br />
+5 - target gains Y*0.15 shield + shield remaing from step 3.<br />
+<br />
+<br />
+just remember the blessing is the proc... not the shield.... once you have the blessing, there will always be shields.<br />
+<br />
+<br />
+pretty simple... only procs on effective healing. Shield absorbs 15% of any heal after blessing. Shields stack.<br />
+<br />
+<br />
+effective for ALL healing classes...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Durzah</div><div class="date">2009-05-04, 08:08 PM</div></div><div class="posttext">sounds like its going to be stupidly overpowered for pvp.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shjade</div><div class="date">2009-05-04, 08:12 PM</div></div><div class="posttext">Time to start disarming healers? XD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deathcold</div><div class="date">2009-05-04, 08:13 PM</div></div><div class="posttext">sounds like its going to be stupidly overpowered for pvp.<br />
+<br />
+<br />
+Solution make pve items not usable in arena and pvp items not usable in dungeons/raids.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Korialstrazs</div><div class="date">2009-05-04, 08:14 PM</div></div><div class="posttext">Who get barely any benefit at all.<br />
+<br />
+:(<br />
+<br />
+<br />
+So, staves then?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Malentra</div><div class="date">2009-05-04, 08:22 PM</div></div><div class="posttext">As long as the shield applies before PW:S and other shields, doesn't that make it just as useful for disc priests?* I mean thanks to http://www.wowhead.com/?item=42408 , isn't the Hammer going to proc just as often for disc priests as anyone else?* <br />
+<br />
+And once it procs, nothing is stopping the disc priest from using penance and FH over PW:S for the duration to maximize the effect.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dost</div><div class="date">2009-05-04, 08:24 PM</div></div><div class="posttext">Why not give it to the best healer? Sure in the assumption you get exactly one mace it might matter in the next few raid instances, but at the moment I think the best healer you have available will probably make better use of the proc than someone of a different spec who is statistically &quot;more deserving&quot;. Even in the case of two excellent healers, by the time you get one, the second will come even faster.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">phayze</div><div class="date">2009-05-04, 08:25 PM</div></div><div class="posttext">From that the usefulness of the proc probably goes something like:<br />
+<br />
+Holy Paladin &gt; Resto Shaman &gt; Disc Priest (due to less healing output) &gt; Holy Priest &gt; Resto Druid (due to it only taking the amount from the tick and subsequent ticks, if it procs off the last tick and the HoT fully heals the target then its a waste of a proc). MT healers will have priority as overhealing doesn't stack and most raid healing is one/two spells to top up.<br />
+<br />
+Factor in the stats and again similar. <br />
+<br />
+Holy Paladin/Disc Priest &gt; Resto Shaman &gt; Resto druid/Holy priest.<br />
+<br />
+So for the benefit of min/maxing you'd do that but really it will be good for any healer. The stats really aren't so great for a holy priest or druid though and they will end up replacing it much sooner than the other classes, possibly even in the next raid instance. Theres even some good staffs in Ulduar which are better stat-wise.<br />
+<br />
+<br />
+<br />
+Priestgirl: speak do you gooder Engrish? Gredyuate fr0m hi skool? Does you no how 2 read?<br />
+<br />
+I mean, wow, seriously, I normally don't flame people because there really is no point and in most cases it is quite immature, but in your specific case, you definitely take the prize at being utterly ignorant and clueless. I would suggest you go to the person you obviously ebay'ed your account from and ask for a training manual.<br />
+<br />
+*READ* the blue post and understand it next time before you post. So what if it procs on the last tick? Once it procs, it procs a blessing ON THE CASTER!!! That means for 15 seconds after it procs, all of that caster's heals (whether said heals are hots, aoe-type, giant heals, or a combination) will gain the shield on the target, regardless of overhealing or not. Make sense? This is, bar none, the best healing weapon in the game right now for any and all classes.<br />
+<br />
+Please leave this thread before you make an even bigger fool of yourself.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Balbaroy</div><div class="date">2009-05-04, 08:29 PM</div></div><div class="posttext">Solution make pve items not usable in arena and pvp items not usable in dungeons/raids.<br />
+<br />
+<br />
+DAMN GOOD IDEA BRAH! Anyway, I don't think it'll be OP in arenas. Besides how many people do you think are gonna be running around with this?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tinno</div><div class="date">2009-05-04, 08:31 PM</div></div><div class="posttext">/agree with phayze</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shjade</div><div class="date">2009-05-04, 08:36 PM</div></div><div class="posttext">Solution make pve items not usable in arena and pvp items not usable in dungeons/raids.<br />
+<br />
+<br />
+Cool. So we'll all just start in the arena naked then. Or are you saying it would be less OP to have the awesome pve gear in battlegrounds to grind for the basic pvp gear? Then you could only wear that BG gear into the arena? The gear that requires no arena points to acquire, that is. Then grind in the arena for all /that/ gear which you could then only use to do more arena.<br />
+<br />
+Brilliant.<br />
+<br />
+/sarcasm</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wowman</div><div class="date">2009-05-04, 08:44 PM</div></div><div class="posttext">I'm the lucky holy paladin in my guild to receive this mace. I can tell you that when it procs, it will be MASS HOLY LIGHT SPAM for 15 seconds.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aragen</div><div class="date">2009-05-04, 08:52 PM</div></div><div class="posttext">Well said.<br />
+QFT.<br />
+<br />
+<br />
+I raid to gear what other reason at all could there possibly be to raid anyway. If the gear was crap me or anyone else for that matter wouldnt even zone in to that place. No one in this game Gears to Raid, if that was true you would go and clear BC/PreBC raids every week because of that principle but you dont do you. Once you have all the gear you can get from a raid you never go back again. Case and point!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Imadroodlol</div><div class="date">2009-05-04, 08:56 PM</div></div><div class="posttext">Will it stack with Savage deffence?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CSJenova</div><div class="date">2009-05-04, 08:58 PM</div></div><div class="posttext">I raid to gear what other reason at all could there possibly be to raid anyway. If the gear was crap me or anyone else for that matter wouldnt even zone in to that place. No one in this game Gears to Raid, if that was true you would go and clear BC/PreBC raids every week because of that principle but you dont do you. Once you have all the gear you can get from a raid you never go back again. Case and point!<br />
+<br />
+<br />
+The idea is...are you raiding because you need to gear up...or are you gearing up because you need it to down the raid. He is asking...what gives you enjoyment in this game...JUST getting new gear, and that is why you raid, or is it the story and the challenge, so you have to gear up in order to do the raid.<br />
+<br />
+In your case...&quot;once you get all the gear you need you never go back&quot;...but that's not the case at all for some people. Some people raid because they find it fun. They gear up because it is required to be successful eventually...but it is merely a side affect of their enjoyment. YOU may not &quot;gear to raid&quot; but I can assure you that there are people in this game that could give 2 shits about how many stats they get from their gear so long as it allows them to be successful in the next raid. They don't epeen about getting 3k more HP or gaining 400 dps in upgrading their gear...they just want to raid and have fun.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aleom</div><div class="date">2009-05-04, 09:11 PM</div></div><div class="posttext">the second this mace shows up in the Arena it's going to be so awesome. <br />
+<br />
+mmmmm I can taste their tears already. They taste so sweet...QQ moar please, my thirst is so great... 8)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Biohavok</div><div class="date">2009-05-04, 09:12 PM</div></div><div class="posttext">So basically it's still going to the primary Main tank healer.<br />
+<br />
+Okay.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Plawsky</div><div class="date">2009-05-04, 09:18 PM</div></div><div class="posttext">I raid to gear what other reason at all could there possibly be to raid anyway. If the gear was crap me or anyone else for that matter wouldnt even zone in to that place. No one in this game Gears to Raid, if that was true you would go and clear BC/PreBC raids every week because of that principle but you dont do you. Once you have all the gear you can get from a raid you never go back again. Case and point!<br />
+<br />
+<br />
+I raid because I find it enjoyable. Sure, I like getting gear too, but that's not the main reason I raid. I go on some raids for specific gear, but even if I don't get it - I don't mind, because I enjoy playing the game.<br />
+<br />
+The reason we don't go back and run old instances is because they're no challenge anymore. Although, I do occasionally run a PreBC instance, just because I joined during BC and didn't get to experience them. The reason I don't go back to Naxx anymore isn't because I don't need gear from there (because I do), but because I don't like it anymore. I personally didn't think Naxx - at least the 80 version - was very fun. Ulduar however, has been alot of fun so far.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lumidar</div><div class="date">2009-05-04, 09:34 PM</div></div><div class="posttext">so they talk about the tank as &quot;She&quot; and &quot;her&quot; and they give paladin tanking gear a Skirt for T8... I guess they really want that roll to be feminine?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jeffemming</div><div class="date">2009-05-04, 09:34 PM</div></div><div class="posttext">Beacon of Light, Glyph of Holy Light, ummm. Sex.<br />
+Also, does anyone know if it will work on Judgement of Light? =x</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nubs</div><div class="date">2009-05-04, 09:52 PM</div></div><div class="posttext">I'm the lucky holy paladin in my guild to receive this mace. I can tell you that when it procs, it will be MASS HOLY LIGHT SPAM for 15 seconds.<br />
+<br />
+Here's an experiment:<br />
+<br />
+Show of hands, who's getting their guild's first val'anyr?<br />
+<br />
+*Raises hand*<br />
+<br />
+<br />
+Oh crap, I'm a druid</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Partipooper</div><div class="date">2009-05-04, 09:52 PM</div></div><div class="posttext">Sounds to good almost, top guilds is gonna reqruit people with that hammer making them totally overpowered.<br />
+What are the odds of a MT dying if 4 healers are puting bubbles on him with that hammer ?<br />
+Since it can be switched in combat and has a 45 sec internal cd you can time it so all bubbles will come at some healing intensive part of the fight.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Radux</div><div class="date">2009-05-04, 09:53 PM</div></div><div class="posttext">Also, does anyone know if it will work on Judgement of Light?<br />
+<br />
+<br />
+That's a very good question. However, I don't think anyone could really say anything for sure, atm, due to the fact that no one actually has the mace yet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mercrom</div><div class="date">2009-05-04, 09:58 PM</div></div><div class="posttext">This pisses me off. As if the hammer would be equally useful for all healers.<br />
+<br />
+I am a holy priest and I am getting the hammer first. I am primarily a raid healer, and 8 seconds shields will do absolutely nothing to help top off the raid. Sure I could spam heal the tank with my &quot;Greater&quot; Heals once I get the proc, but how will that compete with the paladin Holy Light spam and the already stacked HoTs by the tank healing druids? And how will it help when the tank already has enough healers to survive? It's not like I can manually activate the buff when the boss does a special attack / gets a buff. <br />
+<br />
+Fuck it. Atleast it has nice stats and looks good in Dalaran. I guess that's all that matters to people according to Blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">numos</div><div class="date">2009-05-04, 10:06 PM</div></div><div class="posttext">I read this like 10 times that PW: Shield doesn't heal therefore this wouldn't be a good disc priest weapon. Any disc priest worth anything has http://www.wowhead.com/?item=42408Glyph of Power Word Shield and therefore does heal with it. <br />
+<br />
+Just wanted to clear that up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb14d8a7142</div><div class="date">2009-05-04, 10:14 PM</div></div><div class="posttext">I read this like 10 times that PW: Shield doesn't heal therefore this wouldn't be a good disc priest weapon. Any disc priest worth anything has http://www.wowhead.com/?item=42408Glyph of Power Word Shield and therefore does heal with it. <br />
+<br />
+Just wanted to clear that up. <br />
+<br />
+<br />
+I take it that the shield only benefits from &quot;active&quot; heals originating from the healer, not the &quot;passive&quot; ones, which the target heals &quot;itself&quot; with. This would include judgements and Prayer of Mending heals also.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Florentzia</div><div class="date">2009-05-04, 10:14 PM</div></div><div class="posttext">RNG procc is RNG<br />
+Proccs mostley when fight is over ::)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kelias</div><div class="date">2009-05-04, 10:25 PM</div></div><div class="posttext">This pisses me off. As if the hammer would be equally useful for all healers.<br />
+<br />
+I am a holy priest and I am getting the hammer first. I am primarily a raid healer, and 8 seconds shields will do absolutely nothing to help top off the raid. Sure I could spam heal the tank with my &quot;Greater&quot; Heals once I get the proc, but how will that compete with the paladin Holy Light spam and the already stacked HoTs by the tank healing druids? And how will it help when the tank already has enough healers to survive? It's not like I can manually activate the buff when the boss does a special attack / gets a buff. <br />
+<br />
+Fuck it. Atleast it has nice stats and looks good in Dalaran. I guess that's all that matters to people according to Blizzard.<br />
+<br />
+<br />
+If you AoE heal a group that will proc the Blessing and start charging up shields on all the targets you're healing. On any fight with frequent aoe dmg you should be able to shield a large number of people.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mercrom</div><div class="date">2009-05-04, 10:33 PM</div></div><div class="posttext">If you AoE heal a group that will proc the Blessing and start charging up shields on all the targets you're healing. On any fight with frequent aoe dmg you should be able to shield a large number of people.<br />
+<br />
+The problem is that the the 8 second shields often will fade before the raid is damaged again. There are different situations like Hodir's Frozen Blows, but to get the buff during Frozen Blows I will either have to switch weapons or not heal before Frozen Blows hits. Tank healers will always have a use for the 8 second shields.<br />
+<br />
+I just wish Blizzard would increase the duration of the shields. Then it would be fine.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rea123</div><div class="date">2009-05-04, 10:51 PM</div></div><div class="posttext">I raid to gear what other reason at all could there possibly be to raid anyway.<br />
+<br />
+OK. *clears throat*. Ahem. Ready?<br />
+<br />
+FOR FUN!!! What a depressingly idiotic question (if a sentence finishing on a full stop can be called a question).<br />
+<br />
+<br />
+If the gear was crap me or anyone else for that matter wouldnt even zone in to that place. No one in this game Gears to Raid, if that was true you would go and clear BC/PreBC raids every week because of that principle but you dont do you. Once you have all the gear you can get from a raid you never go back again. Case and point!<br />
+<br />
+<br />
+Simply untrue. I still do 10-man Naxx every week, with a character that has nothing more to get out of it. For fun. In TBC, I did Kara until the very end. For fun. Why don't I do them now? I started having new fun on new content. And with an epic lvl 80, I guess doing MC just isn't as much FUN. You know, a CHALLENGE?<br />
+<br />
+If you raid for gear, you should ask yourself why you want the gear, since you're clearly not having any fun.<br />
+<br />
+Gear for raid for fun. Raid for gear for... oh, doesn't work, does it?<br />
+<br />
+Bob.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Count Zero</div><div class="date">2009-05-04, 11:03 PM</div></div><div class="posttext">wow, priestgirl disappeared after a couple people came into the thread who weren't hesitant to clarify her misunderstandings ...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">skylla05</div><div class="date">2009-05-04, 11:05 PM</div></div><div class="posttext">This is just something that they put in the game to make people argue and tear each other apart. It's causing friction everywhere apparently. GG.<br />
+<br />
+<br />
+The only place I see this causing &quot;friction&quot; is on these boards, where I'm convinced the preschoolers of WoW hang out and post all day.<br />
+<br />
+<br />
+wow, priestgirl disappeared after a couple people came into the thread who weren't hesitant to clarify her misunderstandings ...<br />
+<br />
+Priestgirl posts a lot of incoherant crap around here. She's probably one of those guild &quot;gurls&quot; that actually sucks, but has a cute voice in vent so she's kept around for fapping purposes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kelfarr</div><div class="date">2009-05-04, 11:28 PM</div></div><div class="posttext">Stats are important because they work with the longevity of the thing. If right now, you can get a weapon which beats this in all but haste, come Icecrown Arthas hardmodes, you probably will get a weapon that destroys it. Which you may actually need for mana regeneration given how often they change how it works.<br />
+<br />
+For a MT healer, these stats are most likely going to do throughout all of the expansion. <br />
+<br />
+So while it is the PROC that makes it legendary, and the proc is good for ALL healers, and as a holy priest I'm not arguing this at all, it should last a MT longer. <br />
+<br />
+Then throwing in the proc, again it seems that if you want to give it to a raid healer you would be better off giving it to a holy priest or shaman than a druid, because it can proc on multiple people in an AoE heal.<br />
+<br />
+The mace is perfect for a holy paladin both stats and proc. Its great for druids and priests but it is not perfect and we can argue this all day but most serious progress guilds and the people at elitist jerks etc are going to be giving these to paladins.<br />
+<br />
+<br />
+I really think you are under estimating the powerful of this proc for AoE healers. Think of XT's Tantrum or Hodir's frozen blows, if the buff procs during those and the druid throws a wild growth out with his hots already ticking everyone is getting a shield for around 2-3k and that is half the encounter absorbed. It looks good for a MT healer then theory but the only time your MT really does is if they stood in something they shouldn't have, their healer or they didn't use their cooldowns at the proper time or they got one shot. MTs rarely ever have preventable deaths. Raid damage is the thing that kills off the raid and starts a wipe, being able to put shields on everyone in the raid is amazing, a lot more amazing than a shield on the tank, especially when a tank may dodge/block/parry/miss 4 attacks in a row and the shield was worthless.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">saranya</div><div class="date">2009-05-05, 12:28 AM</div></div><div class="posttext">Priestgirl: speak do you gooder Engrish? Gredyuate fr0m hi skool? Does you no how 2 read?<br />
+<br />
+I mean, wow, seriously, I normally don't flame people because there really is no point and in most cases it is quite immature, but in your specific case, you definitely take the prize at being utterly ignorant and clueless. I would suggest you go to the person you obviously ebay'ed your account from and ask for a training manual.<br />
+<br />
+*READ* the blue post and understand it next time before you post. So what if it procs on the last tick? Once it procs, it procs a blessing ON THE CASTER!!! That means for 15 seconds after it procs, all of that caster's heals (whether said heals are hots, aoe-type, giant heals, or a combination) will gain the shield on the target, regardless of overhealing or not. Make sense? This is, bar none, the best healing weapon in the game right now for any and all classes.<br />
+<br />
+Please leave this thread before you make an even bigger fool of yourself.<br />
+<br />
+<br />
+anger managment? your english is pretty bad.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thedankson</div><div class="date">2009-05-05, 12:29 AM</div></div><div class="posttext">MT healer vs. raid realer comes down to the fight. Certain fights will favor one or the other. I'd suggest giving it to your best, most consistent, most reliable healer regardless of what class/spec they play. <br />
+<br />
+<br />
+Obligatory- I play a Holy Priest so this OBVIOUSLY is best for raid healers!!1! C'mon we use spells and stuff that I can list while ignoring half of what the other classes do. GIMME GIMME GIMME.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pheus</div><div class="date">2009-05-05, 01:49 AM</div></div><div class="posttext">anger managment? your english is pretty bad.<br />
+<br />
+<br />
+why don't you fk off with your useless posts?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Terracresta</div><div class="date">2009-05-05, 02:08 AM</div></div><div class="posttext">For example your tank has 250k maxhp, is currently at 50k and only recives your heals while not getting any dmg. Then the shield could stack up to 20k, if you can heal 200k in 15secs. Nice in theory...<br />
+<br />
+I think 20k is the max absorb potential, multiple shields could stack up to 20k per shield. To bad there is no example how it will work with multiple targets.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SilentNSly</div><div class="date">2009-05-05, 02:53 AM</div></div><div class="posttext">&quot;The shield can grow to a maximum size of 20,000 damage absorbed.&quot;<br />
+<br />
+<br />
+An extra 20K effective health for the tank is nice...<br />
+<br />
+... but an extra 20K effective health to the raid (via Chain Heals, Prayer of Healing, etc) is nicer! ;D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vrograth</div><div class="date">2009-05-05, 04:13 AM</div></div><div class="posttext">For example your tank has 250k maxhp, is currently at 50k and only recives your heals while not getting any dmg. Then the shield could stack up to 20k, if you can heal 200k in 15secs. Nice in theory...<br />
+<br />
+I think 20k is the max absorb potential, multiple shields could stack up to 20k per shield. To bad there is no example how it will work with multiple targets.<br />
+<br />
+<br />
+first of all: sorry for my bad english. it's not my native tongue<br />
+<br />
+It also could stack up to 20k if the tank has only 40k life because even overheal is added to the shield after you gain the buff. And to stack up a shield witch absorbs 20k you need a total heal (overheal included) of ~135k not 200k (135,000 * 0,15 = 20,250) ... well, still a lot ;)<br />
+<br />
+And I agree with the ppl who say that the death of the MT isn't the main reason of wipes.<br />
+heavy or (even worse) periodic damage to the raid is definitely more often reason of a wipe.<br />
+<br />
+<br />
+A druid has a huge amount of hots ticking all at once, all of which provide a chance for the proc to come into effect. Let's say the druid has 1 lifebloom stack, 2 rejuvenation, 1 regrowth, wild growth on 6 people, and invidual lifeblooms on 4 people ticking at all times on average. That's 12 chances to proc the equip effect every second. Even with counting overheals the druid will nearly always be proccing it almost exactly at the 45 second mark. [... and so on]<br />
+/totally agree<br />
+<br />
+All in all:<br />
+I wouldn't give this mace to anybody depending on the class/specc.<br />
+Look for somebody who definitely understands his/hers job and who actively supported your raid in the past. Getting Val'anyr, Hammer of the Ancient Kings, is (and should be) a appreciation*.<br />
+<br />
+*) I hope this word is correct</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zeonz</div><div class="date">2009-05-05, 04:50 AM</div></div><div class="posttext">1) it's 15% of the amount healed, including the heal that triggers it. to get the total of 20.000 shielding you'd need to do (( 100/15 = 6,66 ) 20.00 X 6,66 = )132.200 healing. that's ( 132.200 / 15 = ) 8.81k HPS total healing. however if you also include the posible healing from the activating heal it could be upto 20.000 different, and therefore around 1.1k hps less needed.<br />
+<br />
+however, aoe healing can have mutch higher numbers. especialy with a holy priest using POH and COH ( or hymn of hope ) in which case the effect of the hammer can be maximised beforehand or during an encounter that's aoe heavy ( including mimiron! )<br />
+<br />
+2) some people will see this as a simple my healing X 1.15, that's just not true. to start with it counts for all your healings once you got the buff, even those you already casted. which means HOTS. not only that, but it goes from your total healing. so spamming any healing to get that shield to max in those 15 second works. not just your effective healing. the hot part can make the druid for those 15 second more usabel, on the other hand, the use of the dots themself can be negleted by the shield part. whereas direct healings would not suffer from this, as they would simply overheal anyway.<br />
+<br />
+3) it's still pretty random, a 10% chance on any heal hot/direct/channeled to cause this, ( with 45 second internal cooldown ), which means a fast casting class like paladin or dpriest or, the the hots from druids has the most chance to activate it, making the best use of the ICD ( internal cooldown ). which means at BEST you'd have 30 seconds between activation of the blessings. however as it triggers of any heal, and not any cast, a aoe healing ( multiple targets ) will have a better chance at proccing it then a paladin/dpriest will probaly have.<br />
+<br />
+4) the situation, is all depending. the most obvious choice for a paladin with the mace would be tankhealing, but that's also it's weakness. while not imposible it's a general fact that some classes are favoured in some situations more then others, but also work better. due to being more versatile or having a differen/bigger aresenal of spells. purely looking at the role you could give a healer i'd be best to give it to a priest/druid/shaman. as they are more versatile generaly speaking.<br />
+<br />
+5) the TANK, sure it may not look like a big factor, and generaly speaking it's not. but what healer would gain the most out there tank ability's. a druid/warrior just needs healing, and has to receive some dmg for there rage, so shielding may partialy work counteractive, thereby making the disc priest a little less obviouse choice. a paladin must take enough dmg to keep there mana up, as long as a shield does not disturb this it has no bad sides, however i think ( not completely sure ) they got some buff that triggers if they get hit, a shield absorb does not count as a hit and could disrupt, or intensivy ( if the buff also has a passive wanted part ) the buff. and then there's DK, they got absolotely no downside to shields, in fact there bone shield has an advantage from it, as long as the shield absorbs, there bone shield does not lose charges, but does keep there dmg reduction up, which can make there ability's even better. so depending on the situation either a dpriest or another priest could be favoured over another healer. giving even more shields with already there PW:S and divine aegis could be enough to give a nice edge, allowing more shields to stack.<br />
+<br />
+6) BUT, there's 1 more factor that applys to only 1 class. dualspeccing. for pure stats a dpriest/paladin would have the most use of it, for pure HPS output and general shielding an aoe class will have the most use of it. but there is 1 class that can benefit from nearly all factors, perhaps not all at once but at choice. a dualspecced holy/disc priest. taking the best from nearly all, if not all healing aspects.<br />
+<br />
+for this reason alone, i believe a dualspecced holy/disc healing priest wi'll have the most use of the hammer, giving just a slightly better edge above all the other healers, including non-dualspecced healing priests.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zeonz</div><div class="date">2009-05-05, 04:58 AM</div></div><div class="posttext">I take it that the shield only benefits from &quot;active&quot; heals originating from the healer, not the &quot;passive&quot; ones, which the target heals &quot;itself&quot; with. This would include judgements and Prayer of Mending heals also.<br />
+<br />
+<br />
+actualy the POM is still trackabel back to the original caster. and this happends.<br />
+however the fact that PW:S does not heal, but gives a shield means it has no +hp effect, therefor does not activate it. whereas the glyph does heals and gives a +hp effect, and still tracks back to the caster of the shield, and the person who activated the glyph. in which case the secondary effect still causes the hammer's effect.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vrograth</div><div class="date">2009-05-05, 05:01 AM</div></div><div class="posttext">5) [...] a druid/warrior just needs healing, and has to receive some dmg for there rage, so shielding may partialy work counteractive, [...]<br />
+<br />
+Please correct me if I'm wrong. But together with the patch where druids got savage defense there was also a change so that even absorbed damage still grants rage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">OrganisedChaos</div><div class="date">2009-05-05, 05:12 AM</div></div><div class="posttext">Can the hammer proc off of earthshield? <br />
+<br />
+Does earthshield add to the healing done when the shield is up? (if so does that include its overheals?)<br />
+<br />
+Can the hammer proc off of healing stream totem? <br />
+<br />
+Does healing stream totem add to the healing done when the shield is up? (if so, does that include its overheals?)<br />
+<br />
+<br />
+Is this scenario possible (eg. is this how the proc works): A ch spamming shaman uses earthshield on the main tank. The proc occurs while the shaman is chain healing the melee. 15% of the heals are then applied to the mt's shield, yet he quickly he takes one large hit destroying the shield. The 15 sec buff is still up while the shaman is spamming chain heal. Do all the targets of these next chain heals (up until the 15sec buff has worn off) all receive shields themselves?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zeonz</div><div class="date">2009-05-05, 05:30 AM</div></div><div class="posttext">Can the hammer proc off of earthshield? <br />
+<br />
+Does earthshield add to the healing done when the shield is up? (if so does that include its overheals?)<br />
+<br />
+Can the hammer proc off of healing stream totem? <br />
+<br />
+Does healing stream totem add to the healing done when the shield is up? (if so, does that include its overheals?)<br />
+<br />
+<br />
+Is this scenario possible (eg. is this how the proc works): A ch spamming shaman uses earthshield on the main tank. The proc occurs while the shaman is chain healing the melee. 15% of the heals are then applied to the mt's shield, yet he quickly he takes one large hit destroying the shield. The 15 sec buff is still up while the shaman is spamming chain heal. Do all the targets of these next chain heals (up until the 15sec buff has worn off) all receive shields themselves?<br />
+<br />
+<br />
+i unfortenatly can't tell you everything, becaus a part of what i tell is speculations, and another part is the fact that there is not yet 1 person who has it.<br />
+<br />
+but from the text/explenation i can tell you this.<br />
+<br />
+i think earthshield does adds to the healing done, as it's still XXX earthschield heals for YYY. however the totem is a bit harder, the healing from the totem seems to be tracked back to the totem, which then again would have to be tracked back to you. so im not sure about that.<br />
+<br />
+a CH spamming shaman uses earthshield on the tank. the earthshield ( if posible, im gona assume it is ) then procs the blessing for the shaman. all the healings from the shaman ( may or may not include totems ) are then affected by the blessing. the person who receives A healing from the shaman, then has 15% of that total healing converted to a shield. the earthshield who procs on the tank gives the tank a small shield 15% of the healing from the earthshield. then the CH from the shaman hit's target X, target X gets 15% of the CH healing ( and other healings from that shaman ) converted to the shield. the 2nd target gets this to, of course now the reduced version of the CH chainhealing. however as long as the CH does not hit the tank, the tank's shield does not go up from the use of CH, it can go up from another charge of the earthshield ( or when CH does hit the tank ).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">OrganisedChaos</div><div class="date">2009-05-05, 05:54 AM</div></div><div class="posttext">Okay, thanks for the reply.<br />
+<br />
+What your saying is you have to heal the person with the shield, in order for the shield to increase. You cant just have the shield on the mt and spam ch on the melee and have it add to the mt's shield.<br />
+<br />
+The thing that confused me was Bornakk saying &quot;you gain a buff (the Blessing) on yourself. Now all of your heals for the next 15 sec cause an 8 sec damage shield.&quot; It doesn't specially state &quot;all heals on the same target&quot;.<br />
+<br />
+Also what does it mean when he says &quot;The shield stacks with itself&quot; but later says &quot;If you are lucky enough to have two hammers in your group, then they will both contribute to the same bubble.&quot;?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nescáfè</div><div class="date">2009-05-05, 08:30 AM</div></div><div class="posttext">What priestgirl and others have failed to realize is that even if a heal for 1k from a hot (creating a shield of 150) is then broken by a large hit, the next heal you will cast will put up a new shield on the target. Therefore, the proc will not be &quot;wasted&quot;. When the healer with the mace is under the proc effect, all of the heals cast by that healer will put up shields, no matter if an earlier shield has been broken. <br />
+<br />
+When, for example, a druid would get the proc, he can make a decision of two scenarios:<br />
+1. if the MT will take much damage, you will hot the MT fully and spam nourish, thereby absorbing a lot of damage on the tank.<br />
+2. if there is much raid damage at the moment of the procc, he can raid heal and thereby mitigate raid damage by spamming the raid. <br />
+<br />
+for these reasons, paladins do not benefit more from the proc since they are not very good raid healers and can thereby only do example 1, whilst all other healers can do both examples.<br />
+<br />
+With this said, paladins would not use the proc optimally since they cannot do both things as well as other healing classes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pokchop</div><div class="date">2009-05-05, 08:41 AM</div></div><div class="posttext">-_-<br />
+<br />
+I can't believe so many people are having a hard time understanding the proc. Then again I have a disc priest and the proc is basically a slightly modified version of divine aegis. So I guess I have a head start???<br />
+<br />
+Anyway, Blizzard's claim that it benefits all healers equally is total bullcrap. People are overestimating the shielding part. It is NOT an extra 15% healing or overheal (idiot) proof. Shields can &quot;overheal&quot; and they do that by fading off and going unused i.e. place a PW:S on yourself, but you never take damage and you wasted your mana casting that PW:S and hence &quot;overshielding&quot;???<br />
+<br />
+So the proc has most use in tank healing and if the fight has constant raid damage (with damage occurring enough to consume the 8s shield) then good there too, but ALL fights no matter what involve healing a tank constantly so... yeah seeing as how it doesn't proc off disc shields and disc raw healing is ~30% less than other healers it pushes out disc and leaves pallies as the class that benefit the most. Whether you want to give it to your most dedicated healer is fine, but it doesn't change the fact that one class or another benefit more from the proc and blizzard claimed it was going to be equal. The real big question is whether that difference is big enough to matter.<br />
+<br />
+Strangely enough the mace is perfect stat wise for disc, but it sucks in terms of the proc. Go fig!<br />
+<br />
+Also, since the shield stacks with itself, I figure blizzard thinks the mace's true capability doesn't start to shine until you have multiple healers with it for maximum stackage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nescáfè</div><div class="date">2009-05-05, 08:48 AM</div></div><div class="posttext">-_-<br />
+<br />
+I can't believe so many people are having a hard time understanding the proc. Then again I have a disc priest and the proc is basically a slightly modified version of divine aegis. So I guess I have a head start???<br />
+<br />
+Anyway, Blizzard's claim that it benefits all healers equally is total bullcrap. People are overestimating the shielding part. It is NOT an extra 15% healing or overheal (idiot) proof. Shields can &quot;overheal&quot; and they do that by fading off and going unused i.e. place a PW:S on yourself, but you never take damage and you wasted your mana casting that PW:S and hence &quot;overshielding&quot;???<br />
+<br />
+So the proc has most use in tank healing and if the fight has constant raid damage (with damage occurring enough to consume the 8s shield) then good there too, but ALL fights no matter what involve healing a tank constantly so... yeah seeing as how it doesn't proc off disc shields and disc raw healing is ~30% less than other healers it pushes out disc and leaves pallies as the class that benefit the most. Whether you want to give it to your most dedicated healer is fine, but it doesn't change the fact that one class or another benefit more from the proc and blizzard claimed it was going to be equal. The real big question is whether that difference is big enough to matter.<br />
+<br />
+Strangely enough the mace is perfect stat wise for disc, but it sucks in terms of the proc. Go fig!<br />
+<br />
+Also, since the shield stacks with itself, I figure blizzard thinks the mace's true capability doesn't start to shine until you have multiple healers with it for maximum stackage.<br />
+<br />
+<br />
+as you can see, pokchop clearly doesn't understand how it works. read up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RyukenRT</div><div class="date">2009-05-05, 09:14 AM</div></div><div class="posttext">-_-<br />
+<br />
+I can't believe so many people are having a hard time understanding the proc. Then again I have a disc priest and the proc is basically a slightly modified version of divine aegis. So I guess I have a head start???<br />
+<br />
+Anyway, Blizzard's claim that it benefits all healers equally is total bullcrap. People are overestimating the shielding part. It is NOT an extra 15% healing or overheal (idiot) proof. Shields can &quot;overheal&quot; and they do that by fading off and going unused i.e. place a PW:S on yourself, but you never take damage and you wasted your mana casting that PW:S and hence &quot;overshielding&quot;???<br />
+<br />
+So the proc has most use in tank healing and if the fight has constant raid damage (with damage occurring enough to consume the 8s shield) then good there too, but ALL fights no matter what involve healing a tank constantly so... yeah seeing as how it doesn't proc off disc shields and disc raw healing is ~30% less than other healers it pushes out disc and leaves pallies as the class that benefit the most. Whether you want to give it to your most dedicated healer is fine, but it doesn't change the fact that one class or another benefit more from the proc and blizzard claimed it was going to be equal. The real big question is whether that difference is big enough to matter.<br />
+<br />
+Strangely enough the mace is perfect stat wise for disc, but it sucks in terms of the proc. Go fig!<br />
+<br />
+Also, since the shield stacks with itself, I figure blizzard thinks the mace's true capability doesn't start to shine until you have multiple healers with it for maximum stackage.<br />
+<br />
+<br />
+Very nicely sayed.5 star post.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Terlig</div><div class="date">2009-05-05, 09:19 AM</div></div><div class="posttext">What priestgirl and others have failed to realize is that even if a heal for 1k from a hot (creating a shield of 150) is then broken by a large hit, the next heal you will cast will put up a new shield on the target. Therefore, the proc will not be &quot;wasted&quot;. When the healer with the mace is under the proc effect, all of the heals cast by that healer will put up shields, no matter if an earlier shield has been broken. <br />
+<br />
+When, for example, a druid would get the proc, he can make a decision of two scenarios:<br />
+1. if the MT will take much damage, you will hot the MT fully and spam nourish, thereby absorbing a lot of damage on the tank.<br />
+2. if there is much raid damage at the moment of the procc, he can raid heal and thereby mitigate raid damage by spamming the raid. <br />
+<br />
+for these reasons, paladins do not benefit more from the proc since they are not very good raid healers and can thereby only do example 1, whilst all other healers can do both examples.<br />
+<br />
+With this said, paladins would not use the proc optimally since they cannot do both things as well as other healing classes. <br />
+<br />
+<br />
+I disagree. First mistake you are doing is overvaluing AoE utility of this proc. It is completely unreliable, because buff can pop when no one needs AoE heal. In AoE situation, even if you will get buff at the correct time it will place really tiny shields on ppls, if you think about Ulduar it is NOTHING. Especially with it's iCD. It is simply waste of buff if you are going to use it for AoE heals IMO.<br />
+The best use of this mace is single target healing. And pally has best direct healing single target spells - not to mention that Holy Lights will cover melee in range with tiny shields as well (Glyph of Holy Light). Not to mention Beacon of Light which can place 2 BIG Shields at the same time, both on choosen, not random targets (f.e. MT and Offtank), this is something you can't do with other classes, so i could say - it is not optimal for other classes, if you argue like that. And not to mention JoL, which if it works with this buff, is simply completely overpowered. And i bet it works...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Atylia</div><div class="date">2009-05-05, 10:23 AM</div></div><div class="posttext">It has been confirmed that overhealing will also count towards the shield when you have the buff, and that the initial effective heal will also count towards the shield.<br />
+<br />
+NOW THE BIG QUESTION:<br />
+Does the buff proc from Glyph of Holy Light or Judgement of Light?<br />
+<br />
+If this is the case Paladins will have a very high uptime of the buff, like druids.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sphinxz</div><div class="date">2009-05-05, 10:23 AM</div></div><div class="posttext">This proc is indeed great for everyone, I agree that the randomness of the proc can be a bit of problem for timing it with raid damage :) <br />
+On a second hand I think a bit of the same problem would occur for a tank healer, for example it would be great if it procced on Mimirons plasma wave, but there is a big chance it wont, still overall a really nice weapon :D<br />
+As already stated, this should go to your best and most active healer so it would for the best use, imo blizz did a good job on this. :)<br />
+<br />
+As for PvP this, to me, seems extremely overpowered, especially as disc priest (Im a priest myself so aint complaining). Gonna have to see for that<br />
+<br />
+Sphinxz</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">scw55</div><div class="date">2009-05-05, 11:30 AM</div></div><div class="posttext">It's all in well saying this is &quot;x class priority because of blah&quot;. But I think some of you are missing the point that this is a legendary. Not some kind of rather awsome epic.<br />
+You don't give a legendary to the best class if you know that player will probably go away and bugger off.<br />
+You don't give a legendary to the person with the highest ep/gp or dkp.<br />
+You don't give a legendary based on Peggle loot.<br />
+You should do a loot council and discuss it at length like people did in the past with all legendaries.<br />
+The healer who is the must trustworthy and loyal ought to get this mace, regardless of class. Class should only be the deciding factor if it's close between more than one person.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tenik</div><div class="date">2009-05-05, 11:51 AM</div></div><div class="posttext">It's all in well saying this is &quot;x class priority because of blah&quot;. But I think some of you are missing the point that this is a legendary. Not some kind of rather awsome epic.<br />
+You don't give a legendary to the best class if you know that player will probably go away and bugger off.<br />
+You don't give a legendary to the person with the highest ep/gp or dkp.<br />
+You don't give a legendary based on Peggle loot.<br />
+You should do a loot council and discuss it at length like people did in the past with all legendaries.<br />
+The healer who is the must trustworthy and loyal ought to get this mace, regardless of class. Class should only be the deciding factor if it's close between more than one person.<br />
+<br />
+<br />
+Yes very nice thing to say and very nice efforts from blizz to try to make this item very good for all classes though...<br />
+It shields one target and that is only VERY useful for MT healers... you don't shield dps's... at least i don't expect any discipline Priest to shield me (Rogue here =D).<br />
+What blizzard tried to make is the best healing weapon for tank healers so let's imagine blizzard change druids to be the best tank healers instead of palas... then it would also work with hots...<br />
+Great weapon for Palas/Disc Priests... it is no where near as good for droods or resto shamans atm.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">OrganisedChaos</div><div class="date">2009-05-05, 12:02 PM</div></div><div class="posttext">It shields one target and that is only VERY useful for MT healers... you don't shield dps's... at least i don't expect any discipline Priest to shield me (Rogue here =D).<br />
+<br />
+You're probably dead too often for a shield to be useful. Amirite or amirite?!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soulblaze</div><div class="date">2009-05-05, 12:19 PM</div></div><div class="posttext">[...] you don't shield dps's... at least i don't expect any discipline Priest to shield me (Rogue here =D). [...]<br />
+Well, if there's raid damage, you've got light bomb, you're in Kologarn's grip... just to name a few -- if any of this happens to you, you'll get a shield from me (Disc priest here). Not shielding damage dealers in certain situations is equal to jeopardizing overall raid DPS -- someone might actually die, and even though I'm certainly not one to overrate PW:S, a shield can make a difference between &quot;life and death&quot;, so to say.<br />
+Saying a disc priest doesn't shield anyone else than the MT... plain wrong in my book. = )<br />
+<br />
+I'm still trying to find out if that mace is useful for me as Disc. Well, the next 29 fragments go to one of our pallies anyway, but I didn't even roll on our first fragment because even without the clarification from Blizz I knew that PW:S wouldn't proc the stuff, and I highly doubt the glyphed shield would. I have that glyph, but I'm not convinced, although I'm not sure if that glyph effect is a direct heal or no -- it's more of a passively generated effect. Of course it's a &quot;direct&quot; heal in terms of that it instantly generates a small amount of healing, it can overheal and it can crit, but a direct heal to me is something that's defined over the nature of the spell itself (a Flash Heal, for example, is as direct a heal as it can get, because the spell description says it heals). The nature of PW:S is not to heal but to absorb, and I don't think even a glyph with a healing component to it would change that nature.<br />
+If the glyph can proc the shield, though... considering the nature of gaming communities and guilds and all that &quot;evaluation&quot; going on on this level, this would mean that disc priests would automatically be &quot;forced&quot; to get that one glyph just so they would be &quot;eligible&quot; to roll on the mace at all. (There ARE priests who value the Dispel glyph over the shield one.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Avrillavign</div><div class="date">2009-05-05, 12:45 PM</div></div><div class="posttext">Hunter weapon.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zeonz</div><div class="date">2009-05-05, 12:50 PM</div></div><div class="posttext">just a few things some of you seem to forget<br />
+<br />
+1) the item is great in terms of stats alone, and will be an upgrade to any healer.<br />
+2) every healer has a use of it's effect, however some may have more use of it in other situations.<br />
+3) wow is a game of min-maxing, when your talking about an item with a reasonable drop chance and a small improvement if you replace it, then it's not mutch of a biggy if it's not perfect for you, or near perfect for someone else. however with an item that may easily take 15 weeks to collect, and is the best healing weapon in the game, you have to consider who should take it.<br />
+4) yes, you might not always proc it when wanted, but take this into account, you get the buff for 15 seconds, and once the shield is applied it stays for 8 seconds, so you could theoreticly ( if lucky enough ) shield someone for 23 out of the 45 seconds, which means at perfect state you could get more then 50% upkeep of the shield.<br />
+5) yes, a disc priest generaly has less healing output, however if they change there healing once they get the buff. a disc priest can get as high as the other healers, but they have to stop using there own shields for the duration of the buff, and rely on the mace to do that. then with spamming things like Gheal ( with enough haste ) can prove a lot better then there normal healing. which normaly is a no no as using a shield is slightly better, or gheal is to slow. but with the passive 15% total healing = shield ( + other procs from the disc priest ) this balance can be shifted just right.<br />
+<br />
+@Tenik<br />
+you underestimate the power of the shields. unlike healings a shield is not only instant, but also take's the first hit. which means that you could count the strenght of the shield to your own HP, and then be capabel of surviving a hit bigger then the amount of HP you got!<br />
+moreover becaus PW:S is instant and spamabel it's a great way to quickly mitigate damage. for example, we had a disc priest on razorback ( pre-nerf, the hard times ) to ensure that the fireball would not double hit someone and kill them, with the use of 1 disc priest giving shields to these people they could survive multiple fireballs in a row, which caused us not to lose any more dps to him, which meant we killed him.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc39b41cda48</div><div class="date">2009-05-05, 01:08 PM</div></div><div class="posttext">Case closed. Give the mace fragments to your most deserving raider. Ignore ALL other factors.<br />
+Yes this is the correct way of distributing legendaries (_;<br />
+<br />
+ps. I just went through some WWSes.. Any healer in the raid which is not slacking will proc blessing every 45 secs and will have shield up for 20K. Stats are irrelevant since this mace special thing compensates any &quot;lost&quot; stats for several times.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Khabarach</div><div class="date">2009-05-05, 01:28 PM</div></div><div class="posttext">as you can see, pokchop clearly doesn't understand how it works. read up.<br />
+Perhaps you should reread what he wrote, everything he said is correct. The mace is far weaker for Disc than any other healer<br />
+<br />
+The reason it is weaker has nothing to do with the proc rate and everything to do with the fact that a huge chunk of Disc's effectiveness is mitigation rather than actual healing.<br />
+<br />
+Think of it this way. With the blessing up, a Disc casts a (glyphed) PW:S on someone. Taking an average 7k worth of PW:S, the glyph will heal for 1.5k. The glyph is the only thing that heals here, so the blessing puts a shield of 225 on the target.<br />
+<br />
+Any other healer healing someone for 8.5k (the same value as glyphed PW:S), the blessing puts a shield of 1275 on the target.<br />
+<br />
+5) yes, a disc priest generaly has less healing output, however if they change there healing once they get the buff. a disc priest can get as high as the other healers,Due to the fact that Disc has lots of mitigation, Disc's actual heals are weaker than any other healer, in fact our gheal only heals for 4% more than a shadow priests does.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zeonz</div><div class="date">2009-05-05, 01:55 PM</div></div><div class="posttext">Any other healer healing someone for 8.5k (the same value as glyphed PW:S), the blessing puts a shield of 1275 on the target.Due to the fact that Disc has lots of mitigation, Disc's actual heals are weaker than any other healer, in fact our gheal only heals for 4% more than a shadow priests does. <br />
+<br />
+<br />
+sure, if you assume the only factor is spellpower.<br />
+<br />
+but you forgot to calculate in the facts of CRIT, HASTE, grace, divine aegis, Power Infusion, divine fury, and posibly inspiration.<br />
+<br />
+a reasonable geared dpriest can get 9k healing with gheal every 2 secs.<br />
+against a 4.5k healing with Fheal every 1.2 secs<br />
+however, normaly gheal tends to be just a little to slow, but what if we also put the 15% of the shield in it?<br />
+gheal has an added 1350<br />
+fheal has an added 675<br />
+<br />
+if you also start using crit in it, then very quickly gheal can take over the use of pw:S.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rimmer</div><div class="date">2009-05-05, 02:11 PM</div></div><div class="posttext">I read this like 10 times that PW: Shield doesn't heal therefore this wouldn't be a good disc priest weapon. Any disc priest worth anything has http://www.wowhead.com/?item=42408Glyph of Power Word Shield and therefore does heal with it. <br />
+<br />
+Just wanted to clear that up. <br />
+<br />
+<br />
+that and a disc priest cast sequence isnt pw:s,/dance, repeat. I'm pretty sure theres some heals in there as well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Khabarach</div><div class="date">2009-05-05, 02:29 PM</div></div><div class="posttext">sure, if you assume the only factor is spellpower.<br />
+<br />
+but you forgot to calculate in the facts of CRIT, HASTE, grace, divine aegis, Power Infusion, divine fury, and posibly inspiration.<br />
+<br />
+a reasonable geared dpriest can get 9k healing with gheal every 2 secs.<br />
+against a 4.5k healing with Fheal every 1.2 secs<br />
+however, normaly gheal tends to be just a little to slow, but what if we also put the 15% of the shield in it?<br />
+gheal has an added 1350<br />
+fheal has an added 675<br />
+<br />
+if you also start using crit in it, then very quickly gheal can take over the use of pw:S.You also need to consider that gheal is the least efficient single target heal for Disc, plus you are missing out on 2 rapture returns. <br />
+<br />
+Overall, it's still worth using as Disc, but the point is Disc will gain less from the proc than any other healer.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deathcold</div><div class="date">2009-05-05, 03:11 PM</div></div><div class="posttext">Cool. So we'll all just start in the arena naked then. Or are you saying it would be less OP to have the awesome pve gear in battlegrounds to grind for the basic pvp gear? Then you could only wear that BG gear into the arena? The gear that requires no arena points to acquire, that is. Then grind in the arena for all /that/ gear which you could then only use to do more arena.<br />
+<br />
+Brilliant.<br />
+<br />
+/sarcasm<br />
+<br />
+<br />
+That guy raid for gear. Arenas was a huge mistake made by blizzard in my opnion, it need so many changes that make it almost impossible to fix.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">saranya</div><div class="date">2009-05-05, 03:54 PM</div></div><div class="posttext">why don't you fk off with your useless posts?<br />
+<br />
+<br />
+ironic, no?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jincuteguy</div><div class="date">2009-05-05, 05:34 PM</div></div><div class="posttext">Ok so I have a few questions regarding if a paladin got the hammer.<br />
+<br />
+1) The paladin casts Beacon of Light on MT, he casts a heal on the tank and gained the blessing<br />
+2) The paladin casts Holy Light which crits for 20k on another target, not the tank.<br />
+<br />
+The shield will absorb 15% of 20k or 15% of 20k+ beacon of light for that target? Does anyone know?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shieva</div><div class="date">2009-05-05, 08:41 PM</div></div><div class="posttext">Ok so I have a few questions regarding if a paladin got the hammer.<br />
+<br />
+1) The paladin casts Beacon of Light on MT, he casts a heal on the tank and gained the blessing<br />
+2) The paladin casts Holy Light which crits for 20k on another target, not the tank.<br />
+<br />
+The shield will absorb 15% of 20k or 15% of 20k+ beacon of light for that target? Does anyone know?<br />
+<br />
+<br />
+<br />
+<br />
+From what I gather. It would put a shield on the on the other target to absorb 3.5k damage, and a shield on the MT for 3.5k damage. Whoever receives a heal from a healer with the buff gets a shield for 15% of the amount healed. Feel free to correct me if I'm wrong.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sphinxz</div><div class="date">2009-05-05, 08:48 PM</div></div><div class="posttext">Hunter weapon.<br />
+<br />
+<br />
+Are you out of your mind? Tell me what stats on that a hunter can use... <br />
+Jezuz christ retard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CSJenova</div><div class="date">2009-05-05, 09:43 PM</div></div><div class="posttext">Are you out of your mind? Tell me what stats on that a hunter can use... <br />
+Jezuz christ retard.<br />
+<br />
+<br />
+Because hunters can use maces to begin with amirite? You know...95% of the time people post &quot;hunter weapon&quot; they are being sarcastic...even in a thread ABOUT a hunter weapon. Perhaps you were being sarcastic as well...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fabuloso</div><div class="date">2009-05-06, 12:13 AM</div></div><div class="posttext">Val'anyr Proc<br />
+If it helps to explain it, the blessing is triggered by healing being done. If you cast a heal on a fully-healed target, you are doing no healing. The bubble itself is triggered by a heal spell being cast. The proc then looks for how much your spell would heal and makes a bubble of 15% of that number. The amount actually healed by the spell isn't a factor for purposes of the bubble. That is why we tried to explain that hots that tick but don't heal cannot cause the blessing on you (the healer) but can contribute to the bubble on the target.<br />
+<br />
+If the bubble goes down (because it took enough damage or 8 sec have elapsed), then you next heal will cause another bubble for as long as the blessing lasts (which is 15 sec). (Source)<br />
+<br />
+Looks like this can be easily exploited... the MT can strip naked before the boss pull and put on all his gear, this will create a huge HP gap which the healer can heal to create a huge bubble right before the pull ...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kelesti</div><div class="date">2009-05-06, 01:32 AM</div></div><div class="posttext">What fabuloso said. Also, people already do that by spamming Penance pre-pull, it's not hard to get that 10k buffer for that first hit.<br />
+<br />
+Second: To all the debate about Discipline proc'ing the shield effects off of Power Word: Shield.<br />
+<br />
+The proc is based off of healing done. Other than Penance (omgsex) which is on a cooldown, HPS is kinda limited, so your shields will pretty much be smaller than anybody else's. You do get the shield-proc off of the Glyph of Power Word: Shield, but given the proc effect is a percentage off of healing done, that's a pretty crappy case to make.<br />
+<br />
+It compliments our already massive buffer of mitigation abilities, but for the most &quot;oomph&quot; value the Discipline Priest goes back to being the red-headed bastard child and steps out for the first mace (or two).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RyukenRT</div><div class="date">2009-05-06, 05:03 AM</div></div><div class="posttext">In the end it is true what some have already sayed and i agree compleatly.<br />
+This Item is decent for all healer classes.<br />
+This Item will be given to the person with more trust in their Guild.<br />
+This Item will be given to the person who for the GM and Officers think has a clue of how to use it properly.<br />
+So in all fairness, you might say oh its best for this class or its best for that class, but its for all to use and its up to the guild to think on who to give it to.<br />
+<br />
+Just adding 1 more thing cuz i am a pally and have been doing my own research and this is more for pallys point of view.<br />
+If added this mace to your gear, 1st idea poped in the mind is trying to put a equal stats on your gear between int, crit, haste and spell power, i noticed that its possible with 4 t8.25 + Hard Mode Gear + Crafted + 2 Decent Rings, either the 2 from Ulduar or Manifested Pain and 1 from Ulduar + Pandora and Darkmoon fair trinkets you end up with enouth spell power on the 13th second to be able to get to the 20k shield absorve with or without crits, ofc with crits its faster, but my point aint that, my point is the following and i will explain why i sayed 4 t8.25, With the ammount of spell power you get from it your Sacred Shield total Absorve will be = to 20k aswell, so if you are going to get this mace, its usefull if you put both working at the same time while having the 4th set bonus so that the sacred shield will be more active. Oh and no, i didnt spam my gear of spell power gems :p, mostly luminous topaz, 1 int stormjewel, a couple of Dazzling Emeralds to get the socket bonus active and JC gems.<br />
+<br />
+And to answer the question about JoL and / or Glyph of Holy Light, i dont see why they shouldnt, so its to see, as for the question of Beacon of Light, i dont think it will sadly, besides the point if it did wouldnt create a huge shield unless it was to either the pally that casted the beacon or to a tank that was gonna taunt the boss next, due to beacon only transfering the ammount of effective healing done, so if the main idea of the pally that is on the MT is to spam even more than usual to put that shield more than decent, there will be alot of overhealing and so the other tank that is with beacon would only get the effective part so not rly generating a huge shield as the Current tank ones would.<br />
+<br />
+In all fairness, id love to see more than a healer with this weapon, pally, druid, shammy or priest, on all classes would be very nice for the raid survivability.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gzilia</div><div class="date">2009-05-06, 06:49 AM</div></div><div class="posttext">Priestgirl posts a lot of incoherant crap around here. She's probably one of those guild &quot;gurls&quot; that actually sucks, but has a cute voice in vent so she's kept around for fapping purposes.<br />
+<br />
+<br />
+qouted for epic</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soulblaze</div><div class="date">2009-05-06, 09:29 AM</div></div><div class="posttext">What fabuloso said. Also, people already do that by spamming Penance pre-pull, it's not hard to get that 10k buffer for that first hit.<br />
+<br />
+Second: To all the debate about Discipline proc'ing the shield effects off of Power Word: Shield.<br />
+<br />
+The proc is based off of healing done. Other than Penance (omgsex) which is on a cooldown, HPS is kinda limited, so your shields will pretty much be smaller than anybody else's. You do get the shield-proc off of the Glyph of Power Word: Shield, but given the proc effect is a percentage off of healing done, that's a pretty crappy case to make.<br />
+<br />
+It compliments our already massive buffer of mitigation abilities, but for the most &quot;oomph&quot; value the Discipline Priest goes back to being the red-headed bastard child and steps out for the first mace (or two).<br />
+<br />
+<br />
+Thanks for clarifying, much appreciated. <br />
+So yeah, that definitely means I'm not going to roll on future fragments for a while. ; ) (Not because they won't let me, but because the first few maces are worth more in the hands of my fellow healers.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tribble</div><div class="date">2009-05-06, 02:52 PM</div></div><div class="posttext">I don't wanna be a bitch or maybe I am just old fashioned but....I really do not see the value of legendary items anymore after the moment the warglaives were in tbc.<br />
+<br />
+I mean....ok the warglaives were awesome as hell that is a fact, and I wont discuss about that. <br />
+<br />
+The thing I do discuss about is the effort that you have to put in to get the item. I mean, Thunderfury had the 2 blessings which had a what 0.01% droprate or something and then after that you still had to do a shitload of quests incl killing a 40 men raid boss....<br />
+<br />
+nowdays you just farm a raid and if blizz is nice they let the legendary stuff drop</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tribble</div><div class="date">2009-05-06, 02:53 PM</div></div><div class="posttext">Are you out of your mind? Tell me what stats on that a hunter can use... <br />
+Jezuz christ retard.<br />
+<br />
+<br />
+DUDE!!!<br />
+It has haste and intellect!!! Hunter weapon100%!!!!!!!!!!!!!<br />
+<br />
+<br />
+<br />
+::)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">procne</div><div class="date">2009-05-06, 03:22 PM</div></div><div class="posttext">I don't wanna be a bitch or maybe I am just old fashioned but....I really do not see the value of legendary items anymore after the moment the warglaives were in tbc.<br />
+<br />
+I mean....ok the warglaives were awesome as hell that is a fact, and I wont discuss about that. <br />
+<br />
+The thing I do discuss about is the effort that you have to put in to get the item. I mean, Thunderfury had the 2 blessings which had a what 0.01% droprate or something and then after that you still had to do a shitload of quests incl killing a 40 men raid boss....<br />
+<br />
+nowdays you just farm a raid and if blizz is nice they let the legendary stuff drop<br />
+<br />
+<br />
+and how exactly is that different? in both cases you had to farm -_-. except that now its less RNG and more effort. with thunderfury or glaives you either were lucky and items dropped or you were unlucky and none dropped in 50 raids. now after x raids you have it almost guaranteed to get enough fragments and after that you have to complete quest and forge item during yoggie fight</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nathadir</div><div class="date">2009-05-07, 07:30 AM</div></div><div class="posttext">I think you are underestimating just how good the proc is for a resto druid. Think about this:<br />
+<br />
+...<br />
+<br />
+A druid has a huge amount of hots ticking all at once, all of which provide a chance for the proc to come into effect. Let's say the druid has 1 lifebloom stack, 2 rejuvenation, 1 regrowth, wild growth on 6 people, and invidual lifeblooms on 4 people ticking at all times on average. That's 12 chances to proc the equip effect every second. Even with counting overheals the druid will nearly always be proccing it almost exactly at the 45 second mark.<br />
+<br />
+<br />
+I would really like to see the druid able to keep up 5 Lifeblooms, 2 Rejuvs, 1 Regrowth and 6 WG hots on average, for more than a minute. You do realize this comes down to around 500 mana per second? Granted WG of course hits all six possible targets. Do you raid?<br />
+<br />
+Of course it will proc faster for a druid than a pally given the nature of HoTs, but that's not the point. A druid will have great utility for this both as an MT healer and a raid healer, while the pally will benefit from it a bit more while tank healing. The proc is great for ALL classes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tribble</div><div class="date">2009-05-07, 12:40 PM</div></div><div class="posttext">and how exactly is that different? in both cases you had to farm -_-. except that now its less RNG and more effort. with thunderfury or glaives you either were lucky and items dropped or you were unlucky and none dropped in 50 raids. now after x raids you have it almost guaranteed to get enough fragments and after that you have to complete quest and forge item during yoggie fight<br />
+<br />
+<br />
+<br />
+I don't think you get my point do you....<br />
+<br />
+Legendary weapons(Vanilla) were not supposed to be obtained by EVERYONE! You didn't have a guarantee to get legendary, now in WOTLK you do have the guarantee. <br />
+<br />
+BTW with my comment I do not want to comment on the stats and procs on the legendary items from vanilla - wotlk cause they are very very good :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc310069370f</div><div class="date">2009-05-07, 01:18 PM</div></div><div class="posttext">I don't think you get my point do you....<br />
+<br />
+Legendary weapons(Vanilla) were not supposed to be obtained by EVERYONE! You didn't have a guarantee to get legendary, now in WOTLK you do have the guarantee. <br />
+<br />
+BTW with my comment I do not want to comment on the stats and procs on the legendary items from vanilla - wotlk cause they are very very good :)<br />
+<br />
+<br />
+A stupid low drop rate means fuck all for effort, and more for pure dumb luck. A guild who cleared through MC every week from release to TBC sometimes had 1 Binding drop and that was it. Does that mean that they didn't put the effort in?<br />
+<br />
+Val'nyr has gone back to the Ateish model, without the need to kill an extra 2 bosses for base/head</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tribble</div><div class="date">2009-05-07, 03:04 PM</div></div><div class="posttext">A stupid low drop rate means fuck all for effort, and more for pure dumb luck. A guild who cleared through MC every week from release to TBC sometimes had 1 Binding drop and that was it. Does that mean that they didn't put the effort in?<br />
+<br />
+Val'nyr has gone back to the Ateish model, without the need to kill an extra 2 bosses for base/head<br />
+<br />
+<br />
+Also you go passed my point that legendary means that seeing the item on a certain player would make you go &quot; oh my fucking god!!!&quot;. <br />
+<br />
+What would be good imo would be that legendary's would drop if you would do certain hardmodes only. For example, Clear ulduar on heroic difficulty with doing all the hard modes to make a legendary drop. Now THAT would be impressive I think...then it would be a bit more of a legendary weapon then that it is now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Simulacrum</div><div class="date">2009-05-08, 12:20 AM</div></div><div class="posttext">Legendary weapons(Vanilla) were not supposed to be obtained by EVERYONE! You didn't have a guarantee to get legendary, now in WOTLK you do have the guarantee.<br />
+Everyone, huh? ...really?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Megacore</div><div class="date">2009-05-11, 11:03 AM</div></div><div class="posttext">Oh no.. Vanquishers just made all hardcore raiders look really really stupid.<br />
+<br />
+Vanquishers.. you are by fat the most stupid and ignorant nolife nerds i have ever seen on the internet! Your completely retarded way of &quot;handling&quot; a simple issue like 2 genders in one guild is simply breathtakingly stupid.. <br />
+<br />
+And you know what the saddest part is? All the big fat ugly nerds in the wow community that thinks this is quite okay because this is their incredibly demented way of getting back at the girls that never gave them 2 looks in school.. Well i'm sorry you lazy fat bastards.. but showing such an incredibly lack of basic understanding of how the 2 genders work and interact with each other is JUST the way to make them even less interested in your sorry excuse for a hollow soul.<br />
+<br />
+Get a life, go outside, start respecting women.. and if not that.. then please for gods sake quit wow so you dont make the rest of us look like we still attend 5th grade...<br />
+<br />
+Oh wait, that was an insult to 5th grade boys.. Most 5th graders got more brains than Vanquishers..<br />
+<br />
+*sigh*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jonny1313</div><div class="date">2009-05-11, 05:53 PM</div></div><div class="posttext">Last time I ran ulduar 4 fragments dropped in a row. I was so happy I could just scream ^_^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hax</div><div class="date">2009-05-16, 01:46 PM</div></div><div class="posttext">*respecs holy*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sillicur</div><div class="date">2009-05-18, 01:04 AM</div></div><div class="posttext">Hunter weapon.<br />
+<br />
+<br />
+/agreed !!!<br />
+<br />
+That never gets old :)</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

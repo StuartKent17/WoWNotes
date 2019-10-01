@@ -1,0 +1,655 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, that, and, with, for, people, content, same, would, its, groups, game, different, group, more, raiding, who, demographic, revenue, these, but, current, level, has, playing, one, they, very, simply, most, such, enjoy, what, play, wont, loot, then, raider, serious, gear, really, which, either, how, get, much, lost, now, overcome, way" />
+<meta name="description" content="Dev Watercooler: Raiding Azeroth Part 2—From Cataclysm to Today 
+Over the course of WoW’s nearly 10-year history, raiding has probably undergone more iteration and change than any other game system. To put the upcoming Warlords of Draenor raid changes into proper context, this three-part blog series will attempt to retrace the twists and turns of our raid design philosophy from Molten Core through Siege of Orgrimmar. 
+ 
+We continue the series by taking a look at raiding today, beginning with" />
+<title> Dev Watercooler: Raiding Azeroth Part 2—From Cataclysm to Today [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Dev Watercooler: Raiding Azeroth Part 2—From Cataclysm to Today</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1507664.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1507664-Dev-Watercooler-Raiding-Azeroth-Part-2—From-Cataclysm-to-Today">Dev Watercooler: Raiding Azeroth Part 2—From Cataclysm to Today</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-04-29, 05:02 PM</div></div><div class="posttext">Dev Watercooler: Raiding Azeroth Part 2—From Cataclysm to Today<br />
+Over the course of WoW’s nearly 10-year history, raiding has probably undergone more iteration and change than any other game system. To put the upcoming Warlords of Draenor raid changes into proper context, this three-part blog series will attempt to retrace the twists and turns of our raid design philosophy from Molten Core through Siege of Orgrimmar.<br />
+<br />
+We continue the series by taking a look at raiding today, beginning with Cataclysm through Mists of Pandaria. If you missed Part 1, you can read it here (http://blue.mmo-champion.com/topic/310085-dev-watercooler-raiding-azeroth-part-1a-look-back/).<br />
+<br />
+Cataclysm (2010-2012)<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/april/thumb/raidwcd201.jpg (http://media.mmo-champion.com/images/news/2014/april/raidwcd201.jpg) <br />
+<br />
+After the rapid iteration on raid systems over the course of Wrath of the Lich King’s content updates, we approached Cataclysm aiming to wrap those designs into a more streamlined package. There were two major concerns that we wanted to address:<br />
+<br />
+<br />
+10-player raiding had grown very popular due to its accessibility, but we were increasingly hearing from many of those raiders that they felt like they didn’t have the opportunity to prove themselves on the hardest content or earn the best gear in the game.<br />
+Players often felt obligated to run both 10-player and 25-player modes of the same content each week in order to optimize their character, which could accelerate burnout. (Best-in-slot trinkets and other items on the unique 10-player loot tables didn’t help here.)<br />
+<br />
+<br />
+Guided by these concerns, we decided to consolidate 10-player and 25-player modes into a single difficulty, single reward tier, and single raid lockout. So in Cataclysm, we allowed raiders to choose their preferred raid size and experience the content as they saw fit.<br />
+<br />
+While we were motivated by good intentions, these changes had some unfortunate side effects. . . .<br />
+<br />
+<br />
+The need for equal difficulty between the two modes meant that when we encountered organic imbalances (e.g. spreading out requires more coordination with more players in the same space), no longer could we err on the side of just letting 10-player be easier. We had to try to adjust numbers or other mechanics to offset the disparity, and that was a challenging problem that we lacked prior experience in solving, especially when tuning cutting-edge Heroic content. As a result, there were many differences between the two modes, particularly early in the expansion.<br />
+Unifying the difficulty of the two modes mainly involved increasing the difficulty of 10-player mode. This left many players who had enjoyed success in 10-player Normal Icecrown Citadel feeling unable to get any sort of foothold in Cataclysm raiding.<br />
+While in theory players could now choose their preferred mode of raiding, in reality equalizing rewards encouraged a persistent downward pressure on raid size: Growing from 10 to 25 was nearly impossible logistically, whereas challenging bosses or attendance woes continually tempted 25-player raids to downsize and just keep going with their 10 “best” players. Previously these temptations were offset by the fact that switching to 10-player mode yielded weaker loot and different achievements, but the Cataclysm changes removed that countervailing motivation.<br />
+<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/april/thumb/raidwcd202.jpg (http://media.mmo-champion.com/images/news/2014/april/raidwcd202.jpg) <br />
+<br />
+We got better at balancing the two modes over the course of the expansion, but the social consequences of the change continued to reverberate. In particular, raiding had become inaccessible to players who previously had enjoyed playing with their friends or pickup groups, and that was a problem.<br />
+<br />
+Patch 4.3: Raid Finder<br />
+<br />
+Just as Dungeon Finder opened dungeons up to a far wider audience by removing the logistical barriers to finding groups for them, our new Raid Finder held the same promise for raiding. Whereas finding a pickup group even on an active realm required a large contiguous block of time and a fair bit of patience, Raid Finder allowed players to jump right in and experience raid content on their own time and according to their own schedules. The feature was tremendously popular, and it allowed more players than ever before to experience the conclusion of an expansion’s major story arc, as millions of players defeated Deathwing, compared to the thousands that had defeated Kel’thuzad back in 2006.<br />
+<br />
+We learned a lot from Dragon Soul about how to design content for Raid Finder. We endeavored to preserve encounter mechanics where possible, but had to significantly adjust unforgiving abilities—especially those that allowed a single player’s mistake to result in the entire group’s failure. In traditional organized raiding, a group of players generally learns from mistakes and masters content together, and they bring that collective knowledge with them in subsequent weeks. In Raid Finder, which put players in random groups each week, there was a clean slate with regard to mastery of the encounters. Having to essentially redo progression each week is few players’ idea of fun, so we had to significantly accelerate the Raid Finder learning curve.<br />
+<br />
+Mists of Pandaria (2012-2014)<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/april/thumb/raidwcd203.jpg (http://media.mmo-champion.com/images/news/2014/april/raidwcd203.jpg) <br />
+<br />
+Going into Mists of Pandaria (Mists), we made fewer changes to our raid structure than in any prior expansion. Other than some improved handling of loot for Raid Finder (replacing traditional Need/Greed with personal loot), Mists raiding at launch followed the exact same structure as raiding in Patch 4.3: Dragon Soul. In retrospect, the lack of change actually reflects another miscalculation on our part.<br />
+<br />
+We knew that the Cataclysm changes had effectively removed a difficulty level from our game by raising the challenge of 10-player Normal to match 25-player, and that this change had left a group of players without suitable raid content. By adding Raid Finder, we had returned to three effective difficulties, and given the popularity of the feature, we assumed that this largely solved the problem. We were mistaken.<br />
+<br />
+Raid Difficulty and Raid Groups—An Aside<br />
+<br />
+In broad strokes, there are three distinct types of groups that participate in organized raiding:<br />
+<br />
+<br />
+Friends and Family groups: These are social groups that exist for reasons besides raiding, but whose players would like to venture into raid content together. This type of group is inherently inclusive, and will not organize its roster according to specific class needs, nor is the group likely to criticize or remove players based on performance. Members of this type of group prioritize playing together.<br />
+Raiding guilds: These are groups that have formed for the purpose of raiding. These are the majority of guilds that you’ll see recruiting in Trade chat or on realm forums. These groups will generally look for specific classes based on roster needs, and will expect a certain level of attendance or performance. Members of this type of group prioritize experiencing and learning the content.<br />
+Hardcore raiding guilds: An extreme subset of the previous category, these are the guilds of players whose ethos drives them to be the best at games they play, and who are willing to dedicate time and energy to maximize their results. Guilds of this type will recruit and maintain a roster based primarily on performance, and will expect raiders to optimize their characters. Members of this type of group prioritize competition and success.<br />
+<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/april/thumb/raidwcd204.jpg (http://media.mmo-champion.com/images/news/2014/april/raidwcd204.jpg) <br />
+<br />
+At the start of Mists, Normal modes appealed solidly to raiding guilds, and Heroic difficulty provided a worthy challenge to the hardcore guilds. However, friends-and-family groups—which had once thrived in Karazhan and in 10-player Normal raiding in Wrath—were left without much satisfying content. They made some headway in the new raids, but often got stuck at Elegon (Mogu’shan Vaults) or Garalon (Heart of Fear) without any clear way forward. Running Raid Finder could have helped them get better gear to overcome these challenges, but that often simply wasn’t enjoyable. For the player who just wants to play with his or her friends in a tight-knit environment, solo-queuing was not a satisfying experience; even queuing for Raid Finder as a group wasn’t much better, since the presence of a dozen or more strangers transformed the nature of the activity. Besides, Raid Finder was tuned for randomly matched groups and generally lacked sufficient challenge for even the most casual of organized raid groups.<br />
+<br />
+We realized that we were doing a poor job of serving this important segment of our player community. Raid Finder, it turned out, was great for players who had no interest or ability to participate in organized raiding at scheduled times, but for friends-and-family groups, it was not an adequate substitute for the old 10-player Normal difficulty that went away in Cataclysm. <br />
+<br />
+Patch 5.4: Flexible Raiding<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/april/thumb/raidwcd205.jpg (http://media.mmo-champion.com/images/news/2014/april/raidwcd205.jpg) <br />
+<br />
+For the Siege of Orgrimmar, we introduced a new raiding mode that was designed primarily to solve this problem: Flexible Raid mode was tuned to be roughly 20% to 25% easier (numerically speaking) than Normal mode, while preserving all of the fight mechanics, but more importantly, it also made use of a new scaling system to allow the content to adapt to any raid size between 10 and 25 players. For players whose priority is just being able to raid with their friends, why force someone to have exactly 9 or 24 friends? Why limit which friends they can play with to those on the same realm? We made Flexible Raids have their own lockout, and we allowed players to kill the same boss multiple times per week—but only loot it once. In general, our aim was to remove as many obstacles as possible that might get in the way of friends who just want to be able to raid together in WoW. (And for those who are wondering, “Then why not allow cross-faction raiding? Why not let me raid with my Alliance friends even if I play Undead?” Fundamentally, Alliance vs. Horde, Orcs vs. Humans, is the heart and soul of the Warcraft universe—we have to draw the line somewhere, and we draw it there.)<br />
+<br />
+We’re tremendously happy with how players have received the new Flexible Raid mode, and we wish we’d implemented something like this sooner. We’re now back to three tiers of difficulty that cover all of the different kinds of organized raiders, while preserving Raid Finder for those who just want to experience the content on their own schedule.<br />
+<br />
+In Part 3, we’ll take a look at the future of raiding in Warlords of Draenor.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2014-04-29, 05:04 PM</div></div><div class="posttext">this is my favorite watercooler series so far.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pandapuncher</div><div class="date">2014-04-29, 05:10 PM</div></div><div class="posttext">they Pretty much hit the nail on the head. <br />
+<br />
+The friends and family guilds likely make up most of warcraft</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Brewhan</div><div class="date">2014-04-29, 05:10 PM</div></div><div class="posttext">ruby sanctum was merely a setback</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aeluron Lightsong</div><div class="date">2014-04-29, 05:11 PM</div></div><div class="posttext">they Pretty much hit the nail on the head. <br />
+<br />
+The friends and family guilds likely make up most of warcraft<br />
+<br />
+Maybe, but they were doing to get them butu kinda hit short. They're getting there. albeit slowly</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Edds</div><div class="date">2014-04-29, 05:12 PM</div></div><div class="posttext">heart of fear killed whatever passion i had for raiding. randomly get put in a suit and if i dont do what im suppose to do in 3seconds its a raid wipe</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tinykong</div><div class="date">2014-04-29, 05:20 PM</div></div><div class="posttext">heart of fear killed whatever passion i had for raiding. randomly get put in a suit and if i dont do what im suppose to do in 3seconds its a raid wipe<br />
+<br />
+Teron Gorefiend and Malygos say hi!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">McTurbo</div><div class="date">2014-04-29, 05:20 PM</div></div><div class="posttext">with the way these are written.. i am kind of dreading tomorrow's update.. for some reason i get the impression a big change is coming something along the lines of. in an effort to appease one group or the other we are swinging raiding in xxx direction.. in the end. we will just piss off both groups and then swing back wildly in some other direction later.. thanks for reading.. /send money k thx bye!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aly31</div><div class="date">2014-04-29, 05:23 PM</div></div><div class="posttext">I like the fact that they acctually know what they did wrong. Good read.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rogueMatthias</div><div class="date">2014-04-29, 05:25 PM</div></div><div class="posttext">What a great Dev Watercooler. Nice work.<br />
+<br />
+I'm glad Blizz had the guts to say where they fucked up along the way and the implications to players that this has had. <br />
+<br />
+I'm actually very positive about the raid structure going forwards in WoD.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc89084f456c</div><div class="date">2014-04-29, 05:26 PM</div></div><div class="posttext">so much for people that say that Blizzard never admit their mistakes. :)<br />
+I'm enjoying this &quot;behind the veil&quot; in game design, immensely.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Computed Lamb</div><div class="date">2014-04-29, 05:29 PM</div></div><div class="posttext">@McTurbo - I find that to be an unlikely outcome. If anything, this article clearly shows that they've identified their entire raiding customer base -- no schedule'ers, friends and family, and hardcores. Why it took them nearly 3 expansion to create suitable products for each group is anyone's guess, but they have the correct path right in front of them. LFR for no scheduler'ers, Flex for friends and family, and heroic (mythic) for hardcores. As long as they stick to those three modes (and only those 3), raiding should be a lot easier to design and get a lot better for all 3 groups of players.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MoanaLisa</div><div class="date">2014-04-29, 05:29 PM</div></div><div class="posttext">I'm very much looking forward to tomorrow's piece and then reading them together. I don't think there's a lot that's going to be revealed tomorrow that affects flex/heroic raiding. This might be the first time they show what they really have in mind for Raid Finder which could use a very thorough rework in most aspects. <br />
+<br />
+All in all, pretty interesting and obviously trying to show that there is a logical arc to whatever it is they're planning. Good job.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Brytallica</div><div class="date">2014-04-29, 05:29 PM</div></div><div class="posttext">I like the fact that they acctually know what they did wrong. Good read.<br />
+Yes! From already mention WoD raid changes, I think they finally figured out the ideal raid design. It gives me hope that whatever their next MMO is going to be that the raids will be setup like this from day 1.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">meroko</div><div class="date">2014-04-29, 05:31 PM</div></div><div class="posttext">with the way these are written.. i am kind of dreading tomorrow's update.. for some reason i get the impression a big change is coming something along the lines of. in an effort to appease one group or the other we are swinging raiding in xxx direction.. in the end. we will just piss off both groups and then swing back wildly in some other direction later.. thanks for reading.. /send money k thx bye!<br />
+<br />
+The only big thing about tomorrow's update will probably discuss Raid Finder and how it will not be part of a progression path anymore, that's what 5 man dungeons will be. Flex (Normal mode in WoD) is essentially the new LFR, LFR is going to be just for those who want to see content, and drops it's own gear, which is not tier. I wouldn't be surprised if they just make it rare quality gear who knows.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Quill</div><div class="date">2014-04-29, 05:31 PM</div></div><div class="posttext">Now that I've had a few months to take it in, I feel they just should've stuck it out with the SoO formula and just erred on the side of making 25M easier. 25-raiders had a compelling reason to run their format besides just liking it, and 10-raiders got to exist and still enjoy the different social atmosphere that size offered. <br />
+<br />
+They finally struck the balance that had eluded them for so long, and then that's when they elected to destroy the 10H format. I don't care about the gameplay/strategic differences so much - raiding is raiding, and it's just fun no matter what. But what sucks is that some people enjoyed a large crowd and others enjoyed a small crowd, and now that choice is gone. <br />
+<br />
+10H raiders were so small in number, that it was a pretty painless business decision for them. So it goes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rogueMatthias</div><div class="date">2014-04-29, 05:33 PM</div></div><div class="posttext">@McTurbo - I find that to be an unlikely outcome. If anything, this article clearly shows that they've identified their entire raiding customer base -- no schedule'ers, friends and family, and hardcores. Why it took them nearly 3 expansion to create suitable products for each group is anyone's guess, but they have the correct path right in front of them. LFR for no scheduler'ers, Flex for friends and family, and heroic (mythic) for hardcores. As long as they stick to those three modes (and only those 3), raiding should be a lot easier to design and get a lot better for all 3 groups of players.<br />
+<br />
+Wait I thought there were going to be four versions now?<br />
+<br />
+LFR (no schedule'ers 25)<br />
+Normal (Friends, family and puggers - Current Flex difficulty 10-25)<br />
+Heroic Mode (Raiders - Current Normal difficulty 10/25)<br />
+Mythic Mode (Hardcore Raiders - Current Heroic difficulty 20)<br />
+<br />
+is this right? I guess they'll say tomorrow.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayperos</div><div class="date">2014-04-29, 05:36 PM</div></div><div class="posttext">They should have posted part 3. That's what everyone wants to know about. I want to know more about LFR and what its becoming. Cause if they remove tier and only offer up blues in LFR, I will no longer run it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ablib</div><div class="date">2014-04-29, 05:46 PM</div></div><div class="posttext">with the way these are written.. i am kind of dreading tomorrow's update.. for some reason i get the impression a big change is coming something along the lines of. in an effort to appease one group or the other we are swinging raiding in xxx direction.. in the end. we will just piss off both groups and then swing back wildly in some other direction later.. thanks for reading.. /send money k thx bye!<br />
+<br />
+This is probably the removal of tier in LFR, or fundamentally changing LFR's role. <br />
+<br />
+This is just another small part of why subs have continued to drop since the end of Wrath. Blizzard making unnecessary changes for no real reason. Leaving LFR,Flex,Normal, etc.. the way it currently is now (minus adding the Mythic part), will piss no one off. No intelligent Mythic raider will care, or quit the game over loot that drops in a difficulty he/she will never run. Now the player that LFR is designed for, may quit -- so why change it?<br />
+<br />
+Same with flying. No one's quitting the game because they can fly. Since flying was added, subs almost immediately increased by over 3 million - not decreased. Thousands will quit though, if it's removed. So why remove it?<br />
+<br />
+Since the start of Cataclysm, Blizzard has constantly made change after change after change, for no real reason other than &quot;why not&quot;, when the only clear certainty by the change is player loss.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dak1</div><div class="date">2014-04-29, 05:47 PM</div></div><div class="posttext">Wait I thought there were going to be four versions now?<br />
+<br />
+LFR (no schedule'ers 25)<br />
+Normal (Friends, family and puggers - Current Flex difficulty 10-25)<br />
+Heroic Mode (Raiders - Current Normal difficulty 10/25)<br />
+Mythic Mode (Hardcore Raiders - Current Heroic difficulty 20)<br />
+<br />
+is this right? I guess they'll say tomorrow.<br />
+<br />
+You're close. They've already announced the changes though:<br />
+<br />
+1) Raid Finder (10-25) --- equivalent to Raid Finder (25) in MoP<br />
+2) Normal (10-25) --- equivalent to Flex (10-25) in MoP<br />
+3) Heroic (10-25) --- equivalent to Normal (10/25) in MoP<br />
+4) Mythic (20) --- equivalent to Heroic (10/25) in MoP<br />
+<br />
+So the only tier that won't be flex is Mythic, and raid sizes will change on them again, from 10/25 to 20. For everyone else, it should be much easier to form and maintain raids.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5e3868ecc6</div><div class="date">2014-04-29, 05:49 PM</div></div><div class="posttext">As much as I like this article they're not really coming clean, at least not entirely... Why don't they mention the fact that at the start of Cataclysm healing was nearly impossible (there was just not enough throughput and ppl were going oom pretty quickly because &quot;mana had to matter&quot;) and those (crappy) heroics required a whopping shitload of CC when basically no one was using it anymore as Wrath hcs were super easy? <br />
+These 2 changes aren't really something to overlook imho... but it may be just me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc89084f456c</div><div class="date">2014-04-29, 05:51 PM</div></div><div class="posttext">As much as I like this article they're not really coming clean, at least not entirely... Why don't they mention the fact that at the start of Cataclysm healing was nearly impossible (there was just not enough throughput and ppl were going oom pretty quickly because &quot;mana had to matter&quot;) and those (crappy) heroics required a whopping shitload of CC when basically no one was using it anymore as Wrath hcs were super easy? <br />
+These 2 changes aren't really something to overlook imho... but it may be just me.<br />
+<br />
+because inherent role difficulty is not what the blog post is about, it is about raiding structure changes over the years and the reason behind them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lunchbox2042</div><div class="date">2014-04-29, 05:52 PM</div></div><div class="posttext">So we've gone from Wrath where 3-4 lockouts accelerated burnout to Cata where 1 lockout and equal difficulties kept lesser skilled players from wanting to get better back to 4 difficulties? It sounds like we're back where we started and the end result isn't good. Four raid lockouts that are separate is the problem we had in ToC only worse because there will be more bosses and trash on top of it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Computed Lamb</div><div class="date">2014-04-29, 05:54 PM</div></div><div class="posttext">You're close. They've already announced the changes though:<br />
+<br />
+1) Raid Finder (10-25) --- equivalent to Raid Finder (25) in MoP<br />
+2) Normal (10-25) --- equivalent to Flex (10-25) in MoP<br />
+3) Heroic (10-25) --- equivalent to Normal (10/25) in MoP<br />
+4) Mythic (20) --- equivalent to Heroic (10/25) in MoP<br />
+<br />
+So the only tier that won't be flex is Mythic, and raid sizes will change on them again, from 10/25 to 20. For everyone else, it should be much easier to form and maintain raids.<br />
+<br />
+Is it just me, or is the 'heroic' level unnecessary? Why add the filler level of difficulty when they've clearly defined the 3 groups that make up their entire raiding population. Just have LFR, Flex (normal mode), and Hard mode and be done with it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xjev</div><div class="date">2014-04-29, 05:56 PM</div></div><div class="posttext">As much as I like this article they're not really coming clean, at least not entirely... Why don't they mention the fact that at the start of Cataclysm healing was nearly impossible (there was just not enough throughput and ppl were going oom pretty quickly because &quot;mana had to matter&quot;) and those (crappy) heroics required a whopping shitload of CC when basically no one was using it anymore as Wrath hcs were super easy? <br />
+These 2 changes aren't really something to overlook imho... but it may be just me.<br />
+<br />
+On healing:<br />
+1. They already covered that topic in depth in their healing related blogs<br />
+<br />
+Dungeon Heroics:<br />
+2. Yeah but again maybe since its a post on Raiding not PvE in general</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gurbz</div><div class="date">2014-04-29, 05:58 PM</div></div><div class="posttext">They should have posted part 3. That's what everyone wants to know about. I want to know more about LFR and what its becoming. Cause if they remove tier and only offer up blues in LFR, I will no longer run it.<br />
+<br />
+People need the context of what has come before and in what ways the devs feel it worked and/or didn't so that the changes they will almost certainly detail tomorrow will make more sense. Having the background information makes it easier to communicate the reasoning behind design changes. It is the same thing they tried to do with the patch notes, giving the philosophy first so that otherwise rational people, who took the time to read the blogs, didn't start flipping tables as soon as the changes were made public.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">D-Throes</div><div class="date">2014-04-29, 05:59 PM</div></div><div class="posttext">best part of the article: <br />
+&quot;Why not let me raid with my Alliance friends even if I play Undead?” Fundamentally, Alliance vs. Horde, Orcs vs. Humans, is the heart and soul of the Warcraft universe—we have to draw the line somewhere, and we draw it there.)&quot;<br />
+:)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dak1</div><div class="date">2014-04-29, 05:59 PM</div></div><div class="posttext">Is it just me, or is the 'heroic' level unnecessary? Why add the filler level of difficulty when they're clearly defined the 3 groups that make up their entire raiding population. Just have LFR, Flex (normal mode), and Hard mode and be done with it.<br />
+<br />
+I think a fixed-size (and especially just having 1 size, rather than trying to balance between 2 different raid sizes), allows Blizzard to make encounters tuned to the absolute extreme, which is where they expect guilds doing Mythic content to be. I'm not sure they've really been able to do that since they implemented &quot;equal&quot; difficultly encounters for both 10 and 25 man raids, and I certainly can't see that being possible with Flex sizes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wyldfire</div><div class="date">2014-04-29, 05:59 PM</div></div><div class="posttext">Is it just me, or is the 'heroic' level unnecessary? Why add the filler level of difficulty when they've clearly defined the 3 groups that make up their entire raiding population. Just have LFR, Flex (normal mode), and Hard mode and be done with it.<br />
+<br />
+You didn't read the groups carefully enough. The through groups are: friends and family, raiders, and heroic raiders. They fit into Flex, Heroic, and Mythic, respectively. It's the LFR that doesn't fit into those 3 categories, which will still remain for the sole purpose of allowing people who don't fit into the previously mentioned 3 categories to see the content.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc903ad35b4b</div><div class="date">2014-04-29, 06:06 PM</div></div><div class="posttext">I wonder what Mr. Hazzikostas wants to bring up as quint essence in the next blog post.<br />
+<br />
+Will it be &quot;We will remove any items, in special heirlooms, for solo players!&quot;?<br />
+<br />
+&quot;You have to earn your epics&quot;?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Srg56</div><div class="date">2014-04-29, 06:06 PM</div></div><div class="posttext">heart of fear killed whatever passion i had for raiding. randomly get put in a suit and if i dont do what im suppose to do in 3seconds its a raid wipe<br />
+<br />
+Really really hope you stay away from driving cars then, since in that role you need to react allot faster than 3 seconds.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-04-29, 06:12 PM</div></div><div class="posttext">The only mistake they are making in WoD in my opinion is that normal mode ( previous flex mode) is no longer broken up into wings. This is obviously debatable, but for me, my F&amp;F guild, and the pug raids I do on Openraid, this was a big part of their success. it just made it easier to advertise and schedule.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ProfessorTjc</div><div class="date">2014-04-29, 06:13 PM</div></div><div class="posttext">Where is the troll that usually says &quot;this watercooler just cost us another raid tier&quot;?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hagstrom5</div><div class="date">2014-04-29, 06:15 PM</div></div><div class="posttext">really really hope you stay away from driving cars then, since in that role you need to react allot faster than 3 seconds.<br />
+<br />
+i lol'd ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lolercaust</div><div class="date">2014-04-29, 06:17 PM</div></div><div class="posttext">Is it just me, or is the 'heroic' level unnecessary? Why add the filler level of difficulty when they've clearly defined the 3 groups that make up their entire raiding population. Just have LFR, Flex (normal mode), and Hard mode and be done with it.<br />
+<br />
+It's not. If you go back to the article, the author states that there are three types of raid guilds in WoW: family/friends, raiding, and hardcore raiding. Family/friends appeals to Normal, raiding appeals to Heroic, and hardcore raiding appeals to Mythic. That way there is something for everyone.<br />
+And the players who don't raid but want to see the conclusion of the expansion's story have LFR.<br />
+<br />
+No level of difficulty is unnecessary.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-04-29, 06:17 PM</div></div><div class="posttext">So we've gone from Wrath where 3-4 lockouts accelerated burnout to Cata where 1 lockout and equal difficulties kept lesser skilled players from wanting to get better back to 4 difficulties? It sounds like we're back where we started and the end result isn't good. Four raid lockouts that are separate is the problem we had in ToC only worse because there will be more bosses and trash on top of it.<br />
+<br />
+haha. you really think there are going to be people doing Mythic and at the same time feel they need to do LFR? Hardcore, and even heroic raiders are going to be spamming heroic DUNGEONS the first week and so will never have to do LFR... Remember, in WOD, heroic dungeons and LFR give the same loot and really, by the time you are into Mythic raiding, you will be doing nothing but heroic raids on offnights.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dekay</div><div class="date">2014-04-29, 06:20 PM</div></div><div class="posttext">Where is the troll that usually says &quot;this watercooler just cost us another raid tier&quot;?<br />
+<br />
+Having a funeral service for said raid tier</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-04-29, 06:20 PM</div></div><div class="posttext">I wonder what Mr. Hazzikostas wants to bring up as quint essence in the next blog post.<br />
+<br />
+Will it be &quot;We will remove any items, in special heirlooms, for solo players!&quot;?<br />
+<br />
+&quot;You have to earn your epics&quot;?<br />
+<br />
+The big point he is going to make in the next blog is about burnout and hardcore raiders feeling the need to run LFR for tier pieces and trinkets. This will lead into us finally getting the definitive answer that tier sets are being removed from LFR and he will probably clarify the ilvls of gear from heroic dungeons and LFR ( most believe they will be equal).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Reforge</div><div class="date">2014-04-29, 06:24 PM</div></div><div class="posttext">Throne of Thunder was an amazing raid with an amazing end boss.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Geodew</div><div class="date">2014-04-29, 06:29 PM</div></div><div class="posttext">this is my favorite watercooler series so far.<br />
+<br />
+Really? It's all old information for me, so far...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Solamon</div><div class="date">2014-04-29, 06:32 PM</div></div><div class="posttext">I think what they should do is reintroduce Dungeon Sets. There was a place for them once, and there can be a place for them again.<br />
+<br />
+Have a set for the Heroic instances be the equivalent of Dungeon Set 1 (We'll call it ilevel 620 for instance), with LFR being a half tier up from there (ilevel 630), as sort of a Dungeon Set 2. Then when the next raid tier comes out, make a Dungeon 3 for the equivalent Raid at an ilevel equal to the lowest ilevels of the lower tier raid (ilevel 650 for instance). They've identified a group of people who can't or won't participate in scheduled raiding, but probably still want a gear progression path. So make it like that.<br />
+<br />
+It doesn't need to be tier, but it can't be equal to the Heroic dungeons either, because what then is the incentive to even participate in the tourist tier if you're in that group that is never going to participate in the scheduled form of raiding?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jayinjersey</div><div class="date">2014-04-29, 06:37 PM</div></div><div class="posttext">So we've gone from Wrath where 3-4 lockouts accelerated burnout to Cata where 1 lockout and equal difficulties kept lesser skilled players from wanting to get better back to 4 difficulties? It sounds like we're back where we started and the end result isn't good. Four raid lockouts that are separate is the problem we had in ToC only worse because there will be more bosses and trash on top of it.<br />
+<br />
+There aren't four come WOD there are 3. Normal, Heroic and Mythic<br />
+<br />
+Normal and Heroic are &quot;flexible&quot; in size where Mythic is 20m<br />
+<br />
+<br />
+LFR is not a Raid level and will give Heroic Dungeon level loot.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mikencarly</div><div class="date">2014-04-29, 06:38 PM</div></div><div class="posttext">Nice i get to see if wow is truely fucked tomorrow or not hope they changed there minds and gone sane instead of the insane changes i seen so far for lfr.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc853b96da04</div><div class="date">2014-04-29, 06:43 PM</div></div><div class="posttext">You're close. They've already announced the changes though:<br />
+<br />
+1) Raid Finder (10-25) --- equivalent to Raid Finder (25) in MoP<br />
+2) Normal (10-25) --- equivalent to Flex (10-25) in MoP<br />
+3) Heroic (10-25) --- equivalent to Normal (10/25) in MoP<br />
+4) Mythic (20) --- equivalent to Heroic (10/25) in MoP<br />
+Raid Finder will remain 25-only.<br />
+a) Because larger groups are more likely balanced.<br />
+b) Because groups are formed automatically, so how to determine different sizes?<br />
+<br />
+I think (hope) Raid Finder loot will be behind that of heroic dungeons, removing the need for anyone to do Raid Finder for gear.<br />
+<br />
+And ideally they would let people kill a boss as often as they'd like, but give them a chance for loot only once per lockout.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mikencarly</div><div class="date">2014-04-29, 06:44 PM</div></div><div class="posttext">There aren't four come WOD there are 3. Normal, Heroic and Mythic<br />
+<br />
+Normal and Heroic are &quot;flexible&quot; in size where Mythic is 20m<br />
+<br />
+<br />
+LFR is not a Raid level and will give Heroic Dungeon level loot.I hope not.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">t11fa</div><div class="date">2014-04-29, 06:49 PM</div></div><div class="posttext">Raid Finder will remain 25-only.<br />
+a) Because larger groups are more likely balanced.<br />
+b) Because groups are formed automatically, so how to determine different sizes?<br />
+<br />
+I think (hope) Raid Finder loot will be behind that of heroic dungeons, removing the need for anyone to do Raid Finder for gear.<br />
+<br />
+And ideally they would let people kill a boss as often as they'd like, but give them a chance for loot only once per lockout.<br />
+<br />
+He means that LFR will scale down like flex does if someone leaves, LFR will still be 25-man default, but you won't have to wait for 3 more dps or something to move on if someone leaves.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mikencarly</div><div class="date">2014-04-29, 06:49 PM</div></div><div class="posttext">Raid Finder will remain 25-only.<br />
+a) Because larger groups are more likely balanced.<br />
+b) Because groups are formed automatically, so how to determine different sizes?<br />
+<br />
+I think (hope) Raid Finder loot will be behind that of heroic dungeons, removing the need for anyone to do Raid Finder for gear.<br />
+<br />
+And ideally they would let people kill a boss as often as they'd like, but give them a chance for loot only once per lockout.Nobody is forceing anything that was there choose so because of that lfr players should suffer fuck that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bladesyphon</div><div class="date">2014-04-29, 06:55 PM</div></div><div class="posttext">Nobody is forceing anything that was there choose so because of that lfr players should suffer fuck that.<br />
+<br />
+I agree with this, though not in such a rude way.<br />
+<br />
+People that enjoy playing only on LFR should not be forced to loose their ability to progress their characters simply to appease those in guilds who have Guild Masters that insist they do LFR each week to progress (when this is often not needed under a skilled Raid Leader and team of Raiders).<br />
+<br />
+If you don't want to do LFR, don't do it. Don't take the enjoyment away from those that play it, and don't stunt their progression just because you don't like the idea of &quot;non-raiders&quot; getting gear. Ghost Crawler, Bashiok, Watcher, and several other Blue Posters have said that the most enjoyable aspect of WoW for any person, Raider or Non, is to progress their character.<br />
+<br />
+Take that away, and suddenly we'll be back to a Cataclysm issue where subscribers will be dropping left and right because they no longer have the ability to play the game the way they like, and everyone will suffer for it (there's a reason Firelands and DS were absolutely terrible raids).<br />
+<br />
+As Ghost Crawler said over and over and over until he was blue in the face: Forcing players to go into higher difficulty content by taking away rewards and content from lower difficulties does not generally lead to the player stepping up, it leads to them quitting. And while I'm sure many of you think WoW would be a lovely place where only a few million players are left playing, the reality is the game wouldn't be able to sustain it's self anymore in it's current form, and we'd end up with WoW going forward that is a much different, and much less enjoyable, experience than what it is now.<br />
+<br />
+Simply put: There is a reason the majority of you are not working for Blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2014-04-29, 07:06 PM</div></div><div class="posttext">what a waste of time.. start the beta or bring real news!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jna</div><div class="date">2014-04-29, 07:14 PM</div></div><div class="posttext">I wonder what kind of ppl LFR is aimed now... we already know there won't be &quot;friends and family&quot; there, neither raiders or hardcore raiders.. lol <br />
+I guess if we cut all these, the only thing left is unfriendly, botters and afk players =S<br />
+<br />
+If it's supposed to be a tourist mode, maybe they should turn LFR into a solo-raid with your garrison followers or a 5m-raid where everyone come with 4 followers. The good part is you could hear the history slowing and watch the cinematics. :rolleyes:<br />
+<br />
+But I fear they ll make LFR difficulty as much retarded as possible... =S</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">subanark</div><div class="date">2014-04-29, 07:15 PM</div></div><div class="posttext">Traditionally (since firelands), our guild has never kicked someone for poor performance or outwardly criticized others of bad play. Those players who tended not to meet the bar eventually left. However, now that we have been forced into heroic difficulty content (seeing as this patch has gone on for so long), we have been forced to sit some people that don't have a well geared offspec, or are simply inexperienced with that role (mainly healer -&gt; dps). We are up against the gear wall, and despite this, we simply can't afford subpar dps from anyone (as we lack the skill to offset it). We have gone entire weeks with no one getting upgrades.<br />
+<br />
+Having to spend 100+ attempts on a boss pushes our guild to the breaking point. The first boss is particularly bad, as it seems to be pure luck if we kill him within the first hour of raiding. The next three bosses we kill within 2 attempts (assuming we pull in our &quot;good&quot; dps for the 4th).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4359933d3d</div><div class="date">2014-04-29, 07:17 PM</div></div><div class="posttext">People that enjoy playing only on LFR should not be forced to loose their ability to progress their characters <br />
+<br />
+You aren't &quot;losing&quot; anything. You'll still get a full set of gear that is significantly better than what you start out with at level 90. It just isn't tier with the same bonuses as people actually doing the un-cut versions of the raids.<br />
+<br />
+<br />
+If you don't want to do LFR, don't do it.<br />
+<br />
+Nobody will feel compelled to once we lose the ability to complete our tier sets and get overpowered trinkets.<br />
+<br />
+<br />
+Take that away, and suddenly we'll be back to a Cataclysm issue where subscribers will be dropping left and right because they no longer have the ability to play the game the way they like, and everyone will suffer for it (there's a reason Firelands and DS were absolutely terrible raids).<br />
+<br />
+I wish you people would change the record. It's like you're trying to put a leash on them by threatening to leave in your &quot;millions&quot; anytime they make a change you don't like. Cataclysm was a clusterfuck because the 5mans weren't tuned for randomly formed groups, and the first bosses in the raids were mechanically more complex than several others within the same tier, creating a brickwall. Those were the only 2 pieces of content in the game. Today we have LFR, scenarios, world bosses and WoD we'll have more max-level TI stuff, Garrisons and an out-door PvP zone.<br />
+<br />
+Firelands was actually one of the best raids they've ever created. Not sure why you're shit-talking DS either when it was apparently exactly what you want; ridiculously easy bosses that drop amazing gear.<br />
+<br />
+<br />
+As Ghost Crawler said over and over and over until he was blue in the face: Forcing players to go into higher difficulty content by taking away rewards and content from lower difficulties does not generally lead to the player stepping up, it leads to them quitting.<br />
+<br />
+Ghostcrawler isn't god. They had a successful game before him, and they'll have a successful game after him. Clearly, something is showing them that there's a class of player that is not happy being in LFR, and is larger than the &quot;LFRaider&quot; crowd; which is the &quot;Friends and Family&quot; group, otherwise they wouldn't be spending so much time working on features for them and downplaying the role of LFR.<br />
+<br />
+You know what else they've also said till they're blue in the face? &quot;Player retention is a problem&quot;. Know what contributes to that? LFR.<br />
+<br />
+<br />
+the reality is the game wouldn't be able to sustain it's self anymore in it's current form, and we'd end up with WoW going forward that is a much different, and much less enjoyable, experience than what it is now.<br />
+<br />
+Not sure if srs. Blizzard could support WoW, and all its other projects with HALF the subs they have now. They aren't using all that they earn on development and keeping the lights on. The game isn't going to be a husk with no raid content and 3 employees because a few 100k &quot;I will only raid LFR so give me bis gear&quot; babbies leave.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ganush</div><div class="date">2014-04-29, 07:19 PM</div></div><div class="posttext">I agree with this, though not in such a rude way.<br />
+<br />
+People that enjoy playing only on LFR should not be forced to loose their ability to progress their characters simply to appease those in guilds who have Guild Masters that insist they do LFR each week to progress (when this is often not needed under a skilled Raid Leader and team of Raiders).<br />
+<br />
+If you don't want to do LFR, don't do it. Don't take the enjoyment away from those that play it, and don't stunt their progression just because you don't like the idea of &quot;non-raiders&quot; getting gear. Ghost Crawler, Bashiok, Watcher, and several other Blue Posters have said that the most enjoyable aspect of WoW for any person, Raider or Non, is to progress their character.<br />
+<br />
+Take that away, and suddenly we'll be back to a Cataclysm issue where subscribers will be dropping left and right because they no longer have the ability to play the game the way they like, and everyone will suffer for it (there's a reason Firelands and DS were absolutely terrible raids).<br />
+<br />
+As Ghost Crawler said over and over and over until he was blue in the face: Forcing players to go into higher difficulty content by taking away rewards and content from lower difficulties does not generally lead to the player stepping up, it leads to them quitting. And while I'm sure many of you think WoW would be a lovely place where only a few million players are left playing, the reality is the game wouldn't be able to sustain it's self anymore in it's current form, and we'd end up with WoW going forward that is a much different, and much less enjoyable, experience than what it is now.<br />
+<br />
+Simply put: There is a reason the majority of you are not working for Blizzard.<br />
+<br />
+So long as LFR drops loot, you will be able to progress your character with it. It just becomes a choice of whether you use LFR or Heroic Dungeons if that loot is of the same level. Your gear cap will be a little lower each tier, but you will still be able to progress your character through LFR. Anyone who continues to raid at a 10 man level will be facing the exact same situation as LFR players, in that their gear cap will be lower than it used to be compared to the new 20 man raid format, but I don't hear near as much crying there. Just because they are changing the gear level model doesn't mean you aren't progressing your character.<br />
+<br />
+The idea I think is coming is that LFR players are getting their own progression path that relies on in game matchmaking, normal dungeons &gt; LFR &gt; flex normal (if desired). Players preferring to run in organized groups are more likely to follow the heroic dungeon &gt; flex heroic &gt; mythic path. I think separation of these to play styles is long overdue.<br />
+<br />
+In short, just as you say raiders had a choice to run LFR or not, you have the choice of what level gear you go after by your choice in what level raiding you pursue. Your choice will dictate your gear, so make your choice and be happy with the rewards. There is no punishment here, just a redesign. The idea that somehow LFR saved WoW is ludicrous. Subs have continued to drop throughout MoP even with LFR in place. You're assumption that people will be leaving the game because of these changes is unfounded, and I know many people who have left the game because they hate LFR and there is seemingly little else to do.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">subanark</div><div class="date">2014-04-29, 07:26 PM</div></div><div class="posttext">The entire way tier set bonuses work needs to be changed. You shouldn't have to make a decision to break a set bonus when considering upgrading to a higher tier item. I don't care if it makes loot less interesting, people just use ask mr robot for the answer to which item gets you the biggest performance increase.<br />
+<br />
+What should be done is each tier piece has a set bonus for every number of items of that tier from 1 to the max (e.g. 5 right now). Every item you add from the first to the last should add a bonus. These bonuses need to be competitive with items with bonus stats, but should not compete with items of higher ilevel.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nekobaka</div><div class="date">2014-04-29, 07:47 PM</div></div><div class="posttext">Unifying the difficulty of the two modes mainly involved increasing the difficulty of 10-player mode. This left many players who had enjoyed success in 10-player Normal Icecrown Citadel feeling unable to get any sort of foothold in Cataclysm raiding.<br />
+If you enjoyed success in normal 10 ICC then you would have been able to get more than a foothold in Cata assuming your realm had a healthy raiding population and should have at least sat at 10/12 clear for T11 prenerf. PuGs on my realm that didnt even kill LK could get 10/12 in T11. Normal LK 10 was no joke and only a minority of those who stepped foot into ICC killed him.<br />
+<br />
+<br />
+People that enjoy playing only on LFR should not be forced to loose their ability to progress their characters simply to appease those in guilds who have Guild Masters that insist they do LFR each week to progress (when this is often not needed under a skilled Raid Leader and team of Raiders).<br />
+<br />
+But your not losing your ability to progress your character and are even given non-raiding alternatives for those who dont like raiding which a number of non-raiders have been asking for before LFR took over and stood above raiding alternatives in terms of character progression. LFR in MoP has lead to furthering the gap between non-raider and normal mode raider all for the purpose of shoving those who dont like LFR into it. It isnt the raiders &quot;need&quot; to farm LFR that is the only reason why LFR is seeing the changes it is seeing. Blizzard is trying to also force a shift in the demographic of those who do LFR as it is too wide. This idea that everyone wants to raid for end game didnt pan out in MoP. So here is to more options for character progression and the return of five mans.<br />
+<br />
+<br />
+Take that away, and suddenly we'll be back to a Cataclysm issue where subscribers will be dropping left and right because they no longer have the ability to play the game the way they like, and everyone will suffer for it (there's a reason Firelands and DS were absolutely terrible raids).<br />
+<br />
+As Ghost Crawler said over and over and over until he was blue in the face: Forcing players to go into higher difficulty content by taking away rewards and content from lower difficulties does not generally lead to the player stepping up, it leads to them quitting. <br />
+<br />
+And yet subs dropped in MoP. Over 100 million players have have played WoW. The game has a high turn over as with many other games and the rate of new subs vs losses crossed points in WotLK as seen with the stagnation of net sub growth. Also ToC was a terrible raid so I dont know what your getting at with FL and DS. The subs was also higher for FL and DS then than for MoP. Might want to work on your argument more.<br />
+<br />
+GC never said removing rewards, he said removing options and forcing players to step up isnt good. GC has said one of the big problems with Cata heroics for instance was removing normal mode five mans which forced players to step up. WoD is providing more options and LFR is still there. LFR is actually being made easier. <br />
+<br />
+Perhaps you just mad that five man players can get comparable gear as you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chaoslux</div><div class="date">2014-04-29, 07:51 PM</div></div><div class="posttext">Raid Finder will remain 25-only.<br />
+a) Because larger groups are more likely balanced.<br />
+b) Because groups are formed automatically, so how to determine different sizes?<br />
+<br />
+I think (hope) Raid Finder loot will be behind that of heroic dungeons, removing the need for anyone to do Raid Finder for gear.<br />
+<br />
+And ideally they would let people kill a boss as often as they'd like, but give them a chance for loot only once per lockout.<br />
+<br />
+They ALREADY mentioned that Raid Finder will be flexible 10-25. BUT when servers form a raid finder, it will definitely be 25. The flex mechanic is to prevent the whole &quot;Well, half the group left after this wipe and now it takes 45 minute to fill it back up.&quot; Instead of waiting 45 minutes, you just kill the boss with the remaining people in the group.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rogueMatthias</div><div class="date">2014-04-29, 08:06 PM</div></div><div class="posttext">I wonder what kind of ppl LFR is aimed now... we already know there won't be &quot;friends and family&quot; there, neither raiders or hardcore raiders.. lol <br />
+I guess if we cut all these, the only thing left is unfriendly, botters and afk players =S<br />
+<br />
+<br />
+From what I gather, heroic dungeons are going to be produced throughout the expansion.<br />
+<br />
+For each new raid, there will be a LFR and some dungeons, where you catch up with gear for the proper raid. That's all LFR is going to be, a different way to gear up as an alternative to dungeons (and probably to get Valor/Whatever). On the plus side, it means if you're bored of LFR/Dungeons for the week you can just do the other, so it should give more variety.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3930bb48c6</div><div class="date">2014-04-29, 08:14 PM</div></div><div class="posttext">I agree with this, though not in such a rude way.<br />
+<br />
+People that enjoy playing only on LFR should not be forced to loose their ability to progress their characters simply to appease those in guilds who have Guild Masters that insist they do LFR each week to progress (when this is often not needed under a skilled Raid Leader and team of Raiders).<br />
+<br />
+If you don't want to do LFR, don't do it. Don't take the enjoyment away from those that play it, and don't stunt their progression just because you don't like the idea of &quot;non-raiders&quot; getting gear. Ghost Crawler, Bashiok, Watcher, and several other Blue Posters have said that the most enjoyable aspect of WoW for any person, Raider or Non, is to progress their character.<br />
+<br />
+Take that away, and suddenly we'll be back to a Cataclysm issue where subscribers will be dropping left and right because they no longer have the ability to play the game the way they like, and everyone will suffer for it (there's a reason Firelands and DS were absolutely terrible raids).<br />
+<br />
+As Ghost Crawler said over and over and over until he was blue in the face: Forcing players to go into higher difficulty content by taking away rewards and content from lower difficulties does not generally lead to the player stepping up, it leads to them quitting. And while I'm sure many of you think WoW would be a lovely place where only a few million players are left playing, the reality is the game wouldn't be able to sustain it's self anymore in it's current form, and we'd end up with WoW going forward that is a much different, and much less enjoyable, experience than what it is now.<br />
+<br />
+Simply put: There is a reason the majority of you are not working for Blizzard.<br />
+<br />
+I'll agree with you that it is a problem, if the players who won't play at scheduled times, lose the possibility to progress their character.<br />
+<br />
+However I don't believe that the lower ilvl rewards from LFR will result in such a development. What I do expect instead, is that Blizz will step up to the challenge, and make sure that there in every major raid patch update, also will be a handful of new heroic dungeons, which of course are to have higher ilvl loot than earlier hc dungeons.<br />
+<br />
+This way the &quot;non-schedulers&quot; will keep having a way to progress their characters. And honestly, from my own experience in Wrath, I can tell you that it's a much better experience for a &quot;non-scheduler&quot; to progress one's character through hcs (at least if they at release are a bit, yet not too much, challenging). This is due to how the small 5-man size makes it manage-able for the players in the hc to communicate with each other, and thereby use teamwork to overcome the bosses, which actually makes for an enjoyable kill and thus experience.<br />
+<br />
+If I am playing as a &quot;non-scheduler&quot;, I'd rather progress my character through enjoyable 5-man hc dungeons, than though the very much unenjoyable and very frustrating experience that is the clusterfuck of LFR.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nekobaka</div><div class="date">2014-04-29, 08:17 PM</div></div><div class="posttext">I'll agree with you that it is a problem, if the players who won't play at scheduled times, lose the possibility to progress their character.<br />
+<br />
+<br />
+PuG raiding. LFR as is involves a lot more time than it had back in DS. If one has time to do one wing of LFR then they have time to do a PuG. If one needs to constantly bail mid LFR run then they wouldnt have gotten far anyways. The very time commitment that players complained about in Cata for five mans being non-casual friendly is being seen in LFR in MoP.<br />
+<br />
+<br />
+<br />
+If I am playing as a &quot;non-scheduler&quot;, I'd rather progress my character through enjoyable 5-man hc dungeons, than though the very much unenjoyable and very frustrating experience that is the clusterfuck of LFR. <br />
+That I do agree with. LFR just doesnt work in its current format. It is a large group based activity that involves some teamwork which is also trying to cater to those who dont like that or at least shove those kind of players into it which ruins it for those who do want a more convenient form of &quot;raiding&quot;. Too many types of players trying to be appeased with LFR in MoP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zookz25</div><div class="date">2014-04-29, 08:22 PM</div></div><div class="posttext">I really like this read as a reflection for previous years. While I haven't played since the start of Mists, it's nice to see how they view what they've done overtime. I still keep up with WoW news every now and then in case something happens that changes my mind to return.<br />
+<br />
+Currently, I can't see myself coming back to WoW without something being done about LFR. Before I left, LFR started to really drain my motivation to actual want to progress. I was in the friends and family style guild, and it wasn't the difficulty that pushed us away, but the fact that we saw everything in LFR. We've raised up to the challenge in the past (even doing heroics in some cases, if we really liked the raid), but that striving was pushed by actually wanting to see what the content had to offer.<br />
+<br />
+I understand it should be the adversity and challenge that brings us to play, but damn, the payoff just wasn't there. It brought myself and said friends and family to wonder why we should bother putting in all the effort since we were seeing the last boss of the game before we even tackled the first boss on normal. The whole fun part and finally reaching the end to fight with the big bad is kind of lost when you kicked his ass a long time ago.<br />
+<br />
+It all kind of sucks because my brother and I have missed that comradery involved with WoW since we've stopped playing. I still look forward to what WoD will shape up to be though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">gonterf</div><div class="date">2014-04-29, 08:28 PM</div></div><div class="posttext">Alextana, I agree with what you just said, but I'd also like to point out that enjoyable progression also involves a bit of a challenge. Currently, Heroic dungeons are tuned such that there's no challenge even for people who don't communicate with each other, and so they become 'grind' content instead of 'progression' content. Blizzard has said they'd like to tune the new Heroics to be closer to how they used to be (IE, early Cata/mid-BC), and that's going to be a good start, but it remains to be seen how well they actually pull it off. Another thing to note is that a non-scheduler is quite likely to venture into flex raids every once in a while since these groups no longer need to maintain a strict roster, and it would be a shame if doing so made their progression in heroics become trivial/pointless.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Don Matador</div><div class="date">2014-04-29, 08:34 PM</div></div><div class="posttext">2004-2006 that was my World of warcraft experience right there. Classic to BC will never forget those good old memories.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mellrod</div><div class="date">2014-04-29, 08:40 PM</div></div><div class="posttext">what a waste of time.. start the beta or bring real news!<br />
+<br />
+Why is this a waste of time or insignificant information? They made two articles on the raids and dungeons on the past, but this time providing insight on their train of thought, reasoning, and ideas behind making said instances. it's pretty eye-opening and a nice walk down memory lane. It shows us what blizzard has/hasn't learned from the past as well and hints at what the dungeons and raids of the future may look like for us.<br />
+<br />
+Beta news will come when it's ready, i dont see why people think there's a way to advance something that takes time first and foremost.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mtr</div><div class="date">2014-04-29, 08:42 PM</div></div><div class="posttext">&quot;We were tremendously happy with how players have received a new pvp season with the same armor models as the previous one.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3930bb48c6</div><div class="date">2014-04-29, 08:45 PM</div></div><div class="posttext">PuG raiding. LFR as is involves a lot more time than it had back in DS. If one has time to do one wing of LFR then they have time to do a PuG. If one needs to constantly bail mid LFR run then they wouldnt have gotten far anyways. The very time commitment that players complained about in Cata for five mans being non-casual friendly is being seen in LFR in MoP.<br />
+<br />
+Honestly, half-way through my post I realized that PuG raiding might actually see a rebirth in WoD. With WoD downplaying the gear-wise importance of LFR, I believe that it's possible that the &quot;non-schedulers&quot; who earlier would only do LFR, might now under these new circumstances feel compelled to make PuG groups in order to acquire better gear. After all, PuGing doesn't really require you to schedule your playtime.<br />
+<br />
+At the same time I believe that PuGing might serve as a gateway drug, giving those people who used to be LFR &quot;non-schedulers&quot; a compulsion to actually start seeking to enter the traditional scheduled raid scene. (Here I'm not talking about those people who are &quot;non-schedulers&quot; due to work and etc., but rather those who are a able to do so, but for whatever reason feel uncomfortable scheduling their playtime.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">leetswily</div><div class="date">2014-04-29, 08:56 PM</div></div><div class="posttext">On average I raid on and off with two max level characters (when I play the game anyway.) At the current state of things It's like I'm killing the same sh*t over and over again. I feel like a dangerous thing these dungeon difficulty modes ignore (at least in MoP) is the fact that you're progressing for weeks/months on end just so you can go back and do the same exact thing except harder. It's great that it makes content more available for casuals; but I think it's also one of the roots of why people get really bored with the game. Now whenever I get loot in raids, odds are it's going to be the same exact piece of gear with slightly better stats. When content was exclusively &quot;difficult&quot; (level 60 naxx/aq40/whatever) it kind of gave people more of a concrete goal to progress towards (cooler loot, cooler content.) I'm not saying they need to go back to their style of level 60 raids; I just hope not to be farming the same bosses for 8 months in WoD.<br />
+<br />
+tl;dr <br />
+The current system of raiding has a very weak incentive for progression (in my opinion.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc903ad35b4b</div><div class="date">2014-04-29, 09:03 PM</div></div><div class="posttext">The big point he is going to make in the next blog is about burnout and hardcore raiders feeling the need to run LFR for tier pieces and trinkets. <br />
+<br />
+I am sure he will. As he is a hardcore gamer himself. Devs like him will never create a good game for the majority of players, but focus on his own cultural background.<br />
+<br />
+We know where you come from, watcher.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaq</div><div class="date">2014-04-29, 09:25 PM</div></div><div class="posttext">Love these blogs</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hawtlol</div><div class="date">2014-04-29, 09:47 PM</div></div><div class="posttext">On average I raid on and off with two max level characters (when I play the game anyway.) At the current state of things It's like I'm killing the same sh*t over and over again. I feel like a dangerous thing these dungeon difficulty modes ignore (at least in MoP) is the fact that you're progressing for weeks/months on end just so you can go back and do the same exact thing except harder. It's great that it makes content more available for casuals; but I think it's also one of the roots of why people get really bored with the game. Now whenever I get loot in raids, odds are it's going to be the same exact piece of gear with slightly better stats. When content was exclusively &quot;difficult&quot; (level 60 naxx/aq40/whatever) it kind of gave people more of a concrete goal to progress towards (cooler loot, cooler content.) I'm not saying they need to go back to their style of level 60 raids; I just hope not to be farming the same bosses for 8 months in WoD.<br />
+<br />
+tl;dr <br />
+The current system of raiding has a very weak incentive for progression (in my opinion.)<br />
+<br />
+And it's a very good one and it was a major reason for people to keep coming back to the raids. Another big thing is the introduction of LFR, PvP server transfers, and faction changes, and name changes changed the community sense the game brought. Remember what would happen if you ninja'd something or kept purposely wiping a raid? Majority of the server would know your name and would get blacklisted. Just like in real life you had to make a name for yourself and actually have some mannerisms. Now you are anonymous and can be a dick all you want and it won't effect the progression of your character(s).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocac96309fe0</div><div class="date">2014-04-29, 09:56 PM</div></div><div class="posttext">So we've gone from Wrath where 3-4 lockouts accelerated burnout to Cata where 1 lockout and equal difficulties kept lesser skilled players from wanting to get better back to 4 difficulties? It sounds like we're back where we started and the end result isn't good. Four raid lockouts that are separate is the problem we had in ToC only worse because there will be more bosses and trash on top of it.<br />
+<br />
+I think problems with raid structure were when blizzard viewed them as such. In the end what we learned from all this is that limiting what people can do in the game is a bad idea, even if some part of the community felt &quot;preasured&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3930bb48c6</div><div class="date">2014-04-29, 10:00 PM</div></div><div class="posttext">On average I raid on and off with two max level characters (when I play the game anyway.) At the current state of things It's like I'm killing the same sh*t over and over again. I feel like a dangerous thing these dungeon difficulty modes ignore (at least in MoP) is the fact that you're progressing for weeks/months on end just so you can go back and do the same exact thing except harder. It's great that it makes content more available for casuals; but I think it's also one of the roots of why people get really bored with the game. Now whenever I get loot in raids, odds are it's going to be the same exact piece of gear with slightly better stats. When content was exclusively &quot;difficult&quot; (level 60 naxx/aq40/whatever) it kind of gave people more of a concrete goal to progress towards (cooler loot, cooler content.) I'm not saying they need to go back to their style of level 60 raids; I just hope not to be farming the same bosses for 8 months in WoD.<br />
+<br />
+tl;dr <br />
+The current system of raiding has a very weak incentive for progression (in my opinion.)<br />
+<br />
+On a personal level (as in what would I enjoy the most) I agree with you on this statement. The problem though, is that with the current demographic that plays wow, such a change would simply result in too much lost revenue. Lost revenue simply due to how ghostcrawler said their data suggesten that most players won't step up to the challenge, but instead quit (which I honestly find saddening, but such is simply the reality)<br />
+<br />
+As such what would improve the quality of the game for me, would hurt Blizzard's revenue, and therefor won't ever be done.<br />
+<br />
+However there is one very ambitous way where it could perhaps be done, without hurting, and perhaps even increasing revenue. If we as a starting point go with the assumption that: <br />
+<br />
+a) What most people enjoy to do in the game is to progress, either through gear acquisition, boss kill or other ways etc. <br />
+<br />
+and that<br />
+<br />
+b) The demographic of the PvE playerbaser is split into (at least) 4 groups<br />
+<br />
+- The &quot;non-schedulers&quot; group: People who either can't or won't play at scheduled times<br />
+- The &quot;friends and family&quot; group: People who care more about playing together, than playing in order to overcome more hardcore-ish challenges<br />
+- The &quot;serious raider&quot; group: People who enjoy playing in order to overcome the hard challenges that raiding provides<br />
+- The &quot;hardcore (super serious) raider&quot; group: People who play to raid; to be the best<br />
+<br />
+The trick then, which of course would be a very ambitious one to pursue, would be to create different types of content for each of these groups, in the same game of WoW.<br />
+<br />
+The current way that Blizzard has tried catering to all of these demographic groups, has been to add the same single type of content, namely raiding, and then slicing it into different difficulties, catering to the different skill levels of these groups.<br />
+<br />
+Now, how to create different type of content for each group? Well I don't know ;) I guess it's pretty much the holy grail of MMOs - But I really hope that once they release WoW2/Titan, if they're still working on it, that they will try to use a new formula to deal with the different demographic groups in an MMO.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zyranthian</div><div class="date">2014-04-29, 10:15 PM</div></div><div class="posttext">I'm really enjoying reading this, I mean I was there and played through these raids but its always interesting to hear the thought processes and the development processes behind it all. Looking forward to part 3!<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I am sure he will. As he is a hardcore gamer himself. Devs like him will never create a good game for the majority of players, but focus on his own cultural background.<br />
+<br />
+We know where you come from, watcher.<br />
+<br />
+I know right! Blizzard do nothing but cater to the hardcore people. You know what'd be good, was if they introduced a difficulty level that was a bit easier than normal, so that more casual groups of friends or PUGs could get together and do some organised raiding. It'd be really handy if there was no set size for the group either, maybe it could be a bit more of a flexible alternative.<br />
+<br />
+Its a pipe dream though I know, they're not interested in creating a good game for the majority of players, just the hardcore.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">buddah13</div><div class="date">2014-04-29, 10:21 PM</div></div><div class="posttext">I wana see them take this a step further and do a LFR for every raid in the game, or at this point its a waste, no one does the old raids except for xmog gear and for nostalgia , it needs to happen soon too</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xjev</div><div class="date">2014-04-29, 10:23 PM</div></div><div class="posttext">I wana see them take this a step further and do a LFR for every raid in the game, or at this point its a waste, no one does the old raids except for xmog gear and for nostalgia , it needs to happen soon too<br />
+<br />
+you can solo most of them, you dont need a team for old raids</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">reagal</div><div class="date">2014-04-29, 11:13 PM</div></div><div class="posttext">lfr has become my end game flex is a nightmare you must have warforged raid gear level and full heroic achievements to get into a pug. group and there idea of friends and family well that does not apply to me as i solo play this game. it appears from the above that this game is no longer aimed at players like me. i will not accept lfr being reduced further now we don't even get tier gear class act blizzard.<br />
+<br />
+when this flex catastrophe does not bring in the subs like you think it will, repair lfr and like in cataclysm i will come back. Warcraft despite your hatred for players like me is still one of my favorite games.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zura</div><div class="date">2014-04-29, 11:14 PM</div></div><div class="posttext">thanks for bringing back good memories blizz, now what's next? when will we play wod?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cptaylor38</div><div class="date">2014-04-30, 12:10 AM</div></div><div class="posttext">lfr has become my end game flex is a nightmare you must have warforged raid gear level and full heroic achievements to get into a pug. group and there idea of friends and family well that does not apply to me as i solo play this game. it appears from the above that this game is no longer aimed at players like me. i will not accept lfr being reduced further now we don't even get tier gear class act blizzard.<br />
+<br />
+when this flex catastrophe does not bring in the subs like you think it will, repair lfr and like in cataclysm i will come back. Warcraft despite your hatred for players like me is still one of my favorite games.<br />
+<br />
+<br />
+Nobody cares about that minor detail for finding a raiding group. They'll just say that is an excuse or that it's completely false. Everything is false, false, false. Show me proof. Source?<br />
+<br />
+It is the truth though. Nobody wants you in their group unless you have an ilvl high enough guaranteed to be able to carry them. Everyone has to have 10 ilvls higher than necessary or more or you won't even get a response. You can search for hours on OQueue and find group after group that MAY invite you, but then the group will fall apart waiting for a tank or a healer.<br />
+<br />
+Raid finder is a guaranteed way to get a group, even if you have to wait. And you will be guaranteed to get replacements for that group. You can do it on your own time and it allows people a chance to complete their group without having to portal or hearth out and spam in trade chat or ask somebody in their guild and get no response.<br />
+<br />
+The social aspect of this game is dead, and they're not going to bring it back by forcing all of us subhuman casuals to push ourselves into getting into higher &quot;difficulty&quot; content. <br />
+<br />
+And yet again, from Blizzard's perspective this isn't even about a hardcore being a hardcore player or not. It's not about rewarding hardcore players.<br />
+<br />
+It will take more time from the casual players that don't have guilds to be able to get the tier gear that won't drop from looking for raid, so they can milk out those subscriptions. The ones that do raid higher difficulty and have guilds are already invested anyway so they won't run looking for raid a few times to get their tier and then unsub.<br />
+<br />
+It's just ironic that all of these &quot;hardcore&quot; players think that Blizzard is catering to them, when in reality they are only catering to themselves. When they start to see all of these changes have yet another negative impact and decide to do a full 180 YET AGAIN for the next expansion to cater to the &quot;casuals&quot; again.. it will be nice to see you on the other side of fence.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nami</div><div class="date">2014-04-30, 12:11 AM</div></div><div class="posttext">Currently, I can't see myself coming back to WoW without something being done about LFR. Before I left, LFR started to really drain my motivation to actual want to progress. I was in the friends and family style guild, and it wasn't the difficulty that pushed us away, but the fact that we saw everything in LFR. We've raised up to the challenge in the past (even doing heroics in some cases, if we really liked the raid), but that striving was pushed by actually wanting to see what the content had to offer.<br />
+<br />
+I understand it should be the adversity and challenge that brings us to play, but damn, the payoff just wasn't there. It brought myself and said friends and family to wonder why we should bother putting in all the effort since we were seeing the last boss of the game before we even tackled the first boss on normal. The whole fun part and finally reaching the end to fight with the big bad is kind of lost when you kicked his ass a long time ago.<br />
+<br />
+I know what you mean. After clearing Dragon Soul a bunch of times in LFR, getting further on normal didn't feel the same as it did back in ICC. Defeating the Lich King was a lot more satisfying than defeating Deathwing, and I'm convinced it had to do with the fact that I killed him in LFR first.<br />
+<br />
+But you know what the solution is? Don't do LFR. It was more difficult back in DS because we needed gear, but now that we have Flex, I haven't done LFR at all to gear myself for normal, and I only did the first few bosses on Flex and still managed to clear all of SoO on normal. You might say it's the same problem with Flex, because you get to see the content on easy mode before attempting it on normal, but my solution to this, as dumb as it sounds, is to not watch the cutscenes until you've cleared the bosses on normal. I actually did the same thing in Dragon Soul - I skipped the ending cutscene every time I finished LFR and only watched it when I finally downed Deathwing on normal with my guild. Of course, the kill wasn't as satisfying as it would have been if I hadn't previously defeated him in LFR, but at least it gave me something to look forward to.<br />
+<br />
+In short, if seeing the content on lower difficulties is making you not want to raid, then avoid doing LFR/Flex if you can (like I did for Garrosh), but if you don't have a choice because you really need the gear, then skip the cutscenes so you don't feel like you've already seen everything when you get to normal.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc06f546cfaf</div><div class="date">2014-04-30, 12:41 AM</div></div><div class="posttext">Nobody cares about that minor detail for finding a raiding group. They'll just say that is an excuse or that it's completely false. Everything is false, false, false. Show me proof. Source?<br />
+<br />
+It is the truth though. Nobody wants you in their group unless you have an ilvl high enough guaranteed to be able to carry them. Everyone has to have 10 ilvls higher than necessary or more or you won't even get a response. You can search for hours on OQueue and find group after group that MAY invite you, but then the group will fall apart waiting for a tank or a healer.<br />
+<br />
+Raid finder is a guaranteed way to get a group, even if you have to wait. And you will be guaranteed to get replacements for that group. You can do it on your own time and it allows people a chance to complete their group without having to portal or hearth out and spam in trade chat or ask somebody in their guild and get no response.<br />
+<br />
+The social aspect of this game is dead, and they're not going to bring it back by forcing all of us subhuman casuals to push ourselves into getting into higher &quot;difficulty&quot; content. <br />
+<br />
+And yet again, from Blizzard's perspective this isn't even about a hardcore being a hardcore player or not. It's not about rewarding hardcore players.<br />
+<br />
+It will take more time from the casual players that don't have guilds to be able to get the tier gear that won't drop from looking for raid, so they can milk out those subscriptions. The ones that do raid higher difficulty and have guilds are already invested anyway so they won't run looking for raid a few times to get their tier and then unsub.<br />
+<br />
+It's just ironic that all of these &quot;hardcore&quot; players think that Blizzard is catering to them, when in reality they are only catering to themselves. When they start to see all of these changes have yet another negative impact and decide to do a full 180 YET AGAIN for the next expansion to cater to the &quot;casuals&quot; again.. it will be nice to see you on the other side of fence.<br />
+<br />
+About Flex vs LFR.<br />
+<br />
+<br />
+1) You can create your own group, it works. Tested and approved.<br />
+<br />
+2) People search for absurd ilvl because SOO is more than 8 months old now and people actually want to RUSH those bosses and be done with it quickly. That was not the case at the beginning of 5.4.<br />
+<br />
+3) It's not a solo game. Massively Multiplayer Online !<br />
+<br />
+LFR is toxic and has bad influence on the players base. Flex is the near-perfect solution, please just try harder and give it more thoughts.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paradyne</div><div class="date">2014-04-30, 02:13 AM</div></div><div class="posttext">About Flex vs LFR.<br />
+<br />
+<br />
+1) You can create your own group, it works. Tested and approved.<br />
+<br />
+2) People search for absurd ilvl because SOO is more than 8 months old now and people actually want to RUSH those bosses and be done with it quickly. That was not the case at the beginning of 5.4.<br />
+<br />
+3) It's not a solo game. Massively Multiplayer Online !<br />
+<br />
+LFR is toxic and has bad influence on the players base. Flex is the near-perfect solution, please just try harder and give it more thoughts.<br />
+<br />
+As long as Flex has the ability for players to determine what criteria they want for the formation of a group &amp; how they will distribute loot then it will never be a replacement for LFR. If you are familiar with the history of PUG formation in WoW you'll know that players have always attempted to gate content behind their own perceptions of what they want for a PUG, whether that be unrealistic gear score, unrealistic iLVL, proof of achievements etc.<br />
+<br />
+In WOD we will get yet another form of gating, I will promise you now that here is how entry to Flex (normal in WOD) will work for the majority of PUGs.<br />
+If you have LFR gear you are not welcome, go back &amp; get heroic dungeon gear or clearly you are a scrub....anyone who is wearing LFR gear will bear the same stigma that PUGs used to apply to having pieces of PVP gear back in the day. <br />
+<br />
+By removing LFR from the progression path to get into higher difficulties they will essentially create an easily identifiable group who are considered second class citizens as far as the raiding world is concerned. <br />
+<br />
+Cynical perhaps but also based on 8 years in Wow &amp; seeing the behavior of the community.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LeoXearo</div><div class="date">2014-04-30, 06:52 AM</div></div><div class="posttext">Nobody cares about that minor detail for finding a raiding group. They'll just say that is an excuse or that it's completely false. Everything is false, false, false. Show me proof. Source?<br />
+<br />
+It is the truth though. Nobody wants you in their group unless you have an ilvl high enough guaranteed to be able to carry them. Everyone has to have 10 ilvls higher than necessary or more or you won't even get a response. You can search for hours on OQueue and find group after group that MAY invite you, but then the group will fall apart waiting for a tank or a healer.<br />
+<br />
+Raid finder is a guaranteed way to get a group, even if you have to wait. And you will be guaranteed to get replacements for that group. You can do it on your own time and it allows people a chance to complete their group without having to portal or hearth out and spam in trade chat or ask somebody in their guild and get no response.<br />
+<br />
+The social aspect of this game is dead, and they're not going to bring it back by forcing all of us subhuman casuals to push ourselves into getting into higher &quot;difficulty&quot; content. <br />
+<br />
+And yet again, from Blizzard's perspective this isn't even about a hardcore being a hardcore player or not. It's not about rewarding hardcore players.<br />
+<br />
+It will take more time from the casual players that don't have guilds to be able to get the tier gear that won't drop from looking for raid, so they can milk out those subscriptions. The ones that do raid higher difficulty and have guilds are already invested anyway so they won't run looking for raid a few times to get their tier and then unsub.<br />
+<br />
+It's just ironic that all of these &quot;hardcore&quot; players think that Blizzard is catering to them, when in reality they are only catering to themselves. When they start to see all of these changes have yet another negative impact and decide to do a full 180 YET AGAIN for the next expansion to cater to the &quot;casuals&quot; again.. it will be nice to see you on the other side of fence.<br />
+<br />
+That's one of things I like about LFR, it doesn't matter how many times my group wipes on a boss, I know that eventually I'm going to down him. Anywhere else but in LFR and a single wipe could cause the raid to disband and result in a huge waste of my time.<br />
+<br />
+I don't get why they had to go messing with LFR, I think it is great the way it currently is, you do a toned down raid and get a toned down tier set.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">innersilence</div><div class="date">2014-04-30, 06:59 AM</div></div><div class="posttext">On a personal level (as in what would I enjoy the most) I agree with you on this statement. The problem though, is that with the current demographic that plays wow, such a change would simply result in too much lost revenue. Lost revenue simply due to how ghostcrawler said their data suggesten that most players won't step up to the challenge, but instead quit (which I honestly find saddening, but such is simply the reality)<br />
+<br />
+As such what would improve the quality of the game for me, would hurt Blizzard's revenue, and therefor won't ever be done.<br />
+<br />
+However there is one very ambitous way where it could perhaps be done, without hurting, and perhaps even increasing revenue. If we as a starting point go with the assumption that: <br />
+<br />
+a) What most people enjoy to do in the game is to progress, either through gear acquisition, boss kill or other ways etc. <br />
+<br />
+<br />
+The trick then, which of course would be a very ambitious one to pursue, would be to create different types of content for each of these groups, in the same game of WoW.<br />
+<br />
+The current way that Blizzard has tried catering to all of these demographic groups, has been to add the same single type of content, namely raiding, and then slicing it into different difficulties, catering to the different skill levels of these groups.<br />
+<br />
+<br />
+True, specially the part that says different content for different groups. In my opinion, majority always tend to follow the minority and this is what blizzard fails to understand. What I mean is that there are always minority of good players with those shiny achievements and gear and they spent a lot of time in the game for that purpose, while, others are happy, following them. There is no way, in any game, to make everyone happy with the same content.<br />
+<br />
+let me give an example about myself. back in TBC I used to play with my friends and did some PvP and not hardcore raiding. While we did Karazhan now and then for fun we , also, had some progress in the higher tiers and it was a sheer amount of joy and excitement when we could kill a new boss for the first time and see the following content. Well, back then we had not much chance to try BT but at least we always hoped we could do it one day and when we saw others for example with Illidan sword and it motivated us a lot to do so. Also, there was always other things that we could do, i.e. some challenging heroic dungeons and even solo content and etc. Actually we finally could try the BT after they introduced the badge system and removed attunements. But it also destroyed all the motivation to do the yet unfinished previous contents.<br />
+<br />
+Then it came all the new raiding system which in my opinion brought nothing good in the long term for the raiders. i.e. when me and my friends could clear Cata raids in the normal difficulty we already felt that we finished all the content up to that tier and after that it was only repetition of the same thing again and again. Also, not all players are motivated enough or have the time to do the heroic modes. So, what happened was that every week we tried few times in heroic mode and some players got disappointed very soon and decided to do the rest of it in normal mode for the favor of the getting some loots and it continued till the next tier came. And later LFR came which was a final bullet to this drama. <br />
+<br />
+For conclusion, as a player who always liked PvE I did not try a single raid in the MoP not even a LFR simply because I think it is only a museum that players can join to watch the content and eventually I stopped playing wow like many others. Of course, playing a game for a long time could be the reason but after reading other players comments, I can say it was not the only reason for us to not enjoy this game as much as we used to do.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc06f546cfaf</div><div class="date">2014-04-30, 07:35 AM</div></div><div class="posttext">As long as Flex has the ability for players to determine what criteria they want for the formation of a group &amp; how they will distribute loot then it will never be a replacement for LFR. If you are familiar with the history of PUG formation in WoW you'll know that players have always attempted to gate content behind their own perceptions of what they want for a PUG, whether that be unrealistic gear score, unrealistic iLVL, proof of achievements etc.<br />
+<br />
+In WOD we will get yet another form of gating, I will promise you now that here is how entry to Flex (normal in WOD) will work for the majority of PUGs.<br />
+If you have LFR gear you are not welcome, go back &amp; get heroic dungeon gear or clearly you are a scrub....anyone who is wearing LFR gear will bear the same stigma that PUGs used to apply to having pieces of PVP gear back in the day. <br />
+<br />
+By removing LFR from the progression path to get into higher difficulties they will essentially create an easily identifiable group who are considered second class citizens as far as the raiding world is concerned. <br />
+<br />
+Cynical perhaps but also based on 8 years in Wow &amp; seeing the behavior of the community.<br />
+<br />
+I agree partially. I'm an old school vanilla player myself and I remember perfectly well when you had to PUG your way into 15-man UBRS raid and such. Some people are asking for unrealistic stats or irrevelant achievements sometimes, but I don't think that's the majority. Plus again, you can make your own group. It's very easy to do so and a good way to make new friends / contacts that plays in a similar fashion as you. Aka, easy groups forming later.<br />
+<br />
+Also as far as I know, LFR will have the same ilvl items than heroic dungeon so it shouldn't be an issue. They planned that for WoD so players can choose between two ways of gearing. LFR being a mandatory chore for gearing alts or even main sometimes is clearly not a good thing.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+That's one of things I like about LFR, it doesn't matter how many times my group wipes on a boss, I know that eventually I'm going to down him. Anywhere else but in LFR and a single wipe could cause the raid to disband and result in a huge waste of my time.<br />
+<br />
+I don't get why they had to go messing with LFR, I think it is great the way it currently is, you do a toned down raid and get a toned down tier set.<br />
+<br />
+I've seen a lot of LFR raids falling apart, sadly.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paradyne</div><div class="date">2014-04-30, 01:23 PM</div></div><div class="posttext">I agree partially. I'm an old school vanilla player myself and I remember perfectly well when you had to PUG your way into 15-man UBRS raid and such. Some people are asking for unrealistic stats or irrevelant achievements sometimes, but I don't think that's the majority. Plus again, you can make your own group. It's very easy to do so and a good way to make new friends / contacts that plays in a similar fashion as you. Aka, easy groups forming later.<br />
+<br />
+Also as far as I know, LFR will have the same ilvl items than heroic dungeon so it shouldn't be an issue. They planned that for WoD so players can choose between two ways of gearing. LFR being a mandatory chore for gearing alts or even main sometimes is clearly not a good thing.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+I've seen a lot of LFR raids falling apart, sadly.<br />
+<br />
+I would equate the formation of Raiding PUGs (and even 5 mans occasionally) throughout WoWs history as being very similar to the approach of trying to get your first loan from a bank. Show us all the evidence &amp; history that indicates you are a good credit risk, which a first time borrower would never have. Or prove to us you don't actually need the loan based on a significant portion of savings, which would probably mean you don't really need the loan. Only after you satisfied ridiculous criteria you are probably incapable of meeting are you allowed to have the loan.<br />
+<br />
+So it is for Raiding PUGS for people who have neither a history of raiding or who cannot meet the ridiculous gear requirements that would indicate they have already outgeared the content.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Santoryu</div><div class="date">2014-04-30, 06:11 PM</div></div><div class="posttext">Millions saw Deathwing, only thousands Kel'thuzad, yet when the former is mentioned, people go &quot;meh&quot;.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

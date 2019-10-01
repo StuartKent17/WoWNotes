@@ -1,0 +1,1075 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, that, same, for, week, times, was, and, lfr, not, reason, different, when, content, burnout, character, with, dificulties, doing, players, other, one, forcing, these, having, apply, does, flex, answer, lockouts, exact, reasoning, normal/heroic, logic, but, from, limiting, behind, per, spread, man, togc, some, over, pugs, used, icc, oqueue, 100, then" />
+<meta name="description" content="Dev Watercooler: Raiding Azeroth Part 1—A Look Back 
+Over the course of WoW’s nearly 10-year history, raiding has probably undergone more iteration and change than any other game system. To put the upcoming Warlords of Draenor raid changes into proper context, this three-part blog series will attempt to retrace the twists and turns of our raid design philosophy from Molten Core through Siege of Orgrimmar. Veterans will hopefully enjoy the trip down memory lane, and we hope those who discovered" />
+<title> Dev Watercooler: Raiding Azeroth Part 1—A Look Back [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Dev Watercooler: Raiding Azeroth Part 1—A Look Back</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1506859.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1506859-Dev-Watercooler-Raiding-Azeroth-Part-1—A-Look-Back">Dev Watercooler: Raiding Azeroth Part 1—A Look Back</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-04-28, 05:06 PM</div></div><div class="posttext">Dev Watercooler: Raiding Azeroth Part 1—A Look Back<br />
+Over the course of WoW’s nearly 10-year history, raiding has probably undergone more iteration and change than any other game system. To put the upcoming Warlords of Draenor raid changes into proper context, this three-part blog series will attempt to retrace the twists and turns of our raid design philosophy from Molten Core through Siege of Orgrimmar. Veterans will hopefully enjoy the trip down memory lane, and we hope those who discovered raiding later on will gain some insight into how things used to be . . . and why they changed.<br />
+<br />
+Classic World of Warcraft (2004-2006)<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/april/thumb/raidwc01.jpg (http://media.mmo-champion.com/images/news/2014/april/raidwc01.jpg) <br />
+<br />
+At the launch of WoW, there were two formal raid zones: Onyxia’s Lair and the 10-boss Molten Core, the latter of which was originally only accessible by traversing Blackrock Depths. During the first few months after the game’s release, instances in general didn’t have any cap on the number of players that could enter at once, as long they were all in the same group (15-player Stratholme and Scholomance “raids” were not uncommon back then). With the upper limit on group size set at 40, 40-player raiding became the de facto standard for the early raid zones, since bringing more players generally made things easier (with a few exceptions).<br />
+<br />
+When the world of Azeroth was brand new, the overall pace of leveling significantly slower than it is today, such that the primary occupation for a majority of players was simply striving to reach max level. And even for the most cutting-edge players, many of whom were familiar with the leveling experience from the beta, it took two months from release for the first group to defeat Lucifron, the first boss in Molten Core.<br />
+<br />
+Therefore, applying the tried and true principles of Internet forum logic, Lucifron was clearly more challenging than Garrosh—or any boss in the past 5 years for that matter. OK, maybe not. The delay was due not to the bosses’ difficulty, but rather the fact that it took even the most dedicated groups with extensive raiding experience from past MMOs that long to assemble a sufficiently large group of level-60 players who had obtained the appropriate dungeon and endgame quest gear. In many ways, that was the most challenging aspect of classic WoW raiding: the logistics of assembling and maintaining a sufficient roster with sufficient gear.<br />
+<br />
+Over the year and a half to follow, Blackwing Lair, Temple of Ahn’Qiraj, and the original version of Naxxramas were introduced, providing an increasing level of challenge for groups that had already completed Molten Core. These raid zones all were tuned around both a full 40-player group and the expectation that players possessed a significant amount of raid gear, which meant that by definition fewer and fewer people were able to participate in each successive tier of content. New players joining the game during the summer of 2006, at the height of Naxxramas progression, had virtually no hope of ever seeing Kel’Thuzad. At best, they might level quickly and get enough dungeon gear to join a guild that was still doing Molten Core.<br />
+<br />
+In parallel, we introduced two 20-player raid zones, Zul’Gurub and Ruins of Ahn’Qiraj, allowing smaller groups to experience epic content on a scale beyond that of dungeons. These 20-player raids placed more individual responsibility on the shoulders of raid members, due both to the smaller group size and the comparative difficulty of the encounters. Encounters like Jin’do, Hakkar (now retired), and Ossirian were proof that there was plenty of room for involved and challenging encounter mechanics in smaller raids.<br />
+<br />
+The Burning Crusade (2007-2008)<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/april/thumb/raidwc02.jpg (http://media.mmo-champion.com/images/news/2014/april/raidwc02.jpg) <br />
+<br />
+Moving into The Burning Crusade, we made the first of our raid structure adjustments, reducing the maximum size of the largest and most challenging raids from 40 to 25 players. This change had two objectives:<br />
+<br />
+<br />
+Improve the gameplay experience for the members of raid groups. One lesson we learned from the experiments of Zul’Gurub and Ruins of Ahn’Qiraj is that bigger raid-group sizes didn’t necessarily make players feel more heroic. In fact, when a raid group had 15 healers and two dozen damage-dealers, each individual player’s role often was reduced to that of a cog in a machine. With a somewhat smaller size, individual actions had more impact, and there was more room for a single player to make a difference for the group as a whole—while still keeping enough moving parts for strategically complex encounters.<br />
+Making raiding more accessible in terms of logistics and the requisite social structures. Quite simply, it’s easier to assemble 25 players than it is to assemble 40. It’s also easier to manage a roster of that size. Many guilds used complicated loot systems in order to handle active rosters of 50+ players. Other guilds needed class officers to keep track of the nine priests in the guild. On a personal note, as someone who spent most of classic WoW maintaining my guild’s zero-sum DKP system, complete with a dozen custom rules, this change was an incredible quality-of-life improvement.<br />
+<br />
+<br />
+Along with lowering the maximum raid size, The Burning Crusade also introduced true 10-player raiding for the first time (you could argue that Upper Blackrock Spire was first, but that was more of a 10-player dungeon given its structure). The individual encounters in Karazhan were quite challenging, especially in the zone’s first iteration, but this new size brought raiding within reach of an all-new group of players: “friends and family” groups. A tremendous number of players came to World of Warcraft with a small group of coworkers, classmates, family, and online friends from other games. For the first time, groups like these could raid as self-sufficient entities, perhaps needing to find only a couple of additional players from their realm. However, those groups still could not experience much of the game’s signature content: Illidan taunted everyone who watched The Burning Crusade trailer with his infamous line, “You are not prepared,” but unless you had 24 companions with you, you could never see the expansion’s major villain firsthand within Black Temple.<br />
+<br />
+At The Burning Crusade’s release, the 25-player raid content was mistuned: In many ways, encounters like the original Gruul and Magtheridon picked up where classic’s version of Naxxramas had left off, providing stern challenges for the best guilds in the world, but presenting a brick wall to the rest of the raiding population. This was corrected by Patch 2.1 a few months later, which also established the precedent that each expansion’s raids would be self-contained and would provide an entry point for players who were brand new to raiding.<br />
+<br />
+Patch 2.4 introduced the 25-player Sunwell raid, which continued in the classic progression model by serving as the pinnacle of the raiding pyramid, accessible only to the very few players who had mastered Black Temple and Mount Hyjal. More significant as a sign of things to come, however, was the introduction of the Isle of Quel’danas Badge of Justice vendor, as well as Magister’s Terrace. Badges of Justice were not new, but this was the first time that questing and dungeons allowed access to items that were truly comparable in power, or superior to, many of the raid items from the first two tiers of 25-player The Burning Crusade raiding. Along with the removal of attunements, this meant that for the first time, players could entirely bypass those tiers if they wanted to gear up and prepare for zones like Zul’Aman or Black Temple.<br />
+<br />
+Wrath of the Lich King (2008-2010)<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/april/thumb/raidwc03.jpg (http://media.mmo-champion.com/images/news/2014/april/raidwc03.jpg) <br />
+<br />
+Every patch of Wrath of the Lich King brought with it a major innovation and fundamental shift to the raiding landscape. It was primarily over the course of this expansion that raiding was molded into the form that will be recognizable to most WoW players today.<br />
+<br />
+Patch 3.0: Naxxramas, Obsidian Sanctum, and Eye of Eternity<br />
+<br />
+From the outset, Wrath’s major change was offering parallel 10- and 25-player versions of the same raid zones. This addressed the issue of much of the game’s most epic lore and content being out of reach for those without 25-player groups, and it also allowed us to design content to serve multiple audiences. The 25-player version was tuned to be more challenging, and offered separate loot tables with more powerful rewards. Learning lessons from early The Burning Crusade tuning, Naxxramas, once the playground of the elite during classic WoW, was reintroduced as a highly accessible entry point to raiding. From friends-and-family groups to established raiding guilds to the nascent pickup-group scene, Wrath opened raiding up to a far wider audience than ever before.<br />
+But even 25-player Naxxramas was fairly lenient for guilds coming straight from Sunwell. With Ulduar development well underway, the main feature to occupy top guilds’ attention in the interim was Sartharion’s variable difficulty level within The Obsidian Sanctum. The black dragon was accompanied by three drakes, who would join in the fight and empower Sartharion if left alive. Defeating Sartharion with two drakes active awarded loot from a different, higher level table. Defeating him with all three awarded a special mount and title. The core philosophy here was simple: All players get to see the Obsidian Sanctum and experience the fight, but players looking for an extra challenge can take on a tougher version of the same encounter and be rewarded accordingly. As with many of our experiments, this one’s success laid the groundwork for what was to come.<br />
+<br />
+Patch 3.1: Ulduar<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/april/thumb/raidwc04.jpg (http://media.mmo-champion.com/images/news/2014/april/raidwc04.jpg) <br />
+<br />
+Ulduar took the Sartharion model and expanded upon it, introducing a full tier where 9 of the 13 encounters had an optional “hard mode” that awarded superior loot if completed. This established the new norm for how raid content would be introduced: While average guilds slowly and methodically learn each encounter in a zone, top guilds quickly clear through the regular versions of the encounters and then spend weeks or months progressing through the harder-difficulty versions.<br />
+<br />
+Patch 3.2: Trial of the Crusader<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/april/thumb/raidwc05.jpg (http://media.mmo-champion.com/images/news/2014/april/raidwc05.jpg) <br />
+<br />
+Once it became clear that we were satisfied with the multiple-difficulty paradigm, we decided to formalize things. While many players had (and continue to hold) a fondness for organic hard modes that could be enabled by specified actions within an encounter, they were inconsistent and often lacking clarity. Some of them (The Assembly of Iron, Freya) were elegant and intuitive, but others were frustrating or created traps for players (“Whoops, you killed Hodir in 121 seconds, try again next week!” or “Stop DPS, don’t kill XT’s heart!”). Others still were too obscure and unlikely to be discovered without reading a guide (General Vezax). We already had an established method for handling this problem in another kind of content: Since The Burning Crusade, we’d had two versions of our dungeons, each with different difficulty levels, rewards, and often varying mechanics.<br />
+<br />
+Thus, in patch 3.2, we released four versions of Trial of the Crusader (10- and 25-player, each with a Normal and Heroic difficulty). While in many ways 10-player and 25-player Naxxramas had been equally easy, with Ulduar and Trial of the Crusader there was a more marked division in tuning between the two modes. When in doubt, we never hesitated to err on the side of making the 10-player version easier, due to the difference in rewards. Functionally, in terms of both tuning and itemization, we had three distinct levels of raid difficulty: normal (10-player Normal), hard (10-player Heroic/25-player Normal), and very hard (25-player Heroic).<br />
+<br />
+Having multiple difficulties was hardly a new concept in gaming, but when applied to raiding, it allowed the same content to provide a compelling experience for an even wider range of players. Ultimately, organized raiding feels most satisfying when players encounter a challenge—they strategize, adapt, and practice their execution, and then are able to overcome that challenge. Then in the following weeks, they can come back and demonstrate mastery over something that once seemed difficult. Players’ appetite for failure varies tremendously by play style and temperament, but regardless, few will consider an encounter that they defeat in a single attempt with no prior preparation to be particularly satisfying, and most will be frustrated by an encounter that feels hopeless even after many attempts. Our goal is to hit that tuning sweet spot for as many players as possible, and having multiple difficulties is the mechanism to make that happen.<br />
+<br />
+It may be of interest to note that at that time, we very nearly did not include a 10-player Heroic difficulty at all. There was limited evidence to support that many players other than 25-player raiders were actually doing 10-player Ulduar hard modes, but relying on anecdotal evidence and some firsthand experience, along with the fact that there hadn’t been much time at all for a serious 10-player raiding scene to develop, we decided to keep that difficulty.<br />
+<br />
+Patch 3.3: Icecrown Citadel<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/april/thumb/raidwc06.jpg (http://media.mmo-champion.com/images/news/2014/april/raidwc06.jpg) <br />
+<br />
+Going into the final tier of Wrath, we realized that we needed to do something about the one major drawback of the Trial of the Crusader structure: Players were routinely clearing the content up to four times a week on the same character, for Emblems of Triumph if nothing else. That was somewhat sustainable, though not ideal, in a 5-boss raid with no other enemies between the boss fights. It would have been a burnout-inducing mess in the 12-boss Icecrown Citadel. To address that, we combined Normal and Heroic mode of each raid size into a single raid lockout and allowed players to switch dynamically between the two difficulties mid-raid.<br />
+<br />
+Overall, Icecrown Citadel was a vibrant time for raiding in WoW, with memorable content and multiple difficulty levels and raid formats to accommodate a wide variety of players.<br />
+<br />
+In Part 2, we’ll take a look at raiding today, tracing the evolution of our raid systems from Cataclysm through Mists of Pandaria.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">PuppetShowJustice</div><div class="date">2014-04-28, 05:07 PM</div></div><div class="posttext">Ruby Sanctum never happened apparently.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TrollShaman</div><div class="date">2014-04-28, 05:18 PM</div></div><div class="posttext">Ruby Sanctum never happened apparently.<br />
+<br />
+Because it was a filler raid to kill time till cata would come.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">PriestAlisha</div><div class="date">2014-04-28, 05:19 PM</div></div><div class="posttext">It'd be kind of nice to be able to use old load screens from these past expansions, just for nostalgia. I doubt it'd be that difficult to do.<br />
+<br />
+Edit: Thinking about that, old login screens, and more importantly, the option to play some of the older soundtracks that don't run in the current builds. As I recall you can force them with macros though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lunchbox2042</div><div class="date">2014-04-28, 05:19 PM</div></div><div class="posttext">Another pointless blog to hold people over due to lack of content.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2014-04-28, 05:20 PM</div></div><div class="posttext">&quot;Part 2 skips straight to MOP because cata didn't happen and proof of its existence shall be removed from this and any other plane of existence&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">PuppetShowJustice</div><div class="date">2014-04-28, 05:20 PM</div></div><div class="posttext">Because it was a filler raid to kill time till cata would come.<br />
+<br />
+In what way does that not make it a part of WoW's raiding history? It had a raid lockout. It needed a raid group. It was a raid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7f51360110</div><div class="date">2014-04-28, 05:21 PM</div></div><div class="posttext">trial of the crusader was boring and garbage</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Flaric</div><div class="date">2014-04-28, 05:22 PM</div></div><div class="posttext">Ruby Sanctum never happened apparently.<br />
+<br />
+As someone who defeated Halion on Heroic before Cata came out, I like to think of it that way. Hours of people failing at cutters... (shudder)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Basahkah</div><div class="date">2014-04-28, 05:22 PM</div></div><div class="posttext">Ruby Sanctum never happened apparently.<br />
+<br />
+It didn't change the raid structure at all. Why would they include it in this post?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darksora110</div><div class="date">2014-04-28, 05:26 PM</div></div><div class="posttext">How about this: Cataclysm doesn't exist, go straight to Mists and were happy:)<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+trial of the crusader was boring and garbage<br />
+<br />
+Only thing I liked about this was Jaraxxus, otherwise this was crap. Compare this to Dragon Soul and we got the worst of the worst.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hb</div><div class="date">2014-04-28, 05:27 PM</div></div><div class="posttext">trial of the crusader was boring and garbage<br />
+<br />
+<br />
+Just like every other raid instance since Ulduar. :-)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc22a34bd14f</div><div class="date">2014-04-28, 05:27 PM</div></div><div class="posttext">What a great Dev Watercooler. I totally want to hear about design philosophy regarding old shit from several expansions ago instead of the actual future of raiding in Warlords of Draenor. Great choice, and totally not a waste of time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">raviadso</div><div class="date">2014-04-28, 05:27 PM</div></div><div class="posttext">Another pointless blog to hold people over due to lack of content.<br />
+<br />
+Another pointless post from you as well. <br />
+<br />
+Perhaps you shouldn't post (or even play WoW) if you are that negative all the time. Go enjoy something you won't be negative about.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc67e7f8beac</div><div class="date">2014-04-28, 05:28 PM</div></div><div class="posttext">Pointless blog, couldn't they just use the time to work on WoD instead of wasting it like this?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pasture</div><div class="date">2014-04-28, 05:31 PM</div></div><div class="posttext">It does seem a bit of an odd choice for a blog. We already know about previous raids.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SL1200</div><div class="date">2014-04-28, 05:32 PM</div></div><div class="posttext">When are they going to tell us something we don't already know? And there's going to be 3 of these...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">PuppetShowJustice</div><div class="date">2014-04-28, 05:33 PM</div></div><div class="posttext">Part 2 is tomorrow apparently.<br />
+<br />
+Can't wait to see Part 3 where he tries to convince me that Mythic is a good idea.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aesahaettr</div><div class="date">2014-04-28, 05:33 PM</div></div><div class="posttext">I liked TOTC. Whilst having long corridors full of trash seems fun once, after a week or two I'd rather just skip all that crap and get to the bosses.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TrollShaman</div><div class="date">2014-04-28, 05:33 PM</div></div><div class="posttext">Pointless blog, couldn't they just use the time to work on WoD instead of wasting it like this?<br />
+<br />
+It's not entirely pointless. I mean it tells us what the devs will or will not keep what they used throughout each raid patch. Decent read if you ask me, though I feel like it lacks substance...<br />
+Also it's just a blog post, surely it doesn't take more than 3 days to write and proofread this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Friskyrum</div><div class="date">2014-04-28, 05:33 PM</div></div><div class="posttext">Another pointless blog to hold people over due to lack of content.<br />
+<br />
+Or maybe they're reliving the past because the 10th anniversary of WoW is nearing closer and closer and the 20th Anniversary of Warcraft?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SL1200</div><div class="date">2014-04-28, 05:34 PM</div></div><div class="posttext">I liked TOTC. Whilst having long corridors full of trash seems fun once, after a week or two I'd rather just skip all that crap and get to the bosses.<br />
+<br />
+I liked that raid too, but it's considered by many to be the worst of all time, don't expect them to bring that back.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce04a3b2ccc</div><div class="date">2014-04-28, 05:35 PM</div></div><div class="posttext">Whats the point of this? They better invest the time into the Garrison blog posts they AGAIN promised us over 2-3 weeks ago.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shamanberry</div><div class="date">2014-04-28, 05:37 PM</div></div><div class="posttext">Ruby Sanctum never happened apparently.<br />
+<br />
+It happened, but it didn't change the structure of raids. It was basically just an extra boss that used the ICC mechanics (10/25 player, heroic and normal mode sharing a lockout).<br />
+<br />
+The point isn't to list all the raids, but to show how the system changed over time and give some insight into why things evolved as they did.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3a779c5103</div><div class="date">2014-04-28, 05:38 PM</div></div><div class="posttext">Obsidian Sanctum. <br />
+<br />
+Was the best idea they ever had. <br />
+<br />
+1 Raid. 1 Boss. Easy, and thus for everyone. <br />
+<br />
+WE NEED ONE BOSS RAIDS BACK</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hellravager</div><div class="date">2014-04-28, 05:38 PM</div></div><div class="posttext">It'd be kind of nice to be able to use old load screens from these past expansions, just for nostalgia. I doubt it'd be that difficult to do.<br />
+<br />
+Edit: Thinking about that, old login screens, and more importantly, the option to play some of the older soundtracks that don't run in the current builds. As I recall you can force them with macros though.<br />
+I'd love to get the vanilla login screen back loved that one</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aboubacar</div><div class="date">2014-04-28, 05:41 PM</div></div><div class="posttext">good read, not sure they needed 3 part blog series to discuss the evolution of wow's raid structures and how/why they are doing what they will be doing in WoD.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">raviadso</div><div class="date">2014-04-28, 05:41 PM</div></div><div class="posttext">It does seem a bit of an odd choice for a blog. We already know about previous raids.<br />
+<br />
+It's interesting at least to see the dev philosophy in hindsight. Success/failure, it's still cool to see what they were shooting for and how that informs their philosophy for WoD. <br />
+<br />
+Also really reminds you of how crappy/different raiding was at the beginning. <br />
+<br />
+We all remember those old raids fondly, but at the time many of them were a nightmare because of lockouts, loot, roster requirements, poor class balance, etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MasterHamster</div><div class="date">2014-04-28, 05:42 PM</div></div><div class="posttext">Oh, MC wasn't tuned for 40 players? Explains a lot, hah.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wishblade</div><div class="date">2014-04-28, 05:42 PM</div></div><div class="posttext">Oh how I've not missed you negative folk... Poor things...<br />
+<br />
+Nice with something to read at least, all the memories... True, not too interesting to some of us because we already know this stuff, but some do like to understand the past or get nostalgic. So I'll be nostalgic over here and eagerly await the third part and hear of whatever they might have planned for Warlords (other than what we've already heard).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aboubacar</div><div class="date">2014-04-28, 05:43 PM</div></div><div class="posttext">It's interesting at least to see the dev philosophy in hindsight. Success/failure, it's still cool to see what they were shooting for and how that informs their philosophy for WoD. <br />
+<br />
+Also really reminds you of hose crappy raiding was at the beginning. UBRS was awful as a 15m raid. MC was a great idea, but the 40man requirement and no raid balance made things unnecessarily tough and you could do MC with 15 players of the skill you see today rather than 40, which meant that most of the roster was bloat with a crappy looting mechanic.<br />
+<br />
+MC probably had the laziest designed encounters, but since no one had really experienced much raiding before they got away with it. Most of the bosses didn't do shit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">minywheats</div><div class="date">2014-04-28, 05:44 PM</div></div><div class="posttext">What a great Dev Watercooler. I totally want to hear about design philosophy regarding old shit from several expansions ago instead of the actual future of raiding in Warlords of Draenor. Great choice, and totally not a waste of time.<br />
+<br />
+<br />
+By going over the past and explaining how they did raids I believe it will help people understand how raids work today. Also this series is 3 parts and I bet will explain the future of raiding in Warlords of Draenor. Understanding history helps you understand the future.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3745942798</div><div class="date">2014-04-28, 05:45 PM</div></div><div class="posttext">Yeah Blizz diminish the meaning of Ulduar, THE BEST RAID YOU HAVE EVER DONE. And glorify abomination that was ToC. Fuck it, there is no hope for WoD with people like that running the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ericanibus</div><div class="date">2014-04-28, 05:47 PM</div></div><div class="posttext">What a great Dev Watercooler. I totally want to hear about design philosophy regarding old shit from several expansions ago instead of the actual future of raiding in Warlords of Draenor. Great choice, and totally not a waste of time.<br />
+<br />
+You should probably read the post a bit more carefully. This is part 1 of a 3 part post. The 2nd part is being posted tomorrow. They're giving insight as to how the design philosophy has shifted (which requires some background info), so just MAYBE people could learn something about what they're trying to do with raiding (so we don't have to see as many garbage posts like the one quoted here, hopefully).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nozuka</div><div class="date">2014-04-28, 05:47 PM</div></div><div class="posttext">i loved burning crusade the most. every class had something special to give. now everything is easily interchangeable...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">KCguy</div><div class="date">2014-04-28, 05:47 PM</div></div><div class="posttext">Pointless blog, couldn't they just use the time to work on WoD instead of wasting it like this?<br />
+<br />
+It was a very well written and thought out blog article and for many people, they learned something new. I knew about everything included already, but I still enjoyed the read. Thanks, Blizz Devs. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Krazzorx</div><div class="date">2014-04-28, 05:51 PM</div></div><div class="posttext">Whats the point of this? They better invest the time into the Garrison blog posts they AGAIN promised us over 2-3 weeks ago.<br />
+<br />
+Tomorrow we get the 2nd installation and I'd assume Wednesday we get the one about WoD. Blizzard is just being highly thorough in explaining what they are doing and why. They want everyone to make educated comments.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Some Vanilla Player</div><div class="date">2014-04-28, 05:53 PM</div></div><div class="posttext">what the should of said about ulduar &quot;this was the greatest raid we ever made and trying to match this level of awesomeness in any other raid we have made recently doesnt even come close.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ControlBlue</div><div class="date">2014-04-28, 06:02 PM</div></div><div class="posttext">Yeah Blizz diminish the meaning of Ulduar, THE BEST RAID YOU HAVE EVER DONE. And glorify abomination that was ToC. Fuck it, there is no hope for WoD with people like that running the game.<br />
+<br />
+I KNOW RIGHT, I LOVE how they barely even have two lines for what was easily the pinnacle of raiding and to add insult to injury NEVER bothered to be honest about all the terrible things ToC did in contrast, inorganic difficulty, pinata bosses with no lore, an iconic character of Warcraft sent to the sharks and that with the most lazy plot twist ever (oh nooo we never noticed that BIG hole right under our stadium), where Ulduar gave each one of its characters and bosses a ton of gravitas (Algalon &lt;3)<br />
+<br />
+One need to only realize that their answer to non-intuitive hard mode was, instead of just working harder to make the less intuitive triggers more intuitive, to just kill the system and replace it with the most uninspired and boring way to do it. Same thing they did with the talents, open-world, PvP, ect...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FeedsOnDevTears</div><div class="date">2014-04-28, 06:04 PM</div></div><div class="posttext">Yeah Blizz diminish the meaning of Ulduar, THE BEST RAID YOU HAVE EVER DONE. And glorify abomination that was ToC. Fuck it, there is no hope for WoD with people like that running the game.<br />
+<br />
+This reads like it was written by someone who was involved in making all these raids but is that really the case or is it someone newer looking back and putting there spin on things?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc89084f456c</div><div class="date">2014-04-28, 06:05 PM</div></div><div class="posttext">Pointless blog, couldn't they just use the time to work on WoD instead of wasting it like this?<br />
+<br />
+It is not, if anything devs should communicate more and more about design philosophies and being the curtain decisions and how the design change and why.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Redwyrm</div><div class="date">2014-04-28, 06:06 PM</div></div><div class="posttext">This makes me interested in reading a history of the development of WoW as told by the designers/developers. The decisions they made and why they made them look behind the scenes sort of thing. Kind of like the LoTR trilogy dvd extras.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ericanibus</div><div class="date">2014-04-28, 06:07 PM</div></div><div class="posttext">I KNOW RIGHT, I LOVE how they barely even have two lines to what was easily the pinnacle of raiding and to add insult to injury NEVER bothered to be honest about all the terrible things ToC did in contrast, inorganic difficulty, pinata bosses with no lore, an iconic character of Warcraft sent to the sharks and that with the most lazy plot twist ever (oh nooo we never noticed that BIG hole right under our stadium), where Ulduar gave each one of its characters and bosses a ton of gravitas (Algalon &lt;3)<br />
+<br />
+One need to only realize that their answer to non-intuitive hard mode was, instead of just working harder to make the hard more triggers more intuitive, to just kill the system and replace it with the most uninspired and boring way to do it. Same thing they did with the talents, open-world, PvP, ect...<br />
+<br />
+Again, some of you need to read a bit more carefully. This post wasn't a discussion of the success (or failures) of previous raids, ONLY a discussion of raid design philosophy and how it has changed over the years. They weren't 'glorifying' ToC NOR diminishing Ulduar. They were simply explaining the reasoning behind changes made between raids during that time. You want to hate, by all means go for it. But find something with substance to hate on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc89084f456c</div><div class="date">2014-04-28, 06:07 PM</div></div><div class="posttext">Yeah Blizz diminish the meaning of Ulduar, THE BEST RAID YOU HAVE EVER DONE. And glorify abomination that was ToC. Fuck it, there is no hope for WoD with people like that running the game.<br />
+<br />
+reading is hard, this is not a post about what is the best raid instances, this is about general raiding design philosophy and what has driven the changes over the years based on the data, experiences and feedback within said raids. It is not about devs raid personal preferences.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LookingGlass</div><div class="date">2014-04-28, 06:07 PM</div></div><div class="posttext">Yeah Blizz diminish the meaning of Ulduar, THE BEST RAID YOU HAVE EVER DONE. And glorify abomination that was ToC. Fuck it, there is no hope for WoD with people like that running the game.<br />
+<br />
+A lot of that had to do with context though. I liked Ulduar much better than ToC as well, but I know much of that is because of how epic Ulduar was. Titans, Old Gods... it was all just more epic than a coliseum. <br />
+<br />
+They aren't praising context and design here anyways. They're praising the overall structure of the accessibility and reward systems. ToC laid the foundation for what was to come.<br />
+<br />
+Don't get so upset.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">godofslack</div><div class="date">2014-04-28, 06:08 PM</div></div><div class="posttext">It seems a little masturbatory, honestly, I mean if they wanted a tongue bathing they could of literally typed TBC or Wrath and BAMM, got yourself a pond. I mean they don't really admit to the missteps taken, I mean they seriously don't need to post in order to get a revisionist's history of Wrath, TBC and Vanilla.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc89084f456c</div><div class="date">2014-04-28, 06:10 PM</div></div><div class="posttext">It seems a little masturbatory, honestly, I mean if they wanted a tongue bathing they could of literally typed TBC or Wrath and BAMM, got yourself a pond. I mean they don't really admit to the missteps taken, I mean they seriously don't need to post in order to get a revisionist's history of Wrath, TBC and Vanilla.<br />
+<br />
+not everyone in the current playerbase played those raids, and had those experiences. This is a nice and informative retrospective on design, no need to read too hard between the lines.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc8920cde15</div><div class="date">2014-04-28, 06:11 PM</div></div><div class="posttext">I liked TOTC. Whilst having long corridors full of trash seems fun once, after a week or two I'd rather just skip all that crap and get to the bosses.<br />
+<br />
+I enjoyed TOTC too, it was the perfect &quot;puggable&quot; raid instance (much better than LFR). Also, tribute to insanity was fun</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Krazzorx</div><div class="date">2014-04-28, 06:13 PM</div></div><div class="posttext">The thing with ToC is: as awful as it was, it was the first modern raid. That deserves notice when looking at the history of raiding. <br />
+<br />
+As good as Ulduar was, it didn't add anything really at the end to design philosophy.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+The only thing I'm surprised they left out was the immortal runs in ToC/Naxx and Ulduar.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ControlBlue</div><div class="date">2014-04-28, 06:14 PM</div></div><div class="posttext">Again, some of you need to read a bit more carefully. This post wasn't a discussion of the success (or failures) of previous raids, ONLY a discussion of raid design philosophy and how it has changed over the years. They weren't 'glorifying' ToC NOR diminishing Ulduar. They were simply explaining the reasoning behind changes made between raids during that time. You want to hate, by all means go for it. But find something with substance to hate on.<br />
+<br />
+Well, why did they not discuss the design philosophy behind 'secret' bosses, that was even applied in Cata and Mists, then? Why did they not discuss the thinking behind the introduction of vehicules in raiding and why they decided it was better not to go with it in future raids. The introduction of portals? The return to raids targeted at the hardcores?<br />
+<br />
+Ulduar had PLENTY of design considerations that this article just blatantly ignored, you'd have to be naive to think it is not a deliberate attempt to minimize the impact of Ulduar and that mostly to avoid people realizing even more how much they have screwed up things since.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aztrazolo</div><div class="date">2014-04-28, 06:16 PM</div></div><div class="posttext">Just like every other raid instance since Ulduar. :-)<br />
+<br />
+Lol,wut? ICC would like to have a word with you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Krazzorx</div><div class="date">2014-04-28, 06:16 PM</div></div><div class="posttext">Well, why did they not discuss the design philosophy behind 'secret' bosses, that was even applied in Cata, then? Why did they not discuss the thinking behind the introduction of vehicules in raiding and why they decided it was better not to go with it. The introduction of portals? The return to raids targeted at the hardcores?<br />
+<br />
+Ulduar had PLENTY of design considerations that this article just blatantlly ignored, you'd have to be naive to think it is not a deliberate attempt to minimize the impact of Ulduar and that mostly to avoid people realizing even more how much they have screwed up things since.<br />
+<br />
+Because, this whole reason this is written is they are setting up for why they are changing raid structure in WoD. None of those things you listed matters for that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc39820a35d</div><div class="date">2014-04-28, 06:18 PM</div></div><div class="posttext">I'm trying not to be negative here, but they should have included this blogpost as a footnote of some actual fucking news.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ericanibus</div><div class="date">2014-04-28, 06:19 PM</div></div><div class="posttext">Well, why did they not discuss the design philosophy behind 'secret' bosses, that was even applied in Cata, then? Why did they not discuss the thinking behind the introduction of vehicules in raiding and why they decided it was better not to go with it. The introduction of portals? The return to raids targeted at the hardcores?<br />
+<br />
+Ulduar had PLENTY of design considerations that this article just blatantlly ignored, you'd have to be naive to think it is not a deliberate attempt to minimize the impact of Ulduar and that mostly to avoid people realizing even more how much they have screwed up things since.<br />
+<br />
+They haven't discussed the philosophy behind secret bosses that came about in Cata, b/c the Cata post is tomorrow (PART 2 of 3). They probably didn't discuss vehicles in this post b/c they didn't have a major impact on more than a fight or 2 in raiding. You're digging too deep into the design philosophy they're discussing. They're mainly talking about raid structure (if you read the blog post, you should be able to understand that). There would probably have to be dozens of blog posts to cover the entirety of raid design in WoW. That is why Ulduar is not being diminished, b/c the portions of it that you are elaborating on are not part of the discussion they are trying to put forward.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ControlBlue</div><div class="date">2014-04-28, 06:20 PM</div></div><div class="posttext">Because, this whole reason this is written is they are setting up for why they are changing raid structure in WoD. None of those things you listed matters for that.<br />
+<br />
+How do you even know that?? So you mean WoD won't have secret bosses? That you are sure that they won't use vehicles in raiding ever again? The end of organic triggers?<br />
+<br />
+Unless you have some sources from Blizz or you are some kind of oracles, you have no way to know if the design considerations of Ulduar won't matter for WoD.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Krazzorx</div><div class="date">2014-04-28, 06:22 PM</div></div><div class="posttext">For example this paragraph: <br />
+<br />
+&quot;It may be of interest to note that at that time, we very nearly did not include a 10-player Heroic difficulty at all. There was limited evidence that many players other than 25-player raiders were actually doing 10-player Ulduar hard modes, but relying on anecdotal evidence and some firsthand experience, along with the fact that there hadn’t been much time at all for a serious 10-player raiding scene to develop, we decided to keep that difficulty.&quot;<br />
+<br />
+Likely will lead up to their points about why they are going with a single raid size with mythic. The blogs basically are this: &quot;here's why we went with these raid sizes and difficulties In the past, what problems they brought up and what WoD will do to fix them.&quot; <br />
+<br />
+Another example of this is how they mentioned the small groups who did Kara were never able to fight Illidan. Which is why they introduced 10m.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ericanibus</div><div class="date">2014-04-28, 06:23 PM</div></div><div class="posttext">How do you even know that?? So you mean WoD won't have secret bosses? That you are sure that they won't use vehicles in raiding ever again? The end of organic triggers?<br />
+<br />
+Unless you have some sources from Blizz or you are some kind of oracles, you have no way to know if the design considerations of Ulduar won't matter for WoD.<br />
+<br />
+They are only discussing raid structure, please try to understand this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Krazzorx</div><div class="date">2014-04-28, 06:25 PM</div></div><div class="posttext">How do you even know that?? So you mean WoD won't have secret bosses? That you are sure that they won't use vehicles in raiding ever again? The end of organic triggers?<br />
+<br />
+Unless you have some sources from Blizz or you are some kind of oracles, you have no way to know if the design considerations of Ulduar won't matter for WoD.<br />
+<br />
+What I'm sure of is these 2 blogs are the prologue for the 3rd blog which will discuss raid format changes in WoD. All those other aspects of Ulduar have no bearing on that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc89084f456c</div><div class="date">2014-04-28, 06:27 PM</div></div><div class="posttext">Well, why did they not discuss the design philosophy behind 'secret' bosses, that was even applied in Cata and Mists, then? Why did they not discuss the thinking behind the introduction of vehicules in raiding and why they decided it was better not to go with it in future raids. The introduction of portals? The return to raids targeted at the hardcores?<br />
+<br />
+Ulduar had PLENTY of design considerations that this article just blatantly ignored, you'd have to be naive to think it is not a deliberate attempt to minimize the impact of Ulduar and that mostly to avoid people realizing even more how much they have screwed up things since.<br />
+<br />
+because, and I'll try to be more clear about this here since I was not in my previous post, this is *not* what the blog post is about. They do not talk about it because secret bosses and vehicles have *nothing* to do with the theme and subject that this blog post that is the changes they made to raid structure in terms of accessibility and how the number of modes and difficulties changed and evolved across the years and which are the reason that brought them to change from 40 man to 10 man and 25 man raids, why they went from there to dual mode 10 man and 25 man in the same instance, why they added heroic and so on</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ControlBlue</div><div class="date">2014-04-28, 06:28 PM</div></div><div class="posttext">They are only discussing raid structure, please try to understand this.<br />
+<br />
+I see what you mean, although I agree the article mainly deal with raid structure, it is not as straight as you make it seems (like they do just and only that, parts where they discuss difficulty prove otherwise). Anyway, call it stupid but I'm still far from conformable with the lack of importance given to Ulduar in a post that's supposed to be about Raiding with a capital R.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wayne25uk</div><div class="date">2014-04-28, 06:29 PM</div></div><div class="posttext">A note to the retarded in the room NOT EVERYBODY IN BLIZZARD WORKS ON WOD MORONS! God sake so many idiots in here that think this...they have people to write this stuff while others are working on WoD,you need to cut this i want i want shit out and stop thinking your entitled to everything dumb shits.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neichus</div><div class="date">2014-04-28, 06:30 PM</div></div><div class="posttext">I have to ask myself - why do I read these responses? Why do you care what Blizzard writes when you're going to read whatever you want? <br />
+<br />
+Blizzard doesn't spend a long time on Ulduar, ergo Blizzard is trying to cover themselves. What if Blizzard had written a lot about Ulduar? Then you'd find a statement to disagree with, a detail that was slightly inaccurate, or a viewpoint that wasn't clear enough. What if they'd just said that Ulduar was an unqualified success and everything else afterward was terrible? Then Ulduar's flaws can be pointed out to show that Blizzard is just making things up and trying to impress people. It doesn't really matter what they write because if you're reading for something to disagree with it will always be there. <br />
+<br />
+Also, on the &quot;Ulduar was perfect&quot; topic: In the first week or so the top guilds had downed Yogg-Saron on normal and (as always) there were people ready and waiting to point out how this made Ulduar stupid and under-tuned. How the whole zone was rendered pointless by this. One of the best Blue responses from Eyonix came of this, &quot;Amazing. You have nothing to do now that people who aren't you have cleared Ulduar.&quot; Sometimes I think we could do with a few more responses such as these.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc89084f456c</div><div class="date">2014-04-28, 06:35 PM</div></div><div class="posttext">I see what you mean, although I agree the article mainly deal with raid structure, it is not as straight as you make it seems (like they do just and only that, parts where they discuss difficulty prove otherwise). Anyway, call it stupid but I'm still far from conformable with the lack of importance given to Ulduar in a post that's supposed to be about Raiding with a capital R.<br />
+<br />
+you see here is the problem in your perception :) they're not strictly speaking about raiding, it is not a blog about &quot;this raid was awesome, this other was slightly less awesome&quot; <br />
+<br />
+They are discussing the evolution of the raiding systems. If ToC got a gigantic paragraph is not because it was &quot;more awesome&quot; than Ulduar, is because that was a cornerstone on how they handled the difficulties and modalities. We passed from 10 man and 25 man, with hard mode to a system with 4 different difficulty level that could be switched and each with their own separate lockout. It was a huge change, thus the longer text. <br />
+<br />
+From Naxxramas to Ulduar there were basically no change in raid structures if not the addition of Hard modes hence the short paragraph<br />
+<br />
+PS: I'm not telling you that you need to agree on the reasons they made some changes or that TOC is awesome, TOC was pretty shit to me as well. Just trying to point out that sometimes we need to read the stuff that is written there, it is really a very plain and blunt post there's no need to go through personal interpretation of what's in it</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2014-04-28, 06:37 PM</div></div><div class="posttext">Nice insight, esp the fact that they were actually in doubt concerning 10man HC.<br />
+Looking forward to part 2 &amp; 3.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ControlBlue</div><div class="date">2014-04-28, 06:38 PM</div></div><div class="posttext">What if Blizzard had written a lot about Ulduar? Then you'd find a statement to disagree with, a detail that was slightly inaccurate<br />
+<br />
+The difference is that that person wouldn't have been me.<br />
+<br />
+Anyway, Ulduar was not &quot;perfect&quot;, but it was by far in the top 3 raids in execution that combined story, great gameplay, innovation, social engineering (the prestige of Algalon!!), and many more aspects, many of those aspects that have been thrown out of the window by ToC. This is something pretty significant if we are talking about THE history of raiding, and I'm sure the person who write this article knows that. Now if you are upset about people being people and giving their opinions, there isn't much I can and would be willing to do about that...<br />
+<br />
+Also I guess I failed to see how this article was merely a ploy for their big reveal of whatever changes to raid structure in WoD they are going to announce in Part 3. Talk about a discussion about raiding.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Krazzorx</div><div class="date">2014-04-28, 06:44 PM</div></div><div class="posttext">Here's what I expect tomorrow on Cata/MoP: <br />
+<br />
+In T14 They overestimated the amount of people who wanted to turn 10m raiding from casual to hardcore and basically lost a bunch of raiders who had no format anymore. <br />
+<br />
+Highly doubt FL is mentioned much if at all. Had no changes basically. <br />
+<br />
+DS they'll talk about how they wanted to get that casual raider niche back and expand it dramatically with LFR. They possibly will also mention how LFR didn't lend itself to be as social as organized raiding. (This depends on their WoD LFR goals) <br />
+<br />
+For MoP: how they fixed the loot system so people didn't hate one another. They'll also talk about why dps checks in normal mode are bad in Garalon and Elegon. They'll probably also mention how the &quot;attunement&quot; of needing to clear HoF before ToES worked out. (As they are doing this in WoD) <br />
+<br />
+For ToT they'll mention Horridon plenty. And how overtuned normal was for so many people. <br />
+<br />
+Then there will be a long write up about how there was no real format for casual raiders as LFR wasn't fulfilling enough but normal was too hard so they introduced Flex which has worked out perfectly.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spotnick</div><div class="date">2014-04-28, 06:45 PM</div></div><div class="posttext">I don't see why people have issues with Cataclysm... Blackwing Descent and Bastion of Twilight were pretty decent raids, Firelands was just too short.<br />
+<br />
+Not talking about Dragon Soul obviously, which Blizzard themselves tried to bury under the announcement of a new expansion at Blizzcon.<br />
+<br />
+Note that I didn't include Throne of Four Winds on purpose. What a horrible raid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mercutiouk</div><div class="date">2014-04-28, 06:45 PM</div></div><div class="posttext">Look! Look at our glorious past!! Keep playing!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Krazzorx</div><div class="date">2014-04-28, 06:51 PM</div></div><div class="posttext">Basically, every WoD raiding change they make they are going to use the first 2 blogs to back it up. They need to mention again about why 1 single raiding format at mythic is best and ofc the widely assumed LFR tier changes. They're gonna need all the ammunition in the world for that one if the majority is right about what it is.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I don't see why people have issues with Cataclysm... Blackwing Descent and Bastion of Twilight were pretty decent raids, Firelands was just too short.<br />
+<br />
+Not talking about Dragon Soul obviously, which Blizzard themselves tried to bury under the announcement of a new expansion at Blizzcon.<br />
+<br />
+Note that I didn't include Throne of Four Winds on purpose. What a horrible raid.<br />
+<br />
+It was just too hard for the majority of people. And more importantly: they had no alternative. Wrath had 10m which &quot;While in many ways 10-player and 25-player Naxxramas had been equally easy, with Ulduar and Trial of the Crusader there was a more marked division in tuning between the two modes. &quot; <br />
+<br />
+They lost that in Cata.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gratlim</div><div class="date">2014-04-28, 06:51 PM</div></div><div class="posttext">If only they could reset everything to LK or BC standards + old talent trees + vanilla alterac and old PvP ranks. I would sign up for that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SteveZombie</div><div class="date">2014-04-28, 06:51 PM</div></div><div class="posttext">Look! Look at our glorious past!! Keep playing!<br />
+<br />
+Look at me not actually reading the post! Look at me!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neichus</div><div class="date">2014-04-28, 06:53 PM</div></div><div class="posttext">If only they could reset everything to LK or BC standards + old talent trees + vanilla alterac and old PvP ranks. I would sign up for that.<br />
+<br />
+&quot;I would sign up for that&quot;...and wait 2 hours in queue for Alterac Valley. :D<br />
+<br />
+On a more constructive note, this very post is to explain why they don't have the same standards or expectations that they used to.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vladimeir</div><div class="date">2014-04-28, 07:03 PM</div></div><div class="posttext">Highly doubt FL is mentioned much if at all. Had no changes basically. <br />
+<br />
+<br />
+<br />
+<br />
+Firelands actually debuted the &quot;additional phase&quot; mechanic for hard modes. You think you beat an encounter then &quot;Nope, boss is back at 40% health, have fun!&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0e82c355ee</div><div class="date">2014-04-28, 07:03 PM</div></div><div class="posttext">New players joining the game during the summer of 2006, at the height of Naxxramas progression, had virtually no hope of ever seeing Kel’Thuzad. At best, they might level quickly and get enough dungeon gear to join a guild that was still doing Molten Core.<br />
+Well then, I am glad I exceeded their BEST expectations, by clearing MC, ZG, AQ20 and BWL. :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2014-04-28, 07:11 PM</div></div><div class="posttext">Then there will be a long write up about how there was no real format for casual raiders as LFR wasn't fulfilling enough but normal was too hard so they introduced Flex which has worked out perfectly.<br />
+<br />
+I expect they will say that not enough people moved from LFR to Flex in SoO, so they're reducing the rewards of LFR.<br />
+<br />
+They will also explain that they had expected casual guilds to run LFR together, but this didn't work.<br />
+<br />
+What I am interested in: with the likely loot downgrade, are they also tuning down the difficulty of LFR in WoD, vs. what it was in SoO? If so, will WoD Normal be tuned down too?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bauwagast</div><div class="date">2014-04-28, 07:14 PM</div></div><div class="posttext">I enjoyed that trip down memory lane. Thanks for that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">raviadso</div><div class="date">2014-04-28, 07:18 PM</div></div><div class="posttext">You don't have to like the new raiding/PvE experience, but this post does an amazing job of outlining the design philosophy of WoW content and how many things have improved. <br />
+<br />
+Vanilla<br />
+No catch-up gearing mechanic<br />
+no portals-- if you were at the end, you'd have to run. No mounts until AQ<br />
+Poor tuning - 40mans were a mess and Blizz had no idea which direction they were headed at the beginning. <br />
+Only one difficulty. No hard modes, no secret/locked bosses. No Flex. No heroic. No mythic. <br />
+No in-game calendar<br />
+No in-game name listing for assembling raids (trade, anyone?)<br />
+No LFR<br />
+No queuing<br />
+Player talents weren't a choice-- you'd just google the best build<br />
+Terrible player balance<br />
+Raid teams could succeed/fail based on having/not having a single class (shammy/pally)<br />
+No shammies for Alliance/No pallies for horde, which was important for the reason listed above. Canon aside, it really helped. <br />
+Weekly resets that could not be adjusted. Every week you started from the beginning even if all 40 people <br />
+Terrible loot system<br />
+Terrible loot control (before master loot options, etc.)<br />
+No re-rolls<br />
+No system to increase odds at loot<br />
+No individualized loot<br />
+No Xmog - everyone looked identical<br />
+No reason to do old content until your guild imploded and you had to gear others<br />
+Lots of trash in raids<br />
+World bosses were awesome, but terribly balanced (dragons)<br />
+No item level upgrades other than the D1 to D1.5, which was introduced a few months before BC<br />
+Extremely high time investment simply to be ready for raiding. You'd spend 5-20 hours raiding and another 3-10 collecting mats<br />
+Professions were broken and completely imbalanced for PvE content</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">phantummy</div><div class="date">2014-04-28, 07:29 PM</div></div><div class="posttext">The only actual news will come in the last paragraph of the third blog post stating how we feel LFR players are subhuman entities that don't get loot and we are removing all loot after the end of their respective tier life cycles also no flying.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lyra</div><div class="date">2014-04-28, 07:43 PM</div></div><div class="posttext">&quot;Over the year and a half to follow, Blackwing Lair, Temple of Ahn’Qiraj, and the original version of Naxxramas were introduced... In parallel, we introduced two 20-player raid zones, Zul’Gurub and Ruins of Ahn’Qiraj&quot;<br />
+<br />
+I'm sorry all I can focus on is how much raid content vanilla had released in a year and a half. *stares at SoO*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-04-28, 07:48 PM</div></div><div class="posttext">The only actual news will come in the last paragraph of the third blog post stating how we feel LFR players are subhuman entities that don't get loot and we are removing all loot after the end of their respective tier life cycles also no flying.<br />
+<br />
+Someone is a negative nancy.<br />
+<br />
+They are not removing gear from LFR, just replacing tier and presumably trinkets with something else entirely<br />
+<br />
+Flying has nothing to do with this topic, get the hell out : )</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-04-28, 07:48 PM</div></div><div class="posttext">The problem is, they are going to take 3 blog posts to explain something we already know, and most agree with. Mythic is better off at 20pp, but the rest of raiding is better off with flex numbers. it is a good decision, makes sense... but whey do we need 3 blog posts explaining it?<br />
+<br />
+1. it is easy to make an encounter challenging if we only have to design it with one raid-size in mind.<br />
+2. It is better if it is 20 because then we can assume every class is represented.<br />
+<br />
+The end... makes sense, great. it is a long explanation of something that has no surprises and we already know.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-04-28, 07:51 PM</div></div><div class="posttext">The problem is, they are going to take 3 blog posts to explain something we already know, and most agree with. Mythic is better off at 20pp, but the rest of raiding is better off with flex numbers. it is a good decision, makes sense... but whey do we need 3 blog posts explaining it?<br />
+<br />
+1. it is easy to make an encounter challenging if we only have to design it with one raid-size in mind.<br />
+2. It is better if it is 20 because then we can assume every class is represented.<br />
+<br />
+The end... makes sense, great. it is a long explanation of something that has no surprises and we already know.<br />
+<br />
+They are doing it so when they drop the bombshell about LFR or Mythic changes people will have an actual fact-supported idea as to why they did it. Would you like it if they just cooked up a blog saying &quot;Lol no LFR Tier for u&quot; and thats it? They are trying to cover all there bases so people can't say they did it like X when in fact they did it like Y.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Queen of Hamsters</div><div class="date">2014-04-28, 07:55 PM</div></div><div class="posttext">Funny how even they themselves admit that challenge in raiding at 60 came from keeping the raid team going, not so much from boss mechanics.<br />
+<br />
+Big hah in the face to those damned people claiming that a 3-ability boss from &quot;Vanilla&quot; posed more challenge than a boss from today, even a HEROIC boss.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dvaldin</div><div class="date">2014-04-28, 07:57 PM</div></div><div class="posttext">Not entirely sure why they're posting this. I already understand the reason things changed, and I suspect the ones that don't either don't want to or that they never will. Then again, maybe something will be revealed in part 2 or 3 that I didn't anticipate.<br />
+<br />
+Personally, I wish they'd explain why in their philosophy in a massive-multi-player game centers more around making it accessible for the solo player rather than offering more encouragement and incentives for that solo-player to join up with a group/guild of players.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaq</div><div class="date">2014-04-28, 08:03 PM</div></div><div class="posttext">Oh how I've not missed you negative folk... Poor things...<br />
+<br />
+Great post, love reading blizzards thoughts on things ty</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Brewhan</div><div class="date">2014-04-28, 08:10 PM</div></div><div class="posttext">lets go back in time since the whole plot of WoD is time travel lol lets also read some blog posts about years past sounds fun -_-</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Feanoro</div><div class="date">2014-04-28, 08:34 PM</div></div><div class="posttext">You don't have to like the new raiding/PvE experience, but this post does an amazing job of outlining the design philosophy of WoW content and how many things have improved.This is revisionist history, trying desperately to claim that classic was easy, BC was too hard, Ulduar's success was overrated, and ToC wasn't absolutely despised. It's a clear and pathetic setup to have cake and eat it too in the next post. I fully expect &quot;The Cata/MoP model was a success, even though we lost ~6 million players, and we're effectively reversing course on the majority of the design changes during that time in WoD.&quot;<br />
+<br />
+Also, your little list wasn't remotely covered in the article, and no mention was made of the supposed improvements.<br />
+<br />
+<br />
+Vanilla<br />
+No catch-up gearing mechanic<br />
+*** Wrong. ZG and AQ20 had 3 day resets which helped farm gear much faster for the next full-sized raid. Even if there was no such mechanic, decent guilds could easily funnel gear to a new recruit.<br />
+<br />
+no portals-- if you were at the end, you'd have to run. No mounts until AQ<br />
+*** And until AQ40, the runbacks weren't that long.<br />
+<br />
+Poor tuning - 40mans were a mess and Blizz had no idea which direction they were headed at the beginning.<br />
+*** Given that MC was built in a week and that after the team fought to include it, sure it was weak. Trying to claim that BWL, AQ40, and Naxx were equally a mess is ridiculous. Those were the central focus of major patches.<br />
+<br />
+Only one difficulty. No hard modes, no secret/locked bosses. No Flex. No heroic. No mythic.<br />
+*** Only one difficulty meant only one progression race, so you knew exactly where you stood. It also meant a &quot;well guys, we'll do even better next week&quot; mindset, and having goals. People SCREAMED when a new boss died. Now you get a few cheers only on the final boss, and people only care about loot.<br />
+<br />
+No in-game calendar<br />
+*** Hardly a game breaker. A nice tool, yes.<br />
+<br />
+No in-game name listing for assembling raids (trade, anyone?) <br />
+No LFR<br />
+No queuing<br />
+*** Yes, amazingly enough you had to be social in an MMO! You had to actually talk to people to join their groups and guilds! You had to have some manners and people skills!<br />
+<br />
+Player talents weren't a choice-- you'd just google the best build<br />
+*** Because the new talent system has changed that. And you clearly don't know about the hybrid builds that could be amazingly OP because Blizzard fully think out where talents were in the trees.<br />
+<br />
+Terrible player balance<br />
+*** Warlocks are unbeatable dps, disc priests are unbeatable healers, and druids and DKs are barely viable tanks now. Won't even bother pointing out current pvp balance.<br />
+<br />
+Raid teams could succeed/fail based on having/not having a single class (shammy/pally)<br />
+No shammies for Alliance/No pallies for horde, which was important for the reason listed above. Canon aside, it really helped.<br />
+*** That nonsense went out the window when Nihilum became the world's top guild. All it meant was your strategy was different.<br />
+<br />
+Weekly resets that could not be adjusted. Every week you started from the beginning even if all 40 people<br />
+*** Oh no, you had to actually progress! Also, remember where you were complaining about catch up gearing? I wonder if repeating the bosses helped with that...<br />
+<br />
+Terrible loot system<br />
+*** I'll give you that tier tokens were a vast improvement over the MC/BWL style, but those were introduced in ZG.<br />
+<br />
+Terrible loot control (before master loot options, etc.)<br />
+*** What? Master loot existed back then.<br />
+<br />
+No re-rolls<br />
+*** No &quot;I've fully geared up this toon, guys, now gear this one for me too!&quot; either. Back then you picked a main character, and if you wanted to swap, you took the new one to alt raids until you were ready for the main raid. It was a big deal then because it inconvenienced everyone else and in some cases led to loot drama when you had a flavor-of-the-month hopper.<br />
+<br />
+No system to increase odds at loot<br />
+*** No grind out coins to give you gold or loot that you already have. Meanwhile, you had professions that actually provided raid viable gear.<br />
+<br />
+No individualized loot<br />
+*** Most people weren't open loot whores back then either. People raided together because *gasp* they enjoyed it. Loot was a means, not an end. If you were a decent player, you were going to get plenty during farm and enough to do your job in the next release.<br />
+<br />
+No Xmog - everyone looked identical<br />
+*** Yeah, you were never in Ironforge in Vanilla. Also, you do understand that very little purely cosmetic gear exists, right? Most of it is from older content. Therefore, to even have what you ask for, loot tables would have had to be ridiculously large and the art team would have been full time creating gear models.<br />
+<br />
+No reason to do old content until your guild imploded and you had to gear others<br />
+*** What reason is there for a raid to go back to old content now? By the way, raids did go back to farm ZG mounts, patterns, really well itemized pieces...<br />
+<br />
+Lots of trash in raids<br />
+*** Because it provided pacing, atmosphere, and a chance to laugh and talk with your guild between bosses. Trash also used to drop patterns and valuables that would help your progression in the zone. It also wasn't &quot;everyone spams AoE&quot; either, you actually paid attention.<br />
+<br />
+World bosses were awesome, but terribly balanced (dragons)<br />
+*** Yes, they were intended to be hard.<br />
+<br />
+No item level upgrades other than the D1 to D1.5, which was introduced a few months before BC<br />
+*** Considering that the devs have specifically pointed out item upgrades have contributed to the item inflation problem, this wasn't a bad point.<br />
+<br />
+Extremely high time investment simply to be ready for raiding. You'd spend 5-20 hours raiding and another 3-10 collecting mats<br />
+*** Or your guild actually worked together.<br />
+<br />
+Professions were broken and completely imbalanced for PvE content<br />
+*** You mean, they didn't have perks to bribe you to take them? You mean, crafted gear was actually useful? Seriously, what are you talking about?<br />
+<br />
+<br />
+This list screams that you didn't play in classic, or if you did, you were never in a good, healthy raid group that actually worked as a team.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Funny how even they themselves admit that challenge in raiding at 60 came from keeping the raid team going, not so much from boss mechanics.<br />
+<br />
+Big hah in the face to those damned people claiming that a 3-ability boss from &quot;Vanilla&quot; posed more challenge than a boss from today, even a HEROIC boss.Damn those people for having an opinion!<br />
+<br />
+Notice how they only talked about MC in detail regarding mechanics? Not a word about later tiers. Go on a private classic server, with old 60 talents, 60 gear, and stomp AQ40 and Naxx. Come back and tell us how much easier it is. What's called heroic today in MoP is what was normal bosses in later classic, BC, and Ulduar. But hey, the word is impressive, right? Ah, marketing.<br />
+<br />
+Bosses today have more bells and whistles, but so do the players. Did you notice they're trimming down ability bloat and talking about 20 man allowing for harder fights?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lycanthat</div><div class="date">2014-04-28, 08:36 PM</div></div><div class="posttext">&quot;we introduced two 20-player raid zones, Zul’Gurub and Ruins of Ahn’Qiraj, allowing smaller groups to experience epic content on a scale beyond that of dungeons.&quot;<br />
+<br />
+So in other words, ZG/ZA was Blizzard's first capitulation to the casual market, the first step in a downward spiral that has lead us to the current travesty that is LFR.<br />
+<br />
+After Naxx they should've gone even more hardcore, with a 40-man 60++++ difficulty raid that only 0.00001% of the playerbase had a shot at.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sam the Wiser</div><div class="date">2014-04-28, 08:37 PM</div></div><div class="posttext">I can't believe blizzard wasted time on this yet again. Also their ability to twist things, Jesus.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Diggy</div><div class="date">2014-04-28, 08:37 PM</div></div><div class="posttext">Nice post. Interested in what they learnt from Cata and Mists</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2014-04-28, 08:39 PM</div></div><div class="posttext">Nice post. Interested in what they learnt from Cata and Mists<br />
+<br />
+And also, what their motivations were for Cata and Mists.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jokerfiend</div><div class="date">2014-04-28, 08:41 PM</div></div><div class="posttext">This is nothing new to those that experienced this stuff first hand.<br />
+<br />
+I agree and disagree with some of the &quot;insights&quot; that have been discussed in this blog. Everyone knew that TBC and it's offerings, were to change the game dynamics completely. It was discussed, in large, about how many guilds weren't going to make the transition into the expansion, mainly, because of the downsize.<br />
+<br />
+It was also talked about how this might have been intentional, with regards to fractionating the player base into smaller groups, due to tuning raids to such a massive size. It wasn't really desirable, to have such large groups, on either side. It made sense to cut raid size down, though, I believe it was due larger issues not discussed in the blog. Like computer performances, loot issues (even mentioned DKP), player loss to gain ratio, and budget issues.<br />
+<br />
+Raid dynamics changed because the game is in a CONSTANT state of change. It's not really a bad thing, it just shows that they are willing to throw stuff at us to see what we do with it. How the community reacts and engages the content is 90% of their future changes manifest. <br />
+<br />
+We are really guinea pigs, and I know it's been touted before, but I really don't think Blizzard understands what players want anymore. So they grab stats of what players are doing, they kinda of revolve game play around it. We are making this games future, not Blizzard, and I truly think Blizzard has given up in coming up with Genre changing content.<br />
+<br />
+I guess I will have to see what happens in WoD to see how the content plays out. Because if I just see the same content in a different wrapper, I will have to take another double expansion break.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Schalde</div><div class="date">2014-04-28, 08:45 PM</div></div><div class="posttext">&quot;we introduced two 20-player raid zones, Zul’Gurub and Ruins of Ahn’Qiraj, allowing smaller groups to experience epic content on a scale beyond that of dungeons.&quot;<br />
+<br />
+So in other words, ZG/ZA was Blizzard's first capitulation to the casual market, the first step in a downward spiral that has lead us to the current travesty that is LFR.<br />
+<br />
+After Naxx they should've gone even more hardcore, with a 40-man 60++++ difficulty raid that only 0.00001% of the playerbase had a shot at.<br />
+<br />
+This is your opinion .... its NOT a fact. subs says its self. 40mans would have died. even if blizzard havent removed it. And thank god for that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Celista</div><div class="date">2014-04-28, 08:51 PM</div></div><div class="posttext">Oh god, a two-part dev watercooler...they're about to announce some change that players aren't going to like, I can just feel it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rogueMatthias</div><div class="date">2014-04-28, 08:52 PM</div></div><div class="posttext">Interesting article.<br />
+<br />
+I'm curious how much they'll be willing to criticise their own actions. Their idea to do a shared 25/10 man harder difficulty in Cata MASSIVELY damaged casual raiding and it's taken lfr and now flex in order to hopefully get it back to the stage that it was at near the end of WotlK. Looking forward to the WoD changes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Feanoro</div><div class="date">2014-04-28, 08:54 PM</div></div><div class="posttext">This is your opinion .... its NOT a fact. subs says its self. 40mans would have died. even if blizzard havent removed it. And thank god for that.<br />
+<br />
+Subs do indeed tell stories. <br />
+<br />
+Classic was projected to have 1 million subs at peak. Instead they had that in a month. Classic finished around ~7 million.<br />
+<br />
+BC sales were on the strength of classic, and subs grew to ~10 million by the end.<br />
+<br />
+Wrath sales were even stronger than BC sales, subs hit ~12 million. Then the 180 degree design shift happened with ToC, and the decline began.<br />
+<br />
+All subs data is readily available on the web, as is patch release dates. Pretty easy to see when they started dropping. Pretty easy to see why WoD so far is shaping up to reverse most of the horrible Cata/MoP decisions.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lycanthat</div><div class="date">2014-04-28, 08:56 PM</div></div><div class="posttext">This is your opinion .... its NOT a fact. subs says its self. 40mans would have died. even if blizzard havent removed it. And thank god for that.<br />
+<br />
+Partially opinion and partially fact.<br />
+<br />
+Fact: ZA/ZG was more accessible than Naxx. <br />
+<br />
+Opinion: They should've gone more hardcore, more difficult.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozensushi</div><div class="date">2014-04-28, 09:01 PM</div></div><div class="posttext">This is revisionist history, trying desperately to claim that classic was easy, BC was too hard, Ulduar's success was overrated, and ToC wasn't absolutely despised. It's a clear and pathetic setup to have cake and eat it too in the next post. I fully expect &quot;The Cata/MoP model was a success, even though we lost ~6 million players, and we're effectively reversing course on the majority of the design changes during that time in WoD.&quot;<br />
+<br />
+Also, your little list wasn't remotely covered in the article, and no mention was made of the supposed improvements.<br />
+<br />
+<br />
+I read your entire post ......... <br />
+<br />
+<br />
+Bravo ... was a great read!! I agree with it in its entirety. :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shockzalot</div><div class="date">2014-04-28, 09:09 PM</div></div><div class="posttext">Because it was a filler raid to kill time till cata would come.<br />
+<br />
+So technically Sunwell should be excluded as well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Feanoro</div><div class="date">2014-04-28, 09:15 PM</div></div><div class="posttext">So technically Sunwell should be excluded as well.<br />
+<br />
+It's been stated numerous times that Sunwell was not a filler. <br />
+<br />
+They weren't sure if they were going to have to hold it until Wrath, but they were able to release it for BC. That's clearly the original plan anyway, since BC was Legion themed and numerous story points hinted at it.<br />
+<br />
+- Kael'thas talks about his real master, not Illidan, when you turned in the quest item to Adal.<br />
+- Quests about Illidan repeatedly mention him hiding from Kil'Jaeden and going mad from it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zaqwert</div><div class="date">2014-04-28, 09:17 PM</div></div><div class="posttext">Cliff Notes:<br />
+<br />
+Blah blah blah, everything before sucked and the way we are doing things RIGHT NOW are awesome.<br />
+<br />
+How convenient.<br />
+<br />
+In 5 years they'll be telling us why everything they did in MoP and WoD was so awful and why the way things are NOW are awesome.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chib</div><div class="date">2014-04-28, 09:31 PM</div></div><div class="posttext">Its a shame, I think the end of WOTLK was where the down hill slide started :(<br />
+<br />
+Trial of the Crusader wasn't that bad was well, different but not massively bad, Heroic versions gave some nice bonuses :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tzalix</div><div class="date">2014-04-28, 09:33 PM</div></div><div class="posttext">Cliff Notes:<br />
+<br />
+Blah blah blah, everything before sucked and the way we are doing things RIGHT NOW are awesome.<br />
+<br />
+How convenient.<br />
+<br />
+In 5 years they'll be telling us why everything they did in MoP and WoD was so awful and why the way things are NOW are awesome.<br />
+<br />
+Well... Yeah. That's usually how development works.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca0b9d07d22</div><div class="date">2014-04-28, 09:37 PM</div></div><div class="posttext">What can i personally say about changes in WoW over 9 years i play this game? I used to love it when 50+ guild members was on TS whole day. Going BG, preparing for evening raid, farm reputation, exp alts, and farming achievs in WotLK. Game used to be full of live and community on server was important. You know you are part of somethink big. <br />
+<br />
+For me first think to damege WoW was flying mounts. They destroy open world PvP that many people enjoy in classic.<br />
+Second was creating heroic difficulty. I love how it was in Ulduar. It was much bigger challenge and whole fights was just more interesting.<br />
+Third and most important was Cataclysmus and same loot for 10 and 25 man raid. This change broke many guilds and communitys into small 12 man guild because is much simple to take care of 10 people in raid then 25.<br />
+<br />
+Whole time game is getting easier and easier. In cata you have to progress HC dungeons before you can go to raid. It take few hours to take Grim batol down. In Pandaria you just get level 90 and go LFG.<br />
+<br />
+Stop supporting solo and casual players and make community important once more, but it is probably to late for that.<br />
+<br />
+Me and my friends now only remembering the good times we use to have in this game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CrusaderNerò87</div><div class="date">2014-04-28, 09:45 PM</div></div><div class="posttext">Raided since classic, from hardcore to casual. Been all over the place in the raiding scene.<br />
+<br />
+For me, the raiding peak was in WotLK, were I had most FUN. Me and several friends started a guild very late BC(right before wotlk came out) and we started to raid 10 man and for a while even 25 man normal. We had alot of members, always people online and applying for the guild. People knew that if you wanted to raid, you had to get in a guild. I like that.<br />
+<br />
+The tuning of most raids in Wotlk was awesome in normal mode. We steady cleared content, sometimes hit a wall but we progressed and had fun. <br />
+<br />
+Its kind of like the flex system today. If all of my friends were playing today, we would hit up flex every week and have fun with it. Maybe dip into normal mode eventually. 10/25 normal in wotlk was kind of like flex - not LFR easy, but not very hard either.<br />
+<br />
+Im fine with other difficulties giving better gear.<br />
+<br />
+Cause if its one thing I have learned over the years playing this game its this: You will have the best times EVER if you find a guild &amp; friends to play with. No matter how hard/easy raids are. <br />
+<br />
+The gear will be replaced - your online friends might never come back..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Laguna</div><div class="date">2014-04-28, 09:47 PM</div></div><div class="posttext">What can i personally say about changes in WoW over 9 years i play this game? I used to love it when 50+ guild members was on TS whole day. Going BG, preparing for evening raid, farm reputation, exp alts, and farming achievs in WotLK. Game used to be full of live and community on server was important. You know you are part of somethink big. <br />
+<br />
+For me first think to damege WoW was flying mounts. They destroy open world PvP that many people enjoy in classic.<br />
+Second was creating heroic difficulty. I love how it was in Ulduar. It was much bigger challenge and whole fights was just more interesting.<br />
+Third and most important was Cataclysmus and same loot for 10 and 25 man raid. This change broke many guilds and communitys into small 12 man guild because is much simple to take care of 10 people in raid then 25.<br />
+<br />
+Whole time game is getting easier and easier. In cata you have to progress HC dungeons before you can go to raid. It take few hours to take Grim batol down. In Pandaria you just get level 90 and go LFG.<br />
+<br />
+Stop supporting solo and casual players and make community important once more, but it is probably to late for that.<br />
+<br />
+Me and my friends now only remembering the good times we use to have in this game.<br />
+<br />
+<br />
+I totally agree with you! Same goes for Feanoro..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd81f78867e</div><div class="date">2014-04-28, 10:01 PM</div></div><div class="posttext">I'd prefer to look to the future</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">videotape</div><div class="date">2014-04-28, 10:12 PM</div></div><div class="posttext">After years of playing and listening to complaints, listening to reminiscence about the good old days, and reflecting upon my own opinion of the game at various stages throughout my WoW career from 2005 and beyond, I can extract only two consistent factors that invariably make or break the game for you as an individual player:<br />
+<br />
+1. You.<br />
+2. The people with whom you play.<br />
+<br />
+And that's about it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc80f0a8b8c2</div><div class="date">2014-04-28, 10:14 PM</div></div><div class="posttext">TBC- That was the time that this game reached it's peak...ahhh good old days.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Quill</div><div class="date">2014-04-28, 10:32 PM</div></div><div class="posttext">At its essence, the biggest problem with the game if you're a raider is the lack of things to do that are enjoyable/challenging outside of raiding. <br />
+<br />
+CMs were a good first step to address that, but there's little replay value there - which makes finding a group very tough. Proving Grounds again offer very little reward for replay after you get your 30-wave title. (Competing for a high score is fun, but the time factor is a killer.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">raviadso</div><div class="date">2014-04-28, 10:46 PM</div></div><div class="posttext">After years of playing and listening to complaints, listening to reminiscence about the good old days, and reflecting upon my own opinion of the game at various stages throughout my WoW career from 2005 and beyond, I can extract only two consistent factors that invariably make or break the game for you as an individual player:<br />
+<br />
+1. You.<br />
+2. The people with whom you play.<br />
+<br />
+And that's about it.<br />
+<br />
+Pretty much sums it up. <br />
+<br />
+The game is better than it's ever been but people are just tired of the game so they grasp at straws and slam Blizzard for their decreased enjoyment as if every improvement Blizzard made was actually making the game worse. The game is more balanced, more friendly, tighter, more rewarding, has more progression paths, has more to do, etc. and yet everyone claims that the game was better then. <br />
+<br />
+I have fond memories of Vanilla and BC, but I also haven't forgotten how frustrating, unforgiving and just broken it was at launch. <br />
+<br />
+Then again, it's the internet. People complain about everything including me-- I'm complaining about complainers and trolls.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Otaka</div><div class="date">2014-04-28, 10:46 PM</div></div><div class="posttext">I have a physical memory of the oldschool. :P<br />
+<br />
+During the great hype of vanilla wow i bought World of Warcraft: Atlas-book... its still in my living room and i can look at it for very old informations of the zones. :D<br />
+Also still own the original manual, although its decaying and pages are dropping out of if im not careful.<br />
+<br />
+I dont need internet/computer to delve into the ancient memories of pre-tbc. :rolleyes:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">raviadso</div><div class="date">2014-04-28, 10:52 PM</div></div><div class="posttext">At its essence, the biggest problem with the game if you're a raider is the lack of things to do that are enjoyable/challenging outside of raiding. <br />
+<br />
+CMs were a good first step to address that, but there's little replay value there - which makes finding a group very tough. Proving Grounds again offer very little reward for replay after you get your 30-wave title. (Competing for a high score is fun, but the time factor is a killer.)<br />
+<br />
+That's something that's actually improved immensely since Vanilla, though. <br />
+<br />
+In Vanilla, you spent most of your time spamming trade for a raid/dungeon. Now you can get into raids relatively easy, and now there are scenarios, dungeons, daily quests, world bosses, reps to grind, old dungeons to do for xmog, challenge modes, achievements, etc.<br />
+<br />
+That's just PvE. I also remember when WoW had two BGs and AV had a queue of 60+ minutes. It was also before any semblance of PvP class balancing, so if you were a rogue, you could beat anyone. If you were a priest, good luck. CCs were off the charts, and in a SS raid, you could literally go from 100% to 0% in one stun and rogues could keep you stun-locked indefinitely. Not fun.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I'd prefer to look to the future<br />
+<br />
+Then this article isn't for you. Maybe you should read their other blog posts/blue posts about the future instead of reading about the past and then coming here to tell everyone that the article isn't for you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozensushi</div><div class="date">2014-04-28, 11:23 PM</div></div><div class="posttext">The game is better than it's ever been but people are just tired of the game so they grasp at straws and slam Blizzard for their decreased enjoyment as if every improvement Blizzard made was actually making the game worse. <br />
+<br />
+Yeah? It's better? Boosted 90's F'ing up everything is an Improvement? What about Pandas and their lovely Kazoo music? Can't get enough of hearing &quot;Slow doooown&quot;? I would have loved if Pandas were discovered before WoTLK. Just think how embarrassed Arthus would be to have been defeated by a bunch of cuddly Pandaren. <br />
+<br />
+Yeah dude, Big improvement on the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hugh Wattmate</div><div class="date">2014-04-28, 11:38 PM</div></div><div class="posttext">WoTLK was my fav also, i remember people saying during the expan that it was the worst ever though. Funny how people soon changed minds when CATA came out heh. ToC was not that bad i actually liked the fights and lack of trash but it was a little boring being in the same room (well other than last boss). <br />
+<br />
+Still WoTLK was fun you could jump in and raid whatever skill level you were at. Gearing was quick as was leveling you could take a break and come back and get on track quick this was nice. <br />
+<br />
+Shame things have gone downhill since.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">grexly75</div><div class="date">2014-04-28, 11:59 PM</div></div><div class="posttext">What can i personally say about changes in WoW over 9 years i play this game? I used to love it when 50+ guild members was on TS whole day. Going BG, preparing for evening raid, farm reputation, exp alts, and farming achievs in WotLK. Game used to be full of live and community on server was important. You know you are part of somethink big. <br />
+<br />
+For me first think to damege WoW was flying mounts. They destroy open world PvP that many people enjoy in classic.<br />
+Second was creating heroic difficulty. I love how it was in Ulduar. It was much bigger challenge and whole fights was just more interesting.<br />
+Third and most important was Cataclysmus and same loot for 10 and 25 man raid. This change broke many guilds and communitys into small 12 man guild because is much simple to take care of 10 people in raid then 25.<br />
+<br />
+Whole time game is getting easier and easier. In cata you have to progress HC dungeons before you can go to raid. It take few hours to take Grim batol down. In Pandaria you just get level 90 and go LFG.<br />
+<br />
+Stop supporting solo and casual players and make community important once more, but it is probably to late for that.<br />
+<br />
+Me and my friends now only remembering the good times we use to have in this game.<br />
+<br />
+The introduction of flying damaging world pvp what a load of bollocks, flying didn't do it, people not wanting to do it is what killed world pvp. If there is no real incentive for people to world pvp then they wont do it.. For you see pretty much everything now days needs an incentive for people to do it if there is no incentive then people do not do it..<br />
+<br />
+In fact flying can great for pvp in certain areas, I remember once I was on my hunter and a hordie was griefing the fine citizens of Redridge so I made him think twice about doing so.. They went ah crap I am getting out of here and they took off over the lake and I got on my flying mount and followed them and when I got close enough I shot them down over the lake it was funny and they as far as I know never came back.. So flying can be made fun there were actually a few videos on youtube of people aerial ganking was very entertaining to watch..<br />
+<br />
+But also there is the case of once done then no need for doing it again, like doing For The Alliance or For The Horde achievements pretty much no one does it anymore because once they have done it they no longer have to do it on their alts since pretty much everything is account wide including the mount you got from it (I think)..<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+WoTLK was my fav also, i remember people saying during the expan that it was the worst ever though. Funny how people soon changed minds when CATA came out heh. ToC was not that bad i actually liked the fights and lack of trash but it was a little boring being in the same room (well other than last boss). <br />
+<br />
+Still WoTLK was fun you could jump in and raid whatever skill level you were at. Gearing was quick as was leveling you could take a break and come back and get on track quick this was nice. <br />
+<br />
+Shame things have gone downhill since.<br />
+<br />
+I think the joining 10 and 25 man raids to the same lockout did it for most and as others have said making the gear in 25 the same as 10 just more of it now..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">sargior</div><div class="date">2014-04-29, 12:03 AM</div></div><div class="posttext">Encounters like Jin’do, Hakkar (now retired), and Ossirian were proof that there was plenty of room for involved and challenging encounter mechanics in smaller raids.<br />
+Gruul and Magtheridon picked up where classic’s version of Naxxramas had left off. <br />
+<br />
+So I wasn't just noob or in a noob guild..These raids have been and will always be the most memorable for me in wow.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mormolyce</div><div class="date">2014-04-29, 12:10 AM</div></div><div class="posttext">Wrath was great but had some issues, like 10 and 25 being on separate lockouts, so you had to clear 24 bosses a week on each character to maximise gear.<br />
+<br />
+But even worse was the old fashioned lockout system where you'd get locked to 4/12 in some fail pug and that was just it for the week. Ugh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tru</div><div class="date">2014-04-29, 12:12 AM</div></div><div class="posttext">Its a shame, I think the end of WOTLK was where the down hill slide started :(<br />
+<br />
+Trial of the Crusader wasn't that bad was well, different but not massively bad, Heroic versions gave some nice bonuses :)<br />
+<br />
+Worst thign was the fact that the gear sets were so similar well idk about other gear sets but plate was nearly identical across pally/war/dk<br />
+It felt very rushed design wise and the fact that we had an entire tier of raiding in one small ass location like litteralyl one small zone was not a good feel either.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">grexly75</div><div class="date">2014-04-29, 12:26 AM</div></div><div class="posttext">Worst thign was the fact that the gear sets were so similar well idk about other gear sets but plate was nearly identical across pally/war/dk<br />
+It felt very rushed design wise and the fact that we had an entire tier of raiding in one small ass location like litteralyl one small zone was not a good feel either.<br />
+<br />
+But it been like that for a long time, there was Karazhan an entire tier in one area that being a castle, same with Black Temple, Serpent Shrine Caverns, Tempest Keep and to some extent Battle for Mount Hyjal, Sunwell Plateau was just in one though be it large area but though it had no tier it was as one could say the Ruby Sanctum of TBC in terms of the loot..<br />
+<br />
+Magtheridons Lair and Gruuls Lair had no tier but they were confined to one area raids and Magtheridons Lair only had one boss.. As far as I know only Dragon Soul and Siege of Orgimmar are the only raids that were in multiple distinct locations..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Utinil</div><div class="date">2014-04-29, 01:06 AM</div></div><div class="posttext">I am surprised that nobody has caught on to.<br />
+<br />
+<br />
+The Burning Crusade also introduced true 10-player raiding for the first time (you could argue that Upper Blackrock Spire was first, but that was more of a 10-player dungeon given its structure)<br />
+<br />
+Scholomance and Strath were 10 man raids/dungeons before Blackrock Spire was (it was a 15 man for a long time).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zeromus</div><div class="date">2014-04-29, 01:06 AM</div></div><div class="posttext">Modern WoW is a shallow, unexciting, predictable experience. Really, in terms of game depth, all they've ever done is remove stuff in lieu of convenience.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">majesta</div><div class="date">2014-04-29, 01:10 AM</div></div><div class="posttext">But it been like that for a long time, there was Karazhan an entire tier in one area that being a castle, same with Black Temple, Serpent Shrine Caverns, Tempest Keep and to some extent Battle for Mount Hyjal, Sunwell Plateau was just in one though be it large area but though it had no tier it was as one could say the Ruby Sanctum of TBC in terms of the loot..<br />
+<br />
+Magtheridons Lair and Gruuls Lair had no tier but they were confined to one area raids and Magtheridons Lair only had one boss.. As far as I know only Dragon Soul and Siege of Orgimmar are the only raids that were in multiple distinct locations..<br />
+<br />
+I really liked TBC model. Multiple places which were required to get a set.<br />
+<br />
+Actually, Mag and Gruul both had tier pieces in them. Mag dropped Chest, Gruul's Lair had shoulders and pants. Kara dropped gloves and helm. <br />
+<br />
+SSC and TK for the next tier.<br />
+<br />
+BT &amp; Hyjal for Tier 6.<br />
+<br />
+SW for better Tier 6 off set pieces.<br />
+<br />
+I miss the 8 piece model sets. Gave a nice uniform look to the sets.<br />
+<br />
+I think if they were willing to reuse a lot of assets they could create some really nice 1-3 boss raids in addition to current mega-raid dungeons that would provide some cool side content. They could have shared loot tables for the more desired items out of the current raid tier as well as high ilvl items form the previous raid tier that were highly desired, the thunderforged stuff like trinkets and what not.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ikkarus</div><div class="date">2014-04-29, 01:31 AM</div></div><div class="posttext">Yeah, I don't know, I understand that it is important allow more ppl to experience the entire game and the raid content, but in my opinion this concept has gone too far, it is also important to keep some challenge, even in the easiest modes, to incentivate the people to keep playing, to feel that they are accomplishing something, but we don't see this with the Raid Finder today, it distorts the whole raid concept, I don't think it brings any good for the game or comunity. I'm a casual player, very casual, I used to raid 5 hours a week back in Cataclysm and I killed DW in heroic mode, that's why I believe that the introduction of the flex Mode would be sufficient to make life easier for any casual player, the LFR wouldn't be needed..It was a mistake, and in my opinion should be removed..<br />
+<br />
+Now there's another thing that bothers me, they said that the Hard modes of Ulduar &quot;were inconsistent and often lacking clarity&quot;, they may have a point, but we can all agree that this system was way more interesting than change the difficulty on the interface right? I believe this wouldn't be a problem today, they could use the Dugeon Journal to describe how we can active the Hard Mode in the fights for exemple, in my opinion this system is something that would be nice for them to reconsider, it is very fun and it would bring more dynamic to the fights.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Coronius</div><div class="date">2014-04-29, 01:43 AM</div></div><div class="posttext">Icecrown Citadel wasn't very vibrant after a full year of running it. I was actually quite disappointed with the raid from the start.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Celista</div><div class="date">2014-04-29, 01:50 AM</div></div><div class="posttext">Wrath was great but had some issues, like 10 and 25 being on separate lockouts, so you had to clear 24 bosses a week on each character to maximise gear.<br />
+<br />
+But even worse was the old fashioned lockout system where you'd get locked to 4/12 in some fail pug and that was just it for the week. Ugh.<br />
+The way they worded the last part of the blog--&quot;overall, Icecrown Citadel was a vibrant time for raiding in WoW, with memorable content and multiple difficulty levels and raid formats to accommodate a wide variety of players&quot; --makes me wonder if they're thinking about returning to a similar system or a hybrid system of current raiding and that raid model. I agree that was a good raiding tier, but I think it was more due to the way new players/alts could gear up via badge gear very quickly. Also it was when subscriptions were at their peak, almost double the playerbase currently, so of course the raid/pugging scene was a vibrant one in comparison to what we have been experiencing more recently. <br />
+<br />
+Also I suspect they're going to announce changes to gear drops in LFR which won't go over well with a certain segment of the playerbase.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zeta333</div><div class="date">2014-04-29, 01:51 AM</div></div><div class="posttext">I wonder how much blizzard actually ran thier own raids or if they sat there looking at a spreadsheet the whole timing thinking they knew what was going on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jbombard</div><div class="date">2014-04-29, 02:27 AM</div></div><div class="posttext">Up and through Wrath they felt like they were steadily improving the game. After the subs nosedived shortly after the release of Cata, if feels like they have been in panic mode and just throwing whatever they can think of at the wall to see what sticks. Way too much trial and error with the emphasis on error. It just feels like they were making the game they wanted to play up until the nosedive but after that all they have been trying to do is make the game for mass appeal to staunch the bleeding subs and the game feels shallow because of it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Themanintobuildafire</div><div class="date">2014-04-29, 02:31 AM</div></div><div class="posttext">MC probably had the laziest designed encounters, but since no one had really experienced much raiding before they got away with it. Most of the bosses didn't do shit.<br />
+<br />
+MC brings back bad memories. So much loot drama. 40 ppl with such small loot drops overall...that and BWL. God having to put in so many hours for so little loot and when TBC came out even the best epics I had were garbage compared to hellfire quest blues with sockets. TBH the world dragons were the best raiding experience I had in vanilla and the devs didn't even mention them. The reason they were the best is I was ally at the time and our guild was server #1 and we would pvp with the horde #1 to get at the dragon first. Was epic battles before the raid took place. Also dragons were outside...I always hated the &quot;dungeon crawler&quot; concept you have to be inside some dark dank place to kill bosses. (I know AQ and ZG were technically not like that and ZG was fun, but not a true outdoor experience like the dragons were...)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Blackdecker</div><div class="date">2014-04-29, 02:34 AM</div></div><div class="posttext">Why do people hate TOC ? i think it was great.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Celista</div><div class="date">2014-04-29, 02:36 AM</div></div><div class="posttext">Why do people hate TOC ? i think it was great.<br />
+I loved ToC. I think people became burnt out of raiding it 4x a week.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aelric70</div><div class="date">2014-04-29, 03:08 AM</div></div><div class="posttext">Obsidian Sanctum. <br />
+<br />
+Was the best idea they ever had. <br />
+<br />
+1 Raid. 1 Boss. Easy, and thus for everyone. <br />
+<br />
+WE NEED ONE BOSS RAIDS BACK<br />
+<br />
+We have them. They are called world bosses. Same value just not instanced.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jinreeko</div><div class="date">2014-04-29, 03:20 AM</div></div><div class="posttext">Subs do indeed tell stories. <br />
+<br />
+Classic was projected to have 1 million subs at peak. Instead they had that in a month. Classic finished around ~7 million.<br />
+<br />
+BC sales were on the strength of classic, and subs grew to ~10 million by the end.<br />
+<br />
+Wrath sales were even stronger than BC sales, subs hit ~12 million. Then the 180 degree design shift happened with ToC, and the decline began.<br />
+<br />
+All subs data is readily available on the web, as is patch release dates. Pretty easy to see when they started dropping. Pretty easy to see why WoD so far is shaping up to reverse most of the horrible Cata/MoP decisions.<br />
+<br />
+This is just attribution fallacy. you have no way to REALLY tell that TOC+ fucked it up so bad. It could have just been many of the original subs getting bored. It's a coincidence, but at the same time you can't just assume A caused B.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Isolyphic</div><div class="date">2014-04-29, 04:20 AM</div></div><div class="posttext">Overall, Icecrown Citadel was a vibrant time for raiding in WoW, with memorable content and multiple difficulty levels and raid formats to accommodate a wide variety of players.<br />
+<br />
+Erm nope, because Ulduar was the vibrant time for raiding in WoW. Hardmodes (totally different from Heroic Modes) was by far the most enjoyable (and frustrating) content in PvE Raiding I had ever experienced. Since ToC and ICC, I lost my drive and I still haven't regained it. On paper heroic modes are still a thumb up, but on top of that, we should of incorporated a Hardmode additionally. Yes we have achievements for this, but it's not as rewarding as 3 Drakes Sartharion, or Heartbreaker, Orbituary and the Guardians, General, Council, and Yogg-Saron. Those hardmodes greatly altered the encounters and each encounter actually felt tremendously different, the encounter was nothing alike and some of the time, required innovative tactics (Voidwalker tanking 25man Sartharion for example, to soak up the Breath attack that one-shotted tanks).<br />
+<br />
+If Hardmode style encounters returned to WoW, I would undoubtly try alot harder to participate in Raiding again. Nowadays, I grind money hoping the next expansion will include this.<br />
+<br />
+Edit: Final point, Heroic Modes just change the numbers. Hardmode changed the encounter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Santoryu</div><div class="date">2014-04-29, 04:21 AM</div></div><div class="posttext">Trial of the Crusader = the most phoned-in raid in history.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Feanoro</div><div class="date">2014-04-29, 04:41 AM</div></div><div class="posttext">This is just attribution fallacy. you have no way to REALLY tell that TOC+ fucked it up so bad. It could have just been many of the original subs getting bored. It's a coincidence, but at the same time you can't just assume A caused B.Yes, all those people just got bored around the same time. Couldn't have had anything to do with one of the most despised raids in WoW history. Couldn't have had anything to do with guilds burning out from farming it four times a week because of the genius badge system. No sir, it was a massive amount of people all becoming bored together. Right. <br />
+<br />
+After all, that's the official Blizzard excuse now!<br />
+<br />
+Correlation isn't causation, etc etc. I eagerly await your next trip to Wikipedia to pull out a logical fallacy to wave in lieu of an actual argument. In the meantime, I point out yet again that you can see exactly when ToC came out, the raid design philosophy changed (by the way, there's a blog that confirms that design shift, perhaps you've read it?), and the subs starting falling. But hey, pure happenstance!<br />
+<br />
+Just because there was never a plateau in the sub numbers graphs to indicate a peak and period of no further growth, that doesn't mean people didn't all suddenly get bored!<br />
+<br />
+Now that we've had the obligatory &quot;everyone got bored&quot; and rebuttal, what say we go back to discussing the article?<br />
+<br />
+Isolyphic: Yep, on my server during Ulduar, there were groups for anything you wanted any hour of the day or night. A couple of weeks of 3.2 and it slowly began dying.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">PlatedPriest</div><div class="date">2014-04-29, 04:47 AM</div></div><div class="posttext">I loved ToC. I think people became burnt out of raiding it 4x a week.<br />
+<br />
+I loved totc <br />
+<br />
+faction champ was a great fight!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pacster</div><div class="date">2014-04-29, 05:25 AM</div></div><div class="posttext">Yes, all those people just got bored around the same time. Couldn't have had anything to do with one of the most despised raids in WoW history. Couldn't have had anything to do with guilds burning out from farming it four times a week because of the genius badge system. No sir, it was a massive amount of people all becoming bored together. Right. <br />
+<br />
+After all, that's the official Blizzard excuse now!<br />
+<br />
+<br />
+I believe a lot came together there. ToC was not exactly very inspired...the area around it was a daily grind fest and raid had not much really special. It somehow felt &quot;thrown in cause the next expansion is too far ahead and we can't give you the final raid just yet&quot;.<br />
+On the other hand people got used to and bored with raiding. TBC had seen a lot of very frustrating raids due to bugs and serious item walls(yay for resistancies!)...Naxx and Ulduar have been a lot of content(2 huge raids more or less at the same time...and you really have been playing both at the same time)....and then came ToC, which was more of the same old slimmed down with almost nothing new. I believe people just felt the treadmill hitting hard at that point...burn out from raiding excessively in combination with boredom. People wanted IC...and ToC felt like a let down there.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+That's just PvE. I also remember when WoW had two BGs and AV had a queue of 60+ minutes. It was also before any semblance of PvP class balancing, so if you were a rogue, you could beat anyone. If you were a priest, good luck. CCs were off the charts, and in a SS raid, you could literally go from 100% to 0% in one stun and rogues could keep you stun-locked indefinitely. Not fun.<br />
+<br />
+<br />
+I loved my shadow back then and I actually had way better chances against a rogue than these days(cause they didn't have 5+ stuns and snares and had to be afraid of my fear and dots too). Today rogues easily counter anything a shadow can do...you never have a chance to actually open a fight on them without of them just vanishing and then having their own opener. Back then if you had a dot on the rogue then he was most likely dead...he could not run from you and if he came close he ate a fear and you had time to get him off your back again(that was actually more strategical than todays &quot;burst him down&quot;). Stunlocks sucked...so did fearlocks...but it was at least a fair fight unlike today, where one is a free honor-pinata for the other. Back then dots actually had a value cause by running away you had the time to make good use of them....today with all the snares, counters and sprints they are just &quot;I got dots....that means you will win cause you will burst me down and I can't get you off my back anyway&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mehrunes Dagon</div><div class="date">2014-04-29, 05:29 AM</div></div><div class="posttext">Still crying over how WoW is getting easier and more casual? You all must have forgotten that the game was built from the ground up to be casual compared to other MMOs it was up against. See: Everquest.<br />
+<br />
+The moment you picked up WoW was the moment you turned casual.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Masternewt</div><div class="date">2014-04-29, 06:01 AM</div></div><div class="posttext">Because it was a filler raid to kill time till cata would come.<br />
+<br />
+Kinda like this blog.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocac96309fe0</div><div class="date">2014-04-29, 06:24 AM</div></div><div class="posttext">What a great Dev Watercooler. I totally want to hear about design philosophy regarding old shit from several expansions ago instead of the actual future of raiding in Warlords of Draenor. Great choice, and totally not a waste of time.<br />
+<br />
+You are too limited to comprehand the idea of taking things into retrospective as a lesson. Those who dont know history are doomed to repeat it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0fe2ce964e</div><div class="date">2014-04-29, 06:40 AM</div></div><div class="posttext">Nice reading about the times before Blizzard screwed over 25-man raiding.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MoanaLisa</div><div class="date">2014-04-29, 06:43 AM</div></div><div class="posttext">You are too limited to comprehand the idea of taking things into retrospective as a lesson. Those who dont know history are doomed to repeat it.<br />
+Yeah, I don't really understand yet what Watcher's point is with all of this except to have a history on the record but I'll assume that he actually is going somewhere with this. As a review of what they think of what they did it's not bad. So Watcher has designs on being a historian. Who knew?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arganaut</div><div class="date">2014-04-29, 06:54 AM</div></div><div class="posttext">Ah great memories. BC was the greatest time for me, Wrath for the raiding. Ironic the first part ended at Wrath as game went off a cliff after that (imho).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Echocho</div><div class="date">2014-04-29, 07:47 AM</div></div><div class="posttext">The game is more balanced, more friendly, tighter, more rewarding, has more progression paths, has more to do, etc. and yet everyone claims that the game was better then. <br />
+<br />
+That's the problem right there for me, &quot;more rewarding&quot;. Back in the days you actually had to clear and farm previous content for quite a while to be ready for the new content. As it is now guilds clear the raid in normal mode, then have to work on clearing it again in heroic mode, but that doesn't matter because the gear you have gathered the first weeks of the normal mode previous raid is quite sufficient to start with the normal mode new tier, where is where you must start anyway.<br />
+<br />
+I'd like to see them return to the TBC model, at least for Mythic raiding. Where you need a mythic geared guild from TierX to progress further with TierX+1 with strict gear checks. Mythic guilds shouldn't have to run any other difficulties, since only mythic gear would work in mythic raids, all other gear should break or something. Also the bosses should drop fewer epics so that the gearing process would take longer, which in turn would make the tier last longer. I remember starting BT &amp; Hyjal with a few pieces of Karazhan gear on my character, getting ugrades wasn't easy as there where a lot of people competing for them and the bosses didn't drop that many to begin with.<br />
+<br />
+For me, I get bored once a raid has been cleared in normal mode. Doing the same thing all over again at a different difficulty isn't fun, escpecially since it doesn't matter anyway when the next content patch hits. Also if they could make the last raid very challenging for mythic raiders (like sunwell) so it can actually last a year without people getting bored after 2 months that would be great.<br />
+<br />
+My two cents.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">brt2pp</div><div class="date">2014-04-29, 08:25 AM</div></div><div class="posttext">@up sunwell wasn't hard or challenging, was frustrating with stupid mechanics that requred stacking stupid amount of certain class, also how can you say that current content isn't hard enough if still something along 1% of playerbase defeated garosh on heroic ? i still see guilds that strugling with him on normal even, right now raiding is awesome, optimal and challenging, all i want from wow now is something outside of raids/pvp something intresting to do in world</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryme</div><div class="date">2014-04-29, 08:27 AM</div></div><div class="posttext">Why do people hate TOC ? i think it was great.<br />
+<br />
+Because it was probably the laziest and most uninspired raid ever (yes it was worse than Dragon Soul, it just didn't last as long) that just so happened to follow one of the most loved and enjoyed raids ever. It was inevitable that it would not be received well, I'm shocked it made it through, time must have been tight for Blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">innersilence</div><div class="date">2014-04-29, 08:58 AM</div></div><div class="posttext">Ah great memories. BC was the greatest time for me, Wrath for the raiding. Ironic the first part ended at Wrath as game went off a cliff after that (imho).<br />
+<br />
+same for me, BC was the best without any doubt. There are some arguments from blizz that really amazes me! <br />
+<br />
+however, was the introduction of the Isle of Quel’danas Badge of Justice vendor, as well as Magister’s Terrace. Badges of Justice were not new, but this was the first time that questing and dungeons allowed access to items that were truly comparable in power, or superior to, many of the raid items from the first two tiers of 25-player The Burning Crusade raiding. Along with the removal of attunements, this meant that for the first time, players could entirely bypass those tiers if they wanted to gear up and prepare for zones like Zul’Aman or Black Temple.<br />
+On the one hand they want to give players opportunity to see all the raid contents, on the other hand they introduced a system that let &quot;players could entirely bypass those tiers&quot;. I am happy that I joined wow just before badge system, else I could never find some other players like me that due to the need of gears or some other reasons, still wanted to do the old tiers so I could join them. At the moment If a player joins the game at later tiers it is less likely if he/she can find people to do the old tiers. I wonder when blizz designers are going to understand this fact that Raid contents are not like museums which they are forcing players to visit each week to see the same content again and again with the systems like LFR that made these visits cheap enough for all.<br />
+<br />
+Also, there are some other strange decisions too! I always found questing, as a natural way for leveling new chars in this game, is boring as hell! except for some not available anymore group quests and more challenging solo ones specially in the areas like nagrand (My all time favorite questing zone which had some interesting and challenging quests) that made questing a bit fun at least. They removed all the fun excusing that there are not enough players in the old zones to group up for these (optional) quests!<br />
+yet, later, they merged different servers to address this very same issue without reverting back the damage and introduced new problems without achieving anything good! (whats the need of populated old zones anymore?).<br />
+<br />
+Even worse, they always refused to tune up old content arguing that they want to focus on the max level content yet they keep forcing players to level, up to 95 levels, through the same old boring, not-tuned up content! while every now and then they do some unnecessary removal of last bits of remaining fun in the old contents to make sure there are nothing left to worry about!<br />
+<br />
+The introduction of flying at the max level in the TBC was such a wonderful experience that later they have decided to recreate the old world in the Cata expansion to provide players with same experience with the old content. Seriously, how many old players are there who did not enjoy flying over Hellfire Peninsula and Netherstorm or do some duels on the floating rocks in the nagrand? Later with the introduction of dungeon portals and so many other means of fast traveling they made players stick to major cities to access these portals and do some trading and crafting meanwhile they are in the queues.<br />
+Surprisingly, they came to the conclusion that it was the flying it self that imposed the problem! so whats the solution? as always the easiest one: lets get rid of it. <br />
+And yet there are so many other design decisions ,lately ,that I think while bringing some leisure to the game, at the same time, they had negative effect overall. i.e: the introduction of AoE spells specially healing ones that ever since, they went through many adjustments while also caused many fundamental changes to the raid mechanics which are not necessarily good to the game.<br />
+Of course , the excitement of the new expansion will bring back many players who used to love this game, like me. but lets see how many of them will keep playing it and how many will leave it, soon after, disappointed. Well I , really,hope that it keep us interested for a awhile at least.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Otaka</div><div class="date">2014-04-29, 09:04 AM</div></div><div class="posttext">The introduction of flying damaging world pvp what a load of bollocks, flying didn't do it, people not wanting to do it is what killed world pvp. If there is no real incentive for people to world pvp then they wont do it.. For you see pretty much everything now days needs an incentive for people to do it if there is no incentive then people do not do it..<br />
+<br />
+In fact flying can great for pvp in certain areas, I remember once I was on my hunter and a hordie was griefing the fine citizens of Redridge so I made him think twice about doing so.. They went ah crap I am getting out of here and they took off over the lake and I got on my flying mount and followed them and when I got close enough I shot them down over the lake it was funny and they as far as I know never came back.. So flying can be made fun there were actually a few videos on youtube of people aerial ganking was very entertaining to watch..<br />
+<br />
+But also there is the case of once done then no need for doing it again, like doing For The Alliance or For The Horde achievements pretty much no one does it anymore because once they have done it they no longer have to do it on their alts since pretty much everything is account wide including the mount you got from it (I think)..<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+I think the joining 10 and 25 man raids to the same lockout did it for most and as others have said making the gear in 25 the same as 10 just more of it now..<br />
+<br />
+It was flying that did it.<br />
+Dont you understand what it gave us? Dont you see it?<br />
+have you even tried world pvp today?<br />
+<br />
+its the flying mounts that ruined it... not players. Once again i have to explain to someone ignorant or too stupid to notice that flying mounts ARE FLYING SANCTUARIES. You are COMPLETELY safe while flying... and THAT destroyed world pvp. The way for us to move from place to place is a sanctuary thus it destroyed the possibility to ever have world pvp occur.<br />
+Only times when it may occur is when you start to fly... most of the time you do that from a city... and when you land, but in most cases thats too late already such as flying straight into instance.<br />
+<br />
+If we were still forced to use land mounts only then there would be no such thing as midair sanctuary safe from everything that could harm us.<br />
+<br />
+Its weird how people cannot see this fact in their everyday gameplay.<br />
+<br />
+World pvp was never about wanting to do it... it was about &quot;hatred&quot; against the enemy faction. And also to possibly slow their progress in either farming for materials or getting to an instance or doing dailies.<br />
+The last time i legit saw world pvp was on a pvp server trying to do Sha of Anger... the enemy faction often came there to try to kill us and then steal the kill, or just to kill us because we were already occupied aka easy kills.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lmaotsetung</div><div class="date">2014-04-29, 09:15 AM</div></div><div class="posttext">&quot;we introduced two 20-player raid zones, Zul’Gurub and Ruins of Ahn’Qiraj, allowing smaller groups to experience epic content on a scale beyond that of dungeons.&quot;<br />
+<br />
+So in other words, ZG/ZA was Blizzard's first capitulation to the casual market, the first step in a downward spiral that has lead us to the current travesty that is LFR.<br />
+<br />
+After Naxx they should've gone even more hardcore, with a 40-man 60++++ difficulty raid that only 0.00001% of the playerbase had a shot at.<br />
+<br />
+NO! Blizzard's first capitulation to the casual market was the introduction of....WELFARE EPICS!<br />
+<br />
+The &quot;first step in a downward spiral that has lead us to the current travesty that is LFR&quot;, would be the 2nd week of Ulduar raid, i.e nerf!nerf!nerf!nerf!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc66990be288</div><div class="date">2014-04-29, 09:21 AM</div></div><div class="posttext">@up sunwell wasn't hard or challenging, was frustrating with stupid mechanics that requred stacking stupid amount of certain class, also how can you say that current content isn't hard enough if still something along 1% of playerbase defeated garosh on heroic ? i still see guilds that strugling with him on normal even, right now raiding is awesome, optimal and challenging, all i want from wow now is something outside of raids/pvp something intresting to do in world And the 1% playerbase is ~Ok speaking of number's??<br />
+Right now raiding is awesome~<br />
+Start with Lfr/<br />
+go with Flex ~<br />
+Go with normal~<br />
+Go with Heroic!<br />
+<br />
+So at the end you killed wow 134643667 bosses in 135266 kind of difficulties&gt; &gt;&gt;&gt;Blow mind&gt;&gt;&gt;&gt; <br />
+<br />
+You see guilds struggling in Normal mode because right now -1 -1 raiders How to say everyday Guilds are becoming non Viable.<br />
+Raiding is amazing right now??<br />
+Due overboredom of people with so many difficulties ? Let's See <br />
+Guild hit 13/14 Heroic~ 3 months ago~ Currently clear up 6/14 bosses due not available format~ Due people writting on forums i got sick of this Flex/Normal/Heroic mode and Quiting&gt;<br />
+Right now more and more Guilds are hitting the wall that is Descrease/playerbase=</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">grexly75</div><div class="date">2014-04-29, 09:36 AM</div></div><div class="posttext">It was flying that did it.<br />
+Dont you understand what it gave us? Dont you see it?<br />
+have you even tried world pvp today?<br />
+<br />
+its the flying mounts that ruined it... not players. Once again i have to explain to someone ignorant or too stupid to notice that flying mounts ARE FLYING SANCTUARIES. You are COMPLETELY safe while flying... and THAT destroyed world pvp. The way for us to move from place to place is a sanctuary thus it destroyed the possibility to ever have world pvp occur.<br />
+Only times when it may occur is when you start to fly... most of the time you do that from a city... and when you land, but in most cases thats too late already such as flying straight into instance.<br />
+<br />
+If we were still forced to use land mounts only then there would be no such thing as midair sanctuary safe from everything that could harm us.<br />
+<br />
+Its weird how people cannot see this fact in their everyday gameplay.<br />
+<br />
+World pvp was never about wanting to do it... it was about &quot;hatred&quot; against the enemy faction. And also to possibly slow their progress in either farming for materials or getting to an instance or doing dailies.<br />
+The last time i legit saw world pvp was on a pvp server trying to do Sha of Anger... the enemy faction often came there to try to kill us and then steal the kill, or just to kill us because we were already occupied aka easy kills.<br />
+<br />
+So abusing people is how you get your point across I see no wonder the community is the way it is.. And what you don't get is if people wanted to world pvp they would, whether flying was there or not.. What you have to ask others is why they don't want to world pvp..<br />
+<br />
+And the last line in you post shows that your excuse of hatred towards flying killing world pvp is bollocks since low and behold Sha of Anger is in MoP and lo and behold there was flying in it.. As I said before if people want to world pvp they will, if they don't they wont no matter what.. Heck I have been on many pvp servers (I am from a pve server) doing Ordos and the opposite faction will leave you alone while there..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Will</div><div class="date">2014-04-29, 10:45 AM</div></div><div class="posttext">So abusing people is how you get your point across I see no wonder the community is the way it is.. And what you don't get is if people wanted to world pvp they would, whether flying was there or not.. What you have to ask others is why they don't want to world pvp..<br />
+<br />
+And the last line in you post shows that your excuse of hatred towards flying killing world pvp is bollocks since low and behold Sha of Anger is in MoP and lo and behold there was flying in it.. As I said before if people want to world pvp they will, if they don't they wont no matter what.. Heck I have been on many pvp servers (I am from a pve server) doing Ordos and the opposite faction will leave you alone while there..<br />
+<br />
+I did a lot of world pvp and always enjoy it. you will meet players who want to cap hellfire fortifications, for example, and as you approach, they fly into the air. same happened at halaa. it was very frustrating. i miss randomly encountering potential kills or threats on the road. flying mounts allow contrived wpvp spots to be cheesed, especially by wpvp participants who want to participate with minimal risk. <br />
+<br />
+take it from me a lover of wpvp - flying mounts DID dampen our experience. having someone cap a fort by sitting on a flagpole, or fly away at the first sign of danger, is irritating to say the least!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daez</div><div class="date">2014-04-29, 11:15 AM</div></div><div class="posttext">You hardcore raiders can cry me a river. If people are quitting your guilds then that is on you not on us. Though you continuously look down your nose at the rest of us because you are so 1337.<br />
+<br />
+Here is an idea. If you want to fill out your rosters then recruit people that are ungeared and gear them. Yet, you refuse to do that. You want them geared. How they get geared is through LFR, Flex, Normal with pugs, but while you want them to do that, you want to complain that it happens.<br />
+<br />
+You all make absolutely no sense.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+Lets look at the real reason you guys like wpvp to begin with. Its an absolute numbers game. Where as arena and bgs are balanced and cannot really be influenced by numbers, wpvp is all about numbers. That is the real reason most of the wpvp crowd misses it. It allowed really bad players to corpse camp a decent player until they finally got frustrated enough to log out. Most of the time, it would be 3 or 4 against 1. That is something that does not exactly happen anywhere other than wpvp. BTW, flying mounts did not ruin it. It was that sense of it being inherently unfair that drove most players out of it. Sure, people might take off from wpvp on their flying mounts the moment they see someone about to fight them, but that is normally because they know that with one normally comes 3 and that three then spends the next 30 minutes corpse camping. Its the atmosphere that drove people to be creative with the use of flying mounts. Not the flying mounts that drove off world pvp.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">alabaster jones</div><div class="date">2014-04-29, 11:36 AM</div></div><div class="posttext">'Naxxramas, once the playground of the elite during classic WoW, was reintroduced as a highly accessible entry point to raiding.'<br />
+<br />
+I loved the structure of Naxx in vanilla and wotlk, (during the learning/farming/gearing) you never knew which direction/wing you'd be going for, I absolutely hoarded DKP for when we managed to push through a few new bosses in 1 night and then pick myself up something amazing that nobody else on the server had.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7c76c33fc1</div><div class="date">2014-04-29, 12:20 PM</div></div><div class="posttext">That all sounds very self-congratulatory.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7fb8344b2d</div><div class="date">2014-04-29, 12:32 PM</div></div><div class="posttext">Well, why did they not discuss the design philosophy behind 'secret' bosses, that was even applied in Cata and Mists, then? Why did they not discuss the thinking behind the introduction of vehicules in raiding and why they decided it was better not to go with it in future raids. The introduction of portals? The return to raids targeted at the hardcores?<br />
+<br />
+Ulduar had PLENTY of design considerations that this article just blatantly ignored, you'd have to be naive to think it is not a deliberate attempt to minimize the impact of Ulduar and that mostly to avoid people realizing even more how much they have screwed up things since.<br />
+<br />
+Ulduar did not bring anything new. <br />
+They can't really hype the evolution in the design, because in reality most of the mechanics existed already in vanilla, like optional difficulty in bug family fight. There were also mind controllable &quot;vehicles&quot;. AQ had portals implemented in it. I'm not sure what counts as &quot;secret boss&quot;, but there were crap load of bosses that were not tested in ptr, boss that did not appear to be there that you could by pass, and boss that became available only after you had cleared everything you could see.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yriel</div><div class="date">2014-04-29, 12:34 PM</div></div><div class="posttext">NO! Blizzard's first capitulation to the casual market was the introduction of....WELFARE EPICS!<br />
+<br />
+No Blizzards first capitulation to the casual market was WoW, the fast-food MMO. EQ, DaoC and AC were much more hardcore.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xires</div><div class="date">2014-04-29, 12:41 PM</div></div><div class="posttext">'Naxxramas, once the playground of the elite during classic WoW, was reintroduced as a highly accessible entry point to raiding.'<br />
+<br />
+I loved the structure of Naxx in vanilla and wotlk, (during the learning/farming/gearing) you never knew which direction/wing you'd be going for, I absolutely hoarded DKP for when we managed to push through a few new bosses in 1 night and then pick myself up something amazing that nobody else on the server had.<br />
+<br />
+The problem with Naxx 2.0 was it was way to easy. Clearing a T7 raid with T6 gear from the previous expansion was not what I would call a good direction for raiding.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">grexly75</div><div class="date">2014-04-29, 12:43 PM</div></div><div class="posttext">I did a lot of world pvp and always enjoy it. you will meet players who want to cap hellfire fortifications, for example, and as you approach, they fly into the air. same happened at halaa. it was very frustrating. i miss randomly encountering potential kills or threats on the road. flying mounts allow contrived wpvp spots to be cheesed, especially by wpvp participants who want to participate with minimal risk. <br />
+<br />
+take it from me a lover of wpvp - flying mounts DID dampen our experience. having someone cap a fort by sitting on a flagpole, or fly away at the first sign of danger, is irritating to say the least!<br />
+<br />
+Well the only way I could think of to solve that problem with cap areas would be to make it that if you wanted to contribute to capping an area you could not mount at all.. As soon as you mounted your contribution to copping that area was removed..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nick Flynn</div><div class="date">2014-04-29, 01:10 PM</div></div><div class="posttext">Pointless blog, couldn't they just use the time to work on WoD instead of wasting it like this?<br />
+<br />
+Cannot tell whether comments like this are by trolls or whether people can actually be this ignorant</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rafzor</div><div class="date">2014-04-29, 01:21 PM</div></div><div class="posttext">All players get to see the Obsidian Sanctum and experience the fight, but players looking for an extra challenge can take on a tougher version of the same encounter and be rewarded accordingly. As with many of our experiments, this one’s success laid the groundwork for what was to come.<br />
+<br />
+I just don't see how can they think 0 drakes is still the &quot;same encounter&quot; when comparing to 3 drakes version, because the fight is so different that only because couple mechanics are the same and the model is the same don't in my eyes make it the same encounter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">prwraith</div><div class="date">2014-04-29, 01:23 PM</div></div><div class="posttext">I kind of wish WoW devs and community managers could learn to say something instead of speaking endlessly. They may as well be lawyers for all the useless bullshit they spew. <br />
+<br />
+Content =/= quantity with words spoken.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Farabee</div><div class="date">2014-04-29, 01:42 PM</div></div><div class="posttext">Part 2 is tomorrow apparently.<br />
+<br />
+Can't wait to see Part 3 where he tries to convince me that Mythic is a good idea.<br />
+<br />
+Mythic is a good idea. Every tier since Cata has had bosses who are either horribly undertuned for 10m heroic (Ragnaros) or horribly overtuned (Garrosh). Usually the former. Now top guilds can all get the same version of the same boss and Blizzard can stop worrying about designing crap for 1% of the population.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baneleaf</div><div class="date">2014-04-29, 02:40 PM</div></div><div class="posttext">Did ICC, the dungeon that raiders were in for over a year, really only get one paragraph?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Laeryn</div><div class="date">2014-04-29, 02:47 PM</div></div><div class="posttext">I'd love for them to talk about how hard it is for Tanks to find a raiding guild... because the raid content they design requires ONE tank almost half the time. Or they just add some annoying gimmick like a debuff that requires a taunt =\<br />
+<br />
+I used to &quot;hardcore&quot; raid as a tank from early vanilla to halfway through cataclysm. Saw almost every boss, except we were unable to beat kel'thuzad in Nax 1.0. Now, It's IMPOSSIBLE for me to find a raiding guild as a tank.. even since I've geared myself out in the best gear I can get without a raiding guild (Full LFR gear, including tier, all upgraded +legendary cloak), nobody needs a tank. It's what I like to do in fantasy rpgs, and I can't do it. :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jasper Kazai</div><div class="date">2014-04-29, 03:15 PM</div></div><div class="posttext">Their changing philosophy is a hard concept to agree on. Their whole thing is that they've introduced ways to gear up close to the current content so you don't have to do the old stuff. I started playing in BC, and as they mention in this blog, I had to find a guild that was running Karazhan/other T4 raids if I ever hoped to move onto stuff like BT. That is indeed a long path to take that doesn't necessarily end in success. HOWEVER, it's not much better today: today, I run LFR and hope to god that a guild doesn't have ridiculous requirements to join them. I.E. wanting 550+ to run a normal SoO, which is simply overkill. On top of that, since I didn't play for about the first year of MoP, I'm never going to be able to see the old MoP content (Vaults, Heart of Fear, even ToT, etc) in a non-LFR, normal environment since no one bothers running them. There's no point to.<br />
+Back in BC, all of the content was more or less current because you needed to progress through it in a linear fashion, even if you came in later on in the expansion. Today, they routinely make the current expansion content obsolete by allowing you to pass over it. I'm not completely damning LFR here, because I believe that it definitely has its merits. I just somewhat miss the old model of having to move up the raiding ladder.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stellan</div><div class="date">2014-04-29, 03:23 PM</div></div><div class="posttext">Mythic is a good idea. Every tier since Cata has had bosses who are either horribly undertuned for 10m heroic (Ragnaros) or horribly overtuned (Garrosh). Usually the former. Now top guilds can all get the same version of the same boss and Blizzard can stop worrying about designing crap for 1% of the population.I think Holinka is an attorney. It explains a lot.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Feanoro</div><div class="date">2014-04-29, 03:23 PM</div></div><div class="posttext">You hardcore raiders can cry me a river. If people are quitting your guilds then that is on you not on us. Though you continuously look down your nose at the rest of us because you are so 1337.<br />
+<br />
+Here is an idea. If you want to fill out your rosters then recruit people that are ungeared and gear them. Yet, you refuse to do that. You want them geared. How they get geared is through LFR, Flex, Normal with pugs, but while you want them to do that, you want to complain that it happens.<br />
+<br />
+You all make absolutely no sense.That's because most of the real hardcores quit. If you look, you'll see that most of the old superguilds disbanded, or if they still exist, it's not even remotely the same roster that earned the guild's reputation. Consequently, a lot of decently ranked guilds now used to be way lower back in the day.<br />
+<br />
+What's left are people imitating without understanding, and so they act the way they always used to accuse hardcores. <br />
+<br />
+Old school didn't care about gear, because feeding recruits was trivial. You'd test them in 5 mans or older tiers, with people deliberately putting the burden on them. If they showed they could pick up and tank those extra mobs you &quot;accidentally&quot; pulled, or handle mobs the tank &quot;lost&quot; with CC or kiting, or cover the tank and dps &quot;forgetting&quot; to gtfo fire, you didn't care about gear. All gear ever was for was bigger numbers to handle the next challenge, but game knowledge and some actual ability was prized.<br />
+<br />
+In my time from Molten Core through Ulduar, I never saw anyone rejected for gear. The only time it was even remotely considered was when you saw a priest gemming strength to &quot;wand harder&quot;. The modern attitude towards it started during ToC with the abomination of an addon called GearScore, where the reasoning went &quot;that guy has a good score, he probably knows what to do!&quot; Then people started demanding achievements as well. Testing people and giving the benefit of the doubt flew out the window, especially since 5 mans were a complete joke.<br />
+<br />
+What really drove off a lot of old school hardcores was Blizzard's own oh-so-diplomatic CMs during that time, as they began parroting the same crap about hardcores being elitists, etc. Many of the people I'd known since 2004-5 quit in disgust, saying they weren't paying a company that insulted them. How conveniently they leave that out of the article, especially since they're now changing the raid modes partially back to what we told them worked... How conveniently they gloss over putting their blessing on GearScore with visible item levels on character sheets and restricting queues based on ilvl. And we wonder why people now use that as a shortcut to evaluate others?<br />
+<br />
+In any case, I'm sorry to hear that it sounds like you got rejected on gear (you're not trying to &quot;wand harder&quot;, right? ;)), it's a ridiculous criterium in a game that's primarily about collecting it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">NickCageFanatic</div><div class="date">2014-04-29, 03:32 PM</div></div><div class="posttext">Did ICC, the dungeon that raiders were in for over a year, really only get one paragraph?<br />
+<br />
+Ulduar, a raid in which only the original Naxx had fewer people complete it only got 3 lines...ToGC, the raid that killed Ulduar got even more written up about it. Come on Blizzard what are you doing. Would be nice to hear them talk about their ability to properly judge when to release new content, and how the Ulduar effect should never happen again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Feanoro</div><div class="date">2014-04-29, 03:45 PM</div></div><div class="posttext">Ulduar, a raid in which only the original Naxx had fewer people complete it only got 3 lines...ToGC, the raid that killed Ulduar got even more written up about it. Come on Blizzard what are you doing. Would be nice to hear them talk about their ability to properly judge when to release new content, and how the Ulduar effect should never happen again.Amen. They even admitted once that they jumped the gun, then quickly buried that post. After all, they can do no wrong.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Saphii</div><div class="date">2014-04-29, 03:46 PM</div></div><div class="posttext">In TotC, &quot;Players were routinely clearing the content up to four times a week on the same character&quot; in combination with playing Icecrown Citadel and seeing how big it was thinking &quot;I just can't do all this extra raiding to be competitive&quot;, which led to my quitting playing WoW for over 2 years. I just couldn't fathom running the same instance 4 times a week per character anymore. I much preferred running it once per toon. It's unfortunate there was nothing in the game that told me Blizzard introduced shared lockouts. This making people raid way more than desired cost them dearly as the big downward slide in population began. One absolute rule i set for myself before I came back was &quot;i don't care how many times they want me to run the same instance, i just wont do it more than once.&quot; And now we have reg/heroic + flex + LFR as 3 possibilities per toon per week. I just run reg/heroic and refuse to do the others.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2014-04-29, 03:49 PM</div></div><div class="posttext">Ulduar, a raid in which only the original Naxx had fewer people complete it only got 3 lines...ToGC, the raid that killed Ulduar got even more written up about it. Come on Blizzard what are you doing. Would be nice to hear them talk about their ability to properly judge when to release new content, and how the Ulduar effect should never happen again.<br />
+<br />
+You know what was sad about Ulduar? The tier ended because they wanted to save PvP (which was in dire trouble at the start of Wrath) by releasing ... IoC!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Malacrass</div><div class="date">2014-04-29, 04:04 PM</div></div><div class="posttext">While many players had (and continue to hold) a fondness for organic hard modes that could be enabled by specified actions within an encounter, they were inconsistent and often lacking clarity. Some of them (The Assembly of Iron, Freya) were elegant and intuitive, but others were frustrating or created traps for players (“Whoops, you killed Hodir in 121 seconds, try again next week!” or “Stop DPS, don’t kill XT’s heart!”).<br />
+<br />
+So they realise that the Ulduar hard mode model was popular and still is (proven again by the comments in this thread), but they dropped it because some of them created traps for players? How about learning from what worked and what didn't instead of trashing the idea altogether then?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sio</div><div class="date">2014-04-29, 07:14 PM</div></div><div class="posttext">A lot of this reminds me of the devs saying after BC that they had never intended for resto druids to become &quot;hot bots&quot; that were really only good for raid healing. This despite the huge uproar from resto druids during the beta and early expansion issues proved blizz wrong.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">barrsftw</div><div class="date">2014-04-29, 08:05 PM</div></div><div class="posttext">The biggest mistake was made when they switched from the Ulduar method to the ToC method.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Army Dreamer</div><div class="date">2014-04-29, 09:16 PM</div></div><div class="posttext">“Stop DPS, don’t kill XT’s heart!”<br />
+The best way to swtich on/off the hardmode. Who could be confused by this?<br />
+<br />
+The biggest mistake was made when they switched from the Ulduar method to the ToC method.<br />
+Totally true.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Marvdatboi</div><div class="date">2014-04-30, 07:16 PM</div></div><div class="posttext">The End is now my friends!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca4e425a50e</div><div class="date">2014-05-01, 11:02 AM</div></div><div class="posttext">Going into the final tier of Wrath, we realized that we needed to do something about the one major drawback of the Trial of the Crusader structure: Players were routinely clearing the content up to four times a week on the same character, for Emblems of Triumph if nothing else. That was somewhat sustainable, though not ideal, in a 5-boss raid with no other enemies between the boss fights. It would have been a burnout-inducing mess in the 12-boss Icecrown Citadel. <br />
+<br />
+It's funny that they still admit burnout was the reason behind limiting us from doing 25 and 10 man in the same week but for some reason the same logic does not apply to having LFR, Flex, Normal/Heroic on different lockouts. The same content spread over tree different dificulties when one of them is LFR and the other is Flex(exactly like LFR when done with OQueue) is 100 times more burnout inducing then the guild groups or pugs we used to do for ICC.<br />
+<br />
+And to those that argument &quot;what is forcing you to do all three dificulties&quot;? I answer &quot;The exact same reasoning that was forcing these players doing ToGC 4 times a week per character.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aeowrynn</div><div class="date">2014-05-06, 01:48 PM</div></div><div class="posttext">So... I ran ICC with four 10-man raid groups, using 4 different toons and a 25 on the weekends(I lead 2 of the 10 man groups). Despite having cleared it many times over; I was still happy to head in when Cata launched. There was no burnout factor. ICC had a TON of replay. I ran 2-3 toons through Cata raids per week and geared toons to switch when/if it was needed. Aside from Firelands there was rarely a burnout factor. I don't dislike Firelands, it was simply a bit taxing to repeat. <br />
+<br />
+MoP has limited my ability to have toons geared to do this. Pre-MoP I had never claimed a &quot;main&quot; and feel that this current structure forced me to resort to one. (dailies for rep to buy valor items, so many dailies to do that more than one toon was vitually impossible. Timeless isle was too little too late as you still have to get the entire legendary quest chain done for each one, &quot;burdens&quot; are impossible to get unless you don't need them) One time per week through SoO is more than enough. Burnout IS a factor. SoO doesn't have replay-ability. <br />
+<br />
+People replaying a raid across multiple toons isn't a problem. The variety and change from one role to another makes it more interesting for longer, it seems they have decided that is a negative thing.<br />
+I think MoP limiting that has lead to more burnout for me, personality. <br />
+<br />
+I also never understood 25 as &quot;heroic&quot;... having started raiding in Wrath, I have done tens and 25s the entire way... in my experience, 25 is consistently easier. I know that quite a few people don't agree with me. I don't prefer 25s simply because I don't feel as though my contributions actually matter, it's not fun. There is a lessened sense of community and comradarie. I am currently part of a 25 man raid team. (looking at Mythic being 20, it only makes sense) <br />
+10s rely more on each and every person being capable, 25s are more forgiving. The most difficult role in 25 is &quot;leader&quot; and the most difficult mechanic is &quot;space&quot;.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

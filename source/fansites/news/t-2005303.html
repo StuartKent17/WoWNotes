@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="and, cpu, the, with, use, wow, has, limited, stuff, cores, all, uses, game, still, that, gpu, you, draw, distance, ultra, anymore, 25%, when, settings, roughly, there, hits, rate, not, players, around, least, tons, your, frame, incorrect, statement, are, take, anyone, release, wod, which, remember, cmaa, http://us.battle.net/wow/en/blog/15936285/engineer%e2%80%99s-workshop-engine-evolution-in-warlords-of-draenor-9-17-2014, said, source, crap, part" />
+<meta name="description" content="Engineer's Workshop: Extended Draw Distance 
+It’s been a while since we’ve delved into some of the nuts and bolts of World of Warcraft, but today we wanted to talk about an exciting visual update we’re working on for Legion—extended draw distance. 
+ 
+For the new expansion, we’re making some under-the-hood changes that will make it possible players to see more of the world than before. This new perspective on World of Warcraft won’t be limited to the Broken Isles. Players who return to the" />
+<title> Engineer's Workshop: Extended Draw Distance [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Engineer's Workshop: Extended Draw Distance</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-2005303.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/2005303-Engineer-s-Workshop-Extended-Draw-Distance">Engineer's Workshop: Extended Draw Distance</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2016-06-03, 09:08 PM</div></div><div class="posttext">Engineer's Workshop: Extended Draw Distance<br />
+It’s been a while since we’ve delved into some of the nuts and bolts of World of Warcraft, but today we wanted to talk about an exciting visual update we’re working on for Legion—extended draw distance.<br />
+<br />
+For the new expansion, we’re making some under-the-hood changes that will make it possible players to see more of the world than before. This new perspective on World of Warcraft won’t be limited to the Broken Isles. Players who return to the Eastern Kingdoms and Kalimdor will also be able to see distant terrain and buildings from farther away than previously possible.<br />
+<br />
+You can see the dramatic difference for yourself between the old and new draw distance in the following screenshots.<br />
+<br />
+This first image is taken from vantage point in Shadowmoon Valley looking toward Karabor from midway through the zone—first on the current Ultra setting and then on the new Graphics Level 8 setting.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2016/june/thumb/EW0.jpg (http://media.mmo-champion.com/images/news/2016/june/EW0.jpg) <br />
+<br />
+In this screenshot, Karabor isn’t even visible as a silhouette on our highest graphics draw distance for Warlords of Draenor (Ultra). The equivalent setting in Legion will result in the next screenshot once this change goes into the game.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2016/june/thumb/EW1.jpg (http://media.mmo-champion.com/images/news/2016/june/EW1.jpg) <br />
+<br />
+Now that we’ve shown you what to expect, let’s dig further into what’s going on behind the scenes.<br />
+<br />
+There are two numbers that contribute to how far the player can see terrain and structures in World of Warcraft. These numbers are the “fog distance”—a depth from the camera at which point any object’s pixels are fully converted to the fog color—and an overall draw distance, after which we clip all object geometry, preventing anything past that point from drawing. On lower settings, you can see the second value as terrain and buildings seem to melt into existence, fully fogged, before slowly getting colored as you get closer to them.<br />
+<br />
+In Warlords, the highest-end hardware that can reliably run the Ultra setting manages to push the fully fogged distance to about 1,300 “game units” (yards). After that point, all objects would be drawn filled in with the fog color until the clipping distance. The same setting in Legion will draw out to 2,600 game units. Those who currently play at High settings in Warlords and see out to 1,000 units will see 2,200 units in Legion. Graphics Level 10 is currently set at 3,500 game units, which you can see in that last screenshot. It’s important to note that due to memory considerations, all of these new draw distances are only available in the 64-bit client.<br />
+<br />
+If you’re interested in the “how,” a bulk of the effort to achieve this went into changing the way we draw terrain and water in WoW to render fewer vertices at a distance. But it also necessitated the implementation of Level of Detail (LOD) for game models, like trees, and buildings as well. A model with LOD can swap to a lower polygon count model at a distance without negatively impacting the visual quality of the scene. We prototyped aspects of these systems in both Warlords of Draenor and Mists of Pandaria and learned enough from those two expansions to feel confident about making this change in Legion.<br />
+<br />
+Another important change related to performance and quality will be the number of graphics options. We are retiring the concept of Low, Fair, Good, High, and Ultra in favor of a numerical scale. In Legion you’ll play the game on options 1 through 10, with 1 being the lowest we support and 10 being the highest. The old graphics settings land around 3 being comparable to the old Low and 7 being a match for the old High. This gives us even more room around the minimum spec and the recommended spec to either ease burdens on low end hardware or push titanic configurations.<br />
+<br />
+Please note that as we progress through the beta, we may make additional changes to draw distances in order to deliver the best gameplay experience and performance. These changes are currently available to check out in the Legion beta test.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alfakennyone</div><div class="date">2016-06-03, 09:22 PM</div></div><div class="posttext">Ah yes /10</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">aeuhe4yxzhds</div><div class="date">2016-06-03, 09:29 PM</div></div><div class="posttext">There is still fog well before the actual end of draw distance. Cant they get rid of it? It hurts my eyes not having a clear picture.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yvaelle</div><div class="date">2016-06-03, 09:40 PM</div></div><div class="posttext">3 settings below &quot;Low&quot;....<br />
+<br />
+So what I'm hearing is WoW will now run on my TI-83?! :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tolian</div><div class="date">2016-06-03, 09:41 PM</div></div><div class="posttext">Ya, that's great and all, but when are they going to let me turn off friendly spell effects so melee isn't such a nightmare? There's so much crap going on because of everyone else's spells blowing up that it gets stupid some times. If not for DBM and GTFO I'd never even try running as a melee on a raid encounter.<br />
+<br />
+I thought I heard a rumor a few years back about this coming, but never saw it materialize.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2016-06-03, 09:48 PM</div></div><div class="posttext">Ya, that's great and all, but when are they going to let me turn off friendly spell effects so melee isn't such a nightmare? There's so much crap going on because of everyone else's spells blowing up that it gets stupid some times. If not for DBM and GTFO I'd never even try running as a melee on a raid encounter.<br />
+<br />
+I thought I heard a rumor a few years back about this coming, but never saw it materialize.<br />
+<br />
+It auto tones down the spell effects in large groups, there are some hidden settings to tune it (maybe? I don't remember).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc89fecc8010</div><div class="date">2016-06-03, 09:48 PM</div></div><div class="posttext">Ya, that's great and all, but when are they going to let me turn off friendly spell effects so melee isn't such a nightmare? There's so much crap going on because of everyone else's spells blowing up that it gets stupid some times. If not for DBM and GTFO I'd never even try running as a melee on a raid encounter.<br />
+<br />
+I thought I heard a rumor a few years back about this coming, but never saw it materialize.<br />
+<br />
+You are going to have so much fun with the new demo lock.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Awbee</div><div class="date">2016-06-03, 09:53 PM</div></div><div class="posttext">Very cool!<br />
+<br />
+I'm very curious how this is gonna look in Uldum. That's probably the one zone of all that feels the most &quot;massive&quot;, and where draw distance has always lead to some problems before, like those Skywall towers not being seen until pretty up close, and so on. Probably gonna look so much better now :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Radaney</div><div class="date">2016-06-03, 10:12 PM</div></div><div class="posttext">I could see BRM from Duskwood...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tolian</div><div class="date">2016-06-03, 10:26 PM</div></div><div class="posttext">It auto tones down the spell effects in large groups, there are some hidden settings to tune it (maybe? I don't remember).<br />
+<br />
+If it's doing it already then it definitely needs some more tweaking, heh. The level it's at now in anything greater than a 5 man is just way too much IMO.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Queen of Hamsters</div><div class="date">2016-06-03, 10:54 PM</div></div><div class="posttext">Can't wait to fly up and take tons of screenshots in the Broken Isles at some later date! <br />
+Also very happy I waited with updating my setup, gonna be a treat seeing the game with a 1070!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Coote</div><div class="date">2016-06-03, 10:56 PM</div></div><div class="posttext">It still doesn't compare to what we could do back in early WoTLK and before. There used to be cvars you could modify to both increase view distance, and remove the fog. I remember being able to see nearly all of Northrend from Dalaran at one point before they removed it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">xact4</div><div class="date">2016-06-03, 11:07 PM</div></div><div class="posttext">It still doesn't compare to what we could do back in early WoTLK and before. There used to be cvars you could modify to both increase view distance, and remove the fog. I remember being able to see nearly all of Northrend from Dalaran at one point before they removed it.<br />
+<br />
+For a few minutes until you had to change the fueling rod in your compact nuclear reactor to continue powering your bank of supercomputers. Exaggeration ofc but you must have had some cutting edge hardware to do that however many years ago that was.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thilicen</div><div class="date">2016-06-03, 11:28 PM</div></div><div class="posttext">Happy for the increased draw distance, but the increased foggyness on close range areas is a setback tbh. Wish they would make it a lot clearer during normal weather.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Agrias2x</div><div class="date">2016-06-03, 11:32 PM</div></div><div class="posttext">Dunno, on most of those screenshots even if you can see farther, it at the same time makes everything closer a bit behind the mist which doesn't happen in older versions.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MakeMeLaugh</div><div class="date">2016-06-04, 12:01 AM</div></div><div class="posttext">Yea yea ok, but the ones posted by mmochamp(crystalsong forest, icecrown and the vale) feels like there's a mist nearby, so everything closer look worse. So what's the point? Lol.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mustardisbad</div><div class="date">2016-06-04, 12:08 AM</div></div><div class="posttext">Heck yeah, I can't wait!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cows For Life</div><div class="date">2016-06-04, 12:30 AM</div></div><div class="posttext">Isn't it a bigger issue that other players and objects don't load in until your avatar is literally on top of them?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Butthurt Beluga</div><div class="date">2016-06-04, 01:05 AM</div></div><div class="posttext">Yeah that's nice, I mean just adding in the interface what people have been doing with add-ons and with scripts for a while now.<br />
+<br />
+Why don't they do some real &quot;under the hood&quot; stuff like adding support for more than a single fuckin' core?<br />
+2016 m8s, I understand WoW has to run on even the oldest of toasters but for those of whom who like to play at 4K res and even with an enthusiast level machine are only able to get 30 fps or less on certain boss fights it's a little infuriating.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">minkage</div><div class="date">2016-06-04, 01:49 AM</div></div><div class="posttext">umm the newer pics look worse with the haze/fog very close now</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lolsteak</div><div class="date">2016-06-04, 01:55 AM</div></div><div class="posttext">Not sure I like the changes, The fog starts noticeably closer giving things a much duller feel even if you can see farther</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alfakennyone</div><div class="date">2016-06-04, 02:14 AM</div></div><div class="posttext">Not sure I like the changes, The fog starts noticeably closer giving things a much duller feel even if you can see farther<br />
+<br />
+Not sure what you're looking at but the fog starts a lot further, hence, increasing the draw distance</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Asotcha</div><div class="date">2016-06-04, 03:00 AM</div></div><div class="posttext">Not sure what you're looking at but the fog starts a lot further, hence, increasing the draw distance<br />
+<br />
+After placing the before and after pics on separate tabs so i could compare full size images one after the other and really looking closely, I see what he means. For example, notice that in the 'old' picture of the Vale, the trees are brighter and clearer looking (even if you can't see as far in the distance), and in the Icecrown comparison, the snowy edges of the zone were brighter white and clearer when closer to the player, whereas in the new one that same area looks like a dreary mess consistently as it goes into the background. <br />
+<br />
+While its true that Icecrown is a dreary mess in the first place and that its kind of the point of the zone, we see another example of this exact same effect in the Crystalsong comparison. Notice how the snowy mountain cliffs closer to the viewer in the old one is crisp and white and clear, and in the 'new' one it is much more toned down and muted.<br />
+<br />
+My armchair guess is that this was a bid to try and shoot for a gradual shift of what we see in the background compared to what we see up close, in an effort to move away from 'blocky' shifts in perception. That stuff exists for a reason though, and we gotta see the stuff around us with brightness and clarity before we can worry about the shrubs and bushes a couple miles off. The tech is very nice and cool, but it may benefit people if they're able to use their graphics settings to customize stuff, if possible.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">balir</div><div class="date">2016-06-04, 04:26 AM</div></div><div class="posttext">Looks good. Now if I had one of those handy dandy beta invite thingys, I'd gladly test it out!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tangers58</div><div class="date">2016-06-04, 05:05 AM</div></div><div class="posttext">IN other words graphics are going to be worse again... but really its all for the player's benefit!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">grexly75</div><div class="date">2016-06-04, 05:30 AM</div></div><div class="posttext">Well even better now with this latest build they have finally put in the zone music for those zones that didn't have it yet.. And I can tell you the music in Stormheim is awesome reminds me so much more of Howling Fjord now.. And the weather effects are way cool in that when it rains it rains hard during the thunderstorm..<br />
+<br />
+Oh and yeah the armor items you get from some of the world quests have had an ilevel boost..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kryos</div><div class="date">2016-06-04, 06:56 AM</div></div><div class="posttext">I would like to see an option to turn off the fog. I prefer to see the clipping over having this mist all over the screen.<br />
+At least start the fog way back in the distance like other games do it. Examples:<br />
+<br />
+http://i.imgur.com/70hcPlXl.png (http://imgur.com/70hcPlX)<br />
+http://i.imgur.com/TgW6MpUl.jpg (http://imgur.com/TgW6MpU)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9ef8bd1b8e</div><div class="date">2016-06-04, 06:57 AM</div></div><div class="posttext">Not sure I like the changes, The fog starts noticeably closer giving things a much duller feel even if you can see farther<br />
+<br />
+Its like in real life now you see far/more but the details pop in as you come closer to a specific object.It use to be you see less but detailed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mormolyce</div><div class="date">2016-06-04, 07:01 AM</div></div><div class="posttext">It's a big improvement, I wonder if they'll increase the monster draw distance as well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shadow Fox</div><div class="date">2016-06-04, 07:09 AM</div></div><div class="posttext">Think it should be somewhat noted that they are only increasing the &quot;Default&quot; draw distance, or even the adjustable draw distance in the menu's... You've always been able to extend it farther beyond what the Game menu has; Same goes for Camera Distance. Before Draenor, max was 7. Legion was 10. Highest allowable is 50.<br />
+<br />
+Same goes for Graphic settings / blood effects / and particle effects. :S</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc36f28662f1</div><div class="date">2016-06-04, 09:00 AM</div></div><div class="posttext">When you think about it in context of games released in recent 3 or 4 years it was actually really bad. We know, we know, it's an old game. And was still bad.<br />
+<br />
+And this upgrade just seems to just adapt some default limiters to growing hardware performance again, rather than fixing the poorly optimized code to make better (or actually any use) of current hardware potential of 'modern' computers built after the year 2010.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheDeeGee</div><div class="date">2016-06-04, 09:23 AM</div></div><div class="posttext">Not sure I like the changes, The fog starts noticeably closer giving things a much duller feel even if you can see farther<br />
+<br />
+Not sure what you're looking at but the fog starts a lot further, hence, increasing the draw distance<br />
+<br />
+I think he/she means the effect of the Fog has been stretched out.<br />
+<br />
+Like so:<br />
+<br />
+http://s33.postimg.org/q15tirei3/newfoglegion.jpg (http://postimg.org/image/q15tirei3/)<br />
+<br />
+Which means it does indeed start closer than before, but it takes a longer distance before the whole strength covers the scene.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nevcairiel</div><div class="date">2016-06-04, 09:55 AM</div></div><div class="posttext">Yeah that's nice, I mean just adding in the interface what people have been doing with add-ons and with scripts for a while now.<br />
+<br />
+The game allows a far higher draw distance now than it ever did, you couldn't make it exceed its limit even with addons or scripts.<br />
+The actual limit on live is just a bit higher than the options allow you to set, so scripts can increase it. In Legion, the actual limit is far higher than it used to be on live.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kibu</div><div class="date">2016-06-04, 10:21 AM</div></div><div class="posttext">Mmmmm even less fps , can't wait.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kryos</div><div class="date">2016-06-04, 11:04 AM</div></div><div class="posttext">In reality there can also be this fog:<br />
+http://i.imgur.com/vMkMc1xl.jpg (http://imgur.com/vMkMc1x)<br />
+But but it doesn't start so near. They need to start the fog further away and all would be fine. Just don't make objects in close range dull and with a blueish tint.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+The game allows a far higher draw distance now than it ever did, you couldn't make it exceed its limit even with addons or scripts.<br />
+The actual limit on live is just a bit higher than the options allow you to set, so scripts can increase it. In Legion, the actual limit is far higher than it used to be on live.<br />
+<br />
+I think they should change it this way:<br />
+<br />
+http://i.imgur.com/vgHFF3Gl.jpg (http://imgur.com/vgHFF3G)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheDeeGee</div><div class="date">2016-06-04, 11:27 AM</div></div><div class="posttext">I think they should change it this way:<br />
+<br />
+http://i.imgur.com/vgHFF3Gl.jpg (http://imgur.com/vgHFF3G)<br />
+<br />
+I think that will hurt the permormance too much.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jin</div><div class="date">2016-06-04, 11:56 AM</div></div><div class="posttext">In the beta the performance was very unstable, from 100 fps down to 20 on certain angles. Broken Isle scenario had the same. So I am not yet convinced the performance (or actual optimisation) is good enough currently. <br />
+<br />
+Tested 1080p<br />
+<br />
+OS: Win 10<br />
+CPU: Int Core i7-4790K 1150 Noctua NH-D15 cooler<br />
+RAM: Corsair 16 GB DDR3-1600 Vengeance<br />
+GFX: Gigabyte 980Ti Gaming 6G Windforce<br />
+MBB: Asus MAXIMUS VII RANGER Z97<br />
+SSD: 120GB 840 EVO SAMSUNG (windows)<br />
+SSD: 1TB 840 EVO SAMUNG (games)<br />
+SFX: ASUS Xonar D2X/XDT PCIe<br />
+PSU: Corsair AX860i, 860 Watt</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Strataegos</div><div class="date">2016-06-04, 12:09 PM</div></div><div class="posttext">I just saw the Warcraft movie here in the Netherlands and it is epic. Support this great movie so we can more sequels.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Weeksie</div><div class="date">2016-06-04, 12:22 PM</div></div><div class="posttext">Does this mean that players and NPC's will also load from a further distance? Getting really sick of them just popping up 3 feet from me when on a flying mount. I'm basically stuck inside of a 40 foot bubble with a really large, empty world around me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocda006714a1</div><div class="date">2016-06-04, 12:26 PM</div></div><div class="posttext">Switching from 970 to 1080 just for WoW. Yes, I think I'm insane in the membrane, but really hoping to get it maxed out on 3x 1080p monitors. 970 wasn't able to handle it properly.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kathranis</div><div class="date">2016-06-04, 12:26 PM</div></div><div class="posttext">In the beta the performance was very unstable, from 100 fps down to 20 on certain angles.<br />
+I don't think that's the draw distance so much as it's that some of the objects and doodads that are incorrectly optimized. I've noticed my framerate tanks when I look at certain liquid surfaces or, like, braziers with new special effects.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">coprax</div><div class="date">2016-06-04, 12:39 PM</div></div><div class="posttext">Downside to increased view is, it makes the world/the zones feel smaller. Limited view distance and fog are not only there for technical purposes but also to simulate an atmosphere like in the real world.<br />
+On a typical day real world 'view distance' is something like 10-15km.<br />
+And when I can see across a whole zone and into the adjacent one in WoW, that just doesn't feel right, don't you think?<br />
+<br />
+Increased renderung distance for objects is nice though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">merli</div><div class="date">2016-06-04, 01:01 PM</div></div><div class="posttext">On a typical day real world 'view distance' is something like 10-15km.<br />
+Are you sure? I think I see at least 50km from my house.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daedius</div><div class="date">2016-06-04, 01:05 PM</div></div><div class="posttext">So how much of an impact on performance will this have past Ultra setting?<br />
+<br />
+Currently getting 90-150+ fps on Ultra in the outdoors right now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">coprax</div><div class="date">2016-06-04, 01:07 PM</div></div><div class="posttext">Are you sure? I think I see at least 50km from my house.<br />
+<br />
+<br />
+no I am not sure, but that's what the weather forecast data usually says.^^ Never seen a number bigger than 20km there.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">judgementofantonidas</div><div class="date">2016-06-04, 04:19 PM</div></div><div class="posttext">Downside to increased view is, it makes the world/the zones feel smaller. Limited view distance and fog are not only there for technical purposes but also to simulate an atmosphere like in the real world.<br />
+On a typical day real world 'view distance' is something like 10-15km.<br />
+And when I can see across a whole zone and into the adjacent one in WoW, that just doesn't feel right, don't you think?<br />
+<br />
+Increased renderung distance for objects is nice though.<br />
+<br />
+yeah. because I want to be reminded how much farther I am being forced to ride because I bumped my head and forgot how to summon my flying mount. <br />
+<br />
+Brilliant.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">EllipsisW</div><div class="date">2016-06-04, 07:38 PM</div></div><div class="posttext">So we'll *finally* be able to see all of ICC from old Dalaran?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cazmosis</div><div class="date">2016-06-04, 09:45 PM</div></div><div class="posttext">Downside to increased view is, it makes the world/the zones feel smaller. Limited view distance and fog are not only there for technical purposes but also to simulate an atmosphere like in the real world.<br />
+On a typical day real world 'view distance' is something like 10-15km.<br />
+<br />
+<br />
+This would be interesting if even a shred of this was factual. Absolute conjecture</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baelic</div><div class="date">2016-06-04, 10:56 PM</div></div><div class="posttext">And this upgrade just seems to just adapt some default limiters to growing hardware performance again, rather than fixing the poorly optimized code to make better (or actually any use) of current hardware potential of 'modern' computers built after the year 2010.<br />
+<br />
+When you start talking about things like &quot;reducing vertices drawn&quot; and LoD (Level of Detail), those are indeed optimizations of the existing engine that will allow for more efficient use of current (and older) hardware. Modifying an existing engine takes a large amount of work, especially for a game as large as WoW.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mazaxist</div><div class="date">2016-06-05, 01:05 AM</div></div><div class="posttext">They should instead work on being able to see players from distance. Sometimes I see players literally appear right in front of me out of nowhere.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">drypulse</div><div class="date">2016-06-05, 01:08 AM</div></div><div class="posttext">what does it matter when mobs/people will still just pop up magically into existence.....<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+They should instead work on being able to see players from distance. Sometimes I see players literally appear right in front of me out of nowhere.<br />
+<br />
+agreed. this is the real problem.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">imkrazy182</div><div class="date">2016-06-05, 02:32 AM</div></div><div class="posttext">what does it matter when mobs/people will still just pop up magically into existence.....<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+agreed. this is the real problem.<br />
+This is more from server/client lag. Not so much view distance.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+After placing the before and after pics on separate tabs so i could compare full size images one after the other and really looking closely, I see what he means. For example, notice that in the 'old' picture of the Vale, the trees are brighter and clearer looking (even if you can't see as far in the distance), and in the Icecrown comparison, the snowy edges of the zone were brighter white and clearer when closer to the player, whereas in the new one that same area looks like a dreary mess consistently as it goes into the background. <br />
+<br />
+While its true that Icecrown is a dreary mess in the first place and that its kind of the point of the zone, we see another example of this exact same effect in the Crystalsong comparison. Notice how the snowy mountain cliffs closer to the viewer in the old one is crisp and white and clear, and in the 'new' one it is much more toned down and muted.<br />
+<br />
+My armchair guess is that this was a bid to try and shoot for a gradual shift of what we see in the background compared to what we see up close, in an effort to move away from 'blocky' shifts in perception. That stuff exists for a reason though, and we gotta see the stuff around us with brightness and clarity before we can worry about the shrubs and bushes a couple miles off. The tech is very nice and cool, but it may benefit people if they're able to use their graphics settings to customize stuff, if possible.<br />
+I agree. Even though I can see the terrain further, everything looks much more muted. It feels like the fog starts 10 yards out and just dulls everything quicker. I would prefer the old compared to this new.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">oldgeezer</div><div class="date">2016-06-05, 03:47 AM</div></div><div class="posttext">Are you sure? I think I see at least 50km from my house.<br />
+<br />
+A good approximation for the distance to the horizon (in km) is 3.6 x sqrt(h), where (h) is height in metres above ground level. On Earth that is, not Azeroth.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Coote</div><div class="date">2016-06-05, 04:50 AM</div></div><div class="posttext">I think that will hurt the permormance too much.<br />
+If performance is that important, you wouldn't be running at Ultra settings in the first place. Increasing the maximum graphics on higher settings does nothing for the performance of those running at lower settings.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Philosopino</div><div class="date">2016-06-05, 05:10 AM</div></div><div class="posttext">So much horizon you begin to wonder if Azeroth is flat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yrrildur</div><div class="date">2016-06-05, 06:05 AM</div></div><div class="posttext">Looking better, but still I can't shake the feeling that in 2016 the graphics should be updated. I can only imagine what this game would feel like if the graphics were up to date. Those edges of the platform in the 2nd picture still look like crap, no extended horizon will fix that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Glurak</div><div class="date">2016-06-05, 07:06 AM</div></div><div class="posttext">atm i cant play on full details in legion with my I7 2700k and Geforce 770GTX Warlords works great on max.<br />
+<br />
+<br />
+Mh when the perfomance increases not working for me its time for a new pc :-)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nokonda</div><div class="date">2016-06-05, 09:38 AM</div></div><div class="posttext">So how about other graphical enhancements? All we hear about in this expansion is a slight increase (trust me, it's slight) in draw distance. What about texture resolution improvements? Other effects?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daywalk3r</div><div class="date">2016-06-05, 03:22 PM</div></div><div class="posttext">Switching from 970 to 1080 just for WoW. Yes, I think I'm insane in the membrane, but really hoping to get it maxed out on 3x 1080p monitors. 970 wasn't able to handle it properly.<br />
+<br />
+I'm sorry to tell you this, but it won't help much. I know someone with a 1080 and 4790K and he still has pretty bad FPS in some areas with quality at 10 (maxed out). <br />
+WoW is just too CPU limited to make full use of such a highend GPU.<br />
+Draw distance and stuff like that relies strongly on the CPU and WoW's old modified WC3-Engine is only using 2 CPU Threads unlike modern games which use at least 4.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lookatmypet</div><div class="date">2016-06-05, 04:55 PM</div></div><div class="posttext">I'm sorry to tell you this, but it won't help much. I know someone with a 1080 and 4790K and he still has pretty bad FPS in some areas with quality at 10 (maxed out). <br />
+WoW is just too CPU limited to make full use of such a highend GPU.<br />
+Draw distance and stuff like that relies strongly on the CPU and WoW's old modified WC3-Engine is only using 2 CPU Threads unlike modern games which use at least 4.<br />
+<br />
+WoW uses all 4 cores on my CPU... and your statement is incorrect, wow is not a &quot;CPU Limited&quot; game anymore. Ultra Settings all 4 of my cores use roughly 25% and the GPU uses ~40% ish. <br />
+They migrated off the &quot;CPU&quot; bound part with WOD release (anyone remember the CMAA crap)<br />
+Source Here (http://us.battle.net/wow/en/blog/15936285/engineer%E2%80%99s-workshop-engine-evolution-in-warlords-of-draenor-9-17-2014)<br />
+<br />
+With that said, the game still has to render a lot of stuff, and you will always take frame rate hits when there are tons of players around.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nohara</div><div class="date">2016-06-05, 06:43 PM</div></div><div class="posttext">As long as it keeps running on medium settings at 1440p and 60 fps on me iMac 2009, I'm ok! The only zone that currently really gives me a bad performance is the Alliance garrison and probably Dalaran 2009. For some silly reason shutting off 'Outline Mode' doubles the performance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wolfrick</div><div class="date">2016-06-05, 07:24 PM</div></div><div class="posttext">Love this! welldone blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2016-06-19, 06:59 PM</div></div><div class="posttext">The draw distance is really cool, can see twilight highlands from stormwind :S</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mekronid</div><div class="date">2016-06-21, 12:16 PM</div></div><div class="posttext">Well, that's weird. Prior to MoP the max draw distance was over 10,000.<br />
+<br />
+Is implementing what you already had considered a &quot;new feature&quot; now?</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

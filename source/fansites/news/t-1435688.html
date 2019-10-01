@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="heroic, killed, soo, all, ach, link, lfm, flex, users, have, garrosh, forum, mmo-champion, these, course, reply, immerseus, callback, blizzard, progression, stats, blue, tweets, armory, only, art, fan, lol" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Announcing Callback Support, Diablo III: Storm of Light Excerpt, Blue Posts 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Season 2 Begins on January 9, Hearthstone Beta Opt-In Account Access, Blue Tweets 
+ 
+Armory Stats - Heroic Siege of" />
+<title> Armory Stats - Heroic SoO Progression, Blizzard CS Callback, Blue Tweets, Fan Art [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Heroic SoO Progression, Blizzard CS Callback, Blue Tweets, Fan Art</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1435688.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1435688-Armory-Stats-Heroic-SoO-Progression-Blizzard-CS-Callback-Blue-Tweets-Fan-Art">Armory Stats - Heroic SoO Progression, Blizzard CS Callback, Blue Tweets, Fan Art</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-09, 05:52 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Announcing Callback Support, Diablo III: Storm of Light Excerpt, Blue Posts (http://www.diablofans.com/news/47904-announcing-callback-support-diablo-iii-storm-of)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Season 2 Begins on January 9, Hearthstone Beta Opt-In Account Access, Blue Tweets (http://www.hearthpwn.com/news/253-season-2-begins-on-january-9-hearthstone-beta-opt)<br />
+<br />
+Armory Stats - Heroic Siege of Orgrimmar Progression<br />
+Today we are taking a look at the Heroic Siege of Orgrimmar progression of players. Now that achievements are account wide, we can group characters by account and get an idea of what percentage of players (not characters) have defeated a boss on Heroic difficulty at least once, based on earning the achievement.<br />
+<br />
+The data used today is a sample made up of 6.2 million characters from 2.2 million accounts, with at least one character active after November 26. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. You can leave suggestions for future stat posts in the comments!<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: ['#55C949']<br />
+});<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'likeSoOHeroicOMG',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'Immerseus', 'Protectors', 'Norushen', 'Sha of Pride', 'Galakras', 'Iron Juggernaut', 'Dark Shaman', 'Nazgrim', 'Malkorok', 'Spoils', 'Thok', 'Siegecrafter', 'Paragons', 'Garrosh'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.point.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Defeated Heroic Siege of Orgrimmar Bosses',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [<br />
+{<br />
+data: [{y: 6.89, color: '#81CCAA', name:'Immerseus'},{y: 5.69, color: '#81CCAA', name:'Fallen Protectors'},{y: 6.31, color: '#81CCAA', name:'Norushen'},{y: 4.55, color: '#81CCAA', name:'Sha of Pride'},{y: 4.75, color: '#81A4CC', name:'Galakras'},{y: 4.03, color: '#81A4CC', name:'Iron Juggernaut'},{y: 3.36, color: '#81A4CC', name:'Kor\'kron Dark Shaman'},{y: 3.56, color: '#81A4CC', name:'General Nazgrim'},{y: 2.37, color: '#E0BB79', name:'Malkorok'},{y: 1.89, color: '#E0BB79', name:'Spoils of Pandaria'},{y: 1.24, color: '#E0BB79', name:'Thok the Bloodthirsty'},{y: 0.60, color: '#D48787', name:'Siegecrafter Blackfuse'},{y: 0.41, color: '#D48787', name:'Paragons of the Klaxxi'},{y: 0.23, color: '#D48787', name:'Garrosh Hellscream'}],<br />
+<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+}<br />
+<br />
+]<br />
+<br />
+});<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;likeSoOHeroicOMG&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+Blizzard CS - Callback Support<br />
+On Thursday, January 9, Blizzard is launching a new callback-based system for players who need phone support. This is a big change from our traditional phone support, so we wanted to provide some details about this service.<br />
+<br />
+How will the callback system work?<br />
+Instead of calling a number (and potentially waiting on hold) for support, you’ll use the support site on Battle.net to set up a callback. Just enter information about your issue, along with your phone number, and a Game Master will give you a call back!<br />
+<br />
+How will the callback system benefit me as a player?<br />
+You won’t have to navigate a phone menu or spend time on hold. Since the support site collects critical details in advance (like the answer to your security question), you’ll jump directly into problem solving.<br />
+<br />
+What will happen to Blizzard Customer Support’s existing phone numbers after this change?<br />
+Our phone lines will no longer present their current menu system, and will instead play a brief message directing users to the support site.<br />
+<br />
+We hope you enjoy using the new service to get help when you need it!<br />
+<br />
+<br />
+Blue Tweets<br />
+Classes<br />
+I like the current tank system. Gathering resources and use them wisely for defense. Would tank also keep this system in WOD?<br />
+Yep, you're describing the Active Mitigation concept, which we think was quite successful, and want to continue and improve upon. (Source (https://twitter.com/Celestalon/status/418586026076930048))<br />
+<br />
+Safeguard, Hand of Sac, etc. are neat tricks that let me save lives even when I'm not in front of the dragon.<br />
+Tools like that are fun, agreed. We also hope to significantly reduce the amount of time that tanks spend not-tanking. (Source (https://twitter.com/Celestalon/status/418567379518369793))<br />
+<br />
+Would help if fights weren't just &quot;taunt at X debuffs&quot; so the second tank didn't feel like a vestigial organ.<br />
+We 100% agree. (Source (https://twitter.com/Celestalon/status/417726956650500096))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif Hunter (Forums (http://www.mmo-champion.com/forums/271-Hunter) / Skills (http://www.wowdb.com/spells/class-abilities/hunter) / Talent Calculator (http://www.wowdb.com/talent-calculator#M))<br />
+any chance hunters will be getting new skin or species for spell haste? Asked for sporebat all the time &amp; it creeps me out<br />
+Maybe, in a new family. There are (almost) dupe fams already (so precedence!), and with new beasts showing up all the time... (Source (https://twitter.com/Dave_Maldo/status/419188774304616449))<br />
+<br />
+Oh and gyreworms! Elemental sure, but clearly bestial in spirit! They'd fit easy in the worm family!<br />
+They would. That said, I'm unhappy with the obviously-Elemental stuff that has already been classified as Beast. But that's just me! (Source (https://twitter.com/Dave_Maldo/status/418529531201200128))<br />
+Well since survival is already pretty heavily elemental, maybe make the bestial elementals short term summons for that spec?<br />
+I'm all for special pet groups (undead, mechanical, elemental etc.) w/ appropriate conditions. But shale spider = beast?! OH COME ON (Source (https://twitter.com/Dave_Maldo/status/418533376383913984))<br />
+Let me ask from a different angle. Why does it &quot;have&quot; to make sense as a beast for a hunter to befriend it?<br />
+For the same reason priests can't use swords: BECAUSE REASONS. But seriously, it's a flavor/fantasy thing. Less logic, more feels. (Source (https://twitter.com/Dave_Maldo/status/418626624536338432))<br />
+I don't think it's quite on par with priests with swords. Hunters tame wild creatures as companions to fight alongside them.<br />
+Both are 100% shenanigans; arbitrary rules made to create a certain feel/fantasy/design. There's no reasoning them out beyond that. (Source (https://twitter.com/Dave_Maldo/status/418814450238373888))<br />
+Arbitrary means there was no thought put into it. I give you guys more credit than that.<br />
+The &quot;reasoning&quot; is arbitrary: Because they were never trained/their religion forbids it/the monarchy outlawed an armed church/etc. (Source (https://twitter.com/Dave_Maldo/status/418816159241097217))<br />
+The original design/fantasy is intentional, but can't be debated on the basis of its (later) made-up rules; it's working backwards! (Source (https://twitter.com/Dave_Maldo/status/418816716336947200))<br />
+<br />
+Talbuks NEED to be tameable! Especially in WoD! The fact that they aren't, but goats are, makes me sad<br />
+Been years of talks/jokes about an Ungulate (or?) family including rams, goats, talbuks etc. Maybe! (Source (https://twitter.com/Dave_Maldo/status/418452009033793537))<br />
+<br />
+With or Without You seems like a playstyle choice for MM/Surv hunters rather than a perk. Chance to see it below level 100?<br />
+I hope so, but that's me personally. I've always been VERY against game-changers end-game (e.g. original Arcane Blast). (Source (https://twitter.com/Dave_Maldo/status/418455106586034176))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/imonks.gif Monk (Forums (http://www.mmo-champion.com/forums/341-Monk) / Skills (http://www.wowdb.com/spells/class-abilities/monk) / Talent Calculator (http://www.wowdb.com/talent-calculator#o))<br />
+Quick Monk Question, do MW monks count as Melee right now, or will that only be in WoD?<br />
+Yes, they do. (Source (https://twitter.com/Celestalon/status/418580591471120384))<br />
+Any chance of that being extended to other healing specs to avoid an unfair advantage? All healers benefit from being in melee<br />
+Unlikely. It's a perk we give to specs intended to be in melee, not an unfair advantage. (Source (https://twitter.com/Celestalon/status/418584429892608001))<br />
+It just feels like something that should be either all healers or none rather than allowing some to ignore mechanics.<br />
+There are mechanics that they would have to handle that you don't; a tradeoff for Fistweavers. Just a perk for MW, which is fine. (Source (https://twitter.com/Celestalon/status/418588768942039040))<br />
+But MW aren't required to be in melee to be effective. They could stand at ranged and ignore both melee and ranged mechanics<br />
+That's why I said &quot;Just a perk for MW, which is fine.&quot; Every difference between classes isn't an &quot;unfair advantage&quot;. (Source (https://twitter.com/Celestalon/status/418593310903529473))<br />
+<br />
+The more I think about it, the less it seems like Statue of the Jade Serpent adds any real gameplay value. Thoughts?<br />
+It does a bit for Fistweaving, but is fairly passive otherwise. Doesn't necessarily need to be involved gameplay. (Source (https://twitter.com/Celestalon/status/418577160194912257))<br />
+Do you think it would be more interesting with a shorter radius?<br />
+I think many Mistweavers would say that its radius is already short feeling. But, as a gameplay element to be handled, possibly. (Source (https://twitter.com/Celestalon/status/418581360945532928))<br />
+<br />
+is it possible that maybe we can see fistweavers being able to dual wield in WoD? It would be really awesome imo <br />
+Cool look / feel, but that would necessitate all Mistweavers that want to even dabble in Fistweaving to get a second weapon. (Source (https://twitter.com/Celestalon/status/418566323279388672))<br />
+Use &quot;way of the monk&quot;? Doable but possibly not worth the effort; WotM never properly balanced for WW, who all DW.<br />
+Another community misconception. Way of the Monk does balance DW vs 2H for Brewmaster and Windwalker, extremely closely. (Source (https://twitter.com/Celestalon/status/418580377565790208))<br />
+<br />
+MW relies too much on smart heals. MW would be even better if players would have more direct control.<br />
+We agree, and think that statement applies to all healers, not just MW. (Source (https://twitter.com/Celestalon/status/418108744963080194))<br />
+<br />
+I woulf never use AoC on my monk. It onle affects 1 dps ability for us that most monks use sparsely. I use haromms and<br />
+WW currently have a couple viable gearing methods. If you are haste stacking, AoC won't likely be optimal for you. That's OK. (Source (https://twitter.com/Celestalon/status/417605553808896000))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior (Forums (http://www.mmo-champion.com/forums/278-Warrior) / Skills (http://www.wowdb.com/spells/class-abilities/warrior) / Talent Calculator (http://www.wowdb.com/talent-calculator#E))<br />
+Will Gladiator be a potential tank stance, or will it have some component to make it purely for dps (e.g., no crit protection)?<br />
+We may have a defensive benefit if you take the talent but don't use the stance, so that tanks still have 3 talent choices. (Source (https://twitter.com/Celestalon/status/418592899178057729))<br />
+But if you're using the stancing, getting the DPS benefit, you will not be able to be a full tank. (Source (https://twitter.com/Celestalon/status/418593007697272832))<br />
+So a Prot Warrior can potentially behave like an old Bear-Cat?<br />
+No. You can't switch in and out of Gladiator Stance in combat. It's a commitment. (Source (https://twitter.com/Celestalon/status/418599316475764736))<br />
+<br />
+So Extreme Measures would give Glad Stance to prot who want to DPS, and a stance for DPS wars who want to tank w/2h weps?<br />
+Tanks need relatively little in order to function as DPS. But DPS need a lot in order to function as Tanks. (Source (https://twitter.com/Celestalon/status/418585665912074241))<br />
+<br />
+Any chance we can remove the two stacks of Shield Block and make Shield block 6 sec CD? Would be no different than right now...<br />
+That would be extremely different from how it is now, and remove most of the skill involved. (Source (https://twitter.com/Celestalon/status/418125427819806720))<br />
+<br />
+Arms warriors already have multistrike. It's called mastery. Mimicking other classes is uninspired design.<br />
+Similar, but some difference: [100% WD] vs [30% of the triggering attack]. (Source (https://twitter.com/Celestalon/status/417513875248906240))<br />
+Wow, when did mastery get its effectiveness literally doubled and why did nobody tell me?<br />
+Oh, apologies. Was out to dinner and forgot that its damage had gone down. Yeah, still 55% WD, not 100%. Point is it's static. (Source (https://twitter.com/Celestalon/status/417602251377483777))<br />
+<br />
+Art<br />
+Are darker nights still on the table? lighting changes everything.<br />
+It's ultimately an art call, with input from design if they feel gameplay is negatively impacted. Personally, I liked it dark. (Source (https://twitter.com/Dave_Maldo/status/417735097769394176))<br />
+Maybe a dumb question, but wouldn't it be possibly to just add is an option? Whether you want dark or not?<br />
+With new tech, IF they wanted to. Lighting isn't on-the-fly; it's data built into the maps like terrain &amp; skyboxes. (Source (https://twitter.com/Dave_Maldo/status/417774238649430016))<br />
+<br />
+Are Blood Elves and Draenei being updated? I only see vanilla races on that page <br />
+the plan is currently to update them as well, original plan of &quot;vanilla only&quot; changed, need to update page to reflect (Source (https://twitter.com/artofcgrobinson/status/419549029077241857))<br />
+<br />
+Any chance the Belf models look like Nozdormu's model in Dragon Soul and in the cinematic at the end of the raid??!<br />
+Facial hair and tats like that might come later if we're able to make another customization pass. Norz = good place to start (Source (https://twitter.com/artofcgrobinson/status/419218103071809536))<br />
+<br />
+Character / Items<br />
+can older Eng. Trinkets be added? id like to use the Gnomish ShrinkRay or older stuff without swapping Trinks?<br />
+I wished those got updated too. Possibly gameplay issues. Lots of (cool) old items effects are &quot;never do again plz.&quot; (Source (https://twitter.com/Dave_Maldo/status/419539964938838016))<br />
+didn't think shrinking a target and losing a very tiny bit of AP would be that much of an issue for an item a level 1 can wear<br />
+I meant all of them, and &quot;updated&quot; as in new versions that were viable trinkets, which I think could be cooler than simple toys. (Source (https://twitter.com/Dave_Maldo/status/419647477411627008))<br />
+<br />
+What will happen to legendary meta in wod? 30% haste still sounds better than regular meta's imo<br />
+Yeah, legendary meta unusable at level 100. (Source (https://twitter.com/Celestalon/status/418138223685017600))<br />
+<br />
+<br />
+Fan Art<br />
+Today we have some audio that comes in two versions, one with the violin and one with vocals. <br />
+<br />
+<br />
+&lt;object width=&quot;438&quot; height=&quot;247&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;//www.youtube.com/v/i2g4mjwWvXk?version=3&amp;amp;hl=en_US&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;//www.youtube.com/v/i2g4mjwWvXk?version=3&amp;amp;hl=en_US&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;438&quot; height=&quot;247&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/object&gt; &lt;object width=&quot;438&quot; height=&quot;247&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;//www.youtube.com/v/oXquxaHT2V8?version=3&amp;amp;hl=en_US&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;//www.youtube.com/v/oXquxaHT2V8?version=3&amp;amp;hl=en_US&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;438&quot; height=&quot;247&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/object&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2014-01-09, 06:17 AM</div></div><div class="posttext">Callback system is a huge leap forward in customer support for Blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Popbubblz</div><div class="date">2014-01-09, 06:20 AM</div></div><div class="posttext">Love the callback service, I've used it twice, first time took about 14 hours to call back, but that was over New Years, the second time it was less than a minute. Best idea every and really works.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">atrixx</div><div class="date">2014-01-09, 06:44 AM</div></div><div class="posttext">I've been pushing Peter Hollens to do some WOW music for months now. Glad he finally got around to it. Love his work.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Raeion</div><div class="date">2014-01-09, 06:48 AM</div></div><div class="posttext">loved the Medley , was fantastic</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">medievalman1</div><div class="date">2014-01-09, 06:51 AM</div></div><div class="posttext">Peter Hollens FTW, always impressed with what he does.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">|Dexter|</div><div class="date">2014-01-09, 06:58 AM</div></div><div class="posttext">Callback system is nice for people in the USA! But for people outside not so much.... :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azerox</div><div class="date">2014-01-09, 07:01 AM</div></div><div class="posttext">This is a huge leap foreward?<br />
+<br />
+Its just plain retarted, im in the customer center service as a manager for a long time and this is the worse way you can support your customers.<br />
+<br />
+So now i have a problem with the faction change + race change bug that i took a name and is now flagged.<br />
+<br />
+So i need support, lets call blizzard .. oh wait not enabled anymore .. make a ticket .. what 5 days????<br />
+<br />
+So now i need to wait for some lazy ass Blizzard employee to call me back some day?<br />
+<br />
+Just plain stupid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lanceb</div><div class="date">2014-01-09, 07:03 AM</div></div><div class="posttext">the youtube links isnt even loading for me for some reason, keep getting &quot;an error occured, try again later..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">voskopoula</div><div class="date">2014-01-09, 07:04 AM</div></div><div class="posttext">The medley vocal version is so awesome :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dragothica</div><div class="date">2014-01-09, 07:08 AM</div></div><div class="posttext">Those two WoW fan art audiopieces are super amazing! <br />
+<br />
+Holy.. ..Priest that A-cappella version! :o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wobbrocker</div><div class="date">2014-01-09, 07:09 AM</div></div><div class="posttext">This is a huge leap foreward?<br />
+<br />
+Its just plain retarted, im in the customer center service as a manager for a long time and this is the worse way you can support your customers.<br />
+<br />
+So now i have a problem with the faction change + race change bug that i took a name and is now flagged.<br />
+<br />
+So i need support, lets call blizzard .. oh wait not enabled anymore .. make a ticket .. what 5 days????<br />
+<br />
+So now i need to wait for some lazy ass Blizzard employee to call me back some day?<br />
+<br />
+Just plain stupid.<br />
+<br />
+<br />
+Yaaaaaaa I am gonna call BS on you being a manager in a CCS if you don't even know how the callback system works. Here let me give you a tip, the system registers the callback and then monitors how many agents are currently on/off calls. Once the call volume reaches an acceptable level, the system will then call the customer on the callback number that was provided and then route that call to an available agent at the same time. The agents are not physically calling you back.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayasu</div><div class="date">2014-01-09, 07:11 AM</div></div><div class="posttext">This is a huge leap foreward?<br />
+<br />
+Its just plain retarted, im in the customer center service as a manager for a long time and this is the worse way you can support your customers.<br />
+<br />
+So now i have a problem with the faction change + race change bug that i took a name and is now flagged.<br />
+<br />
+So i need support, lets call blizzard .. oh wait not enabled anymore .. make a ticket .. what 5 days????<br />
+<br />
+So now i need to wait for some lazy ass Blizzard employee to call me back some day?<br />
+<br />
+Just plain stupid.<br />
+<br />
+I don't think you understand how it works. I've used it myself, and it doesn't seem to dump callbacks into the same bunch as normal tickets. Got a call back today in about 15-20 min. 15-20 min of doing something else that's not holding a phone to my ear listening to hold music? Sold.<br />
+<br />
+Read the comments above yours -- obviously they're positive. Don't jump the gun on how &quot;terrible&quot; something is without giving it a go, or understanding how it works.<br />
+<br />
+(Also, for the flagged name thing, if you change the name and ticket in, they'll still fix it back -- had this happen to my main a few months ago. &gt;.&gt;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spoir</div><div class="date">2014-01-09, 07:45 AM</div></div><div class="posttext">I've been pushing Peter Hollens to do some WOW music for months now. Glad he finally got around to it. Love his work.<br />
+<br />
+I wish he did this one with Lindsey Stirling again, loved their Skryim one. The violinist isn't bad at all though!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">atrixx</div><div class="date">2014-01-09, 07:57 AM</div></div><div class="posttext">This is a huge leap foreward?<br />
+<br />
+Its just plain retarted, im in the customer center service as a manager for a long time and this is the worse way you can support your customers.<br />
+<br />
+So now i have a problem with the faction change + race change bug that i took a name and is now flagged.<br />
+<br />
+So i need support, lets call blizzard .. oh wait not enabled anymore .. make a ticket .. what 5 days????<br />
+<br />
+So now i need to wait for some lazy ass Blizzard employee to call me back some day?<br />
+<br />
+Just plain stupid.<br />
+<br />
+Umm, what? Exactly what experience do you have?<br />
+<br />
+I've deployed the Oracle Contact Center, Avaya, and a few other contact center systems and from your description, you clearly have no idea how they work. Offering call back service instead of having someone wait in queue isn't bad. If you've ever used EBay, this is how their system is setup and they give an advisory on how long the wait time is. Most major companies give you the ability to enter the callback system if you don't want to wait. To me, that is better customer service.<br />
+<br />
+The process isn't that difficult. Since it appears their inbound call options will go away, every callback request is going to go into a queue and autopop into the CSR's system when it is that person's turn. The system is fully automated and there isn't an issue of a Blizzard employee choosing to call you back or not. <br />
+<br />
+I would hope someone with a claim as being a leader for a customer service operation would show a better understanding of the role they are in. My point of view is from 15 years of contact center operations managements, including owning a center that provided third-party solutions to IT companies and their end-users.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Oxyra</div><div class="date">2014-01-09, 07:57 AM</div></div><div class="posttext">Question is, how does callback work if you're calling internationally, or via Skype.<br />
+<br />
+Normally I'd call Blizz number on Skype because it's a free call number in the US, but not free call if you call via international.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">atrixx</div><div class="date">2014-01-09, 08:02 AM</div></div><div class="posttext">I wish he did this one with Lindsey Stirling again, loved their Skryim one. The violinist isn't bad at all though!<br />
+<br />
+This one wasn't bad. I'm still pressing/requesting to get an Arthas/Invincible medley which I think would just sound amazingly - especially combining all 3 or 4 variations from WC3 to end of Wrath versions.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Question is, how does callback work if you're calling internationally, or via Skype.<br />
+<br />
+Normally I'd call Blizz number on Skype because it's a free call number in the US, but not free call if you call via international.<br />
+<br />
+Well the callback isn't going to have any impact on your when it comes to toll calling. The expense is all on the part of Blizzard at this point. So it will just come down to if you have a number to receive the call back. Of course, they may have a different process in place when dealing with international customers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfc0a93e0f4</div><div class="date">2014-01-09, 08:02 AM</div></div><div class="posttext">Wer da new models at?!?!?!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airwaves</div><div class="date">2014-01-09, 08:09 AM</div></div><div class="posttext">Why they still bother to put the time into making heroic raids I have no idea. The % of people doing them is just going down and down.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Keristrasza</div><div class="date">2014-01-09, 08:32 AM</div></div><div class="posttext">*Squee* I love Peter Hollens, I just wish Lindsey Stirling had been with him. This other girl is good, but I still prefer Lindsey.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Popbubblz</div><div class="date">2014-01-09, 08:42 AM</div></div><div class="posttext">I am in New Zealand and it works amazingly well, like I already said I got a callback in about a minute<br />
+<br />
+<br />
+Callback system is nice for people in the USA! But for people outside not so much.... :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc59b5827c7e</div><div class="date">2014-01-09, 09:06 AM</div></div><div class="posttext">Why they still bother to put the time into making heroic raids I have no idea. The % of people doing them is just going down and down.<br />
+<br />
+Source?<br />
+<br />
+Compared to Naxxramas 40 times, where only 0,1% even saw it, we currently have 1,5% being at 13/14H in SoO.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+Btw, does Blizzard only answer Hunter pet problems in the last two months? I thought we had greater concerns in this game, than adding new pet families and having to talk about it in every other tweet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5461ee9f4c</div><div class="date">2014-01-09, 09:36 AM</div></div><div class="posttext">&lt;3 Peter Hollens</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nekobaka</div><div class="date">2014-01-09, 09:42 AM</div></div><div class="posttext">@ Chaud: I just thought about it seeing that there are nearly three times as many characters as accounts in the data. If you havent, can you please do a chart for how many active lvl 90 characters an account has?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hnlntm</div><div class="date">2014-01-09, 09:49 AM</div></div><div class="posttext">Umm, what? Exactly what experience do you have?<br />
+<br />
+I've deployed the Oracle Contact Center, Avaya, and a few other contact center systems and from your description, you clearly have no idea how they work. Offering call back service instead of having someone wait in queue isn't bad. If you've ever used EBay, this is how their system is setup and they give an advisory on how long the wait time is. Most major companies give you the ability to enter the callback system if you don't want to wait. To me, that is better customer service.<br />
+<br />
+The process isn't that difficult. Since it appears their inbound call options will go away, every callback request is going to go into a queue and autopop into the CSR's system when it is that person's turn. The system is fully automated and there isn't an issue of a Blizzard employee choosing to call you back or not. <br />
+<br />
+I would hope someone with a claim as being a leader for a customer service operation would show a better understanding of the role they are in. My point of view is from 15 years of contact center operations managements, including owning a center that provided third-party solutions to IT companies and their end-users.<br />
+<br />
+As someone who use to work in a call centre, on customer services, I can see this as a step backwards. However let's look at the positives, you go online and arrange a call back, within 5 minutes you get your call back issue gets resolved. This is great, no waiting in a queue, you might be able to pick a time that suits you for the call back.<br />
+<br />
+What about if you go online, arrange a call back, you explain your issue. Blizzard tries to help, but in your eyes they're not helping. It get's to a point where they say there's nothing more we can do for you. So you go away think it over and come to the conclusion that you're not happy with that response. So where you would normally call back hoping to speak to someone different, who might be able to advise you differently, instead you have the same person repeating what they have already told you. So again you go away, still not happy, you arrange another call back. My worry is Blizzard will see your call request, if they log calls, they will be able to see a call history this enables them to ignore you. This takes what little power you have as a customer away.<br />
+<br />
+If the system is fully automated then that should prevent the ability to cherry pick calls, but let's be honest we don't know what the backend of their system looks like and how they are using it. <br />
+<br />
+If this service existed with the ability to still be able to ring Blizzard, then I'd say what a great service.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shiroh</div><div class="date">2014-01-09, 10:09 AM</div></div><div class="posttext">Why they still bother to put the time into making heroic raids I have no idea. The % of people doing them is just going down and down.<br />
+<br />
+Because you clearly overestimate number of people who have done heroic raiding in the past.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8ba596ddc7</div><div class="date">2014-01-09, 10:13 AM</div></div><div class="posttext">heroic raids, 1.5%...<br />
+<br />
+Good god that's way lower then i thought i thought the people that are now STILL playing were all high end progression raiders, guess not.<br />
+I unsubbed few months ago, mop is bad and the only reason blizzard will learn is by $$$ and amount of players cause i AM the silent majority</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frolk</div><div class="date">2014-01-09, 10:17 AM</div></div><div class="posttext">Peter Hollens for president!<br />
+holy shit that was good</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc59b5827c7e</div><div class="date">2014-01-09, 10:31 AM</div></div><div class="posttext">heroic raids, 1.5%...<br />
+<br />
+Good god that's way lower then i thought i thought the people that are now STILL playing were all high end progression raiders, guess not.<br />
+I unsubbed few months ago, mop is bad and the only reason blizzard will learn is by $$$ and amount of players cause i AM the silent majority<br />
+<br />
+Dunno about you, but classic WoW had roughly the same amount of subs as now 5.4 MoP if I'm not mistaken, and 1,5x more people seen endgame content is good enought for me. Especially if its 1,5% sitting at 13/14H - as in, progressing on the currently hardest boss.<br />
+<br />
+That 1,5% is only for world rank 1 to whatever the last kill of Klaxxi HC was, and that also only in 10 man raids.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc130aeee1c6</div><div class="date">2014-01-09, 11:12 AM</div></div><div class="posttext">Why they still bother to put the time into making heroic raids I have no idea. The % of people doing them is just going down and down.<br />
+<br />
+Because without them, even lower end raiders would have less to look forward to. Even simply having a higher goal than a lot of people can/will accomplish will keep people playing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Omians</div><div class="date">2014-01-09, 11:21 AM</div></div><div class="posttext">Oh Hey, my question about the Toy box and maybe adding in older eng, Trinkets popped up on the Front page.. oh god i see how bad my grammar is<br />
+<br />
+and i dunno, i was more hopeing that something so minor as the shrinkray turned into a clickable toy instead of a Trinket would of been fun</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-09, 12:30 PM</div></div><div class="posttext">@ Chaud: I just thought about it seeing that there are nearly three times as many characters as accounts in the data. If you havent, can you please do a chart for how many active lvl 90 characters an account has?<br />
+<br />
+Yeah, it is planned for the future. Just a few changes I want to make to get that last percent or two of characters to match first. <br />
+<br />
+Interesting fact, I came across someone with 73 level 90 characters on one account when working on verifying the matching.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2014-01-09, 01:16 PM</div></div><div class="posttext">wow...barely anyone raids heroics...which is kinda funny when you think about it, whiners complain about lfr and want to remove something a large portion of players do yet are completely fine with resources going into something where only a fraction of the player base even aim for let alone achieve...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jtx1029</div><div class="date">2014-01-09, 01:40 PM</div></div><div class="posttext">This is a huge leap foreward?<br />
+<br />
+Its just plain retarted, im in the customer center service as a manager for a long time and this is the worse way you can support your customers.<br />
+<br />
+So now i have a problem with the faction change + race change bug that i took a name and is now flagged.<br />
+<br />
+So i need support, lets call blizzard .. oh wait not enabled anymore .. make a ticket .. what 5 days????<br />
+<br />
+So now i need to wait for some lazy ass Blizzard employee to call me back some day?<br />
+<br />
+Just plain stupid.<br />
+<br />
+How do you know it's not just handed over to people waiting at computers with headsets?<br />
+<br />
+I used to work for roadside assistance and during the busy time (winter) if the queues were long, the caller was provided the option to press X to get on the callback list, what this did was keep the caller in his or her place in the queue and once their turn was up, me as an agent would receive the whisper and then would hear the dial-tone then hear it auto-dial for me and call the client. This DID NOT hurt their wait time as it was THE SAME whether they stayed there and waited in line waiting for me to get to them or not.<br />
+<br />
+All this does is probably make a queue of callbacks and the agents receive either a automated ticket in their system that auto-dials the callback number or they do it by hand. It's probably NOT a random database of callbacks that the agent just randomly chooses when or who he/she wishes to call.<br />
+<br />
+In all honesty, this is for the better, you may not see it, but instead of me waiting an hour in queue, I'll get my callback in an hour, seems like a better situation for me as a customer to get a call versus me wasting an hour waiting.<br />
+<br />
+I suppose, you work in customer service and you rather make the customer wait and suffer!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Varjo410</div><div class="date">2014-01-09, 01:49 PM</div></div><div class="posttext">1% or less have killed the last 4 bosses on heroic.<br />
+So all the people complaining here they've got noting to till WoD just happen to be in that 1%? What a coincidence.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jtx1029</div><div class="date">2014-01-09, 01:51 PM</div></div><div class="posttext">As someone who use to work in a call centre, on customer services, I can see this as a step backwards. However let's look at the positives, you go online and arrange a call back, within 5 minutes you get your call back issue gets resolved. This is great, no waiting in a queue, you might be able to pick a time that suits you for the call back.<br />
+<br />
+What about if you go online, arrange a call back, you explain your issue. Blizzard tries to help, but in your eyes they're not helping. It get's to a point where they say there's nothing more we can do for you. So you go away think it over and come to the conclusion that you're not happy with that response. So where you would normally call back hoping to speak to someone different, who might be able to advise you differently, instead you have the same person repeating what they have already told you. So again you go away, still not happy, you arrange another call back. My worry is Blizzard will see your call request, if they log calls, they will be able to see a call history this enables them to ignore you. This takes what little power you have as a customer away.<br />
+<br />
+If the system is fully automated then that should prevent the ability to cherry pick calls, but let's be honest we don't know what the backend of their system looks like and how they are using it. <br />
+<br />
+If this service existed with the ability to still be able to ring Blizzard, then I'd say what a great service.<br />
+<br />
+<br />
+Sure, we don't know what their backend looks like, but I think we can all agree that they probably will not be able to cherry pick what to call back. It is probably automated. Blizzard CS is probably just like any regular customer service call centre.<br />
+<br />
+I've worked for various ISP's for tech support, roadside assistance, etc... Some had callback options, some did not, the one's who had callbacks were intertwined with the incoming calls. The callbacks were still placed in the queue of incoming calls. There was no difference if I would of wasted an hour waiting for someone to pick up or for them to place their callback request and our system auto-dialed them after the hour wait just like if they were waiting in queue.<br />
+<br />
+This is a huge plus and bonus for anyone who values their times during peak hours of customer service demand. There is nothing bad here.<br />
+<br />
+This is what is going to happen...<br />
+<br />
+Instead of 100 people waiting in queue for CS, waiting for who knows how long, these 100 people place a callback request and they are essentially in a &quot;queue&quot; and will be called back accordingly.<br />
+<br />
+Caller #100 had to wait two hours in the queue.<br />
+Callback #100 probably will get his call back in two hours.<br />
+<br />
+What would you prefer? To waste two hours waiting? Or to get your call when you would of if you would of waited?<br />
+<br />
+It's the same if there was let's say 1 or 2 people in queue versus 1 or 2 callback requests, the length of time for the callback will probably mirror the length of time of wait if waiting on the line.<br />
+<br />
+This is a major win for the consumer.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Forumchibi</div><div class="date">2014-01-09, 01:58 PM</div></div><div class="posttext">The data used today is a sample made up of 6.2 million characters from 2.2 million accounts, with at least one character active after November 26.<br />
+<br />
+I can't even bring myself to level a second character to 90 this expansion, and yet on average people are running 3 characters through SoO heroic mode?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Skippy88</div><div class="date">2014-01-09, 02:39 PM</div></div><div class="posttext">Yeah, it is planned for the future. Just a few changes I want to make to get that last percent or two of characters to match first. <br />
+<br />
+Interesting fact, I came across someone with 73 level 90 characters on one account when working on verifying the matching.<br />
+<br />
+I'm guessing a gold seller of some kind. Either that or someone has a lot of time on their hands. That's what 7 of each class?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ejpaints</div><div class="date">2014-01-09, 03:04 PM</div></div><div class="posttext">If blizz didn't do heroic raids 3 of the teams in my guild would probably just quit. Having a higher goal keeps people playing and I'm enjoying our journey to heroic Garrosh and I wish more players had the opportunity to participate. Heroics can be fun if the group allows it to be. <br />
+<br />
+And the hunter pet conversation was with 1 dev a couple days ago. It was one of many many questions they answered that day and probably only made it on here bc they eluded to potential new pet. I didn't expect an answer when I asked it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Amirantha</div><div class="date">2014-01-09, 03:16 PM</div></div><div class="posttext">Agreed on the callback system. Most of Microsoft Premier support works on this structure and it is amazing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5b53551f34</div><div class="date">2014-01-09, 03:27 PM</div></div><div class="posttext">1% or less have killed the last 4 bosses on heroic.<br />
+So all the people complaining here they've got noting to till WoD just happen to be in that 1%? What a coincidence.<br />
+<br />
+What if I told you that for some people this game isn't only about doing HC raids...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ZeroWashu</div><div class="date">2014-01-09, 03:29 PM</div></div><div class="posttext">wow...barely anyone raids heroics...which is kinda funny when you think about it, whiners complain about lfr and want to remove something a large portion of players do yet are completely fine with resources going into something where only a fraction of the player base even aim for let alone achieve...<br />
+<br />
+One thing that is quickly learned, there are far more water cooler hard cores than actual heroic raiders. Its the same with PvP, far too many who can boast about it but when you dig down the numbers are low and the majority of braggarts never link THEIR armory.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">grexly75</div><div class="date">2014-01-09, 03:49 PM</div></div><div class="posttext">Those two videos are awesome, very well done and they do send a chill down ones spine..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Majestian</div><div class="date">2014-01-09, 04:02 PM</div></div><div class="posttext">One thing that is quickly learned, there are far more water cooler hard cores than actual heroic raiders. Its the same with PvP, far too many who can boast about it but when you dig down the numbers are low and the majority of braggarts never link THEIR armory.<br />
+<br />
+Indeed. Going by the types of snarky, condescending comments posted here and on the official WoW forums, you'd think half the subscriber base were slogging away inside Heroic SoO.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jimlow</div><div class="date">2014-01-09, 04:23 PM</div></div><div class="posttext">Wow not even half of 1% of the player base has beaten Garrosh. I don't think I have seen numbers that low since Naxx. How many resets are we into patch 5.4 now? I'm waiting for the gradual 30% nerf like dragonsoul. You know its coming, don't even try to deny it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2014-01-09, 04:37 PM</div></div><div class="posttext">I'm waiting by the phone. Waiting for you to call me up and tell me I'm not alone.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+1% or less have killed the last 4 bosses on heroic.<br />
+So all the people complaining here they've got noting to till WoD just happen to be in that 1%? What a coincidence.<br />
+<br />
+They literally cannot do it. So that's what they're supposed to do for 8 months? Leave LFR and wipe to heroic immerseus 12,000 times? Think before you post.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moradim</div><div class="date">2014-01-09, 06:13 PM</div></div><div class="posttext">Wow not even half of 1% of the player base has beaten Garrosh. I don't think I have seen numbers that low since Naxx. How many resets are we into patch 5.4 now? I'm waiting for the gradual 30% nerf like dragonsoul. You know its coming, don't even try to deny it.<br />
+<br />
+majority do 10 man, 25 man is easier...not surprising</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">coolefex</div><div class="date">2014-01-09, 06:22 PM</div></div><div class="posttext">WoW is so fucking easy!! WTF blizz!? RAWR!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Littleshashi</div><div class="date">2014-01-09, 06:28 PM</div></div><div class="posttext">Hey guys! Some sad man is flaming the vocals-only version of this Peter Hollens video on Youtube. If you liked the video, go over there and thumbs-down that troll into the dirt!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spike`</div><div class="date">2014-01-09, 07:27 PM</div></div><div class="posttext">Wow not even half of 1% of the player base has beaten Garrosh. I don't think I have seen numbers that low since Naxx. How many resets are we into patch 5.4 now? I'm waiting for the gradual 30% nerf like dragonsoul. You know its coming, don't even try to deny it.<br />
+<br />
+normal, many guilds stopped playing in November/December and didn't came back<br />
+<br />
+Garrosh is no Lich King, almost no one cares about killing him on heroic</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mhyroth</div><div class="date">2014-01-09, 09:40 PM</div></div><div class="posttext">Glad I won't be using Callback..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RoKPaNda</div><div class="date">2014-01-09, 10:09 PM</div></div><div class="posttext">So now that we can see how small of a minority heroic raiding is, does anyone still think they need to be catered to? =)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elrandir</div><div class="date">2014-01-09, 10:52 PM</div></div><div class="posttext">Man screw that tweeting blizzard dude with this new char model update tease, it's been a freaking week. ASAP my ass.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moradim</div><div class="date">2014-01-10, 02:31 AM</div></div><div class="posttext">So now that we can see how small of a minority heroic raiding is, does anyone still think they need to be catered to? =)<br />
+<br />
+heroic raiding died with arthas and ICC. just hasnt been the same ever since. healers dont even need to be good, cause smart heals do their work for them. and class uniqueness is out the door so people just stack rogues/locks and faceroll it all.<br />
+<br />
+it isnt &quot;easy&quot;, but isnt nearly as good as it used to be. vanilla/bc/wrath are where it peaked, and since cata has been on a steady decline. I blame shared lockouts (killed pugs), and that also killed most 25 man guilds.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">xenogear3</div><div class="date">2014-01-10, 03:12 AM</div></div><div class="posttext">Only 7% killed Immerseus.<br />
+LoL all these &quot;LFM SoO flex, link heroic ach or no reply&quot;.<br />
+<br />
+Of course, all MMO-Champion forum users have killed heroic Garrosh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elite Peon</div><div class="date">2014-01-10, 08:33 AM</div></div><div class="posttext">Refer to the above graph if anyone says that WOW is to easy ..LOL</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">JoeShmo</div><div class="date">2014-01-10, 10:26 AM</div></div><div class="posttext">I'm guessing a gold seller of some kind. Either that or someone has a lot of time on their hands. That's what 7 of each class?<br />
+<br />
+The sad fact..is that it prob would have gone quicker if he had waited until WoD to level all those characters, after having BoA gear be entirely account bound, instead of server bound. Would have saved a lot of time in heroics and whatnot farming for new sets, or saved time leveling without BoA gear.<br />
+<br />
+If it wasnt a gold farmer..... It has to be the one single guy that always goes &quot;I love leveling in WoW !&quot; on the forums.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

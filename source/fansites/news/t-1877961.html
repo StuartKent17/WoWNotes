@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, and, group, with, they, that, multiple, work, not, this, people, would, all, are, for, dungeon, more, difficult, credit, but, single, doing, because, perceived, rewards, difficulties, player, things, just, from, alone, prefer, school, everyone, example, together, hot, brainy, moron, proven, nerd, girl, version, say, what, even, least, made, where, you" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Blizzcon Schedule Released 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; BlizzCon Hearthstone Schedule - &quot;Hear a tale of Adventures Yet to Come&quot; 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot;" />
+<title> Armory Stats - Garrison Monuments, Pardo Interview, Blue Tweets, Rift - Patch 3.4 [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Garrison Monuments, Pardo Interview, Blue Tweets, Rift - Patch 3.4</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1877961.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1877961-Armory-Stats-Garrison-Monuments-Pardo-Interview-Blue-Tweets-Rift-Patch-3-4">Armory Stats - Garrison Monuments, Pardo Interview, Blue Tweets, Rift - Patch 3.4</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-10-12, 02:40 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Blizzcon Schedule Released (http://www.diablofans.com/news/48542-blizzcon-schedule-released)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; BlizzCon Hearthstone Schedule - &quot;Hear a tale of Adventures Yet to Come&quot; (http://www.hearthpwn.com/news/1055-blizzcon-hearthstone-schedule-hear-a-tale-of)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; BlizzCon Heroes Schedule - New Heroes, New Battlegrounds, Talents, Hero Design (http://www.heroesnexus.com/news/1506-blizzcon-heroes-schedule-new-heroes-new)<br />
+<br />
+Armory Stats - Garrison Monuments<br />
+Today we are taking a look at the garrison monument achievement completion rate of players. The data used today is a sample of 2.1 million players active since August 1. <br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2015/july/highcharts.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: ['#9E6C36']<br />
+});<br />
+chart = new Highcharts.Chart({<br />
+ chart: {<br />
+renderTo: 'monuments',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'Master of Apexis', 'Master Draenor Crafter', 'Legendary Ring', 'Archimonde Normal or Higher Kill', 'Defender of Draenor', 'Mythic Draenor Raider', 'Draenor Pet Brawler'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.point.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Completed Garrison Monument Achievements',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [<br />
+{<br />
+data: [{y: 47.52, name:'Master of Apexis'},{y: 25.11, name:'Master Draenor Crafter'},{y: 17.37, name:'Legendary Ring'},{y: 12.29, name:'Archimonde Normal or Higher Kill'},{y: 7.18, name:'Defender of Draenor'},{y: 0.63, name:'Mythic Draenor Raider'},{y: 0.24, name:'Draenor Pet Brawler'}],<br />
+<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+}<br />
+]<br />
+<br />
+});<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;monuments&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt; <br />
+<br />
+&lt;table class=&quot;listing sortable news-table achievement-table listing-achievements mmoc-listing b-table b-table-a&quot; data-viewstate=&quot;&quot; data-ajax-set-window-state=&quot;true&quot; id=&quot;achievements&quot; data-row-selector=&quot;&gt;tbody&gt;tr&quot; data-default-sort-slug=&quot;name&quot; data-default-sort-order=&quot;asc&quot;&gt; &lt;thead class=&quot;b-table-header j-listing-table-header&quot;&gt; <br />
+&lt;tr&gt; &lt;th&gt;Name&lt;/th&gt; &lt;th&gt;Side&lt;/th&gt; &lt;th&gt;Points&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody class=&quot;filtered&quot;&gt; <br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9265-master-of-apexis&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/9265-master-of-apexis&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20444/medium/achievement_garrison_horde_pve.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9265-master-of-apexis&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/9265-master-of-apexis&quot;&gt;Master of Apexis&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Collect 100,000 Apexis Crystals.&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td&gt;47.52%&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 10&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;<br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9246-master-draenor-crafter&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/9246-master-draenor-crafter&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20444/medium/achievement_garrison_monument_horde_profession.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9246-master-draenor-crafter&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/9246-master-draenor-crafter&quot;&gt;Master Draenor Crafter&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Craft 50 Epic items with an item level of at least 600.&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td&gt;25.11%&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 10&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;<br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/10148-chapter-iv-darkness-incarnate&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/10148-chapter-iv-darkness-incarnate&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20444/medium/quest_khadgar.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/10148-chapter-iv-darkness-incarnate&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/10148-chapter-iv-darkness-incarnate&quot;&gt;Chapter IV: Darkness Incarnate&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Acquire your legendary ring by completing Khadgar's quests.&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td&gt;17.37%&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 25&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt; <br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9680-time-is-a-flat-circle&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/9680-time-is-a-flat-circle&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20444/medium/spell_holy_borrowedtime.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9680-time-is-a-flat-circle&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/9680-time-is-a-flat-circle&quot;&gt;Time is a Flat Circle&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Defeat Archimonde on Normal difficulty or higher, prior to the release of the next tier of content.&quot;Everything we have ever done or will do, we...&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td&gt;12.29%&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;/td&gt;&lt;/tr&gt; <br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9248-defender-of-draenor&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/9248-defender-of-draenor&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20444/medium/achievement_garrison_monument_horde_pvp.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9248-defender-of-draenor&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/9248-defender-of-draenor&quot;&gt;Defender of Draenor&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Get 5000 honorable kills in Draenor.&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td&gt;7.18%&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 10&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;<br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9631-mythic-draenor-raider&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/9631-mythic-draenor-raider&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20444/medium/achievement_garrison_monument_horde_raid.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9631-mythic-draenor-raider&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/9631-mythic-draenor-raider&quot;&gt;Mythic Draenor Raider&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Complete the Mythic raiding achievements listed below.&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td&gt;0.63%&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 10&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt; <br />
+<br />
+<br />
+&lt;tr class=&quot;mmoc-listing-row&quot;&gt;&lt;td class=&quot;col-name&quot;&gt;&lt;table&gt;&lt;tbody class=&quot;filtered&quot;&gt;<br />
+&lt;tr&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9264-draenor-pet-brawler&quot; class=&quot;listing-icon &quot; href=&quot;http://www.wowdb.com/achievements/9264-draenor-pet-brawler&quot;&gt; &lt;img class=&quot;icon-36 &quot; src=&quot;//media-azeroth.cursecdn.com/wow/icons/20444/medium/achievement_garrison_monument_alliance_pets.jpg&quot; alt=&quot;&quot; height=&quot;36&quot; width=&quot;36&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a data-tooltip-href=&quot;http://www.wowdb.com/achievements/9264-draenor-pet-brawler&quot; class=&quot;t&quot; href=&quot;http://www.wowdb.com/achievements/9264-draenor-pet-brawler&quot;&gt;Draenor Pet Brawler&lt;/a&gt; &lt;span class=&quot;subtext&quot;&gt;Win 2000 pet battles in Draenor.&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td&gt;0.24%&lt;/td&gt;&lt;td class=&quot;c&quot;&gt;&lt;span class=&quot;achievement-points-icon&quot;&gt; 10&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;<br />
+<br />
+&lt;/tbody&gt;&lt;/table&gt;<br />
+<br />
+<br />
+Rob Pardo Interview<br />
+Rob Pardo was at Unite this year and gave an interview to gamesindustry.biz (http://www.gamesindustry.biz/articles/2015-10-08-games-arent-really-supposed-to-be-easy-at-all-times), with a little bit of World of Warcraft talk.<br />
+<br />
+<br />
+Adding obstacles that have the right amount of frustration and challenge is important so that when the player overcomes them, it feels like a huge accomplishment or achievement.<br />
+In the quest to make World of Warcraft more accessible, understandable, and intuitive, some of the sharp edges were shaved away. <br />
+Those sharp edges were sometimes part of what made the game compelling, as games aren't really supposed to be easy at all times.<br />
+Everything in game design is about trade-offs. You can't make a game that everyone will love.<br />
+The initial design for WoW was trying to get players that enjoyed Blizzard games to try a MMO.<br />
+There was debate about putting awesome content, encounters, and stories in dungeons, as there were players that enjoyed playing by themselves and didn't want to group up for dungeons. <br />
+The choice not to make a single player version of dungeons was intentional, as making it more accessible would cause players that love dungeons to love them less. <br />
+Hearthstone was an experiment that looked at making a Blizzard quality game with a smaller team and it worked out well.<br />
+Pardo is closer towards the end of his sabbatical than the beginning.<br />
+<br />
+<br />
+<br />
+Blue Tweets<br />
+PvE<br />
+Is the Berserk for Mythic Iskar 8 minutes or 9 or trigger? Getting conflicting reports.<br />
+Should be 8 minutes. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/651163603249160194))<br />
+<br />
+Any plans to make [Only the Penitent...] for Firelands meta soloable?<br />
+Player power trivializes some old raid achievements, but for others, coordinating multiple players is the entire point. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/651163810607161345))<br />
+<br />
+Why aren't the ICC 5 man in the timewalking rotation?<br />
+It’s definitely a popular request. Timewalking is a feature we want to continue to update and expand in the future. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/651164031005294592))<br />
+<br />
+PvP<br />
+the lesser rings in the leg. quest can be used in pvp why cant the legendary ring be used in pvp? Doesnt say it cant in quests<br />
+The item’s proc does not trigger while in PvP combat and the ring is scaled down to item level like other non-PvP gear. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/651164712772612098))<br />
+<br />
+Hey, would it be possible to make vendors sell old Elite Gladiator gear to players with 2000+ current rating? #Warcraft<br />
+No plans for this. Elite gear sets are only available during that particular season. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/651165100468912129))<br />
+<br />
+Lore<br />
+a little bird told me: arakkoas are androgynous. Is it canon?<br />
+They are male/female and can tell each other apart just fine. Adventurer's untrained eye would be unable to see difference. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/651096234313121792))<br />
+<br />
+<br />
+Rift - Patch 3.4: Into the Wilds<br />
+Rift released a new patch (http://forums.riftgame.com/general-discussions/patch-notes/471554-rift-3-4-into-wilds.html) last week, along with a new calling: The Primalist (http://www.trionworlds.com/rift/en/2015/09/09/rift-3-4-spotlight-into-the-primalist/). They also released a guide for returning players (http://www.trionworlds.com/rift/en/2015/10/07/returning-to-rift/) covering what has changed.<br />
+<br />
+<br />
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/J38qhKLthZs?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleccybubb</div><div class="date">2015-10-12, 02:46 AM</div></div><div class="posttext">Damn. Pretty badass trailer. Might pick up Rift again and get myself the current class pack.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">oldgeezer</div><div class="date">2015-10-12, 02:47 AM</div></div><div class="posttext">&quot;There was debate about putting awesome content, encounters, and stories in dungeons, as there were players that enjoyed playing by themselves and didn't want to group up. The choice not to make a single player version was intentional, as making it more accessible would cause players that love dungeons to love them less.&quot;<br />
+<br />
+I've read this through a few times now and it's extremely hard to parse. What exactly is Pardo saying?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4ba93b9265</div><div class="date">2015-10-12, 02:50 AM</div></div><div class="posttext">So a little more than one half of a percent of players completed the Mythic Draenor Raider achievement. Is this a problem of difficulty or one of accessibility?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">JunkHead</div><div class="date">2015-10-12, 02:55 AM</div></div><div class="posttext">&quot;There was debate about putting awesome content, encounters, and stories in dungeons, as there were players that enjoyed playing by themselves and didn't want to group up. The choice not to make a single player version was intentional, as making it more accessible would cause players that love dungeons to love them less.&quot;<br />
+<br />
+I've read this through a few times now and it's extremely hard to parse. What exactly is Pardo saying?<br />
+<br />
+Same. I'm just staring at the sentence. And I don't get it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleccybubb</div><div class="date">2015-10-12, 02:56 AM</div></div><div class="posttext">Same. I'm just staring at the sentence. And I don't get it.<br />
+<br />
+Pardo was high?. Sorry that's all I got.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jasper Kazai</div><div class="date">2015-10-12, 02:57 AM</div></div><div class="posttext">So a little more than one half of a percent of players completed the Mythic Draenor Raider achievement. Is this a problem of difficulty or one of accessibility?<br />
+I would imagine a little bit of both. Mythic raiding guilds are generally focused on progression, and not achievements. I know that my guild is about a 50/50 split in terms of who cares about achievements. In fact, it might be more than half that just don't give a flying fuck about them. Which is a little disappointing to me, since I would indeed love to get some of those achievements, but that's not why we're there. We're there to kill bosses and progress, not go back to old bosses and farm achievements. Sure, the top guilds who have had clears for months can go back and do it, but that is a very small percentage of the playerbase.<br />
+<br />
+Surprised to see that the Crafter achievement is quite low. Seeing as &quot;crafting&quot; the gear token rewards for garrison missions count towards the total, and even bonus rolling loot counts towards the total, I would've guessed there would be more people with it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4ba93b9265</div><div class="date">2015-10-12, 03:02 AM</div></div><div class="posttext">I would imagine a little bit of both. Mythic raiding guilds are generally focused on progression, and not achievements. I know that my guild is about a 50/50 split in terms of who cares about achievements. In fact, it might be more than half that just don't give a flying fuck about them. Which is a little disappointing to me, since I would indeed love to get some of those achievements, but that's not why we're there. We're there to kill bosses and progress, not go back to old bosses and farm achievements. Sure, the top guilds who have had clears for months can go back and do it, but that is a very small percentage of the playerbase.<br />
+<br />
+Surprised to see that the Crafter achievement is quite low. Seeing as &quot;crafting&quot; the gear token rewards for garrison missions count towards the total, and even bonus rolling loot counts towards the total, I would've guessed there would be more people with it.<br />
+<br />
+Yeh but this is the achievement for just killing all raid bosses on Mythic. Not extra little achievements to accomplish during the fight. Am I right or wrong on that?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jasper Kazai</div><div class="date">2015-10-12, 03:04 AM</div></div><div class="posttext">Yeh but this is the achievement for just killing all raid bosses on Mythic. Not extra little achievements to accomplish during the fight. Am I right or wrong on that?<br />
+Oh, right, that's all it is; my bad. I thought it included the Glory of the Raider(s) for some reason. Disregard most of what I said, then. Guess it just illustrates how little people clear Mythic. At least last tier, anyways.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zannypants</div><div class="date">2015-10-12, 03:13 AM</div></div><div class="posttext">Like 40 bucks for a new class. Yeah good luck with that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aliok</div><div class="date">2015-10-12, 03:15 AM</div></div><div class="posttext">&quot;There was debate about putting awesome content, encounters, and stories in dungeons, as there were players that enjoyed playing by themselves and didn't want to group up. The choice not to make a single player version was intentional, as making it more accessible would cause players that love dungeons to love them less.&quot;<br />
+<br />
+I've read this through a few times now and it's extremely hard to parse. What exactly is Pardo saying?<br />
+<br />
+<br />
+Same. I'm just staring at the sentence. And I don't get it.<br />
+<br />
+<br />
+Pardo was high?. Sorry that's all I got.<br />
+<br />
+If you click through to the article, it makes sense. Here is the full paragraph. <br />
+<br />
+<br />
+&quot;Even with dungeons, we had a lot of debate inside the studio about the dungeons that had this really awesome content and really cool encounters and some of the best story lines and quest lines. You'd get quests in your log that drive you to the dungeon, but we had a lot of players that really enjoyed playing the game by themselves and didn't want to be in groups. There's a big push inside the studio from some of those folks that, 'Hey, can't you make a single player version of these dungeons?' That was an example where we chose to not make it more accessible because we felt by doing that, the people that really love dungeons would actually love them a little less.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shambulanced</div><div class="date">2015-10-12, 03:24 AM</div></div><div class="posttext">If you click through to the article, it makes sense. Here is the full paragraph.<br />
+<br />
+I still don't understand how giving players a single player option takes away from those who like 5 mans.<br />
+<br />
+Like, if they want to do 5-mans, do them as 5-mans. If their friends aren't on or they don't have time to dps queue (or heck, take out the gear reward, make them a story mode or something) then do single-mode.<br />
+<br />
+I've never understood the &quot;giving players options makes people who like things a certain way unhappy,&quot; argument.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sil</div><div class="date">2015-10-12, 03:24 AM</div></div><div class="posttext">Damn. Pretty badass trailer. Might pick up Rift again and get myself the current class pack.<br />
+<br />
+Looked pretty slick indeed, if I'd still have time to play games I'd definitely give RIFT a go.. never tried it but it the boss npc graphics look awesome. Can't speak for gameplay of course.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">diznoid</div><div class="date">2015-10-12, 03:25 AM</div></div><div class="posttext">Same. I'm just staring at the sentence. And I don't get it.<br />
+<br />
+He's saying they had debates on whether or not to put &quot;awesome content, encounters, and stories&quot; into dungeons because a lot of people, like solo players, didn't run them. He also says putting in easy/solo dungeons would piss off people who do run and enjoy dungeons.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Banquetto</div><div class="date">2015-10-12, 03:29 AM</div></div><div class="posttext">I still don't understand how giving players a single player option takes away from those who like 5 mans.<br />
+<br />
+Like, if they want to do 5-mans, do them as 5-mans. If their friends aren't on or they don't have time to dps queue (or heck, take out the gear reward, make them a story mode or something) then do single-mode.<br />
+<br />
+I've never understood the &quot;giving players options makes people who like things a certain way unhappy,&quot; argument.<br />
+<br />
+Speculation: the 5-man groups are made up of two people who genuinely like 5-mans, and three people who tolerate them if they're the only way to see the content. Add a solo version, and those three people abandon the group content, leaving the two who actually like group content frustrated.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2015-10-12, 04:05 AM</div></div><div class="posttext">Maybe start on just adding some new dungeons once in awhile. Baby steps. One day these interns will figure out what we like.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spaceboytg</div><div class="date">2015-10-12, 04:11 AM</div></div><div class="posttext">Speculation: the 5-man groups are made up of two people who genuinely like 5-mans, and three people who tolerate them if they're the only way to see the content. Add a solo version, and those three people abandon the group content, leaving the two who actually like group content frustrated.<br />
+<br />
+SWTOR has solo-mode flashpoints and most people still mostly do flashpoints as a group. But the solo modes are fantastic while leveling to get into the flashpoint that tells important story right now rather than sitting in a queue being unable to progress the story. This allows SWTOR to incorporate these flashpoints firmly into the story and leveling/questing process whereas in WoW the player would just abandon the dungeon quest (which you can't do and still progress in SWTOR, the FP must be done to continue).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4ab8181178</div><div class="date">2015-10-12, 05:13 AM</div></div><div class="posttext">Can't understand a word of what that dude is saying in the Rift trailer O.o Did they record that with a microphone tied to a fan?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mvaliz</div><div class="date">2015-10-12, 05:42 AM</div></div><div class="posttext">Wow... more people got the Mythic raiding monument than Draenor Pet monument? <br />
+<br />
+But then again - 2000 pet battles in Draenor is a ridiculous number, particularly as there's really no reward to doing each battle apart from very slowly leveling a pet. Stunned I actually did that the &quot;normal&quot; way myself, but then again I just made a bunch of lvl 23s and 24s and then finished them off on Pet Battle weekends. Was the only way it made doing normal pet battles in Draenor purposeful.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2015-10-12, 05:50 AM</div></div><div class="posttext">Wow... more people got the Mythic raiding monument than Draenor Pet monument? <br />
+<br />
+But then again - 2000 pet battles in Draenor is a ridiculous number, particularly as there's really no reward to doing each battle apart from very slowly leveling a pet. Stunned I actually did that the &quot;normal&quot; way myself, but then again I just made a bunch of lvl 23s and 24s and then finished them off on Pet Battle weekends. Was the only way it made doing normal pet battles in Draenor purposeful.<br />
+<br />
+I had well over 2000 but because Blizzard are incompetent fucks the 2000 ish pet battles I won in my garrison didn't count cause they forgot to turn the counter on in your garrison for the first few months of WoD.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mask</div><div class="date">2015-10-12, 06:32 AM</div></div><div class="posttext">Adding obstacles that have the right amount of frustration and challenge is important so that when the player overcomes them, it feels like a huge accomplishment or achievement.<br />
+In the quest to make World of Warcraft more accessible, understandable, and intuitive, some of the sharp edges were shaved away.<br />
+Those sharp edges were sometimes part of what made the game compelling, as games aren't really supposed to be easy at all times.<br />
+<br />
+Bring back the sharp edges!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Oxide08</div><div class="date">2015-10-12, 06:32 AM</div></div><div class="posttext">Anyone else mildly bothered by the fact that the draenor pet brawler has been achieved less than mythic draenor raider?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nozuka</div><div class="date">2015-10-12, 06:43 AM</div></div><div class="posttext">Bring back the sharp edges!!<br />
+<br />
+my thoughts exactly.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tristannarutofan</div><div class="date">2015-10-12, 06:43 AM</div></div><div class="posttext">So a little more than one half of a percent of players completed the Mythic Draenor Raider achievement. Is this a problem of difficulty or one of accessibility?<br />
+<br />
+Accessibility.<br />
+<br />
+I think 10 stacks of determination on Archimonde and Cata and the last 3 5 mans in Wraith and the Zul 5 mans prove that people are willing to do it and most of them are willing to learn hard content.<br />
+<br />
+But like many normal and heroic an dmythic raid groups Oh to many groups want people who outgear the content to padd their dmg meters. The organizers are the low geared ones. its never overgeared people looking for undergeared to carry or w/e<br />
+<br />
+If i could Que for Mythics thats all i would be doing since i'm already telling people how to not die horribly in heroics. The only difference is in heroics they can ignore me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nozuka</div><div class="date">2015-10-12, 06:44 AM</div></div><div class="posttext">Anyone else mildly bothered by the fact that the draenor pet brawler has been achieved less than mythic draenor raider?<br />
+<br />
+<br />
+not really... 2000 pet battles is alot. it gets boring faster than that</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gadzooks</div><div class="date">2015-10-12, 06:50 AM</div></div><div class="posttext">Oh, right, that's all it is; my bad. I thought it included the Glory of the Raider(s) for some reason. Disregard most of what I said, then. Guess it just illustrates how little people clear Mythic. At least last tier, anyways.<br />
+<br />
+(edited - was thinking of something else)<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I still don't understand how giving players a single player option takes away from those who like 5 mans.<br />
+<br />
+Like, if they want to do 5-mans, do them as 5-mans. If their friends aren't on or they don't have time to dps queue (or heck, take out the gear reward, make them a story mode or something) then do single-mode.<br />
+<br />
+I've never understood the &quot;giving players options makes people who like things a certain way unhappy,&quot; argument.<br />
+<br />
+I'd guess that at that time, they didn't have the tech to scale dungeons like that, and didn't want to make 2 different versions of it - it's also a &quot;Because we didn't want to&quot; kind of thing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kamuimac</div><div class="date">2015-10-12, 06:59 AM</div></div><div class="posttext">&quot;There was debate about putting awesome content, encounters, and stories in dungeons, as there were players that enjoyed playing by themselves and didn't want to group up. The choice not to make a single player version was intentional, as making it more accessible would cause players that love dungeons to love them less.&quot;<br />
+<br />
+I've read this through a few times now and it's extremely hard to parse. What exactly is Pardo saying?<br />
+<br />
+you should read it like this :<br />
+<br />
+&quot;warlock green fire quest was enormous succes and puting more of those would be succes too but were blizzard so screw you we wont put it anymore instead this we will try to push everyone into amazing super content that is normal mode raiding as we find it super amazing ultra cool and it cut the costs significanty so our staff an spend whole days afk on fb instad developing interesting content&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mysticx</div><div class="date">2015-10-12, 07:01 AM</div></div><div class="posttext">Anyone else mildly bothered by the fact that the draenor pet brawler has been achieved less than mythic draenor raider?<br />
+<br />
+Not really bothered as such, it's just the result of not raising the battle pet level cap when WoD hit, it's easier to stay in Pandaria to max out pet levels, especially pre-flight where going from one area to the other was much easier there, for levelling (Where a huge number of battles take place, just grinding those levels), avoiding Draenor outright is easily possible.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ukerric</div><div class="date">2015-10-12, 07:46 AM</div></div><div class="posttext">I still don't understand how giving players a single player option takes away from those who like 5 mans.<br />
+That's exactly the massive debate we're having on LFR vs normal since the beginning of WoD.<br />
+<br />
+Or, more lightly, the &quot;no fly&quot; vs &quot;flying&quot; debate prior to 6.2.<br />
+<br />
+I've never understood the &quot;giving players options makes people who like things a certain way unhappy,&quot; argument.<br />
+Because the game does not recognize &quot;well&quot; the fact that you did the hard version. It's human nature: if you get the feeling that doing it easy gives you the &quot;same&quot; reward, then few people will challenge themselves purely for the challenge. And a few will and then say &quot;what was the point? Could have done it in easy&quot;.<br />
+<br />
+It's one of those &quot;can't really please everyone&quot; points.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kingoomieiii</div><div class="date">2015-10-12, 07:47 AM</div></div><div class="posttext">&quot;There was debate about putting awesome content, encounters, and stories in dungeons, as there were players that enjoyed playing by themselves and didn't want to group up. The choice not to make a single player version was intentional, as making it more accessible would cause players that love dungeons to love them less.&quot;<br />
+<br />
+I've read this through a few times now and it's extremely hard to parse. What exactly is Pardo saying?<br />
+<br />
+Basically, they made a decision to not have giant lore moment in dungeons, and do them in questing instead. They want those moment to be accessible, and there are people who hate dungeons.<br />
+<br />
+There was an option on the table to make dungeons accessible to SOLO players, which would allow them to put those lore moments in them, but they didn't want to do that, because they figured that would be TOO accessible.<br />
+<br />
+Personally I was annoyed near the end of mop that I couldn't solo-queue for heroic scenarios, even not scaled-down, just to wipe the floor with them. But to each their own.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arenis</div><div class="date">2015-10-12, 08:01 AM</div></div><div class="posttext">Not really bothered as such, it's just the result of not raising the battle pet level cap when WoD hit, it's easier to stay in Pandaria to max out pet levels, especially pre-flight where going from one area to the other was much easier there, for levelling (Where a huge number of battles take place, just grinding those levels), avoiding Draenor outright is easily possible.<br />
+<br />
+Or maybe, just very maybe, the massive majority of the playerbase doesn't seem to be very interested in this pokemon system?<br />
+<br />
+$0.02</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2cfe61b4f1</div><div class="date">2015-10-12, 08:25 AM</div></div><div class="posttext">Hindsight is 20/20. Although there were tons of people warning them against streamlining the game too much. Don't give players what they think they want, that's not the way to design a good game in the long run.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2015-10-12, 08:56 AM</div></div><div class="posttext">mythic dreanor raider = 0,63%, draenor pet brawler = 0,24% !!!<br />
+<br />
+shocking news of the month! the so called good feature (pet battle) is behind mythic raiding achievements!! <br />
+<br />
+&quot;Everything in game design is about trade-offs. You can't make a game that everyone will love.&quot;<br />
+<br />
+false! in wotlk the game is in everybodys brain. the term rpg is first in his history not more on freak status..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Oishi</div><div class="date">2015-10-12, 09:02 AM</div></div><div class="posttext">Bring back the sharp edges!!<br />
+<br />
+And some rough edges<br />
+<br />
+That is a little of what was fun with 6.2, the dailies would bug out and you'd get two progress bars. And while it did nothing it felt more raw, like you could have stumbled upon something neat</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">elvor0</div><div class="date">2015-10-12, 09:38 AM</div></div><div class="posttext">I still don't understand how giving players a single player option takes away from those who like 5 mans.<br />
+<br />
+Like, if they want to do 5-mans, do them as 5-mans. If their friends aren't on or they don't have time to dps queue (or heck, take out the gear reward, make them a story mode or something) then do single-mode.<br />
+<br />
+I've never understood the &quot;giving players options makes people who like things a certain way unhappy,&quot; argument.<br />
+<br />
+I think the real point is...at the end of the day, it's an MMO. Grouping up with people is part of the game and the dungeons would never work properly as single player content. That's what Pardo is saying, you might /think/ you'd like to do the dungeon solo, but really it was doing it with 4 other people that made it feel like you were traversing a dungeon in the first place. <br />
+<br />
+Personally I've never understood the people who steadfastly refuse to do /any/ group content. I mean solo content is fine, but does it not occur to them that they should perhaps adjust to the Multiplayer aspect of this MMO, rather than have content developed for people who aren't the target audience in the first place?<br />
+<br />
+<br />
+<br />
+<br />
+false! in wotlk the game is in everybodys brain. the term rpg is first in his history not more on freak status..<br />
+<br />
+Err....say again?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Explicit Teemo Nudes</div><div class="date">2015-10-12, 09:58 AM</div></div><div class="posttext">mythic dreanor raider = 0,63%, draenor pet brawler = 0,24% !!!<br />
+<br />
+shocking news of the month! the so called good feature (pet battle) is behind mythic raiding achievements!! <br />
+<br />
+&quot;Everything in game design is about trade-offs. You can't make a game that everyone will love.&quot;<br />
+<br />
+false! in wotlk the game is in everybodys brain. the term rpg is first in his history not more on freak status..<br />
+<br />
+<br />
+<br />
+That achievement doesn't say anything at all about pet battles and how many are doing them. It's like looking at very time consuming achievement for normal raiding(doesn't exist) and then compare it to the amount of players doing normal raiding and then claim there is no one doing normal raids - aka; it doesn't work.<br />
+<br />
+I've spent soooo much time in pet battling, but I still have hundreds of battles left to do to get that achievement. I have 600+ unique pets at level 25 and a ton more between the levels of 11-24 - and this is not even counting all the duplicate pets I have at level 25.<br />
+<br />
+This achievement is extremely time consuming and doesn't say anything about pet battles as a whole.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce0fbf970d8</div><div class="date">2015-10-12, 10:20 AM</div></div><div class="posttext">That achievement doesn't say anything at all about pet battles and how many are doing them. It's like looking at very time consuming achievement for normal raiding(doesn't exist) and then compare it to the amount of players doing normal raiding and then claim there is no one doing normal raids - aka; it doesn't work.<br />
+<br />
+I've spent soooo much time in pet battling, but I still have hundreds of battles left to do to get that achievement. I have 600+ unique pets at level 25 and a ton more between the levels of 11-24 - and this is not even counting all the duplicate pets I have at level 25.<br />
+<br />
+This achievement is extremely time consuming and doesn't say anything about pet battles as a whole.<br />
+<br />
+This.<br />
+2000 pet battles is a ridicously high requirement, hence why that achievement has been unlocked by so few players. I do some pet battle casually almost everyday, and I still miss more than 1000 matches to unlock it. It's just too high, 1000 matches would have been more reasonable.<br />
+The achievement unlock rate pre se says nothing about the status of pet battle.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocbab59bb97c</div><div class="date">2015-10-12, 10:46 AM</div></div><div class="posttext">Have to agree with the pet battle monument. I've done something like 950, so I'm nearly half-way there. When I was partly trying for it I was only catching rare pets, not the first ones I saw for the sake of the Royal Peachick for catching all the new Draenor pets, just to make it easier to aim towards the achievement. But I got all of them at rare after about 700 battles or so if I remember. So trying to keep battling when you've got them all and rare (besides drop pets coz that doesn't add to anything) is really mind numbing. <br />
+<br />
+You can do your daily menagerie quest which I have on 4 characters, so it's a max of 5 battles a day if at least one of them has Kura to fight as well. And then you can fly around (if you have flying) to raise other pets to 25 to try and attempt it just so you feel you're doing something else. But UGH that's just evil.<br />
+<br />
+This is coming from someone with the 5000 pet battle achievement xD but that was done casually and not as a goal. It just happened one day :3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sorrowseer</div><div class="date">2015-10-12, 10:54 AM</div></div><div class="posttext">This is so funny, some scrub will be linking 13/13 mythic Hellfire Citadel in trade and being like 'i'm well proper dope mate' then some hero will come along and link the 2000 pet battle achive and be all like 'get on mah level you pleb'.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc10646d4656</div><div class="date">2015-10-12, 11:06 AM</div></div><div class="posttext">DW everyone, Arakkoas have the same gender binarist system as we do! Can't have alien races with different concepts of sex/gender in our fantasy RPG game - that would be gay!<br />
+<br />
+/sarcasm</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vegas82</div><div class="date">2015-10-12, 11:23 AM</div></div><div class="posttext">not really... 2000 pet battles is alot. it gets boring faster than that<br />
+<br />
+Pretty much. It really isn't that compelling and the rewards aren't anything special.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Strakha</div><div class="date">2015-10-12, 11:25 AM</div></div><div class="posttext">if i had to play a RPG i wouldnt play this. i think the last actual RPG was baldur's gate in like 1996. now it's a boring system to get to max level, theres no reason to care about your character at all or any story they have with NPCs. Once you hit max level the RPG is over.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Inocybe</div><div class="date">2015-10-12, 11:58 AM</div></div><div class="posttext">0.63% in mythic ? Thank you so much blizzard for this retard 20man mythic.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nagrash</div><div class="date">2015-10-12, 12:10 PM</div></div><div class="posttext">Yeah that mythic draenor monument was really worth it... <br />
+<br />
+Could've made it heroic, atleast some more people could've actually enjoyed it.<br />
+<br />
+But nah let's keep pretending mythic is worth it right ;p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ItachiZaku</div><div class="date">2015-10-12, 12:13 PM</div></div><div class="posttext">Once again, SWTOR is better.<br />
+<br />
+Now, that achievement mess. I don't remember getting a 5K draenor kills achievement or monument, but I'm on my last Nemesis and have all Ashran achievements, so I assume I have that one. And since I have the 2000 pet battle achievement, which is more rare than the raider one... that means... Casual &gt;&gt;&gt;&gt;&gt; Hardcore BOOM, suck it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Icoblablubb</div><div class="date">2015-10-12, 12:29 PM</div></div><div class="posttext">haha SWTOR is a piece of shit</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Delaios</div><div class="date">2015-10-12, 12:31 PM</div></div><div class="posttext">This.<br />
+2000 pet battles is a ridicously high requirement, hence why that achievement has been unlocked by so few players. I do some pet battle casually almost everyday, and I still miss more than 1000 matches to unlock it. It's just too high, 1000 matches would have been more reasonable.<br />
+The achievement unlock rate pre se says nothing about the status of pet battle.<br />
+<br />
+The only pet battles that I do on Draenor are the garrison ones. But only if there's one up that's fast to do and not prone to RNG. I'm currently at roughly 1200 battles for the achievement and will just take the slow and steady route. I guess most people do it like that. Pet battles are just too sluggish to do dozens in one sitting.<br />
+If doing pet battles in the wild was actually rewarding there might me some more incentive for me to do them. Right now there are only 1 or 2 wild pets left to tame (that aren't part of the taming achievement). I could try and collect the best breeds for wild pets and when they're of rare quality. But wild pets are hardly ever used and it's much easier to just spend 15 charms to upgrade a pet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HuxNeva</div><div class="date">2015-10-12, 12:56 PM</div></div><div class="posttext">There were 30 Mythic Raid bosses in WoD. Gearing upto and defeating Archimode Mythic probably took well over 1000 raid boss pulls in this expansion for most of these people. Yet more than double the number of people bothered with this than playing 2k rounds of Pokemon. Faith slightly restored.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">papajohn4</div><div class="date">2015-10-12, 12:59 PM</div></div><div class="posttext">It depends what they think of obstacles...if they mean boring dailies that will just extend the time before the reward, then no thanks..if they mean long chain quests that involve traveling in the world, group quests in the world and dungeons, in order to get &quot;attuned&quot; to something, then I am all for it...<br />
+<br />
+For example, in FFXIV you had a long chain quest that involved world questing, crafting, dungeons and primals(single &quot;raid&quot; boss) in order to get your relic weapon...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sorrowseer</div><div class="date">2015-10-12, 01:15 PM</div></div><div class="posttext">DW everyone, Arakkoas have the same gender binarist system as we do! Can't have alien races with different concepts of sex/gender in our fantasy RPG game - that would be gay!<br />
+<br />
+/sarcasm<br />
+<br />
+People were curious, calm down and don't get triggered.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Meggle</div><div class="date">2015-10-12, 01:26 PM</div></div><div class="posttext">The pet battler one would be easier if it didnt reset itself all the damn time. :/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheFreeman</div><div class="date">2015-10-12, 01:34 PM</div></div><div class="posttext">I still don't understand how giving players a single player option takes away from those who like 5 mans.<br />
+<br />
+Like, if they want to do 5-mans, do them as 5-mans. If their friends aren't on or they don't have time to dps queue (or heck, take out the gear reward, make them a story mode or something) then do single-mode.<br />
+<br />
+I've never understood the &quot;giving players options makes people who like things a certain way unhappy,&quot; argument.<br />
+<br />
+That's because Blizzard's stance is a non-sequitur. You can't make sense of a premise followed by a conclusion that doesn't follow logically.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Turaska</div><div class="date">2015-10-12, 01:54 PM</div></div><div class="posttext">&quot;The data used today is a sample of 2.1 million players&quot;<br />
+<br />
+so out of 2.1 million players only 0.63% have actually done the above Mythic encounters?... seems like a totally unjustified use of resources to prop up such a tiny bit of the player base.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Schizoide</div><div class="date">2015-10-12, 02:09 PM</div></div><div class="posttext">Note that crafting is not at all popular in WoD. That achieve is deceptive. <br />
+<br />
+You see, you get credit for the crafting achievement by right-clicking garrison mission items that create itemlvl 645 items with a cast time.<br />
+<br />
+The raid reward chests without a cast time (itemlvl 655+, depending on your raiding challenge level) don't count for the achievement, only the 645 ones do. Baleful items don't count either as they are blue. Unknown if they count when they're upgraded to 675. My guess is not.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">oldgeezer</div><div class="date">2015-10-12, 02:14 PM</div></div><div class="posttext">0.63% in mythic ? Thank you so much blizzard for this retard 20man mythic.<br />
+<br />
+Ah, but think of the prestige it brings to the game. Or something.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Teebone</div><div class="date">2015-10-12, 02:19 PM</div></div><div class="posttext">Ah, but think of the prestige it brings to the game. Or something.<br />
+<br />
+In that case my pet battle statue makes me more prestigeous than anyone who beat Mythic Archimonde. Hell, I'm better than all of the top tier guilds combined! Thanks for the free e-peen Blizz.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoceb1073a651</div><div class="date">2015-10-12, 02:23 PM</div></div><div class="posttext">The pet battler one would be easier if it didnt reset itself all the damn time. :/<br />
+<br />
+This would explain that I only have 247 pet battles, although I have been doing these menagerie dailys excessively on 12 characters for several weeks, and still do whole runs with now up to 17 characters if the daily in question is fast. <br />
+<br />
+I was expecting at least the double amount of wins, since I also have been catching some pets in Draenor, and also battled a bunch of Tanaan pets.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">oldgeezer</div><div class="date">2015-10-12, 02:41 PM</div></div><div class="posttext">In that case my pet battle statue makes me more prestigeous than anyone who beat Mythic Archimonde. Hell, I'm better than all of the top tier guilds combined! Thanks for the free e-peen Blizz.<br />
+<br />
+Agreed. That's pretty hardcore.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Triggered Fridgekin</div><div class="date">2015-10-12, 02:53 PM</div></div><div class="posttext">What the hell was that guy saying in the Rift video? All I heard was blarrlagararrrllglhhhaaaalglglble.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Testaxc</div><div class="date">2015-10-12, 03:17 PM</div></div><div class="posttext">Players on raiding:<br />
+<br />
+http://41.media.tumblr.com/7860aa18a1086834a05942dcc486c8cc/tumblr_n218vvbOsu1so2h9go1_1280.jpg</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleccybubb</div><div class="date">2015-10-12, 03:22 PM</div></div><div class="posttext">Players on raiding:<br />
+<br />
+http://41.media.tumblr.com/7860aa18a1086834a05942dcc486c8cc/tumblr_n218vvbOsu1so2h9go1_1280.jpg<br />
+<br />
+What's a &quot;Fvck?&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">IIamaKing</div><div class="date">2015-10-12, 04:03 PM</div></div><div class="posttext">So a little more than one half of a percent of players completed the Mythic Draenor Raider achievement. Is this a problem of difficulty or one of accessibility?<br />
+<br />
+A problem of WANT, effectively no one cared to get it. Because effectively no one cares about mythic.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheFreeman</div><div class="date">2015-10-12, 04:05 PM</div></div><div class="posttext">What the hell was that guy saying in the Rift video? All I heard was blarrlagararrrllglhhhaaaalglglble.<br />
+<br />
+I read your above comment and then tried to listen to the video myself. I seriously lol'd. I thought, &quot;do these gaming devs even review their own stuff?&quot; It's like the swedish chef from Muppets.<br />
+<br />
+<br />
+https://www.youtube.com/watch?v=_8SGRm3JaW8</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Polarthief</div><div class="date">2015-10-12, 05:11 PM</div></div><div class="posttext">Wait, I'm confused about that last line about Rob Pardo. He's just on sabbatical? I thought he was done with Blizzard, or is there something I'm not understanding?<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I thought, &quot;do these gaming devs even review their own stuff?&quot;<br />
+<br />
+This is what makes me think that Blizzard devs are saying &quot;yeah, WoW is great!... because we don't actually play it&quot;<br />
+<br />
+Seriously, I want to see the devs playing WoD and saying they greatly enjoy how little content there is :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Echocho</div><div class="date">2015-10-12, 06:03 PM</div></div><div class="posttext">Stop designing content that less than 1% of the population does Blizzard</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alfakennyone</div><div class="date">2015-10-12, 06:17 PM</div></div><div class="posttext">The pet battle one was lame because I did the 500 in draenor to unlock level 3 but they didn't count since I kept doing the one over and over int eh garrison</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2015-10-12, 06:23 PM</div></div><div class="posttext">A problem of WANT, effectively no one cared to get it. Because effectively no one cares about mythic.<br />
+<br />
+People care, and people want. The problem is finding 20 people on all these dead servers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Espe</div><div class="date">2015-10-12, 07:11 PM</div></div><div class="posttext">People care, and people want. The problem is finding 20 people on all these dead servers.<br />
+<br />
+So glad they did away with that pesky 10 man heroic / mythic :rolleyes:<br />
+<br />
+Maybe in Legion they will take away both flying and ground mounts to make it ultra-mega immersive. Your character will crawl on the ground everywhere they go, permanently bent in supplication to their Blizzard overlords.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4ba93b9265</div><div class="date">2015-10-12, 07:25 PM</div></div><div class="posttext">&quot;The data used today is a sample of 2.1 million players&quot;<br />
+<br />
+so out of 2.1 million players only 0.63% have actually done the above Mythic encounters?... seems like a totally unjustified use of resources to prop up such a tiny bit of the player base.<br />
+<br />
+Not seems totally unjustified but is.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gadzooks</div><div class="date">2015-10-12, 08:05 PM</div></div><div class="posttext">Wait, I'm confused about that last line about Rob Pardo. He's just on sabbatical? I thought he was done with Blizzard, or is there something I'm not understanding?<br />
+<br />
+<br />
+<br />
+He doesn't have a job right now, he's been doing consulting work - I think it means he's going to have a job again, not necessarily at Blizzard. I'm sure plenty of studios would love to hire him.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Stop designing content that less than 1% of the population does Blizzard<br />
+<br />
+The content isn't designed for the 1% - raids are designed at Heroic levels, then they tweak them up or down for mythic, normal, and LFR. If you add up all 4 levels of difficulty, I'm sure the justification for it is there. <br />
+<br />
+Mythic is just a harder version of heroic, it's not unique content.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Or maybe, just very maybe, the massive majority of the playerbase doesn't seem to be very interested in this pokemon system?<br />
+<br />
+$0.02<br />
+<br />
+Probably this. I tried it, it's just not my cup of tea. Nothing against it, and I liked having certain companion pets, like my red dragon whelp I farmed for in vanilla, or my worg pup I got in UBRS in vanilla, but I didn't really go that far into it. <br />
+<br />
+It's on the same level as Brawler's Club and Darkmoon Faire stuff - it's there if you want to do it, but it's not required. The only difference is the garrison statue, really. <br />
+<br />
+Throw epic gear rewards into the pet battles, you'll see more interest.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jibby</div><div class="date">2015-10-12, 08:18 PM</div></div><div class="posttext">Anyone else mildly bothered by the fact that the draenor pet brawler has been achieved less than mythic draenor raider?<br />
+<br />
+It's a stupid achievement. If you are a pet fanatic at all, you probably already have your pets leveled from the billions of years we had in MoP at the end of the xpac.<br />
+<br />
+In WoD, there were only a handful of pets to actually trap in Draenor (maybe 40 unique pets?) and even if you try to get a &quot;rare&quot; or specific power combo (P/P, H/H, etc.) you are still looking at maybe 150 pet battles to get those pets and then get them leveled. There are all kinds of +1 level stones in the game, so most of the WoD wild pets you just slammed a couple of level stones on them (or even trapped a grey and put one of your billions of make-it-rare stones from MoP on it) and were done instead of doing pet battles.<br />
+<br />
+The only other way (for the longest time) to do pet battles were: 1. the 6 trainers, 2. Your garrison trainer. The garrison trainer didn't count as a WoD pet battle for freaking ever, and once it did most people had stopped doing that daily anyway because they had all the pets, points, and stones they could ever need. Even if you did the 6 trainers every single day, that's 300ish days to get to 2000. Most people (without flying) didn't do them every day (I sure didn't - though I am doing them now that I have flying).<br />
+<br />
+There are also now the new 15 legendary pets to help, I guess?<br />
+<br />
+If I am at 728 unique pets, almost all to level 25, and I am nowhere near the 2000 WoD battles needed, it's unlikely that &quot;joe/joanne average&quot; is going to do it.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Or maybe, just very maybe, the massive majority of the playerbase doesn't seem to be very interested in this pokemon system?<br />
+<br />
+$0.02<br />
+<br />
+<br />
+I don't think you can say that - plenty of people collect pets, plenty of people level them, and if you looked at other pet achievements it shows that people are interested in the system. This one achievement in particular, had insane requirements; almost no one is going to do 2000 pet battles within Draenor itself, for the reasons I listed in a different post.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bassfu</div><div class="date">2015-10-12, 08:26 PM</div></div><div class="posttext">Why don't you guys take a break? It's painfully obvious there's absolutely nothing to report about WoW until Blizzcon.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Averrix</div><div class="date">2015-10-12, 09:00 PM</div></div><div class="posttext">They need to go back to just normal and heroic. no more lfr, normal, heroic, mythic. Or just have LFR be normal and have just heroic.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shambulanced</div><div class="date">2015-10-12, 09:40 PM</div></div><div class="posttext">They need to go back to just normal and heroic. no more lfr, normal, heroic, mythic. Or just have LFR be normal and have just heroic.<br />
+<br />
+I feel like Mythic would do much better at 15, or even 10, man-size. Let Flex (normal/heroic) be where people go for gear/alts/craving larger raids, and let Mythic be the tight-knit smaller teams. I mean the complaint is that mythic groups can't get the 20 people, right?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca371db5304</div><div class="date">2015-10-12, 09:50 PM</div></div><div class="posttext">Anyone else mildly bothered by the fact that the draenor pet brawler has been achieved less than mythic draenor raider?<br />
+Not really. Pretty sure you do fewer battles than that in the Pokemon games to clear their story mode. And those are hell lot less tedious...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dejablue</div><div class="date">2015-10-13, 12:20 AM</div></div><div class="posttext">&quot;There was debate about putting awesome content, encounters, and stories in dungeons, as there were players that enjoyed playing by themselves and didn't want to group up. The choice not to make a single player version was intentional, as making it more accessible would cause players that love dungeons to love them less.&quot;<br />
+<br />
+I've read this through a few times now and it's extremely hard to parse. What exactly is Pardo saying?<br />
+<br />
+He is saying that by making multiple versions of the dungeon, single player and group, that the value of the group dungeon goes down, in terms of accomplishment etc., add your own reason, and Blizzard decided not to do this. Of course they were right in this assessment, but they completely ignored this with raids and we all see how multiple raid difficulty versions turned out.<br />
+<br />
+I.E. doing things in a group is perceived as more difficult, it just is by humans.<br />
+<br />
+Example; everyone from elementary school to high school, from college to the workplace hates group projects because they all feel that they are carrying the group. It is perceived as more difficult and people prefer to work alone and take full credit, good, bad or indifferent.<br />
+<br />
+If WoW made a single player dungeon or multiple difficulties the players would swarm to the one that requires the absolute least interaction with others. Proven in WoW with LFR and in every classroom where the moron that did not do anything for the group project takes credit and complains that he can't understand the charts and graphs brainy hot nerd girl made while he sat on his ass doing nothing. Brainy hot nerd girl would prefer to do it alone and get full credit for her work. So would moron dude, even though he would not be as successful.<br />
+<br />
+That is what he is trying to say &gt;.&gt;<br />
+<br />
+;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Multistryke</div><div class="date">2015-10-13, 12:51 AM</div></div><div class="posttext">Stop designing content that less than 1% of the population does Blizzard<br />
+<br />
+Yep, I don't get it, what a massive waste of resources...<br />
+<br />
+It'l only get worse from here on out if they keep the current raid structure in Legion, you know, the raid structure they said they are very happy with lol</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DeadmanWalking</div><div class="date">2015-10-13, 03:01 AM</div></div><div class="posttext">Looks like all the special snowflake ultimate class raiders should be doing pet battles so they can finally be in the top 0.24%! You can finally prove how awesome you are compared to the rest of the ultimate class raiders who are just trying hard to be like you.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Yep, I don't get it, what a massive waste of resources...<br />
+<br />
+It'l only get worse from here on out if they keep the current raid structure in Legion, you know, the raid structure they said they are very happy with lol<br />
+<br />
+To be fair, its .24% did 2000 battles. Did you do 2000 dungeons in Wod? They shouldn't make dungeons anymore.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">randprin</div><div class="date">2015-10-13, 07:39 AM</div></div><div class="posttext">to be honest, i'd be more concerned by the fact only about 1/8 of the player base bothered enough (or was good enough) to kill the last boss of the expansion.<br />
+<br />
+this does not bode well for the speculated plan of blizzard wanting to remove LFR in legion if it is actually planned.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thallidomaniac</div><div class="date">2015-10-13, 08:02 AM</div></div><div class="posttext">It's a stupid achievement. If you are a pet fanatic at all, you probably already have your pets leveled from the billions of years we had in MoP at the end of the xpac.<br />
+<br />
+In WoD, there were only a handful of pets to actually trap in Draenor (maybe 40 unique pets?) and even if you try to get a &quot;rare&quot; or specific power combo (P/P, H/H, etc.) you are still looking at maybe 150 pet battles to get those pets and then get them leveled. There are all kinds of +1 level stones in the game, so most of the WoD wild pets you just slammed a couple of level stones on them (or even trapped a grey and put one of your billions of make-it-rare stones from MoP on it) and were done instead of doing pet battles.<br />
+<br />
+The only other way (for the longest time) to do pet battles were: 1. the 6 trainers, 2. Your garrison trainer. The garrison trainer didn't count as a WoD pet battle for freaking ever, and once it did most people had stopped doing that daily anyway because they had all the pets, points, and stones they could ever need. Even if you did the 6 trainers every single day, that's 300ish days to get to 2000. Most people (without flying) didn't do them every day (I sure didn't - though I am doing them now that I have flying).<br />
+<br />
+There are also now the new 15 legendary pets to help, I guess?<br />
+<br />
+If I am at 728 unique pets, almost all to level 25, and I am nowhere near the 2000 WoD battles needed, it's unlikely that &quot;joe/joanne average&quot; is going to do it.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+<br />
+I don't think you can say that - plenty of people collect pets, plenty of people level them, and if you looked at other pet achievements it shows that people are interested in the system. This one achievement in particular, had insane requirements; almost no one is going to do 2000 pet battles within Draenor itself, for the reasons I listed in a different post.<br />
+<br />
+There's also the fact that since the Pet level cap is still 25, the MoP content is still relevant, so some players are content with that. Keep in mind that Pet Battles are a rather niche part of WoW, and not as emphasized compared to raiding or PvP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dastreus</div><div class="date">2015-10-13, 08:17 AM</div></div><div class="posttext">Nope, Rift. I am not returning. I am still pissed at Trion for not including the new Souls as part of buying the expansion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1404d70bfa</div><div class="date">2015-10-13, 11:59 AM</div></div><div class="posttext">Seriously blizzard needs to stop saying &quot;Awesome&quot; &quot;Epic&quot; in every sentence in their interviews.<br />
+It's much talking and little going on blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfd328e0b6e</div><div class="date">2015-10-13, 12:00 PM</div></div><div class="posttext">EU is so dead... 61k gold / one token. I think there should be only 200-300k active subs there... I hope Blizzard will give some hype for their believers so they will come back and lower these insane prices.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">klepp0906</div><div class="date">2015-10-13, 12:17 PM</div></div><div class="posttext">Not sure who this pardo guy is but he's spot on. The game began its trek past waaaay too dumbed down in bc<br />
+<br />
+- - - Updated - - -<br />
+<br />
+It was already easier than every mmo in existence at launch ffs. Ironic it had the most players way back when</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gilian</div><div class="date">2015-10-13, 01:32 PM</div></div><div class="posttext">He is saying that by making multiple versions of the dungeon, single player and group, that the value of the group dungeon goes down, in terms of accomplishment etc., add your own reason, and Blizzard decided not to do this. Of course they were right in this assessment, but they completely ignored this with raids and we all see how multiple raid difficulty versions turned out.<br />
+<br />
+They probably figured it out after they screwed up with multiple raid sizes.<br />
+<br />
+Multiple difficulties is apparently not a problem since they added mythic dungeons this expansion.<br />
+<br />
+<br />
+<br />
+I.E. doing things in a group is perceived as more difficult, it just is by humans.<br />
+<br />
+Example; everyone from elementary school to high school, from college to the workplace hates group projects because they all feel that they are carrying the group. It is perceived as more difficult and people prefer to work alone and take full credit, good, bad or indifferent.<br />
+<br />
+Doing things in a group isn't always perceived as more difficult. People ask eachother for help all the time to make tasks easier to complete.<br />
+<br />
+The examples you gave are all examples where people are forced to work together. That's the reason why a lot of people aren't happy with it. It's exactly the same with LFD and LFR. They force completely random people with different views, goals, opinions, experiences, etc to play together.<br />
+<br />
+It depends on the situation if working with a group (or a larger group) is more difficult or not.<br />
+<br />
+<br />
+<br />
+If WoW made a single player dungeon or multiple difficulties the players would swarm to the one that requires the absolute least interaction with others. Proven in WoW with LFR and in every classroom where the moron that did not do anything for the group project takes credit and complains that he can't understand the charts and graphs brainy hot nerd girl made while he sat on his ass doing nothing. Brainy hot nerd girl would prefer to do it alone and get full credit for her work. So would moron dude, even though he would not be as successful.<br />
+<br />
+That is what he is trying to say &gt;.&gt;<br />
+<br />
+;)<br />
+<br />
+Depends on what the reward is. <br />
+<br />
+I think multiple difficulties work, although it is very repetitive and boring in my opinion, but multiple group sizes with the same rewards don't. Because, like you say, everyone will just choose the path of least resistance which is the smaller group size because it's simply easier. A single player version of a dungeon would only work if the rewards are much worse than the 5 man version or not even related to eachother (cosmetic rewards for example instead of gear). But it has been proven with raids that this wouldn't work well.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, would, options, taking, away, lot, armour, new, for, pvp, need, design, weapons, removed, theyve, have, only, few, visual, and, entire, honest, all, play, transmogs, lets, from, set, same, because, they, seeing, wrong, that, looking, different, sets, pve/pvp, sooooo, case, weapon, customization, watercooler, more, dev, gearing, suck, artifacts, legion" />
+<meta name="description" content="Dev Watercooler - Gearing up for Legion PvP 
+In Legion, we’re making some pretty big changes to our PvP systems to make combat against your fellow players more accessible, balanced, and rewarding. Some of the biggest changes we’re making are related to gear—both how it affects your character in PvP, and how it’s awarded. We want to take a bit of time to share with you more of our thoughts on how we arrived at this new PvP gear design and why we think it will create a more enjoyable experience" />
+<title> Dev Watercooler - Gearing up for Legion PvP [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Dev Watercooler - Gearing up for Legion PvP</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1999545.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1999545-Dev-Watercooler-Gearing-up-for-Legion-PvP">Dev Watercooler - Gearing up for Legion PvP</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2016-05-23, 05:41 PM</div></div><div class="posttext">Dev Watercooler - Gearing up for Legion PvP<br />
+In Legion, we’re making some pretty big changes to our PvP systems to make combat against your fellow players more accessible, balanced, and rewarding. Some of the biggest changes we’re making are related to gear—both how it affects your character in PvP, and how it’s awarded. We want to take a bit of time to share with you more of our thoughts on how we arrived at this new PvP gear design and why we think it will create a more enjoyable experience for everyone.<br />
+<br />
+First, we need to share a little high-level philosophy about why we have gear in World of Warcraft. WoW is a game about your character, their adventures in the world of Azeroth, and their growth in power. One of the foundations of the game is being rewarded for your efforts with gear that makes you stronger. WoW offers a wide variety of activities, including quests, dungeons, raiding, and PvP—and while players may find that certain parts of the game appeal most to them, everyone wants to be rewarded fairly for their effort and skill. PvP is no different: players should be rewarded, and their characters should become more powerful, for participating in PvP—and in Legion, we want to reward them in a way that matters not just in PvP, but across all of the game.<br />
+<br />
+We’ve traditionally had different goals for PvP and PvE gear, and how much power it gives you relative to your enemies. For example, in PvE content, it feels good to gain gear and eventually overpower a once-dangerous monster. As players take on more difficult raiding content, it is important that the monsters grow in power and that the gear they drop does too. Over the years, we’ve added a lot of different raid difficulties to accommodate the variety of player types we have. This has resulted in several tiers of gear that make taking on more challenging content feel more rewarding.<br />
+<br />
+In PvP, we want that same feeling of progression, but we have to manage how much stronger you can be compared to your enemies—other players.While a raid boss doesn’t mind when a team of players massively outgears them, it’s a frustrating experience for other players. So, our challenge has been to find a way to allow your character to become stronger through PvP without making your opponents feel like they can’t compete. On top of that, we don’t want to undermine the value of earning gear through other types of gameplay, such as raiding.<br />
+<br />
+We’ve tried a number of solutions in the past. We introduced Resilience in Wrath of the Lich King, and then in Mists, we added PvP Power to the mix as well. In Warlords, PvP gear was given a second PvP item level, and we scaled down gear from non-PvP sources. All of these solutions have worked to some degree, but also made PvP gear needlessly complicated and hindered crossover play. PvP players feel like their gear isn’t useful in PvE circumstances, and vice versa—and when the gear you’ve earned only makes you more powerful in certain situations, these rewards simply feel less rewarding. Going forward, we feel it would be better if the gear awarded in PvE and PvP was just the same. No special item levels. No PvP-specific stats. Playing any part of the game will allow you to get rewards that are meaningful everywhere.<br />
+<br />
+So, assuming we want to reward the same gear in PvE and PvP, how can we handle the conflicting goals we mentioned before? We’re going to have to change what gear means in PvP.<br />
+<br />
+For starters, we have to shrink the power gap that gear creates in PvP. At first, we considered ignoring gear altogether, but it felt counter-intuitive that gear offered no growth in power at all. We also explored an option that involved scaling PvP gear to within a certain item level range, but this was complicated and made the distribution of secondary stats more important than item level. We think it’s important that if a player sees a piece of gear that is an item level upgrade, they will want to equip it.<br />
+<br />
+We ultimately arrived at a solution where we set player stats automatically in PvP and increase those stats based on your average item level. Players would understand that their stats didn’t come from gear, but that the quality of their gear does matter. Currently, we’ve tuned the system such that for every point above item level 800, your stats are increased by 0.1%. This means that someone with item level 900 gear is only 10% stronger than someone with item level 800 gear. For comparison, that’s roughly the same increase that a mere 10 item level increase gives in Warlords of Draenor. This allows us to make getting gear feel good in general, while shrinking the power gap to an acceptable range.<br />
+<br />
+Now that we’ve limited the power gap gear can create in PvP, we can offer great gear rewards on par with the rest of the game—but now we need to address how it’s rewarded. One of the big changes in Legion is that gear will no longer be delivered through PvP currencies and vendors. Of course, we know a lot of players like the predictable nature of buying gear from vendors. They can select exactly the item they want and never receive an item they don’t want. It sounds like a perfect situation, but it is also an emotionally flat, predictable experience. There is no anticipation about what your reward will be. No exhilaration when you get something you want. No disappointment when you get something you don’t. We want to bring that emotional experience to PvP rewards—while still doing our best to minimize the amount of disappointment you experience.<br />
+<br />
+In Legion, when players win a Battleground, Skirmish, Arena, or Rated Battleground, they have a chance to receive a piece of gear directly. Furthermore, your first few victories per week in each rated bracket will reward a guaranteed piece of gear, which has its item level increased based on your rating in the bracket. For both systems, gear works like it does in the rest of Legion. Any time you are awarded gear, it has a chance to have its item level increased further.<br />
+<br />
+We understand that randomness in gearing has been problematic for PvP in the past, but we think that the aforementioned changes to PvP gear resolve the vast majority of the issues we’ve encountered before. In Legion, your primary goal in PvP will be increasing your average item level. Getting (or not getting) that perfectly itemized trinket won’t be something you’ll have to worry about. We also have systems in place to reduce the likelihood you’ll see the same item twice, which will help round out your set of gear. The biggest benefit of reducing the predictability in gearing in PvP is we can offer gear on par with the rest of World of Warcraft’s end-game activities. Not only will it make receiving gear from PvP more exciting and rewarding, but it also makes PvP more attractive to all WoW players.<br />
+<br />
+There’s also been some concern from both PvEers and PvPers that “raiders will just do Arena to get easy gear” and “gladiators will just do Mythic raids to get easy gear.” We feel it’s important to remember how challenging both types of gameplay can be. Downing Mythic bosses and earning Gladiator rating are two of the most difficult accomplishments in our game. We think players who have demonstrated skill at those levels deserve to be rewarded with better gear.<br />
+<br />
+We spent a lot of time thinking about how to improve the PvP gear situation for everyone who loves World of Warcraft. We appreciate hearing your thoughts about these changes, so be sure to post your thoughts in the comments below.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pepe2c</div><div class="date">2016-05-23, 05:43 PM</div></div><div class="posttext">Text wall of dead, gimme bullet points =3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8954eb3394</div><div class="date">2016-05-23, 05:46 PM</div></div><div class="posttext">Text wall of dead, gimme bullet points =3<br />
+<br />
+All the bullets where used in the now corps of wow pvp sorry :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc92065d58dc</div><div class="date">2016-05-23, 05:46 PM</div></div><div class="posttext">Just a while ago, everybody was complaining about how there was no PvP dev coverage.<br />
+Well, here's a start. Time to quit the nagging.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc18e6a734ba</div><div class="date">2016-05-23, 05:48 PM</div></div><div class="posttext">For example, in PvE content, it feels good to gain gear and eventually overpower a once-dangerous monster.<br />
+<br />
+This is typically why wow post 3.0 has been bad on a gameplay standpoint. You shouldn't overcome a monster because you're wearing epic panties but because you adapted your gameplay to the monster you face (on an individual or a group standpoint).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc48d2a29035</div><div class="date">2016-05-23, 05:54 PM</div></div><div class="posttext">This is typically why wow post 3.0 has been bad on a gameplay standpoint. You shouldn't overcome a monster because you're wearing epic panties but because you adapted your gameplay to the monster you face (on an individual or a group standpoint).<br />
+<br />
+Yeah, +resistance gear in Vanilla and TBC was all about adapting your gameplay, I agree.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">derpkitteh</div><div class="date">2016-05-23, 05:54 PM</div></div><div class="posttext">10% increase, eh? should lower it to 5%.<br />
+<br />
+10% makes a pretty big difference currently. i've watched relatively equally skilled warriors fight, and the 700 warrior get destroyed by the 710 warrior.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Saracens</div><div class="date">2016-05-23, 05:55 PM</div></div><div class="posttext">Worth the read, a lot of good info and insight. I look forward to seeing it in practice. <br />
+<br />
+Also +1 to Chaud (http://www.mmo-champion.com/members/523085-chaud)for the bullet points.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Turtlewithnoshell</div><div class="date">2016-05-23, 05:59 PM</div></div><div class="posttext">Looks good to me, thanks for the update.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lukoil</div><div class="date">2016-05-23, 06:05 PM</div></div><div class="posttext">10% increase, eh? should lower it to 5%.<br />
+<br />
+10% makes a pretty big difference currently. i've watched relatively equally skilled warriors fight, and the 700 warrior get destroyed by the 710 warrior.<br />
+so 1% in hp/damage is that stromg? (700 vs 710) or most likely one of the warriors is a noob at playing warrior.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc70716bef22</div><div class="date">2016-05-23, 06:05 PM</div></div><div class="posttext">Tbh rather than gearing community seems way more worried about general PvP balance which is absolutely bonkers at the moment. Would love to see at least some sign of recognition on that regard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">derpkitteh</div><div class="date">2016-05-23, 06:10 PM</div></div><div class="posttext">so 1% in hp/damage is that stromg? (700 vs 710) or most likely one of the warriors is a noob at playing warrior.<br />
+<br />
+idk man, i've seen the dude do some pretty crazy shit. survive a hell of a lot more than me.<br />
+<br />
+but that other warrior was a monster.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc18e6a734ba</div><div class="date">2016-05-23, 06:11 PM</div></div><div class="posttext">Yeah, +resistance gear in Vanilla and TBC was all about adapting your gameplay, I agree.<br />
+<br />
+It isn't any better but at least the resistance mechanic allowed for interesting raid strategies to be used (like on Hydross, where tanks had to tank the specific monsters they geared for).<br />
+<br />
+Wow has always been a game in which gear mattered, but since wow 3.0 a huge part of the core synergies in the battle system vanished. It is no wonder the ilvl crowd started to appear in WOTLK.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2462126d54</div><div class="date">2016-05-23, 06:13 PM</div></div><div class="posttext">There is no way in hell people will enjoy RNG rewards. The effect of the higher item level on a piece might small, but it is still way better to get a cool piece like a chest or shoulders than jewelry. <br />
+<br />
+Also, I can't wait to see people getting frustrated because they want to complete the transmog appearance of the PvP set, but instead of that last missing item you get a higher level ring or something you don't want.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MasterHamster</div><div class="date">2016-05-23, 06:15 PM</div></div><div class="posttext">How exactly does a 100 ilvl jump resulting in 10% increased stats feel &quot;rewarding&quot;?<br />
+<br />
+But hey, this might mean I'll see a naked BG team win thanks to normalized &quot;template stats&quot; and that makes this silly change worth it.<br />
+<br />
+Is it frustrating to be new in PvP and get destroyed? Sure. But at least if you stick to it you'll see your power grow noticeably and eventually you are that guy killing two people single-handedly.. that is reward for your effort. 0.1% increase per average ilvl is laughable and frankly I think the only people who truly will enjoy this change are high end arena players. I sort of expect BG attendance to plummet as a result</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Turkey One</div><div class="date">2016-05-23, 06:16 PM</div></div><div class="posttext">I wonder if in subsequent seasons due to this change PvP will continue to be the primary gearing method for anyone wishing to catch up to the current tier's ilvl for PvE the fastest. I kinda miss actually needing to PvE to start off my new PvE characters.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca97607945f</div><div class="date">2016-05-23, 06:18 PM</div></div><div class="posttext">horrible 10char</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc587996818c</div><div class="date">2016-05-23, 06:21 PM</div></div><div class="posttext">This is typically why wow post 3.0 has been bad on a gameplay standpoint. You shouldn't overcome a monster because you're wearing epic panties but because you adapted your gameplay to the monster you face (on an individual or a group standpoint).<br />
+<br />
+You mean when molten core was a grind and considered molten bore because it eventually became so boring? :rolleyes:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nirty999</div><div class="date">2016-05-23, 06:22 PM</div></div><div class="posttext">Yay more RNG even in pvp now! I love Jay Wilson's work on this new expansion! /s<br />
+Also: <br />
+There’s also been some concern from both PvEers and PvPers that “raiders will just do Arena to get easy gear” and “gladiators will just do Mythic raids to get easy gear.” We feel it’s important to remember how challenging both types of gameplay can be. Downing Mythic bosses and earning Gladiator rating are two of the most difficult accomplishments in our game. We think players who have demonstrated skill at those levels deserve to be rewarded with better gear.<br />
+So if you wanna be competitive either in pve or pvp you will need to play 24/7 to keep up and do both.. nice (inb4 &quot;omg you dont need to do both just do what u like for fun!&quot;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soulfròst</div><div class="date">2016-05-23, 06:23 PM</div></div><div class="posttext">horrible 10char<br />
+<br />
+What great, constructive feedback. I like your reasoning for said feedback, very well thought out.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd32d094320</div><div class="date">2016-05-23, 06:23 PM</div></div><div class="posttext">Text wall of dead, gimme bullet points =3<br />
+<br />
+-When players win a Battleground, Skirmish, Arena, or Rated Battleground, they have a chance to receive a piece of gear directly. <br />
+<br />
+-Your first few victories per week in each rated bracket will reward a guaranteed piece of gear, which has its item level increased based on your rating in the bracket. <br />
+<br />
+-For both systems, any time you are awarded gear, it has a chance to have its item level increased further.<br />
+<br />
+-For every point above ilvl800, your stats are increased by 0.1%. Someone with ilvl900 gear is only 10% stronger than someone with ilvl800 gear. <br />
+<br />
+-Gear will no longer be delivered through PvP currencies and vendors. <br />
+<br />
+-Your primary goal in PvP will be increasing your average item level. Getting (or not getting) that perfectly itemized trinket won’t be something you’ll have to worry about. <br />
+<br />
+-We reduced the likelihood you’ll see the same item twice, which will help round out your set of gear so we can offer gear on par with the rest of WoW’s end-game activities.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cinnamohn</div><div class="date">2016-05-23, 06:24 PM</div></div><div class="posttext">Going from &quot;everyone starts at 700 and can obtain 710 with time&quot; to &quot;the bads have 700s, the glads have 710s, and the people in-between have 705s.&quot;<br />
+<br />
+And, &quot;the stats on your gear matter&quot; to &quot;NOTHIN' BUT THE TOP 3 DIGITS, NIGGAAAA.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc59b5827c7e</div><div class="date">2016-05-23, 06:25 PM</div></div><div class="posttext">This is typically why wow post 3.0 has been bad on a gameplay standpoint. You shouldn't overcome a monster because you're wearing epic panties but because you adapted your gameplay to the monster you face (on an individual or a group standpoint).<br />
+<br />
+Unless your epic panties give you immunity to damage, hard mythic bosses will still wipe you no matter how you overgear them (in the same tier).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc770c79030c</div><div class="date">2016-05-23, 06:29 PM</div></div><div class="posttext">Why can I not quote the blue post? I need to axe this post so bad.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Triggered Fridgekin</div><div class="date">2016-05-23, 06:31 PM</div></div><div class="posttext">PVP before Legion: It's hard to get in to PVP after so long because of the power creep!<br />
+PVP during Legion: Where's my power creep and feeling of reward?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc18e6a734ba</div><div class="date">2016-05-23, 06:34 PM</div></div><div class="posttext">You mean when molten core was a grind and considered molten bore because it eventually became so boring? :rolleyes:<br />
+<br />
+As already stated, WoW has always been a game where gear mattered. But at least there used to be something else in the gameplay department, and not only in the top mythic raid tier of the current patch.<br />
+<br />
+<br />
+Unless your epic panties give you immunity to damage, hard mythic bosses will still wipe you no matter how you overgear them (in the same tier).<br />
+<br />
+I can design brick walls encounters in which you'll wipe if you stand 0.5 sec too long in a flame patch (hint : hard modes have been designed like that starting from ToC in WOTLK) or don't spam your damage key fast enough too but it doesn't mean it would be fun for most players. From a game design based on strategy and synergies between players before 3.0 wow shifted to a number based pseudo action game, where contextual execution and APM is the key.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Urza29</div><div class="date">2016-05-23, 06:36 PM</div></div><div class="posttext">everything looks awesome...because think of this way...ok so before if you didnt do pvp at all, and only did pve and you were gearing up alts for your first toon, you had crappy gear right? ok so then you did your raids for the week, did your crafting, and then basically you just had nothing else to do, at least now you can do pvp as another way to gear up, because gear is same in both. <br />
+<br />
+I think of it is another mandatory thing to do to get geared for the latest raid/lfr, and then if you are pve oriented you can then do that. Or if you want both, you can now do both and get rewarded just the same. So basically if you needing some gear, and you have done all your questing, your lfr for the week, you can do pvp on nights when you are bored, and still continue to get gear, where as in wod unless you really pushed hard and pvp'ed a LOT you didn't get very far in gear, beyond the standard blue set stuff, and the stats were mismatched as was said, despite being equal ilvl<br />
+<br />
+At least this way can feel making progress on your toon no matter if you are raiding, pvping, or doing pve content in world quests, this is the most character progression they have ever had, and I personally think its awesome, no more roadblocks or walls into other forms of content, If you want to do it, you do it, there's no barrier or jump in point, makes so much more sense. <br />
+<br />
+as a casual pvper i'll just be doing regular battlegrounds when i have free time</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">AgentStrife</div><div class="date">2016-05-23, 06:46 PM</div></div><div class="posttext">Text wall of dead, gimme bullet points =3<br />
+<br />
+It's ironic that one of the biggest complaints wow players have is that there isn't enough communication between the players and the developers, and when the developers do communicate some players complain about a wall of text then ask for a bullet point.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocbd02567a48</div><div class="date">2016-05-23, 06:47 PM</div></div><div class="posttext">It's the exact same as on live then, just minus honour points as a currency.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baelic</div><div class="date">2016-05-23, 06:48 PM</div></div><div class="posttext">So it looks like people who were complaining about PvP not requiring skill got their wish.... but now they're complaining that the gear isn't enough of a reward? God the level of entitlement is so bad.<br />
+<br />
+Your reward in PvP is bragging rights on how you are more skilled than X% of the gaming population, not because you have the best equipment in the game. At that point the equipment is only vanity to show off the fact you reached that level, and that's how it should be.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">unstableone</div><div class="date">2016-05-23, 06:51 PM</div></div><div class="posttext">Still as much of a mess since we learned of it.<br />
+<br />
+TLDR = we ignored your feedback and only re-worded it to try to make you like it!<br />
+People already negatively posting in the blue thread about how it's still a bad idea.<br />
+<br />
+People won't like being at a PERMANENT gear disadvantage in pvp. It will literally be impossible for some people to be equal in gear, and there is no reason for it to happen in pvp. People without gear, wont &quot;chase the carrot,&quot; they will just not pvp or quit.<br />
+<br />
+System is only &quot;ok&quot; for fresh geared players wanting to try out their class. Or for people to prove a point with fotm op classes...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lahis</div><div class="date">2016-05-23, 06:54 PM</div></div><div class="posttext">There is no way in hell people will enjoy RNG rewards. The effect of the higher item level on a piece might small, but it is still way better to get a cool piece like a chest or shoulders than jewelry. <br />
+<br />
+Also, I can't wait to see people getting frustrated because they want to complete the transmog appearance of the PvP set, but instead of that last missing item you get a higher level ring or something you don't want.<br />
+<br />
+Welcome to PvE. That's how it has always been, and somehow we still live.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ElDoorO</div><div class="date">2016-05-23, 06:58 PM</div></div><div class="posttext">It's ironic that one of the biggest complaints wow players have is that there isn't enough communication between the players and the developers, and when the developers do communicate some players complain about a wall of text then ask for a bullet point.<br />
+<br />
+Unless you're about to lump yourself into the same group that is complaining then you should inherently understand not everyone is like that. Unless you're complaining about a lack of bullet points?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Will</div><div class="date">2016-05-23, 07:01 PM</div></div><div class="posttext">Still as much of a mess since we learned of it.<br />
+<br />
+TLDR = we ignored your feedback and only re-worded it to try to make you like it!<br />
+People already negatively posting in the blue thread about how it's still a bad idea.<br />
+<br />
+People won't like being at a PERMANENT gear disadvantage in pvp. It will literally be impossible for some people to be equal in gear, and there is no reason for it to happen in pvp. People without gear, wont &quot;chase the carrot,&quot; they will just not pvp or quit.<br />
+<br />
+System is only &quot;ok&quot; for fresh geared players wanting to try out their class. Or for people to prove a point with fotm op classes...<br />
+<br />
+I don't think you understand that the power difference between a fresh alt and a fully geared dude is trivial;100 ilvl =10%</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ro9ue</div><div class="date">2016-05-23, 07:05 PM</div></div><div class="posttext">Awesome. Seems like the best system they've put in place up until this point. I really liked Vanilla for PVP because gear was gear. It worked wherever. The decision to start with segregating that gear in Burning Crusade with Resilience just sent them on a long, and imo, wrong path. One of the best things about Vanilla was that you can always progress your character by getting gear relevant to the WHOLE GAME from both PVE and PVP.<br />
+<br />
+You feel like PVPing this week? Great, you can still progress your character for when you get back to raiding.<br />
+<br />
+You feel like raiding and grinding gear this week? Great, you won't be far behind in PVP when you decide to hop into a battleground.<br />
+<br />
+The additional change of having PVP gear matter less is probably my most wanted feature since the beginning of fucking time. I posted about this many times here, on the official forums and sent feedback in game. PVP should be as much as about skill as it can be, while simultaneously providing a constant feeling of character progression. That seemed hard to do, but, as a veteran player, believe this is the best iteration of gear's impact on PVP and PVE in the history of the game.<br />
+<br />
+• You are always progressing your character's power in both areas of content no matter which you choose to do<br />
+• Gear had way more of an impact than skill in PVP. That appears to have been fixed.<br />
+• And most importantly... the &quot;just hop in&quot; accessibility it provides for PVPers and PVEers alike. PVEers might get bored of scripted content and instead of feeling like they have to hurdle a 30ft wall of a gear grind just to be effective in PVP... they can just hop in, and at most ever be ~10 item levels behind. And if you happen to be a raider and already have high item level gear, maybe not even that far behind at all. If you're a PVPer and your guild has an open raid slot and you wanna check it out, or just go in and murder some mobs in a dungeon... you won't feel gimped with your PVP gear. You'll have progressed parallel to your PVE buddies and likely have a similar ilevel.<br />
+<br />
+Well done Blizzard. Legion is shaping up to be the best expansion yet.<br />
+<br />
+As far as RNG boxes go, I definitely understand the complaints, but I prefer the excitement of RNG even if it means a potential string of bad luck. Depending on what that &quot;system to help against getting the same gear&quot; does, we'll just have to see. They might have to have a way to sort of &quot;re-roll&quot; your loot similar to the cube in D3. Maybe you spend X honor + throw your item into a magic box and it will give you another item.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb8ddf2b91b</div><div class="date">2016-05-23, 07:08 PM</div></div><div class="posttext">so do i as a mythic raider have to pvp to get better gear for raiding? plz no<br />
+<br />
+will my pvp rating have influence of how good gear i get for raiding? oh god!<br />
+<br />
+some pvers hate pvp and vice versa, keep that in mind blizz</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">AgentStrife</div><div class="date">2016-05-23, 07:09 PM</div></div><div class="posttext">Unless you're about to lump yourself into the same group that is complaining then you should inherently understand not everyone is like that. Unless you're complaining about a lack of bullet points?<br />
+<br />
+Personally, I wish Blizzard would give more walls of text, so we can have as much insight into their actions as possible. Bullets are nice, but they cannot replace the value of a discussion explaining its though process.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Queen of Hamsters</div><div class="date">2016-05-23, 07:09 PM</div></div><div class="posttext">I'd like to know at what rate we'll earn those &quot;Marks of Honor&quot; that will be used to buy old pvp gear. I can't read the text against the black background all that well, can some kind soul tell me if they explained it in there? :o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spray</div><div class="date">2016-05-23, 07:12 PM</div></div><div class="posttext">Awesome. Seems like the best system they've put in place up until this point. I really liked Vanilla for PVP because gear was gear. It worked wherever. The decision to start with segregating that gear in Burning Crusade with Resilience just sent them on a long, and imo, wrong path. One of the best things about Vanilla was that you can always progress your character by getting gear relevant to the WHOLE GAME from both PVE and PVP.<br />
+<br />
+You feel like PVPing this week? Great, you can still progress your character for when you get back to raiding.<br />
+<br />
+You feel like raiding and grinding gear this week? Great, you won't be far behind in PVP when you decide to hop into a battleground.<br />
+<br />
+The additional change of having PVP gear matter less is probably my most wanted feature since the beginning of fucking time. I posted about this many times here, on the official forums and sent feedback in game. PVP should be as much as about skill as it can be, while simultaneously providing a constant feeling of character progression. That seemed hard to do, but, as a veteran player, believe this is the best iteration of gear's impact on PVP and PVE in the history of the game.<br />
+<br />
+• You are always progressing your character's power in both areas of content no matter which you choose to do<br />
+• Gear had way more of an impact than skill in PVP. That appears to have been fixed.<br />
+• And most importantly... the &quot;just hop in&quot; accessibility it provides for PVPers and PVEers alike. PVEers might get bored of scripted content and instead of feeling like they have to hurdle a 30ft wall of a gear grind just to be effective in PVP... they can just hop in, and at most ever be ~10 item levels behind. And if you happen to be a raider and already have high item level gear, maybe not even that far behind at all. If you're a PVPer and your guild has an open raid slot and you wanna check it out, or just go in and murder some mobs in a dungeon... you won't feel gimped with your PVP gear. You'll have progressed parallel to your PVE buddies and likely have a similar ilevel.<br />
+<br />
+Well done Blizzard. Legion is shaping up to be the best expansion yet.<br />
+<br />
+I've got to scroll through nearly 40 posts just to find an opinion exactly identical to mine, that's worrying.<br />
+<br />
+As a universal player - I welcome this change with open arms. This will enable me to earn achievements and vanity stuff from both PvE and PvP in less time than before, which leaves me more time for exploration/farming old mounts/alts, etc - marvellous.<br />
+<br />
+At the beginning of every expansion, WoW has been the only game I played for like, 6 to 12 months. Legion may prolong that period, heavily. Definitely seems to be the best expansion so far.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fynzie</div><div class="date">2016-05-23, 07:17 PM</div></div><div class="posttext">The fact that they don't even know when they introduced Resilience shows how out of touch the pvp team is.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thatmikeguy</div><div class="date">2016-05-23, 07:24 PM</div></div><div class="posttext">Not cool if I can't get normal conquest level gear over time at the middle mark, or warforged at that ilvl.<br />
+<br />
+<br />
+Also funny that Kern was the one that told them not to seperate PvP and PvE because of many problems including balance &quot;yes I'm old&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baelic</div><div class="date">2016-05-23, 07:31 PM</div></div><div class="posttext">The fact that they don't even know when they introduced Resilience shows how out of touch the pvp team is.<br />
+<br />
+Wasn't resilience introduced part-way through Burning Crusade?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Feril</div><div class="date">2016-05-23, 07:38 PM</div></div><div class="posttext">10% increase, eh? should lower it to 5%.<br />
+<br />
+10% makes a pretty big difference currently. i've watched relatively equally skilled warriors fight, and the 700 warrior get destroyed by the 710 warrior.<br />
+<br />
+Well, it's the difference between 100 item levels. I think it will generally be a 5% difference. 10% would probably be the gap between &quot;newly dinged 110&quot; and &quot;mythic raider 110&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Snakez</div><div class="date">2016-05-23, 07:52 PM</div></div><div class="posttext">&quot;Downing Mythic bosses and earning Gladiator rating are two of the most difficult accomplishments in our game.&quot;<br />
+<br />
+Yeah except gladiator is 30x harder.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yassy</div><div class="date">2016-05-23, 08:06 PM</div></div><div class="posttext">Wasn't resilience introduced part-way through Burning Crusade?<br />
+<br />
+I think it was actually introduced with BC. I know they changed it shortly to include DoT's being reduced in damage because original Resil only reduced Crit and Crit damage. Back then DoT's couldnt crit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BonesTheRabbit</div><div class="date">2016-05-23, 08:09 PM</div></div><div class="posttext">&quot;Downing Mythic bosses and earning Gladiator rating are two of the most difficult accomplishments in our game.&quot;<br />
+They can't honestly conclude that BiS PvP gear should be reserve for gladiator ranking. That wasn't even the case in TBC.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mush</div><div class="date">2016-05-23, 08:11 PM</div></div><div class="posttext">This is typically why wow post 3.0 has been bad on a gameplay standpoint. You shouldn't overcome a monster because you're wearing epic panties but because you adapted your gameplay to the monster you face (on an individual or a group standpoint).<br />
+<br />
+This isn't new, it's just slightly more pronounced. If you don't become stronger than enemies then it feels like there is no character progression.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Faylum1</div><div class="date">2016-05-23, 08:15 PM</div></div><div class="posttext">Fucking ridiculous, I don't grind BGs for that chance to be excited by gear. I grind fast to get everything i need to compete. Gearing this way means i spend longer, much longer gearing when all i want to do is get full gear and fight people. And how the fuck are people going to compete in the most broken multiplayer game there is, where cheating and hacking only gets banned 6 months after its been done? Fucking dumb company!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nox597</div><div class="date">2016-05-23, 08:17 PM</div></div><div class="posttext">I'd like to know at what rate we'll earn those &quot;Marks of Honor&quot; that will be used to buy old pvp gear. I can't read the text against the black background all that well, can some kind soul tell me if they explained it in there? :o<br />
+<br />
+There wasn't anything mentioned in Holinka's post about the Marks of Honor, today.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soratobi</div><div class="date">2016-05-23, 08:25 PM</div></div><div class="posttext">Fucking ridiculous, I don't grind BGs for that chance to be excited by gear. I grind fast to get everything i need to compete. Gearing this way means i spend longer, much longer gearing when all i want to do is get full gear and fight people. And how the fuck are people going to compete in the most broken multiplayer game there is, where cheating and hacking only gets banned 6 months after its been done? Fucking dumb company!<br />
+<br />
+Clearly you don't get that point that you'll no longer need gear to &quot;compete.&quot; If you're good, your skills will show. Gear only helps a little bit....a well geared &quot;lucky&quot; player will still be bad if they're bad at PVP.<br />
+<br />
+But we wouldn't miss you one bit if you do decide to leave!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleccybubb</div><div class="date">2016-05-23, 08:42 PM</div></div><div class="posttext">Clearly you don't get that point that you'll no longer need gear to &quot;compete.&quot; If you're good, your skills will show. Gear only helps a little bit....a well geared &quot;lucky&quot; player will still be bad if they're bad at PVP.<br />
+<br />
+But we wouldn't miss you one bit if you do decide to leave!<br />
+<br />
+If it works yeah. Will be nice to have PvP focused around skill over gear for a change.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Fucking ridiculous, I don't grind BGs for that chance to be excited by gear. I grind fast to get everything i need to compete. Gearing this way means i spend longer, much longer gearing when all i want to do is get full gear and fight people. And how the fuck are people going to compete in the most broken multiplayer game there is, where cheating and hacking only gets banned 6 months after its been done? Fucking dumb company!<br />
+<br />
+Doubt it. They said the likelihood of you getting dupe/similar gear will be slim to none. Also I guess PvP world quests will award it in some way or shape so should be quite quick/easy to gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ifritx</div><div class="date">2016-05-23, 08:46 PM</div></div><div class="posttext">Awesome. Seems like the best system they've put in place up until this point. I really liked Vanilla for PVP because gear was gear. It worked wherever. The decision to start with segregating that gear in Burning Crusade with Resilience just sent them on a long, and imo, wrong path. One of the best things about Vanilla was that you can always progress your character by getting gear relevant to the WHOLE GAME from both PVE and PVP.<br />
+<br />
+You feel like PVPing this week? Great, you can still progress your character for when you get back to raiding.<br />
+<br />
+You feel like raiding and grinding gear this week? Great, you won't be far behind in PVP when you decide to hop into a battleground.<br />
+<br />
+The additional change of having PVP gear matter less is probably my most wanted feature since the beginning of fucking time. I posted about this many times here, on the official forums and sent feedback in game. PVP should be as much as about skill as it can be, while simultaneously providing a constant feeling of character progression. That seemed hard to do, but, as a veteran player, believe this is the best iteration of gear's impact on PVP and PVE in the history of the game.<br />
+<br />
+• You are always progressing your character's power in both areas of content no matter which you choose to do<br />
+• Gear had way more of an impact than skill in PVP. That appears to have been fixed.<br />
+• And most importantly... the &quot;just hop in&quot; accessibility it provides for PVPers and PVEers alike. PVEers might get bored of scripted content and instead of feeling like they have to hurdle a 30ft wall of a gear grind just to be effective in PVP... they can just hop in, and at most ever be ~10 item levels behind. And if you happen to be a raider and already have high item level gear, maybe not even that far behind at all. If you're a PVPer and your guild has an open raid slot and you wanna check it out, or just go in and murder some mobs in a dungeon... you won't feel gimped with your PVP gear. You'll have progressed parallel to your PVE buddies and likely have a similar ilevel.<br />
+<br />
+Well done Blizzard. Legion is shaping up to be the best expansion yet.<br />
+<br />
+As far as RNG boxes go, I definitely understand the complaints, but I prefer the excitement of RNG even if it means a potential string of bad luck. Depending on what that &quot;system to help against getting the same gear&quot; does, we'll just have to see. They might have to have a way to sort of &quot;re-roll&quot; your loot similar to the cube in D3. Maybe you spend X honor + throw your item into a magic box and it will give you another item.<br />
+<br />
+I'm with this almost 100%. The only thing that annoys me is the randomized gear, but I can see why they did that. Say if you're a PvE'er and you've got all great gear except that one piece that just won't drop, you won't feel compelled to pvp so you can just buy it off a vendor. <br />
+<br />
+But seriously, all my friends pvp and I pve and I'm so happy that I'll be able to go do a bg or a skirmish with them now and actually feel useful instead of just being that body that exists to attract aggro while my friends do all the real work. I think this is gonna end up being one of those changes that everybody complains about until they actually try it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Schwert</div><div class="date">2016-05-23, 08:49 PM</div></div><div class="posttext">I love how thousands of people are going to walk out with Mythic gear just from killing the first few bosses...<br />
+Yet less than 900 players or so are going to walk out with the &quot;Gladiator&quot; gear.<br />
+<br />
+Holinka has no clue what the state of the playerbase is<br />
+<br />
+Also: RiP wPvP.<br />
+Love how PvP world quests are a thing but PvP gear has no set bonuses and PvE gear is just far easier to obtain for people who do both or just PvE.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc63e7652113</div><div class="date">2016-05-23, 08:49 PM</div></div><div class="posttext">so do i as a mythic raider have to pvp to get better gear for raiding? plz no<br />
+<br />
+will my pvp rating have influence of how good gear i get for raiding? oh god!<br />
+<br />
+some pvers hate pvp and vice versa, keep that in mind blizz<br />
+<br />
+You are saying you kill mythic bosses. You probably wont get better ilvl gear from gladiator rating than mythic boss drops. And since you are such a hardcore mythic raider and get mythic loot anyway... Problem solved.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ifritx</div><div class="date">2016-05-23, 08:53 PM</div></div><div class="posttext">I'm with this almost 100%. The only thing that annoys me is the randomized gear, but I can see why they did that. Say if you're a PvE'er and you've got all great gear except that one piece that just won't drop, you won't feel compelled to pvp so you can just buy it off a vendor. <br />
+<br />
+But seriously, all my friends pvp and I pve and I'm so happy that I'll be able to go do a bg or a skirmish with them now and actually feel useful instead of just being that body that exists to attract aggro while my friends do all the real work. I think this is gonna end up being one of those changes that everybody complains about until they actually try it.<br />
+<br />
+If you're a world first guild then you've always had to do everything to get gear, this isn't new. Gaming the system to get a leg up has always been the name of the game. If you're not then you're getting way too worked up over this. Great gear is gonna come from so many places in Legion that this addition is negligible at best. You've got raids, crafting, quests, world drops, and dungeons already all offering top level gear, having pvp as a viable alternative source is another option and going to make more players happy than not I think. If you don't enjoy the idea of doing everything you can to get the best gear in the game then either you don't belong in a world first guild or you're not in one already.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1561bc551c</div><div class="date">2016-05-23, 08:54 PM</div></div><div class="posttext">Theres no way to win with people of your skill level if you are permanently at 10+% gear disadvantage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc055dfbee20</div><div class="date">2016-05-23, 08:58 PM</div></div><div class="posttext">It to look interesting and better than what has been a atm because if I understood only the skill of the players and balancing classes count in a fight.<br />
+Nevertheless, I still have several questions which are:<br />
+- Will there be PvP set bonus ??<br />
+- PvP talents they operate in PvP outdoors ??<br />
+- What about the PvE set bonus in all forms of PvP ??<br />
+- What about the legendary items in all forms of PvP ??<br />
+- Will there be restrictions on the artifact PvP ??<br />
+Need answers please ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fenderxx</div><div class="date">2016-05-23, 09:00 PM</div></div><div class="posttext">I'm with this almost 100%. The only thing that annoys me is the randomized gear, but I can see why they did that. Say if you're a PvE'er and you've got all great gear except that one piece that just won't drop, you won't feel compelled to pvp so you can just buy it off a vendor. <br />
+<br />
+But seriously, all my friends pvp and I pve and I'm so happy that I'll be able to go do a bg or a skirmish with them now and actually feel useful instead of just being that body that exists to attract aggro while my friends do all the real work. I think this is gonna end up being one of those changes that everybody complains about until they actually try it.<br />
+To be fair those are requirements that the community puts on itself. The game should not be designed around how it will affect the 1% who feel they have to get the best gear right away no matter what. I don't doubt that you and your guild will feel required.. but that is an arms race between the top 50 or so guilds and really doesn't affect the rest of us.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Otimus</div><div class="date">2016-05-23, 09:06 PM</div></div><div class="posttext">I have mostly ignored developments for Legion so not as to get my hopes up, but I had, from what limited knowledge I had, thought they were making it so gear no longer mattered in PVP. I guess that's not the case.<br />
+<br />
+Welp! I guess this'll be another expansion where I don't care about PVP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lahis</div><div class="date">2016-05-23, 09:10 PM</div></div><div class="posttext">I have mostly ignored developments for Legion so not as to get my hopes up, but I had, from what limited knowledge I had, thought they were making it so gear no longer mattered in PVP. I guess that's not the case.<br />
+<br />
+Welp! I guess this'll be another expansion where I don't care about PVP.<br />
+<br />
+Did you read the post...?<br />
+<br />
+Gear will not matter in Legion PvP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Brenz</div><div class="date">2016-05-23, 09:12 PM</div></div><div class="posttext">The gear will have a chance to get an increase in item level, great, more needless RNG bullshit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gratlim</div><div class="date">2016-05-23, 09:15 PM</div></div><div class="posttext">It get's harder and harder to get excited about Legion :( and God knows I want to come back...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Glorious Leader</div><div class="date">2016-05-23, 09:20 PM</div></div><div class="posttext">A couple years back when the devs started gutting currency for gear systems they pointed out that the real fun of the game was killing a boss and seeing what loot dropped. I pointed out in twitter that pvpers didn't seem to get this fun and iirc streets response was that it would be weird to do pvp that way. Well guess what pvpers! The devs really really fucking hate determinism. RNG is the future for everything. It's like they just have no fucking clue. ...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc076f38fabd</div><div class="date">2016-05-23, 09:28 PM</div></div><div class="posttext">Fucking ridiculous, I don't grind BGs for that chance to be excited by gear. I grind fast to get everything i need to compete. Gearing this way means i spend longer, much longer gearing when all i want to do is get full gear and fight people. And how the fuck are people going to compete in the most broken multiplayer game there is, where cheating and hacking only gets banned 6 months after its been done? Fucking dumb company!<br />
+<br />
+You must be a 1500 player that's why you think these changes will affect you in a bad way. This system is perfect for gearing in pvp, this is the best thing they have ever announced.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tawk</div><div class="date">2016-05-23, 09:33 PM</div></div><div class="posttext">So better gear = slightly better PVP stats. Example: someone with item level 800 has 10% stronger PVP stats compared to someone with item level 700. My question is: Will we be able to see the specific PVP stats in order to number crunch and develope combat strategies?<br />
+<br />
+I may have missed this somewhere. Just curious.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Queen of Hamsters</div><div class="date">2016-05-23, 09:34 PM</div></div><div class="posttext">There wasn't anything mentioned in Holinka's post about the Marks of Honor, today.<br />
+<br />
+Aaaw...well, thanks to you though for letting me know! --&lt;-@</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zeglo</div><div class="date">2016-05-23, 09:41 PM</div></div><div class="posttext">So better gear = slightly better PVP stats. Example: someone with item level 800 has 10% stronger PVP stats compared to someone with item level 700. My question is: Will we be able to see the specific PVP stats in order to number crunch and develope combat strategies?<br />
+<br />
+I may have missed this somewhere. Just curious.<br />
+<br />
+He said after item level 800. The % boost may be higher prior to attaining 800. It's not linear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mokenuf</div><div class="date">2016-05-23, 09:50 PM</div></div><div class="posttext">So now If I want to stay competitive in PvE I've got to do PvP too for chance of better gear ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tawk</div><div class="date">2016-05-23, 09:50 PM</div></div><div class="posttext">He said after item level 800. The % boost may be higher prior to attaining 800. It's not linear.<br />
+<br />
+Correct (sorry 800 to 700 was a bad comparison). So item level 900 will be 10% stronger than item level 800, but my question still stands. Will we be able to see our actual PVP stats? They're different from PVE stats (which are shown on the gear). So how do we know what our actual PVP stats are? Knowing the actual stats could mean the difference between using ability A versus ability B, etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RelaZ</div><div class="date">2016-05-23, 09:59 PM</div></div><div class="posttext">“gladiators will just do Mythic raids to get easy gear.”<br />
+<br />
+Yeah they clearly don't have any clue what the issue is.<br />
+<br />
+The issue is people WHO ARE NOT gladiator will feel forced into mythics to get better gear. &quot;lf healer for 1800 rbgs, ilvl x required&quot; - where x is only attainable at a much higher rating than 1800 will become standard. Mid-range PvPers will feel forced into Mythics to get better gear. So they want to force PvPers into PvE (and likewise PvErs will feel forced to buy gladiator ratings to have chance at &quot;that one bis wrist item I need&quot;).<br />
+<br />
+Oh and no, in no universe is downing all mythic bosses (especially when they've gotten nerfed over and over) comparable to achieving gladiator ratings, getting gladiator is actually limited; only a set amount of the people can get it whereas everyone can kill mythic bosses.<br />
+<br />
+And no one wants RNG gearing for PvP. Did they learn nothing from Ashran boxes and the Accolade trinkets? Having that for each piece of gear (not just the trinket) being RNG-only is fucking hilarious. Yes I might not need a specific chest piece anymore but someone sure is going to be unlucky and not even get a chest at all, because that's what RNG means.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Appelgren</div><div class="date">2016-05-23, 10:02 PM</div></div><div class="posttext">I only take it that pvp-talents will be active at all times in world pvp too?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">middling</div><div class="date">2016-05-23, 10:10 PM</div></div><div class="posttext">I only take it that pvp-talents will be active at all times in world pvp too?<br />
+<br />
+they announced that anything goes in world PVP, the best gear will be the highest raiding gear.<br />
+<br />
+https://twitter.com/WarcraftDevs/status/734842770066526208</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mazaxist</div><div class="date">2016-05-23, 10:33 PM</div></div><div class="posttext">More RNG. but whatever, now i can go naked in BG and kick ass! :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dellis0991</div><div class="date">2016-05-23, 10:44 PM</div></div><div class="posttext">Git gud scrubs? I'm joking by the way.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">heinz0r</div><div class="date">2016-05-23, 11:04 PM</div></div><div class="posttext">Pretty sure we already had resilience in tbc, just sayin`:)<br />
+<br />
+And random gear in pvp. Those guys are completely out of touch with the pvp community of their own game. With each of these long winded posts where they explain simple things with walls of text, it feels more and more like they simply do not WANT to get in touch with its community, but rather just dictate change to us. But on the other hand they always feel the need to justify what they do, as if they still want to get some love back from us. <br />
+<br />
+Guess what, screw you guys, the same way you screw us over! ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jellmoo</div><div class="date">2016-05-23, 11:07 PM</div></div><div class="posttext">What? PVP will place a higher value on skill than being a pure gear score check? Nooo! How dare they?!?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Khain</div><div class="date">2016-05-23, 11:26 PM</div></div><div class="posttext">People are dumb and think this will be a big deal, in reality the difference between a mid range pvper and a gladiator will be only like 1 to 2% stats, the 10% difference is like for people that just got 110.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Roncero</div><div class="date">2016-05-23, 11:48 PM</div></div><div class="posttext">I don't know why they keep comparing mythic raiding with gladiators.<br />
+<br />
+9/13 Mythic is top 10% in the US. That's Rival ranking in arena. Mythic Archie is comparable to duelist at ~3%.<br />
+<br />
+Gladiators are the top 0.5%, and should be compared to world first raiders.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cobrakai</div><div class="date">2016-05-23, 11:50 PM</div></div><div class="posttext">not sure why they dont just put people in brackets based on their ilvl so you're never facing people that outgear you to a large extent. yes, it will create ilvl ceilings, but is that a big deal? the brackets wouldn't be so all-encompassing that it couldn't be surmounted by the appropriate application of skill. <br />
+<br />
+it kind of sucks that people that fight for glad are only marginally better geared than people who dont do anything (i say this as a complete pvp scrub). its my understanding that most people with decent gear dont do battlegrounds anyway - if the majority of them are queing for arenas, who cares if a minority of them are facing long wait times for bg's? i guess they could always carry around a bg set to get decent que times on the odd chance that they want to do a bg (and just disable switching gear if you're in que or in a bg already.) <br />
+<br />
+There are a lot of ways to get around this, i think. Blizz is really running with eliminating difference (outside of aesthetic choices). Oh well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gadzooks</div><div class="date">2016-05-24, 12:00 AM</div></div><div class="posttext">“gladiators will just do Mythic raids to get easy gear.”<br />
+<br />
+Yeah they clearly don't have any clue what the issue is.<br />
+<br />
+The issue is people WHO ARE NOT gladiator will feel forced into mythics to get better gear. <br />
+<br />
+Oh, they have a clue. They want people in mythic. They started this last expansion, funneling everything into raid instances. They destroyed LFR to get people into normal. This is the same thing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eroginous</div><div class="date">2016-05-24, 12:06 AM</div></div><div class="posttext">so 1% in hp/damage is that stromg? (700 vs 710) or most likely one of the warriors is a noob at playing warrior.<br />
+<br />
+the difference between 710 and 700 is not 1% on live, it's more like 10%.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Psygon</div><div class="date">2016-05-24, 12:09 AM</div></div><div class="posttext">Thats a lot of text to say &quot;you get no gear for PVP&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2016-05-24, 12:23 AM</div></div><div class="posttext">I fully agree with this new system. Raiders and PVPers at the highest level should be rewarded similarly. While I have never been into high end PVP, I understand that people do it because they really enjoy the content. Keeping the gear gap as limited as possible is essential in making both groups feel validated.<br />
+<br />
+You will ALWAYS have assholes in ecah group that say things like <br />
+<br />
+&quot;PVP is too easy and shouldnt get gear&quot;<br />
+<br />
+or<br />
+<br />
+&quot;PVE is just fighting a computer and shouldnt get gear&quot;<br />
+<br />
+But you should just ignore them :^)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eroginous</div><div class="date">2016-05-24, 12:23 AM</div></div><div class="posttext">Awesome. Seems like the best system they've put in place up until this point. I really liked Vanilla for PVP because gear was gear. It worked wherever. The decision to start with segregating that gear in Burning Crusade with Resilience just sent them on a long, and imo, wrong path. One of the best things about Vanilla was that you can always progress your character by getting gear relevant to the WHOLE GAME from both PVE and PVP.<br />
+<br />
+You feel like PVPing this week? Great, you can still progress your character for when you get back to raiding.<br />
+<br />
+You feel like raiding and grinding gear this week? Great, you won't be far behind in PVP when you decide to hop into a battleground.<br />
+<br />
+The additional change of having PVP gear matter less is probably my most wanted feature since the beginning of fucking time. I posted about this many times here, on the official forums and sent feedback in game. PVP should be as much as about skill as it can be, while simultaneously providing a constant feeling of character progression. That seemed hard to do, but, as a veteran player, believe this is the best iteration of gear's impact on PVP and PVE in the history of the game.<br />
+<br />
+• You are always progressing your character's power in both areas of content no matter which you choose to do<br />
+• Gear had way more of an impact than skill in PVP. That appears to have been fixed.<br />
+• And most importantly... the &quot;just hop in&quot; accessibility it provides for PVPers and PVEers alike. PVEers might get bored of scripted content and instead of feeling like they have to hurdle a 30ft wall of a gear grind just to be effective in PVP... they can just hop in, and at most ever be ~10 item levels behind. And if you happen to be a raider and already have high item level gear, maybe not even that far behind at all. If you're a PVPer and your guild has an open raid slot and you wanna check it out, or just go in and murder some mobs in a dungeon... you won't feel gimped with your PVP gear. You'll have progressed parallel to your PVE buddies and likely have a similar ilevel.<br />
+<br />
+Well done Blizzard. Legion is shaping up to be the best expansion yet.<br />
+<br />
+As far as RNG boxes go, I definitely understand the complaints, but I prefer the excitement of RNG even if it means a potential string of bad luck. Depending on what that &quot;system to help against getting the same gear&quot; does, we'll just have to see. They might have to have a way to sort of &quot;re-roll&quot; your loot similar to the cube in D3. Maybe you spend X honor + throw your item into a magic box and it will give you another item.<br />
+<br />
+I've played since Vanilla, just like you. Even back then there was still pvp gear, it was balanced towards survival and required rank to buy. You had to progress through the ranks to get that gear too, but if you didn't keep pvping you would lose rank. Not a lot of people had that gear as a result. Most of them just went and got pve gear because they were raiding anyway and there was no point in doing both grinds when raiding gear provided best throughput anyway. <br />
+<br />
+In TBC, they expanded on the pvp system and introduced arena with pvp centric rewards. A player could buy the previous seasons off pieces for honor but had to use arena points and rating to get set pieces and weapons. This put everyone on unequal footing in pvp (for obvious reasons) and things have been unequal ever since. <br />
+<br />
+The problem with anything they've done since day one is that they expect players to value content that Blizzard themselves devalues. They want you to spend all this time and energy acquiring rewards to improve your character and value that time spent, only to release new rewards that make your current ones obsolete. And they want you to do this every 3-6 months. <br />
+<br />
+And still enjoy yourself and value your time spent. <br />
+<br />
+That's the fucking problem with Wow. If you've acquired one piece of gear, you've acquired them all. If you've defeated a boss, you've defeated them all. If you really value your time you'll go do something else and let this game die.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ImpTaimer</div><div class="date">2016-05-24, 12:23 AM</div></div><div class="posttext">Good. One step closer to removing gear entirely from instanced PvP.<br />
+<br />
+They just need to scale everyone down to 10 and ensure new ability power creep while leveling isn't completely broken. 10-99, 100-109, 110.<br />
+<br />
+If you played on a PvP server and having a problem leveling, tough shit. You signed up for that mess and have no reason to complain how fast you level.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2016-05-24, 12:24 AM</div></div><div class="posttext">Thats a lot of text to say &quot;you get no gear for PVP&quot;.<br />
+<br />
+Id like to see where you got that from, because that isn't what it said at all. Every single facet of PVP will now have a chance to get you gear. If anything, active players will be acquiring MORE gear than they were in previous expansions.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ImpTaimer</div><div class="date">2016-05-24, 12:26 AM</div></div><div class="posttext">I've played since Vanilla, just like you. Even back then there was still pvp gear<br />
+<br />
+There was no pvp gear, only pvp rewards. Tank gear tended to be overly good for PvP (especially resist gear).<br />
+<br />
+In vanilla there was normal, tank, and hybrid gear. Most gear was normal or hybrid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kagthul</div><div class="date">2016-05-24, 12:44 AM</div></div><div class="posttext">... Blue Poster so dumb he doesn't realize that Resilience was introduced in Burning Crusade. <br />
+<br />
+/facepalm</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Roncero</div><div class="date">2016-05-24, 01:22 AM</div></div><div class="posttext">... Blue Poster so dumb he doesn't realize that Resilience was introduced in Burning Crusade. <br />
+<br />
+/facepalm<br />
+<br />
+The original post was edited almost straight away, mmo champ hasn't updated.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">GMZohar1</div><div class="date">2016-05-24, 01:29 AM</div></div><div class="posttext">1500s like these changes, cause their excuse for sucking all the time was &quot;oh thats cause they have better gear&quot; and now they think things will be different.. And soon their excuse will be &quot;oh thats cause they have 10% better stats than me&quot; lolol RIP PvP</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">prwraith</div><div class="date">2016-05-24, 01:34 AM</div></div><div class="posttext">People still pvp in this pve game?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ElDoorO</div><div class="date">2016-05-24, 01:40 AM</div></div><div class="posttext">Personally, I wish Blizzard would give more walls of text, so we can have as much insight into their actions as possible. Bullets are nice, but they cannot replace the value of a discussion explaining its though process.<br />
+<br />
+I'm not disagreeing I'm basically just calling the person on their silly response. They obviously were looking for an excuse to get pissed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eroginous</div><div class="date">2016-05-24, 01:49 AM</div></div><div class="posttext">There was no pvp gear, only pvp rewards. Tank gear tended to be overly good for PvP (especially resist gear).<br />
+<br />
+In vanilla there was normal, tank, and hybrid gear. Most gear was normal or hybrid.<br />
+<br />
+http://www.wowhead.com/search?q=grand+marshal%27s<br />
+http://www.wowhead.com/search?q=warlord%27s<br />
+<br />
+You were saying? Not only was there gear created specifically for pvp in Vanilla, it had its own reward structure and ranking requirement, before rated pvp was even invented. In fact, you are still required to get those rankings today if you want to buy the versions of those gear you can transmog (the originals can't be). You have to be 2400 + in rated BGs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daffan</div><div class="date">2016-05-24, 01:57 AM</div></div><div class="posttext">PVP Gear and PVE gear should be completely separate in terms of progression.<br />
+<br />
+PVP Items should have the same Item Level as Normal/Heroic Dungeons forever and then when you enter a Battleground or Arena it should scale depending on its quality and season. Keeps PVP gear progression intact without making PVE content worthless down the track.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pacster</div><div class="date">2016-05-24, 02:07 AM</div></div><div class="posttext">I fully agree with this new system. Raiders and PVPers at the highest level should be rewarded similarly. While I have never been into high end PVP, I understand that people do it because they really enjoy the content. Keeping the gear gap as limited as possible is essential in making both groups feel validated.<br />
+<br />
+<br />
+True, now if it were similar hard or easy with all classes or at least spec-groups(that tanks will have a harder time in PvP is something that'd be hard to change)...it'd be great. As long as you have to be twice as skilled as a shadow than as a mage to reach similar goals(dps/burst etc.), the smaller gap between PvE and PvP doesn't matter to me at all.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">killbill</div><div class="date">2016-05-24, 02:10 AM</div></div><div class="posttext">&quot;No disappointment when you get something you don’t.&quot;<br />
+<br />
+Why we need disappointment in game? I thought losing a battle is disappointment already, losing few in a row is already depressing, and when you finally win you might get junk?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kagthul</div><div class="date">2016-05-24, 02:33 AM</div></div><div class="posttext">The original post was edited almost straight away, mmo champ hasn't updated.<br />
+<br />
+Does not invalidate my point. The guy writing it didn't know. And he works there. On PvP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Queen of Hamsters</div><div class="date">2016-05-24, 03:28 AM</div></div><div class="posttext">That's the fucking problem with Wow. If you've acquired one piece of gear, you've acquired them all. If you've defeated a boss, you've defeated them all. If you really value your time you'll go do something else and let this game die.<br />
+<br />
+...Well aren't you a bundle of joy. Do tell, how much do you value your time? Considering the fact that you just wrote a wall of angry about this game when you don't play it? You being jaded is your problem, not the game's or those still enjoying it.<br />
+<br />
+Funny how games are something one does for fun with spare time, unless that game is WoW of course. <br />
+Why play games at all really? If you've played one, you have played them all, right? If you value your time, go do something else!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb722924924</div><div class="date">2016-05-24, 04:34 AM</div></div><div class="posttext">Well that's lame, not much of a benefit now if you pvp alot.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mafic</div><div class="date">2016-05-24, 04:48 AM</div></div><div class="posttext">Blizz lied. There will be a gear gap in PVP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eroginous</div><div class="date">2016-05-24, 04:57 AM</div></div><div class="posttext">...Well aren't you a bundle of joy. Do tell, how much do you value your time? Considering the fact that you just wrote a wall of angry about this game when you don't play it? You being jaded is your problem, not the game's or those still enjoying it.<br />
+<br />
+Funny how games are something one does for fun with spare time, unless that game is WoW of course. <br />
+Why play games at all really? If you've played one, you have played them all, right? If you value your time, go do something else!<br />
+<br />
+A lot of assumptions here. Do I sound angry? Sure, if you just quote the last part of my post without the rest for context. You don't think I play Wow now? I still have an active sub, and will so long as I can pay with gold. What I'm saying though, is that you need to avoid buying this expansion and playing the game they've designed if you disagree with anything they've said so far, that's the only way they'll understand their own mistakes - if you refuse to participate. <br />
+<br />
+Otherwise, it was just an 'if/then' statement. I don't really care how you value your time on the face of things, it's your time. Spend it however you want...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Peekabooboo</div><div class="date">2016-05-24, 05:39 AM</div></div><div class="posttext">The new system is fine for most people. It's fine for me, except I will have absolutely no reason (except for fun) to PVP anymore. There is no gear progression there, especially since my PVE gear will probably be better, and if miraculously it isn't (i.e. high level gear is much easier to get in PVE) why would I sweat a .1- .3% improvement? So, I will play like always, except getting PVP lockboxes will be more of an insult to my sucking than a reward.<br />
+<br />
+Making mythic raiders have to PVP is really dumb tho. Makes zero sense.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc64ace7a841</div><div class="date">2016-05-24, 06:12 AM</div></div><div class="posttext">This brings back memories from TBC... when i did AFK in battlegrounds to get welfare S1 pvp gear (when it later came to buyable with honor points) to be useful when pugging Kara/Maggy/Gruul with my semi-friends.<br />
+<br />
+That's what we need more. People doing things they don't like to get things they like. Right, i may overreact a bit, but that's what i thought first when reading this thing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc35ea8102e9</div><div class="date">2016-05-24, 06:42 AM</div></div><div class="posttext">Yeah. Make the rewards so irrelevant that everyone can feel equally good no matter how much time or effort they invest in game.<br />
+<br />
+First it's &quot; WoW is a game about your character, their adventures in the world of Azeroth, and their growth in power. One of the foundations of the game is being rewarded for your efforts with gear that makes you stronger.&quot; and in the same post they first wanted to remove the gear but ended up just making it matter considerably less. Just wow.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">paralleluniverse</div><div class="date">2016-05-24, 07:40 AM</div></div><div class="posttext">At first, we considered ignoring gear altogether, but it felt counter-intuitive that gear offered no growth in power at all.<br />
+At last, we finally considered making PvP fair and skill-based, but instead we decided to flip-flop and backpedal hard.<br />
+<br />
+We tried fair and skill-based PvP, and then we said fuck fair and skill-based PvP, instead we want gear-based PvP.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+Now raiders will be forced to PvP to get get raid gear.<br />
+<br />
+And conversely high-end raiders will have better PvP gear than many PvP players.<br />
+<br />
+This absurdity, this tried-and-failed model of raiders being required to PvP for raid gear could have been solved if they made PvP completely skill-based and removed gear in PvP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Grimoires</div><div class="date">2016-05-24, 07:43 AM</div></div><div class="posttext">This is typically why wow post 3.0 has been bad on a gameplay standpoint. You shouldn't overcome a monster because you're wearing epic panties but because you adapted your gameplay to the monster you face (on an individual or a group standpoint).<br />
+<br />
+So why get gear rewards at all if they shouldn't matter? <br />
+<br />
+You should initially overcome a monster because you adapted your gameplay to the monster you face. Once you've done that, you're rewarded. Rinse and repeat until it's obsolete and then move on to the next tier with your epic panties so you can withstand a one shot while adapting to new mechanics.<br />
+<br />
+If we apply your logic than we should never get a reward for killing a monster, there should be no tiers, and everything should be based solely on aptitude, which in my opinion would make the game easier, if you are a smart player. You'd literally just skill your way through everything and not need the gear rewards to assist with anything and complete it all faster than people already do.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Super Kami Dende</div><div class="date">2016-05-24, 08:02 AM</div></div><div class="posttext">Keen as hell for this new System. Used to PvP a lot in WoW but got extremely bored with keeping 2 sets constantly updated for PvE and PvP.<br />
+<br />
+Being able to use what I wear in PvE for PvP without gimping myself hard will be a godsend.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc587996818c</div><div class="date">2016-05-24, 09:19 AM</div></div><div class="posttext">As already stated, WoW has always been a game where gear mattered. But at least there used to be something else in the gameplay department, and not only in the top mythic raid tier of the current patch.<br />
+<br />
+Like what? Old raids had a few tactics, can you explain what you mean because i see nothing that was better before.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6c2e0bc3b9</div><div class="date">2016-05-24, 10:01 AM</div></div><div class="posttext">Overall i like the new system, finally a relative even playing field. One thing i am interested in is how they propose to reduce the chance of you receiving the same item twice? Will it mean that we have to keep that said item in our inventories so that the system can &quot;roll check&quot; so its not duplicated or worse we have to equip the item?<br />
+<br />
+Hopefully it will be more like a &quot;roll check&quot; on your loot history, but i would imagine that would be quite data intensive for every account in wow that pvps.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">whyabadi</div><div class="date">2016-05-24, 10:53 AM</div></div><div class="posttext">Great changes in my opinion. At least on paper, but I predict no major problems with them in practice.<br />
+It's rewarding skill in all aspects of the game leaving the power gap at reasonable levels as to not discourage new players or prevent them from having fun and even competing.<br />
+My only concern is we lose choice in secondary stats in pvp. Yes, the honour talents provide a way to customize your character, but it is limiting by design. You can't choose for example to be more defensive or choose mastery to complement a certain talent build.<br />
+Maybe give a way to choose between some amount of secondary stats that scale with your overall ilvl?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aelric70</div><div class="date">2016-05-24, 11:21 AM</div></div><div class="posttext">so do i as a mythic raider have to pvp to get better gear for raiding? plz no<br />
+<br />
+will my pvp rating have influence of how good gear i get for raiding? oh god!<br />
+<br />
+some pvers hate pvp and vice versa, keep that in mind blizz<br />
+<br />
+NO to all of your questions. Reading comprehension fail.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">orca2425</div><div class="date">2016-05-24, 12:11 PM</div></div><div class="posttext">Nice I always wanted to pop but my char was always too squishy.. And the the gear gap.. This brings over and pop on the same line.. Nice.. Thank you for opening up pvp to ours pver s.. Love the change..lets go.. Awesome.<br />
+.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">puttsheals</div><div class="date">2016-05-24, 12:28 PM</div></div><div class="posttext">The award system aside these changes may get more people involved in PvP. In the past few expansions I have been strictly a raider because keeping 3 sets of gear (main spec, off spec and PvP) just wasnt going to fly. However, with these changes and some good looking artifact weapon skins being PvP focused I'll gladly jump back into the PvP world now that my PvE gear wont be a hindrance. I imagine that I am not the only one that feels this way which could help lower those crazy long PvP Q times I hear so much about.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd1d8b32988</div><div class="date">2016-05-24, 01:16 PM</div></div><div class="posttext">What about this &quot;Gear will not be adjusted in World PvP&quot; so in world pvp decent equipped raider will destroy average pvp player?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Roar-Powah</div><div class="date">2016-05-24, 01:17 PM</div></div><div class="posttext">I like to be in control of what pieces of gear i buy, more RNG on top of more RNG, when will Blizzard fucking understand their own damn game? Everything else is fine, glad they are putting some effort into PvP, but shit rng loot drops are a bad idea.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Turin777</div><div class="date">2016-05-24, 01:33 PM</div></div><div class="posttext">Soooo the player base told you that RNG loot sucks, and your answer was &quot;that's okay, we've made it so the gear doesn't matter that much anyway.&quot; I'm not feeling very motivated to fool with pvp anymore. So if that was your intended goal, gratz I guess.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aelric70</div><div class="date">2016-05-24, 02:05 PM</div></div><div class="posttext">What about this &quot;Gear will not be adjusted in World PvP&quot; so in world pvp decent equipped raider will destroy average pvp player?<br />
+<br />
+Depends. <br />
+A) the gearing from pvp will be similar to current end game gear, so not as big a gap as their currently can be. <br />
+B) has this hypothetical raider bothered to earn pvp specific talents and artifact tweaks? <br />
+<br />
+If not, they probably wont have the sheer stat advantage necessary to overcome those disadvantages. If they have pvp' enough to get them, then your question becomes: will average pvp'r be destroyed by another average pvp'r in slightly better gear. To me, it sounds like gear gaps will be close enough that skill/experience/earned pvp perks will be more important even in world pvp.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Strakha</div><div class="date">2016-05-24, 02:15 PM</div></div><div class="posttext">The entire idea of WoW translating to customers is stupid. Some people hate certain things. Some of us want a great civilization and some of us do not. It is hard to create a fake civilization with both of those ideas, overall I think we can do both.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aelric70</div><div class="date">2016-05-24, 02:44 PM</div></div><div class="posttext">Soooo the player base told you that RNG loot sucks, and your answer was &quot;that's okay, we've made it so the gear doesn't matter that much anyway.&quot; I'm not feeling very motivated to fool with pvp anymore. So if that was your intended goal, gratz I guess.<br />
+<br />
+Would it satisfy if the non-RNG rewards were top notch cosmetic sets?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tawk</div><div class="date">2016-05-24, 02:50 PM</div></div><div class="posttext">This brings back memories from TBC... when i did AFK in battlegrounds to get welfare S1 pvp gear (when it later came to buyable with honor points) to be useful when pugging Kara/Maggy/Gruul with my semi-friends.<br />
+<br />
+That's what we need more. People doing things they don't like to get things they like. Right, i may overreact a bit, but that's what i thought first when reading this thing.<br />
+<br />
+Nothing in the blue post said you have to PVP to get raid gear. Raid gear will still be attainable like normal, and gear attained from battlegrounds will not be &quot;so easy to get that PVE players will feel compelled to play BGs.&quot; The whole point of this change is to balance PVP while still including progression. Not to compel PVE players to change their methods. Why would you EVER go afk in battlegrounds?? What a childish attitude.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tyrannica</div><div class="date">2016-05-24, 03:02 PM</div></div><div class="posttext">i don't like pvp templates in pvp instances. People should learn to gear up when they participate in pvp like they do in pve.<br />
+<br />
+no one gets pve templates while during a raid or 5man, either.<br />
+<br />
+Since there is no longer resilence and pvp power or increased pvp ilvl on gear, it should not be that hard to gear up for pvp, all thats needed is to reduce better gear from arena/rbg rating and mythic raids, but not that much, it should still be a reward. Power increase could be much highter than just 10% overall for the best gear you wear in comparission to starter gear, in this case starter template.<br />
+<br />
+Also the feel is not rewarding to get good gear by doing pvp and use it unlocked for pve as it only makes pvp instances feel castrated when it comes to gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aelric70</div><div class="date">2016-05-24, 07:24 PM</div></div><div class="posttext">Overall i like the new system, finally a relative even playing field. One thing i am interested in is how they propose to reduce the chance of you receiving the same item twice? Will it mean that we have to keep that said item in our inventories so that the system can &quot;roll check&quot; so its not duplicated or worse we have to equip the item?<br />
+<br />
+Hopefully it will be more like a &quot;roll check&quot; on your loot history, but i would imagine that would be quite data intensive for every account in wow that pvps.<br />
+<br />
+Loot history is irrelevant. Either you have an item (equipped, in bag, or in bank) or you don't. That's probably a very short query/check to process in real time at loot roll. You cant get a duplicate of something you dont have.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zandalarian Paladin</div><div class="date">2016-05-24, 07:25 PM</div></div><div class="posttext">Definitely sounds interesting. I'm definitely eager to try the system!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Otimus</div><div class="date">2016-05-24, 08:20 PM</div></div><div class="posttext">Did you read the post...?<br />
+<br />
+Gear will not matter in Legion PvP.<br />
+<br />
+I did read the post, and the way it was worded, it sounded like people who do ranked PVP are still going to be more powerful than people who don't. It just won't be a LOT more powerful.<br />
+<br />
+Unless I'm missing something here?<br />
+<br />
+Also... way to be massively condescending :/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6c2e0bc3b9</div><div class="date">2016-05-24, 11:19 PM</div></div><div class="posttext">Loot history is irrelevant. Either you have an item (equipped, in bag, or in bank) or you don't. That's probably a very short query/check to process in real time at loot roll. You cant get a duplicate of something you dont have.<br />
+<br />
+Not true at all, i'm sure they do not want us to have to keep unwanted gear in our bags or bank just to prevent you getting the same piece of gear. Trinkets for instance, still provide secondary stats, so i don't to have to keep a stam/haste/crit/vers trinkets clogging up my bags just so i can make sure i get a mastery trinket so the easiest way to prevent this is loot history. Like i said it would be pretty data intensive so i imagine i'll be down on bag space instead.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mofogo</div><div class="date">2016-05-25, 12:02 AM</div></div><div class="posttext">I'm happy for this change. Typically PVP is my second avenue after raid is boring. I don't get giddy for &quot;OH SHINY LOOT&quot;, I get excited because its one less step to being hit like a truck and trying to stab them with daisies. I'd rather not require someone to carry me to conquest cap just so I can start to get on the level of rest of arenas. I'd rather play against other people, not a gear curve.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Slainn</div><div class="date">2016-05-25, 05:04 AM</div></div><div class="posttext">Sooooo, no more different looking armour sets pve/pvp? or am I wrong? If that is the case, it would suck. Artifacts taking away a lot of new weapon customization options seeing as they only have a few visual options and they've removed the need to design a lot of new weapons, taking away an entire armour set from pvp would do the same. Because let's be honest, we all play for the transmogs xD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mst3kfan</div><div class="date">2016-05-25, 01:26 PM</div></div><div class="posttext">It never seems to boggle my mind at how the people who have chosen to strictly PvP in WoW whine about every small change. If I remember correctly when I started playing WoW 11 to 12 years ago that this game is an MMORPG, MMO-Role Playing Game. Not a PvP game. If anything all the time wasted on side projects like PvP take away time and energy that could be used to develop the core of the RPG. If I was a core PvPer I would be grateful there is even PvP in the game, and honestly regardless of the different iterations in PvP gear PvP has not changed it still works exactly like it has since release there is really no difference having also PvPed the entire time playing the game. If you are really that butt hurt about Blizzard making PvP changes there are more than enough alternative PvP game choice out there that are designed at their core to be PvP games. DOTA 2, LoL, HoTS, Battlefield, Call of Duty, ect... Take your pick, or stop complaining.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Faylum1</div><div class="date">2016-06-10, 11:38 AM</div></div><div class="posttext">You must be a 1500 player that's why you think these changes will affect you in a bad way. This system is perfect for gearing in pvp, this is the best thing they have ever announced.<br />
+<br />
+I am a wpvper i don't have a rating not since tbc when i gave a shit. I get welfare gear and beat up boosted arena players who think rating matters. That is why i am concerned about gear. herp derp, make assumptions derp herp...</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

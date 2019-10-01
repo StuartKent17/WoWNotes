@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, use, radeon, which, 6970, tad, video, card, couple, old, generations, when, comes, out, dx12, will, behind, wonder, blizz, setting, loving, improved, appearance, with, lighting, anti-aliasing, 6.1, engineers, workshop, new, antialiasing, can, best, patch, hoping, pics, judging, from, those, since" />
+<meta name="description" content="Patch 6.1 - Engineer’s Workshop: Anti-Aliasing &amp; Lighting 
+We’ve been toiling away on a number of new graphical features that are coming with Patch 6.1, and we’re excited to provide a glimpse at how they’re shaping up. A quick reminder that the Engineer’s Workshop tends to be pretty tech savvy in the terms we’re using, but certainly these features will provide benefits to all players regardless of if they can tell their display port from a hole in the ground. Nyuk, nyuk, nerd jokes. 
+" />
+<title> Patch 6.1 - Engineer's Workshop: Anti-Aliasing &amp; Lighting [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Patch 6.1 - Engineer's Workshop: Anti-Aliasing &amp; Lighting</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1712971.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1712971-Patch-6-1-Engineer-s-Workshop-Anti-Aliasing-amp-Lighting">Patch 6.1 - Engineer's Workshop: Anti-Aliasing &amp; Lighting</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-02-12, 06:06 PM</div></div><div class="posttext">Patch 6.1 - Engineer’s Workshop: Anti-Aliasing &amp; Lighting<br />
+We’ve been toiling away on a number of new graphical features that are coming with Patch 6.1, and we’re excited to provide a glimpse at how they’re shaping up. A quick reminder that the Engineer’s Workshop tends to be pretty tech savvy in the terms we’re using, but certainly these features will provide benefits to all players regardless of if they can tell their display port from a hole in the ground. Nyuk, nyuk, nerd jokes.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2015/february/thumb/ssao.jpg (http://media.mmo-champion.com/images/news/2015/february/ssao.jpg) http://media.mmo-champion.com/images/news/2015/february/thumb/ssao2.jpg (http://media.mmo-champion.com/images/news/2015/february/ssao2.jpg) http://media.mmo-champion.com/images/news/2015/february/thumb/ssao3.jpg (http://media.mmo-champion.com/images/news/2015/february/ssao3.jpg) <br />
+<br />
+First up we’re going to be providing a new screen space ambient occlusion (SSAO) method from NVIDIA known as HBAO+, targeted at higher end video cards. It provides a high quality ambient occlusion solution that should be available to most users running recommended spec machines. Here we’re showing comparisons of using no SSAO, our current SSAO High setting, and the new NVIDIA HBAO+. The HBAO+ setting uses our geometry buffer to access the screen space normals of all objects being drawn. It more accurately darkens surfaces that are near the same depth but with opposing normals, and does so with fewer artifacts than the SSAO depth-only solution. HBAO+ will work on any DirectX 11-capable video card.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2015/february/thumb/ao01.jpg (http://media.mmo-champion.com/images/news/2015/february/ao01.jpg) http://media.mmo-champion.com/images/news/2015/february/thumb/ao02.jpg (http://media.mmo-champion.com/images/news/2015/february/ao02.jpg) http://media.mmo-champion.com/images/news/2015/february/thumb/ao03.jpg (http://media.mmo-champion.com/images/news/2015/february/ao03.jpg) http://media.mmo-champion.com/images/news/2015/february/thumb/ao04.jpg (http://media.mmo-champion.com/images/news/2015/february/ao04.jpg) <br />
+<br />
+We know many of you have been looking forward to the return of MSAA, and we’ve also heard your requests for support of SSAA. We’re pleased to say that both of these options will be available for DirectX 11 users in Patch 6.1. They can be accessed from the anti-aliasing settings in the graphics option screen, and are intended for users with high performance video cards. For people running near the recommended spec, Intel’s CMAA is still the preferable option, and will help you balance graphic fidelity with performance. Below are some comparisons between CMAA, MSAA 8x, and SSAA 2x + CMAA. With Patch 6.1 we’ll be providing the widest variety of anti-aliasing options we’ve ever had available, ranging from performance-optimal to performance-crushing.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2015/february/thumb/aa01.jpg (http://media.mmo-champion.com/images/news/2015/february/aa01.jpg) http://media.mmo-champion.com/images/news/2015/february/thumb/aa02.jpg (http://media.mmo-champion.com/images/news/2015/february/aa02.jpg) http://media.mmo-champion.com/images/news/2015/february/thumb/aa03.jpg (http://media.mmo-champion.com/images/news/2015/february/aa03.jpg) http://media.mmo-champion.com/images/news/2015/february/thumb/aa04.jpg (http://media.mmo-champion.com/images/news/2015/february/aa04.jpg) <br />
+<br />
+Also in Patch 6.1 we’re implementing a lighting makeover with the introduction of per-pixel deferred point lights. This allows for accurate point lights that can affect all of the objects in the game world. This creates realistic lighting from sources like camp fires and torches, and illuminates the world in a more realistic way than ever before. The number of point lights supported varies by hardware, with high end video cards allowing for the best quality lighting. Below are several examples of a scene lit in the current game (6.0.3), and what you can expect that same scene to look like in Patch 6.1.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2015/february/thumb/prettyLight01.jpg (http://media.mmo-champion.com/images/news/2015/february/prettyLight01.jpg) http://media.mmo-champion.com/images/news/2015/february/thumb/prettyLight02.jpg (http://media.mmo-champion.com/images/news/2015/february/prettyLight02.jpg) <br />
+http://media.mmo-champion.com/images/news/2015/february/thumb/prettyLight03.jpg (http://media.mmo-champion.com/images/news/2015/february/prettyLight03.jpg) http://media.mmo-champion.com/images/news/2015/february/thumb/prettyLight04.jpg (http://media.mmo-champion.com/images/news/2015/february/prettyLight04.jpg) <br />
+http://media.mmo-champion.com/images/news/2015/february/thumb/prettyLight05.jpg (http://media.mmo-champion.com/images/news/2015/february/prettyLight05.jpg) http://media.mmo-champion.com/images/news/2015/february/thumb/prettyLight06.jpg (http://media.mmo-champion.com/images/news/2015/february/prettyLight06.jpg) <br />
+<br />
+<br />
+All of this technology is available to check out on the 6.1 PTR right now, so go try them out and see how these options work on your rig, and let us know your results.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CosmicGuitars</div><div class="date">2015-02-12, 06:19 PM</div></div><div class="posttext">Looks great!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Leafcast</div><div class="date">2015-02-12, 06:22 PM</div></div><div class="posttext">I love the changes to lighting!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Koji2k11</div><div class="date">2015-02-12, 06:22 PM</div></div><div class="posttext">how about releasing the patch already ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cheerbleeder</div><div class="date">2015-02-12, 06:23 PM</div></div><div class="posttext">Finally some real news that everyone will thumbs up to! This is the kind of stuff I like to see. Work that effects us all as a whole.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">neiljwd</div><div class="date">2015-02-12, 06:25 PM</div></div><div class="posttext">Looks better, will it have any effect for AMD/ATI cards though?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zstr</div><div class="date">2015-02-12, 06:27 PM</div></div><div class="posttext">don't see any difference at all, better they work on optimizing current things, less fps drop in raids , instead smth that almost nobody will notice</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6a5a7ae332</div><div class="date">2015-02-12, 06:27 PM</div></div><div class="posttext">Those lighting changes look amazing, and we finally have REAL AA available again (FXAA being a blur filter, and CMAA being absolutly useless. Thankfully MSAA and SSAA work great)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Canyouweed</div><div class="date">2015-02-12, 06:28 PM</div></div><div class="posttext">don't see any difference at all, better they work on optimizing current things, less fps drop in raids , instead smth that almost nobody will notice<br />
+<br />
+You being the one not noticing it, and me being someone that notices a whole lot difference, do you see me saying that everyone will see the difference, like you, saying the exact oposite? Your viewpoint is not the only one.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc56187fe24d</div><div class="date">2015-02-12, 06:28 PM</div></div><div class="posttext">Frecking finally! so happy :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd12f42ecc6</div><div class="date">2015-02-12, 06:29 PM</div></div><div class="posttext">how about releasing the patch already ?<br />
+<br />
+how about no?<br />
+<br />
+there are still so many bugs, they should fix them first.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bats</div><div class="date">2015-02-12, 06:30 PM</div></div><div class="posttext">don't see any difference at all, better they work on optimizing current things, less fps drop in raids , instead smth that almost nobody will notice<br />
+<br />
+Exactly what I was thinking. I literally can't &quot;spot the difference&quot; except on the last screenshot where you can clearly see the improvement in lighting. But come on... is this what they will introduce in a major patch? I'm maybe getting disappointed too early, but considering what they've delivered this expansion I have no hope at all anymore. This better not be their top feature in 6.1.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayperos</div><div class="date">2015-02-12, 06:31 PM</div></div><div class="posttext">And thank god. I can't even go back to live now. I won't play until 6.1. Looks so much better on PTR.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wromthrax</div><div class="date">2015-02-12, 06:34 PM</div></div><div class="posttext">If you can't see any difference you need to check up on your eyesight to be honest.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">stanglee</div><div class="date">2015-02-12, 06:37 PM</div></div><div class="posttext">New lighting feature looks great. Can't wait to see it Live.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Adam552</div><div class="date">2015-02-12, 06:43 PM</div></div><div class="posttext">I noticed the lighting feature on the PTR a few weeks ago, it makes it look amazing seriously!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheDeeGee</div><div class="date">2015-02-12, 06:45 PM</div></div><div class="posttext">don't see any difference at all, better they work on optimizing current things, less fps drop in raids , instead smth that almost nobody will notice<br />
+<br />
+<br />
+Exactly what I was thinking. I literally can't &quot;spot the difference&quot; except on the last screenshot where you can clearly see the improvement in lighting. But come on... is this what they will introduce in a major patch? I'm maybe getting disappointed too early, but considering what they've delivered this expansion I have no hope at all anymore. This better not be their top feature in 6.1.<br />
+<br />
+Troll much?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc2253ac71c</div><div class="date">2015-02-12, 06:45 PM</div></div><div class="posttext">Those light effects are great :). I hope that my computer can handle them, I was just few days ago wondering the lack of lighting in Westbrook Garrison (Elwynn Forest) although there was lots of torches and fires</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nillah</div><div class="date">2015-02-12, 06:47 PM</div></div><div class="posttext">LOVE those lighting changes. The rest are awesome too but not sure I'll be able to use them yet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca159452d04</div><div class="date">2015-02-12, 06:47 PM</div></div><div class="posttext">don't see any difference at all, better they work on optimizing current things, less fps drop in raids , instead smth that almost nobody will notice<br />
+<br />
+Might want to get those eye's tested as there is a great difference.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">batboywonder</div><div class="date">2015-02-12, 06:52 PM</div></div><div class="posttext">Looks slick, it's fun to see how far Blizzard can push the engine.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jin</div><div class="date">2015-02-12, 07:03 PM</div></div><div class="posttext">It is nice they can push it, but 40 or less fps on a high end pc is still rubbish.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">christarp</div><div class="date">2015-02-12, 07:06 PM</div></div><div class="posttext">lol @ people saying fix fps for raids.<br />
+<br />
+Get over yourself and turn down your graphics settings if your computer can't handle it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ghâzh</div><div class="date">2015-02-12, 07:07 PM</div></div><div class="posttext">lol @ people saying fix fps for raids.<br />
+<br />
+Get over yourself and turn down your graphics settings if your computer can't handle it.<br />
+No computer can handle it, that's the problem.<br />
+<br />
+Nonetheless, very impressive stuff. Big thumbs up from me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">1mmersi0n</div><div class="date">2015-02-12, 07:08 PM</div></div><div class="posttext">Nice to see no content in such detail</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheDeeGee</div><div class="date">2015-02-12, 07:09 PM</div></div><div class="posttext">No computer can handle it, that's the problem.<br />
+<br />
+No PC can handle Crysis either, and that's also a 25 Years old Game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">christarp</div><div class="date">2015-02-12, 07:10 PM</div></div><div class="posttext">No computer can handle it, that's the problem.<br />
+<br />
+And blizzard provides you with a way to improve performance by backing down the graphical settings, where's the problem?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dizzele</div><div class="date">2015-02-12, 07:26 PM</div></div><div class="posttext">At first I couldn't see any difference, opening the images separately then closing them. But I opened all of them in adjacent tabs on my Chrome and looked at them in rapid succession and I CAN see a pretty big difference, even on my Crappy work computer.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheDeeGee</div><div class="date">2015-02-12, 07:30 PM</div></div><div class="posttext">At first I couldn't see any difference, opening the images separately then closing them. But I opened all of them in adjacent tabs on my Chrome and looked at them in rapid succession and I CAN see a pretty big difference, even on my Crappy work computer.<br />
+<br />
+Most people just don't know how Tabs work in Browser :)<br />
+<br />
+Either do what you said, or save the images to Desktop and cycle thru them. It's not rocket science... or maybe it is ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Amsden</div><div class="date">2015-02-12, 07:32 PM</div></div><div class="posttext">Ehh this stuff is meaningless to me, but I'm sure a significant part of the community is very happy right now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheDeeGee</div><div class="date">2015-02-12, 07:37 PM</div></div><div class="posttext">Ehh this stuff is meaningless to me, but I'm sure a significant part of the community is very happy right now.<br />
+<br />
+I guess you never had proper Anti-Aliasing and such.<br />
+<br />
+A whole new world would open if you digged into that stuff.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Queen of Hamsters</div><div class="date">2015-02-12, 07:40 PM</div></div><div class="posttext">Wooo, was so sour about losing the great looking anti-aliasing! Finally worth to upgrade my comp.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheDeeGee</div><div class="date">2015-02-12, 07:42 PM</div></div><div class="posttext">I got the feeling the SSAA Anti-Aliasing options are bugged on the PTR.<br />
+<br />
+When i set it from 8x MSAA to 2x SSAA the FPS locks at 30 and it introduces Input Lag with V-Sync Enabled.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryme</div><div class="date">2015-02-12, 07:55 PM</div></div><div class="posttext">So, the stuff they removed in 6.0 they're adding back and calling it a patch feature?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrHappy</div><div class="date">2015-02-12, 07:55 PM</div></div><div class="posttext">wow the lighting is really good. for an old engine this looks really really good.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Optionx</div><div class="date">2015-02-12, 07:58 PM</div></div><div class="posttext">No computer can handle it, that's the problem.<br />
+<br />
+Nonetheless, very impressive stuff. Big thumbs up from me.<br />
+<br />
+my computer handles raids fine with ultra settings i have a i7-4790k overclocked along with a evga gtx 970 FTW overclocked , and i have 0 problems but im sure not alot of people have that kind of power in their computers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce6005d79bf</div><div class="date">2015-02-12, 08:01 PM</div></div><div class="posttext">Exactly what I was thinking. I literally can't &quot;spot the difference&quot; except on the last screenshot where you can clearly see the improvement in lighting. But come on... is this what they will introduce in a major patch? I'm maybe getting disappointed too early, but considering what they've delivered this expansion I have no hope at all anymore. This better not be their top feature in 6.1.<br />
+<br />
+Some people are just blind.<br />
+Anti-aliasing is much easier to notice in real game.. But even in screens you can notice difference between no aa, cmaa and msaa.<br />
+Donwload those pictures and cycle them on &quot;full screen&quot;.<br />
+<br />
+&quot;no ambient occlusion&quot; vs &quot;hbao+&quot; = huge difference.. New lighting technology is huge as well. <br />
+You must be ignorant if you can't notice it. <br />
+<br />
+Can't wait.. much better than another timeless isle.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cows For Life</div><div class="date">2015-02-12, 08:05 PM</div></div><div class="posttext">Yet they couldn't get night working in Cataclysm?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">getupkid55</div><div class="date">2015-02-12, 08:06 PM</div></div><div class="posttext">Does HBAO+ only work on nVidia cards? Or is just technology developed by nVidia that works on any card?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tru</div><div class="date">2015-02-12, 08:22 PM</div></div><div class="posttext">yawn.... im not seeing MUCH of a difference</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">meroko</div><div class="date">2015-02-12, 08:22 PM</div></div><div class="posttext">is this what they will introduce in a major patch?<br />
+<br />
+You do realize this isn't a major patch right? Tier patches are the major patches. This is filler patch just like 5.1, 5.3, etc. Get over yourself.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">IIBloodXLustII</div><div class="date">2015-02-12, 08:30 PM</div></div><div class="posttext">Quite a good upgrade in graphical fidelity, and people are still crying. I don't want to live on this planet anymore.<br />
+<br />
+<br />
+No computer can handle it, that's the problem.<br />
+Constant 60FPS in 30 man raids at max settings on a computer that was &quot;Mid tier&quot; two years ago.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheDeeGee</div><div class="date">2015-02-12, 08:34 PM</div></div><div class="posttext">yawn.... im not seeing MUCH of a difference<br />
+<br />
+That's because it never had your interest in the first place.<br />
+<br />
+Useless comments are useless.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lyphe</div><div class="date">2015-02-12, 08:36 PM</div></div><div class="posttext">don't see any difference at all, better they work on optimizing current things, less fps drop in raids , instead smth that almost nobody will notice<br />
+<br />
+Lol, always one in every group.<br />
+<br />
+Yes, it is noticeable as long as your aren't playing on a typewriter. Try and just give props to Blizz for doing a solid job on something instead of turning a good thing into a personal complaint about something else. Yes, there will always be things to work on for the devs. In the meantime, this is a positive change for many of us.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">throcha</div><div class="date">2015-02-12, 08:39 PM</div></div><div class="posttext">Wow, love the new lightning effects! Doles anyone know if it affects spells?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thilicen</div><div class="date">2015-02-12, 08:40 PM</div></div><div class="posttext">If those lighting effects affect spells then holy shit</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">charizma</div><div class="date">2015-02-12, 08:53 PM</div></div><div class="posttext">new lighting is amazing!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gaebryel Quintyne</div><div class="date">2015-02-12, 09:03 PM</div></div><div class="posttext">I love that Blizzard is doing this. Now, I can't wait to play it when it goes live. I find the current live version to be less than stellar to play on now.<br />
+But when I was on PTR, my fps dipped really low from 60 to 30 in the open world. I don't care about raids or BGs... I have different settings for that. For the open world like in Draenor zones like Shadowmoon Valley where I lag a lot when I look into a distance where there is a lot of stuff going on and moving at the same time, my FPS dips to 30 from 60. I have a i5 3570K, 7870 gigabyte card and 8 gigs ram. I want to upgrade my video card to the gigabyte g1 gaming GTX 970 and been eyeing it since December 2014 but I want the prices to drop so I can purchase it or I'll just save up some money until I can get it. I just wish that is the only thing I need to upgrade for the next 2-3 years hopefully. Also, I don't want to overclock my i5 3570k since I am too scared to do it any mess up really bad. I bought my whole PC with the parts initially back in December 2012 on Black Friday and wanted to look into overclocking but once I started reading up on it, it confused me and scared me. Anyway, getting too off-topic now so I'll just say that I can't wait for these new lighting and AA to be put in patch 6.1 =).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Talyrius</div><div class="date">2015-02-12, 09:15 PM</div></div><div class="posttext">I'm glad that I won't have to put up with aliasing for much longer—CMAA is terrible.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Awbee</div><div class="date">2015-02-12, 09:31 PM</div></div><div class="posttext">Looks really good :) now I just need to upgrade my computer to make use of this, lol.<br />
+<br />
+Especialyl liking the lightning effects :) hope that will also work on machines that aren't super high end.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocbfaacb1cad</div><div class="date">2015-02-12, 09:36 PM</div></div><div class="posttext">Great, maybe now WoW will utilize a 20% of my GPU with those maxed out. They are out on changing that, but WoW is still a CPU bound game, big time even.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9951aecc27</div><div class="date">2015-02-12, 09:46 PM</div></div><div class="posttext">People are complaining that it'll lower performance. Sure it will. If it's lowering performance too much for your system, turn it down or off.<br />
+Modern graphics cards are more than enough for WoW's ultra preset. The performance hit in many situations is likely related to CPU utilisation. DirectX12 might improve this considerably for some people but it depends if Blizzard will adopt it. If it's a considerable step up, then I'm sure they will.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DarkBlade6</div><div class="date">2015-02-12, 10:03 PM</div></div><div class="posttext">don't see any difference at all, better they work on optimizing current things, less fps drop in raids , instead smth that almost nobody will notice dude are you freakin blind or what?! the difference is so obvious its just ridiculous that you dont see it. You are the ONE who doesnt notice it, you probably wear some uber glass anyway.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Victorious9876</div><div class="date">2015-02-12, 10:19 PM</div></div><div class="posttext">Yeah they all look the same to me lol except for the fire becoming more fire-y :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfc138a9a69</div><div class="date">2015-02-12, 10:22 PM</div></div><div class="posttext">my computer handles raids fine with ultra settings i have a i7-4790k overclocked along with a evga gtx 970 FTW overclocked , and i have 0 problems but im sure not alot of people have that kind of power in their computers.<br />
+<br />
+$700 spent (at least) in those components. Playing a 2004 game.<br />
+<br />
+Slow clap.<br />
+<br />
+&lt;/irony&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheMeII</div><div class="date">2015-02-12, 10:29 PM</div></div><div class="posttext">$700 spent (at least) in those components. Playing a 2004 game.<br />
+<br />
+Slow clap.<br />
+<br />
+&lt;/irony&gt;<br />
+<br />
+Nope. <br />
+<br />
+He is playing Warlords of Draenor which is 2014 game. You do realize that vanilla servers are against the ToS.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">roboscorcher</div><div class="date">2015-02-12, 10:37 PM</div></div><div class="posttext">Very nice, Blizz. I may skip the AA options, but the lighting and occlusion options are gonna really make the game pop!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2015-02-12, 10:39 PM</div></div><div class="posttext">Looks nice. One more reason to look forward to 6.1.<br />
+<br />
+But I doubt I'll use HBAO, at least in these screenies stuff gets a little to dark for my tastes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moradim</div><div class="date">2015-02-12, 10:39 PM</div></div><div class="posttext">SO MUCH CONTENT<br />
+<br />
+jk it's just stuff that got delayed from beta</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Torbjorn</div><div class="date">2015-02-12, 10:42 PM</div></div><div class="posttext">don't see any difference at all, better they work on optimizing current things, less fps drop in raids , instead smth that almost nobody will notice<br />
+<br />
+... told by someone who cannot distinguish his mother from a sea lion. Enough said</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Maerad</div><div class="date">2015-02-12, 10:53 PM</div></div><div class="posttext">Honestly, with max SSAO+CMwhateveritwas and the other options on ptr the game looks awesome like never before.<br />
+<br />
+I really like it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fizyx</div><div class="date">2015-02-12, 10:53 PM</div></div><div class="posttext">Usually I don't really expect graphics upgrades of this caliber at any time other than an expansion release. This is pretty awesome, and I'm looking forward to it. The amount they've been able to squeeze out of their engine is astonishing, and the fact that they're able to get more and more out of it is just crazy to me. If you looked at WoW-Ultra today vs. WoW-Ultra at release... They don't even look like the same game. Seriously, MMO should put up some comparison galleries just so people can see exactly how far everything has come.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mormolyce</div><div class="date">2015-02-12, 10:53 PM</div></div><div class="posttext">Well now I can finally stop hearing those CMAA complaints from graphics nerds. Meanwhile the new lighting systems look hot as fuck!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">A dot Ham</div><div class="date">2015-02-12, 11:40 PM</div></div><div class="posttext">NOOOOO! With every graphical upgrade my old vanilla transmog gear looks more and more shitty!<br />
+<br />
+HD update to old tier sets plz!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc59b5827c7e</div><div class="date">2015-02-12, 11:44 PM</div></div><div class="posttext">Usually I don't really expect graphics upgrades of this caliber at any time other than an expansion release. This is pretty awesome, and I'm looking forward to it. The amount they've been able to squeeze out of their engine is astonishing, and the fact that they're able to get more and more out of it is just crazy to me. If you looked at WoW-Ultra today vs. WoW-Ultra at release... They don't even look like the same game. Seriously, MMO should put up some comparison galleries just so people can see exactly how far everything has come.<br />
+<br />
+This is what should've been in 6.0, but got pushed back.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">elvor0</div><div class="date">2015-02-12, 11:49 PM</div></div><div class="posttext">No computer can handle it, that's the problem.<br />
+<br />
+<br />
+<br />
+What? My laptop is dogshite. 3GB Ram, 2.5 i3 and a 420m. It can handle raids. <br />
+<br />
+It's okay for you to say &quot;MY computer can't handle it&quot;, no body is going to laugh at you, people will laugh at you if you make up statements like that.<br />
+<br />
+<br />
+$700 spent (at least) in those components. Playing a 2004 game.<br />
+<br />
+Slow clap.<br />
+<br />
+&lt;/irony&gt;<br />
+<br />
+And? He was responding to someone who said no computer can handle raids. Which is obviously so untrue it hurts. As someone else pointed out, the game has far from the same requirements as it did in 2004. <br />
+<br />
+Also, that's not irony, the way you misused irony is though. /slow clap.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kingpinuk880</div><div class="date">2015-02-13, 12:04 AM</div></div><div class="posttext">I love that Blizzard is doing this. Now, I can't wait to play it when it goes live. I find the current live version to be less than stellar to play on now.<br />
+But when I was on PTR, my fps dipped really low from 60 to 30 in the open world. I don't care about raids or BGs... I have different settings for that. For the open world like in Draenor zones like Shadowmoon Valley where I lag a lot when I look into a distance where there is a lot of stuff going on and moving at the same time, my FPS dips to 30 from 60. I have a i5 3570K, 7870 gigabyte card and 8 gigs ram. I want to upgrade my video card to the gigabyte g1 gaming GTX 970 and been eyeing it since December 2014 but I want the prices to drop so I can purchase it or I'll just save up some money until I can get it. I just wish that is the only thing I need to upgrade for the next 2-3 years hopefully. Also, I don't want to overclock my i5 3570k since I am too scared to do it any mess up really bad. I bought my whole PC with the parts initially back in December 2012 on Black Friday and wanted to look into overclocking but once I started reading up on it, it confused me and scared me. Anyway, getting too off-topic now so I'll just say that I can't wait for these new lighting and AA to be put in patch 6.1 =).<br />
+<br />
+i have a i5 3570 clocked at 4ghz (and thats conservative), barely goes over 60 degrees under load. That processor is great to overclock, you cant mess it up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airwaves</div><div class="date">2015-02-13, 12:20 AM</div></div><div class="posttext">Sweet. The current AA sucks. Glad they are adding better versions.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jin</div><div class="date">2015-02-13, 12:24 AM</div></div><div class="posttext">@ Those commenting that i should get a better pc, this is my rig;<br />
+<br />
+MBB: Asus MAXIMUS VII RANGER Z97<br />
+RAM: Corsair 16 GB DDR3-1600 Vengeance<br />
+CPU: Int Core i7-4790K <br />
+GFX: EVGA GeForce GTX 980 Superclocked <br />
+1920x1080<br />
+<br />
+When I did Rokhmar today, 35man, Ultra, I got&lt;30 fps, it does not matter much at all if I lower the graphics because this game just isn't made for current generation pc's. I do not know how these things will effect the fps, it might, it might not, but I would prefer more stable fps. For some 30 fps is a gift, for me, it is a curse, I need 60 fps atleast to feel a smooth game experience.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airwaves</div><div class="date">2015-02-13, 12:30 AM</div></div><div class="posttext">@ Those commenting that i should get a better pc, this is my rig;<br />
+<br />
+MBB: Asus MAXIMUS VII RANGER Z97<br />
+RAM: Corsair 16 GB DDR3-1600 Vengeance<br />
+CPU: Int Core i7-4790K <br />
+GFX: EVGA GeForce GTX 980 Superclocked <br />
+1920x1080<br />
+<br />
+When I did Rokhmar today, 35man, Ultra, I got&lt;30 fps, it does not matter much at all if I lower the graphics because this game just isn't made for current generation pc's. I do not know how these things will effect the fps, it might, it might not, but I would prefer more stable fps. For some 30 fps is a gift, for me, it is a curse, I need 60 fps atleast to feel a smooth game experience.<br />
+<br />
+That doesn't seem right. A 980 at only 1080p should be holding 60 most the time fine.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Banzhe</div><div class="date">2015-02-13, 01:00 AM</div></div><div class="posttext">Usually I don't really expect graphics upgrades of this caliber at any time other than an expansion release. This is pretty awesome, and I'm looking forward to it. The amount they've been able to squeeze out of their engine is astonishing, and the fact that they're able to get more and more out of it is just crazy to me. If you looked at WoW-Ultra today vs. WoW-Ultra at release... They don't even look like the same game. Seriously, MMO should put up some comparison galleries just so people can see exactly how far everything has come.<br />
+<br />
+What caliber? They changed the lighting and that it's, literally! (Unless you are wearing some magic glasses specially provided by Blizzard to select customers)<br />
+It's not even an engine upgrade to accommodate the higher end builds............ <br />
+<br />
+Why not shower us with content to fill the enormous gab that is bound to be between 6.1 and 6.x in 6+ months instead, feels like a lot of development time is being lost on these very minor tweaks</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4c68969c74</div><div class="date">2015-02-13, 01:44 AM</div></div><div class="posttext">awww yes man. cant wait!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Reek</div><div class="date">2015-02-13, 02:17 AM</div></div><div class="posttext">Most people just don't know how Tabs work in Browser :)<br />
+<br />
+Either do what you said, or save the images to Desktop and cycle thru them. It's not rocket science... or maybe it is ^^<br />
+<br />
+I'm sad that you even had to say that. It's 2015 and people still don't know shit about computers, it's ridiculous. They buy $2500 macbooks to browse Facebook and check e-mails...sorry off-topic sorta lol</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">OneSent</div><div class="date">2015-02-13, 03:46 AM</div></div><div class="posttext">All of these supposed huge leaps in graphical updates for the game that seem quite minuscule, to be honest ... and yet they still cannot implement a properly dark night or dynamic weather events.<br />
+<br />
+I actually find the game to be much more impressive graphically, and certainly more immersive when I play on a Vanilla private server. That's a 10-year-old game, and yet it blows me away more than anything these &quot;updates&quot; have to offer.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wallix</div><div class="date">2015-02-13, 03:52 AM</div></div><div class="posttext">@ Those commenting that i should get a better pc, this is my rig;<br />
+<br />
+MBB: Asus MAXIMUS VII RANGER Z97<br />
+RAM: Corsair 16 GB DDR3-1600 Vengeance<br />
+CPU: Int Core i7-4790K <br />
+GFX: EVGA GeForce GTX 980 Superclocked <br />
+1920x1080<br />
+<br />
+When I did Rokhmar today, 35man, Ultra, I got&lt;30 fps, it does not matter much at all if I lower the graphics because this game just isn't made for current generation pc's. I do not know how these things will effect the fps, it might, it might not, but I would prefer more stable fps. For some 30 fps is a gift, for me, it is a curse, I need 60 fps atleast to feel a smooth game experience.<br />
+<br />
+A 980 running at only 1080p? That seems....sacrilegious. I'd like to think that sucker would be pumping out 1440p at least.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Simca</div><div class="date">2015-02-13, 04:45 AM</div></div><div class="posttext">What caliber? They changed the lighting and that it's, literally! (Unless you are wearing some magic glasses specially provided by Blizzard to select customers)<br />
+It's not even an engine upgrade to accommodate the higher end builds............ <br />
+<br />
+Why not shower us with content to fill the enormous gab that is bound to be between 6.1 and 6.x in 6+ months instead, feels like a lot of development time is being lost on these very minor tweaks<br />
+<br />
+Engine devs aren't the ones who going to be creating content, and the content creators are just working on 6.2 instead of doing much with 6.1.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce6005d79bf</div><div class="date">2015-02-13, 08:01 AM</div></div><div class="posttext">$700 spent (at least) in those components. Playing a 2004 game.<br />
+<br />
+Slow clap.<br />
+<br />
+&lt;/irony&gt;<br />
+<br />
+it isn't 2014 game anymore.<br />
+Game is amazing.. beautiful.. Blizzard is constantly evolving WoW.<br />
+<br />
+I have i5-3570k and gtx 670.. i am playing on 1920x1080 on ultra.. 60+ fps..<br />
+Rarely there is some raidboss, which causes fps spikes.<br />
+---<br />
+<br />
+At work i have hd4000.. on minimal i still get 25+ fps on 1920x1080.<br />
+Even on minimal wow looks gorgeous.. cant compare to ANY 2004 game.<br />
+<br />
+Can't wait for 6.1.. new lighting and ambient changes.. Blizzard once again does amazing job.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">caervek</div><div class="date">2015-02-13, 08:27 AM</div></div><div class="posttext">Just a note for Nvidia users, if you set MSAA in game but enable MFAA in your drivers you can use that instead as it overrides ingame MSAA :)<br />
+<br />
+<br />
+<br />
+Usually I don't really expect graphics upgrades of this caliber at any time other than an expansion release.<br />
+<br />
+Part of the reason it looks like a big jump is because they nerfed the graphics when they released WoD, I.E the return of MSAA is better than CMAA, but we had MSAA until the end of MoP anyway...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Backjauer</div><div class="date">2015-02-13, 08:34 AM</div></div><div class="posttext">I'm not really fussed about AA or AO, but they are improvements. Those new lighting effects are amazing though, really add to the mood.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deyadissa</div><div class="date">2015-02-13, 11:05 AM</div></div><div class="posttext">A 980 running at only 1080p? That seems....sacrilegious. I'd like to think that sucker would be pumping out 1440p at least.<br />
+<br />
+Yeah that seems like something is wrong there, I have an i7-4550k processor with a GTX 760, it runs at 60 frames per second at 4k resolution on medium settings in most areas and about 30-40 in raids. In 1080p it sky rockets to like 150 frames and 100 in raids.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sturmbringe</div><div class="date">2015-02-13, 12:33 PM</div></div><div class="posttext">@ Those commenting that i should get a better pc, this is my rig;<br />
+<br />
+MBB: Asus MAXIMUS VII RANGER Z97<br />
+RAM: Corsair 16 GB DDR3-1600 Vengeance<br />
+CPU: Int Core i7-4790K <br />
+GFX: EVGA GeForce GTX 980 Superclocked <br />
+1920x1080<br />
+<br />
+When I did Rokhmar today, 35man, Ultra, I got&lt;30 fps, it does not matter much at all if I lower the graphics because this game just isn't made for current generation pc's. I do not know how these things will effect the fps, it might, it might not, but I would prefer more stable fps. For some 30 fps is a gift, for me, it is a curse, I need 60 fps atleast to feel a smooth game experience.<br />
+<br />
+Here's my rig:<br />
+<br />
+CPU: Core i7-4770k@4 GHz<br />
+Mobo: ASUS Maximus VI Hero Z87<br />
+RAM: G.SKILL ARES 8GB @2200 MHz<br />
+GPU: Gigabyte NVIDIA GTX 780 TI GHz Edition<br />
+Resolution: 2560X1440<br />
+Graphics Settings: ULTRA <br />
+<br />
+With the following additional settings from NVIDIA Control Panel:<br />
+<br />
+AMBIENT OCCLUSION: QUALITY<br />
+ANISOTROPIC FILTERING: 16X<br />
+ANTIALISING: ON<br />
+ANTIALIASING GAMMA CORRECTION: ON<br />
+ANTIALISING TRANSPARENCY: 8X<br />
+SHADER CACHE: ON<br />
+TEXTURE FILTERING NEGATIVE LOD BIAS: ALLOW<br />
+TEXTURE FILTERING: HIGH QUALITY<br />
+===========================================================<br />
+<br />
+The game runs perfectly smooth, and not only that but my GTX 780 TI GHZ EDITION never goes above 50 C. <br />
+<br />
+Given that I am running the game at a higher resolution than you and with every possible quality setting to max and I am not seeing any performance issues, it seems to me that you do not know how to accurately calibrate your rig/squeeze max performance out of it.<br />
+<br />
+This is typical with inexperienced users. In short, the hardware is fine, the game is fine. You fail at computers.<br />
+<br />
+I am very happy with this change.<br />
+<br />
+P.S.: GPU is at stock and CPU is at stock too, just increased the turbo freq to 4GHz and enable multi-core enhancement.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">risingforce</div><div class="date">2015-02-13, 12:50 PM</div></div><div class="posttext">http://images.gameskinny.com/gameskinny/982d937bc9e82e0514a87bf9076edc1f.jpg<br />
+<br />
+Hi,<br />
+<br />
+How about the Depth Effects settings introduced on PTR?<br />
+<br />
+I tested PTR a few weeks ago and couldn't see a difference enabled/disabled, presuming they were bugged or unactivated I hoped they would be later explained. Perhaps the 'Depth Effects' is only applied to the Selfie Camera; if so then that's pretty sad. I would love to see Depth of Field introduced into the outside zones of WoW. DoF in Raids could be problematic, but outdoors would be amazing.<br />
+<br />
+Can anyone comment?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Maerad</div><div class="date">2015-02-13, 07:54 PM</div></div><div class="posttext">If you guys have a good pc and fps problems, disable ALL addons for a change and try again. I had 25 fps sometimes, enabling only the needed addons (baggins/scrap for bags, skada, bigwigs, icehud and maybe one more I forgot) it runs smooth at 60 fps.<br />
+<br />
+Most addons are bad programmed and hit every system - espacially auction house ones, anything mit libdata/databroker, althololic etc.<br />
+<br />
+Anyway - the PTR Build with max Seetings (no graphic card tweaks) and max. AA runs WAY better then the current build. Better graphic and faster...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lansow</div><div class="date">2015-02-13, 10:38 PM</div></div><div class="posttext">No computer can handle it, that's the problem.<br />
+<br />
+Nonetheless, very impressive stuff. Big thumbs up from me.<br />
+<br />
+My experience says differently. Not everyone runs old equipment.<br />
+<br />
+i5-3570k @ 4.73GHz, Gigabyte Z77X-UD5H, 2 x GTX 980 SC SLI, 16GB DDR3-1600, 2 x 128GB SanDisk SSD RAID0, 2 x 256GB Crucial m4 SSD RAID0, 2 x 2TB Seagate HDD in RAID1, ASUS ROG SWIFT PG278Q 27&quot; WQHD 2560x1440 144Hz GSync monitor, Asus Xonar DX PCI-e sound card , Antec TruePower New 750W PSU, CyberPower CP1350PFCLCD 1350VA/810W UPS<br />
+<br />
+In before &quot;why did you spend all that to play a 10 year old game lulz&quot;. I didn't. I built it to play current games at settings most people won't see for years. Just so happens it runs WoW like a boss too.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">xomniversex</div><div class="date">2015-02-14, 04:42 AM</div></div><div class="posttext">Loving the improved appearance with the new antialiasing judging from those pics. Hoping I can use the best setting since my video card is a tad old: Radeon HD 6970 which is a couple generations behind. <br />
+Wonder if Blizz will use DX12 when it comes out.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

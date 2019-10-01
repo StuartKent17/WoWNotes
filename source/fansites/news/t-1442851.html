@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="class, you, chart, representation, have, 99%, druids, feral, resto, disc, holy, priests, issues, displayed, like, this, not, are, but, within, the, that, serious, across, fan, tweets, art, extremely, useless, blue, orgrimmar, stats, heroic, siege, unless, start, even, completely, armory, each, those, can, looking, into, specs, there, tiers" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; The Purpose of BoA, The Recent Changes to Witch Doctors, MannerCookie's HeisenBarb Beta Build 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Weekly News Recap, Quest Cancellations Temporarily Disabled, Top 5 Plays of the Week 
+ 
+Armory Stats -" />
+<title> Armory Stats - Heroic Siege of Orgrimmar Class Representation, Blue Tweets, Fan Art [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Heroic Siege of Orgrimmar Class Representation, Blue Tweets, Fan Art</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1442851.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1442851-Armory-Stats-Heroic-Siege-of-Orgrimmar-Class-Representation-Blue-Tweets-Fan-Art">Armory Stats - Heroic Siege of Orgrimmar Class Representation, Blue Tweets, Fan Art</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-21, 05:15 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; The Purpose of BoA, The Recent Changes to Witch Doctors, MannerCookie's HeisenBarb Beta Build (http://www.diablofans.com/news/47915-the-purpose-of-boa-the-recent-changes-to-witch)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Weekly News Recap, Quest Cancellations Temporarily Disabled, Top 5 Plays of the Week (http://www.hearthpwn.com/news/266-weekly-news-recap-quest-cancellations-temporarily)<br />
+<br />
+Armory Stats - Heroic Siege of Orgrimmar Class Representation<br />
+Today we are taking a look at class representation for characters that have killed a Heroic Siege of Orgrimmar boss at least once. There is no date restriction this time, so the sample comes from ~8.8 million characters and ~3.2 million accounts. Keep in mind that the sample size for Heroic Garrosh is less than 10,000 characters, so it is going to vary more than the larger samples. <br />
+<br />
+We looked at the same kind of thing back in Catacylsm for Heroic Madness of Deathwing (http://www.mmo-champion.com/content/2629-Patch-4-3-2-Release-Date-Update-Heroic-Madness-Class-Stats-Blue-Posts) if you are interested in seeing how things changed.<br />
+<br />
+When there is time, we can also look a this data by item level, Normal Siege of Orgrimmar kills, or several other factors. You can leave suggestions for future stat posts in the comments!<br />
+<br />
+<br />
+&lt;div id=&quot;HeroicGarroshClassBal&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&gt; Don't see a chart? Enable javascript! &lt;/div&gt;<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart;<br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: [ '#7A7A7A', '#7A7A7A', '#7A7A7A', '#7A7A7A', '#6B8E23', '#426F42']<br />
+});<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'HeroicGarroshClassBal',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: ['Death Knight','Druid','Hunter','Mage','Monk','Paladin','Priest','Rogue','Shaman','Warlock','Warr ior'],<br />
+labels: {<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent of Total',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+},<br />
+max: 15<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return this.series.name + '&lt;br /&gt;&lt;b&gt;' + this.point.name + '&lt;/b&gt; - '+ this.y +'%' ;<br />
+}<br />
+},<br />
+<br />
+title: {<br />
+text: 'Heroic Siege of Orgrimmar Class Representation',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+legend: {<br />
+enabled: true,<br />
+},<br />
+<br />
+series: [<br />
+{<br />
+data: [{y: 7.6, color: '#C41E3A', name:'Death Knight'},{y: 12.4, color: '#FF7D0A', name:'Druid'},{y: 9.1, color: '#ABD473', name:'Hunter'},{y: 8.0, color: '#69CCF0', name:'Mage'},{y: 6.4, color: '#00c77b', name:'Monk'},{y: 11.6, color: '#F58CBA', name:'Paladin'},{y: 11.5, color: '#FFFFFF', name:'Priest'},{y: 5.5, color: '#FFF569', name:'Rogue'},{y: 11.7, color: '#2459FF', name:'Shaman'},{y: 9, color: '#9482CA', name:'Warlock'},{y: 7.2, color: '#C79C6E', name:'Warrior'}]<br />
+,<br />
+name: 'Immerseus'<br />
+},<br />
+{<br />
+data: [{y: 7.3, color: '#C41E3A', name:'Death Knight'},{y: 12.6, color: '#FF7D0A', name:'Druid'},{y: 8.8, color: '#ABD473', name:'Hunter'},{y: 7.8, color: '#69CCF0', name:'Mage'},{y: 6.6, color: '#00c77b', name:'Monk'},{y: 11.8, color: '#F58CBA', name:'Paladin'},{y: 11.5, color: '#FFFFFF', name:'Priest'},{y: 5.8, color: '#FFF569', name:'Rogue'},{y: 11.5, color: '#2459FF', name:'Shaman'},{y: 9.1, color: '#9482CA', name:'Warlock'},{y: 7.2, color: '#C79C6E', name:'Warrior'}]<br />
+,<br />
+name: 'Dark Shaman'<br />
+},<br />
+{<br />
+data: [{y: 6.2, color: '#C41E3A', name:'Death Knight'},{y: 12.2, color: '#FF7D0A', name:'Druid'},{y: 8.4, color: '#ABD473', name:'Hunter'},{y: 7.9, color: '#69CCF0', name:'Mage'},{y: 6.6, color: '#00c77b', name:'Monk'},{y: 10, color: '#F58CBA', name:'Paladin'},{y: 11.8, color: '#FFFFFF', name:'Priest'},{y: 7.7, color: '#FFF569', name:'Rogue'},{y: 10.4, color: '#2459FF', name:'Shaman'},{y: 11, color: '#9482CA', name:'Warlock'},{y: 7.9, color: '#C79C6E', name:'Warrior'}]<br />
+,<br />
+name: 'Garrosh'<br />
+}<br />
+]<br />
+<br />
+});<br />
+<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+Blue Tweets<br />
+Classes<br />
+hardest thing I do as a RL is helping healers know theyre doing a good job / how to improve. New tool to help eval in #warlords?<br />
+We agree that healer performance is difficult to evaluate. Do you have any suggestions for what would help? (Celestalon (https://twitter.com/Celestalon/status/421154918930464768))<br />
+<br />
+The data! Malk: http://t.co/G4iPvoEKZG, Jugg: http://t.co/XLpkWwuQfv, Sha: http://t.co/rkYaZz8veE, Thok: http://t.co/MJFtXssXlR<br />
+Compare All Parses to Top 100. Shadow is deceptively hard to play optimally. Single target is low average, but high potential. (Source (https://twitter.com/Celestalon/status/421732036756271104))<br />
+You must have some very hidden numbers, hunters were beating Spriest on many fights before 6%? buff ask most raiders 1/2<br />
+We balance around more than just single target DPS. (Source (https://twitter.com/Celestalon/status/421782296446775296))<br />
+I think that's the summary of this conversation. Many Shadow priests value ST damage above all else. Considering changes for WoD. (Source (https://twitter.com/Celestalon/status/421784335251804161))<br />
+That's just preposterous. Shadow playing perfection with miraculous RNG does not have the potencial of mage/lock<br />
+I agree. That's an Arcane/Warlock problem. (Source (https://twitter.com/Celestalon/status/421778578544414720))<br />
+No it's not. It's a rogue/hunter/mage/warlock/shaman/druid problem. Shadow is simply not playable on e.g. H malkorok.<br />
+And we disagree. Your damage is lower than average, but not crippling so, and your utility is higher on that fight. (Source (https://twitter.com/Celestalon/status/421779993673211904))<br />
+Not the case for any other spec. They all have good and bad fights, sure, but shadow has 2 good, 10 bad and 2 unplayable ones.<br />
+Total hyperbole. They have 3 great, 2 bad, 9 average, damage-wise. Most of those they have very high utility. (Source (https://twitter.com/Celestalon/status/421781046800052224))<br />
+<br />
+So the solution for Spriest single target is to remove dots from single target...but thats why I play Spriest, to use dots.<br />
+The talent you're referring to is not a &quot;solution for Spriest single target&quot;. It's an optional different rotation. (Celestalon (https://twitter.com/Celestalon/status/421720337718325248))<br />
+<br />
+Hi, is there anything still happening with the ability bloat? A good thread on about this- http://t.co/VdfhFUHaKG<br />
+Yes. We haven't given specifics, but we're definitely going to be making big strides in combating ability bloat. (Celestalon (https://twitter.com/Celestalon/status/421045192884363264))<br />
+Thanks. Big strides is what lots of specs need desperately. If you had to guess - before WoD or not?<br />
+Not. That sort of thing requires significant change, which we save for expansions. (Celestalon (https://twitter.com/Celestalon/status/421046125622087680))<br />
+<br />
+past comments have said that dps are balanced around that fact. Not sure about tanks.<br />
+Str and Agi are balanced once Agi/Int no longer give crit. (Celestalon (https://twitter.com/Celestalon/status/421044546034622466))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight (Forums (http://www.mmo-champion.com/forums/269-Death-Knight) / Skills (http://www.wowdb.com/spells/class-abilities/death-knight) / Talent Calculator (http://www.wowdb.com/talent-calculator#Y))<br />
+could u please fix the deathgrip bug in tolvir and tigers peak finally which is in the game since the start of mop? please <br />
+Yes we're working on a fix but it won't be available until our next patch. It is not hotfixable. (Source (https://twitter.com/holinka/status/421797098581790721))<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/icons/images.gif Mage (Forums (http://www.mmo-champion.com/forums/272-Mage) / Skills (http://www.wowdb.com/spells/class-abilities/mage) / Talent Calculator (http://www.wowdb.com/talent-calculator#g))<br />
+did mages ice lance get -20% nerf? Can you clarify for us in the pvp community?<br />
+I've heard reports but we are not aware of any change to ice lance. (Source (https://twitter.com/holinka/status/421781533746143232))<br />
+<br />
+Art<br />
+Also, hear desire for Garrison update - not sure when that will happen but it's on my radar. (artofcgrobinson (https://twitter.com/artofcgrobinson/status/421365765107765248))<br />
+<br />
+Quick question, are druids getting a new aquatic form model in WoD? YES or NO?<br />
+MAYBE (Dave_Maldo (https://twitter.com/Dave_Maldo/status/421514097323028481))<br />
+<br />
+Then why were Undead allowed to be hunters? That makes no sense at all.<br />
+At least pick one w/o tons of in-game precedence! P.S. I once tried arguing for undead paladins because SIR ZELIEK. (Dave_Maldo (https://twitter.com/Dave_Maldo/status/421513720678723584))<br />
+<br />
+must Cloud Serpents shrink character models? Not sure if bug or intended. Would prefer if it didn't. Thanks for reading <br />
+Intended. Last-minute solution to realizing they were even more absurdly huge than intended, w/no time to remake saddles. T_T (Dave_Maldo (https://twitter.com/Dave_Maldo/status/421513089339490304))<br />
+<br />
+PvP<br />
+could we see faction specificity removed from random BG's as it has been for RBG? ie Horde vs Horde. Would this improve que times?<br />
+It would but one of the high level fantasies of WoW is red versus blue. We're exploring a lot of options now. (holinka (https://twitter.com/holinka/status/421093593403510784))<br />
+<br />
+said new PvP season would last aroun 20-25 weeks. I'd say, around that.<br />
+I definitely did NOT say the new PvP season would last around 20-25 weeks. I'd say that's the max length I'd want it. (holinka (https://twitter.com/holinka/status/420989396176101377))<br />
+out of curiosity? What is min length of a pvp season that you want.<br />
+Ha ha. This is a fun game of release date we're playing. (holinka (https://twitter.com/holinka/status/421029957528477696))<br />
+what season will it be in Australia when wod arrives?<br />
+Season 16 (holinka (https://twitter.com/holinka/status/421058329142497280))<br />
+<br />
+To add some more detail to the DR category conversations, you won't see things like Silence, Stun, Fear or Mez combined into one category. (Source (https://twitter.com/holinka/status/421719580810022912))<br />
+Can you tell us what we might see? Am very excited for streamlining of DR categories<br />
+I know everyone wants to know what we're doing, but I was mostly concerned with putting some fears to rest. (Source (https://twitter.com/holinka/status/421720800224231425))<br />
+Only hint: Despite his declaration we can't get it right isn't far off with what we're thinking. (Source (https://twitter.com/holinka/status/421721186096017408))<br />
+Also we hate the single DR idea. That will not happen. (Source (https://twitter.com/holinka/status/421721411372085249))<br />
+<br />
+Necrotic strike and aura of enfeeble and arcane slow is nerfed without second thought<br />
+They weren't nerfed by accident. (Source (https://twitter.com/holinka/status/421765275474599937))<br />
+sad about enfeeblement nerf. It's fundamentally different from passively applied effects. Should be treated differently.<br />
+If it the argument is it's bad gameplay, I don't think warlocks should be exempt from the change. (Source (https://twitter.com/holinka/status/421746574390079488))<br />
+<br />
+Warriors can use shield wall without equip shield. May we remove the physical punishment of Divine Shield and Hand of Protection?<br />
+I don't normally like to compare specs but I hope you can see what a profound difference there is between those spells. (holinka (https://twitter.com/holinka/status/421448324231593984))<br />
+<br />
+so dks lose runic power going blood pres. Warrs lose?<br />
+Rage generation (holinka (https://twitter.com/holinka/status/421398911207501824))<br />
+<br />
+<br />
+Poll: What Class is Your Main Character?<br />
+Defining main however you want (best gear, most time spent playing that character lately, or something else), what class are you playing? <br />
+<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/7732310.js&quot;&gt;&lt;/script&gt;&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/7732310/&quot;&gt;What class is your current main character?&lt;/a&gt;&lt;/noscript&gt;<br />
+<br />
+Fan Art Update<br />
+The World of Warcraft Fan Art Section (http://us.battle.net/wow/en/media/fanart/#/1) has been updated with new fan artwork.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/january/thumb/fanart-1350-full.jpg (http://media.mmo-champion.com/images/news/2014/january/fanart-1350-full.jpg) http://media.mmo-champion.com/images/news/2014/january/thumb/fanart-1351-full.jpg (http://media.mmo-champion.com/images/news/2014/january/fanart-1351-full.jpg)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2014-01-21, 05:23 AM</div></div><div class="posttext">Weird that there are less rogues, with them being so powerful right now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Felrane</div><div class="date">2014-01-21, 05:28 AM</div></div><div class="posttext">rogues are very boring to play</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaleredar</div><div class="date">2014-01-21, 05:42 AM</div></div><div class="posttext">I hadn't noticed that Cloud serpents shrink your character model.<br />
+<br />
+<br />
+<br />
+Also... seems most people like paladins. They just seem sort of clunky to me...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wishblade</div><div class="date">2014-01-21, 05:43 AM</div></div><div class="posttext">Really hope Warlords info is on the way (BETA!), not much to get excited about these days. :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">balir</div><div class="date">2014-01-21, 05:47 AM</div></div><div class="posttext">Is there a spec breakdown hidden in that class chart? THAT would be interesting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BetrayedOf52</div><div class="date">2014-01-21, 05:49 AM</div></div><div class="posttext">I'm a little surprised on the druids, are they doing that well? OR just really fun to play, I def thought warlock and mage would be top.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vulryth</div><div class="date">2014-01-21, 05:51 AM</div></div><div class="posttext">i still find rogue the most fun to play, not sure why they are at the bottom of the poll. @moveth, they are behind a couple classes for damage in pve. not exactly &quot;so powerful&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kaleredar</div><div class="date">2014-01-21, 05:52 AM</div></div><div class="posttext">i still find rogue the most fun to play, not sure why they are at the bottom of the poll. @moveth, they are behind a couple classes for damage in pve. not exactly &quot;so powerful&quot;.<br />
+<br />
+In PvP they're as annoying as ever</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-21, 05:53 AM</div></div><div class="posttext">Is there a spec breakdown hidden in that class chart? THAT would be interesting.<br />
+<br />
+There is no way to know what spec a character's &quot;main&quot; spec is.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aparthia</div><div class="date">2014-01-21, 05:59 AM</div></div><div class="posttext">Surprised by the number of monks. I'd imagine most pushing heroics had a monk tank at least.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bawk</div><div class="date">2014-01-21, 06:08 AM</div></div><div class="posttext">Quick question, are druids getting a new aquatic form model in WoD? YES or NO?<br />
+MAYBE (Dave_Maldo)<br />
+<br />
+<br />
+Saw this and was like ... 'I will be surprised if Seal Form gets updated before Moonkin. Oh wait, it'll probably happen.'</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrKnubbles</div><div class="date">2014-01-21, 06:19 AM</div></div><div class="posttext">Yea, Paladin!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc130b2ce881</div><div class="date">2014-01-21, 06:25 AM</div></div><div class="posttext">How does it work that more warlocks killed garrosh than immerseus/shamans?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">apepi</div><div class="date">2014-01-21, 06:26 AM</div></div><div class="posttext">Monk is not the lowest? The world is not right!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bawk</div><div class="date">2014-01-21, 06:27 AM</div></div><div class="posttext">How does it work that more warlocks killed garrosh than immerseus/shamans?<br />
+<br />
+It is a percent total out of 100%. <br />
+It is participation of classes, not a total amount of people who killed it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Braindwen</div><div class="date">2014-01-21, 06:28 AM</div></div><div class="posttext">Priest bars being white on a white background just does not look good. I thought it was just blank space until I moused over it and numbers appeared.<br />
+<br />
+Also, I like that druids are right in the middle of the poll atm, as well as having no meaningful change in representation as you move up the heroic ladder. Average class ftw!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheBaron87</div><div class="date">2014-01-21, 06:36 AM</div></div><div class="posttext">How does it work that more warlocks killed garrosh than immerseus/shamans?<br />
+<br />
+Warlocks that have defeated Garrosh are a greater portion of the total number of players that have defeated Garrosh than Warlocks that have defeated Immerseus/Shamans are of the total number of players that have defeated Immerseus/Shamans.<br />
+<br />
+Also, too many Paladins.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">greyghost</div><div class="date">2014-01-21, 06:42 AM</div></div><div class="posttext">That goblin shaman doll is so cute. I'd totally buy one.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nekobaka</div><div class="date">2014-01-21, 06:46 AM</div></div><div class="posttext">Also, too many Paladins.<br />
+lol. Thinking back to previous expansions and hybrid representation of healing capable classes it is fairly balanced. Monks are well monks. Sadly we the players dont have the data to say what role each class completed a boss.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yig</div><div class="date">2014-01-21, 07:15 AM</div></div><div class="posttext">A free for all battleground would fucking rock ass and socks off body. Every man for himself (ladies too) with lots of corridors.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vexacus</div><div class="date">2014-01-21, 07:57 AM</div></div><div class="posttext">I'm a little surprised on the druids, are they doing that well? OR just really fun to play, I def thought warlock and mage would be top.<br />
+<br />
+you have to take into consideration that druid has 4 specs/roles. a warlock/mage is just a caster dps<br />
+if my calculations are correct there are 11 classes and 23 spec/roles.<br />
+if you really wanna see which is most populair you also have to take those things into account</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hottage</div><div class="date">2014-01-21, 07:59 AM</div></div><div class="posttext">Really nice to see the balance among class specs is mostly equal these days but the class poll frustrates me because the options are not sorted alphabetically. :(<br />
+<br />
+Would also be interesting to resort the graph by class/role as well, since rogues seem under-represented, but partly because they can only fufill one role.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd2a2ae8157</div><div class="date">2014-01-21, 08:11 AM</div></div><div class="posttext">Comparing with previous expansion the most relevant things I see is: more hunters and warlocks, less mages and rogues. <br />
+<br />
+Hunters on DS were really bad, warlocks this expansion are the most powerful class no debate there, rogues on DS probably were more because legendary and mages this expansion suck hard (light version of a warlock)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0e23e5b73e</div><div class="date">2014-01-21, 08:24 AM</div></div><div class="posttext">I wonder if blizzard is still unhappy with the warlock revamp. Looking at these statistics they've been a huge succes, they were the 2e least played class before that.<br />
+Now part of it is also that they gave warlocks a hero class treatment with lots of utility and making sure they perform really well on dps (mage and i'm allright with the latter not the former :P).<br />
+<br />
+Hmm but this is raiding as well so it's a bit hard to tell compare the overal statistics i seen last. Paladin has always been the highest but druids probably beat them because SoO favours resto druids. <br />
+<br />
+You can also notice that warriors and DK's arn't gaining the benefit popularity hybrids have. Probably has to do that the raidcomposition is extremely limited to the number of tanks. Combine that with raids prefering more ranged spots than melee and they have a lot of competition on their spots and resulting in a decline of desire to do that role.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ater</div><div class="date">2014-01-21, 08:30 AM</div></div><div class="posttext">I think it would be more interesting to see this typ of stats based on role. Tanks, Healers and DPS, that way we would get a decent picture of what classes/specs needs buffs/nerfs or reworks to make them more interesting to play.<br />
+<br />
+If we take druids as an example (the example is completely made up), knowing that a lot of people plays druid doesn't say a lot, maybe if we looked at role we would find out that druid tanks is really rare compared to warrior/paladin/dk/monk tanks and that resto is far more common then priest/paladin/shaman/monk.<br />
+<br />
+If we had that type of information we could start looking at what's causes it, does druid tanks need a buff? Or is they more boring to play compare to other tanks? If the first one, buff them, if the second one revamp them.<br />
+<br />
+And if we look at dps, what if five times as many warlocks has killed Garrosh hc then paladins, then maybe warlocks needs a nerf, pallys needs a buff, retris is very boring to play and needs a revamp or maybe holy or prot is so op that paladins are forced to play that instead of retri and holy/prot needs a nerf.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Decisive The Hallowed</div><div class="date">2014-01-21, 08:46 AM</div></div><div class="posttext">Im not surprised Death Knights are on the lower part of the list. I would think its because the fact you have to level up your first toon to Lvl55 in order to play DK. By then, most likely that toon would already be your main.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb486d163cd</div><div class="date">2014-01-21, 09:06 AM</div></div><div class="posttext">I've main'd Rogue since vanilla, I don't think I've ever struggled to get a decent pair of daggers so much. The loot system seems to be double gold or something I already have. :|<br />
+<br />
+<br />
+Priest bars being white on a white background just does not look good.<br />
+<br />
+Sort your brightness/contrast out, that is not a white background.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nocturnes</div><div class="date">2014-01-21, 09:21 AM</div></div><div class="posttext">Monks, well nobody rly likes a panda in this kind of games....I hope Blizzard gets a bit mature now...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">theostrichsays</div><div class="date">2014-01-21, 09:27 AM</div></div><div class="posttext">If I was a betting man, I would wager that the majority of those druids, are feral. Thankfully I am not a betting man, and as such I won't lose whatever I would have had to wager. WTB more feral love.<br />
+I would love to see a separate 10/25 man chart, given I was surprised to see mages so far behind locks even if locks are (and have been) fairly beasty.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aesahaettr</div><div class="date">2014-01-21, 09:41 AM</div></div><div class="posttext">Monks, well nobody rly likes a panda in this kind of games....I hope Blizzard gets a bit mature now...<br />
+<br />
+Because Monks *have* to be Pandas, right?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2014-01-21, 09:47 AM</div></div><div class="posttext">Priest bars being white on a white background just does not look good. I thought it was just blank space until I moused over it and numbers appeared.<br />
+Your monitor settings might be faulty. background is yellow-ish bar is white.<br />
+<br />
+@Chaud: I think a black border around the white bars, equal to the white border around the other colors could make them easier to see.<br />
+<br />
+@Twitter SPriest discussion: It's hilariously depressing to see how Blizzard fights teeth and claw against shadow priest getting proper single target damage. I really wished that one of those Blizzard DEVs was stuck with a shadow on a fight like H-Malkorok, so he can feel how utterly frustrating it can be to be so far behind.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hugh Wattmate</div><div class="date">2014-01-21, 09:49 AM</div></div><div class="posttext">would have put paladins higher druids at the top sounds right though (quad spec can be amazing for progression)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Syenite</div><div class="date">2014-01-21, 09:51 AM</div></div><div class="posttext">A lot of rogues / warlocks uesd for Garrosh heroic? Surprise....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4f448e7a9a</div><div class="date">2014-01-21, 09:51 AM</div></div><div class="posttext">So arcane slow is intentionally PvP nerfed. Glad to see stupid gameplay aka 5.4 warrior is still rewarded to play, yet people that actually want to use something semi-broken and make it work get fucked over.ž<br />
+<br />
+<br />
+I wonder if blizzard is still unhappy with the warlock revamp. Looking at these statistics they've been a huge succes, they were the 2e least played class before that.<br />
+Now part of it is also that they gave warlocks a hero class treatment with lots of utility and making sure they perform really well on dps (mage and i'm allright with the latter not the former :P)<br />
+<br />
+After playing warlocks for 8 years I can safely say that the revamp made a 180 change and made me and a lot of old locks quit; the class mechanics have very little to work like they did in cata and all before. <br />
+<br />
+Anyways, they are a PvE fotm for the whole xpac and require a small amount of brainwork for LFR porpuses to reach top dps, so not much will change.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">grexly75</div><div class="date">2014-01-21, 10:16 AM</div></div><div class="posttext">Monks, well nobody rly likes a panda in this kind of games....I hope Blizzard gets a bit mature now...<br />
+<br />
+Wow really?? I never knew that Monks were a Pandarian only class must tell all the other races they can't be monks.. /sarcasm</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kalisandra</div><div class="date">2014-01-21, 11:03 AM</div></div><div class="posttext">I think it would be more interesting to see this typ of stats based on role. Tanks, Healers and DPS, that way we would get a decent picture of what classes/specs needs buffs/nerfs or reworks to make them more interesting to play.<br />
+<br />
+If we take druids as an example (the example is completely made up), knowing that a lot of people plays druid doesn't say a lot, maybe if we looked at role we would find out that druid tanks is really rare compared to warrior/paladin/dk/monk tanks and that resto is far more common then priest/paladin/shaman/monk.<br />
+<br />
+If we had that type of information we could start looking at what's causes it, does druid tanks need a buff? Or is they more boring to play compare to other tanks? If the first one, buff them, if the second one revamp them.<br />
+<br />
+And if we look at dps, what if five times as many warlocks has killed Garrosh hc then paladins, then maybe warlocks needs a nerf, pallys needs a buff, retris is very boring to play and needs a revamp or maybe holy or prot is so op that paladins are forced to play that instead of retri and holy/prot needs a nerf.<br />
+<br />
+While the information isn't nearly as comprehensive, seeing as it's drawn from parses voluntarily posted, raidbots has some info by spec that looks at this. It doesn't seem to have data for heroic kills past Thok, so we'll use that as the furtherest in we have data for.<br />
+<br />
+<br />
+<br />
+DPS Spec # parses Percent<br />
+DK Frost 1293 5.4<br />
+DK UH 368 1.5<br />
+Dru Bal 1481 6.2<br />
+Dru Cat 586 2.5<br />
+Hunt BM 1057 4.4<br />
+Hunt MM 44 0.2<br />
+Hunt SV 1986 8.3<br />
+Mage Arc 977 4.1<br />
+Mage Fire 1551 6.5<br />
+Mage Fr 394 1.6<br />
+Monk MM 680 2.8<br />
+Pal Ret 1614 6.8<br />
+Pr Shad 1670 7.0<br />
+Rog Ass 568 2.4<br />
+Rog Cbt 1905 8.0<br />
+Rog Sub 273 1.1<br />
+Sham Ele 862 3.6<br />
+Sham Enh 642 2.7<br />
+WL Aff 1378 5.8<br />
+WL Demo 133 0.6<br />
+WL Dest 2144 9.0<br />
+War Arms 86 0.4<br />
+War Fury 2203 9.2<br />
+<br />
+Total 23895 100.1<br />
+<br />
+<br />
+Heal Spec # parses Percent<br />
+Dru Resto 1844 17.3<br />
+Monk MW 930 8.7<br />
+Pal Holy 1960 18.4<br />
+Pr Disc 2394 22.4<br />
+Pr holy 701 6.6<br />
+Sha Resto 2846 26.7<br />
+<br />
+Total 10675 100.1<br />
+<br />
+<br />
+Tank Spec # parses Percent<br />
+DK Blood 476 15.8<br />
+Dru Bear 330 11.0<br />
+Monk BM 517 17.2<br />
+Pal Prot 866 28.8<br />
+War Prot 821 27.3<br />
+<br />
+Total 3010 100.1<br />
+<br />
+<br />
+The average percentage for a DPS spec is ~4.3%, for healers ~16.7%, and for tanks 20%. Thus we can see that for this fight (Thok 25H) Arms Warriors, Demo Warlocks, and MM Hunters are incredibly under-represented, but as other specs in those classes aren't, this is probably because they've all changed spec. We can be comfortable saying that this isn't the case with the unpopular WW Monk, and nor is it the case with the popular Shadow Priest. It's more straightforward with tanks (Warriors and Paladins good, DKs and Druids bad), and healers (Monks and Holy Priests are out, Disc is in).<br />
+<br />
+Here is the DPS, this time by class:<br />
+<br />
+<br />
+<br />
+DPS Class # parses Percent<br />
+DK 1661 7.0<br />
+Druid 2067 8.7<br />
+Hunter 3087 12.9<br />
+Mage 2922 12.2<br />
+Monk 680 2.8<br />
+Paladin 1614 6.8<br />
+Priest 1670 7.0<br />
+Rogue 2746 11.5<br />
+Shaman 1504 6.3<br />
+Warlock 3655 15.3<br />
+Warrior 2289 9.6<br />
+<br />
+Total 23895 100.1<br />
+<br />
+The average percentage is ~9.1%, so we can see that all pure DPS classes are 'over' represented, with Warlocks way over. We can also see that Monks are really suffering, of the other hybrids Warriors are doing well and everyone else is about average (for a hybrid). Thus the apparently very popular Shadow Priest is actually of average popularity when you allow for the pures being spread over several specs (the same goes for Retribution Paladins).<br />
+<br />
+Obviously whether pures should be more highly represented to allow for their lack of role flexibility is arguable, and one would need to use data from more than one fight to get a good picture, and so on, though a cursory look shows DPS following broadly the same pattern over the whole raid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mr Legseleven</div><div class="date">2014-01-21, 11:05 AM</div></div><div class="posttext">Maybe if Blizzard buffs S priests, all the warlock re rollers will dust off their priest? Never seen so many struggling locks that clearly have little grasp on the class despite the class overhaul / simplification out and about in the world, in pug raids and bg's etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aboubacar</div><div class="date">2014-01-21, 11:14 AM</div></div><div class="posttext">I'd suggest adding another boss or doing a different breakdown by bosses. Little confused on the reasoning behind Dark Shamans especially, as it isn't a major milestone or step up in difficulty or roadblock.<br />
+<br />
+Suggestion: Immerseus, Malkorok, Thok, Garrosh. Anyway, Malkorok and Seigcrafter are major milestones or step ups in difficulty and was hoping a better way to represent the bosses perhaps, or heck just do all the bosses if you can fit it.<br />
+<br />
+Idk an accurate way to measure spec representation, but if you can find a way to report it, it would be far, far more useful than class representation in for heroic raiding.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-21, 11:23 AM</div></div><div class="posttext">I'd suggest adding another boss or doing a different breakdown by bosses. Little confused on the reasoning behind Dark Shamans especially, as it isn't a major milestone or step up in difficulty or roadblock.<br />
+<br />
+Suggestion: Immerseus, Malkorok, Thok, Garrosh. Anyway, Malkorok and Seigcrafter are major milestones or step ups in difficulty and was hoping a better way to represent the bosses perhaps, or heck just do all the bosses if you can fit it.<br />
+<br />
+Idk an accurate way to measure spec representation, but if you can find a way to report it, it would be far, far more useful than class representation in for heroic raiding.<br />
+<br />
+I could only comfortably fit 3 bosses, so the first, last, and one in the middle were what I picked. I could grab data for all of them, but I'm not sure it would show anything very interesting. <br />
+<br />
+If I could tell what spec someone was at the time of a kill I would! There just isn't any super reliable way to do so.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">VanishO2</div><div class="date">2014-01-21, 11:39 AM</div></div><div class="posttext">&quot;so dks lose runic power going blood pres. Warrs lose?<br />
+Rage generation (holinka)&quot;<br />
+<br />
+Do they even remember that, at least Frost DKs, not only lose their current runic power, but also lose runic power generation (and rune regen because of that, since low runic power = few frost strikes = few chances at rune regen talents procs) since they need to be on frost presence to get the Frost Strike cost reduction?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nuvuk</div><div class="date">2014-01-21, 11:45 AM</div></div><div class="posttext">Weird that there are less rogues, with them being so powerful right now. <br />
+<br />
+One person could have 20 rogues but their main could be a warlock. My main used to be a rogue but its not anymore.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azahel</div><div class="date">2014-01-21, 11:57 AM</div></div><div class="posttext">80% of those paladins are blood elves, 85% of them are females.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vegas82</div><div class="date">2014-01-21, 12:10 PM</div></div><div class="posttext">Poor mages...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Warlord Booty</div><div class="date">2014-01-21, 01:03 PM</div></div><div class="posttext">I was always seeing all types of druids in progression and the shadow priest discussion was funny, who was asking those questions? Our spriest was topping everything for almost every fight. Yeah, it's harder to master, seems most people just haven't.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Otteray</div><div class="date">2014-01-21, 01:14 PM</div></div><div class="posttext">rogues are very boring to play<br />
+<br />
+that's a funny way of saying that the class takes more skill than you have</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-01-21, 01:22 PM</div></div><div class="posttext">I was always seeing all types of druids in progression and the shadow priest discussion was funny, who was asking those questions? Our spriest was topping everything for almost every fight. Yeah, it's harder to master, seems most people just haven't.<br />
+<br />
+It is why any pvp discussion about classes is also impossible. Everyone thinks they are above average, even when comparing themselves to other heroic raiders.... so nobody thinks half the people should be better than them. For most people, if half the raid is beating them in DPS, or they are only winning half their pvp matches.. then it is class balance issue. And God forbid anyone who is a slightly below average player has a twitter for forum account...because then the devs clearly have no idea what they are doing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2014-01-21, 01:24 PM</div></div><div class="posttext">that's a funny way of saying that the class takes more skill than you have<br />
+<br />
+Or -maybe- he is saying that Rogues aren't to his liking.<br />
+Objectively rogues are boring when it comes to animations/general eye candy.<br />
+<br />
+IMHO rogue is way beyond boring. <br />
+So boring that despite multiple attempts I have yet to get one to maximum level. :X</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kourvith</div><div class="date">2014-01-21, 01:43 PM</div></div><div class="posttext">Or -maybe- he is saying that Rogues aren't to his liking.<br />
+Objectively rogues are boring when it comes to animations/general eye candy.<br />
+<br />
+IMHO rogue is way beyond boring. <br />
+So boring that despite multiple attempts I have yet to get one to maximum level. :X<br />
+<br />
+The problem with rogues is split in two :<br />
+1) all veterans (edit : sorry, *a lot*, considering number of rerolls) who mained rogues in the past years became bored to death by the little to no changes policy Blizzard has maintained on the class mechanics xpac after xpac.<br />
+2) all new players are seeing the rogue as a PvP sneaky bastard that can oneshot everyone with ambush under lvl 80. Then they realize during 80+ that the class is not all about stealth and ambush. That's where they fall into 1), seeing how repetitive the core unstealthed mechanics are.<br />
+<br />
+Blizzard needs to put their balls on the table, and assume that rogues have to require more complex mechanics to become interesting again. They're afraid to do that, because it's a double edged sword that could frighten newcomers. On the other hand, it would also bring old rogues back ... <br />
+<br />
+A good solution to both cases would be to maintain current base mechanics, but bring an additional layer of complexity through talents, procs, or whatever that would please veterans again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zrankfappa</div><div class="date">2014-01-21, 02:12 PM</div></div><div class="posttext">if your having trouble viewing the priest bars, is your desktop set to 32bit color? I noticed they looked radically different when I was on my Linux box than they did on my Windows PC ...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jishdefish</div><div class="date">2014-01-21, 02:19 PM</div></div><div class="posttext">Yeah, glad to see the class revamp for Warlocks didn't help them at all. /sarcasm<br />
+<br />
+Rogues still on the bottom of the totem pole. Not surprising. Want to play the sinister melee class? Death Knight's over there, and they can tank. Want to play the ninja? Monk's over there and they can do anything but pew pew.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Torched</div><div class="date">2014-01-21, 02:19 PM</div></div><div class="posttext">I was always seeing all types of druids in progression and the shadow priest discussion was funny, who was asking those questions? Our spriest was topping everything for almost every fight. Yeah, it's harder to master, seems most people just haven't.<br />
+<br />
+<br />
+Is your shadow priest far out gearing you guys? that is the only reason a shadow priest would ever be top in fights that are single target or where you have to move alot, Sp are good in multitarget fights like protectors or galakras.... and that´s about it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Largehorn</div><div class="date">2014-01-21, 02:22 PM</div></div><div class="posttext">I'm a little surprised on the druids, are they doing that well? OR just really fun to play, I def thought warlock and mage would be top.<br />
+<br />
+Resto is fairly strong and Guardians are pretty popular right now. what surprised me in the lack of rogues in the early fights.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocefe5057e27</div><div class="date">2014-01-21, 02:28 PM</div></div><div class="posttext">Warriors, Rogue and DKs are low, surprise...<br />
+<br />
+Nobody likes melee, good luck finding random Flex Raids as a Melee unless you over-gear it dramatically you don't get tanken 90% of the time even if you killed all bosses already etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xithryl</div><div class="date">2014-01-21, 02:33 PM</div></div><div class="posttext">I just came from my Hunter, which is my highest geared, to playing my Paladin, I'm really enjoying it, its funny though I felt there was and is nothing but Hunters, yet hear Paladin is the highest voted. I guess since Paladins can fill multiple rolls it doesn't seem like there are so many around me :P<br />
+<br />
+I'm trying to DPS, but I can't find a weapon for the life of me, still rolling with a 463 Axe I bought off the AH, Hopefully this week comes with a new shiny weapon!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Explicit Teemo Nudes</div><div class="date">2014-01-21, 02:33 PM</div></div><div class="posttext">Priest bars being white on a white background just does not look good. I thought it was just blank space until I moused over it and numbers appeared.<br />
+<br />
+Also, I like that druids are right in the middle of the poll atm, as well as having no meaningful change in representation as you move up the heroic ladder. Average class ftw!<br />
+<br />
+<br />
+The background is beige, not white, and I can see the bars just as clearly as the other ones. Your screen settings are probably too bright :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xithryl</div><div class="date">2014-01-21, 02:37 PM</div></div><div class="posttext">Warriors, Rogue and DKs are low, surprise...<br />
+<br />
+Nobody likes melee, good luck finding random Flex Raids as a Melee unless you over-gear it dramatically you don't get tanken 90% of the time even if you killed all bosses already etc.<br />
+<br />
+So true :( Melee DPS has been like this for a while now, but at least it isn't as bad as it is in say GW2, where you basically have to roll ranged in a lot of fractals.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">scrapchick</div><div class="date">2014-01-21, 02:55 PM</div></div><div class="posttext">The problem with rogues is split in two :<br />
+1) all veterans who mained rogues in the past years became bored to death by the little to no changes policy Blizzard has maintained on the class mechanics xpac after xpac.<br />
+.<br />
+<br />
+Not ALL rogue veterans feel this way. I have been playing a rogue now for 6 years and it is my main. I love it! Not bored with the rogue at all.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Isoge</div><div class="date">2014-01-21, 03:18 PM</div></div><div class="posttext">Been playing rogue since the beginning of WoW. Bored to death by it right now ever since the oversimplification of talents and no choice whatsoever except for a few really bland, boring ones. MoP was a deathblow to rogues for me so I cancelled my sub. But I won't switch classes. I'll just wait and see if blizz does something right with rogues for once in WoD. If not, I'll just cancel my sub again and wait some more.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Amithyst</div><div class="date">2014-01-21, 03:24 PM</div></div><div class="posttext">Dem droos.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sandrita</div><div class="date">2014-01-21, 03:30 PM</div></div><div class="posttext">Watching that graphic (and the poll) it becomes clear that Mages need a buff!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Skippy88</div><div class="date">2014-01-21, 03:40 PM</div></div><div class="posttext">Poor Rogues but I still enjoy playing him.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pacster</div><div class="date">2014-01-21, 04:40 PM</div></div><div class="posttext">@Twitter SPriest discussion: It's hilariously depressing to see how Blizzard fights teeth and claw against shadow priest getting proper single target damage. I really wished that one of those Blizzard DEVs was stuck with a shadow on a fight like H-Malkorok, so he can feel how utterly frustrating it can be to be so far behind.<br />
+<br />
+Yeah, I hoped it would get any better with Ghostcrawler being gone...but actually they seem to have none in their whole team who actually cares for shadows. They seem to check some simulations for what shadows can potentially do if they reset every dot perfectly...but forget completely that humans are no machines(it's not as easy to reset several dots while checking for proccs...as spamming the same 2 spells over and over again not having to care for proccs at all. Yeah, shadow needs more skill, but it's insane if you need supercomputer perfection to be able to almost compete with a faceroll mage/warlock) and that there is a darn lot of RNG in the game if you actually have to move(which hurts shadows pretty hard and which you can not simulate). <br />
+If you tell them they they start to argue about utility. Too bad that there is NO fight in the game where you really NEED that utility(which got decreased with every second patch anyway)...all you need is dps. I have never been in any discussion where I heard the sentence: &quot;Let's take the shadow, he got more utility!&quot;. Even in PvP it's just &quot;target the shadow...he is the easiest to down and can't do anything while under fire and moving!&quot;. They always sound like shadow is the ONLY in the game with any utility....<br />
+<br />
+Sometimes I think they just check how many players play a class/specc. If there are many players then the class can't be that bad after all...and they are afraid that even more players would play shadow if he could actually compete with others. As a result: If they would make a demonhunter it's dps/mechanic would have to suck too...cause elseway too many would play it. =)<br />
+Somebody should spread them the news that most players outside the top100 choose their class based on the basic idea behind that class(being able to help the team and still do damage, is an appealing basic idea. Much more so than just being stuck to one role)...and the lore that comes with it(badass driven priest? COOL...). I for one believe that if they would have introduced Illidan-like demonhunters instead of panda-monks and have given them similar skills to monks we would see WAY more demonhunters in the game than we have monks now.<br />
+<br />
+But what sucks most is the priest community. Whenever you say that the shadow ain't strong enough you can be sure that you will have 5 players posting &quot;shadow is fine. L2p. I don't want it to be easy.&quot;(usually by players that have 5 other toons that they play as main whenever they really need some dps). The priest community seems to be much more masochistic compared to others...maybe because it's the only class with 2 heal speccs(which makes it a heal only class in some minds).<br />
+<br />
+<br />
+<br />
+I was always seeing all types of druids in progression and the shadow priest discussion was funny, who was asking those questions? Our spriest was topping everything for almost every fight. Yeah, it's harder to master, seems most people just haven't.<br />
+<br />
+Right. Or maybe he had better gear...or maybe you guys just suck? Oh wait...that's not possible...it's the 30k other shadows that got to suck...much more likely than your 5 other dds. ;-)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rioo</div><div class="date">2014-01-21, 04:45 PM</div></div><div class="posttext">Poor Rogues but I still enjoy playing him.<br />
+<br />
+You have to remember that rogues normally only have one spec represented in a raid, and you don't stack them. You never see 3 rogues in a 10-man, but you might see a guardian druid, a resto and say a balance druid in one. With that said, rogues are really under represented compared to the other pure DPS classes, especially warlock. Poor melee:(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrExcelion</div><div class="date">2014-01-21, 04:47 PM</div></div><div class="posttext">Good tier to be playing a Warlock - I remember when they were the second rarest class behind rogues going into DS. This has been the weakest tier of the expansion for Mages - utility wise there's not much reason to go out of your way to stack them since we don't get insane Combusts to brute force fights anymore.<br />
+<br />
+H-Lei Shen 25 data would probably be really funny because you wanted 2 DKs and 2 Locks for that fight minimum. LS might have gotten some locks to reroll and then stick with them going into T16.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc788bbee8c8</div><div class="date">2014-01-21, 04:51 PM</div></div><div class="posttext">Watching that graphic (and the poll) it becomes clear that Mages need a buff!<br />
+They don't need a buff (their dps is ok). They need new level 90 talents.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrExcelion</div><div class="date">2014-01-21, 04:54 PM</div></div><div class="posttext">They don't need a buff (their dps is ok). They need new level 90 talents.<br />
+<br />
+We actually are a bit behind Rogues, Hunters (post hotfix), and Locks atm, but I'm not sure if they're willing to go to the trouble of bumping us a few %. Saw they tweeted a couple weeks ago that the reason Locks are OP this tier is because they overcompensated for UVLS. They're not going to nerf classes though and make heroic progression for guilds harder.<br />
+<br />
+I did tweet Celestalon about it, so we'll see if anything comes of it. Part of me doesn't think it's a big deal, but another part of me realizes we'll be doing this place for another 6 months at least. But yeah, like others have said, SPs are significantly worse off than the pures, Mages included. I don't want to use the &quot;s word&quot; because of the negative connotations, but the pecking order is reminiscent of when I raided Sunwell with Locks, Hunters, and Rogues (with glaives) at the top, then followed by Mages. :) To be fair though, Mages were top the majority of T13-T15 so I don't have much room to really complain. It's just that Combust nerf late in the patch cycle that really hurt us the most, so if they un-nerf us I'd say just surgically tweak Combust.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moradim</div><div class="date">2014-01-21, 05:07 PM</div></div><div class="posttext">statistics like these are stupid cause they dont tell the real story.<br />
+<br />
+EVERYONE has a prot or holy paladin, how many rets do you see in heroic raiding? now compare their damage to rogues who have &quot;less representation&quot;. this is exactly why you cant choose to buff/nerf a class based on representation...you have to look at it by spec.<br />
+<br />
+reality is, rogues/locks dominate the meters, so you cant make adjustments purely from class representation</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Isiildur</div><div class="date">2014-01-21, 05:41 PM</div></div><div class="posttext">statistics like these are stupid cause they dont tell the real story.<br />
+<br />
+EVERYONE has a prot or holy paladin, how many rets do you see in heroic raiding? now compare their damage to rogues who have &quot;less representation&quot;. this is exactly why you cant choose to buff/nerf a class based on representation...you have to look at it by spec.<br />
+<br />
+reality is, rogues/locks dominate the meters, so you cant make adjustments purely from class representation<br />
+<br />
+The reason locks are OP is that they bring utility that no other class can hope to bring, those being Demonic Gateway and healthstones. Having Demonic Gateway available can drastically alter how you approach a fight and Healthstones are quite possibly the best raid cooldown available. Blizzard's refusal to give these abilities to other classes in an age of utmost homogenization is ludicrous, especially with statements like &quot;We don't see many raids called due to lack of cookies.&quot; Mages could easily have their refreshments converted into a healthstone analogue, especially since they have barely any utility to speak of.<br />
+<br />
+On top of this, they have 2 of the highest specs available in game, one of which is ideal for prolonged 2-3 target fights and the other is ideal for burst-oriented fights plus a pet mass dispel.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Squeezus</div><div class="date">2014-01-21, 05:42 PM</div></div><div class="posttext">Been playing rogue since the beginning of WoW. Bored to death by it right now ever since the oversimplification of talents and no choice whatsoever except for a few really bland, boring ones. MoP was a deathblow to rogues for me so I cancelled my sub. But I won't switch classes. I'll just wait and see if blizz does something right with rogues for once in WoD. If not, I'll just cancel my sub again and wait some more.<br />
+<br />
+This is a joke, right? Nearly everything you just said is the opposite of reality. Before MoP, there was nearly no reason to ever switch talents. Now it is done every other fight. Rogue utility is pretty nice now as well. When I read things like this it just makes me realize how few people actually understand all of the different tools an options that rogues have now. I constantly hear other raiders surprise when they find out that I can handle a certain fight mechanic in a way that they can't, or didn't think a rogue could. The tools are there, people need to quit being so damn lazy and use them. <br />
+<br />
+Even the rogues easiest spec is in the middle of the pack as far as complexity goes, and sub is one of the most complex. They are beyond not boring, unless your playing them incorrectly.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Coalbane</div><div class="date">2014-01-21, 06:28 PM</div></div><div class="posttext">As others have already pointed out, it would be very interesting to see some kind of breakdown by spec if it's even possible. Even MORE interesting to see the breakdown change over time, but that would probably involve too much work if that much data was even available. Some of these classes are more represented because they can fill multiple roles. I think a spec breakdown would be far more useful for many reasons.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Swampmoose</div><div class="date">2014-01-21, 07:05 PM</div></div><div class="posttext">Extremely useless chart unless you start looking into specs. There can be completely even class representation across each of those tiers but if if you have 99% holy priests vs 1% disc, or 99% resto druids vs 1% feral, you have serious issues within the class that are not displayed in a chart like this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rhoark</div><div class="date">2014-01-21, 07:32 PM</div></div><div class="posttext">I find it interesting that most of the classes move towards the mean 9% representation as they approach H Garrosh, except DK's and Hunters start below average and move further down, while priests start above average and move up. That gives some actual insight into raid effectiveness disambiguated from overall class population. (The priest number probably also includes a larger than depicted movement towards disc priests masked by a reduction in shadow.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wildspirit</div><div class="date">2014-01-21, 07:47 PM</div></div><div class="posttext">interesting chart but without the spec representation, its not very useful. For classes like warlock, hunter, rogues (only dps) it works but for others who can assume tank / heal / dps, this is kinda meh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moradim</div><div class="date">2014-01-21, 08:15 PM</div></div><div class="posttext">&quot;devs balance around utility&quot;<br />
+<br />
+thats why locks do the most damage and have the best raid utility trololololol</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ater</div><div class="date">2014-01-21, 09:36 PM</div></div><div class="posttext">While the information isn't nearly as comprehensive.....<br />
+<br />
+Thanks a lot mate!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-01-21, 10:37 PM</div></div><div class="posttext">Extremely useless chart unless you start looking into specs. There can be completely even class representation across each of those tiers but if if you have 99% holy priests vs 1% disc, or 99% resto druids vs 1% feral, you have serious issues within the class that are not displayed in a chart like this.<br />
+<br />
+Really most people here can´t do the math anyway. Look at how many people complaining about ´see rogues suck´... when the fact is, probably 2 of their 3 specs are above average in representation. Are rogues 3 times as high as enhance, ferals and ret?<br />
+<br />
+Not sure I blame MMO-C, but they have a bad habit of putting up graphs that are easy for ´less savy´ people to misinterpret. Probably 75% of the analysis being done in this thread isn´t accurate because the graph doesn´t give them information people think it means.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Monks, well nobody rly likes a panda in this kind of games....I hope Blizzard gets a bit mature now...<br />
+<br />
+Actually, it has nothing to do with monks, since pandas can be many classes and many races can be monks.<br />
+<br />
+But even if you are talking about monks you are wrong. Sure, monks are lowest, but you have to realize there was no reason to reroll to them this time. In Wotlk, DKs not only started at 55, but they were also fairly OP. Most raiders knew from beta that DKs were going to be OP, sot hey rerolled to them, which was easy considering they started at 55. Monks were never really OP in beta, and they started at lvl 1. So for hardcore raiders, that is a bit of a pill to take to start out so far behind for a class that is not OP. Most serious raiders in MoP just were content to play their mains from last expansion and be ready to raid week one. Considering this is full heroic clears, these are the most extreme raiders, guys that wanted to be fully geared that first week, so didn´t want to have to level from 1.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mormolyce</div><div class="date">2014-01-21, 11:03 PM</div></div><div class="posttext">Woo least represented class!<br />
+<br />
+Although I would like to consider all my characters equal really.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kalisandra</div><div class="date">2014-01-22, 02:22 AM</div></div><div class="posttext">The reason locks are OP is that they bring utility that no other class can hope to bring, those being Demonic Gateway and healthstones. Having Demonic Gateway available can drastically alter how you approach a fight and Healthstones are quite possibly the best raid cooldown available. Blizzard's refusal to give these abilities to other classes in an age of utmost homogenization is ludicrous, especially with statements like &quot;We don't see many raids called due to lack of cookies.&quot; Mages could easily have their refreshments converted into a healthstone analogue, especially since they have barely any utility to speak of.<br />
+<br />
+On top of this, they have 2 of the highest specs available in game, one of which is ideal for prolonged 2-3 target fights and the other is ideal for burst-oriented fights plus a pet mass dispel.<br />
+<br />
+They're also one of the three classes that brings a battle rez. That's another massive reason to bring them. They're mobile, bring raid mobility, bring a unique health buff (soulstones), a very desirable and somewhat class-limited piece of raid utility (brez), and top DPS, oh and they've got good survivability. You'd be insane not to bring as many as you can fit into your raid. Hell, they could have low-average DPS and they'd still be worth bringing (just not worth stacking).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc03b0e9abe6</div><div class="date">2014-01-22, 06:59 AM</div></div><div class="posttext">Specs matter. If you're ret, you can go tank or healer. If you're a Rogue, you can reroll. Which is what I had to do. If only Rogues could tank, I'd still be playing that fun class.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rokkitan</div><div class="date">2014-01-22, 08:46 AM</div></div><div class="posttext">Class representation as percentage of total class numbers for normal and possibly heroic kills would also be interesting to see how classes do and if anyone is over/under represented.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kalisandra</div><div class="date">2014-01-22, 12:12 PM</div></div><div class="posttext">Specs matter. If you're ret, you can go tank or healer. If you're a Rogue, you can reroll. Which is what I had to do. If only Rogues could tank, I'd still be playing that fun class.<br />
+<br />
+That's fine, if your raid needs another tank (or healer), and if you are any good at that role, or are even okay with doing it. According to the stats that started this thread, more Warlocks (pure) than Paladins (of any role) have done hGarrosh. This suggest that role swapping doesn't really help if a class is under-performing in a given role. In fact, high representation by class looks to come from 1) being able to heal, and 2) being ranged. Being able to tank helps a bit, but as only 20% of a raid are tanks, at best, it doesn't help as much as being able to heal does.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pesticide</div><div class="date">2014-01-23, 05:58 AM</div></div><div class="posttext">hard to believe mages are so low on the list when they dominate and never see a nerf</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wayne25uk</div><div class="date">2014-01-23, 02:56 PM</div></div><div class="posttext">That's fine, if your raid needs another tank (or healer), and if you are any good at that role, or are even okay with doing it. According to the stats that started this thread, more Warlocks (pure) than Paladins (of any role) have done hGarrosh. This suggest that role swapping doesn't really help if a class is under-performing in a given role. In fact, high representation by class looks to come from 1) being able to heal, and 2) being ranged. Being able to tank helps a bit, but as only 20% of a raid are tanks, at best, it doesn't help as much as being able to heal does.<br />
+<br />
+My rogue is always the 3rd tank they are great at it especially with 15 sec evasion!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dremall</div><div class="date">2014-01-24, 02:38 PM</div></div><div class="posttext">Not sure where to post this, but the graphs that show class information is there any way you guys could do something different like a darker background, or put a border on the priest columns. The white on beige is very difficult to make out.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

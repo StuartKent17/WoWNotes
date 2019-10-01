@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="data, have, that, this, statistics, rated, here, almost, item, more, best, smoke, game, paladin, healer, will, bomb, battleground, rogue, skewed, every, above, displayed, even, distinction, decent, prot, class, team, mandatory, warrior, been, featured, like, prot.i, your, news, ways, obtain, valuable, need, some, defense, many, teams, full, told, always, spec, youll" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Diablo 3 - 10 Character Limit, Runed Way of the Hundred Fists, Poll, Screenshots 
+ 
+Statistics: Rated Battleground Class Balance 
+Continuing our ongoing statistics posts, today we look at class balance in rated battlegrounds at different levels of gear. The item level is taken from the gear the character is wearing on armory, not their maximum item" />
+<title> Rated Battleground Class Balance Statistics, Poll, Comics [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Rated Battleground Class Balance Statistics, Poll, Comics</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1065639.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1065639-Rated-Battleground-Class-Balance-Statistics-Poll-Comics">Rated Battleground Class Balance Statistics, Poll, Comics</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2012-01-17, 04:52 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Diablo 3 - 10 Character Limit, Runed Way of the Hundred Fists, Poll, Screenshots (http://www.diablofans.com/news/1054-10-character-limit-runed-way-of-the-hundred-fists-poll-screenshots/)<br />
+<br />
+Statistics: Rated Battleground Class Balance<br />
+Continuing our ongoing statistics posts, today we look at class balance in rated battlegrounds at different levels of gear. The item level is taken from the gear the character is wearing on armory, not their maximum item level. Keep in mind that there are some characters that may not do rated battlegrounds as well as some characters that do not log out in their higher item level PvP gear. <br />
+<br />
+The graphs used here are not scaled starting at 0 to allow you to visualize the difference in win percentages more easily. Keep in mind the actual differences are much smaller than they appear. <br />
+<br />
+Sample Size<br />
+<br />
+Item Level 370+: 2.6 million sample size<br />
+Item Level 385+: 600k sample size<br />
+Item Level 395+: 25k sample size<br />
+<br />
+<br />
+Participation Rate<br />
+<br />
+Item Level 370+: 17% of the eligible characters participated in Rated Battlegrounds<br />
+Item Level 385+: 28% of the eligible characters participated in Rated Battlegrounds<br />
+Item Level 395+: 39% of the eligible characters participated in Rated Battlegrounds<br />
+<br />
+<br />
+<br />
+<br />
+&lt;div id=&quot;rbgClassPerform&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+&lt;div id=&quot;rbgClassPerform2&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+&lt;div id=&quot;rbgClassPerform3&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart;<br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: ['#4768C4', '#E01B6A']<br />
+});<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'rbgClassPerform',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: ['Death Knight','Druid','Hunter','Mage','Paladin','Priest','Rogue','Shaman','Warlock','Warrior'],<br />
+labels: {<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Win Percentage',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+},<br />
+min: 48,<br />
+max: 60<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return this.series.name + '&lt;br /&gt;' + this.point.name + ' - '+ this.y +'%' ;<br />
+}<br />
+},<br />
+<br />
+title: {<br />
+text: 'Rated Battleground Class Balance for Item Level Equipped 370+',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+<br />
+<br />
+series: [<br />
+{<br />
+data: [{y: 57.18, color: '#C41E3A', name:'Death Knight'},{y: 55.14, color: '#FF7D0A', name:'Druid'},{y: 53.30, color: '#ABD473', name:'Hunter'},{y: 57.55, color: '#69CCF0', name:'Mage'},{y: 56.14, color: '#F58CBA', name:'Paladin'},{y: 56.77, color: '#FFFFFF', name:'Priest'},{y: 57.01, color: '#FFF569', name:'Rogue'},{y: 57.43, color: '#2459FF', name:'Shaman'},{y: 57.04, color: '#9482CA', name:'Warlock'},{y: 57.31, color: '#C79C6E', name:'Warrior'}]<br />
+,<br />
+name: 'Win Percentage'<br />
+}<br />
+]<br />
+<br />
+});<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'rbgClassPerform2',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: ['Death Knight','Druid','Hunter','Mage','Paladin','Priest','Rogue','Shaman','Warlock','Warrior'],<br />
+labels: {<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Win Percentage',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+},<br />
+min: 45,<br />
+max: 60<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return this.series.name + '&lt;br /&gt;' + this.point.name + ' - '+ this.y +'%' ;<br />
+}<br />
+},<br />
+<br />
+title: {<br />
+text: 'Rated Battleground Class Balance for Item Level Equipped 385+',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+<br />
+<br />
+series: [<br />
+{<br />
+data: [{y: 58.23, color: '#C41E3A', name:'Death Knight'},{y: 56.21, color: '#FF7D0A', name:'Druid'},{y: 54.44, color: '#ABD473', name:'Hunter'},{y: 58.47, color: '#69CCF0', name:'Mage'},{y: 57.14, color: '#F58CBA', name:'Paladin'},{y: 57.65, color: '#FFFFFF', name:'Priest'},{y: 58.15, color: '#FFF569', name:'Rogue'},{y: 58.62, color: '#2459FF', name:'Shaman'},{y: 58.33, color: '#9482CA', name:'Warlock'},{y: 58.51, color: '#C79C6E', name:'Warrior'}]<br />
+,<br />
+name: 'Win Percentage'<br />
+}<br />
+]<br />
+<br />
+});<br />
+<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'rbgClassPerform3',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: ['Death Knight','Druid','Hunter','Mage','Paladin','Priest','Rogue','Shaman','Warlock','Warrior'],<br />
+labels: {<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Win Percentage',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+},<br />
+min: 45,<br />
+max: 70<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return this.series.name + '&lt;br /&gt;' + this.point.name + ' - '+ this.y +'%' ;<br />
+}<br />
+},<br />
+<br />
+title: {<br />
+text: 'Rated Battleground Class Balance for Item Level Equipped 395+',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+<br />
+<br />
+series: [<br />
+{<br />
+data: [{y: 65.36, color: '#C41E3A', name:'Death Knight'},{y: 63.03, color: '#FF7D0A', name:'Druid'},{y: 61.22, color: '#ABD473', name:'Hunter'},{y: 67.08, color: '#69CCF0', name:'Mage'},{y: 63.79, color: '#F58CBA', name:'Paladin'},{y: 63.65, color: '#FFFFFF', name:'Priest'},{y: 63.94, color: '#FFF569', name:'Rogue'},{y: 65.16, color: '#2459FF', name:'Shaman'},{y: 68.43, color: '#9482CA', name:'Warlock'},{y: 63.64, color: '#C79C6E', name:'Warrior'}]<br />
+,<br />
+name: 'Win Percentage'<br />
+}<br />
+]<br />
+<br />
+});<br />
+});<br />
+&lt;/script&gt; Poll: Have you participated in Rated Battlegrounds?<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/5848644.js&quot;&gt;&lt;/script&gt;<br />
+&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/5848644/&quot;&gt;Have you participated in Rated Battlegrounds?&lt;/a&gt;&lt;/noscript&gt;<br />
+<br />
+Comics<br />
+Dark Legacy Comics #322 (http://www.darklegacycomics.com/322.html) and Teh Gladiators #306 + #307 (http://www.tehgladiators.com/knock-knock-306) are available!<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2012/january/322.jpg (http://www.darklegacycomics.com/322.html) http://media.mmo-champion.com/images/news/2012/january/306.jpg (http://www.tehgladiators.com/?p=306)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">esoterickk</div><div class="date">2012-01-17, 04:59 AM</div></div><div class="posttext">Wonder how many of the Warriors aren't Prot. :3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Balmazer</div><div class="date">2012-01-17, 05:00 AM</div></div><div class="posttext">Any chance of seeing a version that is (roughly at least) broken down into the specific spec?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nazramu</div><div class="date">2012-01-17, 05:02 AM</div></div><div class="posttext">Further proof of the hunter PvP problem. These graphs are awesome. Keep up the good work!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2012-01-17, 05:02 AM</div></div><div class="posttext">Not likely. There is no simple way for me to determine what spec is used for PvP or PvE, if either.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Morsker</div><div class="date">2012-01-17, 05:07 AM</div></div><div class="posttext">More sensationalist crap from MMO-Champ today, conflating balance and representation.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Maylen</div><div class="date">2012-01-17, 05:07 AM</div></div><div class="posttext">Wonder how many of the Warriors aren't Prot. :3<br />
+<br />
+Prots lame.<br />
+But it cant be helped., i play on maelstrom and as a MS warrior for the past 3 season ive only gotten into 60 some odd RBG's and not one RBG this season as MS.<br />
+everyone want a prot warrior</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">toychristopher</div><div class="date">2012-01-17, 05:09 AM</div></div><div class="posttext">We need spec breakdowns! It's too bad that there really is no way for us to see that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">killdamnzade</div><div class="date">2012-01-17, 05:09 AM</div></div><div class="posttext">warlock rbg? hnng interesting</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Uselessrouge</div><div class="date">2012-01-17, 05:15 AM</div></div><div class="posttext">love the comic from dark legacy</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">McFrotton</div><div class="date">2012-01-17, 05:29 AM</div></div><div class="posttext">Damn these days the news are really slow its been what??? one month maybe more without ''anything'' new?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mikehuntz</div><div class="date">2012-01-17, 05:32 AM</div></div><div class="posttext">Hey look hunters low on every chart....what a freaking surprise.....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hikamiro</div><div class="date">2012-01-17, 05:32 AM</div></div><div class="posttext">Can someone explain to me why none of the classes on average are below 50%? Honestly they all seem to be too high, i'd be surprised if any class won more than 55% on average. But it doesn't make sense to me that no class is under 50%, unless i'm missing something big</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">retpally</div><div class="date">2012-01-17, 05:36 AM</div></div><div class="posttext">99% of those paladins are holy QQ</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">theturn</div><div class="date">2012-01-17, 05:40 AM</div></div><div class="posttext">Can someone explain to me why none of the classes on average are below 50%? Honestly they all seem to be too high, i'd be surprised if any class won more than 55% on average. But it doesn't make sense to me that no class is under 50%, unless i'm missing something big<br />
+<br />
+Because a class always wins and always losses. Basically this chart says the team with more mages wins more and the team with more hunters lose more. Byt teams with hunters will win and teams with mages will lose.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mustango</div><div class="date">2012-01-17, 05:40 AM</div></div><div class="posttext">FWIW, my sources are telling me SOPA is dying a quiet and unmourned death even as we speak.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Korgoth</div><div class="date">2012-01-17, 05:43 AM</div></div><div class="posttext">Why even have win % by class? I don't understand what they are trying to show here? That you win more with more mages and locks then hunters? That resto druids bring down teams? That you need your token prot warrior to hold a flag?I am not getting the point of this chart. I'd much rather see representation by spec. Which I'd bet would look something like: ProtW 10%, Frost 10%, Sub 10%, Affl 10% HolyPa 15%, Disc 10%, FrostDK 8%, RestoS 8%, moonkin 6%, ele 4%, MM 4%, ret 2%, feral 2%, 1% Blood dk.That way you get an idea of what specs are actually being taken, not which classes have higher win percents.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">balatro</div><div class="date">2012-01-17, 05:45 AM</div></div><div class="posttext">FWIW, my sources are telling me SOPA is dying a quiet and unmourned death even as we speak.<br />
+<br />
+By your &quot;sources&quot; I presume you mean every news outlet and anyone who has followed its advancement?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Drhoo</div><div class="date">2012-01-17, 05:48 AM</div></div><div class="posttext">I'm a bit surprised that warlocks are the highest win %, even more than mages (which is no surprise to be equally high). As for specs, I don't think it's that important to break it down. Unlike in arena, non-tank classes usually only have 1 viable PvP spec in RBGs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">GrieverXIII</div><div class="date">2012-01-17, 05:53 AM</div></div><div class="posttext">Grand Marshal Hunter here. I am the 1%</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hyanar</div><div class="date">2012-01-17, 06:05 AM</div></div><div class="posttext">Would love if there were spec graphs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Melilithia</div><div class="date">2012-01-17, 06:24 AM</div></div><div class="posttext">Whoops... didn't read the &quot;rated&quot; part and voted &quot;a few times.&quot; Truth be told, I haven't gotten into RBGs at all yet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocac05adb153</div><div class="date">2012-01-17, 06:28 AM</div></div><div class="posttext">Whoops... didn't read the &quot;rated&quot; part and voted &quot;a few times.&quot; Truth be told, I haven't gotten into RBGs at all yet.<br />
+<br />
+Yeah not only you :( I wasn't in RBG´s at all too. I never wanted to do them tho´because I find them stupid to be honest. Just pre made BGs.<br />
+<br />
+DLC - awesome :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">anyaka21</div><div class="date">2012-01-17, 06:32 AM</div></div><div class="posttext">This article has the feeling of a slow news day.<br />
+<br />
+Why? Because essentially the graph tells us nothing. It has participation percentages by class. It doesn't tell you what spec of each particular class. It doesn't tell you how successful each class is. It doesn't tell you how many of the mages are part of the participation either. It just says 'x%' of 'y class' with a 'z win %'. It also doesn't show how many times or even thoughts for how often a class/spec participates, which actually could give us some interesting notions.<br />
+<br />
+Outside that, the easiest inference that one can actually think about it is that the team with the best gear score wins as the winning percentages go up when the item levels are higher.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleveneleven</div><div class="date">2012-01-17, 06:58 AM</div></div><div class="posttext">Where's mmo's stance on SOPA?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocac05adb153</div><div class="date">2012-01-17, 07:01 AM</div></div><div class="posttext">Where's mmo's stance on SOPA?<br />
+Don´t think that Boub will post any stance on SOPA on the frontpage :( Would be nice tho</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Weary Dragon</div><div class="date">2012-01-17, 07:24 AM</div></div><div class="posttext">WoW PvP is a total failure. If you want to battle other players there are much much better games for that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nocturnes</div><div class="date">2012-01-17, 07:30 AM</div></div><div class="posttext">The thing is, Blizzard is making things people don't rly ask for. People like raiding yes...but they enjoy playing solo aswell. If you only supply things to do in group and you go online at 10 am in the morning....there's absolutly nothing you can do, at least not for players who have been around for +/- 5-6 years. Hell, I play SC2 &amp; Anno 2070 now. I just enjoy the option to go online w/e i want and have some time on my own, i rly do. Anno is bag of chips &amp; pepsi, enjoy the game! SC2 is nerdrage, pulling my hair out but yet, w/e i do enjoy the games 300% and that's what it's all about. Edit: MMO's are just not as popular anymore. The hype from swotr was immense, and now people are dropping off. It's not fully blizzard, it's people, it's in our nature to search for change.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Adirelle</div><div class="date">2012-01-17, 07:40 AM</div></div><div class="posttext">I do not get what these charts are representing. Are they the win percentage of teams including a member of said classes ? What about the class distribution itself ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">greyghost</div><div class="date">2012-01-17, 08:05 AM</div></div><div class="posttext">My poll response is: Never.But I can appreciate those who have guildmates/friends that can actually tolerate PvP. I used to have them, but I don't anymore... none of my friends can put up with any amount of PvP these days. If Rated BGs existed maybe... in 2008? I would've taken part in them then.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">The Ogdru Jahad</div><div class="date">2012-01-17, 08:10 AM</div></div><div class="posttext">I've never done a single rated bg...and have zero interest. Also... the news has been slower than ever these last few weeks. Not a single thing has been really updated at all. Sign of the times I say...<br />
+<br />
+---------- Post added 2012-01-17 at 03:12 AM ----------<br />
+<br />
+<br />
+Grand Marshal Hunter here. I am the 1%<br />
+<br />
+hahah you made my day, thank you sir!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7f082fdd70</div><div class="date">2012-01-17, 08:21 AM</div></div><div class="posttext">I don't really get what all the hunter fuss is all about. The maximum difference between the lowest and highest is what? 8%? and that is only at the highest ilvl. Yes I know hunters are the lowest on all graphs, but in my opinion, all is within reasonable limits and it looks quite balanced to me. Somebody has got to be the lowest.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Effbee</div><div class="date">2012-01-17, 08:22 AM</div></div><div class="posttext">Loving all the people with a sense of entitlement &quot;WHEREZ MA NEWZ!?&quot;.Shockingly, if Blizz don't have anything, Boub/Chaud don't have anything.So MMO-C fill the void with a recap of what has gone before (for people that didn't necessarily see it first time round - some people don't spend all day on forums), and stats.And all the nerdraging hunters...did you actually read the part about the scale? Or look at the graph yourself? The difference between the top and bottom class is around 3 or 4%...hardly OMGSKYISFALLING bad is it?Just because you don't understand something, doesn't make it bad/wrong :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">sneaky999</div><div class="date">2012-01-17, 08:25 AM</div></div><div class="posttext">Is it just me or are the charts showing all classes as having more than 50% win rate...Who is losing then?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jacob6875</div><div class="date">2012-01-17, 08:32 AM</div></div><div class="posttext">How is it possible for every class to have a higher than 50% win rate? I mean in each RBG game 1/2 of the players lose............. so some classes have to be below 50% .......</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">muwatallis</div><div class="date">2012-01-17, 09:00 AM</div></div><div class="posttext">No surprise at the hunters' state. As I expected. WoW PvP is just shit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wekapedia</div><div class="date">2012-01-17, 09:08 AM</div></div><div class="posttext">Not surprising results on the poll. After getting the mount, HWL and Hero of the Horde, there isn't much to go back for. No unique titles or mounts each season.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Flashbomba</div><div class="date">2012-01-17, 09:22 AM</div></div><div class="posttext">For 370+ every class has 53-57% win rate... For 385+ every class has 54-58% win rate... For 395+ every class has 61-68% win rate... Who are they winning over? They're not paired up against ungeared teams below 370...at least not for more than a few matches after reset. But for 395+ players they win 2 out of 3 games - somone out there must then loose those games?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2012-01-17, 09:35 AM</div></div><div class="posttext">Wee more weird statistics. Are there no real news anymore?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gangresnake</div><div class="date">2012-01-17, 09:47 AM</div></div><div class="posttext">RBG seems a bit of a grind for conquest point theses day, having some special mount for getting Hero of the horde would be cool</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Schmeebs</div><div class="date">2012-01-17, 10:06 AM</div></div><div class="posttext">Don´t think that Boub will post any stance on SOPA on the frontpage :( Would be nice tho<br />
+<br />
+<br />
+I think Curse has officially said their stance is that they are against it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Diversion</div><div class="date">2012-01-17, 10:33 AM</div></div><div class="posttext">Man I get so disappointed when I see its another graph post.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">valiorik</div><div class="date">2012-01-17, 10:39 AM</div></div><div class="posttext">How is that posible for everyone to have more thank 50% wins? Who's loosing then? /trololo</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nerraw</div><div class="date">2012-01-17, 10:41 AM</div></div><div class="posttext">warlock rbg? hnng interesting<br />
+<br />
+Fearbots. And Unstable Affliction. That's about it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb100f50513</div><div class="date">2012-01-17, 10:45 AM</div></div><div class="posttext">Was there a statistic of how many characters have player 1, 10, 100 (or won 1, 10, 100) rated bgs out of everyone?<br />
+<br />
+I still think this feature was a huge failure.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9d4c700b28</div><div class="date">2012-01-17, 10:48 AM</div></div><div class="posttext">The second strip of DLC made me think of Klaus Kinski, if its intended hooray! if not, hooray!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">avocadowarrior</div><div class="date">2012-01-17, 11:01 AM</div></div><div class="posttext">oh yay more statistics.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nathanyel</div><div class="date">2012-01-17, 11:06 AM</div></div><div class="posttext">Any chance of seeing a version that is (roughly at least) broken down into the specific spec?<br />
+<br />
+Well at least for Mage it's easy:<br />
+Arcane 1%<br />
+Fire 1%<br />
+Frost 98%</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bigjohnburger</div><div class="date">2012-01-17, 11:06 AM</div></div><div class="posttext">No one gives a &quot;blank&quot; about a stupid class chart. Show us a spec breakdown then we'll be interested.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thunderdragon2</div><div class="date">2012-01-17, 11:07 AM</div></div><div class="posttext">id rlove to get in to rbg's but even with my 4k resil hunter and ret its impossible since my ratings at 0 :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocac05adb153</div><div class="date">2012-01-17, 11:13 AM</div></div><div class="posttext">No one gives a &quot;blank&quot; about a stupid class chart. Show us a spec breakdown then we'll be interested.<br />
+Yeah those charts flooding the frontpage lately are just absolutely bland and stupid :( Show us the specs not only the classes wit ilvl :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tails</div><div class="date">2012-01-17, 11:26 AM</div></div><div class="posttext">This is quite misleading. Hunters seem to be doing &quot;ok&quot; according to this chart. But if you actually look at statistics based on rating, of the top 2000 Rated BG players in the US, here is the breakdown by class.<br />
+Paladin - 304<br />
+Mage - 256<br />
+Druid - 255<br />
+Priest - 224<br />
+Warrior - 214<br />
+Death Knight - 190 <br />
+Shaman - 175<br />
+Rogue - 148<br />
+Warlock - 143<br />
+Hunter - 91<br />
+Among 2000 players, approximately 200 of each class should be in there. So hunters are less than 50% of what they are supposed to represent, where Paladins are 150% of what they are supposed to represent. All in all, other than Hunters and maybe Locks and Rogues, the other classes are well within the &quot;normal&quot; limits. But Hunters are a bit too low indeed.<br />
+<br />
+I do RBG with my hunter, and the only thing hunters are good at is to idle at farm flag. That's it. And many other classes can fulfill that role easily. So nobody really &quot;needs&quot; a hunter for their RBG team.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pud'n</div><div class="date">2012-01-17, 11:47 AM</div></div><div class="posttext">Surprise surprise hunters are at the bottom again...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">WStilgar</div><div class="date">2012-01-17, 11:52 AM</div></div><div class="posttext">Statistics are funny...You could also look at it this way:<br />
+Paladin: 3 roles Mage: 1 role Druid: 3 roles Priest: 2 roles Warrior: 2 roles DK: 2 roles Shaman: 2 roles Rogue: 1 role Lock: 1 role Hunter: 1 role<br />
+<br />
+Yes, I think that 'tank' is a role in RBG, especially the Capture the Flag kind.Total: 18 roles, among 2000 players, that means 110 of every role, so, expected:<br />
+Pala: 330 Mage: 110 Druid: 330 Priest: 220 Warrior: 220 DK: 220 Shaman: 220 Rogue: 110 Lock: 110 Hunter: 110<br />
+<br />
+From this, it seems that pala's are under represented, mages are over represented (big shocker...)Druids, priests and warriors seems about right, DK and shaman are a bit underrepresentedRogue and lock are a bit overrepresentedHunters are slightly under represented.Doesn't seem to be that big off in this way.And frankly, neither of these 2 'reasonings' make much sense if you're gonna look at the big picture. You'd need to take into account how many of a class actively PvP, for example. If there's only 91 hunters doing rated BG's, they're massively overrepresented in the top (to name an extreme)So yeah, can't really draw much conclusions from these kind of statistics</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc72e16da742</div><div class="date">2012-01-17, 11:54 AM</div></div><div class="posttext">People and blizzard still cant understand that hunter class is bad in pvp -.-</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc37672be2a3</div><div class="date">2012-01-17, 11:54 AM</div></div><div class="posttext">I hate statistics :S this should be a NEWS frontpage</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deadanon</div><div class="date">2012-01-17, 12:02 PM</div></div><div class="posttext">Intresting that over 50% have never done rated battlegrounds. I dont like PVP all so I understand them 100%</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ghostie</div><div class="date">2012-01-17, 12:27 PM</div></div><div class="posttext">I was really excited about rated bgs before they were implemented because for me, over half my game time was spent in bgs and was the funnest part of WoW. However, once they were implemented and I realized that the only difference between rated and regular bgs was that you were willing to form a group and I'd be penalized gear wise for not being willing to put up with people I'd otherwise simply /ignore I went on 'bg strike' for all of Cataclysm. My idea of fun does not include putting up with rude players. <br />
+<br />
+Before people get defensive, and I can only judge by my experience of playing this game almost 6 years, a large chunk of the regular bg players on every realm are loudmouths and people I would not group with. I did group up to pvp, with people I wanted to play with, but for the most part I went in there solo and played for the team.<br />
+<br />
+Now that rated bgs are in decline I've started playing pvp again, well that and the gear rewards for converted hp</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryme</div><div class="date">2012-01-17, 12:30 PM</div></div><div class="posttext">DLC was a good read :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tails</div><div class="date">2012-01-17, 12:40 PM</div></div><div class="posttext">Statistics are funny...You could also look at it this way:<br />
+Paladin: 3 roles Mage: 1 role Druid: 3 roles Priest: 2 roles Warrior: 2 roles DK: 2 roles Shaman: 2 roles Rogue: 1 role Lock: 1 role Hunter: 1 role<br />
+<br />
+Yes, I think that 'tank' is a role in RBG, especially the Capture the Flag kind.Total: 18 roles, among 2000 players, that means 110 of every role, so, expected:<br />
+Pala: 330 Mage: 110 Druid: 330 Priest: 220 Warrior: 220 DK: 220 Shaman: 220 Rogue: 110 Lock: 110 Hunter: 110<br />
+<br />
+From this, it seems that pala's are under represented, mages are over represented (big shocker...)Druids, priests and warriors seems about right, DK and shaman are a bit underrepresentedRogue and lock are a bit overrepresentedHunters are slightly under represented.Doesn't seem to be that big off in this way.And frankly, neither of these 2 'reasonings' make much sense if you're gonna look at the big picture. You'd need to take into account how many of a class actively PvP, for example. If there's only 91 hunters doing rated BG's, they're massively overrepresented in the top (to name an extreme)So yeah, can't really draw much conclusions from these kind of statistics<br />
+<br />
+<br />
+No, this is totally wrong. It would only be true if there are 3 times as many paladins as hunters playing rated BG's, but there aren't. Hunters are less than paladins, but not 3 times less. So, when you look at the highest rated players in RBG, the only normalization you can use is that, how many are playing RBG's. So the &quot;roles&quot; are irrelevant. <br />
+<br />
+Assume there are 10000 players doing RBG's total and around 900 of them are hunters, which is an &quot;ok&quot; position to be in, not every class will occupy exactly 1000 spots. But when you look upon the 2000 highest rated players, and now there are only 91 hunters instead of 180 (which is the spot they should occupy based on the normalization of 900 out of 10000), that means at high ratings hunters are 50% as successful as they should be.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Primernova</div><div class="date">2012-01-17, 12:44 PM</div></div><div class="posttext">So the graph tells me: all Hunters, Resto Druids and Ret Pallys are underpowered in PvP... This was known about a year ago. One whole class and two specific specs, is it really that hard to balance? I'll not go into the OP classes because it really doesn't matter at this point.<br />
+<br />
+All BGs should be rated IMO, based on the individual player's prformance, this is why they failed. <br />
+<br />
+Premades, never wanted to fight other premades; just like twinks never wanted to fight only other twinks. This concept is dead and it was obvious when premades completely stopped after they made the matching system. Keep it random, rated and with 5 players max to queue together per-BG.<br />
+<br />
+This is such common sense...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mekh</div><div class="date">2012-01-17, 12:46 PM</div></div><div class="posttext">This is quite misleading. Hunters seem to be doing &quot;ok&quot; according to this chart. But if you actually look at statistics based on rating, of the top 2000 Rated BG players in the US, here is the breakdown by class.<br />
+Paladin - 304<br />
+Mage - 256<br />
+Druid - 255<br />
+Priest - 224<br />
+Warrior - 214<br />
+Death Knight - 190 <br />
+Shaman - 175<br />
+Rogue - 148<br />
+Warlock - 143<br />
+Hunter - 91<br />
+Among 2000 players, approximately 200 of each class should be in there. So hunters are less than 50% of what they are supposed to represent, where Paladins are 150% of what they are supposed to represent. All in all, other than Hunters and maybe Locks and Rogues, the other classes are well within the &quot;normal&quot; limits. But Hunters are a bit too low indeed.<br />
+<br />
+I do RBG with my hunter, and the only thing hunters are good at is to idle at farm flag. That's it. And many other classes can fulfill that role easily. So nobody really &quot;needs&quot; a hunter for their RBG team.<br />
+<br />
+Buff Rogues!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seejay</div><div class="date">2012-01-17, 12:46 PM</div></div><div class="posttext">The low Hunter representation doesn't surprise me really. When other pure DPS classes have abilities like Ring of Frost and Smoke Bomb, Hunters really bring very little to aid the group. Roar of Sacrifice and Master's Call are nice things to have but offensivelly there's not much that aids the group as a whole.<br />
+<br />
+Hunters do make pretty good base defenders though, having a pet attacking an enemy while you're feared etc isn't to be underestimated but to be quite honest, being placed at Stables/Lighthouse/w/e for the whole game can get pretty boring.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">silverspring</div><div class="date">2012-01-17, 12:53 PM</div></div><div class="posttext">So here is my stats based on arenajunkies eu battlground rating above 2k; <br />
+<br />
+Mage 278 <br />
+Dk 238 <br />
+Druid 223 <br />
+hunter 80 <br />
+Paladin 345 <br />
+Priest 291 <br />
+Rogue 237 <br />
+Shaman 243 <br />
+Lock 203 <br />
+Warrior 264 <br />
+<br />
+So here is my thougts about some classes; For paladins probably healers. For mages , each team have to a mage for cc's. For hunters , they dont have any specific role. Warlock dots. Druid aoe heals. Shamans best healers for cata atm (based on arena ladders) For rogues same as mages cc's. Dk i wont comment about it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tails</div><div class="date">2012-01-17, 12:55 PM</div></div><div class="posttext">Prots lame.<br />
+But it cant be helped., i play on maelstrom and as a MS warrior for the past 3 season ive only gotten into 60 some odd RBG's and not one RBG this season as MS.<br />
+everyone want a prot warrior<br />
+<br />
+You can only balance a game on ladder representation. There's no other scientific tool you can use. Blizzard said that they are not doing that, simply because they can't, that the game is too complex to actually give every class/spec an equal footing. So they are &quot;ok&quot; as long as there are some people doing well from each class.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">petre</div><div class="date">2012-01-17, 12:55 PM</div></div><div class="posttext">For those wondering about all the classes being over 50%. one generally only has to look at how a sample is selected. These were statistics pulled off the armory, which only shows characters that have been active &quot;recently&quot;. I'd presume there is a fair chunk of players that lost RBGs in the early days, grew disinterested as a result, and stopped playing that toon (either left WoW or rolled an alt). Picture an RBG guild with 10 people that lost 90% of their matches, a bunch qq and ragequit WoW and those that stay rolled pallies instead. Now the original 90% loss group disappears off the armory.<br />
+<br />
+I'd be slightly curious about an update on the horde vs. alliance ratio of won (normal) bgs lately. I know a year or more ago it was very near 50% (except for AV where alliance had a slight edge and maybe one other). I'm willing to accept the possibility that I'm a horrible player and somehow my play alone accounts for the disparity, but I'm seeing about a 33% win ratio for alliance (and roughly 10% in Strand of the Ancients). From what I can tell it seems to be a healer disparity. Most losses I note the other team has more healers or better healers. I routinely lead my team in healing. I am a prot warrior. That seems wrong.<br />
+<br />
+ETA: wanted to add (normal) bgs, I don't do RBGs either</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0e6cf63df5</div><div class="date">2012-01-17, 12:56 PM</div></div><div class="posttext">Buff Rogues! Rogues (and frost mages) already have the best tools, they have everything. The reason of their low representation is not that they are underpowered, rogues are simply a ganking class and most people don't like to be a ganking superfreak.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tails</div><div class="date">2012-01-17, 01:01 PM</div></div><div class="posttext">Rogues (and frost mages) already have the best tools, they have everything. The reason of their low representation is not that they are underpowered, rogues are simply a ganking class and most people don't like to be a ganking superfreak.<br />
+<br />
+The reason there aren't that many rogues is probably because rogues are the least played class at 85 right now. If we'd normalize by population probably they'd be exactly where they should be. I see one rogue in every RBG I do.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">petre</div><div class="date">2012-01-17, 01:02 PM</div></div><div class="posttext">Rogues (and frost mages) already have the best tools, they have everything. The reason of their low representation is not that they are underpowered, rogues are simply a ganking class and most people don't like to be a ganking superfreak.<br />
+<br />
+Close. Being a ganking superfreak works when you're facing players at 110k health and 2k resil. When you're running RBGs against clothies at 150k health and 4k resil they're still alive when your CC runs out, and then you die. That's my guess anyway, I never PvP as rogue.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">silverspring</div><div class="date">2012-01-17, 01:05 PM</div></div><div class="posttext">Rogues (and frost mages) already have the best tools, they have everything. The reason of their low representation is not that they are underpowered, rogues are simply a ganking class and most people don't like to be a ganking superfreak. Rogues not a easy class to play.And without gear it can be real pain.So that why rogues are the least played class at 85.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">psycow</div><div class="date">2012-01-17, 01:31 PM</div></div><div class="posttext">So MMO-Champion has turned into a statistic site...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2012-01-17, 01:42 PM</div></div><div class="posttext">I'd be slightly curious about an update on the horde vs. alliance ratio of won (normal) bgs lately. I know a year or more ago it was very near 50% (except for AV where alliance had a slight edge and maybe one other). I'm willing to accept the possibility that I'm a horrible player and somehow my play alone accounts for the disparity, but I'm seeing about a 33% win ratio for alliance (and roughly 10% in Strand of the Ancients). From what I can tell it seems to be a healer disparity. Most losses I note the other team has more healers or better healers. I routinely lead my team in healing. I am a prot warrior. That seems wrong.<br />
+<br />
+I would love to do that as well, but that is yet another thing missing from the API. It has received one tiny update and Patch 4.3 information added since launch 6 months ago, and that is it. Dev time went to the other Blizzard sites and no one says anything because there are relatively few developers who use it. Hopefully they will give it some more time during 2012.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocac05adb153</div><div class="date">2012-01-17, 01:44 PM</div></div><div class="posttext">I would love to do that as well, but that is yet another thing missing from the API. It has received one tiny update and Patch 4.3 information added since launch 6 months ago, and that is it. Dev time went to the other Blizzard sites and no one says anything because there are relatively few developers who use it. Hopefully they will give it some more time during 2012.<br />
+Yeah that would be nice if they updated that a bit in the next few months, so that we can see a few more stats not only Classes per Ilvl for example :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">theunabletable</div><div class="date">2012-01-17, 02:04 PM</div></div><div class="posttext">This is quite misleading. Hunters seem to be doing &quot;ok&quot; according to this chart. But if you actually look at statistics based on rating, of the top 2000 Rated BG players in the US, here is the breakdown by class.Paladin - 304Mage - 256Druid - 255Priest - 224Warrior - 214Death Knight - 190 Shaman - 175Rogue - 148Warlock - 143Hunter - 91Among 2000 players, approximately 200 of each class should be in there. So hunters are less than 50% of what they are supposed to represent, where Paladins are 150% of what they are supposed to represent. All in all, other than Hunters and maybe Locks and Rogues, the other classes are well within the &quot;normal&quot; limits. But Hunters are a bit too low indeed.I do RBG with my hunter, and the only thing hunters are good at is to idle at farm flag. That's it. And many other classes can fulfill that role easily. So nobody really &quot;needs&quot; a hunter for their RBG team. Man, WoW players really have no idea how good they have it. This is FANTASTIC balance. The WORST class out of 10 is getting 5% representation? The class that has the most representation is only 300% above the lowest?Honestly, that's extremely good balance, and Blizzard deserves a pat on the back. 5% representation for the bottom tier, while the top tier is getting about 15% representation? That disparity is so small, you're a fool to be negative about this. Every class OBVIOUSLY has a good chance of doing well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Oneirophobia</div><div class="date">2012-01-17, 02:16 PM</div></div><div class="posttext">Oh look, warriors ans shaman are 2nd and 3rd, <br />
+que the denile and appeals for new graphs, then buffs. I'm surprised DKs aren't higher, then again I've never had an issue with them, I just hear a lot of crying about them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Feral4ever</div><div class="date">2012-01-17, 02:19 PM</div></div><div class="posttext">For Melee its either Rogue or DK. No one wants feral,enhance.ret or Arms..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Esolde</div><div class="date">2012-01-17, 02:34 PM</div></div><div class="posttext">For Melee its either Rogue or DK. No one wants feral,enhance.ret or Arms..<br />
+<br />
+I hope we get some real news soon, getting bored with all this recap and statistical data blah.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dasn</div><div class="date">2012-01-17, 02:55 PM</div></div><div class="posttext">Loving all the people with a sense of entitlement &quot;WHEREZ MA NEWZ!?&quot;.Shockingly, if Blizz don't have anything, Boub/Chaud don't have anything.So MMO-C fill the void with a recap of what has gone before (for people that didn't necessarily see it first time round - some people don't spend all day on forums), and stats.And all the nerdraging hunters...did you actually read the part about the scale? Or look at the graph yourself? The difference between the top and bottom class is around 3 or 4%...hardly OMGSKYISFALLING bad is it?Just because you don't understand something, doesn't make it bad/wrong :)<br />
+<br />
+there was a total of 1 comment before yours about the lack of news</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">videotape</div><div class="date">2012-01-17, 02:59 PM</div></div><div class="posttext">Absolutely love love LOVE the DLC.<br />
+<br />
+---------- Post added 2012-01-17 at 10:00 AM ----------<br />
+<br />
+<br />
+So MMO-Champion has turned into a statistic site...<br />
+<br />
+A lot of people (like me) find these statistics to be informative and interesting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">segoots14</div><div class="date">2012-01-17, 03:16 PM</div></div><div class="posttext">I like stats...thanks for posting this stuff!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Slowpoke is a Gamer</div><div class="date">2012-01-17, 03:21 PM</div></div><div class="posttext">Please do one of these for War Games, I don't think anyone actually uses it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">melodramocracy</div><div class="date">2012-01-17, 03:21 PM</div></div><div class="posttext">All BGs should be rated IMO, based on the individual player's prformance, this is why they failed. <br />
+<br />
+<br />
+THIS, x 1000.<br />
+<br />
+Rated BG's would have been a great idea by simply taking an individual's w/l record and tiering them accordingly, then letting folks queue just as they do for normal random BG's. Instead, we get forced raid style grouping, and get to experience snoozefests like 10 vs 10 AB. <br />
+<br />
+The entire system is a clusterfuck, and not fun or interesting in the least.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">painweaver</div><div class="date">2012-01-17, 03:21 PM</div></div><div class="posttext">Bad statistics are bad. There is no explanation of the sample size,groups size, or anything. They didn't describe shit, except: *Keep in mind that there are some characters that may not do rated battlegrounds as well as some characters that do not log out in their higher item level PvP gear. *<br />
+<br />
+These results are so bias due to the above quote it is retarded. Whoever did &quot;this study&quot; needs to be fired because they do not understand statistics.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc877bd117d6</div><div class="date">2012-01-17, 03:45 PM</div></div><div class="posttext">Alright, prepare for some long wall of text incomming.<br />
+<br />
+First off, the way these graphs are created seem to be way off the mark, you choose 3 random arbitrairy barriers (370+, 385+ and 395+) without any argument as to why these were chosen.<br />
+To me these barrier mean the following, 370-385= very outdated gear, most likely not been actively played since s9/early s10.<br />
+385-395 People with mid level current RBG (ranging anywhere from 1000-1800) and 395+ is ranging anywhere from 1800-3000 (most high-level people I know are ~400 ilevel by now)<br />
+<br />
+These statistics therefore hardly say anything other then an aproximate skill level.<br />
+To me, this says sloppy statistics.<br />
+Second, the way they are measured basically doesn't say ANYTHING representable about class balance or RBG balance or even which classes leaders like to pick for their RBG's, all it says is that some classes win RBG more often then other classes.<br />
+<br />
+Especially in the 25k sample size, this can be VERY easily dilluted, as one good RBG player (someone who has played at ~2.2k RBG for 3 seasons) will by now have easily recked up ~400 games (I know I have around 350 around 2 chars and I didn't play any RBG in s10). <br />
+If you devide that 25k by 10 (assuming just about equal representation for all classes) that means that 1 person can be responsible for 1/5th of the entire class sample.<br />
+I have no idea how you can come close to even calling that representable statistics.<br />
+<br />
+A much better idea for measurements would have been current rating, or even highest RBG achievement earned, this could show much more interesting and representable statistics then % of games won.<br />
+<br />
+Further more, Win-L ratio doesn't say anything about the rating you are on, I am currently 15-1 on my alt at 1900 MMR/Rating, why? not because my class is balanced but because I play in my 2.4k mains RBG alt group with very shifting compositions, so we are never actually going to get high, yet my W-L ratio implies im some sort of super hero.<br />
+<br />
+After this reasoning about the way these statistics are presented, im going to tell you something about the current top-team RBG teams and their setup.<br />
+<br />
+For credential purposes, I have gotten 2650 RBG rating in s9 leading my own battlegrounds, now im currently at 2310 again from leading pug RBG's.<br />
+The normal setup for any RBG team which is worth their salt (about 2k+) is the following:<br />
+Prot War (FC)<br />
+Hpal (Healer)<br />
+Dpriest (Healer)<br />
+Hpal or Rsham (Healer)<br />
+Frostmage Mage (DPS)<br />
+Sub Rogue (DPS)<br />
+Affli Warlock (DPS)<br />
+This is currently the backbone of any decent RBG team and any team worth their salt will run with a spine composed of these class.<br />
+For the last 3 spots a balanced mix of the following classes are chosen:<br />
+Spriest (1 max)<br />
+Ele shaman (1 max)<br />
+Affliction Warlock (1 max)<br />
+Fire mage (1 max)<br />
+Frost Deathknight (1 max)<br />
+Balance druid (2 max)<br />
+So thats about it for the average RBG setup, the higher-end statistics should represent this, which they don't, therefore there must be something invalid in your statistics.<br />
+<br />
+Now for the people who hate RBG, I don't understand you but to each their own</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Slappyjoe</div><div class="date">2012-01-17, 03:47 PM</div></div><div class="posttext">Well, that and the fact that people with better gear win more often isn't exactly a groundbreaking discovery.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">redsunrising15</div><div class="date">2012-01-17, 03:48 PM</div></div><div class="posttext">Hunters the lowest played PvP class? now there's a groundbreaking discovery!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Buu</div><div class="date">2012-01-17, 03:52 PM</div></div><div class="posttext">Ao... about SOhPA... http://www.darklegacycomics.com/170.html It became even more fun.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc877bd117d6</div><div class="date">2012-01-17, 03:56 PM</div></div><div class="posttext">Hunters the lowest played PvP class? now there's a groundbreaking discovery!<br />
+<br />
+this isn't about how much each class is played</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nikat</div><div class="date">2012-01-17, 04:04 PM</div></div><div class="posttext">Really all this does is show how gear dependent wow is, not new news, but what ever.For those wondering.The pool below 370 loses regularly to those between 370-385the pool below 385 loses regularly to those betwen 385-395ect....Because the pool of players increases as they get worse (to a point) you can easily see the top XYZ% of players would have over 50% win's, this just shows the top say 30% not all players.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Miley</div><div class="date">2012-01-17, 04:21 PM</div></div><div class="posttext">this isn't about how much each class is played<br />
+<br />
+Oh look hunters have the lowest win percentage implying teams looking to win the most would not include classes that tend to lose. It's like trying to say hunters aren't broken in arena, plenty of hunters are on arena teams yet they are always the least represented class in high rankings. The higher ilvl charts show this as well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">VenomousCarnage</div><div class="date">2012-01-17, 04:24 PM</div></div><div class="posttext">lol no surprise there.Hunters get screwed as usual.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Idletime</div><div class="date">2012-01-17, 04:35 PM</div></div><div class="posttext">The answer to RBGs at any level - leave the hunters at home and bring the locks and mages.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">themortalgod</div><div class="date">2012-01-17, 04:59 PM</div></div><div class="posttext">I may be misreading the data but how can EVERY class in the game have a better than 50% win/loss ratio? That means more players are winning than are losing which seems odd since in order to an RBG team to win, another has to lose. Shouldn't the average of every class combined equal to exactly 50%?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">petre</div><div class="date">2012-01-17, 05:19 PM</div></div><div class="posttext">I may be misreading the data but how can EVERY class in the game have a better than 50% win/loss ratio? That means more players are winning than are losing which seems odd since in order to an RBG team to win, another has to lose. Shouldn't the average of every class combined equal to exactly 50%?<br />
+<br />
+I'd made a comment about the &quot;bad&quot; players with ~30% wins or less simply stopped playing and ended up removed from armory. It took another poster for me to notice that the stats listed are only for players 370 ilevel and up. So any players with under 370 ilevel that do RBGs aren't represented, and one presumes they are doing worse (under 50%).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ganush</div><div class="date">2012-01-17, 05:20 PM</div></div><div class="posttext">I may be misreading the data but how can EVERY class in the game have a better than 50% win/loss ratio? That means more players are winning than are losing which seems odd since in order to an RBG team to win, another has to lose. Shouldn't the average of every class combined equal to exactly 50%?<br />
+<br />
+Every class doesn't, only those in higher gear levels. They pick on the undergeared teams =)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Algrumm</div><div class="date">2012-01-17, 05:22 PM</div></div><div class="posttext">To those wondering why the statistics are &quot;all above 50%&quot;, the post says it's only looking at 3 groups. In other words, 370ilvl, 385 and 395+ are the three groups, leaving a big-old 0-369 out. I think it's reasonable safe to say that some scrubs in ilvl 340, just doing rbgs for points, probably only have a 20% win rate or something. To those saying the stats are incorrect or superficial; they aren't. It says what it said it would, it doesn't really hype the data up (ok it could show the graphs from 0 to 100%, but that would be... slightly unreadable), or try to make any conclusions. You seem more frustrated by this lack of a conclusion, when really it's just random data. Now onto the real topic, and taking it only at face value; yes it shows the problems, but as someone pointed out an 8% gap (the biggest) isn't that bad. What is bad imo, is that these differences have been around for a long time now, and nothing has really been done about it. Anyway, keep it up, I personally enjoy the stats.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">styxore</div><div class="date">2012-01-17, 05:59 PM</div></div><div class="posttext">all those statistics do is they make me rape my mousewheel to check if there are some _actual_ news.all those so called statistics, recaps: lame.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tunderbrew</div><div class="date">2012-01-17, 06:52 PM</div></div><div class="posttext">Dark Legacy strikes with great humor again to get me through my Mondays. It's great to see Keydar take on S.O.P.A as well and seeing opposition on the Warcraft front(given Activision's support of the bill), where others have unfortunately shied from coverage to avoid stirring the pot</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">blackwater</div><div class="date">2012-01-17, 07:08 PM</div></div><div class="posttext">How about the fact that on low population servers, people don't even play rated bg's. On my server it doesn't even exist.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6cf872d270</div><div class="date">2012-01-17, 08:13 PM</div></div><div class="posttext">This is quite misleading. Hunters seem to be doing &quot;ok&quot; according to this chart. But if you actually look at statistics based on rating, of the top 2000 Rated BG players in the US, here is the breakdown by class.<br />
+Paladin - 304<br />
+Mage - 256<br />
+Druid - 255<br />
+Priest - 224<br />
+Warrior - 214<br />
+Death Knight - 190 <br />
+Shaman - 175<br />
+Rogue - 148<br />
+Warlock - 143<br />
+Hunter - 91<br />
+Among 2000 players, approximately 200 of each class should be in there. So hunters are less than 50% of what they are supposed to represent, where Paladins are 150% of what they are supposed to represent. All in all, other than Hunters and maybe Locks and Rogues, the other classes are well within the &quot;normal&quot; limits. But Hunters are a bit too low indeed.<br />
+<br />
+I do RBG with my hunter, and the only thing hunters are good at is to idle at farm flag. That's it. And many other classes can fulfill that role easily. So nobody really &quot;needs&quot; a hunter for their RBG team.<br />
+<br />
+<br />
+That makes a lot more sense and those figures would make a meaningful chart. The chart on the front page doesn't tell me anything.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">retpally</div><div class="date">2012-01-17, 08:13 PM</div></div><div class="posttext">I think the lack of MoP updates might be because all the devs are playing SWTOR. Get back to work plz.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Appletini</div><div class="date">2012-01-17, 08:13 PM</div></div><div class="posttext">Hunters and then Druids for the lowest two spots? If WSG, TP, and AB weren't the three most boring BGs (in order), I might care about RBGs a bit more. Why can't they just give everyone personal ranks regardless of putting together a 10-man group?<br />
+<br />
+The hunter problem in PVP is the same problem they have in PVE, by the way. They have plenty of tools in the toolbox for PVP, but to be blunt, they don't do enough damage and at high resil, that really shows.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6cf872d270</div><div class="date">2012-01-17, 08:16 PM</div></div><div class="posttext">So the graph tells me: all Hunters, Resto Druids and Ret Pallys are underpowered in PvP... This was known about a year ago. One whole class and two specific specs, is it really that hard to balance? I'll not go into the OP classes because it really doesn't matter at this point.<br />
+<br />
+All BGs should be rated IMO, based on the individual player's prformance, this is why they failed. <br />
+<br />
+Premades, never wanted to fight other premades; just like twinks never wanted to fight only other twinks. This concept is dead and it was obvious when premades completely stopped after they made the matching system. Keep it random, rated and with 5 players max to queue together per-BG.<br />
+<br />
+This is such common sense...<br />
+<br />
+Indeed, common sense to all but the devs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">gamerunknown</div><div class="date">2012-01-17, 09:02 PM</div></div><div class="posttext">conflating balance and representation Nowhere on the front page does it mention representation. These are win *percentages*, independent of the absolute number of classes that play. Last I checked hunters were one of the most common classes at 85 too, so one ought to expect more hunters to be playing rated bgs, but that isn't the case either. Personal rating would be terrible to implement if it were based on win:loss ratio since it would mean increasing queue times for Horde as Alliance are matched with suitably unskilled players. I'm mediocre at best at PvP, but I collect gear from the current season, bind my abilities and turn with my mouse and I've won just over 31% of my 1736 battlegrounds played. In comparison, I've won 52% of arena matches I've played. It would probably be even worse if it were based on damage or healing done, since it would encourage players to ignore objectives, skip utility and just tunnel vision the opposing team. Absorbs still aren't counted as healing according to the battleground chart, so fewer players would join as disc too. If they were based on objectives, it'd probably penalise healers in WSG and TP at least: I've had 9 flag returns in over 100 games of WSG, it's very rare that an enemy flag carrier dies without a melee being nearer to them than I am.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Venteus</div><div class="date">2012-01-17, 11:05 PM</div></div><div class="posttext">I think the main issue for hunters is survivability.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Revrant</div><div class="date">2012-01-18, 12:09 AM</div></div><div class="posttext">Hunters on the bottom in a BG graph of any kind. Yeah, so? Tell me something I haven't experienced first hand for the past four years.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce84939a4e2</div><div class="date">2012-01-18, 12:20 AM</div></div><div class="posttext">Indeed, common sense to all but the devs.<br />
+When I first heard of Rated Battlegrounds I instantly thought that queing for a battleground would give you a rating based on how many you won, unfortunately, fail.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Beachcomber</div><div class="date">2012-01-18, 12:33 AM</div></div><div class="posttext">This is quite misleading. Hunters seem to be doing &quot;ok&quot; according to this chart. But if you actually look at statistics based on rating, of the top 2000 Rated BG players in the US, here is the breakdown by class.Paladin - 304Mage - 256Druid - 255Priest - 224Warrior - 214Death Knight - 190 Shaman - 175Rogue - 148Warlock - 143Hunter - 91<br />
+<br />
+I think this bit of info is much more useful. Honestly the item level differentiation given on the front page is meaningless. Sadly, we can't see from the data that resto druids are not taken to rateds because they are so squishy, etc.<br />
+<br />
+Truth be told, even the distinction displayed above is skewed. EVERY decent RBG team has a rogue on it. It's almost mandatory due to Smoke Bomb. Paladin is the best healer so you will have 1-2 per game. Prot is the best fc spec so you'll almost always have a warrior. Many teams have full warlock/boomkin setup. Mage for defensive peels, Hunter for resource map defense (or use your prot).I like that pvp has been featured in a news item here but we do need some more valuable data and ways to obtain that data.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">anyaka21</div><div class="date">2012-01-18, 02:06 AM</div></div><div class="posttext">For 370+ every class has 53-57% win rate... For 385+ every class has 54-58% win rate... For 395+ every class has 61-68% win rate... Who are they winning over? They're not paired up against ungeared teams below 370...at least not for more than a few matches after reset. But for 395+ players they win 2 out of 3 games - somone out there must then loose those games?<br />
+<br />
+bottom line is that it has to be people with less gear. So while the graphs don't show it, it has to be that the lesser the gear, the more you lose. Remember, these stats are based on gear, they are not based on ratings. Teams are matched up based on average of ratings not average of gear, if not mistaken.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TofuBeast</div><div class="date">2012-01-18, 02:40 AM</div></div><div class="posttext">poor hunters</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rukh</div><div class="date">2012-01-18, 03:32 AM</div></div><div class="posttext">oo other classes are close to mages, time for a frost mage buff.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">good diu bro</div><div class="date">2012-01-18, 01:00 PM</div></div><div class="posttext">Wonder how did DLC censor Krom's hair in every strip efficiently.<br />
+<br />
+<br />
+Where's mmo's stance on SOPA?<br />
+<br />
+I think Curse has officially said their stance is that they are against it.<br />
+<br />
+<br />
+http://www.curse.com/news/curse/43551-curse-takes-a-stance-on-sopa<br />
+<br />
+Besides, we are in fact using (datamined) propitiatory data without permission.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">normalfreak2</div><div class="date">2012-02-28, 04:24 PM</div></div><div class="posttext">Not likely. There is no simple way for me to determine what spec is used for PvP or PvE, if either.<br />
+<br />
+<br />
+<br />
+What exactly does it prove?<br />
+<br />
+---------- Post added 2012-02-28 at 10:26 AM ----------<br />
+<br />
+<br />
+Because a class always wins and always losses. Basically this chart says the team with more mages wins more and the team with more hunters lose more. Byt teams with hunters will win and teams with mages will lose.<br />
+<br />
+Uhhhh or it just means more people play Mages that PvP. Based on the polls a lot of people NEVER even stepped into RBG's.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

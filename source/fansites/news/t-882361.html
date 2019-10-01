@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="services, game, profit, business, remote, guild, running, cover, purpose, faster, chat, people, optional, content, blizz, armor/weapon, understand, creating, large, shit, companies, realize, turning, surprised, models, things, working, departments, hard, incurred, subscription, gain, benefit, additional, monthly, paying, minimal, addition, breaking, choose, option, interested, subscriptions, cost, player, costs, provide, completely, service, lost" />
+<meta name="description" content="Remote Guild Chat Preview 
+Blizzard posted a small preview of the remote guild chat on the World of Warcraft Remote Services page.  
+Real time guild chat on your phone. Keep in touch with your guildmates and always be in on your guild's discussions with the new mobile Guild Chat feature. With a subscription to World of Warcraft Remote, you can view and participate in your guild's chat in real time, engage in one-on-one conversations with other guild members, and more! 
+ 
+Subscription Features 
+" />
+<title> Remote Guild Chat Preview, Savage Defense and Blood Shield Issues, Art Gallery [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Remote Guild Chat Preview, Savage Defense and Blood Shield Issues, Art Gallery</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-882361.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/882361-Remote-Guild-Chat-Preview-Savage-Defense-and-Blood-Shield-Issues-Art-Gallery">Remote Guild Chat Preview, Savage Defense and Blood Shield Issues, Art Gallery</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2011-04-06, 10:10 PM</div></div><div class="posttext">Remote Guild Chat Preview<br />
+Blizzard posted a small preview of the remote guild chat on the World of Warcraft Remote Services (http://eu.battle.net/wow/en/services/wow-remote/#guild-chat) page. <br />
+Real time guild chat on your phone. Keep in touch with your guildmates and always be in on your guild's discussions with the new mobile Guild Chat feature. With a subscription to World of Warcraft Remote, you can view and participate in your guild's chat in real time, engage in one-on-one conversations with other guild members, and more!<br />
+<br />
+Subscription Features<br />
+<br />
+<br />
+Stay in touch with your entire guild wherever you are<br />
+See which guildmates are online<br />
+Initiate one-on-one conversations with guild members<br />
+Keep the guild up-to-date with your Arena team and Rated Battlegrounds plans<br />
+Filter by guild chat, officer chat, and whispers <br />
+<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-01_small.jpg (http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-01.jpg) http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-02_small.jpg (http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-02.jpg) http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-03_small.jpg (http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-03.jpg) http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-04_small.jpg (http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-04.jpg) http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-05_small.jpg (http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-05.jpg)<br />
+<br />
+<br />
+Savage Defense and Blood Shield &quot;Issues&quot;<br />
+There are two issues here.<br />
+<br />
+One is that the combat log is saying “refresh” in a confusing way when it’s really just applying damage to the shield (i.e. a new shield has not been created). We’re looking at some ways that might be fixed.<br />
+<br />
+The second issue has to do with our combat log (or third party logs) apparently disagreeing about what happened. Remember, our combat calculations are done on the realm side and then reported to the client, but the client only gets those reports periodically. The message has to travel a potentially long distance between your client and our realms. It’s important that the calculations are done realm-side though, to maintain gameplay integrity.<br />
+<br />
+Because of the latency inherent in client – realm communication, it can appear that a hit lands before the shield procs, yet still applies to the shield, leading to the mistaken impression that the proc isn’t occurring properly. In reality, the server is (probably) performing the steps correctly, but the client sometimes lags behind. For example, there's a case where what actually happened is this sequence: 1) shield proc, 2) hit, 3) absorb, but the client is slightly behind and instead (incorrectly) shows 1) hit, 2) shield proc, 3) absorb in the combat log. Or it could appear that you lost shield points without actually taking less damage, when in reality either the shield or your health pool weren’t affected. Or it could appear that if you take multiple hits nearly simultaneously that the shield did nothing to the later hits, but in reality the shield was gone on the first hit and your client just hasn’t been notified of that fact yet. We will investigate this issue just to make sure, but we’re pretty confident that Savage Defense and Blood Shield are working correctly and are just sometimes getting misreported. With Savage Defense lasting longer in 4.1, you may see this kind of thing more often.<br />
+<br />
+The takeaway is that latency can in some cases cause combat log display issues like the one we’re seeing here. We understand that a lot of you use the combat log as a reporting tool to analyze a fight after the fight has concluded. The combat log as currently implemented is supposed to give you a data feed in real time. We’d like to redesign the combat log to fill that post-combat analysis role better (as Ghostcrawler alluded to in a recent Q&amp;A) but that is a Very Big Task. Just delaying the current combat log so that it was in 100% parity with the server could cause serious issues with third party mods among other things, so we have to be careful not to turn a single screw and end up dismantling the whole machine, so to speak. Despite its limitations, it remains an accurate and useful tool in the vast majority of circumstances. <br />
+<br />
+<br />
+Blizzard Art Gallery Update<br />
+The World of Warcraft: Wrath of the Lich King Art gallery (http://us.battle.net/wow/en/media/artwork/wow-wrath)has been updated with six pieces representing the Warcraft universe.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2011/march/loadscreen-pit-of-saron-full_small.jpg (http://media.mmo-champion.com/images/news/2011/march/loadscreen-pit-of-saron-full.jpg) http://media.mmo-champion.com/images/news/2011/march/loadscreen-the-forge-of-souls-full_small.jpg (http://media.mmo-champion.com/images/news/2011/march/loadscreen-the-forge-of-souls-full.jpg) http://media.mmo-champion.com/images/news/2011/march/loadscreen-the-eye-of-eternity-full_small.jpg (http://media.mmo-champion.com/images/news/2011/march/loadscreen-the-eye-of-eternity-full.jpg)<br />
+http://media.mmo-champion.com/images/news/2011/march/loadscreen-trial-of-the-crusader-full_small.jpg (http://media.mmo-champion.com/images/news/2011/march/loadscreen-trial-of-the-crusader-full.jpg) http://media.mmo-champion.com/images/news/2011/march/loadscreen-trial-of-the-champion-full_small.jpg (http://media.mmo-champion.com/images/news/2011/march/loadscreen-trial-of-the-champion-full.jpg) http://media.mmo-champion.com/images/news/2011/march/loadscreen-wintergrasp-full_small.jpg (http://media.mmo-champion.com/images/news/2011/march/loadscreen-wintergrasp-full.jpg)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Myci</div><div class="date">2011-04-06, 10:12 PM</div></div><div class="posttext">First :D And that guild chat thing looks awesome!<br />
+<br />
+i wonder how much it will cost, and what phones it will be available for &gt;.&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3d5e9cedde</div><div class="date">2011-04-06, 10:14 PM</div></div><div class="posttext">lol totally getting that :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Simca</div><div class="date">2011-04-06, 10:14 PM</div></div><div class="posttext">I'm totally going to download the Android SDK for Windows 7 and buy that service so I can talk with my guildmates on my computer without having WoW open.<br />
+<br />
+My use of WoW currently is 98% idling in Orgrimmar, so I might as well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fangless</div><div class="date">2011-04-06, 10:14 PM</div></div><div class="posttext">It's $3/mo, and it's included with the mobile armory Plus app. So, it's on whatever phones that's on already.<br />
+<br />
+<br />
+<br />
+also... wtb guild chat already :\ that was announced ages ago, and now it's finally &quot;comingsoon!&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ferel</div><div class="date">2011-04-06, 10:14 PM</div></div><div class="posttext">We'll have more information on the availability of this fanciful feat of gnomish engineering soon, so keep your goggles glued to the official World of Warcraft website.<br />
+<br />
+Do you see that? They made no mention of the innovative contributions of the goblin engineering community - again! &gt;:(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Znuff</div><div class="date">2011-04-06, 10:16 PM</div></div><div class="posttext">...yet I'm not sure how many people will pay 2-3€ for guild chat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fidelity32</div><div class="date">2011-04-06, 10:16 PM</div></div><div class="posttext">Awesome! Iphone confirmed (duhhh).<br />
+<br />
+Can't wait! :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Buckwald</div><div class="date">2011-04-06, 10:18 PM</div></div><div class="posttext">The only time I need to talk to my guild when I'm not playing is to let them know I'll be late or won't make a raid. Even then I can access the website and post. So, I wouldn't use it. But it's a nice feature for those that do. <br />
+<br />
+I wonder how many Doom-Saying, Cash Cow posts this is going to be filled with...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">stahlhammer89</div><div class="date">2011-04-06, 10:19 PM</div></div><div class="posttext">First :D And that guild chat thing looks awesome!<br />
+<br />
+i wonder how much it will cost, and what phones it will be available for &gt;.&gt;<br />
+<br />
+iPhone/iPod Touch and Android $2.99/mo extra <br />
+<br />
+<br />
+...yet I'm not sure how many people will pay 2-3€ for guild chat.<br />
+<br />
+You also get access to the auction house services as well</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deyadissa</div><div class="date">2011-04-06, 10:21 PM</div></div><div class="posttext">...yet I'm not sure how many people will pay 2-3€ for guild chat.<br />
+<br />
+It comes with the auction house as well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Guthix</div><div class="date">2011-04-06, 10:21 PM</div></div><div class="posttext">^.^ must have!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gankz</div><div class="date">2011-04-06, 10:22 PM</div></div><div class="posttext">none of these are new photos, theyre just the zone/loading screens</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Insomnium</div><div class="date">2011-04-06, 10:22 PM</div></div><div class="posttext">This is going to be my replacement for the actual sub!<br />
+<br />
+If only they could make the same for Battle.net :(.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">schippie</div><div class="date">2011-04-06, 10:22 PM</div></div><div class="posttext">/drool <br />
+<br />
+Lol blizz still manages to amaze me sometimes <br />
+<br />
+/buy</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Erisong</div><div class="date">2011-04-06, 10:22 PM</div></div><div class="posttext">Maybe with this they'll finally add the Mobile Armory to the Android version and update it for just the Auction House. The 3rd party app is still too far behind ;______;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Scratches</div><div class="date">2011-04-06, 10:22 PM</div></div><div class="posttext">*sigh* ...There's no way I'm forkin' over another $3/month just to talk to guildmates without having to play WoW. (That's what Vent and Mumble are for &gt;_&gt; heh)<br />
+<br />
+Cool idea, I'll definitely give them that, but I can't help but wonder where Blizzard's priorities are at this point. On the game, or on the money? <br />
+Charging extra monthly for something that could set them well above competition if it were free..? :confused:<br />
+<br />
+edit: Also, how does this add value to the game? Are players more likely to play longer because of this? ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Siorra</div><div class="date">2011-04-06, 10:23 PM</div></div><div class="posttext">While they're at it we could do with the official armoury app on Android, too.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dotSeed</div><div class="date">2011-04-06, 10:23 PM</div></div><div class="posttext">Someone needs to print off iOS's HIG and slap Blizzard's mobile team upside the head with it. I'm not even getting in to the atrocious UI elements, images being done at the wrong sizes, etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vasz</div><div class="date">2011-04-06, 10:23 PM</div></div><div class="posttext">Just launch the damn patch already!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">trhemp</div><div class="date">2011-04-06, 10:23 PM</div></div><div class="posttext">seems pretty nice, however its sad that this is what they are trying to push out instead of new content. This game is getting very very dull</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ephilia</div><div class="date">2011-04-06, 10:25 PM</div></div><div class="posttext">First :D And that guild chat thing looks awesome!<br />
+<br />
+i wonder how much it will cost, and what phones it will be available for &gt;.&gt;<br />
+<br />
+&quot;Remote Guild Chat (Coming Soon!)<br />
+Now in development for iPhone, iPod touch, and Android&quot;<br />
+<br />
+Taken from http://eu.battle.net/wow/en/services/wow-remote/#wow-remote :)<br />
+<br />
+Odd there's no Blizzard made Armory for Andriod yet, only exists for Iphone so far :(<br />
+Guess/hope its launched when the gchat is lauched as well..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SomethingcooKiljaeden</div><div class="date">2011-04-06, 10:30 PM</div></div><div class="posttext">4.2 is going to bring me back into WoW. It is giving us all the stuff Cata was supposed to launch with</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4fc4c1f339</div><div class="date">2011-04-06, 10:33 PM</div></div><div class="posttext">Finally bears are getting the buff they need. Of course it happened after i switched to feral dps :/<br />
+Now I just have to spec balance so my kitty can get some dps boost (needed for PvE, not PvP)...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">diabolikal</div><div class="date">2011-04-06, 10:34 PM</div></div><div class="posttext">Indeed this justifies the $3 price of the remote auction house. Now all we need on Android is the official armory.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Duster505</div><div class="date">2011-04-06, 10:37 PM</div></div><div class="posttext">ahhh ! now we know what the coders have been doing for the past few weeks.... Making Blizzard 3$ more per month ! Screw the subs - they can play ZA and ZG for next 6 months !</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azutael</div><div class="date">2011-04-06, 10:38 PM</div></div><div class="posttext">The remote subscription is still not worth it IMO, good for me i suppose - a few bucks saved.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">homerunhomer</div><div class="date">2011-04-06, 10:39 PM</div></div><div class="posttext">I would have been excited for the remote guild chat. It's just a shame that I can't stand my guild or its members.<br />
+<br />
+Now a chat feature with friends in whisper...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cocoa</div><div class="date">2011-04-06, 10:44 PM</div></div><div class="posttext">seems pretty nice, however its sad that this is what they are trying to push out instead of new content. This game is getting very very dull<br />
+<br />
+people who work on web and app related content have nothing to do with game content</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Snakebite</div><div class="date">2011-04-06, 10:44 PM</div></div><div class="posttext">Blizzard have really really boring guild conversations</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cocoa</div><div class="date">2011-04-06, 10:45 PM</div></div><div class="posttext">ahhh ! now we know what the coders have been doing for the past few weeks.... Making Blizzard 3$ more per month ! Screw the subs - they can play ZA and ZG for next 6 months !<br />
+<br />
+completely different &quot;coders&quot; work on those 2 things</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tablemaker</div><div class="date">2011-04-06, 10:46 PM</div></div><div class="posttext">About 4 years ago I was in a guild with a player whom had his own remote chat. He was a genius, and then some, when it came to scripts. Wouldn't suprise me if he was actually a dev... because at the time, there were a couple devs in the guild. The alliance rogue near the Wintergrasp portal in Dalaran is named after one of them. I am amazed it took this long for them to release some type of remote guild chat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DeanyKong</div><div class="date">2011-04-06, 10:50 PM</div></div><div class="posttext">ahhh ! now we know what the coders have been doing for the past few weeks.... Making Blizzard 3$ more per month ! Screw the subs - they can play ZA and ZG for next 6 months !<br />
+<br />
+You'd think so, but you'd be wrong.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CombatJack</div><div class="date">2011-04-06, 10:55 PM</div></div><div class="posttext">Thank god this is being created. So many times I've been at work and wanted to talk to the one guy in my guild that has no life. Guild forums and IRC channels are no longer needed. Thank you Blizzard.<br />
+<br />
+<br />
+<br />
+What a piece of crap.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pooley</div><div class="date">2011-04-06, 11:01 PM</div></div><div class="posttext">seems pretty nice, however its sad that this is what they are trying to push out instead of new content. This game is getting very very dull<br />
+<br />
+Rumour has it there is now more than just one guy at Blizzard, he hired a second guy. Now they can work on more than 1 thing at a time!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pumps</div><div class="date">2011-04-06, 11:02 PM</div></div><div class="posttext">It's $3/mo, and it's included with the mobile armory Plus app. So, it's on whatever phones that's on already.<br />
+<br />
+<br />
+I just knew it was going to be cheaper in the US. The Eu price is 2.99 euros which is $4.29<br />
+<br />
+Either way its too expensive. I think they are too greedy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Leoni</div><div class="date">2011-04-06, 11:03 PM</div></div><div class="posttext">guild chat while your not at your desk what next playing wow on a gameboy fuck off activision money grabbing chunts</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">La</div><div class="date">2011-04-06, 11:03 PM</div></div><div class="posttext">If I need to talk to my guild or check the AH that badly on a game, then I might just go see a therapist because I probably have a major problem with my head. I really doubt anyone would ever need to do either of those two things either, unless your only friends are your friends online and your only hobby is working the AH? lol.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc47607dc526</div><div class="date">2011-04-06, 11:05 PM</div></div><div class="posttext">seems pretty nice, however its sad that this is what they are trying to push out instead of new content. This game is getting very very dull<br />
+<br />
+very very very tbh, wish there was actually a decent alternative.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">insomniac190</div><div class="date">2011-04-06, 11:07 PM</div></div><div class="posttext">completely different &quot;coders&quot; work on those 2 things<br />
+<br />
+That's not the point really. If they weren't paying these people to work on phone apps, they'd have more money to hire people to work on content.<br />
+<br />
+All these new updates are lame to me when we compare it to things from Wrath. I mean if you look at Wrath, we got the dungeon finder and achievements. Two pretty big things IMO. What have we gotten in Cata? RBGs are pretty big for the people that can do them, but that isn't a lot of people.<br />
+<br />
+I can't wait until the next expansion when we don't get a new class, race, or profession. And they push it forward with &quot;Remodeled Races&quot;!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">S7orm</div><div class="date">2011-04-06, 11:07 PM</div></div><div class="posttext">Android support<br />
+<br />
+S7orm (me) approves</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Agallochh</div><div class="date">2011-04-06, 11:09 PM</div></div><div class="posttext">http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-04.jpg<br />
+<br />
+I lol'd. Since when can rogues heal?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Noetic Concordance</div><div class="date">2011-04-06, 11:12 PM</div></div><div class="posttext">wow is farmivllebookpage now?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">stahlhammer89</div><div class="date">2011-04-06, 11:18 PM</div></div><div class="posttext">This is going to be my replacement for the actual sub!<br />
+<br />
+If only they could make the same for Battle.net :(.<br />
+<br />
+You need an active subscription to even use the AH/Chat services.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ProphetFlume</div><div class="date">2011-04-06, 11:18 PM</div></div><div class="posttext">http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-04.jpg<br />
+<br />
+I lol'd. Since when can rogues heal?<br />
+<br />
+The rogue is the one asking, you can see at the bottom the player is Draenei.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">gusnd</div><div class="date">2011-04-06, 11:19 PM</div></div><div class="posttext">oh well<br />
+<br />
+I want my battle.net messenger, just like steam has</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Roia</div><div class="date">2011-04-06, 11:26 PM</div></div><div class="posttext">AO had a windows client made by the fanbase (AORC), and you could actually join ANY channel, not just guild, and it was also free to use. Way back when I started with WOW, I kinda hoped maybe something similar would eventually popup, but it looks like Blizzard would rather close off their API and milk the iPhone market &gt;&lt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Novaro</div><div class="date">2011-04-06, 11:27 PM</div></div><div class="posttext">I hope it will be free. <br />
+<br />
+Mainly I don't see a reason why Blizzard need to charge for it really, the get millions of dollars a month on subscriptions alone.<br />
+<br />
+Also here is a question that makes you think and I believe total biscuit brought it up once or twice why are Blizzard making WoW have a pay to play model with a cash shop and paid services (race change, server change)? I would understand if it was free to play for a cash shop and paid services like server change. The funny thing is in the case of server change it is a automated service so no people are personally transferring the data.<br />
+<br />
+I know it is capitalism at work and because people keep buying these services (especially those the cash shop items that don't have a charitable donation attached to it). I personally have played wow for several years and personally have never used any of there paid services, but does no one else find it interesting?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">squee666</div><div class="date">2011-04-06, 11:30 PM</div></div><div class="posttext">Does anyone notice Aing is a lvl 85 asking Poppy who is a lvl 80 if she wants to join a HC dungeon. You can tell cause she joins a HC group and mentions she was hoping for grim batol.<br />
+<br />
+alsl the fact mocha jstu got invited and is already an officer</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vladinator</div><div class="date">2011-04-06, 11:30 PM</div></div><div class="posttext">Those pictures look so fake, at least on EU no one ever spells that well and types the apostrophes or uses full names like &quot;chestpiece&quot; -first time I've ever seen someone say that, usually you just say &quot;chest&quot; :D<br />
+(I mean fake as in not how reality is, I know the app is real.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">toychristopher</div><div class="date">2011-04-06, 11:50 PM</div></div><div class="posttext">Hmmm I no longer have a guild to chat with, so it's a little late for that feature.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rhorle</div><div class="date">2011-04-06, 11:52 PM</div></div><div class="posttext">To bad it costs money. Since I'd only see myself using it occasionally (same with the remote AH stuff) that can't justify spending a monthly fee on even if its small. I could even see some people buying a game liscense just to set up a message account that the guild can access to send alerts through guild chat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Masqerader</div><div class="date">2011-04-06, 11:53 PM</div></div><div class="posttext">Does anyone notice Aing is a lvl 85 asking Poppy who is a lvl 80 if she wants to join a HC dungeon. You can tell cause she joins a HC group and mentions she was hoping for grim batol.<br />
+<br />
+alsl the fact mocha jstu got invited and is already an officer<br />
+<br />
+<br />
+i think you need to <br />
+<br />
+A. stop reading too much into this.<br />
+<br />
+B. see A</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocef71e99c15</div><div class="date">2011-04-07, 12:06 AM</div></div><div class="posttext">That's not the point really. If they weren't paying these people to work on phone apps, they'd have more money to hire people to work on content.<br />
+<br />
+<br />
+No, they'd have LESS money to hire ppl to work on content. The app will generate money (and others in this topic are whinign about that instead), more money than they spent letting (almost certainly) an external firm to develop the app. if they didn't expect to make a net profit on the app, they would never have developed it. It's a business you know, not a charity foundation.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Agallochh</div><div class="date">2011-04-07, 12:08 AM</div></div><div class="posttext">The rogue is the one asking, you can see at the bottom the player is Draenei.<br />
+<br />
+It should say [W][From][Mocha]. &quot;Poppy&quot; whispered the rogue asking to heal.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce23f7ce83a</div><div class="date">2011-04-07, 12:10 AM</div></div><div class="posttext">Who would ever hope to get Grim Batol?!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">boneschaman</div><div class="date">2011-04-07, 12:17 AM</div></div><div class="posttext">there are only lvl 80 chars on the screenshots...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Explosion_Rex</div><div class="date">2011-04-07, 12:21 AM</div></div><div class="posttext">Someone should tell Blizz it's not April 1st anymore.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nobleshield</div><div class="date">2011-04-07, 12:34 AM</div></div><div class="posttext">Yay, Android!<br />
+<br />
+Let's hope it actually IS for android...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Keristrasza</div><div class="date">2011-04-07, 12:40 AM</div></div><div class="posttext">Oh boy, this is the last thing they need. People are addicted enough with this damned game, no one will ever get work done if they can constantly keep in touch with the guild live time. -.o Especially super chatty type who think that their guild is the only thing in existance worth keeping in touch with.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">AppleDapples</div><div class="date">2011-04-07, 01:06 AM</div></div><div class="posttext">Awesome. As if I didn't hate people in my guild enough for using guild chat as their personal WoW-Twitter.<br />
+<br />
+The dawn of Gwitter is a dark morning.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kreo</div><div class="date">2011-04-07, 01:10 AM</div></div><div class="posttext">Nice, finally.<br />
+Would be nice if they included ventrillo apps in it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ProphetFlume</div><div class="date">2011-04-07, 01:16 AM</div></div><div class="posttext">It should say [W][From][Mocha]. &quot;Poppy&quot; whispered the rogue asking to heal.<br />
+<br />
+In wow yeah, but there is no &quot;to [Name]: etc&quot; either. Looking at other pictures it seems they have different chat styles so who knows.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Scratches</div><div class="date">2011-04-07, 01:18 AM</div></div><div class="posttext">Awesome. As if I didn't hate people in my guild enough for using guild chat as their personal WoW-Twitter.<br />
+<br />
+The dawn of Gwitter is a dark morning.<br />
+It's called Glitter. get it right... :rolleyes: lol<br />
+<br />
+<br />
+It's a business you know, not a charity foundation.<br />
+I love it when people try to use this for justification, when Activision is already making money hand-over-fist on this game. Hell, even free2play games return sizable profits (just ask Nexon and NC Soft). Take your Gecko-isms back to Wall Street.<br />
+The very purpose of a business is to satisfy customers (just ask Peter Drucker), not nickel and dime them to death with &quot;value-added&quot; services...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Meleti</div><div class="date">2011-04-07, 01:22 AM</div></div><div class="posttext">It's going to be really tempting to pay for that guild chat thing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gwain</div><div class="date">2011-04-07, 01:30 AM</div></div><div class="posttext">I must say, nice feature addition by Blizz....<br />
+<br />
+However, much better at 1/3rd the price. $3 p.m. is a bit rich for most when there are other (free) ways for guildies to keep in touch.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Joji</div><div class="date">2011-04-07, 01:49 AM</div></div><div class="posttext">way to jump on the bandwagon, blizz.<br />
+<br />
+the publisher's for guild wars 2 announced a few months ago that there's a guild chat that will be accessible from their future armory sites...at no cost. Other new age mmo's will feature this as well, at no cost as well. <br />
+<br />
+GG blizz, as if the sub fee for wow is unable to cover the costs of running the remote guild chat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">falx13</div><div class="date">2011-04-07, 01:50 AM</div></div><div class="posttext">I love all these people QQing about it costing money...seriously? You are asking them to work for free....I know that when you guys go to work (assuming you have a job) you expect to be paid for your efforts. &quot;If you're good at something never do it for free.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Scratches</div><div class="date">2011-04-07, 02:14 AM</div></div><div class="posttext">I love all these people QQing about it costing money...seriously? You are asking them to work for free....I know that when you guys go to work (assuming you have a job) you expect to be paid for your efforts. &quot;If you're good at something never do it for free.&quot;<br />
+<br />
+yes, because it's not like we don't already pay a monthly fee for this ga-- oh wait...<br />
+<br />
+If WoW was free to play, however, a fee for this kind of feature would be completely justified, I feel. But it's not.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">PnBoots</div><div class="date">2011-04-07, 03:47 AM</div></div><div class="posttext">anyone who &quot;NEEDS&quot; this app obviously has no social life or girlfriend.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Maleboligia</div><div class="date">2011-04-07, 04:17 AM</div></div><div class="posttext">Another cash grab! Yay. This seems to be designed for a fairly niche market, there is nothing more pressing than being able to chat with your guild? How about using one of the multitude of already available (and free) chat apps? The other features are worth next to nothing to me. To me Blizz is not only focused on generating more revenue, all their decisions are motivated by that. Yes they are a business, but they don't HAVE to generate more income, the game seems to be making them a fair sum of money as is. Customer service would be nice, like for example making tabard's like mounts, so people do not need to carry 10+ in their bags. That idea alone I think would be far more popular to most WoW players, but of course, no way to charge for that. My subscription ends in 2 weeks and I will not be renewing until they change their focus.<br />
+<br />
+---------- Post added 2011-04-07 at 04:21 AM ----------<br />
+<br />
+<br />
+I love all these people QQing about it costing money...seriously? You are asking them to work for free....I know that when you guys go to work (assuming you have a job) you expect to be paid for your efforts. &quot;If you're good at something never do it for free.&quot;<br />
+<br />
+I don't expect them to work for free, but I do expect them to not release paid services that only appeal to a very limited market. And why is chat a premium? I think they are testing to see how much they can charge and how many things they can tag onto user's bills before ppl say &quot;enough&quot;. I have never heard anyone on WoW or off ask for this. There are a thousand free alternatives, this was not well thought out and I'd bet money ppl at Blizz were not in favor of this. Not a coincidence the number of paid features has skyrocketed since they got bought out.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3eb006e951</div><div class="date">2011-04-07, 05:12 AM</div></div><div class="posttext">So more paid services instead of actually fixing the problems this game has, or actually creating NEW content and armor/weapon models, why am I not surprised. This game is turning to shit faster and faster.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bahska</div><div class="date">2011-04-07, 05:25 AM</div></div><div class="posttext">I hope it will be free. <br />
+<br />
+Mainly I don't see a reason why Blizzard need to charge for it really, the get millions of dollars a month on subscriptions alone.<br />
+<br />
+Also here is a question that makes you think and I believe total biscuit brought it up once or twice why are Blizzard making WoW have a pay to play model with a cash shop and paid services (race change, server change)? I would understand if it was free to play for a cash shop and paid services like server change. The funny thing is in the case of server change it is a automated service so no people are personally transferring the data.<br />
+<br />
+I know it is capitalism at work and because people keep buying these services (especially those the cash shop items that don't have a charitable donation attached to it). I personally have played wow for several years and personally have never used any of there paid services, but does no one else find it interesting?<br />
+<br />
+You obviously don't know how a business with shareholders are run. Despite the fact that you may think Blizzard makes a boat load of money they probably don't, Think of all the servers, Bandwidth, devs, marketing people, maintenance etc etc. they have to pay its probably a small % overall.<br />
+Look at the rest of the gaming industry for example, a company makes a game it may cost them 5 million to make, it sells 1 million copys the store, advertiser and devs/bosses take 50 of that (this actually happens, maybe not exact numbers but close to it) they end up profiting 5 million of the otherwise 60 million dollars .<br />
+In other words Blizzard doesn't keep everything they make from subs, these services or Xpacs. They have bills to pay like the rest of us.<br />
+An there a company of course they want to profit as much as possible , that's how company's work. No money, no Blizzard.<br />
+<br />
+People look at Money numbers and automatically think company's just have a big money pit in there building they swim in, hate to tell you but that only happens cartoons not the real world. Sorry if i destroyed your dreams. <br />
+<br />
+Side note: TotalBiscuit is a shock jock even he said things he says on his show should be taken with a grain of salt<br />
+<br />
+---------- Post added 2011-04-07 at 01:33 AM ----------<br />
+<br />
+<br />
+I don't expect them to work for free, but I do expect them to not release paid services that only appeal to a very limited market. And why is chat a premium? I think they are testing to see how much they can charge and how many things they can tag onto user's bills before ppl say &quot;enough&quot;. I have never heard anyone on WoW or off ask for this. There are a thousand free alternatives, this was not well thought out and I'd bet money ppl at Blizz were not in favor of this. Not a coincidence the number of paid features has skyrocketed since they got bought out. <br />
+<br />
+Do you read the forums? People have been asking for this for years. <br />
+<br />
+The game has gotten bigger since they first released it in 2004 things also cost more money now. (Did you know the US is just now recovering from the biggest recession ever?) This is there way of making up costs while not increasing your monthly charge, you don't like you don't buy.<br />
+But they have a right to make money to pay there bills and maybe profit a little just like any other company.<br />
+They could have just increased your sub by 3 dollars, would you rather have that?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ethesae</div><div class="date">2011-04-07, 06:02 AM</div></div><div class="posttext">You obviously don't know how a business with shareholders are run. Despite the fact that you may think Blizzard makes a boat load of money they probably don't, Think of all the servers, Bandwidth, devs, marketing people, maintenance etc etc. they have to pay its probably a small % overall.<br />
+Look at the rest of the gaming industry for example, a company makes a game it may cost them 5 million to make, it sells 1 million copys the store, advertiser and devs/bosses take 50 of that (this actually happens, maybe not exact numbers but close to it) they end up profiting 5 million of the otherwise 60 million dollars .<br />
+In other words Blizzard doesn't keep everything they make from subs, these services or Xpacs. They have bills to pay like the rest of us.<br />
+An there a company of course they want to profit as much as possible , that's how company's work. No money, no Blizzard.<br />
+<br />
+<br />
+A thousand times this. Go look at Activision Blizzard's financial reports. Their profits are pretty reasonable, in fact a little low, especially for a volatile business model like the video game industry.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Skryn</div><div class="date">2011-04-07, 06:26 AM</div></div><div class="posttext">It's called Glitter. get it right... :rolleyes: lol<br />
+<br />
+<br />
+I love it when people try to use this for justification, when Activision is already making money hand-over-fist on this game. Hell, even free2play games return sizable profits (just ask Nexon and NC Soft). Take your Gecko-isms back to Wall Street.<br />
+The very purpose of a business is to satisfy customers (just ask Peter Drucker), not nickel and dime them to death with &quot;value-added&quot; services...<br />
+<br />
+Wrong.<br />
+<br />
+The purpose of a business, in most cases, is to earn profit.<br />
+Profit is earned by providing services and/or products people are willing to pay for.<br />
+<br />
+No one is forcing you to subscribe to these optional services. So, please, remind me, why are you complaining again?<br />
+<br />
+<br />
+So more paid services instead of actually fixing the problems this game has, or actually creating NEW content and armor/weapon models, why am I not surprised. This game is turning to shit faster and faster.<br />
+<br />
+You realize, of course, that companies this large have many, many different departments working on entirely different things. Right?<br />
+<br />
+Why is that so hard to understand?<br />
+<br />
+<br />
+GG blizz, as if the sub fee for wow is unable to cover the costs of running the remote guild chat.<br />
+<br />
+Sure the profit incurred from player subscriptions could cover the cost, but then that's profit lost. Whereas they can provide a completely optional service and have those interested paying a very minimal addition to their monthly subscription to gain the benefit of these additional, non game breaking services.<br />
+<br />
+Gee. I wonder what option you'd choose if you were running a business, too.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6af618f320</div><div class="date">2011-04-07, 06:57 AM</div></div><div class="posttext">Hmm interesting stuff. Could swear I read that the chat protocol was for some reason never gonna be available outside of WoW. Apparently I am wrong.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc59625055a0</div><div class="date">2011-04-07, 08:00 AM</div></div><div class="posttext">I &lt;3 this, hoping that Blizz ever do something helpful to yell at guildies to wait for meh with raid, cause I'm on my way home. <br />
+<br />
+...anyway I still waiting for official Armory for Android phones.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fatpob</div><div class="date">2011-04-07, 08:08 AM</div></div><div class="posttext">though I would like to use this, and i do use free mobile armoury for looking at cal and stuff, I don't pay for the AH use, and I don't think I ever will. They should bundle the Chat with the free version, as a service not another paid for service.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wiIdi</div><div class="date">2011-04-07, 09:38 AM</div></div><div class="posttext">guild chat on your phone<br />
+No thanks. I think blizzard is spending too much time on stupid features.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kathor</div><div class="date">2011-04-07, 09:44 AM</div></div><div class="posttext">*sigh* ...There's no way I'm forkin' over another $3/month just to talk to guildmates without having to play WoW. (That's what Vent and Mumble are for &gt;_&gt; heh)<br />
+<br />
+Cool idea, I'll definitely give them that, but I can't help but wonder where Blizzard's priorities are at this point. On the game, or on the money? <br />
+Charging extra monthly for something that could set them well above competition if it were free..? :confused:<br />
+<br />
+edit: Also, how does this add value to the game? Are players more likely to play longer because of this? ;)<br />
+<br />
+This is wrong...<br />
+<br />
+Remote Auction House is already available, for the same monthly fee... This is just added functionality (and implemented for an extra platform), nothing extra is being charged... This will be good in so many ways! If you cannot afford $3 per month, then don't... WoW is already an incredible cheap way of entertainment, compared to pretty much everything when you consider how many hours worth of experience you get from it per month.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kappesante</div><div class="date">2011-04-07, 10:03 AM</div></div><div class="posttext">so sad. this chat feature should be free since years. using a blizzard chat client on mac and pc too.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb7c59ab28a</div><div class="date">2011-04-07, 10:27 AM</div></div><div class="posttext">No one is forcing you to subscribe to these optional services. So, please, remind me, why are you complaining again?<br />
+<br />
+<br />
+I don't understand how people can QQ about this, if you don't like it don't pay for it..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Icenine</div><div class="date">2011-04-07, 01:15 PM</div></div><div class="posttext">Oh no! $3/month. Now I'll have to decide between buying half of a drive through dinner coming home for work or buying this completely optional, time killing feature.<br />
+<br />
+Oh wait. I have a job that pays more than minimum wage. $3 is not going to kill me, nor will it kill you. If you want this app, buy it and enjoy it. If you don't want it, shut the hell up. If you want it and can't afford it, you have bigger problems than what can be addressed here.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xayla</div><div class="date">2011-04-07, 02:25 PM</div></div><div class="posttext">You obviously don't know how a business with shareholders are run. Despite the fact that you may think Blizzard makes a boat load of money they probably don't, Think of all the servers, Bandwidth, devs, marketing people, maintenance etc etc. they have to pay its probably a small % overall.<br />
+Look at the rest of the gaming industry for example, a company makes a game it may cost them 5 million to make, it sells 1 million copys the store, advertiser and devs/bosses take 50 of that (this actually happens, maybe not exact numbers but close to it) they end up profiting 5 million of the otherwise 60 million dollars .<br />
+In other words Blizzard doesn't keep everything they make from subs, these services or Xpacs. They have bills to pay like the rest of us.<br />
+An there a company of course they want to profit as much as possible , that's how company's work. No money, no Blizzard.<br />
+<br />
+People look at Money numbers and automatically think company's just have a big money pit in there building they swim in, hate to tell you but that only happens cartoons not the real world. Sorry if i destroyed your dreams. <br />
+<br />
+Side note: TotalBiscuit is a shock jock even he said things he says on his show should be taken with a grain of salt<br />
+<br />
+---------- Post added 2011-04-07 at 01:33 AM ----------<br />
+<br />
+<br />
+<br />
+Do you read the forums? People have been asking for this for years. <br />
+<br />
+The game has gotten bigger since they first released it in 2004 things also cost more money now. (Did you know the US is just now recovering from the biggest recession ever?) This is there way of making up costs while not increasing your monthly charge, you don't like you don't buy.<br />
+But they have a right to make money to pay there bills and maybe profit a little just like any other company.<br />
+They could have just increased your sub by 3 dollars, would you rather have that?<br />
+<br />
+<br />
+<br />
+They paid Mr. Michael Morhaime , Chief Exec. Officer of Blizzard Entertainment and Pres Blizzard Entertainment 3.62M Last year. I think they are doing ok on Cash.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc15592af294</div><div class="date">2011-04-07, 02:52 PM</div></div><div class="posttext">I miss Wotlk/Northrend so bad.., One of the main reasons I stopped playing...,</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">woxingma</div><div class="date">2011-04-07, 02:52 PM</div></div><div class="posttext">I can tell that app is fake. No guild goes that long without any sexual innuendo!!!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FattyXP</div><div class="date">2011-04-07, 04:24 PM</div></div><div class="posttext">So... designing new dungeons is &quot;expensive&quot; in terms of time... but your graphic artists had the time to make detailed drawings of old content thats long past?.....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xelu</div><div class="date">2011-04-07, 04:28 PM</div></div><div class="posttext">No love for symbian users again... got used to it...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rezman</div><div class="date">2011-04-07, 04:29 PM</div></div><div class="posttext">If they would update the iPhone app to also have iPad's larger display support... One app can have both built into it...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ShimmerSwirl</div><div class="date">2011-04-08, 12:45 AM</div></div><div class="posttext">I swear half of these comments are from Blizzard plants trying to create a buzz. <br />
+<br />
+Blizz is just trying to suck a bit more money out of this dying giant before its gone.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

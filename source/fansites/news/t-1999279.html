@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="you, can, that, plain, branding, and, simple, people, because, macs, are, just, overpriced, say, whole, stats, what, mac, windows, easily, graphical, design, bullshit, but, indeed, price, somewhat, with, careful, component, selection, movie, warcraft, robert, kazinsky, interview, tweets, proving, armory, better, win10/os, both, set, one, for, grounds" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Grotesque Hotfix Live, Printable Kanai's Cube Checklist &amp; Other Tools 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Hearthstone Championship Tour: Americas - Spring Prelims Day 1 - Stream &amp; Decklists 
+ 
+&lt;img" />
+<title> Armory Stats - Proving Grounds, Robert Kazinsky Interview, Tweets, Warcraft Movie [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Proving Grounds, Robert Kazinsky Interview, Tweets, Warcraft Movie</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1999279.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1999279-Armory-Stats-Proving-Grounds-Robert-Kazinsky-Interview-Tweets-Warcraft-Movie">Armory Stats - Proving Grounds, Robert Kazinsky Interview, Tweets, Warcraft Movie</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2016-05-23, 03:08 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Grotesque Hotfix Live, Printable Kanai's Cube Checklist &amp; Other Tools (http://www.diablofans.com/news/48734-grotesque-hotfix-live-printable-kanais-cube)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Hearthstone Championship Tour: Americas - Spring Prelims Day 1 - Stream &amp; Decklists (http://www.hearthpwn.com/news/1465-hearthstone-championship-tour-americas-spring)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Blue Posts Round-Up - More Batlegrounds, Unranked Draft &amp; More, Widowmaker Nova (http://www.heroesnexus.com/news/1704-blue-posts-round-up-more-batlegrounds-unranked)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Open Beta Stats Infographic, Pharah Comic now Available, Overwatch on Conan, Free BattleTag Name Change Now Live! (http://www.overpwn.com/news/179-open-beta-stats-infographic-pharah-comic-now)<br />
+<br />
+Armory Stats - Proving Grounds<br />
+With the news that Proving Grounds will no longer be a requirement for Heroic Dungeons in Legion, we are taking one last look at the completion rate in Warlords. The data used today is a sample of characters from 1.9 million accounts. We also did this earlier in Warlords of Draenor, which you can see here (http://www.mmo-champion.com/content/4794-Armory-Stats-Proving-Grounds-Blue-Posts-Blue-Tweets-Wildstar-Update). <br />
+<br />
+You can see scoreboards on WoWProgress for DPS (http://www.wowprogress.com/char_statistics/field.pg_damage), Healing (http://www.wowprogress.com/char_statistics/field.pg_healer), and Tank (http://www.wowprogress.com/char_statistics/field.pg_tank) endless.<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+<br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: [ '#8C7853', '#545454', '#DBDB70', '#55C949', '#6B8E23', '#426F42']<br />
+});<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'provingGroundsAbs',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'Bronze', 'Silver', 'Gold', 'Endless 10', 'Endless 20', 'Endless 30'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: true,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false,<br />
+colorByPoint: true<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.series.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Completed Proving Grounds Achievements',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+shared: true,<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'At least one role',<br />
+data: [95.1, 86.9, 21.3, 5.01, 2.85, 2.02],<br />
+<br />
+}, {<br />
+name: 'At least two roles',<br />
+data: [58.4, 50.5, 4.97, 1.08, 0.67, 0.52]<br />
+<br />
+}, {<br />
+name: 'At least three roles',<br />
+data: [26.3, 21.8, 1.23, 0.36, 0.26, 0.22]<br />
+<br />
+}<br />
+]<br />
+<br />
+});<br />
+<br />
+<br />
+<br />
+Highcharts.setOptions({<br />
+colors: []<br />
+});<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'provingGroundsSingle',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: ['Bronze', 'Silver', 'Gold', 'Endless 10', 'Endless 20', 'Endless 30'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: true,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false,<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function () {<br />
+return '&lt;b&gt;' + this.series.name + '&lt;/b&gt; - ' + this.y + '%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Completed Proving Grounds Achievements',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+shared: true,<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'DPS',<br />
+data: [92.3, 82.4, 14.8, 2.48, 1.35, 0.99],<br />
+color: '#851919'<br />
+<br />
+}, {<br />
+name: 'Healer',<br />
+data: [44.1, 40.4, 8.16, 2.38, 1.28, 0.84],<br />
+color: '#4cad52'<br />
+<br />
+}, {<br />
+name: 'Tank',<br />
+data: [43.5, 36.3, 4.5, 1.6, 1.14, 0.92],<br />
+color: '#183069'<br />
+<br />
+}]<br />
+<br />
+});<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;provingGroundsAbs&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;&lt;br&gt;<br />
+<br />
+<br />
+&lt;div id=&quot;provingGroundsSingle&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+<br />
+<br />
+<br />
+Robert Kazinsky Interview Questions<br />
+We will have the chance to ask Robert Kazinsky (https://www.youtube.com/watch?v=X2FXuFAXWP4) some questions soon and wanted to get in questions from the community as well. Feel free to submit questions below!<br />
+<br />
+<br />
+&lt;iframe frameborder=&quot;0&quot; style=&quot;overflow:hidden&quot; width=&quot;900px&quot; height=&quot;250px&quot; scrolling=&quot;auto&quot; allowtransparency=&quot;true&quot; src=&quot;//chaud.polldaddy.com/s/mmockazinskyinterview?iframe=1&quot;&gt;&lt;a href=&quot;//chaud.polldaddy.com/s/mmockazinskyinterview&quot;&gt;View Survey&lt;/a&gt;&lt;/iframe&gt;<br />
+<br />
+<br />
+Blue Tweets<br />
+Classes<br />
+will gnome hunter be released before or after legions launch?<br />
+Gnome Hunters will be available on day-one of the #Legion pre-expansion patch. https://t.co/uXUNZy12km (WarcraftDevs (https://twitter.com/WarcraftDevs/status/732348739734511617))<br />
+<br />
+Items<br />
+With Legion having alot of legendaries will we be able to transmog them. If not, can we atleast hide Helm/Cloak legendaries?<br />
+You will be able to transmog #Legion legendaries to other appearances and vice versa. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/732340400795459585))<br />
+<br />
+Artifact Weapons<br />
+artifact trait cost seems to double after 12 ranks, ~575 to 1260 for rank 13? intended?<br />
+Yes; after 12 traits you are transitioning past the level-up experience. Around that time, you will accrue (1/2) https://t.co/OsNZDGDyv3 (WarcraftDevs (https://twitter.com/WarcraftDevs/status/732341043799035904))<br />
+Artifact Knowledge which will increase the rate at which you gain Artifact Power overall. (2/2) (WarcraftDevs (https://twitter.com/WarcraftDevs/status/732341270438252544))<br />
+<br />
+<br />
+Ghostcrawler Tweets<br />
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.<br />
+There is a pervasive myth that making content hard will induce players to rise to the occasion. We find the opposite. (2013) (OccupyGStreet (https://twitter.com/OccupyGStreet/status/340939865858396162))<br />
+Is it really a myth though? Maybe those rising aren't complaining, a silent majority? This btw is why people play Vanilla.<br />
+Our data suggested it was a myth. Note that &quot;not everyone should be able to do this&quot; is a fine answer too. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724602889646141440))<br />
+How do you feel about it now? Was the data right? Did the myth have some truth?<br />
+I think &quot;hard&quot; is just a difference audience. You have to choose. But you can't make hard stuff intended for easy players. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724605165777473537))<br />
+I love Dark Souls. But that's because it is targeted at gamers like me, not ALL gamers. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724605311500210177))<br />
+hard is what people want. It's human psychological. You feel more accomplished when finishing something hard.<br />
+*If* you finish. If you quit because it's too hard or you don't want hard then the developer lost a player. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724660389124825088))<br />
+if you don't want hard then why play. We are already wasting time on a game, why not make it rewarding?<br />
+There are a lot of easy games that are popular. I think that's fine. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724703285542703104))<br />
+My caution for developers is decide who your audience is and don't try to be all things to all players. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724703361291833344))<br />
+<br />
+looking at that. I am wondering was cata bad move? Players seems more acceptance to this model rather than WOD simple pruning<br />
+It depends if your intended audience is engaged players who want more or returning / lapsed players who might be overwhelmed. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724604383682424837))<br />
+<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Overwatch Short - Solider 76: Hero<br />
+The final animated short for this season has been released! It tells some more of Solider 76's (http://overwatch.gamepedia.com/Soldier:_76) story.<br />
+<br />
+<br />
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/cPRRupAM4DI?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br />
+<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Overwatch - Will You Play?<br />
+Overwatch is almost here! Now that everyone has had a chance to try the game, will you be playing at launch?<br />
+<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/9425327.js&quot;&gt;&lt;/script&gt;&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/9425327/&quot;&gt;Will you be playing Overwatch?&lt;/a&gt;&lt;/noscript&gt;<br />
+<br />
+<br />
+Making of Warcraft In-Game Trailer<br />
+A video has been released that shows a little bit of the editing process to make the fan created Warcraft trailer that used in game assets (http://www.mmo-champion.com/content/5685-Warcraft-Movie-Trailer-in-WoW-Movie-Music-Blue-Tweets-Build-of-the-Month-DLC-536). <br />
+<br />
+<br />
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/df4zAQLm8OE?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2016-05-23, 04:01 AM</div></div><div class="posttext">Can't wait for Overwatch! It's currently 1:57PM on the 23rd in Australia. Anyone know how long it'll be before Overwatch comes out? I'm pretty bad with timezones and stuff<br />
+<br />
+https://bnetcmsus-a.akamaihd.net/cms/content_folder_media/sn/SNTOIV1A47FU1463647844262.png<br />
+<br />
+It releases at the same time everywhere, so around 19 hours from now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frumpy Frumpy Frak</div><div class="date">2016-05-23, 04:14 AM</div></div><div class="posttext">No, I will not be playing Overwatch as I have no interest in PvP only games. After watching those animated shorts, it really pisses me off at how they've wasted such a great universe just because free advertisement from streamers &gt; story mode.<br />
+<br />
+That having been said, I like that release time map. It's so much more considerate than &quot;12am &lt;abbreviation for somewhere in America (maybe?)&gt;&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nomorepriest</div><div class="date">2016-05-23, 04:18 AM</div></div><div class="posttext">I'm more excited about the editing trailer than overwatch!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2016-05-23, 04:18 AM</div></div><div class="posttext">Pretty neat video on machinima editing. =)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce43f69c21b</div><div class="date">2016-05-23, 04:23 AM</div></div><div class="posttext">Is there meant to be a poll in that overwatch section?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">aeuhe4yxzhds</div><div class="date">2016-05-23, 04:25 AM</div></div><div class="posttext">So we will be able to transmog our items into old legendary? Like thunderfury or hand of rag?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Torpedoes</div><div class="date">2016-05-23, 04:28 AM</div></div><div class="posttext">I think this poll might be a bit biased :-P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2016-05-23, 04:36 AM</div></div><div class="posttext">Is there meant to be a poll in that overwatch section?<br />
+<br />
+Yes, something in your browser is blocking it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">threeks</div><div class="date">2016-05-23, 04:38 AM</div></div><div class="posttext">So we will be able to transmog our items into old legendary? Like thunderfury or hand of rag?<br />
+<br />
+Nope. They said #Legion Legendaries, not All of them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gadzooks</div><div class="date">2016-05-23, 04:57 AM</div></div><div class="posttext">I won't be playing - not my kind of game. But, they did a great job on it, and the shorts and lore so far have been fantastic.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc64ace7a841</div><div class="date">2016-05-23, 05:01 AM</div></div><div class="posttext">Wish i could hide non-wow news and movie crap from the frontpage, just like non-wow topics from the &quot;recent forum posts&quot;-box.<br />
+<br />
+Also that conversation with ghostcrawler is weird. I'm definitely not playing wow because of the challenge. There is more in the games than &quot;hardness&quot;, like enjoying scenery, story, whatever. If i want something else, i play ie. stalker: call of pripyat with misery mod. It's ugly, buggy, frustrating, and not even rewarding, but it has that &quot;fuck you player&quot;-thing going on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Banquetto</div><div class="date">2016-05-23, 05:19 AM</div></div><div class="posttext">I won't be playing - not my kind of game. But, they did a great job on it, and the shorts and lore so far have been fantastic.<br />
+<br />
+Same. I checked it out on a beta weekend and thought it seemed just fantastic. But I don't like FPSes and am far beyond horrible at them, so I have no expectation of getting any enjoyment out of it, and won't be buying it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">|Dexter|</div><div class="date">2016-05-23, 05:20 AM</div></div><div class="posttext">No Overwatch for me, no story mode at all and the only FPS I played was the Mass Effect series but only for story and not the shooting!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Danuel</div><div class="date">2016-05-23, 05:20 AM</div></div><div class="posttext">Hurah I'm super special elitary 0.22% dude.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">|Dexter|</div><div class="date">2016-05-23, 05:22 AM</div></div><div class="posttext">Custom homepage page news would be awesome indeed, so we can filter all the stuff I got zero interest in like 60% of this post! Also don't really care what Ghostcrawler is saying anymore...<br />
+<br />
+<br />
+Wish i could hide non-wow news and movie crap from the frontpage, just like non-wow topics from the &quot;recent forum posts&quot;-box.<br />
+<br />
+Also that conversation with ghostcrawler is weird. I'm definitely not playing wow because of the challenge. There is more in the games than &quot;hardness&quot;, like enjoying scenery, story, whatever. If i want something else, i play ie. stalker: call of pripyat with misery mod. It's ugly, buggy, frustrating, and not even rewarding, but it has that &quot;fuck you player&quot;-thing going on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheEaterofSouls</div><div class="date">2016-05-23, 05:41 AM</div></div><div class="posttext">Those statistics make me laugh at the poll that was up a little while back asking about the proving grounds. Like 2000+ people voted endless 30+. Either they were lying or this site makes up less than 1% of the wow playerbase.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kharthus</div><div class="date">2016-05-23, 05:51 AM</div></div><div class="posttext">Should add a new option to the poll: Sorry, we didn't make it for Macs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">socialmaker</div><div class="date">2016-05-23, 05:53 AM</div></div><div class="posttext">wow so hype NOT</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">JaceDraccus</div><div class="date">2016-05-23, 06:01 AM</div></div><div class="posttext">Also that conversation with ghostcrawler is weird. I'm definitely not playing wow because of the challenge. There is more in the games than &quot;hardness&quot;, like enjoying scenery, story, whatever. If i want something else, i play ie. stalker: call of pripyat with misery mod. It's ugly, buggy, frustrating, and not even rewarding, but it has that &quot;fuck you player&quot;-thing going on.<br />
+<br />
+Yeah. I don't mind if some things are hard, and that can even be satisfying when you get past it. But I don't know what the guy wants to be 'hard', and I think the raid participation stats make it hard to argue sweeping statements about what people in general want...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Icemix</div><div class="date">2016-05-23, 06:17 AM</div></div><div class="posttext">The game is filled with people who play with their forehead, so why not make it easier and remove proving grounds requirements. Silver requirement was useless, because it was too easy AND only required for dungeons.<br />
+I'd introduce gold PG for dungeons and LFR most importantly.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kon01</div><div class="date">2016-05-23, 06:24 AM</div></div><div class="posttext">No, I will not be playing Overwatch as I have no interest in PvP only games. After watching those animated shorts, it really pisses me off at how they've wasted such a great universe just because free advertisement from streamers &gt; story mode.<br />
+<br />
+That having been said, I like that release time map. It's so much more considerate than &quot;12am &lt;abbreviation for somewhere in America (maybe?)&gt;&quot;<br />
+<br />
+Just like Diablo, Starcraft or Warcraft at their beginnings, Overwatch its a new ip which have to start somewhere, they can and will expand that new universe as they see fit. The game is just releasing now, and since it has so many heroes from around the world they can literary make single player content in the future for each hero with their own story, rivals e.t.c. This ip releasing now with so little content is just the beginning of something really interesting, they aren't tied to anything in regards to lore, or even gameplay for that matter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">schwarzkopf</div><div class="date">2016-05-23, 07:25 AM</div></div><div class="posttext">Any chance you could do a break down via class on the proving ground stats ?<br />
+<br />
+I did some basic research showing that Hunters were an order of magnitude easier to get through proving grounds than a Warlock (the worse).<br />
+<br />
+Would love some full blown stats though.<br />
+<br />
+Here are my stats (from WoWprogress) ...<br />
+<br />
+Here is the list of classes in order of easiest to hardest in proving grounds, along with the score for person #23 in their class. I've also added the number of characters with a score of 7000 or higher in endless.<br />
+<br />
+Hunter : 8697, 29@ over 7000 &lt;--- easiest<br />
+Monk : 7593, 25@ over 7000<br />
+Rogue : 7298, 23@ over 7000<br />
+Paladin : 6879, 19@ over 7000<br />
+Druid : 6596 16@ over 7000<br />
+DK : 6372, 13@ over 7000<br />
+Shaman : 5799, 11@ over 7000<br />
+Priest : 5589, 6@ over 7000<br />
+Warrior : 5397, 5@ over 7000<br />
+Mage : 4895, 5@ over 7000<br />
+Warlock : 4397, 4@ over 7000 &lt;--- hardest</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Amerissis</div><div class="date">2016-05-23, 07:26 AM</div></div><div class="posttext">Those statistics make me laugh at the poll that was up a little while back asking about the proving grounds. Like 2000+ people voted endless 30+. Either they were lying or this site makes up less than 1% of the wow playerbase.<br />
+Judging by all the other polls before this, it's the 1% here. Which is to be expected, the average Joe doesn't spend his time on forums. He just plays and has fun and has no interest in spoiler news, whining about the game or deep class guides.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thebiglloydtree</div><div class="date">2016-05-23, 07:27 AM</div></div><div class="posttext">Absolutely no interest in Overwatch</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleccybubb</div><div class="date">2016-05-23, 07:47 AM</div></div><div class="posttext">Should add a new option to the poll: Sorry, we didn't make it for Macs.<br />
+<br />
+People play games on those? :O</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">schwarzkopf</div><div class="date">2016-05-23, 08:03 AM</div></div><div class="posttext">Absolutely no interest in Overwatch<br />
+<br />
+I did - but during the weekend beta realised that without a movement toggle function, it was going to be too physically painful for me to play.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">teidden</div><div class="date">2016-05-23, 08:11 AM</div></div><div class="posttext">Blizzard missed out on making Overwatch the next great MMO instead it a worthless first person shooter with nothing to it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Benggaul</div><div class="date">2016-05-23, 08:48 AM</div></div><div class="posttext">Blizzard missed out on making Overwatch the next great MMO instead it a worthless first person shooter with nothing to it.<br />
+<br />
+Overwatch is basically what remains of project Titan. They were struggling to get all of the elements to work well but saw that this FPS--which is far from &quot;worthless&quot;--worked really well on its own, so they salvaged it from the wreckage along with all of the Lore that we've been seeing to give it context and backstory. <br />
+<br />
+I, too, would have loved to have seen this in an MMO setting, but I tend to believe them when they say it just wasn't working out and rather than bringing out an MMO that would have been a mess they snipped out this tiny part of it which has proven very successful even before launch. I look forward to its further development.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bizarre Monkey</div><div class="date">2016-05-23, 08:56 AM</div></div><div class="posttext">all hail glorious PC master race<br />
+<br />
+that said i think even die hard console gamers mostly agree first person shooters and consoles are 'nope'.<br />
+<br />
+except that at least 20 people bought the game for PS4/Xbox so whatta ya know... :o<br />
+<br />
+loved the short, the saturday morning cartoon vibe overwatch has greatly arouses me in my weirdest places<br />
+<br />
+i managed to get the game 10 dollars cheaper via getting the 30 day free trial of amazon prime and then even with shipping, AUD conversion and all that i got it cheaper than the official blizzard storefront. (and that's a boxed copy not a digital key)<br />
+<br />
+Did the same with legion for even great effect, 51 AUD, that's like, 42 USD? The storefront is like LOL 70 DOLLARS OR FLUNK SQUIRT<br />
+<br />
+But they made the unwise assumption that I am not a huge fucking jew. :D (I got it's Box, also... gonna dig right into that box)<br />
+<br />
+Yeah, I'll have to wait a little to play it, but I suspect we'll have an error 37-ish fiasco again. So I won't really be losing out on much, besides I've got Assessments to do and gamedev after that so the wait will be ideal.<br />
+<br />
+Those statistics make me laugh at the poll that was up a little while back asking about the proving grounds. Like 2000+ people voted endless 30+. Either they were lying or this site makes up less than 1% of the wow playerbase.<br />
+<br />
+Considering the Overwatch Poll is 7,000 ish voters while the WoW playerbase has like, millions, you're probably right. :]<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I, too, would have loved to have seen this in an MMO settingI wouldn't.<br />
+<br />
+Overwatch is actually fun, and not a second job I have to pay for.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Blizzard missed out on making Overwatch the next great MMO instead it a worthless first person shooter with nothing to it.I love how confident you are in your entirely wrong opinions.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thunderdragon2</div><div class="date">2016-05-23, 09:05 AM</div></div><div class="posttext">not surprised at all by those stats not may people were interested in PG after what was required to use LFG</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoceb1073a651</div><div class="date">2016-05-23, 09:17 AM</div></div><div class="posttext">After reading a review which stated there are grindy elements in Overwatch, this was the final nail in the coffin for me. I am not a big fan of shooters, and having to grind for gear or anything there - no, thanks. Also: no storymode - no cookies.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2016-05-23, 09:38 AM</div></div><div class="posttext">i wish the next warcraft movie are full animated. look at the fantastic overwatch shorties.<br />
+mix this with a good non orc story and the next warcraft movie will be perfect!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2016-05-23, 09:39 AM</div></div><div class="posttext">Ermergerd here come the graphs!<br />
+<br />
+<br />
+<br />
+No Overwatch for me, no story mode at all and the only FPS I played was the Mass Effect series but only for story and not the shooting!<br />
+<br />
+Mass Effect is not FPS.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">maccajoe</div><div class="date">2016-05-23, 09:39 AM</div></div><div class="posttext">After reading a review which stated there are grindy elements in Overwatch, this was the final nail in the coffin for me. I am not a big fan of shooters, and having to grind for gear or anything there - no, thanks. Also: no storymode - no cookies.<br />
+<br />
+Grindy? What is exactly meant by that? Its a pvp shooter with all characters released. Your profile levels up and you verse other people.<br />
+Would you or this person call counter strike grindy? Or hearthstone coz its the same premise u cue.and you play.<br />
+I guess that's grindy coz its the same gameplay over and over. <br />
+I always interpret grindy as killing mobs for leather over and over rather than doin raids or battlegrounds on repeat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">PingPong</div><div class="date">2016-05-23, 09:44 AM</div></div><div class="posttext">omg I'm the 1% that did all 3 endless 0.o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Valentyn</div><div class="date">2016-05-23, 09:54 AM</div></div><div class="posttext">People play games on those? :O<br />
+<br />
+Very much so, especially Blizzard games. Hell Blizzard already support the Metal API for OS X for Legion.<br />
+<br />
+Metal being Apple's own low level graphics API, similar to DX12 and Vulkan. <br />
+<br />
+I do wonder why the Overwatch development team aren't supporting the *Nix fellows though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Benggaul</div><div class="date">2016-05-23, 10:18 AM</div></div><div class="posttext">After reading a review which stated there are grindy elements in Overwatch, this was the final nail in the coffin for me. I am not a big fan of shooters, and having to grind for gear or anything there - no, thanks. Also: no storymode - no cookies.<br />
+<br />
+Except you're not grinding for gear. There are no &quot;ultimate weapons&quot; or whatever to unlock--all characters have their weapon(s) and abilities right from the start. You basically only have to &quot;grind&quot; if you want different skins/emotes/sprays. The rest of the time you're just playing the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hulkgor</div><div class="date">2016-05-23, 11:04 AM</div></div><div class="posttext">Following LFR defendant arguments :<br />
+<br />
+WOW! 95,1% of the playerbase completed Proving Grounds Bronze on at least 1 role! Most successful feature in the game! MORE!<br />
+<br />
+No, it's a crappy feature and people are forced into it in order to do anything else...<br />
+<br />
+LFR does it by being the only raid model rewarding valor points... woohoo.<br />
+<br />
+clever design if you ask me. /s</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleccybubb</div><div class="date">2016-05-23, 11:09 AM</div></div><div class="posttext">Following LFR defendant arguments :<br />
+<br />
+WOW! 95,1% of the playerbase completed Proving Grounds Bronze on at least 1 role! Most successful feature in the game! MORE!<br />
+<br />
+No, it's a crappy feature and people are forced into it in order to do anything else...<br />
+<br />
+LFR does it by being the only raid model rewarding valor points... woohoo.<br />
+<br />
+clever design if you ask me. /s<br />
+<br />
+Never felt forced into doing it at all. But it shouldn't be the only difficulty to award valor I agree there.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Very much so, especially Blizzard games. Hell Blizzard already support the Metal API for OS X for Legion.<br />
+<br />
+Metal being Apple's own low level graphics API, similar to DX12 and Vulkan. <br />
+<br />
+I do wonder why the Overwatch development team aren't supporting the *Nix fellows though.<br />
+<br />
+Tbh I think apple are getting worse at design recently. Especially with their AIO Imacs. Plus personally I think they are way too overpriced.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0d8e6c2903</div><div class="date">2016-05-23, 11:18 AM</div></div><div class="posttext">Except you're not grinding for gear. There are no &quot;ultimate weapons&quot; or whatever to unlock--all characters have their weapon(s) and abilities right from the start. You basically only have to &quot;grind&quot; if you want different skins/emotes/sprays. The rest of the time you're just playing the game.<br />
+<br />
+Oh noes hipsters cannot play on their Mac *worldends*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleccybubb</div><div class="date">2016-05-23, 11:19 AM</div></div><div class="posttext">Oh noes hipsters cannot play on their Mac *worldends*<br />
+<br />
+Methinks you misquoted. Also nothing wrong with someone playing on a Mac whatsoever and I assume Overwatch will get support eventually. The recent Imacs as pricey as they are run high end games quite well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Logwyn</div><div class="date">2016-05-23, 12:34 PM</div></div><div class="posttext">Methinks you misquoted. Also nothing wrong with someone playing on a Mac whatsoever and I assume Overwatch will get support eventually. The recent Imacs as pricey as they are run high end games quite well.<br />
+<br />
+Just looked up the price of new IMAC..... wow. Just wow. I could build a PC that would blow that out of the water for that price. Eeek!!!. <br />
+<br />
+MAC/Apple crowd.... a world on their own.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleccybubb</div><div class="date">2016-05-23, 12:41 PM</div></div><div class="posttext">Just looked up the price of new IMAC..... wow. Just wow. I could build a PC that would blow that out of the water for that price. Eeek!!!. <br />
+<br />
+MAC/Apple crowd.... a world on their own.<br />
+<br />
+Oh yeah for sure pricing is retarded but if someone wants to use one then it's their choice. I think the mac is shit not the user.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stormykitten</div><div class="date">2016-05-23, 12:57 PM</div></div><div class="posttext">I think GC is missing a point, and that is that the human psyche is pretty much built to feel rewarded if you accomplish something. The trick is not to throw something superhard in the path of the player (although that definitely pleases one crowd) but to give the player the tools to learn without getting too frustrated. The people who get frustrated without trying at all, I just feel compassion for them as they are missing out on so much in life. It's just a question of finding a good balance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoceb1073a651</div><div class="date">2016-05-23, 02:10 PM</div></div><div class="posttext">Except you're not grinding for gear. There are no &quot;ultimate weapons&quot; or whatever to unlock--all characters have their weapon(s) and abilities right from the start. You basically only have to &quot;grind&quot; if you want different skins/emotes/sprays. The rest of the time you're just playing the game.<br />
+<br />
+Are these things tied to special achivements which come from the &quot;quality&quot; of your playstyle (=skill), or is this a thing of &quot;win x matches with character y to get skin z&quot;, where x is a double or even a triple digit number? Is there a kind of achievement tree which is mostly based on time spent in game, not on special situations? If time is the main thing, then it is grindy. You will probably not notice that if you are having fun, than it's good for you. But this does not change the fact.<br />
+<br />
+Edit: Compare these 2 promotions. Hearthstone got you a unique WoW mount for winning 3 (!) games of a category (I don't remember much about that achievement, and I don't play Hearthstone anymore). This was not time-consuming, and definitely not grindy. Now take Graves, a HotS promotion pet for WoW. To get this, you have to level a character in HotS to level 40 (!). Now, this is time consuming, and grindy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleccybubb</div><div class="date">2016-05-23, 02:16 PM</div></div><div class="posttext">Are these things tied to special achivements which come from the &quot;quality&quot; of your playstyle (=skill), or is this a thing of &quot;win x matches with character y to get skin z&quot;, where x is a double or even a triple digit number? Is there a kind of achievement tree which is mostly based on time spent in game, not on special situations? If time is the main thing, then it is grindy. You will probably not notice that if you are having fun, than it's good for you. But this does not change the fact.<br />
+<br />
+Edit: Compare these 2 promotions. Hearthstone got you a unique WoW mount for winning 3 (!) games of a category (I don't remember much about that achievement, and I don't play Hearthstone anymore). This was not time-consuming, and definitely not grindy. Now take Graves, a HotS promotion pet for WoW. To get this, you have to level a character in HotS to level 40 (!). Now, this is time consuming, and grindy.<br />
+<br />
+It's get to level 20 in Heroes with your account for the pet. Not grindy at all. Cap on a hero is 10.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aelric70</div><div class="date">2016-05-23, 02:25 PM</div></div><div class="posttext">Just looked up the price of new IMAC..... wow. Just wow. I could build a PC that would blow that out of the water for that price. Eeek!!!. <br />
+<br />
+MAC/Apple crowd.... a world on their own.<br />
+<br />
+With somewhat careful component selection, you can set one up for both Win10/OS X at that better price.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleccybubb</div><div class="date">2016-05-23, 02:27 PM</div></div><div class="posttext">With somewhat careful component selection, you can set one up for both Win10/OS X at that better price.<br />
+<br />
+Indeed Macs are just overpriced because of branding plain and simple. People say that whole &quot;graphical design&quot; bullshit but you can easily do what you can on a Mac on Windows.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">saltyphry</div><div class="date">2016-05-23, 02:27 PM</div></div><div class="posttext">Any chance you could do a break down via class on the proving ground stats ?<br />
+<br />
+I did some basic research showing that Hunters were an order of magnitude easier to get through proving grounds than a Warlock (the worse).<br />
+<br />
+Would love some full blown stats though.<br />
+<br />
+Here are my stats (from WoWprogress) ...<br />
+<br />
+Here is the list of classes in order of easiest to hardest in proving grounds, along with the score for person #23 in their class. I've also added the number of characters with a score of 7000 or higher in endless.<br />
+<br />
+Hunter : 8697, 29@ over 7000 &lt;--- easiest<br />
+Monk : 7593, 25@ over 7000<br />
+Rogue : 7298, 23@ over 7000<br />
+Paladin : 6879, 19@ over 7000<br />
+Druid : 6596 16@ over 7000<br />
+DK : 6372, 13@ over 7000<br />
+Shaman : 5799, 11@ over 7000<br />
+Priest : 5589, 6@ over 7000<br />
+Warrior : 5397, 5@ over 7000<br />
+Mage : 4895, 5@ over 7000<br />
+Warlock : 4397, 4@ over 7000 &lt;--- hardest<br />
+<br />
+If these are from wowprogress they are extremely outdated and aren't remotely close to the actual numbers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aelric70</div><div class="date">2016-05-23, 02:41 PM</div></div><div class="posttext">I think GC is missing a point, and that is that the human psyche is pretty much built to feel rewarded if you accomplish something. The trick is not to throw something superhard in the path of the player (although that definitely pleases one crowd) but to give the player the tools to learn without getting too frustrated. The people who get frustrated without trying at all, I just feel compassion for them as they are missing out on so much in life. It's just a question of finding a good balance.<br />
+<br />
+It may come as a shock to you, but some people actually get more joy out of relatively simple but fun activities for their R&amp;R time than they do from &quot;hard&quot; games. There's always constructive activities (i.e. not time wasting games) that produce far more value for someone seeking hard challenges to overcome. Accomplishing something &quot;hard&quot; in WoW is worth exactly zilch.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Queen of Hamsters</div><div class="date">2016-05-23, 02:54 PM</div></div><div class="posttext">Funny how people thinking Classic is a challenge try to take a former developer to school on the subject...in their minds, massive grind = mechanically difficult.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bizarre Monkey</div><div class="date">2016-05-23, 03:21 PM</div></div><div class="posttext">It may come as a shock to you, but some people actually get more joy out of relatively simple but fun activities for their R&amp;R time than they do from &quot;hard&quot; games. There's always constructive activities (i.e. not time wasting games) that produce far more value for someone seeking hard challenges to overcome. Accomplishing something &quot;hard&quot; in WoW is worth exactly zilch.<br />
+<br />
+I for example, play WoW and mostly do old raids to get gear that looks cool then x-mog it so my characters can also look cool.<br />
+<br />
+I haven't touched raiding of a current sort since Wrath, lol.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Funny how people thinking Classic is a challenge try to take a former developer to school on the subject...in their minds, massive grind = mechanically difficult.Thank you i was worried no one was going to be intelligent enough to put forward that grind doesn't equal difficulty, it just means you have a tolerance for repetition.<br />
+<br />
+Shovel Knight is a good example of difficulty done well.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fang7986</div><div class="date">2016-05-23, 04:17 PM</div></div><div class="posttext">I think the biggest thing is that certain players perceive things one way but Blizzard has the actual data. Blizzard knows exactly how many players do what and it's exact numbers not guesstimates like you get from wowprogress and the like that this site presents as hard concrete numbers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">voskopoula</div><div class="date">2016-05-23, 04:25 PM</div></div><div class="posttext">About ghostcrawler, he is just a trophy recruit at LoL in my opinion. I dont know how many questions he gets for LoL, he does get many from wow fans though. It is sad, he should be avoiding replying to these because he and blizzzard are not together years now. Unless he continues the hype for advertising reasons. Diplomatically burying wow by replying as sphinx perhaps is important in his job.<br />
+<br />
+About the poll, i dont want to play overwatch now, it was fun game but thats just that for me and some more UT players. I prefer to help in UT alpha. I hoped overwatch had some better graphics than what i saw..<br />
+<br />
+About kazinsky, this guy is leaving the dream, end of story.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Valentyn</div><div class="date">2016-05-23, 04:27 PM</div></div><div class="posttext">Indeed Macs are just overpriced because of branding plain and simple. People say that whole &quot;graphical design&quot; bullshit but you can easily do what you can on a Mac on Windows.<br />
+<br />
+Not so much graphics design, although when it comes to video editing a MacBook Pro with Final Cut Pro X is amazingly well put together, and gives a custom high end computer a run for its money.<br />
+<br />
+https://www.youtube.com/watch?v=-P5UWEKSUXo<br />
+<br />
+Sadly I do agree about price to build quality. There was a time Apple had a decent price for their systems, and did use very good components. <br />
+When the Mac Pro line launched it was significantly more expensive to get either a custom build workstation, or a competitor's Windows one that matched it on price to performance.<br />
+<br />
+The same happened with the 2013 version aka the Trashcan Mac. Issue is, they dropped user upgradeability, and haven't updated it since its launch; while the price remained the same. So it's pointless getting that now.<br />
+<br />
+Until I sold my 2009 Mac Pro, I made that thing work for its keep until 2013. I flashed the firmware, changed from a 2.66Ghz Quad Core, to a 3.33Ghz 6 core, upgrade from 8-24GB of RAM, added in a Blu-Ray drive/writer, added in SSD's and a PCIeSSD, USB3.0, and changed the GPU several times. <br />
+<br />
+You could simply use any current NVIDIA GPU at the time as both Apple and NVIDIA released drivers. NVIDIA actually do so one a 2-3 month cycle. So at the moment if your PSU can handle it you can slap in a GTX 980 or a Titan if you want and it would be supported. Only issue being you won't see the boot screen until it's time to log in due to the GPUs not using an Apple EFI, and use a normal Bios instead.<br />
+<br />
+http://i.imgur.com/T7zQoGL.jpg<br />
+<br />
+Sadly since then they completely change their direction, and I honestly can't even recommend their systems to even die hard fanboys.<br />
+<br />
+I would love to use FCPX again, it's just great, but I don't see myself going to a Mac anytime soon again, or bothering with a Hackintosh.<br />
+<br />
+Even so, I know quite a few people that still game on their Mac, and these are older models so Metal support Legion alone is nice as even in it's extremely early stages of support they're seeing 10-20fps games in heavy areas. <br />
+<br />
+Considering then how well Overwatch runs on a host of systems, I do hope Blizzard support OS X there as well. They have been supporting OS X since the 90's; and many people are disappointed they can't get the latest Blizzard game on their platform of choice.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ejpaints</div><div class="date">2016-05-23, 05:24 PM</div></div><div class="posttext">We definitely have more crowds in this game than the casual vs hardcore players. <br />
+<br />
+Casual tends to be classified as the &quot;lol stand in fire while collecting loot in lfr&quot; guys, while hardcore tends to be classified as the &quot;Raid every night, grind till my eyes bleed&quot; crowd. <br />
+<br />
+Meanwhile there's this wide variety of players who enjoys a little or lot of everything in between yet gets tossed into 1 category or the other by the community as a whole. It's sad really that we treat our own community this way. Hard doesn't have to = grind. I would argue that grind doesn't = hard in the first place. Hard is something that requires skill. Most grinds in this game can be accomplished by anyone willing to put the time into doing it. That's not hard. Depending on the reward for doing so, it's not even fun in many cases. <br />
+<br />
+Take proving grounds for example. I was one of those select few who did the endless waves in MoP. But I didn't even go beyond silver for WoD. As a matter of fact, I haven't even went back in since the day I unlocked the heroic dungeons at launch. Just not worth it for a few more achievement points. Now for people who go for achievements that makes little sense, but for me, it's just not a fun use of my limited play time I have these days. To each their own though. We'd be a happier community if everyone would try to remember that from time to time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gaarashatan</div><div class="date">2016-05-23, 06:21 PM</div></div><div class="posttext">No, i will not be playing overwatch when it launches. because i am poor and under the poverty line. my pc isnt good enough to even install it nor do i have a ps4 or xbox one</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frumpy Frumpy Frak</div><div class="date">2016-05-23, 07:57 PM</div></div><div class="posttext">Oh noes hipsters cannot play on their Mac *worldends*Why would hipsters use Macs? I thought Apple products were the domain of &quot;mainstream sheeple&quot; these days.<br />
+<br />
+If anything, hipsters would be using Linux or something.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">schwarzkopf</div><div class="date">2016-05-24, 12:54 AM</div></div><div class="posttext">If these are from wowprogress they are extremely outdated and aren't remotely close to the actual numbers.<br />
+<br />
+Numbers aren't relevant ... the proportions however are.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">teidden</div><div class="date">2016-05-24, 06:29 AM</div></div><div class="posttext">Quote Originally Posted by teidden View Post<br />
+Blizzard missed out on making Overwatch the next great MMO instead it a worthless first person shooter with nothing to it.<br />
+I love how confident you are in your entirely wrong opinions.<br />
+<br />
+<br />
+Love how my opinion must be wrong. I mean it is just that an OPINION. there is no right or wrong. Sigh some people seriously.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc32ac407789</div><div class="date">2016-05-24, 11:57 AM</div></div><div class="posttext">the only thing that poll says its people were forced to do silver to do heroics , screw proving grounds it wasn't fun</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2016-05-27, 04:37 PM</div></div><div class="posttext">Should add a new option to the poll: Sorry, we didn't make it for Macs.<br />
+<br />
+Source: http://www.pcgamesn.com/overwatch/here-s-why-there-s-no-mac-version-of-overwatch-and-how-there-could-be-in-the-future<br />
+<br />
+<br />
+Blizzard has had a long history of supporting Mac gaming, so to hear during Blizzcon that Overwatch was only coming to Windows, PS4 and Xbox One on launch and that there were no current plans for a Mac version was surprising and disappointing. I put the question to game director Jeff Kaplan in our interview - why now, on their most anticipated game in years, does Blizzard drop Mac support?<br />
+<br />
+I also asked Kaplan how he felt about the Overwatch beta backlash.<br />
+<br />
+&quot;It was a result of not having all the technological support we needed to make the game viable on Mac systems.&quot; says Kaplan, referring to Apple’s policies with OSX. &quot;We have a real love and dedication for Mac players, they’ve been extremely loyal to us and we love giving them Blizzard games.<br />
+<br />
+&quot;But when dealing with the PC, the Xbox One and the PS4 - all of which are extremely welcoming to the technological needs to run a next-generation shooter - in a lot of ways we felt left behind, that we weren’t given the support we needed to make a great product on the Mac.&quot;<br />
+<br />
+That's the meat of it, but I really recommend reading the entire article.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

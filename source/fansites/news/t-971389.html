@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="5-man, would, this, dungeon, stats, total, dungeons, your, success, program, heroics, expect, other, normal, spiffy, wanted, queued, divided, people, could, graphs, have, most, spit, just, hope, balling, here, completion, percentage, willing, given, possible, sure, completed, than, limitations, higher, unknown, trollroics, goes, assume, easily, accessible, achievement-tracked, such, stuff, what, from, poll" />
+<meta name="description" content="Stats: Character Leveling Speed in Cataclysm 
+There were no blue posts today because of the Labor Day holiday, Blizzard posters will probably be back tomorrow with more news! 
+ 
+It has been too long since we posted some stats and this time we took a look at how many characters reached Level 85 each day since Cataclysm was released. This only includes data from the US Realms to keep the dates simpler. This does not include all of the level 85 characters in the US, only a sample of 1.1 million." />
+<title> Cataclysm Leveling Stats, Level 85 Poll, Comics [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Cataclysm Leveling Stats, Level 85 Poll, Comics</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-971389.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/971389-Cataclysm-Leveling-Stats-Level-85-Poll-Comics">Cataclysm Leveling Stats, Level 85 Poll, Comics</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2011-09-06, 04:14 AM</div></div><div class="posttext">Stats: Character Leveling Speed in Cataclysm<br />
+There were no blue posts today because of the Labor Day holiday, Blizzard posters will probably be back tomorrow with more news!<br />
+<br />
+It has been too long since we posted some stats and this time we took a look at how many characters reached Level 85 each day since Cataclysm was released. This only includes data from the US Realms to keep the dates simpler. This does not include all of the level 85 characters in the US, only a sample of 1.1 million. Interested in seeing some other statistics? Let us know in the comments!<br />
+<br />
+<br />
+<br />
+You can see that a very large number of people reached Level 85 in the first week after release, thousands even the first day. <br />
+It seems that people enjoy leveling during the weekend with a spike on Saturday and an even larger spike on Sunday. <br />
+You can see where Patch 4.1 and Patch 4.2 came out, decreasing the amount of leveling briefly.<br />
+<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart;<br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: ['#4768C4', '#E01B6A']<br />
+});<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'levelingspeedchart',<br />
+zoomType: 'x',<br />
+spacingRight: 20,<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+title: {<br />
+text: 'Number of New Level 85 Characters Per Day',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+subtitle: {<br />
+text: document.ontouchstart === undefined ?<br />
+'Click and drag in the plot area to zoom in' :<br />
+'Drag your finger over the plot to zoom in'<br />
+},<br />
+xAxis: {<br />
+type: 'datetime',<br />
+maxZoom: 14 * 24 * 3600000, // fourteen days<br />
+title: {<br />
+text: null<br />
+},<br />
+startOnTick: false,<br />
+showFirstLabel: false<br />
+},<br />
+yAxis: {<br />
+title: {<br />
+text: 'Number of Characters',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+startOnTick: true,<br />
+showFirstLabel: false,<br />
+<br />
+},<br />
+tooltip: {<br />
+shared: true <br />
+},<br />
+legend: {<br />
+enabled: false<br />
+},<br />
+plotOptions: {<br />
+<br />
+area: {<br />
+animation: false,<br />
+lineWidth: 1,<br />
+marker: {<br />
+enabled: false,<br />
+states: {<br />
+hover: {<br />
+enabled: true,<br />
+radius: 5<br />
+}<br />
+}<br />
+},<br />
+shadow: false,<br />
+states: {<br />
+hover: {<br />
+lineWidth: 1 <br />
+}<br />
+}<br />
+}<br />
+},<br />
+<br />
+series: [{<br />
+type: 'area',<br />
+name: 'Level 85 Characters',<br />
+pointInterval: 24 * 3600 * 1000,<br />
+pointStart: Date.UTC(2010, 11, 7),<br />
+data: [<br />
+2881,15981,27064,28708,32420,33820,24383,19210,19297<br />
+,17493,15808,17965,18417,14121,12898,11402,12353,11201,9765,12323,11885,11039,11082,10955, 10435,10801,11683,<br />
+9603,8439,7919,7719,7793,10069,10490,7874,5899,7190,<br />
+6627,6750,8426,8968,7899,5476,5782,5827,6033,7476,7809,5565,4439,5025,5012,4991,6342,6815, 4954,4843,5225,4576,<br />
+4662,5909,5633,4225,3119,4133,4209,4114,5555,5750,3999,<br />
+3245,3810,3863,3999,5125,5537,4806,3769,3642,3632,3830,4873,5244,3596,2843,3323,3172,3240, 4262,4665,3440,<br />
+3055,3018,3134,2962,3904,4053,3285,2385,2771,2748,2885,<br />
+3612,3992,2961,2258,2784,2617,2867,3587,3946,2914,2582,2671,2587,2562,3336,3570,2675,2488, 2336,2249,2545,<br />
+3201,3548,2577,1851,2278,2322,2338,3047,3321,2451,1974,<br />
+2293,2247,2604,2976,3027,2521,1296,1716,1802,1806,2294,2675,2103,1534,1907,1833,1968,2548, 2752,2197,1791,<br />
+2140,2090,2210,2689,2958,2366,2106,2147,2109,2111,2613,<br />
+2903,2424,2162,2150,2089,2206,2522,2905,2828,2175,2118,2127,2087,2671,2741,2179,1745,2122, 2172,2087,2464,<br />
+2912,2235,2005,2145,2087,2129,2463,2718,2278,2165,2186,<br />
+2278,2304,2506,2861,2446,1402,1823,1836,1819,2135,2281,2326,1589,1917,1991,1854,2124,2369, 2035,1382,1847,<br />
+1844,1902,2102,2330,2071,1589,1769,1897,1876,2171,2406,<br />
+1996,1620,1808,1982,1812,2226,2412<br />
+]<br />
+}]<br />
+});<br />
+<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+&lt;div id=&quot;levelingspeedchart&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+<br />
+Poll: How many characters have you leveled to 85?<br />
+While we were working on these stats, we figured it was a good time to ask how many characters you have leveled to 85. Let us know in the poll below!<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/5479750.js&quot;&gt;&lt;/script&gt;<br />
+&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/5479750/&quot;&gt;Are you still playing WoW?&lt;/a&gt;&lt;/noscript&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;<br />
+<br />
+<br />
+Comics<br />
+Dark Legacy Comics #303 (http://www.darklegacycomics.com/303.html) and Teh Gladiators #268 + #269 (http://www.tehgladiators.com/?p=268) are available!<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2011/september/dlc303.jpg (http://www.darklegacycomics.com/303.html) http://media.mmo-champion.com/images/news/2011/september/tg268.jpg (http://www.tehgladiators.com/?p=268)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Buu</div><div class="date">2011-09-06, 04:18 AM</div></div><div class="posttext">Why stop on 5 or more? I have 9 85. 8 in the same realm. And there are lots of people with all 10 slots filled.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9e94235ac9</div><div class="date">2011-09-06, 04:21 AM</div></div><div class="posttext">I have 5, with another 5 close, working on my 10 :) I do love seeing these stats! XD<br />
+<br />
+EDIT: LOL I love comic 268!<br />
+<br />
+2nd EDIT: I meant the Dark Legacy Comics #303 :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">flareside</div><div class="date">2011-09-06, 04:22 AM</div></div><div class="posttext">Dang looks like a steady amount of people lvls for the past 4 months now</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Revmaynard</div><div class="date">2011-09-06, 04:24 AM</div></div><div class="posttext">I have 10.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Blacksen</div><div class="date">2011-09-06, 04:24 AM</div></div><div class="posttext">Gah chaud and his data withholdings :-P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">xeddin</div><div class="date">2011-09-06, 04:25 AM</div></div><div class="posttext">why only about 35k people reach lvl 85 first day, i thought like 10 million people played this game</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2011-09-06, 04:26 AM</div></div><div class="posttext">The most interesting thing about these stats are how few accounts there are in the United States at level 85.<br />
+<br />
+Purely an estimate, but if there are 7k people hitting 80 per day (on average), and we've had 200 days since launch, that's only 1.4 million level 85 characters.<br />
+<br />
+If each account has, on average, 2 level 85 characters, then that's only 700k max level accounts.<br />
+<br />
+Both of those are pretty generous estimates (I'm guessing that the average 85s per account is much higher, and that the 7k people per day is way too high).<br />
+<br />
+I debated adding it to the post, but this is maybe 1/3rd or less of the level 85 characters in the US.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Blacksen</div><div class="date">2011-09-06, 04:29 AM</div></div><div class="posttext">I debated adding it to the post, but this is maybe 1/3rd or less of the level 85 characters in the US.<br />
+<br />
+Gah, you should have said that for sure. I looked at that and went &quot;wow, VERY few people play now a days.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ihsatakar</div><div class="date">2011-09-06, 04:29 AM</div></div><div class="posttext">2881 club represent?<br />
+<br />
+<br />
+Also, I like the small dip every tuesday</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9e94235ac9</div><div class="date">2011-09-06, 04:30 AM</div></div><div class="posttext">why only about 35k people reach lvl 85 first day, i thought like 10 million people played this game<br />
+<br />
+These are stats in US alone, not everyone bums off the game either :-/</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zatheyll</div><div class="date">2011-09-06, 04:31 AM</div></div><div class="posttext">why only about 35k people reach lvl 85 first day, i thought like 10 million people played this game<br />
+<br />
+Not everyone plays 8 hours a day. The average casual gamer got to 85 1-2 weeks after. Some people might have leveled a worgen/goblin or another class instead of their main first. Or something else entirely. Some people might have not bought the game the second it came out, or could play it the second it came out. Some people didn't even reboot their subscription until a bit after it came out.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">artemishunter1</div><div class="date">2011-09-06, 04:31 AM</div></div><div class="posttext">I debated adding it to the post, but this is maybe 1/3rd or less of the level 85 characters in the US.<br />
+<br />
+no real reason to level different 85s anymore. buffs are provided by multiple classes, hunters, warlocks and shadow priests are literally the same. i eeven use the same keybinds for these characters.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Konics</div><div class="date">2011-09-06, 04:32 AM</div></div><div class="posttext">intredasting....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Buu</div><div class="date">2011-09-06, 04:32 AM</div></div><div class="posttext">Isn't the 10 million WORLDWIDE, comprehending 3 regions? Still Xeddin is right.I would expect three times those numbers on the first days. It's from ALL US servers, and both factions?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rockdontroll</div><div class="date">2011-09-06, 04:34 AM</div></div><div class="posttext">its because the endgame is soooooooo good that players no longer want to create new alts<br />
+<br />
+seriously though guys, its from a sample of 1.1 million so what the numbers are really saying is that around 18.5% of all players got to lvl 85 within the first week of cata (203764 from 8th till 15th) and most level on weekends.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2011-09-06, 04:37 AM</div></div><div class="posttext">I went ahead and added the sample size to the post, 1.1 million characters.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Amsden</div><div class="date">2011-09-06, 04:37 AM</div></div><div class="posttext">Those numbers seem way too low... Is this all the US realms? Or just a select few?<br />
+<br />
+<br />
+I went ahead and added the sample size to the post, 1.1 million characters.<br />
+<br />
+Ahh I see now :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bombkirby</div><div class="date">2011-09-06, 04:39 AM</div></div><div class="posttext">why only about 35k people reach lvl 85 first day, i thought like 10 million people played this game<br />
+<br />
+I can understand why. Me and my buds didn't hit 85 until the 2nd-4th days. The 1st day or two we were busy leveling our Goblins/Worgen.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Buu</div><div class="date">2011-09-06, 04:41 AM</div></div><div class="posttext">I went ahead and added the sample size to the post, 1.1 million characters.<br />
+OH... that's better, if we consider the data consistent, we end reaching the numbers at least 3 times higher for the US region as whole.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd73addef4d</div><div class="date">2011-09-06, 04:58 AM</div></div><div class="posttext">no real reason to level different 85s anymore. buffs are provided by multiple classes, hunters, warlocks and shadow priests are literally the same. i eeven use the same keybinds for these characters.<br />
+Funny, I have a level 85 hunter and priest and I can tell which character I am playing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Triggered Fridgekin</div><div class="date">2011-09-06, 05:01 AM</div></div><div class="posttext">I missed club 2881 by a little under an hour because my internet crapped out on me. I must perform Seppuku.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Naibil</div><div class="date">2011-09-06, 05:04 AM</div></div><div class="posttext">chaud, I love your stats.Is there a way of breaking this up into classes. I would find it rather interesting to see the ups and downs of the different classes hitting 85.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Echohunter</div><div class="date">2011-09-06, 05:11 AM</div></div><div class="posttext">I have 11 85s. One of every class, 2 hunters. It's funny how on the chart, actually hitting 85 plummets during a normal raid week, as if people totally stop leveling midweek.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jshidaka</div><div class="date">2011-09-06, 05:17 AM</div></div><div class="posttext">no real reason to level different 85s anymore. buffs are provided by multiple classes, hunters, warlocks and shadow priests are literally the same. i eeven use the same keybinds for these characters.<br />
+<br />
+Professions to make gold.. I have 7 Alchemist lvl 85 to transmute Living elements/Truegold...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc930f62ff17</div><div class="date">2011-09-06, 06:00 AM</div></div><div class="posttext">Long time reader, first time posting. I would like to see stats on realm population divided by faction and maybe classes? I have looked at some websites but everything seems so outdated. Maybe Chaud can get some real data?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc930f62ff17</div><div class="date">2011-09-06, 06:00 AM</div></div><div class="posttext">What is club 2881?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf2d6e942b6</div><div class="date">2011-09-06, 06:01 AM</div></div><div class="posttext">I have atm all the classes except Rogue as 85 so i voted 5+ iThe Comic is fucking funny :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Percolator</div><div class="date">2011-09-06, 06:12 AM</div></div><div class="posttext">Interesting statistics, would be cool to see EUs or both though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc930f62ff17</div><div class="date">2011-09-06, 06:12 AM</div></div><div class="posttext">I would like to see some data on realm population by faction and class, nothing on google seems to be accurate.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aliok</div><div class="date">2011-09-06, 06:14 AM</div></div><div class="posttext">I spent a few minutes just playing around with the chart. ^^u</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Asur</div><div class="date">2011-09-06, 06:18 AM</div></div><div class="posttext">What is club 2881?<br />
+<br />
+Getting 85 the first day, I'm one of them....and then I went and took my college final to graduate with my degree /flex</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tribunal</div><div class="date">2011-09-06, 06:22 AM</div></div><div class="posttext">3 so far, working on a fourth (82) and there's a 5th pretty close behind (60s, mostly because I stopped messing with them for quite a while now) and even more in the future, but I bet the expac will beat me on those.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc930f62ff17</div><div class="date">2011-09-06, 06:25 AM</div></div><div class="posttext">I'm a 2881 member, but what do the numbers represent?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">k1037</div><div class="date">2011-09-06, 06:36 AM</div></div><div class="posttext">During the beta, everyone was convinced that the experience requirements had been lowered for easier testing, and that the 2-days-to-max-level system couldn't possibly be what was planned for live. Who made *that* decision? Though it was probably unavoidable given the very limited number of new zones they were adding - they had to cram 5 quests per 100 yards as it was.<br />
+<br />
+<br />
+no real reason to level different 85s anymore. buffs are provided by multiple classes, hunters, warlocks and shadow priests are literally the same. i eeven use the same keybinds for these characters.<br />
+<br />
+Yeah, I remember first trying out the new healing/DPS abilities + mechanics and ending up with nearly identical keybinds for every class with a similar role. There were a handful of unique, long-cooldown or rare-use abilities, but multiple classes had nearly identical play styles - the only difference being the animation color.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Buzkil</div><div class="date">2011-09-06, 06:50 AM</div></div><div class="posttext">Can you do something to show how many 85 Characters they are in total?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2a364b9788</div><div class="date">2011-09-06, 06:56 AM</div></div><div class="posttext">OMG!that distribution is TOTALLY exponential!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">webdonkey</div><div class="date">2011-09-06, 07:40 AM</div></div><div class="posttext">17... in total... lmao... people enjoy lvling... bs! its a bot that does the trick for me, and for many many others im sure.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocff3d43a755</div><div class="date">2011-09-06, 07:56 AM</div></div><div class="posttext">I always know it's this Chaud guy who's posting the front page article when it's got stats like this that whip people in to a frenzy. I miss Boubouille.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Theupsman</div><div class="date">2011-09-06, 08:09 AM</div></div><div class="posttext">i wanna see tank, healer, dps statistics.... ratios n stuff. i wanna see just how many ppl are willing to tank and how many are too skerd bc its the easiest spec out there.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ziinaya</div><div class="date">2011-09-06, 08:27 AM</div></div><div class="posttext">I'm really interested in seeing the GENDER breakdown among characters of each role. In other words, what is the male/female ratio for all characters whose primary spec is a tanking spec? Healing spec? DPS spec? I do a LOT of random dungeons, and anecdotally, I'd say the vast majority of the tanks I have run with have been male characters. Healers tend to skew toward female, but not to the same degree. I'm curious if the actual data reflect that.I find it fascinating that in a game where we can be any gender we want, we still bring our real-world biases into the game that say protecting a group is still primarily a male's role.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Statix</div><div class="date">2011-09-06, 08:31 AM</div></div><div class="posttext">I have three characters at level 85, one of which became level 85 yesterday. Never thought I would level a third character to the maximum level, but I haven't been having that much fun on my main lately (Mage and I wanna be Fire...). I have been having fun on my Death Knight, so I hope that this third character, a Hunter, is going to make up for the lack of fun I have with my Mage. If I make a fourth character, it will be a Rogue, which I have already started leveling.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc814469773f</div><div class="date">2011-09-06, 09:11 AM</div></div><div class="posttext">Seriously, are these comics supposed to be funny? Maybe I'm wrong about what they're trying to achive, but they're excruciately dull and has no relevance to the game whatsoever.I miss Heroes of WoW... at least it was funny most of the time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Simca</div><div class="date">2011-09-06, 09:13 AM</div></div><div class="posttext">I like how EVERY Sunday EVER is a huge spike.Sunday is apparently THE DAY to hit level 85.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rencol</div><div class="date">2011-09-06, 09:17 AM</div></div><div class="posttext">I have only 1 lvl 85 character. Hmm as i thing of it its maybe becouse i dont play anymore (wow free for 9 months) and even before i quit i was focusing on getting achievements with one character not leveling new ones.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1c37ef5ddc</div><div class="date">2011-09-06, 09:25 AM</div></div><div class="posttext">I have 9 lvl 85 chars atm, all on one realm, would have hit the 10 cap ages ago but im currently RaFing and have to delete that last char over and over again to help out my friend lvl his chars :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">shadet</div><div class="date">2011-09-06, 09:25 AM</div></div><div class="posttext">I'm quite happy that I got my second level 85 character on the day that the majority of people levelled to 85 :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Snuggli</div><div class="date">2011-09-06, 10:47 AM</div></div><div class="posttext">Loving that 9765 people dinged on Christmas.PS: I love statistics, please post more :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce84939a4e2</div><div class="date">2011-09-06, 10:48 AM</div></div><div class="posttext">Apparently people have better things to do than levelling alts on Tuesdays.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc44e5154f48</div><div class="date">2011-09-06, 11:04 AM</div></div><div class="posttext">Apparently people have better things to do than levelling alts on Tuesdays.<br />
+Maintenance :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">crsh1976</div><div class="date">2011-09-06, 11:19 AM</div></div><div class="posttext">I levelled two lv80s to 85 back in December, my next character in line was sitting at 72 and I couldn't be bothered to re-do the Northrend content just yet; I also levelled a druid from scratch to see the revamped 1-60 world, but as soon as I hit Outland boredom got the best of me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bihkehhe</div><div class="date">2011-09-06, 11:25 AM</div></div><div class="posttext">My DK is nog level 81 and will by my 10th character to be leveled to 85 giving me all classes at 85</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6527f1f7e9</div><div class="date">2011-09-06, 11:27 AM</div></div><div class="posttext">its time for some new infos about patch 4.3 ^^ gogo blizz</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lustyevilgnome</div><div class="date">2011-09-06, 11:34 AM</div></div><div class="posttext">I currently have 7 and within a few more days I should have 10, ready for the holiday events. One of each class.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BraiNSlobbeR</div><div class="date">2011-09-06, 11:56 AM</div></div><div class="posttext">3 85's Lock, Pally, Hunter 2 83's warrior, druid. I quit the game about 2 weeks ago. Playing Rift for a month till Dark Souls comes out on the PS3, then SWTOR and BF3.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nesingwary-Eliada</div><div class="date">2011-09-06, 12:01 PM</div></div><div class="posttext">why only about 35k people reach lvl 85 first day, i thought like 10 million people played this game<br />
+<br />
+Gotta read the entire post :): <br />
+<br />
+<br />
+This does not include all of the level 85 characters in the US, only a sample of 1.1 million.<br />
+<br />
+P.S. Now let's see the stats for how many Goblins and Worgen dinged 85 after Cata launch!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sandwrong</div><div class="date">2011-09-06, 12:09 PM</div></div><div class="posttext">I would like to see stats on max level professions, how many people maxed them out, and how quickly they did it. I think that would be interesting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pumps</div><div class="date">2011-09-06, 12:16 PM</div></div><div class="posttext">why only about 35k people reach lvl 85 first day, i thought like 10 million people played this game<br />
+<br />
+Rushing to 85 is not playing the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ipaq</div><div class="date">2011-09-06, 12:17 PM</div></div><div class="posttext">Not everyone plays 8 hours a day. The average casual gamer got to 85 1-2 weeks after. Some people might have leveled a worgen/goblin or another class instead of their main first. Or something else entirely. Some people might have not bought the game the second it came out, or could play it the second it came out. Some people didn't even reboot their subscription until a bit after it came out.<br />
+<br />
+Those comments always make me feel sad. The game isn't that hard mate.<br />
+<br />
+10 85 cleared RotZ (same alt guild) and 2 in BiS pre-FL raid.<br />
+<br />
+1 85 horde side 'cause I wanted to see their questlines.<br />
+<br />
+Bailed after the AFK Spamming fiasko and 2 reverted ban and perma ban from their forum for having the guts to bring it to light... may get back once they fix that issue... unless they take the same sweet time they did with melee targeting issue... in that case... see ya in SWTOR.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5eed3379b1</div><div class="date">2011-09-06, 12:22 PM</div></div><div class="posttext">I'm currently working on my 12th 85, a mage gnome.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fangless</div><div class="date">2011-09-06, 12:23 PM</div></div><div class="posttext">&quot;This game sucks!&quot;How many 85s do you have?&quot;5+&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CaptainClaw</div><div class="date">2011-09-06, 12:33 PM</div></div><div class="posttext">If you're taking requests I'd like to see the stats for the major regional subscriber numbers over time. I'd be particularly interested to see the impact China and the Far East has had on the number of WoW subscriptions, and where we stand right now. Purely as a guess, with nothing to back myself up, I would say that right now the numbers are going down in Europe and the USA, being nearly offset by rising China/Far East numbers. I'd love to see some stats to either back this up or discredit it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Osmeric</div><div class="date">2011-09-06, 01:06 PM</div></div><div class="posttext">&quot;This game sucks!&quot;How many 85s do you have?&quot;5+&quot; <br />
+<br />
+I have four (or was it five?) and haven't had an active account since Feb. 7. And I only played that long because on Jan. 7 I wasn't 100% sure I'd be quitting.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Effbee</div><div class="date">2011-09-06, 01:16 PM</div></div><div class="posttext">Seriously, are these comics supposed to be funny? Maybe I'm wrong about what they're trying to achive, but they're excruciately dull and has no relevance to the game whatsoever.I miss Heroes of WoW... at least it was funny most of the time.<br />
+<br />
+The Dark Legacy ones often only work if you have read them from the start/read them all now from the start.<br />
+<br />
+It parodies some aspects of the game, but from the view point of the small band of characters that the comic revolves around.<br />
+<br />
+The end of this edition only makes sense if you know the history of the 2 characters in the cell...then its hilarious ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SoulPoetry</div><div class="date">2011-09-06, 01:21 PM</div></div><div class="posttext">have 4 but don't play any alts at max level, literally nothing engaging to do. levelling is like 4 hours per level max until 84 and even that's like 7 or 8, which is 24h, not much of an investment at all in terms of time played in games.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Huffalicious</div><div class="date">2011-09-06, 01:21 PM</div></div><div class="posttext">This shit isn't funny.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce84939a4e2</div><div class="date">2011-09-06, 01:22 PM</div></div><div class="posttext">Maintenance :)<br />
+<br />
+Very true ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ro9ue</div><div class="date">2011-09-06, 01:27 PM</div></div><div class="posttext">I have an 85 of every class. I try to advance them all but it's really tough, so I end up usually just picking one for dailies. Like my DK got the TB token drake first, then my rogue. I had to quit doing them though because they were so boring after the 2nd time through. Now I'm doing the Molten Front with my Rogue and because of how long it is I don't see myself doing it ever again. All of the toons have a mishmash of 346 heroic blues and ZA/ZG gear with some of my favorite classes: Hunter or Rogue having T11 raid gear. My DK is primarily PVP now since they are OP, I don't really PVP on my rogue anymore since I did for countless hours back in vanilla and seeing all those hard BG achievements I've done multiple times makes me mad. I easily should have been the 'Master of Alterac Valley', WSG and AB upon institution of the achievement system.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Athear</div><div class="date">2011-09-06, 01:34 PM</div></div><div class="posttext">I have an 85 of every class. I try to advance them all but it's really tough, so I end up usually just picking one for dailies.<br />
+<br />
+:o i have a char of every class but only 3 85's. I understand what you mean tho as I also battle just with those. So Im only concentrating on 2 of my 85's atm</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">topitopi</div><div class="date">2011-09-06, 01:46 PM</div></div><div class="posttext">I have 6 85s, trying to get one of every class but it's becoming a challenge because I only like the revamped lv1-60 content. An interesting stat would be to see the number of max level characters at the end of each expansion because I feel that the number of characters one has correlates to time and also the availability of endgame content. I had 1 max level from vanilla to BC, then 3 during WoTLK, and because the end-game content bores me immensely in Cata I just find myself leveling alts now. I'm curious to see if anyone else is in my same boat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jawstrock</div><div class="date">2011-09-06, 02:22 PM</div></div><div class="posttext">I really find facisnating how it makes a wave constantly from Tuesday to Monday.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4210ca0bf6</div><div class="date">2011-09-06, 02:23 PM</div></div><div class="posttext">had my warrior 85 and druid 85 (herb/mining -flyform</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xanthious</div><div class="date">2011-09-06, 03:41 PM</div></div><div class="posttext">I have a lvl 85 of each class on my Alliance server. Just started gearing them up through heroics and hope to get into raiding with one of them soon. Right now I'm leaning towards my arcane mage to be my raiding toon.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">deviancee</div><div class="date">2011-09-06, 04:07 PM</div></div><div class="posttext">nvm<br />
+10characters</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Midnitte</div><div class="date">2011-09-06, 04:49 PM</div></div><div class="posttext">Think I need graphs like this in my powerpoints and PDFs</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kikiyodragon</div><div class="date">2011-09-06, 05:48 PM</div></div><div class="posttext">I have two 85s, both are hunters. The Alliance hunter has been 85 since the beginning of Cataclysm, and the Horde hunter just got to 85 last week. I've also got a bunch of characters between 82-83, maybe some of those will get there too.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Intropid</div><div class="date">2011-09-06, 06:07 PM</div></div><div class="posttext">Three characters. Mage, pally, and death knight. And like 4 70's just sitting around, to lazy to level up and not really interested in leveling up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zultir</div><div class="date">2011-09-06, 06:11 PM</div></div><div class="posttext">just 1 =3 I may not have a ton of characters but the one character i have is nicely geared if i do say so myself, being in a 10 man FL small guild. 6/7<br />
+<br />
+Armory if you care: http://us.battle.net/wow/en/character/antonidas/Okazan/advanced<br />
+<br />
+<br />
+P.S. I only have one character so i don't get distracted by pesky little alts &gt;.&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Solar79</div><div class="date">2011-09-06, 06:20 PM</div></div><div class="posttext">I just wanted to say thanks for the hours of fun I've had moving the mouse back and forth watching the little blue ball move up and down :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thepuppetmaster</div><div class="date">2011-09-06, 06:38 PM</div></div><div class="posttext">You know who was the first one to start that graph? Athene suck it!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bbr</div><div class="date">2011-09-06, 06:51 PM</div></div><div class="posttext">3 chars to 85, maybe 4. Can't remember. 3 at least for sure. Haven't touched the game in a few months now though, you can only re-run stale daily quests for so long until you really, really, really get tired of those.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">davesurfer</div><div class="date">2011-09-06, 07:52 PM</div></div><div class="posttext">THANK GOD for this poll. The largest section is 5 or more. I know I have issues with 7 85s, 1 80, 1 76, and leveling a 26 via PvP only. It is good to see others with issues also.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">xStevooo</div><div class="date">2011-09-06, 08:01 PM</div></div><div class="posttext">To comment on why i voted. In WotlK i only felt the need to have one level 80, i constantly had stuff to do - and never felt the need, or had much time for alts. In Cata i find myself doing nothing 99% of the time, and went from 1 character, to 10 level 85's out of boredom. Don't really have a &quot;main&quot; anymore just logon my hunter, raid and logoff.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9a48be24dc</div><div class="date">2011-09-06, 08:48 PM</div></div><div class="posttext">10 chars, all classes, one server</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc3ef3b5207</div><div class="date">2011-09-06, 08:50 PM</div></div><div class="posttext">I hate lvling, I rather do some BGs or Raids. I played 4 characters in WotLK, Paladin (Naxx) - Warlock (Ulduar/ToC) - Shaman (ToC/ICC), I hate my Paladin now only my Warlock and Shaman are lvl 85.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2011-09-06, 09:09 PM</div></div><div class="posttext">I hope when Blizzard tries to analyze why the game faltered with this expansion, they will look at this graph. I was not attempting to level fast. I was a stop and smell the roses type of player (granted, I played 20plus hours that week). Hyjal.. 5 hours.. Vash 5hours.. Deepholm...2 hours.. ding 85. Players were burned out with the whole wotlk grinding heroics for vp... and it took even most casual players 2 weeks after Cata launched to be right back in the same situation. I spent 2 years grinding VP, HOL and the other heroics each day.. within 1 week, I was right back doing the same thing (dreading DM instead of dreading HOL). I quit last month, because I don´t feel like doing the same thing. I will probably resub about a month or two before the new expansion.. that will give me enough time to see all the new content and have gear ready for the new expansion. Really, if you want to see all that WOW has to offer, that is all you have to do. Sub 2 months before an expansion, and play for 2 months afterwards. You are going to see all the content.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">felcommander</div><div class="date">2011-09-06, 09:19 PM</div></div><div class="posttext">anyone else find it funny all the little dips are on Tuesdays?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rauxis</div><div class="date">2011-09-06, 09:26 PM</div></div><div class="posttext">I'd like to see numbers of low level characters playing .... I have the distinct feeling that Blizzard fails to get NEW people to play. But it will be a bummer to show with only external data</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vein</div><div class="date">2011-09-06, 09:36 PM</div></div><div class="posttext">Woah, five. I only got one.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Masyws</div><div class="date">2011-09-06, 09:40 PM</div></div><div class="posttext">I hope when Blizzard tries to analyze why the game faltered with this expansion, they will look at this graph. I was not attempting to level fast. I was a stop and smell the roses type of player (granted, I played 20plus hours that week). Hyjal.. 5 hours.. Vash 5hours.. Deepholm...2 hours.. ding 85. Players were burned out with the whole wotlk grinding heroics for vp... and it took even most casual players 2 weeks after Cata launched to be right back in the same situation. I spent 2 years grinding VP, HOL and the other heroics each day.. within 1 week, I was right back doing the same thing (dreading DM instead of dreading HOL). I quit last month, because I don´t feel like doing the same thing. I will probably resub about a month or two before the new expansion.. that will give me enough time to see all the new content and have gear ready for the new expansion. Really, if you want to see all that WOW has to offer, that is all you have to do. Sub 2 months before an expansion, and play for 2 months afterwards. You are going to see all the content.<br />
+<br />
+I prefer 100 times to level as fast as cata allows for 80 85 then having 5 infinite levels just for the sake of it.<br />
+<br />
+I'm pretty damn casual, have 6 85s and play much or less only dungeon and bg/2v2 arena, never quest once get to 85 and ... yeah i log in maybe twice a week.<br />
+<br />
+Can't be arsed from Long Levels, you can take your time and do what you want once you're done with the forced part of the game :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Duster505</div><div class="date">2011-09-06, 09:58 PM</div></div><div class="posttext">And.. now we know why Blizzard can't push next expansion out fast enough.... 5 more lvls... 50 more dollahs per player.... Who cares if the content is thinned out and new systems are thrown in half crap like archeology? <br />
+<br />
+The golden duck has landed. It was too heavy for its own good and instead of laying eggs... it ran to the next project ... called Titan!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jayremy</div><div class="date">2011-09-06, 09:59 PM</div></div><div class="posttext">I had 10 80s in WotLK, enjoyed em all, i had 2 85s in Cata got sick after 2, especially with the class changes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Charo</div><div class="date">2011-09-06, 10:03 PM</div></div><div class="posttext">wow is dying, look at how much blue there was on the left compared to the right! Jump ship!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Metalhead092</div><div class="date">2011-09-06, 11:32 PM</div></div><div class="posttext">wow is dying, look at how much blue there was on the left compared to the right! Jump ship!<br />
+<br />
+I suggest reading the full post before posting... This graph is only of 1.1 million 85s in the US. Also the reason there is more on the left than right is because more of those 1.1 million users leveled to 85 closer to the release of the expansion, it has nothing to do with &quot;wow dying&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">darthfusion</div><div class="date">2011-09-06, 11:38 PM</div></div><div class="posttext">I had 7x 80s in Wrath (And 3x more above 70), I have 3x 85's.<br />
+<br />
+Cataclysm just isn't as fun. The more unnecessary changes we see, the more this is true.<br />
+<br />
+For every cool new thing they add, they unnecessarily nerf/change/break something that was fine how it was, and should have been left alone...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5e152d4dde</div><div class="date">2011-09-07, 01:06 AM</div></div><div class="posttext">While I used to have 6 characters at level 80, I have hardly managed to get my second one to level 85 now. Just sayin'</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jayremy</div><div class="date">2011-09-07, 01:26 AM</div></div><div class="posttext">I had 7x 80s in Wrath (And 3x more above 70), I have 3x 85's.<br />
+<br />
+Cataclysm just isn't as fun. The more unnecessary changes we see, the more this is true.<br />
+<br />
+For every cool new thing they add, they unnecessarily nerf/change/break something that was fine how it was, and should have been left alone...<br />
+<br />
+With some missed promises, things never delivered, implied but never got to or changed up.<br />
+<br />
+I would say my greatest issue with cataclysm right here. For all the fun, new changes we got in classes and for PvP balance we get the shaft on so many other things to go with it, for example:<br />
+<br />
+Good things:<br />
+-PvP health to damage in a better proportion.<br />
+<br />
+-Some class abilities made more useful<br />
+<br />
+-PvP talents are more useful<br />
+<br />
+-Some minor improvements to BGs and arenas<br />
+<br />
+-Better stat design<br />
+<br />
+-Triage based healing<br />
+<br />
+The bad to counter act each note above:<br />
+-PvP health, just made healers that much more important (op) than prior, nerfed to the fun and effectiveness of self healing (for classes that had it). PvP still is just more imblanced than it was prior to the changes. Messed up dispel change (again needed to nerf the OP ones only), MS is hardly a secondary effect now, should've just lowered the duration, not the effect.<br />
+<br />
+-Lost abilities that had flavor and given some more complicated (for no good reason) rotations and ramp up obstacles to achieve decent damage. One example being ghostly strike. Also losing unique abilities (should've been nerfed if too powerful) like heroism and other homogenized garbage, that ruins the minute benefit of diverse classes, instead of stacking.<br />
+<br />
+-We lost the old number of talents for a tiny cut down portion, that is pretty much oversimplified, no longer getting talents every level, lost some old talents that were useful, and in general more choices, even if they weren't that good.<br />
+<br />
+-Same old BG concepts, when will we get a deathmatch and other more interactive BGs scenarios, I don't think anybody favors current AV over old(not change but refuse to revert the change), losing skirmish option.<br />
+<br />
+-More rampant gear inflation and stat inflation now, in 5 levels you gain 5x the health. Gear I-levels jumps insane amounts now.<br />
+<br />
+-Mana becomes THE issue now, the problem people complained most about in TBC. They could've made the challenge easily be achieving high HPS instead of managing mana, you know kind of like how the DPS do. Regardless it sucks balls when classes just feel nerfed from 80-85, and mana for healers seems like a broken concept at low gear no matter what you do.<br />
+<br />
+But so many changes/directions people have been asking for forever have still been ignored I will not list them, look long enough hard enough on forums and you will see many great ideas. Things people have wanted like 1v1, just being ABLE to do it, open world PvP not like WG (and TB is pretty much just as lame). PvE and end game is the same horse to be beaten, nothing at all has changed abut it, leveling is easy = gets boring. Non raiding endgame involves a horrid grind of dailies and other boring activities along with getting stomped in PvP before you gear up in order to make what little progression you can.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Faladrath</div><div class="date">2011-09-07, 02:55 AM</div></div><div class="posttext">What baffle me to no end is the amount of people on this forum with 0 lvl 85, 2755 atm, that many are so bitter about the game they stick around on a fan site for something they dont play anymore to whine about it, good example is the post above, he still play mind you, at some lvl state of gear/rading, but he first complain that something got complicated for &quot;no reason&quot; then later he complain something is too simple, that is just complaining to complain, I really wish someone could tell me why ppl who dont play cata stick around on the forum, are they hoping to see the one change they been hoping for and strongly believe will change the whole game for them?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Karot</div><div class="date">2011-09-07, 03:20 AM</div></div><div class="posttext">I'm sure the stats would be much longer for these, but I'd be interested to see: - Most obtained achievements - Most mounts owned - Most companions owned (Note: not who owns the most, but which achievements/mounts/companions appear on the most characters.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chick</div><div class="date">2011-09-07, 04:18 AM</div></div><div class="posttext">I have 2 and working on 2 more atm.<br />
+<br />
+As a pure casual I have been struggling lately and found myself PVPing as raiding is not really an option (time, guild collapsing, etc). I find myself levelling alts, and as like a number posters above said, &quot;I log on, do nothing 99% of the time, and log off&quot;. <br />
+<br />
+I must say as a casual, I really miss the Wrath model where Raids were so accessible to everyone (I really enjoyed TOC as there was no trash to kill), heroics that could be face rolled in 20min and completing all the menial/grinding tasks involve no effort. There was incentive to level alts because once you hit 80 you could quite easily jump into a PUG raid and get gear.<br />
+<br />
+I get all the harcore out there want Raids to be &quot;hard&quot; so they can flex their epeen with achievements and high ilvl gear, but surely the Heroic mode does that for you.<br />
+<br />
+I don't plan on rage quitting any time soon as overall I still enjoy the game, I just wish I could enjoy a little bit more of it.<br />
+<br />
+But on topic - levelling alts is sooooooooo painful and in all honestly after going through all the &quot;lore&quot; once, I really don't give a crap the second, third and fourth time and wish i could just create a level 85 char. I just wish we could spend ingame gold and get a BOA &quot;free level&quot; (even if they made it only for previous expansion levels, say 5K per level, that way I could avoid outlands for ever :)).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Residue</div><div class="date">2011-09-07, 12:46 PM</div></div><div class="posttext">There is one change that Blizzard could make that would greatly increase the number of characters (and level 85 ones) an account has.<br />
+Make Achievements account based and shared across all characters. Many do not want to level a new character when any achievement gains will not go to their main. I know many people who did all of the low level Cataclysm content on their level 85 toons simply because of this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CaptainClaw</div><div class="date">2011-09-07, 12:47 PM</div></div><div class="posttext">What baffle me to no end is the amount of people on this forum with 0 lvl 85, 2755 atm, that many are so bitter about the game they stick around on a fan site for something they dont play anymore to whine about it, good example is the post above, he still play mind you, at some lvl state of gear/rading, but he first complain that something got complicated for &quot;no reason&quot; then later he complain something is too simple, that is just complaining to complain, I really wish someone could tell me why ppl who dont play cata stick around on the forum, are they hoping to see the one change they been hoping for and strongly believe will change the whole game for them?<br />
+<br />
+Yeah that's pretty much why I still come to MMO daily. I played WoW from launch until about March this year when I stopped playing because I was having no fun whatsoever. Once upon a time WoW was the greatest game ever made, and I loved playing every minute of it. I saw it all, from MC to the original Naxx 40 (I killed KT back when it meant something), through BC and Sunwell, through WotLK and the awesome Ulduar where I got the server first legendary mace. Basically I had some great times, but now the game absolutely fucking sucks. I'm holding out hope that with the next expansion it could return to former glories, but realistically I know it's not that likely to happen. But I'm an optimist, so here's crossing my fingers.<br />
+<br />
+That's why I still come to MMO</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">probert</div><div class="date">2011-09-07, 01:10 PM</div></div><div class="posttext">In Vanilla, I had 1 character and barely dabbled with alts -- there was so much to do, the leveling process was long (having a l60 was an accomplishment in itself), and dungeon runs were substantial investments in time...BRD took 4-6 visits to complete entirely, you'd run strat and scholo and dire maul numerous times to buidl your tier 0.5 sets... Molten Core runs happened nightly, and were puggable quite often.TBC raised the bar, more stuff to do, more valid specs for end game (e.g. more than 1 tank class), heroics 5 mans and attunements. I never cleared SSC or TK (let alone BT or Sunwell), but raiding was always fun and there was so many bosses and content to see. By the end of TBC I had 2 characters I played, and that was more than enough.Wrath started out strong -- heroics, 3 starting raids with gradually increasing difficutly, lots of factions to level. Then Ulduar! Amazing instance. Too short as the end-game as I recall (only 5 months) and it hit just before summer which also was disappointing from a retention perspective. Some point after Ulduar things started to slide... ToC was free loot, and the badge incrementalism soon made heroic 5 mans irrelevant in terms of difficulty; the gear was so much better than Ulduar so no one ran Ulduar anymore. ICC was 'ok' although fairly repetitive and lasted way too long (1 year). Content became so easy that I ended the expansion with 6 x 85s, all tier 9+ geared. I chased achievements for the last 6 months and ended somewhere around 9000. Cataclysm repeated all the mistakes of Wrath, and made them worse. The Valor cap/justice cap method reduced the reason to logon; each raid tier progressed the badge gear further which exaccerbated the gear incrementalism of Wrath. What's worse, they tried to tier the dungeons -- with recycled content! -- so that people only ran the same 2 troll dungeons over and over... ugh. Its almost as if Blizzard *wanted* their audience to burn out. Lore wise, Cataclysm is just flat... not a fan of the refreshed 1-60 content from what i've seen (especially hrode side), and 80-85 is a 20 hour experience tops. Homogenizing 10 and 25 man raid loot means 25 mans rarely happen now. The Firelands dailies are the worse of all the dailies i've seen so far -- worse than Orgrila, worse than Netherwing, worse than Quel Danas or even ToC. Class mechanics are more proc based, more gimicks (e.g. holy power) added with no benefit, tanks are homogenized and they've arleady backed away from the threat mechanic they tried to bring back.In general, WoW is still WoW... its just less interesting, easier and less challenging, and almost entirely raid focused. If you raid, then the end game is still probably enough to keep you playing. PvP, questing/lore, pve wise? Its got about 30-60 days worth of content tops.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">topitopi</div><div class="date">2011-09-07, 02:39 PM</div></div><div class="posttext">In Vanilla, I had 1 character and barely dabbled with alts -- there was so much to do, the leveling process was long (having a l60 was an accomplishment in itself), and dungeon runs were substantial investments in time...BRD took 4-6 visits to complete entirely, you'd run strat and scholo and dire maul numerous times to buidl your tier 0.5 sets... Molten Core runs happened nightly, and were puggable quite often.TBC raised the bar, more stuff to do, more valid specs for end game (e.g. more than 1 tank class), heroics 5 mans and attunements. I never cleared SSC or TK (let alone BT or Sunwell), but raiding was always fun and there was so many bosses and content to see. By the end of TBC I had 2 characters I played, and that was more than enough.Wrath started out strong -- heroics, 3 starting raids with gradually increasing difficutly, lots of factions to level. Then Ulduar! Amazing instance. Too short as the end-game as I recall (only 5 months) and it hit just before summer which also was disappointing from a retention perspective. Some point after Ulduar things started to slide... ToC was free loot, and the badge incrementalism soon made heroic 5 mans irrelevant in terms of difficulty; the gear was so much better than Ulduar so no one ran Ulduar anymore. ICC was 'ok' although fairly repetitive and lasted way too long (1 year). Content became so easy that I ended the expansion with 6 x 85s, all tier 9+ geared. I chased achievements for the last 6 months and ended somewhere around 9000. Cataclysm repeated all the mistakes of Wrath, and made them worse. The Valor cap/justice cap method reduced the reason to logon; each raid tier progressed the badge gear further which exaccerbated the gear incrementalism of Wrath. What's worse, they tried to tier the dungeons -- with recycled content! -- so that people only ran the same 2 troll dungeons over and over... ugh. Its almost as if Blizzard *wanted* their audience to burn out. Lore wise, Cataclysm is just flat... not a fan of the refreshed 1-60 content from what i've seen (especially hrode side), and 80-85 is a 20 hour experience tops. Homogenizing 10 and 25 man raid loot means 25 mans rarely happen now. The Firelands dailies are the worse of all the dailies i've seen so far -- worse than Orgrila, worse than Netherwing, worse than Quel Danas or even ToC. Class mechanics are more proc based, more gimicks (e.g. holy power) added with no benefit, tanks are homogenized and they've arleady backed away from the threat mechanic they tried to bring back.In general, WoW is still WoW... its just less interesting, easier and less challenging, and almost entirely raid focused. If you raid, then the end game is still probably enough to keep you playing. PvP, questing/lore, pve wise? Its got about 30-60 days worth of content tops.<br />
+<br />
+I couldn't agree more. That's why for me the greatest run WoW had was from WoTLK launch up to ToC. I still enjoyed ToC but I do think they dragged ICC out too long.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Melilithia</div><div class="date">2011-09-07, 07:13 PM</div></div><div class="posttext">Only have 2 at 85 currently, but then again all my other alts are level 25-51. I try to be balanced on leveling things, but recently I've been leveling my Hunter. Never leveled a Hunter past 15 before, and they are SO MUCH FUN!<br />
+<br />
+Also lol DL comic. Poor Krom...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eruptor</div><div class="date">2011-09-08, 02:27 AM</div></div><div class="posttext">i've got 0 level 85's. 81 is my highest. Then i decided this game is way beyond what i think about enjoyment and i quit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">shesta</div><div class="date">2011-09-08, 10:49 AM</div></div><div class="posttext">In vanilla I had one 60 - there was more than enough to do because things were challenging and PVP was actually fun. <br />
+<br />
+TBC, I had 8 70s - content was awesome, classes varied and interesting, and it was great fun to just get another one to 70 and throw them into Karazhan (that place didn't get old for a LONG time). <br />
+<br />
+WotLK, 5 80s. Things not quite as fun, but the Northrend levelling was just tedious and horrible, which put me off levelling more. Ulduar was a great instance and definitely a high point in WoW. Heroics became a tedious and horrible grind, but at least quick. The ICC heroics were vaguely interesting. ICC itself dragged on forever and burnt out so many people. The standard of players became gradually worse due to the easymode heroics. <br />
+<br />
+Cataclysm, 3 85s. One of those just for professions. The levelling isn't as bad, it just seems pointless. Classes are less interesting than they were. Levelling 1-60 is more boring because it feels like it's all handed to you on a plate. I used to love 1-60 dungeon runs, but now those are overly short and stupidly easy. Loads of people quit or just make others lives a misery in heroics because they are &quot;too hard&quot; compared to Wrath (difficulty level is ok, but they are pretty boring). Less effort is spent by Blizz with seemingly every patch. Take the troll patch: the rehashed dungeons were a bad enough idea, but they touted an interesting quest line to go with it! The quest line took 30 minutes tops. Firelands patch: touted an epic Thrall questchain. Worst questchain in the game, supremely boring and finished in under 30 minutes. Firelands dailies are done and dusted in a month, and too repetitive to want to repeat on alts. <br />
+<br />
+I love WoW as a game. I love the background and the story and the races and the locations. But Blizzard need to get a handle on what they're doing and fix this mess they've allowed the game to slip into. :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wilzax</div><div class="date">2011-09-08, 11:02 AM</div></div><div class="posttext">Worst questchain in the game, supremely boring and finished in under 30 minutes. Firelands dailies are done and dusted in a month, and too repetitive to want to repeat on alts. (<br />
+<br />
+They are dailies... You can't get annoyed at Firelands dailies for being repetitive when all dailies are repetitive.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">topitopi</div><div class="date">2011-09-08, 09:35 PM</div></div><div class="posttext">They are dailies... You can't get annoyed at Firelands dailies for being repetitive when all dailies are repetitive.<br />
+<br />
+That's not necessarily true. For example I never minded the Hodir dailies at all. They were fun and different. Whenever I run an alt through Northerend, I still do those dailies to level up. The problem with the Firelands quests are that they are way too drawn out and the repetitive factor of dailies is multiplied due to the fact that as you unlock &quot;new&quot; quests you still have to do all the old ones, moving across what seems to be three zones, and at the end of the day for rewards that imho don't seem worth it. At least the ToC dailies had vanity items like mounts to keep me going.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deficineiron</div><div class="date">2011-09-09, 06:01 AM</div></div><div class="posttext">If you're taking requests I'd like to see the stats for the major regional subscriber numbers over time. I'd be particularly interested to see the impact China and the Far East has had on the number of WoW subscriptions, and where we stand right now. Purely as a guess, with nothing to back myself up, I would say that right now the numbers are going down in Europe and the USA, being nearly offset by rising China/Far East numbers. I'd love to see some stats to either back this up or discredit it.<br />
+<br />
+the best I have been able to do is work from netease's 10q\s from when they started being able to bill wow again in q3 2009.<br />
+<br />
+that said, just trying to fit the pre-cat mmo revenue numbers into a 12m sub figure gives some insight into the issue, and that leaves the entire fee-service figure out, which they say grows every quarter.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zeromatter</div><div class="date">2011-09-10, 11:35 PM</div></div><div class="posttext">I'm not completely certain of the capabilities of your stat-tracking program (from what I assume, it goes off of easily accessible stuff such as achievement-tracked stats), but I would very much like to see the average rate of success of a 5-man heroic dungeon using the dungeon finder for each of the three trinity types (Tank, healer, DPS) over the course of release through the present (success being measured as total dungeons completed divided by the total dungeons queued for). If you wanted to be spiffy, you could have two graphs, one for normal 5-man heroics and the other for 5-man Trollroics.<br />
+<br />
+I'm not sure if this is possible given as to the unknown limitations of your program, but a guy can hope! This is just me spit balling here, but I'm willing to bet the percentage of completion would be a lot higher than most people would expect.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">inevitabletruth</div><div class="date">2011-09-13, 11:59 PM</div></div><div class="posttext">Yeah that's pretty much why I still come to MMO daily. I played WoW from launch until about March this year when I stopped playing because I was having no fun whatsoever. Once upon a time WoW was the greatest game ever made, and I loved playing every minute of it. I saw it all, from MC to the original Naxx 40 (I killed KT back when it meant something), through BC and Sunwell, through WotLK and the awesome Ulduar where I got the server first legendary mace. Basically I had some great times, but now the game absolutely fucking sucks. I'm holding out hope that with the next expansion it could return to former glories, but realistically I know it's not that likely to happen. But I'm an optimist, so here's crossing my fingers.<br />
+<br />
+That's why I still come to MMO<br />
+<br />
+The problem is that we've all been beaten to death with the same MMO formula. In the beginning everything is great, enormous, and immerses you. At least that's how it was for me. I was so enthralled by the game i'd turn down social events on raid nights. Now, it is a completely different story. I don't have the passion or interest in scheduling my events. The only &quot;new&quot; content is the xpacs. You are either all in or casual. Even one night a week eventually becomes a chore when you would rather be doing something else than farming that same raid you've done a zillion times. I've been in hardcore bleeding edge guilds to the casual &quot;couple of friends&quot; guilds.<br />
+<br />
+The typical pve setup is quests and dungeons to level, hit max cap do more dungeons until you finish them all and get your loot, then advanced versions of dungeons to get better loot. Then raid to get the best loot. And while that formula has worked for a long time, in my opinion it's time for a change. MMO's need to inject more substancial content between dungeons and raids... or find a way to make raids more accessible without having to schedule your life around raid nights. The new looking for raid system in next patch is fail. No standard achievements or loot? You get kiddie rewards, after dealing with a pug?<br />
+Some might argue join a casual guild, but my question is: Have you done it? I've found that I get absolutely nothing done. Might as well be playing solo with a large friends list. Even with a small dedicated guild I sat waiting to start a raid for up to 1.5-2 hours sometimes. There is such a delicate balance required to make it work correctly. Yet, to do so it must be structured with rules and penalties and dkp/epgp/attendance tracking and so on. you need enough people to replace those out, yet when they are all present you must have standby's.<br />
+<br />
+I fully understand that people can blaze through content way faster than it can be created, however there is a certain negative feeling you get when you are paying to play an MMO yet you are unable to do what you want because you are unable to find the people. I don't really get into PvP much, but that's not to say i haven't participated.<br />
+I seem to hear a lot of constant discussion about difficulty and balance. To me, this has nothing to do with why i cancelled my sub. The reason? Repetition of the same formula. Sure i logged in a few weeks ago and had a blast running the old ZA and ZG dungeons. I wanted to get all the gear... until i realized that if I let that pull me back in i'm going to be at the same crossroad I was at when i stopped playing - faced with settling for less and not seeing the content, or scheduling my life around raid nights again.<br />
+<br />
+I think I'll pass. There are too many decent free to play MMOs now and although the formula may work for newer players and PvPers it certainly has lost the appeal to me.<br />
+<br />
+I come back to MMO sites because as stated before, I am hoping that they change things enough to bring back the enjoyment I once had for this game, and games like it.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

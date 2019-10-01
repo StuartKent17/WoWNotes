@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, and, for, players, 6.1, other, have, we’re, gold, some, giving, forward, give, you, look, way, their, possibility, exploring, option, with, blue, this, that, not, was, from, few, online, games, through, legit, acquiring, surplus, system, secure, subscription, less, play, time, might, who, offer, cost, while, cover, agree, even, guaranteed, though" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; prFly's Pyrolysis Wizard, Deadset Sanctuary Talk 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Popular Decks of the Week, Deck Spotlight: Holy 4000 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot;" />
+<title> Armory Stats - Missions, Fishing Changes, Blue Posts, CRZ, Blue Tweets, GW2 Expansion [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Missions, Fishing Changes, Blue Posts, CRZ, Blue Tweets, GW2 Expansion</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1695092.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1695092-Armory-Stats-Missions-Fishing-Changes-Blue-Posts-CRZ-Blue-Tweets-GW2-Expansion">Armory Stats - Missions, Fishing Changes, Blue Posts, CRZ, Blue Tweets, GW2 Expansion</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-01-26, 05:11 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; prFly's Pyrolysis Wizard, Deadset Sanctuary Talk (http://www.diablofans.com/news/48314-prflys-pyrolysis-wizard-deadset-sanctuary-talk)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Popular Decks of the Week, Deck Spotlight: Holy 4000 (http://www.hearthpwn.com/news/762-popular-decks-of-the-week-deck-spotlight-holy-4000)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Heroes of the Storm Beta Key Giveaway (http://www.heroesnexus.com/news/1289-heroes-of-the-storm-beta-key-giveaway)<br />
+<br />
+Armory Stats - Followers and Missions<br />
+We are taking a look at an often requested topic, garrison stats. Unfortunately the Battle.Net API doesn't give us any garrison specific information, so all we can look at is achievements. You can always give this post a thumbs up (http://us.battle.net/en/forum/topic/15270937621#1) to show your interest in having garrison data in the API though!<br />
+<br />
+We are starting with mission data today, looking at 2.7 million players and 4.4 million characters. <br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+setTimeout(function(){ height = subchart.height<br />
+width = $(&quot;.pgcharts&quot;).width()<br />
+subchart.setSize(width, height, doAnimation = true);},2500)<br />
+<br />
+<br />
+setTimeout(function(){ height = subchart.height<br />
+width = $(&quot;.pgcharts&quot;).width()<br />
+subchart.setSize(width, height, doAnimation = true);},1500)<br />
+<br />
+setTimeout(function(){ height = subchart.height<br />
+width = $(&quot;.pgcharts&quot;).width()<br />
+subchart.setSize(width, height, doAnimation = true);},4500)<br />
+<br />
+$(document).ready(function() {<br />
+<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'missionChart',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ '1 Rare Mission', '50 Rare Missions', '100 Missions', '500 Missions', '1000 Missions'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: false,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.point.name + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Completed Garrison Mission Achievements',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [<br />
+{<br />
+data: [{y: 99.4, color: '#5D83C9', name:'1 Rare Mission'},{y: 27.8, color: '#5D83C9', name:'50 Rare Missions'},{y: 90.0, color: '#5DC964', name:'100 Missions'},{y: 42.6, color: '#5DC964', name:'500 Missions'},{y: 16.2, color: '#5DC964', name:'1000 Missions'}],<br />
+<br />
+name: '&lt;b&gt;Percent&lt;/b&gt;'<br />
+}<br />
+<br />
+]<br />
+<br />
+});<br />
+});<br />
+&lt;/script&gt; <br />
+<br />
+<br />
+<br />
+&lt;div id=&quot;missionChart&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+Patch 6.1 - Fishing Changes<br />
+Thank you all for your feedback regarding the auto-fillet change that was set for Patch 6.1. Based on your sentiment, we've gone ahead and made a change we hope will be beneficial for all anglers.<br />
+<br />
+In 6.1, rather than have fish auto-fillet as you catch them, we're adding a new consumable item called the Bladebone Hook which when used, will enable auto-filleting for one hour. This new item can be purchased from fishing vendors in Draenor.<br />
+<br />
+Just a couple notes: Despite the tooltip, you won't need a fishing pole to use this item, and it won't overwrite your lure, bait, fishing line, or anything else.<br />
+<br />
+Thanks again for sharing your thoughts with us!<br />
+<br />
+I have a few more updates for you guys regarding bait which I'm sure you'll appreciate. These are also slated to be in Patch 6.1 so please be sure to test them out on the PTR and give us your feedback.<br />
+<br />
+<br />
+We're reverting the change where bait would spoil. Reverting the change where bait could not be caught in your garrison; Nat Pagle will still grant you the bait of your choice (because Nat Pagle). Bait duration is now 10 minutes (up from 5) to mirror the duration of lures.<br />
+<br />
+<br />
+<br />
+Blue Posts<br />
+Running Out of Things to Do<br />
+Hey dorks, different difficulty levels of the SAME CONTENT, is not NEW CONTENT.<br />
+Hah, well maybe not entirely, but there's a pretty massive difference in the gameplay experience between Raid Finder and Normal. I would go out on a limb and say that it's so dramatic that they should be considered separate pieces of content. Of course as more and more people outgear Normal it won't be quite as distinctive, but certainly when content first becomes available they are pretty vastly different gaming experiences.<br />
+<br />
+Being in a solo guild does not create any deficit whatsoever. I jump into the custom group finder every day to do the apexis daily. I used the custom group finder to grind out the WOD reputations and if I enjoyed other tiers of raiding, I could use it to PUG normal highmaul. So I completely cannot agree with you on that statement.<br />
+The group finder is awesome, and I'm glad you're using it, but I have to say opting into content that way just isn't the same as ad-hoc situations with friends and guild mates. A friend says &quot;DUDES this guy is camping me&quot; and everyone rushes out to help, or you help a guildy in an old dungeon or to kill a rare they can't quite down themselves, or a friend asks if you want to go do a run (that you don't need anything from), and you help because you want to support your friend's character. Or your guild has Sunday transmog runs and you really get into transmogging, or they do achievement runs, or your guild's Heroic-progression group is short a DPS one night and hey, they bring you along! And sure you get carried a bit but you have fun chatting with people, and you even get a couple pieces! And better yet you then become part of their regular rotation, you make friends, you chat outside of game, you meet up at BlizzCon, etc. etc. etc. People are important in an MMORPG. The Premade Groups tool is great, but it really isn't going to do any of the things that occur from being in an active guild or having active friends to play with, and working together to ensure each others' success. It can though be a stepping stone into that social experience, if you want it to be.<br />
+<br />
+In any case I do appreciate the other feedback and points. I think both alt-friendly content and dungeons are always a good place to focus our attention. To your point about JP we are improving some of the reward structure for Apexis in 6.1 which should help maybe address your point of going after upgrades through other content.<br />
+<br />
+As a final note I will say that it's not always necessarily a problem to be &quot;complete&quot; until the next piece of content comes along. Blackrock Foundry is out in less than two weeks, and I would recommend giving Normal a shot when it does hit, but we also have 6.1 on the PTR, and future patches in the oven. A tremendous amount of people are using the new Premade Groups finder to progress from LFR to Normal (and beyond), whereas those same people were stopping at LFR in Mists, and so statistically it's been quite successful as a feature. But everyone has to make their own decisions about playing and what they consider good enough, and at what point they're happy with the progression of their character. For some people that's going to be they saw all the bosses in LFR once and they're good, and for others it's going to be they need 5 100's in full Warforged Mythic. Those are the extremes, but everyone makes those decisions for themselves. (Blue Tracker (http://blue.mmo-champion.com/topic/358725-i-think-i-really-have-nothing-left-to-do/) / Official Forums (http://us.battle.net/wow/en/forum/topic/15699506608?page=16#307))<br />
+<br />
+PvE Items and PvP<br />
+Please Prevent Pve items being used and abused in PvP before it's too late.<br />
+We're actually working on some changes along these lines for Patch 6.1, which should be hitting the PTR relatively soon (but possibly not in today's build). PvE gear will be scaled down to item level 680 instead of 690, and Primal Combatant/Primal Gladiator trinkets are having their power increased.<br />
+<br />
+Why not just make the PVE trinkets and PVE set bonuses entirely unusable while in instanced, rated PVP? That way, it wouldn't hurt people that are gearing up and just doing BGs or WPVPers.<br />
+PvE set bonuses are disabled in rated PvP. If you find one that isn't, that's a bug, please report it!<br />
+<br />
+We don't always have a great way to apply similar logic to trinkets, but we are able to adjust specific trinkets when necessary -- for example, we've just hotfixed the Scabbard of Kyanos' on-use effect to have a lower effectiveness in PvP situations. (Blue Tracker (http://blue.mmo-champion.com/topic/358821-prevent-pve-being-used-in-pvp/) / Official Forums (http://us.battle.net/wow/en/forum/topic/15699374296?page=6#115))<br />
+<br />
+<br />
+Cross-Realm Zones<br />
+Meaning that things take longer because more people are competing for stuff, with no benefits. Rather than beneficial collision like Connected realms, where you can invite people to guilds, and they don't significantly add to zone populations.<br />
+That's a perception issue, though. If we hid realm names there would be no real difference in that person being from your home realm or from another. You can make the argument those resources are going somewhere else, but again, you're going to get the resources you're going to get. People from your realm are likely CRZd to someone else's realm, and mining their nodes, and bringing it back to your server. It's a perception issue more so than an actual gameplay impact.<br />
+<br />
+As for guilds, plenty of people have RealID friends cross-realm, and then actually transfer if necessary to be in their friends' guild--but the advent of flex and both Normal and Heroic being cross-realm means you can stay in your same guilds and have a lot of additional options on how you play the game.<br />
+<br />
+Some realms need to be merged, CRZ does not solve this.<br />
+No, and it's not intended to. Connected Realms allow for a lot of the benefits you're probably referring to, and that was an undertaking that happened before Warlords launch (all planned connections were completed back in August). But connecting realms and CRZ offer different benefits, and aren't mutually exclusive. Connecting realms means, for all intents and purposes, a shared population. The vast majority of players (even on lower population realms) are at level cap, or at least leveling through the latest expansion, and so there's essentially always glut of players at the top and in those zones. Connecting realms is limited by that high end concentration of players and what those zones can comfortably support. Meanwhile the lower level zones are probably still very empty. What CRZ allows us to do is set a desired number of players in a zone at a time, and bring players together from many realms into that zone, without also impacting player numbers elsewhere in the game.<br />
+<br />
+it does nothing to help gameplay.<br />
+Creating a multiplayer environment where there's both cooperation and disagreements (or groups and pvp, or competition and interaction) between players is largely what MMOs are about, and so I think we'd fundamentally disagree that having more players around in low level zones is, as you put it, anything but unhelpful. We think it is decidedly helpful to the support of a multiplayer gaming environment.<br />
+<br />
+All that said, we'd be interested in hearing specific feedback on situations or issues you're having, experiences and stories about what has made the experience worse, or even better! Nice stories are nice, too.<br />
+<br />
+for the record I get there's supposed to be some competiton, but I feel it becomes a problem when I start getting chewed out by other players for having to resort to ninjaing their quest stuff to have any hope of advancing a quest.<br />
+<br />
+We don't generally want there to be waiting around for questing resources. We consider quest resource not spawning quickly enough as a bug, and they should probably be reported as such. If you come across any specific instances where people are standing around waiting for something to respawn, or feverishly fighting over mobs, report it as a bug.<br />
+<br />
+Standing around with 8 other people waiting for mobs to spawn is no fun...<br />
+I agree, and that should be reported as a bug. The game is designed to support many dozens (or even hundreds) of players doing the same quest at the same time, and if there's an issue impeding progression on quest criteria then that's a bug.<br />
+<br />
+And, although it probably doesn't need to be said, not caused by CRZ.<br />
+<br />
+<br />
+Blue Tweets<br />
+Character / Items<br />
+caps gone, then why did you remove reforge? lack of toon customization: no gems, no enchants. for me this made the game worse...<br />
+You can enchant 275 worth of secondary stats, this is actually more relative to MOP (post squish)<br />
+Yep, this. Plus food and any sockets you may have. (WatcherDev (https://twitter.com/WatcherDev/status/555068021589282816))<br />
+<br />
+Guilds<br />
+Man, creating a guild is still such an old fashioned chore. Any improvements in the pipe?<br />
+Actually haven't checked that out myself for quite a while, will pass on the feedback, thanks! (Muffinus (https://twitter.com/Muffinus/status/554884688842473472))<br />
+<br />
+Somewhat worried that a 4 night schedule is turning into the defacto requirement for a typical mythic clear guild<br />
+Curious what makes you feel that way - what's changed in WoD? A number of 3-night guilds are making good progress. (WatcherDev (https://twitter.com/WatcherDev/status/554908644215488512))<br />
+<br />
+PvE<br />
+Only 24 US guilds have M Imperator, w/ Holidays/Light Raid schedules, Blackrock launch is too early imho. <br />
+But Foundry isn't a separate tier like Throne of Thunder or Siege, it's a continuation of the first tier. I'd compare to MSV-&gt;HoF. (WatcherDev (https://twitter.com/WatcherDev/status/555454746471854080))<br />
+<br />
+Are all 3 wings in BrF linear, or are there some options on the order of the first 2? I'm assuming the third is always gated?<br />
+Three separate wings you can tackle in any order, each with an end-boss. Think upper Icecrown, or Naxxramas. (WatcherDev (https://twitter.com/WatcherDev/status/555454568285229056))<br />
+Aye, but are the non-end bosses linear like Naxx wings, or do you have options on some, like Plague wing in ICC?<br />
+Forge and Assembly are linear; for Slagworks you can do either Gruul or Oregorger first. (WatcherDev (https://twitter.com/WatcherDev/status/555458493344260096))<br />
+<br />
+PvP<br />
+Ashran's queue problems bother me. It puts the whole zone in a bad light. We're doing a substantial queue rework for 6.1. (holinka (https://twitter.com/holinka/status/555264299753426944))<br />
+Skirmishes, strong boxes and PvP item level have been good changes and pleased with them. (holinka (https://twitter.com/holinka/status/555264440614940675))<br />
+There will never be universal satisfaction with class balance so I don't ever expect posts like this to go away. (holinka (https://twitter.com/holinka/status/555265043814567936))<br />
+<br />
+<br />
+FEEDBACK: Blackrock Foundry (Normal)<br />
+We've opened up the Blackrock Foundry raid on the 6.1 PTR for the weekend. The first boss(es) of each wing are accessible (Oregorger and Gruul in the Slagworks; Hans'gar and Franzok in the Black Forge; and Beastlord Darmac in the Iron Assembly), on Normal difficulty only. Use the Group Finder to find some like-minded allies, get in there, and check out a bit of the raid zone that's coming to live servers in less than two weeks!<br />
+<br />
+Organized guilds should keep an eye on the PTR forums next week for a couple of more targeted tests of specific bosses on higher difficulties.<br />
+<br />
+Please use this thread to provide feedback on the four available Foundry bosses. Item level will be scaled to 650 for the purposes of the test. When providing feedback, please specify the size and nature of your group (pure PUG, Mythic raiding guild, etc.), and remember that these are the first bosses of the zone on Normal difficulty. The intended tuning target here is in the ballpark of Highmaul bosses like Butcher or Twin Ogron on Normal difficulty.<br />
+<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2012/june/gw2g.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Guild Wars 2 Expansion - Heart of Thorns<br />
+The first Guild Wars 2 expansion, Heart of Thorns (https://heartofthorns.guildwars2.com/en), was recently announced! It adds features like a Mastery System, new story and group content, profession specializations, another profession, guild halls, the Stronghold game mode, another WvW map, and more.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2015/january/gw2HoT.jpg (https://heartofthorns.guildwars2.com/en#section-home) <br />
+<br />
+&lt;iframe width=&quot;450&quot; height=&quot;253&quot; src=&quot;//www.youtube.com/embed/IOUk2y0K2m8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt; &lt;iframe width=&quot;450&quot; height=&quot;253&quot; src=&quot;//www.youtube.com/embed/147x-wbCer0?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2015-01-26, 05:36 AM</div></div><div class="posttext">I cant wait for BRF to come out. I need more bosses to kill.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Noct</div><div class="date">2015-01-26, 05:44 AM</div></div><div class="posttext">New Guild Wars 2 expansion looks phenomenal. Just hoping for a swift release.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2015-01-26, 05:57 AM</div></div><div class="posttext">Huh. I thought more players would have obtained On a Metric Ton of Missions (http://www.wowdb.com/achievements/9140-on-a-metric-ton-of-missions) by now.<br />
+<br />
+Also, I'm still bitter about what CRZ did to the Kalu'ak Fishing Derby. ლ(ಠ益ಠლ)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ChronixLive</div><div class="date">2015-01-26, 06:00 AM</div></div><div class="posttext">I was surprised that I got 1000 missions before I completed 50 rare. Not sure how that worked out. On a different note, nothing is more depressing than failing a HM Cache mission at 96% :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Feel The Power</div><div class="date">2015-01-26, 06:12 AM</div></div><div class="posttext">I will admit, I don't know much about Guild Wars 2, and maybe that trailer is really awesome for players of the game...but damn that was the most underwhelming game trailer I have ever seen.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc64ace7a841</div><div class="date">2015-01-26, 06:28 AM</div></div><div class="posttext">Raids raids raids, guild guild, group up, raids raids raids.<br />
+<br />
+Seriously i'm starting to think about unsubbing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">molster</div><div class="date">2015-01-26, 06:28 AM</div></div><div class="posttext">I was surprised that I got 1000 missions before I completed 50 rare. Not sure how that worked out. On a different note, nothing is more depressing than failing a HM Cache mission at 96% :(<br />
+<br />
+failing one at 98% I think is x.x</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">VirunusWRA</div><div class="date">2015-01-26, 06:48 AM</div></div><div class="posttext">Raids raids raids, guild guild, group up, raids raids raids.<br />
+<br />
+Seriously i'm starting to think about unsubbing.<br />
+You're literally complaining because an MMO is focusing on group content. That's kind of the whole point of an MMO.<br />
+I can understand wanting more to do than just raids, but that's not all you're focusing on here.<br />
+Perhaps you'd be better off finding a game that doesn't focus so much on endgame.<br />
+<br />
+Heck, GW2 is a decent distraction, honestly. Give it a try when the expansion releases.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc64ace7a841</div><div class="date">2015-01-26, 06:51 AM</div></div><div class="posttext">You're literally complaining because an MMO is focusing on group content. That's kind of the whole point of an MMO.<br />
+I can understand wanting more to do than just raids, but that's not all you're focusing on here.<br />
+Perhaps you'd be better off finding a game that doesn't focus so much on endgame.<br />
+<br />
+I know it sounds weird to complain about mmo in mmorpg but i was doing fine for several years before now, as a solo player. Oh well, maybe i'm just fed up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0924711296</div><div class="date">2015-01-26, 07:00 AM</div></div><div class="posttext">TBH, Guild Wars 2 seems to become the better game, most have simply just forgotten. I play both games and GW2 just reks WoW in every aspect besides instances, sadly. The reason WoW is still bigger is only because of the nostalgia and the players themselves. No one wants to leave their guild fuld of friends. <br />
+I hope this exspansion brings some more instanced endgame content, it would really move the game forward, and fiks the wierd dungeon meta, damn it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1dbcdc2134</div><div class="date">2015-01-26, 07:42 AM</div></div><div class="posttext">TBH, Guild Wars 2 seems to become the better game, most have simply just forgotten. I play both games and GW2 just reks WoW in every aspect besides instances, sadly. The reason WoW is still bigger is only because of the nostalgia and the players themselves. No one wants to leave their guild fuld of friends. <br />
+I hope this exspansion brings some more instanced endgame content, it would really move the game forward, and fiks the wierd dungeon meta, damn it.<br />
+<br />
+Too much generalization. I quit WoW early in MoP, checked other MMOs and with WoD I decided to come back to WoW (with new acc, new realm, different battlegroup). Why is it so hard to understand that some people just prefer WoW over other MMOs simply because they find it to be a better game?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zoneseek</div><div class="date">2015-01-26, 07:52 AM</div></div><div class="posttext">why does everything have to turn into a game v game thing? wow and gw2 are both great games, I play and enjoy both off and on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shadowisp</div><div class="date">2015-01-26, 08:42 AM</div></div><div class="posttext">Still no word on if Blizzard are going to fix Herbalism or Mining Gathering skills... they keep adding and boosting workshops/crafting professions while every player gets all the herbs/ore they need from the mines/garden.<br />
+<br />
+Seriously they need to add a buff this patch. I would like to see a buff to increase to Draenic Stone and Seeds farming and vendors for them with a variety of stuff, maybe process excess stone/seeds for GR etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2015-01-26, 09:03 AM</div></div><div class="posttext">I like how they're just ignoring the fact that they promised us plex/credd stuff coming for 6.1. Add it to the heap of broken promises in the last year.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca0dbd288a6</div><div class="date">2015-01-26, 09:16 AM</div></div><div class="posttext">I will admit, I don't know much about Guild Wars 2, and maybe that trailer is really awesome for players of the game...but damn that was the most underwhelming game trailer I have ever seen.<br />
+<br />
+It's probably because it's using the in-game engine and abilities. If WoW did it like that it would look like a Machinima.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9aa38bccdb</div><div class="date">2015-01-26, 09:28 AM</div></div><div class="posttext">I'm surprised that gw2 is still alive. Thought it went down the toilet long ago.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc4359933d3d</div><div class="date">2015-01-26, 09:43 AM</div></div><div class="posttext">I'm surprised that gw2 is still alive. Thought it went down the toilet long ago.<br />
+<br />
+Not sure where you would have got that from. Maybe the posters around here that can't stop shit-talking it. The game is still healthy and a success though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Farora</div><div class="date">2015-01-26, 09:52 AM</div></div><div class="posttext">I don't believe 90% did 100 shitty garrison missions.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tydrane</div><div class="date">2015-01-26, 10:24 AM</div></div><div class="posttext">Quoting one of the blue posts:<br />
+<br />
+The group finder is awesome, and I'm glad you're using it, but I have to say opting into content that way just isn't the same as ad-hoc situations with friends and guild mates. A friend says &quot;DUDES this guy is camping me&quot; and everyone rushes out to help, or you help a guildy in an old dungeon or to kill a rare they can't quite down themselves, or a friend asks if you want to go do a run (that you don't need anything from), and you help because you want to support your friend's character.<br />
+<br />
+Do they realise that, for the overwhelming majority of players, this does not resemble the WoW experience? If I were on a PvP server and asked any of my in-game friends to help me out because I was being camped, the answer would come that they can't, because CRZ between AU and US realms doesn't work - it didn't even work when the servers were located in the US. Guild chat across all the guilds I've joined on my many alts is usually complete silence, and I've helped more people do runs of old content because they asked in Trade, not in guild chat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2015-01-26, 11:26 AM</div></div><div class="posttext">holinka you have your chance to create a second wonderfull wintergrasp..<br />
+<br />
+you have miss your chance with the creation of one of the biggest pvp fail named ashran..<br />
+<br />
+go away and make room for the next..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7e86bf450a</div><div class="date">2015-01-26, 11:35 AM</div></div><div class="posttext">PvE Items and PvP<br />
+Please Prevent Pve items being used and abused in PvP before it's too late.<br />
+We're actually working on some changes along these lines for Patch 6.1, which should be hitting the PTR relatively soon (but possibly not in today's build). PvE gear will be scaled down to item level 680 instead of 690, and Primal Combatant/Primal Gladiator trinkets are having their power increased.<br />
+<br />
+Wait so let me get this straight, pvpers want their pvp gear to be usable and have some usefulness in pve content but they dont want pve gear to be useful in pvp enviroment? Hypocrit much?<br />
+<br />
+i know they need to maybe do somthing but the approach they want to do it is wrong imo :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tisane</div><div class="date">2015-01-26, 11:43 AM</div></div><div class="posttext">Why is MMOC suddenly publishing news about games other than WoW/Blizzard? Did Curse change their policy as a New Year's resolution? :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">XanderGryphon</div><div class="date">2015-01-26, 11:46 AM</div></div><div class="posttext">I like how they're just ignoring the fact that they promised us plex/credd stuff coming for 6.1. Add it to the heap of broken promises in the last year.<br />
+<br />
+I like how you're ignoring the fact that they didn't promise anything of the sort. Also, lol at &quot;heap of broken promises&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc840776f426</div><div class="date">2015-01-26, 12:01 PM</div></div><div class="posttext">I like how they're just ignoring the fact that they promised us plex/credd stuff coming for 6.1. Add it to the heap of broken promises in the last year.<br />
+<br />
+Blizzard: &quot;This thing Might be something arriving in WoW, at some point in 2015!&quot;<br />
+Loud minority: &quot;OMG, why is it not here yet? It's fucking February already you lying lazy bastards!&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arvandor</div><div class="date">2015-01-26, 12:06 PM</div></div><div class="posttext">Why is MMOC suddenly publishing news about games other than WoW/Blizzard? Did Curse change their policy as a New Year's resolution? :p<br />
+<br />
+to date this expansion is for many players the worst..<br />
+<br />
+mmoc help these peoples..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">emancipation proclamation</div><div class="date">2015-01-26, 12:11 PM</div></div><div class="posttext">nice 6.1.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-01-26, 12:11 PM</div></div><div class="posttext">Why is MMOC suddenly publishing news about games other than WoW/Blizzard? Did Curse change their policy as a New Year's resolution? <br />
+<br />
+We asked for feedback from visitors over a few days and that was a relatively popular request. Curse has no input into the news beyond passing along Curse related news for our review that might be useful to include.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gaidax</div><div class="date">2015-01-26, 12:24 PM</div></div><div class="posttext">Time to dust off my GW2...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3d7f422663</div><div class="date">2015-01-26, 12:36 PM</div></div><div class="posttext">I'm surprised that gw2 is still alive. Thought it went down the toilet long ago.<br />
+<br />
+Why? It has shitloads of players. Just because you don't play it doesn't suddenly mean that it's empty. Whenever I log in there are always lots and lots of people.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca7d06c4104</div><div class="date">2015-01-26, 12:46 PM</div></div><div class="posttext">You're literally complaining because an MMO is focusing on group content. That's kind of the whole point of an MMO.<br />
+I can understand wanting more to do than just raids, but that's not all you're focusing on here.<br />
+Perhaps you'd be better off finding a game that doesn't focus so much on endgame.<br />
+<br />
+Heck, GW2 is a decent distraction, honestly. Give it a try when the expansion releases. <br />
+Way WoW devs focus on instancing and raids have ruined wow for me and I say this as someone who used to raid a lot in TBC and I even gave WoD flexible raiding chance and cleared HM heroic few times with friends. In my opinion point of MMOs is persistent world that you share with other players and not the content that you do in instances that feel nothing more than some multi-player games. Past few weeks I have been loggin only for raids from my garrison and I dont think it would have felt any different if blizzard had removed persistent world from wow and make garrison some sort of lobby where you gather players to instanced raids. WoW is too raid/instance centric.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tisane</div><div class="date">2015-01-26, 12:56 PM</div></div><div class="posttext">We asked for feedback from visitors over a few days and that was a relatively popular request. Curse has no input into the news beyond passing along Curse related news for our review that might be useful to include.<br />
+<br />
+Ah, fair enough :) I missed it then</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Korru</div><div class="date">2015-01-26, 12:58 PM</div></div><div class="posttext">WoW is very raid/instance centric in the end game, the problem is that it lacks instanced content. BF should have come with the WoD launch with the same item level loot with a few more dungeons and have CM's be a bit more rewarding, but Blizzard has that &quot;Screw you, we're number one&quot; mentality they had since Cataclysm.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Christhammer</div><div class="date">2015-01-26, 01:20 PM</div></div><div class="posttext">Wait so let me get this straight, pvpers want their pvp gear to be usable and have some usefulness in pve content but they dont want pve gear to be useful in pvp enviroment? Hypocrit much?<br />
+<br />
+i know they need to maybe do somthing but the approach they want to do it is wrong imo :)<br />
+<br />
+You are wrong. PvP gear is only 620 (honor) and 660 (conquest) in PvE. That's not very high. What would be fair is to scale down PvE gear to 660 in PvP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zyranthian</div><div class="date">2015-01-26, 01:36 PM</div></div><div class="posttext">I like how they're just ignoring the fact that they promised us plex/credd stuff coming for 6.1. Add it to the heap of broken promises in the last year.<br />
+<br />
+They didn't promise anything, they just said they were looking into it</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aelric70</div><div class="date">2015-01-26, 01:40 PM</div></div><div class="posttext">PvE Items and PvP<br />
+Please Prevent Pve items being used and abused in PvP before it's too late.<br />
+We're actually working on some changes along these lines for Patch 6.1, which should be hitting the PTR relatively soon (but possibly not in today's build). PvE gear will be scaled down to item level 680 instead of 690, and Primal Combatant/Primal Gladiator trinkets are having their power increased.<br />
+<br />
+Wait so let me get this straight, pvpers want their pvp gear to be usable and have some usefulness in pve content but they dont want pve gear to be useful in pvp enviroment? Hypocrit much?<br />
+<br />
+i know they need to maybe do somthing but the approach they want to do it is wrong imo :)<br />
+<br />
+Pvp gear is already noticeably lower in ilvl than pve gear. Thats already done correctly. Its only the pve --&gt; pvp side that needs more work.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jaigar</div><div class="date">2015-01-26, 01:55 PM</div></div><div class="posttext">I really don't like how they're handling pve/pvp gear.<br />
+<br />
+Say for example, you're out in the open world on a pvp server doing pve stuff. Say you are in BiS BRF gear. Someone in full conquest attacks you; do you actually lose ilevel since you are engaged in PvP?<br />
+<br />
+Its already frustrating enough trying to go through nagrand without getting ganked. Theres a difference between pvp and getting ganked, especially when you can have over double the health and damage of a fresh 100 already. And the way gear has been scaling, i imagine its just gonna get worse with season 2.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jasper Kazai</div><div class="date">2015-01-26, 02:24 PM</div></div><div class="posttext">I don't get why auto-filleting is a thing people even want. It's instant, just click with no cast time. It's actually one of the only painless things that they have added...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Haldhur</div><div class="date">2015-01-26, 02:59 PM</div></div><div class="posttext">Is there any way to know how many missions have you made, after the achievement: On a Metric Ton of Missions?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryozaras</div><div class="date">2015-01-26, 04:14 PM</div></div><div class="posttext">I will admit, I don't know much about Guild Wars 2, and maybe that trailer is really awesome for players of the game...but damn that was the most underwhelming game trailer I have ever seen.<br />
+<br />
+Well that's partially due to that specific trailer being the story trailer for the expansion, it played shortly after the final cutscene for the current patch's story arc. The expansion announcement trailer which was released on Saturday may be more what you're looking for in terms of new game content coming soon.<br />
+<br />
+Trailer Link:<br />
+https://www.youtube.com/watch?v=IOUk2y0K2m8</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sundreamer</div><div class="date">2015-01-26, 04:37 PM</div></div><div class="posttext">for once i'm the 1%! big garrison nerd lol got 25 followers maxed gear and everything, while sitting between 9-10k resources all the time</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc2469da80bf</div><div class="date">2015-01-26, 05:23 PM</div></div><div class="posttext">wouldnt it be nice if carracters were universal and you could hop arround between different games with them . <br />
+It would encourage devs to get great content out or people just hopped out . Grazy toughts are crazy !!!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Apexis</div><div class="date">2015-01-26, 05:51 PM</div></div><div class="posttext">Huh. I thought more players would have obtained On a Metric Ton of Missions (http://www.wowdb.com/achievements/9140-on-a-metric-ton-of-missions) by now.<br />
+<br />
+Also, I'm still bitter about what CRZ did to the Kalu'ak Fishing Derby. ლ(ಠ益ಠლ)<br />
+<br />
+Not surprising at all, given the amount of reading I have done about the garrison and how many people wish it was not even in the content or at least its current rendition. I am starting to see far more people in Org and SW, than in Ashran or even outside the garrisons themselves. People have moved on from the endless array of cd land and the mission only take a couple minutes, if one bothers to do them and move on to sitting and waiting on queue, like in expansion past.<br />
+<br />
+The only ones get these types of achievement are the people that are usually found out and about in the world on a constant basis, those are what the garrison was true meant for to fill up there playing time. Problems is once you have maxed out all the followers to 100, epic, an a ilvl of 655. Mission become useless except for few high maul that come, like once a week. I've got to the point since I get a shit ton of XP mission daily to resort to putting and inn in my garrison just to get another follower to level per week and which them 655 ones I have or I just do the gold currency or garrison resource ones when they pop up.<br />
+<br />
+Even the garrison itself becomes useless once you done all the quest in the various building and got the achieves for each one, if that is something one like to do, most don't hence why the numbers reflect that. Another thing a lot of people don't like farmville 2.0, they did not like the first rendition and they do not like the current. There vision of player house was far different from the one Blizzard envisioned and delivered.<br />
+<br />
+Well that fishing derby is going to get even worse to complete, now that the heirloom tab is coming and people will be wanting that ring, so they can ride a mount on a level one character. I now wish I had taken the ring, instead of the boots back when I did this. Now i won't bother, but then I have a lot of the heirloom now and have for a very long time. I doubt very much I will drop whatever gold I have to to upgrade much of it. I know I won't bother to buy the level 100 stuff, because if I have any other characters in this game, I'll level them 1 to 60 and then boost them to 90 and level from there to 100, which takes about a half a day to do so.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc903ad35b4b</div><div class="date">2015-01-26, 05:59 PM</div></div><div class="posttext">When i took a look on the percentage scale i thought<br />
+<br />
+&quot;Good that its not 125% that completed one rare garrison mission.&quot;<br />
+<br />
+SCNR.<br />
+<br />
+Edit: Got fixed. Thanks :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Apexis</div><div class="date">2015-01-26, 06:07 PM</div></div><div class="posttext">for once i'm the 1%! big garrison nerd lol got 25 followers maxed gear and everything, while sitting between 9-10k resources all the time<br />
+<br />
+This is sad, that it really did not take long to get to this point. I found myself having to switch out my barn for a trading post, just so I could stay under the cap enough to keep the mission following for the follower I have been leveling out of the tavern, because I get a shit ton of XP mission each and every day to complete. I simply love do salvage, so I don't like having those mission just going to waste sitting there not being done.<br />
+<br />
+This garrison was not well planned out for when one finally got to the end of it usefulness. I stopped farming the mine because I have two tabs of each type in my two guild banks and each character I presently have has enough ore on them to keep the work orders flowing for a least two weeks. Herbs are starting to get there between the garden and what I gather while leveling or out and about doing stuff around the zones. <br />
+<br />
+I now have most of the abilities and traits at least four times over on the followers. I have an army that is second to none, but yet I can use half them because I am capped by how many I can use and how many mission I can get per day. At least with BRF, I can start all over again getting them all to a higher ilvl.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stormykitten</div><div class="date">2015-01-26, 06:39 PM</div></div><div class="posttext">Is there some reason you're afraid of capping resources? It's a useless currency once you reach a certain point / week, but i feel like it served its purpose building up the garrison. Barn would yield more profit than trading resources would.<br />
+<br />
+I do wish there were more ways to use the followers, though. And that any follower could be a bodyguard, just make some kind of promote system to roll a template of stats on them like the current selection. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shiroh</div><div class="date">2015-01-26, 07:20 PM</div></div><div class="posttext">'Armory Stats - Followers and Missions'<br />
+Why do I only see Missions Stats?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2015-01-26, 08:22 PM</div></div><div class="posttext">Blizzard: &quot;This thing Might be something arriving in WoW, at some point in 2015!&quot;<br />
+Loud minority: &quot;OMG, why is it not here yet? It's fucking February already you lying lazy bastards!&quot;<br />
+<br />
+It was announced in the 6.1 teaser not &quot;some point in 2015&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">XanderGryphon</div><div class="date">2015-01-26, 08:28 PM</div></div><div class="posttext">It was announced in the 6.1 teaser not &quot;some point in 2015&quot;.<br />
+<br />
+It was mentioned in the &quot;World of Warcraft in the New Year&quot; post that they were looking into the possibility of buying game-time tokens for gold.<br />
+<br />
+That post wasn't just 6.1 teaser, either. It was more of a 2015 teaser that focused primarily - but not exclusively - on 6.1.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">force18</div><div class="date">2015-01-26, 08:35 PM</div></div><div class="posttext">Hi <br />
+<br />
+Could someone explain this one a little bit more to me?<br />
+<br />
+We are starting with mission data today, looking at 2.7 million players and 4.4 million characters.<br />
+<br />
+Is this NA Armory data, Europe, NA/Europe Worldwide data? Sorry if I am missing where this is discussed in the post I am just trying to figure out if this was a sample size. I am guessing 2.7m players are accounts and those 2.7m accounts there are a total of 4.4m characters?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2015-01-26, 08:35 PM</div></div><div class="posttext">Is there any way to know how many missions have you made, after the achievement: On a Metric Ton of Missions?<br />
+<br />
+<br />
+Unfortunately the Battle.Net API doesn't give us any garrison specific information, so all we can look at is achievements. You can always give this post a thumbs up (http://us.battle.net/en/forum/topic/15270937621#1) to show your interest in having garrison data in the API though!<br />
+Everyone please vote that forum comment up. Let's get Blizzard to expand the API to include garrison stats! :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">deplorable</div><div class="date">2015-01-26, 08:43 PM</div></div><div class="posttext">garrison mission quests, oh yeah those are a dime a dozen.. <br />
+<br />
+<br />
+the garrison campaign missions, i'm still waiting for my first one... as my ticket closed itself without any real closure.<br />
+<br />
+<br />
+maybe if i do nothing. it'll happen. sigh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Graeham</div><div class="date">2015-01-26, 08:53 PM</div></div><div class="posttext">garrison mission quests, oh yeah those are a dime a dozen.. <br />
+<br />
+<br />
+the garrison campaign missions, i'm still waiting for my first one... as my ticket closed itself without any real closure.<br />
+<br />
+<br />
+maybe if i do nothing. it'll happen. sigh.<br />
+<br />
+I've not had one in weeks - faction changes seem to cause them to bug out and not appear at all. :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2015-01-27, 03:12 AM</div></div><div class="posttext">I've not had one in weeks - faction changes seem to cause them to bug out and not appear at all. :(<br />
+I don't think it's exclusively due to faction changing. I went without the weekly garrison campaign quest for weeks after completing The Fall of Shattrath, only for a new one to inexplicably spawn late last week.<br />
+<br />
+Some have never been able to start, others were doing fine until randomly they weren't... It's completely messed up where the Garrison Campaign quests are concerned.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-01-27, 06:30 AM</div></div><div class="posttext">Hi <br />
+<br />
+Could someone explain this one a little bit more to me?<br />
+<br />
+We are starting with mission data today, looking at 2.7 million players and 4.4 million characters.<br />
+<br />
+Is this NA Armory data, Europe, NA/Europe Worldwide data? <br />
+<br />
+US and EU. Other regions have very slow and unreliable APIs that make grabbing their data not worth the hassle.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2015-01-27, 06:43 AM</div></div><div class="posttext">It was announced in the 6.1 teaser not &quot;some point in 2015&quot;.<br />
+<br />
+Clueless poster. It was ANNOUNCED as something they are working on for 2015. For the love of god, how do you people survive in life if you have to cry over such unimportant things..and then not even be accurate.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2015-01-27, 06:40 PM</div></div><div class="posttext">It was mentioned in the &quot;World of Warcraft in the New Year&quot; post that they were looking into the possibility of buying game-time tokens for gold.<br />
+<br />
+That post wasn't just 6.1 teaser, either. It was more of a 2015 teaser that focused primarily - but not exclusively - on 6.1.<br />
+<br />
+Um, no. It was specifically the 6.1 teaser.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Clueless poster. It was ANNOUNCED as something they are working on for 2015. For the love of god, how do you people survive in life if you have to cry over such unimportant things..and then not even be accurate.<br />
+<br />
+If it were a post about what's coming in 2015 and not what's coming in 6.1 then where is the listing for the next raid? By your logic that means 6.2 won't be out till 2016. It was a SIX POINT ONE teaser.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nazmina</div><div class="date">2015-01-27, 06:48 PM</div></div><div class="posttext">Um, no. It was specifically the 6.1 teaser.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+http://blue.mmo-champion.com/topic/354757-world-of-warcraft-in-the-new-year/<br />
+<br />
+<br />
+We’re excited about what’s ahead in 2015, and we wanted to give you a glimpse at some of the long-term projects we’re working on, as well as some features planned for the Patch 6.1 update, which will be hitting the Public Test Realm (PTR) soon.<br />
+<br />
+The post included both long term plans and specific 6.1 content.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+We’re exploring the possibility of giving players a way to buy tradable game-time tokens for the purpose of exchanging them in-game with other players for gold. Our current thought on this is that it would give players a way to use their surplus gold to cover some of their subscription cost, while giving players who might have less play time an option for acquiring gold from other players through a legit and secure system. A few other online games offer a similar option, and players have suggested that they’d be interested in seeing something along those lines in WoW. We agree it could be a good fit for the game, and we look forward to any feedback you have as we continue to look into this feature.<br />
+<br />
+<br />
+Exploring the possibility means its not even guaranteed, though I certainly hope they go forward with it.<br />
+<br />
+No where was it promised and especially not for 6.1</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

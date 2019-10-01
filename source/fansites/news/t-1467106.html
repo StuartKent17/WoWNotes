@@ -1,0 +1,1173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, and, that, for, some, abilities, now, ability, more, removed, are, power, this, other, game, same, players, health, with, we’re, your, spells, will, one, all, them, content, damage, hit, its, but, still, reduce, category, want, removing, from, changes, down, stats, you, also, can, where, weve, draenor, warlords, when, these, cooldowns" />
+<meta name="description" content="Dev Watercooler: Pruning the Garden of War 
+Development on World of Warcraft: Warlords of Draenor is progressing well, and we'll soon be ready to enter the first phases of public testing. To help prep you for battle, let’s break down some of the upcoming changes we’re making to stats, abilities, and crowd control for the expansion. 
+ 
+Stat Squish 
+Character progression is one of the hallmarks of any role-playing game, and naturally that means we're always adding more power for players to" />
+<title> Dev Watercooler: Pruning the Garden of War [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Dev Watercooler: Pruning the Garden of War</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1467106.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1467106-Dev-Watercooler-Pruning-the-Garden-of-War">Dev Watercooler: Pruning the Garden of War</a></p>
+<hr />
+<div class="floatcontainer"> </div><br /><div id="pagenumbers"><b>Pages :</b>
+[<b>1</b>]
+<a href="https://www.mmo-champion.com/archive/index.php/t-1467106-p-2.html">2</a>
+</div>
+<hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-02-28, 02:01 AM</div></div><div class="posttext">Dev Watercooler: Pruning the Garden of War<br />
+Development on World of Warcraft: Warlords of Draenor is progressing well, and we'll soon be ready to enter the first phases of public testing. To help prep you for battle, let’s break down some of the upcoming changes we’re making to stats, abilities, and crowd control for the expansion.<br />
+<br />
+Stat Squish<br />
+Character progression is one of the hallmarks of any role-playing game, and naturally that means we're always adding more power for players to acquire. After multiple expansions and content updates, we've reached a point where the numbers for health, damage, and other stats are so big they’re no longer easy for players to grasp. What’s more, a lot of power granularity is tied up in tiers of older content, from Molten Core to Dragon Soul—and while it was once necessary for your character's power to spike up suddenly when you hit level 70, that’s not the case anymore.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/february/graph1.png (http://media.mmo-champion.com/images/news/2014/february/graph1.jpg)<br />
+<br />
+In order to bring things down to a more understandable level, we'll be reducing the scale of stats throughout the game and smoothing out those obsolete spikes, so that power scales linearly through questing content from levels 1 to 85. This applies to creatures, spells, abilities, consumables, gear . . . everything. And while that means your numbers for stats and damage are being reduced by a huge amount, the same goes for creatures' health and damage output. For example, a Fireball that previously hit a creature for 450,000 out of his 3,000,000 health (15% of its health) may now hit that same creature for 30,000 out of its 200,000 health (still 15% of its health).<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/february/graph2.png (http://media.mmo-champion.com/images/news/2014/february/graph2.jpg) <br />
+<br />
+It's important to understand that this isn’t a nerf—in effect, you’ll still be just as powerful, but the numbers that you see will be easier to comprehend. This also won’t reduce your ability to solo old content. In fact, to provide some additional peace of mind, we're implementing further scaling of your power against lower-level targets so that earlier content will be even more accessible than it is now.<br />
+<br />
+We’re also removing all base damage on player spells and abilities and adjusting attack power or spell power scaling as needed, making it so that all specializations will scale at the same rate.<br />
+<br />
+Racial Traits<br />
+We want races to have fun and interesting perks, but if some of those traits are too powerful, players may feel compelled to play a specific race even if it’s not really the one they want to play. For example, Trolls' Berserking ability was extremely powerful, and their Beast Slaying passive was either completely irrelevant or tremendously powerful, based on the situation, compared to other racial traits. On the other end of the spectrum, many races had few or no performance-affecting perks. On top of that, a number of racials that currently grant Hit or Expertise will soon need replacing, since those stats are being removed in Warlords of Draenor.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/february/thumb/racials.jpg (http://media.mmo-champion.com/images/news/2014/february/racials.jpg) <br />
+<br />
+To keep racials more in line with one another, we’ve decided to bring down the couple high outliers, then establish a fair baseline and bring everyone else up to that. We’re accomplishing this by improving old passives, replacing obsolete ones, and adding a few new ones where necessary. Ultimately, our goal is to achieve much better parity among races.<br />
+<br />
+Ability Pruning<br />
+Over the years, we've added significantly more new spells and abilities than we've removed, and the game’s complexity has steadily increased. We’re to the point now where players are starting to get overwhelmed, sometimes feeling like they need dozens of keybinds (in a few extreme cases, over a hundred). While the game is loaded with niche abilities that could theoretically be useful in some rare scenario, in reality, many of these are barely used at all—and in some cases, the game would simply be better off without them.<br />
+<br />
+For Warlords of Draenor, we decided that we needed to pare down the number of abilities available to each class and spec in order to remove some of that unnecessary complexity. That means restricting some abilities to certain specs that really need them instead of being class-wide, and outright removing some other abilities. It also includes removing some Spellbook clutter, such as passives that we can merged with other passives or base abilities.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/february/thumb/abilities.jpg (http://media.mmo-champion.com/images/news/2014/february/abilities.jpg) <br />
+<br />
+This doesn’t mean that we want to reduce the depth of gameplay or dumb things down. We still want players to face interesting decisions during combat, and we still want skill to matter . . . but we can achieve that without the needless complexity in the game now, and we can remove some of the game’s more convoluted mechanics while maintaining depth and skill variety.<br />
+<br />
+One type of ability that we focused on removing is temporary power buffs (aka &quot;cooldowns&quot;). Removing these also helps achieve one of our other goals, which is to reduce the amount of cooldown stacking in the game. In cases where a class or spec has multiple cooldowns that typically end up getting used together (often in a single macro), we merged them, or removed some of them entirely.<br />
+<br />
+The process of determining which spells and abilities to cut or change is a very complex one—we know that every ability feels vital to someone, and we don't take this process lightly. Even if we ended up cutting your favorite ability, we hope you’ll understand why we did so in the context of our larger goals for the expansion. Ultimately, the point of these changes is to increase players' ability to understand the game, not to reduce gameplay depth.<br />
+<br />
+Crowd Control and Diminishing Returns<br />
+One other big takeaway from Mists of Pandaria is that there is currently simply too much crowd control (CC) in the game, especially when it comes to PvP. To address that, we knew that we needed an across-the-board disarmament.<br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/february/thumb/ccandDR.jpg (http://media.mmo-champion.com/images/news/2014/february/ccandDR.jpg) <br />
+<br />
+Here's a summary of the player-cast CC changes:<br />
+<br />
+<br />
+Removed Silence effects from interrupts. Silence effects still exist, but are never attached to an interrupt.<br />
+Removed all Disarms.<br />
+Reduced the number of Diminishing Returns (DR) categories.<br />
+All Roots now share the same DR category.<br />
+<br />
+Exception: Roots on Charge-type abilities have no DR category, but have a very short duration instead.<br />
+<br />
+All Stuns now share the same DR category.<br />
+All Incapacitate (sometimes called &quot;mesmerize&quot;) effects now share the same DR category and have been merged with the Horror DR category.<br />
+Removed the ability to make cast-time CC spells instant with a cooldown.<br />
+Removed many CC spells entirely, and increased the cooldowns and restrictions on others.<br />
+<br />
+Pet-cast CC is more limited, and in many cases has been removed.<br />
+Cyclone can now be dispelled by immunities and Mass Dispel.<br />
+PvP trinkets now grant immunity to reapplication of an effect from the same spell cast when they break abilities with persistent effects, like Solar Beam.<br />
+Long fears are now shorter in PvP due to the added benefit of a fear changing the players position.<br />
+<br />
+<br />
+<br />
+Additionally, we've significantly reduced the number of throughput-increasing cooldowns and procs in order to further reduce burst damage.<br />
+<br />
+Whether your favorite class is losing an ability or taking a hit to its CC potential, we hope this discussion helped you better understand why we’re making these changes. It’s important to remember that other classes will be getting some of their CC removed too. We think this entire package will make exploring Azeroth and PvPing a more enjoyable experience for everyone, and we’re looking forward to having you try them out when we open up the expansion for testing.<br />
+<br />
+In the next Dev Watercooler, we'll explore the changes coming to health and healing in Warlords of Draenor.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baracuda</div><div class="date">2014-02-28, 02:02 AM</div></div><div class="posttext">Nice! Kewl stuff</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Infernix</div><div class="date">2014-02-28, 02:05 AM</div></div><div class="posttext">Despite the declarations of 'not dumbing things down', that's exactly what it looks like to me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Richardbro</div><div class="date">2014-02-28, 02:06 AM</div></div><div class="posttext">.... That's it? All that tease for nothing? Damn lol.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jdance</div><div class="date">2014-02-28, 02:06 AM</div></div><div class="posttext">I was excited for this but there was literally nothing interesting in that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Magmaros</div><div class="date">2014-02-28, 02:06 AM</div></div><div class="posttext">Despite the declarations of 'not dumbing things down', that's exactly what it looks like to me.<br />
+<br />
+Explain please. How does doing 15% of a mobs health before, and 15% of a mobs health after change anything.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">UnifiedDivide</div><div class="date">2014-02-28, 02:06 AM</div></div><div class="posttext">Despite the declarations of 'not dumbing things down', that's exactly what it looks like to me.<br />
+Well that didn't take long...<br />
+<br />
+Looks like fairly interesting stuff to me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">christehchris</div><div class="date">2014-02-28, 02:07 AM</div></div><div class="posttext">&quot;massive infodump&quot;!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">UnifiedDivide</div><div class="date">2014-02-28, 02:07 AM</div></div><div class="posttext">I was excited for this but there was literally nothing interesting in that.<br />
+Nothing interesting to you, maybe, sure.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">darkwarrior42</div><div class="date">2014-02-28, 02:07 AM</div></div><div class="posttext">&quot;It's important to understand that this isn’t a nerf—in effect, you’ll still be just as powerful, but the numbers that you see will be easier to comprehend.&quot;<br />
+<br />
+Translation: The majority of our playerbase is too stupid to understand big numbers, so we're making life less scary for them. <br />
+<br />
+(I have seen some very good reasons for an item squish. This is not one of them.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Infernix</div><div class="date">2014-02-28, 02:08 AM</div></div><div class="posttext">Explain please. How does doing 15% of a mobs health before, and 15% of a mobs health after change anything.<br />
+<br />
+Wasn't referring to the squish so much as ability removal. It looks to me as if they're simplifying things even more so that the game is basically 'smash buttons' and win. <br />
+<br />
+Catering to the lowest common denominator.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf0a8756358</div><div class="date">2014-02-28, 02:08 AM</div></div><div class="posttext">now come the whine posts and that blizzard sucks etc cos the mmo -champion kids didnt get the info they wanted</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">godofslack</div><div class="date">2014-02-28, 02:08 AM</div></div><div class="posttext">I'm not sure I like the reduction of big cooldowns, I like being able to choose which one to activate at which time, but I do mostly play tanks and healers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">GatorAJ</div><div class="date">2014-02-28, 02:09 AM</div></div><div class="posttext">&quot;It's important to understand that this isn’t a nerf—in effect, you’ll still be just as powerful, but the numbers that you see will be easier to comprehend.&quot;<br />
+<br />
+Translation: The majority of our playerbase is too stupid to understand big numbers, so we're making life less scary for them. <br />
+<br />
+(I have seen some very good reasons for an item squish. This is not one of them.)<br />
+<br />
+Making the numbers simpler IS a good reason, bother for the player base and for the system of the game itself. I believe it was Daught of Midwinter who mentioned Ra-Den becoming immune to damage on one of their attempts because his health became too high for the game to comprehend and calculate anymore.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bullettime</div><div class="date">2014-02-28, 02:10 AM</div></div><div class="posttext">I'm not sure I like the reduction of big cooldowns, I like being able to choose which one to activate at which time, but I do mostly play tanks and healers.<br />
+<br />
+The cooldown removal is largely targeted at specs that have to sync multiple cooldowns together for optimal benefit. Paladin cooldowns and Warrior Skull Banner + Recklessness. These cooldowns are always used with one another and rarely, if ever, used by themselves. By making them one ability instead of two, you cut down on a bind.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rustedsaint</div><div class="date">2014-02-28, 02:10 AM</div></div><div class="posttext">No disarms! Im so happy now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mormolyce</div><div class="date">2014-02-28, 02:10 AM</div></div><div class="posttext">I'm glad they finally looked at the excessive power of long duration fears. All in all, sound like great changes.<br />
+<br />
+Until they announce the specific skill changes, at which point we will all QQ that our favourite ability is gone!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aertea</div><div class="date">2014-02-28, 02:10 AM</div></div><div class="posttext">Nothing interesting to you, maybe, sure.<br />
+<br />
+What's interesting about it? This is quite literally the same crap they announced at Blizzcon 6 months ago.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf0a8756358</div><div class="date">2014-02-28, 02:11 AM</div></div><div class="posttext">Wasn't referring to the squish so much as ability removal. It looks to me as if they're simplifying things even more so that the game is basically 'smash buttons' and win. <br />
+<br />
+Catering to the lowest common denominator.<br />
+<br />
+well isnt that what you do anyway to win is to mash your keybinds down to beat people now in your burst seriously get a clue, this isnt a beat em up game which is where the term button masher comes from, you mash all your buttons trying to do a super hadoken or something when on wow you press your abilities in rotation not hard to do and some classes rely on mashing buttons cos they attack fast like dk'rogues warriors pretty muc hevery melee</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6eb9c8024c</div><div class="date">2014-02-28, 02:12 AM</div></div><div class="posttext">No new news... <br />
+<br />
+Was hopping for real news not something they said like 40 times from Blizzcon till today :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Algore</div><div class="date">2014-02-28, 02:13 AM</div></div><div class="posttext">I expected nothing from Blizzard, and I got nothing! Massive info dump? Haha.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aliok</div><div class="date">2014-02-28, 02:13 AM</div></div><div class="posttext">&quot;Removed Silence effects from interrupts. Silence effects still exist, but are never attached to an interrupt.&quot;<br />
+&quot;Removed all Disarms.&quot;<br />
+<br />
+Is anyone else having a bit of panic attack on how this is going to affect PvE?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">darkwarrior42</div><div class="date">2014-02-28, 02:13 AM</div></div><div class="posttext">Making the numbers simpler IS a good reason, bother for the player base and for the system of the game itself. I believe it was Daught of Midwinter who mentioned Ra-Den becoming immune to damage on one of their attempts because his health became too high for the game to comprehend and calculate anymore.<br />
+<br />
+What you just gave was a good reason, that had literally nothing to do with making them &quot;easier to understand&quot;. If your comment was an attempt to address mine, you completely missed the point of my complaint. <br />
+<br />
+Making the game better able to process numbers is a good reason. Assuming that we're too stupid to understand what &quot;687 million hp&quot; means is not.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Noct</div><div class="date">2014-02-28, 02:13 AM</div></div><div class="posttext">Baffled that they are removing disarms entirely. Definitely did not see this one coming. Happy CC in general is getting hindered though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gilderoy</div><div class="date">2014-02-28, 02:13 AM</div></div><div class="posttext">This was an extremely disappointing update in a huge series of disappointing updates from Blizzard on this expansion...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Constellation</div><div class="date">2014-02-28, 02:14 AM</div></div><div class="posttext">.....................................</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Derah</div><div class="date">2014-02-28, 02:14 AM</div></div><div class="posttext">&quot;Massive Infodump&quot;?<br />
+<br />
+If this is their definition of &quot;massive&quot; I really don't want to know their definition of small. This is the second time they word their damned tweets as if to say they're gonna say a lot and end up saying almost nothing at all.<br />
+<br />
+This isn't a &quot;massive&quot; infodump, this is a tiny footnote.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb824cd7938</div><div class="date">2014-02-28, 02:14 AM</div></div><div class="posttext">this was great news!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Teebu</div><div class="date">2014-02-28, 02:15 AM</div></div><div class="posttext">Nothing too new. They mentioned that &quot;soloing will be easier&quot; because how you interact with lower levelled mobs, interesting. Also interesting to know the new DRs for CC. Other than that, it's not something we haven't heard stated before I believe.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">blaqkmagick</div><div class="date">2014-02-28, 02:15 AM</div></div><div class="posttext">I over hyped myself for that. Kind of disappointed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lockula</div><div class="date">2014-02-28, 02:15 AM</div></div><div class="posttext">A look at the graphs help to show just much power has increased over the expacs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Takure</div><div class="date">2014-02-28, 02:15 AM</div></div><div class="posttext">Well, that was underwhelming. Just feeding us more stuff that we already know.... again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Adoxe</div><div class="date">2014-02-28, 02:15 AM</div></div><div class="posttext">&quot;Massive Infodump&quot;?<br />
+<br />
+If this is their definition of &quot;massive&quot; I really don't want to know their definition of small. This is the second time they word their damned tweets as if to say they're gonna say a lot and end up saying almost nothing at all.<br />
+<br />
+This isn't a &quot;massive&quot; infodump, this is a tiny footnote.<br />
+<br />
+For someone who's expecting new information you really aren't paying much attention. Instead of releasing a giant blog post they cut it into bits and pieces, they'll release it one by one until Beta starts.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Toiran</div><div class="date">2014-02-28, 02:16 AM</div></div><div class="posttext">Wow that's disappointing, I knew it was going to be a short blog post, but no examples of racials? no examples of removed abilites? Just why they are doing it? Makes sense to say that you know...when you show what your doing.<br />
+<br />
+Bah...<br />
+<br />
+Disarm removed is somewhat interesting, along with what sounds like a buff to make old content easier, hmm.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">UnifiedDivide</div><div class="date">2014-02-28, 02:16 AM</div></div><div class="posttext">Good lord.... this isn't the massive info dump they were talking about, obviously.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jdance</div><div class="date">2014-02-28, 02:16 AM</div></div><div class="posttext">This was more or less a table of contents.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce213c955fb</div><div class="date">2014-02-28, 02:16 AM</div></div><div class="posttext">&quot;Removed Silence effects from interrupts. Silence effects still exist, but are never attached to an interrupt.&quot;<br />
+&quot;Removed all Disarms.&quot;<br />
+<br />
+Is anyone else having a bit of panic attack on how this is going to affect PvE?<br />
+<br />
+Not really. I think it is safe to assume that things will be adjusted to compensate. (can't imagine things like Embodied Doubts in heroic Garrosh chain casting their stuff unless you stun/silence them)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd123591856</div><div class="date">2014-02-28, 02:16 AM</div></div><div class="posttext">I hope we get some news on what the actual new/changed racials will be. Would be nice for the Alliance to have some more notable racials other than &quot;Every Man for Himself&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce213c955fb</div><div class="date">2014-02-28, 02:17 AM</div></div><div class="posttext">&quot;Massive Infodump&quot;?<br />
+<br />
+If this is their definition of &quot;massive&quot; I really don't want to know their definition of small. This is the second time they word their damned tweets as if to say they're gonna say a lot and end up saying almost nothing at all.<br />
+<br />
+This isn't a &quot;massive&quot; infodump, this is a tiny footnote.<br />
+<br />
+Try doing some simple research before bitching.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Infernix</div><div class="date">2014-02-28, 02:17 AM</div></div><div class="posttext">I have to agree that this wasn't 'massive' at all. A good portion of it was about the squish that we all already knew about. The other stuff is puzzling and disappointing. I simply do not understand blizzard's method of ping-ponging back and forth between 'lots of CC and games last longer' and 'no CC and games are over too quick.' <br />
+<br />
+The other stuff, I'm purely disappointed in. No more days of lining up your CDs for burn phase. Derp players won't have to worry about not doing such things anymore, though, so there's that, right?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Guyviroth</div><div class="date">2014-02-28, 02:18 AM</div></div><div class="posttext">About three-quarters of this info is info we already know.<br />
+<br />
+The only new info we've received is the PvP changes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">the9tail</div><div class="date">2014-02-28, 02:18 AM</div></div><div class="posttext">We are keeping silence but removing disarm...<br />
+Wait what?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">xindralol</div><div class="date">2014-02-28, 02:18 AM</div></div><div class="posttext">why they are removing spells is beyond me. what harm does it do to have some 'fun' or 'rarely-used' spells in the game? I loved mind soothe, even though I didn't use it often. I did love holy nova on my disc priest, and the extra bind was totally worth using it maybe once every 10 games. that doesn't mean I would have lost those games had it not been for this bind, so if you don't like the ability, simply don't use it (or if it's too many spells for you). but why limit those who do care about perfecting their gameplay? why does everything have to be dumbed-down until it's no longer fun?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">UnifiedDivide</div><div class="date">2014-02-28, 02:19 AM</div></div><div class="posttext">I always find it amusing that people that are active on a data-mining website that has info before pretty much any other website complain when they know something already when it's finally announced officially...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jdance</div><div class="date">2014-02-28, 02:20 AM</div></div><div class="posttext">https://twitter.com/Celestalon actual information going out here</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">OneSent</div><div class="date">2014-02-28, 02:20 AM</div></div><div class="posttext">Holy crap. I may actually enjoy PvP again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Toiran</div><div class="date">2014-02-28, 02:21 AM</div></div><div class="posttext">&quot;.@Suplift Night Elves' Quickness also increases movement speed by 2% passively. They also got a new passive which is quite unique...&quot;<br />
+<br />
+https://twitter.com/Celestalon/status/439223286140895234<br />
+<br />
+Well, there is a tiny bit of racial info.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bullettime</div><div class="date">2014-02-28, 02:21 AM</div></div><div class="posttext">We are keeping silence but removing disarm...<br />
+Wait what?<br />
+<br />
+Most disarms are on lengthy cooldowns for only a few seconds and aren't that effective anyways when so many melee have &quot;spell&quot; type attacks. They just serve as an extra bind that doesn't have that much impact.<br />
+<br />
+Silence is required for the DPS vs healer game in PvP. Removing the interrupt + silence mechanics like Counterspell and Spear Hand Strike was already a buff.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf0a8756358</div><div class="date">2014-02-28, 02:22 AM</div></div><div class="posttext">why they are removing spells is beyond me. what harm does it do to have some 'fun' or 'rarely-used' spells in the game? I loved mind soothe, even though I didn't use it often. I did love holy nova on my disc priest, and the extra bind was totally worth using it maybe once every 10 games. that doesn't mean I would have lost those games had it not been for this bind, so if you don't like the ability, simply don't use it (or if it's too many spells for you). but why limit those who do care about perfecting their gameplay? why does everything have to be dumbed-down until it's no longer fun?<br />
+<br />
+ok lets say you have a barely used item in your house like an old car that you drive once a year are you really gonna keep it no what they are doing is removing shit people dnt use which what i dnt get, ppl moan about to many spells then bitch on a fansite that there taking them away.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Icyflamez</div><div class="date">2014-02-28, 02:22 AM</div></div><div class="posttext">Lol at all of you people complaining. If you actually bothered to read dev tweets you would have known that today's blog post contained mostly stuff we've already known about with a few new details and more elaboration. But no, people just like to moan and whine...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jekdin</div><div class="date">2014-02-28, 02:22 AM</div></div><div class="posttext">I've always said that all races need to have the &quot;PVP TRINKET&quot; base, like the human race.<br />
+<br />
+(Re)Name it to &quot;Gladiators Will&quot; or what have you, this lets anyone pick any race for PvP and not lose Min Maxing (due to GEAR, 1 trinket vs 2). I've suggest this since Humans gained this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tofifi</div><div class="date">2014-02-28, 02:23 AM</div></div><div class="posttext">Game looking good without Ghostcrawler. I am amazed how you manage to put people off from playing the game with such consistency. No cooldowns?! uwotm8?! Looking forward to the beta and more surprises.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moradim</div><div class="date">2014-02-28, 02:23 AM</div></div><div class="posttext">TL;DR, &quot;we're dumbing down the game for idiots&quot;<br />
+<br />
+I would love to hear one case of someone raiding that complains they have too many keybinds.<br />
+<br />
+crap! I have too many options! better streamline everything so even a complete moron can be successful!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf0a8756358</div><div class="date">2014-02-28, 02:24 AM</div></div><div class="posttext">pvp might actually be good in wod with the item squish and the rediculous cc taken down to a bare minimum the only ppl who are gonna moan about this is raiders like you dnt get enough already in wow</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ophill</div><div class="date">2014-02-28, 02:24 AM</div></div><div class="posttext">Look at all the stuff we already knew!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FpicEail</div><div class="date">2014-02-28, 02:25 AM</div></div><div class="posttext">Good lord.... this isn't the massive info dump they were talking about, obviously.<br />
+<br />
+<br />
+.... That's it? All that tease for nothing? Damn lol.<br />
+<br />
+<br />
+&quot;massive infodump&quot;!<br />
+<br />
+And the above posts, my friends, represent WoW's community in a nutshell. <br />
+<br />
+Are we all ignoring the fact that Blizzard did not say that today's blog post was a &quot;massive infodump&quot;, when they instead specifically stated that this is NOT that? How many disclaimers does Blizzard have to post before people get the hint?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jd812</div><div class="date">2014-02-28, 02:25 AM</div></div><div class="posttext">this is it? where is the rest?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Infernix</div><div class="date">2014-02-28, 02:25 AM</div></div><div class="posttext">TL;DR, &quot;we're dumbing down the game for idiots&quot;<br />
+<br />
+I would love to hear one case of someone raiding that complains they have too many keybinds.<br />
+<br />
+crap! I have too many options! better streamline everything so even a complete moron can be successful!<br />
+<br />
+Pretty much. This saddens me that the game is turning into Baby's First MMO.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">smartazjb0y</div><div class="date">2014-02-28, 02:26 AM</div></div><div class="posttext">Are people serious? Do people ACTUALLY think this is the full extent of the massive info dump? Celestalon said it was 33 PAGES. You'd have to be blind if you think this is the ENTIRE 33 pages of info. Also, do people not know how to read? Literally earlier TODAY on MMOC's front page, they said there would be a SECOND blog post. If you're complaining about this, you clearly don't know how to read or comprehend, because basically anyone could tell that this is the START of the info dump, not the entire info dump. <br />
+<br />
+Also, lol at people complaining about button reduction. Because it was SUPERHARDCORE, INTELLIGENT gameplay to macro Skull Banner and Recklessness into one button. Blizz decides to put those two abilities together into one button, so it's literally the exact same as how people use it now? BLIZZ Y U DUM DOWN GAME.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">UnifiedDivide</div><div class="date">2014-02-28, 02:27 AM</div></div><div class="posttext">And the above posts, my friends, represent WoW's community in a nutshell. <br />
+<br />
+Are we all ignoring the fact that Blizzard did not say that today's blog post was a &quot;massive infodump&quot;, when they instead specifically stated that this is NOT that? How many disclaimers does Blizzard have to post before people get the hint?<br />
+I was actually posting in reply to all the people claiming it was the info dump, pointing out that it obviously wasn't. Because, well, we knew it wasn't going to be :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Icyflamez</div><div class="date">2014-02-28, 02:27 AM</div></div><div class="posttext">TL;DR, &quot;we're dumbing down the game for idiots&quot;<br />
+<br />
+I would love to hear one case of someone raiding that complains they have too many keybinds.<br />
+<br />
+crap! I have too many options! better streamline everything so even a complete moron can be successful!<br />
+<br />
+Please, having 1-2 less buttons (most likely macro'ed CDs anyway) to push does not equal 'dumbing down the game'.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tofifi</div><div class="date">2014-02-28, 02:27 AM</div></div><div class="posttext">Mr. Bone's wild ride theme park.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf0a8756358</div><div class="date">2014-02-28, 02:27 AM</div></div><div class="posttext">TL;DR, &quot;we're dumbing down the game for idiots&quot;<br />
+<br />
+I would love to hear one case of someone raiding that complains they have too many keybinds.<br />
+<br />
+crap! I have too many options! better streamline everything so even a complete moron can be successful!<br />
+<br />
+dude you dnt even need to keybind in raids anyway ive tried raiding its the most tedious thing in wow i can eat my dinner while raiding all you have to do is spam a few buttons raiding cos your tank takes the damage and if you get hit the healers heal you seriously a butt hurt raider cos theres actually some pvp changes for once. us PVPers hav had to put up with next to no content for years and as soon as we get something people like you start whining dnt like the changes dnt log in this forum and quit wow simple as that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bullettime</div><div class="date">2014-02-28, 02:27 AM</div></div><div class="posttext">TL;DR, &quot;we're dumbing down the game for idiots&quot;<br />
+<br />
+I would love to hear one case of someone raiding that complains they have too many keybinds.<br />
+<br />
+crap! I have too many options! better streamline everything so even a complete moron can be successful!More of why exactly do we need to have some of the things bound that we do.<br />
+<br />
+Why does a Warrior have two keybinds for two different cooldowns that are always used with each other and never used alone? Paladins as well. For a Warrior for example, you have two binds for Banner and Recklessness but they're NEVER used apart.<br />
+<br />
+Why do classes like Hunters, Monks, and Warriors have so many super situational skills or abilities that have a single usage like to slow for a few seconds when more of these effects are being baked into other skills for other classes/specs and auto applied? Hamstring, Concussive Shot, Disable, Widow Venom, etc. These still take up binds.<br />
+<br />
+Why do some classes like Hunters have garbage left in their spellbook that are barely ever used like Beast Lore and Feed Pet?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Paula Deen</div><div class="date">2014-02-28, 02:27 AM</div></div><div class="posttext">Pretty much. This saddens me that the game is turning into Baby's First MMO.<br />
+<br />
+Literally the dumbest thing I think I have ever read. WoW has always been that. ALWAYS!!!!!!!!<br />
+<br />
+It was a more casual Everquest, seriously holy shit people, get a grip.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">iriecolorado</div><div class="date">2014-02-28, 02:28 AM</div></div><div class="posttext">Does anybody know when they're going to release this &quot;massive info-dump of exciting and new information?&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dromango</div><div class="date">2014-02-28, 02:28 AM</div></div><div class="posttext">''Cyclone can now be dispelled by immunities and Mass Dispel.<br />
+<br />
+Does that mean pallies can dispel cyclones?<br />
+<br />
+Holy snakes, pvp might be fun again!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">smartazjb0y</div><div class="date">2014-02-28, 02:29 AM</div></div><div class="posttext">Pretty much. This saddens me that the game is turning into Baby's First MMO.<br />
+<br />
+gaiz im smart cuz i good at raiding. <br />
+<br />
+Grow up dude, no one cares that you're &quot;l33t&quot; and can press 5 buttons as opposed to 4</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darkener</div><div class="date">2014-02-28, 02:29 AM</div></div><div class="posttext">Here's a preview of the &quot;Health and Healing&quot; water cooler blog:<br />
+<br />
+&quot;We think healing should be fun. In WoD, healing will be fun. We know it will, because we said so. Health will be fun to heal. We think you should be smart, and not your healing spells. Therefore, we are introducing a brand new concept that we are just announcing now, it is called &quot;not quite so smart healing&quot;. Before, when you cast a smart heal it would typically always heal the lowest health player(s). Now, with the revolutionary and fun new healing approach your heals will &quot;not necessarily always heal&quot; the lowest health player(s). But maybe they will, you just don't really know and that's the most exciting change introduced to healing since the very first release of World of Warcraft. Oh, and you will lose 20% of your healing spells, because that is more fun than having to deal with 20% more healing spells than the amount of healing spells we decided was fun. <br />
+<br />
+We hope you enjoyed learning about the new fun way of healing in WoD, and in the next blog we will talk about some exciting new changes we like to call &quot;normal is the new flexible&quot; raid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Finny</div><div class="date">2014-02-28, 02:29 AM</div></div><div class="posttext">&quot;Massive Infodump&quot;?<br />
+<br />
+If this is their definition of &quot;massive&quot; I really don't want to know their definition of small. This is the second time they word their damned tweets as if to say they're gonna say a lot and end up saying almost nothing at all.<br />
+<br />
+This isn't a &quot;massive&quot; infodump, this is a tiny footnote.<br />
+<br />
+You and all the other morons seemed to have glanced over the last sentence of the post saying there would be a next another. This isn't all the information they were talking about, they broke it up into more than one post. It makes it easier to digest and read through. I wouldn't be surprised if this became a mini series.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Schizoide</div><div class="date">2014-02-28, 02:29 AM</div></div><div class="posttext">All blog posts are seriously underwhelming compared to that first mmo-champ beta patch datamine. This one had almost no specific info at all, so it was particularly yawn-worthy. Celestalon is giving out some juicy info on his twitter, though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ToxTheWrecker</div><div class="date">2014-02-28, 02:29 AM</div></div><div class="posttext">I for one, is one satisfied player for CC control reduction. No more of this 5-12 second stun chain garbage, especially being a Warrior where I can't &quot;blink&quot; or shift form out of CCs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aliok</div><div class="date">2014-02-28, 02:31 AM</div></div><div class="posttext">&quot;.@Suplift Night Elves' Quickness also increases movement speed by 2% passively. They also got a new passive which is quite unique...&quot;<br />
+<br />
+https://twitter.com/Celestalon/status/439223286140895234<br />
+<br />
+Well, there is a tiny bit of racial info.<br />
+<br />
+He also tweeted a follow-up. I think he's serious.<br />
+(Remember, no more haste breakpoints!) Touch of Elune, a new passive which grants 1% Haste at night, 1% Crit during the day. (Source (https://twitter.com/Celestalon/status/439223530324901888))</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf6aadac82a</div><div class="date">2014-02-28, 02:31 AM</div></div><div class="posttext">Those graphs with their flacid snakes showing player power are enough to get anybody excited!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MAXCAVALERA</div><div class="date">2014-02-28, 02:32 AM</div></div><div class="posttext">Great changes , needed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dDic</div><div class="date">2014-02-28, 02:32 AM</div></div><div class="posttext">How are we going to have silences that don't interrupt? Will they just politely let us continue casting the last spell we cast while we're silenced?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">edmorte</div><div class="date">2014-02-28, 02:32 AM</div></div><div class="posttext">Big ideas, implementation remains to be seem.<br />
+<br />
+Blizz lost its credit with me, i only believe when i see it. I bet a lot of QQ will change a lot of good stuff planed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hitei</div><div class="date">2014-02-28, 02:33 AM</div></div><div class="posttext">TL;DR, &quot;we're dumbing down the game for idiots&quot;<br />
+<br />
+I would love to hear one case of someone raiding that complains they have too many keybinds.<br />
+<br />
+crap! I have too many options! better streamline everything so even a complete moron can be successful!<br />
+<br />
+Or maybe it isn't for raiding?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Therec</div><div class="date">2014-02-28, 02:34 AM</div></div><div class="posttext">Removing ability bloat doesn't fix the terribads. Fire will still be on the ground, and they will still stand in it and die. If I can pop a single CD every 1.5 minutes instead of macroing 4 then it makes no difference.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mestido</div><div class="date">2014-02-28, 02:35 AM</div></div><div class="posttext">When the 90 boost be available? I wanna start playing again...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Terminal Lance</div><div class="date">2014-02-28, 02:36 AM</div></div><div class="posttext">The new info is trickling in now. Jesus peeps, have some patience :p</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Straamibuu</div><div class="date">2014-02-28, 02:36 AM</div></div><div class="posttext">I for one, is one satisfied player for CC control reduction. No more of this 5-12 second stun chain garbage, especially being a Warrior where I can't &quot;blink&quot; or shift form out of CCs.<br />
+<br />
+Yeah, warriors can't break out of fears now can they?.....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Doomchicken</div><div class="date">2014-02-28, 02:36 AM</div></div><div class="posttext">Wasn't referring to the squish so much as ability removal. It looks to me as if they're simplifying things even more so that the game is basically 'smash buttons' and win. <br />
+<br />
+Catering to the lowest common denominator.<br />
+<br />
+Yes, because it was so hard back in vanilla and tbc when your entire dps rotation consisted of maybe 2 buttons. Things are SOOOOO much dumber now /sarcasm</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moradim</div><div class="date">2014-02-28, 02:37 AM</div></div><div class="posttext">I would make the case that a lot of dps specs need MORE depth.<br />
+<br />
+How do we get that by taking abilities away, or making them passives? also, the comment about removing abilities depending on spec has me worried, especially on my paladin. watch them do something stupid like take healing spells away from ret, and making them holy only.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5b249aa738</div><div class="date">2014-02-28, 02:37 AM</div></div><div class="posttext">Good lord.... this isn't the massive info dump they were talking about, obviously.<br />
+<br />
+Plot twist: this IS the massive info dump they talked about :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc54008b834d</div><div class="date">2014-02-28, 02:40 AM</div></div><div class="posttext">Please stop taking the stat squish as dumbing down the game. There is actually a real issue with such high numbers (bad idea blizzard not to mention it when you know mmo-champion exist), the game simply can't handle it. I'm assuming blizzard are using 32 bit integers for storing health and such, thus they're about to reach the limit of what you can store in the memory with that datatype, 2^31-1. This stat squish is needed because there is actually a limit to what a computer can store in memory. Of course if they use anything higher than 32 bit integers to store health then this explanation is not true, but it seems likely to me that this is the reason (maybe it has even been said by blizzard).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Remsaa</div><div class="date">2014-02-28, 02:41 AM</div></div><div class="posttext">Look at all the stuff we already knew!<br />
+<br />
+Good stuff! Getting rid of the bloat (bloat doesn't mean complexity btw), and over-the-top CC and numbers that are so high they are hard to comprehend (I'm looking at you Chaos Bolts for 2 million).<br />
+<br />
+PvP will be awesome, racials will be better (I wouldn't be surprised if Humans get their pvp trink slot removed), and raiding will be much the same because the tuning and encounters will be based on all the changes as well.<br />
+<br />
+So many Chicken Little's running around here though, as is always the case in MMO-Champion's forums.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aliok</div><div class="date">2014-02-28, 02:41 AM</div></div><div class="posttext">I would make the case that a lot of dps specs need MORE depth.<br />
+<br />
+How do we get that by taking abilities away, or making them passives? also, the comment about removing abilities depending on spec has me worried, especially on my paladin. watch them do something stupid like take healing spells away from ret, and making them holy only.<br />
+<br />
+I'm still very mad at them for making Consecration and Holy Wrath protadin-only spells. :| I can totally see them taking away Flash of Light from retadin.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">korvalos</div><div class="date">2014-02-28, 02:44 AM</div></div><div class="posttext">Was definitely excited for this - Now, am definitely disappointed; all that hype for this ? That was information we were already privy to (Reducing CC, Stat Squish, Ability pruning). <br />
+<br />
+Moreover, as much as they are saying &quot;we're not dumbing things down,&quot; that is EXACTLY what this appears to be. They are taking the skill/strategy out of PvP and allowing for more of a mindless, button-mashing mentality. Sure, CC needed to be toned down and I'm sure that will help improve the PvP experience, but the rest of that mess accomplishes nothing other than reducing the skill cap. No longer must we time cooldowns for kills, use disarm offensively/defensively, interrupt a heal while target is near death to buy a brief lock-out kill window. <br />
+<br />
+I took joy in using disarm on a toon gibbing my healer, or lining up arena kills with cooldowns/interrupts, or just catching that WSG flag carrier to blow my cooldowns and finish him off. Now, no disarm fun, a simple interrupt allowing the healer to instantly start casting again, and no cooldowns to be used at strategic times in battle. They are going to have to compensate, hugely in other areas to make this work. Homogenization began slowly years ago - And it seems they are now putting the pedal to the metal. <br />
+<br />
+While Blizzard has definitely set the tone, I'll try to remain optimistic.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bullettime</div><div class="date">2014-02-28, 02:47 AM</div></div><div class="posttext">Was definitely excited for this - Now, am definitely disappointed; all that hype for this ? That was information we were already privy to (Reducing CC, Stat Squish, Ability pruning). <br />
+<br />
+Moreover, as much as they are saying &quot;we're not dumbing things down,&quot; that is EXACTLY what this appears to be. They are taking the skill/strategy out of PvP and allowing for more of a mindless, button-mashing mentality. Sure, CC needed to be toned down and I'm sure that will help improve the PvP experience, but the rest of that mess accomplishes nothing other than reducing the skill cap. No longer must we time cooldowns for kills, use disarm offensively/defensively, interrupt a heal while target is near death to buy a brief lock-out kill window. <br />
+<br />
+I took joy in using disarm on a toon gibbing my healer, or lining up arena kills with cooldowns/interrupts, or just catching that WSG flag carrier to blow my cooldowns and finish him off. Now, no disarm fun, a simple interrupt allowing the healer to instantly start casting again, and no cooldowns to be used at strategic times in battle. They are going to have to compensate, hugely in other areas to make this work. Homogenization began slowly years ago - And it seems they are now putting the pedal to the metal. <br />
+<br />
+While Blizzard has definitely set the tone, I'll try to remain optimistic.<br />
+They aren't removing all cooldowns. They're removing ones that are just stacked with others and never used by themselves. Skull Banner is gone, Recklessness gets Skull Banner's personal functionality since the two were ALWAYS synced, Paladins will see some desyncing, Shadow Blades axed from Rogues since it was always used in sync with Vendetta/Adrenaline Rush and was awkward for sub, etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Terminal Lance</div><div class="date">2014-02-28, 02:48 AM</div></div><div class="posttext">Start editing your &quot;OMG THIS BIG POST? WTF BLIZ SUX&quot; posts.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CasCrow</div><div class="date">2014-02-28, 02:48 AM</div></div><div class="posttext">COME ON! I MUST KNOW GNOME AND DWARF RACIALS! *caps intended*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5b249aa738</div><div class="date">2014-02-28, 02:48 AM</div></div><div class="posttext">Was definitely excited for this - Now, am definitely disappointed; all that hype for this ? That was information we were already privy to (Reducing CC, Stat Squish, Ability pruning). <br />
+<br />
+Moreover, as much as they are saying &quot;we're not dumbing things down,&quot; that is EXACTLY what this appears to be. They are taking the skill/strategy out of PvP and allowing for more of a mindless, button-mashing mentality. Sure, CC needed to be toned down and I'm sure that will help improve the PvP experience, but the rest of that mess accomplishes nothing other than reducing the skill cap. No longer must we time cooldowns for kills, use disarm offensively/defensively, interrupt a heal while target is near death to buy a brief lock-out kill window. <br />
+<br />
+I took joy in using disarm on a toon gibbing my healer, or lining up arena kills with cooldowns/interrupts, or just catching that WSG flag carrier to blow my cooldowns and finish him off. Now, no disarm fun, a simple interrupt allowing the healer to instantly start casting again, and no cooldowns to be used at strategic times in battle. They are going to have to compensate, hugely in other areas to make this work. Homogenization began slowly years ago - And it seems they are now putting the pedal to the metal. <br />
+<br />
+While Blizzard has definitely set the tone, I'll try to remain optimistic.<br />
+<br />
+Don't expect any breaking news until the beta patch notes are out. And even then don't expect too much. We pretty much know everything that's relevant from Blizzcon already</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">City Pop</div><div class="date">2014-02-28, 02:49 AM</div></div><div class="posttext">Good stuff, love all of the CC bulletins.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bullettime</div><div class="date">2014-02-28, 02:51 AM</div></div><div class="posttext">COME ON! I MUST KNOW GNOME AND DWARF RACIALS! *caps intended*<br />
+<br />
+-Shortblade is gone. Nimble Fingers gives 1% Haste and the mana bonus now also applies to Rage, Energy, and Runic Power. Escape Artist is now 1 minute.<br />
+-Dwarf Crack Shot is gone. They get 2% bonus crit damage and healing instead. Stoneform now also applies to magic and curses.<br />
+<br />
+Everything else from the leak was confirmed today so these are likely still what they're going with.<br />
+<br />
+edit: Was just confirmed by Celestalon.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">sargior</div><div class="date">2014-02-28, 02:51 AM</div></div><div class="posttext">How are we going to have silences that don't interrupt? Will they just politely let us continue casting the last spell we cast while we're silenced?<br />
+<br />
+Kick provides a silence of that school of magic after its initial interrupt. The silence from kick will be removed. Well that's how i interpreted that change.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yig</div><div class="date">2014-02-28, 02:52 AM</div></div><div class="posttext">YAY for soloing older stuff I missed !</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Myrthrall</div><div class="date">2014-02-28, 02:52 AM</div></div><div class="posttext">&quot;It's important to understand that this isn’t a nerf—in effect, you’ll still be just as powerful, but the numbers that you see will be easier to comprehend.&quot;<br />
+<br />
+Translation: The majority of our playerbase is too stupid to understand big numbers, so we're making life less scary for them. <br />
+<br />
+(I have seen some very good reasons for an item squish. This is not one of them.)<br />
+Dude please don't go there. That may be the reason they stated here because it's info for the players about the changes, but the real reason behind the squish is because soon the system wont be able to process the numbers.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FpicEail</div><div class="date">2014-02-28, 02:53 AM</div></div><div class="posttext">Was definitely excited for this - Now, am definitely disappointed; all that hype for this ? That was information we were already privy to (Reducing CC, Stat Squish, Ability pruning). <br />
+<br />
+<br />
+Hype? You mean this hype?:<br />
+<br />
+The goal with the blog going up today is largely to paint a broad picture of some interconnected systems changes. From the recent press tour there's been a lot of confusion and misconceptions because individual changes are being seen without a larger context of the expansion as a whole. We're just looking to provide a little more of that context. If you've been following interviews and information very closely this will likely be interesting, but probably not revelatory.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc859327f960</div><div class="date">2014-02-28, 02:56 AM</div></div><div class="posttext">NICE.<br />
+<br />
+Removing abilities and overlapping conditions for CC is not to be dumbing down the game. That is a misunderstanding; dumbing down the game would be to make fewer things viable - regardless of whether the game had a hundred abilities or two.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CasCrow</div><div class="date">2014-02-28, 03:00 AM</div></div><div class="posttext">-Shortblade is gone. Nimble Fingers gives 1% Haste and the mana bonus now also applies to Rage, Energy, and Runic Power. Escape Artist is now 1 minute.<br />
+-Dwarf Crack Shot is gone. They get 2% bonus crit damage and healing instead. Stoneform now also applies to magic and curses.<br />
+<br />
+Everything else from the leak was confirmed today so these are likely still what they're going with.<br />
+<br />
+edit: Was just confirmed by Celestalon.<br />
+So happy for the 2 races that I use! im still refreshing for gnomes even though the leak may be correct.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">smartazjb0y</div><div class="date">2014-02-28, 03:01 AM</div></div><div class="posttext">NICE.<br />
+<br />
+Removing abilities and overlapping conditions for CC is not to be dumbing down the game. That is a misunderstanding; dumbing down the game would be to make fewer things viable - regardless of whether the game had a hundred abilities or two.<br />
+<br />
+&quot;Dumbing down&quot; and &quot;lowest common denominator&quot; are just buzz words that people like to use in order to feel intellectually superior over others because of a video game, even though it's not true.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Clockwork Pinkie</div><div class="date">2014-02-28, 03:16 AM</div></div><div class="posttext">Nothing important for me as a disc priest, or as a disc priest going against other classes. And we are? Moving on. (ah Disney World)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc859327f960</div><div class="date">2014-02-28, 03:18 AM</div></div><div class="posttext">&quot;Dumbing down&quot; and &quot;lowest common denominator&quot; are just buzz words that people like to use in order to feel intellectually superior over others because of a video game, even though it's not true.<br />
+<br />
+Well, they could dumb down the game, in my opinion, like any other game producer could with their game, but it's not related to the number of things in the game, but instead to the degree of intelligent choice that the player has to make. So adding more abilities could well make the game dumber if the those abilities are not to be considered for intelligent use, ie. are viable.<br />
+<br />
+Catering to the lowest common denominator means to me that one disregards everything individual in a character and makes everything streamlined towards this lowest, shared fact. Ie. purples for everyone - why? Because they have a character. Everyone can raid - why? Because they have a chance to see things, so therefore things should be as easy as possible.<br />
+<br />
+So it is very possible in my opinion, but there's nothing that suggests the game is being dumbed down by the info in this blog post. It does not seem like any intelligent choice is being crushed, instead it actually seems like more abilities are made viable thereby making the game more rely more on intelligence.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tripax</div><div class="date">2014-02-28, 03:19 AM</div></div><div class="posttext">I'm not sure I like the reduction of big cooldowns, I like being able to choose which one to activate at which time, but I do mostly play tanks and healers.<br />
+<br />
+fire ele totem + spirit wolves + stormlash totem + ascendence + synapse springs + heroism... Plus the rotational stuff between is a lot of popping to do in my opinion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">iriecolorado</div><div class="date">2014-02-28, 03:23 AM</div></div><div class="posttext">Well, the one good take-away from all of this is I won't be raiding with 19 other trolls because of their ridiculously superior racials.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zergin8r</div><div class="date">2014-02-28, 03:38 AM</div></div><div class="posttext">Wasn't referring to the squish so much as ability removal. It looks to me as if they're simplifying things even more so that the game is basically 'smash buttons' and win. <br />
+<br />
+Catering to the lowest common denominator.<br />
+<br />
+It's quite the opposite, now you have to choose targets in pvp more carefully, and with the trinket/DR changes set up CC better as well. Removing blanket silences means hunters have to think about what to interrupt instead of seeing a caster, using silencing shot and popping CD's to kill them before they can do anything in return. When you think about all they are doing is actually allowing players to make meaningful choices instead of tunneling another player with CD's popped.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Doomchicken</div><div class="date">2014-02-28, 03:43 AM</div></div><div class="posttext">Well, the one good take-away from all of this is I won't be raiding with 19 other trolls because of their ridiculously superior racials.<br />
+<br />
+Depends on if they get rid of the beast damage racial as well. If they don't and there is another ToT like tier where 5 of the bosses are or have beasts in them you can be damn sure you'll still have your troll army. :p<br />
+<br />
+- - - Updated - - -<br />
+<br />
+Sooooo, nothing is changing about shamans then or are they still updating?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moradim</div><div class="date">2014-02-28, 04:14 AM</div></div><div class="posttext">whats the better solution:<br />
+<br />
+1) educate players on how to play properly<br />
+<br />
+2) dumb down the game so they cant fail/do poorly<br />
+<br />
+removing depth isnt a good idea.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Drahkais</div><div class="date">2014-02-28, 04:20 AM</div></div><div class="posttext">Also, lol at people complaining about button reduction. Because it was SUPERHARDCORE, INTELLIGENT gameplay to macro Skull Banner and Recklessness into one button.<br />
+<br />
+It's like you've never played Warrior!<br />
+<br />
+FYI it isn't advisable even now to macro those together unless you are somehow the only Warrior in your guild. Nevermind that with Evil Eye the CDs don't line up right now.<br />
+<br />
+Skull Banner was one of the more interesting CDs Warrior had. It is dumbing down, apparently not mashing in all of your CDs at once and avoiding something as simple as not overlapping the effect is too much for people these days.<br />
+<br />
+Of all CDs Warrior had this was the last one I would call bloat.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moradim</div><div class="date">2014-02-28, 04:28 AM</div></div><div class="posttext">still waiting for the actual news post<br />
+<br />
+this was a teaser, right?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc070d81b6e5</div><div class="date">2014-02-28, 04:31 AM</div></div><div class="posttext">Interesting stuff!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cbeefman</div><div class="date">2014-02-28, 04:43 AM</div></div><div class="posttext">I'm still waiting for the news.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">VanishO2</div><div class="date">2014-02-28, 05:10 AM</div></div><div class="posttext">dude you dnt even need to keybind in raids anyway ive tried raiding its the most tedious thing in wow i can eat my dinner while raiding all you have to do is spam a few buttons raiding cos your tank takes the damage and if you get hit the healers heal you seriously a butt hurt raider cos theres actually some pvp changes for once. us PVPers hav had to put up with next to no content for years and as soon as we get something people like you start whining dnt like the changes dnt log in this forum and quit wow simple as that.<br />
+<br />
+Yes, LFR is tedious and boring. Also others rushing you trough a raid is also boring.<br />
+<br />
+And yes, you can eat your dinner while pvping. Anyone can while they are dead after failing in both pve and pvp, and the others can't or don't even care about ressing you. Even if you're alive (like in LFR) you can while getting chain CCed (or chain CCing others).<br />
+<br />
+Why pvp wannabes (wich are basically LFR heroes pretending to be heroic raiders/expert pvp players) pretend that pvp is hard when you even have addons telling you what to interrupt, when and who to focus, etc.?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moradim</div><div class="date">2014-02-28, 05:18 AM</div></div><div class="posttext">the problem with pvp isn't just CC, it's class design.<br />
+<br />
+every single caster has like 90 instant cast spells. devs need to look at the term &quot;caster&quot; and think long and hard about what that means.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Traxex9080</div><div class="date">2014-02-28, 05:22 AM</div></div><div class="posttext">I have to agree that this wasn't 'massive' at all. A good portion of it was about the squish that we all already knew about. The other stuff is puzzling and disappointing. I simply do not understand blizzard's method of ping-ponging back and forth between 'lots of CC and games last longer' and 'no CC and games are over too quick.' <br />
+<br />
+The other stuff, I'm purely disappointed in. No more days of lining up your CDs for burn phase. Derp players won't have to worry about not doing such things anymore, though, so there's that, right?<br />
+<br />
+What CD's did you line up during burn phases exactly besides the ones listed? You'll still have your own personal CDs that you will have to line up during burn phase. If anything its no different that how it was in BC or wrath when there was no skull banner and shit.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+the problem with pvp isn't just CC, it's class design.<br />
+<br />
+every single caster has like 90 instant cast spells. devs need to look at the term &quot;caster&quot; and think long and hard about what that means.<br />
+<br />
+Not sure if you read the post but they mentioned adding cast times to many spells because they know that there are too many instant cast spells.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-02-28, 05:24 AM</div></div><div class="posttext">&quot;It's important to understand that this isn’t a nerf—in effect, you’ll still be just as powerful, but the numbers that you see will be easier to comprehend.&quot;<br />
+<br />
+Translation: The majority of our playerbase is too stupid to understand big numbers, so we're making life less scary for them. <br />
+<br />
+(I have seen some very good reasons for an item squish. This is not one of them.)<br />
+<br />
+<br />
+Then you don´t tank or heal. it isn´t about ´big numbers´ it is about quickly recognizing that 7353034 is 10 times as much as 735034. When those two numbers are flashing across your screen and you have to make a split second decision and try to decide ´is that a serious thing or something that can wait´.<br />
+<br />
+Again, we get it.. dps who only care about looking at numbers after a fight so they can epeen think it is a ´slap in the face´. But tanks in particular have to react quickly to stuff and being able to tell an 8 digit number for a 7 digit number isn´t easy when you have 10 other things going on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Traxex9080</div><div class="date">2014-02-28, 05:27 AM</div></div><div class="posttext">It's like you've never played Warrior!<br />
+<br />
+FYI it isn't advisable even now to macro those together unless you are somehow the only Warrior in your guild. Nevermind that with Evil Eye the CDs don't line up right now.<br />
+<br />
+Skull Banner was one of the more interesting CDs Warrior had. It is dumbing down, apparently not mashing in all of your CDs at once and avoiding something as simple as not overlapping the effect is too much for people these days.<br />
+<br />
+Of all CDs Warrior had this was the last one I would call bloat.<br />
+<br />
+You might be right on the fact that it wasn't really a &quot;bloat&quot; spell. Though you're wrong in the fact that removing such spell dumbs the game down further. It doesn't do that in any way shape or form. Did you yourself have to prioritize when to drop the banner? No, your guild did. Likely on burn phases. You did nothing but press a button on your keyboard much like heroism. It doesn't make the warrior class any easier or harder with or without that spell.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-02-28, 05:30 AM</div></div><div class="posttext">Nothing too new. They mentioned that &quot;soloing will be easier&quot; because how you interact with lower levelled mobs, interesting. Also interesting to know the new DRs for CC. Other than that, it's not something we haven't heard stated before I believe.<br />
+<br />
+They almost had to hardcode something special. They said repeatedly that soloing old content will not be harder because of item squish. My guess is the devs were right and could have made it feel very similar. But more than likely there will be some boss or something that will feel slightly harder, so in order to shut up the people who say ´you lied blizzard the 3rd boss of X dungeon took me 28 seconds to kill and before it only took me 25 seconds´.. so instead of just keeping it the same, they are going to nerf old content even more to ensure they are easier than they are now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc10bda09cc4</div><div class="date">2014-02-28, 06:08 AM</div></div><div class="posttext">Hei guise, they are taking away two (or more) of those abilities I never use, they are dumbing down the game.<br />
+<br />
+Hei guise, they never promised us a massive info dump, now I'm mad because they lied to me cuz this isn't a big info dump.<br />
+<br />
+Hei guise, PvP will be mindless because I have to think about when to use my CC<br />
+<br />
+<br />
+Hei guise</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Soeroah</div><div class="date">2014-02-28, 06:24 AM</div></div><div class="posttext">Awful lot of people thinking this is all Blizzard was working on.<br />
+<br />
+They're splitting the 'massive infodump' into multiple themed blog posts they'll probably post once every day or couple of days, guys. This isn't everything they were 'hyping' up, although I did think they were initially going to post it all at once myself.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Super Kami Dende</div><div class="date">2014-02-28, 06:27 AM</div></div><div class="posttext">The comments on this new post reinforce my belief about just how many stupid/ignorant/retarded people actually post on this website without actually reading previous posts or by taking things in the correct context.<br />
+<br />
+Stay classy MMO-Champ Users.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">videotape</div><div class="date">2014-02-28, 06:31 AM</div></div><div class="posttext">Every aspect of this information is good news for WoW.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hotsforyou</div><div class="date">2014-02-28, 06:38 AM</div></div><div class="posttext">So tired of PvP nerfs effecting PVE. So over it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yizu</div><div class="date">2014-02-28, 06:39 AM</div></div><div class="posttext">now with 1 competitive raid size they should probably make buffs and raid utility unique again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spotnick</div><div class="date">2014-02-28, 06:43 AM</div></div><div class="posttext">The comments on this new post reinforce my belief about just how many stupid/ignorant/retarded people actually post on this website without actually reading previous posts or by taking things in the correct context.<br />
+<br />
+Stay classy MMO-Champ Users.<br />
+<br />
+Except the previous post was not the previous post before.. they made it back on top just recently. The tweets were the lastest news.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SL1200</div><div class="date">2014-02-28, 06:46 AM</div></div><div class="posttext">I'm starving for wod information. This is not enough.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc8e13fe598c</div><div class="date">2014-02-28, 06:49 AM</div></div><div class="posttext">A little disapointed woke up early this morning hoping for nice read of the &quot;MASSIVE info dump&quot; but neverless looks good. still not really any great info I think most people knew the item squish would be something along those lines.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Masternewt</div><div class="date">2014-02-28, 06:51 AM</div></div><div class="posttext">All this we have known since Blizzcon. Really a bundle of info after 4 months. I am overwhelmed ... not.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">KCguy</div><div class="date">2014-02-28, 07:01 AM</div></div><div class="posttext">Has Blizzard ever given a reason why as to why they don't separate PvE and PvP? It would sure make things a heck of a lot easier, wouldn't it?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">|Dexter|</div><div class="date">2014-02-28, 07:03 AM</div></div><div class="posttext">I think this make the game a lot of better I really hope they take half of the Abilitys it sucks have so many spells and can't even fit all on the 4 actionbars!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc04a2f097d4</div><div class="date">2014-02-28, 07:15 AM</div></div><div class="posttext">This is a great post both in terms of how it informs us and the information itself. All of these look like they will be beneficial changes. Sure you will get the vocal minority bitching about them but I'm here to say GOOD! These are needed. The current state of WoW has meant I've not been inspired to play this expansion much at all, after leveling to 90 doing a couple of raid finder dungeons, 1 flexi dungeon and spent a bit of time on Timeless Isle(which was actually not too bad) I got bored and havent returned. Hopefully these new changes will make a big difference.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf643d7481a</div><div class="date">2014-02-28, 07:41 AM</div></div><div class="posttext">I'm really glad of this update.<br />
+<br />
+The devs really need to take these drastic moves to fix the current clusterfawk state the PvP is in now.<br />
+Though from experience, Blizz usually slowly reverts these kinds of changes mid way of the expansion.<br />
+<br />
+But here's to hoping.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocafdd20634a</div><div class="date">2014-02-28, 07:43 AM</div></div><div class="posttext">&quot;Removed Silence effects from interrupts. Silence effects still exist, but are never attached to an interrupt.&quot;<br />
+<br />
+Is that a joke ? Does this mean interrupts wont lock magic schools any longer ? ...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">deftones</div><div class="date">2014-02-28, 07:48 AM</div></div><div class="posttext">&quot;Removed Silence effects from interrupts. Silence effects still exist, but are never attached to an interrupt.&quot;<br />
+<br />
+Is that a joke ? Does this mean interrupts wont lock magic schools any longer ? ...<br />
+<br />
+<br />
+Reading is hard...<br />
+<br />
+&quot;What about the &quot;Spell locks&quot;? Will Wind Shear still have a 2 sec lockout and will CS keep it's X secs?<br />
+Yeah, interrupts still lockout the interrupted spell school for X sec. (Source)&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocafdd20634a</div><div class="date">2014-02-28, 07:50 AM</div></div><div class="posttext">Reading is hard...<br />
+<br />
+&quot;What about the &quot;Spell locks&quot;? Will Wind Shear still have a 2 sec lockout and will CS keep it's X secs?<br />
+Yeah, interrupts still lockout the interrupted spell school for X sec. (Source)&quot;<br />
+<br />
+Yeh, reading what is not in the post is pretty hard effectively.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocaa00db6037</div><div class="date">2014-02-28, 07:54 AM</div></div><div class="posttext">Both happy and a bit sad regarding the racial traits, on one hand I probably will be able to change back to Tauren from Troll on my feral if they remove Berserking, but on the other hand I don't like that they remove things that are special about races and classes, soon this will be a RPG with only one Role.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca01e16f76d</div><div class="date">2014-02-28, 07:58 AM</div></div><div class="posttext">so much hype for this &quot;info&quot;??, lol.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tisane</div><div class="date">2014-02-28, 08:00 AM</div></div><div class="posttext">This also won’t reduce your ability to solo old content. <br />
+<br />
+You better stick to that, Blizzard. I'm not so sure about that after reading about the removal of 'cooldowns' and cc adjustments (even though they most likely mainly affect PvP).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc23262ad029</div><div class="date">2014-02-28, 08:00 AM</div></div><div class="posttext">SO happy to hear about the racial traits. It was always a challenging playing races I actually WANTED to play instead of a stupid human in PVP. Now I won't need to feel bad about it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2014-02-28, 08:04 AM</div></div><div class="posttext">Hmm. Not much of interest there.<br />
+Most of it was already common knowledge since before Blizzcon.<br />
+<br />
+As usual they didn't even venture into any sort of detail. <br />
+<br />
+Oh well, have to wait for Beta to get real facts I guess. <br />
+<br />
+Removed Silence effects from interrupts. Silence effects still exist, but are never attached to an interrupt.<br />
+Great. So Shadow silence will once again be completely useless in PvE due to most mobs being immune. /golfclap<br />
+<br />
+<br />
+Is that a joke ? Does this mean interrupts wont lock magic schools any longer ? ... <br />
+They are talking about binary spells.<br />
+EG: Shadow silece has 2 components: One works like counterspell and a blanket silence.<br />
+On players you only feel the blanket silence, but due to the interrupt component you can still interrupt casts from mobs that are immune to the silence effect itself.<br />
+<br />
+It's a retarded PVE nerf I really don't understand.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Demona3</div><div class="date">2014-02-28, 08:07 AM</div></div><div class="posttext">~~PvP trinkets now grant immunity to reapplication of an effect from the same spell cast when they break abilities with persistent effects, like Solar Beam.<br />
+<br />
+THANK GOD. I REALLY hope this applies to rogues, because trinketing a stun, then getting re-stunned is complete bullshit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">carlos5577</div><div class="date">2014-02-28, 08:17 AM</div></div><div class="posttext">You know what guys, Dota 2 has like only 4 spell (most of the heroes, some heores only have one or two lol) and at most people use only 4 item abilities, which at a total only comes down to like 8-12 keybinds (more if you were to micro). It has so much less keybinds yet it is more complex and harder to master than in WoW. I just want to put this out to point out that the number of buttons you have to press doesn't automatically mean complex and sophisticated, each spell/ability has to have a clear goal at what it does in my opinion a lot of spells in wow just do the exact same thing (like the cooldowns they were talking about that just make you more powerful for a brief period of time). I also want to say that the nerf to big numbers is a good thing, now it will be easier and clearer to distinguish between gear which is essential in any RPG.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc27cecdbbd7</div><div class="date">2014-02-28, 08:19 AM</div></div><div class="posttext">Won't the removal of several CDs and the diminishing of burst effects, severely reduce what can be done with raid encounters? If you take out you ability to make an encounter that has dps checks put into the encounter. Mobs that needs to die fast etc. Lets take paragons as an example. Korven encases one of the bosses in amber and you need to kill the non-incased mob before amber regeneration is up again. There has been plenty of encounters along the way that had such requirements, and removing this aspect could make encounters bland.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc472a5d728c</div><div class="date">2014-02-28, 08:35 AM</div></div><div class="posttext">Well... that was all brand new information...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7a7ff5695d</div><div class="date">2014-02-28, 08:35 AM</div></div><div class="posttext">very interesting stuff..................................................................................... ........you were teasing us the last week for this crap?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1615415e70</div><div class="date">2014-02-28, 08:36 AM</div></div><div class="posttext">All seems like a massive step in right direction. Keep up the good work Blizz!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alltat</div><div class="date">2014-02-28, 08:39 AM</div></div><div class="posttext">Won't the removal of several CDs and the diminishing of burst effects, severely reduce what can be done with raid encounters? If you take out you ability to make an encounter that has dps checks put into the encounter. Mobs that needs to die fast etc. Lets take paragons as an example. Korven encases one of the bosses in amber and you need to kill the non-incased mob before amber regeneration is up again. There has been plenty of encounters along the way that had such requirements, and removing this aspect could make encounters bland.<br />
+Do cooldowns actually add anything to fights like Korven's amber? Everyone is going to save their cooldowns for when that happens, so the health of the amber has to be tuned around everyone using their cooldowns. With fewer cooldowns, the amber will have slightly less health.<br />
+<br />
+It's not as if you ever really had a choice - everyone uses their cooldowns on Korven. It's a button you push, no thought required.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MasterHamster</div><div class="date">2014-02-28, 08:42 AM</div></div><div class="posttext">ITT: Players who can't spot the difference between &quot;dumbing down&quot; and reducing unnecessary bloat.<br />
+Don't worry, we'll still have about 4 times the amount of abilities required to dominate BC pvp.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocbde5966b18</div><div class="date">2014-02-28, 08:59 AM</div></div><div class="posttext">The first thing I'm gonna do when I hit lvl 100 isn't going to be a dungeon or a raid, but I have a marathon of soloing old content.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">papajohn4</div><div class="date">2014-02-28, 09:01 AM</div></div><div class="posttext">Wasn't referring to the squish so much as ability removal. It looks to me as if they're simplifying things even more so that the game is basically 'smash buttons' and win. <br />
+<br />
+Catering to the lowest common denominator.<br />
+<br />
+You don't need complex rotations and 10000 abilities to make the game difficult. You can make the encounters and mechanics difficult instead. See FFXIV for example...classes have very few abilities as rotation yet raid and hard modes and extreme modes are very difficult to do. The difference is that in FFXIV you play the game not the UI. This also apply to any action-combat game (GW2, Tera). In the most scenarios, difficulty on rotations is a failure from the game to make difficult content and rely on player struggle with rotations and UI to overcome the content. Also, most people think that wow was difficult on TBC yet classes in TBC had less abilities than we have now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd841b653eb</div><div class="date">2014-02-28, 09:15 AM</div></div><div class="posttext">It's important to understand that this isn’t a nerf—in effect, you’ll still be just as powerful, but the numbers that you see will be easier to comprehend. This also won’t reduce your ability to solo old content. In fact, to provide some additional peace of mind, we're implementing further scaling of your power against lower-level targets so that earlier content will be even more accessible than it is now.<br />
+<br />
+So pre-90 content will be even EASIER than it is now? HOW is that possible? We can already solo most dungeons at the 'correct' level???</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sainur</div><div class="date">2014-02-28, 09:28 AM</div></div><div class="posttext">Hahahahahaahhahaha. Massive infodump my arse. All disarms removed... gg Blizzard. Not.<br />
+<br />
+But the fanboys in these comments who are extremely disappointed kinda made my day. Getting hyped over nothing, lmao.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nhodjin</div><div class="date">2014-02-28, 09:33 AM</div></div><div class="posttext">Yeah, so according to ppl here having x amount of abilites to press = skill. Say that to MOBA pro's, since those games are so simple to play at the highest level of competition, right? These changes are great for getting the average joe back in the game, and a as a vanilla player i welcome it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mcsuiy</div><div class="date">2014-02-28, 09:41 AM</div></div><div class="posttext">Welcome changes, Loving the QQ as well... Some people will never be happy. <br />
+TBC was difficult due to tuning and at the time &quot;new&quot; boss mechanics to some degree... not the amount of abilities. <br />
+Good job Blizz - keep it coming.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc0a31611b9</div><div class="date">2014-02-28, 09:42 AM</div></div><div class="posttext">http://www.mmo-champion.com/threads/1429526-Leaked-WoD-Racials<br />
+<br />
+Seems to be correct thus far.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3d7f422663</div><div class="date">2014-02-28, 09:49 AM</div></div><div class="posttext">Liking most changes to cc and so on.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darkinfinity</div><div class="date">2014-02-28, 09:49 AM</div></div><div class="posttext">NOOOOOOOOO!!!! Leave my Cyclone alone plz!!! :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3d7f422663</div><div class="date">2014-02-28, 09:56 AM</div></div><div class="posttext">complex =/ hard<br />
+<br />
+simple =/ easy<br />
+<br />
+Just because Billard is simple, same as footbal and lots of other sports, does not mean they are simple.<br />
+<br />
+It's all about who do you compete against :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nazmina</div><div class="date">2014-02-28, 09:56 AM</div></div><div class="posttext">Hmm. Not much of interest there.<br />
+Great. So Shadow silence will once again be completely useless in PvE due to most mobs being immune. /golfclap<br />
+<br />
+They are talking about binary spells.<br />
+EG: Shadow silece has 2 components: One works like counterspell and a blanket silence.<br />
+On players you only feel the blanket silence, but due to the interrupt component you can still interrupt casts from mobs that are immune to the silence effect itself.<br />
+<br />
+It's a retarded PVE nerf I really don't understand.<br />
+<br />
+It's a pvp nerf, as is priest silence never interrupts players even ones current immune to silence effects, there is no reason to believe blizzard will remove the functionality of silence spells to interupt silence immune npcs.<br />
+<br />
+This is meant only to remove blanket silences from primary interrupt abilities like spell lock(felhunter/observer) counterspell, and spearhand strike.ect.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd841b653eb</div><div class="date">2014-02-28, 10:13 AM</div></div><div class="posttext">complex =/ hard<br />
+<br />
+simple =/ easy<br />
+<br />
+Just because Billard is simple, same as footbal and lots of other sports, does not mean they are simple.<br />
+<br />
+It's all about who do you compete against :)<br />
+Yup and when the PvE content you compete against is already pi$$ easy, making it more so is... EASIER. Simple has no bearing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc9aa38bccdb</div><div class="date">2014-02-28, 10:15 AM</div></div><div class="posttext">Cyclone can now be dispelled by immunities and Mass Dispel.<br />
+<br />
+Good bye druid pvpers!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Katharine</div><div class="date">2014-02-28, 10:19 AM</div></div><div class="posttext">So basically they are doing the stat squish because they think WoW players are a bunch of 5 year olds.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">xhisors</div><div class="date">2014-02-28, 10:28 AM</div></div><div class="posttext">No they are doing a squish because they have to.. there are technical limitations behind not squishing the numbers.. if you need to know more look it up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">AnTwan</div><div class="date">2014-02-28, 10:36 AM</div></div><div class="posttext">So basically they are doing the stat squish because they think WoW players are a bunch of 5 year olds.<br />
+<br />
+and when they are flashing by very quick it is difficult to parse 1387228 and know if that is good or not especially if you are trying to compare it to say 138728</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Graeham</div><div class="date">2014-02-28, 10:44 AM</div></div><div class="posttext">I've always been a firm advocate of eliminating some of the better racial abilities in order to encourage more players to invest in the race that they want to play instead of the race that they feel compelled to play. Sure, racial abilities are nice but they should be largely cosmetic otherwise we end up with an abundance of specific races and already ailing racial/faction populations suffer a slight loss as a result.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lycanthat</div><div class="date">2014-02-28, 10:48 AM</div></div><div class="posttext">Patch 7.0 Notes:<br />
+<br />
+We've removed all stats except Damage and Health<br />
+You will now only have 8 abilities so the game can be played with a controller.<br />
+Everyone will be a damage dealer with some form of self-healing.<br />
+All enemies will be Level 1 unless they're a boss.<br />
+Please visit the in-game store to purchase more interesting gameplay. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3d7f422663</div><div class="date">2014-02-28, 10:57 AM</div></div><div class="posttext">Yup and when the PvE content you compete against is already pi$$ easy, making it more so is... EASIER. Simple has no bearing.<br />
+<br />
+One of our guildies proves otherwise. He is incredible slowpoke. He can press YES when ready check, then proceed to NOT tank boss for 20s after pull at all and then wake up and ask &quot;was there rdy check?!&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LickMeh</div><div class="date">2014-02-28, 11:03 AM</div></div><div class="posttext">I don't like how they want to combine some CDs because they usually get put in 1 macro all together. There still are occasions where you don't want to do that to nuke an add for example and split CDs instead of macro'ing them. Doesn't seem like a good idea to be tbh</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zstr</div><div class="date">2014-02-28, 11:04 AM</div></div><div class="posttext">I'm sad, on removing abilities, it's really gonna hurt <br />
+we focused on removing is temporary power buffs (aka &quot;cooldowns&quot;). /cry</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CandyCotton Marshmallows</div><div class="date">2014-02-28, 11:08 AM</div></div><div class="posttext">Despite the declarations of 'not dumbing things down', that's exactly what it looks like to me.<br />
+<br />
+It isn't just that;<br />
+<br />
+<br />
+we've reached a point where the numbers for health, damage, and other stats are so big they’re no longer easy for players to grasp.<br />
+<br />
+They think we are stupid. Whether or not you wanted a number squish for whatever reason; comprehending 1 million is not a difficult task. If you can't comprehend 100,000 or 1,000,000 ... you are going to have a hard time buying a house sometime in your lifetime. <br />
+<br />
+It is ridiculous to paint the sub base as a bunch of people who have the comprehension aptitude of an infant. I'd find it much more reasonable and respectful for them to claim that they just don't like the direction and results of the large numbers, that tuning and tweaking is easier with smaller numbers, thus overall it makes at least a portion of their job easier when creating and polishing content, also balancing specs and classes. That is also helps the client and programming side sustain the 32 bit client longer without jumping through hoops to support those on 5+ year old PCs. Nope, instead they slip in what amounts to an insult as far as I'm concerned towards the playerbase; whom I'd assume a noticeable percentage of uses addons that already condenses the numbers to 200k/1.1m.<br />
+<br />
+<br />
+I don't care if they squish, whether I find it worthwhile or not. The only real request I'd have is not to scale up so fast again to where this will need to be done again, or if it does, make sure it is 4+ xpacs away. Just like the ability trimming; it is sure to cut spells some people like; they've already done that. It could be considered a necessary evil because of how much growth there was in the past, though some classes or specs being more complicated with lots more buttons to press is a good thing for the game because experienced or players that want 'more' to do will gravitate towards those to keep themselves entertained versus streamlined, minimalistic specs that are better geared towards newer players.<br />
+<br />
+The CC issue is purely a PvP one, and should only relate directly to PvP. They are stubborn on this and will not quit interfering with PvE for the sack of PvP, as in, they won't just create a PvP spec or spend the time to make every ability in PvP operate differently and develop some kind of PvP type proving grounds for people to adjust to the differences in how the spec 'feels' and operates for those who need to do, while having the tooltips explain it clearly for those who learn fast that way (with a toggle to switch off PvP tooltips similar to advanced/beginner tooltips). Lots of CC allows PvE content designers to make more challenging heroic dungeons, trash, adds, quest mobs. It becomes a pain in PvP because of well-executed CC chains (that should be rewarding for organized teams though), and they clearly stated they don't want to go the way of SWtOR with eventual short term, generalized CC immunity. It does present a more skill based system to have various DR categories; though some addons help out a lot with this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2014-02-28, 11:16 AM</div></div><div class="posttext">They're really amazing at talking a lot and saying nothing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc59b5827c7e</div><div class="date">2014-02-28, 11:27 AM</div></div><div class="posttext">Blizzard new reprentatives are a horrible joke I assume... just placeholders for the real guys, or am I mistaken?! They cant be serious teasing us for the 3rd time with massive info, character model reveals and what not and then delivering NOTHING.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc27cecdbbd7</div><div class="date">2014-02-28, 11:29 AM</div></div><div class="posttext">Do cooldowns actually add anything to fights like Korven's amber? Everyone is going to save their cooldowns for when that happens, so the health of the amber has to be tuned around everyone using their cooldowns. With fewer cooldowns, the amber will have slightly less health.<br />
+<br />
+It's not as if you ever really had a choice - everyone uses their cooldowns on Korven. It's a button you push, no thought required.<br />
+Well, you aren't killing the amber on heroic mode. You get korven and in our case kah'roz to 50%, getting kahroz below 50% first and then you burn korven. Granted it isn't the most difficault dps check in the game, but most guild probably aren't makign it without using any CDs.<br />
+<br />
+It was more an example og how having built in dps checks can make a fight more interesting. If it's just all about overall damage done and not standing in stuff it isn't nearly as intriguing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2014-02-28, 11:39 AM</div></div><div class="posttext">Sooooo...nothing we didn't already know? :s<br />
+<br />
+the only useful thing on there i can gather is &quot;and we'll soon be ready to enter the first phases of public testing.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocbbfa464b08</div><div class="date">2014-02-28, 11:41 AM</div></div><div class="posttext">This reads like the text of some insincere politicians: we prune this and cut that - but hey, everything will get better and much more exciting and interesting! WTF!?!<br />
+Maybe Blizz has to serve the claims of new players at the cost of long-term players ... poor WOW.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc661931d299</div><div class="date">2014-02-28, 11:43 AM</div></div><div class="posttext">' some of those traits are too powerful, players may feel compelled to play a specific race'<br />
+Byebye [Every man for himself] :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc180a361ae8</div><div class="date">2014-02-28, 11:50 AM</div></div><div class="posttext">Anyone would think percentages are a new invention, why has it taken you this long to do something about the ridiculous stats?<br />
+<br />
+And I'm certainly all for the CC reduction/changes, but as per usual, Blizzard go 1,000 steps too far, we'll be spending most of WoD seeing CC abilities gradually reintroduced throughout patches.<br />
+<br />
+They really need to nail this Xpac.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nerraw</div><div class="date">2014-02-28, 11:55 AM</div></div><div class="posttext">Blizzard new reprentatives are a horrible joke I assume... just placeholders for the real guys, or am I mistaken?! They cant be serious teasing us for the 3rd time with massive info, character model reveals and what not and then delivering NOTHING.<br />
+<br />
+When people like you read the beta patch notes in however long it takes them to put it out there, you'll be screaming &quot;WHy the frak are they doing this???&quot;. Well, this explains why they do these things.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Extremity</div><div class="date">2014-02-28, 11:59 AM</div></div><div class="posttext">Blizzard's ability to write ten paragraphs about nothing never fails to amaze me.<br />
+<br />
+&quot;We're going to release a blog post, and in it we'll talk about racials.&quot;<br />
+<br />
+Blog post:<br />
+<br />
+&quot;Some racials need to change and we're going to change some racials.&quot;<br />
+<br />
+Thanks for the information!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hagendaz</div><div class="date">2014-02-28, 12:09 PM</div></div><div class="posttext">I'm not sure why there seems to be so much hate on the changes, I for one like them.<br />
+<br />
+Let me tell you why -<br />
+<br />
+Ability bloat is a real thing, I have so many spells on my bars that I don't use it's just clutter. I may use some of those abilities in some given situations that arises once a week or longer.<br />
+<br />
+The stat squish I also am excited for because it's not that 1 million is hard to grasp versus 1000, it's that I don't care to see a million or 400k pop up on my screen, in a lot of cases it's distracting. To me it sounds like people upset about the damage number (as that's all it really is is damage/health numbers) because seeing those big numbers makes them feel more powerful? I'm not quite sure.<br />
+<br />
+The reduction in CC couldn't have sounded any sweeter. I can't name the amount of arena's I've done where I get cc'd straight for about 30 or more seconds (this is also after using my trinket). The druid nerf to cyclone being dispellable is awesome. Everything else in the game in terms of CC I can think of is able to be dispelled one way or another, however cyclone being an instant cast in some cases (feral) and not even being able to be dispelled was stupid. <br />
+<br />
+I'm extremely excited for these changes, and think it's a step in the right direction.<br />
+<br />
+PS. you wouldn't be upset about the squish if they hadn't made every expansion jump over 100 ilvl's from the previous from the start. I understand that it's there fault and we're used to them now, but I do honestly think it's a step in the right direction. Also not sure why there's so much QQ before we even see EXACTLY what they have planned.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2014-02-28, 12:10 PM</div></div><div class="posttext">It's a pvp nerf, as is priest silence never interrupts players even ones current immune to silence effects, there is no reason to believe blizzard will remove the functionality of silence spells to interupt silence immune npcs.<br />
+<br />
+This is meant only to remove blanket silences from primary interrupt abilities like spell lock(felhunter/observer) counterspell, and spearhand strike.ect.<br />
+<br />
+I asked them on Twitter, maybe they'll be so kind and clarify.<br />
+<br />
+<br />
+No they are doing a squish because they have to.. there are technical limitations behind not squishing the numbers.. if you need to know more look it up.<br />
+Yup. They'd need to recode half the game to support bigger numbers.<br />
+So a squish is the easier solution for them.<br />
+<br />
+Getting Numbers people can handle in their heads again is an added benefit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nerraw</div><div class="date">2014-02-28, 12:13 PM</div></div><div class="posttext">Blizzard's ability to write ten paragraphs about nothing never fails to amaze me.<br />
+<br />
+&quot;We're going to release a blog post, and in it we'll talk about racials.&quot;<br />
+<br />
+Blog post:<br />
+<br />
+&quot;Some racials need to change and we're going to change some racials.&quot;<br />
+<br />
+Thanks for the information!<br />
+<br />
+I'm guessing you can't read then.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sodia</div><div class="date">2014-02-28, 12:27 PM</div></div><div class="posttext">Despite the declarations of 'not dumbing things down', that's exactly what it looks like to me.<br />
+<br />
+MHM ok so in So OO Greate Vanila you had 1 max 2 skils to use in TBC 1 more in Wrath 1 more now you have 8+ skils to use and some clases actualy use that much .They want to go back to 4+ for skils for smother play style and for you is dumbing down ??well yes coz Vanila-TBC was sooo hard and complicated especialy casters :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Riddley</div><div class="date">2014-02-28, 12:33 PM</div></div><div class="posttext">It's sad I thought that the CC announcement would be about how CC is going to be required for the more difficult Heroic Dungeons in WOD. In the same fashion that if you didn't CC in BC heroics or Vanilla you would be screwed. That was a fun dynamic that made dungeons more interesting. All the dungeons blur together when you can just charge through with a tank and can pull everything at once.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rokkitan</div><div class="date">2014-02-28, 12:34 PM</div></div><div class="posttext">Bad graph. Blizzard should remove/scale before the supposed 90-100 &quot;Before squish&quot; line and it might be possible to see details from levels 50 to 80, and still see the need for a squish.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xucuroz</div><div class="date">2014-02-28, 12:37 PM</div></div><div class="posttext">Everything sounded pretty good to me. Not seeing the down side that others are?<br />
+<br />
+<br />
+It's sad I thought that the CC announcement would be about how CC is going to be required for the more difficult Heroic Dungeons in WOD. In the same fashion that if you didn't CC in BC heroics or Vanilla you would be screwed. That was a fun dynamic that made dungeons more interesting. All the dungeons blur together when you can just charge through with a tank and can pull everything at once.<br />
+<br />
+It was only ever a fun dynamic when you had a group that communicated or the right classes on hand. I still remember groups forming with classes such as warriors that had no tradition CC (e.g sheep) what so ever.<br />
+<br />
+I wouldn't give up hope for that just yet. We've not seen what challenge modes will be like in WoD yet, nor the dungeon heroics.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kamuimac</div><div class="date">2014-02-28, 12:44 PM</div></div><div class="posttext">Ability bloat is a real thing, I have so many spells on my bars that I don't use it's just clutter. I may use some of those abilities in some given situations that arises once a week or longer.<br />
+<br />
+<br />
+and what u describe is what differes average/bad players from a really good one - a really good one uses most of his abilities nearly all the time in eveyr single possible moment they can be used - average/bad players really uses those 5-6 buttons to complete even full normal modes making life for anyone around him significantly harder without even noticing it -_- <br />
+<br />
+what u descirbed here is exacty reason why people think and have right that blizzard is dumbing down the game with each patch to cater to mediocrity -_- and such catering to mediocrity will be what eventually will kill of wow - wow will kill itself with time cause of how far away from its roots its going to go into console arcade game direction. u can see it already for few expansions which each of them introduces more and more arcade elements to pve cause &quot;its making game interesting &quot; and its goign more and more away from the roots of being rpg.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nightstalker</div><div class="date">2014-02-28, 12:45 PM</div></div><div class="posttext">Tauren DPS-Racial.<br />
+Hooray!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoced3a8de52c</div><div class="date">2014-02-28, 12:51 PM</div></div><div class="posttext">and what u describe is what differes average/bad players from a really good one - a really good one uses most of his abilities nearly all the time in eveyr single possible moment they can be used - average/bad players really uses those 5-6 buttons to complete even full normal modes making life for anyone around him significantly harder without even noticing it -_- <br />
+<br />
+what u descirbed here is exacty reason why people think and have right that blizzard is dumbing down the game with each patch to cater to mediocrity -_- and such catering to mediocrity will be what eventually will kill of wow - wow will kill itself with time cause of how far away from its roots its going to go into console arcade game direction. u can see it already for few expansions which each of them introduces more and more arcade elements to pve cause &quot;its making game interesting &quot; and its goign more and more away from the roots of being rpg.<br />
+<br />
+What? so i'm an average player because i don't use underwater breathing on my every rotation as a Lock? these are the kind of spells they are removing...<br />
+<br />
+This dumbing thing is absolute balls. The mythic raiding, world first brigade will still have the skill to get world first kills and top the DPS charts. These changes hopefully mean the the two scrubs in LFR that were doing 20% of everyone elses damage might be more useful in WoD... people have an issue with that!?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc27cecdbbd7</div><div class="date">2014-02-28, 01:06 PM</div></div><div class="posttext">Awful graph. Remove the supposed 90-100 before squish line and it might be possible to see details from levels 50 to 80.<br />
+<br />
+Well that's not really the purpose of that graph. They made it like that so that everyone would agree with them how outrageous the stats would become. I mean how can anyone not think that with a graph like that. :)<br />
+<br />
+I do like the squish though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wayne25uk</div><div class="date">2014-02-28, 01:07 PM</div></div><div class="posttext">Only two problems im seeing here is Warriors Whirlwind,us rogues (my main) could disarm them and stop them from doing it,so now they are going to be blades of whirling death with no way to counter it or get away quick?<br />
+<br />
+Secondly i hope to god they sort out the Priests fears,im so sick and tired of being feared about 4 times in a row and for 8seconds each time,its pure bullshit and totally unfair,no other class gets that with no DR,it should be 8 sec then 6 then 4 then 2 then immune from then on but they seem to be given an advantage and left out of DR rules!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">furydeath</div><div class="date">2014-02-28, 01:08 PM</div></div><div class="posttext">Wait so from lv. 99 to 100 we'd get like a 30% damage boost or something with out the squish?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hagendaz</div><div class="date">2014-02-28, 01:15 PM</div></div><div class="posttext">and what u describe is what differes average/bad players from a really good one - a really good one uses most of his abilities nearly all the time in eveyr single possible moment they can be used - average/bad players really uses those 5-6 buttons to complete even full normal modes making life for anyone around him significantly harder without even noticing it -_- <br />
+<br />
+what u descirbed here is exacty reason why people think and have right that blizzard is dumbing down the game with each patch to cater to mediocrity -_- and such catering to mediocrity will be what eventually will kill of wow - wow will kill itself with time cause of how far away from its roots its going to go into console arcade game direction. u can see it already for few expansions which each of them introduces more and more arcade elements to pve cause &quot;its making game interesting &quot; and its goign more and more away from the roots of being rpg.<br />
+<br />
+You may want to understand where I'm coming from before posting. Many abilities I don't use as one spec or the other, you don't use all your abilities all the time I don't for instance use Dark Simulacrum (spell copy) on bosses that cast no spells? or how about death and decay single target, would you prefer I used that at a dps loss? Necrotic strike, the same thing, though it's used in pvp. I son't use Obliterate as unholy but I do as frost, reason being is it's not as effective as scourge strike (in pvp anyways as I PvE as frost). You you saying that's what separates a bad player from a good one then throw out the number 5-6 buttons. They're not taking 99% of your spells away so you may want to inform yourself or use simple logic here. I could lose about 5 or 6 abilities and perform just as well without them. I'd also still be using more than 15 abilities, not counting cooldowns.<br />
+<br />
+PS. My example of using scourge strike over obliterate is exactly what they're addressing. Since you don't need obliterate as unholy you wouldn't have it as an ability being unholy. The skill level is still there for being, they're just bringing people up higher is &quot;skill&quot; the good people will still stand out, so what's wrong with this again?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">shise</div><div class="date">2014-02-28, 01:21 PM</div></div><div class="posttext">.... That's it? All that tease for nothing? Damn lol.<br />
+<br />
+Define &quot;nothing&quot;... ?<br />
+<br />
+- - - Updated - - -<br />
+<br />
+I usually dislike the changes they do when it comes down to cut spells, skills, etc... but this time around I don't see a &quot;dumb down&quot;, as long as they remove spells we barely use. However, I don't like this about removing certain CD's, that can be dangerous so I hope they work it out perfectly fine (from the balance perspective).<br />
+<br />
+About CC: It came about time. CC in this game is ridiculous, you can be chain CC'ed and there is simply nothing you can really do about it, no matter how skilled you are because, even if you manage to break the chain, another one will come about 30 seconds later and your cd's will be down to survive it.<br />
+<br />
+<br />
+Item squish: I am expecting WotLK numbers more or less, so let's see how it ends up. I don't even ask the mto bring us back to 9-12k hp as we had in BC by the end... that would be great to be honest, but that's only my opinion I guess.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc10bda09cc4</div><div class="date">2014-02-28, 01:25 PM</div></div><div class="posttext">When will people understand that they HAVE to do the item squish so the game wont break!<br />
+<br />
+If you don't know why please don't post stupid comments like &quot; They think we are kids, that's why they are doing the squish&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baracuda</div><div class="date">2014-02-28, 01:31 PM</div></div><div class="posttext">What? so i'm an average player because i don't use underwater breathing on my every rotation as a Lock? these are the kind of spells they are removing...<br />
+<br />
+This dumbing thing is absolute balls. The mythic raiding, world first brigade will still have the skill to get world first kills and top the DPS charts. These changes hopefully mean the the two scrubs in LFR that were doing 20% of everyone elses damage might be more useful in WoD... people have an issue with that!?<br />
+<br />
+They're not removing underwater breathing like abilities lol, I think you've misunderstood the ability squish.<br />
+<br />
+<br />
+Only two problems im seeing here is Warriors Whirlwind,us rogues (my main) could disarm them and stop them from doing it,so now they are going to be blades of whirling death with no way to counter it or get away quick?<br />
+<br />
+Secondly i hope to god they sort out the Priests fears,im so sick and tired of being feared about 4 times in a row and for 8seconds each time,its pure bullshit and totally unfair,no other class gets that with no DR,it should be 8 sec then 6 then 4 then 2 then immune from then on but they seem to be given an advantage and left out of DR rules!<br />
+<br />
+Bladestorm has removed and made you immune to disarm for some time now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Scendera</div><div class="date">2014-02-28, 02:02 PM</div></div><div class="posttext">(I have seen some very good reasons for an item squish. This is not one of them.)<br />
+<br />
+I don't think they want to do what Sony did with EQ2 and admit that damage calcs were making the servers stagger. Sony was forthright and handled it by switching from a &quot;many attacks, smaller numbers&quot; to a &quot;fewer but larger, with a higher floor&quot; model by swapping the places of multi attack and dps in stats weighting. It was for the most part a rather elegant solution to a real problem.<br />
+<br />
+I don't have much hope at all for this to be as well thought out and well executed as the EQ2 change was, but we'll see.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7f25e17046</div><div class="date">2014-02-28, 02:13 PM</div></div><div class="posttext">Are people serious? Do people ACTUALLY think this is the full extent of the massive info dump? Celestalon said it was 33 PAGES. You'd have to be blind if you think this is the ENTIRE 33 pages of info. Also, do people not know how to read? Literally earlier TODAY on MMOC's front page, they said there would be a SECOND blog post. If you're complaining about this, you clearly don't know how to read or comprehend, because basically anyone could tell that this is the START of the info dump, not the entire info dump. <br />
+<br />
+Also, lol at people complaining about button reduction. Because it was SUPERHARDCORE, INTELLIGENT gameplay to macro Skull Banner and Recklessness into one button. Blizz decides to put those two abilities together into one button, so it's literally the exact same as how people use it now? BLIZZ Y U DUM DOWN GAME.<br />
+<br />
+I generally don't quote entire posts... And I generally don't &quot;second&quot; them for the purpose of more people reading them but I'm going to make an exception today:<br />
+<br />
+Second.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Adramalech</div><div class="date">2014-02-28, 02:14 PM</div></div><div class="posttext">He also tweeted a follow-up. I think he's serious.<br />
+(Remember, no more haste breakpoints!) Touch of Elune, a new passive which grants 1% Haste at night, 1% Crit during the day. (Source (https://twitter.com/Celestalon/status/439223530324901888))<br />
+<br />
+Suddenly, all the people calling &quot;FAKE!&quot; on the leaked racials thread feel like a massive hammer was just dumped on their heads.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CaptainArlong</div><div class="date">2014-02-28, 02:16 PM</div></div><div class="posttext">Flip-flop-flip-flop-flip-flop<br />
+<br />
+I'm fully expecting them to announce they're re-doing the talent system next.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7f25e17046</div><div class="date">2014-02-28, 02:19 PM</div></div><div class="posttext">Two reasons for an item squish:<br />
+<br />
+- numbers getting too huge that a computer can process them effectively, making the servers handle much more workload, thus laggy and useing them up faster<br />
+<br />
+- do you see this gigantic spike in power from level 90 to 100? that's like 5 times the power we have now. Can you imagine tanks haveing around 6 million health? Or hiting 6 digits with dots? Well, I can, but it would look extremely silly</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Deathgoose</div><div class="date">2014-02-28, 02:24 PM</div></div><div class="posttext">One of the lines that made me curious was:<br />
+<br />
+It's important to understand that this isn’t a nerf—in effect, you’ll still be just as powerful, but the numbers that you see will be easier to comprehend. This also won’t reduce your ability to solo old content. In fact, to provide some additional peace of mind, we're implementing further scaling of your power against lower-level targets so that earlier content will be even more accessible than it is now.<br />
+Scaling against a lower level target with an actual level makes sense, sure. But how do you scale against a &quot;older content&quot; ??? Boss that is always considered &quot;[Player Level] + 3&quot;?<br />
+<br />
+I would imagine they will recognize this obvious oversight, but I'm curious how it will be handled.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc894395812b</div><div class="date">2014-02-28, 02:30 PM</div></div><div class="posttext">Atleast give us Feral Druids our instant cyclone back then if it can be dispelled now too. I mean, hardcasting a clone for it to be dispelled is not really worth it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Farabee</div><div class="date">2014-02-28, 02:40 PM</div></div><div class="posttext">I really hope they don't get rid of Diplomacy for humans.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd841b653eb</div><div class="date">2014-02-28, 02:41 PM</div></div><div class="posttext">I understand why the squish is happening, you can't increase things exponentially indefinitely, I have no issue with that. MY problem is that beyond that, and beyond the simplifying of abilities, they've stated here that they're making pre-90 content &quot;even more accessible&quot; which means DUMBING DOWN by anybody's reckoning.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stormykitten</div><div class="date">2014-02-28, 02:46 PM</div></div><div class="posttext">I don't really think that the number of movement abilities, CC (well, maybe a couple of the more egregous new instant ones), or number of abilities in general has any bearing on the current pvp scene. It is purely the difficulty in getting cast time spells off, which has nothing to do with those (CC has always been there) - it is all interrupts. There should at the very least only be 1 interrupt OR silence per class. But that's it. <br />
+<br />
+It's fine with class-flavour stuff like grounding totem. But it's frustrating to read that cast on the move is to blame when it actually helps casting spells, it's just that it is countered by way too much interrupts/silence/instant cast cc. If you need to counter movement, instead add ways to avoid the spells, because that doesn't impact cast time. It's why a dodge system with cooldown like in GW2 or ESO can be really useful.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Coronius</div><div class="date">2014-02-28, 02:49 PM</div></div><div class="posttext">Cool changes to CC, but I have to admit that I'm starting to agree with all the naysayers about the lack of info.<br />
+<br />
+We're months into the final patch of MoP, the equivalent of the Dragon Soul-patch (but not as terrible perhaps), and we barely have any information about the next expansion except for the stuff they showed us at BlizzCon which frankly wasn't that much.<br />
+<br />
+I really hope beta isn't too far away.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc14d4663a90</div><div class="date">2014-02-28, 02:51 PM</div></div><div class="posttext">I really like the stat squish, it's very, very needed. The numbers are getting really stupid. I think they should've squished further, though. But that might be hard with so many levels. Good job on that.<br />
+<br />
+The abilit pruning however... I don't like it. I liked having toys such as Dampen Magic, Amplify Magic, Sentry Totem and so on. While not useful in every signle fight, or even most of them, they added flavour and were fun as hell to pull off when you were able to (mind control cap + amplify magic to increase your burst anyone?). I don't really see the problem with classes having a lot of keybindings; we have an entire keyboard to mess around with, and most of the binds are not used all the time. Let us keep our toys.<br />
+<br />
+I'm 50/50 towards the CC changes. WoW PvP is very much built around CC, and without CC it turns into a silly whack-the-mole style game, where players just stand around whacking eachother with PvE rotations. There's also the issue of healers, they're way, way too powerful as it is, and without a big, fat nerf, reduced CC will make them even more of a pain. CC IS overdone in MoP though, and it does need a reduction. I just hope they handle this issue with a great deal of care.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc7fb8344b2d</div><div class="date">2014-02-28, 02:51 PM</div></div><div class="posttext">Racials are good way to make some old-school faction balancing, like they have done before. Make alliance have little bit better pvp racials, wait for the factions to balance on pvp servers and then make all racials cosmetic (orcs playing drums and growling or whatever).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cbeefman</div><div class="date">2014-02-28, 02:53 PM</div></div><div class="posttext">I think I need to step back and take a break from these and other wow sites for a while<br />
+<br />
+NONE of this feel like news to me, except maybe some of the CC changes so i'm feeling very underwhelmed by this so called &quot;info dump&quot;<br />
+<br />
+I think I set my expectations too high :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xummy</div><div class="date">2014-02-28, 02:53 PM</div></div><div class="posttext">&quot;It's important to understand that this isn’t a nerf—in effect, you’ll still be just as powerful, but the numbers that you see will be easier to comprehend.&quot;<br />
+<br />
+Translation: The majority of our playerbase is too stupid to understand big numbers, so we're making life less scary for them. <br />
+<br />
+(I have seen some very good reasons for an item squish. This is not one of them.)<br />
+<br />
+They could have worded it better. But i´m assuming it also has something to do with the limitation of Integers, which wow prob works with.<br />
+which is from −2,147,483,648 to 2,147,483,647, and if they aren´t doing the squish, we´d be approaching those numbers soon, causing a crash.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">frostmeteor</div><div class="date">2014-02-28, 03:15 PM</div></div><div class="posttext">They could have worded it better. But i´m assuming it also has something to do with the limitation of Integers, which wow prob works with.<br />
+which is from −2,147,483,648 to 2,147,483,647, and if they aren´t doing the squish, we´d be approaching those numbers soon, causing a crash.<br />
+<br />
+My guess is the integer for health is unsigned. So the range is 0 to ~4 billion. The evidence is that for 25-man heroic, Darkshaman already has 2b health. And for Heroic Garrosh, one of the reason the boss has to heal himself up several times, depending on your strategy, is to circumvent such limit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mittacc</div><div class="date">2014-02-28, 03:34 PM</div></div><div class="posttext">Removing the following silence from an interruption spell is a little too much imo. I would rather see them removing a spell that just says &quot;silence&quot;, a well times interrupt should be rewarded and not just delay a spell with like half a second. I'm not even a pvper...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zigzagzoom</div><div class="date">2014-02-28, 03:38 PM</div></div><div class="posttext">I am glad to see some changes to the amounts of cool down type abilities. The 10 step macros some classes had were ridiculous.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ThatsOurEric</div><div class="date">2014-02-28, 03:42 PM</div></div><div class="posttext">Holy crap. I may actually enjoy PvP again.<br />
+<br />
+I know right?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ecwfrk</div><div class="date">2014-02-28, 04:06 PM</div></div><div class="posttext">Wait so from lv. 99 to 100 we'd get like a 30% damage boost or something with out the squish?<br />
+<br />
+No, over the course of level 100 you'll increase in power with each tier of content they add throughout WoD. Without the squish though, the numbers would go from absurdly huge to insane. <br />
+Look at the difference between a Heroic gear level 85 in iLevel 410 gear, a fresh level 90 in iLevel 430ish quest greens and a level 90 in iLevel 560ish gear. <br />
+Deathwing had 300M HP in 25H. Thok has almost 2 Billion HP in 25H. <br />
+If things continued to scale the way they have been, by the end of WoD we'd likely have people pushing 5 million DPS and 25m bosses with well over 10 Billion HP, at least. <br />
+<br />
+Such huge numbers are not just difficult for many people to wrap their heads around, they're even more of a problem for computers. Shaving 2 digits off an 11 digit number can reduce the processing power to do a calculation on that number by 20%. And as others have already pointed out, when the numbers get too big, things either crash or the computer has to break them down into numbers it can manage, run calculations on each piece, then put it all back together which uses a ton of processing power.<br />
+In a nutshell, smaller numbers mean less lag.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nhodjin</div><div class="date">2014-02-28, 04:09 PM</div></div><div class="posttext">I'm not sure why there seems to be so much hate on the changes, I for one like them.<br />
+<br />
+Let me tell you why -<br />
+<br />
+Ability bloat is a real thing, I have so many spells on my bars that I don't use it's just clutter. I may use some of those abilities in some given situations that arises once a week or longer.<br />
+<br />
+The stat squish I also am excited for because it's not that 1 million is hard to grasp versus 1000, it's that I don't care to see a million or 400k pop up on my screen, in a lot of cases it's distracting. To me it sounds like people upset about the damage number (as that's all it really is is damage/health numbers) because seeing those big numbers makes them feel more powerful? I'm not quite sure.<br />
+<br />
+The reduction in CC couldn't have sounded any sweeter. I can't name the amount of arena's I've done where I get cc'd straight for about 30 or more seconds (this is also after using my trinket). The druid nerf to cyclone being dispellable is awesome. Everything else in the game in terms of CC I can think of is able to be dispelled one way or another, however cyclone being an instant cast in some cases (feral) and not even being able to be dispelled was stupid. <br />
+<br />
+I'm extremely excited for these changes, and think it's a step in the right direction.<br />
+<br />
+PS. you wouldn't be upset about the squish if they hadn't made every expansion jump over 100 ilvl's from the previous from the start. I understand that it's there fault and we're used to them now, but I do honestly think it's a step in the right direction. Also not sure why there's so much QQ before we even see EXACTLY what they have planned.<br />
+<br />
+<br />
+This guy! My thoughts exactly. I'm quite amused that people are so stupid to think that blizzard belives WE are not smart enough to understand 1 million dmg. <br />
+That is not what they are saying, the perfect example is Reckfuls 1 billion dollar video or w/e it's called, we know it's a big number but we do not really FEEL it. Same with 1 million dmg, and you're forgetting that they are not only scaling down everything in mop but also in WoD. Otherwise we would be doing 10 million crits or more in Warlords, and that's not very fun imo.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jeremynative</div><div class="date">2014-02-28, 04:18 PM</div></div><div class="posttext">Finally no more 100-0 stuns and 8 second fears and trinket is worth having</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shockeye</div><div class="date">2014-02-28, 04:19 PM</div></div><div class="posttext">Those CC changes to PVP may get me back into the PVP game. I've avoided it for MoP because as a healer as soon as I show up it's an instant chain of CC and then death, many of those CCs being reapplications of an ability (ie Cyclone). It's not fun at all. I loved casual PVP in Cataclysm (ie non-arena, random group BGs) but MoP, no thanks. And I miss having fun with it, so these changes are great.<br />
+<br />
+Also, hurrah for the long overdue squish. The numbers have been getting stupidly over the top for no reason at all other than massaging egos that like to see big numbers. Way back when one of the things that attracted me to WoW was how it was very conservative in the numbers with regards to health, damage etc. There's no need for a boss to have 15 million health and DPS to be doing 200k and all of that. It's utterly meaningless. <br />
+Hopefully the squish brings these numbers down to sensible levels, and those charts do suggest this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Siddown</div><div class="date">2014-02-28, 04:45 PM</div></div><div class="posttext">I understand why the squish is happening, you can't increase things exponentially indefinitely, I have no issue with that. MY problem is that beyond that, and beyond the simplifying of abilities, they've stated here that they're making pre-90 content &quot;even more accessible&quot; which means DUMBING DOWN by anybody's reckoning.<br />
+<br />
+Is it a bit like how posting in BOLD ALL CAPS dumbs down an argument? :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zrankfappa</div><div class="date">2014-02-28, 04:57 PM</div></div><div class="posttext">1) squish - uh fine<br />
+2) reduce ability bloat - sounds good, but i bet i miss the ability to do something that they remove. i'll get over it.<br />
+3) racials - i play horde, and always thought the trolls had best racials. that being said, of my 11 90's only two are trolls.<br />
+4) reduce cc - bout time. i'd like to see it taken a bit further and remove cc beaking trinkets, or just make cc not work on players.<br />
+<br />
+Ultimately Wow is moving towards a sort of Diablo III abilities model, resource generators, resource consumers, and a proc. In the end we will all just be pressing 11211231121123112 .....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mc9</div><div class="date">2014-02-28, 04:57 PM</div></div><div class="posttext">Well, according to the graph, WotLK is when they started messing up with scaling of playing power. Which makes perfect sense. Then it got out of control and stupid. No wonder.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">psychok9</div><div class="date">2014-02-28, 05:19 PM</div></div><div class="posttext">I like almost all changes...<br />
+My question is how they can scale down old content, with new and close stats!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">valliant13</div><div class="date">2014-02-28, 05:22 PM</div></div><div class="posttext">all you babies crying about them &quot;dumbing down the game&quot; are pathetic. This isn't vanilla anymore. Think of it if you owned a business....make an easy to use product that everyone can use and make a ton of money, or make something very complex and have a lot of un-needed things included with it that only targets a certain demographic and make an okay amount. <br />
+<br />
+This is the direction of the game, if it stops being fun stop playing. However WoD to me is going to be insanely fun. The squish is also absolutely necessary. 300k+ damage single target is absurd. I can't wait to see realistic numbers again, on top of the ease on processing power.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb1a5994e5b</div><div class="date">2014-02-28, 05:24 PM</div></div><div class="posttext">Despite the declarations of 'not dumbing things down', that's exactly what it looks like to me.<br />
+<br />
+Many buttons does not necessarily equate to complexity. Take a look at League of Legends as an example. If the amount of buttons you can push is directly proportional to the complexity of a game, I guess League of Legends is a game for toddlers. <br />
+<br />
+<br />
+and what u describe is what differes average/bad players from a really good one - a really good one uses most of his abilities nearly all the time in eveyr single possible moment they can be used - average/bad players really uses those 5-6 buttons to complete even full normal modes making life for anyone around him significantly harder without even noticing it -_- <br />
+<br />
+what u descirbed here is exacty reason why people think and have right that blizzard is dumbing down the game with each patch to cater to mediocrity -_- and such catering to mediocrity will be what eventually will kill of wow - wow will kill itself with time cause of how far away from its roots its going to go into console arcade game direction. u can see it already for few expansions which each of them introduces more and more arcade elements to pve cause &quot;its making game interesting &quot; and its goign more and more away from the roots of being rpg.<br />
+<br />
+Oh come on.<br />
+<br />
+People have been using those apocalyptic terms ever since Classic. In Classic it was the raid size. In TBC it was welfare epics, and epics for badges. In WotLK it was because they were &quot;dumbing down the game&quot;.<br />
+<br />
+It didn't kill WoW back then, and it isn't going to kill it now either. Time will kill WoW, not some random change.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SpartanJet</div><div class="date">2014-02-28, 05:29 PM</div></div><div class="posttext">TL;DR, &quot;we're dumbing down the game for idiots&quot;<br />
+<br />
+I would love to hear one case of someone raiding that complains they have too many keybinds.<br />
+<br />
+crap! I have too many options! better streamline everything so even a complete moron can be successful!<br />
+<br />
+I raid and there are TOOO many keybinds. When I can fill my G13 (25 keybinds) with straight abilities not including any macros and still not have enough keys then there is a problem. Skill is not equal to keybinds. Hopefully they trim quite a bit and make the abilities they do keep more meaningful.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">valliant13</div><div class="date">2014-02-28, 05:34 PM</div></div><div class="posttext">and what u describe is what differes average/bad players from a really good one - a really good one uses most of his abilities nearly all the time in eveyr single possible moment they can be used - average/bad players really uses those 5-6 buttons to complete even full normal modes making life for anyone around him significantly harder without even noticing it -_- <br />
+<br />
+what u descirbed here is exacty reason why people think and have right that blizzard is dumbing down the game with each patch to cater to mediocrity -_- and such catering to mediocrity will be what eventually will kill of wow - wow will kill itself with time cause of how far away from its roots its going to go into console arcade game direction. u can see it already for few expansions which each of them introduces more and more arcade elements to pve cause &quot;its making game interesting &quot; and its goign more and more away from the roots of being rpg.<br />
+<br />
+you're beyond wrong and make yourself look stupid for saying that really good players use most of their abilities all the time....Optimal dw frost dk play has about 5-6 keys to be used period....I guess I'm bad because I don't use chains of ice on bosses....my bad.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-02-28, 05:37 PM</div></div><div class="posttext">Well, according to the graph, WotLK is when they started messing up with scaling of playing power. Which makes perfect sense. Then it got out of control and stupid. No wonder.<br />
+<br />
+You are wrong. They didn´t get stupid, nor make many mistakes. The need for item squish is NEEDED because of the nature of the game, not by any mistakes they made.<br />
+<br />
+Here are facts. This is the nature of WOW, and any gear-centric game.<br />
+<br />
+1. Players need to get more powerful as they level. Even though you killed LK, you still need to feel more powerful pretty soon once Cata started.<br />
+2. Players need to get more powerful during different tiers of the same expansion. It would suck if you could complete SoO using the same gear you used to complete MSV.<br />
+3. Heroic gear needs to have a higher ilvl than normal gear.<br />
+<br />
+When an expansion is current #2 is needed. After an expansion is not current #2 is not needed. In other words, there is no problem right now if you can kill Lich King with the same gear you killed Naxx. All the item squish is going to do is basically push LK down to the same ilvl as Naxx.. removing all that ´progression´within that expansion that is no longer needed.<br />
+<br />
+Now stupid people will say, in 3 years, when item squish is needed again that ´Blizzard did not learn´.. ´lol, they need to do it again´.. But it isn´t about learning or making mistakes.. It is about the nature of WOW progression. Yes, it is going to be needed again.. in 3 years, yes, they are going to make SoO and MSV basically have the same ilvl.<br />
+<br />
+WOTLK only looks like it ´got out of control´ because that is when they introduced heroics and added another set of gear on top of what they already had. Do you think heroic mode raids are a mistake? No. Do you think Heroic modes should reward the same ilvl as normal modes? No. They made the game better by adding a lot of cool things, ilvl increases are just the result, but not a mistake.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Prokne</div><div class="date">2014-02-28, 05:45 PM</div></div><div class="posttext">Looks like I guessed right when I said that they would overnerf old raiding content so you can still solo it. Unfortunately that ruins the challenge and feeling that you are doing the same thing by yourself that it took 9-24 other people to do when it was new. Now its just going to be go in and farm your transmog, pets, mounts without as much fun.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Siddown</div><div class="date">2014-02-28, 05:50 PM</div></div><div class="posttext">You are wrong. They didn´t get stupid, nor make many mistakes. The need for item squish is NEEDED because of the nature of the game, not by any mistakes they made.<br />
+<br />
+Here are facts. This is the nature of WOW, and any gear-centric game.<br />
+<br />
+1. Players need to get more powerful as they level. Even though you killed LK, you still need to feel more powerful pretty soon once Cata started.<br />
+<br />
+The thing is, the jump from WotLK -&gt; Cataclysm was just beyond massive. No other expansion had such a huge jump in power. Greens in Cata destroyed Epics in WotLK, in all other expansions greens were on par or slightly better.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">valliant13</div><div class="date">2014-02-28, 06:03 PM</div></div><div class="posttext">You are wrong. They didn´t get stupid, nor make many mistakes. The need for item squish is NEEDED because of the nature of the game, not by any mistakes they made.<br />
+<br />
+Here are facts. This is the nature of WOW, and any gear-centric game.<br />
+<br />
+1. Players need to get more powerful as they level. Even though you killed LK, you still need to feel more powerful pretty soon once Cata started.<br />
+2. Players need to get more powerful during different tiers of the same expansion. It would suck if you could complete SoO using the same gear you used to complete MSV.<br />
+3. Heroic gear needs to have a higher ilvl than normal gear.<br />
+<br />
+When an expansion is current #2 is needed. After an expansion is not current #2 is not needed. In other words, there is no problem right now if you can kill Lich King with the same gear you killed Naxx. All the item squish is going to do is basically push LK down to the same ilvl as Naxx.. removing all that ´progression´within that expansion that is no longer needed.<br />
+<br />
+Now stupid people will say, in 3 years, when item squish is needed again that ´Blizzard did not learn´.. ´lol, they need to do it again´.. But it isn´t about learning or making mistakes.. It is about the nature of WOW progression. Yes, it is going to be needed again.. in 3 years, yes, they are going to make SoO and MSV basically have the same ilvl.<br />
+<br />
+WOTLK only looks like it ´got out of control´ because that is when they introduced heroics and added another set of gear on top of what they already had. Do you think heroic mode raids are a mistake? No. Do you think Heroic modes should reward the same ilvl as normal modes? No. They made the game better by adding a lot of cool things, ilvl increases are just the result, but not a mistake.<br />
+<br />
+Adding ilvls wasn't a mistake what was is simply too many per expansion. Yes you need to feel more powerful but not extremely more powerful every tier. For instance the difference between perditions blade(bis dagger for lvl 60 rogue at the end of MC) and the next bis dagger in BWL is much smaller than weapons now. Endgame ilvl started at 463(probably less, but im basing this off heroics). Final tier ilvl is 580. That is the problem and since wrath the gap between the initial endgame ilvl and final tier ilvl keeps growing.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+The thing is, the jump from WotLK -&gt; Cataclysm was just beyond massive. No other expansion had such a huge jump in power. Greens in Cata destroyed Epics in WotLK, in all other expansions greens were on par or slightly better.<br />
+<br />
+I used naxx40 gear into the first raids of TBC. I used some TBC gear until max level in wotlk. In cata I was replacing SOME epics in the first or second zone. That's wrong imo. Final tier gear should last until mid-max level of the next expansion.<br />
+<br />
+so I am agreeing with you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sargiean</div><div class="date">2014-02-28, 06:39 PM</div></div><div class="posttext">Atleast give us Feral Druids our instant cyclone back then if it can be dispelled now too. I mean, hardcasting a clone for it to be dispelled is not really worth it.<br />
+<br />
+Thats literally your what - 1 spell that requires you to stop moving to cast - and you want it buffed?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BrerBear</div><div class="date">2014-02-28, 06:59 PM</div></div><div class="posttext">Adding ilvls wasn't a mistake what was is simply too many per expansion. Yes you need to feel more powerful but not extremely more powerful every tier. For instance the difference between perditions blade(bis dagger for lvl 60 rogue at the end of MC) and the next bis dagger in BWL is much smaller than weapons now. Endgame ilvl started at 463(probably less, but im basing this off heroics). Final tier ilvl is 580. That is the problem and since wrath the gap between the initial endgame ilvl and final tier ilvl keeps growing.<br />
+To be fair, you need to compare level 60 dungeon blues in Vanilla with original Naxx weapons and calculate the perccentage iLvl difference if you are weighing against start and end of Pandaria.<br />
+<br />
+Edit: I went back and checked. UBRS gear was iLvl 60, and original Naxx dropped 90+ items, which is a 50% iLvl increase in one &quot;expansion&quot;. While it's not an exact comparison, because base stats had a greater influence at lower numbers, you can see that item level increases were giant by percentage back since the beginning. The big numbers just make it feel bigger now.<br />
+<br />
+Further Edit: In Burning Crusade, level 70 heroics dropped around iLvl 110 and Sunwell around iLvl 160+, again about a 50% increase. So, Pandaria is kind of low by comparison. Pandaria is only about a 25% increase at endgame.<br />
+<br />
+The exponential growth in stats was neither unexpected nor unnatural. Blizzard has said, and I agree, that each tier must be a percentage better than the last or players don't feel the difference when they upgrade. That's why the iLvl has to explode over time. It is inevitable that they will have to do this again in a few expansions.<br />
+<br />
+I was really hoping that they would finally detail the solo protection scaling buff, but still we wait. *sigh*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Expectations</div><div class="date">2014-02-28, 07:00 PM</div></div><div class="posttext">So tired of PvP nerfs effecting PVE. So over it.<br />
+<br />
+Pretty sure others are tired of PvE nerfs effecting PvP too.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Salacnar</div><div class="date">2014-02-28, 07:00 PM</div></div><div class="posttext">Two reasons for an item squish:<br />
+<br />
+- numbers getting too huge that a computer can process them effectively, making the servers handle much more workload, thus laggy and useing them up faster<br />
+<br />
+- do you see this gigantic spike in power from level 90 to 100? that's like 5 times the power we have now. Can you imagine tanks haveing around 6 million health? Or hiting 6 digits with dots? Well, I can, but it would look extremely silly<br />
+<br />
+i sir totally agree with that</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mnevis</div><div class="date">2014-02-28, 07:12 PM</div></div><div class="posttext">That list of CC changes looks amazing. <br />
+<br />
+Also, I knew that once I race-changed my Tauren Shaman, racial balance was sure to come before long, so you're all welcome.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf30a4bf814</div><div class="date">2014-02-28, 07:25 PM</div></div><div class="posttext">So much tears like before any expansion, yet people will buy it and play!<br />
+<br />
+I like all changes they announced so far. Less stuff to press will be fun. There is allready too many keybinds for some classes. CC changes looks really nice aswell.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elrandir</div><div class="date">2014-02-28, 07:39 PM</div></div><div class="posttext">Happy about everything they said, especially the item squish looking good, glad that they're doing it for other expansions too.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ZeroWashu</div><div class="date">2014-02-28, 07:55 PM</div></div><div class="posttext">You are wrong. They didn´t get stupid, nor make many mistakes. The need for item squish is NEEDED because of the nature of the game, not by any mistakes they made.<br />
+<br />
+Here are facts. This is the nature of WOW, and any gear-centric game.<br />
+<br />
+1. Players need to get more powerful as they level. Even though you killed LK, you still need to feel more powerful pretty soon once Cata started.<br />
+2. Players need to get more powerful during different tiers of the same expansion. It would suck if you could complete SoO using the same gear you used to complete MSV.<br />
+3. Heroic gear needs to have a higher ilvl than normal gear.<br />
+<br />
+<br />
+Yet your completely wrong. The mistake was made with the revamp of health pools and healing with Cata. They moved health pools to ridiculous levels in a wrong headed attempt to mute the effects burst had in PVP which was turning it into a game of who goes first. Healing was then made incredibly expensive, spell efficiency going from 8 per 1 mana to 2 to 1 for some spells, to make sure that arena play and similar didn't just come down to a heal fest.<br />
+<br />
+Players do need to get more powerful between tiers but not to the stupid extent that Blizzard has been following. The highest blue level weapons are what? 463 in current expansion and yet top tier raid weapons are three times the effect? Really was that called for? Don't even get me started on that bullshit that is the Legendary cloak. OMGWTFBBQ<br />
+<br />
+Its because they have no restraint. Its like watching ten year old kids play D&amp;D and constantly using the Treasure Guide as their personal vault, or Deities and Demigods for what they should have. To make matters worse, if they cannot get the stat bump past the laugh test they make set bonuses that might as well be &quot;I win&quot; buttons.<br />
+<br />
+No, this isn't natural progression, its the mistake rank amateurs make. They just aim to one up and then wonder where in the hell balance went.<br />
+<br />
+Yet they did show they had a solution, they can iLevel cap instances/bgs and the like. They need to do so going forward so that 5 man which was challenging on day one is still gear challenging on the last day of the expansion. So that a boss from Tier X is still a fight for those who wear Tier X+5. Stats should never allow you to ignore mechanics. <br />
+<br />
+Sheesh, my casters main hand weapon has better stats than my base character has. If it was a NPC it would kick my ass.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+That list of CC changes looks amazing. <br />
+<br />
+Also, I knew that once I race-changed my Tauren Shaman, racial balance was sure to come before long, so you're all welcome.<br />
+<br />
+I just hope NPCs follow the same rules, leveling up a new tank recently reminded me of how often and annoyingly I spend polymorphed or stunned in fights. Between being frogged in ZF to being stunned in nearly every other instance, at times chain stunned, I can understand why so many don't make it. PvP I expect to get ganged up on, but damn NPCs should have limits too</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lilscrappy</div><div class="date">2014-02-28, 08:18 PM</div></div><div class="posttext">In a way WoW is like a double edged sword, its a great successful MMO and will always be thought of as one of the best MMO's of all time,<br />
+<br />
+BUT,<br />
+<br />
+the longer it is out &amp; the more expansions/content is released, they need to &quot;scale-down&quot; and re-think abilities/talents and how the game works or it will just get convoluted overtime (like it has). So on 1 side, we have the people (mostly casuals - which is a HUGE part of the player base now) that are happy about these changes, also new players just now joining the game, and on the other side we get the long-term players and hardcore players/pvp'ers that hate the changes and swear that the game is getting more &amp; more casual every expansion.<br />
+<br />
+Let's point out the obvious here, WoW IS getting more casual every expansion, but it gets harder for Blizzard to interest people to come play their game every new expansion so this is the only way they can make money or gain more players because they lose some long-term players who are just bored of playing the game for years and years. For me, I usually come back for a couple months to play the new expansion, then quit right after. I mostly play for nostalgia reasons of being a 40man raider in vanilla WoW.<br />
+<br />
+Also on a side note, WoD doesn't look amazing to me, I won't bash it until I buy it - but my hopes for this new expansion have gone down a ton since I've seen beta videos. It just doesn't LOOK fun or interesting like it used to be.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chrisfover87</div><div class="date">2014-02-28, 08:56 PM</div></div><div class="posttext">on lord I miss GC now</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Panthreau</div><div class="date">2014-02-28, 09:37 PM</div></div><div class="posttext">Well they have to remove Abilities in order to make it playable on the PS4 and XBONE! Duh.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">darkthunder</div><div class="date">2014-02-28, 09:38 PM</div></div><div class="posttext">&quot;It's important to understand that this isn’t a nerf—in effect, you’ll still be just as powerful, but the numbers that you see will be easier to comprehend.&quot;<br />
+<br />
+Translation: The majority of our playerbase is too stupid to understand big numbers, so we're making life less scary for them. <br />
+<br />
+(I have seen some very good reasons for an item squish. This is not one of them.)<br />
+<br />
+Translation of your translation: Item Squish is NECESSARY due to programming limitations.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Oraxin</div><div class="date">2014-02-28, 09:45 PM</div></div><div class="posttext">oh praise to blizz god for the cc changes</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Prokne</div><div class="date">2014-02-28, 09:58 PM</div></div><div class="posttext">WOTLK only looks like it ´got out of control´ because that is when they introduced heroics and added another set of gear on top of what they already had. Do you think heroic mode raids are a mistake? No. Do you think Heroic modes should reward the same ilvl as normal modes? No. They made the game better by adding a lot of cool things, ilvl increases are just the result, but not a mistake.<br />
+<br />
+They should have never added a higher ilvl gear from heroic raids. The point of heroic raids is that they are more challenging than normal raids which doesnt mean you need better gear from them. In fact the better gear makes them easier which defeats the purpose. All they needed to do was put a heroic tag on the gear and/or different colors so that it had some heroic prestige. That along with the extra titles/achs/mounts should be enough for people who should be running heroic raids for the challenge, not for the gear.<br />
+<br />
+And then the other problem is bumping character power up like 40% each tier which is totally not necessary. Something like 5-10% should be enough to make new encounters challenging. And then heroic raids should only be possible with a large amount of current raid normal gear, not a separate gear progression of heroic gear.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Translation of your translation: Item Squish is NECESSARY due to programming limitations.<br />
+<br />
+Actually its not. It never was and never will be necessary. Its just more convenient for them than fixing their limited programming which is using integer values for everything. Even a basic calculator can calculate numbers greater than 2 billion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nerraw</div><div class="date">2014-02-28, 10:06 PM</div></div><div class="posttext">Actually its not. It never was and never will be necessary. Its just more convenient for them than fixing their limited programming which is using integer values for everything. Even a basic calculator can calculate numbers greater than 2 billion.<br />
+<br />
+You're talking about &quot;fixing&quot; software that is 15 years old if not more. Hidden Path did it recently with AoE2HD. How? They rebuilt the game from the ground up because it was easier. If Blizzard was to do the same thing you'd lose a lot more than a raid tier.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2014-02-28, 11:19 PM</div></div><div class="posttext">I think I need to step back and take a break from these and other wow sites for a while<br />
+<br />
+NONE of this feel like news to me, except maybe some of the CC changes so i'm feeling very underwhelmed by this so called &quot;info dump&quot;<br />
+<br />
+I think I set my expectations too high :(<br />
+<br />
+<br />
+haha, I am with you. I think that is some of the angst on these forums regarding what information was released. Many of us hang on every dev interview or tweet from a dev, so not much was new. But from the perspective of ´average´ players, many of them are probably learning of this for the first time. I know most of my guild does not even know item squish is coming.<br />
+<br />
+For me, the only thing I read in the blog that was ´new´ for me was about disarm getting removed. The followup stuff regarding the exact racials was new too.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Adding ilvls wasn't a mistake what was is simply too many per expansion. Yes you need to feel more powerful but not extremely more powerful every tier. For instance the difference between perditions blade(bis dagger for lvl 60 rogue at the end of MC) and the next bis dagger in BWL is much smaller than weapons now. Endgame ilvl started at 463(probably less, but im basing this off heroics). Final tier ilvl is 580. That is the problem and since wrath the gap between the initial endgame ilvl and final tier ilvl keeps growing.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+<br />
+I used naxx40 gear into the first raids of TBC. I used some TBC gear until max level in wotlk. In cata I was replacing SOME epics in the first or second zone. That's wrong imo. Final tier gear should last until mid-max level of the next expansion.<br />
+<br />
+so I am agreeing with you.<br />
+<br />
+If we are sitting here talking about item squish, it is easy to go back and say in a certain expansion, they increased it too much. But like with MoP.. there are all kinda little things that play into it that we aren´t remembering. For instance, they didn´t want raiders to feel like they had to do LFR. They didn´t want heroic raiders to not replace gear in the next tier´s normal mode.. etc etc. <br />
+<br />
+They had to make a lot of judgement calls along the way that affected tier-to-tier progression.. especially back in Wotlk when they started with heroic gear and stuff like that. At the time, most of those decisions were correct and we didn´t really experience anything funky ( like killing a new tier boss and not getting upgrades). It is easy to look back and say what caused item squish to be needed, but if you go back to when those things happened, it would be hard to find fault with how they did things.<br />
+<br />
+Also, and this is of course opinion... I personally don´t want to level through an entire expansions zones and not get gear upgrades. It is debatable how far into a new expansion your old gear should get you... but if you start raiding WoD raids using MoP gear.. to me, that is bad. I don´t think heroic SoO gear needs to be replaced in the first zone or two, but it definitely needs to be replaced before lvl 100 dungeon blues.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+Yet your completely wrong. The mistake was made with the revamp of health pools and healing with Cata. They moved health pools to ridiculous levels in a wrong headed attempt to mute the effects burst had in PVP which was turning it into a game of who goes first. Healing was then made incredibly expensive, spell efficiency going from 8 per 1 mana to 2 to 1 for some spells, to make sure that arena play and similar didn't just come down to a heal fest.<br />
+<br />
+Players do need to get more powerful between tiers but not to the stupid extent that Blizzard has been following. The highest blue level weapons are what? 463 in current expansion and yet top tier raid weapons are three times the effect? Really was that called for? Don't even get me started on that bullshit that is the Legendary cloak. OMGWTFBBQ<br />
+<br />
+Its because they have no restraint. Its like watching ten year old kids play D&amp;D and constantly using the Treasure Guide as their personal vault, or Deities and Demigods for what they should have. To make matters worse, if they cannot get the stat bump past the laugh test they make set bonuses that might as well be &quot;I win&quot; buttons.<br />
+<br />
+No, this isn't natural progression, its the mistake rank amateurs make. They just aim to one up and then wonder where in the hell balance went.<br />
+<br />
+Yet they did show they had a solution, they can iLevel cap instances/bgs and the like. They need to do so going forward so that 5 man which was challenging on day one is still gear challenging on the last day of the expansion. So that a boss from Tier X is still a fight for those who wear Tier X+5. Stats should never allow you to ignore mechanics. <br />
+<br />
+<br />
+There were a lot of reasons for the healthpool changes in Cata, you are just focusing on the one you want- pvp. One of the other major reasons is because they wanted to make dungeons and raids more interesting on healers. Before Cata, dps and healers had such low health, that everything was a one-shot mechanism if it didn´t hit the tank. The change to healthpools in Cata allowed them to make raid and dungeon encounters more interesting by preventing 1-shot deaths.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BonesTheRabbit</div><div class="date">2014-02-28, 11:56 PM</div></div><div class="posttext">Yeah. Nerf Fear. It's not like the moving aspect is a double-edged sword or it's the easiest CC in the game to cleanse or anything. I'll keep my judgement until I see the health and healing aspect, but if they nerf CC and burst into the ground like this, healers are going to be downright impossible to kill.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Solidusbr</div><div class="date">2014-03-01, 12:19 AM</div></div><div class="posttext">Cleaning GC wreckage, I see.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="calculator, honor, functionvalue, return, link, points, gold, emblems, marks, 2.976, justice, 4,000, converted, rate, conquest, mark, cataclysm, array, 4000, emblem, currency, 55000, stone, shards, 19.08, wintergrasp, shard, spirit, venture, triumph, frost, 11.58, patch, 0.85, heroism, valor, total, badges, point, limit, arena, 0.024, badge, math, heavy, 1.833, immediately, fair, conversion, feel" />
+<meta name="description" content="Cataclysm Currency and Honor Calculator 
+&lt;h1&gt;Emblems and Badges&lt;/h1&gt; 
+&lt;div id=&quot;ccalc&quot;&gt;&lt;/div&gt; 
+ 
+&lt;h1&gt;Honor points&lt;/h1&gt; 
+&lt;div id=&quot;hcalc&quot;&gt;&lt;/div&gt; 
+ 
+&lt;script type=&quot;text/javascript&quot;&gt; 
+				CUR_CALC_LIMITS = { 
+					justice: {limit: 4000, rate: 4750}," />
+<title> Cataclysm Currency and Honor Calculator [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Cataclysm Currency and Honor Calculator</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-760286.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/760286-Cataclysm-Currency-and-Honor-Calculator">Cataclysm Currency and Honor Calculator</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-09-15, 04:22 PM</div></div><div class="posttext">Cataclysm Currency and Honor Calculator<br />
+<br />
+&lt;h1&gt;Emblems and Badges&lt;/h1&gt;<br />
+&lt;div id=&quot;ccalc&quot;&gt;&lt;/div&gt;<br />
+<br />
+&lt;h1&gt;Honor points&lt;/h1&gt;<br />
+&lt;div id=&quot;hcalc&quot;&gt;&lt;/div&gt;<br />
+<br />
+&lt;script type=&quot;text/javascript&quot;&gt;<br />
+CUR_CALC_LIMITS = {<br />
+justice: {limit: 4000, rate: 4750},<br />
+honor: {limit: 4000, rate: 3500}<br />
+}<br />
+<br />
+CUR_CALC_CURRENCIES = Array(<br />
+{<br />
+name: 'Badges of Justice',<br />
+link: 'http://db.mmo-champion.com/i/29434/badge-of-justice/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/spell_holy_championsbond.png',<br />
+calculator: function(value) {<br />
+return value * 18330;<br />
+}<br />
+},<br />
+{<br />
+name: 'Emblems of Heroism',<br />
+link: 'http://db.mmo-champion.com/i/40752/emblem-of-heroism/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/spell_holy_proclaimchampion.png',<br />
+calculator: function(value) {<br />
+return value * 55000;<br />
+}<br />
+},<br />
+{<br />
+name: 'Emblems of Valor',<br />
+link: 'http://db.mmo-champion.com/i/40753/emblem-of-valor/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/spell_holy_proclaimchampion_02.png',<br />
+calculator: function(value) {<br />
+return value * 55000;<br />
+}<br />
+},<br />
+{<br />
+name: 'Emblems of Conquest',<br />
+link: 'http://db.mmo-champion.com/i/45624/emblem-of-conquest/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/spell_holy_championsgrace.png',<br />
+calculator: function(value) {<br />
+return value * 55000;<br />
+}<br />
+}<br />
+);<br />
+CUR_CALC_JUSTICE = Array(<br />
+{<br />
+name: 'Emblems of Frost',<br />
+link: 'http://db.mmo-champion.com/i/49426/emblem-of-frost/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/inv_misc_frostemblem_01.png',<br />
+calculator: function(value) {<br />
+return value * 11.58;<br />
+}<br />
+},<br />
+{<br />
+name: 'Emblems of Triumph',<br />
+link: 'http://db.mmo-champion.com/i/47241/emblem-of-triumph/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/spell_holy_summonchampion.png',<br />
+calculator: function(value) {<br />
+return value * 11.58;<br />
+}<br />
+}<br />
+);<br />
+CUR_CALC_HONORS = Array(<br />
+{<br />
+name: 'Honor Points',<br />
+link: 'http://db.mmo-champion.com/i/43308/honor-points/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/achievement_arena_2v2_1.png',<br />
+calculator: function(value) {<br />
+return value * 0.024;<br />
+}<br />
+},<br />
+{<br />
+name: 'Arena Points',<br />
+link: 'http://db.mmo-champion.com/i/43307/arena-points/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/achievement_arena_2v2_7.png',<br />
+calculator: function(value) {<br />
+return value * 0.85;<br />
+}<br />
+},<br />
+{<br />
+name: 'Wintergrasp Marks of Honor',<br />
+link: 'http://db.mmo-champion.com/i/43589/wintergrasp-mark-of-honor/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/inv_jewelry_ring_66.png',<br />
+calculator: function(value) {<br />
+return value * 19.08;<br />
+}<br />
+},<br />
+{<br />
+name: 'Alterac Valley Marks of Honor',<br />
+link: 'http://db.mmo-champion.com/i/20560/alterac-valley-mark-of-honor/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/inv_jewelry_necklace_21.png',<br />
+calculator: function(value) {<br />
+return value * 2.976;<br />
+}<br />
+},<br />
+{<br />
+name: 'Arathi Basin Marks of Honor',<br />
+link: 'http://db.mmo-champion.com/i/20559/arathi-basin-mark-of-honor/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/inv_jewelry_amulet_07.png',<br />
+calculator: function(value) {<br />
+return value * 2.976;<br />
+}<br />
+},<br />
+{<br />
+name: 'Eye of the Storm Marks of Honor',<br />
+link: 'http://db.mmo-champion.com/i/29024/eye-of-the-storm-mark-of-honor/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/spell_nature_eyeofthestorm.png',<br />
+calculator: function(value) {<br />
+return value * 2.976;<br />
+}<br />
+},<br />
+{<br />
+name: 'Isle of Conquest Marks of Honor',<br />
+link: 'http://db.mmo-champion.com/i/47395/isle-of-conquest-mark-of-honor/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/inv_jewelry_necklace_27.png',<br />
+calculator: function(value) {<br />
+return value * 2.976;<br />
+}<br />
+},<br />
+{<br />
+name: 'Strand of the Ancients Marks of Honor',<br />
+link: 'http://db.mmo-champion.com/i/42425/strand-of-the-ancients-mark-of-honor/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/inv_jewelry_amulet_01.png',<br />
+calculator: function(value) {<br />
+return value * 2.976;<br />
+}<br />
+},<br />
+{<br />
+name: 'Warsong Gulch Marks of Honor',<br />
+link: 'http://db.mmo-champion.com/i/20558/warsong-gulch-mark-of-honor/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/inv_misc_rune_07.png',<br />
+calculator: function(value) {<br />
+return value * 2.976;<br />
+}<br />
+},<br />
+{<br />
+name: 'Stone Keeper\'s Shards',<br />
+link: 'http://db.mmo-champion.com/i/43228/stone-keepers-shard/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/inv_misc_platnumdisks.png',<br />
+calculator: function(value) {<br />
+return value * 1.6;<br />
+}<br />
+},<br />
+{<br />
+name: 'Venture Coins',<br />
+link: 'http://db.mmo-champion.com/i/37836/venture-coin/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/inv_misc_coin_16.png',<br />
+calculator: function(value) {<br />
+return value * 3;<br />
+}<br />
+},<br />
+{<br />
+name: 'Spirit Shards',<br />
+link: 'http://db.mmo-champion.com/i/28558/spirit-shard/',<br />
+img: 'http://db.mmo-champion.com/static/img/icons/inv_jewelry_frostwolftrinket_04.png',<br />
+calculator: function(value) {<br />
+return value;<br />
+}<br />
+}<br />
+);<br />
+&lt;/script&gt;<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://static.mmo-champion.com/js/currency-calc/calc.js&quot;&gt;&lt;/script&gt;<br />
+<br />
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://static.mmo-champion.com/js/currency-calc/calc.css&quot;/&gt;<br />
+Cataclysm Currency Changes Formula<br />
+Expect an interesting update in a few minutes.<br />
+Here's some information on how each of the currencies will be converted in the next content patch. Keep in mind these values may change, and they can get a bit math heavy. Just know that our intent is to appropriately value each mark and provide a conversion we feel is fair.<br />
+<br />
+The following items are immediately converted to gold:<br />
+<br />
+<br />
+<br />
+Emblem of Heroism = 5.5 gold each<br />
+Emblem of Valor = 5.5 gold each<br />
+Emblem of Conquest = 5.5 gold each<br />
+Badge of Justice = 1.833 gold each<br />
+<br />
+<br />
+Your New Honor Points total will be the sum of the following amounts:<br />
+<br />
+<br />
+<br />
+Old Honor * 0.024<br />
+Old Arena Points * 0.85<br />
+Battleground Mark of Honor * 2.976<br />
+Wintergrasp Mark of Honor * 19.08<br />
+Stone Keeper Shard * 1.6<br />
+Venture Coin * 3<br />
+Spirit Shard * 1<br />
+<br />
+<br />
+Your Justice Points total will be equal to (Emblems of Triumph + Emblems of Frost ) * 2.75<br />
+<br />
+Again, the softcap for both Honor and Justice conversions is 4000 points. This means that if a character converts to above 4,000 points, it will not be possible for them to earn more until they fall below the 4,000 cap.<br />
+<br />
+A hardcap will be implemented in a following patch before Cataclysm's release. At that time, any excess points above 4,000 will be converted as follows:<br />
+<br />
+<br />
+<br />
+Honor points above 4,000 are converted to gold at a rate of 35 silver per point of Honor.<br />
+Justice points above 4,000 are converted to gold at a rate of 2 gold per point of Justice.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0d8e6c2903</div><div class="date">2010-09-15, 04:33 PM</div></div><div class="posttext">Nice o.O /me needs more money</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cyloria</div><div class="date">2010-09-15, 04:33 PM</div></div><div class="posttext">What I want to know is will Justice points be able to buy stuff first tier of Cata? That way I know if I should be saving them or buying saronites now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mendol</div><div class="date">2010-09-15, 04:34 PM</div></div><div class="posttext">The triumph and frost badge conversion rate STILL seems too low compared to prices on the PTR.<br />
+<br />
+1.8G per badge of justice, on the other hand, is way too generous.<br />
+<br />
+---------- Post added 2010-09-15 at 11:37 AM ----------<br />
+<br />
+<br />
+<br />
+I would imagine that justice points will:<br />
+- be able to by heroic dungeon equivalent gear<br />
+- might be able to buy 1 or 2 pieces of T11, but not the whole set</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rhorle</div><div class="date">2010-09-15, 04:38 PM</div></div><div class="posttext">I was hoping halaa marks would be converted too. Looks like we will still have to farm those for the two halaa mounts.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Marlamin</div><div class="date">2010-09-15, 04:39 PM</div></div><div class="posttext">Hot.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocffb391c945</div><div class="date">2010-09-15, 04:42 PM</div></div><div class="posttext">hmm let me think:<br />
+100 X Emblem = 550G<br />
+550G x 3 = 1650 G<br />
+<br />
+100 Badges = 183.3 Gold<br />
+<br />
+mean a easy 1833.3 G when ur max on emblems <br />
+NICE!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mendol</div><div class="date">2010-09-15, 04:45 PM</div></div><div class="posttext">I think they already said it.<br />
+<br />
+You won't be able to buy anything at 85 with your current type of points since that would require the other tier points (heroism points I think).<br />
+They didn't say anything of the sort.<br />
+<br />
+Current tier gear will be the high end points (not justice).<br />
+<br />
+Previous tier will be justice points.<br />
+<br />
+They haven't explicitly said but it stands to reason that there will be non-tier level 85 gear to purchase with justice points immediately upon the release of cataclysm. Otherwise the points are absolutely, positively, useless.<br />
+<br />
+T10 will get replaced with quest gear in a level or two (Plus its cheaper by far to buy with badges than with points).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc9f100db02</div><div class="date">2010-09-15, 04:45 PM</div></div><div class="posttext">Not bad. Not bad at all &lt;(^)_(^)&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gratlim</div><div class="date">2010-09-15, 04:46 PM</div></div><div class="posttext">omg old honor = 0,024 new honor. Lame<br />
+Old cap 75000h * 0,024=1800. Not even half of the new cap. I hope the price of pvp stuff will also follow this rule (*0,024)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Leggomyeggo</div><div class="date">2010-09-15, 04:46 PM</div></div><div class="posttext">The arrows on the text boxes do not work to calculate the value. Even if you use the arrows to put in the number and then click in the box and hit enter it still doesn't work. The number must be typed and then you must hit enter or tab. Perhaps you can fix this? I'm using Chrome as a browser.<br />
+<br />
+Sweet calculator otherwise. :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airath</div><div class="date">2010-09-15, 04:47 PM</div></div><div class="posttext">hmm let me think:<br />
+100 X Emblem = 550G<br />
+550G x 3 = 1650 G<br />
+<br />
+100 Badges = 183.3 Gold<br />
+<br />
+mean a easy 1833.3 G when ur max on emblems <br />
+NICE!<br />
+<br />
+There is no known emblem cap!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hyle</div><div class="date">2010-09-15, 04:48 PM</div></div><div class="posttext">Now I wish I had saved the BC badges instead of dumping them for vendor fodder.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">gry</div><div class="date">2010-09-15, 04:49 PM</div></div><div class="posttext">Badge of Justice = 1.833 gold each<br />
+<br />
+is this serious?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mewt666</div><div class="date">2010-09-15, 04:52 PM</div></div><div class="posttext">so emblems of frost have the same value as emblems of triumph ? what bullshit</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airath</div><div class="date">2010-09-15, 04:54 PM</div></div><div class="posttext">Badge of Justice = 1.833 gold each<br />
+<br />
+is this serious?<br />
+<br />
+<br />
+yes, that means you get like extra 8g for soloing a level 70 heroic, which is a joke, of course.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daedius</div><div class="date">2010-09-15, 04:54 PM</div></div><div class="posttext">wow - gonna get a ton of gold off that conversion o.O</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wickedpissah</div><div class="date">2010-09-15, 04:54 PM</div></div><div class="posttext">Stop trading your Wintergrasp Marks of Honor for Wintergrasp Commendations. You'll get more honor from the mark conversion than the honor conversion (if I did my math correctly). 171 new honor for 9 commendations vs. 48 new honor for the 2000 old honor.<br />
+<br />
+EDIT: Grats to the guy who said he had 4000 venture coins yesterday!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bear</div><div class="date">2010-09-15, 04:54 PM</div></div><div class="posttext">I'll be farming badges then.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Narshe</div><div class="date">2010-09-15, 04:54 PM</div></div><div class="posttext">Likely that Valor points will drop in both heroics and the first teir of raiding, just like Wotlk with Heroism emblems. Justice points might be able to buy blue sets or items, or even certain profession mats, but dont expect to buy epics of any kind with Justice points. Unless its an absurd amount that you need for one item. But since theyre letting us farm points here soon, I dont find it likely.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">marrakoosh</div><div class="date">2010-09-15, 04:56 PM</div></div><div class="posttext">Yeah can't believe Frost and Triumph will convert to the same amount of JP.<br />
+<br />
+Just farm Heroics from now until Cata to be well in in terms of both JP and Gold when Cata hits!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alorae</div><div class="date">2010-09-15, 04:58 PM</div></div><div class="posttext">omg old honor = 0,024 new honor. Lame<br />
+Old cap 75000h * 0,024=1800. Not even half of the new cap. I hope the price of pvp stuff will also follow this rule (*0,024)<br />
+<br />
+No, items will still cost 20,000-35,000 points but you can only have 4000 points at a time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc1615415e70</div><div class="date">2010-09-15, 05:00 PM</div></div><div class="posttext">So.... the chinese farmers went from vanilla: grinding monsters, tbc:grinding monsters/'hey i can make a killing in AH', wotlk: ahouse 24/7!!! camp/grind/farm!!1 to cata: chinese dudes in bgs/ah. Interesting Blizzard. Yes I have read the thread.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayreonlol</div><div class="date">2010-09-15, 05:01 PM</div></div><div class="posttext">1455 Emblems to be capped, damn thats a lot lol</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocbafc44a7b6</div><div class="date">2010-09-15, 05:01 PM</div></div><div class="posttext">What about if you save Wintergrasp Commendations for a new alt?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daumier</div><div class="date">2010-09-15, 05:01 PM</div></div><div class="posttext">Oh man, what am I going to do with all the honor points I'm getting from all the Stone Keeper Shards and Wintergrasp Marks I have on my horde character on Sargeras!<br />
+<br />
+Oh wait that's right, I don't have any! Ha ha!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Puntar</div><div class="date">2010-09-15, 05:02 PM</div></div><div class="posttext">No, items will still cost 20,000-35,000 points but you can only have 4000 points at a time.<br />
+<br />
+Yeah, sure. And how the hell can you buy anything if all prices are above the cap?<br />
+<br />
+Cockblocking you to buy &quot;new&quot; items?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wickedpissah</div><div class="date">2010-09-15, 05:02 PM</div></div><div class="posttext">No, items will still cost 20,000-35,000 points but you can only have 4000 points at a time.<br />
+<br />
+Has anyone actually noticed that the honor cap is effectively more than doubled now? 75000 old honor * .024 conversion rate = 1800 new honor. Since we can cap at 4000 now, that's a lot more effective honor we can store up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daswolfen</div><div class="date">2010-09-15, 05:02 PM</div></div><div class="posttext">Looks like I will be farming BC instances for quick gold now, and more when Cata drops :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DevilHeart</div><div class="date">2010-09-15, 05:04 PM</div></div><div class="posttext">Will we be able to spend the justice points from the frosties/triumphs on items in cata?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc32bf69b9</div><div class="date">2010-09-15, 05:05 PM</div></div><div class="posttext">The arrows on the text boxes do not work to calculate the value. Even if you use the arrows to put in the number and then click in the box and hit enter it still doesn't work. The number must be typed and then you must hit enter or tab. Perhaps you can fix this? I'm using Chrome as a browser.<br />
+<br />
+Sweet calculator otherwise. :D<br />
+<br />
+Chrome is at fault here, nothing I can do sorry. For most people they don't see the arrows, it's something chrome adds because it sees the field is for a number.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mendol</div><div class="date">2010-09-15, 05:06 PM</div></div><div class="posttext">Not more useless than they would otherwise have been, I stand by what I said.<br />
+Fast forward to level 85.<br />
+<br />
+Why on earth would you run level 85 heroics if all they give you is the gear they drop (which you'll cease to find useful rather quickly), and justice points that can buy nothing useful?<br />
+<br />
+Clearly, justice badges are going to be able to buy something useful for a level 85 who's able to run heroics (beyond BoA gear). Unless you think the design goal is so people can accumulate enough points such that when the next tier comes out, they can immediately buy a full set.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Brattak</div><div class="date">2010-09-15, 05:08 PM</div></div><div class="posttext">That's some nice goldrush for all my characters. :D<br />
+I think i will exchange all my frost and triumph to lower emblems since i don't think there will be anything new to buy with justice, when i'm 85.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sparkymisslecat</div><div class="date">2010-09-15, 05:12 PM</div></div><div class="posttext">They haven't explicitly said but it stands to reason that there will be non-tier level 85 gear to purchase with justice points immediately upon the release of cataclysm. Otherwise the points are absolutely, positively, useless.<br />
+<br />
+They wont be useless - you will still be able to buy anything you can buy today with them. But don't expect Justice points to buy you anything good in Cataclysm. You will have to earn new (better) points for that. Otherwise, we could just /farm now and collect later, which would not make any sense.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tcbskater</div><div class="date">2010-09-15, 05:13 PM</div></div><div class="posttext">There is no known emblem cap!<br />
+<br />
+The cap is (2^31)-1</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc411cdf7e74</div><div class="date">2010-09-15, 05:14 PM</div></div><div class="posttext">Stop trading your Wintergrasp Marks of Honor for Wintergrasp Commendations. You'll get more honor from the mark conversion than the honor conversion (if I did my math correctly). 171 new honor for 9 commendations vs. 48 new honor for the 2000 old honor.<br />
+<br />
+EDIT: Grats to the guy who said he had 4000 venture coins yesterday!<br />
+<br />
+though commendations have the advantage, that you can take them into cataclysm. marks of honor will be forcibly changed into honor points with the soft cap patch. stock 4000 honor points between soft cap patch and cataclysm and as many commendations as possible -&gt; max honor at the start of s9</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">petrefax</div><div class="date">2010-09-15, 05:14 PM</div></div><div class="posttext">Fast forward to level 85.<br />
+<br />
+Why on earth would you run level 85 heroics if all they give you is the gear they drop (which you'll cease to find useful rather quickly), and justice points that can buy nothing useful?<br />
+<br />
+Clearly, justice badges are going to be able to buy something useful for a level 85 who's able to run heroics (beyond BoA gear). Unless you think the design goal is so people can accumulate enough points such that when the next tier comes out, they can immediately buy a full set.<br />
+<br />
+Or maybe, just maybe, the Cata heroics and T11 raids will share Valor points as their currency.<br />
+<br />
+Justice points will represent the previous tier of raiding (ie. WotLK) until T12 are released.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Recom</div><div class="date">2010-09-15, 05:19 PM</div></div><div class="posttext">Does somebody know how much Justice Points T10 and &quot;frost&quot; items cost ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Homeschool</div><div class="date">2010-09-15, 05:21 PM</div></div><div class="posttext">yes, that means you get like extra 8g for soloing a level 70 heroic, which is a joke, of course.<br />
+<br />
+Except, if you run with a group of 5 people, you EACH get 8g. Can't fix the solo value without granting 5 badges per boss, regardless of attendance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jokerjesus</div><div class="date">2010-09-15, 05:21 PM</div></div><div class="posttext">yes, that means you get like extra 8g for soloing a level 70 heroic, which is a joke, of course.<br />
+<br />
+Real men solo Kara.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sparkymisslecat</div><div class="date">2010-09-15, 05:21 PM</div></div><div class="posttext">Fast forward to level 85. Clearly, justice badges are going to be able to buy something useful for a level 85 who's able to run heroics (beyond BoA gear). Unless you think the design goal is so people can accumulate enough points such that when the next tier comes out, they can immediately buy a full set.<br />
+<br />
+You wont get Justice points for running 85 Heroics - you will get Valor (or whatever they called them) Justice Points are only what we get for eliminating/converting out all our current badges to the new point system.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocffb391c945</div><div class="date">2010-09-15, 05:22 PM</div></div><div class="posttext">There is no known emblem cap!<br />
+<br />
+<br />
+I knowz, but 300 emblems aint a bad ammount and it was eazy to calculate ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hatterson</div><div class="date">2010-09-15, 05:23 PM</div></div><div class="posttext">If you're on a server where you have WG all the time (like horde on my server). Each clear of a heroic is worth between 19 and 38 new honor points simply from stone keeper shard conversion.<br />
+<br />
+That's equivalent of 791-1583 old honor points<br />
+<br />
+Seems a little high to me considering that I don't PVP and will be at almost half the cap simply from stone keeper shards.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">GhostSkull</div><div class="date">2010-09-15, 05:23 PM</div></div><div class="posttext">Stop trading your Wintergrasp Marks of Honor for Wintergrasp Commendations. You'll get more honor from the mark conversion than the honor conversion (if I did my math correctly). 171 new honor for 9 commendations vs. 48 new honor for the 2000 old honor. EDIT: Grats to the guy who said he had 4000 venture coins yesterday!<br />
+<br />
+The favorable conversion rates suggests that Blizz wants to popularize Venture Co. and Wintergrasp as training for Tol Barad. I almost bought Marks of Honor last week. I'm glad I held off, but it'll be a moot point if there isn't anything new to buy with Honor points.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Recom</div><div class="date">2010-09-15, 05:23 PM</div></div><div class="posttext">Does anyone know how much Justice Points will a &quot;frost item&quot; cost ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spotnick</div><div class="date">2010-09-15, 05:29 PM</div></div><div class="posttext">so emblems of frost have the same value as emblems of triumph ? what bullshit<br />
+<br />
+This is just to allow everybody to buy the frost gwar in patch 4.0<br />
+<br />
+Farm triumph now, buy t10 later.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chao</div><div class="date">2010-09-15, 05:30 PM</div></div><div class="posttext">A lot of you dont seem to get it. &quot;Justice Points&quot; are only here for the sole reason to give you currency from the time that 4.0.1 to the time that Cata comes out and you can level to 85. That way they can convert to the new system without you being unable to buy anything until you get into Cata dungeons. Justice Points wont be able to buy anything new in Cataclysm. Items that cost emblems right now will cost the equivalent in points. The new system is just so that you can store more &quot;badges&quot; that can be automatically downgraded when a new tier comes out. That means no stockpiling for when fresh gear comes out.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">row</div><div class="date">2010-09-15, 05:31 PM</div></div><div class="posttext">Those conversion rates aren't that good. Nice if you have old emblems sitting around but no where near good enough to farm old instances for gold. Far too low gold per hour there. Better off spending them on gems they sell for more than you would get out of this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spotnick</div><div class="date">2010-09-15, 05:35 PM</div></div><div class="posttext">This is just to allow everybody to buy the frost gwar in patch 4.0<br />
+<br />
+Farm triumph now, buy t10 later.<br />
+<br />
+From memory, a trinket was 763 points or something on the PTR...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hatterson</div><div class="date">2010-09-15, 05:35 PM</div></div><div class="posttext">A lot of you dont seem to get it. &quot;Justice Points&quot; are only here for the sole reason to give you currency from the time that 4.0.1 to the time that Cata comes out and you can level to 85. That way they can convert to the new system without you being unable to buy anything until you get into Cata dungeons. Justice Points wont be able to buy anything new in Cataclysm. Items that cost emblems right now will cost the equivalent in points. The new system is just so that you can store more &quot;badges&quot; that can be automatically downgraded when a new tier comes out. That means no stockpiling for when fresh gear comes out.<br />
+<br />
+This is direct from bliz<br />
+<br />
+Here's the breakdown: <br />
+<br />
+PvE <br />
+Hero Points -- Low-tier, easier-to-get PVE points. Maximum cap to how many you can own, but no cap to how quickly you can earn them. Earned from most dungeons. (most like the current Emblem of Triumph) <br />
+Valor Points -- High-tier, harder-to-get PvE points. Maximum cap to how many you can own, as well as a cap to how many you can earn per week. Earned from Dungeon Finder daily Heroic and from raids. (most like the current Emblem of Frost) <br />
+<br />
+Since then they re-named Hero points to Justice points but the point is still the same. It's clear that Justice points are the new Triumph emblems and Valor points are the new Frost emblems.<br />
+<br />
+I have no doubt they'll increase the cap once cata hits and have the cata gear priced higher (so you don't cap out at 80 and then have a full set as soon as you ding 85), but you'll certainly be able to use the same currency to buy level 85 gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemons</div><div class="date">2010-09-15, 05:35 PM</div></div><div class="posttext">Holy shit kids...they're converting over old arena points!? Finally that giant pile of worthlessness will be given a purpose! I hope they do that every changeover because it's awesome. <br />
+<br />
+I'm gunna be slightly richer! Hooray!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocb53c2a1ef1</div><div class="date">2010-09-15, 05:37 PM</div></div><div class="posttext">Does anyone know how much Justice Points will a &quot;frost item&quot; cost ?<br />
+<br />
+ptr says 1100 JP for a T10 helmet. source should be trustful. this means the whole thing smells like ripoff to me because the helmet would cost 400 emblems then :D<br />
+<br />
+but anyone might feel free to correct me if I'm wrong</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">petrefax</div><div class="date">2010-09-15, 05:37 PM</div></div><div class="posttext">A lot of you dont seem to get it. &quot;Justice Points&quot; are only here for the sole reason to give you currency from the time that 4.0.1 to the time that Cata comes out and you can level to 85. That way they can convert to the new system without you being unable to buy anything until you get into Cata dungeons. Justice Points wont be able to buy anything new in Cataclysm. Items that cost emblems right now will cost the equivalent in points. The new system is just so that you can store more &quot;badges&quot; that can be automatically downgraded when a new tier comes out. That means no stockpiling for when fresh gear comes out.<br />
+<br />
+Valor points represent the currency for the current tier of raiding (ie, when T13 comes out we'll use Valor points to buy it)<br />
+Justice points represent the currency for the previous tier of raiding (ie, when T13 comes out we'll be able to use Justice points to buy T12)<br />
+<br />
+Nothing has yet been said about what the Cata heroics/T11 raids will give you. So you can't say for sure what you can or can't use them for.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sparkymisslecat</div><div class="date">2010-09-15, 05:43 PM</div></div><div class="posttext">This is just to allow everybody to buy the frost gwar in patch 4.0 Farm triumph now, buy t10 later.<br />
+<br />
+Exactly.<br />
+<br />
+The only benefit to stockpiling badges now (albeit a good one) is to buy a some more pieces of Frost gear a few weeks before the expansion hits. Which means basically everyone is going to be leveling in Frost gear. Talk about a gear-reset!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mvaliz</div><div class="date">2010-09-15, 05:43 PM</div></div><div class="posttext">Can anybody tell me if the Commendation Badges from WG still exist? Theoretically it would be 48 honor points... but can anybody confirm that they are in the PTR?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tresser</div><div class="date">2010-09-15, 05:44 PM</div></div><div class="posttext">This is good to know, because i have been dumping all my Heroism's (by way of Triumph's) into buying and selling gems on the cheap. With this current gold/token, red/blue/yellow gems are &quot;worth&quot; 82.5g. and the market keeps dropping. better off for me to hold onto the badges now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airath</div><div class="date">2010-09-15, 05:49 PM</div></div><div class="posttext">Except, if you run with a group of 5 people, you EACH get 8g. Can't fix the solo value without granting 5 badges per boss, regardless of attendance.<br />
+<br />
+Yes, but at the same time you get 5 times LESS other loot. Even if you manage to do 5 heroics per hour (which is entered instace cap per hour outside dungeon tool!), it is a laughable 40 gold.<br />
+<br />
+The point is 1.8g per BoJ is good if you have some left over from TBC or leveling through random level 70 heroics, but nowhere close to worth farming them now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sparkymisslecat</div><div class="date">2010-09-15, 05:51 PM</div></div><div class="posttext">I have no doubt they'll increase the cap once cata hits and have the cata gear priced higher (so you don't cap out at 80 and then have a full set as soon as you ding 85), but you'll certainly be able to use the same currency to buy level 85 gear.<br />
+<br />
+People - think about it. Does it make ANY sense that I could stockpile /faceroll content for a few weeks right now and then cash it all in for level 85 gear? No. Does it make any sense that I could convert old Alterac Valley tokens I collected 3 years ago to get ilvl300+ gear? No.<br />
+<br />
+Hate to burst your bubble, but thats not how it will work.<br />
+<br />
+Justice points let us buy the stuff in game right now. Valor points buy the new Cata gear, and none of us have any yet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Naoto</div><div class="date">2010-09-15, 05:51 PM</div></div><div class="posttext">Wow, what a retarded thing Blizzard are doing here, 50 conq badges gives 275g? lol I guess I'll make my warrior prot again and farm the shit out of heroics between now and Cata and make a ton of gold? god knows how much triumph are going to give my warrior has about 140g I guess that's close to 600g for them? bollocks tbh, when you consider people raiding constantly have probably stacked up masses of emblems then they are walking away with thousands of gold, for what?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sadew</div><div class="date">2010-09-15, 05:52 PM</div></div><div class="posttext">Stop trading your Wintergrasp Marks of Honor for Wintergrasp Commendations. You'll get more honor from the mark conversion than the honor conversion (if I did my math correctly). 171 new honor for 9 commendations vs. 48 new honor for the 2000 old honor.<br />
+<br />
+EDIT: Grats to the guy who said he had 4000 venture coins yesterday!<br />
+<br />
+Yeah there's really no point this late in the game anyway better to just hold em.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mendol</div><div class="date">2010-09-15, 05:54 PM</div></div><div class="posttext">Exactly.<br />
+<br />
+The only benefit to stockpiling badges now (albeit a good one) is to buy a some more pieces of Frost gear a few weeks before the expansion hits. Which means basically everyone is going to be leveling in Frost gear. Talk about a gear-reset!<br />
+I'm going to be a bit blunt here, but you guys don't seem terribly good with math.<br />
+<br />
+The T10 helm (iLvL 251) costs 1100 justice points.<br />
+<br />
+A triumph badge converts into ~3 justice points. You need about 350-400 triumph badges to buy one piece of T10 gear. <br />
+<br />
+That's (about) 80 random heroics. For one piece of gear. About 250-300 full random heroic runs for 4pc10. <br />
+<br />
+At 15mins a piece, that's 70-80 hours of running random heroics.<br />
+<br />
+All for gear that's going to be replaced with your first quest rewards and/or green drops.<br />
+<br />
+Clearly, not a winning strategy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airath</div><div class="date">2010-09-15, 05:56 PM</div></div><div class="posttext">I have no doubt they'll increase the cap once cata hits and have the cata gear priced higher (so you don't cap out at 80 and then have a full set as soon as you ding 85), but you'll certainly be able to use the same currency to buy level 85 gear.<br />
+<br />
+<br />
+Exactly. They can just increase the cap to lets say 25k and make cheapest Cata epic cost 10k. So if you cap now till 4k, then some insane GZ on getting 40% of a single epic 'faster' :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sparkymisslecat</div><div class="date">2010-09-15, 05:57 PM</div></div><div class="posttext">Wow, what a retarded thing Blizzard are doing here, 50 conq badges gives 275g? lol I guess I'll make my warrior prot again and farm the shit out of heroics between now and Cata and make a ton of gold? god knows how much triumph are going to give my warrior has about 140g I guess that's close to 600g for them? bollocks tbh, when you consider people raiding constantly have probably stacked up masses of emblems then they are walking away with thousands of gold, for what?<br />
+<br />
+Triumph &amp; Frost badges do not get converted to gold. They are each converted into Justice points (x2.75)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rolly</div><div class="date">2010-09-15, 05:57 PM</div></div><div class="posttext">&quot;ptr says 1100 JP for a T10 helmet. source should be trustful. this means the whole thing smells like ripoff to me because the helmet would cost 400 emblems then&quot;<br />
+<br />
+Did you honestly expect anything else from Blizzard? If you did you are either new to the game or have not been paying attention. Every time blizzard has converted something they have turned it into more of a grind. <br />
+Even if it is individually only a couple of minutes more you have to think like an accountant and times it by the total amount of subs. Nothing is done in this game anymore without the underlying thought being on how to increase subscription time even if it reduces the &quot;fun&quot; factor. Blizzard has been Koticked anyone who thinks otherwise is naive and doesn't understand corporate culture.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mendol</div><div class="date">2010-09-15, 05:59 PM</div></div><div class="posttext">People - think about it. Does it make ANY sense that I could stockpile /faceroll content for a few weeks right now and then cash it all in for level 85 gear? <br />
+Have you looked at the prices and the exchange rates? Even if you ran for many days straight before cataclysm, you'd barely get much of a head start...maybe you'd get one or two pieces.<br />
+<br />
+<br />
+No. Does it make any sense that I could convert old Alterac Valley tokens I collected 3 years ago to get ilvl300+ gear? No.<br />
+But, strangely, we were allowed to buy lvl264 gear with Alterac Valley tokens collected 3 years ago.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Recom</div><div class="date">2010-09-15, 06:00 PM</div></div><div class="posttext">Well... it seems that triumph farming isn't worth it.<br />
+<br />
+One question still stands : how many justice point you get from a hero boss ? from a raid instance boss (except ICC) ? and from a ICC boss ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kyonni</div><div class="date">2010-09-15, 06:02 PM</div></div><div class="posttext">This is nice, I have tons of badges left from TBC and never really use the other ones unless I want to get a new BOA item for an alt.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airath</div><div class="date">2010-09-15, 06:03 PM</div></div><div class="posttext">Well... it seems that triumph farming isn't worth it.<br />
+<br />
+One question still stands : how many justice point you get from a hero boss ? from a raid instance boss (except ICC) ? and from a ICC boss ?<br />
+<br />
+Be assured that you are gonna get more per boss after the patch than if you'd farm emblems now for conversion.<br />
+<br />
+Common sense :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sparkymisslecat</div><div class="date">2010-09-15, 06:05 PM</div></div><div class="posttext">I'm going to be a bit blunt here, but you guys don't seem terribly good with math.<br />
+<br />
+<br />
+I don't know what the Justice prices are going to be. My point was that stockpiling badges now wont allow you to buy anything good in Cata. If the price you quoted stands, then you are correct - it isn't worth it. It is better to buy the upgrades now.<br />
+<br />
+However - for people who have a lot of Triumph badges, but dont have access to Frost badges, this is an opportunity for them to buy some Frost gear for leveling.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Recom</div><div class="date">2010-09-15, 06:08 PM</div></div><div class="posttext">Be assured that you are gonna get more per boss after the patch than if you'd farm emblems now for conversion.<br />
+<br />
+Common sense :)<br />
+<br />
+My thought exactly but i'd like to know how much to know if it'll be worth farm hero for the last T10 pieces I want.<br />
+<br />
+Anyways I'll spend my remaining frost emblem right before this conversion ...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc32bf69b9</div><div class="date">2010-09-15, 06:08 PM</div></div><div class="posttext">Added justice points conversion :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tziva</div><div class="date">2010-09-15, 06:09 PM</div></div><div class="posttext">Triumph &amp; Frost badges do not get converted to gold. They are each converted into Justice points (x2.75)<br />
+<br />
+If one preferred the gold, one could easily farm a bunch of heroics for triumph and downgrade them all at the badge trader to conquest/valor/hero before this change goes live.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hagu</div><div class="date">2010-09-15, 06:12 PM</div></div><div class="posttext">Has anyone actually noticed that the honor cap is effectively more than doubled now? 75000 old honor * .024 conversion rate = 1800 new honor. Since we can cap at 4000 now, that's a lot more effective honor we can store up.<br />
+<br />
+We do not know if this is really true. Currently, a wrathful 264 ring for example costs 52200 HK - so the cap is about 1.44 rings of honor.<br />
+<br />
+If the ring costs 3500 Honor Points then the cap is 1.14 rings and the honor cap has effectively been reduced. <br />
+If the ring costs 2000 Honor Points then the cap is 2.00 rings and the honor cap has effectively been increased. <br />
+<br />
+What this means is that all the people who converted their old AB/AV/WG marks on day 1 made a mistake. using HK, you can start with at most 1800 HP; adding in marks, SK, etc can get you to 4000 HP</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nathiest</div><div class="date">2010-09-15, 06:12 PM</div></div><div class="posttext">Venture Coins to Honer Points 4DWin!! <br />
+<br />
+lol</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc55de51fa03</div><div class="date">2010-09-15, 06:14 PM</div></div><div class="posttext">Wow, what a retarded thing Blizzard are doing here, 50 conq badges gives 275g? lol I guess I'll make my warrior prot again and farm the shit out of heroics between now and Cata and make a ton of gold? god knows how much triumph are going to give my warrior has about 140g I guess that's close to 600g for them? bollocks tbh, when you consider people raiding constantly have probably stacked up masses of emblems then they are walking away with thousands of gold, for what?<br />
+<br />
+You do realize that 50 badges today are worth well above 275g if turned in for gems, right?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lionhearte0</div><div class="date">2010-09-15, 06:15 PM</div></div><div class="posttext">Hah! I knew saving those Badges of Justice from endlessly farming Anzul would come in handy. Not to mention the spirit shards, that's a nice bonus, no matter how small.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airath</div><div class="date">2010-09-15, 06:19 PM</div></div><div class="posttext">You do realize that 50 badges today are worth well above 275g if turned in for gems, right?<br />
+<br />
+The price of uncut gems on many servers is already in ~50-70g range. 80-120g, if you have JC.<br />
+Thus 55g per 10 emblems without any messing with AH (hello there, heavy undercutting and high gem listing fee!) is a very nice bet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Conbot</div><div class="date">2010-09-15, 06:23 PM</div></div><div class="posttext">The T10 helm (iLvL 251) costs 1100 justice points.<br />
+<br />
+A triumph badge converts into ~3 justice points. You need about 350-400 triumph badges to buy one piece of T10 gear. <br />
+.<br />
+<br />
+If this is true, this is absolute crap (for those of us trying to pick up some frost gear, yes i know it will be replaced quickly, but still...) If Frost = Triumph, then we are getting screwed BIG TIME on the conversion. If frost were worth more than triumph i might be ok with this conversion. But as it stands, the tier 10 gear is getting ~4 times MORE EXPENSIVE. Really? What genius at blizzard thought this would be funny?<br />
+<br />
+Tier 10 helm goes from 95 frost to 400 frost with this patch??? Regardless if triumph is easy to farm, frost just got devalued in a serious manner.<br />
+<br />
+This is a big step backwards, every tier made the previous tier more accessible. So i am left scratching my head why this obsolete tier is becoming so much more expensive? Shouldn't it stay the same or get cheaper if anything?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">balir</div><div class="date">2010-09-15, 06:26 PM</div></div><div class="posttext">A friend of mine was on vent yesterday and jumped onto the beta and gave me a running commentary on what she was seeing. I got her to check a few things out. Now, please point out if she was wrong, but according to my friend the current frost badge trinkets you can currently buy cost 300+ justice points. Yes, I know its beta and values aren't set in stone yet, but if that is the value conversion, I'm not wasting my time farming anything. I'd rather convert them to get a full Mail BoA leveling set for any alts that would use the gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryme</div><div class="date">2010-09-15, 06:27 PM</div></div><div class="posttext">So guys, just farm 39,045 emblems and you too can be at the gold cap come Cataclysm! :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airath</div><div class="date">2010-09-15, 06:28 PM</div></div><div class="posttext">Tier 10 helm goes from 95 frost to 400 frost with this patch??? Regardless if triumph is easy to farm, frost just got devalued in a serious manner.<br />
+<br />
+<br />
+<br />
+The implication is simple. ICC bosses will drop approx 4x more JP than you get from 2 frosts now.<br />
+Nothing much to worry about, it means nothing more than easy T10 for everyone's latest alts.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">petrefax</div><div class="date">2010-09-15, 06:31 PM</div></div><div class="posttext">If Frost = Triumph, then we are getting screwed BIG TIME on the conversion. <br />
+<br />
+Bosses (both raid and heroic) after the patch will give Justice points, we don't know how many that will be but I would wager that it's a lot more than the equivalent in frost/triumphs.<br />
+<br />
+So we're getting our badges wiped, they're giving to us with one hand (triumph) and taking away with another (frost) knowing that we will still be able to farm heroics for T10 items easily after the patch.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">martinkaca</div><div class="date">2010-09-15, 06:31 PM</div></div><div class="posttext">I don't think most people realized they changed Hero points to Justice points. Hero points will most likely come from heroics and give the equivilent of ilvl 200 gear in Wrath. You might get a few valor points for doing the daily random or something but but justice points are gonna be far from useless. With the current conversion you would need 1454.54 frost/triumph to reach the cap. It is not something that every random is going to have. Even if the 4000 justice points lets us get one piece of loot it would only be equivilent with the best item available from a heroic dungeon.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nasok1986</div><div class="date">2010-09-15, 06:31 PM</div></div><div class="posttext">Boub, would you confirm that Justice points will be used to purchase start gear in Cata?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocbc9289435e</div><div class="date">2010-09-15, 06:32 PM</div></div><div class="posttext">Honor points above 4,000 are converted to gold at a rate of 35 silver per point of Honor.<br />
+<br />
+Umm, won't 71000 honour point X 35 silver be a LOT? That's 350G per 1000 points, that must be a mistake surely?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airath</div><div class="date">2010-09-15, 06:32 PM</div></div><div class="posttext">So guys, just farm 39,045 emblems and you too can be at the gold cap come Cataclysm! :)<br />
+<br />
+Haha, that will only take ~67 days of nonstop HC farming @15 mins per heroic, if you ignore all other loot :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Conbot</div><div class="date">2010-09-15, 06:35 PM</div></div><div class="posttext">The implication is simple. ICC bosses will drop approx 4x more JP than you get from 2 frosts now.<br />
+Nothing much to worry about, it means nothing more than easy T10 for everyone's latest alts.<br />
+<br />
+And if i can't get enough frost emblems to buy the gear that i need/want before this patch, they lose 75% of their value. <br />
+<br />
+I feel like this conversion is based merely on the assumption that everyone will be sitting on thousands of triumph. However, if you don't have a massively disproportionate amount of triumph to frost, you get screwed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc6025b804ec</div><div class="date">2010-09-15, 06:35 PM</div></div><div class="posttext">So they won't be resetting the Honor or Justice points before release? Not read anything about it yet.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mowg</div><div class="date">2010-09-15, 06:36 PM</div></div><div class="posttext">I wonder what the <br />
+<br />
+Expect an interesting update in a few minutes.<br />
+<br />
+will be about...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airath</div><div class="date">2010-09-15, 06:36 PM</div></div><div class="posttext">Umm, won't 71000 honour point X 35 silver be a LOT? That's 350G per 1000 points, that must be a mistake surely?<br />
+<br />
+35s per NEW honor point! Or 8.4g per 1000 current honor points.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">calig</div><div class="date">2010-09-15, 06:37 PM</div></div><div class="posttext">What will happen to Wintergrasp Commendation (Bind on Accout Items that yield 2.000 honor)?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryme</div><div class="date">2010-09-15, 06:39 PM</div></div><div class="posttext">Haha, that will only take ~67 days of nonstop HC farming @15 mins per heroic, if you ignore all other loot :)<br />
+<br />
+Indeed, not really feasible :P Let's say there's two months until the change goes live, that's around 61 days.<br />
+<br />
+39,045/61 = 640 emblems needed to attain every day.<br />
+Assuming a generous 5 emblems a run: 640/5 = 128 runs a day.<br />
+Again, at a very generous 15 mins a run: 128*15 = 1,920 minutes or 32 hours every day.<br />
+<br />
+Sadly, our timescale only permits 24 hours a day. You need to hope that release is at least around 81 days away, then, and only then if you farmed 24/7, with zero time delay between heroics with every single one giving 5 emblems, until that date, you'd hit gold cap.<br />
+<br />
+<br />
+You'd also be a moron for ignoring simply selling gems and primodial saronite and getting the job done a hell of a lot quicker :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Flooding</div><div class="date">2010-09-15, 06:40 PM</div></div><div class="posttext">so if i have honor capped at 75000 and if honor cap gets turned into 4k, then thats 71000 honor to be turned into money?<br />
+<br />
+and if i have like 1k stonekeeper shards can i buy the boa honor tokens for 2k honor or will that be nerfed to?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airath</div><div class="date">2010-09-15, 06:40 PM</div></div><div class="posttext">And if i can't get enough frost emblems to buy the gear that i need/want before this patch, they lose 75% of their value. <br />
+<br />
+I feel like this conversion is based merely on the assumption that everyone will be sitting on thousands of triumph. However, if you don't have a massively disproportionate amount of triumph to frost, you get screwed.<br />
+<br />
+Yes, it is indeed rather weird that conversion rate of triumphs and frosts is equal.<br />
+<br />
+For now it seems that the best plan is to get the few last t10 pieces if you still need them (alt, offspec, whatever) OR just even to dump them into 300-400g worth saronites...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryme</div><div class="date">2010-09-15, 06:45 PM</div></div><div class="posttext">Do some quick numbers for your own servers guys. On mine, this gold exchange is a gold sink.<br />
+<br />
+It's actually a clever potential-gold sink. You'd make around 3-4 times more gold from Frost by buying and selling saronite and 1.5-2.5 more gold by buying and selling gems.<br />
+<br />
+Think guys, Blizzard is being devious here, why in the hell would they give gold away for free?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bigslick</div><div class="date">2010-09-15, 06:45 PM</div></div><div class="posttext">What will happen to Wintergrasp Commendation (Bind on Accout Items that yield 2.000 honor)?<br />
+This is the big question, in my view. I have about 300 of these (600k of current honor), and even without converting those, other honor and 'actual' marks, etc, will put me to about 12k of the new honor as it stands, so I'm waiting to see if I should be converting excess to sell as gems or hold off, and whether the BOA marks will hold any retaining value post-patch.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">idanian</div><div class="date">2010-09-15, 06:45 PM</div></div><div class="posttext">So with the conversion, they have dicked over all Frost Gear so far. What about other emblem stuff?<br />
+<br />
+EX. <br />
+<br />
+Dreadstone costs 10 Emblems of Heroism now, what is the inflated cost?<br />
+<br />
+BOA item costs 40, what will that cost? <br />
+<br />
+<br />
+Just trying to determine if they are over valuing higher end gear.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zaneosak</div><div class="date">2010-09-15, 06:48 PM</div></div><div class="posttext">Wow I'm retarded , after seeing this: http://img199.imageshack.us/f/justicepoints.jpg/ I get it. I didnt even think about people still wanting to buy wrath shit with emblems after cata release.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airath</div><div class="date">2010-09-15, 06:49 PM</div></div><div class="posttext">Indeed, not really feasible :P Let's say there's two months until the change goes live, that's around 61 days.<br />
+<br />
+39,045/61 = 640 emblems needed to attain every day.<br />
+Assuming a generous 5 emblems a run: 640/5 = 128 runs a day.<br />
+Again, at a very generous 15 mins a run: 128*15 = 1,920 minutes or 32 hours every day.<br />
+<br />
+Sadly, our timescale only permits 24 hours a day. You need to hope that release is at least around 81 days away, then, and only then if you farmed 24/7, with zero time delay between heroics with every single one giving 5 emblems, until that date, you'd hit gold cap.<br />
+<br />
+<br />
+You'd also be a moron for ignoring simply selling gems and primodial saronite and getting the job done a hell of a lot quicker :P<br />
+<br />
+I think it's closer to 6 average emblems per random (if you don't skip bosses). Plus you get ~13g for completing a random (no choice not to get this reward). That sums up to approx 8 emblems worth of gold per run, if you don't loot anything. We are still at ~51 days of nostop heroic spam as a tank.<br />
+<br />
+But yeah, this indeed is not the best path to gold cap :) <br />
+<br />
+Nevertheless, I wonder, if the mail would bug up, if they'd have to send a gold value over gold cap. That is, unless they increase gold cap value till 2^63 copper already when next patch hits.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Necrotica</div><div class="date">2010-09-15, 06:53 PM</div></div><div class="posttext">Yes, it is indeed rather weird that conversion rate of triumphs and frosts is equal.<br />
+<br />
+For now it seems that the best plan is to get the few last t10 pieces if you still need them (alt, offspec, whatever) OR just even to dump them into 300-400g worth saronites...<br />
+<br />
+I've been dumping my Frosts on my main into Primordial Saronites for a while now and selling when the market was good. I converted all of my triumphs a while back to hero badges for epic gem buying as I needed and sometimes to dump uncut (and cut) gems onto the AH for profit depending on which was in demand and best prices per badges (sometimes selling two orange gems [20 badges] was worth more than selling one red gem [20 badges])...<br />
+<br />
+Based on the current conversation, they say 10 heroism badges are worth 55g, yet I know I can get 85-100g on AH for certain gems.<br />
+<br />
+So at this point I'm probably going to convert my triumphs to heroism, buy out gems and start selling them in small groups so as not to flood the market, all my frost badges will go towards primordial saronites and when it comes time for actually worrying about JP I'll get it naturally doing raids and random daily *shrugs*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moridius</div><div class="date">2010-09-15, 06:54 PM</div></div><div class="posttext">If playing this game as taught us anything, I'd be willing to be the next two things are true.<br />
+<br />
+A: We will be getting much more than 2JPs per boss in a heroic. Gearing us in T10 means nothing right now.<br />
+B: JPs will not buy T11 raid gear in Cataclysm. They will most likely buy us starter dungeon gear or blues.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ryme</div><div class="date">2010-09-15, 06:57 PM</div></div><div class="posttext">That is, unless they increase gold cap value till 2^63 copper already when next patch hits.<br />
+<br />
+Really, they're increasing the gold cap? Woah, that's nearly a quadrillion gold! Time to set my standards a little higher :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tresser</div><div class="date">2010-09-15, 07:01 PM</div></div><div class="posttext">If playing this game as taught us anything, I'd be willing to be the next two things are true.<br />
+<br />
+<br />
+B: JPs will not buy T11 raid gear in Cataclysm. They will most likely buy us starter dungeon gear or blues.<br />
+<br />
+<br />
+Correct<br />
+<br />
+:<br />
+Justice Points Low-tier, easy-to-get PvE points that will buy gear (like Emblems of Triumph are now)<br />
+Valor Points High-tier, harder-to-get PvE points that will buy gear (like Emblems of Frost are now)<br />
+Honor Points Low-tier, easy-to-get PvP points that will buy PvP gear (like normal Honor Points are now)<br />
+Conquest Points High-tier, harder-to-get PvP points that will buy PvP gear (like Arena Points are now)<br />
+<br />
+(source:wow.com/2010/09/14/major-cataclysm-currency-changes)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Airath</div><div class="date">2010-09-15, 07:02 PM</div></div><div class="posttext">Do some quick numbers for your own servers guys. On mine, this gold exchange is a gold sink.<br />
+<br />
+It's actually a clever potential-gold sink. You'd make around 3-4 times more gold from Frost by buying and selling saronite and 1.5-2.5 more gold by buying and selling gems.<br />
+<br />
+Think guys, Blizzard is being devious here, why in the hell would they give gold away for free?<br />
+<br />
+It is not a gold sink, since it does not bring any gold out of server economy.<br />
+It is a gold influx, since it creates gold 'out of thin air' into the economy.<br />
+<br />
+Yes, it can be a gold sink of a single person on a server, where really there is enough demand for ~100g worth cut gems till the patch.<br />
+And you know what can happen if enough people start panic-converting emblems into gems and selling them in a market, where it is not enough demand for them at 55g+ price in such quantities :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cirawin</div><div class="date">2010-09-15, 07:08 PM</div></div><div class="posttext">I think anybody getting their hopes up about using justice points (from emblem conversion) earned while at level 80 to buy level 85 gear is going to be immensely disappointed. This isn't just patch+0.1, this is an entire expansion, 3.3 to 4.0. The difference between T11 and T10 is astronomical compared to the difference between T10 and T9. Those pretty little justice points aren't going to buy you squat for level 85.<br />
+<br />
+They are still converting into Justice in order to maintain the integrity of the system. I'm going to laugh when people complain that they grinded level 80 heroics for a month and now cannot buy anything other than level 251 and 264 items when Cataclysm launches.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5011fe1361</div><div class="date">2010-09-15, 07:09 PM</div></div><div class="posttext">Tier 10 helm goes from 95 frost to 400 frost with this patch??? Regardless if triumph is easy to farm, frost just got devalued in a serious manner.<br />
+<br />
+This is a big step backwards, every tier made the previous tier more accessible. So i am left scratching my head why this obsolete tier is becoming so much more expensive? Shouldn't it stay the same or get cheaper if anything?<br />
+<br />
+Because when this patch hits, there will only be a few weeks left before Cata is released, and frost gear is 100% worthless from that date. Many seem to miss this. I see people write stuff like &quot;levelling in frost&quot;, and that is something that you won't do. Previous expansions the top raid gear has been very usable, to the point that Naxx could be defeated in Sunwell gear. This will NOT happen in Cataclysm.<br />
+<br />
+So, this is a good point in time to do this. You get SOMETHING for your old useless emblems, but it wont buy you much in Cata. Blizzard could just as well reset all your badges.<br />
+<br />
+And, everything points to justice dropping from heroics (and old tier raids) in Cata and valor dropping from current tier raids. However, I'm not so sure you will be able to buy epics at 85 with justice from day 1. More likely, you will get top ilvl blues, and perhaps one or two epics. I think a lot of you equate triumph with gear good enough to faceroll heroics and some raids with, and assume justice will be similar. It wont be, not initially.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Glub</div><div class="date">2010-09-15, 07:11 PM</div></div><div class="posttext">You wont get Justice points for running 85 Heroics - you will get Valor (or whatever they called them) Justice Points are only what we get for eliminating/converting out all our current badges to the new point system.<br />
+<br />
+This is far from true. Read the original blue post again.<br />
+<br />
+<br />
+<br />
+Justice points are equivalent to the current Emblems of Triumph. <br />
+Valor points are equivalent to the current Emblems of Frost.<br />
+<br />
+<br />
+<br />
+Also,<br />
+<br />
+<br />
+<br />
+When you run dungeons, old raids and 85 Heroics, bosses will give you Justice points (I guess that an amount proportional to the boss level and player level). <br />
+When you run 85 raids, bosses will give you Valor points.<br />
+When you run your first 85 heroic of the day using the Dungeon Finder system, you will get a small amount of Valor points.<br />
+<br />
+<br />
+<br />
+Maybe the confusion exists because your current Emblems of Frost are being converted to Justice points. Well, get used to it, because this is what will happen every time new content (and tier) is introduced: they will convert all your Valor points to Justice points, so every new content you start with nada, just Justice points.<br />
+<br />
+Now, what can justice points buy you? All the epics from the second best tier downwards. That means that when the new patch arrives, tier 10 will be available for Justice points. When Cata arrives, the next tier (supposedly tier 11) will become available, but only fot Valor points, which no one will have, and only for level 85, which no one will be yet.<br />
+<br />
+When you hit 85, there will *probably* be blues appropriate for that level that you will be able to buy for Justice points (at least I hope so).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5011fe1361</div><div class="date">2010-09-15, 07:13 PM</div></div><div class="posttext">I think anybody getting their hopes up about using justice points (from emblem conversion) earned while at level 80 to buy level 85 gear is going to be immensely disappointed. This isn't just patch+0.1, this is an entire expansion, 3.3 to 4.0. The difference between T11 and T10 is astronomical compared to the difference between T10 and T9. Those pretty little justice points aren't going to buy you squat for level 85.<br />
+<br />
+Ofcourse you can buy SOMETHING at level 85. However, initially it will be blues and perhaps epics for a few slots. Justice WILL drop from heroics in cata, and of course you will be able to buy something for them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pumps</div><div class="date">2010-09-15, 07:14 PM</div></div><div class="posttext">Badge of Justice = 1.833 gold each<br />
+<br />
+is this serious?<br />
+<br />
+The americans use a period to seperate the decimals, so its 1 gold not a thousand gold.<br />
+<br />
+<br />
+And all in all big deal, I'm getting 300 gold or something like that.<br />
+<br />
+---------- Post added 2010-09-15 at 07:14 PM ----------<br />
+<br />
+<br />
+<br />
+Btw, thats a nice calculator :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Insanus</div><div class="date">2010-09-15, 07:18 PM</div></div><div class="posttext">Badge of Justice = 1.833 gold each<br />
+<br />
+is this serious?<br />
+<br />
+LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOL he thought it was 1.8k for each! HAHAHAHAHA</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Conbot</div><div class="date">2010-09-15, 07:19 PM</div></div><div class="posttext">Because when this patch hits, there will only be a few weeks left before Cata is released, and frost gear is 100% worthless from that date. Many seem to miss this. I see people write stuff like &quot;levelling in frost&quot;, and that is something that you won't do. Previous expansions the top raid gear has been very usable, to the point that Naxx could be defeated in Sunwell gear. This will NOT happen in Cataclysm.<br />
+<br />
+<br />
+I understand this. <br />
+<br />
+However, I do not understand why the value of Tier 10 is increased by 4 fold. Seems like this obsolete frost gear gets a whole lot more valuable with this patch. That makes no sense.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eleveneleven</div><div class="date">2010-09-15, 07:23 PM</div></div><div class="posttext">Gems usually go for more than 55g so right now on my server I'm better off selling than hoarding for the conversion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">toychristopher</div><div class="date">2010-09-15, 07:25 PM</div></div><div class="posttext">Yeah but how is the price of the items changing?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Doddilus</div><div class="date">2010-09-15, 07:26 PM</div></div><div class="posttext">this conversion comes with 4.0<br />
+so what will happen to our justice points come cata?<br />
+<br />
+surely they wont let us keep it all.. will they be wiped or converted to gold again?<br />
+<br />
+There is absolutely zero pieces of gear i need to buy currently with frost/triumph. If justice points are going to be wiped i might as well downgrade all my emblems so i get gold for them <br />
+<br />
+<br />
+or will the first tier cost valor points?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">row</div><div class="date">2010-09-15, 07:32 PM</div></div><div class="posttext">Why exactly would you want to buy tier 10 251 this late in the game anyways. A month after the patch gos live you'll replace it with your first quests in cataclysm seems pointless.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Skandulous</div><div class="date">2010-09-15, 07:39 PM</div></div><div class="posttext">nothing game changing here so move along everybody nothing to see</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">petrefax</div><div class="date">2010-09-15, 07:39 PM</div></div><div class="posttext">The americans use a period to seperate the decimals, so its 1 gold not a thousand gold.<br />
+<br />
+Not just Americans, we in the UK do the same.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mordras</div><div class="date">2010-09-15, 07:42 PM</div></div><div class="posttext">However, I do not understand why the value of Tier 10 is increased by 4 fold. Seems like this obsolete frost gear gets a whole lot more valuable with this patch. That makes no sense.<br />
+<br />
+Well if the cost was the same, you'd have people farming triumphs right now to get that gear easily. They just don't want farming Triumphs now to be an easy way to obtain that gear. If you are close to getting a piece of Frost gear you probably have the time to go grab the piece you want now before the conversion happens. <br />
+<br />
+I haven't tested it on the PTR but I'm guessing the amount of Justice Points you get per boss in a raid/heroic is going to be much higher in 4.0 than the emblems you get now. So once the patch goes live you can probably earn that gear in roughly the same time that you can now. They'll probably have ICC award a lot more points than you will out of a heroic to compensate.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">martinkaca</div><div class="date">2010-09-15, 07:44 PM</div></div><div class="posttext">Who wouldn't use a period(decimal point) to seperate it. And if they did use something else, why?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DrgnDancer</div><div class="date">2010-09-15, 07:44 PM</div></div><div class="posttext">Really, they're increasing the gold cap? Woah, that's nearly a quadrillion gold! Time to set my standards a little higher :P<br />
+<br />
+Current gold cap is based on the maximum value of a signed &quot;int&quot; variable on a 32 bit system. If they change the variable to a &quot;long int&quot; it will increase the gold cap by an order of magnitude. You'll never get it. It'll go from roughly 2,140,000,000 copper (214,000 gold and change) to roughly 9,220,000,000,000,000,000 copper (922,000,000,000 gold). You'd have to be some AH player to hit 900 *billion* gold.<br />
+<br />
+Edit: And... you already noticed that... Not sure how I misread your single line post.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zaerix</div><div class="date">2010-09-15, 07:47 PM</div></div><div class="posttext">Who wouldn't use a period(decimal point) to separate it. And if they did use something else, why?<br />
+<br />
+The same reason we have different systems of measurement, people are either stuck in familiar ways or enjoy being confused throughout the world.<br />
+<br />
+On topic: Is there by any chance a website that would allow me to check my currency page? I've been inactive for quite a bit of time and I want to see if I can check how much gold/points I can get come Cata when I start playing again.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thoelle</div><div class="date">2010-09-15, 07:53 PM</div></div><div class="posttext">Will we be able to use Honor and Justice points at launch of Cata ???</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DrgnDancer</div><div class="date">2010-09-15, 07:54 PM</div></div><div class="posttext">Who wouldn't use a period(decimal point) to seperate it. And if they did use something else, why?<br />
+<br />
+Continental Europeans use commas to indicate a decimal point, and periods to separate every third number digit of a long number. So if something cost three thousand Euros and twenty three cents in, say, Germany the price tag would say 3.000,23 It's a bit confusing when you first land in Europe, but you get used to it quickly. Similarly, they find our system a bit confusing sometimes if they haven't seen it before.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LolphDundgren</div><div class="date">2010-09-15, 07:56 PM</div></div><div class="posttext">hmm let me think:<br />
+100 X Emblem = 550G<br />
+550G x 3 = 1650 G<br />
+<br />
+100 Badges = 183.3 Gold<br />
+<br />
+mean a easy 1833.3 G when ur max on emblems <br />
+NICE!<br />
+<br />
+Easy? Not for the time it takes running those countless hc runs...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pbean</div><div class="date">2010-09-15, 07:58 PM</div></div><div class="posttext">If you want to make gold with your Emblems of Triumph, rather than Justice Points, please note the following.<br />
+<br />
+For 20 Emblems of Heroism you can buy a one-coloured epic gem, for 10 Emblems of Heroism you can buy a two-coloured gem.<br />
+<br />
+Let's say a Scarlet Ruby or Majestic Zircon goes for about 100g on your server, it would value each emblem as 5g (100/20 = 5).<br />
+<br />
+On my server, the two-coloured gems are about 60-80g. That would value about 6-8g per gem.<br />
+<br />
+The &quot;value&quot; of each gem upon conversion is 5.5g, which is in between.<br />
+<br />
+So basically if on your server two-coloured gems go for more than 55g on the AH, buy them and sell them now. For one-coloured gems, they'd have to be 110g or more. Factor in the auction house cut (5%) and you'd have to auction them for 57g89s48c and 115g78s95c respectively.<br />
+<br />
+And better do it fast, because with this information public, and Cataclysm coming soon, prices may drop significantly.<br />
+<br />
+EDIT<br />
+Oh lord, I posted this before I read all the comments, but WOW, are some of you guys retarded, or what?<br />
+<br />
+Why are you so surprised that Frost and Triumph convert into the same thing at the same rate? Come Cataclysm &quot;Frost&quot; will be the lower tier. Currently, Heroism, Valor and Conquest are the lower tiers, and to buy 1 Conquest you need 1 Triumph, for 1 Valor you need 1 Conquest, etc. Even for 1 Triumph you need 1 Frost. With the release of Cataclysm, Emblems of Frost will be no worth more than Emblems of Triumph, because all gear will be old and bad. So it makes sense.<br />
+<br />
+And what about buying all this Emblem of Frost gear before Cataclysm comes out? Your Emblem of Frost gear will be replaced with level 83 green quest gear. That's right! If you're going to buy more items with your Emblems of Frost right now for non-aesthetic reasons and not for progression, you're just wasting money. Buy Primordial Saronites to sell them to those fools who still want to craft items, or stockpile them so you'll have some Justice Points when Cataclysm comes.<br />
+<br />
+Then those people who say Justice Points are only there for the transition to Cataclysm? Ha-ha! Surely, you jest? 300 Emblems for a Tier 10 helm? It's harder to believe that they punched in random numbers there. Also, this post right here (http://forums.worldofwarcraft.com/thread.html?topicId=24401796793) states very clearly, that there indeed will be two tiers of points. Now Hero points were just renamed to Justice points.<br />
+<br />
+And finally, no, you won't be able to buy omg uber epics at level 85 with your current stockpiling. You would need 1455 Emblems of Frost and/or Triumph to reach the cap. Furthermore a reasonable amount of 300 emblems (I have about 650 on my character) gives 825 JP, which isn't that much. With a cap of 4000, it stands to reason you'd need about 2000 points for 1 item (so you could stockpile enough for 2 items). So 825 &quot;helps you&quot; but won't &quot;get you an item&quot;. And even if it does, it probably will be just 1 &quot;lower tier&quot; item. Furthermore, think about these 2 things:<br />
+<br />
+- At level 80 you could buy a crafted item level 200 shield. Also there was an item level 200 shield available from Emblems of Heroism. So you were able to buy &quot;an epic&quot; right at level 80 too!<br />
+- You can queue for random dungeons from level 70-80 and get 2 Emblems of Triumph for finishing it. With the cheapest item being 25 Emblems (not even counting the 19 emblem Conquest items), it'd take you 12 days to get an item level 245 epic, right when you ding 80!<br />
+- I won't even mention the current item level 264 epics which you can buy right now upon getting to 80.<br />
+<br />
+So all in all, why the hell are you not thinking about this clearly?<br />
+<br />
+Then again, in the end we're all just assuming and guessing. We'll have to see and keep an eye on future announcements.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MonsieuRoberts</div><div class="date">2010-09-15, 08:17 PM</div></div><div class="posttext">I'm sure the money people will make off of this will be put towards Flying, be it their first flight skill purchase, or the 310% speed.<br />
+<br />
+This won't influence the economy, I'm sure of it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sammonoske</div><div class="date">2010-09-15, 08:19 PM</div></div><div class="posttext">Well, I am not spending anything now. Time to save up a ton of badges for a ton of gold when this is implemented.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">davep</div><div class="date">2010-09-15, 08:34 PM</div></div><div class="posttext">The cap is 4000, they probably will just raise the cap and increase the prices of the items every tier.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kikovsk</div><div class="date">2010-09-15, 08:37 PM</div></div><div class="posttext">The Emblem to Justice Point conversion is wrong.<br />
+Please note that the correct math is (EoT + EoF) * 2.75, and not EoT * 2.75 + EoF * 2.75. They are different if you round the results before adding.<br />
+<br />
+Example:<br />
+EoT: 11<br />
+EoF: 21<br />
+<br />
+The calculator says these will convert to 87 JP when the correct number is 88:<br />
+(11 + 21) * 2.75 = 32 * 2.75 = 88</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vehemence</div><div class="date">2010-09-15, 08:40 PM</div></div><div class="posttext">HOLY SHIT - OVER 9000 GOLD!!!!!!!!!!!!!!!!!! Yeah!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccdcfc5f8d6</div><div class="date">2010-09-15, 08:44 PM</div></div><div class="posttext">Im happy about the fact that Venture Coins give so much honor. I have a metric fuckton of those lying aorund.<br />
+<br />
+And they're not hard to get either :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">crsh1976</div><div class="date">2010-09-15, 08:47 PM</div></div><div class="posttext">I'm ok with not getting a crapload of lv80 epics from current emblems when this goes live, but I'm sort of worried about the rate at which we will earn justice points at lv85 if one piece costs, say, 2k points (I picked a random number here).<br />
+<br />
+We all know Blizzard got tired of getting told the game is too easy and that they're giving away free epics to every scrub, and purples are supposed to be epic again as we'll likely spend a lot more time in blues before getting greater gear, but let's hope this isn't a complete 180-degree turn because there are no words to describe the cataclysmic tear fest that's going to happen (not to mention the unwanted comeback of elistist &quot;I'm better than you because my gear is purple&quot; crap).<br />
+<br />
+I'm far from being convinced they can turn the game around like this, seeing the numerous examples we've seen of them caving in and making things easier.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pbean</div><div class="date">2010-09-15, 09:10 PM</div></div><div class="posttext">I'm ok with not getting a crapload of lv80 epics from current emblems when this goes live, but I'm sort of worried about the rate at which we will earn justice points at lv85 if one piece costs, say, 2k points (I picked a random number here).<br />
+<br />
+We all know Blizzard got tired of getting told the game is too easy and that they're giving away free epics to every scrub, and purples are supposed to be epic again as we'll likely spend a lot more time in blues before getting greater gear, but let's hope this isn't a complete 180-degree turn because there are no words to describe the cataclysmic tear fest that's going to happen (not to mention the unwanted comeback of elistist &quot;I'm better than you because my gear is purple&quot; crap).<br />
+<br />
+I'm far from being convinced they can turn the game around like this, seeing the numerous examples we've seen of them caving in and making things easier.<br />
+An epic now costs anywhere between 25 and 95 emblems, let's take a high number, 50, as average. I would reckon (but this is just a guess), that 1500-2000 points would give 1 piece of epic gear at 85. 2000/50 = 40 points per boss kill would be reasonable. I expect about 25-50 points per boss kill (perhaps 25 for &quot;normal&quot; bosses and 50 points for the last boss, in heroics, or 25 per boss and just 25 extra for finishing it, etc).<br />
+<br />
+But who knows, maybe they plan on mobs giving points too (say 1 point per mob, with 100 mobs per dungeon, i.e. 100 extra points per dungeon).<br />
+<br />
+I am fairly sure that the rate of earning points will be really close to the current rate of earning Emblems (as an Emblem/Points per boss rate, not and Emblem/Points per hour rate, because content will be harder at the start of course).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc12fd2e0285</div><div class="date">2010-09-15, 09:11 PM</div></div><div class="posttext">So, by the calculator i get around 10000 new honor points, but the cap is 4k. Can anyone tell me, if im correct:<br />
+that means im getting 4000 new honor points + 6000*0.35= around 2k gold.<br />
+<br />
+and what will you be able to buy with those 4k new honor points?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocd12cd7479a</div><div class="date">2010-09-15, 09:12 PM</div></div><div class="posttext">1121g79s60c for my old BoJ? Deal!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc5011fe1361</div><div class="date">2010-09-15, 09:23 PM</div></div><div class="posttext">I am fairly sure that the rate of earning points will be really close to the current rate of earning Emblems (as an Emblem/Points per boss rate, not and Emblem/Points per hour rate, because content will be harder at the start of course).<br />
+<br />
+One of the nice things with this new system is that there's a possibility to award extra points for harder bosses, make the system more fine-grained than the current one emblem per boss if they so desire. Those numbers can also be adjusted when new heroics are released.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">snowcrash512</div><div class="date">2010-09-15, 09:46 PM</div></div><div class="posttext">What I would like to know is how does the conversion look with prices on the PTR.<br />
+<br />
+IE if say a t9 chest piece costs 50 badges now is it the direct equivalent of justice points to buy the same thing on the PTR?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocef71e99c15</div><div class="date">2010-09-15, 10:03 PM</div></div><div class="posttext">Will we be able to use Honor and Justice points at launch of Cata ???<br />
+<br />
+Yes you will be able to buy the lowest level of &quot;emblem gear&quot;, just like you could buy lowest level PvP gear when WotLK dropped with honor points you saved up in TBC if you were honor capped when LK shipped.<br />
+<br />
+However (again - just like with honor gear when WotLK dropped), the new gear will be much more expensive, meaning your precious Frost emblems WILL translate to helping you buy gear in Cata, but will not be sufficient for very much. This was the case as well when the new WotLK PvP gear was way more expensive (while using the same points system as before) than anything you had been able to buy back in TBC.<br />
+<br />
+For example, let's say you have 1000 Justice Points when Cata is about to ship. This might allow you to buy some Icecrown gear (264). Or you can save your Justice Points for when you hit 85. But the new &quot;heroics&quot; gear in Cata is going to cost say 2000 each, so your precious savings from Frost/Triumph badges will have lost much of it's value.<br />
+<br />
+Heroics in Cata are going to drop more than the current 1 emblem per boss. My guess is that bosses in heroics are going to drop 5 Justice Points each. My reason for making this guess is that they chose to let Triumph/Frost badges convert at a rate of 2.75. When a new expansion hits, all values tend to be roughly doubled - the amount of gold, the cost of honor gear, the stats on your items and so on. Everything gets doubled, pretty much. Tbhis is obviously speculation on my behalf (that heroics bosses will drop 5 Justice Points each).<br />
+<br />
+Also, just like when WotLK shipped, there will be Valor Points which gives you the finest raid gear and which you cannot get from doing heroics. In WotLK these dropped from 25-man raids. In Cata, becuase they are equalizing 10-man and 25-man raiding, Valor Points will drop from both 10-mans and 25-mans.<br />
+<br />
+To sum up:<br />
+<br />
+This will happen when Cata ships:<br />
+<br />
+Justice Points can buy you your first epics in Cata.<br />
+You can save up Justice Points (JP) from Wrath of The Lich King, but the conversion rate is kind of bad and thus your measly WotLK JPs will not suffice for much.<br />
+You will get Justice Points from running heroics in Cata. This will be a much more powerful way to get those points.<br />
+<br />
+Valor points buys you the really hawt gear in Cata.<br />
+Raid bosses (10-man and 25-man) will drop Valor Points.<br />
+You will get a few Valor Points from doing the daily Random Heroic, just like you get a few Frost badges today.<br />
+<br />
+Then, after patch 4.1 when a new raid tier is released, all your then Valor Points will be converted into Justice Points and you will sit on a lot of Justice Points, and zero Valor Points. That conversion will then happen over and over when a new raid tier (or expansion) hits. No justice points 8or emblems) will ever be deleted, however, due to them inflating the numbers at every expansion, they value will be less and less of points hard earned long ago.<br />
+<br />
+---------- Post added 2010-09-15 at 10:15 PM ----------<br />
+<br />
+<br />
+Likely that Valor points will drop in both heroics and the first teir of raiding, just like Wotlk with Heroism emblems.<br />
+<br />
+That comparison is misleading. <br />
+<br />
+This is how they've stated it will be/was:<br />
+<br />
+In WotLK:<br />
+Heroism emblems drops from heroics and 10-man raids.<br />
+Valor emblems drops from 25-man raids.<br />
+<br />
+In Cata:<br />
+Heroism points (later renamed to Justice Points) drops from heroics.<br />
+Valor points drop from raids. This will include both 10-man and 25-man.<br />
+<br />
+The reason they changed the name from Heroism to Justice for the low level points is probably that &quot;heroic&quot; is supposed to mean hard when it comes to raids - something that evolved along the way of WotLK. When WotLK shipped, there wasn't anything such as heroic raids - &quot;heroic&quot; then only meant &quot;heroic 5-mans&quot;, which means it then made sense to have Heroism emblems drop from &quot;Heroics&quot;. Now, they need a more neutral word becuase &quot;heroic&quot; can mean several things. They chose &quot;Justice&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Calaba</div><div class="date">2010-09-15, 10:19 PM</div></div><div class="posttext">Ok, here's the maths:<br />
+1 epic gem = 10000 honor = 240 new honor. <br />
+240 honor x 35 silver for the trade-in = 84g. <br />
+Conclusion: Going over the honor cap is ok, you won't lose much when they give you the gold. <br />
+For arena points, it's a good deal- you're getting 85 new honor points for every 100 arena points, instead of handing them in for 2000 old honor, or 48 honor points. That's double what you'll get if you trade them in now. <br />
+Stonekeepers shards are converted for wintergrasp commendation amounts, so you don't lose anything there.<br />
+And be happy to be getting anything from venture company coins and spirit shards at all:p<br />
+<br />
+So, if you're going WAY over the honor cap, you're fine there, and need to do nothing at all, just watch the cash roll in. Unless, of course, they reset honor points. In which case, SELL SELL SELL!!! :)<br />
+<br />
+Meanwhile, if you've got a few emblems of triumph, or emblems of frost kicking around, SELL NOW. The amount you'll get for going over the cap SIMPLY WON'T BE WORTH IT, and the price of saronites and epic gems is going to plummet when these changes go live. Prices are going down, and the gear you can get from them right now will be no better than lvl 80 greens, so cash in soon. Unless, of course, you still need gear from them. It also won't be worth it to grind out 5-mans to hit the cap. You'll be better off AoE grinding regular mobs for gold. (Unless you're going for achievements or something.) The reason? Crafted lvl85 gear, bought off the AH. These new points simply won't get you anything better. <br />
+<br />
+Of course, this is all based on various assumptions, including server economies, and PTR stuff being subject to change.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Duticyaa</div><div class="date">2010-09-15, 10:56 PM</div></div><div class="posttext">So, I'm the only one who's going to trade in all my Emblem of whatever now and get myself about 8-10g pr. emblem from gems, instead of waiting for them to convert into 5.5g pr emblem?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mendol</div><div class="date">2010-09-15, 10:58 PM</div></div><div class="posttext">So, I'm the only one who's going to trade in all my Emblem of whatever now and get myself about 8-10g pr. emblem from gems, instead of waiting for them to convert into 5.5g pr emblem?<br />
+I'm guessing everybody is going to be doing this.<br />
+<br />
+Yay cheap gems...which might be useful for leveling JC from 450-475 or so at the beginning of Cata if the prices are 'right' compared to the new 'green' quality gems.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Confucius</div><div class="date">2010-09-15, 11:19 PM</div></div><div class="posttext">hmmm, apparently I'd make over 14k new honor points from my 270 wg marks, 4k shards, 700 venture coins alone. Am I to understand that anything above 4k new honor points is wasted and turned into gold?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocef71e99c15</div><div class="date">2010-09-15, 11:49 PM</div></div><div class="posttext">hmmm, apparently I'd make over 14k new honor points from my 270 wg marks, 4k shards, 700 venture coins alone. Am I to understand that anything above 4k new honor points is wasted and turned into gold?<br />
+<br />
+No, try reading it again.<br />
+<br />
+Honor is honor. Like, you know, we've had honor points for the last couople of years in the game. You use honor points to buy PvP gear and the current cap of 75k honor is being raised even further.<br />
+<br />
+The 4k cap is for Justice Points, which is the new PvE currency that is modelled on the old honor points for PvP. it will work similar but it is different. And it is for PvE, not for PvP.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Calaba</div><div class="date">2010-09-15, 11:59 PM</div></div><div class="posttext">No, try reading it again.<br />
+<br />
+Honor is honor. Like, you know, we've had honor points for the last couople of years in the game. You use honor points to buy PvP gear and the current cap of 75k honor is being raised even further.<br />
+<br />
+The 4k cap is for Justice Points, which is the new PvE currency that is modelled on the old honor points for PvP. it will work similar but it is different. And it is for PvE, not for PvP.<br />
+<br />
+No, no, no, no no. He'll get around 3500g with his current stockpile as he goes over the honor cap, which is also 4000. This new cap is equivalent to 166666 &quot;old&quot; honor currently, in other words a little more than double what it is now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hotaka</div><div class="date">2010-09-16, 12:13 AM</div></div><div class="posttext">I thank the person who linked the screen shot of the vendors, Hopefully you can get a full cost list up on the main page here, but I was able to see what I was in store for from that screen of frost and honor vendors.<br />
+<br />
+For T10 items it just doesn't seem to scan. 400 badges for items that currently cost 95. :/<br />
+For Gems it is bad. 80 badges for items that currently cost 20.<br />
+And for legacy gear it's 260 badges for weapons that currently cost 65.<br />
+I don't know what the T9 conversions are, but I don't imagine they are favorable.<br />
+At least the Gold conversion is reasonable. A red gem for 20 badges gets you max 110g cut on my server, so why bother with the AH and just get the gold straight from the source.<br />
+<br />
+I'm taking away from this that I better get my ducks in a row and buy any Legacy gear or cosmetic items I want for my characters before this change over and then convert everything else to lower badges and collect the cash. I have a distinct feeling that both point awards and the point cap will be significantly higher at 85, just like honor caps in 60/70/80 game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alianthos</div><div class="date">2010-09-16, 12:14 AM</div></div><div class="posttext">No reason to farm Emblems whatsoever. Even at this rate it's still more profitable to buy gem and sell 'em . 10 badges = 55g here, but 10 badge = 100 g with a gem.<br />
+<br />
+Still sweet though.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tokn</div><div class="date">2010-09-16, 12:43 AM</div></div><div class="posttext">Sounds like a waste of time to farm 70BC heroics for badges, easier to make money else where.<br />
+<br />
+As for the guy with the 4k Venture coin, jackpot! since those are worth the most on conversion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azrile</div><div class="date">2010-09-16, 01:14 AM</div></div><div class="posttext">I am just going to add a big of my personal observation to the noise.<br />
+<br />
+1 trinket and the Relic slot (for classes that use them) are NOT quest rewards in the first zones of Cata. All other gear that you can buy with emblems WILL be replaced. If you are deciding what to buy now, my advise is to go for a trinket and relic first. They are the only item slot that will make it out of the first zone in cata unless you are in ICC25 gear.<br />
+<br />
+I'm personally getting them for all my alts and the rest will go towards gems to be sold on the AH.<br />
+<br />
+In my opinion, it is very unlikely that the devs will allow justice points we can earn now to give us any significant head start in Cata. My reasoning goes like this. The absolute best gear you can get from raiding now will barely last you until 85. Do we really think that anything we can earn from heroics now will be valuable at 85?<br />
+<br />
+Either they are going to force a cash-out of justice points when cata launches (ie, we get gold, but start with 0JP), or else the price of items that can be bought with JP at 85 will dwarf anything we can possibly earn now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hellar</div><div class="date">2010-09-16, 01:58 AM</div></div><div class="posttext">w8 so is there going to be any 85 gear to buy with justice points? i am currently grinding out my 1455 emblems.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Volitans</div><div class="date">2010-09-16, 01:59 AM</div></div><div class="posttext">Sweet calculator on front page! thats a pretty pro app</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Second</div><div class="date">2010-09-16, 02:40 AM</div></div><div class="posttext">I thank the person who linked the screen shot of the vendors, Hopefully you can get a full cost list up on the main page here, but I was able to see what I was in store for from that screen of frost and honor vendors.<br />
+Could you please link it in here ? Would like to take a look, very interesting info you say.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">GhostSkull</div><div class="date">2010-09-16, 03:18 AM</div></div><div class="posttext">Umm, won't 71000 honour point X 35 silver be a LOT? That's 350G per 1000 points, that must be a mistake surely?<br />
+<br />
+Perhaps it is 35s per new honor points, rather than old.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ScorchHellfire</div><div class="date">2010-09-16, 03:26 AM</div></div><div class="posttext">badge of justice to gold calculator isnt working</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">GhostSkull</div><div class="date">2010-09-16, 03:31 AM</div></div><div class="posttext">As things stand now, it seems to me that the bottom line is to spend everything but Venture coins and Wintergrasp Marks.<br />
+<br />
+---------- Post added 2010-09-16 at 03:38 AM ----------<br />
+<br />
+<br />
+Could you please link it in here ? Would like to take a look, very interesting info you say.<br />
+<br />
+It is in the thread. The short version is: T10 - Trinkets and Belts 694 JP, Cloaks 578, Primordials 266, Pants 1100. T9 - Trinks 435, necks 271, helm 489, hands and shoulders 326, Cardinals and King's Amber etc 217, Dreadstone &amp; Amertine 108. Heirlooms 706-435 JP. <br />
+<br />
+If these values go live, you'd do much better to buy everything now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">coltrain</div><div class="date">2010-09-16, 03:59 AM</div></div><div class="posttext">Well here are my before and after numbers from a copy of my character to the PTR:<br />
+<br />
+Frost Before: 29<br />
+Frost After: 0<br />
+<br />
+Triumph Before: 44<br />
+Triumph After: 0<br />
+<br />
+New Justice Points: 73 (29+44)<br />
+<br />
+---<br />
+<br />
+Justice badges Before: 490<br />
+Justice badges After: 0<br />
+<br />
+Gold in my inbox from conversion: 898.17 (aprox 2g per)<br />
+<br />
+---<br />
+<br />
+Arena points Before: 261<br />
+Arena points After: 0<br />
+<br />
+Honor points Before: 12524<br />
+Arena points After: 12524<br />
+<br />
+new Conquest points: 261 (1:1 from Arena)<br />
+<br />
+---<br />
+<br />
+All of my Stone shards, Venture Coins, and WG marks stayed the same.<br />
+<br />
+---</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zaft</div><div class="date">2010-09-16, 04:01 AM</div></div><div class="posttext">How interesting that Venture Company coins are worth so much. I've got a boatload, because I enjoyed those quests (broke up the monotony of spamming Hodir dailies), so I'm looking forward too that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baygon</div><div class="date">2010-09-16, 04:12 AM</div></div><div class="posttext">did anyone read what the blue post said properly? they said that the cost of Items currently won't change and the PTR Values are Wrong, if a Saronite costs 23 frosts it should be about 50 or 60 points, when the change happens, for example</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">coltrain</div><div class="date">2010-09-16, 04:17 AM</div></div><div class="posttext">And as a follow up to the person who talked about the honor conversion:<br />
+<br />
+It says anything over the soft cap for 4000 will be converted into 1 = 35 silver.<br />
+<br />
+It also says that 1 old honor = .024 new honor. <br />
+<br />
+By that math 75000 old honor = 1800<br />
+<br />
+Thus, the new cap will be equivalent to: 4000/.024 = 166666.67 honor (roughly double)<br />
+<br />
+---<br />
+<br />
+Now my honor did not convert! It stayed at the same 12524 it was when I went in. And my Wintergrasp commendations still say they award 2000 honor (although upon use nothing happens [ad they are still consumed])<br />
+<br />
+With that 12524 I will get ([12524-4000]*.35)= 2983.4g so i DONT think that is right :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Harpocrates</div><div class="date">2010-09-16, 04:47 AM</div></div><div class="posttext">moar $$</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SmokeyIllidan</div><div class="date">2010-09-16, 05:04 AM</div></div><div class="posttext">And my Wintergrasp commendations still say they award 2000 honor (although upon use nothing happens [ad they are still consumed])<br />
+<br />
+This is what concerns me. So the Wintergrasp Commendations are still in Cataclysm, but do they still work or are they yet to be removed? I love stockpiling them because it makes honor for alts much more enjoyable.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2010-09-16, 05:08 AM</div></div><div class="posttext">No reason to farm Emblems whatsoever. Even at this rate it's still more profitable to buy gem and sell 'em . 10 badges = 55g here, but 10 badge = 100 g with a gem.<br />
+<br />
+Still sweet though.<br />
+<br />
+No point bothering with even that on Malfurion. AH prices have hit rock-bottom, with solid gems selling for ~65g and mixed for much lower (~40g). It's a shame, but that's what happened near the end of TBC as well. My plan is to just hoard what I already have since I'll get more gold that way than trying to play the auction house.<br />
+<br />
+Edit: Forgot to mention this before posting. Internet Explorer 8 is having issues with the conversion calculator in that it will only calculate for Justice Points, the arrows don't display, and none of the money fields are showing.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Evilution</div><div class="date">2010-09-16, 05:18 AM</div></div><div class="posttext">I'm guessing everybody is going to be doing this.<br />
+<br />
+Yay cheap gems...which might be useful for leveling JC from 450-475 or so at the beginning of Cata if the prices are 'right' compared to the new 'green' quality gems.<br />
+<br />
+As with some other &quot;max lvl for current content&quot;-recepies, they don´t give good skillups past 450 (455 if you´re Draenei, not sure if they are<br />
+removing that racial), they turn green at 452 and grey at 465.<br />
+Then again with the planned change in skilling up, isn´t it something like &quot;orange give a small bucket of skillups, yellow give more than 1, and green give you 1 skillup&quot;?<br />
+Might be a sure way to get to 465 fast enough and save some of the new precious minerals a few lvls... might be some handy info on the Cata profession forum! :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lsk91</div><div class="date">2010-09-16, 05:49 AM</div></div><div class="posttext">So when exactly is this change gonna be made??? (please reply)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfce925a786</div><div class="date">2010-09-16, 05:57 AM</div></div><div class="posttext">justice points = wotlk gear<br />
+Hero points = starter gear from heroics and previous raid tier<br />
+Valor points = raid stuff<br />
+<br />
+I don't see how that is so hard to grasp, I can't remember any of the blues saying that justice points will be replacing hero points.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daehawk</div><div class="date">2010-09-16, 06:12 AM</div></div><div class="posttext">justice points = wotlk gear<br />
+Hero points = starter gear from heroics and previous raid tier<br />
+Valor points = raid stuff<br />
+<br />
+I don't see how that is so hard to grasp, I can't remember any of the blues saying that justice points will be replacing hero points.<br />
+<br />
+Rocketbear, I don't see how hard it is to grasp that hero points doesn't exist anymore. <br />
+<br />
+<br />
+<br />
+One change of note since that original announcement is that we've changed the name of the low-tier PvE currency from Hero Points to Justice Points. The original announcement post has been updated to reflect this.<br />
+<br />
+<br />
+PvE <br />
+Justice Points -- Low-tier, easier-to-get PVE points. Maximum cap to how many you can own, but no cap to how quickly you can earn them. Earned from most dungeons. (most like the current Emblem of Triumph) <br />
+Valor Points -- High-tier, harder-to-get PvE points. Maximum cap to how many you can own, as well as a cap to how many you can earn per week. Earned from Dungeon Finder daily Heroic and from raids. (most like the current Emblem of Frost) <br />
+<br />
+Justice = Hero<br />
+Valor = Valor<br />
+<br />
+Justice will have non-tier level 85 stuff at the start of Cata. <br />
+Valor will have T11 level stuff at the start of Cata.<br />
+<br />
+Valor is limited per week.<br />
+Justice are unlimited per week.<br />
+<br />
+Once t12 level stuff comes out, t11 moves to Justice and your Valor points are wiped. It's a simple concept.<br />
+<br />
+It states it in the second post by a blue on the Main page of MMO-Champ. Hero is renamed Justice.<br />
+<br />
+---------- Post added 2010-09-16 at 06:14 AM ----------<br />
+<br />
+<br />
+So when exactly is this change gonna be made??? (please reply)<br />
+<br />
+This change is made when 4.0.1 is released. It's currently on the PTR.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Naoto</div><div class="date">2010-09-16, 06:27 AM</div></div><div class="posttext">I'd love to go back to the days of TBC where the only epics you had came from raiding or being exhalted with a faction, I loved doing heroics with people in blue gear which took like 2 hours and when you got someone full epic you KNEW they were good and it was rare, now everyone is epic in WOTLK by heroics alone, so hopefully Cata is more like TBC.<br />
+<br />
+I still hate this conversion nonsense, now people are going to farm the hell out of heroics and pretty much save up for the gear long before Cata is even released, yet honor is capped at 75k which is a joke, it's not even enough to buy 2 pieces of armour yet Blizzard are encouraging people to farm WOTLK heroics to get Cata gear quicker? bollocks.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daehawk</div><div class="date">2010-09-16, 06:39 AM</div></div><div class="posttext">I'd love to go back to the days of TBC where the only epics you had came from raiding or being exhalted with a faction, I loved doing heroics with people in blue gear which took like 2 hours and when you got someone full epic you KNEW they were good and it was rare, now everyone is epic in WOTLK by heroics alone, so hopefully Cata is more like TBC.<br />
+<br />
+I still hate this conversion nonsense, now people are going to farm the hell out of heroics and pretty much save up for the gear long before Cata is even released, yet honor is capped at 75k which is a joke, it's not even enough to buy 2 pieces of armour yet Blizzard are encouraging people to farm WOTLK heroics to get Cata gear quicker? bollocks.<br />
+<br />
+You can start farming Venture Coins. There is a quest to get the Element 117 thing that gives 2 coins that is infinitely repeatable and you don't have to be flagged. Granted I think only 2 spawn on the ship, maybe 2 more in another place. You can basically run back and forth and one will be up always on the ship if you're doing it alone.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pbean</div><div class="date">2010-09-16, 07:12 AM</div></div><div class="posttext">I'd love to go back to the days of TBC where the only epics you had came from raiding or being exhalted with a faction, I loved doing heroics with people in blue gear which took like 2 hours and when you got someone full epic you KNEW they were good and it was rare, now everyone is epic in WOTLK by heroics alone, so hopefully Cata is more like TBC.<br />
+<br />
+End bosses in TBC heroics dropped epics, just like in Wotlk.<br />
+<br />
+And in the end what does &quot;epic&quot; really mean? It's just a colour, a loot quality indicator. If you work hard you'll still get better gear than everyone else. If you're in full 277 epics, you're still able to say you have a bigger e-peen than someone in 232 gear with some 264 Emblem items. Just like you could show your epic e-peen to blue &quot;lowbies&quot; &quot;back in the day&quot;.<br />
+<br />
+Though I would love that heroics scaled with gear somehow. Because doing heroics tuned for level 80 blue gear in item level 251 raid gear just bores me (and everyone else) out.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lekein</div><div class="date">2010-09-16, 07:13 AM</div></div><div class="posttext">Calculator ain't working. Because I'm a Chrome user?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mstermeg</div><div class="date">2010-09-16, 07:25 AM</div></div><div class="posttext">I wish they'd just drop the point system altogether and make people earn their gear<br />
+<br />
+Any system that allows a fresh character to start earning the next to best set of gear is a broken system</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aroa</div><div class="date">2010-09-16, 07:30 AM</div></div><div class="posttext">Calculator ain't working. Because I'm a Chrome user?<br />
+<br />
+It works if you enter your emblems by typing the number on the keyboard. It doesn't work if you use the up and down arrows.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daehawk</div><div class="date">2010-09-16, 07:47 AM</div></div><div class="posttext">Calculator ain't working. Because I'm a Chrome user?<br />
+<br />
+Hit tab after you insert your numbers, it's not that hard. Works perfectly fine with Chrome.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gerti</div><div class="date">2010-09-16, 08:15 AM</div></div><div class="posttext">If you still have some BGs marks left (AV,WSG,AB etc), that you haven't turned into honor. I would suggest that you do it before patch 4.0 comes. Because on live 1 BG mark gives 180 honor = 4 new honor points. But if you haven't turn them in before 4.0 and blizz will automatically change them for you and you will get 2 new honor points. Meaning you get 50% less. But don't buy Honor with wintergrasp marks because then you will also lose, so keep those. On live you can spend 9 wintergrasp marks for 2k hononr = 48. But in 4.0 9 wintergrasp marks will be transfered to 171 new honor points <br />
+<br />
+tl;dr<br />
+<br />
+Live - BGs mark = 180 honor --&gt; 4 new honor points in 4.0<br />
+4.0 - BGs mark --&gt; 2 new honor points<br />
+Live 9 wintergrasp marks = 2k honor --&gt; 48 new honor points<br />
+4.0 9 wintergraps marks --&gt; 171 new honor points</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">twelvedogs</div><div class="date">2010-09-16, 08:16 AM</div></div><div class="posttext">I wish they'd just drop the point system altogether and make people earn their gear<br />
+<br />
+Any system that allows a fresh character to start earning the next to best set of gear is a broken system<br />
+<br />
+seems to work ok to me, maybe you would prefer it that new players would basically never get a run, but i don't think it's that great to tell people they're not allowed to play because they got here late.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Calaba</div><div class="date">2010-09-16, 08:24 AM</div></div><div class="posttext">did anyone read what the blue post said properly? they said that the cost of Items currently won't change and the PTR Values are Wrong, if a Saronite costs 23 frosts it should be about 50 or 60 points, when the change happens, for example<br />
+<br />
+Even if this is so, the cost of saronites on the AH is going DOWN, since you'll be able to buy em from 5-mans, the market will be flooded, and because people are gonna realise they'll be useless in a few weeks. The same will apply to epic gems too. PvP points don't suffer so much - the new cap is 166666 or so in today's money which is easy to reach, and going over the cap will get you a good amount of gold in return. <br />
+<br />
+The 1400+ triumph/frost badges you'll need to reach the cap aren't as easy to get. It's roughly 200 Wrath 5-man instances, whereas it'll probably only be 20 or so Cata ones, ie, better to just do a few 5-mans while leveling anyway. The rate of return is just lame in comparison to PvP honor points for the time being. It'll be better to have gold for BoE blues/epics, which will be just as good.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Slagge</div><div class="date">2010-09-16, 08:25 AM</div></div><div class="posttext">I still believe that 2nd of November is to soon :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eled.</div><div class="date">2010-09-16, 08:28 AM</div></div><div class="posttext">So, they're gonna rip Justice points at Cata release or something ?<br />
+<br />
+I just can't believe you'll be able to farm Justice points in wotlk heroics for months and then buy a complete blue gear once you reach 85..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Calaba</div><div class="date">2010-09-16, 08:38 AM</div></div><div class="posttext">So, they're gonna rip Justice points at Cata release or something ?<br />
+<br />
+I just can't believe you'll be able to farm Justice points in wotlk heroics for months and then buy a complete blue gear once you reach 85..<br />
+<br />
+Why not? You'll be able to buy a (more or less) complete set of BoE blue + some BoE epic gear with the amount of gold you could earn farming trash anyway... being able to buy 1 or 2 items with the new points system is hardly game-breaking... although having said that, it wouldn't surprise me if they decided to reset the points right at the last moment...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jarvon</div><div class="date">2010-09-16, 08:39 AM</div></div><div class="posttext">whats the triumph and frost transfer rate</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daehawk</div><div class="date">2010-09-16, 08:40 AM</div></div><div class="posttext">So, they're gonna rip Justice points at Cata release or something ?<br />
+<br />
+I just can't believe you'll be able to farm Justice points in wotlk heroics for months and then buy a complete blue gear once you reach 85..<br />
+<br />
+Also if you do dungeons from 80-85 all those should give you Justice points as well iirc. Justice points are basically going to be for everything that isn't the best. The best will be from Valor points.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Palahniuk</div><div class="date">2010-09-16, 08:46 AM</div></div><div class="posttext">Hi Boub,<br />
+<br />
+I admit I'm fairly unique in using Chromium 6 on linux, however... It's using your HTMl5 number input boxes and your javascript doesn't trigger when the up/down arrows are used.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eled.</div><div class="date">2010-09-16, 08:46 AM</div></div><div class="posttext">If that's only 1 or 2 items, yes, I'm okay with that.<br />
+In fact it depends on final values, JP incomes, items cost.. I just hope you won't be able to buy a whole &quot;raid-starter&quot; gear from day-one with those free Justice points.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daehawk</div><div class="date">2010-09-16, 08:50 AM</div></div><div class="posttext">If that's only 1 or 2 items, yes, I'm okay with that.<br />
+In fact it depends on final values, JP incomes, items cost.. I just hope you won't be able to buy a whole &quot;raid-starter&quot; gear from day-one with those free Justice points.<br />
+<br />
+It'll probably be similar to the costs of pvp gear based on Honor / arena points are right now. Around 1.1k per Helm/Chest/Legs, 900~ for Shoulders/gloves. So if you have 4k which is the max you'll be able to get 3-4. Chest+Legs+Helm+Gloves = 4k if those numbers I pulled out of the air are any where around what they are.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccc32bf69b9</div><div class="date">2010-09-16, 09:03 AM</div></div><div class="posttext">Hi Boub,<br />
+<br />
+I admit I'm fairly unique in using Chromium 6 on linux, however... It's using your HTMl5 number input boxes and your javascript doesn't trigger when the up/down arrows are used.<br />
+<br />
+As I have previously stated, this is an issue with chrome. It doesn't trigger the changed event correctly on release/beta, but dev is partially way there. There is absolutely nothing we can do.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Darkia</div><div class="date">2010-09-16, 09:48 AM</div></div><div class="posttext">thats strange boub your patch has more gigs then my down loader<br />
+<br />
+mine is saying 1.58gigs, also might mean that you french players get more data then us Americans</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dsmania</div><div class="date">2010-09-16, 10:11 AM</div></div><div class="posttext">thats strange boub your patch has more gigs then my down loader<br />
+<br />
+mine is saying 1.58gigs, also might mean that you french players get more data then us Americans<br />
+<br />
+Localized versions of the game also download translation stuff like texts and speech apart from the base packages that are in english.<br />
+Even if you play only in english, when you buy the game in a country with localized version, it'll come flagged as being of that country. In Boub's case, it'll be &quot;frFR&quot; and will download both frFR and enGB files. There are ways to skip those, but that's the standard case.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Odexy</div><div class="date">2010-09-16, 10:20 AM</div></div><div class="posttext">Does anyone have the irking problem of reading any mmo post made by Boub in Garfields voice?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoccedd099ca1</div><div class="date">2010-09-16, 10:51 AM</div></div><div class="posttext">Did anyone on the PTR check out the pvp/arena item prices and rating requirements? Been wondering if they up the prices on those as well... (I'd check it out myself, if I didn't have a download limit on my internet grrrrrr).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Daedius</div><div class="date">2010-09-16, 11:54 AM</div></div><div class="posttext">Feck me that's one big patch... and I'm nearing me monthly limit already - and it's just the FIRST part ! &gt;_&lt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Obrysii</div><div class="date">2010-09-16, 11:56 AM</div></div><div class="posttext">How will I be able to buy the Wintergrasp Commendations for my alts now?<br />
+<br />
+I wanted to get my Worgen Warrior some of the legacy weapons ...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yazus</div><div class="date">2010-09-16, 12:01 PM</div></div><div class="posttext">Well, the first part of 4.0.1 probably includes the old world, which is pretty much completed and fixed, tested to death and its ok for relase... also probably all the new UI/skins/music!<br />
+<br />
+The part 2 will probably relased with all the equipment sets/skins/textures etc :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kazlofski</div><div class="date">2010-09-16, 12:06 PM</div></div><div class="posttext">4.0.1 system changes. 4.0.3 content changes.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Magmaros</div><div class="date">2010-09-16, 12:20 PM</div></div><div class="posttext">so 4.0.1 next week yeah? :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eucep</div><div class="date">2010-09-16, 12:27 PM</div></div><div class="posttext">My issue is that the background downloader no longer seems to want to start up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rugus</div><div class="date">2010-09-16, 12:29 PM</div></div><div class="posttext">Fix for &quot;HELP! Background downloader no longer seems to want to start up&quot;<br />
+<br />
++ open your WoW folder<br />
++ delete BackgroundDownloader.exe<br />
++ run &quot;repair.exe&quot; choosing the CHECK ONLY option<br />
++ wait <br />
++ re-launch BackgroundDownloader.exe, it will work again</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zka</div><div class="date">2010-09-16, 12:37 PM</div></div><div class="posttext">Too bad that repair doesn't fully download backgrounddownloader.exe for me. Just stops halfway and that's it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neitiry30</div><div class="date">2010-09-16, 12:46 PM</div></div><div class="posttext">omg is it 10 hours to download this patch for real? after 45 min im at 3% only.i hope i dont have an error message at half way lol its taking forever.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sherkon</div><div class="date">2010-09-16, 12:50 PM</div></div><div class="posttext">Tkanks a lot, it works :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Junicha</div><div class="date">2010-09-16, 01:02 PM</div></div><div class="posttext">omg is it 10 hours to download this patch for real? after 45 min im at 3% only.i hope i dont have an error message at half way lol its taking forever.<br />
+<br />
+That doesn't sound right... I'm at 90% after about 3 hours of downloading.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DrgnDancer</div><div class="date">2010-09-16, 01:04 PM</div></div><div class="posttext">No, try reading it again.<br />
+<br />
+Honor is honor. Like, you know, we've had honor points for the last couople of years in the game. You use honor points to buy PvP gear and the current cap of 75k honor is being raised even further.<br />
+<br />
+The 4k cap is for Justice Points, which is the new PvE currency that is modelled on the old honor points for PvP. it will work similar but it is different. And it is for PvE, not for PvP.<br />
+<br />
+Ehh... Did you read a different post than everyone else?<br />
+Your New Honor Points total will be the sum of the following amounts:<br />
+<br />
+* Old Honor * 0.024<br />
+* Old Arena Points * 0.85<br />
+* Battleground Mark of Honor * 2.976<br />
+* Wintergrasp Mark of Honor * 19.08<br />
+* Stone Keeper Shard * 1.6<br />
+* Venture Coin * 3<br />
+* Spirit Shard * 1<br />
+....<br />
+<br />
+Honor points above 4,000 are converted to gold at a rate of 35 silver per point of Honor.<br />
+<br />
+<br />
+That's what the blue post I read said. Which makes your parent post completely correct.<br />
+<br />
+Edit to add:<br />
+<br />
+I'd love to go back to the days of TBC where the only epics you had came from raiding or being exhalted with a faction, I loved doing heroics with people in blue gear which took like 2 hours and when you got someone full epic you KNEW they were good and it was rare, now everyone is epic in WOTLK by heroics alone, so hopefully Cata is more like TBC.<br />
+And you apparently played a different TBC than I did. I know plenty of people that never set foot in a TBC raid, but went into Wrath with almost full Epics from Heroic instances, Rep, badges, and PvP. PvP was especially popular, since it was relatively easy to get, and TBC PvP gear didn't budget nearly as much for resilience. It was actually decent for PvE.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca0ac7856f5</div><div class="date">2010-09-16, 01:23 PM</div></div><div class="posttext">How will I be able to buy the Wintergrasp Commendations for my alts now?<br />
+<br />
+I wanted to get my Worgen Warrior some of the legacy weapons ...<br />
+<br />
+You can probably buy the stuff with the new honor point system. I don't think that all of those items will get taken away instantly.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neitiry30</div><div class="date">2010-09-16, 01:47 PM</div></div><div class="posttext">That doesn't sound right... I'm at 90% after about 3 hours of downloading.<br />
+<br />
+well its been about 1h30 now or so and only 11% probly it goes faster at a certain % i feel like a tuesday where i cant play for hours cause of maintenance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">videotape</div><div class="date">2010-09-16, 02:33 PM</div></div><div class="posttext">well its been about 1h30 now or so and only 11% probly it goes faster at a certain % i feel like a tuesday where i cant play for hours cause of maintenance.<br />
+<br />
+Common sense suggests that you should play now and download it later.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neitiry30</div><div class="date">2010-09-16, 02:38 PM</div></div><div class="posttext">Common sense suggests that you should play now and download it later.<br />
+<br />
+well at least id be done with it.Im just curious how long it took ppl to download it in general and if it goes faster at a certain % like sometime you can jump from 20% to 70 in less then 5 min.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DrgnDancer</div><div class="date">2010-09-16, 02:47 PM</div></div><div class="posttext">well at least id be done with it.Im just curious how long it took ppl to download it in general and if it goes faster at a certain % like sometime you can jump from 20% to 70 in less then 5 min.<br />
+<br />
+The absolute earliest this will go live is Tuesday (or Wednesday if you're in Europe), let it download while you're sleeping and use your Internet connection for real stuff now (playing, or whatever you normally do). Even next patch day is pretty unlikely, they'll probably release more updates to it before it goes live.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">quiz</div><div class="date">2010-09-16, 03:01 PM</div></div><div class="posttext">The system is way easyer now, haven't checked all stuff but it looks fine.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Calaba</div><div class="date">2010-09-16, 03:21 PM</div></div><div class="posttext">My issue is that the background downloader no longer seems to want to start up.<br />
+<br />
+Assuming you're using Windows XP SP3,<br />
+<br />
+Step 1: Go to your WoW directory, delete the background downloader, then use the repair tool to restore it. This will give you an up-to-date version.<br />
+Step 2: Download Internet Explorer 8. This seems to be needed to get it to start up.<br />
+Step 3: Right-click the background downloader, click properties, and enable Windows 98/ME compatibility. This will stop it from throwing a runtime exception.<br />
+Step 4: Restart your machine.<br />
+Step 5: Win.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nastified</div><div class="date">2010-09-16, 03:48 PM</div></div><div class="posttext">So 3 patches in the next 2 months? Sounds like a lot going on in here, chief.<br />
+<br />
+Boub may indeed be right. Cata may indeed ship in November.<br />
+<br />
+<br />
+That won't make it any less broken by shipping it in November. I'm sorry guys there is still A LOT of work to be done,as some of you are going to find out in 2 weeks when this patch lands.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eucep</div><div class="date">2010-09-16, 04:02 PM</div></div><div class="posttext">Rugus: Thank you.<br />
+Calaba: Windows 7, but will try it since just deleting, then repairing seemed to have no result.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">getefix</div><div class="date">2010-09-16, 04:09 PM</div></div><div class="posttext">---------------------------<br />
+Blizzard Background Downloader<br />
+---------------------------<br />
+Data for the next patch is not available.<br />
+---------------------------<br />
+OK <br />
+---------------------------<br />
+<br />
+<br />
+ehrm... help?<br />
+<br />
+Edit: Deleted BackgroundDownloader.exe and ran Repair.exe. Fixed my problem.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baygon</div><div class="date">2010-09-16, 04:27 PM</div></div><div class="posttext">Nastified perhaps it is indeed you that is Wrong? have you ever thought of that idea? i'm not sure if you work with computers or anything similar but no Patch or expansion is 100% bug free, do you understand this? perhaps accepting that blizzard will make everything work might be a good idea? when have they honestly failed us last? i don't recall anything serious at all. can you?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nastified</div><div class="date">2010-09-16, 04:34 PM</div></div><div class="posttext">No one is implying the game should be bug-free, Baygon. <br />
+<br />
+I'm suggesting you should take a ride around the block on beta or even the PTR and have a look for yourself.<br />
+<br />
+Playing the role of Blizzard fanboy is a lot easier than doing what I'm doing now, which is bearing the realistic news to you:<br />
+<br />
+Not quite ready. Getting closer, but NOT QUITE READY.<br />
+<br />
+I'll see you in 2 weeks complaining about how they could have missed the mark.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">m0hawK</div><div class="date">2010-09-16, 05:20 PM</div></div><div class="posttext">Where I exchange my emblems for gold? ^^</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CarnatiaSpiritfield</div><div class="date">2010-09-16, 05:22 PM</div></div><div class="posttext">I just spent the whole morning downloading that thing, and then it finished, I started up wow the the background downloader popped up again....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Eggye</div><div class="date">2010-09-16, 05:25 PM</div></div><div class="posttext">No one is implying the game should be bug-free, Baygon. <br />
+<br />
+I'm suggesting you should take a ride around the block on beta or even the PTR and have a look for yourself.<br />
+<br />
+Playing the role of Blizzard fanboy is a lot easier than doing what I'm doing now, which is bearing the realistic news to you:<br />
+<br />
+Not quite ready. Getting closer, but NOT QUITE READY.<br />
+<br />
+I'll see you in 2 weeks complaining about how they could have missed the mark.<br />
+<br />
+Just because the Beta or PTR still has their issues doesn't mean they can't start streaming updates that are good to go.<br />
+<br />
+And this is assuming you're talking about actual bugs and not game mechanics that bother you, because if it is game mechanics/changes well then get used to it because it is intended.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">sessava</div><div class="date">2010-09-16, 05:52 PM</div></div><div class="posttext">The beta/PTR are always behind Blizzard's internal builds by a good amount. It's very likely that many of the bugs you are referring to, Nastified, are fixed. <br />
+<br />
+It's not being a Blizzard fanboy to point out the fact that they never release content that they aren't sure is ready. They're perfectionists, perhaps only surpassed by Valve on that front.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Creed86</div><div class="date">2010-09-16, 06:20 PM</div></div><div class="posttext">I'm suggesting you should take a ride around the block on beta or even the PTR and have a look for yourself.<br />
+Main issue i've seen from playing the beta is the fact there is no item rewards yet from Hillsbrad, Twilight Highlands and Uldum maybe alot of other places aswell but i didn't look into other zones, something like this can be easily implemented they should almost be done by now and for all you know it could come next time a patch for the beta hits. <br />
+<br />
+There was alot of quests missing but if i recall blade's edge wasn't properly done when they released the burning crusade and they patched a fix in.<br />
+<br />
+Long story short once items are put in the GAME CAN ship anytime blizzard wants.<br />
+<br />
+You make things sound more dramatic than they actually are.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Laurabelle</div><div class="date">2010-09-16, 06:23 PM</div></div><div class="posttext">QUESTION:<br />
+<br />
+Is the calculation going to be per Blizzards post:<br />
+<br />
+FLOOR ( ( FROST + TRIUMPH ) * 2.75 ) = JP<br />
+<br />
+<br />
+OR, like BOUB's calculator:<br />
+<br />
+<br />
+FLOOR( FROST * 2.75 ) + FLOOR( TRIUMPH * 2.75 ) = JP<br />
+<br />
+<br />
+The reason is because if the fractional portions of both are &gt;= 1 then BOUB's is off by 1 JP.<br />
+<br />
+For example:<br />
+<br />
+<br />
+1333 FROST * 2.75 = 3665.75 BOUB's would floor this and show you 3665 POINTS<br />
+<br />
+466 TRIUMPH * 2.75 = 1281.5 BOUB's would floor this and show you 1281 POINTS<br />
+<br />
+BOUB's would then show you 4946 POINTS<br />
+<br />
+<br />
+HOWEVER,<br />
+<br />
+<br />
+If you did (1333 + 466) * 2.75 = 4947.25 (Because we are adding together the .75 and .50 that BOUB's floored out)<br />
+<br />
+Flooring this would give us 4947 POINTS<br />
+<br />
+<br />
+SO, WHICH IS RIGHT?<br />
+<br />
+<br />
+I DO NO WANT TO BE JIPPED OUT OF A JP POINT!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Liminal</div><div class="date">2010-09-16, 06:23 PM</div></div><div class="posttext">what are the chances that this goes live by tuesday? I have 387 badges to farm till 2500</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thalium1</div><div class="date">2010-09-16, 06:24 PM</div></div><div class="posttext">yep im rich lol</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Laurabelle</div><div class="date">2010-09-16, 06:27 PM</div></div><div class="posttext">1 MORE QUESTION:<br />
+<br />
+If you did not care about JP and only wanted GOLD, wouldn't it be WAY smarter a move to downgrade all your TRIUMPH down to HEROISM, because you'd get 5.5g gold a piece for those rather than 4g a piece after the second round (for excess of 4K JP) (sell primordials with all frost while you can).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc517844c3f5</div><div class="date">2010-09-16, 06:54 PM</div></div><div class="posttext">I just spent the whole morning downloading that thing, and then it finished, I started up wow the the background downloader popped up again....as stated many times by many players the beta build that players are using right now is not the same build the blizzard devs have</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mordras</div><div class="date">2010-09-16, 09:19 PM</div></div><div class="posttext">SO, WHICH IS RIGHT?<br />
+<br />
+I DO NO WANT TO BE JIPPED OUT OF A JP POINT!<br />
+No one knows for sure except Blizzard as the current version of the PTR did a 1 to 1 conversion. <br />
+<br />
+In the end who cares which is right? 1 point either way isn't going to make a hell of a lot of difference given the prices on the PTR. The calculator provided by this site is a nice tool to do some quick calculations of what you'll end up with. If it is slightly off not a big deal. If Blizzard's formula is what MMO Champion has in their calculator (and not what they stated) are you going to complain that you ended up with 1 or 2 less Justice Points than you were expecting? I think the best case scenario would be that they would say they were sorry for giving false information. I just can't see them going back after the fact to adjust a few points.<br />
+<br />
+In any case Blizzard stated that the formulas they gave were all subject to change. So in the end the amount of Justice Points you end up getting could be much different than the 1 point you seem to be concerned about.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hellar</div><div class="date">2010-09-16, 11:59 PM</div></div><div class="posttext">is it even worth waiting 2 days for this fricking downloader? or will there be a time that i can download it faster? live when it goes live</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Alayea</div><div class="date">2010-09-17, 12:23 AM</div></div><div class="posttext">I would say it's worth it as you would get a head-start on the inevitable patch. Best thing to do is leave your computer on overnight so it can spend that time downloading. Alternatively, you could let it finish while finding other activities to do. ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">shadowboy</div><div class="date">2010-09-17, 12:41 AM</div></div><div class="posttext">The badges of justice to gold conversion has me wondering, Will you just be able to buy badge of justice gear with gold now, or will that stuff still cost justice points and level 70 heroics/raids drop justice points instead. I'm wondering because I have a level 70 twink that I am planning on staying that way when cata ships. If the badge of justice gear can be purchased with gold it trivializes level 70 gearing. If you need justice points, then my existing badges of justice will become gold and I have to start over farming level 70 heroics/raids for justice points.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tntdruid</div><div class="date">2010-09-17, 08:00 AM</div></div><div class="posttext">no patch on background downloader in EU yet :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ItachiZaku</div><div class="date">2010-09-17, 02:43 PM</div></div><div class="posttext">Likely that Valor points will drop in both heroics and the first teir of raiding, just like Wotlk with Heroism emblems. Justice points might be able to buy blue sets or items, or even certain profession mats, but dont expect to buy epics of any kind with Justice points. Unless its an absurd amount that you need for one item. But since theyre letting us farm points here soon, I dont find it likely.<br />
+<br />
+Exactly. The best you can hope for would be having enough points for half an epic, if that. A little shocked triumph and frost are worth the same, means cash in them primosars now.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neitiry30</div><div class="date">2010-09-17, 06:27 PM</div></div><div class="posttext">after a day of downloading,patch is finally installed.I dont see nothing tho.Is it cause its not live yet? if anyone that downloaded it can answer me.ty</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TrapTime</div><div class="date">2010-09-19, 09:13 AM</div></div><div class="posttext">Going for 10k badges.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TrapTime</div><div class="date">2010-09-19, 09:26 AM</div></div><div class="posttext">going to farm it, 2500 so far, 7500 more to go :3 so i can easily get rich and blow it all on professions engineering and leatherworking.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Karnadas</div><div class="date">2010-09-27, 04:51 PM</div></div><div class="posttext">This needs to be updated, on my paladin, with roughly 205 Emblems of frost and 67 Emblems of Triumph,<br />
+(I got a couple more since copying over to the PTR)I was able to get 3138 Justice Points</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">davesurfer</div><div class="date">2010-09-27, 07:43 PM</div></div><div class="posttext">Yeah I think it is a bug. My Pally had like 250 Frost and 250 Truimph and I got 6000 points</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">deathfish</div><div class="date">2010-09-27, 07:53 PM</div></div><div class="posttext">Just a bit of information the current conversion rate on the PTR is correct the new value is 1 frost or triumph is 11.75 not 2.75 as it was realized that the cost of the current items had increased buy about 11.5 times as much as it is on the live with the 2.75 rate.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dimebagz</div><div class="date">2010-09-29, 10:39 AM</div></div><div class="posttext">I have read through most of the pages worth of comments here and I really do not understand, All I'm seeing is people saying ya it not worth farming triumph/frost badges to save up for Justice points, Because T10 Helm Cost 1100 Justice points which equal like 400 Frost/Triumph/80-90 Dungeons and that a rip off and some are actually arguing the subject that it is worth it. Let me tell you this YES FARMING Triumph Badges now until Cataclysm comes out is Worth it. But Not to saved up to only Buy T10 which will easily get replace about 1-3 Quest into the New Expansion.<br />
+<br />
+So I'm tell you what I going to do Listen carefully, I going to Farm by ass off by healing heroics until Cataclysm comes out and if there's an Cap for badges I going to Downgrade them to the lower rank badges which is hero, then farm my ass off Again cap the badges to the next level rank of badges which is valor then after do the same for conquest and leave those badges there until Cataclysm. Thank you Blizzard for giving me the opportunity to make easy gold Now Give me my Gold is all I going to say with a big Koolaid smile, Because at the end of the day this whole New Justice system is really about Money=Gold because if it reward the gear you can buy now in WotLK it's consider useless, might as well grind your T10 Gear now. Forget Saving up for T10 you should already have most T10 pieces as long as the game been out and it also get replace by the new quest rewards in the expansion, now come on don't act like this never happens. Forget PvP Gear if it's possible to buy Wrath or Relentless still with the justice Point you gonna gain, If you really Saved Frost/Triumph badges for it your choice your lost. So why y'all figuring out the best Strategy to master the Justice Points system I'm gonna be farming heroics trying to cap every rank of badges from Hero-Conquest to earn that Big Doctor's Pay Check when Cataclysm hit. :)<br />
+<br />
+Take MY Advice or Leave it I call it Hustling!!!!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">santaranger</div><div class="date">2010-09-29, 11:20 AM</div></div><div class="posttext">PTR CONVERSION RATE IS ABOUT 11.5 JP PER BADGE NOW<br />
+<br />
+Prices on Frost Badge items end up being 1:1 with live so it doesn't matter if you spend your frost badges now or later (some items have different prices, though, like epic gems will cost ~18 badges instead of 15).<br />
+since triumph badges use the same conversion ratio, they will be heavily upgraded in the process, which means spending them now would be foolish.<br />
+Items from Vendors other than the Emblem of Frost Quartermaster are heavily overpriced since they follow the same pricing scheme as the Frost Items (iLvl 232 items cost about the same as iLvL 264)<br />
+<br />
+downgrading bagdes in order to have them converted to gold sounds fairly stupid to me, as it means ~25g per heroic run while one can easily make 150g/hour through dailies, not to mention other money-making activities.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">goldengamer08</div><div class="date">2010-09-29, 05:17 PM</div></div><div class="posttext">Can we have the calculator updated for us please? :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dimebagz</div><div class="date">2010-09-29, 09:30 PM</div></div><div class="posttext">PTR CONVERSION RATE IS ABOUT 11.5 JP PER BADGE NOW<br />
+<br />
+Prices on Frost Badge items end up being 1:1 with live so it doesn't matter if you spend your frost badges now or later (some items have different prices, though, like epic gems will cost ~18 badges instead of 15).<br />
+since triumph badges use the same conversion ratio, they will be heavily upgraded in the process, which means spending them now would be foolish.<br />
+Items from Vendors other than the Emblem of Frost Quartermaster are heavily overpriced since they follow the same pricing scheme as the Frost Items (iLvl 232 items cost about the same as iLvL 264)<br />
+<br />
+downgrading badges in order to have them converted to gold sounds fairly stupid to me, as it means ~25g per heroic run while one can easily make 150g/hour through dailies, not to mention other money-making activities.<br />
+<br />
+Might sound fairly Stupid but from my point of view I rather saved the badges and downgrade them and wait for Cata for it to get converted to gold, because saving them for justice points just to buy frost badge Gear/T10 sound fairly stupid to me too. Now if there's an change and blizzard decides to mention there will be other gear beside the frost/t10 gear you can buy like iLvL 333 Cata gear from justice points then saving the badges for gold might be push over to the fairly foolish part but until blizzard mention that my goal is to get cap with badges in every rank from Hero-Conquest for Gold.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

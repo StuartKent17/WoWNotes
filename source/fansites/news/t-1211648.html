@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="for, and, rejuv, lock, windsong, once, symbosis, casting, broken, certain, things, like, friend, this, edit, pvp, with, 2hander, time, the, straight, seriously, casts, procced, 100%, tried, always, think, ppm, war, else, anyone, elemental, force, enchantments, information, has, had, generally, often, different, procs, there, min, all, multiple, times, its" />
+<meta name="description" content="Windsong and Elemental Force Information 
+We recently hotfixed the Windsong and Elemental Force weapon enchants to improve their performance for many users. The important part for most players is that Windsong is now is a useful enchant for all classes and specs, since it will trigger on all damage or healing, be it spell, melee, or ranged, and direct or periodic. Elemental Force will also trigger from all damage, so is useful for all damage dealers. 
+ 
+Additionally, these two enchants use a" />
+<title> Windsong and Elemental Force Enchantments Information [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Windsong and Elemental Force Enchantments Information</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1211648.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1211648-Windsong-and-Elemental-Force-Enchantments-Information">Windsong and Elemental Force Enchantments Information</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2012-10-15, 07:25 PM</div></div><div class="posttext">Windsong and Elemental Force Information<br />
+We recently hotfixed the Windsong and Elemental Force weapon enchants to improve their performance for many users. The important part for most players is that Windsong is now is a useful enchant for all classes and specs, since it will trigger on all damage or healing, be it spell, melee, or ranged, and direct or periodic. Elemental Force will also trigger from all damage, so is useful for all damage dealers.<br />
+<br />
+Additionally, these two enchants use a new system for triggering, which we wanted to give some details on. These are the gritty details, which you do not need to understand in order to use these enchants, but we wanted to detail for the benefit of the theorycrafting community. If mathy simulations and modeling aren’t your thing, none of this will matter much to you.<br />
+<br />
+We have had various methods for triggering procs throughout WoW’s history. Most procs fall into two categories for the past few years:<br />
+<br />
+<br />
+Relatively high but static proc chance, with a significant cooldown. Most trinkets and caster procs fall into this category. For example, a trinket may have a 30% chance to proc on hit, with a 55sec cooldown. This lets us balance the trinket with a pretty safe assumption of procing about once per minute. Unfortunately, since it’s so reliable, it doesn’t really feel like a random proc, but rather like an On Use trinket that’s just on auto-cast. The uptime won’t increase significantly with any stats with this type of proc.<br />
+Relatively low proc chance with some normalization based on weapon speed, typically referred to as ‘PPM’ (procs per minute). Most melee weapon enchants fall into this category. For example, a weapon enchant may have 3 PPM. That checks your weapon speed, and gives your attacks a % chance based on that. If you have a 3.6speed weapon, your attacks will have a 3(PPM) * 3.6(weaponspeed) / 60 (sec per min) = 18% chance. All your white and yellow attacks with that weapon will have an 18% chance to trigger the enchant. Despite being supposedly ‘3 PPM’, that really will result in significantly more than 3 procs per minute, since all of the special attacks can proc it. Since there is no cooldown involved here, this type of enchant can feel random and streaky, instead of reliable. That isn’t necessarily a bad thing though, as you are just as likely to get lucky and get several procs in a row, which can be exciting. Some stats, primarily haste, will increase the frequency of these procs. However, since they vary heavily based on weapon speed, and how many special attacks you’re doing, these can procing significantly more or less for one class/spec/weapon than another, making them difficult to balance.<br />
+<br />
+<br />
+So, there are pros and cons of both of those types of procs. We’re trying a new system for these enchants. This new system, nicknamed Real PPM, aims to give the random nature of procs, the scaling with haste, and the ability for us to balance them assuming a standard proc frequency. Here’s the short version of how you can expect them to function:<br />
+<br />
+<br />
+Windsong is 2 Real PPM. Elemental Force is 10 Real PPM.<br />
+Regardless of how you’re attacking or healing, slow or fast, with DoTs or direct heals, whatever, you can expect to get the same proc frequency, on average.<br />
+Dual wielding and having both weapons enchanted with the same enchant will double the frequency of procs that you get.<br />
+This Real PPM is increased by your haste %. (The highest of your melee, ranged, or spell haste is chosen).<br />
+Simple as that. Whether you’re an Affliction Warlock dealing very frequent DoT ticks and Malefic Grasp ticks, or a Holy Paladin casting purely Holy Lights, or a Combat Rogue quickly attacking and using specials, or an Enhancement Shaman attacking with slow melee attacks and spells, or a Shadow Priest channeling Mind Sear on fifty Onyxian Whelps, you’ll get 2*Haste Windsong procs or 10*Haste Elemental Force procs per enchant per minute.<br />
+We’re excited to see how this proc system works out. If it works well, we may start using it for more types of procs. Feedback about how it feels is most welcome.<br />
+<br />
+<br />
+Here are even more nitty gritty details, if you’re interested:<br />
+<br />
+<br />
+It can proc from any damage/healing event. It keeps track of the last time it had a chance to proc for that enchant.<br />
+It calculates the difference in time since the last chance to proc. It uses that time to determine the chance for that event to trigger a proc.<br />
+For example, if you have 22% Haste, it was 1.4sec since the last chance to proc, and you’ve got Windsong, then the chance to proc is 2(ppm) * 1.22(haste) * 1.4(time since last chance) / 60 (sec per min) = 5.693%.<br />
+The ‘time since the last chance to proc’ is capped at 10sec, so that your first attack of a fight isn’t a guaranteed proc.<br />
+<br />
+<br />
+If you have any questions about this, please feel free to post them here, and we’ll try to answer them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2012-10-15, 07:28 PM</div></div><div class="posttext">Im glad they fixed these. It sucked using Power Torrent on a level 90 weapon.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Traeumerin</div><div class="date">2012-10-15, 07:30 PM</div></div><div class="posttext">Windsong seems broken for raidhealers. Our monk had 37 proccs of _each_ windsong-procc in an 8:30m fight, which is way to much. :o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Arkamedis</div><div class="date">2012-10-15, 07:39 PM</div></div><div class="posttext">About god damn time blizzard.AFFLICT LOCKS REJOICE!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">cexspa</div><div class="date">2012-10-15, 07:43 PM</div></div><div class="posttext">tldr: is dancing steel still best enchant for melees ?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc911635af16</div><div class="date">2012-10-15, 07:54 PM</div></div><div class="posttext">I have no idea what's going on. Can anyone translate this to casualish?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">icarianmirror</div><div class="date">2012-10-15, 07:56 PM</div></div><div class="posttext">These two enchants will now proc a lot more often, and will proc even more if you get more haste.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wexorian</div><div class="date">2012-10-15, 07:58 PM</div></div><div class="posttext">Good but i still waiting rune forge, new enchants for DK's.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">toddless</div><div class="date">2012-10-15, 07:59 PM</div></div><div class="posttext">my only hope is that the classes which are dual wielding will be balanced around this new system. I feel kinda left out considering pallies can't dual wield and receive double the benefit.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baracuda</div><div class="date">2012-10-15, 08:19 PM</div></div><div class="posttext">Sounds good!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Idrinkwhiterussians</div><div class="date">2012-10-15, 08:23 PM</div></div><div class="posttext">It is a quite interesting change.<br />
+<br />
+I am wondering if the procs on windsong are all independent or if they are all lumped into the 2ppm.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jtth</div><div class="date">2012-10-15, 08:36 PM</div></div><div class="posttext">As a lock now I'm not sure which to use.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">markdall</div><div class="date">2012-10-15, 08:41 PM</div></div><div class="posttext">&quot;useful enchant for all classes and specs&quot;<br />
+<br />
+/looks down at his lord blastington's scope, looks up quizzically.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baphomette</div><div class="date">2012-10-15, 08:47 PM</div></div><div class="posttext">Good but i still waiting rune forge, new enchants for DK's.<br />
+Free enchants that are better than everyone else's. There is absolutely no need for new runeforges.<br />
+<br />
+edit: although I am grumpy that Dancing Steel stole the look of 'our' glowjob</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MrKnubbles</div><div class="date">2012-10-15, 09:01 PM</div></div><div class="posttext">Good but i still waiting rune forge, new enchants for DK's.<br />
+<br />
+Aren't the DK runeforges % modifiers?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kashim</div><div class="date">2012-10-15, 09:24 PM</div></div><div class="posttext">Is this going to increase the difference in DPS between 2h and dual wielding for monk WW? That'd kinda suck =/ For now I'm dual wielding but want to move to 2h. Double enchants was already one of the main reasons dual wielding was ahead for us...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TheBaron87</div><div class="date">2012-10-15, 10:36 PM</div></div><div class="posttext">I have no idea what's going on. Can anyone translate this to casualish?<br />
+<br />
+Rather than having hard cooldowns on procs that make it impossible to get multiple procs in a row, or static proc chances per attack that benefit fast classes more, proc chances will now maintain the random nature of rate-per-attack type procs, but dynamically scale based on the average time Blizzard feels should pass between procs.<br />
+<br />
+Basically, the longer it has been since the last time you hit or healed something, the more likely the NEXT hit or heal will trigger the proc.<br />
+<br />
+Example: Blizzard decided that Elemental Force should proc an average of 10 times in a minute. In other words, once every 6 seconds. Let's say a rogue hits something and doesn't proc, then hits again exactly one second later. That second hit has a 1/6 (16.7%) chance to proc. A mage with the same enchantment casts a spell and fails to proc, then casts it again 3 seconds later (counting cast time). The second cast has a 3/6 (50%) chance to proc. So, on average, both players will see the same number of procs over time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc08a488a8e5</div><div class="date">2012-10-15, 10:47 PM</div></div><div class="posttext">Omg , why the war is overcheat ?<br />
+Blizzard you do not play your game? Because when you see the war we wonder ...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Smeller</div><div class="date">2012-10-15, 11:17 PM</div></div><div class="posttext">Elemental Force has 10 Real PPM? Let me calculate that for a 5 seconde interval of procs with 22% haste:<br />
+10(ppm) * 1,22(haste) * 5(time since last chance) / 60 (sec per min) = 101,67%<br />
+You proc all the time, how is this system better?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Serpens77</div><div class="date">2012-10-15, 11:33 PM</div></div><div class="posttext">TIL: All three types of Hunters are not &quot;classes or specs&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">greyghost</div><div class="date">2012-10-15, 11:40 PM</div></div><div class="posttext">I have no idea what's going on. Can anyone translate this to casualish?<br />
+<br />
+They made some enchants work better. In the case they might not, make sure to tell Blizzard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc71ba9fbd24</div><div class="date">2012-10-15, 11:41 PM</div></div><div class="posttext">Elemental Force has 10 Real PPM? Let me calculate that for a 5 seconde interval of procs with 22% haste:<br />
+10(ppm) * 1,22(haste) * 5(time since last chance) / 60 (sec per min) = 101,67%<br />
+You proc all the time, how is this system better?<br />
+<br />
+You're assuming you do 1 attack every 5 seconds.<br />
+<br />
+Auto attack on a typical 2H weapon (3.6 seconds):<br />
+10(ppm) * 1.22(haste) * 3.6 (time since last chance) / 60 (sec per min) = 73.2%<br />
+<br />
+Assuming cast time of 2.5s:<br />
+10(ppm) * 1.22(haste) * 2.5 (time since last chance) / 60 (sec per min) = 50.83%<br />
+<br />
+While this may still seem high, it only does an average of 3k damage per proc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc23a9eea99d</div><div class="date">2012-10-15, 11:45 PM</div></div><div class="posttext">Guess i'm still going to keep my heartsong.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kcaz64</div><div class="date">2012-10-16, 01:45 AM</div></div><div class="posttext">You're assuming you do 1 attack every 5 seconds.<br />
+<br />
+Auto attack on a typical 2H weapon (3.6 seconds):<br />
+10(ppm) * 1.22(haste) * 3.6 (time since last chance) / 60 (sec per min) = 73.2%<br />
+<br />
+Assuming cast time of 2.5s:<br />
+10(ppm) * 1.22(haste) * 2.5 (time since last chance) / 60 (sec per min) = 50.83%<br />
+<br />
+While this may still seem high, it only does an average of 3k damage per proc.<br />
+<br />
+Even this is wrong... You're only going off auto attacks and not special attacks / dots.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Abysal</div><div class="date">2012-10-16, 08:42 AM</div></div><div class="posttext">Even this is wrong... You're only going off auto attacks and not special attacks / dots.<br />
+<br />
+Realistically, for most classes, your &quot;last chance to proc&quot; is never going to be higher than a GCD except during movement. Classes with DoTs/HoTs will have even more frequent &quot;last chance to proc&quot;s.<br />
+<br />
+So:<br />
+<br />
+10*1.22*1.5/60=30.5% <br />
+<br />
+But that's only counting GCDs of 1.5 and ignoring auto-attacks.<br />
+<br />
+Then look at a DW Frost DK:<br />
+20 Blood Plague and 20 Frost Fever ticks per minute.<br />
+~23 White attacks per weapon (2.6 speed)<br />
+60 GCDs= 123 chances per minute or 1 proc chance every 0.48s on average.<br />
+<br />
+So 10*1.22*0.48/60=9.76% proc chance per weapon enchant (this is actually wrong because a frost DK would never have that low of haste).<br />
+<br />
+Anyway, that works out to 12 procs per minute.<br />
+<br />
+Flip that to a movement heavy fight where you only attack once every 5 seconds with no DoTs.<br />
+<br />
+10*1.22*5/60=1.01666 =12 procs per minute. <br />
+<br />
+This is true genius by Blizzard. These enchants will have roughly equal value in every situation with a large boost in haste heavy situations.<br />
+<br />
+Also makes it really easy to theorycraft the value of Elemental force. It's simply 10*Highest attack speed modifier*3000/60=DPS gain. In my DK example, it'd be 10*1.22*3000/60=610 DPS.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">toktokeh</div><div class="date">2012-10-16, 03:22 PM</div></div><div class="posttext">&quot;useful enchant for all classes and specs&quot;<br />
+/looks down at his lord blastington's scope, looks up quizzically.<br />
+<br />
+Someone better do some therorycrafting on this. Windsong has a 24-second uptime whereas Blastington has a 10-second uptime per minute :confused:</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hand Banana</div><div class="date">2012-10-16, 05:19 PM</div></div><div class="posttext">Anyone else think 2 ppm is BS for windsong? My war has had all 3 up at once multiple times in a min, there is generally always 1, often 2, different procs up at once. And its it seriously broken for certain things like a lock casting rejuv for symbosis. My lock friend tried 50 straight casts of rejuv and it procced 100% of the time.<br />
+<br />
+Edit: This is in pvp, with 1 2hander.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc71ba9fbd24</div><div class="date">2012-10-16, 05:21 PM</div></div><div class="posttext">Even this is wrong... You're only going off auto attacks and not special attacks / dots.<br />
+<br />
+The Maths in that isn't wrong, I even stated that it would be for auto attacks + the cast time of a typical filler spell for DPS casters. The math was meant to be simple and not definitive, only to show that the enchant would not proc all the time.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

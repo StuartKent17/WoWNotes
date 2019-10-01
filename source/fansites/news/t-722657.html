@@ -1,0 +1,1035 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="hudmap,addon,mmo-champion,data,twitter,blizzard,world,range,page,additionally,indicators,project,people,draw,proximity,things,feature,information,display,avre,http://wow.curse.com/downloads/wow-addons/details/hudmap.aspx,facebook,time,point,reached,scope,ability,avrs,hugs,pseudo-3d,images,game,long,build,easy,framework,simple,modulesexample.lua,implement,modules,intended,calm,socialize,idea,extending,week-end,http://www.facebook.com/pages/mmo-champion/132326176778287,channel,strange,afraid" />
+<meta name="description" content="Addon Spotlight - HudMap 
+It's time to talk about another addon on the front page! With the recent news of AVR and AVRe removal with Patch 3.3.5 I figured it might be the right time to mention HudMap. It will probably remind you of AVR in some ways but this addon is different and so far it looks like Blizzard will tolerate it.  
+ 
+HudMap on Curse.com.  
+ 
+What is it? 
+HudMap is an addon that provides a true heads-up tactical display of an encounter, with raid member positions, range data," />
+<title> HudMap, Facebook / Twitter / IRC [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; HudMap, Facebook / Twitter / IRC</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-722657.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/722657-HudMap-Facebook-Twitter-IRC">HudMap, Facebook / Twitter / IRC</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-06-01, 06:45 AM</div></div><div class="posttext">Addon Spotlight - HudMap<br />
+It's time to talk about another addon on the front page! With the recent news of AVR and AVRe removal with Patch 3.3.5 I figured it might be the right time to mention HudMap (http://wow.curse.com/downloads/wow-addons/details/hudmap.aspx). It will probably remind you of AVR in some ways but this addon is different and so far it looks like Blizzard will tolerate it. <br />
+<br />
+HudMap on Curse.com (http://wow.curse.com/downloads/wow-addons/details/hudmap.aspx). <br />
+<br />
+What is it?<br />
+HudMap is an addon that provides a true heads-up tactical display of an encounter, with raid member positions, range data, debuff area-of-effect indicators, and more.<br />
+<br />
+Additionally, HudMap ships with totem radius indicators. In general, if you want to do range or player-to-player directional stuff, HudMap's your huckleberry.<br />
+<br />
+Can I use this in to replace AVRe?<br />
+Possibly. You can use it in a similar manner, though it definitely takes a very different approach to information display. HudMap is designed to give you proximity awareness of your partymates and areas that are potentially hazardous due to proximity or some other effect that boss mods generally warn you about. In that sense, yes, it's a replacement.<br />
+<br />
+However, HudMap is not going to let you annotate the world, add additional data over physical locations, or let you draw obscene pictures on Arthas before you pull him. HudMap does nothing to emulate or project 3D data, and never will. Additionally, feature parity is not a goal of the project - some information is better presented in AVR than it will ever be in HudMap, and I'm not going to try to replicate that. Other data will fit HudMap better naturally, and those pieces will be actively pursued.<br />
+<br />
+Is this addon going to get banned because Blizzard doesn't like AVR?<br />
+To head off the inevitable, I've asked Blizzard if this is kosher in light of the AVR breakage. They have not indicated that it is a violation of the rules. Until they indicate otherwise, HudMap will be developed and updated. The impression I get is that Blizzard's primary complaint was with AVR's ability to draw pseudo-3D images over the game world, which is outside of the scope of what the UI was intended to be able to do. HudMap doesn't do any of that.<br />
+<br />
+Extending HudMap<br />
+Have an idea for a range feature? It's easy to implement one. Just see modules\example.lua for a simple framework upon which you can build your own modules.<br />
+<br />
+<br />
+<br />
+&lt;object width=&quot;640&quot; height=&quot;385&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/NUpogpnGjiM&amp;hl=en_US&amp;fs=1&amp;&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/NUpogpnGjiM&amp;hl=en_US&amp;fs=1&amp;&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;640&quot; height=&quot;385&quot;&gt;&lt;/embed&gt;&lt;/object&gt;<br />
+<br />
+<br />
+<br />
+&lt;object width=&quot;640&quot; height=&quot;385&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/xsgGuEYyOzQ&amp;hl=en_US&amp;fs=1&amp;&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/xsgGuEYyOzQ&amp;hl=en_US&amp;fs=1&amp;&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;640&quot; height=&quot;385&quot;&gt;&lt;/embed&gt;&lt;/object&gt;<br />
+<br />
+<br />
+Let's socialize!<br />
+We're at the end of a very long and very calm week-end and we all reached the point where we just need more people to hug. If you're not into hugs, it's also a wonderful opportunity to start working on a plan to take over the world. <br />
+<br />
+That's why I finally created a Facebook fan page for MMO-Champion! Technically we already had a MMO-Champion group but I couldn't do much with it, the fan page might actually let me do a few interesting things. <br />
+<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/news/2010/may/facebookz.jpg (http://www.facebook.com/pages/MMO-Champion/132326176778287)<br />
+<br />
+On a slightly more personal level, I also decided to create a Twitter account and fight my fear of social networking. It will probably take a few days to get used to it but it looks like there are also a couple of fun things to do with Twitter. <br />
+<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/news/2010/may/twitterz.jpg (https://twitter.com/Boubouille_MMO)<br />
+<br />
+<br />
+MMO-Champion IRC Channel<br />
+Last but not least, if you really aren't afraid of strange people, come and say hi on IRC! If you're not sure about how to join us, just read:<br />
+MMO-Champion IRC (http://www.mmo-champion.com/general-discussions-22/mmo-champion-irc-channel/)<br />
+<br />
+I also uploaded last month statistics just for fun. <br />
+<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/news/2010/may/ircstats.jpg (http://static.mmo-champion.com/mmoc/images/news/2010/may/irc/index.html)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">WyriHaximus</div><div class="date">2010-06-01, 06:48 AM</div></div><div class="posttext">Nice finaly mmoc on twitter :D. Can recommend tweetdeck as desktop client and twidroid as mobile client 8)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kakefarmer</div><div class="date">2010-06-01, 06:51 AM</div></div><div class="posttext">MMO-C liked of Facebook!<br />
+<br />
+9th person to like it xD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xiaz89</div><div class="date">2010-06-01, 06:52 AM</div></div><div class="posttext">That HudMap looks promising, i might give it a shot.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-06-01, 06:53 AM</div></div><div class="posttext">Holy crap Twitter is complicated, but now I feel loved!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">WyriHaximus</div><div class="date">2010-06-01, 06:54 AM</div></div><div class="posttext">Holy crap Twitter is complicated, but now I feel loved! <br />
+You get used to it ;). Don't fall for the overly loving....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">inyu</div><div class="date">2010-06-01, 06:57 AM</div></div><div class="posttext">Wasn't there a &gt;8k members group about MMO on facebook ? I thought it was 'official'.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-06-01, 06:59 AM</div></div><div class="posttext">Wasn't there a &gt;8k members group about MMO on facebook ? I thought it was 'official'.<br />
+<br />
+<br />
+You don't like reading my news posts, do you? :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Hegarol</div><div class="date">2010-06-01, 07:01 AM</div></div><div class="posttext">https://twitter.com/MMOChampionNews<br />
+<br />
+Didn't you setup this account?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">WyriHaximus</div><div class="date">2010-06-01, 07:04 AM</div></div><div class="posttext">https://twitter.com/MMOChampionNews<br />
+<br />
+Didn't you setup this account?<br />
+Looks like a simple feed2twitter account made by a fan :).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Collected</div><div class="date">2010-06-01, 07:07 AM</div></div><div class="posttext">The impression I get is that Blizzard's primary complaint was with AVR's ability to draw pseudo-3D images over the game world, which is outside of the scope of what the UI was intended to be able to do. HudMap doesn't do any of that.<br />
+<br />
+Sure looks like it's drawing images over the UI to me. I can't see what the big difference is? This is giving a visual indication of buff/debuff zones that the UI doesn't give.. surely this is just as likely to be banned as AVR.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-06-01, 07:08 AM</div></div><div class="posttext">https://twitter.com/MMOChampionNews<br />
+<br />
+Didn't you setup this account?<br />
+<br />
+<br />
+Nop, not me. Would have to check tho, might be someone from the company who decided to do the work because I was slacking.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Drooddude</div><div class="date">2010-06-01, 07:09 AM</div></div><div class="posttext">Hmm, I have been following @MMOChampionNews on twitter for months to get twitter updates on mmo-news, has worked flawlessly.. I thought that was the official one :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">djsjr</div><div class="date">2010-06-01, 07:10 AM</div></div><div class="posttext">Awww, I sorta liked when not a lot of people were on IRC chat, but whatevs, more people to yell at :P<br />
+<br />
+I'm excited to see whats coming on Facebook from you guys.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sarrior</div><div class="date">2010-06-01, 07:12 AM</div></div><div class="posttext">the previous mmo-c group on facebook was merely a setback!<br />
+<br />
+be joinning the fan group when I come back from my internship, they blocked facebook here &gt;:(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">romant</div><div class="date">2010-06-01, 07:14 AM</div></div><div class="posttext">hudmap- gouging even more skill required to play this game <br />
+<br />
+<br />
+soon we'll all have class specific add ons that will play for us as well</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ThiefMaster</div><div class="date">2010-06-01, 07:16 AM</div></div><div class="posttext">Bah.. why does everyone go to quakenet while gamesurge has the better services and better user support...?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocc5c312fa0d</div><div class="date">2010-06-01, 07:21 AM</div></div><div class="posttext">Yay a Facebook page. :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nalcarya</div><div class="date">2010-06-01, 07:25 AM</div></div><div class="posttext">I was the the 443th or so person to like it and 1min later it's almost 600 people - nice :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">feroid</div><div class="date">2010-06-01, 07:26 AM</div></div><div class="posttext">hudmap- gouging even more skill required to play this game <br />
+<br />
+<br />
+soon we'll all have class specific add ons that will play for us as well <br />
+<br />
+<br />
+Really? You might want to go read some of the discussion on how trying to judge distances from other players in this game with basically no frame of reference is in no way fun or intuitive gameplay. Trying to guestimate how far away you need to run from other players before dropping you stacks of instability isn't exactly fun. <br />
+<br />
+&quot;Oh no. DBM still shows one player in range of me. But I'm sure I ran as far as last time! Oh, our ret pally DCed on the stairs again... I better run left. Is that far enough? Nope, DBM is still pinging. God damnit, how the hell am I supposed to judge distances in the 3D world when players are standing on stairs and I'm using a 2D monitor?!?! There we go, finally out of-&quot;<br />
+&quot;Can you feel the cold hand of death upon your heart?&quot;<br />
+&quot;FUCK I HATE THIS GAME&quot;<br />
+<br />
+<br />
+Yeah. Skill.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">WyriHaximus</div><div class="date">2010-06-01, 07:34 AM</div></div><div class="posttext">I was the the 443th or so person to like it and 1min later it's almost 600 people - nice :D<br />
+Heck that many, was the 18th or 19th :o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">axio</div><div class="date">2010-06-01, 07:41 AM</div></div><div class="posttext">HudMap looks pretty cool and seems to be nothing more than a range indicator on crack... which should be ok. I can see how it would get annoying though... especially combined with another boss mod like DXE or DBM.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shinshiva</div><div class="date">2010-06-01, 07:46 AM</div></div><div class="posttext">Really? You might want to go read some of the discussion on how trying to judge distances from other players in this game with basically no frame of reference is in no way fun or intuitive gameplay. Trying to guestimate how far away you need to run from other players before dropping you stacks of instability isn't exactly fun. <br />
+<br />
+&quot;Oh no. DBM still shows one player in range of me. But I'm sure I ran as far as last time! Oh, our ret pally DCed on the stairs again... I better run left. Is that far enough? Nope, DBM is still pinging. God damnit, how the hell am I supposed to judge distances in the 3D world when players are standing on stairs and I'm using a 2D monitor?!?! There we go, finally out of-&quot;<br />
+&quot;Can you feel the cold hand of death upon your heart?&quot;<br />
+&quot;FUCK I HATE THIS GAME&quot;<br />
+<br />
+<br />
+Yeah. Skill.<br />
+<br />
+<br />
+holy crap this is exactly what he was talking about dude, you just proved his point beyond all imagining. i had tears running down my cheeks at the thought of you typing that out in righteous indignation. oh teh lol.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">KnightThoras</div><div class="date">2010-06-01, 07:48 AM</div></div><div class="posttext">Hey Bibi, let me know when you get that Olympic swimming pool built - I love swimming!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ikkatsu</div><div class="date">2010-06-01, 07:52 AM</div></div><div class="posttext">Really? You might want to go read some of the discussion on how trying to judge distances from other players in this game with basically no frame of reference is in no way fun or intuitive gameplay. Trying to guestimate how far away you need to run from other players before dropping you stacks of instability isn't exactly fun. <br />
+<br />
+&quot;Oh no. DBM still shows one player in range of me. But I'm sure I ran as far as last time! Oh, our ret pally DCed on the stairs again... I better run left. Is that far enough? Nope, DBM is still pinging. God damnit, how the hell am I supposed to judge distances in the 3D world when players are standing on stairs and I'm using a 2D monitor?!?! There we go, finally out of-&quot;<br />
+&quot;Can you feel the cold hand of death upon your heart?&quot;<br />
+&quot;FUCK I HATE THIS GAME&quot;<br />
+<br />
+<br />
+Yeah. Skill.<br />
+<br />
+<br />
+lol @ the irony.<br />
+<br />
+In trying to prove him wrong... you did exactly the opposite and proved him right on all counts.<br />
+<br />
+Clearly the force isn't strong in this one.<br />
+<br />
+GG.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">laerkai</div><div class="date">2010-06-01, 08:08 AM</div></div><div class="posttext">Looks like crappola. Just butcher out the drawing ability of AVR/AVRE or do nothign at all.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Second</div><div class="date">2010-06-01, 08:13 AM</div></div><div class="posttext">Bunnies are going hop hop splash!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LagginLikAChamp</div><div class="date">2010-06-01, 08:16 AM</div></div><div class="posttext">Gotta be honest not really impressed by the more recent add-ons spotlighted. The game is always being geared to the casual, i understand the reasoning behind that on blizzards part. i do. The game requires most classes to sit and spam a rotation watching for proc's while following the most basic rule of raiding &quot;Don't stand in -Blank-!&quot;. So now we have add-ons that explain the boss fight as it happens, one that tell you what your ration should be, and that one the other week &quot;paint-by-numbers-raiding&quot; i can't recall the name. It seems to me if you need all these addons to play, you might as well just hire someone else to play, or watch a fantasy movie, or uninstall and watch other people raid on youtube...<br />
+<br />
+There are more &quot;Play for you&quot; addons then the 3 i mentioned, i just think they are getting a little bit excessive.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moobu</div><div class="date">2010-06-01, 08:23 AM</div></div><div class="posttext">soon we'll all have class specific add ons that will play for us as well <br />
+<br />
+<br />
+Vanilla WoW says hi. Go Google the Lazy Warrior or &quot;Lazy (class)&quot; addon if you have no idea what I'm talking about.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">skyesfury</div><div class="date">2010-06-01, 08:23 AM</div></div><div class="posttext">I don't know if the author of HUDMap still has it up on his page or not, but at one time not too long ago he stated that he used AVR/AVRE code as his foundation for the addon. I'm not a LUA master, but I believe the foundation of AVR/AVRE is exactly what Blizz is working on breaking.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dexiefy</div><div class="date">2010-06-01, 08:24 AM</div></div><div class="posttext">o gr8, yet another addon for brain damaged players...<br />
+BLIZZ i beg you, break it along with DBM and omen and any other alike addons... i really want to see EJ kids failing on something as simple as threat management or ppl saying &quot; omg i dont have DBM anymore, i didnt know i have debuff!!&quot;<br />
+Besides making pve slightly harder you would actually expose pseudo pros who think that after installing few addons and reading few ej topics they are pros</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Racia</div><div class="date">2010-06-01, 08:26 AM</div></div><div class="posttext">That addon will be banned along with AvR ? ;D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">feroid</div><div class="date">2010-06-01, 08:29 AM</div></div><div class="posttext">lol @ the irony.<br />
+<br />
+In trying to prove him wrong... you did exactly the opposite and proved him right on all counts.<br />
+<br />
+Clearly the force isn't strong in this one.<br />
+<br />
+GG.<br />
+<br />
+<br />
+My point was that it turns a stupid and unintuitive guesswork job into something manageable and much more intuitive. If you're good at guesswork and estimating distances based on the limited data provided by the default UI, then this addon is fairly pointless for you and won't make a difference. Otherwise, this addon is yet another bar/meter/whatever that you have to pay attention to during your raid. It might even make raiding harder, but at least you won't have to guess at it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">feroid</div><div class="date">2010-06-01, 08:32 AM</div></div><div class="posttext">Also, this addon will be banned.<br />
+<br />
+Just to be clear, there's a difference between a mod telling you what needs to happen versus showing you. AVR takes the pitch, yaw and roll (if you will) of your character to visually represent where you need to be and when. That's very distinct compared to a tool like DBM playing a &quot;run away little girl&quot; sound file when you're in a danger spot. It's not visually showing you in the 3D game space where to run to get out of danger.<br />
+<br />
+Pretty sure HudMap crosses that line.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">prince0gotham</div><div class="date">2010-06-01, 08:34 AM</div></div><div class="posttext">On the other hand this pretty much tells us that they'll always think of something else. Till either blizzard or similar mod devs just give up.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moobu</div><div class="date">2010-06-01, 08:36 AM</div></div><div class="posttext">This addon is taking AVR a step back and complying with blizzard's stated issues with the AVR mod. Blizzard simply didn't like User Interface interacting with the real time game world. This addon will not be broken with AVR currently because it will not use the key camera angles AVR uses to draw in the game world. The same camera angle information blizzard is making inaccessible by addons next patch. This addon is nothing more than a fancy graphical range checker issued with DBM.<br />
+<br />
+PS. For those of you saying it needs to be banned or will be banned for doing the same thing as AVR keep in mind the key difference here... This addon draws its information to the USER INTERFACE in the style of a small birds eye view map where AVR drew directly onto the 3D GAME WORLD.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">skyesfury</div><div class="date">2010-06-01, 08:37 AM</div></div><div class="posttext">My point was that it turns a stupid and unintuitive guesswork job into something manageable and much more intuitive. If you're good at guesswork and estimating distances based on the limited data provided by the default UI, then this addon is fairly pointless for you and won't make a difference. Otherwise, this addon is yet another bar/meter/whatever that you have to pay attention to during your raid. It might even make raiding harder, but at least you won't have to guess at it.<br />
+<br />
+That &quot;guessing&quot; that you're so worried about is referred to as &quot;understanding the fight&quot; and &quot;having skill&quot;. If you lack skill, you're gonna blow up your team, not move fast enough or in the wrong direction, etc. Part of skill is situational awareness. AVR/E and HUDMap remove almost all the necessity for the player to use situational awareness.<br />
+<br />
+I'm sure I'll be quoted and numerous comments will be made about skill and not needing it for [insert boss fight], but before anyone hits the post button on such a reply, try to think about when you first started raiding (in WoW or any other MMO) and remember how much you knew and how aware you were of EVERYTHING happening in raid boss encounters.<br />
+<br />
+<br />
+<br />
+This addon is taking AVR a step back and complying with blizzard's stated issues with the AVR mod. Blizzard simply didn't like User Interface interacting with the real time game world. This addon will not be broken with AVR currently because it will not use the key camera angles AVR uses to draw in the game world. The same camera angle information blizzard is making inaccessible by addons next patch. This addon is nothing more than a fancy graphical range checker issued with DBM.<br />
+<br />
+PS. For those of you saying it needs to be banned or will be banned for doing the same thing as AVR keep in mind the key difference here... This addon draws its information to the USER INTERFACE in the style of a small birds eye view map where AVR drew directly onto the 3D GAME WORLD.<br />
+<br />
+Blizzard's issue with AVR was not solely that it drew on the game world. In fact, that was only a small part of the issue. They're biggest concern was the fact it drew visual range checks at all, regardless of it being on the game world or not.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Scionni</div><div class="date">2010-06-01, 08:39 AM</div></div><div class="posttext">HudMap looks totally sweet, can't wait to give it a swing!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Moobu</div><div class="date">2010-06-01, 08:42 AM</div></div><div class="posttext">Blizzard's issue with AVR was not solely that it drew on the game world. In fact, that was only a small part of the issue. They're biggest concern was the fact it drew visual range checks at all, regardless of it being on the game world or not.<br />
+<br />
+<br />
+I would like to see the source or reference to this claim. Because as far as I have read from blue posters their ONLY complaint was the fact that the user interface was being manipulated to react in a manner that was not intended.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Malorajan</div><div class="date">2010-06-01, 08:46 AM</div></div><div class="posttext">HudMap is simply AVR 2.0 and I wouldn't be surprised if it ends up being banned too.<br />
+Nevertheless it looks pretty nice.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocba105e19de</div><div class="date">2010-06-01, 08:47 AM</div></div><div class="posttext">The problem Blizzard is facing is that they cannot break HudMap easily. It only uses Raid Member positions and Player positions (nothing they can break easily without killing the world map display of party members).<br />
+<br />
+AVR used the current camera position, something other addons don't use - removing this function was what was done to break AVR.<br />
+<br />
+EDIT: 500 posts, woot.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">skyesfury</div><div class="date">2010-06-01, 08:59 AM</div></div><div class="posttext">I would like to see the source or reference to this claim. Because as far as I have read from blue posters their ONLY complaint was the fact that the user interface was being manipulated to react in a manner that was not intended. <br />
+<br />
+<br />
+Just to be clear, there's a difference between a mod telling you what needs to happen versus showing you. AVR takes the pitch, yaw and roll (if you will) of your character to visually represent where you need to be and when. That's very distinct compared to a tool like DBM playing a &quot;run away little girl&quot; sound file when you're in a danger spot. It's not visually showing you in the 3D game space where to run to get out of danger.<br />
+HUDMap does the same thing AVR does just from a top-down angle instead of drawing on the game world.<br />
+<br />
+EDIT: Before someone tries to play superhero LUA Man, I'll clarify what I said here: HM does the same thing that AVR does just in a different way.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DR.Green</div><div class="date">2010-06-01, 09:00 AM</div></div><div class="posttext">i liked you on facebook boub ;D<br />
+and tho i don't understand a sh*t 'bout twitter i will follow you wherever you go &gt;:(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3c1b26396f</div><div class="date">2010-06-01, 09:02 AM</div></div><div class="posttext">You compare medicine with drugs ...<br />
+It's nearly the same but complete different things in effect.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nythiz</div><div class="date">2010-06-01, 09:07 AM</div></div><div class="posttext">o gr8, yet another addon for brain damaged players...<br />
+BLIZZ i beg you, break it along with DBM and omen and any other alike addons... i really want to see EJ kids failing on something as simple as threat management or ppl saying &quot; omg i dont have DBM anymore, i didnt know i have debuff!!&quot;<br />
+Besides making pve slightly harder you would actually expose pseudo pros who think that after installing few addons and reading few ej topics they are pros<br />
+<br />
+<br />
+But where does it end ?<br />
+<br />
+If you break DBM, people will simply use something like Power Auras to indicate certain debuffs. <br />
+Want to break that too ?<br />
+<br />
+A lot of people also forget that boss encounters have evolved with the idea people use certain addons.<br />
+You are all talking about the glory of vanilla where you didn't have such luxury. Well newsflash people, fights were much less complex.<br />
+<br />
+I mean take a fight like saurfang. You are expected to have 15-20 people spread out on a relative small platform and stay at least 13 yards apart to counter blood nova. Blizzard knows this is trivial because nearly everyone has a range meter. But that kind of simplifies the game in the same way AVR does, yet would removing it really make this fight more &quot;skilled&quot; ?<br />
+Should we spent an extra 5 minutes before the fight measuring out ranges on a fight that already has an annoying 2 minute intro. Or should we adjust in mid fight ? Is there skill involved in just standing slightly off center and 1 shotting your marked neighbor with a blood nova ?<br />
+<br />
+-----<br />
+<br />
+I've always felt 2 sided about these kind of addons.<br />
+<br />
+On one side they really make things easier. I've used AVR for a while now, not because i can't do without. But it simply makes things and ranges easy to judge. I know most of the people who oppose it are using it too. <br />
+And personally I'm rather glad this addon goes away.<br />
+<br />
+On the other hand, isn't AVR anything more than a glorified /range meter ?<br />
+Is there really less skill involved than checking a box with names compared to a circle on the ground ?<br />
+Is there really less skill involved compared to stepping sideway from someone yelling: &quot;Malleable Goo on Me&quot;, compared to a red circle around said person ?<br />
+<br />
+--------<br />
+<br />
+On the topic of the new addon.<br />
+<br />
+I'm not sure if i'm going to use it. Nor would i see a reason for blizzard to allow it. It's the same as AVR only from a top down view so to say.<br />
+<br />
+The main reason I'm doubting though is that the addon really seems to cluster*#$% the middle of your screen.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Oweena</div><div class="date">2010-06-01, 09:11 AM</div></div><div class="posttext">Just to be clear, there's a difference between a mod telling you what needs to happen versus showing you. AVR takes the pitch, yaw and roll (if you will) of your character to visually represent where you need to be and when. That's very distinct compared to a tool like DBM playing a &quot;run away little girl&quot; sound file when you're in a danger spot. It's not visually showing you in the 3D game space where to run to get out of danger.<br />
+HUDMap does the same thing AVR does just from a top-down angle instead of drawing on the game world.<br />
+<br />
+EDIT: Before someone tries to play superhero LUA Man, I'll clarify what I said here: HM does the same thing that AVR does just in a different way.<br />
+<br />
+<br />
+Unless hudmap tells you where and when to run, no it doesn't.<br />
+<br />
+as far as I can tell.. it's a graphical range indicator with no points of reference or guides that tell you where or when to move.<br />
+<br />
+HUDMap you still have to think. AVR told you where to move when Icetombed.<br />
+<br />
+Ever used /range 12 in dbm? Yeah it's that but graphical. AVR doesn't do the same thing as HUDmap.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zom</div><div class="date">2010-06-01, 09:11 AM</div></div><div class="posttext">No boub! Don't give in to the evil that is social networks!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Euriti</div><div class="date">2010-06-01, 09:15 AM</div></div><div class="posttext">o gr8, yet another addon for brain damaged players...<br />
+BLIZZ i beg you, break it along with DBM and omen<br />
+<br />
+<br />
+Not gonna happen since there's a built in threat meter</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">knopp</div><div class="date">2010-06-01, 09:16 AM</div></div><div class="posttext">nice :) cool thing oploading the statistics ;P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kappesante</div><div class="date">2010-06-01, 09:18 AM</div></div><div class="posttext">finally hudmap talks not only in my posts :) and happy to follow you on twitter.<br />
+about facebook, omg, leave facebook, it's ugly.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neola</div><div class="date">2010-06-01, 09:20 AM</div></div><div class="posttext">The problem Blizzard is facing is that they cannot break HudMap easily. It only uses Raid Member positions and Player positions (nothing they can break easily without killing the world map display of party members).<br />
+<br />
+That is not true. Until recently the GetPlayerMapPosition function simply did not work inside Instances. What they would kill however are functions like the DXE Rangecheck (showing the exact distance calculated using coordinates).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Frozenbeef</div><div class="date">2010-06-01, 09:20 AM</div></div><div class="posttext">liked on facebook....wait..does that mean people can use a combination of mmochampion and facebook to see what i really looks like by using my email? :O</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocba105e19de</div><div class="date">2010-06-01, 09:23 AM</div></div><div class="posttext">That is not true. Until recently the GetPlayerMapPosition function simply did not work inside Instances. What they would kill however are functions like the DXE Rangecheck (showing the exact distance calculated using coordinates).<br />
+<br />
+The problem is that blizzard's own World Map now provides maps inside the instances where GPMP works. They are unlikely to kill their own world map.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neola</div><div class="date">2010-06-01, 09:29 AM</div></div><div class="posttext">The problem is that blizzard's own World Map now provides maps inside the instances where GPMP works. They are unlikely to kill their own world map.<br />
+<br />
+Sure. What about just disabling the function while in combat? I'm not suggesting they should do it; but they could, if they decided that HudMap crosses the line too.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Siph</div><div class="date">2010-06-01, 09:34 AM</div></div><div class="posttext">If people want to socialize they should start with turning their computer off. Screw facebook!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dennisd</div><div class="date">2010-06-01, 09:40 AM</div></div><div class="posttext">I dont understand why people create such addons like that... and then people complain PvE is easy :|<br />
+IMO Blizzard should ban all the PvE addons &gt;_&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Lemons</div><div class="date">2010-06-01, 09:40 AM</div></div><div class="posttext">Guess who's back, back again, AVRs back...<br />
+<br />
+Good God people Blizzard is going to get pissed if this keeps happening.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Exclusive</div><div class="date">2010-06-01, 09:44 AM</div></div><div class="posttext">I really hope it comes to a point where Blizzard removes the entire option of installing addons to be honest.<br />
+<br />
+And also, why does MMO give so damn much attention to those f*cking addons like AVR and now this one? You getting paid by the authors or what?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neola</div><div class="date">2010-06-01, 09:45 AM</div></div><div class="posttext">I dont understand why people create such addons like that... and then people complain PvE is easy :|<br />
+IMO Blizzard should ban all the PvE addons &gt;_&gt;<br />
+<br />
+Blizzard trivialized the only fight where addons could not help you (Festergut Hardmode) by putting bright green puddles under your foot. Blizzard wants this.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fogsworth</div><div class="date">2010-06-01, 09:53 AM</div></div><div class="posttext">This just looks like yet another add on to help the less intelegent through fights that require common sense. I do not approve &gt;:(<br />
+<br />
+O &amp; yay for facebook + twitter</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dorfadin</div><div class="date">2010-06-01, 09:56 AM</div></div><div class="posttext">That addon looks rubbish, another way to clutter up your screen ::)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aex</div><div class="date">2010-06-01, 10:03 AM</div></div><div class="posttext">I'm so gonna hold the creaters of those addons responsible if Cataclysm will be a bad expansion :P Givin Blizzard addons to destroy insted of focusing on the expansion :P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dranged</div><div class="date">2010-06-01, 10:14 AM</div></div><div class="posttext">This addon looks a bit messy on the screen. I liked AVR though for the graphical range-check, which lets you focus more on the fight itself than checking the text box of names of ppl inside your range all the time.<br />
+<br />
+But raiding worked fine before AVR and will work fine after as well.<br />
+<br />
+What I don't understand is people raging about different addons all the time. Why do you care? No one is forcing you to use any addons whatsoever. I don't like the addon OneBag for example (tried it a few days ago) but I simply removed it. I'm not gonna rage and demand that it is banned. Let the ppl who like it use it.<br />
+<br />
+Just like hazel nuts. I hate hazel nuts, but I don't give a shit if other ppl eat it, and I certainly won't post on forums demanding them to be banned.<br />
+<br />
+The only kind of addon that I think is valid to criticize would be something like GearScore, which affects you even when you don't have it installed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">blupp</div><div class="date">2010-06-01, 10:14 AM</div></div><div class="posttext">more facebook cancer.<br />
+<br />
+also that addon will and should be banned. whats the point in it? Why not play with bots and watch Star Search while they are farming gear for you?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cracka_Bob</div><div class="date">2010-06-01, 10:21 AM</div></div><div class="posttext">This addon looks a bit messy on the screen. I liked AVR though for the graphical range-check, which lets you focus more on the fight itself than checking the text box of names of ppl inside your range all the time.<br />
+<br />
+But raiding worked fine before AVR and will work fine after as well.<br />
+<br />
+What I don't understand is people raging about different addons all the time. Why do you care? No one is forcing you to use any addons whatsoever. I don't like the addon OneBag for example (tried it a few days ago) but I simply removed it. I'm not gonna rage and demand that it is banned. Let the ppl who like it use it.<br />
+<br />
+Just like hazel nuts. I hate hazel nuts, but I don't give a shit if other ppl eat it, and I certainly won't post on forums demanding them to be banned.<br />
+<br />
+The only kind of addon that I think is valid to criticize would be something like GearScore, which affects you even when you don't have it installed.<br />
+<br />
+<br />
+<br />
+<br />
+onebag sucks... try combuctor :D<br />
+<br />
+and yeah ill agree... gearscore needs to be deleted because it interferes with the gameplay of not so well geared players<br />
+<br />
+am i saying that those players deserve to be in raids? no.. but im also saying they shouldnt be denied simply because of a number...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">skyesfury</div><div class="date">2010-06-01, 10:30 AM</div></div><div class="posttext">and yeah ill agree... gearscore needs to be deleted because it interferes with the gameplay of not so well geared players<br />
+<br />
+am i saying that those players deserve to be in raids? no.. but im also saying they shouldnt be denied simply because of a number...<br />
+<br />
+It doesn't interfere with gameplay at all. It takes a person's gear, adds up the ilvl and spits out a number. The addon isn't the problem, which has been stated ad naseum, and yet people still blame the addon and its author. Without GearScore people will turn BACK to wow-heroes.com which is what was most widely used prior to an ingame addon being around.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc3863ce14c0</div><div class="date">2010-06-01, 10:44 AM</div></div><div class="posttext">This addon looks a bit messy on the screen. I liked AVR though for the graphical range-check, which lets you focus more on the fight itself than checking the text box of names of ppl inside your range all the time.<br />
+<br />
+But raiding worked fine before AVR and will work fine after as well.<br />
+<br />
+What I don't understand is people raging about different addons all the time. Why do you care? No one is forcing you to use any addons whatsoever. I don't like the addon OneBag for example (tried it a few days ago) but I simply removed it. I'm not gonna rage and demand that it is banned. Let the ppl who like it use it.<br />
+<br />
+Just like hazel nuts. I hate hazel nuts, but I don't give a shit if other ppl eat it, and I certainly won't post on forums demanding them to be banned.<br />
+<br />
+The only kind of addon that I think is valid to criticize would be something like GearScore, which affects you even when you don't have it installed.<br />
+<br />
+<br />
+<br />
+<br />
+This all the failures raging over the addon really are only inch´s away from being retarded</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">tfkfc</div><div class="date">2010-06-01, 10:56 AM</div></div><div class="posttext">Nobody cares whether you like addons or not, all they care is that you turn up to the raid and you dont fail. If you use addons to help with this, fine. If you don't use addons for this, also fine. If you fail, that's when people start to care.<br />
+<br />
+That said i'm not a fan of HudMap.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0d8e6c2903</div><div class="date">2010-06-01, 10:57 AM</div></div><div class="posttext">Here we go again:<br />
+<br />
+<br />
+&quot;OMG LULZ WOW IZ TAA EZY BAN ALLZ ADDONS PLZ&quot;<br />
+<br />
+<br />
+They wont ban DBM and Omen, now do us all a favor and ragequit because everything is too easy. Then hopefully you will find your hardcore MMO and flame their board.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocba105e19de</div><div class="date">2010-06-01, 11:01 AM</div></div><div class="posttext">Posts like &quot;omg qq gearscore should be deleted&quot; don't help anything. Blizzard has 2 possibilities of how they can destroy an addon:<br />
+1) Ban an addon's name (Simple rename folder+toc file to get it working again)<br />
+2) Remove an API function that the addon needs to function<br />
+<br />
+There is no option<br />
+3) Fire their pewpew lazorz at the addon<br />
+<br />
+Option 2 was what was used against AVR - they removed the API that provided the user's camera angle which AVR used to position its frames.<br />
+Gearscore, on the other hand, only inspects players on mouse over. This is not a feature that can be removed (as it would break all inspect addons).<br />
+Then it takes the item levels and adds them using some kind of algorithm (don't tell me you want to remove LUA's ability to do calculations).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Luko</div><div class="date">2010-06-01, 11:02 AM</div></div><div class="posttext">Sure looks like it's drawing images over the UI to me. I can't see what the big difference is? This is giving a visual indication of buff/debuff zones that the UI doesn't give.. surely this is just as likely to be banned as AVR.<br />
+<br />
+<br />
+Drawing on the &quot;UI&quot; was never the problem. If that were the case, just about any CD tracker such as PowerAuras or NeedToKnow would have been banned years and years ago. It's drawing on the &quot;World&quot; that they have a problem with, especially things that other people can see, like AvR.<br />
+<br />
+OT: You won't take me to the darkside, Boub! I'm still playing the &quot;old man&quot; card on this new-fangled Twitter!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Izuria</div><div class="date">2010-06-01, 11:06 AM</div></div><div class="posttext">It looks nice, but I doubt I'll be able to use it since my grid is filling half of the screen anyway.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">widowmaker</div><div class="date">2010-06-01, 11:27 AM</div></div><div class="posttext">What's the point of such addon? As long as it cannot integrate with game engine and display things diractly ON the surfaces in game and not just your screen - it sucks big time. Also, I really don't see any help in this addon, seriously - you got to have at least some degree of skill to play, not have addon show you where to move or what's the range. Guess it will soon go share AVR's fate.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zorg</div><div class="date">2010-06-01, 11:35 AM</div></div><div class="posttext">banned soon methinks....tho why peole need these addons to play is beyond me, its just the sorry state of the way the wow population is headed &gt;:(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocfd8d985519</div><div class="date">2010-06-01, 11:40 AM</div></div><div class="posttext">lol @ Hudmap.<br />
+<br />
+Nerd get angry over the banning of AVR. So what do they do? They make another AVR. That will also get banned.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zyndrome</div><div class="date">2010-06-01, 11:41 AM</div></div><div class="posttext">The addon will not be banned. Now shut up; only bads whine about it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ikkatsu</div><div class="date">2010-06-01, 11:55 AM</div></div><div class="posttext">The addon will not be banned. Now shut up; only bads use it.<br />
+<br />
+<br />
+Fixed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc28c93ce8e0</div><div class="date">2010-06-01, 11:58 AM</div></div><div class="posttext">Fixed.<br />
+<br />
+<br />
+LoL'd IRL.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dexiefy</div><div class="date">2010-06-01, 11:59 AM</div></div><div class="posttext">But where does it end ?<br />
+<br />
+If you break DBM, people will simply use something like Power Auras to indicate certain debuffs. <br />
+Want to break that too ?<br />
+first you need to configure all auras and PA wont show your threat level or when boss is going to use an ability.<br />
+<br />
+<br />
+A lot of people also forget that boss encounters have evolved with the idea people use certain addons.<br />
+You are all talking about the glory of vanilla where you didn't have such luxury. Well newsflash people, fights were much less complex. no i'm not, im just tired of seeing people who think they are awesome while they would fail on easiest task w/o addons . Pve is easy as it is(o and dont come up with the LK25HM bullshit... 1 fight =/= whole content), with more and more addons it will be just grindy. Imo dbm, omen, avr or the shit from this news is just making pve boring. I like the chellenge when im playing, otherwise i dont even feel that im playing...<br />
+<br />
+ps. gl finding a guild if you write in application that you wont use dbm or omen xD<br />
+<br />
+<br />
+I mean take a fight like saurfang. You are expected to have 15-20 people spread out on a relative small platform and stay at least 13 yards apart to counter blood nova. Blizzard knows this is trivial because nearly everyone has a range meter. But that kind of simplifies the game in the same way AVR does, yet would removing it really make this fight more &quot;skilled&quot; ? people were cappable of spreading out on original onyxia with 40 people around, you really think they need addon to tell them everything?<br />
+<br />
+<br />
+Should we spent an extra 5 minutes before the fight measuring out ranges on a fight that already has an annoying 2 minute intro. Or should we adjust in mid fight ? Is there skill involved in just standing slightly off center and 1 shotting your marked neighbor with a blood nova ?<br />
+is there skill involved in following an addon? i dont think so. If you have to learn the range yourself, it takes more from a player and thats pretty obvious. <br />
+Playing without addons is always harder and requires mroe from a player and no matter what you say, you wont change that. <br />
+Also will those 5 minutes really kill you if you can clear whole new content in a week anyway? just to farm it for next couple of months until new content arrives... clear it in a week and farm it for another couple of months while waiting for new content that will take 1 week to clear again?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sno</div><div class="date">2010-06-01, 12:16 PM</div></div><div class="posttext">first you need to configure all auras and PA wont show your threat level or when boss is going to use an ability.<br />
+Sorry sir, there's an ingame Feature for Threat already.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kalx</div><div class="date">2010-06-01, 12:18 PM</div></div><div class="posttext">after seeing the video I can't see a difference between this and avr<br />
+<br />
+yeah, avr you could &quot;draw things on the world&quot; but you weren't really drawning anything, just setting some graphical elements on the HUD that moved with the camera... exactly as this addon does</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kappesante</div><div class="date">2010-06-01, 12:19 PM</div></div><div class="posttext">about 'ban pve addons', take a look inside your addon folder. there are 23 blizzard_something addons you are using.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dranged</div><div class="date">2010-06-01, 12:20 PM</div></div><div class="posttext">Seriously, why do you all whiners care about which addons OTHER ppl are using??<br />
+<br />
+Recount, rating buster, auctioneer, needtoknow, omen...etc. are all addons that are used to make life a bit easier in WoW; to save some time so you can spend it on other things.<br />
+<br />
+Which addons each and everyone decides to use is up to each person. So if you think it's retarded to use for example RaidBuffStatus to look for slackers in the raid then DON'T install the addon! But don't complain about the people who DO want the addon. I won't affect you anyway.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Graia</div><div class="date">2010-06-01, 12:20 PM</div></div><div class="posttext">the previous mmo-c group on facebook was merely a setback!<br />
+<br />
+be joinning the fan group when I come back from my internship, they blocked facebook here &gt;:(<br />
+<br />
+<br />
+i'm not sure the extent of the blocking mechanism, but try running fb on the secure server (https), that works for me at school. The only hassle is that you need to copy paste the adress every time you navigate to a new page and add the s to http.<br />
+<br />
+hope that helps!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc0d8e6c2903</div><div class="date">2010-06-01, 12:31 PM</div></div><div class="posttext">banned soon methinks....tho why peole need these addons to play is beyond me, its just the sorry state of the way the wow population is headed &gt;:(<br />
+<br />
+<br />
+Clearly you never played Vanilla WoW, back then there were some really easymode addons.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Turasleon</div><div class="date">2010-06-01, 12:39 PM</div></div><div class="posttext">Clearly you never played Vanilla WoW, back then there were some really easymode addons.<br />
+<br />
+<br />
+Decursive was hard to use, my friend.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">gringo</div><div class="date">2010-06-01, 12:42 PM</div></div><div class="posttext">Facebook and Twitter is so 2009... ::)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">khh</div><div class="date">2010-06-01, 12:53 PM</div></div><div class="posttext">in the end it boils to two things<br />
+<br />
+1- blizzard accepts such addons, and increasingly make more complex encounters to challenge players with them<br />
+2- blizz ban them, and do encounters assuming people do no have such tools<br />
+<br />
+either way the game difficulty stays the same<br />
+mind you none of that of those has anything to do with individual player skill, if wow was a single player game, everyone would be complaining how easy it is.<br />
+<br />
+wow difficulty always was making large amounts of people work together, which starts even before people put the first step on the instance<br />
+<br />
+however option 2 does allow blizz way more liberty in making bosses, so lets hope this crap is banned</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thegamer</div><div class="date">2010-06-01, 01:08 PM</div></div><div class="posttext">HUDMap-E appearing on Curse in 3... 2... 1...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Neola</div><div class="date">2010-06-01, 01:17 PM</div></div><div class="posttext">HUDMap-E appearing on Curse in 3... 2... 1...<br />
+<br />
+HudMap has the -E builtin. Look at this demo video of the plaguewing: http://www.youtube.com/watch?v=ZvX1Wa4Nxkk<br />
+It looks very much like AVR. But instead of drawing everything on the ground, stuff is now drawn on a virtual map across the screen. Still pretty much trivializing goo explosion on rotface and such.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pumps</div><div class="date">2010-06-01, 01:19 PM</div></div><div class="posttext">...let you draw obscene pictures on Arthas before you pull him.<br />
+<br />
+As if that would harm anybody!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jamie141999</div><div class="date">2010-06-01, 01:20 PM</div></div><div class="posttext">What's the point of raiding anymore, you've got addons to do literally EVERYTHING for you. All you have to do is press the buttons in the order the addon tells you to and move when you hear a bad sound.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ragingsoul</div><div class="date">2010-06-01, 01:25 PM</div></div><div class="posttext">I love people QQ about addons and saying they make the game easier, when 99.9% of those replies are from players that haven't done any hard modes. <br />
+let's face it, ICC range mechanics are stupid. You have 2 sec to get away from invisible fire, if not, you get 1 shoted.<br />
+<br />
+Range check were there before, take Gruul. But at least, the dmg was increasing as you were closer to someone. Right now in ICC, it's 10 yards away, no dmg, 9.9 yards away you get 1 shoted. really fun right?<br />
+Wake up, and tell me you like this range mechanic, and you think it's fun before trying to see if a mod makes a fight that you may not even have done on HC is made easier. <br />
+<br />
+yes this makes the ICC mechanic easier, but then again, if people need a big fucking warning when they have unchained magic not to cast, and can't LOOK for something there IS ALREADY there, I don't know what to say.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ragingsoul</div><div class="date">2010-06-01, 01:33 PM</div></div><div class="posttext">What's the point of raiding anymore, you've got addons to do literally EVERYTHING for you. All you have to do is press the buttons in the order the addon tells you to and move when you hear a bad sound.<br />
+<br />
+so I'm guessing you at least did 11/12 HC then? since it's so easy. ah wait.. yeah, that's what I thought. <br />
+<br />
+This is like saying &quot;Playing with the market is easy. You buy things, price go up, you sell them, you make money, what's the point of working every day?&quot; well, if it was THAT simple, then we would all be millionaires.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dranged</div><div class="date">2010-06-01, 01:33 PM</div></div><div class="posttext">What's the point of raiding anymore, you've got addons to do literally EVERYTHING for you. All you have to do is press the buttons in the order the addon tells you to and move when you hear a bad sound.<br />
+<br />
+<br />
+Who is forcing you to use addons? Your mommy?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dukon</div><div class="date">2010-06-01, 01:39 PM</div></div><div class="posttext">I had to lol at some of these posts, all the ppl whining its making raiding too easy etc etc.... who the frig cares when someone downs this boss or that boss unless its the world first. I've got news for you after that point NO ONE CARES and the ppl depending upon these addon's will not be the ones going for the world firsts.<br />
+<br />
+For all those raging already to get blizz to ban the addon, have you even looked at it... its basically a slightly enchanced minimap, doesn't draw/project in the 3d world. and for the ppl thats saying whats next addons that play your class for you, your a bit late to the game they've been around for ages from addons telling u which spell to use next, to addons that show you who needs the most healing first.<br />
+<br />
+In the end its just a game, in 5-10 years chances are the servers won't be here non of this will be even remembered if you don't want to use the addon's no one's forcing you to. The advantage they're going to give over an experienced player is non existant.<br />
+<br />
+Personally i wouldn't mind if all raiding addons were removed and we went back to the epic scale of 40man vanilla wow encounters without any warnings and actually having to know the fight.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Buzzo</div><div class="date">2010-06-01, 01:42 PM</div></div><div class="posttext">Who is forcing you to use addons? Your mommy?<br />
+<br />
+the angry for welfarepix</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Chri478n</div><div class="date">2010-06-01, 01:51 PM</div></div><div class="posttext">i wonder if blizzard will make Hudmap useless aswell as AVR now, its basically the same thing they do /farewell Hudmap xD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azharok</div><div class="date">2010-06-01, 01:55 PM</div></div><div class="posttext">so I'm guessing you at least did 11/12 HC then? since it's so easy. ah wait.. yeah, that's what I thought. <br />
+<br />
+I've got 8/12 10HC do I get a say ?<br />
+<br />
+I think the addons are designed so that you can focus on what you have to do as your raid function (heal/dps/tank) and be less handicapped by having no warning whatsoever.<br />
+<br />
+I mean hell I've failed a couple of times during raids because I was so busy looking what everyone else was doing (Raid Leading is a bitch) that I didn't realise I was standing in a void and, well you know the rest.<br />
+<br />
+The thing is, the addons can tell you WHERE to stand and WHEN, some people will still fail at the game. Do you seriously need to have AVR to know that you SHOULDN'T stand next to Sindra when she does blistering cold, and you shouldn't hug your icetombed buddies. But funnely enough people still manage to fail on simple mechanics. <br />
+<br />
+Take Mimiron for instance, how difficult is it to avoid the AoE shock he does ? How hard is it to avoid his missiles ? HOW HARD IS IT TO NOT STAND IN FRONT OF HIM WHEN HE DOES &quot;BARRAGE&quot;, but people still fail at the friggin game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sourika</div><div class="date">2010-06-01, 01:58 PM</div></div><div class="posttext">Who is forcing you to use addons? Your mommy?<br />
+<br />
+<br />
+RaidLeaAaeaeaeaaader o.o?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nynax</div><div class="date">2010-06-01, 02:04 PM</div></div><div class="posttext">funny thing about HUDmap. is you know there will STILL be players that actually do worse trying to use that addon, simply because they wont be able to grasp how to be aware of where they are in the game world, where they are on the mini map, and how to stay out of those circles.<br />
+<br />
+For example. I see alot of ppl focused on staying out of HUDmaps circles...that they fail to notice they are running in front of the boss and get cleaved.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ragingsoul</div><div class="date">2010-06-01, 02:05 PM</div></div><div class="posttext">I've got 8/12 10HC do I get a say ?<br />
+<br />
+I think the addons are designed so that you can focus on what you have to do as your raid function (heal/dps/tank) and be less handicapped by having no warning whatsoever.<br />
+<br />
+I mean hell I've failed a couple of times during raids because I was so busy looking what everyone else was doing (Raid Leading is a bitch) that I didn't realise I was standing in a void and, well you know the rest.<br />
+<br />
+The thing is, the addons can tell you WHERE to stand and WHEN, some people will still fail at the game. Do you seriously need to have AVR to know that you SHOULDN'T stand next to Sindra when she does blistering cold, and you shouldn't hug your icetombed buddies. But funnely enough people still manage to fail on simple mechanics. <br />
+<br />
+Take Mimiron for instance, how difficult is it to avoid the AoE shock he does ? How hard is it to avoid his missiles ? HOW HARD IS IT TO NOT STAND IN FRONT OF HIM WHEN HE DOES &quot;BARRAGE&quot;, but people still fail at the friggin game.<br />
+<br />
+<br />
+in both cases, you need to run, the addon isn't gonna make it for you. So the difference is in the warning you have, nothing more.<br />
+<br />
+Seriously, between AVR that helps on visualizing distances and a buff that gives you 20% more health, more dmg, and more healing, which one makes the game easier?<br />
+If you have done some HC, then you know that this buff trivialize the game completely, more than all addons combine.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Duskbite</div><div class="date">2010-06-01, 02:14 PM</div></div><div class="posttext">The more addons that's out there, the harder and more complex can they make their game/boss mechanics.<br />
+imo this addon looks to do more harm than good, but cba if it's out there, pallypower has been out there forever<br />
+and still pallys fail at it.. <br />
+<br />
+The more addons out there, the more can I expect from those im playing with when pugging on all alts.<br />
+<br />
+the upside of this addon are also, for those people with bad reaction to actually notice stuff going on, some people are maybe more visual-learning <br />
+capabilities than others, when learning boss fights.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nythiz</div><div class="date">2010-06-01, 02:16 PM</div></div><div class="posttext">first you need to configure all auras and PA wont show your threat level or when boss is going to use an ability.<br />
+<br />
+The point is that the line of what should and should not be allowed is really blurred. What we are seeing here is evolution of PvE raiding content. Some people desperately try to stop the evolution and cling to what we have.<br />
+I have serious doubts that is going to work, there are so many loopholes for this.<br />
+Instead blizzard is largely evolving with the game, and it should. <br />
+<br />
+Back in Vanilla you were watching boss cast bars, keeping an eye on your buffs for procs. And moving out of obvious dangers. There wasn't much more.<br />
+Now there are smart fires, there are abilities that 1 shot you if you're even half a yard out of place. There are classes with advanced procs and rotations, there are fights with high mobility where you still need to keep out of range of people. <br />
+Unless you are an 8 eyed octopus you can not seriously be expected to keep everything in check.<br />
+<br />
+Blizzard expects you to react to boss mods instead of doing it vanilla way in most cases. <br />
+<br />
+<br />
+<br />
+people were cappable of spreading out on original onyxia with 40 people around, you really think they need addon to tell them everything?<br />
+is there skill involved in following an addon? i dont think so. If you have to learn the range yourself, it takes more from a player and thats pretty obvious. <br />
+<br />
+Onyxia didn't execute you instantly if you were 1 step to the left though. Onyxia isn't much different from Syndragosa but limited to phase 1 and 2, and without Chill of the Grave on melee and Instability (or whatever the normal version was again) on ranged.<br />
+Onyxia had whelps, Syndra has ice tombs. Difference is in the abstract form not so big.<br />
+<br />
+Sindragosa however DOES have Chill of the Grave, it does have Instability. It does have a phase 3 where a mispositioned can lead to an extra icetomb and possibly a wipe. <br />
+<br />
+Current day encounters are not exactly trivialized by boss mods in my opinion. AVR largely did, that's why I'm glad its going. But I don't think all PvE addons are bad because of that.<br />
+<br />
+--------<br />
+<br />
+Also I totally don't get people who think that this new HudMap is any different from AVR.<br />
+<br />
+<br />
+<br />
+Unless hudmap tells you where and when to run, no it doesn't.<br />
+<br />
+as far as I can tell.. it's a graphical range indicator with no points of reference or guides that tell you where or when to move.<br />
+<br />
+HUDMap you still have to think. AVR told you where to move when Icetombed.<br />
+<br />
+Ever used /range 12 in dbm? Yeah it's that but graphical. AVR doesn't do the same thing as HUDmap.<br />
+<br />
+<br />
+Yes it does... it does the EXACT SAME.<br />
+<br />
+Except instead of drawing it out for you in the actual 3D world, it gives you a top down view of where to stand. This is the EXACT SAME THING. As you can see in the example of sindragosa, the player knew exactly where he could stand without getting hit by the frost tomb.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azharok</div><div class="date">2010-06-01, 02:17 PM</div></div><div class="posttext">in both cases, you need to run, the addon isn't gonna make it for you. So the difference is in the warning you have, nothing more.<br />
+<br />
+Seriously, between AVR that helps on visualizing distances and a buff that gives you 20% more health, more dmg, and more healing, which one makes the game easier?<br />
+If you have done some HC, then you know that this buff trivialize the game completely, more than all addons combine. <br />
+<br />
+<br />
+<br />
+You mean like not dying to Festergut pugent blight anymore cauz most melee are over the softcap to survive it just by having 1 spore buff ? :D Yeah I know.<br />
+<br />
+Still find it funny how some of the people I've raided with can't break 8k with the 20% buff .... Fail players will continu to fail.<br />
+<br />
+On a side note I've killed Putri10hm with my 4900GS pallytank (I did the abo so I only tanked in P3) it was still faceroll. Thank you 20% buff .... I'm just sad that I took a break and missed out on &quot;normal ICC&quot; It was already at 10%ish when I came back.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Furbolg</div><div class="date">2010-06-01, 02:24 PM</div></div><div class="posttext">AVR drew 2D objects on the interface that gave the illusion of being 3D objects in the game world. That's something blizzard doesn't want.<br />
+HUDmap draws 2D objects on the interface that are nothing more than that. This is probably something blizzard won't care about at all.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rangerfox</div><div class="date">2010-06-01, 02:32 PM</div></div><div class="posttext">Bah, I didn't like AVR when I tried it, looks like I'd like HudMap even less.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Duskbite</div><div class="date">2010-06-01, 02:39 PM</div></div><div class="posttext">What's the point of raiding anymore, you've got addons to do literally EVERYTHING for you. All you have to do is press the buttons in the order the addon tells you to and move when you hear a bad sound.<br />
+<br />
+<br />
+<br />
+btw there are sounds/quotes lines wich tells you ingame without addons that a thing are about happen, addons just translate that into &quot;just move&quot;.<br />
+bosses are more complex than they were from beginning, and there were more entusiasm to learn the fights than there are now, people dont learn<br />
+as no experienced player tell ingame what to do, everyone is dependent on reading tacts everywhere else cause if they fail once people emoquit<br />
+or get kicked, so addons are created to make em not fail on what we who played for years think is easy to know.<br />
+<br />
+everyone is different and are'nt taught ingame mechanics when they grow up, sometimes the game are totally new for people, and sometimes<br />
+addons/programs/chairs/stoves/microwave ovens/laundry machines/cars get developed to do more things than we care about.<br />
+and most of the times it makes life easier for them, not all are hardcore and go out and eat from nature cause it's too easy <br />
+to buy in supermarkets, same thing as raiding, things gets developt to make things abit easier than before.<br />
+<br />
+if you have'nt noticed this for those years you've lived, is that somethings are not as hard as they used to be?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">skoging</div><div class="date">2010-06-01, 02:54 PM</div></div><div class="posttext">Blizz about AVRe:<br />
+<br />
+&quot;Just to be clear, there's a difference between a mod telling you what needs to happen versus showing you. AVR takes the pitch, yaw and roll (if you will) of your character to visually represent where you need to be and when. That's very distinct compared to a tool like DBM playing a &quot;run away little girl&quot; sound file when you're in a danger spot. It's not visually showing you in the 3D game space where to run to get out of danger.&quot;<br />
+<br />
+Now take the last sentence and change a few minor things:<br />
+<br />
+&quot;That's very distinct compared to a tool like HUDmap showing a circle around a dot that's representing you when you're in a danger spot. It's not visually showing you in the 3D game space where to run to get out of danger.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">isendims</div><div class="date">2010-06-01, 03:00 PM</div></div><div class="posttext">please ban the addon</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Duskbite</div><div class="date">2010-06-01, 03:03 PM</div></div><div class="posttext">It shows where NOT to stand, NOT where to run. it's a visual range check as I've seen on Youtube.<br />
+<br />
+it's just a rangecheck Addon, wont be banned.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc489567f5e5</div><div class="date">2010-06-01, 03:06 PM</div></div><div class="posttext">Awesome. Going to use hudmap! The more tools the better I become.<br />
+<br />
+Flame on!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rhaeval</div><div class="date">2010-06-01, 03:06 PM</div></div><div class="posttext">The problem is that blizzard's own World Map now provides maps inside the instances where GPMP works. They are unlikely to kill their own world map.<br />
+<br />
+<br />
+Here's hoping Cata gives maps to all Instances, not just new instances. It's always nice to have a map of the labyrinth that is Blackrock Depths</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">lolcantdothat</div><div class="date">2010-06-01, 03:19 PM</div></div><div class="posttext">Oh jeez, as if fights weren't easy enough already, hudmap is mimicking avr-e.<br />
+<br />
+Edit: Not really, just showing how far away to be.. Still I think these addons are just making the already easy fights a serious cakewalk.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">thegamer</div><div class="date">2010-06-01, 03:20 PM</div></div><div class="posttext">Here's hoping Cata gives maps to all Instances, not just new instances. It's always nice to have a map of the labyrinth that is Blackrock Depths<br />
+<br />
+<br />
+Mauradon much? ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc029e10d7f3</div><div class="date">2010-06-01, 03:48 PM</div></div><div class="posttext">in both cases, you need to run, the addon isn't gonna make it for you. So the difference is in the warning you have, nothing more.<br />
+<br />
+Seriously, between AVR that helps on visualizing distances and a buff that gives you 20% more health, more dmg, and more healing, which one makes the game easier?<br />
+If you have done some HC, then you know that this buff trivialize the game completely, more than all addons combine. <br />
+<br />
+<br />
+first of all, no one gives a shit that you have done hc modes of icc, half of the world has atleast tried, i have too, and without avr. are you seriously saying that the increasing buff makes it easier than taking away &quot;dodge this shit&quot; moves from the bosses. not until the shit they throw cant cause a wipe or one shot you <br />
+<br />
+I got the idea from your earlier posts that you were saying that because of the other aspects of heroic modes, its okay to have an addon to trivialize, mallable goos, iceblock radiuses or spreading out in every encounter that needs it. <br />
+<br />
+HudMap does the same thing as avr, giving visual effect and a visual radius to debuffs etc. and those effects would be there if it would be intended, it'll get taken down for the same reasons as avr i'd guess. <br />
+<br />
+there was also the example of gruul, that if you did not spread far enough out it wasnt &quot;that&quot; bad, and how ruthless it is now. i think that's only a good thing. i think its way more fun to have these things as &quot;hard&quot; things on bosses, rather than pure enrage timers. i do like the idea of making gear less important, and even when you'd overgear content, you would wipe with sloppy playing.<br />
+<br />
+my point being, when for example mallable goo is cast at the raid, people should, in my opinion have to dodge them with naked eye, i hope they make more fights where you have to react to things yourself, move alot and act fast. i hope they keep smashing addons making any parts of fights trivial. i see &quot;dodge this shit to stay alive&quot; exactly as important as &quot;heal the main tank&quot; mechanism</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">zarbus</div><div class="date">2010-06-01, 03:51 PM</div></div><div class="posttext">Bou is an addon assassin.<br />
+<br />
+I predict this one's functionality won't last much longer than AVR.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Taiki420</div><div class="date">2010-06-01, 04:00 PM</div></div><div class="posttext">People don't understand it's the VISUAL DISPLAY of WHERE TO MOVE/BE that is bad.<br />
+<br />
+The only difference between this and AVR+E is that the display isnt in 3d, but 2d from a top down perspective.<br />
+<br />
+Same thing. Will get banned. Don't get too used to it. ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">IIBloodXLustII</div><div class="date">2010-06-01, 04:02 PM</div></div><div class="posttext">Its a range indicator on roids. I don't really see what the problem is. It does the same thing as /ranged on DBM, except its a circle instead of a box with names.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ragingsoul</div><div class="date">2010-06-01, 04:04 PM</div></div><div class="posttext">first of all, no one gives a shit that you have done hc modes of icc, half of the world has atleast tried, i have too, and without avr. are you seriously saying that the increasing buff makes it easier than taking away &quot;dodge this shit&quot; moves from the bosses. not until the shit they throw cant cause a wipe or one shot you <br />
+<br />
+I got the idea from your earlier posts that you were saying that because of the other aspects of heroic modes, its okay to have an addon to trivialize, mallable goos, iceblock radiuses or spreading out in every encounter that needs it. <br />
+<br />
+<br />
+<br />
+yes actually on 25men I'm saying the 20% buff IS making it took easy.<br />
+<br />
+why? because you can make mistakes and still make the enrage. <br />
+Take Blood Queen, 1 or 2 can die now, and you still make it, because 20% more dmg makes the dps an none issue. <br />
+Take PP, yes, p3 is retarded now, you can take goo or flask ( 100% less hit on HC) and STILL make it, because of the dps increase. <br />
+You can take MORE healers and make things a lot easier because of this buff. it's retarded.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">BondGirl</div><div class="date">2010-06-01, 04:10 PM</div></div><div class="posttext">finaly after almost 6 years of wow i can see the range of totmes.<br />
+<br />
+god bless the author.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DiamondTear</div><div class="date">2010-06-01, 04:11 PM</div></div><div class="posttext">1. That addon does not seem to be useful.<br />
+2. Social networking blows cock. Why would you want to spread your content over multiple (and over someone else's) sites.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">babyback</div><div class="date">2010-06-01, 04:12 PM</div></div><div class="posttext">I will never disgrace my ui with an addon such as this. It looks horrible. And whats up with all the addons for retards. I predict that this will have the same destiny as AWR+E</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nythiz</div><div class="date">2010-06-01, 04:24 PM</div></div><div class="posttext">It shows where NOT to stand, NOT where to run. it's a visual range check as I've seen on Youtube.<br />
+<br />
+it's just a rangecheck Addon, wont be banned.<br />
+<br />
+<br />
+I'm sorry but I don't see the difference between this and AVR, other than that it's topdown.<br />
+<br />
+It shows you exactly where NOT to stand, and where to move. <br />
+<br />
+Take the sindragosa example. What did AVRE do ?<br />
+<br />
+It puts circles around the people that have Instability<br />
+HudMap has this too (check the fight)<br />
+In both cases people can see exactly where to stand, the only difference is that with HudMap you look at a topdown view making it possibly EVEN EASIER! Because top down gives you MORE situational awareness.<br />
+<br />
+It puts a circle around the person with frost tomb, so that: a) He can move where no one is standing; b) the others can stand right on the edge to get optimal time on the iceblock (to wipe magic buffet)<br />
+Lets see; HudMap does this too. <br />
+<br />
+And I'm pretty sure that on fights like Putricide it will show a big circle around the player who gets malleable goo.<br />
+And on Blood Council it draws a circle around everyone when emp. vortex is going to hit.<br />
+<br />
+AVR and HudMap are the EXACT same in their usage.<br />
+The only difference is that AVR draws its stuff in a 3D view, and HudMap shows it top down like a radar with blips on them.<br />
+<br />
+Just because you can put your TomTom into a 3D view and a top down 2D view, doesn't mean that the thing suddenly is totally different people.<br />
+<br />
+The only question is whether blizz banned AVR because it draws 2D objects in a 3D perspective.<br />
+Or if they banned AVR because it trivializes encounters too much.<br />
+<br />
+If its the former, HudMap will live on. If it's the latter i see no reason why this shouldn't also be shot in the face.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">merlin371</div><div class="date">2010-06-01, 04:27 PM</div></div><div class="posttext">For whoever said that you didnt need range check in vanilla wow you're wrong, you needed to spread out on freaking ragnaros go figure, it just wasnt that big of a deal, nowadays if someone makes 1 mistakes you get about 20 people raging over it and calling ppl noobs, and this are the same people that are here complaining about the addon, you guys really need to feel like you are good at least something in your life so much that you pick on a game? is just about fun, it is a game<br />
+<br />
+Anyway now is only a range check but it will be able to draw patches on the map as well, like for example where the malleable goo is gonna fall and leave a red circle there so that you wont walk over it and then go away, or even make red circles during the ooze explosion, is very doable with this addon, just need someone to do it tbh :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stixxz</div><div class="date">2010-06-01, 04:33 PM</div></div><div class="posttext">Meh, hudmap doesn't look at user friendly as the other one.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca7472cd2b9</div><div class="date">2010-06-01, 04:34 PM</div></div><div class="posttext">Wow things never change. Just joined the MMO Champion Facebook group and some pathetic female is posting all sorts of hate there. The laughable thing is that is via her real life profile with all her personal details visible. Odd that my first act on joining such a group was to report about a dozen comments to a moderator :) At least it is a facebook moderator that needs to clean it up and not myself :)<br />
+<br />
+Sad to see that some people are just way too stupid to understand that posting on an internationally public site like facebook that exposes your personal data is just not a sensible way to start a hate war. I suspect she is some stupid juvenile minded troll that was banned here recently.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocac96309fe0</div><div class="date">2010-06-01, 04:52 PM</div></div><div class="posttext">The whole fuss abaut AVR-E is laughable really... if you dont like that addon so much then dont use it. But if you see that without it you have problems on bosses then perhaps you and your 9/24 friends are not so uber good as you though you were?<br />
+<br />
+Tools were meant to help people in need. Be it that they are terribad, thats why tools are made so that such people can keep up with good ones. With that logic we can state without a doubt that AVR-E is a very succesfull tool. It proves the ancient truth that people learn more from illustrations then from reading a wall of text without a single picture. A &quot;noob&quot; using this addon does not fail on Putricide's Goo, Sindragosa's Tombs, Saurfang's Blood Nova,Marrowgar's Nuking down Spikes, Council's Shockwave, BQ's air phase Bolts. You may still call him a noob but by the end of the day he does not fail on the boss mechanics so why whine? Its not abaut doing the job &quot;without help&quot;, its abaut actually being capable of doing the job &quot;at all&quot;. This addon allowed people to do the job fine so why whine?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Malleus</div><div class="date">2010-06-01, 05:07 PM</div></div><div class="posttext">Its a range indicator on roids. I don't really see what the problem is. It does the same thing as /ranged on DBM, except its a circle instead of a box with names.<br />
+<br />
+<br />
+No, it doesn't do the same thing. The DBM range box only tells you when someone is within x yards of you; if you move without looking, you are not guaranteed to go the right way to get away from them. HUDMap also tells you exactly where that person is positioned in relation to you, allowing you to go the right way every time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoca812163483</div><div class="date">2010-06-01, 05:48 PM</div></div><div class="posttext">Starting countdown till Blizzard breaks HudMap...<br />
+<br />
+Not sure I'll even get it, I got AVR, liked it (although now that it's gone I gotta admit it did affect my game, made me lazy, so in a way it's good it's gone) and now it's gone. It'd suck to get used to HudMap only for Blizzard then to decide break it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Karnige</div><div class="date">2010-06-01, 05:53 PM</div></div><div class="posttext">You got no indication from blizzard. Does that mean you got no answer? They have stated 3d but also that they don't want to show where to run to. There is a difference from saying RUN then where to run to. It will be banned.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Doddilus</div><div class="date">2010-06-01, 05:54 PM</div></div><div class="posttext">mini map + range indicator + debuff timers = OMG BLIZZ IS GONNA BAN THIS SO HARCORE<br />
+<br />
+wtf are you guys smoking?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ihaz</div><div class="date">2010-06-01, 06:00 PM</div></div><div class="posttext">wallhacks, 2d radars, aimbots<br />
+reminds me of smth<br />
+:P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Taiki420</div><div class="date">2010-06-01, 06:03 PM</div></div><div class="posttext">mini map + range indicator + debuff timers = OMG BLIZZ IS GONNA BAN THIS SO HARCORE<br />
+<br />
+wtf are you guys smoking?<br />
+<br />
+<br />
+<br />
+<br />
+A display that is your minimap spread across your entire screen, with visible circles showing where to not stand = AVR 2D<br />
+<br />
+If it was simply a totem thing it might pass, but what I've seen in those videos, I expect a ban.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">killerbng</div><div class="date">2010-06-01, 06:09 PM</div></div><div class="posttext">I dont mean to be mean...but who needs addons...play the fucking game the right way!! IF your so fuckign stupid u cant move to where u need to there you should just QUIT wow, your the reason blizz needs to make this SIMPLE game even simplier in the first place! Second, if your ganna say &quot;What if its my first time there?&quot;, then your fucking stupid too...its called look it up before you even TRY for an invite MORON!!!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Haseo</div><div class="date">2010-06-01, 06:14 PM</div></div><div class="posttext">I think visual mods are awesome, for those who need it or have teammates that need it. HudMap looks nice so I think I'll try it for the fun of seeing multi-colored shapes on my screen.<br />
+<br />
+I dare any of you purists (raid mods=bad, type of guys) to require their raid to not have any addons while raiding. You will wipe and cry so much your brain hurts as in vanilla.<br />
+<br />
+If you're able to raid without a single addon, bravo. You are one of the few who do nowadays, want a medal? If you have any friends and guildies who lack a bit of skill, you can pretty much see where it comes in handy.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">killerbng</div><div class="date">2010-06-01, 06:18 PM</div></div><div class="posttext">Wow things never change. Just joined the MMO Champion Facebook group and some pathetic female is posting all sorts of hate there. The laughable thing is that is via her real life profile with all her personal details visible. Odd that my first act on joining such a group was to report about a dozen comments to a moderator :) At least it is a facebook moderator that needs to clean it up and not myself :)<br />
+<br />
+Sad to see that some people are just way too stupid to understand that posting on an internationally public site like facebook that exposes your personal data is just not a sensible way to start a hate war. I suspect she is some stupid juvenile minded troll that was banned here recently.<br />
+<br />
+<br />
+actually, for me posting there is better......because if some1 is being a pos, and say..they threating to kill you, you can just say, ok heres my address come kill me......watch, they will back off cause they r just pussy ass bullies! Also ive done this on other places too, just give some1 ur addy and tell em to come kill you if they r a real man, and BAM, u never hear from them again...so tell me how that is bad? It gets red of they bitchs who just wanna bully ppl!!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">killerbng</div><div class="date">2010-06-01, 06:19 PM</div></div><div class="posttext">I think visual mods are awesome, for those who need it or have teammates that need it. HudMap looks nice so I think I'll try it for the fun of seeing multi-colored shapes on my screen.<br />
+<br />
+I dare any of you purists (raid mods=bad, type of guys) to require their raid to not have any addons while raiding. You will wipe and cry so much your brain hurts as in vanilla.<br />
+<br />
+If you're able to raid without a single addon, bravo. You are one of the few who do nowadays, want a medal? If you have any friends and guildies who lack a bit of skill, you can pretty much see where it comes in handy.<br />
+<br />
+<br />
+<br />
+<br />
+if u NEED an addon to tell you how to play, then ur not actually PLAYING THE GAME, the addon is playing. alos if u need an addon to play, QUIT AND GO PUT URSELF IN A RETARD HOME!<br />
+<br />
+&lt;Moderator Edit: This user has been given some time away from the forums to calm down.&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sulika</div><div class="date">2010-06-01, 06:22 PM</div></div><div class="posttext">The problem Blizzard is facing is that they cannot break HudMap easily. It only uses Raid Member positions and Player positions (nothing they can break easily without killing the world map display of party members).<br />
+<br />
+AVR used the current camera position, something other addons don't use - removing this function was what was done to break AVR.<br />
+<br />
+EDIT: 500 posts, woot.<br />
+<br />
+<br />
+They can easily remove raid member positions from the part of the game data available to user created addons and just replace it with a &quot;range to person&quot; indicator.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">DiscostewSM</div><div class="date">2010-06-01, 06:28 PM</div></div><div class="posttext">How much difference would there be between AVR and HUDmap if the player rotated the camera so that it's looking straight down, and the distance from the camera to the player is adjusted accordingly? From what I can tell, HUDmap is AVR, except it removes the ability to rotate the shapes as you would rotate the camera to look around, and fixes the camera distance so that it isn't adjustable.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Azharok</div><div class="date">2010-06-01, 06:38 PM</div></div><div class="posttext">wallhacks, 2d radars, aimbots<br />
+reminds me of smth<br />
+:P<br />
+<br />
+<br />
+MW2 HCTDM ? Man I can barely play that game anymoe because of the sheer amount of hackers in HC (don't like standard TDM too easy)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">merlin371</div><div class="date">2010-06-01, 06:41 PM</div></div><div class="posttext">I dont get it, if you dont like the addon just dont use it, on my paladin i dont use taunt master, cause i dont like it, so i just dont have it, so what is so different about this mod? it just pisses you off that &quot;The kingslayer&quot; is not as uncommon as you had hoped, and the only thing you probably have ever achieved is just so common that it pisses you off cause you arent as special as you had hoped.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thisis</div><div class="date">2010-06-01, 06:47 PM</div></div><div class="posttext">So WoW is still considered a game, yeah?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nythiz</div><div class="date">2010-06-01, 07:18 PM</div></div><div class="posttext">if u NEED an addon to tell you how to play, then ur not actually PLAYING THE GAME, the addon is playing. alos if u need an addon to play, QUIT AND GO PUT URSELF IN A RETARD HOME!<br />
+<br />
+<br />
+LOL... I bet this poster uses more addons than the average poster here :D</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocac96309fe0</div><div class="date">2010-06-01, 07:30 PM</div></div><div class="posttext">I dont mean to be mean...but who needs addons...play the fucking game the right way!! IF your so fuckign stupid u cant move to where u need to there you should just QUIT wow, your the reason blizz needs to make this SIMPLE game even simplier in the first place! Second, if your ganna say &quot;What if its my first time there?&quot;, then your fucking stupid too...its called look it up before you even TRY for an invite MORON!!!!<br />
+<br />
+<br />
+Encounters design is basing on the fact we are using addons...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">FuriousFox</div><div class="date">2010-06-01, 07:57 PM</div></div><div class="posttext">Encounters design is basing on the fact we are using addons...<br />
+<br />
+<br />
+Is there a quote from Blizz where this is said? I don't doubt it's true, but I'd just like to have a reference.<br />
+<br />
+Also, I kinda think it's bad to be designing a game around players having addons installed. IMO, the game should be designed around players using the default UI. If the default UI isn't providing the controls and information that players need beat the encounters, then the UI needs to be updated to provide them. No one should feel that an addon is necessary to successfully complete a raid.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spartinz</div><div class="date">2010-06-01, 08:05 PM</div></div><div class="posttext">Cool new add on. might try it :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Loonie</div><div class="date">2010-06-01, 08:08 PM</div></div><div class="posttext">I dont mean to be mean...but who needs addons...play the fucking game the right way!! IF your so fuckign stupid u cant move to where u need to there you should just QUIT wow, your the reason blizz needs to make this SIMPLE game even simplier in the first place! Second, if your ganna say &quot;What if its my first time there?&quot;, then your fucking stupid too...its called look it up before you even TRY for an invite MORON!!!!<br />
+<br />
+<br />
+Why is it seemingly ok for people to be such jackasses on these forums. Who cares what mods others use. I'll just assume your attitude is compensation for deficiency elsewhere.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">grassynole</div><div class="date">2010-06-01, 08:24 PM</div></div><div class="posttext">I thought of a similar add-on design a while back but to aid in fishing. Im not entirely sure exactly the mechanics of casts when fishing work but they seem be preset cast positions relevant to the players current location rather than completely random. Anyway my idea was to display these preset locations on screen so u get a better chance of hitting that school of fish more accurately, by simply swinging the camera to a birds eye view and positioning your character to optimize casts :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">frott</div><div class="date">2010-06-01, 08:29 PM</div></div><div class="posttext">I think hudmap still abstracts the game outside of blizzard's intentions...<br />
+<br />
+in that sindragosa video, you don't actually pay attention to the 3D game world when those events occur, you look at the 2D representation of it and make sure your dot is outside of the big area.<br />
+<br />
+I do think it's really going to push that barrier of them declaring what's good and what isn't.<br />
+<br />
+Right now all healing has devolved to is:<br />
+<br />
+if debuff I can remove, show blip by persons name bar ... click bar to remove it<br />
+if health low, click bar to fill health<br />
+<br />
+all the positional stuff is paid attention to when some raid warning (or voice on vent) yells at you. Clearly a healer isn't looking at the world and making decisions based on events they see.<br />
+<br />
+<br />
+<br />
+so we shall see... this just really sounds like the author is getting by on semantics of the &quot;modifying the 3D world.&quot;<br />
+<br />
+You still are modifying it by plopping a 2D panel that shows a top down rangefinder.... it's just great that the same semantics that has blizzard removing AVR is what he's using to validate hudmap. LOL</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Malthurius</div><div class="date">2010-06-01, 08:48 PM</div></div><div class="posttext">Hudmap is going to be broken as well, I know it. it still shows you exactly where you should and shouldn't be, which is why Bliiz broke AVR, because it showed you exactly where to be.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kelias</div><div class="date">2010-06-01, 08:52 PM</div></div><div class="posttext">Hudmap is going to be broken as well, I know it. it still shows you exactly where you should and shouldn't be, which is why Bliiz broke AVR, because it showed you exactly where to be.<br />
+<br />
+<br />
+It gives specific ranges. Is that fundamentally different than the /range feature of DBM?<br />
+<br />
+Lets assume that AVR was banned because of why they said it was: they do not want persistent 3D drawing on the game world.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Conflol</div><div class="date">2010-06-01, 08:58 PM</div></div><div class="posttext">Dinnerbone really has nothing better to do? ::) That's like 285+ posts a day</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Zeekua</div><div class="date">2010-06-01, 08:58 PM</div></div><div class="posttext">It makes absolutely no sense to be angry over people using or creating add-ons. Tons and tons of players use add-ons to make this game enjoyable for themselves, no matter if its 50 or 2. No matter how little or how many you use, the boss still drops the same loot for everyone. If it helps me get the boss down easier, I'm all for it. If you REALLY want to progress, why not? You know your competition on your server is. If you are REALLY that serious about the game, you should. <br />
+<br />
+I actually do use AVR and the only fight I even find it useful to help me is Heroic Putricide, for the plague. That's it. I mean, even with access to mods like these, people STILL fuck up and STILL fail on some fights. Hell, less then 100 guilds have even killed Lich King on Heroic 25 man (with a 20% buff now nonetheless) and we are complaining about how this game is too easy? Unless over 50% of guilds have killed him within the first month, THEN you can complain that this game is easy. And according to wowprogress.com, less the 1% of the guilds who have reported their kills to that site, have even killed him. For that matter, 10% or less have even done ANY Heroic 25 man's. <br />
+<br />
+I can guarantee very few people who post on these boards have accomplished that. I know I am one of them. <br />
+<br />
+Bottom Line, make the game enjoyable for yourself. If that means making it harder for yourself by not using add-ons, then so be it. But don't get mad if other people do. If you have enough &quot;skill&quot; to not use them, then it should be no problem. Right?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kelias</div><div class="date">2010-06-01, 09:21 PM</div></div><div class="posttext">People don't understand it's the VISUAL DISPLAY of WHERE TO MOVE/BE that is bad.<br />
+<br />
+The only difference between this and AVR+E is that the display isnt in 3d, but 2d from a top down perspective.<br />
+<br />
+Same thing. Will get banned. Don't get too used to it. ;)<br />
+<br />
+<br />
+Um, all this addon does is rangecheck. Thats all. The only thing it has in common with AVR is the visual rangecheck.<br />
+<br />
+AVR’s primary function was for the RL to draw on the ground to indicate where people needed to stand. THAT was what was making encounters easier and what Blizzard banned it for. All HudMap is doing is adding range-circles to the minimap and moving them to the center of the screen.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc61c45f9687</div><div class="date">2010-06-01, 09:44 PM</div></div><div class="posttext">Um, all this addon does is rangecheck. Thats all. The only thing it has in common with AVR is the visual rangecheck.<br />
+<br />
+AVR’s primary function was for the RL to draw on the ground to indicate where people needed to stand. THAT was what was making encounters easier and what Blizzard banned it for. All HudMap is doing is adding range-circles to the minimap and moving them to the center of the screen.<br />
+<br />
+<br />
+Thus, telling you where to stand or not, which is exactly the same logic used by AVR.<br />
+<br />
+You just see dots which goes blank or red depending of the situation, and SHOWING YOU where you shouldn't stand.<br />
+<br />
+Quit posting that kind of addons, they kill the game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ragingsoul</div><div class="date">2010-06-01, 10:41 PM</div></div><div class="posttext">It makes absolutely no sense to be angry over people using or creating add-ons. Tons and tons of players use add-ons to make this game enjoyable for themselves, no matter if its 50 or 2. No matter how little or how many you use, the boss still drops the same loot for everyone. If it helps me get the boss down easier, I'm all for it. If you REALLY want to progress, why not? You know your competition on your server is. If you are REALLY that serious about the game, you should. <br />
+<br />
+I actually do use AVR and the only fight I even find it useful to help me is Heroic Putricide, for the plague. That's it. I mean, even with access to mods like these, people STILL fuck up and STILL fail on some fights. Hell, less then 100 guilds have even killed Lich King on Heroic 25 man (with a 20% buff now nonetheless) and we are complaining about how this game is too easy? Unless over 50% of guilds have killed him within the first month, THEN you can complain that this game is easy. And according to wowprogress.com, less the 1% of the guilds who have reported their kills to that site, have even killed him. For that matter, 10% or less have even done ANY Heroic 25 man's. <br />
+<br />
+I can guarantee very few people who post on these boards have accomplished that. I know I am one of them. <br />
+<br />
+Bottom Line, make the game enjoyable for yourself. If that means making it harder for yourself by not using add-ons, then so be it. But don't get mad if other people do. If you have enough &quot;skill&quot; to not use them, then it should be no problem. Right? <br />
+<br />
+I cannot agree more on this. <br />
+I did every boss in ICC 10 and 25, and most of the hard modes without it. <br />
+are the bosses doable without this mod? ofc they are. but the real question is, do YOU have more fun with this addon or not? if you do, then use it. if you don't like it, nobody is forcing you to install it. We just cleared sindy HC today, glad we finally did. so I'm at 11/12 on HC 25, and I DO enjoy the ICC range mechanic 100x better with this mod, yes, you heard me, I'm using a mod because it makes my raids and my game time more fun, not because I can't down a boss without them. That's what people that only do this game as a casual player or not high end raiding can't get. The difference between downing a boss and not liking the fight, or downing the same boss, but see it in a different angle. <br />
+The whole discussion about whenever a mod is making a game too easy is stupid, it should be, does it make the game more fun instead. If for you it doesn't and makes you think the addon is moving for you, then by all means, don't install it, but don't make stupid comments like you can do all bosses without any addons. Yeah, those people that say that, they are mostly dpsers, that get healed up if they are about to die by others. When you try to hot up the raid before an aoe comes, try asking a healer if he thinks making it without timers would make it more fun.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">CrackedPot</div><div class="date">2010-06-01, 10:43 PM</div></div><div class="posttext">banned soon methinks....tho why peole need these addons to play is beyond me, its just the sorry state of the way the wow population is headed &gt;:(<br />
+<br />
+<br />
+I can think of an example of a type of people that could use HudMap. People who play that have brain tumor(s), MS (depending on severity), and even some of the mentally challenged (and no, I am not making fun of them). Oh wait... That's a few examples, sorry.<br />
+<br />
+Personally, if I ever get back into raiding I wouldn't mind trying HudMap. Just in case your wondering, I fall into the brain tumor category.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Karnige</div><div class="date">2010-06-01, 10:48 PM</div></div><div class="posttext">blizz stated 3d but also mention they will not tolerate addons that show you were to go. this counts as that. they dont mind DBM because it says run</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Detention</div><div class="date">2010-06-01, 11:31 PM</div></div><div class="posttext">Err &quot;/range&quot; is perfectly fine lol<br />
+Or can some people not multi task and so need colors to tell them where to go, what if they're color blind?! ::)<br />
+*rolleyes*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">khh</div><div class="date">2010-06-01, 11:51 PM</div></div><div class="posttext">I cannot agree more on this. <br />
+I did every boss in ICC 10 and 25, and most of the hard modes without it. <br />
+are the bosses doable without this mod? ofc they are. but the real question is, do YOU have more fun with this addon or not? if you do, then use it. if you don't like it, nobody is forcing you to install it. We just cleared sindy HC today, glad we finally did. so I'm at 11/12 on HC 25, and I DO enjoy the ICC range mechanic 100x better with this mod, yes, you heard me, I'm using a mod because it makes my raids and my game time more fun, not because I can't down a boss without them. That's what people that only do this game as a casual player or not high end raiding can't get. The difference between downing a boss and not liking the fight, or downing the same boss, but see it in a different angle. <br />
+The whole discussion about whenever a mod is making a game too easy is stupid, it should be, does it make the game more fun instead. If for you it doesn't and makes you think the addon is moving for you, then by all means, don't install it, but don't make stupid comments like you can do all bosses without any addons. Yeah, those people that say that, they are mostly dpsers, that get healed up if they are about to die by others. When you try to hot up the raid before an aoe comes, try asking a healer if he thinks making it without timers would make it more fun.<br />
+<br />
+<br />
+way too many people would say its fun to have a addon that controls your char perfectly and can do any boss, so they can get all the loot without any problem, at first.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">wg15</div><div class="date">2010-06-01, 11:55 PM</div></div><div class="posttext">i don´t think this addon will work after the patch, because blizzard will patch this out</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ragingsoul</div><div class="date">2010-06-02, 12:11 AM</div></div><div class="posttext">way too many people would say its fun to have a addon that controls your char perfectly and can do any boss, so they can get all the loot without any problem, at first.<br />
+<br />
+<br />
+<br />
+even people clearing 11/12 in 25man HC in 1 night and that almost have BIS 277 gear? I doubt that. ofc those people will mostly lie and say they hate the addon, because their are too proud of their gear and don't think people that can't do a boss without it are not worthy of the loot, and who can blame them, forums is just about Epeen anyway. <br />
+I see both side, on one hand, yes, it makes some mechanics easier, and make the loot and game more accessible to the people that can't do it without, but on the other hand, it makes my raid more fun, and more enjoyable than when playing without, even when clearing 10 or 11 hard mode bosses on 25man in 1 night. <br />
+<br />
+So basically, you have :<br />
+-People that think PVE is about clearing 25men content normal mode, where those addons are making a big part of the job for the kill. But lets remember, Blizzard made 25men easy so that everyone can see the content. Hard modes are the PVE world today that require more than pressing 2 buttons and get loot. Those think that it's destroying PVE, when PVE is something else. <br />
+<br />
+opposite to:<br />
+-People that know how to play without a lot of mods, and do a lot of hard modes and see this as free loot for the casuals mod. those people are also against it, because they think too much about their progression, their gear, and their Epeen. <br />
+<br />
+and also:<br />
+-People, the minority, that don't care about those arguments and want something fun to play, and more intuitive than what the normal UI can offer. <br />
+<br />
+Iwould say those are the general ideas people have when it comes to addons, I guess I'm missing a lot of other opinions that don't fit here, but the conclusion from this is, there is more people against it, because there is more people that play this game as casual, and people that care about loot and their personal Epeen in this game.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Doddilus</div><div class="date">2010-06-02, 12:26 AM</div></div><div class="posttext">putting a skull above a raiders head , putting a big message in the middle of the screen that says &quot;run away from skull&quot; and sounding a horn until you are out of range of skull, all of that is ok<br />
+<br />
+...but draw circles on a transparent mini map in the middle of the screen is bad<br />
+<br />
+both are telling you where not to be<br />
+it is still up to the player to not be there</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mizo</div><div class="date">2010-06-02, 01:29 AM</div></div><div class="posttext">ok so I started reading the replies here... go home to mommy and cry... if you're complaining about raiding being to easy without a single wing boss down on HC shut up.<br />
+For me as a healer hudmap takes to much of the space left on my screen imo... how ever I think its time blizzard makes a better visual reference to range if they're continoing with all this silly range mechanics.<br />
+<br />
+I might use hudmap on my dps characters butt really dont need it that much on my dps as guesstimateing is loads easier when you focus on the game world 100% of the time... rather than having to shift focus to raid frames to keep ppl up.<br />
+<br />
+btw avr or even avre newer said where to go just where not to go and well ppl manage to stand in big black puddles before so I guess they will manage to stay in a red circle as well.<br />
+<br />
+11/12hc <br />
+oh yeah 20% buff trivalized the bosses loads more than avre ever did..... wonder how 30% will be</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">dek</div><div class="date">2010-06-02, 02:00 AM</div></div><div class="posttext">Three things to say about the people saying how addons make the game too easy:<br />
+<br />
+1) &quot;Omg the addon literally plays the game for you, you just press the buttons it tells you to!&quot; What addon are you talking about? I have yet to see this addon that plays the game for me. I mean, there were some in Vanilla that came close before they cracked down on the API, but since then, all an addon can hope to do is provide you with information you already have in a more usable manner. Blizzard might decide something isn't kosher, but even AVR was not kosher for 3d rendering in the game world, not for telling you range info.<br />
+<br />
+2) I remember when you had to raid without addons. One boss feared. Another had 2 healers. Man, those fights were SO HARD! No, those fights were boring. And way easier than fights are now from a strategy perspective.<br />
+<br />
+3) I'm a real man! Hammers are a crutch, I push in nails with my BARE HANDS! TOOLS MAKE THINGS TOO EASY! <br />
+<br />
+That's what you sound like.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">brownin</div><div class="date">2010-06-02, 04:49 AM</div></div><div class="posttext">As someone who used to be in a cutting edge raiding guild in Vanilla, but basically stopped playing other than to see the new encounters. Who is only reading this site now to get an idea of a greater landscape of the game because people are trying to make me play again because of the Cata alpha this whole argument blows my mind. I hear people complaining all the time how easy the game has got, but there are people in here complaining about how this mod is necessary to get anything done? That's insane?<br />
+<br />
+To the people saying you can't judge distances/it's not fun/it's unreasonable: Oh hi, you must be new to video games. I'm glad WoW and it's MASSIVE user base was friendly enough for you to make the plunge. Judging distance is an important part of video games, be it 3D platformers where you need judge jump distance, or FPS where you need to calculate rocket trajectory to hit a moving target. As a more real world comparison, have you heard of a little game called pool/billiards/snooker/etc? Man that should would be better if you didn't have to deal with all that judging of distances and angles. There should be an overlay for that too. <br />
+Don't worry though, judging distances in 3D can be hard for some people, someday you too might be able to jump on that Gomba in Super Mario Galaxy without running into it.<br />
+<br />
+To the people saying it's different from AVR because it's not a 3D addon: Sorry, but you character isn't a spaceship. While the game is technically in 3D, there really isn't any Z axis. For most fights you could black out your whole screen except for this addon and no one would notice. Have you people really never tried to zoomed out and looked straight down on your character for an encounter before?<br />
+<br />
+To the people talking about vanilla and how this is required because raiding is different: Did you even play beyond MC back then? What about spreading out with 40 people for C'Thun? You know, the encounter that created the range check addon in the first place? AVR should would have made moving out of blizzard/rain of fire for Twin Emps/Grand Widow before it ticked on you easier. What about Viscidus? Hell, it would have been helpful for Huhu so you could swap out. Oh man, more than the small amount of guilds might have actually killed Ouro if there was some kind of map for his sand blast. <br />
+For all the talk about how much more complicated the bosses are now a days, looking at the time it took guilds to kill bosses it sure looks like they are easier now. Were some things harder then? Yes. Are many things harder now? Yes. Would AVR/HudMap have made things ALOT easier back then? Very yes.<br />
+<br />
+To the guy saying you can't get rid of this, or gear score: Heh, really? While I realize it wouldn't get rid of the concept completely, you could just no longer have the API pass the item level, which isn't used for anything anyways. You would then need to use some form of a judgment call on a person's gear, since some are slightly more complicated than others. As for not getting rid of the Hud without breaking the world map? Yeah, because they have never protected an API before. That's like saying you can't get rid of decursive because then you couldn't remove debuffs. What, you are going open up a transparent version of the map and try located the coordinates based on where textures are loaded on the screen? Good luck with that.<br />
+<br />
+<br />
+The whole thing weighs pretty badly on my decision to start playing again. The game is still full of the same people who think they are hot shit, but would fail majorly at any other game they would try to play competitively. Not surprising really, with so many people playing , and so many more playing as their first real multiplayer game it's to be expected. I guess we shall see with more play in the alpha, as it seems you will be able to basically cut yourself off from the riffraff if you really wanted. Or hey, I can just continue to be productive with my free time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dagnamit</div><div class="date">2010-06-02, 05:10 AM</div></div><div class="posttext">I think many people are confusing 2 dimensions with 3. All movement in WoW (sans flight) is in 2d. A 2d representation is all you need to figure out where you need to be. I love all the people saying that AVR is 3d = bad, while saying HudMap = 2d just fine. These were the same people that said AVR was no different then DBM; just looking for an excuse to cheat, imo. 2d is all you need because those are the only 2 dimensions you can utilize.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Maleficious</div><div class="date">2010-06-02, 05:15 AM</div></div><div class="posttext">HudMap - the next banned addon imo</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Parasyte</div><div class="date">2010-06-02, 05:29 AM</div></div><div class="posttext">Hey everyone! I'm new to the forums, but I've been reading this site for at least a year now. I just wanted to say that I love it =)<br />
+<br />
+So yay! Here's my first post<br />
+<br />
+Add-on (taken from Wiki):<br />
+an optional computer hardware or software component that, if installed, significantly supplements or enhances the functionality of the original unit.<br />
+<br />
+1. Optional<br />
+2. Enhances<br />
+<br />
+The problem with the debate on this thread is that some people are saying that the add-on actually does not enhance the gameplay for them but seem to fail to understand that it is 100% optional. It seems as though these people know that using the add-on might give some raiders an advantage, and that they might be forced to to get the add-on themselves if it was true. It's truly a competitive way of thinking, but sometimes you should just let go and clam down.<br />
+<br />
+Here's another way to think about it :<br />
+<br />
+If you enjoy the game even more with the add-on, even if it's a bot that does everything for you, then by all means go for it. There are different ways of entertaining yourself, and HUDmap might be one of them for you.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Haseo</div><div class="date">2010-06-02, 05:43 AM</div></div><div class="posttext">if u NEED an addon to tell you how to play, then ur not actually PLAYING THE GAME, the addon is playing. alos if u need an addon to play, QUIT AND GO PUT URSELF IN A RETARD HOME!<br />
+<br />
+&lt;Moderator Edit: This user has been given some time away from the forums to calm down.&gt;<br />
+<br />
+<br />
+Oh thank you, god of ban hammer!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mizo</div><div class="date">2010-06-02, 10:20 AM</div></div><div class="posttext">To the people saying you can't judge distances/it's not fun/it's unreasonable: Oh hi, you must be new to video games. I'm glad WoW and it's MASSIVE user base was friendly enough for you to make the plunge. Judging distance is an important part of video games, be it 3D platformers where you need judge jump distance, or FPS where you need to calculate rocket trajectory to hit a moving target. As a more real world comparison, have you heard of a little game called pool/billiards/snooker/etc? Man that should would be better if you didn't have to deal with all that judging of distances and angles. There should be an overlay for that too. <br />
+Don't worry though, judging distances in 3D can be hard for some people, someday you too might be able to jump on that Gomba in Super Mario Galaxy without running into it.<br />
+<br />
+The biggest problem with you're analogy's is that in fps you have a sett cam distance, same goes for irl but here you also have real 3D not 3d drawn 2d.<br />
+The vanilla and tbc encounters where a lot more forgiving on range these days you risk causing a wipe by standing one step to far left/right/whateva (without any graphics really telling you you should not stand there. (voids/fires/etc) On top of this its not just spread for one person some fight require 25 ppl to spread exact distances from each other within a second. <br />
+I'm no supporter of hand holding like dbm or avre but the range ring on avr makes judging the distance so much more intuitive as you get a actual in-game reference to what say 10y is with you're current cam.<br />
+<br />
+How ever I do expect ppl saying everything in vanilla was easy. newer did the bosses you mentioned.. but tbh compared to the mechanics today cthun isn't really that hard. <br />
+<br />
+Also keep in mind the raiders that have raided since vanilla or even tbc has loads more skills now (exceptions confirm the rule). so even if encounters where the same, theyd be &quot;easyer&quot; for the &quot;hardcore&quot; raiders than they where just because of experience.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Thaendra</div><div class="date">2010-06-02, 01:32 PM</div></div><div class="posttext">To the people saying you can't judge distances/it's not fun/it's unreasonable: Oh hi, you must be new to video games. I'm glad WoW and it's MASSIVE user base was friendly enough for you to make the plunge. Judging distance is an important part of video games, be it 3D platformers where you need judge jump distance, or FPS where you need to calculate rocket trajectory to hit a moving target. As a more real world comparison, have you heard of a little game called pool/billiards/snooker/etc? Man that should would be better if you didn't have to deal with all that judging of distances and angles. There should be an overlay for that too. <br />
+Don't worry though, judging distances in 3D can be hard for some people, someday you too might be able to jump on that Gomba in Super Mario Galaxy without running into it.<br />
+<br />
+<br />
+Exactly. Honestly, if you don't like your ability to avoid fires and etc. tested, YOU DO NOT LIKE RAIDING IN WORLD OF WARCRAFT. Why would you play a game that you don't like? There are plenty of games out there that don't involve dodging fires/slimes/judging distances! No one is forcing you to raid. You can use the AH or collect pets or wear interesting RP outfits around town. Or something.<br />
+<br />
+There is a HUGE difference between things like AVR-E (and maybe this add-on, not quite sure yet) and a tool. I mean, let's be honest here. I know Blizzard employees take addons into account when they design encounters to an extent, but do you REALLY think they sat down and said, &quot;okay, now we want Putricide to cast a spell that checks if the player's AVR or HUDMap is loaded&quot;? No, I think they designed those encounter mechanics hoping that you'd like, you know, use that cool addon called &quot;your eyes&quot; (&quot;located conveniently in the front of your head!&quot; -TRH) to see the indicators that THEY placed in the in-game world as an indication of what to look out for.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">suleria</div><div class="date">2010-06-02, 02:20 PM</div></div><div class="posttext">To the guy saying you can't get rid of this, or gear score: Heh, really? While I realize it wouldn't get rid of the concept completely, you could just no longer have the API pass the item level, which isn't used for anything anyways. <br />
+<br />
+This would not disable gearscore. Bypassing this change is as simple as dumping 2 columns from any item database, loading it to the addon, and using it to map items to it's item level.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Taiki420</div><div class="date">2010-06-02, 02:22 PM</div></div><div class="posttext">I think the biggest factor is that it shows up over the center of your screen. I wonder how people would feel if it was confined to the normal mini map space, and the circles pulsated or flashed instead of being solid.<br />
+<br />
+You could still see the range checks, just not everything around you for 40 yards, and it won't be as blatantly obvious.<br />
+<br />
+I feel this addon will be banned either way for it's striking similarity to &quot;AVR+E in 2D&quot; but it's just a thought.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stormstryker</div><div class="date">2010-06-02, 08:42 PM</div></div><div class="posttext">i downloaded hudmap, to see what it was didnt like it, disabled for the rest of the raid that night, come back online the next day and ive been hacked and i suspect this shitty addon</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">brownin</div><div class="date">2010-06-02, 11:22 PM</div></div><div class="posttext">The biggest problem with you're analogy's is that in fps you have a sett cam distance, same goes for irl but here you also have real 3D not 3d drawn 2d.<br />
+The vanilla and tbc encounters where a lot more forgiving on range these days you risk causing a wipe by standing one step to far left/right/whateva (without any graphics really telling you you should not stand there. (voids/fires/etc) On top of this its not just spread for one person some fight require 25 ppl to spread exact distances from each other within a second.<br />
+<br />
+Your camera is just as fixed in WoW as it is in any platformer. Just leave it at a constant level of zoom and you are fine. Your brain has a neat little trick where it calculates distance by comparing the size of two objects, characters are standardized heights, making this easy. Again, basic video game skills here.<br />
+<br />
+Also, how is C'Thun any less strict in terms of distance? You could have someone standing in the wrong spot, or get unlucky with a tentacle spawn and have someone get punted into a bad position and lose 1/4 of the raid to the eye beam. Were you working on the boss when he was new? Do you have any idea how many people died simply running into the fight and trying to get set up?<br />
+One could also argue that raiding is less strict now. Damage done by bosses in 40 man Naxx at level 60 was the exact same for nearly everything as it is in 10 man at level 80, the only difference being health pools were tiny back then. As an example, at first on Grand Widow many melee dps had to chain drink fire protection pots to lower the chances of being oneshot from the poison volley and rain of fire at the same time. 4H was a nightmare with all the 'instant death' sources of damage. Most people who play now a days really have no idea what people went through back then, and get all their information by running the 'easy' 40 man instances with the new gear and talents. <br />
+That said, I'm definitely not here to debate what raiding was harder when. I really don't care, and I said before, both have their points.<br />
+<br />
+<br />
+This would not disable gearscore. Bypassing this change is as simple as dumping 2 columns from any item database, loading it to the addon, and using it to map items to it's item level. <br />
+Yes, as I said it won't get rid of the concept behind gear score, because obviously you can't. It would just make it even more unreliable than it is now. No, you could not just dump two columns from an item database. Those databases are created from the game files. If there is no more item level stored then it's not that simple. You could either give each tier of gear it's own score manually, or try to weigh each stat for each class and try and create some formula to do it. I'm sure people would do both of those. However, by doing this is makes things not as easy to standardize, and more of a hassle.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bluspacecow</div><div class="date">2010-06-03, 02:11 PM</div></div><div class="posttext">sorry guys bit late in replying :)<br />
+<br />
+<br />
+<br />
+I don't know if the author of HUDMap still has it up on his page or not, but at one time not too long ago he stated that he used AVR/AVRE code as his foundation for the addon. <br />
+<br />
+<br />
+No it's not. <br />
+<br />
+The code now used in HudMap was actually part of SexyMap for quite some time now. It's a feature that's been part of SexyMap for the last year or so ... you would press a binding key and it would come up with a HUD with arrows towards gatherer/gathermate nodes. A few months ago he started pulling out that code to put in a separate addon. He uploaded his first public version of the addon 10 days before the AVR/AVRE ban thread drama.<br />
+<br />
+Now I know Antiarc and he's not the sort of person to use someone else's code in his addons. He's a big fan of writing his version of things and I don't believe he would steal code for his addons.<br />
+<br />
+<br />
+<br />
+And also, why does MMO give so damn much attention to those f*cking addons like AVR and now this one? You getting paid by the authors or what?<br />
+<br />
+<br />
+Erm.....no ?<br />
+<br />
+Why is it when people have a diametrically different opinion than you people accuse the other person of being paid off or bribed by the makers ???<br />
+<br />
+Why can't he just make a post about it because he feels it's &quot;super cool!&quot;<br />
+<br />
+It's sort of like your saying the other guy's opinion is so ridiculously retarded and unintelligent and wrong that someone MUST of paid him to say it</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

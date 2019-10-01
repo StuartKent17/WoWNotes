@@ -1,0 +1,802 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="mana,regen,regeneration,spirit,healing,classes,source,attunement,transfers,meditation,casting,realm,paid,paladins,ulduar,oofsr,intensity,period,players,properly,provide,make,fixes,logic,real,recent,paladin,time,consistently,population,maximum,http://www.worldofwarcraft.com/pvp/tournament/items.xml,arena,posts,blue,in-game,resto,http://blue.mmo-champion.com/27/14990765234-i-dont-get-the-regen-nerfs.html,automatically,talents,account,feel,check,poison,warcraft,comic,preview,duration,tweaks,seconds" />
+<meta name="description" content="Recent In-Game Fixes 
+Listed below are recent fixes we have applied to the game. 
+ 
+2/18/09: 
+Icy Prisms are now unique, they cannot be mailed but can still be traded. 
+The Rogue ability Mutilate now does its appropriate damage based on talents. 
+Raise Dead now properly detects the presence of Corpse Dust in your inventory. 
+The Glyph of Windfury Weapon will not apply additional attack power. 
+A Grounding Totem is now properly destroyed even if the grounded spell did not do damage. 
+Tremor" />
+<title> In-game fixes, Mana Regeneration in 3.1, Blue Posts [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; In-game fixes, Mana Regeneration in 3.1, Blue Posts</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-635178.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/635178-In-game-fixes-Mana-Regeneration-in-3-1-Blue-Posts">In-game fixes, Mana Regeneration in 3.1, Blue Posts</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2009-02-19, 01:21 PM</div></div><div class="posttext">Recent In-Game Fixes<br />
+Listed below are recent fixes we have applied to the game.<br />
+<br />
+2/18/09:<br />
+Icy Prisms are now unique, they cannot be mailed but can still be traded.<br />
+The Rogue ability Mutilate now does its appropriate damage based on talents.<br />
+Raise Dead now properly detects the presence of Corpse Dust in your inventory.<br />
+The Glyph of Windfury Weapon will not apply additional attack power.<br />
+A Grounding Totem is now properly destroyed even if the grounded spell did not do damage.<br />
+Tremor Totem now properly pulses every 3 sec.<br />
+Crippling Poison now has a PvP duration of 10 seconds.<br />
+Wound Poison now has a PvP duration of 10 seconds. <br />
+<br />
+<br />
+Tweaks to mana regeneration in 3.1<br />
+The goal is to have mana last about the same for all healers. We don't think many players would be that interested in a style where you heal crazy good for a short period and then run OOM. How classes manage their mana varies a lot, and we are making tweaks to it for 3.1 to try and keep them in line. For example, the shadow fiend needs to be more reliable.<br />
+<br />
+I am still not following the logic that Int now trumps Spirit by even more. It may have been a better stat already, but these changes shouldn't affect it that much unless you A) skip Meditation and Intensity, or B) relied a whole lot more on OOFSR regen than the average raid healer of reasonable skill.<br />
+<br />
+I will break from our normal practice and go ahead and provide the numbers, just to make sure nobody is guessing about the details when doing their estimates:<br />
+<br />
+The amount of base mana regen granted has been reduced 40%. We called this &quot;Spirit&quot; in the notes, since most players associate OOFSR regen with Spirit, but in reality Int factors into the equation as well and we only lowered the constant, not the relative contributions of Int or Spirit. In retrospect, this probably caused more confusion than it alleviated, but mana regeneration is a fairly technical concept.<br />
+<br />
+The effects of talents that provide mana regen while casting have been increased by 67%. This includes: Arcane Meditation, Improved Spirit Tap, Intensity, Mage Armor, Meditation, Pyromaniac, and Spirit Tap. For example, Intensity and Meditation are now 17/33/50% mana regen while casting (up from 10/20/30%). For most dps classes who never got much mana from OOFSR in the first place, the results should not be noticeable. Boomkin may be a possible exception because of Innervate, and we'll take a look at that.<br />
+<br />
+This should leave mana regeneration while casting (even the contribution of Spirit) relatively unchanged, but reduce mana regeneration while not casting by 40%. (If you don't understand our logic, I suggest you re-read the excellent post I quoted above.)<br />
+<br />
+Since paladins don't rely on any of those abilities for mana regeneration, we lowered the healing penalty of Divine Plea to -50%. We are also likely to make Spiritual Attunement provide less mana for non-tanking paladins. We are not touching Illumination for the moment. Nor are we lowering the effects of Replenishment (though as I have suggested, it would be our likely next target if we aren't happy with the results of these changes). <br />
+<br />
+<br />
+Blue posts<br />
+Ulduar - No attunement<br />
+I don't believe there is any attunement currently planned for Ulduar. Instead you can head straight into the dungeon and enjoy it instead of running around somewhere and getting ready only to find that two of your main healers didn't do the attunement yet. (Source (http://blue.mmo-champion.com/1/15211002714-attunements-for-ulduar.html))<br />
+<br />
+Healing classes disparities in Arenas<br />
+We think Holy paladins are dominating healing in Arenas too much, but some of these changes should help that. (Plus, paladin defenses just tend to help them survive when burst is high. This is a trend that happened even in previous seasons.) We don't think the success of Resto shamans in Arena is necessarily a mana sustainability issue, but has a lot more to do with what other classes can do to priests and druids. (Which is also not an ideal situation.) <br />
+<br />
+I thought I mentioned this at one point, but we were pretty happy with Resto shaman mana regen. They were our target and we wanted to bring priest and druid regen (by making non-casting regen lower) and paladin regen (through DP and SA) closer to that point. (Source (http://blue.mmo-champion.com/27/14990765234-i-dont-get-the-regen-nerfs.html))<br />
+<br />
+Healing - Mana Regeneration in 3.1<br />
+To those players who feel like they already have trouble managing mana now, it's hard for me to evaluate each case to know what is going on. My only suggestion is you need to treat mana regeneration as a real mechanic and not just go for throughput in all of your gear and talent choices. We are going to get all of this on the PTR so that we and the community can run additional tests to make sure that all four healing classes feel valuable and effective. Ulduar is definitely going to shine a harsher light on PvE balance in all forms and we're just going to have to deal with problems (real or imagined) as they come up. (Source (http://blue.mmo-champion.com/27/14990765234-i-dont-get-the-regen-nerfs.html))<br />
+<br />
+Short Arena Tournament Q&amp;A<br />
+Will shards be buyable? Yes.<br />
+Will professions be carried over and if not, will they be instantly 450? No.<br />
+Will PVE gear be available? Yes.<br />
+Will the wintergrasp helmets be available? No. Please check the full list of available items at: http://www.worldofwarcraft.com/pvp/tournament/items.xml (http://www.worldofwarcraft.com/pvp/tournament/items.xml)<br />
+Will the Armored Murloc Pet bind on pickup? The pet will be account bound, so a character does not need to be designated. The account that was used to register will receive the pet if eligibility requirements are met. (Source (http://blue.mmo-champion.com/11/15207811942-2009-arena-tournament--registration-open.html))<br />
+<br />
+Paid Realm Transfers activation<br />
+Paid transfers are enabled/disabled automatically. If the realm hits a certain maximum population and queue consistently over a given period of time, transfers to that realm will automatically be disabled. They will be re-enabled once the maximum population drops to an acceptable level for a given period of time.<br />
+<br />
+The automated thresholds are tried and true to prevent destination realms consistently experiencing queues from receiving paid transfers. (Source (http://blue.mmo-champion.com/1/15234884365--why-allow-transfers-to-realms-w-queues.html))<br />
+<br />
+<br />
+World of Warcraft Comic #16 Preview<br />
+In the latest issue of the World of Warcraft comic, Broll receives a mysterious summons away from Theramore on the eve of the summit between King Varian and Thrall. Garona is taken captive by the Forsaken, but to what end? Plus, the return of Rehgar Earthfury! Check out the preview pages (http://www.worldofwarcraft.com/misc/wccomic/issue-16-sneakpeek.html) for yourself. <br />
+<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/news/2009/february/comic16preview.jpg (http://www.worldofwarcraft.com/misc/wccomic/issue-16-sneakpeek.html)<br />
+<br />
+<br />
+New Fan Art: Ragnaros<br />
+A new fan art has been added to the official site (http://eu.blizzard.com/screenshots/thumbnail.html).<br />
+<br />
+<br />
+http://static.mmo-champion.com/mmoc/images/news/2009/february/ss122_small.jpg (http://static.mmo-champion.com/mmoc/images/news/2009/february/ss122.jpg)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rugus</div><div class="date">2009-02-19, 01:36 PM</div></div><div class="posttext">As a Hunter I'm really anxious to see the news about bullets/bags... Let's hope they did something that will add some &quot;fun&quot; to our class (special ammos?).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MuTe</div><div class="date">2009-02-19, 01:39 PM</div></div><div class="posttext">- Crippling Poison now has a PvP duration of 10 seconds.<br />
+- Wound Poison now has a PvP duration of 10 seconds. <br />
+<br />
+So poisons have reduced in duration from 15 to 10 seconds. Let the qq begin. :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Simca</div><div class="date">2009-02-19, 01:41 PM</div></div><div class="posttext">I'm flipping out here Blizz... WTB Ulduar... NAO!<br />
+<br />
+On a related note, the Divine Plea nerf didn't actually nerf Paladin regen in many cases. However if you are a dedicated MT healer, for example.... yeah, you aren't going to be using that very often. It is actually more of a decision now.<br />
+<br />
+Poison duration was decreased. A bug with Mutilate was fixed, effectively lowering its damage.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nemesisevil</div><div class="date">2009-02-19, 01:48 PM</div></div><div class="posttext">I'm becoming tired no, I AM tired of all these forum posters (no attunement ulduar thread) complaining about the difficulty of the game, saying how difficult pre-TBC was and how &quot;bad players in green gear&quot; can PuG naxx (right). I wish they'd accept that Blizzard will cater towards the larger percent of the player base for marketing reasons.<br />
+<br />
+What is the problem anyway? They have access to the best loot faster and no casual player will be able to do 3 drake sarth or possibly even the upcoming raids in the future. Hell I barely have time to raid anymore and I haven't even finished all of 25 naxx yet or Malygos.<br />
+<br />
+Get over yourselves please, I swear they post on the forums saying how pre-TBC was the real challenge (it wasn't hard just largely time consuming and almost luck based depending on the guilds you join) to boost their ego.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">LavaDuck</div><div class="date">2009-02-19, 01:51 PM</div></div><div class="posttext">A Grounding Totem is now properly destroyed even if the grounded spell did not do damage.<br />
+<br />
+Someone enlighten me.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">hobojohnn</div><div class="date">2009-02-19, 01:55 PM</div></div><div class="posttext">I'm becoming tired no, I AM tired of all these forum posters (no attunement ulduar thread) complaining about the difficulty of the game, saying how difficult pre-TBC was and how &quot;bad players in green gear&quot; can PuG naxx (right). I wish they'd accept that Blizzard will cater towards the larger percent of the player base for marketing reasons.<br />
+<br />
+What is the problem anyway? They have access to the best loot faster and no casual player will be able to do 3 drake sarth or possibly even the upcoming raids in the future. Hell I barely have time to raid anymore and I haven't even finished all of 25 naxx yet or Malygos.<br />
+<br />
+Get over yourselves please, I swear they post on the forums saying how pre-TBC was the real challenge (it wasn't hard just largely time consuming and almost luck based depending on the guilds you join) to boost their ego.<br />
+<br />
+<br />
+if my fresh level 80 dk in blues and greens can OT 10-man Naxx, then you know there's a problem. am i elitist? yeah, probably. but it does not mean blizzard should stoop down to &quot;i have downs and i even killed kt&quot;.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">fr0hzn</div><div class="date">2009-02-19, 01:56 PM</div></div><div class="posttext">Someone enlighten me.<br />
+<br />
+<br />
+Sheep perhaps didn't destroy the totem, although the spell got grounded by the totem.<br />
+<br />
+Dunno about ulduar. Looks boring.<br />
+Just another instance that you get rid off after the first few runs.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Barky</div><div class="date">2009-02-19, 01:57 PM</div></div><div class="posttext">Someone enlighten me.<br />
+<br />
+<br />
+if a Paladin did Hammer of Justice or Repentance for example, because it only stunned and didnt do any damage at all, the totem remained intact</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">TreK</div><div class="date">2009-02-19, 02:04 PM</div></div><div class="posttext">tremor is very unreliable now ;p<br />
+before if u knew someone was going to kill your tremor you could put down a new one, but now they can just fear u and wack the totem afterwards ;o or just wack your totem, then fear, then wack your new totem that you mightve had a chance to put down cause u say he was going to wack your totem ;(<br />
+<br />
+bleh !</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rugus</div><div class="date">2009-02-19, 02:21 PM</div></div><div class="posttext">if my fresh level 80 dk in blues and greens can OT 10-man Naxx, then you know there's a problem. am i elitist? yeah, probably. but it does not mean blizzard should stoop down to &quot;i have downs and i even killed kt&quot;.<br />
+<br />
+Agreed. In my opinion the real problem with WOTLK end-game is... &quot;too easy&quot;. You can do ANY heroic, ANY raid... provided you dinged 80 (even if you're in greens). I really miss the attunements we had in TBC, even if that meant (at least for me) I had no time to do most of the heroics/raids due to lack of time for rep/attunement grind.<br />
+<br />
+That said, I still think that stuff like end-game should be not so easily achievable just by dinging level 80. When I log my toon, I just start spamming &quot;xxx class looking for any heroic or any raid spot&quot;. At the end of the day, any heroic is fine and easy to do, you can even do more than one in a row because you're 100% sure no one will be missing rep or keys to access it. As a CC class I just forgot how to trap, because no one cares about that: you just go and DPS like a mad, no one will mark stuff or ask to trap/sap/sheep. Too easy, in my opinion. Healers and tanks are having an easy life right now and DPS's... well... too.<br />
+<br />
+I also miss some class diversity. Now even my little cat can tank (actually my cat can do it better than a warrior, in bear form...). What about DPS? Mages, hunters, rogues... just go and DPS, forget about cc, tactics, etc. Just bring some DPS, that's all.<br />
+<br />
+I do not really want an elitist system but right now I feel like I reached the end of the game (even if I did not complete a full Naxx run). I got bored to log and just grind rep for some gear bonuses (Ebon hold, Hodir, ...). Ok I got exalted, now... what? I miss some &quot;hard times&quot; collecting stuff to finally obtain a heroic key. I miss something.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">citrus</div><div class="date">2009-02-19, 02:33 PM</div></div><div class="posttext">The Rogue ability Mutilate now does its appropriate damage based on talents.<br />
+<br />
+<br />
+Moar Nerfs? Or not? I am confused ???</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MuTe</div><div class="date">2009-02-19, 02:35 PM</div></div><div class="posttext">I do not really want an elitist system but right now I feel like I reached the end of the game (even if I did not complete a full Naxx run). I got bored to log and just grind rep for some gear bonuses (Ebon hold, Hodir, ...). Ok I got exalted, now... what? I miss some &quot;hard times&quot; collecting stuff to finally obtain a heroic key. I miss something. <br />
+<br />
+<br />
+Agree on this. Im not a big PVE player anymore, but i do raid from time to time, and have some PVE gear. Im not wasting any gold on gems or enchants for PVE gear atm, its not needed at all. for PVP on the otherhand i farm rep to get the best enchants for head/shouder etc. But from a PVE point of view i can totally understand those few extra stats that cost a hell lot of effort in obtaining arent worth getting. I did naxx in full lvl 70 pvp gear.. why bother. Most of the time i dont even switch from my current PVP set to my few PVE items when raiding.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">danightryder</div><div class="date">2009-02-19, 03:00 PM</div></div><div class="posttext">- Crippling Poison now has a PvP duration of 10 seconds.<br />
+- Wound Poison now has a PvP duration of 10 seconds. <br />
+<br />
+So poisons have reduced in duration from 15 to 10 seconds. Let the qq begin. :)<br />
+<br />
+<br />
+is mages slow on a 10 sec duration in pvp? Cause if not, yea that needs to be fixed since everything is going down to 10 seconds</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SFJake</div><div class="date">2009-02-19, 03:05 PM</div></div><div class="posttext">if my fresh level 80 dk in blues and greens can OT 10-man Naxx, then you know there's a problem. am i elitist? yeah, probably. but it does not mean blizzard should stoop down to &quot;i have downs and i even killed kt&quot;. <br />
+<br />
+<br />
+Its not &quot;wrong&quot;, because all difficulties was thrown out of the windows for Casuals to experience things. They want all people to have access to heroics, and raids. As long as it really gets harder from this point, I don't see anything so wrong about that...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">heerobya</div><div class="date">2009-02-19, 03:08 PM</div></div><div class="posttext">You dps kids need to learn that not everyone can &quot;ding 80 and go clear 10-person Naxx in greens/blues.&quot;<br />
+<br />
+You DPS scrubs pushing 2k+ can sure.<br />
+<br />
+But TANKS and HEALERS need to have at LEAST a marginal level of gear in order to really get the job done. <br />
+<br />
+A freshly dinged 80 Tank who kept their blacksmithing up as they went and spent the last few levels 77-80 doing nothing but instance runs for gear MAY have enough defense, avoidance, mitigation, and health to survive as being an MT in a 10 person raid. <br />
+<br />
+They may. Maybe. But that's because they have a good mix of crafted and dungeon looted blues, not because they lawl-quested only to 80. Maybe they're a gold-buying noob who bought all the Tanking plate off of the AH. <br />
+<br />
+Undergeared tank + undergeared healer = fail.<br />
+<br />
+Geared tank + geared healers + undergeared DPS = can still win.<br />
+<br />
+Learn to think/see beyond your own limited understanding of this game. <br />
+<br />
+Just because YOU can be carried through 10 and 25 raid content in your scrub blue/green gear because you are one of many scrub DPS that do juuuuuust enough Pew Pew to make it work doesn't mean that the 1 or 2 tanks/healers haven't put in a shit-ton of time and effort in getting heroic/crafted gear. <br />
+<br />
+Oh and OT 10-man naxx in blue-green? Sure, it's trash. It's adds on a boss. GL with 4 horse-men or any fight where you actually have to have two decent tanks. GL as MT of a 10 man w/ your scrub gear.<br />
+<br />
+l2heroics. l2blacksmith.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">MuTe</div><div class="date">2009-02-19, 03:35 PM</div></div><div class="posttext">is mages slow on a 10 sec duration in pvp? Cause if not, yea that needs to be fixed since everything is going down to 10 seconds<br />
+<br />
+<br />
+Im not a mage, but ye imo every cc should have a max of 10 sec with a diminishing return. No class should be able to spam any form of CC without a penalty.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mushin</div><div class="date">2009-02-19, 03:43 PM</div></div><div class="posttext">Someone enlighten me.<br />
+<br />
+If a spell did no damage Grounding Totem would often redirect the spell to itself and trigger its old internal cooldown, as it used to be able to absorb multiple spells as long as they did not deal damage and therefore physically kill the totem.<br />
+<br />
+[color=white]I thought I mentioned this at one point, but we were pretty happy with Resto shaman mana regen. They were our target and we wanted to bring priest and druid regen (by making non-casting regen lower) and paladin regen (through DP and SA) closer to that point.<br />
+<br />
+Oh. Ghostcrawler actually does know that shaman can heal.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Cuandoman</div><div class="date">2009-02-19, 03:44 PM</div></div><div class="posttext">I dinged 80, did like 5 heroics, and cleared Naxx10 that night in my full T6 healing gear. 2 Healers and the pallie wasnt that geared either. <br />
+<br />
+The content is easy, but as long as it gets harder from here I dont mind so much. It's a shame they seem to be against instances on the difficulty level of Naxx40 and Sunwell though. They required some actualcommitment and a minor degree of skill to complete. (No keyboard turners plz)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pure Lunacy</div><div class="date">2009-02-19, 03:46 PM</div></div><div class="posttext">Agreed. In my opinion the real problem with WOTLK end-game is... &quot;too easy&quot;. You can do ANY heroic, ANY raid... provided you dinged 80 (even if you're in greens). I really miss the attunements we had in TBC, even if that meant (at least for me) I had no time to do most of the heroics/raids due to lack of time for rep/attunement grind.<br />
+<br />
+<br />
+*sigh*<br />
+<br />
+Naxx = Kara<br />
+<br />
+It's entry level, not end game. It's been said a thousand times....</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Barook</div><div class="date">2009-02-19, 03:51 PM</div></div><div class="posttext">I still don't get why they're nerfing Spiritual Attument when Rets are supposed to spam Exorcism in 3.1., although it's not part of our basic &quot;rotation&quot; if we don't want to run out of mana. ::) <br />
+It's not like we have challenging options to choose except &quot;Spam Exorcism, too, and go oom, or don't and gimp the DPS Blizzard was suppossed to upgrade, so we stay competitive&quot;.<br />
+<br />
+WTB better Judgement of the Wise as compensation or a better solution for Ret DPS in Ulduar.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xerxes</div><div class="date">2009-02-19, 04:11 PM</div></div><div class="posttext">Recent In-Game Fixes<br />
+<br />
+This should leave mana regeneration while casting (even the contribution of Spirit) relatively unchanged, but reduce mana regeneration while not casting by 40%.<br />
+<br />
+<br />
+So, this will be a regen nerf to the smart healers that use their time wisely to get some extra regen from the FSR, and nothing to the healers just spamming away. GG blizz, you just made priest/druid healing brainless and alot less fun.<br />
+I think nerfing the combat regen would have been a more viable way, because then the healers would actually be rewarded for thinking. But thats blizz for you, making it so easy that the fun goes away and your left spamming buttons like any monkey could do.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mushin</div><div class="date">2009-02-19, 04:25 PM</div></div><div class="posttext">So, this will be a regen nerf to the smart healers that use their time wisely to get some extra regen from the FSR, and nothing to the healers just spamming away.<br />
+<br />
+Ironically this is one of the changes they're trumpeting as part of their package to dissuade healers from spamming spells.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rugus</div><div class="date">2009-02-19, 05:29 PM</div></div><div class="posttext">Its not &quot;wrong&quot;, because all difficulties was thrown out of the windows for Casuals to experience things. They want all people to have access to heroics, and raids.<br />
+<br />
+True and -honestly- I think it's a wise choice. In theory (*).<br />
+<br />
+<br />
+As long as it really gets harder from this point, I don't see anything so wrong about that... <br />
+<br />
+<br />
+(*) True but in my opinion the game suddenly became too easy even for casual players (I am not a hardcore one, by the way). When blizzard introduced TBC, some stuff was damned too hard to obtain and yes, there was too much &quot;attunement&quot; for everything. Many players could not even test a 10-man raid due to the absurd chain quests. I for myself could never see Mount Hyjal for example (before patch 2.4 iirc) or Sunwell Plateau (due to my &quot;not-so-uber-gear&quot;). <br />
+<br />
+Did I feel like Blizz was stealing something from me, like &quot;I pay my monthly fee SO I pretend to play every single aspect of the game&quot;? Nope, not really. I knew &quot;some&quot; stuff was kind of &quot;hardcore&quot; and that was ok. After all if some people used to grind for 10 hours a day for an entire week or more... while I could play few hours a week. Hard stuff and good items require dedication (I grinded my Nether Drake mount and I loved that, I would never get one if it was just a matter of spending 10.000G).<br />
+<br />
+Right now WOTLK is more gold-oriented. Did you get 1000, 2000, 6000, 10.000 or even 20.000G? Here are your cool mounts, rings and more. Also, MANY epic items are now BoE so you just need to drop by the nearest AH and grab 4-5 epics for your freshly dinged 80 toon. Why questing for attunements, gaining rep, making experience on normal instances... when you can just spend some gold, gear your toon and directly go to heroics the 1st day?<br />
+<br />
+Don't get me wrong: TBC was too hard for some PvE aspects. Maybe too tricky, too many attunements. But now WOTLK became the exact opposite, it's just embarrassingly easy as soon as you ding 80.<br />
+<br />
+<br />
+You dps kids need to learn that not everyone can &quot;ding 80 and go clear 10-person Naxx in greens/blues.&quot; You DPS scrubs pushing 2k+ can sure. But TANKS and HEALERS need to have at LEAST a marginal level of gear in order to really get the job done. [...] They may. Maybe. But that's because they have a good mix of crafted and dungeon looted blues, not because they lawl-quested only to 80. Maybe they're a gold-buying noob who bought all the Tanking plate off of the AH.<br />
+<br />
+In my personal experience I saw so many undergeared tanks AND healers doing heroics that... I do not agree. Yes, IF you gather 5/5 undergeared players for a heroic run they will probably fail. I speak for myself, of course, but I've never came across a PUG where EVERYONE was undergeared. Bad TANKS have harder times but they can manage to finish an entire heroic run if they bring decent people with them. Instead, a green/blue tank should just fail almost immediately on any given heroic. Blue/Epic players can grind heroics like you grind herbs around the world. No tactics, no CC, no marking, no-nothing. You just go there, DPS/AOE-aggro and that's all. A freshly dinged 80-tank can immediately swap to epics on AH (shield, weapons, armor, ...). Gold it's not a problem anymore, you know that. I've got more than 25.000G on my account and I really do not know how to spend them (I do not care about a tundra mammoth or a bike, to be honest). Daily stuff is easy, VERY easy... and gives a lot of gold. Getting 1000-3000G for AH epics is easy as never before.<br />
+<br />
+<br />
+*sigh* Naxx = Kara It's entry level, not end game. It's been said a thousand times....<br />
+<br />
+Sure, but that's what we have now. Will Blizz add amazing new stuff in 3.1, 3.2 and 3.3? Great, I'm happy about that. But right now I judge what I play, that's all :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">delage35</div><div class="date">2009-02-19, 05:41 PM</div></div><div class="posttext">if my fresh level 80 dk in blues and greens can OT 10-man Naxx, then you know there's a problem. am i elitist? yeah, probably. but it does not mean blizzard should stoop down to &quot;i have downs and i even killed kt&quot;. <br />
+<br />
+<br />
+OT-ing Naxx is a joke... anyone can be carried in Naxx if most of the raid is geared decently. <br />
+<br />
+That said, decent doesnt mean uber. Naxx is still the welfare epic clearing house for the folks gearing from blues to purps. Probably a good idea to be that easy if the expectation for Ulduar is that each player is wearing nearly all Naxx gear... Oh wait, that's exactly what they just announced to the PTR crowd--shocking isn't it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rugus</div><div class="date">2009-02-19, 05:56 PM</div></div><div class="posttext">OT-ing Naxx is a joke... anyone can be carried in Naxx if most of the raid is geared decently.That said, decent doesnt mean uber. Naxx is still the welfare epic clearing house for the folks gearing from blues to purps. Probably a good idea to be that easy if the expectation for Ulduar is that each player is wearing nearly all Naxx gear... Oh wait, that's exactly what they just announced to the PTR crowd--shocking isn't it.<br />
+<br />
+Don't you feel that -overall- WOTLK is a bit &quot;easy&quot; on every aspect of the game? Gearing, questing, getting gold, ... Compared to TBC I felt like it was a kind of &quot;guided tour&quot; of Northerend where in the end I found myself covered with gold and running around Dalaran yelling &quot;LFG any heroic&quot; most of the time. That's all. I just think that Blizz should re-add some attunements to make things a little more interesting. Heroics -now- are just a matter of opening the LFG tool and look for any free spot on any dungeon.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nukson</div><div class="date">2009-02-19, 05:59 PM</div></div><div class="posttext">Im not a mage, but ye imo every cc should have a max of 10 sec with a diminishing return. No class should be able to spam any form of CC without a penalty.<br />
+<br />
+<br />
+Yes cuz tell me what defense Arcane mage has left after slow, aka CC as you called it ,would run out on diminishing return?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rothomp3</div><div class="date">2009-02-19, 06:11 PM</div></div><div class="posttext">Agreed. In my opinion the real problem with WOTLK end-game is... &quot;too easy&quot;. You can do ANY heroic, ANY raid... provided you dinged 80 (even if you're in greens). \<br />
+<br />
+<br />
+A.) The last part is utterly false if you're a tank or healer.<br />
+<br />
+B.) The first part is completely wrong because: Naxxramas is not &quot;end game&quot; any more than Karazhan was. That's the key thing everybody who complains about this is utterly missing. Wrath endgame is Arthas. To put things in perspective, you are saying, literally: &quot;Karazhan was super easy (by the end, after all the nerfs), therefore Sunwell was too easy.&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nerdrage</div><div class="date">2009-02-19, 06:16 PM</div></div><div class="posttext">Hey U guise I'm ready to heal yous for the big new 25 dungeon. Why I no can get iN?<br />
+<br />
+WTF WTF WTF is attunement? I'm going to pLAY my playstation this game stewped.<br />
+<br />
+<br />
+<br />
+<br />
+Always nice to see who this game is being made for these days.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ordin</div><div class="date">2009-02-19, 06:23 PM</div></div><div class="posttext">Don't you feel that -overall- WOTLK is a bit &quot;easy&quot; on every aspect of the game? Gearing, questing, getting gold, ... Compared to TBC I felt like it was a kind of &quot;guided tour&quot; of Northerend where in the end I found myself covered with gold and running around Dalaran yelling &quot;LFG any heroic&quot; most of the time. That's all. I just think that Blizz should re-add some attunements to make things a little more interesting. Heroics -now- are just a matter of opening the LFG tool and look for any free spot on any dungeon.<br />
+<br />
+<br />
+Attunements suck. That's not the way to make the game more interesting. They're cool when you level up your first character, but having to rep grind for every character to be able to do heroics was a huge pain.<br />
+<br />
+I love the way everything is designed in WOTLK. The tabard system for rep, the 10 man and 25 man versions of every instance, being able to use badges to get pvp and pve gear. There's lots of really great stuff that has made WOTLK a much better expansion than TBC. <br />
+<br />
+I was disappointed that the 5 man instances are so easy, but I fully expected the 10 man and 25 man instances to be relatively easy. The whole idea with the first tier of raid instances is to get guilds together and get people to raid. If you make the entry level raids difficult then less people will even attempt the future content. <br />
+<br />
+The primary goal of the 10 man and 25 man raids currently in the game is to get as many people as possible into those zones. <br />
+<br />
+It sounds like the goal with Ulduar is to have an &quot;easy mode&quot; and &quot;hard mode&quot; for a majority of the encounters, so that the people that are new to raiding won't have as steep of a learning curve when going from easy-mode Naxx to a &quot;real&quot; raid. People that have raid experience will breeze through the &quot;easy mode&quot; version of Ulduar, but hopefully the hard mode is challenging enough to be enjoyable for the hardcore crowd.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ayreonlol</div><div class="date">2009-02-19, 06:51 PM</div></div><div class="posttext">The Rogue ability Mutilate now does its appropriate damage based on talents.<br />
+<br />
+<br />
+Moar Nerfs? Or not? I am confused ???<br />
+<br />
+<br />
+Yea lol, was that a nerf? confused as well</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Seink</div><div class="date">2009-02-19, 06:53 PM</div></div><div class="posttext">Actually Blizz is very smart this time around. <br />
+<br />
+What happened in TBC was that they set the raid difficulty too high &amp; not even half the population gets to see Illadin---Kiljaden. During sunwell, they introduced T5.x Badges epic gear(which they literally gave everyone the gear since you acquire it from easier conten) just so people could keep up with the raids.<br />
+<br />
+What they're trying to do now is they make hard modes &quot;optional&quot;. This essetially means that instead of having One-very-fkn-hard-to-kill boss you have a boss thats &quot;relatively easy&quot; but theres a bunch of other stuff (like towers, xtra drakes &amp; so on) to make the encounter &quot;hard&quot;.The harder the boss you make, the better the loot is going to be. <br />
+<br />
+Naxxaramas was not a good guage to evaluate raid difficulty since they already mentioned, like thousands of times, that IT WAS INTENDED IN THE DESIGN THAT NAX IS EZMODE &amp; EVERY1 COULD DO IT.<br />
+<br />
+The question that you should ask now is not &quot;Omg. Nax is so ez. Whats wrong?&quot; but rather &quot;Omg. Nax did not seem to be ez. Whats Wrong?&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xerxes</div><div class="date">2009-02-19, 07:00 PM</div></div><div class="posttext">I find it funny how lots of ppl are just going &quot;well its entry level just like kara&quot;.. When tbc was released you had to first do normal dungeons to gear up for heroics or you were toast. Then you did heroics to gear up for kara. And then attunement and you could start. But not even BT geared was kara as easy as naxx is with gear from normal dungeons lvl 80.<br />
+And, you didnt really clear the raids available in 3 hours and was left without raid rest of the week ;P</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Newor</div><div class="date">2009-02-19, 07:35 PM</div></div><div class="posttext">Actually Blizz is very smart this time around. <br />
+<br />
+What happened in TBC was that they set the raid difficulty too high &amp; not even half the population gets to see Illadin---Kiljaden. During sunwell, they introduced T5.x Badges epic gear(which they literally gave everyone the gear since you acquire it from easier conten) just so people could keep up with the raids.<br />
+<br />
+What they're trying to do now is they make hard modes &quot;optional&quot;. This essetially means that instead of having One-very-fkn-hard-to-kill boss you have a boss thats &quot;relatively easy&quot; but theres a bunch of other stuff (like towers, xtra drakes &amp; so on) to make the encounter &quot;hard&quot;.The harder the boss you make, the better the loot is going to be. <br />
+<br />
+Naxxaramas was not a good guage to evaluate raid difficulty since they already mentioned, like thousands of times, that IT WAS INTENDED IN THE DESIGN THAT NAX IS EZMODE &amp; EVERY1 COULD DO IT.<br />
+<br />
+The question that you should ask now is not &quot;Omg. Nax is so ez. Whats wrong?&quot; but rather &quot;Omg. Nax did not seem to be ez. Whats Wrong?&quot;<br />
+<br />
+<br />
+<br />
+Not exactly. 1st they said that IF you think Naxx was easy (and also got your 80 really fast), then you were a very good/skilled/hardcore player. Because there were thousands of players who couldn't even get 80 or were suffering in Naxx.<br />
+<br />
+Then, with millions of &quot;new very good/skilled/hardcore&quot; players everywhere, they start saying that everything was suposed to be real easy and Ulduar was the &quot;phat stuff&quot;...<br />
+<br />
+Now we learn that Ulduar isn't exactly the &quot;phat stuff&quot;, but some &quot;achievements&quot;...<br />
+<br />
+I don't need Blizz to tell me how I could make a boss encounter hard. I can do that myself! <br />
+<br />
+&quot;Let's go guys, everyone half-naked and we're starting with half mana! 1-2-3 PULL!&quot;<br />
+<br />
+&quot;Groups 1 and 2 will use T4 gear, Groups 3 and 4 T5, the last group will go with fancy T2/AQ, 1-2-3 PULL!&quot;<br />
+<br />
+Ah, ok, I can't create those entries in the WoW achievement window... damn... Blizz help me!!!<br />
+<br />
+BTW, the real challenge in Sarth 3D ends up to be going with good gear... lol.<br />
+<br />
+Let's say it again, we want challenge to &quot;finish the game&quot;, not harder ways to finish it after I alread easily beat it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">stupid11</div><div class="date">2009-02-19, 07:44 PM</div></div><div class="posttext">Not exactly. 1st they said that IF you think Naxx was easy (and also got your 80 really fast), then you were a very good/skilled/hardcore player. Because there were thousands of players who couldn't even get 80 or were suffering in Naxx.<br />
+<br />
+Then, with millions of &quot;new very good/skilled/hardcore&quot; players everywhere, they start saying that everything was suposed to be real easy and Ulduar was the &quot;phat stuff&quot;...<br />
+<br />
+Now we learn that Ulduar isn't exactly the &quot;phat stuff&quot;, but some &quot;achievements&quot;...<br />
+<br />
+I don't need Blizz to tell me how I could make a boss encounter hard. I can do that myself! <br />
+<br />
+&quot;Let's go guys, everyone half-naked and we're starting with half mana! 1-2-3 PULL!&quot;<br />
+<br />
+&quot;Groups 1 and 2 will use T4 gear, Groups 3 and 4 T5, the last group will go with fancy T2/AQ, 1-2-3 PULL!&quot;<br />
+<br />
+Ah, ok, I can't create those entries in the WoW achievement window... damn... Blizz help me!!!<br />
+<br />
+BTW, the real challenge in Sarth 3D ends up to be going with good gear... lol.<br />
+<br />
+Let's say it again, we want challenge to &quot;finish the game&quot;, not harder ways to finish it after I alread easily beat it.<br />
+<br />
+<br />
+Um, you missed the part where those &quot;achievements&quot; are the only way to get the &quot;phattest stuff&quot; in Ulduar. &quot;Hard modes&quot; are not going to be just a worthless title and mount in Ulduar, they will be where the best gear comes from.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rothomp3</div><div class="date">2009-02-19, 08:06 PM</div></div><div class="posttext">I find it funny how lots of ppl are just going &quot;well its entry level just like kara&quot;.. When tbc was released you had to first do normal dungeons to gear up for heroics or you were toast. Then you did heroics to gear up for kara. And then attunement and you could start. But not even BT geared was kara as easy as naxx is with gear from normal dungeons lvl 80.<br />
+And, you didnt really clear the raids available in 3 hours and was left without raid rest of the week ;P<br />
+<br />
+<br />
+You'll note I clearly specified that Kara was easy after all the nerfs it went through. Yes, at release it was considerably more difficult than Naxxramas is now. However, Blizzard has explicitly and clearly stated they think that was a massive miss-step on their part. Entry level raiding should be entry level. It gets harder from there. Naxxramas is not endgame.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rothomp3</div><div class="date">2009-02-19, 08:10 PM</div></div><div class="posttext">Let's say it again, we want challenge to &quot;finish the game&quot;, not harder ways to finish it after I alread easily beat it.<br />
+<br />
+<br />
+Then World of Warcraft is no longer a game you're interested in playing. Blizzard hasn't beaten about the bush on this one, they've stated it very clearly: hard modes are here to stay. Yes, the base-level challenge of the raids will increase from Naxx-&gt;Ulduar-&gt;???-&gt;Icecrown, but the real challenges will always be optional from here on out.<br />
+<br />
+The good side is they've also unambiguously stated these real challenges will bring greater gear rewards, not just Achievements and titles.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Slipslider</div><div class="date">2009-02-19, 08:38 PM</div></div><div class="posttext">Not exactly. 1st they said that IF you think Naxx was easy (and also got your 80 really fast), then you were a very good/skilled/hardcore player. Because there were thousands of players who couldn't even get 80 or were suffering in Naxx.<br />
+<br />
+Then, with millions of &quot;new very good/skilled/hardcore&quot; players everywhere, they start saying that everything was suposed to be real easy and Ulduar was the &quot;phat stuff&quot;...<br />
+<br />
+Now we learn that Ulduar isn't exactly the &quot;phat stuff&quot;, but some &quot;achievements&quot;...<br />
+<br />
+I don't need Blizz to tell me how I could make a boss encounter hard. I can do that myself! <br />
+<br />
+&quot;Let's go guys, everyone half-naked and we're starting with half mana! 1-2-3 PULL!&quot;<br />
+<br />
+&quot;Groups 1 and 2 will use T4 gear, Groups 3 and 4 T5, the last group will go with fancy T2/AQ, 1-2-3 PULL!&quot;<br />
+<br />
+Ah, ok, I can't create those entries in the WoW achievement window... damn... Blizz help me!!!<br />
+<br />
+BTW, the real challenge in Sarth 3D ends up to be going with good gear... lol.<br />
+<br />
+Let's say it again, we want challenge to &quot;finish the game&quot;, not harder ways to finish it after I alread easily beat it.<br />
+<br />
+<br />
+No one is stopping you from doing the completely retarded things you listed above. Except your guildies might question the point when there are hard modes programed in for you to attempt that give you BETTER loot for completing.<br />
+<br />
+So you can do it half naked half mana for no gain, or do the hard modes and gain better loot.<br />
+<br />
+Your call.<br />
+Tip: the second one is the right choice</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">superstargoddess</div><div class="date">2009-02-19, 08:41 PM</div></div><div class="posttext">I am still seeing a lot of sucky dps, tanks, and healers &quot;attempting&quot; to do heroics and Naxx- and it doesn't always work out. Not sure what you people are talking about things being too easy. Yes, it's easy for me personally when I get a good group since I actually read about my characters to make myself better. But there are a lot of people out there that still are doing 1200dps at 80, still can't hardly keep a good tank alive, stil trying to tank without being def capped or without having enough stam.<br />
+<br />
+Maybe it's just my server or something, but all of these people that you speak of with &quot;downs&quot; that can do all of the things that you mentioned sure the hell must not be on my server... since that would be an upgrade from what I deal with now on a day to day basis!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">redraven937</div><div class="date">2009-02-19, 08:59 PM</div></div><div class="posttext">I find it funny how lots of ppl are just going &quot;well its entry level just like kara&quot;.. When tbc was released you had to first do normal dungeons to gear up for heroics or you were toast. Then you did heroics to gear up for kara. And then attunement and you could start. But not even BT geared was kara as easy as naxx is with gear from normal dungeons lvl 80.<br />
+You have such a completely distorted memory of Kara that I have to question whether you actually zoned into the instance.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rothomp3</div><div class="date">2009-02-19, 09:19 PM</div></div><div class="posttext">You have such a completely distorted memory of Kara that I have to question whether you actually zoned into the instance.<br />
+<br />
+<br />
+Since we were five-manning Kara in ZA/Badge gear, it seems extraordinarily likely the person you were quoting is one of two things: 1.) Trolling, 2.) an unmitigated idiot.<br />
+<br />
+Actually he's even more likely to be both of those.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">heerobya</div><div class="date">2009-02-19, 09:41 PM</div></div><div class="posttext">If you were playing WoW when TBC came out, and already had a 60 character.... and then got to 70.... and then when WotLK came out got to 80...<br />
+<br />
+Chances are, you're not a bad player. <br />
+<br />
+I bet you this:<br />
+<br />
+At 60: Things were hard. <br />
+<br />
+At 70: Things were a little easier, you saw some more stuff. You have a lot more experience.<br />
+<br />
+At 80: You've been playing a while, you really know your class/gear requirements. You see a LOT more stuff.<br />
+<br />
+Try an experiment.<br />
+<br />
+Find 10 or 25 people who have never played WoW before. <br />
+<br />
+Give them a few hours to learn how to play, then throw them into Naxx. What will happen? Failure. Horrible, horrible failure. <br />
+<br />
+Now, get those same 10 or 25 people. Have them make level 1 new characters and level up to 80.<br />
+<br />
+Throw them into Naxx. What will happen? They'll likely clear the place, probably not in a day, probably not in a single raid lockout period, but they'll get there.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elementium</div><div class="date">2009-02-19, 09:47 PM</div></div><div class="posttext">So how bout that comic.. Garona has pig-tails.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Canbie</div><div class="date">2009-02-20, 01:37 AM</div></div><div class="posttext">You dps kids need to learn that not everyone can &quot;ding 80 and go clear 10-person Naxx in greens/blues.&quot;<br />
+<br />
+You DPS scrubs pushing 2k+ can sure.<br />
+<br />
+But TANKS and HEALERS need to have at LEAST a marginal level of gear in order to really get the job done. <br />
+<br />
+A freshly dinged 80 Tank who kept their blacksmithing up as they went and spent the last few levels 77-80 doing nothing but instance runs for gear MAY have enough defense, avoidance, mitigation, and health to survive as being an MT in a 10 person raid. <br />
+<br />
+They may. Maybe. But that's because they have a good mix of crafted and dungeon looted blues, not because they lawl-quested only to 80. Maybe they're a gold-buying noob who bought all the Tanking plate off of the AH. <br />
+<br />
+Undergeared tank + undergeared healer = fail.<br />
+<br />
+Geared tank + geared healers + undergeared DPS = can still win.<br />
+<br />
+Learn to think/see beyond your own limited understanding of this game. <br />
+<br />
+Just because YOU can be carried through 10 and 25 raid content in your scrub blue/green gear because you are one of many scrub DPS that do juuuuuust enough Pew Pew to make it work doesn't mean that the 1 or 2 tanks/healers haven't put in a shit-ton of time and effort in getting heroic/crafted gear. <br />
+<br />
+Oh and OT 10-man naxx in blue-green? Sure, it's trash. It's adds on a boss. GL with 4 horse-men or any fight where you actually have to have two decent tanks. GL as MT of a 10 man w/ your scrub gear.<br />
+<br />
+l2heroics. l2blacksmith. <br />
+<br />
+<br />
+Thank you!<br />
+<br />
+I'm so sick of mindless DPS complaining. Anyone can faceroll a DK and do 3k dps.<br />
+<br />
+l2heal, l2tank</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rukh</div><div class="date">2009-02-20, 01:39 AM</div></div><div class="posttext">Please nerf rogue moar pls, I hear there's still a couple people playing them.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">skythra</div><div class="date">2009-02-20, 02:26 AM</div></div><div class="posttext">if my fresh level 80 dk in blues and greens can OT 10-man Naxx, then you know there's a problem. am i elitist? yeah, probably. but it does not mean blizzard should stoop down to &quot;i have downs and i even killed kt&quot;. <br />
+I did MC in blues and greens at level 60 in 2004, so I dont get your point at all. I was expected to have almost all t1 before getting into BWL, so im going to assume that you'll probably want people to have all t7 before entering uldaar.<br />
+<br />
+I see a direct 1:1 transition here.<br />
+<br />
+FYI, despite 40 people, MC wasnt hard.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pumps</div><div class="date">2009-02-20, 02:26 AM</div></div><div class="posttext">Agreed. In my opinion the real problem with WOTLK end-game is... &quot;too easy&quot;. You can do ANY heroic, ANY raid... provided you dinged 80 (even if you're in greens). <br />
+<br />
+<br />
+And everybody else in the group aren't and can carry you.<br />
+<br />
+You are just full of it.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Fermi</div><div class="date">2009-02-20, 02:39 AM</div></div><div class="posttext">I know that most people here at concerned about end-game raiding and arenas, but this nerf to mana regen is going to make leveling even worse..<br />
+<br />
+Leveling a mana class all the way to 80 just become even more of a pain in the ass. Especially at the levels before you can talent for more regen. I love my mage but having to drink after every 2-3 kills is crazy. Now the rest of the mana classes will get to enjoy the fun of sitting and drinking 40% more often while leveling. <br />
+<br />
+Congrads Ghostcrawler you found a way to make the game 40% more boring.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nozuka</div><div class="date">2009-02-20, 03:25 AM</div></div><div class="posttext">Sorry, but all I just read was, &quot;we were going to nerf Divine Plea into the ground but changed our minds&quot;<br />
+<br />
+<br />
+what are you talking about? they did nerf it and its gonna stay that way.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sting</div><div class="date">2009-02-20, 03:58 AM</div></div><div class="posttext">I did MC in blues and greens at level 60 in 2004<br />
+<br />
+<br />
+Sorry to trash your point, but how on earth would you have started MC with epic gear anyway back then.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ggeek</div><div class="date">2009-02-20, 04:06 AM</div></div><div class="posttext">I think that people are really overlooking certain aspects of the game...<br />
+<br />
+1st off blizzard is a company, company's needs to make money, the 200 &quot;hardcore&quot; raiders per server just aren't enough. You complain about aspects of the game that blizzard must change in order to keep this game that we have spent so much time on going. therefore impossible raids = no wow.<br />
+<br />
+2nd off this is kara... simple and clean... this is where non hardcore raiders will be while were in ulduar gearing ourself's to the teeth. attunements may be soon incoming, but no one should expect easy end-game raids.<br />
+<br />
+3rd off i dont care about the other nerfs, but about the QQ involving the mana regen... really? you think that taking away some mana is going to change everything that much? do you realize that its just a simple re-gem, re-enchant, maybe changing out a few pieces and your right back where you were? no one should ever have to spam... if your spaming tell your other healers to stop sucking. stack more people up before you use your mana regen ability's. yeah that mana tide is leet giving one person some mana back when it could be 5.<br />
+<br />
+i think that this change in mana is a test for healers everywhere, in fact all mana using classes. dont waist your cooldowns on yourself when the raid needs em<br />
+<br />
+any thoughts? <br />
+<br />
+khàdaj the über priest - horde draka</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rothomp3</div><div class="date">2009-02-20, 06:09 AM</div></div><div class="posttext">Sorry to trash your point, but how on earth would you have started MC with epic gear anyway back then.<br />
+<br />
+<br />
+That's the point though. MC was intro to raiding. Naxxramas is intro to raiding. That's what they tuned it for. You might not like it, but it's done on purpose. Naxxramas is not the Wrath endgame, it's the startgame.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Bahll</div><div class="date">2009-02-20, 07:48 AM</div></div><div class="posttext">Yes cuz tell me what defense Arcane mage has left after slow, aka CC as you called it ,would run out on diminishing return? <br />
+<br />
+<br />
+um poly, nova, CoC. invis....shall i continue......</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Dalanos</div><div class="date">2009-02-20, 08:59 AM</div></div><div class="posttext">What the hell does &quot;OOFSR&quot; mean? ???</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xerxes</div><div class="date">2009-02-20, 09:35 AM</div></div><div class="posttext">Since we were five-manning Kara in ZA/Badge gear, it seems extraordinarily likely the person you were quoting is one of two things: 1.) Trolling, 2.) an unmitigated idiot.<br />
+<br />
+Actually he's even more likely to be both of those.<br />
+<br />
+<br />
+Well, ZA wasnt available from the start, it was released later. When tbc started you couldnt just quest your way to 70 and clear kara easy, unless you had the other ppl there carry you through kara. There was wipe after wipe learning the bosses in kara. And back then kara ususally took two days clearing unless you had a hardcore raiding guild. Once our guild had that on farm and we started ssc/tk there were actually less wiping. Even BT had less wiping then kara did at the start. <br />
+Naxx though.. Entering it for the first time, noone of us knew anything about the place, and we had less then three wipes on every boss is just to easy. Some of the bosses got oneshotted even though ppl never had seen the bosses before.<br />
+So as some stated, I hope its only because ppl became faster learners after raiding in tbc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mahtamori</div><div class="date">2009-02-20, 10:04 AM</div></div><div class="posttext">So, healers are going to have more or less the same mana capacity, as in regeneration, longevity, etc. Not the same at each point, but in total it's going to be roughly the same time until OOM.<br />
+I'm dying to ask a few questions to GC, keep in mind I don't actually play a class capable of healing, but I used to.<br />
+<br />
+1. How are they comparing mana? Most classes have spells for AOE healing, but not all of them. Will they compare with AOE in the rotation of the others? Will it be with Greater Heal-like spells? Do Druids even have such a spell?<br />
+<br />
+2. Paladins as a healer are designed to be longevity healer - this is the reason they don't have an AOE heal in the first place. Has Paladin healing changed drastically since TBC in some way, or would it not imply that Paladins would be strictly second rate healers since they can't do anything while healing and can't AOE heal reliably?<br />
+<br />
+3. At what gear level is mana meant to break even? Spells don't increase in cost from better gear, unless you spam-heal and stack haste. If a tier 9 dressed healer is meant to be able to heal 5 minute fights, I highly doubt a blue-geared healer will last more than a minute. This is a problem with letting mana regeneration scale with gear level, but not having the spell costs scale as well.<br />
+<br />
+4. The Spiritual Attunement remark seem directed towards Holy Paladins who sneak in extra mana regen by stepping into fires, but how would this affect Retribution Paladins? (This is actually a general question, I don't know how tight mana regen is for Ret Pallies)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Nidhöggr</div><div class="date">2009-02-20, 10:08 AM</div></div><div class="posttext">A.) The last part is utterly false if you're a tank or healer.<br />
+<br />
+B.) The first part is completely wrong because: Naxxramas is not &quot;end game&quot; any more than Karazhan was. That's the key thing everybody who complains about this is utterly missing. Wrath endgame is Arthas. To put things in perspective, you are saying, literally: &quot;Karazhan was super easy (by the end, after all the nerfs), therefore Sunwell was too easy.&quot;<br />
+<br />
+<br />
+Endgame or not, Naxxramas feels with actual gear level like Karazhan felt in T6 Gear.<br />
+So saying &quot;it's all because it's not endgame&quot; is closely wrong. Karazhan Pre Nerfs wasn't endgame either, but it was a challange AND it was doable by most people.<br />
+<br />
+Thing is, WOTLK destroyed all the gearing up process we had in Classic and TBC and all the preperation for raids, just to make sure everyone get's his free epics. But what's great about epics when everyone get's them without any challange ? <br />
+I really liked the pre-raiding stuff in TBC, gearing up in blue, making questchains for Karazhan and so on. You had some subgoals to achieve, something to look forward to. It was motivating, even without getting epics, because you had something to play for. What's wrong about doing 5 man and questchains, gearing up with a dungeon set before going to the raids ? Nothing really, but it seems some people than felt less worthy, so Blizz has to change ist.<br />
+<br />
+The irony is:<br />
+In TBC, after 4 Weeks everyone runs around in blues, in WOTLK, everyone runs around in purples. Did you casuals now feel better ? Is your gear more worthwhile than before ? You did have exactly the same stuff now than you had in TBC, the only difference is, that in TBC the font's where blue, now it's purple. You're just to blind to see. And the result is, that most people have nothing more to do, because nobody cares for normal dungeons, heroics are outgeared aswell and naxxramas is cleared multiple times. WOTLK feels like TBC shipping without any raidinstance.<br />
+<br />
+With a moderate gearing up process, wotlk wouldn't feel this worn out 2 month after release.<br />
+<br />
+<br />
+<br />
+<br />
+Naxxaramas was not a good guage to evaluate raid difficulty since they already mentioned, like thousands of times, that IT WAS INTENDED IN THE DESIGN THAT NAX IS EZMODE &amp; EVERY1 COULD DO IT.<br />
+<br />
+<br />
+Nobody says it wasn't intended.<br />
+What we're saying is, it was the wrong decision.<br />
+<br />
+<br />
+You'll note I clearly specified that Kara was easy after all the nerfs it went through. Yes, at release it was considerably more difficult than Naxxramas is now. However, Blizzard has explicitly and clearly stated they think that was a massive miss-step on their part. Entry level raiding should be entry level. It gets harder from there. Naxxramas is not endgame.<br />
+<br />
+<br />
+This really scares me. After 4 years blizz thinks they have to make an entry level raid for people probably never seen the game before. So are they going to do this failure AGAIN in the next AddOn ?! :-\ Cause there WILL be an entry level raid for sure. Nobody expects Sunwell or BT, but Naxxramas is like 5 Man Dungeon with to many people.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">bigamie</div><div class="date">2009-02-20, 10:12 AM</div></div><div class="posttext">What the hell does &quot;OOFSR&quot; mean? ???<br />
+<br />
+<br />
+it just means &quot;out of five second rule&quot;<br />
+<br />
+I'm just a bit concerned, if they are going to buff imp. spirit tap.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Jukaï</div><div class="date">2009-02-20, 11:53 AM</div></div><div class="posttext">The Rogue ability Mutilate now does its appropriate damage based on talents.<br />
+<br />
+<br />
+Moar Nerfs? Or not? I am confused* ???<br />
+<br />
+<br />
+AFAIK, there were certain talents not giving proper properties to mutilate, which made it do even less damage then the previous flat nerf intended. Seems they fixed that. <br />
+To all the 'dont/do nerf Rogue more'-criers:<br />
+<br />
+I lol'd.<br />
+<br />
+On the subject where people actually try to say 'us healers' are 'crying', let me spill it out once more:<br />
+<br />
+It's not our problem that they 'fix' our mana regeneration, neither is it that Blizzard is looking it giving us a bit more of a challange. What is the troublesome part about this trend is that both the DPS and tanking role got numbed down and simplified just because Blizzard seems to have this idea that they must please these players.<br />
+<br />
+What this leads to however, is not only ignorance on the large picture at hand leading to such dumb claims as &quot;This game is so easy, I can go to Naxxramas and clear it in blue items!&quot; but it will also lead to Blizzard putting the 'benchmarks' required to make encounter remotely challenging on us. The healers.<br />
+<br />
+Thus the healers will lead to even more stressful times, since we are already dealing with a unhealthy pool of players who cannot even phantom such basic gameplay elements such as 'aggro', 'pulling' and 'CC', putting strain on the healers which in turn makes the game less fun to play.<br />
+<br />
+QQ TL;DR:<br />
+<br />
+Do not only 'enforce' challenging gameplay elements on the healers, make it effect -at least- the DPS players as well.<br />
+<br />
+(Edit: Go read heerobya's post on page 2.)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Pumps</div><div class="date">2009-02-20, 11:54 AM</div></div><div class="posttext">I dinged 80, did like 5 heroics, and cleared Naxx10 that night in my full T6 healing gear. 2 Healers and the pallie wasnt that geared either. <br />
+<br />
+The content is easy, <br />
+<br />
+<br />
+If you are in &quot;T6&quot; which most people aren't, most people don't even know what it means.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mushin</div><div class="date">2009-02-20, 12:12 PM</div></div><div class="posttext">3rd off i dont care about the other nerfs, but about the QQ involving the mana regen... really? you think that taking away some mana is going to change everything that much? do you realize that its just a simple re-gem, re-enchant, maybe changing out a few pieces and your right back where you were? no one should ever have to spam... if your spaming tell your other healers to stop sucking. stack more people up before you use your mana regen ability's. yeah that mana tide is leet giving one person some mana back when it could be 5.<br />
+<br />
+i think that this change in mana is a test for healers everywhere, in fact all mana using classes. dont waist your cooldowns on yourself when the raid needs em<br />
+<br />
+any thoughts?<br />
+<br />
+You cannot make up the mana regen nerf difference with gems and enchants.<br />
+<br />
+It is definitely a test for healers everywhere, especially those shaman who don't have any changes at all incoming to their mana regen and are renowned as the spam healer.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">stupid11</div><div class="date">2009-02-20, 12:42 PM</div></div><div class="posttext">If you are in &quot;T6&quot; which most people aren't, most people don't even know what it means.<br />
+<br />
+<br />
+T6 is worse than heroic blues, and about equal to normal 80 blues.<br />
+<br />
+<br />
+Yes cuz tell me what defense Arcane mage has left after slow, aka CC as you called it ,would run out on diminishing return?<br />
+<br />
+you never run out of slow. You can spam it forever.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Exera</div><div class="date">2009-02-20, 12:46 PM</div></div><div class="posttext">I know that most people here at concerned about end-game raiding and arenas, but this nerf to mana regen is going to make leveling even worse..<br />
+<br />
+Leveling a mana class all the way to 80 just become even more of a pain in the ass. Especially at the levels before you can talent for more regen. I love my mage but having to drink after every 2-3 kills is crazy. Now the rest of the mana classes will get to enjoy the fun of sitting and drinking 40% more often while leveling. <br />
+<br />
+Congrads Ghostcrawler you found a way to make the game 40% more boring.<br />
+<br />
+<br />
+You had to drink after every 2-3 kills as a mage? I remember that only happening between 1-60 after that I could pretty much go on forever without mana breaks, only time I needed to take breaks was when I did big pulls that made me take damage. From 70-80 I hardly had any downtime because of mana, evication and mana gems could keep me going pretty much non stop.<br />
+<br />
+I can only see this as a problem during the first lvls, but these lvls you blitz through anyways.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Exera</div><div class="date">2009-02-20, 12:51 PM</div></div><div class="posttext">um poly, nova, CoC. invis....shall i continue......<br />
+<br />
+<br />
+Of those only 2 is a real CC, one is on a fairly long CD and requires basically melee range, the other breaks from a sneeze and is extremely vulnerable to pushbacks. CoC is not a CC, it has a chance to freeze you if you're frost yes, but atm hardly anyone is frost and even then you cant rely on frostbite proccs as a form of CC(and fyi frostbite are subject to DR). Invis a form of CC? lol.<br />
+<br />
+I'm not saying Slow shouldn't be on the 10 second rule as others, but you make fail points to back up what you say.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Endil</div><div class="date">2009-02-20, 01:29 PM</div></div><div class="posttext">Of those only 2 is a real CC, one is on a fairly long CD and requires basically melee range, the other breaks from a sneeze and is extremely vulnerable to pushbacks. CoC is not a CC, it has a chance to freeze you if you're frost yes, but atm hardly anyone is frost and even then you cant rely on frostbite proccs as a form of CC(and fyi frostbite are subject to DR). Invis a form of CC? lol.<br />
+<br />
+I'm not saying Slow shouldn't be on the 10 second rule as others, but you make fail points to back up what you say.<br />
+<br />
+<br />
+Most of the top Mages in Arena settings are Frost.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">SFJake</div><div class="date">2009-02-20, 02:54 PM</div></div><div class="posttext">You had to drink after every 2-3 kills as a mage? I remember that only happening between 1-60<br />
+<br />
+Yeah, ONLY between 1-60, which are the most boring levels already and can take some time.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Wiimage</div><div class="date">2009-02-20, 03:33 PM</div></div><div class="posttext">I am a FFB mage using Molten armor have almost never ran out of mana on bosses when only using 1 or 2 mana gems :) and with this Pyromaniac upgrade it should be absolutley no problem :) mages can have 130% mana regen in combat now :P but its caped at 100% :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">anothername</div><div class="date">2009-02-20, 06:43 PM</div></div><div class="posttext">Recent In-Game Fixes<br />
+Listed below are recent fixes we have applied to the game.<br />
+..<br />
+<br />
+Tweaks to mana regeneration in 3.1<br />
+<br />
+.<br />
+.<br />
+[list] Since paladins don't rely on any of those abilities for mana regeneration, we lowered the healing penalty of Divine Plea to -50%. [b]We are also likely to make Spiritual Attunement provide less mana for non-tanking paladins. We are not touching Illumination for the moment. Nor are we lowering the effects of Replenishment (though as I have suggested, it would be our likely next target if we aren't happy with the results of these changes). <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+For healing Paladins it is a VERY situational nerf. At least far more as for a Ret Paladin using Blood/Martyr. Right now our DPS is.. okay. Mostly. But Manamanagement in longer fights can be hell even now without the nerfs. :-\<br />
+<br />
+Why don´t you start creating encounters based on classes in game, not &quot;fixing&quot; classes around every new encounter ;)<br />
+<br />
+&quot;Oh, many undead. Down with ret dps. Oh, not that many undead anymore. Exo against everything&quot; *facepalm*</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Sheldane</div><div class="date">2009-02-20, 06:49 PM</div></div><div class="posttext">Jesus does anyone even post except to complain about how easy the game is?<br />
+<br />
+People claiming you can walk into heroics and Naxx wearing greens are utter morons. Yes, you can be carried through if the other people in your group know what they are doing and are geared. But you send a five-man to heroic AN in greens and blues and they aren't going to make it past the 2nd pull. Send them to Naxx and you aren't going to beat the enrage timers when they are putting out 1200 dps.<br />
+<br />
+I have to say the existing curve is about perfect. Any harder and I wouldn't waste my time raiding. I'm not a raider at heart, I just like having a good time with friends. In BC we did that in PvP and heroics because raiding just took too much time. Now, we raid 2 hours a night 3 nights a week, we just downed KT a couple of weeks ago and we certainly don't have him on farm yet. We may not get him this week because we don't raid Saturday or Sunday because most of us aren't around those days.<br />
+<br />
+But here is the thing, Naxx is actually fun. Yeah, we have to work to learn new bosses, but we can see progression. My first time in Naxx with no experience there, we got Anub'Rekan down to 75% the first time, 20% the second time, and downed him the 3rd time. That was fun. If we had gotten him down to 80% every time and got him to 65% after a dozen wipes, I wouldn't have come back.<br />
+<br />
+Now we are to the point where we can 2-man heal the 4 horsemen. Grob is still the hardest boss in the instance because of the random spin/spawn 5 slimes/wipe. Saph and KT are hard, but we can down them after a wipe or two.<br />
+<br />
+If Ulduar is zomg hard and it takes us 10 hours a week, I'm not going. I'll run alts through Naxx where I can actually enjoy myself. And when D3 releases eventually, my choice will be pretty easy. But if further instances are about like Naxx where we can get through it and take a stab at hard mode when we feel up to it, well I'm really looking forward to that.<br />
+<br />
+Now, on topic,<br />
+<br />
+I don't know about these changes. I spend a lot of time outside the FSR because I hot up the tank and try and regen my mana back to 100% - just in case the shit hits the fan and I have to dump 100% of my mana to keep everyone alive. That is fun mana management to me.<br />
+<br />
+I'm not sure what the point will be in not spam-casting. I will have no motivation to try to eek out that last .2 seconds of regen while letting my dps flirt with death. The difference between throwing the minimum heal now and a bigger heal later will be next to nothing. So I'm going to be healing like a paladin - if someone is missing some hp, that's a heal. I'll just use lifebloom instead of flash of light.<br />
+<br />
+Oh, and I'll probably have to drink after pulls now, too. Won't that fun, everyone waiting around for 20s for me to be ready for the next pull? At least changing the 5s rule to a 10s rule would screw me over the same way except I could regen mana naturally between pulls...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Xerxes</div><div class="date">2009-02-20, 07:29 PM</div></div><div class="posttext">Jesus does anyone even post except to complain about how easy the game is?<br />
+<br />
+...<br />
+<br />
+Oh, and I'll probably have to drink after pulls now, too. Won't that fun, everyone waiting around for 20s for me to be ready for the next pull? At least changing the 5s rule to a 10s rule would screw me over the same way except I could regen mana naturally between pulls...<br />
+<br />
+<br />
+Actually, as a resto druid here, a 10sr would be prefered against the current changes comming. Or maybe 7sr or something. Point being is that spirit based healers have always had to think about their healing and used the 5sr not to go oom. Now we get so crazy regen that we almost never go oom (unless the other healers are slacking or undergeared), they nerf the one thing that seperates us from shamans/paladins. <br />
+Yeah, today i healed 58% of a VoA 10-man with 3 healers, and was just closing in on 0 mana without the innervate at the end. With innervate I could have spammed some more and healed maybe 70% alone. Which is high mana regen, but I also got almost all gear I can get atm, not that much upgrades left. Even got different gear in bags for different occasions.<br />
+But blizz could downgrade regen and still leave out of combat regen as a viable way to regen mana. After all, we dont have evocation every 2 min. (Yes, we got innervate/mana fiend, but thats on longer cd's)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">topfer</div><div class="date">2009-02-20, 07:50 PM</div></div><div class="posttext">If you are in &quot;T6&quot; which most people aren't, most people don't even know what it means.<br />
+<br />
+<br />
+Uh badge loot at the end of TBC was equivalent in item budget to all but sunwell gear. Naxx is *too* easy, even for casuals.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">AetherMcLoud</div><div class="date">2009-02-20, 08:07 PM</div></div><div class="posttext">That's the point though. MC was intro to raiding. Naxxramas is intro to raiding. That's what they tuned it for. You might not like it, but it's done on purpose. Naxxramas is not the Wrath endgame, it's the startgame.<br />
+<br />
+<br />
+At least there are some sensible here that get &quot;it&quot; (which if you think about it isn't hard to get anyway :P).<br />
+<br />
+Endgame while there was no bwl was basically majordomo and ragnaros (well and onyxia?). And despite MC being (if you have lets say 25 people :wink: out of 40 that know their stuff and don't slack off) rather easy, majordomo required rather serious ... whats the word... coordination [me no native english lulz]. And ragnaros was quite the raid wiper too. Then came bwl which was a step up from mc.<br />
+<br />
+Now endgame is sarth3d and to a lesser extend malygos. Sarth 3d is quick (rather really for our group because we always have 4-5dps slackers) hard, and again malygos needs coordination, movement and good dps. Then Ulduar will come and it will be a step up from that. <br />
+<br />
+Now, did those who call shenangians now, call them at level 60 too?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rahogg</div><div class="date">2009-02-20, 09:45 PM</div></div><div class="posttext">It's not that Naxx is easy, it's that Naxx is easy enough to pug a raid with people who have no gear and may be legally retarded and still kill KT. Yes Kara was easy when we were all rocking t6 or t6.5 of course it was. The problem I have no is that Naxx was just as easy in t6.5 as Kara was. Elitist or not everyone can remember in the early days of BC wiping on Morose or Realizing that your Bear just wasn't going to cut it on Prince. Now it's not like that. There is no learning curve, you over power all the bosses. There are some bosses like GWF that with a competent alt group in blues and greens you completely ignore the strat and just make it a DPS/Healer Race. Kara got like that towards the end of BC but it was not that easy to when you started even if you already knew all the fights. Even in full T4 it wasn't this easy. I don't mind the &quot;Casual&quot; Players getting to see bosses, I have some friends that I would classify as casual and they are really enjoying themselves, but they know how to play there classes, hot to gear their toons, how to not stand in fire, it's not secenry by the way. My real complaint is that I have to sort through guild app with hunters wearing leather or even worse ele. shammy gear. Cause spell power makes there arcane shot hit harder or some stupid crap. In BC I didn't have to deal with this crap because those morons couldn't get purples. Now I tell them that they are getting rejected for not having any idea what they are doing or how to gear there toons and they come back with &quot;Well I killed KT last night on heroic I can't be that bad!&quot;. What am I supposed to do with that it makes me want to kick babies and vote for IQ tests before people are allowed to reproduce. Sorry my post isn't very PC if you have a Mentally Handicapped person in your family, I'm sorry if I offended you. I'm sure your relatives are smarter than these morons.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">plusminus</div><div class="date">2009-02-21, 12:43 AM</div></div><div class="posttext">Naxx is not 'too easy': We clear all content: sarth3d, naxx + maly 6min in one night. I guess you can call us hardcore. Anyway, this also means that if you have something to do on wednesday (eu), you are unlucky and have to either go with our alt run or with a pug. I did it with a pug a few weeks ago and it was horrible. We spent 8 hours in naxx.. 8 hours of wiping, getting replacements, peoples mothers calling for dinner, people's cats being on fire... it was horendous.. I would rather skip a week than go with a pug again. It is -not- something you do when you are in greens with no clue. suffice to say we didn't even finish it.<br />
+ps) we are looking for a feral druid - www.sinisters-guild.net (eu).</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">greenmasheen</div><div class="date">2009-02-21, 09:31 AM</div></div><div class="posttext">Sheep perhaps didn't destroy the totem, although the spell got grounded by the totem.<br />
+<br />
+Dunno about ulduar. Looks boring.<br />
+Just another instance that you get rid off after the first few runs.<br />
+<br />
+neither did counterspell :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">RichRahl</div><div class="date">2009-02-22, 01:55 AM</div></div><div class="posttext">i love how they call this rediculous nurf bat beating they are giving priest and druid healers a &quot;in game fix&quot; as if we were broken. i dont see a good holy pally or resto shammy runnin oom in any raid setting so im not sure what these morons base their info on</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Martholorax</div><div class="date">2009-02-22, 07:48 PM</div></div><div class="posttext">Garona is taken captive by the Forsaken, but to what end? <br />
+<br />
+<br />
+Those were twilight cultists, not forsaken.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Balls</div><div class="date">2009-02-23, 03:09 AM</div></div><div class="posttext">Yes cuz tell me what defense Arcane mage has left after slow, aka CC as you called it ,would run out on diminishing return? <br />
+<br />
+<br />
+Instant invis, blink, iceblock, pom sheep, nova, defensive silence (on a mana based dps class)... spoiled fucking brats.<br />
+<br />
+l2p noob</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Delacroix</div><div class="date">2009-02-23, 03:28 AM</div></div><div class="posttext">Seeing as Garona has been kidnapped by Twilight Cultists and taken to their leader, who is pictured as an ogre-magi.. does this mean Cho'gall is alive? O_o Seeing as he was the leader of the Twilight Cultists clan way back..</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HotsPal</div><div class="date">2009-02-23, 01:06 PM</div></div><div class="posttext">Paladin (Skills List / Talent + Glyph Calc.)<br />
+Nerfing mana regeneration<br />
+Our intention is not to nerf Ret mana generation. Our intention is to nerf Holy mana generation. In our tests, mana generation for Holy healers was quite variable depending on whether the paladin is taking damage or not. Since we don't want fights that do raid damage to always be easier than fights that don't do raid damage, Spiritual Attunement is something we are looking at.<br />
+<br />
+This is not the actual solution that we are going to do, but if it make you feel better, imagine that SA becomes a talent in both deep Protection and deep Retribution so that non-healing paladins are not mana starved.<br />
+<br />
+We're also not trying to cripple Holy paladins. But they are very dominant in Arenas at the moment (which is partially a function of what is happening to other classes), and they have very few mana problems even on challenging PvE content (like Ulduar). We do need to look at them. (Source)<br />
+<br />
+----<br />
+<br />
+um does anyone wanna explain to me what Spiritual Attunement does for holy pallys in arenas?<br />
+is there a team of 2 or 3 holy pallys who are just healing themselves and never dieing or running oom that i dont know about?<br />
+<br />
+they are dominant in pvp for one simple reason, they are in plate, yet seems like blizz has had a hard on for spiritual attun for several weeks now. They dont get there face totaly run over by dks, can survive rogue cooldowns, and can bubble mages burst dmg. THAT is why they are dominant as partners in arena. <br />
+<br />
+Now-when you factor in mana burn-holy pallys really suck. They have hardly NO mp5 gear, and now that plea is nurfed cant restore mana and heal at the same time with ANY effectiveness. Maybe the problem isnt that its over run with pallys, maybe the problem is there isnt enough PRIESTS to burn mana?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Vara</div><div class="date">2009-02-23, 07:02 PM</div></div><div class="posttext">Paladin (Skills List / Talent + Glyph Calc.)<br />
+Nerfing mana regeneration<br />
+Our intention is not to nerf Ret mana generation. Our intention is to nerf Holy mana generation. In our tests, mana generation for Holy healers was quite variable depending on whether the paladin is taking damage or not. Since we don't want fights that do raid damage to always be easier than fights that don't do raid damage, Spiritual Attunement is something we are looking at.<br />
+<br />
+This is not the actual solution that we are going to do, but if it make you feel better, imagine that SA becomes a talent in both deep Protection and deep Retribution so that non-healing paladins are not mana starved.<br />
+<br />
+We're also not trying to cripple Holy paladins. But they are very dominant in Arenas at the moment (which is partially a function of what is happening to other classes), and they have very few mana problems even on challenging PvE content (like Ulduar). We do need to look at them. (Source) <br />
+<br />
+<br />
+----<br />
+<br />
+um does anyone wanna explain to me what Spiritual Attunement does for holy pallys in arenas?<br />
+is there a team of 2 or 3 holy pallys who are just healing themselves and never dieing or running oom that i dont know about?<br />
+<br />
+they are dominant in pvp for one simple reason, they are in plate, yet seems like blizz has had a hard on for spiritual attun for several weeks now. They dont get there face totaly run over by dks, can survive rogue cooldowns, and can bubble mages burst dmg. THAT is why they are dominant as partners in arena. <br />
+<br />
+Now-when you factor in mana burn-holy pallys really suck. They have hardly NO mp5 gear, and now that plea is nurfed cant restore mana and heal at the same time with ANY effectiveness. Maybe the problem isnt that its over run with pallys, maybe the problem is there isnt enough PRIESTS to burn mana? <br />
+<br />
+OMG what world do you live in? I know several holy pallies, and a few Ret that could never even break 1700 in S-3 S-4, and now they facerolled to 2000+. On the contrary priests now have a huge uphill battle as does resto druids in the arena. Plate means nothing compared to magic damage -ask any warrior going up against a competent frost mage how that plate is working for them...<br />
+<br />
+Paladins are god-mode currently and needs a fixing urgently.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mushin</div><div class="date">2009-02-23, 10:03 PM</div></div><div class="posttext">um does anyone wanna explain to me what Spiritual Attunement does for holy pallys in arenas?<br />
+is there a team of 2 or 3 holy pallys who are just healing themselves and never dieing or running oom that i dont know about?<br />
+<br />
+they are dominant in pvp for one simple reason, they are in plate, yet seems like blizz has had a hard on for spiritual attun for several weeks now. They dont get there face totaly run over by dks, can survive rogue cooldowns, and can bubble mages burst dmg. THAT is why they are dominant as partners in arena.<br />
+<br />
+First, yes. Pally/Pally is not a high ranking team, but by god is it frustrating to fight. My 3s team uses a pally healer and we feed him mana through an enhance shaman instant healing him - it's very easy to collect collateral damage even if a team is not hitting you, and they are so mana efficient that even a sliver of bule bar lets him keep casting.<br />
+<br />
+They are dominant in pvp for one reason, and it's not that they're in plate. It's because they have more tools to control a fight and support their team mate than any other healer - offensive stuns, defensive stun/snare/root/magic/poison/disease dispels with a granted physical immunity and personal total immunity as well as better mana efficiency than every other class regardless of spec. <br />
+The fact that they have plate on top of those tools is just the icing on the issue, and removing it would do nothing except make comps including a rogue be able to force bubble several minutes earlier.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HotsPal</div><div class="date">2009-02-23, 10:11 PM</div></div><div class="posttext">OMG what world do you live in? I know several holy pallies, and a few Ret that could never even break 1700 in S-3 S-4, and now they facerolled to 2000+. On the contrary priests now have a huge uphill battle as does resto druids in the arena. Plate means nothing compared to magic damage -ask any warrior going up against a competent frost mage how that plate is working for them...<br />
+<br />
+Paladins are god-mode currently and needs a fixing urgently.<br />
+<br />
+<br />
+<br />
+so like i said. maybe the problem isnt the paladin-but the counter classes.<br />
+you dont see spriests in arenas must anymore-they WERE nightmares to pallys.<br />
+<br />
+MANA BURN is aweful as a holy pally, but noones doing it now because there is noone to do it. Its the chain of nurfing. Nurf priests, see less of them, another class comes to the top.<br />
+<br />
+and as far as plate goes, id take a plate wearer over a clothy anyday in arena. Its common sense to think your gonna get a rogue, or a dk, or a hunter, or a warrior.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HotsPal</div><div class="date">2009-02-23, 10:21 PM</div></div><div class="posttext">First, yes. Pally/Pally is not a high ranking team, but by god is it frustrating to fight. My 3s team uses a pally healer and we feed him mana through an enhance shaman instant healing him - it's very easy to collect collateral damage even if a team is not hitting you, and they are so mana efficient that even a sliver of bule bar lets him keep casting.<br />
+<br />
+They are dominant in pvp for one reason, and it's not that they're in plate. It's because they have more tools to control a fight and support their team mate than any other healer - offensive stuns, defensive stun/snare/root/magic/poison/disease dispels with a granted physical immunity and personal total immunity as well as better mana efficiency than every other class regardless of spec. <br />
+The fact that they have plate on top of those tools is just the icing on the issue, and removing it would do nothing except make comps including a rogue be able to force bubble several minutes earlier.<br />
+<br />
+<br />
+<br />
+so nurf ENHANCE shamans instant heals. <br />
+and idk if you rly know this, but i belive the balance of holy pallys 'tools to control a fight' as you calld them is balanced by other healers ability to actually dps aswell. Holy pallys have NO offensive ability other than shock and judge. And even if they both crit its not even 4k dmg.<br />
+<br />
+And its not like there not any more effective cc's that other healers have, such as cyclone or hex. Compared to stun, they are both worse. you wanna nurf pallys, then give them some hots to make up for having to CAST every spell. They are sitting ducks to shocks and CS's. Maybe find a mage that can CS for ur 2s and youll be good. U can kill a holy pally in 8 seconds.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HotsPal</div><div class="date">2009-02-23, 10:30 PM</div></div><div class="posttext">and im still waitin for someone to explain to me how SA is being abused in arena. Pallys have an obserdly low mp5, its almost non existant. They gain mana based on critting heals or being healed.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mushin</div><div class="date">2009-02-23, 11:26 PM</div></div><div class="posttext">and idk if you rly know this, but i belive the balance of holy pallys 'tools to control a fight' as you calld them is balanced by other healers ability to actually dps aswell. Holy pallys have NO offensive ability other than shock and judge. And even if they both crit its not even 4k dmg.<br />
+<br />
+It doesn't matter how well you dps if you're always being controlled, especially not when in my case my dps demands that I give up a shock cooldown and therefore a spell interrupt.<br />
+If you wanted a back-up mediocre dps partner, I would agree you would not choose a pally. If you wanted a healer, you would choose a pally.<br />
+<br />
+<br />
+And its not like there not any more effective cc's that other healers have, such as cyclone or hex. Compared to stun, they are both worse. you wanna nurf pallys, then give them some hots to make up for having to CAST every spell. They are sitting ducks to shocks and CS's. Maybe find a mage that can CS for ur 2s and youll be good. U can kill a holy pally in 8 seconds.<br />
+<br />
+Cyclone doesn't let your team continue to damage that player, and Hex doesn't stop them LOSing you. They can be more effective than a stun in certain situations, but someone being completely unable to avoid incoming attacks in any way as well as unable to take action is more useful in general.<br />
+You cannot kill a holy pally in 8 seconds until all their cooldowns are all blown unless the person playing them is having a stroke.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">HotsPal</div><div class="date">2009-02-24, 06:08 PM</div></div><div class="posttext">It doesn't matter how well you dps if you're always being controlled, especially not when in my case my dps demands that I give up a shock cooldown and therefore a spell interrupt.<br />
+If you wanted a back-up mediocre dps partner, I would agree you would not choose a pally. If you wanted a healer, you would choose a pally.<br />
+<br />
+Cyclone doesn't let your team continue to damage that player, and Hex doesn't stop them LOSing you. They can be more effective than a stun in certain situations, but someone being completely unable to avoid incoming attacks in any way as well as unable to take action is more useful in general.<br />
+You cannot kill a holy pally in 8 seconds until all their cooldowns are all blown unless the person playing them is having a stroke.<br />
+<br />
+<br />
+<br />
+a holy pally who is hit with a CS has everything on cooldown, including bubble for 8 seconds. so lets do some fast math, well even say the mage sucks and only does 1.5k dps. So 8 x 1.5k = 12000 dmg done. And thats from a sucky mage before a pally can even do a thing. I know with 750 resil i only have around 17k hp. So a sucky mage can come damn close to killing me, let alone a non sucky mage, or combined with another dps.<br />
+<br />
+and yet again, what does this have to do with SA?<br />
+They sight SA as a specific problem in arena, and ppl keep saying it makes pallys 'god mode'. I fail to see the connection to SA and god mode in arena.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>

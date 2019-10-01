@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="the, lfr, far, raiding, most, that, really, popular, form, like, have, only, done, subscribers, many, know, how, true, blue, tweets, dlc, progression, orgrimmar, stats, siege, 423, well, might, armory, thought, ive, charts, indicate, what, which" />
+<meta name="description" content="&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; A Brief Look At Transmogrification, Suggestions for Fixing Current RoS Beta Issues, Eat Game Live: Reaper of Soles 
+ 
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Hearthstone: Top 5 Plays of the Week, Weekly News Recap 
+ 
+Armory Stats - Siege" />
+<title> Armory Stats - Siege of Orgrimmar Progression, Blue Tweets, DLC #423 [Archive]  - MMO-Champion</title>
+<link rel="stylesheet" type="text/css" href="https://www.mmo-champion.com/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.mmo-champion.com/archive/index.php">MMO-Champion</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-242.html">News</a> &gt; <a href="https://www.mmo-champion.com/archive/index.php/f-252.html">News</a> &gt; Armory Stats - Siege of Orgrimmar Progression, Blue Tweets, DLC #423</div>
+<hr />
+<div class="pda"><a href="https://www.mmo-champion.com/archive/index.php/t-1437983.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://www.mmo-champion.com/threads/1437983-Armory-Stats-Siege-of-Orgrimmar-Progression-Blue-Tweets-DLC-423">Armory Stats - Siege of Orgrimmar Progression, Blue Tweets, DLC #423</a></p>
+<hr />
+<div class="floatcontainer"> </div><br />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-13, 02:03 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; A Brief Look At Transmogrification, Suggestions for Fixing Current RoS Beta Issues, Eat Game Live: Reaper of Soles (http://www.diablofans.com/news/47907-a-brief-look-at-transmogrification-suggestions-for)<br />
+<br />
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Hearthstone: Top 5 Plays of the Week, Weekly News Recap (http://www.hearthpwn.com/news/256-hearthstone-top-5-plays-of-the-week-weekly-news)<br />
+<br />
+Armory Stats - Siege of Orgrimmar Progression<br />
+Today we are taking a look at the Siege of Orgrimmar progression of players in each difficulty. Now that achievements are account wide, we can group characters by account and get an idea of what percentage of players (not characters) have defeated a boss on any difficulty at least once, based on progression data.<br />
+<br />
+The data used today is a sample made up of 6.9 million characters from 2.5 million accounts, with at least one character active after November 1. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. <br />
+<br />
+The second chart uses the number of players that killed Immerseus in each difficulty as the base of participating players for that difficulty. Each difficulty can be toggled on and off by clicking the name in the legend.<br />
+<br />
+We looked at absolute percentage numbers for Heroic difficulty a few days ago (http://www.mmo-champion.com/content/3678-Armory-Stats-Heroic-SoO-Progression-Blizzard-CS-Callback-Blue-Tweets-Fan-Art) and included those numbers in the charts here, but keep in mind we used a different date for the cutoff then, which can change the percentages slightly. You can leave suggestions for future stat posts in the comments!<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script&gt; var chart; <br />
+$(document).ready(function() {<br />
+Highcharts.setOptions({<br />
+colors: [ '#ADADAD', '#949494', '#727272', '#595959', '#6B8E23', '#426F42']<br />
+});<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'sooAbs',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'Immerseus', 'Protectors', 'Norushen', 'Sha of Pride', 'Galakras', 'Iron Juggernaut', 'Dark Shaman', 'Nazgrim', 'Malkorok', 'Spoils', 'Thok', 'Siegecrafter', 'Paragons', 'Garrosh'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: true,<br />
+},<br />
+<br />
+yAxis: {<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false,<br />
+groupPadding: 0.15,<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.series.name + ' ' + this.x + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Players that Defeated Siege of Orgrimmar Bosses',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+shared: true,<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'LFR',<br />
+data: [{y: 63.58, color: '#bee4d3'},{y: 63.78, color: '#bee4d3'},{y: 63.88, color: '#bee4d3'},{y: 63.88, color: '#bee4d3'},{y: 55.4, color: '#d6e1ee'},{y: 55.4, color: '#d6e1ee'},{y: 55.4, color: '#d6e1ee'},{y: 55.2, color: '#d6e1ee'},{y: 48.3, color: '#f3e5cc'},{y: 48.1, color: '#f3e5cc'},{y: 48, color: '#f3e5cc'},{y: 38.8, color: '#ebc5c5'},{y: 39, color: '#ebc5c5'},{y: 39, color: '#ebc5c5'}],<br />
+<br />
+},{<br />
+name: 'Flex',<br />
+data: [{y: 33.4, color: '#81CCAA'},{y: 32.7, color: '#81CCAA'},{y: 31.3, color: '#81CCAA'},{y: 30.3, color: '#81CCAA'},{y: 26.4, color: '#81A4CC'},{y: 26.0, color: '#81A4CC'},{y: 24.8, color: '#81A4CC'},{y: 23.4, color: '#81A4CC'},{y: 20.3, color: '#E0BB79'},{y: 18.4, color: '#E0BB79'},{y: 16.6, color: '#E0BB79'},{y: 14.1, color: '#D48787'},{y: 13.6, color: '#D48787'},{y: 10.9, color: '#D48787'}],<br />
+<br />
+}, {<br />
+name: 'Normal',<br />
+data: [{y: 19.3, color: '#3e986f'},{y: 18.5, color: '#3e986f'},{y: 17, color: '#3e986f'},{y: 16.8, color: '#3e986f'},{y: 15.3, color: '#4779b1'},{y: 14.9, color: '#4779b1'},{y: 14.2, color: '#4779b1'},{y: 13.7, color: '#4779b1'},{y: 13.0, color: '#c58f2e'},{y: 12.5, color: '#c58f2e'},{y: 11.1, color: '#c58f2e'},{y: 10.7, color: '#be4848'},{y: 10.1, color: '#be4848'},{y: 7.7, color: '#be4848'}]<br />
+<br />
+}, {<br />
+name: 'Heroic',<br />
+data: [{y: 6.89, color: '#255c43'},{y: 5.69, color: '#255c43'},{y: 6.31, color: '#255c43'},{y: 4.55, color: '#255c43'},{y: 4.75, color: '#253f5c'},{y: 4.03, color: '#253f5c'},{y: 3.36, color: '#253f5c'},{y: 3.56, color: '#253f5c'},{y: 2.37, color: '#72531b'},{y: 1.89, color: '#72531b'},{y: 1.24, color: '#72531b'},{y: 0.60, color: '#762a2a'},{y: 0.41, color: '#762a2a'},{y: 0.23, color: '#762a2a'}]<br />
+<br />
+}<br />
+]<br />
+<br />
+});<br />
+<br />
+<br />
+<br />
+chart = new Highcharts.Chart({<br />
+chart: {<br />
+renderTo: 'sooScaled',<br />
+defaultSeriesType: 'column',<br />
+backgroundColor: '#efeedc'<br />
+},<br />
+<br />
+xAxis: {<br />
+categories: [ 'Immerseus', 'Protectors', 'Norushen', 'Sha of Pride', 'Galakras', 'Iron Juggernaut', 'Dark Shaman', 'Nazgrim', 'Malkorok', 'Spoils', 'Thok', 'Siegecrafter', 'Paragons', 'Garrosh'],<br />
+labels: {<br />
+maxStaggerLines: 0<br />
+}<br />
+<br />
+},<br />
+legend: {<br />
+enabled: true,<br />
+},<br />
+<br />
+yAxis: {<br />
+endOnTick: false,<br />
+title: {<br />
+text: 'Percent',<br />
+style: {<br />
+fontSize: '16px',<br />
+color: '#000',<br />
+}<br />
+}<br />
+},<br />
+plotOptions: {<br />
+column: {<br />
+animation: false,<br />
+groupPadding: 0.15,<br />
+}<br />
+},<br />
+<br />
+tooltip: {<br />
+formatter: function() {<br />
+return '&lt;b&gt;' + this.series.name + ' ' + this.x + '&lt;/b&gt; - '+ this.y +'%';<br />
+}<br />
+},<br />
+title: {<br />
+text: 'Percentage of Participating Players that Defeated Siege of Orgrimmar Bosses',<br />
+style: {<br />
+color: '#000',<br />
+fontSize: '18px',<br />
+shared: true,<br />
+fontWeight: 'bold'<br />
+}<br />
+},<br />
+credits: {<br />
+enabled: false<br />
+},<br />
+series: [{<br />
+name: 'LFR',<br />
+data: [{y: 100, color: '#bee4d3'},{y: 100.3, color: '#bee4d3'},{y: 100.5, color: '#bee4d3'},{y: 100.2, color: '#bee4d3'},{y: 87.1, color: '#d6e1ee'},{y: 87.2, color: '#d6e1ee'},{y: 87.2, color: '#d6e1ee'},{y: 86.7, color: '#d6e1ee'},{y: 76, color: '#f3e5cc'},{y: 75.7, color: '#f3e5cc'},{y: 75.5, color: '#f3e5cc'},{y: 61.0, color: '#ebc5c5'},{y: 61.3, color: '#ebc5c5'},{y: 61.3, color: '#ebc5c5'}],<br />
+<br />
+},{<br />
+name: 'Flex',<br />
+data: [{y: 100, color: '#81CCAA'},{y: 97.7, color: '#81CCAA'},{y: 93.8, color: '#81CCAA'},{y: 90.6, color: '#81CCAA'},{y: 79, color: '#81A4CC'},{y: 77.8, color: '#81A4CC'},{y: 74.1, color: '#81A4CC'},{y: 70.0, color: '#81A4CC'},{y: 60.8, color: '#E0BB79'},{y: 55, color: '#E0BB79'},{y: 49.7, color: '#E0BB79'},{y: 42.3, color: '#D48787'},{y: 40.7, color: '#D48787'},{y: 32.7, color: '#D48787'}],<br />
+<br />
+}, {<br />
+name: 'Normal',<br />
+data: [{y: 100, color: '#3e986f'},{y: 95.7, color: '#3e986f'},{y: 87.8, color: '#3e986f'},{y: 86.9, color: '#3e986f'},{y: 78.8, color: '#4779b1'},{y: 77.1, color: '#4779b1'},{y: 73.2, color: '#4779b1'},{y: 70.6, color: '#4779b1'},{y: 67.3, color: '#c58f2e'},{y: 64.6, color: '#c58f2e'},{y: 57.6, color: '#c58f2e'},{y: 55.2, color: '#be4848'},{y: 52.4, color: '#be4848'},{y: 39.9, color: '#be4848'}]<br />
+<br />
+}, {<br />
+name: 'Heroic',<br />
+data: [{y: 100, color: '#255c43'},{y: 82.7, color: '#255c43'},{y: 91.7, color: '#255c43'},{y: 66.0, color: '#255c43'},{y: 69.0, color: '#253f5c'},{y: 58.5, color: '#253f5c'},{y: 48.7, color: '#253f5c'},{y: 51.8, color: '#253f5c'},{y: 34.4, color: '#72531b'},{y: 27.5, color: '#72531b'},{y: 18, color: '#72531b'},{y: 8.7, color: '#762a2a'},{y: 6.0, color: '#762a2a'},{y: 3.4, color: '#762a2a'}]<br />
+<br />
+}<br />
+]<br />
+<br />
+});<br />
+<br />
+});<br />
+&lt;/script&gt; <br />
+<br />
+<br />
+<br />
+&lt;div id=&quot;sooAbs&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+<br />
+&lt;div id=&quot;sooScaled&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+Blue Tweets<br />
+Art<br />
+Since Ogres are getting a new model in Warlords, is that a model just for Warlords or for all Ogres?<br />
+Draenor Ogres less devolved than Azeroth won't be the same model for each, would like to update both eventually (Source (https://twitter.com/artofcgrobinson/status/419180189654859777))<br />
+<br />
+Need a rework of all npc's in WoWand a rework of the classic mounts<br />
+npc's will update with new player models. Have heard a lot about mount updates, something I would like to do eventually. (Source (https://twitter.com/artofcgrobinson/status/419179682701914112))<br />
+<br />
+For later on additions to the game. Can druid forms wear certain parts of armor? Give the forms more uniqueness/flavor etc.<br />
+we've played around with this, but it's nigh impossible to make shoulder/helm/belt attach. look good on that model (Source (https://twitter.com/artofcgrobinson/status/419179331827429376))<br />
+<br />
+Can we expect more class-unique animations? Dual throw for fury storm bolt, shuriken and glaive toss? Hunter looks dull btw<br />
+I know our animators are fired up excited about doing this, it's on the wish list. (Source (https://twitter.com/artofcgrobinson/status/419178785561255937))<br />
+<br />
+Is MoP just going to be forgotten or are you going to work to keep the artwork alive in future content?<br />
+most likely we'll find ways to bring Pandaren culture/art into Azeroth now that the veil has been lifted. (Source (https://twitter.com/artofcgrobinson/status/419178429112524800))<br />
+<br />
+Could we see the return of simple cloaks in WoD? The latest expansions brought a lot of incredibly overcomplicated designs.<br />
+we did get a little crazy on a few, I'll keep it in mind. Had a few thoughts on capes on last WoW Source if interested. (Source (https://twitter.com/artofcgrobinson/status/419177744115576832))<br />
+<br />
+So is it you we ask for glyphs? Can Monks get one that turns Rising Sun Kick into Flaming Dragon Punch?<br />
+Glyphs mostly class/system (&amp; to lesser extent profs) but anyone on team can suggest &amp; help out. But new anims = unlikely glyph! (Source (https://twitter.com/Dave_Maldo/status/417729717848915968))<br />
+<br />
+will we see heavenly blue cloud serpents? i can understand no green thoughhttps://t.co/qQbQup8Tfr look at it! look at it!<br />
+Probably eventually? Hopefully not w/ green drake level delay! (Source (https://twitter.com/Dave_Maldo/status/417728918817226752))<br />
+<br />
+Character / Items<br />
+Can you make it a policy (if you already haven't) to de-associate fun cosmetics and trinkets?<br />
+I don't make policy, though I can suggest them. I'm not certain that'd be a good policy, though. I can see arguments for either way. (Source (https://twitter.com/Dave_Maldo/status/419191438010630144))<br />
+I'd be curious to hear arguments in favor of trinkets with toys. I honestly can't think of any.<br />
+Some are less freedom for item peeps to make fun player power rewards &amp; intentional mudflation. Note that I am not making any args. (Source (https://twitter.com/Dave_Maldo/status/419335043291426816))<br />
+I dunno, above all, I'd expect that you design a toy with the intent of having it played with. Trinkets contradict that.<br />
+A toy is a toy. A trinket is a trinket; whether or not one thinks it's fun enough to qualify as a toy. Diff. items, diff. purposes. (Source (https://twitter.com/Dave_Maldo/status/419378351447347200))<br />
+What about things like Super Simian Sphere and Piccolo of the Flaming Fire, which are trinkets w/ no trinkety purpose?<br />
+PFF is an OLD item from a different time &amp; SSS is copied from one (Orb of D). Always going to be a few odd exceptions! (Source (https://twitter.com/Dave_Maldo/status/419542743111573504))<br />
+Can we make Time-Lost Figurine a toy? I'd love to keep the form in end game content.<br />
+I don't know if items peeps have plans to modify old drops. I do suspect they're trinkets out of tradition. (Source (https://twitter.com/Dave_Maldo/status/419547295726596096))<br />
+<br />
+Entirely separate question is all the trinkets/toys/tabards that provide teleports/hearths. Toybox y/n?<br />
+Toy box turns items into spells (e.g. current pets &amp; mounts). Unlikely for equipped items, but maybe. (Source (https://twitter.com/Dave_Maldo/status/419545075052326913))<br />
+<br />
+Warlords of Draenor Stats<br />
+So say if i have a Cleave gem inside im DPS and when i switch to my Healing kit will the Cleave gem still be there?<br />
+Cleave is a tertiary; not gemmable. But if you meant Crit, yes. (Source (https://twitter.com/Celestalon/status/417818366284267520))<br />
+<br />
+Will pet classes/specs benefit from Multstrike as much as petless? Currently f.ex multstrike isn't good for BM but is for SV.<br />
+Yes. Pets benefit from all of the new stats. (Source (https://twitter.com/Celestalon/status/418100340223782912))<br />
+<br />
+PvP<br />
+Any chance WoD can reduce the ridiculous item level jumps from season to season? 496 to 522 is just too big a difference.<br />
+Unfortunately, I think that gap is going to continue to exist. Something has to give when trying to keep up with PvE ilevels. (Source (https://twitter.com/holinka/status/419234872234758144))<br />
+does that mean the gap between pvp and pve ilvl will be as big as it is right now in current wow?<br />
+No the plan is to improve that gap. (Source (https://twitter.com/holinka/status/419279167943745536))<br />
+<br />
+On a scale of 1 to 9000, how cool is Ashran ?<br />
+It's really coming along. Big challenge is it's tough to iterate on something that requires 200+ players to play like live. (Source (https://twitter.com/holinka/status/418812879798693889))<br />
+<br />
+Any worry that glad-range players will &quot;tank&quot; their alts below whatever cutoff you come up with in order to up their main's rank?<br />
+Spit in the ocean to be honest. They could have done the same with teams. (Source (https://twitter.com/holinka/status/418809137946845184))<br />
+<br />
+people give you shit but with the name change i expect a good christmas present. are you fixing 2v2, the most played bracket??<br />
+Feel it would benefit more from an earlier start to dampening than 3s, especially when both teams have a healer. (Source (https://twitter.com/holinka/status/414846297108398081))<br />
+That seems like a really good point, a good place to go from. would seperating double dps and healer dps be an option balance wise?<br />
+No we don't think it's necessary or good to segregate healer teams in that way. (Source (https://twitter.com/holinka/status/414860145919660033))<br />
+<br />
+Is there going to be arena system that there is now + the special Trial of the Gladiator, or the classic rating is removed?<br />
+We're still discussing it based on a lot of negative feedback about the idea of rating disappearing from the existing queue. (Source (https://twitter.com/holinka/status/418600832112668672))<br />
+<br />
+Professions<br />
+Thought about making crafting an endgame option in same vein as PvE and PvP? Revamping, making crafting epic (as per leg cloak)<br />
+That &amp; many other variants on what crafting could be have come up over the years. Not sure what their plans are for WoD now. (Source (https://twitter.com/Dave_Maldo/status/419535669325594624))<br />
+<br />
+dave, can you shed some light on Wod archeology? Will we have new race types? Or more orc and dreanei stuff?<br />
+Don't know much about current plans aside from proposed QoL improvements. I'll probably help make some toys for it, though! (Source (https://twitter.com/Dave_Maldo/status/417730610262601729))<br />
+<br />
+Any plans to bring the other Professions to the late game model that Blacksmith/Mining/Herbs has? (ie: easier leveling path)<br />
+Not heavily involved w/ professions. Archaeology is likely to get a similar treatment for WoD. Can't speak for the others! (Source (https://twitter.com/Dave_Maldo/status/417724370077749248))<br />
+<br />
+<br />
+Dark Legacy Comics #423<br />
+DLC #423 (http://www.darklegacycomics.com/423.html) has been released! <br />
+<br />
+<br />
+http://media.mmo-champion.com/images/news/2014/january/dlc423.jpg (http://www.darklegacycomics.com/423.html)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">moveth</div><div class="date">2014-01-13, 02:07 AM</div></div><div class="posttext">Raiding is definitely getting more popular. Those graphs are astounding compared to Wrath.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-13, 02:08 AM</div></div><div class="posttext">Bonus stats:<br />
+<br />
+<br />
+Someone has 73 Flex Garrosh kills on their account! <br />
+The average item level of a character who has killed Flex Garrosh, but not Normal or Heroic Garrosh is ~546.<br />
+<br />
+<br />
+This chart discards anyone with 0 kills in that difficulty, as they aren't interesting for this comparison. <br />
+<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/january/garrosh3.js&quot;&gt;&lt;/script&gt; <br />
+&lt;div id=&quot;garroshdist&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Durandro</div><div class="date">2014-01-13, 02:10 AM</div></div><div class="posttext">So they know there's issues regarding even future ilevels with PvP gear... But won't use the obvious answer of 'seperate PvE and PvP mechanics'.<br />
+<br />
+Oh well. Maybe the expansion after that.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shadowful</div><div class="date">2014-01-13, 02:12 AM</div></div><div class="posttext">Find it interesting that more people have killed Nazgrim through Garrosh on normal than flex. :o</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Noix</div><div class="date">2014-01-13, 02:14 AM</div></div><div class="posttext">Raiding is definitely getting more popular. Those graphs are astounding compared to Wrath.<br />
+<br />
+Wonder if the content clear have went up or down.. also does those % include alts</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Stellan</div><div class="date">2014-01-13, 02:24 AM</div></div><div class="posttext">Well the charts indicate what I've thought might be true which is that LFR really is the most popular form of raiding by far.<br />
+<br />
+I'd like to know how many subscribers have only done LFR.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">smcn</div><div class="date">2014-01-13, 02:30 AM</div></div><div class="posttext">What's up with the percentage difference between Galakras and Juggernaut in LFR? Data error? I can't imagine that many people have wiped so much on Juggernaut after killing Galakras that it made them want to never finish the instance.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+I do like the relatively sharp dropoff between Paragons and Garrosh on normal. Good to have an appropriately difficult final boss for the end of an expansion.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Regalbeast</div><div class="date">2014-01-13, 02:30 AM</div></div><div class="posttext">Wow, awesome data. Good to see that LFR is successful in that it's main purpose is to help more people see the content. Good job Blizz!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-13, 02:32 AM</div></div><div class="posttext">What's up with the percentage difference between Galakras and Juggernaut in LFR? Data error? I can't imagine that many people have wiped so much on Juggernaut after killing Galakras that it made them want to never finish the instance.<br />
+That would be a typo. Fixed!<br />
+<br />
+<br />
+@Chaud: OOO nice you are able to get kill counts. Can you do that for LFR too please. This would perhaps show how active the features are and perhaps if players are ignoring the later wings.<br />
+<br />
+I'll look at kill number distributions at some point in the future, just quickly pulled Garrosh data for now, haven't looked at it as closely as I do the stuff I put on the front page yet.<br />
+<br />
+<br />
+Find it interesting that more people have killed Nazgrim through Garrosh on normal than flex. :o<br />
+<br />
+A higher percentage of the people that started Normal killed Nazgrim through Garrosh on Normal, not a higher absolute number.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">nekobaka</div><div class="date">2014-01-13, 02:37 AM</div></div><div class="posttext">Find it interesting that more people have killed Nazgrim through Garrosh on normal than flex. :o<br />
+Was about to comment on that. I wonder if perhaps the gear level differences are large enough that normal mode guilds are not doing Flex or *gasp* normal mode raiders are not the no-lifers and hardcore than anti-raiders make them out to be. With also there not being full clears there isnt much complaints about difficulty and not getting full clears kind of like it was back with ICC. It is as if those who partake in organized raiding might just be a bit more mature and are doing something they enjoy.<br />
+<br />
+Raiding is definitely getting more popular. Those graphs are astounding compared to Wrath.<br />
+Even more so considering that Flex is supposed to be about ICC 10 man difficulty although no one said with or without the buff and I havent heard anyone make a comparison. If I recall correctly I think it was also about 10% of playerbase killed LK with the 30% buff and it being out for almost a year. The cross realm factor must be helping a lot especially for realms that had issues with raid population even in WotLK. I am glad to see Blizzard no longer turning an eye to casual PuGing.<br />
+<br />
+<br />
+@Chaud: OOO nice you are able to get kill counts. Can you do that for LFR too please. This would perhaps show how active the features are and perhaps if players are ignoring the later wings.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Spaceboytg</div><div class="date">2014-01-13, 02:45 AM</div></div><div class="posttext">Find it interesting that more people have killed Nazgrim through Garrosh on normal than flex. :o<br />
+<br />
+I may be wrong, but I think you are reading that graph incorrectly. The first chart shows that more people have killed those bosses on Flex than Normal. What the second chart is showing (I think) is the percentage of players who have killed Immerseus on a particular difficulty have then gone on to kill X boss on that same difficulty. What that would mean, is that there is a greater chance a player in Normal will go on to kill Normal Nazgrim than a Flex player will go on to kill Flex Nazgrim.<br />
+<br />
+I think :)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Aerialslayer</div><div class="date">2014-01-13, 03:00 AM</div></div><div class="posttext">Bonus stat: Someone has 73 Flex Garrosh kills on their account! <br />
+<br />
+This chart discards anyone with 0 kills in that difficulty, as they aren't interesting for this comparison. <br />
+<br />
+<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/january/garrosh3.js&quot;&gt;&lt;/script&gt; <br />
+&lt;div id=&quot;garroshdist&quot; width=&quot;50%&quot;&gt;<br />
+Don't see a chart? Enable javascript!<br />
+&lt;/div&gt;<br />
+<br />
+....and I still can't find a flex group who can kill him.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baelic</div><div class="date">2014-01-13, 03:18 AM</div></div><div class="posttext">So, how can 100% of players have Immerseus Herioc down while not even having Garrosh normal down?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-13, 03:39 AM</div></div><div class="posttext">So, how can 100% of players have Immerseus Herioc down while not even having Garrosh normal down?<br />
+<br />
+100% of participating Heroic difficulty players have killed Heroic difficulty Immerseus because participating in Heroic difficulty is defined as killing Heroic difficulty Immerseus.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rixis</div><div class="date">2014-01-13, 03:54 AM</div></div><div class="posttext">I like the way a higher percent of people have killed Protectors, Norushen and Sha than Immerseus. (100.3, 100.5 and 100.2% compared to 100% for immerseus) is that due to people getting partial group on their first LFR and not going back to kill Immerseus I wonder.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Baelic</div><div class="date">2014-01-13, 03:58 AM</div></div><div class="posttext">Oh, so it's folks who have participated in that difficulty... Seems like I misunderstood the articles explanation.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">pimpeddakota</div><div class="date">2014-01-13, 03:58 AM</div></div><div class="posttext">Wonder if the content clear have went up or down.. also does those % include alts<br />
+<br />
+and yet the poster clearly states that this is ACCOUNT based not individual toons</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">jangkun</div><div class="date">2014-01-13, 05:13 AM</div></div><div class="posttext">This &quot;Dark Legacy Comic&quot; was really funny xD</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kirsia</div><div class="date">2014-01-13, 05:39 AM</div></div><div class="posttext">This &quot;Dark Legacy Comic&quot; was really funny xD<br />
+<br />
+Time to start rebinding keys...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Irisel</div><div class="date">2014-01-13, 05:48 AM</div></div><div class="posttext">Some of the answers in this roll out of Blues makes me not so super excited about WoD... Proffesions haven't changed significantly in multiple xpacs, including Arch., and yet they aren't making plans to really do much about it. I know it's a side thing, but I feel like if they can make MoP as beautiful as it was, and roll out Pokemon, then they can at least make Proffs more fun than they currently are (which is about zero). And, with the addition of Garrisons, I see this time as a prime time to do so.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Brewhan</div><div class="date">2014-01-13, 06:38 AM</div></div><div class="posttext">every new blue post makes me less and less excited about WoD. All their responses are &quot;its on the wish list or things to do&quot; yea... like the dance studio. RIP :(</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoce83f2c4e48</div><div class="date">2014-01-13, 08:43 AM</div></div><div class="posttext">every new blue post makes me less and less excited about WoD. All their responses are &quot;its on the wish list or things to do&quot; yea... like the dance studio. RIP :(<br />
+<br />
+i was thinking the same thing ... :\ plus the fact that a lot of their responses end up with &quot;we are still not sure how xxxxx will work at this point but we are thinking about it&quot; If u look over all there are very few mechanics that they have decided on at this point of time :\ Blizz has ideas yes but its only that ideas...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2014-01-13, 09:10 AM</div></div><div class="posttext">Nice statistics. <br />
+<br />
+Just a little input: It would be good if the little gray boxes would share the color strength of their respective bars.<br />
+LFR: pale gray<br />
+Flex: moderate gray<br />
+Normal: full gray.<br />
+<br />
+BTW: I would have added heroic into the first diagram. Just so people really get a feel for how tiny the HC raiding population really is.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">noladrew</div><div class="date">2014-01-13, 09:55 AM</div></div><div class="posttext">There's no way the second graph is correct. I find it very hard to believe that 100% of players sampled have killed heroic Immerseus and that more players sampled have killed heroic Norushen than Normal. Where did you get this info from!?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc59b5827c7e</div><div class="date">2014-01-13, 09:57 AM</div></div><div class="posttext">Blue posts make it sound like they didnt even start creative work on the next expansion, let alone coding or being beta ready. What a joke of a company, making promises every Blizzcon without results.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">kamuimac</div><div class="date">2014-01-13, 10:46 AM</div></div><div class="posttext">BTW: I would have added heroic into the first diagram. Just so people really get a feel for how tiny the HC raiding population really is.<br />
+<br />
+<br />
+100% agreed with that -_- i missing that stat there &gt;&lt;<br />
+<br />
+edit* since im dumb and cant read charts apparenty &gt;&lt;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">noladrew</div><div class="date">2014-01-13, 10:54 AM</div></div><div class="posttext">100% agreed with that this 2nd diagram is pretty much usless to any kind of analisisy exept maybe to show how the difficulty of hc ramps up -_-<br />
+<br />
+<br />
+<br />
+it is showing only the population of hc raiders alone - showin 100% on immersus as starting base and 3.4 % of all raider who ever killed hc boss this tier kiilled garosh -_- at least that what i belive it is -_-<br />
+<br />
+The title for the second graph should be a bit more detailed on what it exactly is then :3</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Elrandir</div><div class="date">2014-01-13, 10:55 AM</div></div><div class="posttext">I woulda rebound that jump key so fast the joke woulda been on him.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Mekh</div><div class="date">2014-01-13, 11:07 AM</div></div><div class="posttext">The title for the second graph should be a bit more detailed on what it exactly is then :3<br />
+<br />
+All there in the manual:<br />
+<br />
+<br />
+The second chart uses the number of players that killed Immerseus in each difficulty as the base of participating players for that difficulty.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">funkhouser</div><div class="date">2014-01-13, 11:19 AM</div></div><div class="posttext">Haha that comic was great</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shuyin</div><div class="date">2014-01-13, 11:32 AM</div></div><div class="posttext">&quot;This_is_why_nobody_likes_you.&quot; because no one is smart enough to change the jump keybind and grab the gold?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmoc39f78ccd49</div><div class="date">2014-01-13, 11:35 AM</div></div><div class="posttext">Wow, awesome data. Good to see that LFR is successful in that it's main purpose is to help more people see the content. Good job Blizz!<br />
+<br />
+u know 80% dont care about the content and just do it for gear?, if they removed gear like no one would do it. so ofcourse its successful when its free gear</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">mmocf06effc4be</div><div class="date">2014-01-13, 12:15 PM</div></div><div class="posttext">O boy, sounds like we will be playing SoO for a year ATLEAST</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">twothe</div><div class="date">2014-01-13, 12:18 PM</div></div><div class="posttext">Can you please double-check the statistic... because if it is correct and 81% of all players never raided normal mode, then we can officially declare WoW as dead... Oo</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shiroh</div><div class="date">2014-01-13, 12:22 PM</div></div><div class="posttext">There's no way the second graph is correct. I find it very hard to believe that 100% of players sampled have killed heroic Immerseus and that more players sampled have killed heroic Norushen than Normal. Where did you get this info from!?<br />
+It is correct, you are just reading it wrong. The second graph is about comparing how many heroic raiders killed a certain boss in heroic difficulty, while heroic raider is defined as killing Immerseus. So if 1000people killed heroic Immerseus, that would be 100% and if 500 people killed heroic Nazgrim, that would be 50% of those 1000 that killed Immerseus. (Of course you can change heroic with normal/flex/lfr :P)<br />
+<br />
+<br />
+<br />
+Can you please double-check the statistic... because if it is correct and 81% of all players never raided normal mode, then we can officially declare WoW as dead... Oo<br />
+Why? I think you clearly overestimate the percentage of people who raided in the past.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">ssviolett</div><div class="date">2014-01-13, 12:23 PM</div></div><div class="posttext">I believe 2nd graph is wrong. Check Immerseus data for example - from all participants everyone killed HC Immerseus? Impossible.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shiroh</div><div class="date">2014-01-13, 12:26 PM</div></div><div class="posttext">I believe 2nd graph is wrong. Check Immerseus data for example - from all participants everyone killed HC Immerseus? Impossible.<br />
+<br />
+No, the graph says: Everyone who killed Immerseus HC killed Immerseus HC, which is obviously 100%. And out of those who killed Immerseus HC 82.7% killed Protectors HC, 91.7% killed Norushen HC etc.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Yriel</div><div class="date">2014-01-13, 12:32 PM</div></div><div class="posttext">Raiding is definitely getting more popular. Those graphs are astounding compared to Wrath.<br />
+<br />
+Since there is nothing else to do that's not surprising.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2014-01-13, 01:00 PM</div></div><div class="posttext">100% agreed with that -_- i missing that stat there &gt;&lt;<br />
+<br />
+edit* since im dumb and cant read charts apparenty &gt;&lt;<br />
+<br />
+You're not dumb. Chaud didn't include HC in the first graph, because it did it separately a few days ago.<br />
+<br />
+It's o.k. for peeps like us that are used to looking and interpreting data like that, however for the average guy it would have been nice if all the information was combined in one graph for clearer visibility.<br />
+<br />
+<br />
+Why? I think you clearly overestimate the percentage of people who raided in the past.<br />
+Most people do.<br />
+Most don't even realize that a lot of players don't even level their character to the cap.<br />
+<br />
+Still I think 30% of the population interested in normal clearing the content is a good place to be in.<br />
+<br />
+But keep in mind, it is impossible to track the total percentage of raiding players.<br />
+For instance: My main cleared normal, but never cleared LFR (she only did Sha once for the pet^^) or Flex. As such my character is not included in these statistics.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gruffertus</div><div class="date">2014-01-13, 01:03 PM</div></div><div class="posttext">Blue posts make it sound like they didnt even start creative work on the next expansion, let alone coding or being beta ready. What a joke of a company, making promises every Blizzcon without results.<br />
+<br />
+The only promises they made at Blizzcon is that WoD is going to be the next expansion, and here's the stuff they've started working on. Any time-based promises only exist in your head.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2014-01-13, 01:12 PM</div></div><div class="posttext">Blue posts make it sound like they didnt even start creative work on the next expansion, let alone coding or being beta ready.<br />
+You are aware that the people at twitter just fire Ideas at the DEVs to see what they think?<br />
+<br />
+Interpret these messages in that context.<br />
+<br />
+All they promised is that they will work as hard as they can and try their best to speed up their release schedule.<br />
+TRY being the operative word here. Design is complicated, and ultimately, you cannot rush art.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Toiran</div><div class="date">2014-01-13, 01:15 PM</div></div><div class="posttext">Can you please double-check the statistic... because if it is correct and 81% of all players never raided normal mode, then we can officially declare WoW as dead... Oo<br />
+<br />
+Raiding is FAR more popular now.<br />
+<br />
+People on fansites like us, are more &quot;involved&quot; with the game than the average player, most of us raid, thus we assume that just about everyone raids, it's what we see as the endgame right? So why wouldn't everyone be doing it? But it's far from the truth, the vast majority do not raid, LFR has improved that massively, and as has Flex.<br />
+<br />
+Heroic raiding has always been in the low low %'s as current content, that's what it's designed for, it's successful for it's target market.<br />
+<br />
+Also, the dev's aren't really convincing anyone they may be further along with development, sure it's still pretty early days, but nearly every answer since Blizzcon is &quot;We don't know, we haven't done that yet/haven't talked about it yet/We haven't started yet&quot;, it's slightly discouraging.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">IsrafaelMage</div><div class="date">2014-01-13, 01:44 PM</div></div><div class="posttext">Is it really justified to use Immerseus as the 100%? Some guilds on my server killed Norushen first, and Immerseus only afterwards (not us though). Also, i wonder if people who never stepped foot inside LFR (i have total of 1 boss kill in the current LFR - i did shamans for the trinket which i got on 1st go) are counted in the data.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Rioo</div><div class="date">2014-01-13, 02:04 PM</div></div><div class="posttext">Personally I haven't completed SoO LFR with any of my characters. I've done Flex and Normal, but just can't make myself do LFR with even my alts that need the gear still.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Primernova</div><div class="date">2014-01-13, 02:25 PM</div></div><div class="posttext">The content, being the reward, is what made WoW great.<br />
+<br />
+If everyone can just 'Tra-LaLa...&quot; through it, it will continue to bleed.<br />
+<br />
+Why did it have to go so wrong?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shiroh</div><div class="date">2014-01-13, 03:25 PM</div></div><div class="posttext">Is it really justified to use Immerseus as the 100%? Some guilds on my server killed Norushen first, and Immerseus only afterwards <br />
+It's only a problem if there are many guilds who killed Norushen HC but never Immerseus HC. I doubt the number is high enough to create a bias. I guess this can be checked?</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">IsrafaelMage</div><div class="date">2014-01-13, 04:09 PM</div></div><div class="posttext">It's only a problem if there are many guilds who killed Norushen HC but never Immerseus HC. I doubt the number is high enough to create a bias. I guess this can be checked?<br />
+Well, thats what i wanted to see.. its just a question, not a critique per se. What i was thinking is the following - Norushen is much easier than immerseus in terms of mechanics (i.e. they are the same as normal, just pure numbers), so it may be the reason some groups often opt to do him first (this may vary - it took us 6 pulls to kill immerseus (even less if you discount stupid ninja pulls), and around 15 for norushen). So i'd love to see if this trend is somehow reflected into data, or its just our terribad server with people who love to cheese.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-13, 04:38 PM</div></div><div class="posttext">Nice statistics. <br />
+<br />
+Just a little input: It would be good if the little gray boxes would share the color strength of their respective bars.<br />
+LFR: pale gray<br />
+Flex: moderate gray<br />
+Normal: full gray.<br />
+<br />
+BTW: I would have added heroic into the first diagram. Just so people really get a feel for how tiny the HC raiding population really is.<br />
+<br />
+Done, but I hope people see the warning. The numbers are so small that using a different date and using achievements rather than progression data can change the data slightly. <br />
+<br />
+<br />
+There's no way the second graph is correct. I find it very hard to believe that 100% of players sampled have killed heroic Immerseus and that more players sampled have killed heroic Norushen than Normal. Where did you get this info from!?<br />
+<br />
+I didn't put the text there for fun, please read it. :(<br />
+<br />
+<br />
+The title for the second graph should be a bit more detailed on what it exactly is then :3<br />
+<br />
+I am open to suggestions, but there is only space for another two words or so.<br />
+<br />
+<br />
+Is it really justified to use Immerseus as the 100%? Some guilds on my server killed Norushen first, and Immerseus only afterwards (not us though). Also, i wonder if people who never stepped foot inside LFR (i have total of 1 boss kill in the current LFR - i did shamans for the trinket which i got on 1st go) are counted in the data.<br />
+<br />
+I understand that some guilds don't do him first, but more players overall have killed Immerseus.<br />
+<br />
+<br />
+Is it really justified to use Immerseus as the 100%? Some guilds on my server killed Norushen first, and Immerseus only afterwards (not us though). Also, i wonder if people who never stepped foot inside LFR (i have total of 1 boss kill in the current LFR - i did shamans for the trinket which i got on 1st go) are counted in the data.<br />
+<br />
+Anyone who has more than 0 kills was counted for a boss.<br />
+<br />
+<br />
+Well, thats what i wanted to see.. its just a question, not a critique per se. What i was thinking is the following - Norushen is much easier than immerseus in terms of mechanics (i.e. they are the same as normal, just pure numbers), so it may be the reason some groups often opt to do him first (this may vary - it took us 6 pulls to kill immerseus (even less if you discount stupid ninja pulls), and around 15 for norushen). So i'd love to see if this trend is somehow reflected into data, or its just our terribad server with people who love to cheese.<br />
+<br />
+I could find the number of players with the Heroic Norushen achievement but not with the Heroic Immerseus one if that would help.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Weep</div><div class="date">2014-01-13, 04:40 PM</div></div><div class="posttext">As much as I'm looking forward to the new expansion the single-most dreaded moment of it for me will be the moment when I have to replace my lovely legendary cloak with something else.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">balir</div><div class="date">2014-01-13, 05:06 PM</div></div><div class="posttext">LOLing at DLC. ;)</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Ieyasu</div><div class="date">2014-01-13, 05:16 PM</div></div><div class="posttext">I am open to suggestions, but there is only space for another two words or so.<br />
+<br />
+Maybe Percentage of Heroic participating player that defeated SoO bosses or Percentage of participating player that defeated SoO Heroic bosses.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">caervek</div><div class="date">2014-01-13, 05:23 PM</div></div><div class="posttext">So the 39.9% and rising players who cleared normal will have nothing to do in WoD if their not in a 25M Mythic guild, nice work Blizz, really got your numbers right on that one, not...</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Granyala</div><div class="date">2014-01-13, 05:29 PM</div></div><div class="posttext">Done, but I hope people see the warning. The numbers are so small that using a different date and using achievements rather than progression data can change the data slightly. <br />
+<br />
+Looks great!<br />
+Lets just hope people read the footnote about the gathering of the data... <br />
+aah who am I kidding. ._.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-13, 05:53 PM</div></div><div class="posttext">Maybe Percentage of Heroic participating player that defeated SoO bosses or Percentage of participating player that defeated SoO Heroic bosses.<br />
+<br />
+But it isn't just Heroic, each difficulty is based on the number that killed Immerseus in that difficulty.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Gruffertus</div><div class="date">2014-01-13, 06:08 PM</div></div><div class="posttext">So the 39.9% and rising players who cleared normal will have nothing to do in WoD if they're not in a 25M Mythic guild, nice work Blizz, really got your numbers right on that one, not...<br />
+<br />
+1) I think they're doing better with their numbers than you... (it's 20M)<br />
+<br />
+2) Also by this stage in 5.0 - it was already 5.1!<br />
+<br />
+3) The incredible return of I think they're doing better with their numbers than you... (it's 7.7% who have cleared normal)<br />
+<br />
+4) And of those who have cleared normal, 90% of them have cleared Heroic Immerseus - not bad for people with nothing to do.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Tarfik</div><div class="date">2014-01-13, 07:49 PM</div></div><div class="posttext">Wow, awesome data. Good to see that LFR is successful in that it's main purpose is to help more people see the content. Good job Blizz!<br />
+yeah helped a lot of ppl in guilds that for many reasons can't raid!</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Shudder</div><div class="date">2014-01-13, 08:09 PM</div></div><div class="posttext">i was thinking the same thing ... :\ plus the fact that a lot of their responses end up with &quot;we are still not sure how xxxxx will work at this point but we are thinking about it&quot; If u look over all there are very few mechanics that they have decided on at this point of time :\ Blizz has ideas yes but its only that ideas...<br />
+<br /> 
+Yeah I'm seeing way too many &quot;we're not sure yet&quot; posts and it's unsettling. They should be sure, everything should be finalized and beta should be rolling out. I'm not confident in a release date anytime soon. I'm thinking &quot;faster expacs&quot; and &quot;WoD is farther along&quot; are flat out lies.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+Also I'm laughing more at the people unable to read and understand the second graph than I am at the comic. That's the real joke.</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">Kathranis</div><div class="date">2014-01-13, 09:31 PM</div></div><div class="posttext">Yeah I'm seeing way too many &quot;we're not sure yet&quot; posts and it's unsettling. They should be sure, everything should be finalized and beta should be rolling out. I'm not confident in a release date anytime soon. I'm thinking &quot;faster expacs&quot; and &quot;WoD is farther along&quot; are flat out lies.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+Also I'm laughing more at the people unable to read and understand the second graph than I am at the comic. That's the real joke.<br />
+Blizzard isn't going to clearly answer questions about things that they haven't completely nailed down. Systems changes take a long time to fully implement and a lot of iteration.<br />
+<br />
+If they say, &quot;Yes, here's the plan,&quot; right now, and then decide to change things layer, it will create confusion, mistrust, and backlash amongst the playerbase. That's why Blizzard stopped being so open about development in the first place. The CMs and devs used to be far more open, but players kept misinterpreting &quot;maybe&quot; or &quot;currently planned&quot; for &quot;guaranteed to happen&quot; or &quot;we promise,&quot; and it caused problems.<br />
+<br />
+Also, please consider that most of these questions are fairly simple system changes, often for things that Dave Maldo isn't even directly involved with. IE, &quot;we're not sure if we want to turn trinkets into toys or keep them trinkets.&quot;<br />
+<br />
+The vast majority of the expansion's design is environment and content related, not systems related.<br />
+<br />
+- - - Updated - - -<br />
+<br />
+<br />
+I didn't put the text there for fun, please read it.<br />
+I'd suggest changing the title for the second graphic to make it less ambiguous. Expecting certain people to read text that isn't bold and twice as large as everything else on the page might be a bit unrealistic...<br />
+<br />
+Maybe &quot;Player Progression After Killing Immerseus In Each Difficulty&quot;</div></div><hr />
+<div class="post"><div class="posttop"><div class="username">rcshaggy</div><div class="date">2014-01-13, 10:34 PM</div></div><div class="posttext">Less work if they use the Warlords of Draenor models for the playable Ogres.</div></div><hr />
+<div id="copyright">Powered by vBulletin&trade; Copyright &copy; 2019 vBulletin Solutions, Inc. All rights reserved.</div>
+</div>
+</body>
+</html>
