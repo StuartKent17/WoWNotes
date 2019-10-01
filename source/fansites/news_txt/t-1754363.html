@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-04-09, 05:22 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Patch 2.2 Key Features and Item Changes Guide (http://www.diablofans.com/news/48379-patch-2-2-key-features-and-item-changes-guide)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Blackrock Mountain: Molten Core Opens Tomorrow, Seat Story Cup III, BlizzCon Benefit Dinner Tickets (http://www.hearthpwn.com/news/866-blackrock-mountain-molten-core-opens-tomorrow-seat)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Heroes Hotfixes - April 8th, Right-Click Through Minimap Option Incoming (http://www.heroesnexus.com/news/1340-heroes-hotfixes-april-8th-right-click-through)<br>
+<br>
+WoW Token Prices - Day 2<br>
+WoW Tokens had their price update frequency changed back to one hour from 15 minutes after repeatedly dropping 1% every 15 minutes. The drop continued until late Wednesday night, when the price started to go back up.<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; setTimeout(function () {<br>
+height = chart.height<br>
+width = $(&quot;.pgcharts&quot;).width()<br>
+chart.setSize(width, height, doAnimation = true);<br>
+}, 1500)<br>
+<br>
+setTimeout(function () {<br>
+height = chart.height<br>
+width = $(&quot;.pgcharts&quot;).width()<br>
+chart.setSize(width, height, doAnimation = true);<br>
+}, 2500)<br>
+<br>
+setTimeout(function () {<br>
+height = chart.height<br>
+width = $(&quot;.pgcharts&quot;).width()<br>
+chart.setSize(width, height, doAnimation = true);<br>
+}, 4500)<br>
+<br>
+$(document).ready(function () {<br>
+Highcharts.setOptions({<br>
+lang: {<br>
+thousandsSep: &apos;,&apos;<br>
+}<br>
+});<br>
+chart = new Highcharts.Chart({<br>
+colors: [<br>
+&apos;#DE2A2A&apos;,<br>
+&apos;#2A54C7&apos;],<br>
+chart: {<br>
+renderTo: &apos;wowtoken&apos;,<br>
+defaultSeriesType: &apos;spline&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;,<br>
+zoomType: &apos;x&apos;,<br>
+},<br>
+<br>
+xAxis: {<br>
+type: &apos;datetime&apos;,<br>
+dateTimeLabelFormats: { // don&apos;t display the dummy year<br>
+day: &apos;%e. %b&apos;,<br>
+month: &apos;%e. %b&apos;,<br>
+year: &apos;%b&apos;<br>
+},<br>
+title: {<br>
+text: &apos;Time&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+startOnTick: false<br>
+},<br>
+legend: {<br>
+enabled: false,<br>
+},<br>
+<br>
+yAxis: {<br>
+endOnTick: true,<br>
+title: {<br>
+text: &apos;Cost (Gold)&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+}<br>
+},<br>
+plotOptions: {<br>
+spline: {<br>
+animation: false,<br>
+shadow: false,<br>
+marker: {<br>
+enabled: false,<br>
+symbol: &apos;circle&apos;,<br>
+radius: 3,<br>
+states: {<br>
+hover: {<br>
+enabled: true<br>
+}<br>
+}<br>
+}<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+headerFormat: &apos;&lt;b&gt;&apos;+ &apos;{point.x:%b %e, %Y %I:%M %p}&apos;<br>
++&apos;&lt;/b&gt;&apos;,<br>
+pointFormat: &apos;&lt;br/&gt;&lt;span style=&quot;color:&apos; + &apos;{point.series.color}&apos; + &apos;&quot;&gt;&apos; + &apos;{point.series.name}&apos; + &apos;&lt;/span&gt;: &apos; + &apos;{point.y:,.0f}g&apos;,<br>
+valueDecimals: 0,<br>
+shared: true<br>
+},<br>
+title: {<br>
+text: &apos;WoW Token Price&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+shared: true,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [{<br>
+name: &apos;US&apos;,<br>
+data: [<br>
+[Date.UTC(2015, 3, 7, 14, 00), 30300 ],<br>
+[Date.UTC(2015, 3, 7, 15, 00), 30603 ],<br>
+[Date.UTC(2015, 3, 7, 16, 00), 30909 ],<br>
+[Date.UTC(2015, 3, 7, 17, 00), 31218 ],<br>
+[Date.UTC(2015, 3, 7, 18, 00), 30909 ],<br>
+[Date.UTC(2015, 3, 7, 19, 00), 31218 ],<br>
+[Date.UTC(2015, 3, 7, 20, 00), 30603 ],<br>
+[Date.UTC(2015, 3, 7, 20, 30), 30300 ],<br>
+[Date.UTC(2015, 3, 7, 21, 00), 29700 ],<br>
+[Date.UTC(2015, 3, 7, 21, 15), 29403 ],<br>
+[Date.UTC(2015, 3, 7, 21, 30), 29108 ],<br>
+[Date.UTC(2015, 3, 7, 21, 45), 28817 ],<br>
+[Date.UTC(2015, 3, 7, 22, 00), 28529 ],<br>
+[Date.UTC(2015, 3, 7, 22, 15), 28244 ],<br>
+ [Date.UTC(2015, 3, 7, 22, 30), 27948 ],<br>
+[Date.UTC(2015, 3, 7, 22, 45), 27669 ],<br>
+[Date.UTC(2015, 3, 7, 23, 00), 27392 ],<br>
+[Date.UTC(2015, 3, 7, 23, 15), 27118 ],<br>
+[Date.UTC(2015, 3, 7, 23, 30), 26847 ],<br>
+[Date.UTC(2015, 3, 7, 23, 45), 26579 ],<br>
+[Date.UTC(2015, 3, 8, 00, 00), 26313 ],<br>
+[Date.UTC(2015, 3, 8, 00, 15), 26050 ],<br>
+[Date.UTC(2015, 3, 8, 00, 30), 25790 ],<br>
+[Date.UTC(2015, 3, 8, 00, 45), 25532 ],<br>
+[Date.UTC(2015, 3, 8, 1, 00), 25277 ],<br>
+[Date.UTC(2015, 3, 8, 1, 15), 25024 ],<br>
+[Date.UTC(2015, 3, 8, 1, 30), 25024 ],<br>
+[Date.UTC(2015, 3, 8, 1, 45), 25024 ],<br>
+[Date.UTC(2015, 3, 8, 2, 00), 25024 ],<br>
+[Date.UTC(2015, 3, 8, 2, 15), 24774 ],<br>
+[Date.UTC(2015, 3, 8, 2, 30), 24774 ],<br>
+[Date.UTC(2015, 3, 8, 2, 45), 24774 ],<br>
+[Date.UTC(2015, 3, 8, 5, 15), 24030 ],<br>
+[Date.UTC(2015, 3, 8, 9, 00), 23324 ],<br>
+[Date.UTC(2015, 3, 8, 13, 00), 22405 ],<br>
+[Date.UTC(2015, 3, 8, 14, 15), 21959 ],<br>
+[Date.UTC(2015, 3, 8, 15, 15), 21739 ],<br>
+[Date.UTC(2015, 3, 8, 16, 15), 21522 ],<br>
+[Date.UTC(2015, 3, 8, 17, 15), 21307 ],<br>
+[Date.UTC(2015, 3, 8, 18, 15), 21094 ],<br>
+[Date.UTC(2015, 3, 8, 19, 15), 20833 ],<br>
+[Date.UTC(2015, 3, 8, 20, 15), 20674 ],<br>
+[Date.UTC(2015, 3, 8, 21, 15), 20467 ],<br>
+[Date.UTC(2015, 3, 8, 22, 15), 20370 ],<br>
+[Date.UTC(2015, 3, 8, 23, 15), 20574 ],<br>
+[Date.UTC(2015, 3, 9, 00, 15), 20780 ],<br>
+[Date.UTC(2015, 3, 9, 1, 15), 20988 ],<br>
+]<br>
+}]<br>
+});<br>
+});<br>
+&lt;/script&gt; <br>
+&lt;div id=&quot;wowtoken&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;Don&apos;t see a chart? Enable javascript!&lt;/div&gt;BlizzCon Benefit Dinner Tickets on Sale April 22<br>
+Before BlizzCon begins, spend an evening hanging out with developers, artists, and other folks from Blizzard at a special pre-show dinner to benefit Children&apos;s Hospital of Orange County (http://blizz.ly/1E6EuKN) (CHOC), taking place at the Hilton Anaheim Hotel on Thursday, November 5 at 6:30 p.m. PDT.<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2015/april/forDemKids.jpg (http://media.mmo-champion.com/images/news/2015/april/forDemKids.jpg) <br>
+<br>
+Approximately 200 tickets to this exclusive event will go on sale Wednesday, April 22 at 7 p.m. PDT at www.blizzcon2015.eventbrite.com, priced at $750 each (plus applicable taxes and fees; limit 2 per household). Blizzard Entertainment will donate the proceeds to Children&#x2019;s Hospital of Orange County (http://blizz.ly/1E6EuKN) (CHOC), and you&#x2019;ll get a chance to enjoy:<br>
+<br>
+<br>
+Dinner and an opportunity to converse with some of the people behind your favorite Blizzard games<br>
+A signed print featuring Blizzard Entertainment artwork<br>
+One BlizzCon 2015 ticket (a $199 USD value)<br>
+BlizzCon goody bag containing commemorative swag (contents to be announced)<br>
+BlizzCon Virtual Ticket<br>
+The opportunity to forge some epic BlizzCon memories <br>
+<br>
+<br>
+Check out the BlizzCon Benefit Dinner ticket info page (http://blizz.ly/1FnkkNq) for more details, and visit www.blizzcon2015.eventbrite.com on April 22 at 7 p.m. to buy tickets. We hope to see you there, and thanks in advance for lending your support to this great cause!<br>
+<br>
+<br>
+Changes to Conquest Catch-Up Cap<br>
+Okay, we&apos;ve tracked down the issue that caused some players to not get the increased Conquest catch-up cap.<br>
+<br>
+The good news is that the issue is only temporary, and any characters who did not get the increase this week will automatically get it with next week&apos;s reset. If you would like the increase applied sooner than that, please contact our Customer Service department, who will be able to manually correct it.<br>
+<br>
+<br>
+Blue Tweets<br>
+Game Design<br>
+Coincidentally, if you have hopes of being in design, realize that you will be torn apart, your best intentions will fail. Be humble, learn. (Muffinus (https://twitter.com/Muffinus/status/583504643738611713))<br>
+re &quot;best intentions&quot; - immediately thought of Ashran...<br>
+The best thing a community can do is tell the designer what the issue is directly, so they can learn, and the game can improve. (Muffinus (https://twitter.com/Muffinus/status/583506296080441346))<br>
+agreed. Re Ashran though you guys know everything already. Nothing new. It&apos;s been all said. It&apos;s great that you seek further input<br>
+Important note: we&apos;re not a designer hive-mind. You may see &quot;mistakes&quot; repeated. It&apos;s important to compare/contrast. (Muffinus (https://twitter.com/Muffinus/status/583510891708067840))<br>
+Ashran - faction dominated, lacking clear and rather quick rewards. Spend an hour, get a few honor points, or just die constantly.<br>
+world - not random enough. Nothing exciting and/or unpredictable to go out (or group) for. TLDR: rewards don&apos;t keep up with time.<br>
+What do you want to gain after an hour? A month? (Muffinus (https://twitter.com/Muffinus/status/583515747973926913))<br>
+<br>
+Garrisons<br>
+Battle pets! Why can&apos;t my followers also be avid pet battlers, and find me new, exotic cuties! Garona loves rabbits, fyi.<br>
+Some players are hitting the cap, do you want more than one THOUSAND pets? (Muffinus (https://twitter.com/Muffinus/status/583516817877901312))<br>
+<br>
+Yo, what do you want to see as rewards to longer, harder missions in a future WoW patch? Gold, apexis, honor? (Muffinus (https://twitter.com/Muffinus/status/583515529328984064))<br>
+why not both.. er, all three?<br>
+How would this work for you? All 3 every week? A choice? Which would you choose? For how long? (Muffinus (https://twitter.com/Muffinus/status/583516391120080896))<br>
+much longer missions with higher risk/rewards..<br>
+What&apos;s the risk? % success? Follower death? What feels apropos currently? (Muffinus (https://twitter.com/Muffinus/status/583517006864912384))<br>
+What happened to the follower &quot;recovery time&quot; element?<br>
+It was really not fun, ultimately. Not to say it may *never* return, but wasn&apos;t for WoD launch. (Muffinus (https://twitter.com/Muffinus/status/583519343519993856))<br>
+But what about 3 day or 5 day missions with awesome rewards? makes for interesting choices..<br>
+Dudes and dudettes, what is literally Amazeballs to you atm? (Muffinus (https://twitter.com/Muffinus/status/583518639724199936))<br>
+<br>
+<br>
+Shadowmourne Prop<br>
+Blizzard shared (https://twitter.com/Warcraft/status/585924065803632640) a very impressive weapon created by Kamui (https://twitter.com/KamuiCosplay/status/585919639005306880) on Twitter today.<br>
+<br>
+<br>
+&lt;blockquote class=&quot;instagram-media&quot; data-instgrm-version=&quot;4&quot; style=&quot;background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);margin-left:auto;margin-right:auto;&quot;&gt;&lt;div style=&quot;padding:8px;&quot;&gt; &lt;div style=&quot;margin-left:auto;margin-right:auto; background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;&quot;&gt; &lt;div style=&quot; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBw cHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWw MzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gK Hkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;&lt;a href=&quot;https://instagram.com/p/1OrRHBGlE9/&quot; style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;&quot; target=&quot;_top&quot;&gt;A video posted by Svetlana Quindt (@kamuicosplay)&lt;/a&gt; on &lt;time style=&quot; font-family:Arial,sans-serif; font-size:14px; line-height:17px;&quot; datetime=&quot;2015-04-08T21:38:21+00:00&quot;&gt;Apr 8, 2015 at 2:38pm PDT&lt;/time&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;script async defer src=&quot;//platform.instagram.com/en_US/embeds.js&quot;&gt;&lt;/script&gt;</div></div>

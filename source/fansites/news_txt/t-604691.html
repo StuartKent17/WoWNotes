@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2008-02-06, 08:58 AM</div></div><div class="posttext">Update 10:45 CET - Added a post about the legendary bow<br>
+<br>
+Today we&apos;ve got blue posts, blue posts, and blue posts, including a few updates to yesterday&apos;s posts (interface and cooking). Nothing said about the release date of the 2.4 patch on PTR, but it&apos;s probably a matter of days now (hours ?)<br>
+<br>
+Legendary bow !<br>
+Even if it wasn&apos;t a huge secret, the legendary bow is confirmed and will drop from a boss (probably Kil&apos;jaeden). <br>
+A few more details on this legendary weapon : it will be a loot like the Warglaives of Azzinoth, not a reward from a quest like Thunderfury.<br>
+<br>
+<br>
+Archdruid hero class ?<br>
+computerandvideogames.com (http://www.computerandvideogames.com/article.php?id=181521) released the 2nd part of their interview with Tigole, well it&apos;s not really a second part because it looks a lot like the first one, however there is a very interesting comment about heroic classes.<br>
+What&apos;s more, with any luck, we&apos;ll see more Hero classes some time after release, the hot Zitron tip being some kind of Archdruid quest directly connected to Malfurion Stormrage and the much-anticipated Emerald Dream.<br>
+<br>
+<br>
+[Patch 2.4] Cooking recipes<br>
+I already posted the stats of the new cooking recipes, but this time we&apos;re back with the full description of each item directly from a blue post.<br>
+We have added two new cooking recipes for Patch 2.4: Charred Bear Kabobs and Juicy Bear Burgers. Both new recipes can be purchased from either Bale (Horde) or Malygen (Alliance) in Felwood. The recipes require 250 skill to learn, and use meat added to level 48-56 bears. This means it will no longer require fish to skill up your cooking to 300.<br>
+<br>
+Juicy Bear Burger<br>
+Requires Level 45. Use: Restores 1933 health over 27 sec. Must remain seated while eating. If you eat for 10 seconds will also increase your damage and healing from magical spells and effects by up to 14 for 15 min.<br>
+<br>
+Charred Bear Kabobs<br>
+Requires Level 45. Use: Restores 1933 health over27 sec. Must remain seated while eating. If you eat for 10 seconds will also increase your attack power by 24 for 15 min.<br>
+<br>
+<br>
+[Patch 2.4] Combat log changes<br>
+I&apos;m not posting the full post because it&apos;s ridiculously long, but Vaneras confirmed that the new combat log will have tons of formatting and coloring options. There are a lot more details for UI developers on the original post (http://forums.wow-europe.com/thread.html?topicId=2405449147&amp;postId=27455791692&amp;sid=1#0)<br>
+The whole combat log also supports a new coloring model, based on context. While by default, entire lines are a single color, highlighting the most important details. The combat log also supports coloring just unit names, spells, actions and damage numbers. Spells and damage can also be colored by school. However, there are several features not exposed in the base UI that AddOns can use right away. These are event-specific coloring, unit coloring with greater granularity and the ability to customize the list of highlighted events.<br>
+<br>
+There are several other formatting related features. You can enable timestamps which show the time that spell or attack happened. You can show or hide square braces, change formatting without refreshing the combat log and disable the display of raid icons. These features were too niche to go into the base UI, but can be easily exposed for power users. By now you&#x2019;ve already thought of some features of your own and are ready to get to coding. So let&#x2019;s jump straight to some examples.<br>
+<br>
+Formatting &amp; Coloring<br>
+One of the major combat log formats we considered while redoing the combat log was the Nurfed Combat Log format. This combat log format was very concise, made heavy use of color-coding and was one of the final candidates for the combat log. We eventually axed it on the basis of being too overwhelming for new users. However, we left in all of the options to convert the current combat log into the Nurfed combat log.<br>
+<br>
+Here&#x2019;s how:<br>
+<br>
+Combat Log Settings -&gt; Colors<br>
+Unit Colors:<br>
+Me -&gt; Green<br>
+My Pet -&gt; Dark Green<br>
+Friends -&gt; Blue<br>
+Enemies -&gt; Red<br>
+Neutral -&gt; Yellow<br>
+<br>
+Colorize:<br>
+Unit Names -&gt; Checked<br>
+Spell Names -&gt; Checked<br>
+Spell Color-by-School -&gt; Checked<br>
+Damage Number -&gt; Checked<br>
+Damage Color-by-School -&gt; Checked<br>
+Damage School -&gt; Checked<br>
+Entire Line -&gt; Unchecked<br>
+All Highlighting Options-&gt; Unchecked<br>
+<br>
+Formatting:<br>
+Verbose -&gt; Unchecked<br>
+Braces -&gt; Checked<br>
+Timestamps -&gt; Checked<br>
+<br>
+However, some people may want it even more terse than that. For this, we present:<br>
+<br>
+Hyper Condensed Mode<br>
+To get rid of the word &#x201C;Fire&#x201D; and &#x201C;Frost&#x201D; type:<br>
+<br>
+/script TEXT_MODE_A_STRING_VALUE_SCHOOL = &#x201C;&#x201D;;<br>
+<br>
+That will remove the Fire from &#x201C;55 Fire&#x201D;. However, let&#x2019;s go even farther:<br>
+<br>
+(Critical) (Crushing) (Blocked) (Resisted)<br>
+<br>
+All of these are really long. Let&#x2019;s compress them:<br>
+<br>
+TEXT_MODE_A_STRING_RESULT_RESISTED = &quot;R&quot;;<br>
+TEXT_MODE_A_STRING_RESULT_BLOCKED = &quot;B&quot;;<br>
+TEXT_MODE_A_STRING_RESULT_ABSORBED = &quot;A&quot;;<br>
+TEXT_MODE_A_STRING_RESULT_CRITICAL = &quot;C&quot;;<br>
+TEXT_MODE_A_STRING_RESULT_GLANCING = &quot;G&quot;;<br>
+TEXT_MODE_A_STRING_RESULT_CRUSHING = &quot;Cr&quot;;<br>
+<br>
+Now we get<br>
+<br>
+[You] [Fireball] Hit [Spider] 64. (C) (5 R)<br>
+<br>
+<br>
+Other blue posts<br>
+40 Players dungeons<br>
+We have no plans at this time to reintroduce 40 person raid dungeons, we plan to continue with our current models of 10 and 25 person raid dungeons and make them better than ever. (Source (http://forums.worldofwarcraft.com/thread.html?topicId=4311169082&amp;postId=44201353394&amp;sid=1#10))<br>
+<br>
+Lunar festival<br>
+It seems that players who completed Lunar Festival quests a year or two ago can&apos;t get them again.<br>
+This is not something that will be changed for this year, but we&apos;re mindful of it and Lunar Festival is on our list to be reworked so people can engage in the seasonal content. (Source (http://forums.worldofwarcraft.com/thread.html?topicId=4311227984&amp;postId=44224549773&amp;sid=1#5))<br>
+<br>
+<br>
+Account security reminders<br>
+Eyonix posted two reminders about account security and thing you definitely shouldn&apos;t do with your account password. (Just don&apos;t give it to anyone :/)<br>
+We wanted to provide the community with a few friendly security reminders. It is very important that players take caution when being directed to outside websites and update the security on their computers accordingly. To secure your computer, we suggest adding some Internet security to your system (for example: a firewall and anti-virus scanner). If you are unsure what security measures to take, discuss the issue of system security with your ISP or a trained Network Administrator for the solution that is right for you.<br>
+<br>
+We also strongly recommend that all players use the Blizzard Launcher to start World of Warcraft. In addition to serving as a portal to the game, the Blizzard Launcher provides greater security for our players against harmful software such as the type discussed here. To learn more about this utility, please visit the Blizzard Launcher Page and check out the Blizzard Launcher FAQ.<br>
+<br>
+Also, please be sure that you have the most secure operating system environment on your computer by running Windows Update (if you own a Windows-based PC) or Software Update (if you own a Mac) and installing all of the updates marked &#x201C;High Priority&#x201D;. Note: you may have to run the updater more than once to ensure you have all the high priority updates; many of the patches require a system restart, and then additional patch installations to complete the process.<br>
+<br>
+http://www.blizzard.com/support/wow/?id=aww01907p1 (http://www.blizzard.com/support/wow/?id=aww01907p1)<br>
+<br>
+If you come across a suspicious link or program, please report it here -- http://www.blizzard.com/support/?id=eHacks000 (http://www.blizzard.com/support/?id=eHacks000)<br>
+<br>
+For more information on keeping your account secure and what to do if you feel your account has been compromised, please visit the Account Security page.<br>
+<br>
+http://www.blizzard.com/support/wowbilling/?id=abl01897p (http://www.blizzard.com/support/wowbilling/?id=abl01897p)<br>
+<br>
+Also a few words about people sending fake mails to users about a WotLK beta account.<br>
+Please be aware, there is currently no Beta or beta sign-ups going on for the next World of Warcraft Expansion, Wrath of the Lich King. Should a Beta phase begin, we will post a notice on the official website.<br>
+<br>
+As always, please be careful about giving out account information or passwords.<br>
+<br>
+<br>
+New TCG wallpaper : Rexxar<br>
+We just added a new wallpaper to our World of Warcraft wallpapers section: http://www.wow-europe.com/en/downloads/tcg-wallpapers.html (http://www.wow-europe.com/en/downloads/tcg-wallpapers.html)<br>
+<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_small.jpg (http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1280x.jpg) 800x600 (http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_800x.jpg)<br>
+1024x768 (http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1024x.jpg)<br>
+1152x864 (http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1152x.jpg)<br>
+1290x960 (http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1280x.jpg)<br>
+1600x1200 (http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1600x.jpg)<br>
+1680x1050 (http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1680xwide.jpg)<br>
+1920x1200 (http://static.mmo-champion.com/mmoc/images/news/2008/february/rexxar_1920xwide.jpg)</div></div>

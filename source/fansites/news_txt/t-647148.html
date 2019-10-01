@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2009-05-04, 05:40 PM</div></div><div class="posttext">Update - Updated the post with a few more information from Ghostcrawler<br>
+<br>
+Val&apos;anyr, Hammer of the Ancient Kings<br>
+The proc on <br>
+Val&apos;anyr, Hammer of the Ancient Kings (http://static.mmo-champion.com/mmoc/images/news/2009/april/valanyr.jpg) has been clarified by Bornakk. <br>
+Val&apos;anyr, Hammer of the Ancient Kings (http://www.mmo-champion.com/index.php?page=855) dedicated page.<br>
+We have received many questions about how the proc works on Val&#x2019;anyr, the Hammer of the Ancient Kings. While we originally intended for this effect to be a mystery, we realize that guilds now know what the tooltip on the proc says without necessarily knowing the details on how it works. This leads to situations where a healer may not know if assembling the hammer is worth it for them (hint: it is), and perhaps even worse, a misinformed leader may not think you deserve the hammer (hint: you do).<br>
+<br>
+Players also wonder if the proc makes the item deserving of its legendary status given that the stat allocation is normal for items of its item level (Hint: it does).<br>
+<br>
+The effect reads &#x201C;Your healing spells have a chance to cause Blessing of Ancient Kings for 15 seconds allowing your heals to shield the target absorbing damage equal to 15% of the amount healed.&#x201D;<br>
+<br>
+The way this works is that when the proc happens (which is a 10% chance whenever a hot or direct spell heals, with a 45 sec internal cooldown) you gain a buff (the Blessing) on yourself. Now all of your heals for the next 15 sec cause an 8 sec damage shield. The shield stacks with itself. It includes healing done by subsequent ticks of existing hots on the target. Note that the spell has to actually heal, so hots ticking on a fully-healed target cannot cause the proc. However the shield is based on the size of the heal itself, not the amount healed &#x2013; i.e. 100% overhealing will not proc the Blessing on the healer, but the shield itself includes overhealing once the Blessing is active. The shield can grow to a maximum size of 20,000 damage absorbed.<br>
+<br>
+Example 1: A paladin casts Holy Light for 10K on the tank, which partially heals her. The Blessing procs, so the paladin&#x2019;s Holy Light immediately causes a shield on the tank which will now absorb 1500 damage. The tank dodges the next two hits, so no damage is absorbed. The paladin then casts another heal for 8K, but only heals the tank for 600 before she is at full health. The shield is now at 2700 damage absorbed (1500 + 1200) for 8 sec.<br>
+<br>
+Example 2: A druid casts Rejuv on the tank, healing her. The Blessing procs on the druid on the second tick. A shield is applied to the tank which absorbs 15% of the amount healed by that tick and each remaining tick of the Rejuv. If the druid also gets Lifebloom and Regrowth on the tank while the Blessing is up, then those ticks also contribute to the shield. If the shield goes down because the 8 sec duration expires or it absorbs that much damage, it can go up again as long as the Blessing lasts, which is 15 sec. <br>
+<br>
+Update by Ghostcrawler<br>
+To answer some questions:<br>
+<br>
+1) If you are lucky enough to have two hammers in your group, then they will both contribute to the same bubble.<br>
+<br>
+2) It should work as you would expect with PW:Shield and similar effects. Specifically, the damage should work through one shield and then the other. I don&apos;t know off the top of my head which one is used first. Sometimes we have edge cases with multiple absorbs like this that we will need to solve as they arise. (To be clear, PW:Shield will not proc the blessing or the bubble though, because it does not heal.)<br>
+<br>
+3) If you have the blessing (i.e. you caused healing and the proc occured) then overhealing will count towards the bubble. Hots that tick on a target will still contribute to the bubble. You can also choose to switch to a direct heal if you don&apos;t have enough GCDs available to get all of your hots up before the blessing fades. The confusing part here is that hots that don&apos;t heal won&apos;t cause the blessing (we didn&apos;t want you fishing for the bubble before a pull by constantly healing the tank, though I suppose you could if your tank was injured). But once the blessing is active, then all of your healing spells will contribute to the bubble even if they do no actual healing.<br>
+<br>
+We&apos;ll leave it to you guys to theorycraft out if you think the hammer is marginally better for one class than another. Some players were speculating before this announcement that the bubble only applied to one spell, which would definitely favor Holy Light. We implemented it the way we did to make sure the other healing classes could still get juicy bubbles while the blessing was active (which is 15 sec).</div></div>

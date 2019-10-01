@@ -1,0 +1,1552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-11-27, 07:14 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; John Yang&apos;s Lightning Talk, Wizard Cosplay by MiciaGlo (http://www.diablofans.com/news/48589-john-yangs-lightning-talk-wizard-cosplay-by)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Brawl: Battle of Tol Barad, Hearthstone World Championships 2016 Info, Kripp&apos;s Arena Fail Compilation #8 (http://www.hearthpwn.com/news/1123-brawl-battle-of-tol-barad-hearthstone-world)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Dreamhack All-Stars Winter, Epic Plays #55, Town Hall Heroes #87 (http://www.heroesnexus.com/news/1551-dreamhack-all-stars-winter-epic-plays-55-town-hall)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Lorewatch - Hanzo, Blues - Name Visibility, SLI, Teleporter Direction (http://www.overpwn.com/news/111-lorewatch-hanzo-blues-name-visibility-sli)<br>
+<br>
+Legion - Artifact Trait Calculator<br>
+We finally have an early version of an Artifact Trait calculator ready! It is nowhere near complete, nor are the actual traits, so please keep that in mind!<br>
+<br>
+<br>
+Each artifact trait tree starts at a specific position, the thick gold border trait.<br>
+After selecting that trait, you can select any of the ones directly connected to it. <br>
+For most classes, there are 3 Major Traits that are 4-5 deep in the trait tree. These are capped at Rank 1.<br>
+The Minor Traits in the rest of the tree are capped to 3 by default.<br>
+The cap on traits can be increase by up to 2 using relics. This leads to some fun traits:<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/187301-everywhere-at-once?artifactRank=5&quot; href=&quot;http://beta.wowdb.com/spells/187301-everywhere-at-once?artifactRank=5&quot; class=&quot; t&quot;&gt;Everywhere At Once (Rank 5)&lt;/a&gt; - Reduces the cooldown of your Blink (http://beta.wowdb.com/spells/1953-blink) by 12 sec.<br>
+<br>
+The current trait calculator doesn&apos;t restrict what traits you can select or support relics. This is coming in a future update.<br>
+<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2015/november/artifactCalc.jpg (http://beta.wowdb.com/artifact-calculator#LAAAAAAAA) <br>
+<br>
+<br>
+&lt;script type=&quot;text/javascript&quot;&gt;<br>
+var tabView = new YAHOO.widget.TabView(&apos;set1&apos;);<br>
+var tabView = new YAHOO.widget.TabView(&apos;set2&apos;);<br>
+&lt;/script&gt;<br>
+<br>
+&lt;style&gt;<br>
+em { font-style: normal; font-size:11px }<br>
+.ui-tabs li {list-style-type: none !important;}<br>
+.ach {font-weight: bold;}<br>
+.sortable {margin: auto;}<br>
+.yui-nav li{ padding: 1px 2px 0px !important; }<br>
+.yui-nav {margin-bottom: -10px !important;}<br>
+yui-nav ul {margin-left: -20px;}<br>
+.yui-skin-sam .yui-navset .yui-nav a em,.yui-skin-sam .yui-navset .yui-navset-top .yui-nav a em{padding:.25em .6em;}<br>
+&lt;/style&gt;<br>
+<br>
+<br>
+&lt;!-- LOOT TABLE START --&gt;<br>
+<br>
+&lt;div class=&quot;yui-skin-sam&quot;&gt;<br>
+&lt;div id=&quot;set1&quot; class=&quot;yui-navset yui-skin-sam tabs&quot;&gt;<br>
+&lt;ul class=&quot;yui-nav&quot;&gt;<br>
+&lt;li class=&quot;selected&quot;&gt;&lt;a href=&quot;#tab1&quot;&gt;&lt;em&gt;&lt;img src=&quot;http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif&quot; /&gt; Death Knight&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#tab2&quot;&gt;&lt;em&gt;&lt;img src=&quot;http://media.mmo-champion.com/images/news/2015/november/idemonhunters.gif&quot; /&gt; Demon Hunter&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#tab3&quot;&gt;&lt;em&gt;&lt;img src=&quot;http://static.mmo-champion.com/mmoc/images/icons/idruids.gif&quot; /&gt; Druid&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#tab4&quot;&gt;&lt;em&gt;&lt;img src=&quot;http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif&quot; /&gt; Hunter&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#tab5&quot;&gt;&lt;em&gt;&lt;img src=&quot;http://static.mmo-champion.com/mmoc/images/icons/images.gif&quot; /&gt; Mage&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#tab6&quot;&gt;&lt;em&gt;&lt;img src=&quot;http://static.mmo-champion.com/mmoc/images/icons/imonks.gif&quot; /&gt; Monk&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#tab7&quot;&gt;&lt;em&gt;&lt;img src=&quot;http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif&quot; /&gt; Paladin&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#tab8&quot;&gt;&lt;em&gt;&lt;img src=&quot;http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif&quot; /&gt; Priest&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#tab9&quot;&gt;&lt;em&gt;&lt;img src=&quot;http://static.mmo-champion.com/mmoc/images/icons/irogues.gif&quot; /&gt; Rogue&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#tab10&quot;&gt;&lt;em&gt;&lt;img src=&quot;http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif&quot; /&gt; Shaman&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#tab11&quot;&gt;&lt;em&gt;&lt;img src=&quot;http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif&quot; /&gt; Warlock&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;#tab12&quot;&gt;&lt;em&gt;&lt;img src=&quot;http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif&quot; /&gt; Warrior&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;div class=&quot;yui-content&quot;&gt;<br>
+&lt;div id=&quot;tab1&quot;&gt;<br>
+<br>
+<br>
+Blood<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/205223-consumption?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/205223-consumption?artifactRank=1&quot; class=&quot;t&quot;&gt;Consumption (Rank 1)&lt;/a&gt; - Focuses dark power into a strike that deals (0% of weapon damage) Physical damage and heals you for 0% of all damage taken in the last 0 sec (minimum 0% of maximum health).<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192558-skeletal-shattering-nyi?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192558-skeletal-shattering-nyi?artifactRank=1&quot; class=&quot;t&quot;&gt;Skeletal Shattering [NYI] (Rank 1)&lt;/a&gt; - Your Bone Shield now has a chance equal to your Critical Strike chance to prevent 50% damage on a hit.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192567-unending-thirst-nyi?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192567-unending-thirst-nyi?artifactRank=1&quot; class=&quot;t&quot;&gt;Unending Thirst [NYI] (Rank 1)&lt;/a&gt; - When your Blood Shield expires, deal damage equal to half your missing health to your enemy target. Gain health equal to the damage you deal.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/193213-umbilicus-eternus?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/193213-umbilicus-eternus?artifactRank=1&quot; class=&quot;t&quot;&gt;Umbilicus Eternus (Rank 1)&lt;/a&gt; - When you Vampiric Blood, each target with Blood Plague begins to bleed into a sphere. After your Vampiric Blood expires, the spheres congeal into a shield surrounding you which reduces damage by 20% and absorbs 5x as much damage as was dealt.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192450-iron-heart?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192450-iron-heart?artifactRank=3&quot; class=&quot;t&quot;&gt;Iron Heart (Rank 3)&lt;/a&gt; - Increases your Armor by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192453-meat-shield?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192453-meat-shield?artifactRank=3&quot; class=&quot;t&quot;&gt;Meat Shield (Rank 3)&lt;/a&gt; - Increases your Stamina by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192447-grim-fortitude?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192447-grim-fortitude?artifactRank=3&quot; class=&quot;t&quot;&gt;Grim Fortitude (Rank 3)&lt;/a&gt; - Reduces the damage you take by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192457-veinrender?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192457-veinrender?artifactRank=3&quot; class=&quot;t&quot;&gt;Veinrender (Rank 3)&lt;/a&gt; - Increases the damage dealt by your Blood Strike by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192460-coagulopathy?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192460-coagulopathy?artifactRank=3&quot; class=&quot;t&quot;&gt;Coagulopathy (Rank 3)&lt;/a&gt; - Increases the damage dealt by your Blood Plague by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192544-vampiric-fangs?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192544-vampiric-fangs?artifactRank=3&quot; class=&quot;t&quot;&gt;Vampiric Fangs (Rank 3)&lt;/a&gt; - Increases the maximum hit points granted by Vampiric Blood by an additional 0% and increases healing recieved by an additional 0%. <br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192464-all-consuming-rot?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192464-all-consuming-rot?artifactRank=3&quot; class=&quot;t&quot;&gt;All-Consuming Rot (Rank 3)&lt;/a&gt; - Increases the damage of your Death and Decay by 20,000%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192514-dance-of-darkness?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192514-dance-of-darkness?artifactRank=3&quot; class=&quot;t&quot;&gt;Dance of Darkness (Rank 3)&lt;/a&gt; - Increases the duration of your Dancing Rune Weapon by 12 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192538-bonebreaker?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192538-bonebreaker?artifactRank=3&quot; class=&quot;t&quot;&gt;Bonebreaker (Rank 3)&lt;/a&gt; - Increases the damage of your Marrowrend by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192557-rattling-bones-untested-impl?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192557-rattling-bones-untested-impl?artifactRank=1&quot; class=&quot;t&quot;&gt;Rattling Bones [Untested IMPL] (Rank 1)&lt;/a&gt; - Marrowrend generates an additional charge of Bone Shield.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192548-touch-of-the-grave?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192548-touch-of-the-grave?artifactRank=1&quot; class=&quot;t&quot;&gt;Touch of the Grave (Rank 1)&lt;/a&gt; - Death Coil heals you for 0% of the damage dealt.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192570-mouth-of-hell?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192570-mouth-of-hell?artifactRank=1&quot; class=&quot;t&quot;&gt;Mouth of Hell (Rank 1)&lt;/a&gt; - Your Dancing Rune Weapon summons a second copy of Maw of the Damned.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Frost<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/190778-sindragosas-fury?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/190778-sindragosas-fury?artifactRank=1&quot; class=&quot;t&quot;&gt;Sindragosa&apos;s Fury (Rank 1)&lt;/a&gt; - <br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189185-hypothermia?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189185-hypothermia?artifactRank=1&quot; class=&quot;t&quot;&gt;Hypothermia (Rank 1)&lt;/a&gt; - Every periodic tick of Frostfever deals 10% more damage. <br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189186-crystalline-swords?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189186-crystalline-swords?artifactRank=1&quot; class=&quot;t&quot;&gt;Crystalline Swords (Rank 1)&lt;/a&gt; - As you attack, icy copies of Icebringer and Frostreaper begin to float beside you. When you trigger Soulblade, the icy blades are unleased and pierce their foe.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189184-frozen-soul?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189184-frozen-soul?artifactRank=1&quot; class=&quot;t&quot;&gt;Frozen Soul (Rank 1)&lt;/a&gt; - When Remorseless Winter expires, a burst of Frost damage is released. Damage is increased for each enemy hit during Remorseless Winter.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189080-cold-as-ice?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189080-cold-as-ice?artifactRank=3&quot; class=&quot;t&quot;&gt;Cold as Ice (Rank 3)&lt;/a&gt; - Increases your Frost damage dealt by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189086-blast-radius?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189086-blast-radius?artifactRank=3&quot; class=&quot;t&quot;&gt;Blast Radius (Rank 3)&lt;/a&gt; - Increases the damage dealt by your Howling Blast by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189092-ambidexterity?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189092-ambidexterity?artifactRank=3&quot; class=&quot;t&quot;&gt;Ambidexterity (Rank 3)&lt;/a&gt; - Increases offhand damage dealt by Frost Strike and Obliterate by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189097-over-powered?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189097-over-powered?artifactRank=3&quot; class=&quot;t&quot;&gt;Over-Powered (Rank 3)&lt;/a&gt; - Your Obliterate has a chance to generate 13 more Runic Power.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189144-nothing-but-the-boots?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189144-nothing-but-the-boots?artifactRank=3&quot; class=&quot;t&quot;&gt;Nothing but the Boots (Rank 3)&lt;/a&gt; - Increases the critical strike damage of Obliterate by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189147-bad-to-the-bone?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189147-bad-to-the-bone?artifactRank=3&quot; class=&quot;t&quot;&gt;Bad to the Bone (Rank 3)&lt;/a&gt; - Increases the effectiveness of your Razorice Runeforge by 125%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189154-ice-in-your-veins?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189154-ice-in-your-veins?artifactRank=3&quot; class=&quot;t&quot;&gt;Ice in Your Veins (Rank 3)&lt;/a&gt; - Increases the healing of Death Strike by 400% while Icebound Fortitude is active.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189164-smell-the-roses?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189164-smell-the-roses?artifactRank=3&quot; class=&quot;t&quot;&gt;Smell the Roses (Rank 3)&lt;/a&gt; - Death and Decay deals 20% more damage and last 0% longer.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189173-the-sound-of-inevitability?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189173-the-sound-of-inevitability?artifactRank=3&quot; class=&quot;t&quot;&gt;The Sound of Inevitability (Rank 3)&lt;/a&gt; - Your active Diseases have a chance to trigger Runic Empowerment.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189179-frozen-core?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189179-frozen-core?artifactRank=1&quot; class=&quot;t&quot;&gt;Frozen Core (Rank 1)&lt;/a&gt; - While Pillar of Frost is active, enemies that attack you are automatically ensared in Chains of Ice.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189180-mirror-ball?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189180-mirror-ball?artifactRank=1&quot; class=&quot;t&quot;&gt;Mirror Ball (Rank 1)&lt;/a&gt; - Anti-Magic Shell now clears debuffs when activated.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/204875-frozen-skin?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/204875-frozen-skin?artifactRank=3&quot; class=&quot;t&quot;&gt;Frozen Skin (Rank 3)&lt;/a&gt; - Reduces your damage taken by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/205209-chill-of-the-grave?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/205209-chill-of-the-grave?artifactRank=1&quot; class=&quot;t&quot;&gt;Chill of the Grave (Rank 1)&lt;/a&gt; - Increases the range of your Frost Strike by 0 yards.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Unholy<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191415-and-you-will-know-us-by-the-trail-of-our-dead?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191415-and-you-will-know-us-by-the-trail-of-our-dead?artifactRank=1&quot; class=&quot;t&quot;&gt;And You Will Know Us By The Trail Of Our Dead (Rank 1)&lt;/a&gt; - Your attacks have a chance to summon an Army of the Dead.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191760-the-shambler?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191760-the-shambler?artifactRank=1&quot; class=&quot;t&quot;&gt;The Shambler (Rank 1)&lt;/a&gt; - Your attacks have a chance to summon a Super Zombie that shambles forward and explodes. <br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191741-double-doom?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191741-double-doom?artifactRank=1&quot; class=&quot;t&quot;&gt;Double Doom (Rank 1)&lt;/a&gt; - Sudden Doom grants you two free Death Coils.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191747-flagellation?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191747-flagellation?artifactRank=1&quot; class=&quot;t&quot;&gt;Flagellation (Rank 1)&lt;/a&gt; - Death Coil applies a debuff that increases Scourge Strike damage by 50%. <br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191637-portal-to-the-underworld?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191637-portal-to-the-underworld?artifactRank=1&quot; class=&quot;t&quot;&gt;Portal to the Underworld (Rank 1)&lt;/a&gt; - Enemies attempting to leave your Death and Decay are Death Gripped back to the center.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191731-armies-of-the-damned?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191731-armies-of-the-damned?artifactRank=1&quot; class=&quot;t&quot;&gt;Armies of the Damned (Rank 1)&lt;/a&gt; - Ghouls summoned by Army of the Dead now apply additional effects when using their Claw.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191419-deadliest-coil?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191419-deadliest-coil?artifactRank=3&quot; class=&quot;t&quot;&gt;Deadliest Coil (Rank 3)&lt;/a&gt; - Increases the damage and healing of your Death Coil by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191442-rotten-touch?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191442-rotten-touch?artifactRank=3&quot; class=&quot;t&quot;&gt;Rotten Touch (Rank 3)&lt;/a&gt; - Increases the improved damage generated by Festering Strike by 125%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191485-unholiest-of-the-unholies?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191485-unholiest-of-the-unholies?artifactRank=3&quot; class=&quot;t&quot;&gt;Unholiest of the Unholies (Rank 3)&lt;/a&gt; - Increases the damage of your Unholy Blightl by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191565-deadly-durability?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191565-deadly-durability?artifactRank=3&quot; class=&quot;t&quot;&gt;Deadly Durability (Rank 3)&lt;/a&gt; - Reduces the damage you take by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191721-gravitational-pull?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191721-gravitational-pull?artifactRank=1&quot; class=&quot;t&quot;&gt;Gravitational Pull (Rank 1)&lt;/a&gt; - Enemies you Death Grip are rooted for 6 seconds.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191594-runic-tattoos?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191594-runic-tattoos?artifactRank=3&quot; class=&quot;t&quot;&gt;Runic Tattoos (Rank 3)&lt;/a&gt; - Increases your Maximum Runic Power by 0 and Runic Power Generation by 0%. <br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191494-scourge-the-unbeliever?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191494-scourge-the-unbeliever?artifactRank=3&quot; class=&quot;t&quot;&gt;Scourge the Unbeliever (Rank 3)&lt;/a&gt; - Your Scourge Strike has a 40% chance to refund a rune.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191488-the-darkest-crusade?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191488-the-darkest-crusade?artifactRank=3&quot; class=&quot;t&quot;&gt;The Darkest Crusade (Rank 3)&lt;/a&gt; - Increases the effect of your Fallen Crusader by 125%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191584-unholy-endurance?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191584-unholy-endurance?artifactRank=3&quot; class=&quot;t&quot;&gt;Unholy Endurance (Rank 3)&lt;/a&gt; - Reduces the damage you take from Area of Effect effects by 20%.<br>
+<br>
+<br>
+<br>
+<br>
+&lt;/div&gt;<br>
+&lt;div id=&quot;tab2&quot;&gt;<br>
+<br>
+<br>
+Havoc<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201467-fury-of-the-illidari?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201467-fury-of-the-illidari?artifactRank=1&quot; class=&quot;t&quot;&gt;Fury of the Illidari (Rank 1)&lt;/a&gt; - Send your Warglaives spinning rapidly around your location for the next 3 seconds, dealing (0% of weapon damage) damage to any enemy it comes in contact with.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201471-inner-demons?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201471-inner-demons?artifactRank=1&quot; class=&quot;t&quot;&gt;Inner Demons (Rank 1)&lt;/a&gt; - When you Chaos Strike a target, you have a chance to unleash your inner demon, causing an image of your demon form to crash down onto your target, dealing damage to all enemies within 0 yards.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201472-rage-of-the-illidari?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201472-rage-of-the-illidari?artifactRank=1&quot; class=&quot;t&quot;&gt;Rage of the Illidari (Rank 1)&lt;/a&gt; - When Fury of the Illidari ends, 100% of the damage dealt will erupt in an explosion of fel energy, splitting the damage between all enemies within 8 yards.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201473-anguish-of-the-deceiver?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201473-anguish-of-the-deceiver?artifactRank=1&quot; class=&quot;t&quot;&gt;Anguish of the Deceiver (Rank 1)&lt;/a&gt; - Each time Eye Beam deals damage to a target, you cause Anguish on the target. When Anguish expires, it deals damage based on how many times it stacked up.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201454-contained-fury?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201454-contained-fury?artifactRank=3&quot; class=&quot;t&quot;&gt;Contained Fury (Rank 3)&lt;/a&gt; - Maximum Fury increased by 40.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201455-critical-chaos?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201455-critical-chaos?artifactRank=3&quot; class=&quot;t&quot;&gt;Critical Chaos (Rank 3)&lt;/a&gt; - Chaos Strike critical damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201456-chaos-vision?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201456-chaos-vision?artifactRank=3&quot; class=&quot;t&quot;&gt;Chaos Vision (Rank 3)&lt;/a&gt; - Eye Beam damage increased by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201457-sharpened-glaives?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201457-sharpened-glaives?artifactRank=3&quot; class=&quot;t&quot;&gt;Sharpened Glaives (Rank 3)&lt;/a&gt; - Throw Glaive damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201458-demon-rage?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201458-demon-rage?artifactRank=3&quot; class=&quot;t&quot;&gt;Demon Rage (Rank 3)&lt;/a&gt; - Demon&apos;s Bite damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201459-illidari-knowledge?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201459-illidari-knowledge?artifactRank=3&quot; class=&quot;t&quot;&gt;Illidari Knowledge (Rank 3)&lt;/a&gt; - Magic Damage taken reduced by 16%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201460-unleashed-demons?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201460-unleashed-demons?artifactRank=3&quot; class=&quot;t&quot;&gt;Unleashed Demons (Rank 3)&lt;/a&gt; - Reduces the cooldown of Metamorphosis by 0 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201463-deceivers-fury?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201463-deceivers-fury?artifactRank=3&quot; class=&quot;t&quot;&gt;Deceiver&apos;s Fury (Rank 3)&lt;/a&gt; - Dodging an attack or spell generates 20 Fury.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201464-overwhelming-power?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201464-overwhelming-power?artifactRank=3&quot; class=&quot;t&quot;&gt;Overwhelming Power (Rank 3)&lt;/a&gt; - When Chaos Nova stuns a target, there is a 40% chance that a Soul Fragment is generated.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201468-feast-on-the-souls?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201468-feast-on-the-souls?artifactRank=1&quot; class=&quot;t&quot;&gt;Feast on the Souls (Rank 1)&lt;/a&gt; - Consuming a Soul Fragment reduces all cooldowns by 0 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201469-demon-speed?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201469-demon-speed?artifactRank=1&quot; class=&quot;t&quot;&gt;Demon Speed (Rank 1)&lt;/a&gt; - Fel Rush has no cooldown while Blur is active.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201470-balanced-blades?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201470-balanced-blades?artifactRank=1&quot; class=&quot;t&quot;&gt;Balanced Blades (Rank 1)&lt;/a&gt; - Throw Glaive can bounce to 0 additional targets.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Vengeance<br>
+<br>
+<br>
+<br>
+<br>
+&lt;/div&gt;<br>
+&lt;div id=&quot;tab3&quot;&gt;<br>
+<br>
+<br>
+Balance<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202509-the-reaping?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202509-the-reaping?artifactRank=1&quot; class=&quot;t&quot;&gt;The Reaping (Rank 1)&lt;/a&gt; - Owlkin Frenzy can periodically trigger without being hit.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202940-moon-and-stars?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202940-moon-and-stars?artifactRank=1&quot; class=&quot;t&quot;&gt;Moon and Stars (Rank 1)&lt;/a&gt; - While in Celestial Alignment, each spell cast grants an additional 3% cast speed buff.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202996-power-of-goldrinn?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202996-power-of-goldrinn?artifactRank=1&quot; class=&quot;t&quot;&gt;Power of Goldrinn (Rank 1)&lt;/a&gt; - Casting Starsurge summons the spirit of Goldrinn who bites the target&apos;s soul. [Area trigger line nuke]<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203019-scion-of-the-night-sky?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203019-scion-of-the-night-sky?artifactRank=1&quot; class=&quot;t&quot;&gt;Scion of the Night Sky (Rank 1)&lt;/a&gt; - Elune&apos;s light has a chance to bless an area, substantially increasing the power of the next two spells cast from within it. <br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202302-bladed-feathers?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202302-bladed-feathers?artifactRank=3&quot; class=&quot;t&quot;&gt;Bladed Feathers (Rank 3)&lt;/a&gt; - Increases the Armor granted by your Moonkin form by 100%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203018-touch-of-the-moon?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203018-touch-of-the-moon?artifactRank=3&quot; class=&quot;t&quot;&gt;Touch of the Moon (Rank 3)&lt;/a&gt; - When you take damage you have a 0% chance to cast an empowered Healing Touch on yourself instantly. (10s ICD)<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202384-dark-side-of-the-moon?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202384-dark-side-of-the-moon?artifactRank=3&quot; class=&quot;t&quot;&gt;Dark Side of the Moon (Rank 3)&lt;/a&gt; - Increases the critical strike chance of Lunar Strike by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202386-twilight-glow?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202386-twilight-glow?artifactRank=3&quot; class=&quot;t&quot;&gt;Twilight Glow (Rank 3)&lt;/a&gt; - Increases the damage dealt by Moonfire by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202426-solar-stabbing?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202426-solar-stabbing?artifactRank=3&quot; class=&quot;t&quot;&gt;Solar Stabbing (Rank 3)&lt;/a&gt; - Increases the damage dealt by Solar Wrath by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202433-scythe-of-the-stars?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202433-scythe-of-the-stars?artifactRank=3&quot; class=&quot;t&quot;&gt;Scythe of the Stars (Rank 3)&lt;/a&gt; - Increases the critical strike damage of Starsurge by 10%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202445-falling-star?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202445-falling-star?artifactRank=3&quot; class=&quot;t&quot;&gt;Falling Star (Rank 3)&lt;/a&gt; - Improves the empowerment granted by Starfall by 60%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202466-sunfire-burns?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202466-sunfire-burns?artifactRank=3&quot; class=&quot;t&quot;&gt;Sunfire Burns (Rank 3)&lt;/a&gt; - Increases the damage dealt by your Sunfire by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202464-empowerment?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202464-empowerment?artifactRank=3&quot; class=&quot;t&quot;&gt;Empowerment (Rank 3)&lt;/a&gt; - Improves the damage modification of your Lunar and Solar Empowerments by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202890-rejuvenating-innervation?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202890-rejuvenating-innervation?artifactRank=1&quot; class=&quot;t&quot;&gt;Rejuvenating Innervation (Rank 1)&lt;/a&gt; - Innervate increases the healing of you and your target by 50%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202918-light-of-the-sun?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202918-light-of-the-sun?artifactRank=1&quot; class=&quot;t&quot;&gt;Light of the Sun (Rank 1)&lt;/a&gt; - Innervate increases the healing of you and your target by 50%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202937-mooncraze?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202937-mooncraze?artifactRank=1&quot; class=&quot;t&quot;&gt;Mooncraze (Rank 1)&lt;/a&gt; - Doubles the chance of Owlkin Frenzy from The Reaping.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202767-new-moon?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202767-new-moon?artifactRank=1&quot; class=&quot;t&quot;&gt;New Moon (Rank 1)&lt;/a&gt; - Deals 0 damage to your current target.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Feral<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Guardian<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200815-blood-claws?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200815-blood-claws?artifactRank=1&quot; class=&quot;t&quot;&gt;Blood Claws (Rank 1)&lt;/a&gt; - Your melee abilities cause Blood Claws, dealing 0 damage over 15 sec. Blood Claws reduces damage dealt by 0% and stacks to 5.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200855-embrace-of-the-nightmare?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200855-embrace-of-the-nightmare?artifactRank=1&quot; class=&quot;t&quot;&gt;Embrace of the Nightmare (Rank 1)&lt;/a&gt; - While Rage of the Sleeper is active, you are immune to crowd control and deal 33% increased damage, generate 33% more Rage, and Leech 33% of damage dealt.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200854-heart-of-the-woods?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200854-heart-of-the-woods?artifactRank=1&quot; class=&quot;t&quot;&gt;Heart of the Woods (Rank 1)&lt;/a&gt; - While Barkskin is active you are embraced by the forest. The first three strikes that would deal more than 20% of your life are absorbed by the trees.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200850-adaptive-fur?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200850-adaptive-fur?artifactRank=1&quot; class=&quot;t&quot;&gt;Adaptive Fur (Rank 1)&lt;/a&gt; - Elemental Damage has a chance to trigger Adaptive Fur, reducing damage from that element by 20% for 15 sec.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200395-reinforced-fur?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200395-reinforced-fur?artifactRank=3&quot; class=&quot;t&quot;&gt;Reinforced Fur (Rank 3)&lt;/a&gt; - Increases the effectiveness of Ironfur by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200399-ursocs-endurance?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200399-ursocs-endurance?artifactRank=3&quot; class=&quot;t&quot;&gt;Ursoc&apos;s Endurance (Rank 3)&lt;/a&gt; - Increases the duration of your Active Mitigation spells by [&amp;nbsp;0.010 * m1&amp;nbsp;] sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200400-wildflesh?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200400-wildflesh?artifactRank=3&quot; class=&quot;t&quot;&gt;Wildflesh (Rank 3)&lt;/a&gt; - Increases the periodic healing of your Frenzied Regeneration by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200402-perpetual-spring?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200402-perpetual-spring?artifactRank=3&quot; class=&quot;t&quot;&gt;Perpetual Spring (Rank 3)&lt;/a&gt; - Reduces the cooldown of Barkskin by 13 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200409-jagged-claws?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200409-jagged-claws?artifactRank=3&quot; class=&quot;t&quot;&gt;Jagged Claws (Rank 3)&lt;/a&gt; - Increases your bleed damage by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200414-bestial-fortitude?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200414-bestial-fortitude?artifactRank=3&quot; class=&quot;t&quot;&gt;Bestial Fortitude (Rank 3)&lt;/a&gt; - Increases your Stamina by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200415-sharpened-instincts?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200415-sharpened-instincts?artifactRank=3&quot; class=&quot;t&quot;&gt;Sharpened Instincts (Rank 3)&lt;/a&gt; - Increases the effectiveness of Savage Defense by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201073-grasping-roots?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201073-grasping-roots?artifactRank=3&quot; class=&quot;t&quot;&gt;Grasping Roots (Rank 3)&lt;/a&gt; - Your Entangling Roots will spread to nearby targets which do not have Entangling Roots.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200440-vicious-bites?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200440-vicious-bites?artifactRank=3&quot; class=&quot;t&quot;&gt;Vicious Bites (Rank 3)&lt;/a&gt; - Increases the damage of Mangle by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200450-right-to-bear-arms?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200450-right-to-bear-arms?artifactRank=1&quot; class=&quot;t&quot;&gt;Right to Bear Arms (Rank 1)&lt;/a&gt; - Mangle increases the duration of Frenzied Regeneration by 2 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200515-ion-cannon?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200515-ion-cannon?artifactRank=1&quot; class=&quot;t&quot;&gt;Ion Cannon (Rank 1)&lt;/a&gt; - When your Moonfire expires you gain 50 rage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201073-grasping-roots?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201073-grasping-roots?artifactRank=1&quot; class=&quot;t&quot;&gt;Grasping Roots (Rank 1)&lt;/a&gt; - Your Entangling Roots will spread to nearby targets which do not have Entangling Roots.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200851-rage-of-the-sleeper?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200851-rage-of-the-sleeper?artifactRank=1&quot; class=&quot;t&quot;&gt;Rage of the Sleeper (Rank 1)&lt;/a&gt; - Channels the rage of Ursoc, reflecting 33% damage to opponents and increasing healing received by 33%.&lt;br/&gt;&lt;br/&gt;Hammer of Khazgoroth: Activating Rage of the Sleeper stuns all enemies within 8 yards for 6 sec. &lt;br/&gt;Aegis of Aggramar: Shield equal to 33% Health on activation&lt;br/&gt;Tidestone of Golganath: HoT equal to 10% HP/3sec, lasts 15sec.&lt;br/&gt;Tears of Elune: Arcane Orbitals, deal 10% Druid&apos;s HP on Contact.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Restoration<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189923-druidic-touch?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189923-druidic-touch?artifactRank=1&quot; class=&quot;t&quot;&gt;Druidic Touch (Rank 1)&lt;/a&gt; - Casting a helpful spell has a chance to sprout a patch of flowers at the target&apos;s location that heals a nearby targets every 5 sec.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189849-dreamwalker?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189849-dreamwalker?artifactRank=1&quot; class=&quot;t&quot;&gt;Dreamwalker (Rank 1)&lt;/a&gt; - Every 0 casts of Swiftmend or Regrowth causes your mind to fully shift into the Emerald Dream, increasing the healing rate of your heal over time spells by 0% for until cancelled.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189857-tranquil-mind?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189857-tranquil-mind?artifactRank=1&quot; class=&quot;t&quot;&gt;Tranquil Mind (Rank 1)&lt;/a&gt; - Tranquility no longer requires you to channel for its duration. For until cancelled after activating Tranquility, all cast time spells are instant cast.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189870-power-of-the-archdruid?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189870-power-of-the-archdruid?artifactRank=1&quot; class=&quot;t&quot;&gt;Power of the Archdruid (Rank 1)&lt;/a&gt; - Wild Growth has a 0% chance to cause your next Rejuvenation or Regrowth to also apply to all allies within 8 yards of the target.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189787-natures-essence?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189787-natures-essence?artifactRank=1&quot; class=&quot;t&quot;&gt;Nature&apos;s Essence (Rank 1)&lt;/a&gt; - Wild Growth grants 0% of its total healing amount immediately. <br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189772-knowledge-of-the-ancients?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189772-knowledge-of-the-ancients?artifactRank=3&quot; class=&quot;t&quot;&gt;Knowledge of the Ancients (Rank 3)&lt;/a&gt; - Increases mana regeneration by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189768-seeds-of-the-world-tree?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189768-seeds-of-the-world-tree?artifactRank=3&quot; class=&quot;t&quot;&gt;Seeds of the World Tree (Rank 3)&lt;/a&gt; - Living Seed gains 40% additional value from critical heals.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189760-essence-of-nordrassil?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189760-essence-of-nordrassil?artifactRank=3&quot; class=&quot;t&quot;&gt;Essence of Nordrassil (Rank 3)&lt;/a&gt; - Reduces the cast time of Healing Touch by 30%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189757-infusion-of-nature?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189757-infusion-of-nature?artifactRank=3&quot; class=&quot;t&quot;&gt;Infusion of Nature (Rank 3)&lt;/a&gt; - Reduces the mana cost of Wild Growth by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189754-armor-of-the-ancients?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189754-armor-of-the-ancients?artifactRank=3&quot; class=&quot;t&quot;&gt;Armor of the Ancients (Rank 3)&lt;/a&gt; - Ironbark reduces damage taken by an additional 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189749-natural-mending?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189749-natural-mending?artifactRank=3&quot; class=&quot;t&quot;&gt;Natural Mending (Rank 3)&lt;/a&gt; - Increases the healing of Swiftmend by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189744-blessing-of-the-world-tree?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189744-blessing-of-the-world-tree?artifactRank=3&quot; class=&quot;t&quot;&gt;Blessing of the World Tree (Rank 3)&lt;/a&gt; - Increases the direct healing of Regrowth and Healing Touch by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/186396-persistence?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/186396-persistence?artifactRank=3&quot; class=&quot;t&quot;&gt;Persistence (Rank 3)&lt;/a&gt; - Increases the duration of your damage and healing over time spells by 4 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/186393-repetitive-blooming-needs-replacement?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/186393-repetitive-blooming-needs-replacement?artifactRank=1&quot; class=&quot;t&quot;&gt;Repetitive Blooming (NEEDS REPLACEMENT) (Rank 1)&lt;/a&gt; - Lifebloom causes its burst of healing every 8 seconds while it is active.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/186372-mark-of-shifting?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/186372-mark-of-shifting?artifactRank=1&quot; class=&quot;t&quot;&gt;Mark of Shifting (Rank 1)&lt;/a&gt; - While in Travel, Cat, or Bear form, you permanently have Rejuvenation on yourself.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/186320-grovewalker?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/186320-grovewalker?artifactRank=3&quot; class=&quot;t&quot;&gt;Grovewalker (Rank 3)&lt;/a&gt; - Increases the healing of your healing over time spells by 13%.<br>
+<br>
+<br>
+<br>
+<br>
+&lt;/div&gt;<br>
+&lt;div id=&quot;tab4&quot;&gt;<br>
+<br>
+<br>
+Beast Mastery<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197344-guardian-of-the-titanspark?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197344-guardian-of-the-titanspark?artifactRank=1&quot; class=&quot;t&quot;&gt;Guardian of the Titanspark (Rank 1)&lt;/a&gt; - When you use Call Pet, a permanent companion is summoned to fight for you.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197248-master-of-beasts?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197248-master-of-beasts?artifactRank=1&quot; class=&quot;t&quot;&gt;Master of Beasts (Rank 1)&lt;/a&gt; - While Bestial Wrath is active, you summon a random Exotic Beast to fight by your side every 5 sec for 0 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197278-charge-of-the-thunderspark?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197278-charge-of-the-thunderspark?artifactRank=1&quot; class=&quot;t&quot;&gt;Charge of the Thunderspark (Rank 1)&lt;/a&gt; - Your Cobra Shot and Multi-shot have a chance to overcharge the Thunderspark in your rifle. For 0 sec, your autoshots to deal nature damage and a ball of pure energy builds until it discharges at your target.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197354-shield-of-the-titans?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197354-shield-of-the-titans?artifactRank=1&quot; class=&quot;t&quot;&gt;Shield of the Titans (Rank 1)&lt;/a&gt; - When you activate Aspect of the Wild, the Titanspark releases a sphere of electric energy that orbits around your pet, dealing 0 damage to any enemy it comes in contact with.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197036-natural-mending?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197036-natural-mending?artifactRank=3&quot; class=&quot;t&quot;&gt;Natural Mending (Rank 3)&lt;/a&gt; - Mend Pet heals for 13% more.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197038-unlimited-wrath?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197038-unlimited-wrath?artifactRank=3&quot; class=&quot;t&quot;&gt;Unlimited Wrath (Rank 3)&lt;/a&gt; - Bestial Wrath lasts an additional 6 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197047-fury-swipes?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197047-fury-swipes?artifactRank=3&quot; class=&quot;t&quot;&gt;Fury Swipes (Rank 3)&lt;/a&gt; - Beast Cleave deals an additional 40% damage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197080-pack-leader?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197080-pack-leader?artifactRank=3&quot; class=&quot;t&quot;&gt;Pack Leader (Rank 3)&lt;/a&gt; - Your pet deals 20% additional damage with Kill Command for each additional beast you have active.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197138-protection-of-the-thunderspark?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197138-protection-of-the-thunderspark?artifactRank=3&quot; class=&quot;t&quot;&gt;Protection of the Thunderspark (Rank 3)&lt;/a&gt; - Damage taken reduced by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197139-focus-of-the-titans?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197139-focus-of-the-titans?artifactRank=3&quot; class=&quot;t&quot;&gt;Focus of the Titans (Rank 3)&lt;/a&gt; - Maximum Focus increased by 40.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197140-spitting-cobras?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197140-spitting-cobras?artifactRank=3&quot; class=&quot;t&quot;&gt;Spitting Cobras (Rank 3)&lt;/a&gt; - Cobra Shot damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197160-shell-shocked?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197160-shell-shocked?artifactRank=3&quot; class=&quot;t&quot;&gt;Shell Shocked (Rank 3)&lt;/a&gt; - When you activate Aspect of the Turtle, you will heal for 20% of your maximum health over its duration.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197162-jaws-of-thunder?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197162-jaws-of-thunder?artifactRank=3&quot; class=&quot;t&quot;&gt;Jaws of Thunder (Rank 3)&lt;/a&gt; - Kill Command has a 20% chance to be empowered by the Titanspark, dealing an additional 0% of its damage as nature damage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197178-unleash-the-hounds?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197178-unleash-the-hounds?artifactRank=1&quot; class=&quot;t&quot;&gt;Unleash the Hounds (Rank 1)&lt;/a&gt; - Dire Beast has a 0% chance to summon an additional beast.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197199-call-of-the-wild?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197199-call-of-the-wild?artifactRank=1&quot; class=&quot;t&quot;&gt;Call of the Wild (Rank 1)&lt;/a&gt; - When Wild Call resets the cooldown of your Dire Beast, the duration of all active Dire Beasts is increased to 8 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197343-strength-of-the-pack?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197343-strength-of-the-pack?artifactRank=1&quot; class=&quot;t&quot;&gt;Strength of the Pack (Rank 1)&lt;/a&gt; - Each active pet increases the damage of your other pets by 0%.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Marksmanship<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/204147-windburst?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/204147-windburst?artifactRank=1&quot; class=&quot;t&quot;&gt;Windburst (Rank 1)&lt;/a&gt; - Focus the power of the Wind through your bow, dealing (0% of weapon damage) damage to your target that leaves behind a trail of wind, increasing the speed of any ally in the wind trail by 0%.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191048-call-of-the-hunter?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191048-call-of-the-hunter?artifactRank=1&quot; class=&quot;t&quot;&gt;Call of the Hunter (Rank 1)&lt;/a&gt; - Marked Shot has a chance to summon a regiment of fallen hunters to rain arrows down upon your foes.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/204217-whispers-of-the-past?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/204217-whispers-of-the-past?artifactRank=1&quot; class=&quot;t&quot;&gt;Whispers of the Past (Rank 1)&lt;/a&gt; - While Trueshot is active, Wind arrows will stream out of your bow every 5 and strike any target with your Hunter&apos;s Mark.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/204089-bullseye?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/204089-bullseye?artifactRank=1&quot; class=&quot;t&quot;&gt;Bullseye (Rank 1)&lt;/a&gt; - Special attacks against a target below 0% health grant a 0% critical strike buff for 6 sec. This effect stacks.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/204219-mark-of-the-windrunner?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/204219-mark-of-the-windrunner?artifactRank=1&quot; class=&quot;t&quot;&gt;Mark of the Windrunner (Rank 1)&lt;/a&gt; - Hunter&apos;s Mark can now apply to one additional target.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191328-critical-focus?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191328-critical-focus?artifactRank=1&quot; class=&quot;t&quot;&gt;Critical Focus (Rank 1)&lt;/a&gt; - Arcane Shot critical strikes generate 0% more Focus.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191339-rapid-killing?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191339-rapid-killing?artifactRank=1&quot; class=&quot;t&quot;&gt;Rapid Killing (Rank 1)&lt;/a&gt; - While Trueshot is active, your critical damage is increased by 0%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/190449-deadly-aim?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/190449-deadly-aim?artifactRank=3&quot; class=&quot;t&quot;&gt;Deadly Aim (Rank 3)&lt;/a&gt; - Aimed Shot critical strike damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/190457-windrunners-guidance?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/190457-windrunners-guidance?artifactRank=3&quot; class=&quot;t&quot;&gt;Windrunner&apos;s Guidance (Rank 3)&lt;/a&gt; - Marked Shot damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/190462-quick-shot?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/190462-quick-shot?artifactRank=3&quot; class=&quot;t&quot;&gt;Quick Shot (Rank 3)&lt;/a&gt; - Reduce the cooldown of Trueshot by 6 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/190467-call-the-targets?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/190467-call-the-targets?artifactRank=3&quot; class=&quot;t&quot;&gt;Call the Targets (Rank 3)&lt;/a&gt; - Multi-Shot damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/190503-healing-shell?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/190503-healing-shell?artifactRank=3&quot; class=&quot;t&quot;&gt;Healing Shell (Rank 3)&lt;/a&gt; - While Aspect of the Turtle is active, you heal for 8% of your maximum health every 5 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/190514-survival-of-the-fittest?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/190514-survival-of-the-fittest?artifactRank=3&quot; class=&quot;t&quot;&gt;Survival of the Fittest (Rank 3)&lt;/a&gt; - Damage taken reduced by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/190520-precision?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/190520-precision?artifactRank=3&quot; class=&quot;t&quot;&gt;Precision (Rank 3)&lt;/a&gt; - Reduces the Focus cost of Aimed Shot by 8.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/190529-marked-for-death?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/190529-marked-for-death?artifactRank=3&quot; class=&quot;t&quot;&gt;Marked for Death (Rank 3)&lt;/a&gt; - Marked Shot increases your Aimed Shot critical strike chance against the target by 20% for 10 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/190567-gust-of-wind?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/190567-gust-of-wind?artifactRank=3&quot; class=&quot;t&quot;&gt;Gust of Wind (Rank 3)&lt;/a&gt; - Reduce the Focus cost of Bursting Shot by 13.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Survival<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203415-fury-of-the-eagle?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203415-fury-of-the-eagle?artifactRank=1&quot; class=&quot;t&quot;&gt;Fury of the Eagle (Rank 1)&lt;/a&gt; - Strikes all enemies in a cone, dealing damage to them. This ability is empowered by stacks of Mongoose Bite.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203755-aspect-of-the-skylord?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203755-aspect-of-the-skylord?artifactRank=1&quot; class=&quot;t&quot;&gt;Aspect of the Skylord (Rank 1)&lt;/a&gt; - Aspect of the Eagle now also increases your damage by 30% while active.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203756-from-behind?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203756-from-behind?artifactRank=1&quot; class=&quot;t&quot;&gt;From Behind (Rank 1)&lt;/a&gt; - When your pet generates a charge of Mongoose Strike, you gain 0% crit for 6 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203757-hunters-fortune?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203757-hunters-fortune?artifactRank=1&quot; class=&quot;t&quot;&gt;Hunter&apos;s Fortune (Rank 1)&lt;/a&gt; - Harpoon applies On the Trail, a unique damage over time effect that deals 0 damage over 12 sec and is refreshed by autoattacks.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203566-sharpened-beak?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203566-sharpened-beak?artifactRank=3&quot; class=&quot;t&quot;&gt;Sharpened Beak (Rank 3)&lt;/a&gt; - Increases the damage of your Mongoose Bite by 0%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203577-my-beloved-monster?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203577-my-beloved-monster?artifactRank=3&quot; class=&quot;t&quot;&gt;My Beloved Monster (Rank 3)&lt;/a&gt; - Increases the critical strike chance of Flanking Strike by 0%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203578-jagged-claws?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203578-jagged-claws?artifactRank=3&quot; class=&quot;t&quot;&gt;Jagged Claws (Rank 3)&lt;/a&gt; - Increases the Bleed Damage of your Laceration by 0%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203638-raptors-cry?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203638-raptors-cry?artifactRank=3&quot; class=&quot;t&quot;&gt;Raptor&apos;s Cry (Rank 3)&lt;/a&gt; - Increases the damage of your Raptor Strike by 0%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203669-fluffy-go?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203669-fluffy-go?artifactRank=3&quot; class=&quot;t&quot;&gt;Fluffy, Go (Rank 3)&lt;/a&gt; - Increases the haste of your pet by 0%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203670-strength-of-the-mountain?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203670-strength-of-the-mountain?artifactRank=3&quot; class=&quot;t&quot;&gt;Strength of the Mountain (Rank 3)&lt;/a&gt; - Increases your Physical damage by 0%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203673-hellcarver?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203673-hellcarver?artifactRank=3&quot; class=&quot;t&quot;&gt;Hellcarver (Rank 3)&lt;/a&gt; - Carve increases in damage by 0% for each target hit.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203748-embrace-of-the-wild?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203748-embrace-of-the-wild?artifactRank=3&quot; class=&quot;t&quot;&gt;Embrace of the Wild (Rank 3)&lt;/a&gt; - Reduces damage taken by 0%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203749-exhilaration-of-joy?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203749-exhilaration-of-joy?artifactRank=3&quot; class=&quot;t&quot;&gt;Exhilaration of Joy (Rank 3)&lt;/a&gt; - Reduces the cooldown of Exhilaration by 0 seconds each time you kill successfully.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203751-superior-trapper?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203751-superior-trapper?artifactRank=3&quot; class=&quot;t&quot;&gt;Superior Trapper (Rank 3)&lt;/a&gt; - Increases the size of your traps by 0%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203752-hunters-guile?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203752-hunters-guile?artifactRank=3&quot; class=&quot;t&quot;&gt;Hunter&apos;s Guile (Rank 3)&lt;/a&gt; - Reduces the cooldown of your traps by 0%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203754-thar-she-blows?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203754-thar-she-blows?artifactRank=3&quot; class=&quot;t&quot;&gt;Thar She Blows (Rank 3)&lt;/a&gt; - Harpoon&apos;s Cooldown is reset when you kill or Disengage.<br>
+<br>
+<br>
+<br>
+<br>
+&lt;/div&gt;<br>
+&lt;div id=&quot;tab5&quot;&gt;<br>
+<br>
+<br>
+Arcane<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192581-power-of-aegwynn?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192581-power-of-aegwynn?artifactRank=1&quot; class=&quot;t&quot;&gt;Power of Aegwynn (Rank 1)&lt;/a&gt; - When you reach 4 Arcane Charges, you are infused with the Power of Aegwynn.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/188006-arcane-rebound?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/188006-arcane-rebound?artifactRank=1&quot; class=&quot;t&quot;&gt;Arcane Rebound (Rank 1)&lt;/a&gt; - Your Arcane Barrage can now bounce up to 5 times. If it successfully bounces 5 times, it will explode in a Supernova, dealing massive damage. <br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187452-echoes-of-aegwynn?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187452-echoes-of-aegwynn?artifactRank=1&quot; class=&quot;t&quot;&gt;Echoes of Aegwynn (Rank 1)&lt;/a&gt; - Your Arcane spells have a chance to summon an Image of Aegwynn to assist you.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187680-aegwynns-ascendance?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187680-aegwynns-ascendance?artifactRank=1&quot; class=&quot;t&quot;&gt;Aegwynn&apos;s Ascendance (Rank 1)&lt;/a&gt; - Your Evocation makes you invulnerable and causes you to deal massive damage based on the mana your Evocation restores.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187304-torrential-barrage?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187304-torrential-barrage?artifactRank=3&quot; class=&quot;t&quot;&gt;Torrential Barrage (Rank 3)&lt;/a&gt; - Increases the damage dealt by your Arcane Barrage by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187258-blasting-rod?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187258-blasting-rod?artifactRank=3&quot; class=&quot;t&quot;&gt;Blasting Rod (Rank 3)&lt;/a&gt; - Increases the damage dealt by your Arcane Blast by 8%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187321-aegwynns-wrath?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187321-aegwynns-wrath?artifactRank=3&quot; class=&quot;t&quot;&gt;Aegwynn&apos;s Wrath (Rank 3)&lt;/a&gt; - Increases the chance for Arcane spells to critically strike by 8%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187318-might-of-the-guardians?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187318-might-of-the-guardians?artifactRank=3&quot; class=&quot;t&quot;&gt;Might of the Guardians (Rank 3)&lt;/a&gt; - Increases Arcane damage dealt by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187313-arcane-purification?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187313-arcane-purification?artifactRank=3&quot; class=&quot;t&quot;&gt;Arcane Purification (Rank 3)&lt;/a&gt; - Increases the damage dealt by your Arcane Explosion by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187310-crackling-energy?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187310-crackling-energy?artifactRank=3&quot; class=&quot;t&quot;&gt;Crackling Energy (Rank 3)&lt;/a&gt; - Increases the radius of Arcane Explosion by 7 yards.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187287-aegwynns-fury?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187287-aegwynns-fury?artifactRank=3&quot; class=&quot;t&quot;&gt;Aegwynn&apos;s Fury (Rank 3)&lt;/a&gt; - Increases the damage dealt by your Arcane Missiles by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187292-archmages-alacrity?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187292-archmages-alacrity?artifactRank=3&quot; class=&quot;t&quot;&gt;Archmage&apos;s Alacrity (Rank 3)&lt;/a&gt; - Arcane Missiles now fires 0 additional Missiles. <br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187276-ethereal-sensitivity?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187276-ethereal-sensitivity?artifactRank=3&quot; class=&quot;t&quot;&gt;Ethereal Sensitivity (Rank 3)&lt;/a&gt; - Increases your chance to trigger Arcane Missiles by m1%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187264-aegwynns-imperative?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187264-aegwynns-imperative?artifactRank=3&quot; class=&quot;t&quot;&gt;Aegwynn&apos;s Imperative (Rank 3)&lt;/a&gt; - Increases the duration of your Arcane Power by 8 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187301-everywhere-at-once?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187301-everywhere-at-once?artifactRank=3&quot; class=&quot;t&quot;&gt;Everywhere At Once (Rank 3)&lt;/a&gt; - Reduces the cooldown of your Blink by 8 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187247-archmages-fortitude?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187247-archmages-fortitude?artifactRank=3&quot; class=&quot;t&quot;&gt;Archmage&apos;s Fortitude (Rank 3)&lt;/a&gt; - Reduces your damage taken by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/187251-amethyst-awakening?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/187251-amethyst-awakening?artifactRank=3&quot; class=&quot;t&quot;&gt;Amethyst Awakening (Rank 3)&lt;/a&gt; - Increases your Mana Pool by 400%.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Fire<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194462-highblades-will?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194462-highblades-will?artifactRank=1&quot; class=&quot;t&quot;&gt;Highblade&apos;s Will (Rank 1)&lt;/a&gt; - You periodically accumulate Flame Orbs. Casting Pyroblast with an active Flame Orb will trigger a Phoenix Bolt.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194487-blast-furnace?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194487-blast-furnace?artifactRank=1&quot; class=&quot;t&quot;&gt;Blast Furnace (Rank 1)&lt;/a&gt; - Inferno Blast now applies Crucible of Flames, dealing additional damage over 9 seconds. <br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194331-pyretic-incantation?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194331-pyretic-incantation?artifactRank=1&quot; class=&quot;t&quot;&gt;Pyretic Incantation (Rank 1)&lt;/a&gt; - Every consecutive critical strike increases your critical strike damage by 15%.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194224-fire-at-will?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194224-fire-at-will?artifactRank=3&quot; class=&quot;t&quot;&gt;Fire at Will (Rank 3)&lt;/a&gt; - Reduces the cast time of your Fireball by 0.4 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194234-reignition-overdrive?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194234-reignition-overdrive?artifactRank=3&quot; class=&quot;t&quot;&gt;Reignition Overdrive (Rank 3)&lt;/a&gt; - Your Inferno Blast spreads damage over time effects to an additional 4 targets.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194239-pyroclasmic-paranoia?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194239-pyroclasmic-paranoia?artifactRank=3&quot; class=&quot;t&quot;&gt;Pyroclasmic Paranoia (Rank 3)&lt;/a&gt; - Pyroblast deals an additional 13% damage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194312-burning-gaze?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194312-burning-gaze?artifactRank=3&quot; class=&quot;t&quot;&gt;Burning Gaze (Rank 3)&lt;/a&gt; - Increases Fire damage dealt by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194431-aftershocks?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194431-aftershocks?artifactRank=3&quot; class=&quot;t&quot;&gt;Aftershocks (Rank 3)&lt;/a&gt; - When you cast Flamestrike, you it will trigger 4 additional times.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194313-great-balls-of-fire?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194313-great-balls-of-fire?artifactRank=3&quot; class=&quot;t&quot;&gt;Great Balls of Fire (Rank 3)&lt;/a&gt; - Your Fireball deals 20% more damage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194314-everburning-consumption?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194314-everburning-consumption?artifactRank=3&quot; class=&quot;t&quot;&gt;Everburning Consumption (Rank 3)&lt;/a&gt; - Increases the damage of your Ignite by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194318-cauterizing-blink?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194318-cauterizing-blink?artifactRank=3&quot; class=&quot;t&quot;&gt;Cauterizing Blink (Rank 3)&lt;/a&gt; - When you Blink, you heal for 0 over 6 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194315-molten-skin?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194315-molten-skin?artifactRank=3&quot; class=&quot;t&quot;&gt;Molten Skin (Rank 3)&lt;/a&gt; - Increases the damage reduction of your Molten Armor by -m1%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194320-by-fire-be-purged?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194320-by-fire-be-purged?artifactRank=1&quot; class=&quot;t&quot;&gt;By Fire Be Purged (Rank 1)&lt;/a&gt; - Your Fireball dispels 0 beneficial Magic effect.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194324-scorched-earth?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194324-scorched-earth?artifactRank=1&quot; class=&quot;t&quot;&gt;Scorched Earth (Rank 1)&lt;/a&gt; - When you cast four consecutive Scorches, you gain Pyroblast!, making your next Pyroblast spell instant cast, free, and deal [&amp;nbsp;1 + 300% of Spell Power&amp;nbsp;]% additional damage.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Frost<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195297-ebonbolt?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195297-ebonbolt?artifactRank=1&quot; class=&quot;t&quot;&gt;Ebonbolt (Rank 1)&lt;/a&gt; - Replaces your Frostbolt with Ebonbolt.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195615-black-icicle?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195615-black-icicle?artifactRank=1&quot; class=&quot;t&quot;&gt;Black Icicle (Rank 1)&lt;/a&gt; - Your frost spells also generate an unconsumable Black Icicle which triggers of it&apos;s own volition.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195448-chilled-to-the-core?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195448-chilled-to-the-core?artifactRank=1&quot; class=&quot;t&quot;&gt;Chilled to the Core (Rank 1)&lt;/a&gt; - Activating Icy Veins encases you in ice, increasing your Frost damage dealt by 100%.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195315-icy-caress?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195315-icy-caress?artifactRank=3&quot; class=&quot;t&quot;&gt;Icy Caress (Rank 3)&lt;/a&gt; - Increases the damage of your Frostbolt by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195317-orbital-strike?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195317-orbital-strike?artifactRank=3&quot; class=&quot;t&quot;&gt;Orbital Strike (Rank 3)&lt;/a&gt; - Increases the damage of your Frozen Orb by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195322-let-it-go?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195322-let-it-go?artifactRank=3&quot; class=&quot;t&quot;&gt;Let It Go (Rank 3)&lt;/a&gt; - Increases the critical damage of your Ice Lance by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195323-ice-age?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195323-ice-age?artifactRank=3&quot; class=&quot;t&quot;&gt;Ice Age (Rank 3)&lt;/a&gt; - Increases the critical strike damage of your Frozen Orb by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195345-frozen-veins?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195345-frozen-veins?artifactRank=3&quot; class=&quot;t&quot;&gt;Frozen Veins (Rank 3)&lt;/a&gt; - On Frostbolt crits, the cooldown of your Icy Veins is reduced by [&amp;nbsp;-0.001 * m1&amp;nbsp;] sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195351-clarity-of-thought?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195351-clarity-of-thought?artifactRank=3&quot; class=&quot;t&quot;&gt;Clarity of Thought (Rank 3)&lt;/a&gt; - Increases the chance to trigger Brain Freeze by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195352-the-storm-rages?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195352-the-storm-rages?artifactRank=3&quot; class=&quot;t&quot;&gt;The Storm Rages (Rank 3)&lt;/a&gt; - Increases the critical strike chance of your Blizzard by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195354-shield-of-alodi?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195354-shield-of-alodi?artifactRank=3&quot; class=&quot;t&quot;&gt;Shield of Alodi (Rank 3)&lt;/a&gt; - Increases the magnitude of your Ice Barrier by 80%. <br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195391-permafrost?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195391-permafrost?artifactRank=3&quot; class=&quot;t&quot;&gt;Permafrost (Rank 3)&lt;/a&gt; - Reduces damage taken by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195419-chain-reaction?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195419-chain-reaction?artifactRank=1&quot; class=&quot;t&quot;&gt;Chain Reaction (Rank 1)&lt;/a&gt; - Your Frostbolt critical strikes apply Empowered Ice Lance, doubling the damage of the next Ice Lance.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195437-flash-freeze?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195437-flash-freeze?artifactRank=1&quot; class=&quot;t&quot;&gt;Flash Freeze (Rank 1)&lt;/a&gt; - Successful interrupts reset your cooldowns.<br>
+<br>
+<br>
+<br>
+<br>
+&lt;/div&gt;<br>
+&lt;div id=&quot;tab6&quot;&gt;<br>
+<br>
+<br>
+Brewmaster<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Mistweaver<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199887-the-mists-of-sheilun?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199887-the-mists-of-sheilun?artifactRank=1&quot; class=&quot;t&quot;&gt;The Mists of Sheilun (Rank 1)&lt;/a&gt; - When you heal allies, Sheilun has a chance to draw in nearby mists, increasing your healing over time effects by 0% for 10 sec. When this effect ends, Sheilun will release a wave of mist that heals all allies within 0 yards for 0.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199806-shaohaos-mists-of-wisdom?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199806-shaohaos-mists-of-wisdom?artifactRank=1&quot; class=&quot;t&quot;&gt;Shaohao&apos;s Mists of Wisdom (Rank 1)&lt;/a&gt; - Casting Renewing Mist or Enveloping Mist has a chance to cause your staff to create the Mists of Wisdom that will heal a nearby ally with the powers of the mist every 5 sec for 10 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199665-blessings-of-yulon?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199665-blessings-of-yulon?artifactRank=1&quot; class=&quot;t&quot;&gt;Blessings of Yu&apos;lon (Rank 1)&lt;/a&gt; - When you use Revival, the spirit of Yu&apos;lon appears and grants all allies healed by Revival the Blessing of Yu&apos;lon, healing them for an additional 0% of Revival over 6 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199640-celestial-breath?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199640-celestial-breath?artifactRank=1&quot; class=&quot;t&quot;&gt;Celestial Breath (Rank 1)&lt;/a&gt; - When you activate Thunder Focus Tea, you exhale the breath of Yu&apos;lon, healing all allies within 0 yards for 0 over 5 sec.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199485-harmony-and-focus?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199485-harmony-and-focus?artifactRank=1&quot; class=&quot;t&quot;&gt;Harmony and Focus (Rank 1)&lt;/a&gt; - Thunder Focus Tea now has 0 additional charge.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199563-mists-of-life?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199563-mists-of-life?artifactRank=1&quot; class=&quot;t&quot;&gt;Mists of Life (Rank 1)&lt;/a&gt; - Life Cocoon now applies Renewing Mist and Enveloping Mist to the target.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199573-dancing-mists?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199573-dancing-mists?artifactRank=1&quot; class=&quot;t&quot;&gt;Dancing Mists (Rank 1)&lt;/a&gt; - Renewing Mist has a 0% chance to immediately copy itself on another target whenever it is applied.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199364-coalescing-mists?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199364-coalescing-mists?artifactRank=3&quot; class=&quot;t&quot;&gt;Coalescing Mists (Rank 3)&lt;/a&gt; - Increases the healing of Effuse by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199365-shroud-of-mist?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199365-shroud-of-mist?artifactRank=3&quot; class=&quot;t&quot;&gt;Shroud of Mist (Rank 3)&lt;/a&gt; - Reduces damage taken by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199366-way-of-the-mistweaver?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199366-way-of-the-mistweaver?artifactRank=3&quot; class=&quot;t&quot;&gt;Way of the Mistweaver (Rank 3)&lt;/a&gt; - Increases the healing from Enveloping Mist by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199367-protection-of-shaohao?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199367-protection-of-shaohao?artifactRank=3&quot; class=&quot;t&quot;&gt;Protection of Shaohao (Rank 3)&lt;/a&gt; - Increase the absorption amount of Life Cocoon by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199372-extended-healing?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199372-extended-healing?artifactRank=3&quot; class=&quot;t&quot;&gt;Extended Healing (Rank 3)&lt;/a&gt; - Increase the duration of Renewing Mist by 8 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199377-soothing-remedies?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199377-soothing-remedies?artifactRank=3&quot; class=&quot;t&quot;&gt;Soothing Remedies (Rank 3)&lt;/a&gt; - Increase the healing of Soothing Mist by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199380-infusion-of-life?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199380-infusion-of-life?artifactRank=3&quot; class=&quot;t&quot;&gt;Infusion of Life (Rank 3)&lt;/a&gt; - Increase the healing of Vivify by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199384-spirit-tether?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199384-spirit-tether?artifactRank=3&quot; class=&quot;t&quot;&gt;Spirit Tether (Rank 3)&lt;/a&gt; - Enemies within 8 yards of your Transcendence Spirit have their movement speed reduced by 55%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199401-light-on-your-feet?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199401-light-on-your-feet?artifactRank=3&quot; class=&quot;t&quot;&gt;Light on Your Feet (Rank 3)&lt;/a&gt; - After fully channeling Font of Essence, you move 55% faster for 3 sec.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Windwalker<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195599-swift-as-the-wind?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195599-swift-as-the-wind?artifactRank=1&quot; class=&quot;t&quot;&gt;Swift as the Wind (Rank 1)&lt;/a&gt; - Every time you generate Chi, you have a chance to imbue your fists with the Spirits of the Sky, gaining increasing movement speed and additional lightning damage on your attacks. Stacks up to 0 times.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195399-gale-burst?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195399-gale-burst?artifactRank=1&quot; class=&quot;t&quot;&gt;Gale Burst (Rank 1)&lt;/a&gt; - 0% of all damage dealt to a target with your Touch of Death on them will be added onto the damage Touch of Death deals.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195650-crosswinds?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195650-crosswinds?artifactRank=1&quot; class=&quot;t&quot;&gt;Crosswinds (Rank 1)&lt;/a&gt; - While using Fists of Fury, you frequently project an image of yourself to crash into one of the targets you are hitting.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196082-tornado-kick?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196082-tornado-kick?artifactRank=1&quot; class=&quot;t&quot;&gt;Tornado Kick (Rank 1)&lt;/a&gt; - When you use Blackout Kick, powerful energy from the Skywall Cestus is unleashed into your body, causing Tornado Kick to replace your next Blackout Kick.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195243-inner-peace?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195243-inner-peace?artifactRank=3&quot; class=&quot;t&quot;&gt;Inner Peace (Rank 3)&lt;/a&gt; - Increases maximum Energy by 40.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195244-light-on-your-feet?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195244-light-on-your-feet?artifactRank=3&quot; class=&quot;t&quot;&gt;Light on Your Feet (Rank 3)&lt;/a&gt; - Increases chance to dodge by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195244-light-on-your-feet?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195244-light-on-your-feet?artifactRank=3&quot; class=&quot;t&quot;&gt;Light on Your Feet (Rank 3)&lt;/a&gt; - Increases chance to dodge by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195263-feet-of-the-sun?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195263-feet-of-the-sun?artifactRank=3&quot; class=&quot;t&quot;&gt;Feet of the Sun (Rank 3)&lt;/a&gt; - Increases Rising Sun Kick damage by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195265-feet-of-darkness?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195265-feet-of-darkness?artifactRank=3&quot; class=&quot;t&quot;&gt;Feet of Darkness (Rank 3)&lt;/a&gt; - Increases Rising Sun Kick damage by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195266-death-art?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195266-death-art?artifactRank=3&quot; class=&quot;t&quot;&gt;Death Art (Rank 3)&lt;/a&gt; - Killing an enemy with Touch of Death reduces its cooldown by 100%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195269-power-of-a-thousand-cranes?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195269-power-of-a-thousand-cranes?artifactRank=3&quot; class=&quot;t&quot;&gt;Power of a Thousand Cranes (Rank 3)&lt;/a&gt; - Increases the damage of Spinning Crane Kick by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195291-fists-of-the-wind?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195291-fists-of-the-wind?artifactRank=3&quot; class=&quot;t&quot;&gt;Fists of the Wind (Rank 3)&lt;/a&gt; - Reduces the Chi cost of Fists of Fury by 0.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195295-good-karma?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195295-good-karma?artifactRank=1&quot; class=&quot;t&quot;&gt;Good Karma (Rank 1)&lt;/a&gt; - Damage taken while Touch of Karma is active heals you.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195298-acrobatics?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195298-acrobatics?artifactRank=1&quot; class=&quot;t&quot;&gt;Acrobatics (Rank 1)&lt;/a&gt; - Roll has 0 extra charge.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195300-transfer-the-power?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195300-transfer-the-power?artifactRank=1&quot; class=&quot;t&quot;&gt;Transfer the Power (Rank 1)&lt;/a&gt; - Each Blackout Kick and Rising Sun Kick increases the damage your next Fists of Fury does by 0%. Stacks up to 0 times.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195380-healing-winds?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195380-healing-winds?artifactRank=3&quot; class=&quot;t&quot;&gt;Healing Winds (Rank 3)&lt;/a&gt; - When you use Transcendence: Transfer, you heal yourself for 25% of your maximum health over until cancelled.<br>
+<br>
+<br>
+<br>
+<br>
+&lt;/div&gt;<br>
+&lt;div id=&quot;tab7&quot;&gt;<br>
+<br>
+<br>
+Holy<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200474-lightburst?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200474-lightburst?artifactRank=1&quot; class=&quot;t&quot;&gt;Lightburst (Rank 1)&lt;/a&gt; - When you use Holy Shock, The Silver Hand has a chance to create a column of pure light for 10 sec, increasing your damage and healing by 0% each second you stand in it. 0% of all damage or healing done while in this column of light will be added onto your next Holy Shock.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200443-boon-of-the-silver-hand?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200443-boon-of-the-silver-hand?artifactRank=1&quot; class=&quot;t&quot;&gt;Boon of the Silver Hand (Rank 1)&lt;/a&gt; - When you activate Avenging Wrath, an image of The Silver Hand will drop from the sky, releasing orbs of light that will heal allies it hits.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200430-protection-of-tyr?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200430-protection-of-tyr?artifactRank=1&quot; class=&quot;t&quot;&gt;Protection of Tyr (Rank 1)&lt;/a&gt; - Aura Mastery now causes Aura of Mercy, Devotion Aura, and Aura of Light to be active for its duration.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200482-holy-paladin-gold-medal?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200482-holy-paladin-gold-medal?artifactRank=1&quot; class=&quot;t&quot;&gt;Holy Paladin Gold Medal (Rank 1)&lt;/a&gt; - Something cool<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200421-the-light-saves?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200421-the-light-saves?artifactRank=1&quot; class=&quot;t&quot;&gt;The Light Saves (Rank 1)&lt;/a&gt; - When your Beacon of Light target falls below 0% maximum health, your next heal will transfer 0% additional healing into your Beacon target.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200407-protector-of-the-light?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200407-protector-of-the-light?artifactRank=1&quot; class=&quot;t&quot;&gt;Protector of the Light (Rank 1)&lt;/a&gt; - Divine Protection will also be applied to your Beacon of Light target.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200373-aura-of-the-silver-hand?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200373-aura-of-the-silver-hand?artifactRank=1&quot; class=&quot;t&quot;&gt;Aura of the Silver Hand (Rank 1)&lt;/a&gt; - Allies within 0 yards have their haste increased by 0%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200327-share-the-burden?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200327-share-the-burden?artifactRank=3&quot; class=&quot;t&quot;&gt;Share the Burden (Rank 3)&lt;/a&gt; - Blessing of Sacrifice also reduces damage the target takes by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200326-focused-healing?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200326-focused-healing?artifactRank=3&quot; class=&quot;t&quot;&gt;Focused Healing (Rank 3)&lt;/a&gt; - Reduce the cooldown of Tower of Light by 40 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200316-justice-through-sacrifice?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200316-justice-through-sacrifice?artifactRank=3&quot; class=&quot;t&quot;&gt;Justice through Sacrifice (Rank 3)&lt;/a&gt; - Increase the healing of Light of the Martyr by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200315-shock-treatment?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200315-shock-treatment?artifactRank=3&quot; class=&quot;t&quot;&gt;Shock Treatment (Rank 3)&lt;/a&gt; - Holy Shock critical strikes reduce the cooldown of Holy Shock by 4 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200311-templar-of-the-light?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200311-templar-of-the-light?artifactRank=3&quot; class=&quot;t&quot;&gt;Templar of the Light (Rank 3)&lt;/a&gt; - Increase the duration of Aura Mastery by 4 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200302-knight-of-the-silver-hand?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200302-knight-of-the-silver-hand?artifactRank=3&quot; class=&quot;t&quot;&gt;Knight of the Silver Hand (Rank 3)&lt;/a&gt; - Reduce damage taken by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200298-blessings-of-the-silver-hand?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200298-blessings-of-the-silver-hand?artifactRank=3&quot; class=&quot;t&quot;&gt;Blessings of the Silver Hand (Rank 3)&lt;/a&gt; - Reduce the cooldown of your Blessing of Freedom, Protection, and Sacrifice by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200296-expel-the-darkness?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200296-expel-the-darkness?artifactRank=3&quot; class=&quot;t&quot;&gt;Expel the Darkness (Rank 3)&lt;/a&gt; - Increase the healing of Light of Dawn by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200294-deliver-the-light?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200294-deliver-the-light?artifactRank=3&quot; class=&quot;t&quot;&gt;Deliver the Light (Rank 3)&lt;/a&gt; - Increases the healing of Holy Light and Flash of Light by 13%.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Protection<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Retribution<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/179546-ashes-to-ashes?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/179546-ashes-to-ashes?artifactRank=1&quot; class=&quot;t&quot;&gt;Ashes to Ashes (Rank 1)&lt;/a&gt; - Judgment has a 0% chance to cause 4 weapons of the light to smash your target, each dealing 0 damage.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/186773-divine-tempest?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/186773-divine-tempest?artifactRank=1&quot; class=&quot;t&quot;&gt;Divine Tempest (Rank 1)&lt;/a&gt; - Ashbringer causes your Divine Storm to quickly move 20 yards in front of you, dealing damage to all enemies within its path.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/186788-echo-of-the-highlord?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/186788-echo-of-the-highlord?artifactRank=1&quot; class=&quot;t&quot;&gt;Echo of the Highlord (Rank 1)&lt;/a&gt; - When you use Templar&apos;s Verdict or Divine Storm, Ashbringer will mimic that action.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/193108-blades-of-light?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/193108-blades-of-light?artifactRank=1&quot; class=&quot;t&quot;&gt;Blades of Light (Rank 1)&lt;/a&gt; - Blade of Justice will deal damage to the target an additional 1-3 times.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/186941-highlords-judgment?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/186941-highlords-judgment?artifactRank=3&quot; class=&quot;t&quot;&gt;Highlord&apos;s Judgment (Rank 3)&lt;/a&gt; - Increases the damage of Judgment by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/184759-sharpened-edge?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/184759-sharpened-edge?artifactRank=3&quot; class=&quot;t&quot;&gt;Sharpened Edge (Rank 3)&lt;/a&gt; - Increases damage of Crusader Strike by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/184843-righteous-blade?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/184843-righteous-blade?artifactRank=3&quot; class=&quot;t&quot;&gt;Righteous Blade (Rank 3)&lt;/a&gt; - Increases the damage of Divine Storm by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/186934-embrace-the-light?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/186934-embrace-the-light?artifactRank=3&quot; class=&quot;t&quot;&gt;Embrace the Light (Rank 3)&lt;/a&gt; - Increases the healing of Flash of Light by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/184778-deflection?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/184778-deflection?artifactRank=3&quot; class=&quot;t&quot;&gt;Deflection (Rank 3)&lt;/a&gt; - Damage taken reduced by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/186927-deliver-the-justice?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/186927-deliver-the-justice?artifactRank=3&quot; class=&quot;t&quot;&gt;Deliver the Justice (Rank 3)&lt;/a&gt; - Increases damage of Blade of Justice by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/185368-might-of-the-templar?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/185368-might-of-the-templar?artifactRank=3&quot; class=&quot;t&quot;&gt;Might of the Templar (Rank 3)&lt;/a&gt; - Increases the damage of Templar&apos;s Verdict by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/186944-protector-of-the-ashen-blade?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/186944-protector-of-the-ashen-blade?artifactRank=3&quot; class=&quot;t&quot;&gt;Protector of the Ashen Blade (Rank 3)&lt;/a&gt; - Reduces the cooldown of Hand of Protection by 40 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/186945-wrath-of-the-ashbringer?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/186945-wrath-of-the-ashbringer?artifactRank=3&quot; class=&quot;t&quot;&gt;Wrath of the Ashbringer (Rank 3)&lt;/a&gt; - Increases the duration of Avenging Wrath by 8 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/185086-endless-resolve?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/185086-endless-resolve?artifactRank=1&quot; class=&quot;t&quot;&gt;Endless Resolve (Rank 1)&lt;/a&gt; - Forbearance no longer applies to you.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/182234-unbreakable-will?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/182234-unbreakable-will?artifactRank=1&quot; class=&quot;t&quot;&gt;Unbreakable Will (Rank 1)&lt;/a&gt; - When disabled in combat for more than 0 seconds, Ashbringer will break you free.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/193058-healing-storm?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/193058-healing-storm?artifactRank=1&quot; class=&quot;t&quot;&gt;Healing Storm (Rank 1)&lt;/a&gt; - Divine Storm now also heals allies within its radius for 1 when it deals damage.<br>
+<br>
+<br>
+<br>
+<br>
+&lt;/div&gt;<br>
+&lt;div id=&quot;tab8&quot;&gt;<br>
+<br>
+<br>
+Discipline<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197846-brightest-lights-darkest-shadows?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197846-brightest-lights-darkest-shadows?artifactRank=1&quot; class=&quot;t&quot;&gt;Brightest Lights, Darkest Shadows (Rank 1)&lt;/a&gt; - Casting Holy spells has a chance to cause your staff to send a wave of healing to all targets with your Atonement for 0. Casting Shadow spells has a chance to cause your staff to imbue you with shadow energy, causing you to deal 0% more direct damage every second for 10 sec.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197815-barrier-for-the-devoted?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197815-barrier-for-the-devoted?artifactRank=1&quot; class=&quot;t&quot;&gt;Barrier for the Devoted (Rank 1)&lt;/a&gt; - Atonement heals for 0% more if the target is inside of your Power Word: Barrier<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197772-renewal-of-faith?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197772-renewal-of-faith?artifactRank=1&quot; class=&quot;t&quot;&gt;Renewal of Faith (Rank 1)&lt;/a&gt; - When you activate Pontifex, the duration of all active Atonement buffs is increased by 0 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198068-power-of-the-dark-side?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198068-power-of-the-dark-side?artifactRank=1&quot; class=&quot;t&quot;&gt;Power of the Dark Side (Rank 1)&lt;/a&gt; - When Shadow Word: Pain deals damage, you have a chance to replace Penance with Shadow Penance, which deals 0% bonus damage and will bounce to additional targets.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197779-the-light-returns?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197779-the-light-returns?artifactRank=1&quot; class=&quot;t&quot;&gt;The Light Returns (Rank 1)&lt;/a&gt; - Power Word: Nova has a 0% chance to be cast twice.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197781-share-in-the-light?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197781-share-in-the-light?artifactRank=1&quot; class=&quot;t&quot;&gt;Share in the Light (Rank 1)&lt;/a&gt; - When you Power Word: Shield another target, 0% of that shield is also applied to yourself.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197708-confession?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197708-confession?artifactRank=3&quot; class=&quot;t&quot;&gt;Confession (Rank 3)&lt;/a&gt; - Damage of Penance increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197711-vestments-of-discipline?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197711-vestments-of-discipline?artifactRank=3&quot; class=&quot;t&quot;&gt;Vestments of Discipline (Rank 3)&lt;/a&gt; - Damage taken reduced by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197713-pain-is-in-your-mind?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197713-pain-is-in-your-mind?artifactRank=3&quot; class=&quot;t&quot;&gt;Pain is in Your Mind (Rank 3)&lt;/a&gt; - Cooldown of Pain Suppression reduced by 40 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197715-the-edge-of-dark-and-light?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197715-the-edge-of-dark-and-light?artifactRank=3&quot; class=&quot;t&quot;&gt;The Edge of Dark and Light (Rank 3)&lt;/a&gt; - Increases the damage of Smite and Mind Blast by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197716-burst-of-light?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197716-burst-of-light?artifactRank=3&quot; class=&quot;t&quot;&gt;Burst of Light (Rank 3)&lt;/a&gt; - Increases the damage and healing of Power Word: Nova by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197727-doomsayer?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197727-doomsayer?artifactRank=3&quot; class=&quot;t&quot;&gt;Doomsayer (Rank 3)&lt;/a&gt; - Increases the duration of Rapture by 4 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197729-shield-of-faith?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197729-shield-of-faith?artifactRank=3&quot; class=&quot;t&quot;&gt;Shield of Faith (Rank 3)&lt;/a&gt; - Increases the absorb from Power Word: Shield by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197762-rapid-atonement?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197762-rapid-atonement?artifactRank=3&quot; class=&quot;t&quot;&gt;Rapid Atonement (Rank 3)&lt;/a&gt; - When you apply Atonement to a target, the cast time of your next Mind Blast or Smite is reduced by 20%, or your next Penance will channel 20% faster.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197766-speed-of-the-pious?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197766-speed-of-the-pious?artifactRank=3&quot; class=&quot;t&quot;&gt;Speed of the Pious (Rank 3)&lt;/a&gt; - While channeling Penance, you move 20% faster.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198074-sins-of-the-many?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198074-sins-of-the-many?artifactRank=1&quot; class=&quot;t&quot;&gt;Sins of the Many (Rank 1)&lt;/a&gt; - You deal 0% more damage for each person who has Atonement on them.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Holy<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196684-invoke-the-naaru?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196684-invoke-the-naaru?artifactRank=1&quot; class=&quot;t&quot;&gt;Invoke the Naaru (Rank 1)&lt;/a&gt; - When you use a Holy Word spell, you have a chance to summon an image of K&apos;ure at your side. For 15 sec, whenever you cast a spell, K&apos;ure will cast a similar spell.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196492-renew-the-faith?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196492-renew-the-faith?artifactRank=1&quot; class=&quot;t&quot;&gt;Renew the Faith (Rank 1)&lt;/a&gt; - While Divine Hymn is active, your targeted healing spells also apply Renew to the target.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196537-save-the-fallen?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196537-save-the-fallen?artifactRank=1&quot; class=&quot;t&quot;&gt;Save the Fallen (Rank 1)&lt;/a&gt; - When an ally drops below 0% health, K&apos;ure heals the target fully. Can only occur once every 0 sec<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196578-blessing-of-kure?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196578-blessing-of-kure?artifactRank=1&quot; class=&quot;t&quot;&gt;Blessing of K&apos;ure (Rank 1)&lt;/a&gt; - When you critcally heal a target with Heal or Flash Heal, the Heart of K&apos;ure has a chance to imbue you with its power, resetting the cooldown of all Holy Word spells and increasing your healing by 0% for 12 sec.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196489-power-of-the-naaru?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196489-power-of-the-naaru?artifactRank=1&quot; class=&quot;t&quot;&gt;Power of the Naaru (Rank 1)&lt;/a&gt; - After casting Holy Word: Sanctuary, your Prayer of Healing heals for 0% more for until cancelled.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196437-guardians-of-the-light?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196437-guardians-of-the-light?artifactRank=1&quot; class=&quot;t&quot;&gt;Guardians of the Light (Rank 1)&lt;/a&gt; - Guardian Spirit also applies to yourself when cast.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196779-holy-mending?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196779-holy-mending?artifactRank=1&quot; class=&quot;t&quot;&gt;Holy Mending (Rank 1)&lt;/a&gt; - When Prayer of Mending bounces to a target with your Renew on it, that target will instantly be healed for 0% of a Renew tick.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196355-trust-in-the-light?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196355-trust-in-the-light?artifactRank=3&quot; class=&quot;t&quot;&gt;Trust in the Light (Rank 3)&lt;/a&gt; - Leap of Faith heals your target for 20% over 6 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196358-say-your-prayers?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196358-say-your-prayers?artifactRank=3&quot; class=&quot;t&quot;&gt;Say Your Prayers (Rank 3)&lt;/a&gt; - Prayer of Mending has a 25% chance to not consume a charge when it bounces to a new target.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196416-serenity-now?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196416-serenity-now?artifactRank=3&quot; class=&quot;t&quot;&gt;Serenity Now (Rank 3)&lt;/a&gt; - Increases the critical strike chance of Holy Word: Serenity by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196418-reverence?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196418-reverence?artifactRank=3&quot; class=&quot;t&quot;&gt;Reverence (Rank 3)&lt;/a&gt; - Increases the healing of Flash Heal and Heal by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196419-faith-barrier?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196419-faith-barrier?artifactRank=3&quot; class=&quot;t&quot;&gt;Faith Barrier (Rank 3)&lt;/a&gt; - Damage taken reduced by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196422-holy-hands?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196422-holy-hands?artifactRank=3&quot; class=&quot;t&quot;&gt;Holy Hands (Rank 3)&lt;/a&gt; - Increases the healing of Renew by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196429-hallowed-ground?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196429-hallowed-ground?artifactRank=3&quot; class=&quot;t&quot;&gt;Hallowed Ground (Rank 3)&lt;/a&gt; - Reduces the cooldown of Holy Word: Sanctuary by 13 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196430-words-of-healing?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196430-words-of-healing?artifactRank=3&quot; class=&quot;t&quot;&gt;Words of Healing (Rank 3)&lt;/a&gt; - Increases the healing of your Holy Word spells by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196434-holy-guidance?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196434-holy-guidance?artifactRank=3&quot; class=&quot;t&quot;&gt;Holy Guidance (Rank 3)&lt;/a&gt; - Increases the healing of Prayer of Healing by 13%.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Shadow<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/205065-void-torrent?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/205065-void-torrent?artifactRank=1&quot; class=&quot;t&quot;&gt;Void Torrent (Rank 1)&lt;/a&gt; - Raise your dagger into the sky, absorbing void energy into it for 0 sec, then release a torrent of void energy at your target, dealing 0 damage over 4 sec.&lt;br/&gt;&lt;br/&gt;While channeling this spell, your Insanity no longer drains.&lt;br/&gt;&lt;br/&gt;Requires Voidform.&lt;br/&gt;<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194096-power-of-the-old-gods?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194096-power-of-the-old-gods?artifactRank=1&quot; class=&quot;t&quot;&gt;Power of the Old Gods (Rank 1)&lt;/a&gt; - You summon a Faceless Void from to aid you in battle for 12 sec who casts devastating void spells at your target.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Replaces Shadowfiend.<br>
+<br>
+ &lt;a href=&quot;http://beta.wowdb.com/spells/194179-sphere-of-insanity?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194179-sphere-of-insanity?artifactRank=1&quot; class=&quot;t&quot;&gt;Sphere of Insanity (Rank 1)&lt;/a&gt; - When you enter Voidform, you summon a void sphere for 15 sec. While this sphere is active, 0% of all direct damage dealt is additionally dealt to any target with your Shadow Word: Pain on them.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194378-mass-hysteria?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194378-mass-hysteria?artifactRank=1&quot; class=&quot;t&quot;&gt;Mass Hysteria (Rank 1)&lt;/a&gt; - Each stack of Voidform increases the damage of your Shadow Word: Pain and Vampiric Touch by 0%.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194024-thrive-in-the-shadows?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194024-thrive-in-the-shadows?artifactRank=1&quot; class=&quot;t&quot;&gt;Thrive in the Shadows (Rank 1)&lt;/a&gt; - Dispersion now heals you for 0% of your maximum health over its duration.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194026-sinister-thoughts?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194026-sinister-thoughts?artifactRank=1&quot; class=&quot;t&quot;&gt;Sinister Thoughts (Rank 1)&lt;/a&gt; - Each cast of Mind Blast increases the damage of your next Shadow Word spell by 0%. Stacks up to 0 times.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194093-unleash-the-shadows?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194093-unleash-the-shadows?artifactRank=3&quot; class=&quot;t&quot;&gt;Unleash the Shadows (Rank 3)&lt;/a&gt; - Vampiric Touch critical strikes have a 40% chance to proc Shadowy Apparitions.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/193642-from-the-shadows?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/193642-from-the-shadows?artifactRank=3&quot; class=&quot;t&quot;&gt;From the Shadows (Rank 3)&lt;/a&gt; - Reduce the cooldown of Dispersion by 40 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/193643-mind-shattering?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/193643-mind-shattering?artifactRank=3&quot; class=&quot;t&quot;&gt;Mind Shattering (Rank 3)&lt;/a&gt; - Mind Blast damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/193644-to-the-pain?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/193644-to-the-pain?artifactRank=3&quot; class=&quot;t&quot;&gt;To the Pain (Rank 3)&lt;/a&gt; - Shadow Word: Pain damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/193645-deaths-embrace?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/193645-deaths-embrace?artifactRank=3&quot; class=&quot;t&quot;&gt;Death&apos;s Embrace (Rank 3)&lt;/a&gt; - Increase the damage of Shadow Word: Death by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195082-thoughts-of-insanity?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195082-thoughts-of-insanity?artifactRank=3&quot; class=&quot;t&quot;&gt;Thoughts of Insanity (Rank 3)&lt;/a&gt; - Shadow Mend now heals for 0% more, and you take 0% less damage from the backlash.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194002-tremble-in-fear?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194002-tremble-in-fear?artifactRank=3&quot; class=&quot;t&quot;&gt;Tremble in Fear (Rank 3)&lt;/a&gt; - When Psychic Horror is removed from the target, they are snared by 0% for 4 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194007-touch-of-darkness?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194007-touch-of-darkness?artifactRank=3&quot; class=&quot;t&quot;&gt;Touch of Darkness (Rank 3)&lt;/a&gt; - Vampiric Touch damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194016-void-corruption?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194016-void-corruption?artifactRank=3&quot; class=&quot;t&quot;&gt;Void Corruption (Rank 3)&lt;/a&gt; - Mind Sear causes targets with your Shadow Word: Pain or Vampiric Touch effects to immediately take a 50% of a tick of their damage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/194018-mental-fortitude?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/194018-mental-fortitude?artifactRank=1&quot; class=&quot;t&quot;&gt;Mental Fortitude (Rank 1)&lt;/a&gt; - Overhealing from Vampiric Touch will grant you an absorb shield, up to [&amp;nbsp;15% of Total Health&amp;nbsp;].<br>
+<br>
+<br>
+<br>
+<br>
+&lt;/div&gt;<br>
+&lt;div id=&quot;tab9&quot;&gt;<br>
+<br>
+<br>
+Assassination<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192759-grasp-of-guldan?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192759-grasp-of-guldan?artifactRank=1&quot; class=&quot;t&quot;&gt;Grasp of Gul&apos;dan (Rank 1)&lt;/a&gt; - When you Mutilate a target, the shadowy essence of Gul&apos;dan has a chance to lash out of your daggers and latch onto your target, dealing 0 damage and healing you for that amount every 5 for 10 sec.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192428-from-the-shadows?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192428-from-the-shadows?artifactRank=1&quot; class=&quot;t&quot;&gt;From the Shadows (Rank 1)&lt;/a&gt; - When you declare your Vendetta target, an image of Garona Halforcen will manifest itself and barrage the target with poisoned daggers.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192657-bag-of-tricks?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192657-bag-of-tricks?artifactRank=1&quot; class=&quot;t&quot;&gt;Bag of Tricks (Rank 1)&lt;/a&gt; - When you Envenom a target, you have a chance to smash a giant vial of poison at the target&apos;s location, creating a pool of acidic death that deals 0% damage to all enemies within it.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192923-blood-of-the-assassinated?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192923-blood-of-the-assassinated?artifactRank=1&quot; class=&quot;t&quot;&gt;Blood of the Assassinated (Rank 1)&lt;/a&gt; - Rupture has a chance to infect your target with the blood of enemies slain by your daggers for until cancelled. While the target has infected blood, 0% of all damage you deal to it will be stored up and unleashed when the blood corruption ends.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192310-toxic-blades?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192310-toxic-blades?artifactRank=3&quot; class=&quot;t&quot;&gt;Toxic Blades (Rank 3)&lt;/a&gt; - Envenom damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192315-serrated-edge?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192315-serrated-edge?artifactRank=3&quot; class=&quot;t&quot;&gt;Serrated Edge (Rank 3)&lt;/a&gt; - Mutilate damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192318-master-alchemist?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192318-master-alchemist?artifactRank=3&quot; class=&quot;t&quot;&gt;Master Alchemist (Rank 3)&lt;/a&gt; - Crimson Vial restores an additional 20% of your maximum health over 1 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192323-embrace-the-shadows?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192323-embrace-the-shadows?artifactRank=3&quot; class=&quot;t&quot;&gt;Embrace the Shadows (Rank 3)&lt;/a&gt; - Damage taken reduced by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192326-balanced-blades?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192326-balanced-blades?artifactRank=3&quot; class=&quot;t&quot;&gt;Balanced Blades (Rank 3)&lt;/a&gt; - Mutilate Energy cost reduced by 13.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192329-gushing-wound?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192329-gushing-wound?artifactRank=3&quot; class=&quot;t&quot;&gt;Gushing Wound (Rank 3)&lt;/a&gt; - Rupture damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192345-shadow-walker?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192345-shadow-walker?artifactRank=3&quot; class=&quot;t&quot;&gt;Shadow Walker (Rank 3)&lt;/a&gt; - Reduce the cooldown of Shadowstep by 8 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192349-master-assassin?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192349-master-assassin?artifactRank=3&quot; class=&quot;t&quot;&gt;Master Assassin (Rank 3)&lt;/a&gt; - Reduce the cooldown of Vendetta by 40 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192376-poison-knives?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192376-poison-knives?artifactRank=3&quot; class=&quot;t&quot;&gt;Poison Knives (Rank 3)&lt;/a&gt; - Fan of Knives causes any targets hit with your Deadly Poison to take 40% of the remaining Deadly Poison damage instantly.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192384-urge-to-kill?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192384-urge-to-kill?artifactRank=1&quot; class=&quot;t&quot;&gt;Urge to Kill (Rank 1)&lt;/a&gt; - Activating Vendetta refills all of your Energy.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192422-shadow-swiftness?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192422-shadow-swiftness?artifactRank=1&quot; class=&quot;t&quot;&gt;Shadow Swiftness (Rank 1)&lt;/a&gt; - When you use Shadowstep, the cooldown of Sprint is reset.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192424-surge-of-toxins?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192424-surge-of-toxins?artifactRank=1&quot; class=&quot;t&quot;&gt;Surge of Toxins (Rank 1)&lt;/a&gt; - Offensive finishing moves increase Poison damage you deal to the target by 0%for 5 sec.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Outlaw<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202665-curse-of-the-dreadblades?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202665-curse-of-the-dreadblades?artifactRank=1&quot; class=&quot;t&quot;&gt;Curse of the Dreadblades (Rank 1)&lt;/a&gt; - Invoke the Curse of the Dreadblades, causing each Saber Slash to fill your combo points, however the Dreadblades will consume 0% of your remaining health when using a finishing move for the next 12 sec.&lt;br/&gt;<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202897-blunderbuss?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202897-blunderbuss?artifactRank=1&quot; class=&quot;t&quot;&gt;Blunderbuss (Rank 1)&lt;/a&gt; - When you perform a second strike with Saber Slash, your next Pistol Shot will shoot a ball of shrapnel at the target, dealing greatly increased damage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202820-greed?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202820-greed?artifactRank=1&quot; class=&quot;t&quot;&gt;Greed (Rank 1)&lt;/a&gt; - When you use Run Through on a target, the greed of the Dreadblades will sometimes cause you to perform an additional attack to all enemies within 0 yards around you causing [&amp;nbsp;2.000 * 0% of weapon damage&amp;nbsp;] damage that heals for 0% of your maximum health per target hit.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202769-blurred-time?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202769-blurred-time?artifactRank=1&quot; class=&quot;t&quot;&gt;Blurred Time (Rank 1)&lt;/a&gt; - While Adrenaline Rush is active, all of your abilities recharge 0% faster.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202755-deception?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202755-deception?artifactRank=1&quot; class=&quot;t&quot;&gt;Deception (Rank 1)&lt;/a&gt; - Sprint automatically activates Feint.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202753-hidden-blade?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202753-hidden-blade?artifactRank=1&quot; class=&quot;t&quot;&gt;Hidden Blade (Rank 1)&lt;/a&gt; - When you successfully Ambush a target, your next Saber Slash will be guaranteed to strike a second time.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202628-blademaster?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202628-blademaster?artifactRank=1&quot; class=&quot;t&quot;&gt;Blademaster (Rank 1)&lt;/a&gt; - While Riposte is active, all parried attacks generate a combo point.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202463-cursed-edges?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202463-cursed-edges?artifactRank=3&quot; class=&quot;t&quot;&gt;Cursed Edges (Rank 3)&lt;/a&gt; - Saber Slash damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202507-blade-dancer?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202507-blade-dancer?artifactRank=3&quot; class=&quot;t&quot;&gt;Blade Dancer (Rank 3)&lt;/a&gt; - Reduces the energy regeneration penalty of Blade Flurry by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202514-fates-thirst?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202514-fates-thirst?artifactRank=3&quot; class=&quot;t&quot;&gt;Fate&apos;s Thirst (Rank 3)&lt;/a&gt; - Increases the damage of Run Through by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202521-cursed-leather?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202521-cursed-leather?artifactRank=3&quot; class=&quot;t&quot;&gt;Cursed Leather (Rank 3)&lt;/a&gt; - Damage taken reduced by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202522-gunslinger?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202522-gunslinger?artifactRank=3&quot; class=&quot;t&quot;&gt;Gunslinger (Rank 3)&lt;/a&gt; - Pistol Shot has a 13% increased critical strike chance.&lt;br/&gt;<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202524-fatebringer?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202524-fatebringer?artifactRank=3&quot; class=&quot;t&quot;&gt;Fatebringer (Rank 3)&lt;/a&gt; - Reduce the Energy cost of your finishing moves by 8.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202530-fortune-strikes?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202530-fortune-strikes?artifactRank=3&quot; class=&quot;t&quot;&gt;Fortune Strikes (Rank 3)&lt;/a&gt; - Combat Potency generates 4 additional Energy.&lt;br/&gt;<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202533-ghostly-shell?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202533-ghostly-shell?artifactRank=3&quot; class=&quot;t&quot;&gt;Ghostly Shell (Rank 3)&lt;/a&gt; - When you use Cloak of Shadows, the Dreadblades will heal you for 8% of your maximum health for each effect immediately cleared as well as any effects resisted during its duration.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/202907-fortunes-boon?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/202907-fortunes-boon?artifactRank=3&quot; class=&quot;t&quot;&gt;Fortune&apos;s Boon (Rank 3)&lt;/a&gt; - Reduces the cooldown of Adrenaline Rush by 40 sec.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Subtlety<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197525-withering-bite?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197525-withering-bite?artifactRank=1&quot; class=&quot;t&quot;&gt;Withering Bite (Rank 1)&lt;/a&gt; - Your attacks apply Withering Bite, dealing 0 Shadow damage with a chance to trigger Shadow Techniques. Bites that trigger Shadow Techniques deal triple damage. &lt;br/&gt;<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197643-army-of-one?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197643-army-of-one?artifactRank=1&quot; class=&quot;t&quot;&gt;Army of One (Rank 1)&lt;/a&gt; - When using an Opener, a Shadow Clone appears and assists you in attacking the target.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197645-explosive-shadows?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197645-explosive-shadows?artifactRank=1&quot; class=&quot;t&quot;&gt;Explosive Shadows (Rank 1)&lt;/a&gt; - When Shadow Clones expire or die, they explode dealing 0 Fire damage to their last target.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197406-finality?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197406-finality?artifactRank=1&quot; class=&quot;t&quot;&gt;Finality (Rank 1)&lt;/a&gt; - After using a Finisher, your next Finisher of that type is empowered by the Fangs.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197231-the-quiet-knife?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197231-the-quiet-knife?artifactRank=3&quot; class=&quot;t&quot;&gt;The Quiet Knife (Rank 3)&lt;/a&gt; - Increases the damage of Backstab by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197233-demons-kiss?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197233-demons-kiss?artifactRank=3&quot; class=&quot;t&quot;&gt;Demon&apos;s Kiss (Rank 3)&lt;/a&gt; - Increases the damage of Nightblade by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197234-gutripper?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197234-gutripper?artifactRank=3&quot; class=&quot;t&quot;&gt;Gutripper (Rank 3)&lt;/a&gt; - Increases the critical strike chance of Eviscerate by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197235-precision-strike?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197235-precision-strike?artifactRank=3&quot; class=&quot;t&quot;&gt;Precision Strike (Rank 3)&lt;/a&gt; - Increases the damage dealt by your Shadowstrike by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197369-fortunes-bite?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197369-fortunes-bite?artifactRank=3&quot; class=&quot;t&quot;&gt;Fortune&apos;s Bite (Rank 3)&lt;/a&gt; - Increases your chance of triggering Shadow Techniques by 133%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197386-soul-shadows?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197386-soul-shadows?artifactRank=3&quot; class=&quot;t&quot;&gt;Soul Shadows (Rank 3)&lt;/a&gt; - Increases the duration of Shadow Blades by 20 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197239-energetic-stabbing?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197239-energetic-stabbing?artifactRank=3&quot; class=&quot;t&quot;&gt;Energetic Stabbing (Rank 3)&lt;/a&gt; - Your openers have a chance to refund 20 Energy.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197241-catwalk?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197241-catwalk?artifactRank=3&quot; class=&quot;t&quot;&gt;Catwalk (Rank 3)&lt;/a&gt; - Your Fleet Footed causes you to move an additional 20% faster. You are immune to fall damage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197244-ghost-armor?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197244-ghost-armor?artifactRank=3&quot; class=&quot;t&quot;&gt;Ghost Armor (Rank 3)&lt;/a&gt; - You take -m1% less damage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197610-second-shuriken?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197610-second-shuriken?artifactRank=1&quot; class=&quot;t&quot;&gt;Second Shuriken (Rank 1)&lt;/a&gt; - When you enter Stealth, you gain a shield equal to 25% of your Attack Power.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197256-faster-than-light?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197256-faster-than-light?artifactRank=1&quot; class=&quot;t&quot;&gt;Faster Than Light (Rank 1)&lt;/a&gt; - After Sprinting for three seconds without taking damage, you Vanish.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/197603-embrace-of-darkness?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/197603-embrace-of-darkness?artifactRank=1&quot; class=&quot;t&quot;&gt;Embrace of Darkness (Rank 1)&lt;/a&gt; - Protects the target with a magical shield that absorbs 0 shadow damage. Lasts 10 sec.<br>
+<br>
+<br>
+<br>
+<br>
+&lt;/div&gt;<br>
+&lt;div id=&quot;tab10&quot;&gt;<br>
+<br>
+<br>
+Elemental<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191861-power-of-the-maelstrom?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191861-power-of-the-maelstrom?artifactRank=1&quot; class=&quot;t&quot;&gt;Power of the Maelstrom (Rank 1)&lt;/a&gt; - When you cast Lightning Bolt or Lava Burst, you have a chance to become supercharged with elemental energy causing your next 0 Lightning Bolts and 0 Lava Bursts to have extra effects.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191740-fury-of-the-stormlord?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191740-fury-of-the-stormlord?artifactRank=1&quot; class=&quot;t&quot;&gt;Fury of the Stormlord (Rank 1)&lt;/a&gt; - When you summon your Lightning Elemental, Thorim will crash down next to you, dealing damage to nearby targets and sending blasts of lightning towards all targets affected by Flame Shock.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192623-elemental-empowerment?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192623-elemental-empowerment?artifactRank=1&quot; class=&quot;t&quot;&gt;Elemental Empowerment (Rank 1)&lt;/a&gt; - Casting a Nature spell increases the damage of your Fire spells by 0% for 4 sec. Casting a Fire spell increases the damage of your Nature spells by 0% for 4 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/192630-volcanic-inferno?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/192630-volcanic-inferno?artifactRank=1&quot; class=&quot;t&quot;&gt;Volcanic Inferno (Rank 1)&lt;/a&gt; - Casting Lava Burst generates a fiery orb around yourself. When you reach 0 orbs, your next Lava Burst will cause an eruption of molten lava under the target.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191602-static-overload?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191602-static-overload?artifactRank=1&quot; class=&quot;t&quot;&gt;Static Overload (Rank 1)&lt;/a&gt; - Every 0 casts of Chain Lightning will cause all targets hit to also be hit by an elemental overload of Chain Lightning.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191647-master-of-the-elements?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191647-master-of-the-elements?artifactRank=1&quot; class=&quot;t&quot;&gt;Master of the Elements (Rank 1)&lt;/a&gt; - Each time an elemental overload occurs, you gain 0% haste for 3 sec. <br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191717-stormcaller?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191717-stormcaller?artifactRank=1&quot; class=&quot;t&quot;&gt;Stormcaller (Rank 1)&lt;/a&gt; - Your Fire Elemental is replaced with a Lightning Elemental.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191493-call-the-thunder?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191493-call-the-thunder?artifactRank=3&quot; class=&quot;t&quot;&gt;Call the Thunder (Rank 3)&lt;/a&gt; - Lightning Bolt damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191499-surge-of-power?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191499-surge-of-power?artifactRank=3&quot; class=&quot;t&quot;&gt;Surge of Power (Rank 3)&lt;/a&gt; - Increases the chance for Lava Surge to activate by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191504-lava-imbued?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191504-lava-imbued?artifactRank=3&quot; class=&quot;t&quot;&gt;Lava Imbued (Rank 3)&lt;/a&gt; - Lava Burst damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191512-elementalist?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191512-elementalist?artifactRank=3&quot; class=&quot;t&quot;&gt;Elementalist (Rank 3)&lt;/a&gt; - Each time you cast Lava Burst, the cooldown of Summon Fire Elemental is reduced by 4 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191569-protection-of-the-elements?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191569-protection-of-the-elements?artifactRank=3&quot; class=&quot;t&quot;&gt;Protection of the Elements (Rank 3)&lt;/a&gt; - Reduces damage taken while your Earth Elemental is active by an additional 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191572-molten-blast?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191572-molten-blast?artifactRank=3&quot; class=&quot;t&quot;&gt;Molten Blast (Rank 3)&lt;/a&gt; - Increases the critical damage of Lava Burst by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191577-electric-discharge?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191577-electric-discharge?artifactRank=3&quot; class=&quot;t&quot;&gt;Electric Discharge (Rank 3)&lt;/a&gt; - Chain Lightning bounces to 4 additional target.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/195118-shamanistic-healing?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/195118-shamanistic-healing?artifactRank=3&quot; class=&quot;t&quot;&gt;Shamanistic Healing (Rank 3)&lt;/a&gt; - When you fall below 0% health, Healing Surge is automatically cast on you. This can only occur every 0 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/191598-earthen-attunement?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/191598-earthen-attunement?artifactRank=3&quot; class=&quot;t&quot;&gt;Earthen Attunement (Rank 3)&lt;/a&gt; - Increases the damage of Earth Shock by 20%.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Enhancement<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/204945-doom-winds?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/204945-doom-winds?artifactRank=1&quot; class=&quot;t&quot;&gt;Doom Winds (Rank 1)&lt;/a&gt; - Unleash the inner power of the Doomhammer, causing all attacks to trigger Windfury, and increases the damage of Windfury by 0%.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198736-unleash-doom?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198736-unleash-doom?artifactRank=1&quot; class=&quot;t&quot;&gt;Unleash Doom (Rank 1)&lt;/a&gt; - Stormstrike has a chance to cause Doomhammer to unleash the power of the elements, causing your special attacks to also cause arcs of lightning or streaks of lava at your target.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198505-doom-wolves?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198505-doom-wolves?artifactRank=1&quot; class=&quot;t&quot;&gt;Doom Wolves (Rank 1)&lt;/a&gt; - The Doomhammer will imbue your Feral Spirits with either Fire, Frost, or Lightning properties, granting them an extra unique ability.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199107-doom-vortex?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199107-doom-vortex?artifactRank=1&quot; class=&quot;t&quot;&gt;Doom Vortex (Rank 1)&lt;/a&gt; - When you use Lava Lash, Doomhammer releases a fiery tornado at your target lasts for 3 sec and deals 0 damage to enemies within 0 yards.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198361-hurricane?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198361-hurricane?artifactRank=1&quot; class=&quot;t&quot;&gt;Hurricane (Rank 1)&lt;/a&gt; - When Stormfury activates, your next Stormstrike will deal 0% additional damage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198367-stormflurry?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198367-stormflurry?artifactRank=1&quot; class=&quot;t&quot;&gt;Stormflurry (Rank 1)&lt;/a&gt; - Stormstrike has a 0% chance to deal damage an extra time. This effect can chain off of itself.&lt;br/&gt;&lt;br/&gt;<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198434-alpha-wolf?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198434-alpha-wolf?artifactRank=1&quot; class=&quot;t&quot;&gt;Alpha Wolf (Rank 1)&lt;/a&gt; - While Feral Spirits are active, if you use Crash Lightning, your wolves will also use area attacks for the next 10 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198228-hammer-of-storms?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198228-hammer-of-storms?artifactRank=3&quot; class=&quot;t&quot;&gt;Hammer of Storms (Rank 3)&lt;/a&gt; - Damage of Stormstrike increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198236-forged-in-lava?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198236-forged-in-lava?artifactRank=3&quot; class=&quot;t&quot;&gt;Forged in Lava (Rank 3)&lt;/a&gt; - Damage of Lava Lash increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198238-spirit-of-the-maelstrom?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198238-spirit-of-the-maelstrom?artifactRank=3&quot; class=&quot;t&quot;&gt;Spirit of the Maelstrom (Rank 3)&lt;/a&gt; - While in combat and in Ghost Wolf form, you generate 4 Maelstrom every 5 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198247-surge-of-the-elements?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198247-surge-of-the-elements?artifactRank=3&quot; class=&quot;t&quot;&gt;Surge of the Elements (Rank 3)&lt;/a&gt; - Increases the damage of your Frostbrand, Flametongue, and Rockbiter attacks by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198248-fueled-by-rage?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198248-fueled-by-rage?artifactRank=3&quot; class=&quot;t&quot;&gt;Fueled by Rage (Rank 3)&lt;/a&gt; - While Shamanistic Rage is active, you heal yourself for 40% of your maximum health over 15 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198292-wind-strikes?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198292-wind-strikes?artifactRank=3&quot; class=&quot;t&quot;&gt;Wind Strikes (Rank 3)&lt;/a&gt; - When Stormfury activates, you gain 13% attack speed for 3 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198296-spiritual-healing?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198296-spiritual-healing?artifactRank=3&quot; class=&quot;t&quot;&gt;Spiritual Healing (Rank 3)&lt;/a&gt; - Increase the healing from Healing Surge by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198299-gathering-storms?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198299-gathering-storms?artifactRank=3&quot; class=&quot;t&quot;&gt;Gathering Storms (Rank 3)&lt;/a&gt; - Each target hit by Crash Lightning increases the damage of your next Stormstrike by 8%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/198349-gathering-of-the-maelstrom?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/198349-gathering-of-the-maelstrom?artifactRank=3&quot; class=&quot;t&quot;&gt;Gathering of the Maelstrom (Rank 3)&lt;/a&gt; - Rockbiter has a 20% chance to generate 100% additional Maelstrom.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Restoration<br>
+<br>
+<br>
+<br>
+<br>
+&lt;/div&gt;<br>
+&lt;div id=&quot;tab11&quot;&gt;<br>
+<br>
+<br>
+Affliction<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199369-souls-of-the-damned?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199369-souls-of-the-damned?artifactRank=1&quot; class=&quot;t&quot;&gt;Souls of the Damned (Rank 1)&lt;/a&gt; - Killing enemies empowers the Deadwind Harvester, increasing your shadow damage by 0% and doubling the power of all passive effects of the Harvester. &lt;br/&gt;&lt;br/&gt;Tormented Souls periodically attempt to escape the Harvester - killing them refunds 10% mana. &lt;br/&gt;<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199471-soul-flame?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199471-soul-flame?artifactRank=1&quot; class=&quot;t&quot;&gt;Soul Flame (Rank 1)&lt;/a&gt; - When you kill a target, its soul bursts into flames, dealing Shadowflame damage to everything around it. <br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199472-wrath-of-consumption?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199472-wrath-of-consumption?artifactRank=1&quot; class=&quot;t&quot;&gt;Wrath of Consumption (Rank 1)&lt;/a&gt; - Killing an enemy causes your damage over time effects to deal 0% more damage. This ability stacks up to 5 times.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/201424-harvester-of-souls?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/201424-harvester-of-souls?artifactRank=1&quot; class=&quot;t&quot;&gt;Harvester of Souls (Rank 1)&lt;/a&gt; - Your Drain spells have a chance to trigger on all targets afflicted by your Corruption for 3 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199910-reap-soul?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199910-reap-soul?artifactRank=1&quot; class=&quot;t&quot;&gt;Reap Soul (Rank 1)&lt;/a&gt; - Deals 0 Shadow damage every 5 sec for 42 sec. Each time Reap Soul deals damage, it increases in damage frequency by 6.66%.&lt;br/&gt;&lt;br/&gt;<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199111-inimitable-agony?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199111-inimitable-agony?artifactRank=3&quot; class=&quot;t&quot;&gt;Inimitable Agony (Rank 3)&lt;/a&gt; - Increases the damage of your Agony by 10%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199112-hideous-corruption?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199112-hideous-corruption?artifactRank=3&quot; class=&quot;t&quot;&gt;Hideous Corruption (Rank 3)&lt;/a&gt; - Increases the damage of your Corruption by 10%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199120-drained-to-a-husk?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199120-drained-to-a-husk?artifactRank=3&quot; class=&quot;t&quot;&gt;Drained to a Husk (Rank 3)&lt;/a&gt; - Increases the damage of your Drains by 10%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199152-inherently-unstable?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199152-inherently-unstable?artifactRank=3&quot; class=&quot;t&quot;&gt;Inherently Unstable (Rank 3)&lt;/a&gt; - Increases the critical strike chance of your Unstable Affliction by 10%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199153-seeds-of-doom?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199153-seeds-of-doom?artifactRank=3&quot; class=&quot;t&quot;&gt;Seeds of Doom (Rank 3)&lt;/a&gt; - Increases the detonation damage of your Seed of Corruption by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199158-perdition?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199158-perdition?artifactRank=3&quot; class=&quot;t&quot;&gt;Perdition (Rank 3)&lt;/a&gt; - Increases the critical damage of your Agony, Corruption, Drain, and Unstable Affliction by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199163-shadowy-incantations?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199163-shadowy-incantations?artifactRank=3&quot; class=&quot;t&quot;&gt;Shadowy Incantations (Rank 3)&lt;/a&gt; - Increases your Shadow damage dealt by 10%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199212-mere-flesh?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199212-mere-flesh?artifactRank=3&quot; class=&quot;t&quot;&gt;Mere Flesh (Rank 3)&lt;/a&gt; - Reduces damage you take by 10%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199214-long-dark-night-of-the-soul?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199214-long-dark-night-of-the-soul?artifactRank=3&quot; class=&quot;t&quot;&gt;Long Dark Night of the Soul (Rank 3)&lt;/a&gt; - Increases the healing of your Drain spells by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199220-sweet-souls?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199220-sweet-souls?artifactRank=1&quot; class=&quot;t&quot;&gt;Sweet Souls (Rank 1)&lt;/a&gt; - Your Healthstone fully heals you. Any party member using a Healthstone also heals you for the amount they were healed.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199257-fatal-echoes?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199257-fatal-echoes?artifactRank=1&quot; class=&quot;t&quot;&gt;Fatal Echoes (Rank 1)&lt;/a&gt; - When your Unstable Affliction expires, it has a 25% chance to reapply itself. <br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/199282-compound-interest?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/199282-compound-interest?artifactRank=1&quot; class=&quot;t&quot;&gt;Compound Interest (Rank 1)&lt;/a&gt; - Each Agony and Corruption you cast increases the damage of your next Unstable Affliction by 10%.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Demonology<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Destruction<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196204-tearing-time-and-space?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196204-tearing-time-and-space?artifactRank=1&quot; class=&quot;t&quot;&gt;Tearing Time and Space (Rank 1)&lt;/a&gt; - Your spells can punch holes in the walls of time and space, opening beneficial portals.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196540-regard-of-the-sargerai?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196540-regard-of-the-sargerai?artifactRank=1&quot; class=&quot;t&quot;&gt;Regard of the Sargerai (Rank 1)&lt;/a&gt; - Your spells have a 20% chance to trigger Doomfire.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196546-conflagration-of-chaos?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196546-conflagration-of-chaos?artifactRank=1&quot; class=&quot;t&quot;&gt;Conflagration of Chaos (Rank 1)&lt;/a&gt; - Your Conflagrate always crits, and critical strike rating increases its crit damage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196667-stuff-of-the-universe?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196667-stuff-of-the-universe?artifactRank=1&quot; class=&quot;t&quot;&gt;Stuff of the Universe (Rank 1)&lt;/a&gt; - Your spells can punch holes in the walls of time and space, opening beneficial portals.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196211-master-of-disaster?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196211-master-of-disaster?artifactRank=3&quot; class=&quot;t&quot;&gt;Master of Disaster (Rank 3)&lt;/a&gt; - Increases the damage dealt by Incinerate by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196217-chaotic-instability?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196217-chaotic-instability?artifactRank=3&quot; class=&quot;t&quot;&gt;Chaotic Instability (Rank 3)&lt;/a&gt; - Increases the critical strike damage of Chaos Bolt by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196222-fire-and-the-flames?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196222-fire-and-the-flames?artifactRank=3&quot; class=&quot;t&quot;&gt;Fire and the Flames (Rank 3)&lt;/a&gt; - Increases the haste effect of Backdraft by -m1%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196227-residual-flames?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196227-residual-flames?artifactRank=3&quot; class=&quot;t&quot;&gt;Residual Flames (Rank 3)&lt;/a&gt; - Increases the periodic damage of Immolate by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196236-soulsnatcher?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196236-soulsnatcher?artifactRank=3&quot; class=&quot;t&quot;&gt;Soulsnatcher (Rank 3)&lt;/a&gt; - Your Chaos Bolt has a 20% chance to refund two Soul Shards.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196432-burning-hunger?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196432-burning-hunger?artifactRank=3&quot; class=&quot;t&quot;&gt;Burning Hunger (Rank 3)&lt;/a&gt; - Increases the chance for Immolate to generate a Soul Shard by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196258-fire-from-the-sky?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196258-fire-from-the-sky?artifactRank=3&quot; class=&quot;t&quot;&gt;Fire From the Sky (Rank 3)&lt;/a&gt; - Rain of Fire deals an additional 20% damage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196301-devourer-of-life?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196301-devourer-of-life?artifactRank=3&quot; class=&quot;t&quot;&gt;Devourer of Life (Rank 3)&lt;/a&gt; - Increases the damage and healing of Drain Life by 50%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196305-eternal-struggle?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196305-eternal-struggle?artifactRank=3&quot; class=&quot;t&quot;&gt;Eternal Struggle (Rank 3)&lt;/a&gt; - After casting Life Tap, you take -m1% less damage for 6 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196675-planeswalker?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196675-planeswalker?artifactRank=1&quot; class=&quot;t&quot;&gt;Planeswalker (Rank 1)&lt;/a&gt; - Using your Demonic Gateway will fully heal you.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196332-price-of-power?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196332-price-of-power?artifactRank=1&quot; class=&quot;t&quot;&gt;Price of Power (Rank 1)&lt;/a&gt; - Your Chaotic Energies randomize three times and select the highest value.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/196710-lord-of-flames?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/196710-lord-of-flames?artifactRank=1&quot; class=&quot;t&quot;&gt;Lord of Flames (Rank 1)&lt;/a&gt; - Your Rain of Fire now also rains Infernals.<br>
+<br>
+<br>
+<br>
+<br>
+&lt;/div&gt;<br>
+&lt;div id=&quot;tab12&quot;&gt;<br>
+<br>
+<br>
+Arms<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Fury<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200845-rage-of-the-valarjar?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200845-rage-of-the-valarjar?artifactRank=1&quot; class=&quot;t&quot;&gt;Rage of the Valarjar (Rank 1)&lt;/a&gt; - Raging Blow has a chance to activate Berserking for 12 sec, causing all special attacks to increase your attack speed and critical strike chance by 5%. This effect stacks.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200875-juggernaut?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200875-juggernaut?artifactRank=1&quot; class=&quot;t&quot;&gt;Juggernaut (Rank 1)&lt;/a&gt; - Execute increases the damage of Execute by 0% and increases your Haste by 0% for 15 sec sec. This effect stacks.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200874-fires-of-odyn?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200874-fires-of-odyn?artifactRank=1&quot; class=&quot;t&quot;&gt;Fires of Odyn (Rank 1)&lt;/a&gt; - Whirlwind causes Raging Blow to lash out two streaks of fire for the next 6 sec, damaging all enemies in front of you for 0 Fire damage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200872-odyns-champion?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200872-odyns-champion?artifactRank=1&quot; class=&quot;t&quot;&gt;Odyn&apos;s Champion (Rank 1)&lt;/a&gt; - When you use Rampage, Odyn has a chance to declare you the Champion of the Valarjar for 10 sec, causing you to generate 0 Rage per second and causes all special attacks to reduce the cooldown of all abilities by 0 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200876-odyns-fury?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200876-odyns-fury?artifactRank=1&quot; class=&quot;t&quot;&gt;Odyn&apos;s Fury (Rank 1)&lt;/a&gt; - Hurl both of the Corrupted Warswords at your target, dealing 10 fire damage each, then leap at the target, dealing 10 fire damage to all enemies within 5 yards of the impact.&lt;br/&gt;&lt;br/&gt;45 sec cooldown.&lt;br/&gt;&lt;br/&gt;Pillar augments:&lt;br/&gt;- leaves an aoe periodic fire damage/snare where you impact with the target for 6 sec&lt;br/&gt;- you gain 100% parry for 5 sec after landing&lt;br/&gt;- gain enraged regeneration without incurring its cooldown when landing&lt;br/&gt;- gain the winds of of the valarjar, making you windy and something.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200871-focus-in-chaos?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200871-focus-in-chaos?artifactRank=1&quot; class=&quot;t&quot;&gt;Focus In Chaos (Rank 1)&lt;/a&gt; - While Enraged, your auto attacks are guaranteed to hit.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200870-helyas-wrath?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200870-helyas-wrath?artifactRank=1&quot; class=&quot;t&quot;&gt;Helya&apos;s Wrath (Rank 1)&lt;/a&gt; - Rampage critical strikes refund 0 Rage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200863-sense-death?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200863-sense-death?artifactRank=1&quot; class=&quot;t&quot;&gt;Sense Death (Rank 1)&lt;/a&gt; - Execute has a 0% chance to make your next Execute consume no rage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200846-deathdealer?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200846-deathdealer?artifactRank=3&quot; class=&quot;t&quot;&gt;Deathdealer (Rank 3)&lt;/a&gt; - Execute critical strike chance increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200847-thirst-for-battle?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200847-thirst-for-battle?artifactRank=3&quot; class=&quot;t&quot;&gt;Thirst for Battle (Rank 3)&lt;/a&gt; - Increase the damage of Bloodthirst by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200849-wrath-and-fury?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200849-wrath-and-fury?artifactRank=3&quot; class=&quot;t&quot;&gt;Wrath and Fury (Rank 3)&lt;/a&gt; - Raging Blow damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200853-unstoppable?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200853-unstoppable?artifactRank=3&quot; class=&quot;t&quot;&gt;Unstoppable (Rank 3)&lt;/a&gt; - Rampage damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200856-uncontrolled-rage?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200856-uncontrolled-rage?artifactRank=3&quot; class=&quot;t&quot;&gt;Uncontrolled Rage (Rank 3)&lt;/a&gt; - Charge generates 20 additional Rage.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200857-battle-scars?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200857-battle-scars?artifactRank=3&quot; class=&quot;t&quot;&gt;Battle Scars (Rank 3)&lt;/a&gt; - While Enraged, your health is increased by 20%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200859-bloodcraze?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200859-bloodcraze?artifactRank=3&quot; class=&quot;t&quot;&gt;Bloodcraze (Rank 3)&lt;/a&gt; - While below 50% health, Bloodthirst heals for 133% more.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200860-unrivaled-strength?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200860-unrivaled-strength?artifactRank=3&quot; class=&quot;t&quot;&gt;Unrivaled Strength (Rank 3)&lt;/a&gt; - Battle Shout also increases critical damage by 40%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/200861-raging-berserker?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/200861-raging-berserker?artifactRank=3&quot; class=&quot;t&quot;&gt;Raging Berserker (Rank 3)&lt;/a&gt; - Increases damage dealt while Enraged by 13%.<br>
+<br>
+<br>
+<br>
+&lt;br /&gt;<br>
+<br>
+Protection<br>
+<br>
+Initial Trait<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203524-shadowflame-shield?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203524-shadowflame-shield?artifactRank=1&quot; class=&quot;t&quot;&gt;Shadowflame Shield (Rank 1)&lt;/a&gt; - Enter a defensive posture, causing all blocks to be critical blocks and a stream of shadowflame erupts out of your shield, dealing 0 damage to all enemies in an 0 yard cone.<br>
+<br>
+Major Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203567-vrykul-shield-training?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203567-vrykul-shield-training?artifactRank=1&quot; class=&quot;t&quot;&gt;Vrykul Shield Training (Rank 1)&lt;/a&gt; - When Ignore Pain ends, your block chance is increased by 0% for until cancelled.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/189059-scales-of-earth?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/189059-scales-of-earth?artifactRank=1&quot; class=&quot;t&quot;&gt;Scales of Earth (Rank 1)&lt;/a&gt; - Critical blocks have a chance to cause 3 black dragonscales to erupt out of your shield, increasing your armor by 30% and causing 0 damage and 0% vulnerability to any enemy hit.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/188778-might-of-the-vrykul?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/188778-might-of-the-vrykul?artifactRank=1&quot; class=&quot;t&quot;&gt;Might of the Vrykul (Rank 1)&lt;/a&gt; - When you activate Demoralizing Shout, you have a chance to reduce the cooldown of Shield Slam, Revenge, and Thunder Clap by 0% for 10 sec.<br>
+<br>
+Minor Traits<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/188635-scales-of-the-earth-warder?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/188635-scales-of-the-earth-warder?artifactRank=3&quot; class=&quot;t&quot;&gt;Scales of the Earth-Warder (Rank 3)&lt;/a&gt; - Armor increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/188647-strength-of-the-earth-aspect?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/188647-strength-of-the-earth-aspect?artifactRank=3&quot; class=&quot;t&quot;&gt;Strength of the Earth Aspect (Rank 3)&lt;/a&gt; - Devastate damage increased by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/188651-rumbling-voice?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/188651-rumbling-voice?artifactRank=1&quot; class=&quot;t&quot;&gt;Rumbling Voice (Rank 1)&lt;/a&gt; - Duration and radius of Demoralizing Shout increased by 0%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/188683-will-to-survive?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/188683-will-to-survive?artifactRank=3&quot; class=&quot;t&quot;&gt;Will to Survive (Rank 3)&lt;/a&gt; - Increase health bonus from Last Stand by 25%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203230-leaping-giants?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203230-leaping-giants?artifactRank=3&quot; class=&quot;t&quot;&gt;Leaping Giants (Rank 3)&lt;/a&gt; - Reduce the cooldown of Heroic Leap by 13 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203225-dragon-skin?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203225-dragon-skin?artifactRank=3&quot; class=&quot;t&quot;&gt;Dragon Skin (Rank 3)&lt;/a&gt; - Increase the amount of damage ignored from Ignore Pain by 8%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203227-tolerance?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203227-tolerance?artifactRank=3&quot; class=&quot;t&quot;&gt;Tolerance (Rank 3)&lt;/a&gt; - Maximum Rage increased by 40.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/188639-shatter-the-bones?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/188639-shatter-the-bones?artifactRank=3&quot; class=&quot;t&quot;&gt;Shatter the Bones (Rank 3)&lt;/a&gt; - While Shield Block is active, Shield Slam has a 20% increased critical strike chance.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/203261-wall-of-steel-nyi?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/203261-wall-of-steel-nyi?artifactRank=1&quot; class=&quot;t&quot;&gt;Wall of Steel (NYI) (Rank 1)&lt;/a&gt; - Intervene now redirects 0 additional attacks, and the damage taken from those redirected attacks is reduced by 0% (NYI)<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/188672-reflective-plating?artifactRank=1&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/188672-reflective-plating?artifactRank=1&quot; class=&quot;t&quot;&gt;Reflective Plating (Rank 1)&lt;/a&gt; - Spell Reflect now reflects all spells cast on you for 0 sec.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/188632-toughness?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/188632-toughness?artifactRank=3&quot; class=&quot;t&quot;&gt;Toughness (Rank 3)&lt;/a&gt; - Increases Stamina by 13%.<br>
+<br>
+&lt;a href=&quot;http://beta.wowdb.com/spells/188644-thunder-crash?artifactRank=3&quot; data-tooltip-href=&quot;http://beta.wowdb.com/spells/188644-thunder-crash?artifactRank=3&quot; class=&quot;t&quot;&gt;Thunder Crash (Rank 3)&lt;/a&gt; - Thunder Clap damage increased by 40%.<br>
+<br>
+<br>
+<br>
+<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+<br>
+Fishing Artifact - Underlight Angler<br>
+While looking at the artifact data, we came across an Artifact Weapon for fishing. The traits even make a fish shape (http://media.mmo-champion.com/images/news/2015/november/fishingArtifact.jpg)! <br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201880-cursed-queenfish-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201880-cursed-queenfish-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Cursed Queenfish Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Cursed Queenfish in the open waters of Azsuna.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201881-mossgill-perch-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201881-mossgill-perch-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Mossgill Perch Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Mossgill Perch in the open waters of Val&apos;sharah.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201882-highmountain-salmon-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201882-highmountain-salmon-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Highmountain Salmon Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Highmountain Salmon in the open waters of Highmountain.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201883-stormray-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201883-stormray-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Stormray Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Stormrays in the open waters of Stormheim.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201884-runescale-koi-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201884-runescale-koi-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Runescale Koi Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Runescale Koi in the open waters of Suramar.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201887-black-barracuda-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201887-black-barracuda-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Black Barracuda Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Black Barracuda in the open oceanic waters of the Broken Isles.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201891-undercurrent?artifactRank=1&quot; href=&quot;http://beta.wowdb.com/spells/201891-undercurrent?artifactRank=1&quot; class=&quot; t&quot;&gt;Undercurrent (Rank 1)&lt;/a&gt; - Teleport to the nearest fishing node.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201921-cursed-queenfish-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201921-cursed-queenfish-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Cursed Queenfish Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Cursed Queenfish in the open waters of Azsuna.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201922-mossgill-perch-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201922-mossgill-perch-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Mossgill Perch Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Mossgill Perch in the open waters of Val&apos;sharah.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201923-highmountain-salmon-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201923-highmountain-salmon-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Highmountain Salmon Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Highmountain Salmon in the open waters of Highmountain.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201924-stormray-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201924-stormray-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Stormray Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Stormrays in the open waters of Stormheim.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201925-runescale-koi-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201925-runescale-koi-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Runescale Koi Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Runescale Koi in the open waters of Suramar.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201926-black-barracuda-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201926-black-barracuda-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Black Barracuda Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Black Barracuda in the open oceanic waters of the Broken Isles.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201927-cursed-queenfish-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201927-cursed-queenfish-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Cursed Queenfish Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Cursed Queenfish in the open waters of Azsuna.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201928-mossgill-perch-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201928-mossgill-perch-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Mossgill Perch Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Mossgill Perch in the open waters of Val&apos;sharah.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201929-highmountain-salmon-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201929-highmountain-salmon-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Highmountain Salmon Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Highmountain Salmon in the open waters of Highmountain.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201930-stormray-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201930-stormray-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Stormray Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Stormrays in the open waters of Stormheim.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201931-runescale-koi-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201931-runescale-koi-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Runescale Koi Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Runescale Koi in the open waters of Suramar.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201932-black-barracuda-angling?artifactRank=3&quot; href=&quot;http://beta.wowdb.com/spells/201932-black-barracuda-angling?artifactRank=3&quot; class=&quot; t&quot;&gt;Black Barracuda Angling (Rank 3)&lt;/a&gt; - Increases chance to catch Black Barracuda in the open oceanic waters of the Broken Isles.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201943-better-luck-next-time?artifactRank=1&quot; href=&quot;http://beta.wowdb.com/spells/201943-better-luck-next-time?artifactRank=1&quot; class=&quot; t&quot;&gt;Better Luck Next Time (Rank 1)&lt;/a&gt; - Grants a chance to catch boots when fishing in the Broken Isles.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201944-surface-tension?artifactRank=1&quot; href=&quot;http://beta.wowdb.com/spells/201944-surface-tension?artifactRank=1&quot; class=&quot; t&quot;&gt;Surface Tension (Rank 1)&lt;/a&gt; - Walk on water.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201945-bloodfishing?artifactRank=1&quot; href=&quot;http://beta.wowdb.com/spells/201945-bloodfishing?artifactRank=1&quot; class=&quot; t&quot;&gt;Bloodfishing (Rank 1)&lt;/a&gt; - Grants a chance to catch Blood of Sargeras when fishing in the Broken Isles.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201946-luremaster?artifactRank=50&quot; href=&quot;http://beta.wowdb.com/spells/201946-luremaster?artifactRank=50&quot; class=&quot; t&quot;&gt;Luremaster (Rank 50)&lt;/a&gt; - Increases duration of Legion lures and baits by 0 seconds per rank.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201948-fishrenders-blessing?artifactRank=1&quot; href=&quot;http://beta.wowdb.com/spells/201948-fishrenders-blessing?artifactRank=1&quot; class=&quot; t&quot;&gt;Fishrender&apos;s Blessing (Rank 1)&lt;/a&gt; - Become a fish when underwater, allowing you to breathe water and swim rapidly.<br>
+<br>
+&lt;a data-tooltip-href=&quot;http://beta.wowdb.com/spells/201952-fishbane?artifactRank=1&quot; href=&quot;http://beta.wowdb.com/spells/201952-fishbane?artifactRank=1&quot; class=&quot; t&quot;&gt;Fishbane (Rank 1)&lt;/a&gt; - Increases autoattack damage done to aquatic beasts by 0%.<br>
+<br>
+<br>
+<br>
+Legion - Nightborne<br>
+The Nightborne are a new race of elves found on the Broken Isles.<br>
+<br>
+<br>
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/s4frZiYX-II?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br>
+<br>
+http://media.mmo-champion.com/images/news/2015/november/thumb/NightborneBotanist01.jpg (http://media.mmo-champion.com/images/news/2015/november/NightborneBotanist01.jpg) http://media.mmo-champion.com/images/news/2015/november/thumb/NightborneFemale01.jpg (http://media.mmo-champion.com/images/news/2015/november/NightborneFemale01.jpg) http://media.mmo-champion.com/images/news/2015/november/thumb/NightborneFemale02.jpg (http://media.mmo-champion.com/images/news/2015/november/NightborneFemale02.jpg) http://media.mmo-champion.com/images/news/2015/november/thumb/NightborneFemale03.jpg (http://media.mmo-champion.com/images/news/2015/november/NightborneFemale03.jpg) <br>
+http://media.mmo-champion.com/images/news/2015/november/thumb/NightborneMale01.jpg (http://media.mmo-champion.com/images/news/2015/november/NightborneMale01.jpg) http://media.mmo-champion.com/images/news/2015/november/thumb/NightborneMale02.jpg (http://media.mmo-champion.com/images/news/2015/november/NightborneMale02.jpg) http://media.mmo-champion.com/images/news/2015/november/thumb/NightborneMale03.jpg (http://media.mmo-champion.com/images/news/2015/november/NightborneMale03.jpg) http://media.mmo-champion.com/images/news/2015/november/thumb/NightborneSpellbreaker.jpg (http://media.mmo-champion.com/images/news/2015/november/NightborneSpellbreaker.jpg) <br>
+<br>
+<br>
+Big News, Everyone! Gnome Hunters Are Coming<br>
+We have some big news concerning some of the smallest residents in Azeroth. Gnome players will at long last be able to play the Hunter class! That&#x2019;s right&#x2014;in World of Warcraft: Legion, you too will be able to rise up to become a big game hunter.<br>
+<br>
+One for the Gnomies<br>
+Long at the forefront of cutting-edge technology in Azeroth, the inventive gnomes are finally ready to break out the big guns. Their propensity for things that go &#x201C;bang&#x201D; and knack for high-tech weapons like rocket launchers, high-powered rifles, and death rays make them perfect candidates for hunting down prey.<br>
+<br>
+And with the events about to unfold on the Broken Shore, High Tinker Mekkatorque has commanded his people to get outfitted and ready for battle&#x2014;any way they know how.<br>
+<br>
+Mecha-Minions<br>
+Of course, gnomes wouldn&#x2019;t be gnomes if they didn&#x2019;t apply their own particular brand of engineering to their job&#x2014;this time in the form of a new Hunter pet family: Mechanical.<br>
+<br>
+Gnome and Goblin players will be able to tame this new kind of hard-to-find pet right from the start. Other races will also be able to learn how to control these artificial animals via a device Engineers will be able to make (http://beta.wowdb.com/items/134125-mecha-mind-synchronization-fluid).<br>
+<br>
+Most Mechanical pets will be challenging to tame, requiring you to first locate them and then use your Hunter abilities in unusual ways. (You didn&#x2019;t think we&#x2019;d make it easy, did you?)<br>
+<br>
+For example, one rare mechanostrider requires you to create a special punch card that grants access to a closed section of Gnomeregan (we hope you remember the way). Once you locate the clockwork creature, you&#x2019;ll then need to figure out how to overload its circuits. Solve the puzzle, and you&#x2019;ll have this magnificent mechanized minion striding by your side.<br>
+<br>
+What do you feed a high-tech pet that&#x2019;s not technically alive? Mechanical Bits, of course! Hunters will be able to keep their shiny metal friends &#x201C;happy&#x201D; and &#x201C;healthy&#x201D; through the creative use of Engineering supplies such as a Handful of Copper Bolts.<br>
+<br>
+And just in case you think we&#x2019;re lowering ourselves by making &#x201C;small&#x201D; jokes, we present to you the Gnome Hunter&#x2019;s starting pet&#x2014;the Giant Mechanical Rabbit&#x2014;as proof!<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2015/november/thumb/metalRabbit.jpg (http://media.mmo-champion.com/images/news/2015/november/metalRabbit.jpg) <br>
+<br>
+Will you rise up to the challenge and collect them all? <br>
+<br>
+<br>
+Blue Tweets<br>
+Art<br>
+Awesome to see even the critters are getting some love in Legion! <br>
+It&apos;s in our best interest, they outnumber us 10 to 1. Imagine the chaos if we angered the critters! (artofcgrobinson (https://twitter.com/artofcgrobinson/status/669029326810038272))<br>
+<br>
+Character / Items<br>
+Any update on the Orc straight posture option? Maybe for Legion? In a future Artcraft?<br>
+haven&apos;t forgotten about this (artofcgrobinson (https://twitter.com/artofcgrobinson/status/669002817789493248))<br>
+<br>
+Hello Chris, do you know if the night elf eyelashes will return?<br>
+Did they get shaved off? I&apos;d blame he has a problem with eyelashes. Murph, we&apos;re going to need some superglue (artofcgrobinson (https://twitter.com/artofcgrobinson/status/669006061974634497))<br>
+<br>
+PvP<br>
+can you confirm that in rated arenas/BGs, we will have access to regular talents and pvp talents?<br>
+Correct (holinka (https://twitter.com/holinka/status/668587145574002688))<br>
+<br>
+Pets and Pet Battles<br>
+any plans for more things to do pet battle-wise in future patches or Legion? Another cel tourn type challenge maybe?<br>
+Yes, there will be new Pet Battle content in #Legion, but it&apos;s not ready to be unveiled quite yet. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/669296400685920256))<br>
+<br>
+<br>
+Ghostcrawler Tweets<br>
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.<br>
+As a developer, how do you handle design &quot;issues&quot; that the community calls out as problems, but are still good designs? (Three-hit mechanics, every champion has a minigame etc)?&#x200E; <br>
+The best thing you can do as a developer is provide context. If even some players understand your logic, then they can explain it to other players, and maybe you won&apos;t see the same comments over and over again.<br>
+On the other hand, if players can offer good arguments for why your designs are in fact problematic, then you should really listen to them, keeping in mind that &quot;players&quot; are not some kind of homogenous entity that is always going to speak with some kind of unified voice. (Players themselves forget this with some frequency.) <br>
+<br>
+Should the way developers communicate about their game be, in some sense, considered part of the game itself?<br>
+It is definitely part of the studio / publisher&apos;s brand. For example, Riot works hard to try to build up player trust and in return players sometimes forgive us for making a dumb mistake because they trust (hopefully) our intentions and that we&apos;ll do the right thing in the long run.<br>
+I do think players sometimes focus too much on communication (and I say that as someone who has spent 1000s of hours communicating to players). Great communication can&apos;t alone fix a game you&apos;re not enjoying and you can enjoy games despite lackluster communication. <br>
+<br>
+<br>
+Re: forms, druids in WoW are a classic example for newer players (for whom WoW is a classic). It seemed cat form was too squishy vs melee, but knowing, or showing, that you have to stun the druid now, while she is in caster form, so you can apply burst damage without mitigation. Denying the shift<br>
+I agree that denying the shift was interesting, but we struggled a ton with balancing druids overall. It felt awesome to the druid to shift to caster form to heal and then bear form to mitigate damage, but the other side wondered what exactly they were supposed to do against an opponent who for all purposes was a tank caster. When we moved away from shifting to just &quot;okay, you can always be a cat or moonkin&quot; thrn thr class didn&apos;t feel like a shifter at all.<br>
+<br>
+I&apos;m blaming myself here, but WoW druids were one of the examples I had in mind when I said that shifters were hard to get right.</div></div>

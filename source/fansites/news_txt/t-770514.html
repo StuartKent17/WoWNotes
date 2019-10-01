@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-10-09, 07:35 AM</div></div><div class="posttext">Custom Latency Tolerance<br>
+As an update to this, the next beta build will include a slider bar (labeled &quot;Custom Latency Tolerance&quot;) that lets you tune how sensitive the ability queue is (including sliding it all the way to zero if you choose). This value allows you to control (in milliseconds) how long before the GCD finishes the client will let you queue your next ability.<br>
+<br>
+The optimal setting will probably be right around what your ping time is. So, if your ping is 100 for example, you&apos;d probably want to set it at 100 or slightly higher. <br>
+<br>
+Does that mean that the plans to add in the ability to replace a previous command is out? or is that still a possibility?<br>
+That&apos;s still in too. It&apos;s just that while overriding is helpful it can still fail if your override gets to the server a little too late and your previously queued ability goes off anyways. <br>
+<br>
+why cant you just make the client dynamically change this setting based on the ping rather than make the player choose it and probably get it wrong? <br>
+We plan to do this as the default value (when you aren&apos;t overriding it) in a future patch. There are some complexities that prevent us from being able to do it right now. <br>
+<br>
+How are you going to address people using the TCPAckFrequency registry hack to &quot;lower&quot; their ping? Are you going to disable it in-game, similar to how you handled the nagle algorithm?<br>
+The server now enforces the actual global cooldown value, whereas in the past it allowed a .4 sec slush. So, instead of having a slush factor that let somebody cast a bit early, it now catches the request, waits until the cooldown has actually completed, then casts the spell for you (the queue&apos;d ability) at the soonest possible time. <br>
+<br>
+<br>
+Muffins Presents: Cataclysm Part 3 - Uldum, Twilight Highlands &amp; Instances <br>
+Muffins released the 3rd part of the Cataclysm video previews! <br>
+<br>
+<br>
+Muffins Presents Cataclysm Part 1: Kalimdor (http://www.mmo-champion.com/content/1885-Blizzcon-2010-Stream-Cataclysm-Video-Blue-Posts)<br>
+Muffins Presents Cataclysm Part 2: Eastern Kingdoms (http://www.mmo-champion.com/content/1958-Cataclysm-Part-2-EK-Grim-Batol-Dungeon-Loot-Blue-Posts)<br>
+<br>
+<br>
+<br>
+&lt;object width=&quot;700&quot; height=&quot;465&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/vdMpKcPck2w?fs=1&amp;amp;hl=en_US&amp;amp;hd=1&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/vdMpKcPck2w?fs=1&amp;amp;hl=en_US&amp;amp;hd=1&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;700&quot; height=&quot;465&quot;&gt;&lt;/embed&gt;&lt;/object&gt;<br>
+<br>
+<br>
+Cataclysm - Camel Mount Animations<br>
+My first preview of the Camel Mount didn&apos;t have any animations, they were added to the beta a few builds ago and you can now take a look at them in all their glory. Camel mounts are reputation rewards in Uldum.<br>
+<br>
+<br>
+&lt;object width=&quot;700&quot; height=&quot;465&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/1ZbApG7gvB8?fs=1&amp;amp;hl=en_US&amp;amp;hd=1&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/1ZbApG7gvB8?fs=1&amp;amp;hl=en_US&amp;amp;hd=1&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;700&quot; height=&quot;465&quot;&gt;&lt;/embed&gt;&lt;/object&gt;<br>
+<br>
+<br>
+Guild Members Capped in 4.0.1 - Update<br>
+We previously announced in the Cataclysm Beta forums that we&apos;d be enforcing a 600 guild member cap with patch 4.0.1. We&apos;ve reevaluated what we believe the realms are capable of supporting and instead will be enforcing a guild member hard cap of 1,000 members. This means that guilds with more than 1,000 members will no longer be able to invite new members until they drop below the cap. For example, if a guild has 1,500 members they&apos;ll be able to continue as-is, playing and earning guild achievements for as long as they choose, through Cataclysm and beyond, but they will not be able to add new members until they fall below the 1,000 member cap. If a guild has fewer than 1,000 members, they won&apos;t be able to add members above that number.<br>
+<br>
+This new guild cap is being enforced for several reasons, but they all factor into a need to control guild sizes in light of the new guild systems, including guild leveling and achievements. Previously, adding players to a guild was as simple as adding people to a chat channel. While approximately 500 members were visible in the UI, there was no real need to limit guild size. That is no longer the case. Guild leveling in Cataclysm features unified progression powered by a series of complex systems that track the contributions of all guild members. The larger the guild, the bigger the impact on these systems. We found it necessary to determine a maximum guild size to ensure continued performance now and into the future.<br>
+<br>
+We want to reassure the few guilds that this does impact that they have ample time to plan and rearrange their guilds as they see fit. While this hard cap will go into effect with 4.0.1, guilds should feel safe rearranging members as necessary up to the release of Cataclysm on December 7 when the guild leveling system goes into effect. There will be no impact on guild leveling progression before then. If a guild were to disband after Cataclysm, or a group of people were to leave and start a new guild, they would lose the time and experience they previously contributed and potentially extend the amount of time it would take to regain the new guild perks.<br>
+<br>
+While some players have used options including mods and custom chat channels to support large player and guild alliances that number multiple thousands, groups of that size aren&apos;t ideally suited to our design philosophy. As always, we&apos;re continually looking into adding new features to help facilitate guild management, scheduling, and player communication. <br>
+<br>
+<br>
+Cataclysm Art &amp; Video Contests<br>
+World of Warcraft: Cataclysm will soon be upon us, and the denizens of Azeroth must be prepared! We&apos;re reaching out to the World of Warcraft community&apos;s talented filmmakers, artists, and graphic designers to help spread the word by entering two brand new contests.<br>
+<br>
+If you&apos;ve got the skills to make a truly moving or hilarious Cataclysm-themed commercial parody (Sockets are Forever is a great example: http://www.worldofwarcraft.com/downloads/movies.html#valentines), then the Cataclysm YouTube Commerical Contest might be for you: http://us.blizzard.com/en-us/community/contests/cataclysm-video/<br>
+<br>
+If your talents lie in creating original artwork or graphic design, then perhaps you&apos;d like to whip up an epic advertisement or public service announcement for the besieged denizens of Azeroth. You can learn more about the Cataclysm Print Ad Contest here: http://us.blizzard.com/en-us/community/contests/cataclysm-print/<br>
+<br>
+Whether you chose to enter either or both of these contests, please be sure to read the rules for full details and eligibility. <br>
+<br>
+<br>
+Blue Posts<br>
+<br>
+310% Speed mount skill<br>
+You&apos;ll have to pay for the skill, but your mount speed will increase with your riding skill level. This way, you can pretty much roll through all of your favorite mounts without feeling as if you are neglecting any of them. <br>
+<br>
+[...] I apologize for the added confusion. If you have 310% now, the boost is free. (Source (http://blue.mmo-champion.com/t/27026400553/question-about-310-mounts-in-cata/))<br>
+<br>
+[...] We want people to be able to pick and choose the mount (or mounts) they enjoy using without feeling like they&apos;re being penalized. There are a lot of different mounts to choose from and for some people, that mount they got awhile back that was so awesome, lost its luster after that next fast mount came out. (Source (http://blue.mmo-champion.com/t/27026480663/310-flight-why-this-way/))<br>
+<br>
+Reforging - Primary vs. Secondary Stats<br>
+The primary stats (strength, agility, intellect or stamina for tanks) are nearly always going to be more powerful than the secondary stats. That&apos;s the primary reason why you can&apos;t refoge them. With the exception of gems and enchants, you don&apos;t have a ton of flexibility in stacking your primary stats on gear -- they come at pretty set ratios to item level. You can choose to just gem all primary stats, or you can get fancy with the orange, purple and green gems since socket bonuses are more powerful in Cataclysm.<br>
+<br>
+It&apos;s a bigger problem if either haste, crit or mastery are of wildly different value for a given spec. (Source (http://blue.mmo-champion.com/t/27026480301/very-concerned-about-feral-cat/))<br>
+<br>
+Justice Point Drop Quantities (See the original post (http://www.mmo-champion.com/content/2004-Cataclysm-Justice-Point-Drop-Quantities))<br>
+Just a quick note that the points listed here aren&apos;t final, we&apos;re still trying to balance the numbers. Specifically for Cataclysm drops. It&apos;s possible they may still change. (Source (http://blue.mmo-champion.com/t/27026399005/cataclysm-justice-point-drop-quantities/))<br>
+<br>
+Tanking<br>
+Dazed<br>
+You should not be getting dazed on live if you are the defense &quot;cap&quot; and you shouldn&apos;t be getting dazed on the PTR if you have the anti-crit talents. If you meet those requirements, then it&apos;s a bug. (Source (http://blue.mmo-champion.com/t/27026399992/daze-needs-to-die-in-a-fire/))<br>
+<br>
+Pulling aggro from tanks<br>
+Unless you&apos;re doing something unusual, healer threat is generally pretty low, and tends to go lower if there are many targets. The biggest danger tends to be when adds spawn and a heal lands before you have done any threat against the new arrivals. If you are targeting Thunder Clap (I&apos;m going to use Thunder Clap as my example, but this discussion is not limited to warriors) so that everything is in range and healers are still pulling, then something unusual is probably happening. Maybe you&apos;re taking so much damage that the healers are just spamming heals on you, which might suggest you need to somehow manage some of the adds that doesn&apos;t involve all of them beating on you so much.<br>
+<br>
+You&apos;re probably at more risk overall of having dps pull off of you. Here are the scenarios again about how that could work:<br>
+<br>
+One target -- if a dps pulls off of you, they are either blowing cooldowns before you have a chance to respond, or your threat generation is much too low for some reason.<br>
+<br>
+Many targets -- in this case, the dps are probably AE&apos;ing. Usually they will kill things pretty quickly, but they might get a few adds on them. These situations are always a little chaotic, but also don&apos;t last very long. We don&apos;t do many huge AE packs of mobs that hit brutally hard.<br>
+<br>
+A few targets -- in this case, you might be CC&apos;ing one or two, tanking a few others, but burning down the targets one at a time. If the dps are on the right target and pulling off of you, then we&apos;re back to situation one. If they are on the wrong target, then they are playing badly and should be corrected and / or mocked, depending on how you roll.<br>
+<br>
+On the one target scenario, you may not need to Thunder Clap on cooldown. The cooldown is 6 sec and the debuff duration is 30, and the threat is not so massive that you should just always Thunder Clap any target. On the few targets scenario, it&apos;s at your discretion. Thunder Clap may help keep aggro on the targets not being dps&apos;ed but you might also break CC. On many targets, you should Thunder Clap your heart out. You can tab target your other abilities around, and many tanks do, but you can&apos;t realistically tab target them all, so it&apos;s not going to make a massive difference. In the few case, you are going to want to spend most of your single-target abilities on the dps target, but perhaps start shifting over to the next target so that you have a headstart when that becomes the target.<br>
+<br>
+That was a long explanation, and it&apos;s possible your question was just a thinly veiled jab at how your single target and AE rotations aren&apos;t that different, but I think the prioritization of how you use them is. <br>
+<br>
+He was saying that our AoE threat is mostly fine right now because of tab target and cleave, but that&apos;s for smaller groups. He&apos;s saying we struggle holding larger groups because we don&apos;t have other options. <br>
+And I&apos;m saying you can hold them well enough. If the mage catches a couple of whelps, it&apos;s probably not going to kill him before the whelps die. If we did AE packs of giants or devilsaurs or Marrowgars, then it would be critical for a tank to be able to hold a very large number of targets. But we don&apos;t. &quot;Tanking&quot; those large packs is really more about trying to decrease the damage done to others. You aren&apos;t going to be able to control it that well. Generally if you find you can&apos;t control N number of targets, then it&apos;s a reasonable bet that we don&apos;t expect you to control that many. You&apos;re supposed to CC some or just burn them down, depending on the scenario. (Source (http://blue.mmo-champion.com/t/27026377623/thunderclap-is-too-weak/))<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin (Forums (http://www.mmo-champion.com/forums/273-Paladin) / 3.3.5 Talent Calculator (http://talent.mmo-champion.com/?paladin#,,12213) / Cataclysm Talent Calculator (http://www.wowtal.com/#k=..paladin) / Beta Skills/Talents (http://www.mmo-champion.com/content/1670-Paladin-Cataclysm))<br>
+Word of Glory as Protection<br>
+This is the kind of thing we&apos;re still messing around with. We want Protection to be able to use Word of Glory occasionally in emergencies or to help the healers out, but we are aware that if it&apos;s too potent, paladins will just tank by healing themselves (either because of threat generation or mana savings).<br>
+<br>
+We also need to make sure that the AP coefficient for the heal isn&apos;t affected by Vengeance. (Source (http://blue.mmo-champion.com/t/27026399935/word-of-glory-tps-can-t-be-intended-can-it/))<br>
+<br>
+<br>
+<br>
+Artworks<br>
+The Blizzard Art Gallery (http://eu.blizzard.com/en-gb/community/conceptart/) has been updated with 2 new artworks.<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2010/october/ss383_small.jpg (http://media.mmo-champion.com/images/news/2010/october/ss383.jpg) http://media.mmo-champion.com/images/news/2010/october/ss384_small.jpg (http://media.mmo-champion.com/images/news/2010/october/ss384.jpg)</div></div>

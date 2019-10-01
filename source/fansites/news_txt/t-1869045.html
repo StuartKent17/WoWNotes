@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-09-24, 04:31 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; September 22nd Hotfixes, Hellfire Amulet and Bans, Future Ghost Changes (http://www.diablofans.com/news/48527-september-22nd-hotfixes-hellfire-amulet-and-bans)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Underdog Rules Brawl, The Angry Chicken #104, CDC #33 Finalist Voting (http://www.hearthpwn.com/news/1040-underdog-rules-brawl-the-angry-chicken-104-cdc-33)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Shacknews Interview Round-Up, Shop Sales, Rotation for Sept. 22, 2015 and Rexxar Price (http://www.heroesnexus.com/news/1490-shacknews-interview-round-up-shop-sales-rotation)<br>
+<br>
+World of Warcraft - Game of Thrones Style Intro<br>
+Marc Ottensmann released a Game of Thrones style intro (https://www.youtube.com/watch?v=s7L2PVdrb_8) for World of Warcraft.<br>
+<br>
+<br>
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/QiIUatir0GA?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br>
+<br>
+Armory Stats - Level 25 Pet Achievement<br>
+Today we are taking a look at when players earned the All Growns Up! (http://www.wowdb.com/achievements/6570-all-growns-up) achievement. Keep in mind that only players active since August 1st were included in this data, so players that are inactive or quit long ago after leveling a pet to 25 are not represented. <br>
+<br>
+You can see a nice increase in the number of players after the release of Patch 6.1, which added the Ultimate Battle-Training Stone (http://www.wowdb.com/items/122457-ultimate-battle-training-stone) for everyone with a Tier 3 garrison. If you haven&apos;t done it on alts already, be sure to do so as each character can get one! If you already have several Level 25 pets, you can get more stones with the bonus event going on now.<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2015/july/highcharts.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart; <br>
+$(document).ready(function() {<br>
+Highcharts.setOptions({<br>
+colors: [ &apos;#4768C4&apos;, &apos;#949494&apos;, &apos;#727272&apos;, &apos;#595959&apos;, &apos;#6B8E23&apos;, &apos;#426F42&apos;]<br>
+});<br>
+<br>
+<br>
+<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;pet25Ach&apos;,<br>
+zoomType: &apos;x&apos;,<br>
+spacingRight: 20,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+title: {<br>
+text: &apos;Number of New Players Earning First Level 25 Pet Achievement Each Week&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+subtitle: {<br>
+text: document.ontouchstart === undefined ?<br>
+&apos;Click and drag in the plot area to zoom in&apos; :<br>
+&apos;Drag your finger over the plot to zoom in&apos;<br>
+},<br>
+xAxis: {<br>
+type: &apos;datetime&apos;,<br>
+maxZoom: 14 * 24 * 3600000, // fourteen days<br>
+title: {<br>
+text: null<br>
+},<br>
+startOnTick: false,<br>
+showFirstLabel: false<br>
+},<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Number of Players&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+startOnTick: true,<br>
+showFirstLabel: false<br>
+<br>
+},<br>
+tooltip: {<br>
+shared: true <br>
+},<br>
+legend: {<br>
+enabled: false<br>
+},<br>
+plotOptions: {<br>
+<br>
+areaspline: {<br>
+animation: false,<br>
+lineWidth: 3,<br>
+marker: {<br>
+enabled: true,<br>
+states: {<br>
+hover: {<br>
+enabled: true,<br>
+radius: 5<br>
+}<br>
+}<br>
+},<br>
+shadow: false,<br>
+states: {<br>
+hover: {<br>
+lineWidth: 3 <br>
+}<br>
+}<br>
+}<br>
+},<br>
+<br>
+series: [{<br>
+type: &apos;areaspline&apos;,<br>
+name: &apos;New First Level 25 Pet Achievement Players&apos;,<br>
+pointInterval: 7 * 24 * 3600 * 1000,<br>
+pointStart: Date.UTC(2012, 8, 25),<br>
+data: [<br>
+3435 , 8416 , 9407 , 8931 , 8945 , 8325 , 6830 , 6133 , 5447 , 6190 , 9104 , 8497 , 8233 , 8659 , 9604 , 7660 , 6764 , 6174 , 5855 , 5508 , 4973 , 4868 , 4874 , 4938 , 4776 , 4776 , 5079 , 5072 , 5191 , 5152 , 4923 , 5010 , 4999 , 4658 , 4668 , 5474 , 4948 , 4623 , 4683 , 5030 , 4995 , 4705 , 4449 , 4523 , 4599 , 4800 , 4651 , 4477 , 4726 , 4934 , 3818 , 3743 , 4103 , 4066 , 4071 , 3793 , 3578 , 3440 , 3884 , 3934 , 3665 , 3680 , 3682 , 3468 , 3525 , 4136 , 4495 , 4053 , 3881 , 3719 , 3746 , 3676 , 3369 , 3252 , 3393 , 2967 , 2587 , 2558 , 2361 , 2332 , 2424 , 2447 , 2152 , 2419 , 2617 , 2237 , 2195 , 2467 , 2335 , 2279 , 2197 , 2345 , 2465 , 2791 , 2881 , 2585 , 2956 , 3139 , 3248 , 3206 , 3404 , 3293 , 3476 , 3320 , 3605 , 4117 , 4623 , 2689 , 3378 , 3837 , 5558 , 4004 , 4783 , 5710 , 4938 , 5363 , 4840 , 5104 , 5485 , 4995 , 4438 , 4069 , 3829 , 3011 , 3209 , 3071 , 148066 , 48055 , 34270 , 27858 , 23352 , 21827 , 19615 , 19572 , 18586 , 17353 , 16180 , 15798 , 15848 , 15437 , 14527 , 15088 , 15955 , 21801 , 20462 , 21209 , 20593 , 20426 , 21015 , 30785 , 22512 , 21284 , 17406 , 14150 , 11912 , 8528 , 597 ]<br>
+}]<br>
+});<br>
+<br>
+});<br>
+&lt;/script&gt; <br>
+&lt;div id=&quot;pet25Ach&quot; width=&quot;50%&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+<br>
+<br>
+Pet Battle Bonus Event September 23-28<br>
+Through Monday, September 28, Pet Battle experience gains are increased by +200%. It&#x2019;s time to team up your mighty minions and test them on the field of battle!<br>
+<br>
+Before you charge forth with your lower-level charges, make sure to pick up the quest &#x201C;The Very Best&#x201D;, lest you miss the chance to wrest an Ultimate Battle-Training Stone into your chest. All you need do is queue up for PvP Pet Battles with a team of three level-25 pets and obtain five wins before the event ends.<br>
+<br>
+This time around, which three pets will you take into PvP Pet Battles? Let us know in the comments below.<br>
+<br>
+<br>
+Blue Tweets<br>
+so what&apos;s the plan with Mage portals? With Dalaran being the capital again, that&apos;s going to be 3 different ports. Thanks.<br>
+Good question, we&apos;ll have to avoid confusion there. Ancient Tome is a bit of a special case, to be fair... (WatcherDev (https://twitter.com/WatcherDev/status/644374642715594752))<br>
+<br>
+<br>
+Ghostcrawler Tweets<br>
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.<br>
+Grag, what was the most memoral moment in World of WarCraft for you?<br>
+In game either Wrathgate or opening the AQ gates. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/644946405174280192))<br>
+Out of game probably addressing the crowd at China Joy. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/644946668027142144))<br>
+<br>
+<br>
+Get Ready for the World of Warcraft European Championship<br>
+After some intense arena action in the 2015 World of Warcraft European Championship Qualifiers in August, eight teams have emerged victorious! They&#x2019;ll continue their quest for glory at the European Road to BlizzCon in Prague, Czech Republic from October 3-4. Check out the details below.<br>
+<br>
+Teams<br>
+<br>
+Qualifier #1 (http://play.eslgaming.com/worldofwarcraft/europe/championship/2015-qualifier-1/)<br>
+1st Place - Reawakened 1 (http://play.eslgaming.com/worldofwarcraft/europe/championship/2015-qualifier-1/team/9264689/)<br>
+2nd Place - Solari Gaming Blue (http://play.eslgaming.com/worldofwarcraft/europe/championship/2015-qualifier-1/team/9207067/)<br>
+<br>
+Qualifier #2 (http://play.eslgaming.com/worldofwarcraft/europe/championship/2015-qualifier-2/)<br>
+1st Place - Bleached Bones (http://play.eslgaming.com/worldofwarcraft/europe/championship/2015-qualifier-2/team/9296137/)<br>
+2nd Place - Solari Gaming (http://play.eslgaming.com/worldofwarcraft/europe/championship/2015-qualifier-2/team/9212031/)<br>
+3rd Place - Solari Gaming Black (http://play.eslgaming.com/worldofwarcraft/europe/championship/2015-qualifier-2/team/9276413/)<br>
+<br>
+Qualifier #3 (http://play.eslgaming.com/worldofwarcraft/europe/championship/2015-qualifier-3/)<br>
+1st Place &#x2013; Solari Gaming Red (http://play.eslgaming.com/worldofwarcraft/europe/championship/2015-qualifier-3/team/9128326/)<br>
+2nd Place &#x2013; Reawakened 3<br>
+(http://play.eslgaming.com/worldofwarcraft/europe/championship/2015-qualifier-3/team/9303084/)<br>
+3rd Place &#x2013; Three Languages One Team (http://play.eslgaming.com/worldofwarcraft/europe/championship/2015-qualifier-3/team/9275132/)<br>
+<br>
+Prizes<br>
+Teams in the European Championship will battle for a share of $100,000 USD in prize money&#x2014;one of the biggest-ever prize pools for a European WoW event. The prize money will be distributed as follows: <br>
+<br>
+Rank<br>
+Prize<br>
+<br>
+1st - 50,000$<br>
+2nd - 20,000$<br>
+3rd - 10,000$<br>
+4th - 8,000$<br>
+5th - 6th - 4,000$ each<br>
+7th - 8th - 2,000$ each<br>
+<br>
+<br>
+The top three teams will also qualify for the World of Warcraft Arena World Championship at BlizzCon 2015, where they&#x2019;ll face the best teams from across the globe!<br>
+<br>
+The Event<br>
+The World of Warcraft European Championship is taking place at the 2015 European Road to BlizzCon in Prague&#x2019;s O2 Arena. Don&#x2019;t worry if you can&#x2019;t be there in person&#x2014;we&#x2019;ll be bringing the adrenaline-charged action to you via live stream throughout the weekend. You won&#x2019;t want to miss it!<br>
+<br>
+For event and stream details, including the schedule, be sure to check out the official 2015 European Road to BlizzCon website at www.euRTB2015.com (http://www.eurtb2015.com/?utm_source=battle.net&amp;utm_medium=blog&amp;utm_content=en-blog&amp;utm_campaign=marketing-eu-eurtb2015www.eurtb2015.com).<br>
+<br>
+You can learn more about the World of Warcraft European Championship tournament in our 2015 European Road to BlizzCon blog (http://eu.battle.net/wow/en/blog/19825767/), and by checking out the links below.<br>
+<br>
+ESL World of Warcraft 2015 European Road to Blizzcon (http://play.eslgaming.com/worldofwarcraft/europe/championship)<br>
+<br>
+ESL World of Warcraft 2015 European Road to Blizzcon - Frequently Asked Questions (http://play.eslgaming.com/worldofwarcraft/europe/championship/faq)</div></div>

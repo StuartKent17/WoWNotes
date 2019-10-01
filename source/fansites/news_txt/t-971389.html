@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2011-09-06, 04:14 AM</div></div><div class="posttext">Stats: Character Leveling Speed in Cataclysm<br>
+There were no blue posts today because of the Labor Day holiday, Blizzard posters will probably be back tomorrow with more news!<br>
+<br>
+It has been too long since we posted some stats and this time we took a look at how many characters reached Level 85 each day since Cataclysm was released. This only includes data from the US Realms to keep the dates simpler. This does not include all of the level 85 characters in the US, only a sample of 1.1 million. Interested in seeing some other statistics? Let us know in the comments!<br>
+<br>
+<br>
+<br>
+You can see that a very large number of people reached Level 85 in the first week after release, thousands even the first day. <br>
+It seems that people enjoy leveling during the weekend with a spike on Saturday and an even larger spike on Sunday. <br>
+You can see where Patch 4.1 and Patch 4.2 came out, decreasing the amount of leveling briefly.<br>
+<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart;<br>
+$(document).ready(function() {<br>
+Highcharts.setOptions({<br>
+colors: [&apos;#4768C4&apos;, &apos;#E01B6A&apos;]<br>
+});<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;levelingspeedchart&apos;,<br>
+zoomType: &apos;x&apos;,<br>
+spacingRight: 20,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+title: {<br>
+text: &apos;Number of New Level 85 Characters Per Day&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+subtitle: {<br>
+text: document.ontouchstart === undefined ?<br>
+&apos;Click and drag in the plot area to zoom in&apos; :<br>
+&apos;Drag your finger over the plot to zoom in&apos;<br>
+},<br>
+xAxis: {<br>
+type: &apos;datetime&apos;,<br>
+maxZoom: 14 * 24 * 3600000, // fourteen days<br>
+title: {<br>
+text: null<br>
+},<br>
+startOnTick: false,<br>
+showFirstLabel: false<br>
+},<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Number of Characters&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+startOnTick: true,<br>
+showFirstLabel: false,<br>
+<br>
+},<br>
+tooltip: {<br>
+shared: true <br>
+},<br>
+legend: {<br>
+enabled: false<br>
+},<br>
+plotOptions: {<br>
+<br>
+area: {<br>
+animation: false,<br>
+lineWidth: 1,<br>
+marker: {<br>
+enabled: false,<br>
+states: {<br>
+hover: {<br>
+enabled: true,<br>
+radius: 5<br>
+}<br>
+}<br>
+},<br>
+shadow: false,<br>
+states: {<br>
+hover: {<br>
+lineWidth: 1 <br>
+}<br>
+}<br>
+}<br>
+},<br>
+<br>
+series: [{<br>
+type: &apos;area&apos;,<br>
+name: &apos;Level 85 Characters&apos;,<br>
+pointInterval: 24 * 3600 * 1000,<br>
+pointStart: Date.UTC(2010, 11, 7),<br>
+data: [<br>
+2881,15981,27064,28708,32420,33820,24383,19210,19297<br>
+,17493,15808,17965,18417,14121,12898,11402,12353,11201,9765,12323,11885,11039,11082,10955, 10435,10801,11683,<br>
+9603,8439,7919,7719,7793,10069,10490,7874,5899,7190,<br>
+6627,6750,8426,8968,7899,5476,5782,5827,6033,7476,7809,5565,4439,5025,5012,4991,6342,6815, 4954,4843,5225,4576,<br>
+4662,5909,5633,4225,3119,4133,4209,4114,5555,5750,3999,<br>
+3245,3810,3863,3999,5125,5537,4806,3769,3642,3632,3830,4873,5244,3596,2843,3323,3172,3240, 4262,4665,3440,<br>
+3055,3018,3134,2962,3904,4053,3285,2385,2771,2748,2885,<br>
+3612,3992,2961,2258,2784,2617,2867,3587,3946,2914,2582,2671,2587,2562,3336,3570,2675,2488, 2336,2249,2545,<br>
+3201,3548,2577,1851,2278,2322,2338,3047,3321,2451,1974,<br>
+2293,2247,2604,2976,3027,2521,1296,1716,1802,1806,2294,2675,2103,1534,1907,1833,1968,2548, 2752,2197,1791,<br>
+2140,2090,2210,2689,2958,2366,2106,2147,2109,2111,2613,<br>
+2903,2424,2162,2150,2089,2206,2522,2905,2828,2175,2118,2127,2087,2671,2741,2179,1745,2122, 2172,2087,2464,<br>
+2912,2235,2005,2145,2087,2129,2463,2718,2278,2165,2186,<br>
+2278,2304,2506,2861,2446,1402,1823,1836,1819,2135,2281,2326,1589,1917,1991,1854,2124,2369, 2035,1382,1847,<br>
+1844,1902,2102,2330,2071,1589,1769,1897,1876,2171,2406,<br>
+1996,1620,1808,1982,1812,2226,2412<br>
+]<br>
+}]<br>
+});<br>
+<br>
+<br>
+});<br>
+&lt;/script&gt; <br>
+&lt;div id=&quot;levelingspeedchart&quot; width=&quot;50%&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+<br>
+Poll: How many characters have you leveled to 85?<br>
+While we were working on these stats, we figured it was a good time to ask how many characters you have leveled to 85. Let us know in the poll below!<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/5479750.js&quot;&gt;&lt;/script&gt;<br>
+&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/5479750/&quot;&gt;Are you still playing WoW?&lt;/a&gt;&lt;/noscript&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;<br>
+<br>
+<br>
+Comics<br>
+Dark Legacy Comics #303 (http://www.darklegacycomics.com/303.html) and Teh Gladiators #268 + #269 (http://www.tehgladiators.com/?p=268) are available!<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2011/september/dlc303.jpg (http://www.darklegacycomics.com/303.html) http://media.mmo-champion.com/images/news/2011/september/tg268.jpg (http://www.tehgladiators.com/?p=268)</div></div>

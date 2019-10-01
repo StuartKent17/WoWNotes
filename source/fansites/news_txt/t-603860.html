@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2007-12-17, 07:01 AM</div></div><div class="posttext">New spell ranks on PTR<br>
+Usual disclaimer, keep in mind that it&apos;s not official and that it&apos;s very, very unlikely to see these spells in game in 2.3.2. Now, the good news, it seems that premade mage characters got a little bonus on 2.3.2 PTRs .... a new rank of Frostbolt and Fireball ! <br>
+<br>
+<br>
+http://static.mmo-champion.com/mmoc/siteImages/images/news/2007/november/newmageranks_small.jpg (http://www.mmo-champion.com/images/news/2007/november/newmageranks.jpg)<br>
+<br>
+This spell could be here for three reasons :<br>
+1st theory - Blizzard might plan to introduce new ranks of existing spells before the expansion, they did it in the past and it wouldn&apos;t be really surprising. However, it was stated in a blue post that there wasn&apos;t any plan to do so. (But devs could have changed their mind)<br>
+2nd theory (most likely) - When premades characters were made, they just gave the character all the spells related to &quot;Mages&quot; in the database including unused ones, this could also explain the seed of corruption bugs on the warlock characters. They could just be test spells. (See 3rd theory)<br>
+3rd theory - Someone forgot to clean his Blizzcon mess (http://www.mmo-champion.com/images/news/2007/july/magespells.jpg) from the spell database. ^^<br>
+<br>
+<br>
+-------------------------------<br>
+<br>
+International lag fix<br>
+WoW lags, it&apos;s not something new if you&apos;re playing on servers a bit far away from your country, but don&apos;t worry people are fixing it ! Out of all the methods offered to fix the lag on your machine, one of them posted on Elitistjerks forums seems to work very well. <br>
+<br>
+&lt;&gt; &lt;&gt; &lt;&gt; Read this first &lt;&gt; &lt;&gt; &lt;&gt;<br>
+1 - It might have side effects, like slowing down your download speed or affecting your performance on other softwares. (In my case, it didn&apos;t change anything)<br>
+2 - If you&apos;re not sure about what you&apos;re doing, just don&apos;t do it. I don&apos;t want to be responsible because you crashed your computer in some way because you wasted your registry.<br>
+2.1 - Seriously, if you don&apos;t know what you&apos;re doing, don&apos;t do it. It will be fixed in one or two weeks anyway. (and the official fix won&apos;t have any impact on other softwares)<br>
+3 - If you don&apos;t have the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSMQ\ directory, you can download and apply this file (http://rapidshare.com/files/77255080/msmq.reg.html) to your registry. <br>
+4 - Windows Vista users might want to check this post (http://forums.worldofwarcraft.com/thread.html?topicId=3271071466&amp;postId=33532161447&amp;sid=1#190) too. <br>
+<br>
+Source - Elitistjerks.com (http://elitistjerks.com/f15/t17761-server_locations_latency_australia/p8/)<br>
+<br>
+&quot;1 - TcpAckFrequency - NOTE if you are running Windows Vista this setting may not have any effect - a hotfix is needed which i&apos;m tracking down. This works fine under Windows XP<br>
+<br>
+Type &quot;regedit&quot; in windows &quot;run..&quot; dialog to bring up registry menu<br>
+<br>
+Then find:<br>
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\<br>
+<br>
+There will be multiple NIC interfaces listed in there, find the one you use to connect to the internet, there will be several interfaces listed (they have long names like {7DBA6DCA-FFE8-4002-A28F-4D2B57AE8383}. Click each one, the right one will have lots of settings in it and you will see your machines IP address listed there somewhere. Right-click in the right hand pane and add a new DWORD value, name it TcpAckFrequency, then right click the entry and click Modify and assign a value of 1.<br>
+<br>
+You can change it back to 2 (default) at a later stage if it affects your other TCP application performance. it tells windows how many TCP packets to wait before sending ACK. if the value is 1, windows will send ACK every time it receives a TCP package.<br>
+<br>
+2 - TCPNoDelay<br>
+This one is pretty simple (Discussed here (http://technet2.microsoft.com/windowsserver/en/library/e6491291-872e-4260-8ced-77525b0d79a51033.mspx?mfr=true))<br>
+<br>
+Type &quot;regedit&quot; in windows &quot;run..&quot; dialog to bring up registry menu<br>
+<br>
+Then find:<br>
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSMQ\Parameters<br>
+<br>
+Right-click in the right hand pane and add a new DWORD value, name it TCPNoDelay, then right click the entry and click Modify and assign a value of 1.<br>
+<br>
+Click Ok and close the registry editor, then reboot your PC.&quot;<br>
+<br>
+Basically, this fix is deactivating the Nagle algorithm to improve your ping. If you don&apos;t want to do it you can just wait for the 2.3.2 patch as it&apos;s supposed to deactivate it too, but I don&apos;t think you can test it on PTRs right now because the updated patch notes from the latest PTR Build (7705) are actually for the upcoming build (7710).<br>
+The patch notes that were included with this build (7705) are actually for the next build (7710).<br>
+Once you&apos;re done with the technical stuff (it probably won&apos;t take more than 1 minute if you&apos;re not too bad), you can finally get your reward.<br>
+<br>
+<br>
+http://static.mmo-champion.com/mmoc/siteImages/images/news/2007/november/lagfix.jpg (http://www.mmo-champion.com/images/news/2007/november/lagfix.jpg)<br>
+<br>
+Even if in this case, the fix was used to decrease a very high ping, it seems to work very well on low (~100ms) ping for some people (lowered to ~20 or ~30ms).<br>
+<br>
+<br>
+-------------------------------<br>
+<br>
+Comics<br>
+Monday ! Dark Legacy !<br>
+<br>
+<br>
+http://static.mmo-champion.com/mmoc/siteImages/images/news/2007/november/dl121.jpg (http://www.darklegacycomics.com/121.html)<br>
+<br>
+.</div></div>

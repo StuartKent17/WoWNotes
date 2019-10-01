@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2011-04-06, 10:10 PM</div></div><div class="posttext">Remote Guild Chat Preview<br>
+Blizzard posted a small preview of the remote guild chat on the World of Warcraft Remote Services (http://eu.battle.net/wow/en/services/wow-remote/#guild-chat) page. <br>
+Real time guild chat on your phone. Keep in touch with your guildmates and always be in on your guild&apos;s discussions with the new mobile Guild Chat feature. With a subscription to World of Warcraft Remote, you can view and participate in your guild&apos;s chat in real time, engage in one-on-one conversations with other guild members, and more!<br>
+<br>
+Subscription Features<br>
+<br>
+<br>
+Stay in touch with your entire guild wherever you are<br>
+See which guildmates are online<br>
+Initiate one-on-one conversations with guild members<br>
+Keep the guild up-to-date with your Arena team and Rated Battlegrounds plans<br>
+Filter by guild chat, officer chat, and whispers <br>
+<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-01_small.jpg (http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-01.jpg) http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-02_small.jpg (http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-02.jpg) http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-03_small.jpg (http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-03.jpg) http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-04_small.jpg (http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-04.jpg) http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-05_small.jpg (http://media.mmo-champion.com/images/news/2011/march/guildchat-screen-05.jpg)<br>
+<br>
+<br>
+Savage Defense and Blood Shield &quot;Issues&quot;<br>
+There are two issues here.<br>
+<br>
+One is that the combat log is saying &#x201C;refresh&#x201D; in a confusing way when it&#x2019;s really just applying damage to the shield (i.e. a new shield has not been created). We&#x2019;re looking at some ways that might be fixed.<br>
+<br>
+The second issue has to do with our combat log (or third party logs) apparently disagreeing about what happened. Remember, our combat calculations are done on the realm side and then reported to the client, but the client only gets those reports periodically. The message has to travel a potentially long distance between your client and our realms. It&#x2019;s important that the calculations are done realm-side though, to maintain gameplay integrity.<br>
+<br>
+Because of the latency inherent in client &#x2013; realm communication, it can appear that a hit lands before the shield procs, yet still applies to the shield, leading to the mistaken impression that the proc isn&#x2019;t occurring properly. In reality, the server is (probably) performing the steps correctly, but the client sometimes lags behind. For example, there&apos;s a case where what actually happened is this sequence: 1) shield proc, 2) hit, 3) absorb, but the client is slightly behind and instead (incorrectly) shows 1) hit, 2) shield proc, 3) absorb in the combat log. Or it could appear that you lost shield points without actually taking less damage, when in reality either the shield or your health pool weren&#x2019;t affected. Or it could appear that if you take multiple hits nearly simultaneously that the shield did nothing to the later hits, but in reality the shield was gone on the first hit and your client just hasn&#x2019;t been notified of that fact yet. We will investigate this issue just to make sure, but we&#x2019;re pretty confident that Savage Defense and Blood Shield are working correctly and are just sometimes getting misreported. With Savage Defense lasting longer in 4.1, you may see this kind of thing more often.<br>
+<br>
+The takeaway is that latency can in some cases cause combat log display issues like the one we&#x2019;re seeing here. We understand that a lot of you use the combat log as a reporting tool to analyze a fight after the fight has concluded. The combat log as currently implemented is supposed to give you a data feed in real time. We&#x2019;d like to redesign the combat log to fill that post-combat analysis role better (as Ghostcrawler alluded to in a recent Q&amp;A) but that is a Very Big Task. Just delaying the current combat log so that it was in 100% parity with the server could cause serious issues with third party mods among other things, so we have to be careful not to turn a single screw and end up dismantling the whole machine, so to speak. Despite its limitations, it remains an accurate and useful tool in the vast majority of circumstances. <br>
+<br>
+<br>
+Blizzard Art Gallery Update<br>
+The World of Warcraft: Wrath of the Lich King Art gallery (http://us.battle.net/wow/en/media/artwork/wow-wrath)has been updated with six pieces representing the Warcraft universe.<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2011/march/loadscreen-pit-of-saron-full_small.jpg (http://media.mmo-champion.com/images/news/2011/march/loadscreen-pit-of-saron-full.jpg) http://media.mmo-champion.com/images/news/2011/march/loadscreen-the-forge-of-souls-full_small.jpg (http://media.mmo-champion.com/images/news/2011/march/loadscreen-the-forge-of-souls-full.jpg) http://media.mmo-champion.com/images/news/2011/march/loadscreen-the-eye-of-eternity-full_small.jpg (http://media.mmo-champion.com/images/news/2011/march/loadscreen-the-eye-of-eternity-full.jpg)<br>
+http://media.mmo-champion.com/images/news/2011/march/loadscreen-trial-of-the-crusader-full_small.jpg (http://media.mmo-champion.com/images/news/2011/march/loadscreen-trial-of-the-crusader-full.jpg) http://media.mmo-champion.com/images/news/2011/march/loadscreen-trial-of-the-champion-full_small.jpg (http://media.mmo-champion.com/images/news/2011/march/loadscreen-trial-of-the-champion-full.jpg) http://media.mmo-champion.com/images/news/2011/march/loadscreen-wintergrasp-full_small.jpg (http://media.mmo-champion.com/images/news/2011/march/loadscreen-wintergrasp-full.jpg)</div></div>

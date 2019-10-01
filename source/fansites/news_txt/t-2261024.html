@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2017-07-23, 02:05 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Season 11 Necromancer Guide: Leveling Tips, Builds, and More (http://www.diablofans.com/news/48916-season-11-necromancer-guide-leveling-tips-builds)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; The Rise and Fall of the Lich King - The Lore Behind Hearthstone&apos;s Newest Villain (http://www.hearthpwn.com/news/3018-the-rise-and-fall-of-the-lich-king-the-lore-behind)<br>
+<br>
+PvE Tuning Changes for July 25<br>
+We&apos;re looking to make the following changes with maintenance in each region next week:<br>
+<br>
+Classes<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif Death Knight (Forums (http://www.mmo-champion.com/forums/269-Death-Knight) / Skills (http://www.wowdb.com/spells/class-abilities/death-knight) / Talent Calculator (http://www.wowdb.com/talent-calculator#Y) / Artifact Calculator (http://www.wowdb.com/artifact-calculator#ZAAAAAAAA) / PvP Talent Calculator (http://www.wowdb.com/pvp-talent-calculator#Y))<br>
+Frost<br>
+Fixed a bug preventing Hungering Rune Weapon from generating a Rune at the correct rate of once every 1.5 seconds. All damage abilities increased by 5%.<br>
+<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin (Forums (http://www.mmo-champion.com/forums/273-Paladin) / Skills (http://www.wowdb.com/spells/class-abilities/paladin) / Talent Calculator (http://www.wowdb.com/talent-calculator#I) / Artifact Calculator (http://www.wowdb.com/artifact-calculator#JAAAAAAAA) / PvP Talent Calculator (http://www.wowdb.com/pvp-talent-calculator#I))<br>
+Retribution<br>
+<br>
+Blade of Justice damage increased by 10% (unchanged in PvP). Crusader Strike damage increased by 10%.<br>
+<br>
+<br>
+Items<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue (Forums (http://www.mmo-champion.com/forums/275-Rogue) / Skills (http://www.wowdb.com/spells/class-abilities/rogue) / Talent Calculator (http://www.wowdb.com/talent-calculator#Q) / Artifact Calculator (http://www.wowdb.com/artifact-calculator#RAAAAAAAA) / PvP Talent Calculator (http://www.wowdb.com/pvp-talent-calculator#Q))<br>
+All Specs<br>
+<br>
+Mantle of the Master Assassin duration reduced to 5 seconds (was 6 seconds).<br>
+<br>
+<br>
+Subtlety<br>
+<br>
+Denial of the Half-Giants cooldown reduction reduced to 0.2 seconds per combo point spent (was 0.3 seconds).<br>
+<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior (Forums (http://www.mmo-champion.com/forums/278-Warrior) / Skills (http://www.wowdb.com/spells/class-abilities/warrior) / Talent Calculator (http://www.wowdb.com/talent-calculator#E) / Artifact Calculator (http://www.wowdb.com/artifact-calculator#F) / PvP Talent Calculator (http://www.wowdb.com/pvp-talent-calculator#E))<br>
+Arms<br>
+<br>
+The Great Storm&apos;s Eye damage bonus per stack reduced to 2% (was 4%).<br>
+Ayala&apos;s Stone Heart now procs 40% less often for Arms Warriors.<br>
+<br>
+<br>
+<br>
+<br>
+Windwalker Scaling<br>
+http://www.peakofserenity.com/2017/07/09/windwalker-scaling<br>
+I don&apos;t know if there&apos;s a better thread where this is being discussed, but this thread seems closely related to the work done in the post.<br>
+<br>
+Restating something I&apos;d already said to the author--stat scaling is a massively complicated problem, and basically any rigorous knowledge fed in about it is a helpful addition. The main impediment to discussion on such a large dataset being offered as feedback is having to go through the whole methodology--enough to be sure we&apos;re all on the same page as to exactly what it&apos;s showing. I expect something as ambitious as &quot;make a chart of all stats for all DPS specs at once&quot; is likely to wind up as a project of perpetual refinement rather than something you can just &quot;do&quot; one day.<br>
+<br>
+Which is all to say: basically all I can do is start with scattered questions/comments as I go through, rather than any kind of grand conclusion.<br>
+<br>
+----<br>
+<br>
+The best chart to spent most time on is probably the &quot;% DPS gained per 475 stats&quot; one.<br>
+--Versatility clocks in at 1.00% (+/- 0.01) on nearly all specs. Does that mean that the profiles being used have 0 Versatility?<br>
+--More broadly, what &quot;current&quot; stats are being used to generate the weights? As explained above, that affects how stats look relative to each other when viewed as a % of total DPS. If the profiles aren&apos;t constructed in a uniform way, some might have more lopsided stat distributions than others.<br>
+--Given how few things remain that are left out of Versatility, it might be cleanest to bring them all in at this point. No promise yet.<br>
+--For specs that are significantly above 1.00%, are they double-dipping Versatility or is that a simulation artifact?<br>
+<br>
+&quot;I didn&#x2019;t include Weapon DPS in the averages as there was no easy way to do so and be fair to all specs. If you come up with a way that works, let me know.&quot;<br>
+<br>
+--I believe the correct way is to make a weighted sum of Primary and WDPS based on whatever ratio they exist at currently on typical gear (similar to the advice I gave for Stamina).<br>
+--The variation in primary stats is a bit curious--looking at casters, where there&apos;s no WDPS complication. If, on a caster, all DPS other than trinkets is proportional to Int, the value of Int on all of them should be nearly identical (again after correcting for special cases such as the portion of Demonology damage that scales with Stam). Maybe what I&apos;m saying is: the variation in Int&apos;s value seems like a sort of &quot;control&quot;--one way of getting insight into the magnitude of systematic error in the model.<br>
+--Trinkets also throw a minor wrench in the works if they&apos;re not treated uniformly in the comparison. It seems like you&apos;d have to either avoid RPPM-damage-proc trinkets on everybody (those don&apos;t scale with primary), or add another factor representing trinket ilvl and fold it into primary just as with Stam and WDPS.<br>
+<br>
+<br>
+Patch 7.3 - Elemental Shaman<br>
+Next PTR will have a small set of Elemental changes meant to focus on a couple specific problems.<br>
+<br>
+Mastery capping<br>
+<br>
+Elemental Overload does 85% of base damage (from 75%) and proc rate reduced 17%<br>
+Totem Mastery-Storm Totem bonus 5% (from 10%)<br>
+Elemental Blast gives 2000 stats at level 110 (from 2400)<br>
+All damage abilities increased 3%<br>
+<br>
+<br>
+Some of the power of mastery is shifted from proc rate into damage. The nerfs to Totem Mastery and Elemental Blast don&apos;t require talent rebalancing, since they are minor and those are talents are already generally favored. The slight total DPS loss from those changes is counteracted in the baseline spec. With both talents, the mastery cap (with all these changes) would increase from 10400 rating to 15067.<br>
+<br>
+Chain Lightning dominating Earthquake<br>
+Chain Lightning is so strong that Earthquake is often not attractive to cast. There are also secondary issues such as the importance of Lightning Rod procs and resource overflow in AoE.<br>
+<br>
+Chain Lightning damage reduced 12% and generates 4 Maelstrom (from 6)<br>
+Earthquake damage increased 29%<br>
+Earth Shock damage increased 13%<br>
+<br>
+<br>
+Damage is shifted from Chain Lightning into Earthquake, and Earthquake is further increased to account for generating less Maelstrom (which helps the overflow issues, including on Static Overload procs). The Earth Shock buff helps stave off the potential for Earthquake to get too close to it again, and a buff to Earth Shock was pretty reasonable generally.<br>
+<br>
+Again, the goal is to address these issues in a relatively contained way. 7.3 is generally light on class changes, but we wanted to try to get at these known problems. As always, open to feedback on any complications that these look like they might introduce.<br>
+<br>
+One additional concern we&apos;re seeing here is that based on preliminary testing this change is not accomplishing its intended goal without an extremely large number of targets. Chain Lightning spam is still projecting to be higher than using your Maelstrom Power at all up until you reach around 7 targets. Earthquake is still not strong enough.<br>
+<br>
+So far as we can tell, with the current changes (which have Earthquake at 100% SP per tick) a more standard AoE rotation won&apos;t be worth it over Chain Lightning spam unless it&apos;s brought to at least ~117% per tick or so (where it&apos;ll be about equal at 5 targets.)<br>
+<br>
+The only case it appears to be worth it in is where it&apos;s the only way to proc Sephuz&apos;s Secret, in which case using it only to proc Sephuz&apos;s Secret but not at any other time is dps neutral.<br>
+<br>
+The extra factor that wasn&apos;t accounted for here is the impact that the change to the damage per Mastery hit would have on Static Overload procs. This also significantly increases the range of impact that Static Overload has, which only makes how inconsistent it is even more painful.<br>
+<br>
+The question I have at this point is why is this even left as a potential question? Earthquake is our only AoE Maelstrom Power spender. It should be so massively, unquestionably stronger than spamming Chain Lightning that even the notion of Chain Lightning spam should be laughed out of the room.<br>
+Thanks. To the various comments here and above:<br>
+<br>
+--If Elemental Blast is actually behind after the small nerf, it should be relatively easy to correct by buffing its own damage. That said, the current set bonus pushes Primal Elementalist (and that sort of thing is generally acceptable for a tier), which means it&apos;s unsurprising if it&apos;s slightly ahead on its row for right now.<br>
+<br>
+--We agree Earthquake should be more of a &quot;finisher&quot; out of the two, and this set of changes is trying to go in that direction. It should at least be used consistently in its intended role. It sounds a little odd that changing one spell&apos;s damage 45% relative to the other (plus the Maelstrom change) doesn&apos;t at all change the number of targets at which you&apos;d use Earthquake, but we&apos;re happy to keep looking at any more detailed discussion of why that would be the case.<br>
+<br>
+--The Maelstrom change would be a pacing change, but I think there are some advantages if we keep it and instead put value into buffing Earthquake (further than this if needed). It helps the above discussion of Earthquake actually being worth enough to stand out. The current version where, on average, each Chain Lightning pays for more than one Earthquake is a pretty weird builder/spender relationship--and is part of the answer to your question of why Earthquake isn&apos;t stronger. Also, Maelstrom overflow is a significant issue currently. In your example of Static Overload, it currently overflows in literally every case (on 5 targets). Pulling back on that and giving Earthquake much higher value cuts down on resource waste while making it more valuable when you spend it.<br>
+<br>
+If the main problem is that the Earthquake buff here isn&apos;t enough to accomplish the goals as described, that&apos;s something we can review further (and of course welcome any further input on that question).<br>
+<br>
+<br>
+Patch 7.3 - Outlaw Rogue Tier 21 4pc Bonus<br>
+OK, some updates. Reminder that numbers and designs are subject to change still.<br>
+<br>
+The set bonus now reads:<br>
+<br>
+Run Through has an 8% chance to grant you a Roll the Bones combat enhancement buff you do not already have for 10 sec.<br>
+<br>
+Slice and Dice users get the same set bonus, it may need different tuning based on talents so do not get attached to any of the numbers.<br>
+<br>
+If you get a buff from Run Through, and then Roll the Bones, the short duration buff will be rerolled at its current duration to a new combat enhancement you didn&apos;t get from the new cast of Roll the Bones. This works if you are lucky and have multiple bonus Run Through procs active right before a Roll the Bones cast.<br>
+<br>
+Minor note: If you&apos;re the lucky Rogue who gets back-to-back Run Through procs, and then uses Roll the Bones, and continue the luck streak and gain 5 buffs, the set bonus will only retain 1 of the short duration set bonus buffs as there are only 6 total potential buffs.<br>
+<br>
+Some future PTR build will have it working this way, thanks for the conversation in this thread.<br>
+<br>
+<br>
+Auction House Dance PartyahDanceParty<br>
+The Auction House Dance Party is a new micro-holiday! You can stand on the dance floor and dance, get teleported up to the stage, and grab the Happy Feet (http://ptr.wowdb.com/spells/246050-happy-feet) buff. <br>
+<br>
+The Orgrimmar and Stormwind auction houses also had slight decoration tweaks (http://www.mmo-champion.com/content/6548-Patch-7-2-5-Auction-House-Visuals-Blue-Posts-Tweets-StarCrafts) <br>
+<br>
+<br>
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/7F0BMJ6sSkk?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br>
+<br>
+http://media.mmo-champion.com/images/news/2017/april/thumb/AHDanceParty01.jpg (http://media.mmo-champion.com/images/news/2017/april/AHDanceParty01.jpg) http://media.mmo-champion.com/images/news/2017/april/thumb/AHDanceParty02.jpg (http://media.mmo-champion.com/images/news/2017/april/AHDanceParty02.jpg) http://media.mmo-champion.com/images/news/2017/april/thumb/AHDanceParty03.jpg (http://media.mmo-champion.com/images/news/2017/april/AHDanceParty03.jpg) http://media.mmo-champion.com/images/news/2017/april/thumb/AHDanceParty04.jpg (http://media.mmo-champion.com/images/news/2017/april/AHDanceParty04.jpg) <br>
+<br>
+&lt;iframe width=&quot;900&quot; height=&quot;190&quot; src=&quot;https://www.youtube.com/embed/q79BuE7ZqXI?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</div></div>

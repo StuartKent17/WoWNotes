@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2013-09-15, 08:41 PM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Legendary Build Changers, Travis Day on Paragon 2.0, Travis Day on Paragon in Ladder, Lylirra on Datamining (http://www.diablofans.com/news/2022-legendary-build-changers-travis-day-on-paragon-20-travis-day-on-paragon-in-ladder-lylirra-on-datamining/)<br>
+<br>
+Armory Stats: Characters that reached Level 90 in Mists of Pandaria<br>
+It is finally time for Armory Stats to make a return! This week we decided to take a look at the percentage of characters that made it from being level 85 during the end of Cataclysm to level 90 today. These stats compare a sample of 6.7M characters from late 2012 and checks which players reached level 90 as of the first week of September. Keep in mind a few things before interpreting these stats:<br>
+<br>
+<br>
+Some characters that were leveled to 90 and then abandoned, so some of their profiles won&apos;t show up on armory. 95% of the profiles that we were able to access were played within the last two months.<br>
+Some characters are lost to name changes, realm transfers, and faction changes.<br>
+The absolute percentages here have little meaning because of those issues, so they should only be used for comparing one group to another. <br>
+The Cataclysm values used here were scaled using the MoP average and Cataclysm average, excluding the Death Knight value from the Cataclysm average calculation. Death Knights are excluded from the Cataclysm average because they are an outlier, as many people leveled them to 80 during WotLK and then abandoned them.<br>
+Cataclysm population standard deviation (excluding Death Knights) was 2.32%<br>
+Mists of Pandaria population standard deviation was 1.66%<br>
+We did the same thing during Cataclysm at a slightly earlier point in the expansion and you can find the results here (http://www.mmo-champion.com/content/2413-Character-Activity-Stats-Poll-Trip-to-Blizzcon-Contest-MMO-Report).<br>
+<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart; <br>
+$(document).ready(function() {<br>
+Highcharts.setOptions({<br>
+colors: [&apos;#E34F10&apos;, &apos;#0FA1A3&apos;]<br>
+});<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;stillalivechart1&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [&apos;Death Knight&apos;,&apos;Druid&apos;,&apos;Hunter&apos;,&apos;Mage&apos;,&apos;Paladin&apos;,&apos;Priest&apos;,&apos;Rogue&apos;,&apos;Shaman&apos;,&apos;Warlock&apos;,&apos;Warrior&apos;],<br>
+labels: {<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: false,<br>
+},<br>
+<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Percent&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function() {<br>
+return this.point.name + &apos; - &apos;+ this.y +&apos;%&apos;;<br>
+}<br>
+},<br>
+<br>
+title: {<br>
+text: &apos;Characters that Reached Level 90 from Level 85&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [<br>
+{<br>
+data: [{y: 23.68, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 25.55, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 27.44, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 23.27, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 24.72, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 25.49, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 21.08, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 24.29, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 26.15, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 25.04, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}],<br>
+<br>
+name: &apos;&lt;b&gt;Percent&lt;/b&gt;&apos;<br>
+}<br>
+<br>
+]<br>
+<br>
+});<br>
+<br>
+<br>
+<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;stillalivechart2&apos;,<br>
+type: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+<br>
+categories: [&apos;Death Knight&apos;,&apos;Druid&apos;,&apos;Hunter&apos;,&apos;Mage&apos;,&apos;Paladin&apos;,&apos;Priest&apos;,&apos;Rogue&apos;,&apos;Shaman&apos;,&apos;Warlock&apos;,&apos;Warrior&apos;],<br>
+labels: {<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: false,<br>
+},<br>
+<br>
+yAxis: {<br>
+ title: {<br>
+text: &apos;Percent&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function() {<br>
+return this.point.category + &apos;&lt;br&gt;&apos; + this.series.name + &apos; - &apos;+ this.y +&apos;%&apos;;<br>
+}<br>
+},<br>
+<br>
+title: {<br>
+text: &apos;Characters Leveling in Cataclysm and Mists of Pandaria&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+<br>
+series: [{<br>
+name: &apos;Cataclysm&apos;,<br>
+data: [18.1, 26.07, 25.81, 26.76, 23.67, 25.69, 20.92, 24.60, 24.18, 25.35]<br>
+}, {<br>
+name: &apos;Mists of Pandaria&apos;,<br>
+data: [23.68, 25.56, 27.44, 23.27, 24.72, 25.49, 21.08, 24.29, 26.16, 25.04]<br>
+}]<br>
+<br>
+});<br>
+<br>
+<br>
+<br>
+});<br>
+&lt;/script&gt; <br>
+&lt;div id=&quot;stillalivechart1&quot; width=&quot;50%&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+&lt;br&gt;<br>
+&lt;div id=&quot;stillalivechart2&quot; width=&quot;50%&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+&lt;table class=&quot;news-table&quot; style=&quot;width:80% !important;&quot;&gt;<br>
+&lt;thead&gt;<br>
+&lt;tr&gt;<br>
+&lt;th&gt;Class&lt;/th&gt;<br>
+&lt;th&gt;Leveled to 85 in Cataclysm (Scaled)&lt;/th&gt;<br>
+&lt;th&gt;Leveled to 90 in Mists of Pandaria&lt;/th&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/thead&gt;<br>
+&lt;tbody&gt;<br>
+&lt;tr&gt;<br>
+&lt;td align=&quot;center&quot;&gt;http://static.mmo-champion.com/mmoc/images/icons/ideathknights.gif &lt;b&gt;Death Knight&lt;/b&gt;&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;18.10%&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;23.68%&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td align=&quot;center&quot;&gt;http://static.mmo-champion.com/mmoc/images/icons/idruids.gif &lt;b&gt;Druid&lt;/b&gt;&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;26.07%&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;25.56%&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td align=&quot;center&quot;&gt;http://static.mmo-champion.com/mmoc/images/icons/ihunters.gif &lt;b&gt;Hunter&lt;/b&gt;&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;25.81%&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;27.44%&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td align=&quot;center&quot;&gt;http://static.mmo-champion.com/mmoc/images/icons/images.gif &lt;b&gt;Mage&lt;/b&gt;&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;26.76%&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;23.27%&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td align=&quot;center&quot;&gt;http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif &lt;b&gt;Paladin&lt;/b&gt;&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;23.67%&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;24.72%&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td align=&quot;center&quot;&gt;http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif &lt;b&gt;Priest&lt;/b&gt;&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;25.69%&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;25.49%&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td align=&quot;center&quot;&gt;http://static.mmo-champion.com/mmoc/images/icons/irogues.gif &lt;b&gt;Rogue&lt;/b&gt;&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;20.92%&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;21.08%&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td align=&quot;center&quot;&gt;http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif &lt;b&gt;Shaman&lt;/b&gt;&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;24.60%&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;24.29%&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td align=&quot;center&quot;&gt;http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif &lt;b&gt;Warlock&lt;/b&gt;&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;24.18%&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;26.16%&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td align=&quot;center&quot;&gt;http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif &lt;b&gt;Warrior&lt;/b&gt;&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;25.35%&lt;/td&gt;<br>
+&lt;td align=&quot;center&quot;&gt;25.04%&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/tbody&gt;<br>
+&lt;/table&gt;<br>
+<br>
+MMO-Champion - New Video Games and WoW Discussion Forums<br>
+It&apos;s time to expand a little more and add some more forums dedicated to other games (http://www.mmo-champion.com/forums/333-Video-Games), as well as expand the WoW forum section! We are adding (or expanding) these forums today:<br>
+<br>
+<br>
+&lt;table style=&quot;margin:auto;&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;div style=&quot;width:900px;&quot;&gt;<br>
+&lt;ol id=&quot;c_cat333&quot; class=&quot;childforum&quot;&gt;<br>
+<br>
+&lt;li id=&quot;forum345&quot; class=&quot;forumbit_post L2&quot;&gt;<br>
+&lt;div class=&quot;forumrow table&quot; style=&quot;border-width: 1px 1px 0px; border-style: solid; border-color: black !important;&quot;&gt;<br>
+&lt;div class=&quot;foruminfo td&quot; style=&quot;width:100%;&quot;&gt;<br>
+&lt;img src=&quot;http://static.mmo-champion.com/images/tranquilizing/forums/forum_old-48.png&quot; class=&quot;forumicon&quot; id=&quot;forum_statusicon_334&quot; alt=&quot;&quot; /&gt;<br>
+&lt;div class=&quot;forumdata&quot;&gt;<br>
+&lt;div class=&quot;datacontainer&quot;&gt;<br>
+&lt;div class=&quot;titleline&quot;&gt;<br>
+&lt;h2 class=&quot;forumtitle&quot;&gt;&lt;a href=&quot;forums/345-Dota-2&quot;&gt; Dota 2&lt;/a&gt;&lt;/h2&gt;<br>
+&lt;/div&gt;<br>
+&lt;div class=&quot;moderators&quot;&gt;<br>
+<br>
+&lt;h4&gt;Moderators:&lt;/h4&gt;<br>
+&lt;ol class=&quot;commalist&quot;&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/581777-Longview&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Longview&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/694044-noteworthynerd&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;noteworthynerd&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/602255-Hermanni&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Hermanni&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/529241-llDemonll&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;llDemonll&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/681570-Axethor&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Axethor&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/564348-Nangz&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Nangz&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br>
+<br>
+&lt;/ol&gt;<br>
+<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;h4 class=&quot;nocss_label&quot;&gt;Forum Actions:&lt;/h4&gt;<br>
+&lt;ul class=&quot;forumactionlinks td&quot;&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/div&gt;<br>
+&lt;/li&gt; <br>
+<br>
+&lt;li id=&quot;forum335&quot; class=&quot;forumbit_post L2&quot;&gt;<br>
+&lt;div class=&quot;forumrow table&quot; style=&quot;border-width: 0px 1px; border-style: solid; border-color: black !important;&quot;&gt;<br>
+&lt;div class=&quot;foruminfo td&quot;&gt;<br>
+&lt;img src=&quot;http://static.mmo-champion.com/images/tranquilizing/forums/forum_old-48.png&quot; class=&quot;forumicon&quot; id=&quot;forum_statusicon_335&quot; alt=&quot;&quot; /&gt;<br>
+&lt;div class=&quot;forumdata&quot;&gt;<br>
+&lt;div class=&quot;datacontainer&quot;&gt;<br>
+&lt;div class=&quot;titleline&quot;&gt;<br>
+&lt;h2 class=&quot;forumtitle&quot;&gt;&lt;a href=&quot;forums/346-Final-Fantasy-XIV&quot;&gt;Final Fantasy XIV&lt;/a&gt;&lt;/h2&gt;<br>
+&lt;/div&gt;<br>
+&lt;div class=&quot;moderators&quot;&gt;<br>
+<br>
+&lt;h4&gt;Moderators:&lt;/h4&gt;<br>
+&lt;ol class=&quot;commalist&quot;&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/559482-Sunfyre&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Sunfyre&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/522868-Nyanmaru&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Nyanmaru&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/749294-Remilia&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Remilia&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/655954-wynnyelle&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;wynnyelle&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br>
+<br>
+&lt;/ol&gt;<br>
+<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;h4 class=&quot;nocss_label&quot;&gt;Forum Actions:&lt;/h4&gt;<br>
+&lt;ul class=&quot;forumactionlinks td&quot;&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/div&gt;<br>
+&lt;/li&gt; &lt;li id=&quot;forum336&quot; class=&quot;forumbit_post L2&quot;&gt;<br>
+&lt;div class=&quot;forumrow table&quot; style=&quot;border-width: 0px 1px; border-style: solid; border-color: black !important;&quot;&gt;<br>
+&lt;div class=&quot;foruminfo td&quot;&gt;<br>
+&lt;img src=&quot;http://static.mmo-champion.com/images/tranquilizing/forums/forum_old-48.png&quot; class=&quot;forumicon&quot; id=&quot;forum_statusicon_336&quot; alt=&quot;&quot; /&gt;<br>
+&lt;div class=&quot;forumdata&quot;&gt;<br>
+&lt;div class=&quot;datacontainer&quot;&gt;<br>
+&lt;div class=&quot;titleline&quot;&gt;<br>
+&lt;h2 class=&quot;forumtitle&quot;&gt;&lt;a href=&quot;forums/314-Achievements-Pet-Battles-and-Transmogrification&quot;&gt;<br>
+Achievements, Pet Battles, and Transmogrification<br>
+&lt;/a&gt;&lt;/h2&gt;<br>
+&lt;/div&gt;<br>
+<br>
+<br>
+<br>
+&lt;div class=&quot;moderators&quot;&gt;<br>
+<br>
+&lt;h4&gt;Moderators:&lt;/h4&gt;<br>
+&lt;ol class=&quot;commalist&quot;&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/752087-Kerdoz&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Kerdoz&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/618293-Splenda&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Splenda&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/533029-Krekko&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Krekko&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br>
+<br>
+ &lt;/ol&gt;<br>
+<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;h4 class=&quot;nocss_label&quot;&gt;Forum Actions:&lt;/h4&gt;<br>
+&lt;ul class=&quot;forumactionlinks td&quot;&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/div&gt;<br>
+&lt;/li&gt; <br>
+<br>
+<br>
+&lt;li id=&quot;forum339&quot; class=&quot;forumbit_post L2&quot;&gt;<br>
+&lt;div class=&quot;forumrow table&quot; style=&quot;border-width: 0px 1px 1px; border-style: solid; border-color: black !important;&quot;&gt;<br>
+&lt;div class=&quot;foruminfo td&quot;&gt;<br>
+&lt;img src=&quot;http://static.mmo-champion.com/images/tranquilizing/forums/forum_old-48.png&quot; class=&quot;forumicon&quot; id=&quot;forum_statusicon_339&quot; alt=&quot;&quot; /&gt;<br>
+&lt;div class=&quot;forumdata&quot;&gt;<br>
+&lt;div class=&quot;datacontainer&quot;&gt;<br>
+&lt;div class=&quot;titleline&quot;&gt;<br>
+&lt;h2 class=&quot;forumtitle&quot;&gt;&lt;a href=&quot;forums/347-Lore&quot;&gt;<br>
+Lore<br>
+&lt;/a&gt;&lt;/h2&gt;<br>
+&lt;/div&gt;<br>
+&lt;div class=&quot;moderators&quot;&gt;<br>
+<br>
+&lt;h4&gt;Moderators:&lt;/h4&gt;<br>
+&lt;ol class=&quot;commalist&quot;&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/709576-Sj&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Sj&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/644085-Zaelsino&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Zaelsino&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/559801-The-Mister-Madgod&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;The Mister Madgod&lt;/span&gt;&lt;/a&gt;, &lt;/li&gt;<br>
+<br>
+&lt;li&gt;&lt;a class=&quot;username&quot; href=&quot;members/533029-Krekko&quot;&gt;&lt;span class=&quot;user-moderator&quot;&gt;Krekko&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br>
+<br>
+&lt;/ol&gt;<br>
+<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;h4 class=&quot;nocss_label&quot;&gt;Forum Actions:&lt;/h4&gt;<br>
+&lt;ul class=&quot;forumactionlinks td&quot;&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/div&gt;<br>
+&lt;/li&gt; <br>
+&lt;/ol&gt;<br>
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+<br>
+These new forums should give a little more freedom to the growing community on the Video Games forums and should make most of you happier. If you&apos;re not happy enough, you can probably find an answer to your angry questions below. <br>
+<br>
+Why didn&apos;t you open a forum for when you opened one for [insert similar game here]??? [insult here]<br>
+We only opened forums for games that already have a lot of activity on the Video Games forum in the first place. If your game isn&apos;t here, it just means that we don&apos;t have a giant thread about it, because not enough people are interested yet. <br>
+<br>
+I can&apos;t filter these new forums out of the Recent Forum Posts box on the front page!<br>
+We know about the issue with the forum filters not saving correctly, and it will be fixed this week. The new forums will also be added to the list then, so you can filter them out if you want. <br>
+<br>
+<br>
+Blue Tweets<br>
+PvP<br>
+[i]only thing remaining for 2s to be &quot;viable&quot; is healer mana balancing and some class changes (most are coming in 5.4)<br>
+In 3s, you can generally assume a healer. Do we balance 2s around a healer or around 2 DPS? Big difference. (Source (https://twitter.com/Ghostcrawler/status/371351209321324545))<br>
+<br>
+why isn&apos;t it possible to check your mmr or others for that matter?<br>
+Because it&apos;s a matchmaking tool, not a score or achievement players are intended to try and grind upwards. (Source (https://twitter.com/Ghostcrawler/status/373889053512318976))<br>
+<br>
+how do you feel Pvp went this xpac? Do you have much say into decisions or leave that to holinka n team<br>
+Holinka is part of my team, so we make sure we are all on the same page. (Source (https://twitter.com/Ghostcrawler/status/373181484321890304))<br>
+I think the PvP ilevel change proved confusing and perhaps controversial. It was intended to make PvP gearing easier. (Source (https://twitter.com/Ghostcrawler/status/373181607152070657))<br>
+Prior to that, a new character (or alt) had a ton of work to do before they could even survive gearing. (Source (https://twitter.com/Ghostcrawler/status/373181697052782593))<br>
+But there were downsides, such as the optics of PvP ilevel being lower than PvE, and the effect on world PvP. (Source (https://twitter.com/Ghostcrawler/status/373181798370377728))<br>
+That&apos;s not the only thing I would mention as a PvP postmortem, but twitter&apos;s not the best medium for the discussion. (Source (https://twitter.com/Ghostcrawler/status/373181922806992896))<br>
+Wouldn&apos;t it have been easier to simple reduce the cost the honor gear?<br>
+The biggest problem was between Honor and Conquest gear. So we would have needed to make the Conquest cheaper. (Source (https://twitter.com/Ghostcrawler/status/373569376760258560))<br>
+But if Conquest is too cheap, then there isn&apos;t much of a PvP season because people gear up and call it done. (Source (https://twitter.com/Ghostcrawler/status/373569500370587648))<br>
+Super high-end PvP players will keep playing to determine rank, but a lot of players finish once they&apos;re geared. (Source (https://twitter.com/Ghostcrawler/status/373569587591131136))<br>
+<br>
+i&apos;m not rushing into any conclusions but is it me or do i see the word &quot;easier&quot; over and over again?<br>
+It wasn&apos;t fun for players starting out PvP to get roflstomped over and over until they finally had decent gear. (Source (https://twitter.com/Ghostcrawler/status/373526938658168832))<br>
+&quot;Easy&quot; in this context meant less of a delta between Honor and Conquest gear. (Source (https://twitter.com/Ghostcrawler/status/373527017234243584))<br>
+<br>
+Can Hunter&apos;s Please have Viper Sting back base mana drain ftw in pvp<br>
+Very unlikely. We found mana drain to be really unfun for the victims. (Source (https://twitter.com/Ghostcrawler/status/371737114582319104))<br>
+mana drain is unfun? and what about CC? this is unfun too for the victims..<br>
+CC tends to last for short periods unless you&apos;re chained. Mana drain can mean a very long time. More CC counters too. (Source (https://twitter.com/Ghostcrawler/status/372088943711252480))<br>
+That&apos;s not to say CC design is perfect. However, the risk of less dominant CC is more dominant &quot;blow him up&quot; strategies. (Source (https://twitter.com/Ghostcrawler/status/372089217083404288))<br>
+<br>
+2/2 2v2 has an audience without them still, but it wouldn&apos;t feel to me like you&apos;re giving it a real go again.<br>
+Yeah, that was our point. For a time we wanted to offer them but not really motivate players to try them. (Source (https://twitter.com/Ghostcrawler/status/371355303985434624))<br>
+But they still remain so popular, maybe we should just embrace 2s as a full feature. (Source (https://twitter.com/Ghostcrawler/status/371355373254344704))<br>
+<br>
+Future<br>
+any chance of new 5 mans in the future? I&apos;m casual and find LFR very tedious and dull. It killed my subscription alas...<br>
+We would like to provide more 5-player dungeons than we were able to do for MoP. (Source (https://twitter.com/Ghostcrawler/status/371735873877852162))<br>
+<br>
+Can we get a audio slider for voices? Annoying wanting to hear dialogue but then being deafened by combat noises and spells :&lt;<br>
+Yeah, that&apos;s a common request. It&apos;s on our list. (Source (https://twitter.com/Ghostcrawler/status/372090725065711616))<br>
+<br>
+Hi, Greg. (Probably a question more for the animation team, but) will Hunters ever get quivers back as part of their models?<br>
+Yes, that is a goal. No ETA. (Source (https://twitter.com/Ghostcrawler/status/372090191269220353))<br>
+<br>
+ever thought of having rested xp effect rep gains at max level? Avoid tabards and other junk.<br>
+Yeah. We investigated that but the design got a little complicated quickly. Does XP alone consume rest or rep too? (Source (https://twitter.com/Ghostcrawler/status/373885010744311808))<br>
+Solvable problems, but not trivially solvable at the time. (Source (https://twitter.com/Ghostcrawler/status/373885057028456448))<br>
+<br>
+Thoughts of a Tinker class? If not now maybe down the road?<br>
+I&apos;ve said before it depends on the treatment. Too easy for that class to be too wacky or precious. (Source (https://twitter.com/Ghostcrawler/status/373883100712800258))<br>
+A more steampunk vibe sounds cool to me. A dude in a mech having misfires that poop out springs and gears less so. (Source (https://twitter.com/Ghostcrawler/status/373884151402737664))<br>
+I don&apos;t know. Lucca from Chrono Trigger could work. A little bit of gnomish (tee hee) world enlarger goes a long way IMO. (Source (https://twitter.com/Ghostcrawler/status/373884467674243072))<br>
+But maybe one of the designers will come up with a pitch perfect design that blows us away someday. Shrug. (Source (https://twitter.com/Ghostcrawler/status/373884614177075200))<br>
+<br>
+can we expect smaller ilvl increases after squish? from 155-160 etc. And how do you avoid large increase with LFR/Flex/N/H<br>
+The power deltas at max level would be preserved. They are important. Less important these days that BWL gear is a big upgrade. (Source (https://twitter.com/Ghostcrawler/status/373182389477834752))<br>
+<br>
+how do ilvl increases work after squish to avoid peak numbers again?<br>
+It&apos;s something we might have to do again someday, but this would buy us several expansions. (Source (https://twitter.com/Ghostcrawler/status/372509484809060352))<br>
+Saw bashiok saying he wasnt sure about tech reasons for it. i point to Ra-Den 25 getting bugged after health loop.<br>
+The numbers for e.g. boss health were not coded with such large numbers in mind. (Source (https://twitter.com/Ghostcrawler/status/372548987745624064))<br>
+We can change that of course but the point is we have to do something, either squish or suck up that engineering work. (Source (https://twitter.com/Ghostcrawler/status/372549149507342336))<br>
+(The armchair programmers who say our guys can do that trivially or are incompetent are just out of their league. No offense.) (Source (https://twitter.com/Ghostcrawler/status/372549309142552576))<br>
+Re: item squish. Programmers rarely tell you no. They tell you how long something will take and what you have to give up to get it. (Source (https://twitter.com/Ghostcrawler/status/372509129987735553))<br>
+I really do think it would be refreshing to do 300 dps instead of 300,000. Much more grockable.<br>
+we are all about the grock. (Source (https://twitter.com/Ghostcrawler/status/372548542293766144))<br>
+<br>
+are older raids going to be scaled accordingly to allow soloability still?<br>
+Yes. It is a requirement of squishing that it does not interfere with overpowering old dungeons or raids. (Source (https://twitter.com/Ghostcrawler/status/372513082154553344))<br>
+<br>
+will we ever get an option to turn down other players spell effects seperate from ours?<br>
+Many spell effects in 5.3 and more in 5.4 look different for you than others. If that&apos;s not sufficient, we&apos;ll explore more. (Source (https://twitter.com/Ghostcrawler/status/372555658911940609))<br>
+<br>
+Any update of being able to toggle off enchant graphics like we can with cloaks or helms? Many &apos;moggers would love this!<br>
+It is a goal. Discussing whether the right way is a &quot;hide enchant&quot; option or to let you mog enchants as well (even to none). (Source (https://twitter.com/Ghostcrawler/status/372251029892386816))<br>
+<br>
+The amount of QQ over &quot;models are ~25% done&quot; is hurting my brain.<br>
+Also, shelved does not mean cancelled. (Source (https://twitter.com/Ghostcrawler/status/371742474911227905))<br>
+Dance Studios and Dota style BG and Azshara Crater BG still on the table?<br>
+Yes. Things like aerial combat, less so. (Source (https://twitter.com/Ghostcrawler/status/372081999277600768))<br>
+<br>
+What is the practical difference between &quot;shelved&quot; and &quot;cancelled&quot; if neither is &quot;actively being worked on&quot;?<br>
+Players are assuming the work is constant. Consider cars go fast sometimes and slow sometimes. (Source (https://twitter.com/Ghostcrawler/status/371741851247595520))<br>
+Character models require some of our most skilled artists and a lot of review. The first ones will take longer as well. (Source (https://twitter.com/Ghostcrawler/status/371742096870223872))<br>
+We could also generate them faster if we stopped all other art production, but that wouldn&apos;t be acceptable either. (Source (https://twitter.com/Ghostcrawler/status/371742200922517504))<br>
+The good news is this is something actively being worked on, not a shelved project like dance studio or abyssal maw. (Source (https://twitter.com/Ghostcrawler/status/371742430619385856))<br>
+Cancelled - unlikely to ever work on it. Shelved - nobody working on it at the moment, but we still like the idea. (Source (https://twitter.com/Ghostcrawler/status/372080375431823360))<br>
+You have to understand, our ambition always exceeds our reach. We have a lot of great ideas that we haven&apos;t gotten around to yet. (Source (https://twitter.com/Ghostcrawler/status/372080490997489664))<br>
+<br>
+Any chance WoW will ever receive audio on all quests in the game? With voices of corresponding races. That would be so epic <br>
+It would be cool, but it slows down development a lot and makes it really hard to iterate on quests. (Source (https://twitter.com/Ghostcrawler/status/371355054088810496))<br>
+Personally, as a player I find I can read text much faster than I can listen to VO babble on though. (Source (https://twitter.com/Ghostcrawler/status/371355149827989504))<br>
+<br>
+<br>
+Siege Of Orgrimmar Art<br>
+Today we have some of the art done for Siege of Orgrimmar by Vergne Fanny (http://fafart.blogspot.com/p/wow.html), one of Blizzard&apos;s 3D Artists. The last one gives you an idea of how much work goes into something as small as a ground texture!<br>
+<br>
+<br>
+&lt;div class=&quot;gallery&quot; id=&quot;offArt&quot;&gt;http://media.mmo-champion.com/images/news/2013/september/thumb/vergenArt01.jpg (http://media.mmo-champion.com/images/news/2013/september/vergenArt01.jpg) http://media.mmo-champion.com/images/news/2013/september/thumb/vergenArt02.jpg (http://media.mmo-champion.com/images/news/2013/september/vergenArt02.jpg) http://media.mmo-champion.com/images/news/2013/september/thumb/vergenArt03.jpg (http://media.mmo-champion.com/images/news/2013/september/vergenArt03.jpg) http://media.mmo-champion.com/images/news/2013/september/thumb/vergenArt04.jpg (http://media.mmo-champion.com/images/news/2013/september/vergenArt04.jpg) <br>
+http://media.mmo-champion.com/images/news/2013/september/thumb/vergenArt06.jpg (http://media.mmo-champion.com/images/news/2013/september/vergenArt06.jpg) http://media.mmo-champion.com/images/news/2013/september/thumb/vergenArt07.jpg (http://media.mmo-champion.com/images/news/2013/september/vergenArt07.jpg) http://media.mmo-champion.com/images/news/2013/september/thumb/vergenArt08.jpg (http://media.mmo-champion.com/images/news/2013/september/vergenArt08.jpg) http://media.mmo-champion.com/images/news/2013/september/thumb/vergenArt09.jpg (http://media.mmo-champion.com/images/news/2013/september/vergenArt09.jpg)&lt;/div&gt;</div></div>

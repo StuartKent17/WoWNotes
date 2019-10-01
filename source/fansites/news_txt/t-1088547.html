@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2012-02-28, 03:36 AM</div></div><div class="posttext">Statistics: Heroic Dragon Soul Encounter Difficulty<br>
+Today we continue our ongoing statistics by taking a look at the relative difficulty of the encounters in Dragon Soul. As always with the API, there are limitations that prevent us from discriminating between players who completed the encounter in 25 man or 10 man mode, so keep in mind that these numbers contain both raid sizes summed together. <br>
+<br>
+The sample size was ~5.7 million level 85 characters, with ~290k that have defeated the Heroic Morchok encounter. Keep in mind that the sample contains many alts, which makes the absolute numbers look lower than they are in reality. This means that we are looking at encounter difficulty relative to the easiest encounter, not the percent of the player population that completed each encounter. <br>
+<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart;<br>
+$(document).ready(function() {<br>
+Highcharts.setOptions({<br>
+colors: [&apos;#4768C4&apos;, &apos;#E01B6A&apos;]<br>
+});<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;heroicDSDiff&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [&apos;Morchok&apos; , &apos;Yor\&apos;sahj the Unsleeping&apos; , &apos;Warlord Zon\&apos;ozz&apos; , &apos;Hagara the Stormbinder&apos; , &apos;Ultraxion&apos; , &apos;Warmaster Blackhorn&apos; , &apos;Spine of Deathwing&apos; , &apos;Madness of Deathwing&apos;],<br>
+labels: {<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: false,<br>
+},<br>
+<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Percent&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+},<br>
+max: 100<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+<br>
+},<br>
+<br>
+title: {<br>
+text: &apos;Normalized Heroic Dragon Soul Encounter Difficulty&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+<br>
+<br>
+series: [<br>
+{<br>
+data: [100 , 42.09 , 21.48 , 24.06 , 30.60 , 7.94 , 3.12 , 1.97],<br>
+name: &apos;Normalized Completion Rate&apos;<br>
+}<br>
+<br>
+]<br>
+<br>
+});<br>
+});<br>
+<br>
+&lt;/script&gt; <br>
+<br>
+&lt;div id=&quot;heroicDSDiff&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+<br>
+Blue Posts<br>
+What Was Vanilla WoW Like?<br>
+I was actually chatting just last night with someone who had started playing shortly after Cataclysm launched.<br>
+<br>
+I have lots of great memories of adventures that have spanned from when World of Warcraft first launched through to the present day. The game has evolved quite a bit over the years, and I&#x2019;m especially thankful for the many quality of life upgrades that were made along the way. <br>
+<br>
+Way back when, you could only get a mount starting at level 40, so it took quite a bit of time to travel around Azeroth on foot. Flight points were by far the fastest modes of transportation, but you could only use them if you first hoofed your way over and discovered each Flight Master individually. When you used flight points you also could only travel directly from one to the next. They didn&#x2019;t automatically connect to your final destination like they do now. So you&#x2019;d have to make your way to the first point, talk to the flight master, fly to the next point, talk to the flight master, and so on. Accessing dungeons or raids also required additional travel time, as you had to make your way to them manually, and there were no mass summons or personal flying mounts back in that era that could speed up the process, either. So assembling five people for a dungeon run involved quite a bit of waiting around while people slowly made their way to the particular dungeon. It often took even longer for raids to get up and running because you&#x2019;d be waiting for 40 people instead of just 25 or 10.<br>
+<br>
+Battlegrounds and Arenas (both of which I relish) also did not launch with the original game. The first two Battlegrounds areas, Alterac Valley and Warsong Gulch, went live on June 7th, 2005, and you had to physically travel out in the world to the particular Battleground portal for each location in order to queue for them. As there was no time or resource limit on those games, they could run very long, and indeed some Alterac Valley matches on the servers I played on at the time could span multiple hours or even, in some cases, multiple days. For Battlegrounds, specifically, there were no cross-realm Battlegroups originally, so you could only face-off against opponents from your individual realm that were on the opposite faction. Way back then, you also couldn&#x2019;t step up and challenge another guild on your own faction to an all-out War Game in Warsong Gulch, either, because War Games didn&#x2019;t even exist until shortly after Cataclysm launched.<br>
+<br>
+Travel around Azeroth and assembling groups for anything from PvP to dungeon runs and raiding is much more efficient now than it was in classic times. I think it&#x2019;s especially fantastic being able to freely roam around the world and do other activities while you wait. Then, once the group is assembled, you can teleport directly into battle with your comrades as well as your friends from other realms (thanks to the advent of Real ID&#x2019;s cross-realm support). And that&#x2019;s, well&#x2026; awesome. (Blue Tracker (http://blue.mmo-champion.com/topic/218088-what-was-vanilla-old-wow-like/) / Official Forums (http://us.battle.net/wow/en/forum/topic/4079845598?page=5#84))<br>
+<br>
+Global Writing Contest<br>
+Instead of the Global Writing Contest this year, would you all be interested in a poetry contest? <br>
+<br>
+If so, what kind of parameters would you like to see set on the contest entries? (Blue Tracker (http://blue.mmo-champion.com/topic/218092-story-forum-lounge-17/) / Official Forums (http://us.battle.net/wow/en/forum/topic/4079869335?page=6#109))<br>
+<br>
+<br>
+Patch 4.3.3 64-bit Client<br>
+If you are currently testing the 64-bit client, in order to patch up to 4.3.3 you will need to remove the 64-bit files to allow the patching process to complete. With the 64-bit client files in place you will receive the error: Blizzard Updater failed with an internal error.<br>
+<br>
+Simply delete the 64-bit files listed below from the World of Warcraft folder, and the patching process will resume after going through a short repair process.<br>
+<br>
+Windows<br>
+Battle.net-64.dll<br>
+MovieProxy.exe<br>
+WoW-64.exe<br>
+<br>
+Mac<br>
+World of Warcraft-64.app<br>
+<br>
+A new version of the 64-bit client files will be available for 4.3.3 after the patch is live. Please keep an eye on the 64-bit client forum thread for updated files.<br>
+<br>
+<br>
+DiabloFans Calculator Build Contest Has Started!<br>
+Our friends over at DiabloFans are holding a contest (http://www.diablofans.com/news/1101-diablofans-calculator-build-contest-has-started/) that involves picking the best build for your character. The 50 randomly selected winners will get a Diablo III beta key! <br>
+<br>
+The contest ends 2/28/2012 at 5 PM EST, so make sure to get your entry in before then if you want a chance to win. <br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2012/february/dfansBetaContest.jpg (http://www.diablofans.com/news/1101-diablofans-calculator-build-contest-has-started/) <br>
+<br>
+<br>
+Guild Wars 2 Beta<br>
+Guild Wars 2 recently opened sign ups for future beta events and got over one million applications in just 48 hours. The accepted players will be able to participate in a beta event (https://twitter.com/#!/GuildWars2/status/174163356029157376) closer to the end of March. If you are looking for like people to play with, take a look at our Guild Wars 2 forum (http://www.mmo-champion.com/forums/335-Guild-Wars-2).<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2012/february/gw2Beta.jpg (http://www.guildwars2guru.com/forum/beta-sign-ups-now-closed-t28501.html)</div></div>

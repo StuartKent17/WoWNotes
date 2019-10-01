@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-01-26, 05:11 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; prFly&apos;s Pyrolysis Wizard, Deadset Sanctuary Talk (http://www.diablofans.com/news/48314-prflys-pyrolysis-wizard-deadset-sanctuary-talk)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Popular Decks of the Week, Deck Spotlight: Holy 4000 (http://www.hearthpwn.com/news/762-popular-decks-of-the-week-deck-spotlight-holy-4000)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Heroes of the Storm Beta Key Giveaway (http://www.heroesnexus.com/news/1289-heroes-of-the-storm-beta-key-giveaway)<br>
+<br>
+Armory Stats - Followers and Missions<br>
+We are taking a look at an often requested topic, garrison stats. Unfortunately the Battle.Net API doesn&apos;t give us any garrison specific information, so all we can look at is achievements. You can always give this post a thumbs up (http://us.battle.net/en/forum/topic/15270937621#1) to show your interest in having garrison data in the API though!<br>
+<br>
+We are starting with mission data today, looking at 2.7 million players and 4.4 million characters. <br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart; <br>
+setTimeout(function(){ height = subchart.height<br>
+width = $(&quot;.pgcharts&quot;).width()<br>
+subchart.setSize(width, height, doAnimation = true);},2500)<br>
+<br>
+<br>
+setTimeout(function(){ height = subchart.height<br>
+width = $(&quot;.pgcharts&quot;).width()<br>
+subchart.setSize(width, height, doAnimation = true);},1500)<br>
+<br>
+setTimeout(function(){ height = subchart.height<br>
+width = $(&quot;.pgcharts&quot;).width()<br>
+subchart.setSize(width, height, doAnimation = true);},4500)<br>
+<br>
+$(document).ready(function() {<br>
+<br>
+<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;missionChart&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [ &apos;1 Rare Mission&apos;, &apos;50 Rare Missions&apos;, &apos;100 Missions&apos;, &apos;500 Missions&apos;, &apos;1000 Missions&apos;],<br>
+labels: {<br>
+maxStaggerLines: 0<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: false,<br>
+},<br>
+<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Percent&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function() {<br>
+return &apos;&lt;b&gt;&apos; + this.point.name + &apos;&lt;/b&gt; - &apos;+ this.y +&apos;%&apos;;<br>
+}<br>
+},<br>
+title: {<br>
+text: &apos;Percentage of Players that Completed Garrison Mission Achievements&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [<br>
+{<br>
+data: [{y: 99.4, color: &apos;#5D83C9&apos;, name:&apos;1 Rare Mission&apos;},{y: 27.8, color: &apos;#5D83C9&apos;, name:&apos;50 Rare Missions&apos;},{y: 90.0, color: &apos;#5DC964&apos;, name:&apos;100 Missions&apos;},{y: 42.6, color: &apos;#5DC964&apos;, name:&apos;500 Missions&apos;},{y: 16.2, color: &apos;#5DC964&apos;, name:&apos;1000 Missions&apos;}],<br>
+<br>
+name: &apos;&lt;b&gt;Percent&lt;/b&gt;&apos;<br>
+}<br>
+<br>
+]<br>
+<br>
+});<br>
+});<br>
+&lt;/script&gt; <br>
+<br>
+<br>
+<br>
+&lt;div id=&quot;missionChart&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+Patch 6.1 - Fishing Changes<br>
+Thank you all for your feedback regarding the auto-fillet change that was set for Patch 6.1. Based on your sentiment, we&apos;ve gone ahead and made a change we hope will be beneficial for all anglers.<br>
+<br>
+In 6.1, rather than have fish auto-fillet as you catch them, we&apos;re adding a new consumable item called the Bladebone Hook which when used, will enable auto-filleting for one hour. This new item can be purchased from fishing vendors in Draenor.<br>
+<br>
+Just a couple notes: Despite the tooltip, you won&apos;t need a fishing pole to use this item, and it won&apos;t overwrite your lure, bait, fishing line, or anything else.<br>
+<br>
+Thanks again for sharing your thoughts with us!<br>
+<br>
+I have a few more updates for you guys regarding bait which I&apos;m sure you&apos;ll appreciate. These are also slated to be in Patch 6.1 so please be sure to test them out on the PTR and give us your feedback.<br>
+<br>
+<br>
+We&apos;re reverting the change where bait would spoil. Reverting the change where bait could not be caught in your garrison; Nat Pagle will still grant you the bait of your choice (because Nat Pagle). Bait duration is now 10 minutes (up from 5) to mirror the duration of lures.<br>
+<br>
+<br>
+<br>
+Blue Posts<br>
+Running Out of Things to Do<br>
+Hey dorks, different difficulty levels of the SAME CONTENT, is not NEW CONTENT.<br>
+Hah, well maybe not entirely, but there&apos;s a pretty massive difference in the gameplay experience between Raid Finder and Normal. I would go out on a limb and say that it&apos;s so dramatic that they should be considered separate pieces of content. Of course as more and more people outgear Normal it won&apos;t be quite as distinctive, but certainly when content first becomes available they are pretty vastly different gaming experiences.<br>
+<br>
+Being in a solo guild does not create any deficit whatsoever. I jump into the custom group finder every day to do the apexis daily. I used the custom group finder to grind out the WOD reputations and if I enjoyed other tiers of raiding, I could use it to PUG normal highmaul. So I completely cannot agree with you on that statement.<br>
+The group finder is awesome, and I&apos;m glad you&apos;re using it, but I have to say opting into content that way just isn&apos;t the same as ad-hoc situations with friends and guild mates. A friend says &quot;DUDES this guy is camping me&quot; and everyone rushes out to help, or you help a guildy in an old dungeon or to kill a rare they can&apos;t quite down themselves, or a friend asks if you want to go do a run (that you don&apos;t need anything from), and you help because you want to support your friend&apos;s character. Or your guild has Sunday transmog runs and you really get into transmogging, or they do achievement runs, or your guild&apos;s Heroic-progression group is short a DPS one night and hey, they bring you along! And sure you get carried a bit but you have fun chatting with people, and you even get a couple pieces! And better yet you then become part of their regular rotation, you make friends, you chat outside of game, you meet up at BlizzCon, etc. etc. etc. People are important in an MMORPG. The Premade Groups tool is great, but it really isn&apos;t going to do any of the things that occur from being in an active guild or having active friends to play with, and working together to ensure each others&apos; success. It can though be a stepping stone into that social experience, if you want it to be.<br>
+<br>
+In any case I do appreciate the other feedback and points. I think both alt-friendly content and dungeons are always a good place to focus our attention. To your point about JP we are improving some of the reward structure for Apexis in 6.1 which should help maybe address your point of going after upgrades through other content.<br>
+<br>
+As a final note I will say that it&apos;s not always necessarily a problem to be &quot;complete&quot; until the next piece of content comes along. Blackrock Foundry is out in less than two weeks, and I would recommend giving Normal a shot when it does hit, but we also have 6.1 on the PTR, and future patches in the oven. A tremendous amount of people are using the new Premade Groups finder to progress from LFR to Normal (and beyond), whereas those same people were stopping at LFR in Mists, and so statistically it&apos;s been quite successful as a feature. But everyone has to make their own decisions about playing and what they consider good enough, and at what point they&apos;re happy with the progression of their character. For some people that&apos;s going to be they saw all the bosses in LFR once and they&apos;re good, and for others it&apos;s going to be they need 5 100&apos;s in full Warforged Mythic. Those are the extremes, but everyone makes those decisions for themselves. (Blue Tracker (http://blue.mmo-champion.com/topic/358725-i-think-i-really-have-nothing-left-to-do/) / Official Forums (http://us.battle.net/wow/en/forum/topic/15699506608?page=16#307))<br>
+<br>
+PvE Items and PvP<br>
+Please Prevent Pve items being used and abused in PvP before it&apos;s too late.<br>
+We&apos;re actually working on some changes along these lines for Patch 6.1, which should be hitting the PTR relatively soon (but possibly not in today&apos;s build). PvE gear will be scaled down to item level 680 instead of 690, and Primal Combatant/Primal Gladiator trinkets are having their power increased.<br>
+<br>
+Why not just make the PVE trinkets and PVE set bonuses entirely unusable while in instanced, rated PVP? That way, it wouldn&apos;t hurt people that are gearing up and just doing BGs or WPVPers.<br>
+PvE set bonuses are disabled in rated PvP. If you find one that isn&apos;t, that&apos;s a bug, please report it!<br>
+<br>
+We don&apos;t always have a great way to apply similar logic to trinkets, but we are able to adjust specific trinkets when necessary -- for example, we&apos;ve just hotfixed the Scabbard of Kyanos&apos; on-use effect to have a lower effectiveness in PvP situations. (Blue Tracker (http://blue.mmo-champion.com/topic/358821-prevent-pve-being-used-in-pvp/) / Official Forums (http://us.battle.net/wow/en/forum/topic/15699374296?page=6#115))<br>
+<br>
+<br>
+Cross-Realm Zones<br>
+Meaning that things take longer because more people are competing for stuff, with no benefits. Rather than beneficial collision like Connected realms, where you can invite people to guilds, and they don&apos;t significantly add to zone populations.<br>
+That&apos;s a perception issue, though. If we hid realm names there would be no real difference in that person being from your home realm or from another. You can make the argument those resources are going somewhere else, but again, you&apos;re going to get the resources you&apos;re going to get. People from your realm are likely CRZd to someone else&apos;s realm, and mining their nodes, and bringing it back to your server. It&apos;s a perception issue more so than an actual gameplay impact.<br>
+<br>
+As for guilds, plenty of people have RealID friends cross-realm, and then actually transfer if necessary to be in their friends&apos; guild--but the advent of flex and both Normal and Heroic being cross-realm means you can stay in your same guilds and have a lot of additional options on how you play the game.<br>
+<br>
+Some realms need to be merged, CRZ does not solve this.<br>
+No, and it&apos;s not intended to. Connected Realms allow for a lot of the benefits you&apos;re probably referring to, and that was an undertaking that happened before Warlords launch (all planned connections were completed back in August). But connecting realms and CRZ offer different benefits, and aren&apos;t mutually exclusive. Connecting realms means, for all intents and purposes, a shared population. The vast majority of players (even on lower population realms) are at level cap, or at least leveling through the latest expansion, and so there&apos;s essentially always glut of players at the top and in those zones. Connecting realms is limited by that high end concentration of players and what those zones can comfortably support. Meanwhile the lower level zones are probably still very empty. What CRZ allows us to do is set a desired number of players in a zone at a time, and bring players together from many realms into that zone, without also impacting player numbers elsewhere in the game.<br>
+<br>
+it does nothing to help gameplay.<br>
+Creating a multiplayer environment where there&apos;s both cooperation and disagreements (or groups and pvp, or competition and interaction) between players is largely what MMOs are about, and so I think we&apos;d fundamentally disagree that having more players around in low level zones is, as you put it, anything but unhelpful. We think it is decidedly helpful to the support of a multiplayer gaming environment.<br>
+<br>
+All that said, we&apos;d be interested in hearing specific feedback on situations or issues you&apos;re having, experiences and stories about what has made the experience worse, or even better! Nice stories are nice, too.<br>
+<br>
+for the record I get there&apos;s supposed to be some competiton, but I feel it becomes a problem when I start getting chewed out by other players for having to resort to ninjaing their quest stuff to have any hope of advancing a quest.<br>
+<br>
+We don&apos;t generally want there to be waiting around for questing resources. We consider quest resource not spawning quickly enough as a bug, and they should probably be reported as such. If you come across any specific instances where people are standing around waiting for something to respawn, or feverishly fighting over mobs, report it as a bug.<br>
+<br>
+Standing around with 8 other people waiting for mobs to spawn is no fun...<br>
+I agree, and that should be reported as a bug. The game is designed to support many dozens (or even hundreds) of players doing the same quest at the same time, and if there&apos;s an issue impeding progression on quest criteria then that&apos;s a bug.<br>
+<br>
+And, although it probably doesn&apos;t need to be said, not caused by CRZ.<br>
+<br>
+<br>
+Blue Tweets<br>
+Character / Items<br>
+caps gone, then why did you remove reforge? lack of toon customization: no gems, no enchants. for me this made the game worse...<br>
+You can enchant 275 worth of secondary stats, this is actually more relative to MOP (post squish)<br>
+Yep, this. Plus food and any sockets you may have. (WatcherDev (https://twitter.com/WatcherDev/status/555068021589282816))<br>
+<br>
+Guilds<br>
+Man, creating a guild is still such an old fashioned chore. Any improvements in the pipe?<br>
+Actually haven&apos;t checked that out myself for quite a while, will pass on the feedback, thanks! (Muffinus (https://twitter.com/Muffinus/status/554884688842473472))<br>
+<br>
+Somewhat worried that a 4 night schedule is turning into the defacto requirement for a typical mythic clear guild<br>
+Curious what makes you feel that way - what&apos;s changed in WoD? A number of 3-night guilds are making good progress. (WatcherDev (https://twitter.com/WatcherDev/status/554908644215488512))<br>
+<br>
+PvE<br>
+Only 24 US guilds have M Imperator, w/ Holidays/Light Raid schedules, Blackrock launch is too early imho. <br>
+But Foundry isn&apos;t a separate tier like Throne of Thunder or Siege, it&apos;s a continuation of the first tier. I&apos;d compare to MSV-&gt;HoF. (WatcherDev (https://twitter.com/WatcherDev/status/555454746471854080))<br>
+<br>
+Are all 3 wings in BrF linear, or are there some options on the order of the first 2? I&apos;m assuming the third is always gated?<br>
+Three separate wings you can tackle in any order, each with an end-boss. Think upper Icecrown, or Naxxramas. (WatcherDev (https://twitter.com/WatcherDev/status/555454568285229056))<br>
+Aye, but are the non-end bosses linear like Naxx wings, or do you have options on some, like Plague wing in ICC?<br>
+Forge and Assembly are linear; for Slagworks you can do either Gruul or Oregorger first. (WatcherDev (https://twitter.com/WatcherDev/status/555458493344260096))<br>
+<br>
+PvP<br>
+Ashran&apos;s queue problems bother me. It puts the whole zone in a bad light. We&apos;re doing a substantial queue rework for 6.1. (holinka (https://twitter.com/holinka/status/555264299753426944))<br>
+Skirmishes, strong boxes and PvP item level have been good changes and pleased with them. (holinka (https://twitter.com/holinka/status/555264440614940675))<br>
+There will never be universal satisfaction with class balance so I don&apos;t ever expect posts like this to go away. (holinka (https://twitter.com/holinka/status/555265043814567936))<br>
+<br>
+<br>
+FEEDBACK: Blackrock Foundry (Normal)<br>
+We&apos;ve opened up the Blackrock Foundry raid on the 6.1 PTR for the weekend. The first boss(es) of each wing are accessible (Oregorger and Gruul in the Slagworks; Hans&apos;gar and Franzok in the Black Forge; and Beastlord Darmac in the Iron Assembly), on Normal difficulty only. Use the Group Finder to find some like-minded allies, get in there, and check out a bit of the raid zone that&apos;s coming to live servers in less than two weeks!<br>
+<br>
+Organized guilds should keep an eye on the PTR forums next week for a couple of more targeted tests of specific bosses on higher difficulties.<br>
+<br>
+Please use this thread to provide feedback on the four available Foundry bosses. Item level will be scaled to 650 for the purposes of the test. When providing feedback, please specify the size and nature of your group (pure PUG, Mythic raiding guild, etc.), and remember that these are the first bosses of the zone on Normal difficulty. The intended tuning target here is in the ballpark of Highmaul bosses like Butcher or Twin Ogron on Normal difficulty.<br>
+<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2012/june/gw2g.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Guild Wars 2 Expansion - Heart of Thorns<br>
+The first Guild Wars 2 expansion, Heart of Thorns (https://heartofthorns.guildwars2.com/en), was recently announced! It adds features like a Mastery System, new story and group content, profession specializations, another profession, guild halls, the Stronghold game mode, another WvW map, and more.<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2015/january/gw2HoT.jpg (https://heartofthorns.guildwars2.com/en#section-home) <br>
+<br>
+&lt;iframe width=&quot;450&quot; height=&quot;253&quot; src=&quot;//www.youtube.com/embed/IOUk2y0K2m8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt; &lt;iframe width=&quot;450&quot; height=&quot;253&quot; src=&quot;//www.youtube.com/embed/147x-wbCer0?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</div></div>

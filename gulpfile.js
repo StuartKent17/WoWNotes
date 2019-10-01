@@ -10,6 +10,10 @@ var html2TextOpts = {
     ignoreImage  :true,
 }
 
+
+var news_path = "source/fansites/news/*.html";
+var news_path_txt = "source/fansites/news_txt/";
+
 var builds = {
     patchOnly : ["source/official/patches/*.html"],
     aprilOnly : [
@@ -26,7 +30,11 @@ var builds = {
       "source/official/april_fools/*.html",
       "source/fansites/april_fools/*.html"
     ],
-    everything: ["source/**/*.html"]
+    // Yeah I could just move it, fite me
+    everything: [
+      "source/**/*.html", 
+      "!" + news_path
+    ]
     // idk maybe a speculation variant 
 }
 
@@ -51,8 +59,6 @@ gulp.task( 'default',
    )
 );
 
-var news_path = "source/fansites/news/*.html";
-var news_path_txt = "source/fansites/news_txt/";
 gulp.task('news', function () {
   return gulp
     .src([news_path])

@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-03-17, 05:08 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Other Class Sets, Jinx&apos;s New Diablo Products, Monk T1-6 Progression Series (http://www.diablofans.com/news/48365-other-class-sets-jinxs-new-diablo-products-monk-t1)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Deck Spotlight: Spark&apos;s Demonic Void, Card Design Competition Week #8 (http://www.hearthpwn.com/news/814-deck-spotlight-sparks-demonic-void-card-design)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Hero Rotation for March 17, 2015, Blizzard Stream Awards Last Call (http://www.heroesnexus.com/news/1325-hero-rotation-for-march-17-2015-blizzard-stream)<br>
+<br>
+Blackrock Foundry Item Level Increase Effects<br>
+Our friends at AskMrRobot have updated their site with the item level changes and done the math (http://blog.askmrrobot.com/2015/03/brf-item-level-increase/) to figure out how much the item level increase will help you. You can load your character (http://www.askmrrobot.com/wow/player) and see your new item level. <br>
+<br>
+If you uploaded combat logs or want to guess your percentile ranking, you can use the boss level DPS benchmarks (http://www.askmrrobot.com/wow/combatlog/stats/dps/heroic/gruul#per=95,ilvl=675) to see how much DPS on each boss you can expect to gain from your new item level. You can also use the Wipe Rate graphs (http://www.askmrrobot.com/wow/combatlog/stats/kill-rate/heroic/blackhand#) to see how much an item level increase should help your raid. <br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2015/march/BRFDPSChange.png (https://docs.google.com/spreadsheets/d/1YexzoLOJHa472I-RMbgaLBWOKH9g7J4lbOerRRnWCLM/edit#gid=0) <br>
+<br>
+http://media.mmo-champion.com/images/news/2015/march/dpsBenchmarks.jpg (http://www.askmrrobot.com/wow/combatlog/stats/dps/heroic/gruul#per=95,ilvl=670)<br>
+<br>
+http://media.mmo-champion.com/images/news/2015/march/wipeRates.jpg (http://www.askmrrobot.com/wow/combatlog/stats/kill-rate/heroic/blackhand#) <br>
+<br>
+<br>
+Armory Stats - Patch 6.1 Class Representation<br>
+Now is a good time to take a look at class representation once again. Our last look (http://www.mmo-champion.com/content/4556-Armory-Stats-Mists-of-Pandaria-Proving-Grounds-Blue-Tweets-Blizzard-Art) was a at the end of Mists of Pandaria.<br>
+<br>
+This sample includes 6.1 million characters for all item levels, 3.9 million for 630+, 2.2 million for 645+, 1.2 million for 655+, 663k for 665+, 321k for 675+, and 32k for 685+. Keep in mind that the higher the item level, the smaller the sample size, which means a less than perfect reflection of the actual class balance at that item level range.<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart; <br>
+<br>
+setTimeout(function(){ height = subchart.height<br>
+width = $(&quot;.pgcharts&quot;).width()<br>
+subchart.setSize(width, height, doAnimation = true);},2500)<br>
+<br>
+<br>
+setTimeout(function(){ height = subchart.height<br>
+width = $(&quot;.pgcharts&quot;).width()<br>
+subchart.setSize(width, height, doAnimation = true);},1500)<br>
+<br>
+setTimeout(function(){ height = subchart.height<br>
+width = $(&quot;.pgcharts&quot;).width()<br>
+subchart.setSize(width, height, doAnimation = true);},4500)<br>
+<br>
+$(document).ready(function() {<br>
+Highcharts.setOptions({<br>
+colors: [ &apos;#9d9d9d&apos;, &apos;#ffffff&apos;, &apos;#e6cc80&apos;, &apos;#1eff00&apos;, &apos;#0070dd&apos;, &apos;#a335ee&apos;, &apos;#ff8000&apos;]<br>
+});<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;ClassRepresentation&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [&apos;Death Knight&apos;,&apos;Druid&apos;,&apos;Hunter&apos;,&apos;Mage&apos;,&apos;Monk&apos;,&apos;Paladin&apos;,&apos;Priest&apos;,&apos;Rogue&apos;,&apos;Shaman&apos;,&apos;Warlock&apos;,&apos;Warr ior&apos;],<br>
+labels: {<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: false,<br>
+<br>
+},<br>
+<br>
+yAxis: {<br>
+max: 15,<br>
+title: {<br>
+text: &apos;Percent of Total&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+} <br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function() {<br>
+return this.series.name + &apos;&lt;br /&gt;&lt;b&gt;&apos; + this.point.name + &apos;&lt;/b&gt; - &apos;+ this.y +&apos;%&apos; ;<br>
+}<br>
+},<br>
+<br>
+title: {<br>
+text: &apos;Patch 6.1 Class Representation by Item Level&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+legend: {<br>
+enabled: true,<br>
+},<br>
+<br>
+series: [<br>
+{<br>
+data: [{y: 9.24, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 11.21, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 13.54, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 7.86, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 5.44, color: &apos;#00c77b&apos;, name:&apos;Monk&apos;},{y: 11.57, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 8.32, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 6.63, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 7.8, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 7.63, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 10.76, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}]<br>
+,<br>
+name: &apos;All&apos;<br>
+},<br>
+{<br>
+data: [{y: 9.2, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 11.55, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 13.44, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 7.72, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 5.26, color: &apos;#00c77b&apos;, name:&apos;Monk&apos;},{y: 12.08, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 8.7, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 6.13, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 7.98, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 6.85, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 11.09, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}]<br>
+,<br>
+name: &apos;630+&apos;<br>
+},<br>
+{<br>
+data: [{y: 8.81, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 12.02, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 13.22, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 7.73, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 5.35, color: &apos;#00c77b&apos;, name:&apos;Monk&apos;},{y: 12.37, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 9.09, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 5.75, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 8.27, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 6.56, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 10.83, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}]<br>
+,<br>
+name: &apos;645+&apos;<br>
+},<br>
+{<br>
+data: [{y: 8.17, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 12.79, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 12.64, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 7.82, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 5.66, color: &apos;#00c77b&apos;, name:&apos;Monk&apos;},{y: 12.48, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 9.44, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 5.63, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 8.66, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 6.30, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 10.4, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}]<br>
+,<br>
+name: &apos;655+&apos;<br>
+},<br>
+{<br>
+data: [{y: 7.47, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 13.02, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 12.08, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 8.19, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 6.01, color: &apos;#00c77b&apos;, name:&apos;Monk&apos;},{y: 12.43, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 9.6, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 5.64, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 9.25, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 6.49, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 9.84, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}]<br>
+,<br>
+name: &apos;665+&apos;<br>
+},<br>
+{<br>
+data: [{y: 7.25, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 13.48, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 11.56, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 8.25, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 5.93, color: &apos;#00c77b&apos;, name:&apos;Monk&apos;},{y: 12.21, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 9.97, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 5.93, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 9.55, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 6.56, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 9.31, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}]<br>
+,<br>
+name: &apos;675+&apos;<br>
+},<br>
+{<br>
+data: [{y: 7.07, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 14.89, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 10.36, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 8.32, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 6.66, color: &apos;#00c77b&apos;, name:&apos;Monk&apos;},{y: 11.61, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 10.46, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 6.62, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 9.44, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 6.61, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 7.95, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}]<br>
+,<br>
+name: &apos;685+&apos;<br>
+}<br>
+]<br>
+<br>
+});<br>
+<br>
+<br>
+});<br>
+&lt;/script&gt; <br>
+&lt;div id=&quot;ClassRepresentation&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;Blue Tweets<br>
+Classes<br>
+I see you fixed Arcane Power resetting with raid encounters..can we get the same for Ascendance ( and maybe even spirit wolves<br>
+Feral Spirits only has a 2 min c/d so intentionally doesn&#x2019;t reset. Ascendance does for Ele/Resto but not for Enh; fix incoming! (WarcraftDevs (https://twitter.com/WarcraftDevs/status/573279046097756160))<br>
+What about Shadowfiend?<br>
+Shadowfiend already resets cooldown on encounter end. (Celestalon (https://twitter.com/Celestalon/status/573556710834503680))<br>
+Never noticed. Since when?<br>
+The cutoff was &gt;3min prior to 6.1. In 6.1, we changed it to &gt;=3min. So, 6.1. (Celestalon (https://twitter.com/Celestalon/status/573559978021163009))<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest (Forums (http://www.mmo-champion.com/forums/274-Priest) / Skills (http://www.wowdb.com/spells/class-abilities/priest) / Talent Calculator (http://www.wowdb.com/talent-calculator#U))<br>
+whatever happened to the visual indicator for Halo that I heard about for 6.1?<br>
+It&apos;s for Holy and Discipline only since they have a cast time. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/573990051077484544))<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock (Forums (http://www.mmo-champion.com/forums/277-Warlock) / Skills (http://www.wowdb.com/spells/class-abilities/warlock) / Talent Calculator (http://www.wowdb.com/talent-calculator#k))<br>
+Any chance of adding further clarity to Destruction Warlock tooltips to distinguish between partial/full Burning Ember usage?<br>
+We recognize how confusing Burning Ember measurements can be &amp; keeping that in mind for future revisions. Appreciate the feedback! (WarcraftDevs (https://twitter.com/WarcraftDevs/status/573990419857477632))<br>
+<br>
+Art<br>
+Where have all the crystals and stuff gone from the Shadowmoon Sash? D: http://t.co/Ur6vECCFLt<br>
+There were severe clipping bugs that necessitated their removal. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/573987874044968960))<br>
+<br>
+Character / Items<br>
+Winged Hourglass(680) vs Ironspike Chew Toy(680) has -54 int and -200 less spirit proc. Even 665 Chew Toy is better. Intended?<br>
+PPM vs. fixed % chance. We&#x2019;re avoiding that kind of distinction/direct comparability moving forward to lessen the confusion. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/573988983526436864))<br>
+<br>
+PvE<br>
+Can you add a CD reset mechanic for dummies after you leave combat with them? Would make practicing openers less tedious.<br>
+No immediate plans just yet, but we are considering improvements to dummy fights for the future! Thank you for the suggestion. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/573989414264659968))<br>
+<br>
+PvP<br>
+are you happy with the current state of pvp? I hope ill get an honest answer.<br>
+Happy but not satisfied. We can always do better. (holinka (https://twitter.com/holinka/status/573901052468047872))<br>
+<br>
+Professions<br>
+What happened to Illusion: Holy Infusion? I&apos;m sure it was part of 6.1 PTR but it seems like it&apos;s not part of the live build...<br>
+There was a last-minute complication that prevented us from being able to hotfix it. We&apos;re still working on it, though! (WarcraftDevs (https://twitter.com/WarcraftDevs/status/573986041121542144))<br>
+<br>
+Lore<br>
+Re: The Legendary Stuff - Looking back on all of those &quot;Grom will be the final boss!&quot; tweets fondly (Muffinus (https://twitter.com/Muffinus/status/573906550625959936))<br>
+and who said he isn&apos;t? He is still alive. Has it been officially announced that he isn&apos;t?<br>
+Nope! He still might be! I&apos;m just enjoying all of the new speculation posts (Muffinus (https://twitter.com/Muffinus/status/573944101600522240))<br>
+<br>
+Misc<br>
+Randomness does not equal repeatability. 100% agree. I find randomness to often be an area where designers have more fun than players. (craig_amai (https://twitter.com/craig_amai/status/573283049766453248))<br>
+It&apos;s a great tool, but it&apos;s rarely a solution on its own. I&apos;m as guilty as any on that one. (craig_amai (https://twitter.com/craig_amai/status/573283311872679936))<br>
+So you mean like Guardians/Mages? Or that MS and Crit and procs are a horrible system?<br>
+I&apos;m speaking mostly from a content perspective. I&apos;m not aiming it at combat systems personally. (craig_amai (https://twitter.com/craig_amai/status/573303535686713344))<br>
+This is how I feel about dungeon crawlers. But then, it works for some people. To me obvious randomness = disposable = pointless<br>
+I find a similar response at times. Well-disguised randomness adds intrigue, but obvious randomness can be quickly tedious. (craig_amai (https://twitter.com/craig_amai/status/573302701146030080))<br>
+<br>
+From yesterday: Occupying human thought with mechanics leaves less room to process emotional response. Seemingly simple, but very wise. (craig_amai (https://twitter.com/craig_amai/status/573585512205697024))<br>
+It&apos;s always desirable to keep mechanics and stimuli light, but this touches on why I&apos;m so sensitive about systems/UI distracting from world. (craig_amai (https://twitter.com/craig_amai/status/573586395131867136))<br>
+I think that is one reason the H&amp;F fight is liked. Mechanics straight forward, not too much stimuli. Then you have forge. Chaos<br>
+Yeah, I vastly prefer mechanics that are well represented by the world itself over buffs, arbitrary interactions, etc. (craig_amai (https://twitter.com/craig_amai/status/573616057631420417))<br>
+Not always possible though I suppose. (craig_amai (https://twitter.com/craig_amai/status/573617031678853122))<br>
+<br>
+Negativity rampant on the internet scares me for the sake of children most of all. It&apos;s too easy to acclimate to it as a norm of anonymity. (craig_amai (https://twitter.com/craig_amai/status/573715357615050752))<br>
+Will online culture evolve past a toxic nature naturally, or does negativity in forums and comments need to be more aggressively enforced? (craig_amai (https://twitter.com/craig_amai/status/573715867940167680))<br>
+<br>
+<br>
+Dark Legacy Comics #481 - The North Sea<br>
+DLC #481 (http://www.darklegacycomics.com/481) has been released.<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2015/march/dlc481.jpg (http://www.darklegacycomics.com/481)</div></div>

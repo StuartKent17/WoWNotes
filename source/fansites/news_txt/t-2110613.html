@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2016-11-11, 03:17 PM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Fact or Faction - Mean Streets of Gadgetzan, Faction Themed Card Design Competition (http://www.hearthpwn.com/news/1932-fact-or-faction-mean-streets-of-gadgetzan-faction)<br>
+<br>
+BlizzCon 2016 - World of Warcraft Engineer&apos;s Workshop<br>
+Blizzard had an engineering panel for WoW this year that wasn&apos;t on the stream.<br>
+<br>
+<br>
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/W1y2fdDeSbU?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br>
+<br>
+<br>
+Legion doubled or in some cases on high end machines tripled the draw distance. <br>
+Strand of the Ancients is supposed to start right as the boat gets to the dock, but there were timing issues. The original implementation in Wrath of the Lich King had an invisible NPC on the dock and boat with opposite and hostile factions. The NPCs would come into range of each other when the boat arrived, one would kill the other, and the battleground would start. <br>
+The Garrison building cinematics and other similar ones just used 3D models of the text, so the cinematics aren&apos;t localized at all. They just added subtitles to help with localization. For Legion a system was built to allow show floating 3D text in the world that can be localized. <br>
+The team tries to spend some time dealing with technical debt right after each expansion is completed.<br>
+When WoW initially shipped, most users had a single core CPU and graphics cards didn&apos;t run a lot of pixel shaders. <br>
+When the team wanted to do new character models, they realized that they would triple or quadruple the bone count across the races. The animation system was written back when most players only had a single core CPU and it wasn&apos;t built to handle what they needed to do. The minimum requirements could handle multi-threading now, so they wrote a jobs system to be able to send each model off to a thread to be animated. The team then realized they could animate even more models, so paying off technical debt advanced the capabilities of the engine. In some of the Warlords cinematics you would see hundreds of Orcs running up the steps in the background, which was something the team was able to do thanks to the system changes. <br>
+Invisible Stalkers are invisible units that do something. The engineering team has been relatively small until recently, so a lot of the content built by designers utilizes the invisible stalkers. This can cause server performance issues and make it hard to reproduce bugs with non-deterministic behavior. The team can go back and look at where these are being used and figure out what tools they can build to help designers build content. <br>
+The Al&apos;akir (http://wow.gamepedia.com/Al%27Akir_(tactics)) fight had thousands of invisible stalkers swirling around it. These were used to move the player around the vortex, attaching to the nearest one when you jump in. <br>
+The engineering team reviews new dungeon and raid encounters and one of the things that they look for is how many invisible stalkers were used. It is a warning sign if too many are used, but there are many reasonable situations where they are valid to use.<br>
+Big crowds in a game are hard, as you client needs to know where everyone is and what they are doing. This is why the team limits the size of crowds in game, it helps with server performance, client performance, and bandwidth used. <br>
+The client sends spell casts to the server and assumes it will succeed. Occasionally you will cast a spell, the cooldown will start, and then it says you are actually silenced and stops. Casting animations are another thing that start right away, which is why you end up with glowing hands before casting with high latency. It makes feedback from your actions feel immediate. <br>
+Spells like Frostbolt have a long cast bar, so you can start the animation and UI changes right away when a user casts the spell. On instant cast spells you had to wait for the round trip to the server before updating anything. If you were a melee class you would have noticed that it didn&apos;t feel as responsive. In Legion the melee animation starts right away and the server response is returned before the impact event, so the impact event can be synced with the animation, causing everything to feel better. <br>
+All of your equipment slots, bag slots, and bank slots were hardcoded in the original game. There are hardcoded slots in the code, so if the default backpack was expanded all of the others would have to be shuffled around. There would also need to be a data migration process on all saved characters. It is a bang for the buck question. It is easier just to increase the size of all of your other bags. <br>
+There is no technical limitation preventing characters from having legs under a robe. It can be done for the Nightborne because they have a limited set of animations, so it is easy to animate to avoid the legs clipping through the robe. On player character models the leg geometry can also change, such as when you are wearing the bigger boots. This is a problem that the team would like to solve. <br>
+Right now the client encrypts movies until it is time for them to be released. The team would like to advanced that beyond the file level to specific records within the files. It is a technology that the team would like to pursue and everyone internally agrees that they should do this. <br>
+Solving the problem of Tauren players fitting through doors is difficult. The Tauren has to have a collision box around him to determine if he is running into anything. This determines how he stands on the ground, if he is swimming, and if he can get through a door. In arenas the collision box is normalized so that no race has an advantage with the terrain. Gnomes and Dwarves have a similar issue, as they will start drowning in shallow water where everyone else can stand. <br>
+The 20 stack size for many items is a design choice, there isn&apos;t a technical limitation. <br>
+Chests in personal loot mode allows everyone to loot them at once. Allowing multiple people to loot a chest is actually fairly difficult. This is another example of technical debt. <br>
+There were items that didn&apos;t look like chests but were implemented as chests that caused bottlenecks during the Warlords release. There is now some multi-looting technology used for these type of items now, so the team is constantly working on improving things. <br>
+Whenever there is a feature that is generating a lot of customer tickets it is forwarded to the engineering team right away for them to start investigating. <br>
+Move enforcement code runs on the server to make sure you aren&apos;t moving in a way that should not be possible. The current code gets this right about 99.9% of the time. The rest of the time some issue causes the server to think you moved in a way that isn&apos;t possible and you will be disconnected. Druids had a patch of water in the Order Hall that would cause a disconnect if you were on certain mounts. These are sometimes very difficult to track down. <br>
+Originally when CRZ was implemented, a specific player would always get disconnected going between Elwynn Forest and Stormwind. The team tried to reproduce this by trying many things but was unable to do so. Eventually they copied that character to reproduce it and it turned out to be a movement speed enchant on their boots that was not being correctly applied during a CRZ transition. <br>
+For a while the tooltip would just disappear instantly, but mousing over a node on the minimap would fix it. With Patch 7.0 this issue disappeared. The team has no idea why, but the bug is fixed!<br>
+When reporting a bug, it is helpful to include where you were, what you were doing, your class and race, and as much information as you can that will let the team reproduce what you are doing. This is especially important with crash reports. <br>
+The team talked about the iconic places in the Broken Isles in design meetings and people realized it would be awesome to see all of these places from far away. <br>
+The game world feels better when it feels alive, so zone population is increased or reduced to keep a balance that is fun. <br>
+The way the anchoring system works causes floating point errors all over, so there are lots of textures in the UI that are half of a pixel off. The UI designers manually tweak things in the XML to get it looking crisp again. <br>
+There is a lot of interaction with the addon developer community. They talk to them all of the time. <br>
+Often addons will expose things that the team didn&apos;t realize they wanted until the addon was there. When WoW launched, you had multiple party frames and no raid frames. Raid frames were originally an addon, but now you can&apos;t imagine playing the game without them. <br>
+The spell system involves a lot of deferring messages, which causes race conditions. <br>
+The Brawler&apos;s Guild and Proving Grounds were built all by designers. <br>
+The frequency that the area of interest around your character updates with characters, objects, and NPCs was greatly increased with Legion. <br>
+The Water Strider failing to walk on water has to do with the collision box of the character. The box is a certain percentage below the water so that you don&apos;t look ridiculous when swimming, but jump height is fixed, so you can&apos;t jump high enough to get back out of the water. <br>
+The fights that put part of the raid in a different phase result in one group not being able to see the other as far as combat log data goes. The team tried to just partially phase out the groups so that you could still have full combat logs, but there is usually some kind of last minute issue that prevents this. <br>
+When the team is dealing with movement enforcement bugs, they don&apos;t have access to the state of the server at that time, so they start by looking at the logs. <br>
+When looking at bugs that cause a crash, they can look through the call stack and at the exception to figure out how the game got into that state. <br>
+If there are problems in a certain area, the team will hotfix in logging to a system so that they can have more detailed logs to figure out what is going on. <br>
+When you cast Blink, the server looks at the distance, the destination, and if the player can get to that destination. <br>
+When you cast Roll, you are given an aura that lets you move faster and remove your control. <br>
+Skinning not being shared loot was a known problem before Legion shipped. The ideal solution is that everyone gets a chance to skin the mob, but there were some technical limitations that prevented this in the short term. The team hopes to have this fixed in the future. <br>
+Sometimes addon do things that the team doesn&apos;t want them to do. The team moved the rendering of markers on your map to C code and providing an API for addons to interact with them without being able to get their position. <br>
+The team has many different ways to hotfix the game now. There is a lot of server data that isn&apos;t in the client that has been hotfixable for a long time. Now the team can hotfix data on the server and propagate it to the client, allowing the team to change things like visuals and animations, as well as server and client binary code. <br>
+During this expansion the hotfix system was hotfixed itself. They were deploying so many hotfixes that it broke and they needed to fix it. <br>
+<br>
+<br>
+<br>
+Recent World of Warcraft Account Actions<br>
+We&#x2019;ve recently taken action against thousands of World of Warcraft accounts that were found to be using third-party programs that automate gameplay, known as &#x201C;bots.&#x201D; <br>
+<br>
+We&#x2019;re committed to providing an equal and fair playing field for everyone in World of Warcraft, and will continue to take action against those found in violation of our Terms of Use. Cheating of any form will not be tolerated.<br>
+<br>
+<br>
+Quick Join Toasts<br>
+I appreciate the feedback on this so far - I&apos;ve noted down the discussions from this thread, and others similar to it that have popped up since 7.1, and I plan to pass all of the feedback along to the development team.<br>
+<br>
+I understand the pop-up &quot;toast&quot; and sound notification are coming across as annoying, and I will pass that along as the main issue here. I don&apos;t think it was intended for this feature to come off as as an &quot;annoyance&quot; to anyone, but rather as an easy and noticeable reminder to help players see that their friends are queued.<br>
+<br>
+I&apos;ll share any updates I hear on this. Until then, thanks for your patience.<br>
+<br>
+<br>
+Addon - Hide Quick Join<br>
+If you want to hide the new Quick Join toasts, give the Hide Quick Join (https://mods.curse.com/addons/wow/hide-quick-join) addon a try. You can toggle them on and off with the &quot;/qj&quot; command. <br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2016/november/qjHide.png (https://mods.curse.com/addons/wow/hide-quick-join) <br>
+<br>
+<br>
+Post-BlizzCon Q&amp;A Time Change<br>
+In respect for Remembrance Day, tomorrow&#x2019;s Q&amp;A will be delayed by 15 minutes.<br>
+<br>
+<br>
+Recent World of Warcraft Account Actions<br>
+We&#x2019;ve recently taken action against thousands of World of Warcraft accounts that were found to be using third-party programs that automate gameplay, known as &#x201C;bots.&#x201D; <br>
+<br>
+We&#x2019;re committed to providing an equal and fair playing field for everyone in World of Warcraft, and will continue to take action against those found in violation of our Terms of Use. Cheating of any form will not be tolerated.<br>
+<br>
+<br>
+Blue Tweets<br>
+List your PvP Brawl idea here: (holinka (https://twitter.com/holinka/status/794669491200225280))</div></div>

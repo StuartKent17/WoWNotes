@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2016-05-23, 03:08 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Grotesque Hotfix Live, Printable Kanai&apos;s Cube Checklist &amp; Other Tools (http://www.diablofans.com/news/48734-grotesque-hotfix-live-printable-kanais-cube)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Hearthstone Championship Tour: Americas - Spring Prelims Day 1 - Stream &amp; Decklists (http://www.hearthpwn.com/news/1465-hearthstone-championship-tour-americas-spring)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Blue Posts Round-Up - More Batlegrounds, Unranked Draft &amp; More, Widowmaker Nova (http://www.heroesnexus.com/news/1704-blue-posts-round-up-more-batlegrounds-unranked)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Open Beta Stats Infographic, Pharah Comic now Available, Overwatch on Conan, Free BattleTag Name Change Now Live! (http://www.overpwn.com/news/179-open-beta-stats-infographic-pharah-comic-now)<br>
+<br>
+Armory Stats - Proving Grounds<br>
+With the news that Proving Grounds will no longer be a requirement for Heroic Dungeons in Legion, we are taking one last look at the completion rate in Warlords. The data used today is a sample of characters from 1.9 million accounts. We also did this earlier in Warlords of Draenor, which you can see here (http://www.mmo-champion.com/content/4794-Armory-Stats-Proving-Grounds-Blue-Posts-Blue-Tweets-Wildstar-Update). <br>
+<br>
+You can see scoreboards on WoWProgress for DPS (http://www.wowprogress.com/char_statistics/field.pg_damage), Healing (http://www.wowprogress.com/char_statistics/field.pg_healer), and Tank (http://www.wowprogress.com/char_statistics/field.pg_tank) endless.<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart; <br>
+<br>
+$(document).ready(function() {<br>
+Highcharts.setOptions({<br>
+colors: [ &apos;#8C7853&apos;, &apos;#545454&apos;, &apos;#DBDB70&apos;, &apos;#55C949&apos;, &apos;#6B8E23&apos;, &apos;#426F42&apos;]<br>
+});<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;provingGroundsAbs&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [ &apos;Bronze&apos;, &apos;Silver&apos;, &apos;Gold&apos;, &apos;Endless 10&apos;, &apos;Endless 20&apos;, &apos;Endless 30&apos;],<br>
+labels: {<br>
+maxStaggerLines: 0<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: true,<br>
+},<br>
+<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Percent&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false,<br>
+colorByPoint: true<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function() {<br>
+return &apos;&lt;b&gt;&apos; + this.series.name + &apos;&lt;/b&gt; - &apos;+ this.y +&apos;%&apos;;<br>
+}<br>
+},<br>
+title: {<br>
+text: &apos;Percentage of Players that Completed Proving Grounds Achievements&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+shared: true,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [{<br>
+name: &apos;At least one role&apos;,<br>
+data: [95.1, 86.9, 21.3, 5.01, 2.85, 2.02],<br>
+<br>
+}, {<br>
+name: &apos;At least two roles&apos;,<br>
+data: [58.4, 50.5, 4.97, 1.08, 0.67, 0.52]<br>
+<br>
+}, {<br>
+name: &apos;At least three roles&apos;,<br>
+data: [26.3, 21.8, 1.23, 0.36, 0.26, 0.22]<br>
+<br>
+}<br>
+]<br>
+<br>
+});<br>
+<br>
+<br>
+<br>
+Highcharts.setOptions({<br>
+colors: []<br>
+});<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;provingGroundsSingle&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [&apos;Bronze&apos;, &apos;Silver&apos;, &apos;Gold&apos;, &apos;Endless 10&apos;, &apos;Endless 20&apos;, &apos;Endless 30&apos;],<br>
+labels: {<br>
+maxStaggerLines: 0<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: true,<br>
+},<br>
+<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Percent&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false,<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function () {<br>
+return &apos;&lt;b&gt;&apos; + this.series.name + &apos;&lt;/b&gt; - &apos; + this.y + &apos;%&apos;;<br>
+}<br>
+},<br>
+title: {<br>
+text: &apos;Percentage of Players that Completed Proving Grounds Achievements&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+shared: true,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [{<br>
+name: &apos;DPS&apos;,<br>
+data: [92.3, 82.4, 14.8, 2.48, 1.35, 0.99],<br>
+color: &apos;#851919&apos;<br>
+<br>
+}, {<br>
+name: &apos;Healer&apos;,<br>
+data: [44.1, 40.4, 8.16, 2.38, 1.28, 0.84],<br>
+color: &apos;#4cad52&apos;<br>
+<br>
+}, {<br>
+name: &apos;Tank&apos;,<br>
+data: [43.5, 36.3, 4.5, 1.6, 1.14, 0.92],<br>
+color: &apos;#183069&apos;<br>
+<br>
+}]<br>
+<br>
+});<br>
+<br>
+});<br>
+&lt;/script&gt; <br>
+&lt;div id=&quot;provingGroundsAbs&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;&lt;br&gt;<br>
+<br>
+<br>
+&lt;div id=&quot;provingGroundsSingle&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+<br>
+<br>
+<br>
+Robert Kazinsky Interview Questions<br>
+We will have the chance to ask Robert Kazinsky (https://www.youtube.com/watch?v=X2FXuFAXWP4) some questions soon and wanted to get in questions from the community as well. Feel free to submit questions below!<br>
+<br>
+<br>
+&lt;iframe frameborder=&quot;0&quot; style=&quot;overflow:hidden&quot; width=&quot;900px&quot; height=&quot;250px&quot; scrolling=&quot;auto&quot; allowtransparency=&quot;true&quot; src=&quot;//chaud.polldaddy.com/s/mmockazinskyinterview?iframe=1&quot;&gt;&lt;a href=&quot;//chaud.polldaddy.com/s/mmockazinskyinterview&quot;&gt;View Survey&lt;/a&gt;&lt;/iframe&gt;<br>
+<br>
+<br>
+Blue Tweets<br>
+Classes<br>
+will gnome hunter be released before or after legions launch?<br>
+Gnome Hunters will be available on day-one of the #Legion pre-expansion patch. https://t.co/uXUNZy12km (WarcraftDevs (https://twitter.com/WarcraftDevs/status/732348739734511617))<br>
+<br>
+Items<br>
+With Legion having alot of legendaries will we be able to transmog them. If not, can we atleast hide Helm/Cloak legendaries?<br>
+You will be able to transmog #Legion legendaries to other appearances and vice versa. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/732340400795459585))<br>
+<br>
+Artifact Weapons<br>
+artifact trait cost seems to double after 12 ranks, ~575 to 1260 for rank 13? intended?<br>
+Yes; after 12 traits you are transitioning past the level-up experience. Around that time, you will accrue (1/2) https://t.co/OsNZDGDyv3 (WarcraftDevs (https://twitter.com/WarcraftDevs/status/732341043799035904))<br>
+Artifact Knowledge which will increase the rate at which you gain Artifact Power overall. (2/2) (WarcraftDevs (https://twitter.com/WarcraftDevs/status/732341270438252544))<br>
+<br>
+<br>
+Ghostcrawler Tweets<br>
+Ghostcrawler still occasionally talks about WoW. Remember that he no longer works for or speaks for Blizzard.<br>
+There is a pervasive myth that making content hard will induce players to rise to the occasion. We find the opposite. (2013) (OccupyGStreet (https://twitter.com/OccupyGStreet/status/340939865858396162))<br>
+Is it really a myth though? Maybe those rising aren&apos;t complaining, a silent majority? This btw is why people play Vanilla.<br>
+Our data suggested it was a myth. Note that &quot;not everyone should be able to do this&quot; is a fine answer too. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724602889646141440))<br>
+How do you feel about it now? Was the data right? Did the myth have some truth?<br>
+I think &quot;hard&quot; is just a difference audience. You have to choose. But you can&apos;t make hard stuff intended for easy players. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724605165777473537))<br>
+I love Dark Souls. But that&apos;s because it is targeted at gamers like me, not ALL gamers. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724605311500210177))<br>
+hard is what people want. It&apos;s human psychological. You feel more accomplished when finishing something hard.<br>
+*If* you finish. If you quit because it&apos;s too hard or you don&apos;t want hard then the developer lost a player. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724660389124825088))<br>
+if you don&apos;t want hard then why play. We are already wasting time on a game, why not make it rewarding?<br>
+There are a lot of easy games that are popular. I think that&apos;s fine. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724703285542703104))<br>
+My caution for developers is decide who your audience is and don&apos;t try to be all things to all players. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724703361291833344))<br>
+<br>
+looking at that. I am wondering was cata bad move? Players seems more acceptance to this model rather than WOD simple pruning<br>
+It depends if your intended audience is engaged players who want more or returning / lapsed players who might be overwhelmed. (OccupyGStreet (https://twitter.com/OccupyGStreet/status/724604383682424837))<br>
+<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Overwatch Short - Solider 76: Hero<br>
+The final animated short for this season has been released! It tells some more of Solider 76&apos;s (http://overwatch.gamepedia.com/Soldier:_76) story.<br>
+<br>
+<br>
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/cPRRupAM4DI?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br>
+<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2015/february/overwatchmini.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Overwatch - Will You Play?<br>
+Overwatch is almost here! Now that everyone has had a chance to try the game, will you be playing at launch?<br>
+<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/9425327.js&quot;&gt;&lt;/script&gt;&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/9425327/&quot;&gt;Will you be playing Overwatch?&lt;/a&gt;&lt;/noscript&gt;<br>
+<br>
+<br>
+Making of Warcraft In-Game Trailer<br>
+A video has been released that shows a little bit of the editing process to make the fan created Warcraft trailer that used in game assets (http://www.mmo-champion.com/content/5685-Warcraft-Movie-Trailer-in-WoW-Movie-Music-Blue-Tweets-Build-of-the-Month-DLC-536). <br>
+<br>
+<br>
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/df4zAQLm8OE?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</div></div>

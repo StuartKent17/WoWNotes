@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2011-02-14, 06:24 AM</div></div><div class="posttext">Home/World latency in Patch 4.0.6<br>
+Patch 4.0.6 changed how latency is displayed to the client, we now have a &quot;Home&quot; latency and a &quot;World&quot; latency, BrianI on the Tech Support forums posted a long explanation of what it means exactly and how latency works in WoW. <br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2011/february/ping406.jpg (http://media.mmo-champion.com/images/news/2011/february/ping406.jpg)<br>
+<br>
+We have been seeing a lot of confusion regarding some of our recent changes to the User Interface, specifically in regard to the new in-game latency meters. With 4.0.6, we have split the two separate connections the client forms to our game servers into two different ratings, labeled &apos;Home&apos; and &apos;World&apos;.<br>
+<br>
+The speculation regarding what these ratings mean has been very interesting and some of the guesses as to what the numbers actually refer to have been pretty imaginative. Some have speculated that &apos;Home&apos; referred to your personal latency and &apos;World&apos; was Blizzard&apos;s latency. This is incorrect.<br>
+<br>
+In essence, &apos;Home&apos; refers to your connection to your realm server. This connection sends chat data, auction house stuff, guild chat and info, some addon data, and various other data. It is a pretty slim connection in terms of bandwidth requirements.<br>
+<br>
+&apos;World&apos; is a reference to the connection to our servers that transmits all the other data... combat, data from the people around you (specs, gear, enchants, etc.), NPCs, mobs, casting, professions, etc. Going into a highly populated zone (like a capital city) will drastically increase the amount of data being sent over this connection and will raise the reported latency.<br>
+<br>
+Prior to 4.0.6, the in-game latency monitor only showed &apos;World&apos; latency, which caused a lot of confusion for people who had no lag while chatting, but couldn&apos;t cast or interact with NPCs and ended up getting kicked offline. We hoped that including the latency meters for both connections would assist in clarifying this for everyone.<br>
+<br>
+As is probably obvious based upon this information, the two connections are not used equally. There is a much larger amount of data being sent over the World connection, which is a good reason you may see disparities between the two times. If there is a large chunk of data &apos;queued&apos; up on the server and waiting to be sent to your client, that &apos;ping&apos; to the server is going to have to wait its turn in line, and the actual number returned will be much higher than the &apos;Home&apos; connection.<br>
+<br>
+&quot;Well, great,&quot; you may say, &quot;but what does that mean to me?!&quot;<br>
+<br>
+Not much, maybe, but I wanted to focus on how local (or network) factors can (and will!) affect these numbers.<br>
+<br>
+Here are the most common causes of high pings/latency (on both Home and World):<br>
+<br>
+<br>
+1) Wireless<br>
+2) Packet loss<br>
+3) Almost-but-not-quite-broadband*<br>
+4) Addons (yes, those wonderful UI modifications)<br>
+5) Firewalls (some firewalls do interesting things to latency... try playing without it to see if it helps!)<br>
+5) Mis-configured or defective home routers (please temporarily bypass before anything else)<br>
+6) Quality of Service and Traffic Management Systems performing packet queuing of some sort.<br>
+7) Net link saturation (not necessarily your ISP, but somewhere between you and Blizzard)<br>
+<br>
+<br>
+*As of July 2010, the &apos;official&apos; definition of Broadband Internet (per the FCC) is &apos;4Mbps downstream and 1Mbps upstream&apos;. Anything lower than this is not &apos;officially&apos; broadband.<br>
+<br>
+Lowering video settings (especially view distance) has the added benefit of lowering the amount of data your connection is asked to convey, as well, so even that can be a valid troubleshooting step.<br>
+<br>
+If your &apos;Home&apos; connection latency is low and your &apos;World&apos; connection latency is high, that frequently indicates that there is some sort of QoS congestion controls being applied to your internet connection, at either the micro (LAN) or macro (WAN) level. A common symptom would be that you would be able to chat, but not to cast.<br>
+<br>
+If both connections report high latency, that means your connection to our servers, in general, is almost completely saturated, or &apos;overflowing&apos;. Without making any claims where that saturation lies, that seems to have been the most common case to date.<br>
+<br>
+Please refer to our support pages (such as http://us.blizzard.com/support/article.xml?locale=en_US&amp;articleId=21018&amp;parentCategoryId&amp;pageNumber=1&amp;categoryId=2329) or contact a technical support representative directly for further information and troubleshooting. <br>
+<br>
+<br>
+Patch 4.0.6 Latency Changes<br>
+BrianI also explained why some people saw their latency improve dramatically in 4.0.6, and how they had to revert the changes for the moment to keep everyone happy. The good news is: tons of improvements are coming!<br>
+With 4.0.6 we made a couple changes to our instance servers in an attempt to lower latency. Unfortunately, with those changes came increased bandwidth requirements. Due to the nature of the feedback we received, we have temporarily reverted those changes, as of around ~6pm PST last night. Are you still experiencing issues?<br>
+<br>
+Could you go into a little more detail on this? You said the change done with 4.0.6 caused a bandwidth problem but was said problem on my end, your end, or somewhere in between? If this change did cause a problem on my end how can I prepare for when it has been reimplemented?<br>
+<br>
+In a nutshell? That&apos;s a bit hard to explain clearly, but I&apos;ll try. Some people have an ISP whose peering link to their tier 1 backbone provider is oversaturated. Some people have ISPs that are throttling their connection in some way. Some people are on wireless connections, or are using old routers that are causing issues. Some people simply have a misconfigured or malfunctioning LAN device. Some people just have lower bandwidth connections. I&#x2019;ll explain further below.<br>
+<br>
+Unequivocally, the bandwidth problems were not internal to our network. We never came close to capacity. The actual total peak transfer data rate was around 1/5th of our maximum capacity.<br>
+<br>
+When we performed maintenance the day we released 4.0.6 we made a couple modifications to our instance (BG/arena/dungeon/raid) servers. One of these changes had the effect of lowering latency for a very high percentage of our users... around 99% or so. The numbers were pretty staggering, to be honest. My personal &#x2018;instance server&#x2019; experience was a drop from 120-150ms average ping down to 12ms. No, really, 12 ms. From my home residential connection. It was amazing. Raiding was glorious. The vast majority of our users saw similar improvements.<br>
+<br>
+Then again, I have a very stable high bandwidth cable connection with a well designed internal LAN, and I had no problems handling the requisite increases in bandwidth. You see, part of that reason the latency went down is that a lot more packets were being sent. In some cases, the bandwidth almost tripled. For those who don&apos;t (or can&apos;t) meet all of our minimum system requirements (e.g. broadband internet*) or who are having issues with their connection or are on a flaky wireless connection... things weren&apos;t so pretty. We ended up rolling back that change until a later date when we will be able to selectively turn on that performance enhancement on a &#x2018;per client&#x2019; basis. Unfortunately, that will require another patch, so we&#x2019;ll just have to wait a bit.<br>
+<br>
+Yes, we really did roll back that change for something that negatively affected less than 1% of total users. We really do care about providing the best environment we can. We do things like this frequently.<br>
+<br>
+We do understand that some people do not have the options available to them that others do. We know that people are playing on 6 to 8 year old computers (in some cases, even older) with a flaky 3G or satellite connection, even though this does not meet our minimum system requirements. Not everyone can afford newer or better and not all areas have a faster connection available, currently. We do see people connecting from all over the world from backbones that are throttling their connections due to the cost of transmitting data over transoceanic cables. We see all these things&#x2026; and we feel some of the same frustrations these people do when trying to have a smooth gaming experience. It is actually difficult to be unable to help someone due to situations outside your control.<br>
+<br>
+To be honest, World of Warcraft was not designed for these types of setups. That is why we are very clear with our &#x2018;minimum system requirements&#x2019; and what, exactly, is supported. Will we still try to help you connect and do our best to help you out, anyway? Absolutely. We just can&#x2019;t make any promises or guarantees, as much as we would like to. The actual bandwidth requirements are not that high. In ordinary play, WoW shouldn&#x2019;t end up taking more than a few hundred megabytes a month. What is important, however, is the stability of the connection and width of the &#x2018;pipe&#x2019;, due to the bursts of data that need to be transmitted at times. While total bandwidth may not be high, there will be short periods where a ton of data is being sent simultaneously (like, you know, raid boss fights or even when first logging on to a server when your toon is in a capital city).<br>
+<br>
+We may wish it were otherwise, but if we tried to send and receive less data we wouldn&#x2019;t be able to provide the immersive, complex, top-notch gaming experience (most people) have come to know, love, and expect from Blizzard Entertainment. I wish there were some way to do both, but there really isn&#x2019;t, at least with today&#x2019;s technologies. Either we can provide an intense environment that over 98% of people who play WoW have no problems with, or we can lower our standards to unacceptable levels and try to get that extra ~2% in, as well.<br>
+<br>
+Anyway, I apologize for the lengthy post, and I&#x2019;m sure this will be lost in the thread, but I&#x2019;ve been meaning to post some thoughts on this for awhile. I hope you&#x2019;ve enjoyed the read&#x2026; it was fun to type, at least. :)<br>
+<br>
+<br>
+Blue Posts<br>
+Getting a GM Survey without a ticket response<br>
+This is a known issue and from what I understand, has to do with the limitations of the in-game mail system. We are, of course, working with our developers to find a solution. &gt;^.^&lt;<br>
+<br>
+In the mean time, I do apologize for any confusion or inconvenience this may cause. We are definitely aware of the frustration an individual might feel if they see their petition disappear and receive a survey with seemingly no response. Remember that Game Masters will respond to each and every petition submitted, and be sure to always check your in-game mail before filling out a survey. (Source (http://blue.mmo-champion.com/topic/158053/getting-gm-survey-without-a-ticket-response))<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin (Forums (http://www.mmo-champion.com/forums/273-Paladin) / Cataclysm Talent Calculator (http://www.wowtal.com/#k=..paladin) / Skills/Talents (http://www.mmo-champion.com/content/1670-Paladin-Cataclysm))<br>
+Light of Dawn/Beacon of Light Bugfix<br>
+The hotfix note correctly describes what an attempt to fix a bug ended up changing, which was not actually the original intent. We&apos;re reverting the hotfix until we can fix the bug without causing Light of Dawn to no longer trigger Beacon. (Source (http://blue.mmo-champion.com/topic/158065/yet-another-pally-nerf))<br>
+<br>
+<br>
+The MMO Report<br>
+Let&apos;s start the week with a nice and warm MMO Report (http://www.g4tv.com/thefeed/blog/tag/3321/The-MMO-Report.html). <br>
+<br>
+<br>
+&lt;object classId=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; width=&quot;480&quot; height=&quot;418&quot; id=&quot;VideoPlayerLg51202&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.g4tv.com/lv3/51202&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed src=&quot;http://www.g4tv.com/lv3/51202&quot; type=&quot;application/x-shockwave-flash&quot; name=&quot;VideoPlayer&quot; width=&quot;480&quot; height=&quot;382&quot; allowScriptAccess=&quot;always&quot; allowFullScreen=&quot;true&quot; /&gt;&lt;/object&gt;<br>
+<br>
+<br>
+Comics<br>
+Dark Legacy Comics #275 (http://www.darklegacycomics.com/275.html) and Teh Gladiators #210 + #211 (http://www.tehgladiators.com/?p=210) are now available! <br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2011/february/dl275.jpg (http://www.darklegacycomics.com/275.html) http://media.mmo-champion.com/images/news/2011/february/tehglad210.jpg (http://www.tehgladiators.com/?p=210)</div></div>

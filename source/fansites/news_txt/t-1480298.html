@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-03-20, 07:41 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; RoS Fan Art Contest Semi-Finalists Revealed, The Big CE Signing, &quot;The End of Her Journey&quot; Added to the Guide, Lag Info Needed (http://www.diablofans.com/news/47985-ros-fan-art-contest-semi-finalists-revealed-the)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; NESL Tournament Decklists, Deck Spotlight: Dreadmaker&apos;s Spellsword Rogue, Reconnect Feature (http://www.hearthpwn.com/news/395-nesl-tournament-decklists-deck-spotlight)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Heroes Developer Q&amp;A #4 Recap - Talent System, New Talent UI (http://www.heroesnexus.com/news/1061-heroes-developer-q-a-4-recap-talent-system-new)<br>
+<br>
+Armory Stats - Level 90 Boosted Character Class Representation<br>
+Today we are taking a look at what classes are being boosted to level 90. Unfortunately the only way we can tell if a character has been boosted to level 90 is when they are still wearing some of the starter gear. This is still the case for ~106,000 level 90 characters in our database, allowing us to see a snapshot of what classes were boosted to level 90.<br>
+<br>
+We have included data for all level 90 boosted characters, all characters, all item level 510+ characters, and all characters that have killed Heroic Dark Shaman (as of late January (http://www.mmo-champion.com/content/3711-Armory-Stats-Heroic-Siege-of-Orgrimmar-Class-Representation-Blue-Tweets-Fan-Art)). You can toggle on and off the data by clicking on the category in the legend. <br>
+<br>
+<br>
+&lt;div id=&quot;boostedClasses&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&gt; Don&apos;t see a chart? Enable javascript! &lt;/div&gt;<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart;<br>
+$(document).ready(function() {<br>
+Highcharts.setOptions({<br>
+colors: [ &apos;#7A7A7A&apos;, &apos;#7A7A7A&apos;, &apos;#7A7A7A&apos;, &apos;#7A7A7A&apos;, &apos;#6B8E23&apos;, &apos;#426F42&apos;]<br>
+});<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;boostedClasses&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [&apos;Death Knight&apos;,&apos;Druid&apos;,&apos;Hunter&apos;,&apos;Mage&apos;,&apos;Monk&apos;,&apos;Paladin&apos;,&apos;Priest&apos;,&apos;Rogue&apos;,&apos;Shaman&apos;,&apos;Warlock&apos;,&apos;Warr ior&apos;],<br>
+labels: {<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: false,<br>
+<br>
+},<br>
+<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Percent of Total&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+},<br>
+max: 15<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function() {<br>
+return this.series.name + &apos;&lt;br /&gt;&lt;b&gt;&apos; + this.point.name + &apos;&lt;/b&gt; - &apos;+ this.y +&apos;%&apos; ;<br>
+}<br>
+},<br>
+<br>
+title: {<br>
+text: &apos;Level 90 Boosted Character Class Representation&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+legend: {<br>
+enabled: true,<br>
+},<br>
+<br>
+series: [<br>
+{<br>
+data: [{y: 5.69, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 10.6, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 9.97, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 9.31, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 9.53, color: &apos;#00c77b&apos;, name:&apos;Monk&apos;},{y: 7.28, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 7.61, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 8.09, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 11.2, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 12.24, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 8.47, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}]<br>
+,<br>
+name: &apos;Boosted Characters&apos;<br>
+},<br>
+{<br>
+data: [{y: 10.29, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 9.97, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 11.39, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 8.94, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 6.37, color: &apos;#00c77b&apos;, name:&apos;Monk&apos;},{y: 10.82, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 9.30, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 6.84, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 8.62, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 8.07, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 9.38, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}]<br>
+,<br>
+name: &apos;All Characters&apos;<br>
+},<br>
+{<br>
+data: [{y: 9.71, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 9.5, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 12, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 8.43, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 6.39, color: &apos;#00c77b&apos;, name:&apos;Monk&apos;},{y: 10.36, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 9.54, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 6.04, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 9.4, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 8.81, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 9.81, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}]<br>
+,<br>
+name: &apos;All 510+ Characters&apos;<br>
+},<br>
+{<br>
+data: [{y: 7.3, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 12.6, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 8.8, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 7.8, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 6.6, color: &apos;#00c77b&apos;, name:&apos;Monk&apos;},{y: 11.8, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 11.5, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 5.8, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 11.5, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 9.1, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 7.2, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}]<br>
+,<br>
+name: &apos;Heroic Dark Shaman&apos;<br>
+}<br>
+]<br>
+<br>
+});<br>
+<br>
+<br>
+});<br>
+&lt;/script&gt; <br>
+Patch 5.4.7 Hotfixes - March 18<br>
+Character Boost<br>
+<br>
+Boosted characters now start in the Shrine of Two Moons for the Horde and Shrine of the Seven Stars for the Alliance.<br>
+Resolved a number of questing and phasing issues for boosted characters.<br>
+<br>
+<br>
+Classes<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/irogues.gif Rogue (Forums (http://www.mmo-champion.com/forums/275-Rogue) / Skills (http://www.wowdb.com/spells/class-abilities/rogue) / WoD Talent Calculator (http://www.wowdb.com/talent-calculator-wod#Q))<br>
+<br>
+Talents<br>
+<br>
+Resolved an issue where Vanish modified by Glyph of Vanish was incorrectly causing the Subterfuge effect to trigger twice. Vanish will now cancel its effect when the duration of Subterfuge expires.<br>
+<br>
+<br>
+<br>
+<br>
+Raids, Dungeons, and Scenarios<br>
+<br>
+Siege of Orgrimmar<br>
+<br>
+Cross-realm raid groups have been enabled for Siege of Orgrimmar on both Normal and Heroic difficulty.<br>
+<br>
+<br>
+<br>
+Battlegrounds and Arenas<br>
+<br>
+Resolved an issue where Monks were unable to use Roll, Chi Torpedo, or Flying Serpent Kick while carrying the flag.<br>
+<br>
+<br>
+Isle of Thunder<br>
+<br>
+Resolved an issue where base camps for the Kirin Tor Offensive, Sunreaver Onslaught, and other areas on the isle may incorrectly revert to an earlier progression stage.<br>
+<br>
+<br>
+<br>
+Warlords of Draenor PvP<br>
+There&apos;s a ton of awesome PvP-related stuff happening in Warlords. Just off the top of my head:<br>
+<br>
+CC Disarmament: there&apos;s a lot fewer CC spells, especially instant and auto cast CCs, and more shared DRs among the ones that remain. Health and scaling rebalance: means little to no Base Resilience or Battle Fatigue are needed, and classes that aren&apos;t as reliant on gear to perform. Also does wonders for PvP class balance. Ashran: our new open world PvP zone, which we&apos;re not quite ready to share details on yet (but what I&apos;ve seen so far looks awesome!) Skirmishes: unrated Arenas that can be queued for either solo or in a group. Spectator invites &amp; Tournament gear: additional tools to allow tournament organizers to run high-quality tournaments without needing direct intervention from Blizzard. Our new built-in Group Finder: much easier way to find party members for rated BGs or Arenas.<br>
+<br>
+And that&apos;s just from the stuff we&apos;ve already talked about. There&apos;s more to come as we continue development.<br>
+<br>
+I know healer scaling was mentioned, but what about damage scaling? It has just gotten absurd how quickly damage scaled in MOP - we went from doing 60k dps to 400k+, which is why Battle Fatigue and PVP Resilience had to be set so high in the first place.<br>
+<br>
+You need to hit the root of the problem NOW while you are doing the item squish - if you wait until after WOD then it will be too late and you&apos;ll have to do an item squish again for the next expansion.<br>
+So, there&apos;s actually a lot going on there:<br>
+<br>
+Currently, in Mists, level 90 characters have a relatively high amount of base health, and a relatively low amount of base damage or healing on their abilities. As a result, your health from Stamina doesn&apos;t increase as quickly as your damage or healing from Attack or Spell Power. To use some made up numbers for perspective, your gear might account for 80-90% of your damage, but only 40-50% of your health. That&apos;s why, as the quality of your gear increases by hundreds of item levels over the course of an expansion, we see such a high swing in damage output compared to health pools.<br>
+<br>
+For Warlords, we&apos;re simplifying that by making health and spell effectiveness scale a lot more linearly. Base health is being lowered dramatically (and the effectiveness of Stamina increased) to the point that as damage or healing goes up, health pools go up alongside them. That lets us ensure that PvP gameplay at low gear vs high gear feels relatively similar.<br>
+<br>
+On top of that, we&apos;re increasing health pools in general -- they&apos;ll be much larger in comparison to the damage players are able to deal to each other than they are today. Resilience and Battle Fatigue were added because without them, an attack or heal would account for massive chunks of a player&apos;s health bar. With higher health, that same spell doesn&apos;t have as big of an impact.<br>
+<br>
+(It&apos;s worth noting that all of this is after the item squish, so it&apos;s all relative. The actual numbers, including health pools, will end up much smaller compared to how things are today.)<br>
+<br>
+<br>
+Blue Tweets<br>
+Classes<br>
+http://static.mmo-champion.com/mmoc/images/icons/ipaladins.gif Paladin (Forums (http://www.mmo-champion.com/forums/273-Paladin) / Skills (http://www.wowdb.com/spells/class-abilities/paladin) / WoD Talent Calculator (http://www.wowdb.com/talent-calculator-wod#I))<br>
+50% Lay on Hands?<br>
+We&apos;re actually planning to let that one stay at 100%, which is effectively a large buff. (Celestalon (https://twitter.com/Celestalon/status/442131967761330176))<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/ipriests.gif Priest (Forums (http://www.mmo-champion.com/forums/274-Priest) / Skills (http://www.wowdb.com/spells/class-abilities/priest) / WoD Talent Calculator (http://www.wowdb.com/talent-calculator-wod#U))<br>
+can you remove shadow orbs?<br>
+Virtually zero chance of us removing Shadow Orbs. (Celestalon (https://twitter.com/Celestalon/status/441391214265245696))<br>
+<br>
+SInce absorbs are going to be so limited is Disc going to have more direct heal throughput?<br>
+Yes, we&apos;ll make sure that they can still perform well. (Celestalon (https://twitter.com/Celestalon/status/442094889161879552))<br>
+<br>
+Why can&apos;t we have instant as disc/holy? Seems slightly unfair.<br>
+Because we want to make healers less mobile. Good for both PvE and PvP. Encounters will demand less mobile healing. (Celestalon (https://twitter.com/Celestalon/status/442119433838817280))<br>
+<br>
+Will cascade, divine star and halo still be instant for spriests, or will they need to be casted as well?<br>
+Yes, they&apos;re still instant for Shadow. (Celestalon (https://twitter.com/Celestalon/status/442240523357548544))<br>
+<br>
+still want to know what happens to disc barrier. the barrier forces me go disc, not lack of holy hps.<br>
+No planned changes to PW:B, but if encounters do less raidwide burst damage then PW:B is inherently less essential. (WatcherDev (https://twitter.com/WatcherDev/status/442371315215777792))<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/ishamans.gif Shaman (Forums (http://www.mmo-champion.com/forums/276-Shaman) / Skills (http://www.wowdb.com/spells/class-abilities/shaman) / WoD Talent Calculator (http://www.wowdb.com/talent-calculator-wod#c))<br>
+Seeing a big jump in Resto Shaman representation despite so few balance changes this season. This should be interesting to watch unfold. (holinka (https://twitter.com/holinka/status/441661564530089984))<br>
+translation resto shammy is about to get nerfed<br>
+Just wanted the community to go on this journey with me where representation changes profoundly despite minimal class changes. (holinka (https://twitter.com/holinka/status/441712493379858432))<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/iwarlocks.gif Warlock (Forums (http://www.mmo-champion.com/forums/277-Warlock) / Skills (http://www.wowdb.com/spells/class-abilities/warlock) / WoD Talent Calculator (http://www.wowdb.com/talent-calculator-wod#k))<br>
+Warriors getting a talent turning Prot into DPS spec. Any chance Warlocks could get a talent changing Demonology into tank spec?<br>
+Not right now. Turning Prot into DPS is trivial compared to turning Demonology into Tank. (Celestalon (https://twitter.com/Celestalon/status/442121582647853056))<br>
+<br>
+http://static.mmo-champion.com/mmoc/images/icons/iwarriors.gif Warrior (Forums (http://www.mmo-champion.com/forums/278-Warrior) / Skills (http://www.wowdb.com/spells/class-abilities/warrior) / WoD Talent Calculator (http://www.wowdb.com/talent-calculator-wod#E))<br>
+But is warbringer still a 20s cooldown for a single charge with a 1.5s stun? Seems like a high risk gambit for a chance to nix gate<br>
+Sounds like a tough choice you&apos;ll have to make (holinka (https://twitter.com/holinka/status/439506306789949440))<br>
+<br>
+Has there been any info about how you plan to improve haste for warriors yet?<br>
+Not yet. I can assure you though, haste will be a very good stat for you. (Celestalon (https://twitter.com/Celestalon/status/442163281101197313))<br>
+Will it benefit tanks like prot pallies<br>
+Haste will be a very good stat for *all* Warriors. (Celestalon (https://twitter.com/Celestalon/status/442166570219892736))<br>
+Please let it be more than just more rage which would result in more HS spamming.<br>
+It&apos;s more than just rage. (Celestalon (https://twitter.com/Celestalon/status/442170060283461632))<br>
+<br>
+Will Divine Shield be undispellable in WoD? Shattering Throw seems to be removed, what about Mass Dispel?<br>
+Shattering Throw is not removed. (Celestalon (https://twitter.com/Celestalon/status/442245194327420928))<br>
+<br>
+Art<br>
+Any chance to be able to toggle weapon enchants glow on/off (like helm/cloak) in WoD?<br>
+Doubtful for WoD unless as totally different enchants. Enchant visuals effects &amp; control of does get discussed though. (Dave_Maldo (https://twitter.com/Dave_Maldo/status/440583774980411392))<br>
+<br>
+Character / Items<br>
+The Heirloom Garrosh weapon. will the heroic version be as good as flex one while leveling?<br>
+They&apos;ll converge at 100, but a higher-difficulty one will be superior while leveling. (WatcherDev (https://twitter.com/WatcherDev/status/442312472746135552))<br>
+<br>
+Warlords of Draenor Flying<br>
+without wasting 10-30 minutes of your time getting there and back to what you were doing.<br>
+I&apos;ve been trying to say this, but if it takes you 10-30 min to get from one part of Draenor to another, we screwed up. (WatcherDev (https://twitter.com/WatcherDev/status/439040611195187200))<br>
+Meanwhile when you take a flight path in Mop you many times fly in circles to reach a destination.<br>
+Honestly we&apos;ve neglected flight paths a bit post-BC. We won&apos;t make that mistake in Draenor. (WatcherDev (https://twitter.com/WatcherDev/status/439287878200205313))<br>
+<br>
+Please make me want to not fly, dont force me not to.<br>
+The idea is that limiting vertical movement creates gameplay. Imagine how Timeless Isle would play if you could fly there. (WatcherDev (https://twitter.com/WatcherDev/status/439877977162018816))<br>
+yeah, but I hate going to TI. An entire expansion of that is going to suck.<br>
+And ultimately it&apos;s our job to make sure it doesn&apos;t. I realize I&apos;m not going to change opinions here; all I can say is wait and see. (WatcherDev (https://twitter.com/WatcherDev/status/439900564067872768))<br>
+yes imagine being able to get to rares before they die.<br>
+Just to play Devil&apos;s Advocate, they&apos;d still often die before you arrive since everyone else would get there faster too. (WatcherDev (https://twitter.com/WatcherDev/status/440113272478367744))<br>
+let&apos;s not buff their health pools to scale with number of attackers, that would be a silly notion<br>
+A majority of TI rares do have health scaling, up to a max of 500% HP. Some don&apos;t; will look into hotfixing those. (WatcherDev (https://twitter.com/WatcherDev/status/440176694511419392))<br>
+<br>
+<br>
+<br>
+Poll: Level 90 Boost Classes<br>
+Assuming you bought Warlords of Draenor and used your Level 90 boost already, what class did you use it on?<br>
+<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/7895834.js&quot;&gt;&lt;/script&gt;<br>
+&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/7895834/&quot;&gt;What class did you use your boost on?&lt;/a&gt;&lt;/noscript&gt;<br>
+<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Reaper of Souls Fan Art Contest Semi-Finalists<br>
+Blizzard is holding a fan art contest (http://www.diablofans.com/blizz-tracker/topic/52953-reaper-of-soulstm-fan-art-contest-semi-finalists-revealed) to celebrate the release of Reaper of Souls, with the entries now narrowed down to the top 25! <br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest01.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest01.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest02.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest02.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest03.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest03.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest04.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest04.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest05.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest05.jpg) <br>
+http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest06.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest06.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest07.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest07.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest08.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest08.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest09.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest09.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest10.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest10.jpg) <br>
+http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest11.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest11.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest12.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest12.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest13.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest13.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest14.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest14.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest15.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest15.jpg) <br>
+http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest16.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest16.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest17.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest17.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest18.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest18.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest19.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest19.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest20.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest20.jpg) <br>
+http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest21.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest21.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest22.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest22.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest23.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest23.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest24.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest24.jpg) http://media.mmo-champion.com/images/news/2014/march/thumb/ddevcontest25.jpg (http://media.mmo-champion.com/images/news/2014/march/ddevcontest25.jpg)</div></div>

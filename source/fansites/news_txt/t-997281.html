@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2011-10-13, 05:14 AM</div></div><div class="posttext">Firelands Changes Impact<br>
+Blizzard made major changes to Firelands a few times during Patch 4.2 (July 26th (http://www.mmo-champion.com/content/2393-Patch-4.2-Hotfixes-July-26) and Sept. 20th (http://www.mmo-champion.com/content/2466-Firelands-Raid-Hotfixes-Sept.-20)) to allow more players to see the Firelands content. We take a look at just how many more players were able to down Heroic Ragnaros and clear Normal Firelands. Data was looked at for over 2.7 million level 85 characters, most of them being in the US.<br>
+<br>
+Class balance for characters with the Heroic Ragnaros (http://db.mmo-champion.com/a/5803/heroic-ragnaros/) achievement was also graphed. The Heroic Firelands Boss Kill Ease graph displays the percentage of characters that have killed each boss, provided they have killed at least one of the Heroic Firelands bosses.<br>
+<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart;<br>
+$(document).ready(function() {<br>
+Highcharts.setOptions({<br>
+colors: [&apos;#4768C4&apos;, &apos;#E01B6A&apos;]<br>
+});<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;rollingchart&apos;,<br>
+zoomType: &apos;x&apos;,<br>
+spacingRight: 20,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+title: {<br>
+text: &apos;Total Number of Characters that have Defeated Heroic Ragnaros&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br> 
+},<br>
+subtitle: {<br>
+text: document.ontouchstart === undefined ?<br>
+&apos;Click and drag in the plot area to zoom in&apos; :<br>
+&apos;Drag your finger over the plot to zoom in&apos;<br>
+},<br>
+xAxis: {<br>
+type: &apos;datetime&apos;,<br>
+maxZoom: 14 * 24 * 3600000, // fourteen days<br>
+title: {<br>
+text: null<br>
+},<br>
+startOnTick: false,<br>
+showFirstLabel: false<br>
+},<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Number of Characters&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+startOnTick: true,<br>
+showFirstLabel: false<br>
+<br>
+},<br>
+tooltip: {<br>
+shared: true <br>
+},<br>
+legend: {<br>
+enabled: false<br>
+},<br>
+plotOptions: {<br>
+<br>
+areaspline: {<br>
+animation: false,<br>
+lineWidth: 3,<br>
+marker: {<br>
+enabled: true,<br>
+states: {<br>
+hover: {<br>
+enabled: true,<br>
+radius: 5<br>
+}<br>
+}<br>
+},<br>
+shadow: false,<br>
+states: {<br>
+hover: {<br>
+lineWidth: 3 <br>
+}<br>
+}<br>
+}<br>
+},<br>
+<br>
+series: [{<br>
+type: &apos;areaspline&apos;,<br>
+name: &apos;Characters defeated Heroic Ragnaros&apos; ,<br>
+pointInterval: 7 * 24 * 3600 * 1000,<br>
+pointStart: Date.UTC(2011, 7, 02),<br>
+data: [<br>
+57 , 99 , 143 , 194 , 235 , 401 , 676 , 1234 , 1804 , 2376 ]<br>
+}]<br>
+});<br>
+<br>
+<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;rollingchartNormalFirelands&apos;,<br>
+zoomType: &apos;x&apos;,<br>
+spacingRight: 20,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+title: {<br>
+text: &apos;Total Number of Characters that have Defeated Normal Firelands&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+subtitle: {<br>
+text: document.ontouchstart === undefined ?<br>
+&apos;Click and drag in the plot area to zoom in&apos; :<br>
+&apos;Drag your finger over the plot to zoom in&apos;<br>
+},<br>
+xAxis: {<br>
+type: &apos;datetime&apos;,<br>
+maxZoom: 14 * 24 * 3600000, // fourteen days<br>
+title: {<br>
+text: null<br>
+},<br>
+startOnTick: false,<br>
+showFirstLabel: false<br>
+},<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Number of Characters&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+startOnTick: true,<br>
+showFirstLabel: false<br>
+<br>
+},<br>
+tooltip: {<br>
+shared: true <br>
+},<br>
+legend: {<br>
+enabled: false<br>
+},<br>
+plotOptions: {<br>
+<br>
+areaspline: {<br>
+animation: false,<br>
+lineWidth: 3,<br>
+marker: {<br>
+enabled: true,<br>
+states: {<br>
+hover: {<br>
+enabled: true,<br>
+radius: 5<br>
+}<br>
+ }<br>
+},<br>
+shadow: false,<br>
+states: {<br>
+hover: {<br>
+lineWidth: 3 <br>
+}<br>
+}<br>
+}<br>
+},<br>
+<br>
+series: [{<br>
+type: &apos;areaspline&apos;,<br>
+name: &apos;Characters defeated Normal Firelands&apos; ,<br>
+pointInterval: 7 * 24 * 3600 * 1000,<br>
+pointStart: Date.UTC(2011, 5, 28),<br>
+data: [<br>
+1715 , 5369 , 10349 , 16424 , 22659 , 28961 , 35698 , 42442 , 49400 , 55710 , 61788 , 68199 , 92855 , 117714 , 135859 ]<br>
+}]<br>
+});<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;classbalanceHRag&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [&apos;Death Knight&apos;,&apos;Druid&apos;,&apos;Hunter&apos;,&apos;Mage&apos;,&apos;Paladin&apos;,&apos;Priest&apos;,&apos;Rogue&apos;,&apos;Shaman&apos;,&apos;Warlock&apos;,&apos;Warrior&apos;],<br>
+labels: {<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: false,<br>
+},<br>
+<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Percent&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function() {<br>
+return this.point.name + &apos; - &apos;+ this.y +&apos;%&apos;;<br>
+}<br>
+},<br>
+<br>
+title: {<br>
+text: &apos;Heroic Ragnaros Achievement Class Balance&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [<br>
+{<br>
+data: [{y: 8.8, color: &apos;#C41E3A&apos;, name:&apos;Death Knight&apos;},{y: 15.9, color: &apos;#FF7D0A&apos;, name:&apos;Druid&apos;},{y: 9.3, color: &apos;#ABD473&apos;, name:&apos;Hunter&apos;},{y: 9.1, color: &apos;#69CCF0&apos;, name:&apos;Mage&apos;},{y: 13.2, color: &apos;#F58CBA&apos;, name:&apos;Paladin&apos;},{y: 11.6, color: &apos;#FFFFFF&apos;, name:&apos;Priest&apos;},{y: 7.5, color: &apos;#FFF569&apos;, name:&apos;Rogue&apos;},{y: 7.4, color: &apos;#2459FF&apos;, name:&apos;Shaman&apos;},{y: 8.1, color: &apos;#9482CA&apos;, name:&apos;Warlock&apos;},{y: 9.2, color: &apos;#C79C6E&apos;, name:&apos;Warrior&apos;}],<br>
+<br>
+name: &apos;&lt;b&gt;Percent&lt;/b&gt;&apos;<br>
+}<br>
+<br>
+]<br>
+<br>
+});<br>
+<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;heroicFirelandsDiff&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [&apos;Ragnaros&apos;,&apos;Baleroc&apos;,&apos;Beth\&apos;tilac&apos;,&apos;Alysrazor&apos;,&apos;Majordomo&apos;,&apos;Lord Rhyolith&apos;,&apos;Shannox&apos;],<br>
+labels: {<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: false,<br>
+},<br>
+<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Percent&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+},<br>
+max: 100<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+<br>
+},<br>
+<br>
+title: {<br>
+text: &apos;Heroic Firelands Boss Kill Ease&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [{<br>
+name: &apos;Killed heroic&apos;,<br>
+data: [2.2, 31.3, 34.5, 41.6, 45.8, 58.8, 97.4]<br>
+<br>
+}]<br>
+<br>
+});<br>
+});<br>
+<br>
+&lt;/script&gt; <br>
+<br>
+&lt;div id=&quot;rollingchart&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+&lt;br /&gt;<br>
+&lt;div id=&quot;rollingchartNormalFirelands&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+&lt;br /&gt;<br>
+&lt;div id=&quot;classbalanceHRag&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+&lt;br /&gt;<br>
+&lt;div id=&quot;heroicFirelandsDiff&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+<br>
+<br>
+2011 Halloween Pumpkin Carving Contest<br>
+The Halloween season has finally arrived, and we&#x2019;re ready to cut straight to the heart of the holiday. If you&#x2019;re dying to pick up a knife and hack, gash, slash, and jab at something, then you might be excited to hear that as of October 11, Blizzard&#x2019;s 2011 Halloween Pumpkin Carving Contest has officially begun! Unleash your magical axes, psi blades, chitinous claws, and other creative cutlery to carve up Blizzard-themed jack-o&#x2019;-lanterns of epic awesomeness. If you&#x2019;re unclear as to what epic awesomeness looks like in the flesh, you can check out last year&#x2019;s winners (http://us.blizzard.com/en-us/community/contests/pumpkin2010/winners.html) for some inspiration.<br>
+<br>
+We&#x2019;ll choose ten of the grandest Cucurbita to earn a delightful prize package consisting of:<br>
+<br>
+<br>
+Marauder StarCraft II Gaming Keyboard<br>
+Banshee StarCraft II Gaming Headset<br>
+Spectre StarCraft II Gaming Mouse<br>
+StarCraft II Zerg Edition Messenger Bag<br>
+<br>
+<br>
+Don&#x2019;t delay, start carving right away! The ninth annual pumpkin carving contest ends on October 25, so be sure to check out the contest page (http://us.blizzard.com/en-us/community/contests/pumpkin2011/) for rules and eligibility and get straight to slicing.<br>
+<br>
+<br>
+Fan Art Update<br>
+The World of Warcraft Fan Art Section (http://us.battle.net/wow/en/media/fanart/) has been updated with five new pieces of fan artwork set within the Warcraft universe.<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2011/october/thumb/fanart-1125-full.jpg (http://media.mmo-champion.com/images/news/2011/october/fanart-1125-full.jpg) http://media.mmo-champion.com/images/news/2011/october/thumb/fanart-1126-full.jpg (http://media.mmo-champion.com/images/news/2011/october/fanart-1126-full.jpg) http://media.mmo-champion.com/images/news/2011/october/thumb/fanart-1127-full.jpg (http://media.mmo-champion.com/images/news/2011/october/fanart-1127-full.jpg) <br>
+http://media.mmo-champion.com/images/news/2011/october/thumb/fanart-1128-full.jpg (http://media.mmo-champion.com/images/news/2011/october/fanart-1128-full.jpg) http://media.mmo-champion.com/images/news/2011/october/thumb/fanart-1129-full.jpg (http://media.mmo-champion.com/images/news/2011/october/fanart-1129-full.jpg)</div></div>

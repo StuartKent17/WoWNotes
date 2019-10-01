@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2014-01-13, 02:03 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; A Brief Look At Transmogrification, Suggestions for Fixing Current RoS Beta Issues, Eat Game Live: Reaper of Soles (http://www.diablofans.com/news/47907-a-brief-look-at-transmogrification-suggestions-for)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Hearthstone: Top 5 Plays of the Week, Weekly News Recap (http://www.hearthpwn.com/news/256-hearthstone-top-5-plays-of-the-week-weekly-news)<br>
+<br>
+Armory Stats - Siege of Orgrimmar Progression<br>
+Today we are taking a look at the Siege of Orgrimmar progression of players in each difficulty. Now that achievements are account wide, we can group characters by account and get an idea of what percentage of players (not characters) have defeated a boss on any difficulty at least once, based on progression data.<br>
+<br>
+The data used today is a sample made up of 6.9 million characters from 2.5 million accounts, with at least one character active after November 1. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. <br>
+<br>
+The second chart uses the number of players that killed Immerseus in each difficulty as the base of participating players for that difficulty. Each difficulty can be toggled on and off by clicking the name in the legend.<br>
+<br>
+We looked at absolute percentage numbers for Heroic difficulty a few days ago (http://www.mmo-champion.com/content/3678-Armory-Stats-Heroic-SoO-Progression-Blizzard-CS-Callback-Blue-Tweets-Fan-Art) and included those numbers in the charts here, but keep in mind we used a different date for the cutoff then, which can change the percentages slightly. You can leave suggestions for future stat posts in the comments!<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart; <br>
+$(document).ready(function() {<br>
+Highcharts.setOptions({<br>
+colors: [ &apos;#ADADAD&apos;, &apos;#949494&apos;, &apos;#727272&apos;, &apos;#595959&apos;, &apos;#6B8E23&apos;, &apos;#426F42&apos;]<br>
+});<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;sooAbs&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [ &apos;Immerseus&apos;, &apos;Protectors&apos;, &apos;Norushen&apos;, &apos;Sha of Pride&apos;, &apos;Galakras&apos;, &apos;Iron Juggernaut&apos;, &apos;Dark Shaman&apos;, &apos;Nazgrim&apos;, &apos;Malkorok&apos;, &apos;Spoils&apos;, &apos;Thok&apos;, &apos;Siegecrafter&apos;, &apos;Paragons&apos;, &apos;Garrosh&apos;],<br>
+labels: {<br>
+maxStaggerLines: 0<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: true,<br>
+},<br>
+<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Percent&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false,<br>
+groupPadding: 0.15,<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function() {<br>
+return &apos;&lt;b&gt;&apos; + this.series.name + &apos; &apos; + this.x + &apos;&lt;/b&gt; - &apos;+ this.y +&apos;%&apos;;<br>
+}<br>
+},<br>
+title: {<br>
+text: &apos;Percentage of Players that Defeated Siege of Orgrimmar Bosses&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+shared: true,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [{<br>
+name: &apos;LFR&apos;,<br>
+data: [{y: 63.58, color: &apos;#bee4d3&apos;},{y: 63.78, color: &apos;#bee4d3&apos;},{y: 63.88, color: &apos;#bee4d3&apos;},{y: 63.88, color: &apos;#bee4d3&apos;},{y: 55.4, color: &apos;#d6e1ee&apos;},{y: 55.4, color: &apos;#d6e1ee&apos;},{y: 55.4, color: &apos;#d6e1ee&apos;},{y: 55.2, color: &apos;#d6e1ee&apos;},{y: 48.3, color: &apos;#f3e5cc&apos;},{y: 48.1, color: &apos;#f3e5cc&apos;},{y: 48, color: &apos;#f3e5cc&apos;},{y: 38.8, color: &apos;#ebc5c5&apos;},{y: 39, color: &apos;#ebc5c5&apos;},{y: 39, color: &apos;#ebc5c5&apos;}],<br>
+<br>
+},{<br>
+name: &apos;Flex&apos;,<br>
+data: [{y: 33.4, color: &apos;#81CCAA&apos;},{y: 32.7, color: &apos;#81CCAA&apos;},{y: 31.3, color: &apos;#81CCAA&apos;},{y: 30.3, color: &apos;#81CCAA&apos;},{y: 26.4, color: &apos;#81A4CC&apos;},{y: 26.0, color: &apos;#81A4CC&apos;},{y: 24.8, color: &apos;#81A4CC&apos;},{y: 23.4, color: &apos;#81A4CC&apos;},{y: 20.3, color: &apos;#E0BB79&apos;},{y: 18.4, color: &apos;#E0BB79&apos;},{y: 16.6, color: &apos;#E0BB79&apos;},{y: 14.1, color: &apos;#D48787&apos;},{y: 13.6, color: &apos;#D48787&apos;},{y: 10.9, color: &apos;#D48787&apos;}],<br>
+<br>
+}, {<br>
+name: &apos;Normal&apos;,<br>
+data: [{y: 19.3, color: &apos;#3e986f&apos;},{y: 18.5, color: &apos;#3e986f&apos;},{y: 17, color: &apos;#3e986f&apos;},{y: 16.8, color: &apos;#3e986f&apos;},{y: 15.3, color: &apos;#4779b1&apos;},{y: 14.9, color: &apos;#4779b1&apos;},{y: 14.2, color: &apos;#4779b1&apos;},{y: 13.7, color: &apos;#4779b1&apos;},{y: 13.0, color: &apos;#c58f2e&apos;},{y: 12.5, color: &apos;#c58f2e&apos;},{y: 11.1, color: &apos;#c58f2e&apos;},{y: 10.7, color: &apos;#be4848&apos;},{y: 10.1, color: &apos;#be4848&apos;},{y: 7.7, color: &apos;#be4848&apos;}]<br>
+<br>
+}, {<br>
+name: &apos;Heroic&apos;,<br>
+data: [{y: 6.89, color: &apos;#255c43&apos;},{y: 5.69, color: &apos;#255c43&apos;},{y: 6.31, color: &apos;#255c43&apos;},{y: 4.55, color: &apos;#255c43&apos;},{y: 4.75, color: &apos;#253f5c&apos;},{y: 4.03, color: &apos;#253f5c&apos;},{y: 3.36, color: &apos;#253f5c&apos;},{y: 3.56, color: &apos;#253f5c&apos;},{y: 2.37, color: &apos;#72531b&apos;},{y: 1.89, color: &apos;#72531b&apos;},{y: 1.24, color: &apos;#72531b&apos;},{y: 0.60, color: &apos;#762a2a&apos;},{y: 0.41, color: &apos;#762a2a&apos;},{y: 0.23, color: &apos;#762a2a&apos;}]<br>
+<br>
+}<br>
+]<br>
+<br>
+});<br>
+<br>
+<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;sooScaled&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [ &apos;Immerseus&apos;, &apos;Protectors&apos;, &apos;Norushen&apos;, &apos;Sha of Pride&apos;, &apos;Galakras&apos;, &apos;Iron Juggernaut&apos;, &apos;Dark Shaman&apos;, &apos;Nazgrim&apos;, &apos;Malkorok&apos;, &apos;Spoils&apos;, &apos;Thok&apos;, &apos;Siegecrafter&apos;, &apos;Paragons&apos;, &apos;Garrosh&apos;],<br>
+labels: {<br>
+maxStaggerLines: 0<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: true,<br>
+},<br>
+<br>
+yAxis: {<br>
+endOnTick: false,<br>
+title: {<br>
+text: &apos;Percent&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false,<br>
+groupPadding: 0.15,<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function() {<br>
+return &apos;&lt;b&gt;&apos; + this.series.name + &apos; &apos; + this.x + &apos;&lt;/b&gt; - &apos;+ this.y +&apos;%&apos;;<br>
+}<br>
+},<br>
+title: {<br>
+text: &apos;Percentage of Participating Players that Defeated Siege of Orgrimmar Bosses&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+shared: true,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [{<br>
+name: &apos;LFR&apos;,<br>
+data: [{y: 100, color: &apos;#bee4d3&apos;},{y: 100.3, color: &apos;#bee4d3&apos;},{y: 100.5, color: &apos;#bee4d3&apos;},{y: 100.2, color: &apos;#bee4d3&apos;},{y: 87.1, color: &apos;#d6e1ee&apos;},{y: 87.2, color: &apos;#d6e1ee&apos;},{y: 87.2, color: &apos;#d6e1ee&apos;},{y: 86.7, color: &apos;#d6e1ee&apos;},{y: 76, color: &apos;#f3e5cc&apos;},{y: 75.7, color: &apos;#f3e5cc&apos;},{y: 75.5, color: &apos;#f3e5cc&apos;},{y: 61.0, color: &apos;#ebc5c5&apos;},{y: 61.3, color: &apos;#ebc5c5&apos;},{y: 61.3, color: &apos;#ebc5c5&apos;}],<br>
+<br>
+},{<br>
+name: &apos;Flex&apos;,<br>
+data: [{y: 100, color: &apos;#81CCAA&apos;},{y: 97.7, color: &apos;#81CCAA&apos;},{y: 93.8, color: &apos;#81CCAA&apos;},{y: 90.6, color: &apos;#81CCAA&apos;},{y: 79, color: &apos;#81A4CC&apos;},{y: 77.8, color: &apos;#81A4CC&apos;},{y: 74.1, color: &apos;#81A4CC&apos;},{y: 70.0, color: &apos;#81A4CC&apos;},{y: 60.8, color: &apos;#E0BB79&apos;},{y: 55, color: &apos;#E0BB79&apos;},{y: 49.7, color: &apos;#E0BB79&apos;},{y: 42.3, color: &apos;#D48787&apos;},{y: 40.7, color: &apos;#D48787&apos;},{y: 32.7, color: &apos;#D48787&apos;}],<br>
+<br>
+}, {<br>
+name: &apos;Normal&apos;,<br>
+data: [{y: 100, color: &apos;#3e986f&apos;},{y: 95.7, color: &apos;#3e986f&apos;},{y: 87.8, color: &apos;#3e986f&apos;},{y: 86.9, color: &apos;#3e986f&apos;},{y: 78.8, color: &apos;#4779b1&apos;},{y: 77.1, color: &apos;#4779b1&apos;},{y: 73.2, color: &apos;#4779b1&apos;},{y: 70.6, color: &apos;#4779b1&apos;},{y: 67.3, color: &apos;#c58f2e&apos;},{y: 64.6, color: &apos;#c58f2e&apos;},{y: 57.6, color: &apos;#c58f2e&apos;},{y: 55.2, color: &apos;#be4848&apos;},{y: 52.4, color: &apos;#be4848&apos;},{y: 39.9, color: &apos;#be4848&apos;}]<br>
+<br>
+}, {<br>
+name: &apos;Heroic&apos;,<br>
+data: [{y: 100, color: &apos;#255c43&apos;},{y: 82.7, color: &apos;#255c43&apos;},{y: 91.7, color: &apos;#255c43&apos;},{y: 66.0, color: &apos;#255c43&apos;},{y: 69.0, color: &apos;#253f5c&apos;},{y: 58.5, color: &apos;#253f5c&apos;},{y: 48.7, color: &apos;#253f5c&apos;},{y: 51.8, color: &apos;#253f5c&apos;},{y: 34.4, color: &apos;#72531b&apos;},{y: 27.5, color: &apos;#72531b&apos;},{y: 18, color: &apos;#72531b&apos;},{y: 8.7, color: &apos;#762a2a&apos;},{y: 6.0, color: &apos;#762a2a&apos;},{y: 3.4, color: &apos;#762a2a&apos;}]<br>
+<br>
+}<br>
+]<br>
+<br>
+});<br>
+<br>
+});<br>
+&lt;/script&gt; <br>
+<br>
+<br>
+<br>
+&lt;div id=&quot;sooAbs&quot; width=&quot;50%&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div id=&quot;sooScaled&quot; width=&quot;50%&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+Blue Tweets<br>
+Art<br>
+Since Ogres are getting a new model in Warlords, is that a model just for Warlords or for all Ogres?<br>
+Draenor Ogres less devolved than Azeroth won&apos;t be the same model for each, would like to update both eventually (Source (https://twitter.com/artofcgrobinson/status/419180189654859777))<br>
+<br>
+Need a rework of all npc&apos;s in WoWand a rework of the classic mounts<br>
+npc&apos;s will update with new player models. Have heard a lot about mount updates, something I would like to do eventually. (Source (https://twitter.com/artofcgrobinson/status/419179682701914112))<br>
+<br>
+For later on additions to the game. Can druid forms wear certain parts of armor? Give the forms more uniqueness/flavor etc.<br>
+we&apos;ve played around with this, but it&apos;s nigh impossible to make shoulder/helm/belt attach. look good on that model (Source (https://twitter.com/artofcgrobinson/status/419179331827429376))<br>
+<br>
+Can we expect more class-unique animations? Dual throw for fury storm bolt, shuriken and glaive toss? Hunter looks dull btw<br>
+I know our animators are fired up excited about doing this, it&apos;s on the wish list. (Source (https://twitter.com/artofcgrobinson/status/419178785561255937))<br>
+<br>
+Is MoP just going to be forgotten or are you going to work to keep the artwork alive in future content?<br>
+most likely we&apos;ll find ways to bring Pandaren culture/art into Azeroth now that the veil has been lifted. (Source (https://twitter.com/artofcgrobinson/status/419178429112524800))<br>
+<br>
+Could we see the return of simple cloaks in WoD? The latest expansions brought a lot of incredibly overcomplicated designs.<br>
+we did get a little crazy on a few, I&apos;ll keep it in mind. Had a few thoughts on capes on last WoW Source if interested. (Source (https://twitter.com/artofcgrobinson/status/419177744115576832))<br>
+<br>
+So is it you we ask for glyphs? Can Monks get one that turns Rising Sun Kick into Flaming Dragon Punch?<br>
+Glyphs mostly class/system (&amp; to lesser extent profs) but anyone on team can suggest &amp; help out. But new anims = unlikely glyph! (Source (https://twitter.com/Dave_Maldo/status/417729717848915968))<br>
+<br>
+will we see heavenly blue cloud serpents? i can understand no green thoughhttps://t.co/qQbQup8Tfr look at it! look at it!<br>
+Probably eventually? Hopefully not w/ green drake level delay! (Source (https://twitter.com/Dave_Maldo/status/417728918817226752))<br>
+<br>
+Character / Items<br>
+Can you make it a policy (if you already haven&apos;t) to de-associate fun cosmetics and trinkets?<br>
+I don&apos;t make policy, though I can suggest them. I&apos;m not certain that&apos;d be a good policy, though. I can see arguments for either way. (Source (https://twitter.com/Dave_Maldo/status/419191438010630144))<br>
+I&apos;d be curious to hear arguments in favor of trinkets with toys. I honestly can&apos;t think of any.<br>
+Some are less freedom for item peeps to make fun player power rewards &amp; intentional mudflation. Note that I am not making any args. (Source (https://twitter.com/Dave_Maldo/status/419335043291426816))<br>
+I dunno, above all, I&apos;d expect that you design a toy with the intent of having it played with. Trinkets contradict that.<br>
+A toy is a toy. A trinket is a trinket; whether or not one thinks it&apos;s fun enough to qualify as a toy. Diff. items, diff. purposes. (Source (https://twitter.com/Dave_Maldo/status/419378351447347200))<br>
+What about things like Super Simian Sphere and Piccolo of the Flaming Fire, which are trinkets w/ no trinkety purpose?<br>
+PFF is an OLD item from a different time &amp; SSS is copied from one (Orb of D). Always going to be a few odd exceptions! (Source (https://twitter.com/Dave_Maldo/status/419542743111573504))<br>
+Can we make Time-Lost Figurine a toy? I&apos;d love to keep the form in end game content.<br>
+I don&apos;t know if items peeps have plans to modify old drops. I do suspect they&apos;re trinkets out of tradition. (Source (https://twitter.com/Dave_Maldo/status/419547295726596096))<br>
+<br>
+Entirely separate question is all the trinkets/toys/tabards that provide teleports/hearths. Toybox y/n?<br>
+Toy box turns items into spells (e.g. current pets &amp; mounts). Unlikely for equipped items, but maybe. (Source (https://twitter.com/Dave_Maldo/status/419545075052326913))<br>
+<br>
+Warlords of Draenor Stats<br>
+So say if i have a Cleave gem inside im DPS and when i switch to my Healing kit will the Cleave gem still be there?<br>
+Cleave is a tertiary; not gemmable. But if you meant Crit, yes. (Source (https://twitter.com/Celestalon/status/417818366284267520))<br>
+<br>
+Will pet classes/specs benefit from Multstrike as much as petless? Currently f.ex multstrike isn&apos;t good for BM but is for SV.<br>
+Yes. Pets benefit from all of the new stats. (Source (https://twitter.com/Celestalon/status/418100340223782912))<br>
+<br>
+PvP<br>
+Any chance WoD can reduce the ridiculous item level jumps from season to season? 496 to 522 is just too big a difference.<br>
+Unfortunately, I think that gap is going to continue to exist. Something has to give when trying to keep up with PvE ilevels. (Source (https://twitter.com/holinka/status/419234872234758144))<br>
+does that mean the gap between pvp and pve ilvl will be as big as it is right now in current wow?<br>
+No the plan is to improve that gap. (Source (https://twitter.com/holinka/status/419279167943745536))<br>
+<br>
+On a scale of 1 to 9000, how cool is Ashran ?<br>
+It&apos;s really coming along. Big challenge is it&apos;s tough to iterate on something that requires 200+ players to play like live. (Source (https://twitter.com/holinka/status/418812879798693889))<br>
+<br>
+Any worry that glad-range players will &quot;tank&quot; their alts below whatever cutoff you come up with in order to up their main&apos;s rank?<br>
+Spit in the ocean to be honest. They could have done the same with teams. (Source (https://twitter.com/holinka/status/418809137946845184))<br>
+<br>
+people give you shit but with the name change i expect a good christmas present. are you fixing 2v2, the most played bracket??<br>
+Feel it would benefit more from an earlier start to dampening than 3s, especially when both teams have a healer. (Source (https://twitter.com/holinka/status/414846297108398081))<br>
+That seems like a really good point, a good place to go from. would seperating double dps and healer dps be an option balance wise?<br>
+No we don&apos;t think it&apos;s necessary or good to segregate healer teams in that way. (Source (https://twitter.com/holinka/status/414860145919660033))<br>
+<br>
+Is there going to be arena system that there is now + the special Trial of the Gladiator, or the classic rating is removed?<br>
+We&apos;re still discussing it based on a lot of negative feedback about the idea of rating disappearing from the existing queue. (Source (https://twitter.com/holinka/status/418600832112668672))<br>
+<br>
+Professions<br>
+Thought about making crafting an endgame option in same vein as PvE and PvP? Revamping, making crafting epic (as per leg cloak)<br>
+That &amp; many other variants on what crafting could be have come up over the years. Not sure what their plans are for WoD now. (Source (https://twitter.com/Dave_Maldo/status/419535669325594624))<br>
+<br>
+dave, can you shed some light on Wod archeology? Will we have new race types? Or more orc and dreanei stuff?<br>
+Don&apos;t know much about current plans aside from proposed QoL improvements. I&apos;ll probably help make some toys for it, though! (Source (https://twitter.com/Dave_Maldo/status/417730610262601729))<br>
+<br>
+Any plans to bring the other Professions to the late game model that Blacksmith/Mining/Herbs has? (ie: easier leveling path)<br>
+Not heavily involved w/ professions. Archaeology is likely to get a similar treatment for WoD. Can&apos;t speak for the others! (Source (https://twitter.com/Dave_Maldo/status/417724370077749248))<br>
+<br>
+<br>
+Dark Legacy Comics #423<br>
+DLC #423 (http://www.darklegacycomics.com/423.html) has been released! <br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2014/january/dlc423.jpg (http://www.darklegacycomics.com/423.html)</div></div>

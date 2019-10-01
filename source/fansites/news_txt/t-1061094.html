@@ -1,0 +1,518 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2012-01-10, 04:32 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Diablo 3 - Diablo 3 on Consoles, Electrocute Runed, New Game System Info Soon, Diablo 3 Comic (http://www.diablofans.com/news/1047-diablo-3-on-consoles-electrocute-runed-new-game-system-info-soon-diablo-3-comic/)<br>
+<br>
+Statistics: Dragon Soul and Firelands<br>
+Patch 4.2 brought us Firelands over six months ago, and in that time roughly 12% of our sample of level 85 characters completed Normal difficulty Firelands. Patch 4.3 was released just one and a half months ago, during the holiday, and already 30% of the sample has killed Deathwing in any difficulty while only 4% has killed Deathwing on Normal or Heroic. <br>
+<br>
+Keep in mind this sample includes many alt characters and many players have multiple characters, so there is no way to know for sure if more people are raiding. However, we do know that more characters are raiding now than raided during Firelands. <br>
+<br>
+This time around, the overall sample is around 6 million characters and the active character sample is around 4.4 million. If you are interested in these type of statistics or want to see other information, let us know in the comments! <br>
+<br>
+First we take a look at the overall population, including every level 85 character that has been active since Patch 4.3 went live. Only 4% of the population managed to do Normal difficulty Dragon Soul so far, and 34% completed it on LFR or higher difficulty. <br>
+<br>
+<br>
+&lt;div id=&quot;DSOverall&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+<br>
+<br>
+Next we look at how quickly people earned the Normal difficulty Deathwing achievement. The holiday caused a slight slowdown in the past few weeks, but people started earning it constantly on the first week. <br>
+<br>
+<br>
+&lt;div id=&quot;DSNormalSum&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+<br>
+<br>
+Next we look at how quickly people earned the Raid Finder or greater difficulty Deathwing achievement. You can see the weekly growth starts out high and is now rapidly decreasing, as everyone and their alts are have easily completed the raid. <br>
+<br>
+<br>
+&lt;div id=&quot;EasyDragonSoul&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+<br>
+<br>
+Next we look at how quickly people earned the Normal difficulty Firelands completion achievement. You can see where the Hotfix took effect and greatly increased the amount of kills, which are now leveling off as players don&apos;t have a reason to go back.<br>
+<br>
+<br>
+&lt;div id=&quot;FirelandsClears&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+<br>
+<br>
+Now we narrow our sample to just characters who have killed Deathwing on Raid Finder or greater difficulty. For this sample, 13% of characters have done it on Normal or Heroic difficulty, and 87% of characters did it on Raid Finder difficulty. <br>
+<br>
+<br>
+&lt;div id=&quot;DSPiesDelicious2&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+<br>
+<br>
+Now we narrow our sample to just characters who have killed Deathwing on Raid Finder or greater difficulty and completed Normal difficulty Firelands. For this sample, 34% of characters, also completed normal difficulty Dragon Soul.<br>
+<br>
+<br>
+&lt;div id=&quot;DSPiesDelicious&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+<br>
+<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br>
+<br>
+&lt;script&gt;<br>
+var chart;<br>
+$(document).ready(function() {<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;DSOverall&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [&apos;Normal Difficulty&apos;,&apos;LFR&apos;],<br>
+<br>
+},<br>
+legend: {<br>
+enabled: false,<br>
+},<br>
+tooltip: {<br>
+formatter: function() {<br>
+return &apos;&lt;b&gt;&apos;+ this.x +&apos;&lt;/b&gt;: &apos;+ this.y +&apos; %&apos;;<br>
+}<br>
+},<br>
+<br>
+yAxis: {<br>
+<br>
+title: {<br>
+text: &apos;Percent&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+},<br>
+<br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false<br>
+}<br>
+},<br>
+<br>
+title: {<br>
+text: &apos;Overall Level 85 Characters Dragon Soul Progression Achievements&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [<br>
+{<br>
+data: [{y: 4, color:&apos;#C41E3A&apos;}, {y: 34, color:&apos;#ABD473&apos;}],<br>
+name: &apos;&lt;b&gt;Percent&lt;/b&gt;&apos;<br>
+}<br>
+<br>
+]<br>
+<br>
+});<br>
+<br>
+<br>
+chart = new Highcharts.Chart({<br>
+ chart: {<br>
+renderTo: &apos;DSPiesDelicious&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;,<br>
+plotBorderWidth: null,<br>
+plotShadow: false<br>
+},<br>
+title: {<br>
+text: &apos;Level 85 Characters (Normal Firelands Also Complete) Dragon Soul Progression Achievements&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+tooltip: {<br>
+formatter: function() {<br>
+return &apos;&lt;b&gt;&apos; + this.point.name + &apos;&lt;/b&gt;: &apos; + this.percentage.toFixed(1) + &apos; %&apos;;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+plotOptions: {<br>
+pie: {<br>
+allowPointSelect: true,<br>
+cursor: &apos;pointer&apos;,<br>
+dataLabels: {<br>
+enabled: true,<br>
+formatter: function() {<br>
+return &apos;&lt;b&gt;&apos; + this.point.name + &apos;&lt;/b&gt;: &apos; + this.percentage.toFixed(1) + &apos; %&apos;;<br>
+},<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;14px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+animation: false<br>
+}<br>
+},<br>
+series: [{<br>
+type: &apos;pie&apos;,<br>
+name: &apos;Dragon Soul Difficulty&apos;,<br>
+data: [<br>
+[&apos;LFR Difficulty&apos;, 66],<br>
+{<br>
+name: &apos;Normal Difficulty&apos;,<br>
+y: 34,<br>
+sliced: true,<br>
+selected: true},<br>
+]}]<br>
+});<br>
+<br>
+<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;DSPiesDelicious2&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;,<br>
+plotBorderWidth: null,<br>
+plotShadow: false<br>
+},<br>
+title: {<br>
+text: &apos;Level 85 Characters Dragon Soul Progression Achievements&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+tooltip: {<br>
+formatter: function() {<br>
+return &apos;&lt;b&gt;&apos; + this.point.name + &apos;&lt;/b&gt;: &apos; + this.percentage.toFixed(1) + &apos; %&apos;;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+plotOptions: {<br>
+pie: {<br>
+allowPointSelect: true,<br>
+cursor: &apos;pointer&apos;,<br>
+dataLabels: {<br>
+enabled: true,<br>
+formatter: function() {<br>
+return &apos;&lt;b&gt;&apos; + this.point.name + &apos;&lt;/b&gt;: &apos; + this.percentage.toFixed(1) + &apos; %&apos;;<br>
+},<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;14px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+animation: false<br>
+}<br>
+},<br>
+series: [{<br>
+type: &apos;pie&apos;,<br>
+name: &apos;Dragon Soul Difficulty&apos;,<br>
+data: [<br>
+[&apos;LFR Difficulty&apos;, 87],<br>
+{<br>
+name: &apos;Normal Difficulty&apos;,<br>
+y: 13,<br>
+sliced: true,<br>
+selected: true},<br>
+]}]<br>
+});<br>
+<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;DSNormalSum&apos;,<br>
+zoomType: &apos;x&apos;,<br>
+spacingRight: 20,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+title: {<br>
+text: &apos;Total Number of Characters That Have Completed Normal Difficulty Deathwing&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+subtitle: {<br>
+text: document.ontouchstart === undefined ?<br>
+&apos;Click and drag in the plot area to zoom in&apos; :<br>
+&apos;Drag your finger over the plot to zoom in&apos;<br>
+},<br>
+xAxis: {<br>
+type: &apos;datetime&apos;,<br>
+maxZoom: 14 * 24 * 3600000, // fourteen days<br>
+title: {<br>
+text: null<br>
+},<br>
+startOnTick: false,<br>
+showFirstLabel: false<br>
+},<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Number of Characters&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+startOnTick: true,<br>
+showFirstLabel: false<br>
+<br>
+},<br>
+tooltip: {<br>
+shared: true <br>
+},<br>
+legend: {<br>
+enabled: false<br>
+},<br>
+plotOptions: {<br>
+<br>
+areaspline: {<br>
+animation: false,<br>
+lineWidth: 3,<br>
+marker: {<br>
+enabled: true,<br>
+states: {<br>
+hover: {<br>
+enabled: true,<br>
+radius: 5<br>
+}<br>
+}<br>
+},<br>
+shadow: false,<br>
+states: {<br>
+hover: {<br>
+lineWidth: 3 <br>
+}<br>
+}<br>
+}<br>
+},<br>
+<br>
+series: [{<br>
+type: &apos;areaspline&apos;,<br>
+name: &apos;Normal Difficulty Deathwing Achievements&apos;,<br>
+pointInterval: 7 * 24 * 3600 * 1000,<br>
+pointStart: Date.UTC(2011, 10, 29),<br>
+data: [<br>
+47154 , 94824 , 131926 , 155201 , 174965 ]<br>
+}]<br>
+});<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;FirelandsClears&apos;,<br>
+zoomType: &apos;x&apos;,<br>
+spacingRight: 20,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+title: {<br>
+text: &apos;Total Number of Characters That Have Completed Normal Difficulty Firelands&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+subtitle: {<br>
+text: document.ontouchstart === undefined ?<br>
+&apos;Click and drag in the plot area to zoom in&apos; :<br>
+&apos;Drag your finger over the plot to zoom in&apos;<br>
+},<br>
+xAxis: {<br>
+type: &apos;datetime&apos;,<br>
+maxZoom: 14 * 24 * 3600000, // fourteen days<br>
+title: {<br>
+text: null<br>
+},<br>
+startOnTick: false,<br>
+showFirstLabel: false<br>
+},<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Number of Characters&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+startOnTick: true,<br>
+showFirstLabel: false<br>
+<br>
+},<br>
+tooltip: {<br>
+shared: true <br>
+},<br>
+legend: {<br>
+enabled: false<br>
+},<br>
+plotOptions: {<br>
+<br>
+areaspline: {<br>
+animation: false,<br>
+lineWidth: 3,<br>
+marker: {<br>
+enabled: true,<br>
+states: {<br>
+hover: {<br>
+enabled: true,<br>
+radius: 5<br>
+}<br>
+}<br>
+},<br>
+shadow: false,<br>
+states: {<br>
+hover: {<br>
+lineWidth: 3 <br>
+}<br>
+}<br>
+}<br>
+},<br>
+<br>
+series: [{<br>
+type: &apos;areaspline&apos;,<br>
+name: &apos;Normal Firelands Achievements&apos;,<br>
+pointInterval: 7 * 24 * 3600 * 1000,<br>
+pointStart: Date.UTC(2011, 5, 28),<br>
+data: [<br>
+8049 , 20384 , 34650 , 50965 , 67426 , 83830 , 101695 , 119769 , 137920 , 154983 , 172555 , 190831 , 278371 , 343998 , 403800 , 457724 , 506430 , 551678 , 595627 , 633123 , 666524 , 695112 , 711057 , 722716 , 732240 , 738232 , 743541 ]<br>
+}]<br>
+});<br>
+<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;EasyDragonSoul&apos;,<br>
+zoomType: &apos;x&apos;,<br>
+spacingRight: 20,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+title: {<br>
+text: &apos;Total Number of Characters That Have Completed Raid Finder Difficulty Dragon Soul&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+subtitle: {<br>
+text: document.ontouchstart === undefined ?<br>
+&apos;Click and drag in the plot area to zoom in&apos; :<br>
+&apos;Drag your finger over the plot to zoom in&apos;<br>
+},<br>
+xAxis: {<br>
+type: &apos;datetime&apos;,<br>
+maxZoom: 14 * 24 * 3600000, // fourteen days<br>
+title: {<br>
+text: null<br>
+},<br>
+startOnTick: false,<br>
+showFirstLabel: false<br>
+},<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Number of Characters&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+startOnTick: true,<br>
+showFirstLabel: false<br>
+<br>
+},<br>
+tooltip: {<br>
+shared: true <br>
+},<br>
+legend: {<br>
+enabled: false<br>
+},<br>
+plotOptions: {<br>
+<br>
+areaspline: {<br>
+animation: false,<br>
+lineWidth: 3,<br>
+marker: {<br>
+enabled: true,<br>
+states: {<br>
+hover: {<br>
+enabled: true,<br>
+radius: 5<br>
+}<br>
+}<br>
+},<br>
+shadow: false,<br>
+states: {<br>
+hover: {<br>
+lineWidth: 3 <br>
+}<br>
+}<br>
+}<br>
+},<br>
+<br>
+series: [{<br>
+type: &apos;areaspline&apos;,<br>
+name: &apos;Raid Finder Dragon Soul Achievements&apos;,<br>
+pointInterval: 7 * 24 * 3600 * 1000,<br>
+pointStart: Date.UTC(2011, 10, 29),<br>
+data: [<br>
+39520 , 637190 , 989843 , 1183627 , 1315752 ]<br>
+}]<br>
+});<br>
+<br>
+<br>
+<br>
+});<br>
+&lt;/script&gt;Blue Posts<br>
+4.3.2 and the Mature Language Filter<br>
+Yes. I can confirm that we are fixing that issue in 4.3.2.<br>
+<br>
+You will see the note on it in the next update to the 4.3.2 PTR patch notes. (Blue Tracker (http://blue.mmo-champion.com/topic/215634-when-is-432-live/) / Official Forums (http://us.battle.net/wow/en/forum/topic/3881709909?page=2#28))<br>
+<br>
+WoW No Longer Compatible with Windows 2000<br>
+In preparation for the upcoming release of Mists of Pandaria, updates to World of Warcraft will no longer support Microsoft Windows 2000. Microsoft ceased support for this version of their operating system in 2010. Players still using Windows 2000 are encouraged to upgrade prior to the release of Mists of Pandaria. (Blue Tracker (http://blue.mmo-champion.com/topic/215608-wow-no-longer-compatible-with-windows-2000/) / Official Forums (http://us.battle.net/wow/en/forum/topic/3881719932?page=1#1))<br>
+<br>
+New Languages for Battle.net Mobile Authenticator<br>
+We&#x2019;ve just released updates for the iPhone&#xAE;, iPod touch&#xAE;, Android&#x2122;, and Windows&#x2122; Phone 7 versions of the free Battle.net Mobile Authenticator app. We now support the following additional languages:<br>
+<br>
+<br>
+Portugu&#xEA;s<br>
+Italiano<br>
+Polski<br>
+<br>
+<br>
+Visit this link (https://eu.battle.net/account/support/mobile-auth-download.html) to find out how to download the right version for your mobile device. (Blue Tracker (http://blue.mmo-champion.com/topic/215540-new-languages-for-battlenet-mobile-authenticator/) / Official Forums (http://eu.battle.net/wow/en/forum/topic/3557512?page=1#1))<br>
+<br>
+<br>
+Poll: What keeps you interested in WoW?<br>
+We want to know what you like about WoW that causes you to keep playing!<br>
+<br>
+&lt;div style=&quot;width: 200px;display: block;margin-left: auto;margin-right: auto;&quot;&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/5825886.js&quot;&gt;&lt;/script&gt;<br>
+&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/5825886/&quot;&gt;What is it about World of Warcraft that keeps you playing?&lt;/a&gt;&lt;/noscript&gt;&lt;/div&gt;<br>
+&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;</div></div>

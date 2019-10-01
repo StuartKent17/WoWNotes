@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2010-05-21, 08:12 PM</div></div><div class="posttext">Update - Huh, yeah, you had a message pointing to http://www.agoragames.com/ while the site was down. They&apos;re the very awesome and comprehensive techs in charge of MMO-Champion, the site was perfectly safe. The site database was also safe and none of your passwords are compromised here, it&apos;s really just a few JS files changed, and worst case scenario you are very unlucky and got a spyware that won&apos;t affect your WoW account. <br>
+<br>
+I&apos;m just very serious when it comes to security and had no plan to hide the problem. (Even if I&apos;m probably overreacting)<br>
+<br>
+Oh god, MMO-Champion got hacked<br>
+Yay! It finally happened! MMO-Champion got hacked! But don&apos;t worry too much, the title is mostly here to scare you and make sure you will read the rest. The site got indirectly affected by a very nasty virus called Gumblar, the site is cached in various ways and it means that most users are potentially safe but I strongly suggest that you read the entire post. <br>
+<br>
+Gumblar, AKA Troj/JSRedir-R, is a botnet driven virus which attacks both websites and normal computers. Sounds scary, and to anyone who owns their own website it is, but to anyone else it&apos;s mostly harmless. <br>
+<br>
+How does it work?<br>
+The virus is split into two parts. There&apos;s a javascript version, which infects websites, and the actual virus itself which infects computers. Whenever a browser executes the javascript on a website, it runs a Java applet and (through a Java exploit or two) installs the virus onto your computer. The virus, once warm and snug on a computer, looks for any FTP details you may have stored (In dreamweaver, filezilla, pretty much any FTP application) and makes a copy of them.<br>
+<br>
+For every FTP it manages to get, it attempts to make a connection and then infects the website with the javascript. It does this by opening .js/.html/.php files and attaching a unique version of itself to a position inside the file, usually at the end. This new code is unique per website, not per file, so removing it isn&apos;t as daunting as it sounds.<br>
+<br>
+In addition to spreading itself to every website it can get its claws on, the virus also reprises its role as a traditional Trojan and attempts to install other spyware onto your computer, including redirecting popular websites (such as Google) to its own unsafe alternative.<br>
+<br>
+How do I know if I have it? How do I get rid of it?<br>
+Most modern anti-viruses should pick up the Gumblar virus. Personally I&apos;d suggest downloading and installing Malwarebytes (http://www.malwarebytes.org) and doing a complete system scan. Make absolute sure your anti-virus is up to date before scanning, and make sure it&apos;s on a full/intensive scan, take no risks with a quick sweep.<br>
+<br>
+For webmasters, there&apos;s a lovely tool called Unmask Parasites (http://www.unmaskparasites.com) for checking if your website is safe or not. However, if you suspect you may have been infected but this tool returns nothing, you may be best suited to manually look through the files. Open up a few random .js files, and look at the end for a line or two of code that you don&apos;t recognise. Open up some .html files for a &amp;lt;script&amp;gt; tag that shouldn&apos;t be there. If you find it, take your website down immediately and start removing it. If you have backups, make sure they&apos;re clean and restore them. Otherwise, you can manually fix the files. Automated tools do not work so well for this as it&apos;s unique code for every website.<br>
+<br>
+As always, it is recommended you change any private details (such as passwords) after you have confirmed you are safe. While World of Warcraft/Battlenet accounts are not affected by this virus, it is still strongly advised you change your password for it regardless.<br>
+<br>
+My epics are safe?<br>
+Gumblar is a botnet driven virus, which means the infection process is entirely automated by other infected machines, no human intervention. As it was not designed to look for World of Warcraft details, it is not particularly interested in looking for them. This doesn&apos;t mean you can slack and use this as an excuse to never change your password though. It&apos;s always a good time to change your password!<br>
+<br>
+Technical details<br>
+For more details about Gumblar, see this Wikipedia article (http://en.wikipedia.org/wiki/Gumblar) or this Unmask Parasites (http://blog.unmaskparasites.com/2009/05/07/gumblar-cn-exploit-12-facts-about-this-injected-script/) article. For a technical summary of Gumblar, there&apos;s a nice article on iss.net (http://www.iss.net/threats/gumblar.html) about it.</div></div>

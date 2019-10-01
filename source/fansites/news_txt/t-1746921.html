@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2015-03-30, 05:05 AM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Pylon Manipulation in 2.2, John Yang on Legacy Gear, WW + Rend Testing on PTR (http://www.diablofans.com/news/48378-pylon-manipulation-in-2-2-john-yang-on-legacy-gear)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; BRM Card Reveal Countdown, Top Decks of the Week, Viagame House Cup #2 Decklists (http://www.hearthpwn.com/news/826-brm-card-reveal-countdown-top-decks-of-the-week)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/october/hotsIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Upcoming Shop Sales, Epic Plays Of The Week #23, Into the Nexus #44 (http://www.heroesnexus.com/news/1334-upcoming-shop-sales-epic-plays-of-the-week-23-into)<br>
+<br>
+Five Player Blast Furnace Normal<br>
+If Challenge Modes aren&apos;t challenging enough for you, you can always try and run raids with five players! Kief (http://eu.battle.net/wow/en/character/frostmane/Kief/advanced) and friends managed to kill Blast Furnace normal and are getting close (http://www.reddit.com/r/wow/comments/30p56c/5_players_vs_blast_furnace_normal_just_because_we/cpuisk5) to killing Blackhand with an item level of 695.<br>
+<br>
+<br>
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/_6GbnYybunQ?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br>
+<br>
+<br>
+Armory Stats - Challenge Modes<br>
+Today we are taking a look at the Challenge Mode achievement completion rate of players. The data used today is a sample of 6.1 million characters from 3.1 million accounts. We also did this for the end of Mists of Pandaria, which you can see here (http://www.mmo-champion.com/content/4584-Armory-Stats-MoP-Challenge-Modes-Blue-Tweets-Setup-of-the-Month-DLC-469). <br>
+<br>
+The first chart looks at the overall percentage of players that have each challenge mode achievement. The second chart defines a participating player as one with the completion achievement for that challenge mode. <br>
+<br>
+You can click the titles in the legend to turn off and on different data types.<br>
+<br>
+Warlords of Draenor introduced challenge mode weapons for transmog, rather than the armor sets offered during Mists of Pandaria (http://www.mmo-champion.com/content/932-Challenge-Mode-Armor-Sets). The challenge modes also offer gear (www.wowdb.com/items/119032-challengers-strongbox#related:contains-item;_!) (item level 660 (http://www.wowdb.com/items/119010-doomchain-collar?bonusIDs=237,591) as of Patch 6.1.) from the daily quests (www.wowdb.com/items/119032-challengers-strongbox#related:reward-of-quest;_!), unlike the Mists of Pandaria quests.<br>
+<br>
+<br>
+Challenge Warlord (http://www.wowdb.com/achievements/8895-challenge-warlord) - 1.23% of players<br>
+Challenge Warlord: Bronze (http://www.wowdb.com/achievements/8897-challenge-warlord-bronze) - 1.02% of players / 83.15% of participating players<br>
+Challenge Warlord: Silver (http://www.wowdb.com/achievements/8898-challenge-warlord-silver) - 0.86% of players / 70.16% of participating players<br>
+Challenge Warlord: Gold (http://www.wowdb.com/achievements/8899-challenge-warlord-gold) - 0.63% of players / 51.32% of participating players<br>
+<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/images/news/2014/may/highcharts-4.0.1.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart;<br>
+<br>
+setTimeout(function () {<br>
+height = subchart.height<br>
+width = $(&quot;.pgcharts&quot;).width()<br>
+subchart.setSize(width, height, doAnimation = true);<br>
+}, 1500)<br>
+<br>
+setTimeout(function () {<br>
+height = subchart.height<br>
+width = $(&quot;.pgcharts&quot;).width()<br>
+subchart.setSize(width, height, doAnimation = true);<br>
+}, 2500)<br>
+<br>
+setTimeout(function () {<br>
+height = subchart.height<br>
+width = $(&quot;.pgcharts&quot;).width()<br>
+subchart.setSize(width, height, doAnimation = true);<br>
+}, 4500)<br>
+<br>
+$(document).ready(function () {<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;challengeModes&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [&apos;Skyreach&apos;, &apos;Bloodmaul Slag Mines&apos;, &apos;Auchindoun&apos;, &apos;Shadowmoon Burial Grounds&apos;, &apos;Grimrail Depot&apos;, &apos;Upper Blackrock Spire&apos;, &apos;Iron Docks&apos;, &apos;Everbloom&apos;],<br>
+labels: {<br>
+maxStaggerLines: 0<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: true,<br>
+},<br>
+<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Percent of Players&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false,<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function () {<br>
+return &apos;&lt;b&gt;&apos; + this.series.name + &apos;&lt;/b&gt; - &apos; + this.y + &apos;%&apos;;<br>
+}<br>
+},<br>
+title: {<br>
+text: &apos;Percentage of Players that Completed Challenge Modes&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+ shared: true,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [{<br>
+name: &apos;Completion&apos;,<br>
+data: [4.35, 3.10, 6.80, 4.33, 7.19, 5.48, 3.13, 6.17],<br>
+color: &apos;#717EAB&apos;<br>
+<br>
+},{<br>
+name: &apos;Bronze&apos;,<br>
+data: [2.59, 2.18, 4.70, 2.91, 5.60, 3.77, 2.47, 3.96],<br>
+color: &apos;#8C7853&apos;<br>
+<br>
+}, {<br>
+name: &apos;Silver&apos;,<br>
+data: [1.15, 1.18, 2.23, 1.32, 1.97, 1.41, 1.39, 1.47],<br>
+color: &apos;#545454&apos;<br>
+<br>
+}, {<br>
+name: &apos;Gold&apos;,<br>
+data: [0.75, 0.77, 0.93, 0.80, 0.81, 0.70, 0.85, 0.73],<br>
+color: &apos;#DBDB70&apos;<br>
+<br>
+}]<br>
+<br>
+});<br>
+<br>
+<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;challengeModesP&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [&apos;Skyreach&apos;, &apos;Bloodmaul Slag Mines&apos;, &apos;Auchindoun&apos;, &apos;Shadowmoon Burial Grounds&apos;, &apos;Grimrail Depot&apos;, &apos;Upper Blackrock Spire&apos;, &apos;Iron Docks&apos;, &apos;Everbloom&apos;],<br>
+labels: {<br>
+maxStaggerLines: 0<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: true,<br>
+},<br>
+<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Percent of Players&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false,<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function () {<br>
+return &apos;&lt;b&gt;&apos; + this.series.name + &apos;&lt;/b&gt; - &apos; + this.y + &apos;%&apos;;<br>
+}<br>
+},<br>
+title: {<br>
+text: &apos;Percentage of Participating Players that Completed Challenge Modes&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+shared: true,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [{<br>
+name: &apos;Bronze&apos;,<br>
+data: [59.68, 70.49, 69.17, 67.09, 77.91, 68.76, 78.77, 64.23],<br>
+color: &apos;#8C7853&apos;<br>
+<br>
+}, {<br>
+name: &apos;Silver&apos;,<br>
+data: [26.56, 38.20, 32.80, 30.46, 27.45, 25.69, 44.47, 23.89],<br>
+color: &apos;#545454&apos;<br>
+<br>
+}, {<br>
+name: &apos;Gold&apos;,<br>
+data: [17.27, 24.9, 13.74, 18.43, 11.32, 12.69, 27.23, 11.85],<br>
+color: &apos;#DBDB70&apos;<br>
+<br>
+}]<br>
+<br>
+});<br>
+<br>
+});<br>
+&lt;/script&gt; <br>
+&lt;div id=&quot;challengeModes&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;&lt;br&gt;<br>
+<br>
+&lt;div id=&quot;challengeModesP&quot; width=&quot;50%&quot; class=&quot;pgcharts&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+&lt;iframe width=&quot;900&quot; height=&quot;506&quot; src=&quot;https://www.youtube.com/embed/0Ci8nry3934?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br>
+<br>
+<br>
+Poll - Challenge Modes<br>
+What is the highest level of challenge modes you have completed some of in Warlords of Draenor? <br>
+<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/8767006.js&quot;&gt;&lt;/script&gt;&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/8767006/&quot;&gt;What is the highest level of challenge modes you have completed in Warlords?&lt;/a&gt;&lt;/noscript&gt;<br>
+<br>
+Blue Tweets<br>
+Misc<br>
+Since heirlooms have a tab now, can it be possible to delete a character without having to delete the heirlooms too beforehand<br>
+Thank you for the feedback. We&apos;ll look into it. (WarcraftDevs (https://twitter.com/WarcraftDevs/status/580767892095922176))<br>
+<br>
+<br>
+<br>
+Dark Legacy Comics #483 - I am Legend<br>
+DLC #483 (http://www.darklegacycomics.com/483) has been released.<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2015/march/dlc483.jpg (http://www.darklegacycomics.com/483)</div></div>

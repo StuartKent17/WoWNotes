@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">Boubouille</div><div class="date">2011-10-15, 03:49 AM</div></div><div class="posttext">Dragon Soul PTR Testing - Morkoch and Yor&apos;sahj the Unsleeping<br>
+Last night a couple of players had a chance to test the first bosses of the new Dragon Soul raid, it was pretty hard to get streams and videos because of slight server issues but the wonderful n1kftw (http://www.youtube.com/user/n1kftw) was kind enough to upload videos of the 2 encounters on Youtube for us. <br>
+<br>
+<br>
+&lt;iframe width=&quot;700&quot; height=&quot;455&quot; src=&quot;http://www.youtube.com/embed/OwaOfj5iDmc&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br>
+<br>
+&lt;iframe width=&quot;700&quot; height=&quot;455&quot; src=&quot;http://www.youtube.com/embed/3Q_28iEk5Z4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;<br>
+<br>
+<br>
+Firelands Changes Impact - Update<br>
+I may not have been clear enough when we posted the Firelands Graphs (http://www.mmo-champion.com/content/2497-Statistics-Firelands-Changes-Impact-Pumpkin-Carving-Contest-Fan-Art) previously, so let me remind you that they are intended to show which changes made Firelands easier, not how many people raid. <br>
+<br>
+Some people translated that to &quot;1.35% of players saw the end game content!&quot; and forgot that the sample was 2.7M characters, not 10 players, and someone smart pointed out (http://blue.mmo-champion.com/topic/202915/162-of-players-not-2) that this % is probably around 15 or 20% at this point. (Which is pretty impressive for the end boss of the latest raiding tier)<br>
+<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart;<br>
+$(document).ready(function() {<br>
+Highcharts.setOptions({<br>
+colors: [&apos;#4768C4&apos;, &apos;#E01B6A&apos;]<br>
+});<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;rollingchart2&apos;,<br>
+zoomType: &apos;x&apos;,<br>
+spacingRight: 20,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+title: {<br>
+text: &apos;Total Number of Characters that have Defeated Heroic Ragnaros&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+subtitle: {<br>
+text: document.ontouchstart === undefined ?<br>
+&apos;Click and drag in the plot area to zoom in&apos; :<br>
+&apos;Drag your finger over the plot to zoom in&apos;<br>
+},<br>
+xAxis: {<br>
+type: &apos;datetime&apos;,<br>
+maxZoom: 14 * 24 * 3600000, // fourteen days<br>
+title: {<br>
+text: null<br>
+},<br>
+startOnTick: false,<br>
+showFirstLabel: false<br>
+},<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Number of Characters&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+startOnTick: true,<br>
+showFirstLabel: false<br>
+<br>
+},<br>
+tooltip: {<br>
+shared: true <br>
+},<br>
+legend: {<br>
+enabled: false<br>
+},<br>
+plotOptions: {<br>
+<br>
+areaspline: {<br>
+animation: false,<br>
+lineWidth: 3,<br>
+marker: {<br>
+enabled: true,<br>
+states: {<br>
+hover: {<br>
+enabled: true,<br>
+radius: 5<br>
+}<br>
+}<br>
+},<br>
+shadow: false,<br>
+states: {<br>
+hover: {<br>
+lineWidth: 3 <br>
+}<br>
+}<br>
+}<br>
+},<br>
+<br>
+series: [{<br>
+type: &apos;areaspline&apos;,<br>
+name: &apos;Characters defeated Heroic Ragnaros&apos; ,<br>
+pointInterval: 7 * 24 * 3600 * 1000,<br>
+pointStart: Date.UTC(2011, 7, 02),<br>
+data: [<br>
+57 , 99 , 143 , 194 , 235 , 401 , 676 , 1234 , 1804 , 2376 ]<br>
+}]<br>
+});<br>
+<br>
+<br>
+<br>
+});<br>
+<br>
+&lt;/script&gt; <br>
+<br>
+&lt;div id=&quot;rollingchart2&quot; style=&quot;style=&quot;width:900px;margin-left: auto;margin-right: auto;&quot;&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+&lt;br /&gt;<br>
+<br>
+<br>
+<br>
+Blue Posts<br>
+Death Knight Tier 13 Preview<br>
+No, as far as I know we don&apos;t plan to make it a reveal at BlizzCon, though there&apos;s a chance the timing of its release could, by coincidence, be around that time. It&apos;s still planned to be revealed in the same manner the rest have been -- via a blog on our front page with the visual retrospective of previous tiers and developer description. We&apos;d love to post it by next week if we can, but I can&apos;t promise that with all the BlizzCon preparations taking place. [...]<br>
+<br>
+I&apos;ll give you a bit of the lowdown on why the death knight set hasn&apos;t come out yet, even in the 4.3 PTR files third-party sites are looking through. As with all sets, a concept art piece was done for death knight tier 13. When that was translated to the actual in-game look, we felt it wasn&apos;t up to par with the concept, and ultimately wasn&apos;t nearly at the quality level of the other tier 13 sets. But, that death knight set was completed weeks ago.<br>
+<br>
+So, there are times where multiple iterations of how a set will look in the game are made, based on the original concept piece. In this case though, we felt there to be such a gap in quality that we went back to the drawing board and came up with an entirely new piece of concept art, scrapping the original concept and in-game art done for death knights.<br>
+<br>
+Well, I can say the new concept art is done and the set is close to being ready for image captures. I&apos;ve not seen either, but I&apos;ve heard very good things. (Blue Tracker (http://blue.mmo-champion.com/topic/202941/dk-tier-13-revealed-at-blizzcon) / Official Forums (http://us.battle.net/wow/en/forum/topic/3341768861?page=2#24))<br>
+<br>
+Firelands Raid Completion<br>
+As others have pointed out, your 1.35% is just wrong due to the stats MMO is stating, but whatever, we&#x2019;re not going to reveal any of our internal numbers to show how wrong you are, or discount the numbers posted on MMO for that matter. I will say they&#x2019;re likely as accurate as they can be. Meaning, they&#x2019;re wrong, but at no fault of theirs simply due to the data they have available to them. While we do have data we pull and review very regularly, it&#x2019;s not always a true measure of success or failure without considering the context.<br>
+<br>
+We try and make content for all of our players. It&#x2019;s both a blessing and a curse that the WoW player base is as large and diverse as it is. &#x201C;Hardcore&#x201D; players for example tend to dramatically underestimate the skill gap between themselves and the vast majority of other players. A lot of games handle this problem through multiple difficulty settings. That is harder to do in a game as content rich as World of Warcraft, but it is something we&#x2019;re looking at more and more with new features like Raid Finder essentially adding a more accessible setting.<br>
+<br>
+But even with a system (we believe) as awesome as the Raid Finder, there are no simple solutions.<br>
+<br>
+Players are motivated to raid (and do any content for that matter) for a lot of different reasons. A sizeable number of players are satisfied with seeing most of the game content once. If they kill the dragon or slay the Lich King, they (appropriately) feel like they have won the game. That view is pretty heretical to the traditional raider, who is used to working for weeks to defeat a boss and then spending the next few weeks or months farming that boss so that their group has a leg up for the next tier of content. Other players can be motivated by gear, and once they accrue their rewards they are done with the content. Others are motivated by the challenge, and if things are too easy, they lose interest. These players also tend to assume that everyone shares their mindset and they will be happy to wipe on a fight over and over and over with hopes of improving. In reality, we know from data that a lot of players might be willing to wipe a few times, and then after that, they&#x2019;re done raiding and potentially even playing. It might be easy to dismiss those players and argue raiding is not for them, but that&#x2019;s not really our design goal. Raids represent an enormous commitment of developer resources. In the same way that we would never make 20 new Arenas just for Gladiator-level players, we don&#x2019;t want to develop a raid that only 2% of our raiders can see. We will make sure that there are challenging encounters for players who enjoy that sort of thing (as many of us professional game developers do), but then our goal will be to, over time, broaden the potential audience by bringing the content difficulty down. We think the shock with Firelands for some players was that the nerfs were so severe instead of gradual. For the 4.3 Dragon Soul raid we plan on gradually nerfing it over time, sort of like we did with Icecrown Citadel, except by nerfing the content instead of buffing the players.<br>
+<br>
+There is another portion of players that are just not interested in raiding no matter how accessible it is, and that&#x2019;s fine too, but we do keep track of how player behavior in the past may match player behavior currently or even in the future as we make these choices. Overall our goals are to ultimately get as many people seeing and downing Deathwing as saw the end of Naxxramas in Wrath of the Lich King. That&#x2019;s not all going to be day 1 of the patch, or even in the first month, but with the Raid Finder and gradual lowering of content we think we can create that initial super high barrier to test the true worth of the hardest of the hardcore, while also providing some fun and accessible content to a much wider swath of players.<br>
+<br>
+Yeah, we need to offer a lot of different kinds of content so that non-raiders still have things to do, or even for raiders to do on off nights. The Molten Front dailies were really popular for several weeks, but like all content, players eventually move on. We hope the DMF and even Transmog will provide some non-raid focused activities in 4.3, but beyond that we have plans to do a lot more. And when you see them you&apos;ll be all like :O and we&apos;ll be all like :D and then people on the forums will still be all like&#xFF08;&#x256F;&#xB0;&#x25A1;&#xB0;&#xFF09;&#x256F;&#xFE35; &#x253B;&#x2501;&#x253B;<br>
+<br>
+The point of not divulging statistics is that they are only one part of what drives overall goals and development. Unfortunately, the fundamental truth is that people put too much behind numbers (case in point, posts in this thread and a couple other dozen that sprung up because of the MMO post), and will build entire cases on them alone with no thought for context or meaning.<br>
+<br>
+Bottom line is that no matter what numbers we show you, it&apos;s not going to make any situations &apos;better&apos;. From time to time we show StarCraft II players literal win/loss %, as accurate as they can possibly be pulled from the source itself, and they&apos;re either ignored (because players simply don&apos;t want to believe their experiences are &quot;wrong&quot;) or laughed at as being some underhanded plot to feed them misinformation.<br>
+<br>
+Numbers don&apos;t win us anything. They don&apos;t win you anything. Conversations are worth having - ones based on experiences and feelings. We know what the numbers say, but they don&apos;t mean anything if you are still unhappy with your enjoyment of the game and your perception of its direction.You&apos;re spot on, and while we were coming to some of those same realizations not too long ago, unfortunately (or fortunately depending on your outlook) it&apos;s not something we realized in time for Dragon Soul. But we do plan to act on those realizations before too long. (Blue Tracker (http://blue.mmo-champion.com/topic/202894/135-of-all-wow-players-completed-normal-fl) / Official Forums (http://us.battle.net/wow/en/forum/topic/3342098250?page=18#351))<br>
+<br>
+Blizzard Charity Auction Benefitting St. Jude<br>
+Want to own a piece of Blizzard Entertainment history? After a series of World of Warcraft infrastructure upgrades, we&#x2019;ve preserved the retired HP server blades that once hosted many realms in our archives. In the near future a selection of these blades will be made available for auction, and the net proceeds will be donated to St. Jude Children&#x2019;s Research Hospital.<br>
+<br>
+http://us.battle.net/wow/en/blog/3710218/ (Blue Tracker (http://blue.mmo-champion.com/topic/202839/blizzard-charity-auction-benefitting-st-jude) / Official Forums (http://us.battle.net/wow/en/forum/topic/3342018691?page=1#1)) <br>
+<br>
+<br>
+Blizzard Art Gallery Update<br>
+The World of Warcraft: Wrath of the Lich King Art gallery (http://us.battle.net/wow/en/media/artwork/wow-wrath)has been updated with five pieces representing the Warcraft universe.<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2011/october/thumb/env-ice-myst-village-full.jpg (http://media.mmo-champion.com/images/news/2011/october/env-ice-myst-village-full.jpg) http://media.mmo-champion.com/images/news/2011/october/thumb/env-obelisk-full.jpg (http://media.mmo-champion.com/images/news/2011/october/env-obelisk-full.jpg) http://media.mmo-champion.com/images/news/2011/october/thumb/env-vg-full.jpg (http://media.mmo-champion.com/images/news/2011/october/env-vg-full.jpg) <br>
+http://media.mmo-champion.com/images/news/2011/october/thumb/env-winter-tauren-full.jpg (http://media.mmo-champion.com/images/news/2011/october/env-winter-tauren-full.jpg) http://media.mmo-champion.com/images/news/2011/october/thumb/monster-yeti-full.jpg (http://media.mmo-champion.com/images/news/2011/october/monster-yeti-full.jpg) <br>
+<br>
+<br>
+Comics: Dark Legacy and Teh Gladiators<br>
+Dark Legacy Comics #308 (http://www.darklegacycomics.com/308.html) and Teh Gladiators #278 + #279 (http://www.tehgladiators.com/?p=278) are available!<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2011/october/308.jpg (http://www.darklegacycomics.com/308.html) http://media.mmo-champion.com/images/news/2011/october/278.jpg (http://www.tehgladiators.com/?p=278)</div></div>

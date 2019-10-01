@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div class="post"><div class="posttop"><div class="username">chaud</div><div class="date">2013-12-01, 09:22 PM</div></div><div class="posttext">&lt;img src=&quot;http://media.mmo-champion.com/images/news/2011/november/d3.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Reaper of Souls Highlights: New Class Skills and Visuals (http://www.diablofans.com/news/2261-reaper-of-souls-highlights-new-class-skills-and-visuals/)<br>
+<br>
+&lt;img src=&quot;http://media.mmo-champion.com/images/news/2013/march/hearthstoneIcon.png&quot; style=&quot;margin-bottom:-2px; margin-right:0px; vertical-align:bottom&quot; /&gt; Leveling Rewards, Beta Key Giveaway, Events This Weekend, Warrior Beatdown Deck (http://www.hearthpwn.com/news/213-leveling-rewards-beta-key-giveaway-events-this)<br>
+<br>
+Armory Stats - Player Raid Completion Rates<br>
+Today we are again taking a look at the overall raid completion rate of players after many people asked for an update after last time (http://www.mmo-champion.com/content/3471-Armory-Stats-Player-Raid-Completion-Rates-Blue-Tweets-GW2-on-Sale-Fan-Art-Update). Now that achievements are account wide, we can group characters by account and get an idea of what percentage of players (not characters) have completed a raid at least once, based on earning the achievement for the each wing.<br>
+<br>
+It looks like percentages have changed slightly since the original post due to finding more casual players, returning players being added to the database, and profiles from merged realms disappearing until that character is logged in to again.<br>
+<br>
+The data used today is a sample from 7.6 million characters from 2.9 million accounts. The sample is slightly biased, as players who are not in a guild are much less likely to appear in our sample. You can leave suggestions for future stat posts in the comments!<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://media.mmo-champion.com/js/highcharts.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt; var chart; <br>
+$(document).ready(function() {<br>
+Highcharts.setOptions({<br>
+colors: [&apos;#55C949&apos;]<br>
+});<br>
+chart = new Highcharts.Chart({<br>
+chart: {<br>
+renderTo: &apos;stillalivechart&apos;,<br>
+defaultSeriesType: &apos;column&apos;,<br>
+backgroundColor: &apos;#efeedc&apos;<br>
+},<br>
+<br>
+xAxis: {<br>
+categories: [ &apos;Sha of Anger&apos;, &apos;Galleon&apos;, &apos;Mogu\&apos;shan Vaults&apos;, &apos;Heart of Fear&apos;, &apos;ToES&apos;, &apos;Nalak&apos;, &apos;Oondasta&apos;, &apos;ToT Wing 1&apos;, &apos;ToT Wing 4&apos;, &apos;Celestials&apos;, &apos;Ordos&apos;,&apos;SoO Wing 1&apos;, &apos;SoO Wing 2&apos;, &apos;SoO Wing 3&apos;, &apos;SoO Wing 4&apos;, &apos;SoO Glory&apos;],<br>
+labels: {<br>
+maxStaggerLines: 0<br>
+}<br>
+<br>
+},<br>
+legend: {<br>
+enabled: false,<br>
+},<br>
+<br>
+yAxis: {<br>
+title: {<br>
+text: &apos;Percent&apos;,<br>
+style: {<br>
+fontSize: &apos;16px&apos;,<br>
+color: &apos;#000&apos;,<br>
+}<br>
+}<br>
+},<br>
+plotOptions: {<br>
+column: {<br>
+animation: false<br>
+}<br>
+},<br>
+<br>
+tooltip: {<br>
+formatter: function() {<br>
+return &apos;&lt;b&gt;&apos; + this.point.name + &apos;&lt;/b&gt; - &apos;+ this.y +&apos;%&apos;;<br>
+}<br>
+},<br>
+title: {<br>
+text: &apos;Percentage of Players that Completed a Raid on Any Difficulty&apos;,<br>
+style: {<br>
+color: &apos;#000&apos;,<br>
+fontSize: &apos;18px&apos;,<br>
+fontWeight: &apos;bold&apos;<br>
+}<br>
+},<br>
+credits: {<br>
+enabled: false<br>
+},<br>
+series: [<br>
+{<br>
+data: [{y: 72, color: &apos;#81CCAA&apos;, name:&apos;Sha of Anger&apos;},{y: 57, color: &apos;#81CCAA&apos;, name:&apos;Galleon&apos;},{y: 74, color: &apos;#81CCAA&apos;, name:&apos;Mogu\&apos;shan Vaults&apos;},{y: 67, color: &apos;#81CCAA&apos;, name:&apos;Heart of Fear&apos;},{y: 63, color: &apos;#81CCAA&apos;, name:&apos;Terrace of Endless Spring&apos;},{y: 60, color: &apos;#81A4CC&apos;, name:&apos;Nalak&apos;},{y: 46, color: &apos;#81A4CC&apos;, name:&apos;Oondasta&apos;},{y: 66, color: &apos;#81A4CC&apos;, name:&apos;Throne of Thunder Wing 1&apos;},{y: 53, color: &apos;#81A4CC&apos;, name:&apos;Throne of Thunder Wing 4&apos;},{y: 27, color: &apos;#E0BB79&apos;, name:&apos;All Celestials&apos;},{y: 11, color: &apos;#E0BB79&apos;, name:&apos;Ordos&apos;},{y: 40, color: &apos;#E0BB79&apos;, name:&apos;Siege of Orgrimmar Wing 1&apos;},{y: 30, color: &apos;#E0BB79&apos;, name:&apos;Siege of Orgrimmar Wing 2&apos;},{y: 19, color: &apos;#E0BB79&apos;, name:&apos;Siege of Orgrimmar Wing 3&apos;},{y: 11, color: &apos;#E0BB79&apos;, name:&apos;Siege of Orgrimmar Wing 4&apos;},{y: 0.36, color: &apos;#E0BB79&apos;, name:&apos;Glory of the Orgrimmar Raider&apos;}],<br>
+<br>
+name: &apos;&lt;b&gt;Percent&lt;/b&gt;&apos;<br>
+}<br>
+<br>
+]<br>
+<br>
+});<br>
+<br>
+});<br>
+&lt;/script&gt; <br>
+&lt;div id=&quot;stillalivechart&quot; width=&quot;50%&quot;&gt;<br>
+Don&apos;t see a chart? Enable javascript!<br>
+&lt;/div&gt;<br>
+Blue Tweets<br>
+Warlords of Draenor and Spirit<br>
+Saying spirit isn&apos;t a base-line stat for healers is incorrect...Unless you&apos;re going to implement a system that replaces it<br>
+You guys can call it anything you want. We say Int is the primary stat for healers. (Source (https://twitter.com/Ghostcrawler/status/403046664262283264))<br>
+So, will there be a plate piece that has Primary/Mastery/Spirit say? Primary int/str spirit stays for dps even?<br>
+No Spirit on plate (or leather or mail or cloth). Spirit is only on accessories + weapons. (Source (https://twitter.com/Ghostcrawler/status/403319040837287937))<br>
+Sorry if that wasn&apos;t clear. Seems like we should have spent more time on this at Blizzcon. (Source (https://twitter.com/Ghostcrawler/status/403319138682015745))<br>
+<br>
+Disappointing. Spirits such an interesting stat, feels like on such few pieces we&apos;ll lack customization.<br>
+But each piece can have more Spirit. So unless you really fine tune Spirit (rare in my experience) you can still customize. (Source (https://twitter.com/Ghostcrawler/status/403317598151921664))<br>
+You might want Spirit on 4 slots and I might want it on 2. You can gem it too if you have any gem slots. (Source (https://twitter.com/Ghostcrawler/status/403317775961051136))<br>
+<br>
+So we&apos;ll still see Spirit Cloth/Leather/Mail/Plate? It sounds like the change won&apos;t do much for healer gearing.<br>
+A Healadin would have Int on chest, helm etc. and Spirit on some rings, trinkets, cloak, neck, sword and shield. (Source (https://twitter.com/Ghostcrawler/status/402656402226675712))<br>
+<br>
+If you want to stack Spirit, get it on all those pieces. But you shouldn&apos;t need that much. Spirit will not appear on gloves, hats, etc. (Source (https://twitter.com/Ghostcrawler/status/403316779880955904))<br>
+I thought I needed way more than I had, but once I gemmed and enchanted for it, my mana pool was fine.<br>
+Some healers feel the need to stack Spirit in every slot. That&apos;s not the intent, or necessary, but to each their own. (Source (https://twitter.com/Ghostcrawler/status/403318379773046784))<br>
+You have no clue about healing GC. Spirit is the most important stat for healers, more than Int.<br>
+I&apos;ve healed every fight in the game (without Spirit in every slot) but keep making those arguments! (Source (https://twitter.com/Ghostcrawler/status/403609796806328321))<br>
+if spirit doesn&#x2019;t come on hats, gloves etc. and you say we don&#x2019;t need it on trinket, ring etc. where do we get it then?<br>
+You&apos;ll get some on rings etc. You don&apos;t need it on every slot. You don&apos;t even need that today. (Source (https://twitter.com/Ghostcrawler/status/403608500275662848))<br>
+Q: would you have enough regen to do &quot;ok&quot; without wearing *any* spirit accessories? (i.e. full dps gear)<br>
+Possibly. It&apos;s not fun when you have starter gear (i.e. low Spirit) and constantly run OOM just healing a dungeon. (Source (https://twitter.com/Ghostcrawler/status/403634490389454848))<br>
+<br>
+Nerfing flying. Nerfing manareg in healing. Anything else?<br>
+No, we aren&apos;t nerfing mana regen for healing. We&apos;re adjusting how many slots you need with Spirit to achieve reasonable regen. (Source (https://twitter.com/Ghostcrawler/status/403643080181424129))<br>
+<br>
+When this was announced, it was said that spirit plate only gets the paladins excited. Still the case in WoD? Was hoping not.<br>
+There is no Spirit plate. There are Spirit rings, but all healers can use those. Spirit axes might still be rare. (Source (https://twitter.com/Ghostcrawler/status/402655889808584704))<br>
+<br>
+That&apos;d be good if spirit was useful on classes like Mages.<br>
+We want healers to have claim on those pieces so they aren&apos;t competing for every slot, (Source (https://twitter.com/Ghostcrawler/status/402654845779193856))<br>
+<br>
+With Spirit being a secondary stat, what is the actual use of dynamic primary stats? Still need seperate DPS/Heal sets, no?<br>
+To min/max you&apos;ll want different rings etc. But if you need to e.g. heal a fight or are rerolling to heals, you&apos;ll be better off. (Source (https://twitter.com/Ghostcrawler/status/402650305365434370))<br>
+Today you would need all different pieces. In 6.0 your armor pieces are still usable, unless you value very different secondaries. (Source (https://twitter.com/Ghostcrawler/status/402650501029715968))<br>
+<br>
+Spirit is healer only, won&apos;t change like Int / Str. Hit gone Spirit does zip for anyone else. Still healer only gear. Why?<br>
+Bonus armor has very limited value to DPS in PvE since boss AE damage is rarely physical. (Source (https://twitter.com/Ghostcrawler/status/402653582253494273))<br>
+There will be DPS trinkets with limited value to healers. Again we are talking about 7-8 slots max vs 15-16 today. (Source (https://twitter.com/Ghostcrawler/status/402654145418522624))<br>
+<br>
+or en Ele shaman wouldnt be able to heal in ele gear if it doesnt have spirit on it<br>
+The most mana hungry healer would want Spirit on rings, neck, cloak, trinkets and weapon, assuming they had won all those pieces (Source (https://twitter.com/Ghostcrawler/status/402651943287271424))<br>
+it&apos;s more likely you could heal with say just weapon, trinkets and a ring, which is only 4 slots. (Source (https://twitter.com/Ghostcrawler/status/402652268702347264))<br>
+And even then, you *could* DPS with those pieces. They might still be better than lower ilevel spots with no Spirit. (Source (https://twitter.com/Ghostcrawler/status/402652437552844800))<br>
+<br>
+Misc<br>
+May i ask what you actually play a game for? To work at a construction line or to have fun?<br>
+To have fun obviously. But overcoming some level of challenge is often more fun. (Source (https://twitter.com/Ghostcrawler/status/405082866557517824))<br>
+<br>
+As much as I love laser light shows, is there any chance well be able to turn off other people&apos;s spell effects in the future?<br>
+We have been trending towards making your fx look awesome while chilling out those from others. (Source (https://twitter.com/Ghostcrawler/status/405082393519738880))<br>
+<br>
+Ghostcrawler&apos;s Departure<br>
+I was Lead Systems Designer most of the time I was on WoW. I split lead duties with Cory as Lead Content Designer. (Source (https://twitter.com/Ghostcrawler/status/405884954115981315))<br>
+Both of us reported to the Game Director, Tom Chilton, Kalgan. Nearly every decision any of us made was by consensus. (Source (https://twitter.com/Ghostcrawler/status/405885074010152961))<br>
+<br>
+GC, you&apos;ll still be playing though, right? Also, it turns out all those players saying you played mage were wrong haha.<br>
+Yes, I&apos;m not quitting the game. Just no longer designing it. (Source (https://twitter.com/Ghostcrawler/status/405876334066294784))<br>
+<br>
+True. But how many universities and colleges had decent game development/software engineering programs 10-15 years ago?<br>
+First, I&apos;ve been in this business for 16 years. Second, look at game devs you admire. How many have a degree in game design? Likely 0. (Source (https://twitter.com/Ghostcrawler/status/405832211686891520))<br>
+None. That is actually my point. What degree are we old farts supposed to have? (Source (https://twitter.com/Ghostcrawler/status/405868951260766209))<br>
+Gee, thanks for that. Nothing like insulting people you don&apos;t even know.<br>
+It wasn&apos;t intended as an insult. Degrees in game development are a pretty new thing. I am not. (Source (https://twitter.com/Ghostcrawler/status/405870165671550976))<br>
+I have one of those degrees. 4 shipped titles, 2 of which are Skylanders games. It sounds like the stuff I hear all the time.<br>
+That&apos;s awesome. I actually love Skylanders. (Source (https://twitter.com/Ghostcrawler/status/405875900345896960))<br>
+<br>
+You&apos;ll find out my future plans soon enough. For now, let&apos;s let this be about World of Warcraft. Warlords is going to be SAVAGE and EPIC. (Source (https://twitter.com/Ghostcrawler/status/405793892068380672))<br>
+Any chance you will at least tell us if it is gaming related or not?<br>
+I&apos;m not leaving the industry. (Source (https://twitter.com/Ghostcrawler/status/405875155768860672))<br>
+<br>
+I would not expect many changes to the game as a result of my departure. We always design from a place of consensus and collaboration. (Source (https://twitter.com/Ghostcrawler/status/405794352271605760))<br>
+<br>
+I&apos;m just curious did you know about your departure from blizzard pre blizzcon?<br>
+Yes. (Source (https://twitter.com/Ghostcrawler/status/405872224520773632))<br>
+<br>
+Are you going to stick around on Twitter in some form? Hate to see you disappear.<br>
+I&apos;ll stick around though I&apos;m not sure my insights will be as valuable in the future. (Source (https://twitter.com/Ghostcrawler/status/405869792646557696))<br>
+<br>
+do you think a game design degree is a bad idea?<br>
+No. (Source (https://twitter.com/Ghostcrawler/status/405869654347763712))<br>
+<br>
+I wish you all the best... it&apos;s a shame Blizzard is losing someone as passionate as you. It won&apos;t quite be the same now <br>
+I appreciate it, but Blizzard has a ton of passionate folks. I wouldn&apos;t feel comfortable leaving if WoW wasn&apos;t in good hands. (Source (https://twitter.com/Ghostcrawler/status/405865838994931712))<br>
+<br>
+Greg will you stay with Blizz til WoD releases?<br>
+I&apos;m afraid not, but it&apos;s in very good hands. (Source (https://twitter.com/Ghostcrawler/status/405869331537338368))<br>
+<br>
+What is the &apos;feature&apos; you were hoping for. Sans NDA. Thanks for making the best you could. <br>
+I can&apos;t tell you, because I hope they&apos;ll still do it! (Source (https://twitter.com/Ghostcrawler/status/405868076127641600))<br>
+<br>
+Lots of things have been claimed as the imminent death of WoW, but this talk of you leaving is the first I actually believe.<br>
+No way. I&apos;m very confident in the direction of Warlords. I&apos;ll be playing it with you guys. (Source (https://twitter.com/Ghostcrawler/status/405866460578205696))<br>
+<br>
+A HOLY PRIEST?!?!<br>
+True story. Everyone seems to think I was trolling. My mage is like level 86. (Source (https://twitter.com/Ghostcrawler/status/405866297663037440))<br>
+<br>
+good luck on your future travels. But who are the forum QQers going to QQ at now? :P<br>
+They&apos;ll find another name and still miss the point that Blizzard designs as a collective. (Source (https://twitter.com/Ghostcrawler/status/405864682843410432))<br>
+<br>
+I am leaving on good terms with all of my friends at Blizzard and I&apos;m still going to be playing WoW. (Source (https://twitter.com/Ghostcrawler/status/405792932520665088))<br>
+The internet loves to play detective, but in this case it was a great opportunity and time to move on. I wasn&apos;t fired or asked to step down. (Source (https://twitter.com/Ghostcrawler/status/405793296582066176))<br>
+And leaving certainly has nothing to do with the community. WoW has a great community. We never took you all for granted. (Source (https://twitter.com/Ghostcrawler/status/405793421798817792))<br>
+The next time someone kicks your butt in DPS, you can wonder... was that GC? (Source (https://twitter.com/Ghostcrawler/status/405793020550725632))<br>
+<br>
+<br>
+Poll: Best World PvE Content<br>
+Another thing that people asked us to revisit after the &quot;new things are better&quot; effect wore off was this poll (http://www.mmo-champion.com/content/3398-SoO-Progression-Heroic-Norushen-Changes-Blue-Tweets-Poll-PvE-Content-Fan-Art). Now is a good time to do so after this thread (http://www.mmo-champion.com/threads/1410451-Timeless-Isle-is-the-worst-idea-created-in-any-game-ever!) popped up complaining about some of the aspects of Timeless Isle, as well as this thread (http://www.mmo-champion.com/threads/1410734-3-months-of-Timeless-Isle-has-actually-made-me-miss-dailies?p=24004718#post24004718) that talks about missing daily quests now that they are gone.<br>
+<br>
+Have your thoughts on Timeless Isle changed in the past few months? Let us know in the comments.<br>
+<br>
+<br>
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;http://static.polldaddy.com/p/7609016.js&quot;&gt;&lt;/script&gt;<br>
+&lt;noscript&gt;&lt;a href=&quot;http://polldaddy.com/poll/7609016/&quot;&gt;Which patch&apos;s questing and events did you enjoy the most?&lt;/a&gt;&lt;/noscript&gt;<br>
+<br>
+Fan Art<br>
+Today we have some nice art by d1eSEL (http://www.d1eselart.com/fan-art.html).<br>
+<br>
+<br>
+http://media.mmo-champion.com/images/news/2013/december/thumb/d1art01.jpg (http://media.mmo-champion.com/images/news/2013/december/d1art01.jpg) http://media.mmo-champion.com/images/news/2013/december/thumb/d1art02.jpg (http://media.mmo-champion.com/images/news/2013/december/d1art02.jpg) http://media.mmo-champion.com/images/news/2013/december/thumb/d1art03.jpg (http://media.mmo-champion.com/images/news/2013/december/d1art03.jpg)</div></div>
