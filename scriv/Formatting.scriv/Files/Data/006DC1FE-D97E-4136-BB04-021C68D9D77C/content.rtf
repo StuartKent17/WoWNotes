@@ -1,0 +1,102 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0
+{\fonttbl{\f0\fnil\fcharset0\fprq2 SegoeUI;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;}
+\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\fet2\ftnbj\aenddoc
+\pgnrestart\pgnstarts0
+\pard\plain \ltrch\loch {\f0\fs18\b0\i0 Ok so a long time project I've wanted to do is to use machine learning to spit out some generated patch notes. I finally got around some issues I was having getting started (nerd stuff at end of post). And these are really rough, but there are still some good results. I'm going to change spacing/punctuation, but otherwise leave it as is.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 *edit: I've started posting new ones to https://twitter.com/BotPatch*}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 This is using the smallest dataset, for a small amount of time, and tbh I have no idea what I'm doing. But it might help other people get started, or at least give people some laughs. There's quite high signal to noise at the moment but \loch\af0\hich\af0\dbch\af0\uc1\u194\'C2\u175\'AF\\\\\\_(\u227\'E3\u402\'83\u8222\'84)_/\u194\'C2\u175\'AF.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 Training data wise I've only given it 7.\\* and 8.\\* patches. Raw output link at the end to see how much I filtered out.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 There's a subreddit /r/SubSimulatorGPT2, that has a bunch of these generators chatting. Check it out!}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 # SOCIAL AND QUEST DEPENDENCIES}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 Some of the deaths of other guild members can no longer be forgiven. The guilds who were killed in the previous week's fight are no longer able to be wronged.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 The ring level requirement in Kul Tiras, Nazjatar, Shorot remains the same.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 * The items level requirement in Zandalar, Darkshore, and Zandalar are unchanged.}
+\par\plain {\f0\fs18\b0\i0 * Players will be able to begin the quest "I Know" by either combat raiding with their Alliance and Player companions or by starting their quest group with their favorite new-age wasteland cast. Once they begin fighting, they'll be buffed in such a way that they will begin to glow, and then stop.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 # HATI QUEST}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 Players who have completed The Wind Waker now additionally attempts to get out of the Azerite eternal slavery wave, by fleeing the area, and then returning to their original capital.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 For a limited time, players can win adventures by completing the following requirements:}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 * Completed quests in the areas shown on the map}
+\par\plain {\f0\fs18\b0\i0 * Received the Grey Lady's Heart}
+\par\plain {\f0\fs18\b0\i0 * Received the Unending Boiling Point}
+\par\plain {\f0\fs18\b0\i0 * Received the Unending Shivering Sea}
+\par\plain {\f0\fs18\b0\i0 * Received The Winds of Winter}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 # PVP}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 * Battlegrounds' weekly quest "Regrowth" can be viewed. The weekly quest will reward the player's contribution to gain 500 experience, after which the player will gain the option to contribute or earn the ability to gain the new, massive, 10-point health block called "Hemlock Ointment."}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 # Mounts}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 * Warfront / How to Train a Paladin A new chapter has begun for the Warfront / How to Train a Paladin series. Beginning this week, players who complete a short leveling cycle will be rewarded with a mount: Warfront \loch\af0\hich\af0\dbch\af0\uc1\u226\'E2\u8364\'80\u8220\'93 A mount that players can mount and use to the ground.  Paladin \u226\'E2\u8364\'80\u8220\'93 All-in-all a very good mount if you can bring enough armor to keep your players alive for a while.}
+\par\plain {\f0\fs18\b0\i0 * We've been monitoring Warfront's progress and are reaping the rewards. Keep an eye out for more content, and keep your eyes out for another mount!}
+\par\plain {\f0\fs18\b0\i0 * The game's boss, Cataclysm's Corruptor, will return in the future with additional mounts.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 Check out the new mounts below!}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 * BATTLES}
+\par\plain {\f0\fs18\b0\i0 * ADAM}
+\par\plain {\f0\fs18\b0\i0 * Apocalypse Now}
+\par\plain {\f0\fs18\b0\i0 * Martyr}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 # World}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 Battle for Azeroth now has HATRED ISLAND Players who are Titan may team-up on an island in the Mists of Pandaria before acquiring HATRED}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 * He found a place in the depths of the Cabal for the Doomguard, and began to investigate the origins of all the horrors they encounter.}
+\par\plain {\f0\fs18\b0\i0 * He discovered that the souls of the fallen have powers far beyond the capabilities of the dead.}
+\par\plain {\f0\fs18\b0\i0 * He began to investigate the spiritual sources of the fallen, and came to the understanding that they might even help him create a new future for his people.}
+\par\plain {\f0\fs18\b0\i0 * He now has the power to create a new race of ghoul followers based on their race, and unlock four new races per realm.}
+\par\plain {\f0\fs18\b0\i0 * A new faction called the Darkshore is now available to all races.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 &#x200B;}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 **NEW ZONE: "THAILAND"**}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 Hearthstone is a new Alliance-centric map in the Overgrowth campaign. Players who are Horde or Alliance and have THAILAND active on their NA server will on fight for it.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 The world's a little bit easier to come by. Travel to Boralus and expand your very own Treasure Hunter Island!}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 # COMPANION APP}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 * Added new areas to quest for: more items to spend}
+\par\plain {\f0\fs18\b0\i0 * The chance of receiving the item you've been dreaming about}
+\par\plain {\f0\fs18\b0\i0 * The higher the chance of an item, the higher chance it will get}
+\par\plain {\f0\fs18\b0\i0 * The higher the chance, the higher the chance}
+\par\plain {\f0\fs18\b0\i0 * The more frequently you head to the new location}
+\par\plain {\f0\fs18\b0\i0 * The earlier you arrive, the further away the boss fight will be.}
+\par\plain {\f0\fs18\b0\i0 * The earlier you head to the new location, the further you'll go to obtain the next item.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 &#x200B;}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 # HEART OF AZEROTH SYSTEM UPDATE}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 As promised, a few vital Heart of Azeroth stat changes are now going into Heart of Azeroth this week.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 * The values used to kill enemies inside hearts have been slightly reduced. Disabling flame, catalysis, silence, sedgen plague, neurotoxin, poison gas, toxin, and poison gas toxin pairs has been reduced by 15%.}
+\par\plain {\f0\fs18\b0\i0    * Poison \\* Poison is a critical threat that can now be stammered while snare (was snare that caused the snare sound effect)? Now it can be stammered when snare is in use and when snare is in effect.}
+\par\plain {\f0\fs18\b0\i0    * Searing Sudden Death (damage-+52) and Sustaining Cry (damage-49) now consistently higher when snare is in effect.}
+\par\plain {\f0\fs18\b0\i0    * (consumption) Taste of Dread (experimental) now grants 2 Runecarmin more per run, and now grants 2 additional per run.}
+\par\plain {\f0\fs18\b0\i0    * (thirsty hunger) Savagery (experimental) now grants as much experience as}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 &#x200B;}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 [Raw Output](https://pastebin.com/eQARE8tA)}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 # Nerd stuff}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 GPT2 is a text generation model created by OpenAI, which someone built an easy to use version called simple\\_gpt\\_2, to make things easier, google have an online programming tool called "Collab" which lets you easily use this massive stack of tools for 'research'.}
+\par\plain \f0\fs18\b0\i0
+\par\plain {\f0\fs18\b0\i0 If you want to try, open this notebook & save to your google drive.  [https://colab.research.google.com/drive/1VLG8e7YSEwypxU-noRNhsv5dW4NfTGce#scrollTo=puq4iC6vUAHc](https://colab.research.google.com/drive/1VLG8e7YSEwypxU-noRNhsv5dW4NfTGce#scrollTo=puq4iC6vUAHc)}}

@@ -89,5 +89,12 @@ gulp.task('news2textfull', function () {
     .pipe(gulp.dest('./concat/'));
 });
 
+gulp.task('whyareyoulikethis', function () {
+  return gulp
+    .src('./concat/news2textfull.txt')
+    .pipe(html2txt(html2TextOpts))
+    .pipe(gulp.dest('./'));
+});
+
 
 // add a function that combines the files but prefaces it with Patch [Filename], I hope I don't have to go back through and add patch names
